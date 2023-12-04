@@ -7,4 +7,6 @@
                  start-page="mathematik.md">
 
     <toc-element topic="mathematik.md"/>
+    <toc-element topic="statistik.md"/>
+    <toc-element topic="analysis.md"/>
 </instance-profile>
