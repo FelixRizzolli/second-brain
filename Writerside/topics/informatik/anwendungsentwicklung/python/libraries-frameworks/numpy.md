@@ -1,3 +1,3 @@
-# Informatik
+# NumPy
 
 Start typing here...

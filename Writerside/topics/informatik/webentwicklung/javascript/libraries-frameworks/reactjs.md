@@ -1,3 +1,3 @@
-# Informatik
+# ReactJS
 
 Start typing here...

@@ -1,3 +1,3 @@
-# Informatik
+# NextJS
 
 Start typing here...

@@ -1,3 +1,3 @@
-# Informatik
+# Pandas
 
 Start typing here...

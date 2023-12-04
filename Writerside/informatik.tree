@@ -11,10 +11,19 @@
     <toc-element topic="anwendungsentwicklung.md">
         <toc-element topic="java.md"/>
         <toc-element topic="csharp.md"/>
-        <toc-element topic="python.md"/>
+        <toc-element topic="python.md">
+            <toc-element topic="python-libraries-frameworks.md">
+                <toc-element topic="pandas.md"/>
+                <toc-element topic="numpy.md"/>
+            </toc-element>
+        </toc-element>
     </toc-element>
     <toc-element topic="webentwicklung.md">
-        <toc-element topic="javascript.md"/>
+        <toc-element topic="javascript.md">
+            <toc-element topic="javascript-libraries-frameworks.md"/>
+            <toc-element topic="nextjs.md"/>
+            <toc-element topic="reactjs.md"/>
+        </toc-element>
         <toc-element topic="html.md"/>
         <toc-element topic="css.md"/>
     </toc-element>
