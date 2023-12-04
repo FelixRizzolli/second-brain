@@ -38,7 +38,19 @@ Seit 2001 existiert die gemeinnützige Python Software Foundation, die die Recht
         <td>Python steht unter der <strong><tooltip term="LIZENZ-PSF">PSF</tooltip>-Lizenz</strong>, die wesentlich weniger restriktiv ist als beispielsweise <tooltip term="LIZENZ-GNU">GNU</tooltip>. So erlaubt es die <tooltip term="LIZENZ-PSF">PSF</tooltip>-Lizenz, den Python-Interpreter lizenzkostenfrei in Anwendungen einzubetten und mit diesen auszuliefern, ohne dass der Code offengelegt werden muss oder Lizenzkosten anfallen. Diese Politik macht Python auch für kommerzielle Anwendungen attraktiv.</td>
     </tr>
     <tr>
-        <td><strong>...</strong></td>
-        <td></td>
+        <td><strong>Flexibilität</strong></td>
+        <td>Python kann als Programmiersprache für kleine und große Applikationen, als serverseitige Programmiersprache im Internet oder als Skriptsprache für eine größere C- oder C++-Anwendung verwendet werden.</td>
+    </tr>
+    <tr>
+        <td><strong>Rapid Prototyping</strong></td>
+        <td>Python eignet sich gut, in möglichst kurzer Zeit einen lauffähigen <strong>Prototyp als eine Art Machbarkeitsstudie</strong> einer größeren Software zu erstellen, die dann später in einer anderen Programmiersprache implementiert werden soll. Mithilfe eines solchen Prototyps lassen sich Probleme und Designfehler bereits entdecken, bevor die tatsächliche Entwicklung der Software begonnen wird.</td>
+    </tr>
+    <tr>
+        <td><strong>Erweiterbarkeit</strong></td>
+        <td>Da eine der Stärken von Python die Erweiterbarkeit ist, können Python-Entwickler aus einem reichen Fundus von Drittanbieterbibliotheken schöpfen. So gibt es etwa Anbindungen an dei gängigsten GUI-Toolkits, die das Erstellen von Python-Programmen mit grafischer Benutzeroberfläche ermöglichen.</td>
+    </tr>
+    <tr>
+        <td><strong>Data Science und AI</strong></td>
+        <td>In den letzten Jahren hat sich Python zur zentralen Programmiersprache in den aufstrebenden Datenwissenschaften und KI-Anwendgungen entwickelt. Python bietet mit den  Bibliotheken NumPy, SciPy, matplotlib und pandas ein hervorragendes Ökosystem für das wissenschaftliche Rechnen, die Datenanalyse und -visualisierung. Darüber hinaus haben sich mit scikit-learn, PyTorch, Keras und TensorFlow große Python-Bibliotheken für das maschinelle Lernen und das Deep Learning entwickelt, die Python zur Standardprogrammiersprache in diesem Bereich gemacht haben.</td>
     </tr>
 </table>
