@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="informatik"
+                 name="Informatik"
+                 start-page="informatik.md">
+
+    <toc-element topic="informatik.md"/>
+    <toc-element topic="softwareentwicklung.md"/>
+    <toc-element topic="anwendungsentwicklung.md">
+        <toc-element topic="java.md"/>
+        <toc-element topic="csharp.md"/>
+        <toc-element topic="python.md"/>
+    </toc-element>
+    <toc-element topic="webentwicklung.md">
+        <toc-element topic="javascript.md"/>
+        <toc-element topic="html.md"/>
+        <toc-element topic="css.md"/>
+    </toc-element>
+</instance-profile>

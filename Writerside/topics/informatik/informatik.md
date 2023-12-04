@@ -1,0 +1,3 @@
+# About Informatik
+
+Start typing here...
