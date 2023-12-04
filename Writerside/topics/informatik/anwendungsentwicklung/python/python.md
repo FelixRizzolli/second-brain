@@ -31,7 +31,7 @@ Seit 2001 existiert die gemeinnützige Python Software Foundation, die die Recht
     </tr>
     <tr>
         <td><strong>Standardbibliothek</strong></td>
-        <td> Ein grundlegendes Konzept von Python ist es daher, es dem Programmierer so einfach wie möglich zu machen, die Standardbibliothek beliebig zu erweitern. Da Python als interpretierte Programmiersprache selbst nur eingeschränkte Möglichkeiten zur maschinennahen Programmierung bietet, können maschinennahe oder zeitkritische Erweiterungen problemlos in C geschrieben werden. Das ermöglicht die Python API.</td>
+        <td>Ein grundlegendes Konzept von Python ist es daher, es dem Programmierer so einfach wie möglich zu machen, die Standardbibliothek beliebig zu erweitern. Da Python als interpretierte Programmiersprache selbst nur eingeschränkte Möglichkeiten zur maschinennahen Programmierung bietet, können maschinennahe oder zeitkritische Erweiterungen problemlos in C geschrieben werden. Das ermöglicht die Python API.</td>
     </tr>
     <tr>
         <td><strong>Open-Source</strong></td>
