@@ -7,4 +7,6 @@
                  start-page="philosophie.md">
 
     <toc-element topic="philosophie.md"/>
+    <toc-element topic="stoizismus.md"/>
+    <toc-element topic="produktivitaetssteigerung.md"/>
 </instance-profile>

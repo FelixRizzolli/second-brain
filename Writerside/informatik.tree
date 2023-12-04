@@ -7,6 +7,13 @@
                  start-page="informatik.md">
 
     <toc-element topic="informatik.md"/>
+    <toc-element topic="netzwerktechnik.md"/>
+    <toc-element topic="betriebssysteme.md">
+        <toc-element topic="macos.md"/>
+        <toc-element topic="windows.md"/>
+        <toc-element topic="linux.md"/>
+    </toc-element>
+    <toc-element topic="datenbanken.md"/>
     <toc-element topic="softwareentwicklung.md"/>
     <toc-element topic="anwendungsentwicklung.md">
         <toc-element topic="java.md"/>
