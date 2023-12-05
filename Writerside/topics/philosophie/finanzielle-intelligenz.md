@@ -346,6 +346,25 @@ besuchen.
 Die meisten Menschen verfügen über das Potenzial, auf allen Quadranten erfolgreich zu sein. Es hängt ganz davon ab, wie 
 entschlossen wir sind, erfolgreich zu sein. Leidenschaft baut Geschäfte auf – nicht Angst. Die Probleme, mit denen wir 
 beim Wechsel von Feldern zu kämpfen haben, wurzeln häufig in unserem Charakter. Diesen gilt es dann zu ändern.
+
+### Employee – der Angestellte
+#### Wesensmerkmale {id="wesensmerkmale_employee"}
+Das Wort »sicher« wird häufig als Reaktion auf das Gefühl der Angst verwendet. Jemand, der Angst empfindet und sein 
+Bedürfnis nach Sicherheit artikuliert, kommt meist aus Feld E. Wenn es um Geld und ihren Arbeitsplatz geht, gibt es 
+viele Leute, die das mit finanzieller Unsicherheit einhergehende Gefühl der Angst verabscheuen – daher das Bedürfnis 
+nach Sicherheit.
+
+Das Wort »Zusatzleistungen« weist darauf hin, dass die Leute auch eine klar definierte Form von Extrabelohnung möchten, 
+wie zum Beispiel Gesundheits- oder Altersvorsorge. Sie wollen Sicherheit – und diese schriftlich bestätigt haben. Ihr 
+Inneres sagt »Ich werde dir dies geben, und du versprichst mir, dass du mir das dafür gibst.«
+
+Sie möchten ihre Furcht mit einem Gefühl der Sicherheit besiegen und suchen deshalb sichere Verträge, wenn es um ihre 
+Beschäftigung geht. Sie treffen den Punkt genau, wenn sie sagen: »Ich bin nicht so übermäßig an Geld interessiert.«
+
+Für sie ist die Vorstellung von Sicherheit häufig wichtiger als Geld. Angestellte können Vorsitzende oder auch Pförtner 
+von Firmen sein. Es geht nicht so sehr darum, was sie tun, sondern um die vertragliche Bindung, die sie mit der Person 
+oder der Organisation eingehen, die sie einstellt.
+
 ## Quellen
 <tip>
     <strong>(BUCH)</strong> 978-3959720106, Rich Dad Poor Dad, Robert T. Kiyosaki, FinanzBuch Verlag, 2021
