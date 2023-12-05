@@ -7,6 +7,9 @@
                  start-page="philosophie.md">
 
     <toc-element topic="philosophie.md"/>
-    <toc-element topic="stoizismus.md"/>
+    <toc-element topic="emotionale-intelligenz.md"/>
+    <toc-element topic="finanzielle-intelligenz.md"/>
     <toc-element topic="produktivitaetssteigerung.md"/>
+    <toc-element topic="kommunikation.md"/>
+    <toc-element topic="stoizismus.md"/>
 </instance-profile>

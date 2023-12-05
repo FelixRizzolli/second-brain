@@ -1,0 +1,3 @@
+# FQ - Finanzielle Intelligenz
+
+Start typing here...
