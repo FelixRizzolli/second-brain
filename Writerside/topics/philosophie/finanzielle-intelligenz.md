@@ -377,6 +377,49 @@ Umständen nicht so hart arbeiten wie sie.
 
 Wenn sie hart arbeiten, werden sie gut bezahlt. Sie wissen auch, dass sie es nicht verdienen, viel zu bekommen, wenn sie 
 nicht hart arbeiten. Was Geld betrifft, streben sie mit Leidenschaft nach Unabhängigkeit.
+
+### Business owner – der Geschäftsinhaber
+#### Wesensmerkmale {id="wesensmerkmale_businessowner"}
+Diese Gruppe von Leuten könnte man fast als das Gegenteil der »S«-Gruppe bezeichnen. Ein wirklicher »B« liebt es, sich 
+mit cleveren Leuten aus allen vier Kategorien zu umgeben, E, S, B und I. Im Gegensatz zum »S«, der es nicht mag, Arbeit 
+an andere Menschen zu delegieren (weil keiner sie besser erledigen kann als er selbst), delegiert ein »B«-Mensch gern. 
+Das wahre Motto eines Angehörigen der »B«-Gruppe lautet: »Weshalb sollte ich es selbst machen, wenn ich jemanden 
+einstellen kann, der es für mich erledigen und es besser ausführen kann?«
+
+#### Worte sind Instrumente
+Für einen brillanten Unternehmer ist eine notwendige Fähigkeit, ein Meister der Sprache zu sein – zu wissen, welche 
+Worte auf welche Menschentypen wirken. Ein Wort kann einen Menschen in Begeisterung versetzen, während es einen anderen 
+Menschen vor den Kopf stößt. So kann das Wort Risiko beispielsweise eine Person, die im Feld I operiert, in Begeisterung 
+versetzen, während es bei einem Menschen der Feld E zuzuordnen ist, große Angst hervorruft.
+
+#### Möglichkeiten um in den Business owner zu werden
+<list style="decimal">
+    <li>
+        <strong>Einen Mentor</strong> (kein Berater) <strong>suchen</strong> – Ein Mentor ist jemand, der das bereits 
+        getan hat, und der damit erfolgreich ist. Ein Berater ist hingegen jemand, der einem sagt, wie man tun muss, der 
+        es aber selbst nie getan hat. Selbst mit einem Mentor ist es ein arbeitsintensiver Prozess. Ein eigenes 
+        Geschäftssystem aufzubauen erfordert eine Menge Ausprobieren, Anwaltskosten im Voraus und Papierkram. 
+        Gleichzeitig ist man damit beschäftigt, Personal einzustellen und zu schulen.
+    </li>
+    <li>
+        <strong>Franchising</strong> – Viele Banken geben eher Kredite an Franchise-Nehmer als an Gründer von 
+        Kleinunternehmen, weil sie die wichtige Bedeutung von Geschäftssystemen kennen und wissen, dass ein 
+        geschäftlicher Neuanfang mit einem guten Geschäftssystem ihr Risiko senkt.
+    </li>
+    <li>
+        <strong>Banken vergeben keine Kredite an Leute ohne ein Geschäftssystem</strong> – Singen zu können bedeutet 
+        nicht, dass jemand etwas von Marketing, Finanzen, Buchhaltung, Verkauf, Einstellung und Entlassen von Personal, 
+        Gesetzen und anderen Systemen versteht, die nötig sind, um ein Unternehmen am Laufen zu halten und es 
+        erfolgreich zu betreiben. Damit ein Geschäft überlebt und floriert, müssen Systeme hundertprozentig und 
+        zuverlässig funktionieren.
+    </li>
+    <li>
+        <strong>Network-Marketing</strong> (wird auch als Multilevel-Marketing oder Direktvertrieb bezeichnet) – Für 
+        eine Gebühr (oft um die 200 Dollar) kann ein bereits existierendes Geschäftssystem eingekauft werden. Die 
+        Organisationen sind total automatisiert und die Bearbeitung von Bestellungen, Distribution, Buchhaltung und 
+        Nachfragen wird fast vollständig von dem Softwaresystem abgenommen. Mehr zur Sicht der Konsumenten: >>TODO<<
+    </li>
+</list>
 ## Quellen
 <tip>
     <strong>(BUCH)</strong> 978-3959720106, Rich Dad Poor Dad, Robert T. Kiyosaki, FinanzBuch Verlag, 2021
