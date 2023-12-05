@@ -365,6 +365,18 @@ Für sie ist die Vorstellung von Sicherheit häufig wichtiger als Geld. Angestel
 von Firmen sein. Es geht nicht so sehr darum, was sie tun, sondern um die vertragliche Bindung, die sie mit der Person 
 oder der Organisation eingehen, die sie einstellt.
 
+
+### Self-Employed – der Selbstständige
+#### Wesensmerkmale {id="wesensmerkmale_selfemployed"}
+Dies sind Menschen, die ihr eigener Chef sein oder ihr »eigenes Ding aufziehen« wollen, die »Do-it-yourself«-Menschen.
+
+Wenn es um Geld geht, so will ein überzeugter »S« häufig nicht, dass sein Einkommen von anderen Menschen abhängig ist. 
+Anders ausgedrückt: Wenn diese Menschen hart arbeiten, erwarten sie, für ihre Arbeit bezahlt zu werden. Sie wollen sich 
+die Höhe ihres Verdienstes nicht von jemand anderem oder einer Gruppe anderer Leute vorschreiben lassen, die unter 
+Umständen nicht so hart arbeiten wie sie.
+
+Wenn sie hart arbeiten, werden sie gut bezahlt. Sie wissen auch, dass sie es nicht verdienen, viel zu bekommen, wenn sie 
+nicht hart arbeiten. Was Geld betrifft, streben sie mit Leidenschaft nach Unabhängigkeit.
 ## Quellen
 <tip>
     <strong>(BUCH)</strong> 978-3959720106, Rich Dad Poor Dad, Robert T. Kiyosaki, FinanzBuch Verlag, 2021
