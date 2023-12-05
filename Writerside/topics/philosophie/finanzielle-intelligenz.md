@@ -228,7 +228,62 @@ Es gibt einen Unterschied zwischen Reichtum und Vermögen. Der Begriff Vermögen
 Anzahl der Tage, die man überleben kann, ohne selbst zu arbeiten (oder ohne dass ein Haushaltsangehöriger selbst 
 arbeitet), und dabei seinen Lebensstandard aufrechterhält.« Vermögen wird somit in Zeit und nicht in Geld gemessen.
 
-Armut und Reichtum lassen sich vor allem über die Verfügbarkeit materieller Ressourcen in Form von Einkommen und Vermögen messen.
+Armut und Reichtum lassen sich vor allem über die Verfügbarkeit materieller Ressourcen in Form von Einkommen und 
+Vermögen messen.
+
+## Hindernisse überwinden
+Die fünf wichtigsten Gründe, weshalb finanziell gebildete Leute noch immer keinen reichlichen Cashflow generieren sind: 
+Angst, Zynismus, Faulheit, schlechte Gewohnheiten und Arroganz.
+
+### Angst überwinden
+Niemand verliert gern Geld. Die Einzigen, die beim Investieren noch nie Geld verloren haben, sind die, die es noch nie 
+gemacht haben. Jeder fürchtet sich davor, Geld zu verlieren; entscheidend ist, wie man mit Angst und mit Verlust umgeht. 
+Der wichtigste Unterschied zwischen einem Reichen und einem Armen ist, wie er diese Angst bewältigt. Es ist in Ordnung, 
+Angst zu haben. Eine Methode, diese Angst zu überwinden ist es, früh anzufangen und die Dynamik der Zinseszinsen für 
+sich arbeiten zu lassen. Es macht einen enormen Unterschied, ob man mit 20 oder mit 30 mit dem Sparen beginnt.
+
+Es wird wahrscheinlich keinen reichen Menschen geben, der kein Geld verloren hat. Aber Reiche lassen nicht zu, dass ihre 
+Furcht sie aus dem Spiel wirft. Gewinner werden von ihren Verlusten inspiriert. Verlierer werden von ihren Verlusten 
+besiegt. Gewinner wissen, dass Fehlschläge zum Gewinnen inspirieren – warum also den Misserfolg fürchten, wo er doch zu 
+Größe inspiriert? Keine Angst vor Fehlschlägen zu haben bedeutet nicht, dass man sie nicht hasst.
+
+Die meisten Leute spielen, um nicht zu verlieren, wo sie doch spielen sollten, um zu gewinnen. Das ist der Grund weshalb 
+so viele Leute finanziell kämpfen. Vielleicht haben sie ja ein sicheres, vernünftiges und ausgewogenes Portfolio; 
+trotzdem ist es nicht das Portfolio des Gewinners. Ein ausgewogenes Portfolio ist nicht schlecht. Aber es hilft einem 
+nicht den großen Gewinn zu machen. So spielen erfolgreiche Investoren nicht. Am Anfang muss man ein bisschen ausgewogen 
+sein – aber man muss Fokus haben. 
+
+Der Aufbau der Vermögensspalte braucht keine harte Mathematik. Er braucht aber sehr wohl Mut und die richtige Haltung 
+gegenüber Fehlschlägen.
+
+### Zynismus überwinden
+Ob nun unsere eigenen Selbstzweifel oder die Zweifel der anderen, oft erlauben wir ihnen, uns am Handeln zu hindern. Wir 
+spielen auf Sicherheit und verpassen die guten Gelegenheiten. Es bedarf oft großen Mutes, den Gerüchten und dem Gerede 
+von Schrecken und Untergang nicht zu erlauben, eigene Zweifel und Ängste zu verstärken. Clevere Investoren wissen, dass 
+die schlechtesten Zeiten eigentlich die beste Zeit zum Geldverdienen sind. Wenn alle anderen gelähmt sind vor Angst, 
+drücken sie den Abzug und werden belohnt. Zweifel und Zynismus halten viele in Armut: Zyniker kritisieren und Gewinner 
+analysieren. Gewinner halten die Augen offen und sehen die Gelegenheit, die alle anderen verpassen. Viele lassen die 
+Finger vom Börsengeschäft, weil sie kein Geld verlieren wollen. Sie stehen sich beim Geldverdienen selbst im Weg, weil 
+sie sich diesem Investmenttool verschließen.
+
+### Faulheit überwinden
+Eine der banalsten Firmen der Faulheit ist es, beschäftigt zu sein. Zu beschäftigt, um sich um Wohlstand, Gesundheit 
+oder Beziehungen zu kümmern. Anstatt zu sagen »Ich kann mir das nicht leisten«, was eine Lüge ist, müssen wir unser 
+Denken zu »Wie kann ich mir das Leisten?« ändern. Das öffnet das Denken und zwingt es, Lösungen zu finden. Es schafft 
+einen schärferen Verstand und einen dynamischen Geist.
+
+### Schlechte Gewohnheiten überwinden
+Wenn wir Erfolg haben wollen, müssen wir schlechte Gewohnheiten ablegen und sie mit guten Gewohnheiten ersetzen. Eine 
+Möglichkeit wäre immer zuerst sich selbst zu bezahlen, selbst wenn das Geld knapp ist und dann alle anderen. Dabei 
+machen einem die Gläubiger und der Staat druck, wenn man sie nicht bezahlen kann, was einem motiviert, weitere 
+Einkommensmöglichkeiten zu suchen. Sich Wegen überlegen zu müssen, wie man zusätzlich Einkommen generiert, um die 
+Gläubiger zu zahlen, macht einem finanziell stärker.
+
+### Arroganz überwinden
+Viele Leute verstecken hinter der Arroganz nur die eigene Dummheit. Solche Leute plustern sich in Diskussionen aggressiv 
+auf, um Recht zu behalten, und es wird klar, dass sie keine Ahnung haben, wovon sie reden. Unwissenheit ist nicht 
+unbedingt schlecht, wenn dieses Unwissen dazu anspornt, sich zu bilden, indem man sich fachlich versierte Experten 
+sucht.
 
 ## Quellen
 <tip>
