@@ -365,7 +365,6 @@ Für sie ist die Vorstellung von Sicherheit häufig wichtiger als Geld. Angestel
 von Firmen sein. Es geht nicht so sehr darum, was sie tun, sondern um die vertragliche Bindung, die sie mit der Person 
 oder der Organisation eingehen, die sie einstellt.
 
-
 ### Self-Employed – der Selbstständige
 #### Wesensmerkmale {id="wesensmerkmale_selfemployed"}
 Dies sind Menschen, die ihr eigener Chef sein oder ihr »eigenes Ding aufziehen« wollen, die »Do-it-yourself«-Menschen.
@@ -420,6 +419,117 @@ versetzen, während es bei einem Menschen der Feld E zuzuordnen ist, große Angs
         Nachfragen wird fast vollständig von dem Softwaresystem abgenommen. Mehr zur Sicht der Konsumenten: >>TODO<<
     </li>
 </list>
+
+### Investor
+#### Wesensmerkmale {id="wesensmerkmale_investor"}
+Investoren machen Geld mit Geld. Sie müssen nicht arbeiten, weil ihr Geld für sie arbeitet. 
+
+Das I-Feld des Quadranten ist das Spielfeld für die Reichen. Egal auf welchem Feld jemand sein Geld verdient: Wenn er 
+hofft, eines Tages reich zu sein, muss er letztendlich auf das I-Feld gelangen. Im I-Feld wird das Geld in Reichtum 
+verwandelt.
+
+Investoren meiden keine Risiken, sie lernen mit finanziellen Risiken umzugehen. Leute, die etwas riskieren, verändern die Welt.
+
+#### Warum sind nicht mehr Menschen Investoren?
+Vielen Leuten behagt die Vorstellung nicht, ihr schwer verdientes Geld aus der Hand zu geben und es nicht 
+zurückzubekommen. Viele Menschen haben so große Angst vor dem Verlieren, dass sie sich dafür entscheiden, ihr Geld 
+überhaupt nicht zu investieren oder zu riskieren – unabhängig davon, wie viel Geld sie damit machen könnten. Diese Angst 
+vor dem Geldverlust unterteilt die Investoren offensichtlich in vier Hauptkategorien:
+
+<list style="decimal">
+    <li>
+        Risikoscheue Leute, die nur auf Nummer sicher gehen und ihr Geld ausschließlich auf der Bank anlegen.
+    </li>
+    <li>
+        Leute, die das Investieren jemand anderem überlassen, wie zum Beispiel einem Finanzberater oder einem 
+        Vermögensverwalter offener Investmentfonds
+    </li>
+    <li>
+        Spieler
+    </li>
+    <li>
+        Kapitalanleger
+    </li>
+</list>
+
+#### Spieler vs. Kapitalanleger
+Für einen Spieler ist das Investieren ein Glücksspiel. Für einen Kapitalanleger ist es ein Geschicklichkeitsspiel. Für 
+Menschen, die ihr Geld jemand anderem überlassen, der es für sie anlegt, ist das Investieren oft ein Spiel, das sie 
+selbst nicht erlernen wollen. Für die Menschen ist es wichtig, sich ihre Finanzberater sorgfältig auszusuchen. 
+Investieren ist nicht riskant. Aber ohne entsprechende Kenntnisse ist es riskant.
+
+<tip>
+    »Das Investieren hat große Ähnlichkeit mit dem Fliegen. Wenn Sie eine Flugzeugschule besucht und eine Reihe von 
+    Jahren an Erfahrungen hinter sich haben, macht das Fliegen Spaß und ist spannend. Waren Sie jedoch nie auf einer 
+    Flugschule, würde ich Ihnen empfehlen, das Fliegen jemand anders zu überlassen.« 
+
+    Robert T. Kiyosaki
+</tip>
+
+### Begriffe der Börsenanfänger
+<list>
+    <li>
+        <strong>»Diversifikation«</strong>, die Methode der Risikostreuung, ist eine Investitionsstrategie, bei der man 
+        »nicht verlieren« kann. Es ist aber keine Methode zum Erzielen großer Gewinne. Warren Buffett, der vielleicht 
+        größte Kapitalanleger der Welt, sagt, dass eine Portefeuille-Bündelung oder eine Konzentration auf ein paar 
+        wenige Kapitalanlagen eine bessere Methode ist als die Risikostreuung. Seiner Vorstellung nach muss man, wenn 
+        die Investitionen konzentriert anstatt diversifiziert werden, clever sowie entschlossen im Denken und Handeln 
+        werden. In seinem Artikel schreibt Buffet weiterhin, dass der durchschnittliche Kapitalanleger Impulsivität 
+        vermeidet, weil Impulsivität riskant ist. Warren Buffet sagt jedoch: »Ein echter Investor aber begrüßt 
+        Impulsivität.«
+    </li>
+    <li>
+        <strong>»Bluechip«-Aktien</strong> – Auf Sicherheit bedachte Investoren kaufen für gewöhnlich Aktien »sicherer« 
+        Unternehmen. Weshalb? Weil diese ihrer Vorstellung nach sicherer sind. Das Unternehmen mag vielleicht sicherer 
+        sein, die Börse ist es jedoch nicht.
+    </li>
+    <li>
+        <strong>»Investmentfonds«</strong> – Leute, die wenig Ahnung vom Investieren haben, fühlen sich sicherer, wenn 
+        sie ihr Geld einem Fondsmanager überlassen, von dem sie hoffen, dass er ein besseres Geschäft macht als sie 
+        selbst. Dies ist eine clevere Methode für Leute, die nicht die Absicht verfolgen, professionelle Kapitalanleger 
+        zu werden. Das Problem besteht darin, dass Investmentfonds nicht weniger riskant sind, so clever diese Strategie 
+        auch ist.
+    </li>
+</list>
+
+#### Die fünf Level der Investoren
+<list>
+    <li>
+        <strong>Keine finanzielle Intelligenz</strong> – Grob geschätzt befinden sich mehr als 50 % der Bevölkerung 
+        auf diesem Level, auch in Reichen Ländern. In diese Kategorie fallen viele Menschen, die viel Geld verdienen. 
+        Sie verdienen eine Menge – und geben mehr aus, als sie verdienen.
+    </li>
+    <li>
+        <strong>Sparer sind Verlierer</strong> – Viele glauben, dass es klug ist, Geld zu sparen. Doch durch die 
+        Inflation verliert das Geld an Kaufkraft und wird somit indirekt immer weniger. Auch Anleihen sind riskant, wenn 
+        beispielsweise die Zinsen 3 % betragen aber die Inflation auf 5 % gestiegen ist.
+    </li>
+    <li>
+        <strong>Ich bin zu beschäftigt</strong> – Viele Investoren in diesem Level sind hochgebildete Menschen, die 
+        einfach nur zu beschäftigt sind mit ihrer Karriere, Familie, anderen Interessen und ihrem Urlaub. Folglich 
+        bleiben sie lieber finanziell naiv und geben ihr Geld jemand anderem, damit er es für sie managt. Produkte zu 
+        denen jene Personen greifen sind beispielsweise der Pensionsplan oder Investmentfonds. Das Problem bei solchen 
+        Investoren ist, dass sie nichts lernen, wenn sie ihr Geld verlieren. Alles, was sie können, ist, die Schuld 
+        ihrem Berater, dem Markt oder der Regierung zu geben. Es ist schwer, aus seinen Fehlern zu lernen, wenn man 
+        nicht weiß, welche Fehler gemacht wurden.
+    </li>
+    <li>
+        <strong>Ich bin ein Profi</strong> – Die sogenannten Do-it-yourself-Investoren kaufen und verkaufen ein paar 
+        Aktien, häufig über einen Discount-Broker. Warum sollten sie auch einen Börsenmakler höhere Provisionen zahlen, 
+        wenn sie doch ihre eigene Recherche machen und ihre eigenen Entscheidungen treffen können? In den meisten Fällen 
+        haben die Do-it-yourselfer sehr wenig, wenn überhaupt finanzielle Bildung. Es gibt sie in allen vier Kategorien: 
+        Gewerbe, Immobilien, Wertpapiere und Wirtschaftsgüter. Mit einer soliden finanziellen Bildung könnten sie aber 
+        in die nächste Kategorie aufsteigen.
+    </li>
+    <li>
+        <strong>Kapitalist</strong> – Kapitalisten sind die reichsten Menschen der Welt. Ein Kapitalist ist meist ein 
+        Unternehmer, aus dem B-Quadranten, der im I-Quadranten investiert. Ein Level 4 Investor ist der Do-it-yourselfer 
+        aus dem S-Quadranten, der im I-Quadranten investiert. Jeder, der das Ziel hat, ein Level-5-Investor zu werden, 
+        muss ZUERST seine Fähigkeit als Level-4Investor entwickeln. Level 4 kann auf dem Weg zu Level 5 nicht 
+        übersprungen werden. Wer das versucht, ist wirklich ein Level 3 Investor – ein Spieler!
+    </li>
+</list>
+
 ## Quellen
 <tip>
     <strong>(BUCH)</strong> 978-3959720106, Rich Dad Poor Dad, Robert T. Kiyosaki, FinanzBuch Verlag, 2021
