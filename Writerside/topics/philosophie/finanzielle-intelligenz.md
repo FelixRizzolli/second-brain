@@ -285,6 +285,67 @@ auf, um Recht zu behalten, und es wird klar, dass sie keine Ahnung haben, wovon 
 unbedingt schlecht, wenn dieses Unwissen dazu anspornt, sich zu bilden, indem man sich fachlich versierte Experten 
 sucht.
 
+## Cashflow Quadrant
+<img src="rich_dad_poor_dad_cashflow_quadrant.png" alt="" width="250" style="inline"/>
+<table style="header-column">
+<tr>
+    <td>
+        <strong>E</strong>mployee
+    </td>
+    <td>
+        Ein <strong>Angestellter</strong> ist jemand, der für eine andere Person arbeitet und ein Gehalt oder einen Lohn 
+        bezieht. Ihnen geht es um Sicherheit.
+    </td>
+</tr>
+<tr>
+    <td>
+        <strong>S</strong>elf-Employed
+    </td>
+    <td>
+        <strong>Selbstständige</strong> sind Personen, die für sich selbst arbeiten wie Freiberufler, Berater und 
+        Inhaber kleinerer Unternehmen. Ihnen geht es hauptsächlich um perfekte Leistungen.
+    </td>
+</tr>
+<tr>
+    <td>
+        <strong>B</strong>usinessowner
+    </td>
+    <td>
+        Der <strong>Geschäftsinhaber</strong> ist jemand, der ein Unternehmen besitzt, dass ohne seine direkte 
+        Beteiligung arbeiten kann.
+    </td>
+</tr>
+<tr>
+    <td>
+        <strong>I</strong>nvestor
+    </td>
+    <td>
+        Der <strong>Investor</strong> ist jemand, der sein Geld anwendet, um mehr Geld zu verdienen. Z.B. durch Aktien, 
+        Anleihen oder Immobilien.
+    </td>
+</tr>
+</table>
+
+Jeder von uns operiert zumindest in einem der vier Felder des CASHFLOW-Quadranten. Diese Zuordnung wird durch die 
+Herkunft unseres Geldes bestimmt. Die meisten Menschen sind von Lohn- und Gehaltszahlungen abhängig, andere sind 
+selbstständig tätig.
+
+Unterschiedliche Arten von Einkommen erfordern unterschiedliche Geisteshaltungen, unterschiedliche fachliche 
+Fähigkeiten, unterschiedliche Berufswege und unterschiedliche Menschentypen. Unterschiedliche Menschen werden zu 
+unterschiedlichen Quadranten hingezogen. Einkommen aus verschiedenen Feldern zu beziehen erfordert unterschiedliche 
+Fähigkeiten und unterschiedliche Persönlichkeitstypen, selbst wenn die Person, die in den Feldern operiert, die gleiche 
+ist. Der Wechsel von einem Feld in ein anderes ist so als würde man morgens Golf spielen und abends das Ballett 
+besuchen.
+
+<warning>
+    Es ist auch wichtig, sich zu merken, dass man in allen vier Feldern des Quadranten reich oder arm sein kann. Es gibt 
+    in allen vier Feldern Menschen, die Millionen verdienen, und andere die Bankrott machen. Sich in dem einen oder dem 
+    anderen Feld zu befinden ist noch keine Garantie für finanziellen Erfolg.
+</warning>
+
+Die meisten Menschen verfügen über das Potenzial, auf allen Quadranten erfolgreich zu sein. Es hängt ganz davon ab, wie 
+entschlossen wir sind, erfolgreich zu sein. Leidenschaft baut Geschäfte auf – nicht Angst. Die Probleme, mit denen wir 
+beim Wechsel von Feldern zu kämpfen haben, wurzeln häufig in unserem Charakter. Diesen gilt es dann zu ändern.
 ## Quellen
 <tip>
     <strong>(BUCH)</strong> 978-3959720106, Rich Dad Poor Dad, Robert T. Kiyosaki, FinanzBuch Verlag, 2021
