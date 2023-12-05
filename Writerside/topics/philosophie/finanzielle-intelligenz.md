@@ -131,6 +131,105 @@ Um finanziell erfolgreich zu sein, muss man in Bezug auf Geld den Unterschied zw
 darf nicht blindlings finanzielle Ratschläge befolgen. Die Zahlen erzählen die Fakten. Das finanzielle Überleben hängt 
 von Fakten ab, nicht von den wortreich dargelegten Ansichten irgendeines Freundes oder Beraters.
 
+## Vermögenswerte vs. Verbindlichkeiten
+<table>
+<tr>
+    <td>Arm</td>
+    <td>Mittelschicht</td>
+    <td>Reich</td>
+</tr>
+<tr>
+    <td>
+        <img src="rich_dad_poor_dad_gewinn_und_verlustrechnung_arm.png" alt="" width="250" style="inline"/>
+    </td>
+    <td>
+        <img src="rich_dad_poor_dad_gewinn_und_verlustrechnung_mittelschicht.png" alt="" width="250" style="inline"/>
+    </td>
+    <td>
+        <img src="rich_dad_poor_dad_gewinn_und_verlustrechnung_reich.png" alt="" width="250" style="inline"/>
+    </td>
+</tr>
+<tr>
+    <td>
+        Arme Menschen haben nur Ausgaben.
+    </td>
+    <td>
+        Angehörige der Mittelschicht kaufen Verbindlichkeiten in der Überzeugung, dass es sich um Vermögenswerte 
+        handelt.
+    </td>
+    <td>
+        Reiche Menschen kaufen Vermögenswerte.
+    </td>
+</tr>
+</table>
+
+Die meisten Menschen befinden sich in finanziellen Schwierigkeiten, weil sie den Unterschied zwischen Vermögenswerten 
+und Verbindlichkeiten nicht kennen. Reiche Menschen erwerben Vermögenswerte. Die Armen und die Angehörigen der 
+Mittelschicht schaffen Verbindlichkeiten an, aber sie denken, dass es sich um Vermögenswerte handelt. 
+
+Ein Vermögenswert ist etwas, das einem Geld in die Tasche bringt, eine Verbindlichkeit ist etwas, das einem Geld aus der 
+Tasche zieht. Möchte man reich werden, muss man einfach ein Leben lang Vermögenswerte kaufen. Als armer oder angehöriger 
+der Mittelschicht hingegen kauft man sein Leben lang Verbindlichkeiten. Den Unterschied nicht zu kennen, verursacht die 
+meisten finanziellen Probleme im wirklichen Leben. Der Mangel an Bildung ist die Grundlage finanzieller Probleme. Wenn 
+die Leute Geldprobleme haben, gibt es etwas, dass sie nicht verstanden haben. Die Reichen sind reich, weil sie in 
+verschiedenen Bereichen eine bessere Bildung haben als die Menschen, die in finanziellen Schwierigkeiten stecken. Die 
+Pfeile in den Zeichnungen stellen den Fluss des Kapitals oder den Cashflow dar. Zahlen alleine bedeuten wenig, ebenso 
+wie Wörter alleine wenig bedeuten. Es ist die Geschichte, die zählt. In Finanzberichten zu lesen heißt, die Handlung, 
+die Geschichte suchen – die Geschichte darüber, wohin das Geld fließt. In vielen Familien bedeutet die Finanzgeschichte, 
+immer mehr zu arbeiten, um so vermeintlich vorwärtszukommen. Es ist nicht so, dass sie nicht genügen Geld nach Hause 
+tragen, aber sie verbringen ihr Leben damit, Verbindlichkeiten anstatt Vermögenswerte zu kaufen.
+
+<list>
+    <li>
+        <strong>Warum die Reichen immer reicher werden</strong>: Die Vermögenswerte generieren mehr als genug Einkommen, 
+        um die Ausgaben abzudecken, während der Rest wieder in Vermögenswerte investiert wir. Die Vermögensspalte wächst 
+        immer weiter und das Einkommen, das sie produziert mit ihr. Das Ergebnis ist, dass die Reichen reicher werden!
+    </li>
+    <li>
+        <strong>Warum die Mittelschicht zu kämpfen hat</strong>: Viele angehörige der Mittelschicht befinden sich in 
+        einem ständigen Zustand finanzieller Schwierigkeiten. Ihr Einkommen besteht im Wesentlichen aus ihrem Gehalt, 
+        und wenn dies steigt, steigen auch die Steuern. Normalerweise steigen auch die Ausgaben im Gleichen Ausmaß wie 
+        das Einkommen. Das Haus wird als primärer Vermögenswert betrachtet, statt in Vermögenswerte zu investieren, die 
+        Einkünfte bringen. Viele gehen mit jeder Gehaltserhöhung davon aus, dass man ein größeres Haus kaufen oder mehr 
+        Geld ausgeben kann. Die steigenden Ausgaben treiben die Familien immer tiefer in die Schuldenfalle und in eine 
+        immer größere finanzielle Unsicherheit hinein, auch wenn dem beruflichen Vorankommen das Einkommen steigt. 
+        Schuld an diesem sehr riskanten Lebensstil ist die schlechte finanzielle Ausbildung. 
+    </li>
+</list>
+
+### Vermögenswerte (Beispiele)
+<list>
+    <li>
+        Firmen, die nicht die eigene Anwesenheit erfordern: Sie gehören einem, aber werden von anderen geleitet oder 
+        verwaltet. Sollte man dort arbeiten, dann ist es kein Geschäft. Dann wird es ein Job.
+    </li>
+    <li>
+        Aktien
+    </li>
+    <li>
+        Obligationen
+    </li>
+    <li>
+        Einkommen generierende Immobilien
+    </li>
+    <li>
+        Schuldscheine (IOUs)
+    </li>
+    <li>
+        Tantiemen aus geistigem Eigentum wie beispielsweise Musik, Skripte und Patente
+    </li>
+    <li>
+        Alles andere, das Wert besitzt, Einkommen generiert und einen Markt hat
+    </li>
+</list>
+
+### Vermögen vs. Reichtum
+Es gibt einen Unterschied zwischen Reichtum und Vermögen. Der Begriff Vermögen wird folgendermaßen definiert: »Die 
+Anzahl der Tage, die man überleben kann, ohne selbst zu arbeiten (oder ohne dass ein Haushaltsangehöriger selbst 
+arbeitet), und dabei seinen Lebensstandard aufrechterhält.« Vermögen wird somit in Zeit und nicht in Geld gemessen.
+
+Armut und Reichtum lassen sich vor allem über die Verfügbarkeit materieller Ressourcen in Form von Einkommen und Vermögen messen.
+
 ## Quellen
 <tip>
     <strong>(BUCH)</strong> 978-3959720106, Rich Dad Poor Dad, Robert T. Kiyosaki, FinanzBuch Verlag, 2021
