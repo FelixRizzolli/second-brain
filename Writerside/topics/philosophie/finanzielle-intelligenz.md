@@ -493,7 +493,7 @@ Investieren ist nicht riskant. Aber ohne entsprechende Kenntnisse ist es riskant
 </list>
 
 #### Die fünf Level der Investoren
-<list>
+<list style="decimal">
     <li>
         <strong>Keine finanzielle Intelligenz</strong> – Grob geschätzt befinden sich mehr als 50 % der Bevölkerung 
         auf diesem Level, auch in Reichen Ländern. In diese Kategorie fallen viele Menschen, die viel Geld verdienen. 
@@ -529,6 +529,51 @@ Investieren ist nicht riskant. Aber ohne entsprechende Kenntnisse ist es riskant
         übersprungen werden. Wer das versucht, ist wirklich ein Level 3 Investor – ein Spieler!
     </li>
 </list>
+
+## Wie komme ich zu mehr Geld?
+<list style="decimal">
+    <li>
+        Eine Aufstellung der persönlichen finanziellen Verhältnisse anfertigen. Um dahin zu kommen, wo man hin will, 
+        muss man den Ausgangspunkt kennen. Dies ist der erste Schritt um das eigene Leben unter Kontrolle zu bekommen 
+        und mehr Zeit damit zu verbringen, sich um die eigenen Geschäfte zu kümmern. 
+    </li>
+    <li>
+        <strong>Finanzielle Ziele setzen</strong>
+        <list style="alpha-lower">
+            <li>
+                <strong>Langfristiges Ziel</strong>: innerhalb der nächsten 5 Jahre:
+                <list>
+                    <li>
+                        will ich meinen Cashflow aus meinen Vermögenswerten, das heißt mein passives Einkommen (ein 
+                        Einkommen, das einem zufließt, ohne dass man dafür arbeitet), um ____ Euro monatlich erhöhen.
+                    </li>
+                    <li>
+                        will ich die folgenden Investments in meinen Büchern haben (z.B. Grundstücke und Immobilien, 
+                        Aktien, Unternehmen, Rohstoffe): ___________
+                    </li>
+                </list>
+            </li>
+            <li>
+                <strong>Kurzfristiges Ziel</strong>: meine finanziellen Ziele für nächstes Jahr sind:
+                <list>
+                    <li>
+                        Ich will meine Schulden um _____ Euro verringern.
+                    </li>
+                    <li>
+                        Ich will meinen Cashflow aus meinen Vermögenswerten auf _____ Euro monatlich erhöhen.
+                    </li>
+                </list>
+            </li>
+            <li>
+                Finanzielle <strong>Fünf-Jahres-Ziele</strong> sollten benutzt werden, um die finanzielle Situation von 
+                heute an fünf Jahre lang zu verbessern.
+            </li>
+        </list>
+    </li>
+</list>
+
+### Income Statement - Vorlage
+<img src="rich_dad_poor_dad_income_statement.png" alt="" width="700" style="inline"/>
 
 ## Quellen
 <tip>
