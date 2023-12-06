@@ -10,4 +10,8 @@
         <description>Created after removal of "C#" from Informatik</description>
         <accepts>C.html</accepts>
     </rule>
+    <rule id="414bc5e0">
+        <description>Created after removal of "Sprachen Lernen" from Sprachen</description>
+        <accepts>sprachen-lernen.html</accepts>
+    </rule>
 </rules>

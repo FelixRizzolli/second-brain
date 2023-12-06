@@ -1,0 +1,3 @@
+# Stoische Tugend: Weisheit
+
+Start typing here...

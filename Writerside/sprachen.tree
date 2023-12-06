@@ -7,7 +7,6 @@
                  start-page="sprachen.md">
 
     <toc-element topic="sprachen.md"/>
-    <toc-element topic="sprachen-lernen.md"/>
     <toc-element topic="deutsch.md"/>
     <toc-element topic="italienisch.md"/>
     <toc-element topic="englisch.md"/>

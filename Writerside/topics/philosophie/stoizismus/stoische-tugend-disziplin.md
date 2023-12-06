@@ -1,0 +1,3 @@
+# Stoische Tugend: Disziplin
+
+Start typing here...
