@@ -160,3 +160,53 @@ groß und umfassend. Während er die Finger ein wenig krümmte und damit die Han
 »Zustimmung«, was bedeutet, dass man beginnt, sich eine Vorstellung von etwas zu machen »ist so wie dies«. Und als er 
 schließlich die Hand um die andere legte, nannte er diese Verbindung »Wissen«. Diese vollständige Verbindung, so sagte 
 er, besitze nur der Weise.
+
+### Kleanthes der Apostel
+
+### Ariston der Herausforderer
+
+### Chrysipp der Kämpfer
+
+### Zenon der Erhalter
+
+### Diogenes der Diplomat
+
+### Antipatros der Ethiker
+
+### Panaitios der Verbindungsmann
+
+### Publius Rutilius Rufus, der letzte ehrliche Mann
+
+### Poseidonios das Genie
+
+### Diotimos der Böse
+
+### Ciercio der Mitläufer
+
+### Cato der Jüngere, Roms eiserner Mann
+
+### Porcia Catonis, die eiserne Frau
+
+### Athenodoros Kananites der Königsmacher
+
+### Areios Didymos der Königmacher II
+
+### Agrippinus der Andere 
+
+### Seneca der Fleißige
+
+### Cornutus der Gewöhnliche
+
+### Rubellius Plautus, der Mann der kein Herrscher sein wollte
+
+### Thrasea der Furchtlose 
+
+### Helvidius Priscus der Senator
+
+### Musonius Rufus der Unzerstörbare
+
+### Epiktet der Freie
+
+### Junius Rusticus der Pflichtbewusste
+
+### Marcus Aurelius der Philosophenkönig
