@@ -1,4 +1,4 @@
-name: Build SecondBrain (Informatik)
+name: Build Second Brain
 
 on:
   push:
@@ -11,10 +11,10 @@ permissions:
   pages: write
 
 env:
-  INSTANCE: Writerside/informatik
-  ARTIFACT: webHelpINFORMATIK2-all.zip
+  INSTANCE: Writerside/secondbrain
+  ARTIFACT: webHelpSECONDBRAIN2-all.zip
   DOCKER_VERSION: 232.10275
-  ALGOLIA_ARTIFACT: algolia-indexes-INFORMATIK.zip
+  ALGOLIA_ARTIFACT: algolia-indexes-SECONDBRAIN.zip
 
 jobs:
   build:
