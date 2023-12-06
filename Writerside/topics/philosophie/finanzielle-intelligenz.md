@@ -1,4 +1,7 @@
 # FQ - Finanzielle Intelligenz
+
+<show-structure for="chapter,procedure" depth="2"/>
+
 ## Einführung
 ### Warum die Reichen immer reicher werden
 Einer der Gründe warum die Reichen immer reicher, die Armen immer ärmer werden und die Angehörigen der Mittelschicht 
