@@ -97,3 +97,66 @@ Worte in Taten zu verwandeln, die Lehren aus dem Leben und Sterben, dem Erfolg u
 die vor uns kamen, in der realen Welt in Taten umzusetzen. Denn dies und nichts anderes verleiht einen den Titel: 
 Philosoph.
 
+## Übersicht
+### Zenon der Prophet
+<tip>
+    334 v. Chr. – 262 v. Chr.
+</tip>
+
+Die Geschichte des Stoizismus beginnt passenderweise mit einem Unglück. Zenons Familie handelte mit einer der 
+wertvollsten Waren der Antike und ihr Geschäft stand – ebenso wie das vieler anderer Unternehmer – täglich auf dem 
+Spiel. Sein Schiff voller Waren erlitt Schiffbruch. Niemand weiß, was den Schiffbruch verursacht hat. Jedenfalls verlor 
+Zenon alles – Schiff und Ladung. Doch der unglückliche Kaufmann freute sich später über seinen Verlust und behauptete: 
+»Die Reise, bei der ich Schiffbruch erlitt, war eine gewinnbringende Reise.« Denn eben dieser Schiffbruch schickte Zenon 
+nach Athen, auf den Pfad, das zu erschaffen was die stoische Philosophie werden sollte.
+
+Ein Schiffbruch hätte Zenon genauso gut in ein gewöhnliches Leben als Kaufmann mit festem Geschäftssitz oder, indem 
+er ihn seiner Familie beraubt hätte, in die Trunksucht oder in die Armut treiben können. Stattdessen nutzte er ihn – er 
+entschied sich, diesem Ruf zu folgen, der ihn zu einem neuen Leben und Selbstverständnis beflügelte.
+
+Athen war ein Handelszentrum, ausgerichtet aufs Geschäft und wurde von belesenen Eliten regiert, deren Erfolg und 
+Bildung ihnen die Zeit verschafften, Ideen zu erforschen und zu diskutieren, über die wir noch heute noch sprechen. Es 
+war ein fruchtbarer Boden für das Erwachen, das Zenon erwartete.
+
+Es war die Entscheidung, die Zenon traf – nach seinem schrecklichen Verlust in die Buchhandlung zu gehen, dem 
+Buchhändler zuzuhören, der aus Büchern Sokrates verlies zuzuhören, und, was am wichtigsten war, sich nicht nur mit 
+den Worten, die er dort gehört hatte, zufriedenzugeben. Nein, er wollte mehr. Er verlangte nach mehr Antworten und nach 
+einem Lehrer, und aus diesem Impuls heraus sollte sich der Stoizismus bilden.
+
+Wenn der Schüler bereit ist, so sagt ein altes Zen-Sprichwort, erscheint der Lehrer. Krates war genau das, was Zenon 
+brauchte – ein Philosoph. Mit der unverblümten, aber herzlichen Hilfe von Krates überwand Zenon seine Befangenheit, um 
+zu dem Menschen zu werden, zu dem er berufen war.
+
+Als Zenon sein Geschäftsleben hinter sich ließ, wählte er eine neue Lebensweise. Für Zenon bestand der Zweck der 
+Philosophie, der Tugend, darin, »einen schönen Lauf des Lebens« zu erreichen. In dem Bemühen Harmonie zu erreichen, 
+führte Zenon ein einfaches Leben, das sich gar nicht so sehr von dem seines Rivalen Epikur unterschied, der nur wenige 
+Jahre, bevor Zenon eigene Wege ging, seine Schule gründete.
+
+Zenon bedeutete mittlerweile Geld sehr wenig und er war sehr anspruchslos. In Athen wurde es fast zu einem geflügelten 
+Wort, einen nüchternen, anspruchslosen und disziplinieren Menschen mit den Worten zu beschreiben: »Er ist noch 
+genügsamer als Zenon der Philosoph!«
+
+Nach seinen Studien bei Krates und dem der megarischen Schule angehörenden Philosophen Stilpon begann Zenon, selbst zu 
+unterrichten. Er bot ihnen eine engagierte Lebensphilosophie, die den Menschen helfen konnte, in einer oft turbulenten 
+Welt Frieden zu finden. Selbstgefälligkeit, so glaubte er, sei das Haupthindernis für das Lernen. Und in diesem Fall 
+hatte er recht. Und dies lehrte er seine Schüler auf eine kreative Art.
+
+Zenon zog in die sogenannte Stoa Poikile, die im fünften Jahrhundert vor Christus errichtet wurde und dessen Ruinen noch 
+heute sichtbar sind. Er traf sich dort mit seinen Schülern zu Gesprächen. Daher kommt auch der Name des Stoizismus.
+
+Leider sind keine Werke Zenons erhalten geblieben. Es gibt nur noch Fetzen und Zitate aus seinen Werken, doch selbst 
+diese reichen um viel aus seinen Weisheiten zu lernen. Zenon wird auch die Urheberschaft des Ausdrucks zugeschrieben, 
+dass der Mensch aus einem bestimmten Grund zwei Ohren und nur einen Mund bekommen habe. Er soll gesagt haben, dass es 
+für einen Menschen kein unwürdigeres Verhalten gebe, als sich aufzuspielen, und dass dies für die Jugend in noch 
+stärkerem Maße gelte. »Besser mit den Füßen zu stolpern«, sagte er einmal, »als mit der Zunge.«
+
+Er war auch der Erste, der die vier Tugenden des Stoizismus zum Ausdruck brachte: Tapferkeit, Besonnenheit, 
+Gerechtigkeit und Weisheit. Er vertrat die Ansicht, dass diese Eigenschaften »untrennbar, aber doch eigenständig und
+verschieden voneinander sind«.
+
+Bei all seinen geistreichen Aussagen war das Einzige, was Zenon wirklich interessierte und was er zu lehren versuchte,
+die Wahrheit. »Die Wahrnehmung«, sagte er und streckte die Finger aus, »ist so wie dies« – was heißen sollte, sie sei
+groß und umfassend. Während er die Finger ein wenig krümmte und damit die Hand ein Stückchen schloss, sagte er: 
+»Zustimmung«, was bedeutet, dass man beginnt, sich eine Vorstellung von etwas zu machen »ist so wie dies«. Und als er 
+schließlich die Hand um die andere legte, nannte er diese Verbindung »Wissen«. Diese vollständige Verbindung, so sagte 
+er, besitze nur der Weise.
