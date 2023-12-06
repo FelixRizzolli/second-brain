@@ -210,3 +210,8 @@ er, besitze nur der Weise.
 ### Junius Rusticus der Pflichtbewusste
 
 ### Marcus Aurelius der Philosophenkönig
+
+## Quellen
+<tip>
+    <strong>(BUCH)</strong> 978-3959723770, Das Leben der Stoiker, Ryan Holiday, Stephen Hanselman, Finanzbuch Verlag, 2020-10-13
+</tip>
