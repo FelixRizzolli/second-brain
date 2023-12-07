@@ -336,3 +336,30 @@ hier können absurdere Geschichten einfacher verfestigt werden.
         dafür konnte.“
     </p>
 </tip>
+
+### Körperliste
+Die Körperliste ist eine Mnemotechnik, bei denen verschiedene <strong>Körperteile</strong> mit <strong>Lernbegriffen
+</strong> assoziiert werden. Wir verbinden beispielsweise einen Begriff mit unseren Füßen, einen anderen mit unseren 
+Knien, dann unserem Bauch, und so weiter. Dann wiederholen wir die Begriffe, um sie uns zu merken.
+
+<tip>
+    Wir möchten uns im Gedächtnistraining fünf Personen aus Shakespeares Romeo und Julia merken: <strong>Romeo, Julia, 
+    Bruder Lorenzo, Benvolio, Mercutio</strong>. Dafür finden wir die passenden Teile an deinem Körper:
+    <list style="decimal">
+        <li>
+            Unser <strong>linker Fuß ist Romeo</strong>, unser <strong>rechter Julia</strong>. Sie sind immer nahe 
+            beieinander, was ihre Liebe widerspiegelt.
+        </li>
+        <li>
+            Unser <strong>Kopf ist Bruder Lorenzo</strong>, ein gebildeter Mönch, der sehr viel über Pflanzen weiß. Da 
+            er schlau ist, assoziieren wir Lorenzo natürlich mit unserem Kopf.
+        </li>
+        <li>
+            Unser <strong>Herz ist Benvolio</strong>. Er ist ein guter Mensch, wohlwollend und loyal gegenüber Romeo, 
+            weshalb unser Herz ihn repräsentiert.
+        </li>
+        <li>
+            Unser <strong>Mund ist Mercutio</strong>, denn er hat ein loses Mundwerk und ist sehr sarkastisch.
+        </li>
+    </list>
+</tip>
