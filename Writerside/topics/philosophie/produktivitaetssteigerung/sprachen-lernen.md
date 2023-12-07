@@ -1,4 +1,5 @@
 # Sprachen Lernen
+<show-structure for="chapter,procedure" depth="2"/>
 
 ## Mythen über das Sprachenlernen
 Die meisten Mythen sind einfach nur Ausreden. Das Erlernen einer Sprache ist eine geistige Herausforderung. Wenn wir 

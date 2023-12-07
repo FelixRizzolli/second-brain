@@ -1,5 +1,4 @@
 # FQ - Finanzielle Intelligenz
-
 <show-structure for="chapter,procedure" depth="2"/>
 
 ## Einführung

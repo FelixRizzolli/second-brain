@@ -1,4 +1,5 @@
 # Lernen Lernen - Speedlearning
+<show-structure for="chapter,procedure" depth="2"/>
 
 ## Erfolg-Verhinderer
 Folgende Hindernisse könnten uns auf unserem Weg zum Ziel begegnen:
