@@ -658,6 +658,37 @@ beispielsweise eine beschränkte Anzahl von Ressourcen gemeinsam nutzen.
 
 
 #### Deadlocks
+Eines der Probleme, die bei der Verwendung mehrerer Prozesse auftreten können, ist eine Situation, in der mehrere 
+Prozesse im Wartezustand gefangen bleiben, weil sie aufeinander oder auf dieselben Ressourcen gewartet haben. Das 
+Wettrennen um den Zugriff auf Ressourcen wird als Race Condition bezeichnet. Zu einem Deadlock (Verklemmung) kommt es, 
+wenn eine solche Race Condition unentschieden ausgeht. Beispielsweise könnten zwei Prozesse in einen Deadlock geraten, 
+weil sie den Zugriff auf ein und dieselbe Datei zu sperren versuchen, um anderweitige Änderungen dieser Datei zu 
+verhindern. Ein Deadlock führt mindestens zum Absturz der betroffenen Prozesse, möglicherweise sogar zum Absturz des 
+gesamten Systems.
+
+Ein gutes Betriebssystemdesign vermeidet Deadlocks durch eine Reihe von Verfahren. Insbesondere reicht das normale 
+Verfahren zum Sperren von Ressourcen nicht immer aus, um Deadlocks zu vermeiden. Das gewöhnliche Sperren einer Datei 
+oder einer Hardwareressource überprüft zunächst, ob die Ressource nicht anderweitig gesperrt ist. Falls sie gesperrt 
+ist, wird der Prozess blockiert und wartet, bis die andere Sperre gelöst ist. Anschließend sperrt der aktuelle Prozess 
+selbst die Ressource, sodass andere Prozesse, die sie ihrerseits sperren möchten, wiederum warten müssen.
+
+Anstelle dieses Modells sollte eine mehrstufige Anmeldung für die Verwendung von Ressourcen eingesetzt werden:
+<list>
+    <li>
+        Ein Prozess, der eine bestimmte Ressource benötigt, versucht nicht einfach, eine Sperre für diese Ressource zu 
+        errichten, sondern überprüft zunächst, ob sie nicht bereits gesperrt ist. Falls doch, gibt er die Kontrolle ab, 
+        um nicht aktiv auf das Ende der Sperre warten zu müssen, was Ressourcen kosten würde. Er sollte nach einer 
+        gewissen Zeit erneut überprüfen, ob die Ressource noch gesperrt ist.
+    </li>
+    <li>
+        Wenn die Ressource frei ist, errichtet der Prozess eine Sperre, die andere Prozesse daran hindert, diese 
+        Ressource zu verwenden.
+    </li>
+    <li>
+        Nachdem der Prozess die Ressource nicht mehr benötigt, löst er die Sperre und gibt die Ressource dadurch wieder 
+        frei.
+    </li>
+</list>
 
 #### Threads
 
