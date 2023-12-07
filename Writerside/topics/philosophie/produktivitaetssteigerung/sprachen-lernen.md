@@ -1083,6 +1083,24 @@ nach dem besten Lernmaterial zu suchen, dass wir kaufen können, währe besser i
 </table>
 
 ##### Zitieren
+<table style="none">
+<tr>
+    <td>Sie sagte so was wie ...</td>
+    <td>She said something like ...</td>
+</tr>
+<tr>
+    <td>Meine Frau/Mein Mann wies mich darauf hin, dass ...</td>
+    <td>My wife/husband pointed out that ...</td>
+</tr>
+<tr>
+    <td>Neulich habe ich gehört, dass ...</td>
+    <td>Recently, I heard that ...</td>
+</tr>
+<tr>
+    <td>Meine bessere Hälfte sagte ...</td>
+    <td>My better half said ...</td>
+</tr>
+</table>
 
 ##### Thema wechseln
 
