@@ -523,6 +523,11 @@ man selbst organisieren, um sich mit anderen Sprachlernern zu vernetzen. Findet 
 vorteilhaft sein, mit anderen zusammen zu lernen.
 
 #### Soziales Fallschirmspringen
+Das Leben beginnt dort, wo unsere Komfortzone endet. Einfach auf jemanden zuzugehen, von dem wir wissen, dass er die 
+Zielsprache spricht und ein Gespräch zu beginnen, wäre eine Möglichkeit sich in der Sprache zu üben. Solche Gespräche 
+eignen sich gut für ein paar schnelle Übungssätze, aber man könnte die Leute auch fragen, ob sie Lust hätten, dass man 
+sich später trifft, um sich eine Zeit lang in ihrer Sprache zu unterhalten.
+
 ### Sprechen
 #### Vorbereitung für das erste Gespräch
 #### Wenn uns die Worte fehlen
