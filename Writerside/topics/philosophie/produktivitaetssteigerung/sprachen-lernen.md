@@ -967,6 +967,20 @@ nach dem besten Lernmaterial zu suchen, dass wir kaufen können, währe besser i
 </table>
 
 ##### Im Vorbeigehen
+<table style="none">
+<tr>
+    <td>Könnten Sie mir bitte sagen ...</td>
+    <td>Can you tell me please ...?</td>
+</tr>
+<tr>
+    <td>Möchten Sie über etwas anderes sprechen?</td>
+    <td>Would you be interested in us talking about something else?</td>
+</tr>
+<tr>
+    <td>Und was denken Sie?</td>
+    <td>And what do you think?</td>
+</tr>
+</table>
 
 ##### Qualifizieren
 
