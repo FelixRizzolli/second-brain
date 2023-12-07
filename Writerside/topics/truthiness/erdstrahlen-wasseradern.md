@@ -3,7 +3,7 @@
 ## Wird mein Schlaf und meine Gesundheit durch eine Wasserader gestört?
 ### Annahme {id="annahme_q1"}
 In der Vorstellung der Radiästheten wird die Erdstrahlung durch Wasseradern, Verwerfungen (= tektonische Zerreiß- oder 
-Bruchstelle im Gestein)sowie verschiedene Gitternetze ausgelöst werden, die nicht näher definierte senkrecht gerichtete 
+Bruchstelle im Gestein) sowie verschiedene Gitternetze ausgelöst werden, die nicht näher definierte senkrecht gerichtete 
 Strahlungen verursachen sollen. Diese Strahlen sollen verschiedenste negative Auswirkungen auf die menschliche 
 Gesundheit haben; so sollen sie Krankheiten unterschiedlichste negative Verhaltensweisen oder erschwerte Wundheilung 
 verursachen können. Ein Schlafplatz über einer Wasserader solle sich besonders kritisch auf die menschliche Gesundheit 
@@ -29,7 +29,7 @@ Erdstrahlen im Untergrund genau senkrecht nach oben gehen sollen.
 ## Bovis-Einheiten
 In der Radiästhesie wird die Bovis-Einheit als Maßeinheit der Stärke einer Lebens- oder feinstofflichen Energie 
 verwendet. Die Bovis-Zahlen sind <strong>intuitiv</strong> und <strong>nicht falsifizierbar</strong>. Mitunter ist es 
-Paxis, die Bovis-Einheit zur Diagnose von Krankheiten zu benutzen. Dies ist kein medizinisch zulässiges Vorgehen.
+Praxis, die Bovis-Einheit zur Diagnose von Krankheiten zu benutzen. Dies ist kein medizinisch zulässiges Vorgehen.
 
 ## Warum schaffen es Radiästheten präzise die Position einer Wasserader zu ermitteln?
 
