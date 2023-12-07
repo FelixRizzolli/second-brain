@@ -161,6 +161,31 @@ Jede Sprache verfügt über vier Funktionen:
 </list>
 
 ### Die Struktur einer Sprache – Grammatik
+Jede Sprache folgt einer bestimmten Struktur. Diese Struktur wird in der jeweiligen Grammatik beschrieben. Die Grammatik lässt sich in folgende
+Teilbereiche unterteilen:
+<list>
+    <li>
+        <strong>Morphologie</strong> – die Formenlehre von Wörtern. Sie behandelt, vom Wort ausgehend, die Analyse der 
+        Flexionsformen und der Wortarten. Daneben beinhaltet sie außerdem auch die Wortbildung, deren Funktion die 
+        Bildung von abgeleiteten Sekundärstämmen aus primären oder bereits abgeleiteten Stämmen ist.
+    </li>
+    <li>
+        <strong>Syntax</strong> – den Bau von Sätzen (Satzlehre). Sie behandelt die Zusammenfügung von Wörtern bzw. 
+        Wortgruppen zu Sätzen, bzw. umgekehrt die Zerlegung von Sätzen in ihre Bestandteile und die Darstellung der 
+        Satzstruktur.
+    </li>
+    <li>
+        <strong>Phonologie</strong> – auch Lautlehre genannt. Zu den zentralen Aufgabengebieten der Phonologie gehört 
+        das Ermitteln von sogenannten distinktiven Merkmalen und dem Phoneminventar einer Sprache, also die Analyse der 
+        Lautsegmente, sowie die Struktur der größeren lautlichen Einheiten von der Silbe bis hin zur rhythmischen 
+        Gliederung und Intonation von Sätzen.
+    </li>
+    <li>
+        <strong>Semantik</strong> – die Bedeutungslehre genannt. Sie setzt sich mit den verschiedenen Beziehungen 
+        zwischen einem Zeichen und dem Bezeichneten auseinander.
+    </li>
+</list>
+
 ### Fließende Sprachbeherrschung
 ### Das CEFRL-System
 
