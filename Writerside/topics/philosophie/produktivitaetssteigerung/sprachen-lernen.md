@@ -187,6 +187,18 @@ Teilbereiche unterteilen:
 </list>
 
 ### Fließende Sprachbeherrschung
+Die offizielle Definition aus dem Oxford English Dictionary:
+
+<tip>
+    »fließend Adjektiv: (bei einer Person) in der Lage, sich problemlos und flüssig auszudrücken; in der Lage, eine 
+    spezielle Fremdsprache problemlos und genau zu sprechen oder zu schreiben; (bei einer Fremdsprache) genau und mit 
+    Leichtigkeit gesprochen.« 
+    <strong>~ Oxford English Dictionary</strong>
+</tip>
+
+Laut dieser Definition gibt es für uns jedoch nicht den absoluten, wahrnehmbaren Punkt, ab dem wir sagen können: »Jetzt 
+spreche ich die Sprache fließend.« Das ist allerdings ein Problem, wenn wir uns ein bestimmtes Ziel setzen möchten.
+
 ### Das CEFRL-System
 
 ## Effizient lernen
