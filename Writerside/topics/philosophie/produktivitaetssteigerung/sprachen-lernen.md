@@ -61,17 +61,80 @@ verbrachter Zeit mit ausländischen Freunden sind teils sogar überlegen. Höher
 leichter Erfolg zu haben als jemand, der mit einem deutlich kleineren Budget arbeitet.
 
 ### Ich warte auf den perfekten Sprachkurs
-### Durch die falsche Lernmethode bin ich zum Scheitern verurteilt, bevor ich überhaupt angefangen habe
+Selbst wenn es den perfekten Sprachkurs gibt, ist dieser nur so gut, wie die Bemühungen, die wir aufwenden, um die 
+Sprache auch regelmäßig anzuwenden. Kein Kurs wird jemals perfekt sein. Ein erschwingliches Buch oder ein kostenloser 
+Online-Kurs wie Duolingo.com ist vollkommen ausreichend. Wichtig ist nebenher viel Spracharbeit zu leisten – 
+Aktivitäten, bei denen man authentische Wechselbeziehungen zu anderen Menschen unterhält. Jede Energie, die für die 
+Suche nach dem besten Weg eine Sprache zu lernen aufgewendet wird, ist sinnvoller investiert, die Sprache tatsächlich zu 
+lernen und anzuwenden.
+
+### Durch die falsche Lernmethode bin ich zum Scheitern verurteilt, bevor ich überhaupt angefangen habe\
+Es ist in Ordnung, einen holprigen Start zu haben. Der entscheidende Punkt ist, überhaupt anzufangen! Ein falscher oder 
+schlechter Kurs entscheidet nicht darüber, wie es beim nächsten Mal laufen wird.
+
 ### Ich muss erst etwas lernen, bevor ich mich unterhalten kann
+Eine neue Sprache sollte vom ersten Tag an gesprochen werden, auch wenn das gegen die Intention sein mag. Viele von uns 
+meinen, wir müssten erst etwas lernen – bis zu diesem glorreichen Tag, an dem wir »bereit« sind und »genügend« Wörter 
+können, um endlich ein richtiges Gespräch zu führen. In Wahrheit wird dieser Tag niemals kommen.
+
 ### Manche Sprachen sind einfach zu schwierig
+Es gibt keine »schwierigste« Sprache. Das sind alles nur tendenziöse Meinungen von stolzen Muttersprachlern, die keine 
+Ahnung haben, wie es ist, ihre Sprache als Zweitsprache zu lernen, oder von anderen Sprachenlernern, die lange gebraucht 
+haben, um diese Sprache zu lernen, und ihr Ego herausgefordert fühlen, wenn sie versuchen, das schneller zu schaffen. 
+Entmutigung dient immer deren Vorteil, nicht Ihrem, und ehrlich gesagt, die haben keine Ahnung, wovon sie eigentlich 
+sprechen.
+
 ### Stillstand ist unvermeidlich
+Es ist eine Tatsache, dass wir einmal hängen bleiben. Wenn wir eine gute Methode zum Lernen einer Sprache gefunden 
+haben, dann kann es sein, dass diese ab einem gewissen Niveau nicht mehr so gut funktioniert. Wen jener Ansatz, den wir 
+befolgen, nicht mehr funktioniert, ist er nicht gut genug und muss verändert werden.
+
 ### Es ist unmöglich, eine Sprache perfekt zu beherrschen
+Fließendes Sprechen einer Zweitsprache ist für uns Normalsterbliche sehr wohl möglich, auch für diejenigen, die in der 
+Schule im Sprachunterricht schlecht abgeschnitten haben. Wir sollten zuerst einmal danach streben, uns ein Sprache 
+(höchstens) verständlich zu machen, und danach fließend sprechen zu können. Die sichere Beherrschung kann sich mit der 
+Zeit zwar einstellen (auch wenn Perfektion in keiner Sprache möglich ist), aber zuerst müssen wir uns ein kurzfristiges 
+Ziel setzen.
+
 ### Sprachen sind langweilig
+Es gibt viele interessante Möglichkeiten, in einer Sprache Fortschritte zu machen, bei denen wir nichts Stumpfsinniges 
+tun müssen. Wir könnten uns mit einigen alternativen Inhalten in der Sprache aussetzen – beispielsweise über Musik, 
+Comics, Filme, Zeitschriften, Witze. Oder einen Partner zum Austausch suchen.
+
 ### Muttersprachler werden mit mir nicht sprechen
+Das Problem ist nur, dass wir uns nie bereit fühlen werden. Es wird immer noch mehr zu lernen geben, sodass wir immer 
+eine Ausrede finden: "Erst muss ich noch mehr Vokabeln lernen, bevor ich mit anderen Leuten sprechen kann". Das ist ein 
+Teufelskreis, der uns viele Jahre lang abhält, den Mund aufzumachen. Und was passiert tatsächlich, wenn wir ihn 
+aufmachen? Die Leute sind unglaublich aufmunternd, hilfsbereit, sie freuen sich, dass wir es versuchen. Sie sind 
+geduldig und verständnisvoll.
+
 ### Meine Freunde und meine Familie werden mich nicht unterstützen
+Diese Schwierigkeiten werden viele von uns erleben. Unsere Freunde oder unsere Familie werden uns vielleicht in keiner 
+Weise bei dieser großen Herausforderung unterstützen – weder bezogen auf die Sprache noch moralisch. Wir müssen ihnen 
+zeigen, dass wir es ernst meinen. Vielleicht denken sie, es sei nur ein lächerliches Hobby.
+
 ### Jeder kann Englisch
+Als Tourist kommt man eigentlich mit Englisch immer durch, ohne die Landessprache zu lernen. Teurere Restaurants bieten 
+eine englische Version der Speisekarten, überteuerte Reiseführer sprechen Englisch, und auch der Flugbegleiter wird 
+Englisch sprechen können, egal von wo aus man fliegt. Auch wenn man im Ausland mit Englisch immer durchkommt, wird einem 
+eine Menge entgehen. Das fängt damit an, billigere Tarife zu finden, und geht bis zum Abhängen mit Leuten, die bisher 
+nie die Möglichkeit hatten, sich mit Ausländern zu unterhalten. Es ermöglicht einem, die echte Kultur vor Ort zu erleben 
+und nicht die durchschnittliche Fertigversion.
+
 ### Ich kann mit den Fortschritten anderer nicht mithalten
+Erfolgreiche Sprachlerner machen weiter trotz der Herausforderungen. Wenn wir einer Herausforderung gegenüberstehen, 
+sollten wir nicht denken: »Ich könnte ebenso gut aufgeben, denn dieser oder jener erfolgreiche Sprachenlerner hatte 
+solche Probleme nicht.«, sondern sich fragen: »Was würde dieser erfolgreiche Sprachlerner tun, um dieses Problem zu 
+umgehen, wenn er es hätte?«.
+
 ### Misserfolg erzeugt Misserfolg
+Viele die, die einmal erfolglos versucht haben, eine Sprache zu lernen, sind möglicherweise zu dem Schluss gekommen, 
+dass sie in Sprachen schlecht sind. Die sehr viel logischere Schlussfolgerung ist, dass sie die Sprache auf eine Art zu 
+lernen versucht haben, die für sie nicht passend war.
+
+Es gibt nicht geschickte und dumme Lernende oder allgemein gute und schlechte Lernsysteme, sondern es gibt Systeme, die 
+bei bestimmten Leuten gut funktionierten, und (viele!) Systeme, die schlecht funktionieren. Wichtig ist einfach zu 
+experimentieren und zu erkennen, das für einen persönlich gut funktioniert.
 
 ## Grundlegendes über Sprachen
 ### Die Funktion einer Sprache
