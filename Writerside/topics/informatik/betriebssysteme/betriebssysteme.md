@@ -1084,3 +1084,8 @@ Dateinamen, der länger ist, einen passenden Kurznamen. Dieser besteht aus folge
 sechs Zeichen des eigentlichen Namens ohne Leerzeichen, einer Tilde und einer Nummer (um den Fall abzudecken, dass 
 mehrere Dateien im gleichen Verzeichnis denselben Kurznamen erhalten würden) sowie der auf drei Zeichen gekürzten 
 Erweiterung. Aus Der Name ist zu <code>lang.doc</code> würde nach diesem Schema <code>DERNAM~1.DOC</code>.
+
+## Quellen
+<tip>
+    <strong>(BUCH)</strong> 978-3836254663, IT-Handbuch für Fachinformatiker, Sascha Kersken, Rheinwerk Verlag GmbH, 2017
+</tip>
