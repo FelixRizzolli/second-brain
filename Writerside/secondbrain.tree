@@ -7,6 +7,7 @@
                  start-page="informatik.md">
 
     <toc-element topic="informatik.md">
+        <!--
         <toc-element topic="webentwicklung.md">
             <toc-element topic="javascript.md">
                 <toc-element topic="javascript-libraries-frameworks.md"/>
@@ -19,12 +20,16 @@
         <toc-element topic="anwendungsentwicklung.md">
             <toc-element topic="java.md"/>
             <toc-element topic="csharp.md"/>
+        -->
             <toc-element topic="python.md">
+                <!--
                 <toc-element topic="python-libraries-frameworks.md">
                     <toc-element topic="pandas.md"/>
                     <toc-element topic="numpy.md"/>
                 </toc-element>
+                -->
             </toc-element>
+        <!--
         </toc-element>
         <toc-element topic="softwareentwicklung.md"/>
         <toc-element topic="datenbanken.md"/>
@@ -34,21 +39,31 @@
             <toc-element topic="linux.md"/>
         </toc-element>
         <toc-element topic="netzwerktechnik.md"/>
+        -->
     </toc-element>
     <toc-element topic="mathematik.md">
+        <!--
         <toc-element topic="statistik.md"/>
         <toc-element topic="analysis.md"/>
+        -->
     </toc-element>
     <toc-element topic="philosophie.md">
+        <!--
         <toc-element topic="emotionale-intelligenz.md"/>
+        -->
         <toc-element topic="finanzielle-intelligenz.md"/>
+        <!--
         <toc-element topic="produktivitaetssteigerung.md">
+        -->
             <toc-element topic="sprachen-lernen.md"/>
             <toc-element topic="speedlearning.md"/>
+        <!--
         </toc-element>
         <toc-element topic="kommunikation.md"/>
         <toc-element topic="stoizismus.md">
+        -->
             <toc-element topic="die-stoiker.md"/>
+        <!--
             <toc-element topic="buch-dein-hindernis-ist-dein-weg.md"/>
             <toc-element topic="buch-In-der-stille-liegt-dein-weg.md"/>
             <toc-element topic="buch-dein-ego-ist-dein-feind.md"/>
@@ -59,11 +74,14 @@
                 <toc-element topic="stoische-tugend-gerechtigkeit.md"/>
             </toc-element>
         </toc-element>
+        -->
     </toc-element>
     <toc-element topic="sprachen.md">
+        <!--
         <toc-element topic="deutsch.md"/>
         <toc-element topic="italienisch.md"/>
         <toc-element topic="englisch.md"/>
+        -->
     </toc-element>
     <toc-element topic="wirtschaft.md">
     </toc-element>
