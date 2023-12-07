@@ -814,5 +814,162 @@ Fähigkeiten, allerdings nur für das Dateisystem NTFS.
 </note>
 
 #### Das virtuelle Unix-Dateisystem
+Die in diesem Buch näher besprochenen Unix-Systeme Linux und macOS haben mit allen anderen Unix-Systemen dasselbe 
+virtuelle Dateisystem gemeinsam. Konkrete Dateisysteme gibt es unter Unix dagegen unzählige. Beispielsweise unterstützt 
+macOS das klassische Apple-Dateisystem HFS+, das Unix-Dateisystem UFS, das CD-ROM-Dateisystem ISO 9660 und andere, 
+während Linux mit seinem eigenen Dateisystem ext3 oder ext4, btrfs, den Windows-Dateisystemen FAT und NTFS sowie mit 
+weiteren zusammenarbeitet.
+
+Die Gemeinsamkeiten der Unix-Dateisysteme betreffen die Art und Weise, wie Dateien, Verzeichnisse und Datenträger 
+organisiert sind. Außerdem sind die Zugriffsrechte für alle unter Unix unterstützten Dateisysteme verfügbar.
+
+Auf einem Unix-Rechner existiert nur ein einziger Verzeichnisbaum, unabhängig davon, auf wie viele konkrete Datenträger 
+er verteilt ist. Die Wurzel des gesamten Baums wird als / bezeichnet. Unterhalb dieses obersten Verzeichnisses liegen 
+einzelne Dateien und Unterverzeichnisse; jedes von ihnen kann wiederum in Unterverzeichnisse unterteilt sein.
+
+Die meisten Verzeichnisse, die direkt unterhalb der Wurzel des Unix-Dateisystems liegen, haben spezielle Aufgaben, die 
+in allen gängigen Unix-Systemen identisch oder zumindest ähnlich sind:
+
+<table>
+<tr>
+    <td>Verzeichnis</td>
+    <td>Bedeutung</td>
+</tr>
+<tr>
+    <td><code>bin</code></td>
+    <td>
+        (binaries) enthält die Systemprogramme.
+    </td>
+</tr>
+<tr>
+    <td><code>sbin</code></td>
+    <td>
+        (start binaries) enthält Initialisierungsprogramme, die beim Systemstart aufgerufen werden.
+    </td>
+</tr>
+<tr>
+    <td><code>dev</code></td>
+    <td>
+        (devices) enthält Gerätedateien, also Dateien, die auf die einzelnen Hardwarekomponenten verweisen. Der Vorteil 
+        dieser Methode ist, dass sich der Zugriff auf Geräte genau wie bei einzelnen Dateien über Benutzerrechte regeln 
+        lässt.
+    </td>
+</tr>
+<tr>
+    <td><code>usr</code></td>
+    <td>
+        (user) enthält die wichtigsten Anwendungsprogramme.
+    </td>
+</tr>
+<tr>
+    <td><code>opt</code></td>
+    <td>
+        (optional) enthält zusätzliche Anwendungen, die nicht ganz so häufig benötigt werden.
+    </td>
+</tr>
+<tr>
+    <td><code>etc</code></td>
+    <td>
+        enthält allerlei Konfigurationsdateien.
+    </td>
+</tr>
+<tr>
+    <td><code>var</code></td>
+    <td>
+        enthält variable Daten, vor allen Dingen Log-Dateien, in die Systemmeldungen eingetragen werden.
+    </td>
+</tr>
+<tr>
+    <td><code>home</code></td>
+    <td>
+        enthält für jeden Benutzer, der im System angemeldet ist, ein Home-Verzeichnis. Hier werden alle Anwendungsdaten 
+        dieses Benutzers abgelegt. Zusätzlich werden die persönlichen Einstellungen dieses Benutzers für die 
+        verschiedenen Anwendungs- und Systemprogramme gespeichert. Unter macOS heißt dieses Verzeichnis übrigens Users.
+    </td>
+</tr>
+<tr>
+    <td><code>root</code></td>
+    <td>
+        ist das spezielle Home-Verzeichnis des Superusers. Es liegt nicht im Verzeichnis home wie die anderen 
+        Benutzerverzeichnisse. home könnte nämlich so eingerichtet werden, dass es auf einem anderen physikalischen 
+        Datenträger oder einer anderen Partition liegt als der Rest des Betriebssystems. Möglicherweise steht es also 
+        nicht zur Verfügung, wenn ein Fehler auftritt, den root beheben muss.
+    </td>
+</tr>
+</table>
+
+Der Pfad zu einer Datei wird von der Wurzel aus angegeben, indem die Namen der entsprechenden Ordner jeweils durch einen 
+Slash voneinander getrennt werden. Die folgende Pfadangabe wäre beispielsweise der Pfad einer Datei in meinem 
+Home-Verzeichnis: <code>/home/felixrizzolli/fachinformatiker/betriebssysteme.txt</code>.
+
+Da jedes Programm ein Arbeitsverzeichnis besitzt, in dem es mit der Suche nach Dateien beginnt, kann ein Pfad auch 
+relativ angegeben werden, also vom aktuellen Verzeichnis aus. Angenommen, eine Anwendung hat das Arbeitsverzeichnis 
+<code>/home/user</code> und möchte auf die Datei <code>info.txt</code> in <code>/home/felixrizzolli</code> zugreifen. 
+Der Pfad dieser Datei kann entweder absolut als <code>/home/felixrizzolli/info.txt</code> oder relativ (von 
+<code>/home/user</code> aus) als <code>../felixrizzolli/info.txt</code> angegeben werden. Die Angabe <code>..</code> 
+spricht jeweils das übergeordnete Verzeichnis an; untergeordnete Verzeichnisse werden einfach mit ihrem Namen angegeben.
+
+»Geschwister«-Verzeichnisse, also nebengeordnete – in diesem Fall <code>user</code> und <code>felixrizzolli</code> –, 
+können einander nie direkt ansprechen, sondern müssen mithilfe von <code>..</code>-Angaben so weit nach oben wandern, 
+bis ein gemeinsamer Vorfahr gefunden wurde. Im Falle von user und <code>felixrizzolli</code> muss man nicht weit nach 
+oben gehen; <code>home</code> ist bereits der Elternordner beider.
+
+Eine Abkürzung für das Home-Verzeichnis des aktuell angemeldeten Benutzers ist die Tilde (<code>~</code>). Es kann durch 
+Angabe der Tilde von überall aus ins Home-Verzeichnis gewechselt werden. Auf dem PC wird eine Tilde übrigens mithilfe 
+der Tastenkombination (Alt_Gr) + (+) erzeugt, auf dem Mac muss zunächst (Alt) + (N) und anschließend die Leertaste 
+gedrückt werden: Das Zeichen funktioniert wie ein Akzent und kann auf ein n gesetzt werden.
+
+Im Übrigen sollte bedenkt werden, dass Unix bei Datei- und Verzeichnisnamen zwischen Groß- und Kleinschreibung 
+unterscheidet. Die Namen <code>hallo.txt</code>, <code>Hallo.Txt</code> und <code>HALLO.TXT</code> bezeichnen drei 
+verschiedene Dateien, die alle im gleichen Verzeichnis liegen könnten. Aus Gründen der Kompatibilität mit alten 
+Macintosh-Anwendungen ist dies ein wichtiger Unterschied zwischen macOS und anderen Unix-Varianten: Auf HFS+-Partitionen 
+unterscheidet macOS nicht zwischen Groß- und Kleinschreibung, auf UFS-Partitionen dagegen schon.
+
+Ein Dateiname, der mit einem Punkt (<code>.</code>) beginnt, wird in der normalen Verzeichnisansicht standardmäßig 
+ausgeblendet (versteckt). Ein wirkliches Verstecken ist auf diese Weise nicht möglich; effektiver ist die Verwendung von 
+Zugriffsrechten.
+
+Intern werden Dateien auf dem Datenträger nicht durch ihren Namen dargestellt, sondern durch eine ganzzahlige Nummer 
+namens <code>inode</code>. Die Einträge in einem Verzeichnis sind Verweise auf solche <code>inodes</code>. 
+Interessanterweise können mehrere Verzeichniseinträge auf dieselbe <code>inode</code> zeigen. Ein Verzeichniseintrag 
+wird deshalb auch als Hard Link bezeichnet, der fest auf eine bestimmte <code>inode</code> verweist. Eine Datei wird auf 
+einem Unix-System erst gelöscht, wenn alle Einträge im Verzeichnisbaum entfernt wurden, die auf die entsprechende 
+<code>inode</code> zeigen.
+
+Im Gegensatz zu den Hard Links werden auch symbolische Links oder Symlinks unterstützt, die nicht direkt auf eine 
+<code>inode</code> zeigen, sondern auf einen anderen Verzeichniseintrag. Anders als die Hard Links können Symlinks auch 
+auf Verzeichnisse verweisen sowie auf Dateien, die auf einem anderen physikalischen Datenträger liegen.
+
+Die verschiedenen Datenträger und Partitionen können übrigens an einer beliebigen Stelle im Verzeichnisbaum eingehängt 
+werden. Dieser Vorgang wird als Mounten bezeichnet. Solange ein Datenträger nicht gemountet ist, können die 
+Verzeichnisse und Dateien, die darauf liegen, nicht angesprochen werden. Das Mounten geschieht entweder manuell durch 
+Eingabe des Kommandos <code>mount</code> oder aber automatisch beim Booten durch einen Eintrag in eine 
+Konfigurationsdatei.
+
+Eine weitere wichtige Eigenschaft der Dateien unter Unix sind die Benutzerrechte. Jede Datei gehört einem bestimmten 
+Benutzer und einer bestimmten Gruppe (berechtigte Benutzer können diese Besitzverhältnisse ändern). Da ein Benutzer 
+beliebig vielen Gruppen angehören kann, lassen sich die Rechte an bestimmten Dateien sehr effizient über das 
+Gruppenzugriffsrecht ändern.
+
+Der Verzeichniseintrag einer Datei enthält die Zugriffsrechte für den Besitzer, für die Gruppe und für alle anderen 
+Benutzer. Die drei möglichen Zugriffsrechte sind Lesen (<code>r</code> für read), Schreiben (<code>w</code> für write) 
+und Ausführen (<code>x</code> für execute). Ein typischer Verzeichniseintrag enthält beispielsweise die folgende Angabe 
+von Zugriffsrechten: <code>-rwxr-xr-x</code>
+
+Die erste Stelle gibt den Dateityp an: <code>–</code> für eine gewöhnliche Datei, <code>d</code> für ein Verzeichnis 
+oder <code>l</code> für einen Symlink. Die neun folgenden Informationen zeigen in Dreiergruppen die Zugriffsrechte an – 
+drei Stellen für den Eigentümer, drei für die Gruppe und drei für alle anderen Benutzer. Ein Buchstabe steht dafür, dass 
+ein Zugriffsrecht gewährt wird, ein Strich bedeutet, dass es nicht gewährt wird. Im vorliegenden Fall darf der 
+Eigentümer die Datei lesen, schreiben (dazu gehören auch Löschen und Umbenennen) und ausführen. Die Gruppe und der Rest 
+der Welt dürfen nur lesen und ausführen. Das Recht der Ausführung ist nur für Programme und für Verzeichnisse sinnvoll 
+(Letztere lassen sich ansonsten nicht als Arbeitsverzeichnis auswählen).
+
+Intern werden die Zugriffsrechte als dreistellige Oktalzahl gespeichert. Die erste Stelle enthält die Benutzerrechte des 
+Eigentümers, die zweite die der Gruppe und die dritte die der anderen Benutzer. Der Wert jeder Stelle ist die Summe aus 
+den gewährten Benutzerrechten: <code>4</code> steht für Lesen, <code>2</code> für Schreiben und <code>1</code> für 
+Ausführen. Das Zugriffsrecht <code>rwxr-xr-x</code> lässt sich also als <code>0755</code> darstellen (die vorangestellte 
+<code>0</code> steht für eine Oktalzahl). Eine einfache Textdatei könnte dagegen beispielsweise die Zugriffsrechte 
+<code>0640</code> aufweisen, was <code>rw-r-----</code> entspricht – der Eigentümer darf die Datei lesen und schreiben, 
+die Gruppe darf sie lesen, und alle anderen dürfen gar nichts.
 
 #### Das virtuelle Windows-Dateisystem
