@@ -439,6 +439,32 @@ häufigsten verwendet haben. Mit diesen Wörtern sollten wir Anfangen, wenn es u
 geht.
 
 ### Aktionsplan
+Die besten Ideen der Welt sind wertlos, wenn sie nicht umgesetzt werden. Daher brauchen wir unbedingt einen Aktionsplan.
+<list>
+    <li>
+        Wir müssen genau entscheiden, was wir anstreben. Dazu hilft und das CEFRL-System. Wir müssen entscheiden, 
+        welches Ziel etwas höher gesteckt ist als ein sicher erreichbares Ziel, sodass wir uns wirklich selbst 
+        antreiben. Dabei sollen wir genau darauf achten, was auf dieser Stufe verlangt wird.
+    </li>
+    <li>
+        Wir müssen genau eine Zeitspanne einplanen, ob das nun ein, drei oder sechs Monate sind, und müssen dafür 
+        sorgen, dass unser Vorhaben, die Sprache zu lernen, in dieser Zeit oberste Priorität genießt.
+    </li>
+    <li>
+        Wir sollten uns während unseres intensiven Lernprojekts auf das größte Problem konzentrieren, das wir haben, 
+        und dies auf kleinere TODOs bzw. Mini-Aufträgen herunterzubrechen und zu lösen, anstatt einen allgemeinen 
+        Ablauf zu wählen, der für das angestrebte Ziel vielleicht nicht gut geeignet ist.
+    </li>
+    <li>
+        Auch für entsprechende Pausen muss gesorgt sein, um uns nicht völlig zu verausgaben.
+    </li>
+    <li>
+        Wenn wir unseren Freunden oder unsere Familie von unseren Zielen erzählen, dann haben wir eine gewisse 
+        Rechenschaftspflicht. Wir müssen ihnen beweisen, dass wir daran arbeiten und sollten ihnen auch regelmäßig 
+        Status-Updates liefern.
+    </li>
+</list>
+
 ### Immersion
 #### Reisen als Motivation
 #### Hilfreiche Websites
