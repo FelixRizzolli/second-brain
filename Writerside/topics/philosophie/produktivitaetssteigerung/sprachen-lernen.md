@@ -983,6 +983,104 @@ nach dem besten Lernmaterial zu suchen, dass wir kaufen können, währe besser i
 </table>
 
 ##### Qualifizieren
+<table style="none">
+<tr>
+    <td>Ehrlich gesagt ...</td>
+    <td>To tell you the truth ...</td>
+</tr>
+<tr>
+    <td>Ich nehme an, dass ...</td>
+    <td>I presume that ...</td>
+</tr>
+<tr>
+    <td>Ich hoffe, dass ...</td>
+    <td>I hope that ...</td>
+</tr>
+<tr>
+    <td>Meiner Meinung nach ...</td>
+    <td>In my opinion ...</td>
+</tr>
+<tr>
+    <td>Wenn das stimmt ...</td>
+    <td>If that is true ...</td>
+</tr>
+<tr>
+    <td>Ich weiß nicht genau.</td>
+    <td>I don't know exactly.</td>
+</tr>
+<tr>
+    <td>Ich würde gerne annehmen, dass ...</td>
+    <td>I would like to think that ...</td>
+</tr>
+<tr>
+    <td>So wie ich es sehe ...</td>
+    <td>The way I see it is that ...</td>
+</tr>
+<tr>
+    <td>Wie Sie vielleicht wissen ...</td>
+    <td>As you may know ...</td>
+</tr>
+<tr>
+    <td>Ich interessiere mich nicht so sehr dafür.</td>
+    <td>I don't have a big interest in that.</td>
+</tr>
+<tr>
+    <td>Wenn ich das richtig verstehe ...</td>
+    <td>If I understand correctly ...</td>
+</tr>
+<tr>
+    <td>Wie du bereits weißt .../Wie Sie bereits wissen ...</td>
+    <td>As you already know ...</td>
+</tr>
+<tr>
+    <td>Das ist kein großes Problem.</td>
+    <td>That isn't such a big problem.</td>
+</tr>
+<tr>
+    <td>Das ist Ansichtssache.</td>
+    <td>That is a matter of opinion.</td>
+</tr>
+<tr>
+    <td>Soweit ich weiß ...</td>
+    <td>As far as I know ...</td>
+</tr>
+<tr>
+    <td>Ich habe den Eindruck, dass ...</td>
+    <td>I have the impression that ...</td>
+</tr>
+<tr>
+    <td>Es stimmt meistens, dass ...</td>
+    <td>It is usually true that ...</td>
+</tr>
+<tr>
+    <td>Man weiß nie, aber ...</td>
+    <td>You never know, but ...</td>
+</tr>
+<tr>
+    <td>Darüber habe ich noch nicht nachgedacht, aber ...</td>
+    <td>I haven't thought about it before, but ...</td>
+</tr>
+<tr>
+    <td>Wenn ich mich nicht irre ...</td>
+    <td>If I am not mistaken ...</td>
+</tr>
+<tr>
+    <td>Ich bin nicht sicher, ob ...</td>
+    <td>I am not certain whether ...</td>
+</tr>
+<tr>
+    <td>Wie jeder andere ...</td>
+    <td>Like every other man/woman ...</td>
+</tr>
+<tr>
+    <td>Dazu habe ich meine eigene Meinung, aber ...</td>
+    <td>I have my own opinion on it, but ...</td>
+</tr>
+<tr>
+    <td>Ich bin kein Experte aber, ...</td>
+    <td>I am not an expert, but ...</td>
+</tr>
+</table>
 
 ##### Zitieren
 
