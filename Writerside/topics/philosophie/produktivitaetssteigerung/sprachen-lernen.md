@@ -1134,5 +1134,46 @@ nach dem besten Lernmaterial zu suchen, dass wir kaufen können, währe besser i
 </tr>
 </table>
 
-
 ## Quellen
+<tip>
+    <strong>(BUCH)</strong> 978-386882526, Fliessend in drei Monaten, Benny Lewis, mvgverlag, 2015
+</tip>
+<tip>
+    <strong>(BUCH)</strong> 978-386881720, Speedlearning, Sven Frank, Redline Verlag, 2020
+</tip>
+<tip>
+    <strong>(WEBSEITE)</strong> 
+    <a href="https://de.wikipedia.org/wiki/Grammatik">
+        https://de.wikipedia.org/wiki/Grammatik
+    </a>, 2023-09-30 16:30
+</tip>
+<tip>
+    <strong>(WEBSEITE)</strong> 
+    <a href="https://de.wikipedia.org/wiki/Morphologie_(Linguistik)">
+        https://de.wikipedia.org/wiki/Morphologie_(Linguistik)
+    </a>, 2023-09-30 16:30
+</tip>
+<tip>
+    <strong>(WEBSEITE)</strong> 
+    <a href="https://de.wikipedia.org/wiki/Syntax">
+        https://de.wikipedia.org/wiki/Syntax
+    </a>, 2023-09-30 16:30
+</tip>
+<tip>
+    <strong>(WEBSEITE)</strong> 
+    <a href="https://de.wikipedia.org/wiki/Phonologie">
+        https://de.wikipedia.org/wiki/Phonologie
+    </a>, 2023-09-30 16:30
+</tip>
+<tip>
+    <strong>(WEBSEITE)</strong> 
+    <a href="https://de.wikipedia.org/wiki/Semantik">
+        https://de.wikipedia.org/wiki/Semantik
+    </a>, 2023-09-30 16:30
+</tip>
+<tip>
+    <strong>(WEBSEITE)</strong> 
+    <a href="https://de.wikipedia.org/wiki/Gemeinsamer_europ%C3%A4ischer_Referenzrahmen_f%C3%BCr_Sprachen">
+        https://de.wikipedia.org/wiki/Gemeinsamer_europäischer_Referenzrahmen_für_Sprachen
+    </a>, 2023-10-01 07:30
+</tip>
