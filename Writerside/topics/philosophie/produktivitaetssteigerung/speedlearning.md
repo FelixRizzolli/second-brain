@@ -273,3 +273,32 @@ Merktechniken kann sich deine Gedächtnisleistung verbessern.
 Die Psychologie hinter Mnemotechniken sieht folgendermaßen aus: Informationen bleiben länger im Gehirn, wenn sie 
 bedeutungshaltige Interpretationen haben, also sinnvoll miteinander verbunden werden. Diese Techniken des 
 Gedächtnistrainings nutzen das Potenzial des Verbindens von Informationen aus und verbessern deine Merkfähigkeit.
+
+### Loci-Methode
+Die Loci-Methode ist eine Mnemotechnik, mit der Informationen in einer fiktiven Struktur eingeordnet und verknüpft werden. Genauer soll im
+Gedächtnistraining ein fiktiver Ort der Konzentration für uns in unserem Gedächtnispalast geschaffen werden, zum Beispiel ein öffentlicher Weg oder
+eine Wohnung, wo wir Ankerpunkte für unsere Lerninhalte finden.
+
+Zuerst wählen wir einen Raum, den sich unser Gehirn gut merken kann, dann deine Ankerpunkte. Jeden Ankerpunkt verknüpfen wir mit einer Information. Wir gehen unsere geplante Route und wiederhole sie, bis wir uns alles im Gedächtnistraining merken können.
+
+<tip>
+    Sagen wir, wir möchten uns drei Eigenschaften von <strong>Mephisto</strong> aus Goethes Faust merken (<strong>böse
+    </strong>, <strong>charmant</strong>, <strong>magisch</strong>):
+    <list style="decimal">
+        <li>
+            Wir wählst unser <strong>Klassenzimmer</strong> als Raum aus.
+        </li>
+        <li>
+            Die <strong>xEingangstür</strong>, die <strong>Tafel</strong> und den <strong>Schrank</strong> legen wir als 
+            Ankerpunkte fest, die wir auch in dieser Reihenfolge ablaufen.
+        </li>
+        <li>
+            Wir verknüpfen die Punkte nun: Wir betreten das Klassenzimmer und merken, dass die Eingangstür auf <strong>
+            magische</strong> Weise beginnt, zu schweben. Nun gehen wir zur Tafel und sehen, dass Mephisto vorne steht 
+            und auf <strong>charmante</strong> Weise zur Klasse redet. Dann öffnen wir den Schrank, aus dem plötzlich 
+            ganz viele <strong>böse</strong> Hunde rausspringen.
+        <li>
+            Jetzt wiederholen wir die Route.
+        </li>
+    </list>
+</tip>
