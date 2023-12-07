@@ -727,6 +727,68 @@ nach dem besten Lernmaterial zu suchen, dass wir kaufen können, währe besser i
 
 
 ##### Zustimmen / Ablehnen
+<table style="none">
+<tr>
+    <td>Hundertprozentig.</td>
+    <td>One hundred percent.</td>
+</tr>
+<tr>
+    <td>Ohne Frage.</td>
+    <td>Without question.</td>
+</tr>
+<tr>
+    <td>Absolut richtig.</td>
+    <td>Exactly right.</td>
+</tr>
+<tr>
+    <td>Mit ziemlicher Sicherheit.</td>
+    <td>Most certainly.</td>
+</tr>
+<tr>
+    <td>Ohne Zweifel, zweifellos.</td>
+    <td>Without doubt.</td>
+</tr>
+<tr>
+    <td>Auf keinen Fall, keinesfalls.</td>
+    <td>In no way ...</td>
+</tr>
+<tr>
+    <td>Das stimmt überhaupt nicht.</td>
+    <td>That isn't true at all.</td>
+</tr>
+<tr>
+    <td>Das ist eine Übertreibung.</td>
+    <td>That is an exaggeration.</td>
+</tr>
+<tr>
+    <td>Das kann ich wirklich nicht glauben.</td>
+    <td>I really can't believe that.</td>
+</tr>
+<tr>
+    <td>Im Prinzip ja, aber ...</td>
+    <td>In principle that is true, but ...</td>
+</tr>
+<tr>
+    <td>Zugegeben, aber ...</td>
+    <td>Admittedly that is true, but ...</td>
+</tr>
+<tr>
+    <td>So kann man es auch sagen.</td>
+    <td>That's one way to say it.</td>
+</tr>
+<tr>
+    <td>Nur bis zu einem gewissen Punkt.</td>
+    <td>Only up to a certain point.</td>
+</tr>
+<tr>
+    <td>Sicher. Warum nicht?</td>
+    <td>Certainly. Why not?</td>
+</tr>
+<tr>
+    <td>Da stimme ich zu.</td>
+    <td>I agree.</td>
+</tr>
+</table>
 
 ##### Schluss
 
