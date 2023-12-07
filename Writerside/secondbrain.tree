@@ -85,4 +85,13 @@
     </toc-element>
     <toc-element topic="wirtschaft.md">
     </toc-element>
+    <toc-element topic="truthiness.md">
+        <!--
+        <toc-element topic="astrologie.md"/>
+        <toc-element topic="belebtes-wasser.md"/>
+        <toc-element topic="erdstrahlen-wasseradern.md"/>
+        <toc-element topic="elektrosmog.md"/>
+        <toc-element topic="homoeopathie.md"/>
+        -->
+    </toc-element>
 </instance-profile>
