@@ -183,3 +183,74 @@ lerne ich es?
         ein Unternehmen mit der Zeit seiner Mitarbeiter mindestens genauso sorgfältig umgehen wie mit seinen Finanzen. 
     </li>
 </list>
+
+## Braintrust 
+Unter Braintrust versteht man eine Gruppe Gleichgesinnter, die untereinander und gegenseitig ihr Weiterkommen befördern mit dem Ziel, allen
+Beteiligten dabei zu helfen, das zu werden was sie sein wollen. Hierbei handelt es sich nicht um ein Netzwerk, sondern um einen
+Arbeitszusammenhang. Ein Unternehmer-Braintrust besteht nur aus Unternehmern. Es herrscht absolute Offenheit und Wettbewerbslosigkeit. Unter
+Unternehmern ist beispielsweise das Braintrust-Konzept des Business-Buddy sehr verbreitet. Dieser Arbeitszusammenhang könnte sich zum Beispiel
+dadurch auszeichnen, dass zwischen den Austauschpartnern einmal wöchentlich ein Telefonat oder ein persönliches Gespräch zu einem festgelegten
+Termin stattfindet. Sie stellen sich gegenseitig hilfreiche Fragen und bieten, wo nötig und möglich, Unterstützung, Anregung oder einfach nur kreative
+Gedanken an.
+
+<list style="bullet">
+    <li>
+        Im <strong>Power-Braintrust</strong> pflegen die Braintrust-Partner intensiven und vertrauensvollen Kontakt. Sie 
+        treffen sich mindestens einmal pro Woche für 60 bis 90 Minuten, um über ihre Lernprojekte und Erfolge zu 
+        sprechen, sich gegenseitig anzuspornen, Komplimente und konstruktive Kritik auszutauschen, Brainstormings 
+        durchzuführen und Spaß zu haben.
+    </li>
+    <li>
+        Im <strong>Standard-Braintrust</strong> sehen sich die Mitglieder möglicherweise nur einmal im Monat oder gar 
+        nur einmal pro Jahr beziehungsweise telefonieren nur ab und zu. Sie haben zwar gemeinsame Ziele in Bezug auf die 
+        Entwicklung ihrer Lernziele oder Projekte, aber die Zusammenarbeit ist nicht ganz so intensiv. Ein Beispiel 
+        hierfür sind die Welt Interlingua Konferenzen.
+    </li>
+    <li>
+        Zum <strong>Forum Braintrust</strong> gehört zum Beispiel die Organisation Polyglotter Unternehmer. Hier treffen 
+        sich viermal im Jahr Unternehmer aus ganz Europa, die mindestens drei Sprachen oder mehr sprechen, um sich 
+        gegenseitig im internationalen Business mit Know-how und Kontakten zu unterstützen.
+    </li>
+    <li>
+        Eine stark abgeschwächte Form von Braintrusts sind auch sogenannte <strong>Internet-Foren</strong>. Allerdings 
+        sind diese in der Regel sehr wenig effektiv.
+    </li>
+    <li>
+        Zahlreiche international tätige Unternehmen verfügen über ein sogenanntes <strong>Advisory Board</strong>, also 
+        über einen beratenden Beirat. Dieser gleicht in seiner Zusammensetzung einem Verwaltungsrat, jedoch haften die 
+        Mitglieder des Advisory Boards nicht für ihre Entscheidungen und haben auch nicht die gleichen Befugnisse. Sie 
+        erteilen lediglich Ratschläge in Bezug auf Fragen im Rahmen internationaler Entwicklungen, entwickeln Ideen und 
+        teilen mit der Geschäftsleitung ihre umfangreiche Erfahrung, ihr Fachwissen und ihre Kontakte. Jedes 
+        Unternahmen, das sich auf internationaler Bühne erfolgreich präsentieren möchte, sollte sich Experten für 
+        internationale Beziehungen in sein Advisory Board einladen.
+    </li>
+    <li>
+        Bei dem <strong>Leads-Club</strong> geht es ausschließlich um das Vermitteln von Business-Kontakten auf 
+        internationaler Ebene. Das bekannteste Beispiel hierfür ist ebenfalls die Organisation Polyglotter Unternehmer.
+    </li>
+    <li>
+        Der <strong>Erfolgs- und Motivations-Club</strong> dient der Lernmotivation und Vermittlung wirksamer Techniken 
+        und spornt zum Anwenden des Wissens an. Auch neu entwickelte APPs sind ein Thema für diese Clubs.
+    </li>
+    <li>
+        Ein <strong>Einzelcoaching</strong> bei einem Fachmann mit Expertise bietet die individuelle Form des 
+        Braintrust. Beim Fremdsprachenlernen spricht der Coach in der Regel selbst mindestens fünf Sprachen fließend 
+        und kann sich auf die speziellen Wünsche und Belange des Lernenden einstellen.
+    </li>
+    <li>
+        Wenn sich Partner entscheiden, gemeinsam den Sportbootführerschein zu erwerben, ein Musikinstrument, eine 
+        Sprache oder eine Sportart zu erlernen, dann spricht man von einem <strong>partnerschaftlichen Braintrust
+        </strong>. Hier bieten sich zahlreiche Möglichkeiten für gemeinsame Lernaktivitäten. Diese müssen jedoch konkret 
+        geplant werden und dürfen nicht dem Zufall überlassen bleiben. Das Lernen ist ein Projekt, das nach spätestens 
+        zehn Wochen abgeschlossen sein sollte.
+    </li>
+    <li>
+        Unter den <strong>Einmal-pro-Jahr-Braintrust</strong> fallen Kongresse, Konferenzen und Treffen, die sich 
+        inhaltlich mit Ihren Lernthemen beschäftigen. Mindestens steht weniger das Anwenden des Wissens im Vordergrund, 
+        sondern eher der Netzwerkgedanke.
+    </li>
+    <li>
+        Von einem <strong>Telefon-Braintrust</strong> spricht man, wenn man sich mit einem Lernpartner telefonisch 
+        austauscht.
+    </li>
+</list>
