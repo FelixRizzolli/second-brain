@@ -104,6 +104,58 @@ System namens MULTICS. Die Idee war, viele Hundert Terminals an einem für damal
 anzuschließen. Leider wurde MULTICS erst viel später fertiggestellt, als es kaum noch jemanden interessierte.
 
 ### Die Geschichte von Unix
+Einige Ideen von MULTICS inspirierten jedoch Ken Thompson von den Bell Labs dazu, mit der Arbeit an einem eigenen 
+Betriebssystem zu beginnen. Anfangs war es als Einzelplatzsystem geplant und wurde auf einem PDP-7-Kleincomputer von 
+Digital Equipment (DEC) entwickelt, der, verglichen mit der für MULTICS verwendeten Maschine, nicht besonders 
+leistungsfähig war. Thompson und sein späterer Mitstreiter Dennis Ritchie nannten ihr Betriebssystem in einer Anspielung 
+auf MULTICS Unics; nach einiger Zeit wurde daraus Unix. Die ursprünglich nicht geplante Mehrbenutzerfähigkeit wurde 
+übrigens sehr schnell nachgerüstet, nachdem die ersten Versionen von Unix gut funktionierten.
+
+Eines der wichtigsten Designmerkmale des Betriebssystems Unix ist seine Modularität: Jeder (als eigenständiges Programm 
+realisierte) Befehl und jeder Bestandteil des Systems kann einzeln ausgetauscht werden, ohne das Gesamtsystem ändern zu 
+müssen. Unix wurde zunächst in der Maschinensprache der PDP-7 programmiert. Ab 1971 entwickelten Dennis Ritchie und 
+Brian Kernighan dann die Programmiersprache C, in der Unix schließlich neu geschrieben wurde. Da C-Compiler bald für 
+verschiedene Computersysteme verfügbar waren, fand Unix schnell Verbreitung.
+
+Eine kommerzielle Verbreitung von Unix war anfangs nicht möglich. Da AT&T in den 70er-Jahren noch das 
+US-Telekommunikationsmonopol innehatte, durfte das Unternehmen keine Geschäfte in anderen Branchen wie etwa dem 
+Computerbereich tätigen. Deshalb wurden Lizenzen für den Unix-Quellcode unter sehr lockeren Bedingungen an Universitäten 
+vergeben. Das ist der Grund, warum die Grundlagen des Betriebssystemaufbaus bis heute vornehmlich am Beispiel von Unix 
+und seinen Nachfolgesystemen gelehrt werden.
+
+Die aktivste aller Universitäten, die den Unix-Quellcode erhielten, war die University of California in Berkeley. Die 
+dortigen Programmierer erweiterten das ursprüngliche Unix und brachten schließlich eine eigene Version heraus, die 
+Berkeley System Distribution (BSD). Als AT&T schließlich in den 80er-Jahren die Lizenz erhielt, Unix kommerziell zu 
+vertreiben, hatten sich die AT&T-Version, genannt System V, und die BSD bereits erheblich auseinanderentwickelt. Zudem 
+wurde die Berkeley University verpflichtet, sämtliche Bestandteile des AT&T-Unix aus der BSD zu entfernen.
+
+Seitdem ist jede kommerzielle und jede freie Unix-Version eine mehr oder weniger starke Mischung aus BSD- und 
+System-V-Features. Allerdings haben System V und BSD wieder zahlreiche Fähigkeiten voneinander übernommen, sodass es 
+nicht immer ganz leicht ist, sie auseinanderzuhalten.
+
+Heute existiert eine Vielzahl unterschiedlicher Unix-kompatibler Betriebssysteme. Dazu gehören oder gehörten 
+kommerzielle Systeme wie Sun Solaris, IBM AIX, HP UX und freie Varianten wie etwa Linux oder FreeBSD. Eine 
+Sonderstellung nimmt Apples Betriebssystem macOS (vormals Mac OS X, zwischenzeitlich nur OS X) ein: Es basiert auf einer 
+Version der BSD, der Betriebssystemkern Darwin ist Open-Source-Software und läuft auf verschiedenen Plattformen. Die 
+grafische Benutzeroberfläche Aqua ist dagegen eine kommerzielle Eigenproduktion von Apple und funktioniert nur auf Macs 
+mit PowerPC-, Intel-Prozessoren oder den Hauseigenen ARM-Prozessoren.
+
+Die Mindestanforderung dessen, was ein Unix-System leisten muss, ist in einem Standard namens POSIX (Portable Operating 
+System Interface)festgeschrieben. Allerdings werden von einem »richtigen« Unix heute auch einige weitere Quasi-standards 
+verlangt, die nicht im POSIX-Standard festgelegt sind. Am wichtigsten ist dieser Standard für Programmierer. Möchte man 
+als Programmierer ein Programm POSIX-konform schreiben, kann davon ausgegangen werden, dass es sich unter jeder 
+beliebigen Unix-Version kompilieren lässt.
+
+Anfang der 90er-Jahre sah es übrigens bereits fast so aus, als würde Unix nicht mehr lange überleben: Die verschiedenen 
+Varianten entwickelten sich zunehmend auseinander. Auf dem Desktop dominierte Microsoft Windows, während Server für die 
+immer häufiger eingesetzten PC-Netzwerke vor allem unter Novell NetWare betrieben wurden.
+
+Zwei wichtige Umstände haben Unix gerettet und machen es heute, über 40 Jahre nach seiner Entwicklung, zu einem der 
+gefragtesten Betriebssystemkonzepte: Der eine Grund ist die immense Ausbreitung des Internets, dessen wichtigste 
+Konzepte unter Unix entwickelt wurden. Der zweite Anlass für die Verbreitung von Unix ist die Erfolgsgeschichte des 
+freien Betriebssystems Linux, das 1991 von dem finnischen Informatikstudenten Linus Torvalds entwickelt wurde und 
+inzwischen das Betriebssystem mit dem größten jährlichen Wachstum ist.
+
 
 ### PC-Betriebssysteme
 
