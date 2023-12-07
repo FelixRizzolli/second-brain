@@ -973,3 +973,114 @@ Ausführen. Das Zugriffsrecht <code>rwxr-xr-x</code> lässt sich also als <code>
 die Gruppe darf sie lesen, und alle anderen dürfen gar nichts.
 
 #### Das virtuelle Windows-Dateisystem
+Windows-Dateisysteme unterscheiden sich durch mehrere Merkmale von Unix-Dateisystemen. Insbesondere ist auffallend, 
+dass es keine gemeinsame Wurzel für alle Dateisysteme gibt, sondern dass jeder Datenträger beziehungsweise jede 
+Partition einen eigenen Verzeichnisbaum bildet. Die einzelnen Partitionen werden durch Laufwerksbuchstaben bezeichnet; 
+die automatisch gewählte Reihenfolge gehorcht traditionell einigen seltsamen Regeln:
+
+<list>
+    <li>
+        <code>A</code>: ist das erste Diskettenlaufwerk, das es kaum noch gibt.
+    </li>
+    <li>
+        <code>B</code>: ist das zweite Diskettenlaufwerk, das erst recht kein Mensch mehr einsetzt.
+    </li>
+    <li>
+        <code>C</code>: ist die erste Partition auf der ersten physikalischen Platte (bei einem EIDE-System der Primary 
+        Master).
+    </li>
+    <li>
+        <code>D</code>: ist die erste Partition auf der zweiten physikalischen Platte (dem Primary Slave). Falls das 
+        zweite EIDE-Gerät ein CD-ROM- oder DVD-Laufwerk ist, bekommt es einen höheren Buchstaben, und es geht zunächst 
+        mit den anderen Festplatten weiter.
+    </li>
+    <li>
+        Die weiteren Buchstaben werden jeweils der ersten Partition der folgenden Platten zugewiesen, falls weitere 
+        vorhanden sind.
+    </li>
+    <li>
+        Nun folgen Platte für Platte sämtliche restlichen Partitionen.
+    </li>
+    <li>
+        Als Nächstes werden die CD-ROM- und DVD-Laufwerke in ihrer eigenen Anschlussreihenfolge berücksichtigt.
+    </li>
+    <li>
+        Wenn Netzwerkressourcen als virtuelle Laufwerke eingebunden werden, ist der Laufwerksbuchstabe frei wählbar, 
+        sofern er nicht bereits belegt ist.
+    </li>
+</list>
+
+Windows-Versionen ab Vista bezeichnen dagegen automatisch die Partition, auf der sich das Betriebssystem befindet, als 
+<code>C:</code>. Auch andere Abweichungen von der genannten Reihenfolge sind möglich, beispielsweise dann, wenn 
+nachträglich die Partitionierung geändert oder ein zusätzliches Laufwerk eingebaut wird. Unter Windows 10 und früheren 
+Systemen der Windows-NT-Familie können Sie die Zuordnung ohnehin mithilfe der Datenträgerverwaltung (Verwaltung • 
+Computerverwaltung • Datenträgerverwaltung) ändern. Bei den Privatkunden-Versionen bis Windows Me war die freie Wahl der 
+Laufwerksreihenfolge dagegen nur eingeschränkt möglich.
+
+Pfade werden unter Windows so ähnlich angegeben wie bei Unix. Das Trennzeichen zwischen den Verzeichnisnamen sowie 
+zwischen Verzeichnis und Datei ist allerdings der Backslash (<code>\</code>), der umgekehrte Schrägstrich. Die Wurzel 
+innerhalb eines bestimmten Laufwerks ist ein einzelner Backslash, während ein vollständiger absoluter Pfad mit dem 
+Laufwerksbuchstaben beginnt. Das jeweils übergeordnete Verzeichnis wird auch unter Windows durch zwei Punkte 
+(<code>..</code>) angegeben.
+
+Hier sieht man einen Auszug aus einem Windows-Verzeichnisbaum einer Festplatte mit dem Laufwerksbuchstaben 
+<code>D:</code>
+
+<code-block>
+[D:]
+ |
+ +-- [dokumente]
+ |
+ +-- [fachinfo8]
+ | |
+ | +-- betriebssysteme.doc
+ |
+ +-- [sonstige]
+</code-block>
+
+Soll die Datei betriebssysteme.doc absolut angesprochen werden, muss der vollständige Pfad 
+<code>D:\dokumente\fachinfo8\betriebssysteme.doc</code> angegeben werden. Befindet man sich dagegen bereits auf Laufwerk 
+<code>D:</code>, und zwar in einem beliebigen Verzeichnis, kann auch 
+<code>\dokumente\fachinfo8\betriebssysteme.doc</code> geschrieben werden. Ein relativer Zugriff aus dem Verzeichnis 
+sonstige auf betriebssysteme.doc erfolgt über <code>..\fachinfo8\betriebssysteme.doc</code>.
+
+Das Konzept des Home-Verzeichnisses wird unter Windows bei Weitem nicht so konsequent verfolgt wie in Unix-Systemen. 
+Zwar existiert unter Windows Vista auf der Systempartition ein Verzeichnis namens Users (in deutschen XP-Versionen heißt 
+es dagegen Dokumente und Einstellungen), das für jeden Benutzer ein Unterverzeichnis enthält. In diesem Verzeichnis 
+befindet sich beispielsweise das Unterverzeichnis Eigene Dateien, in dem standardmäßig die Dateien gespeichert werden 
+sollten, die der Benutzer in Anwendungsprogrammen anlegt. Konfigurationsdaten werden dagegen nicht an dieser Stelle 
+abgespeichert – die meisten befinden sich ohnehin nicht in Dateien, sondern in der Windows-Registry, die im nächsten 
+Kapitel behandelt wird.
+
+Zwar unterstützen nicht alle Windows-Dateisysteme die Verwaltung von Benutzerrechten, aber für jede Datei können vier 
+verschiedene Attribute eingestellt werden: Das Attribut <code>r</code> steht für read only, also schreibgeschützt; 
+<code>s</code> bezeichnet Systemdateien, die einen noch stärkeren Schutz genießen als schreibgeschützte. 
+<code>h</code> oder hidden ist das Attribut für versteckte Dateien, die in der normalen Windows-Grundkonfiguration nicht 
+angezeigt werden. <code>a</code> schließlich ist das Archivattribut, das immer dann gesetzt wird, wenn die Datei seit 
+dem letzten Systemstart geändert wurde. Archivieren muss man also nur diejenigen Dateien, bei denen <code>a</code> 
+gesetzt ist.
+
+Dateinamen können unter Windows bis zu <code>255</code> Zeichen lang sein; zwischen Groß- und Kleinschreibung wird nicht 
+unterschieden. Allerdings werden die Dateien genau mit der Groß- und Kleinbuchstabenkombination gespeichert, die 
+angegeben wurden. Eine Reihe von Zeichen ist in Dateinamen nicht zulässig, vor allem <code>:</code>, <code>\</code>, 
+<code>/</code>, <code></code>, <code>*</code>, <code><</code>, <code>></code> und <code>|</code>. Alle diese Zeichen 
+besitzen in Pfadangaben oder auf der Windows-Konsole besondere Bedeutungen.
+
+Ein wesentlicher Bestandteil des Dateinamens ist unter Windows die Dateierweiterung oder -endung (Extension). Dieses 
+Anhängsel, das durch einen Punkt vom restlichen Dateinamen getrennt wird und traditionell drei Buchstaben lang war, 
+zeigt nämlich den Dateityp an: Wird unter Windows auf ein Datei-Icon doppelgeklickt, wird die Datei mit demjenigen 
+Programm geöffnet, mit dem diese Endung verknüpft ist. Beispielsweise bezeichnet die Erweiterung <code>.txt</code> eine 
+einfache Textdatei, <code>.jpg</code> ist eine Bilddatei im JPEG-Format, und <code>.exe</code> kennzeichnet ein 
+ausführbares Programm.
+
+Unglücklicherweise wird die Dateiendung in allen Windows-Versionen seit Windows 95 standardmäßig ausgeblendet, obwohl 
+sie im Grunde ein normaler Bestandteil des Dateinamens ist. Dateitypen können also nur noch an den mehr oder weniger 
+aussagefähigen Datei-Icons erkennt werden. Dies lässt sich allerdings in den Ordneroptionen ändern und sollte eine der 
+ersten Handlungen nach Inbetriebnahme einer neuen Windows-Installation sein.
+
+Bei alten Windows-Versionen bis 3.11 waren Dateinamen auf acht Zeichen für den eigentlichen Namen und drei Zeichen für 
+die Erweiterung begrenzt. Aus Gründen der Kompatibilität erzeugte Windows hinter den Kulissen noch lange Zeit für jeden 
+Dateinamen, der länger ist, einen passenden Kurznamen. Dieser besteht aus folgenden Bestandteilen: den ersten fünf bis 
+sechs Zeichen des eigentlichen Namens ohne Leerzeichen, einer Tilde und einer Nummer (um den Fall abzudecken, dass 
+mehrere Dateien im gleichen Verzeichnis denselben Kurznamen erhalten würden) sowie der auf drei Zeichen gekürzten 
+Erweiterung. Aus Der Name ist zu <code>lang.doc</code> würde nach diesem Schema <code>DERNAM~1.DOC</code>.
