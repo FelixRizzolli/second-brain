@@ -36,6 +36,13 @@ Zwölfjährige und Erwachsene – sich nicht erklärte Grammatikregeln aneignen.
 bewerteten Punkten durchweg besser waren«.
 
 ### Mir fehlt das Sprach-Gen
+Die Behauptung "Mangelndes Talent" zu haben ist eine selbst erfüllende Prophezeiung, wenn es das wirklich gibt. Jene die 
+dies glauben, bemühen sich nicht wirklich die neue Sprache zu lernen, und da sie sich nicht bemühen, schaffen sie es 
+nicht. Auch die Tatsache, dass eine einsprachige Kultur Einsprachige hervorbringt, sagt nichts über das individuelle 
+Potenzial der Einzelnen aus. Wenn es darum geht, eine Sprache zu lernen, sind Zweifel unangebracht: Ein jeder selbst 
+entscheidet über den persönlichen Erfolg. Erledigt man die Arbeit, die zum Erlernen der Sprache nötig ist, dann wird man 
+mit »Naturtalenten« gleichziehen – oder diese sogar überrunden.
+
 ### Ich habe zu wenig Zeit dafür
 ### Sprachlern-Programme sind teuer
 ### Ich warte auf den perfekten Sprachkurs
