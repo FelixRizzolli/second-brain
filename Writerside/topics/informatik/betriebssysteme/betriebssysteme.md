@@ -184,9 +184,7 @@ für Diskettenlaufwerke und konnte über verschiedene Konsolenbefehle gesteuert 
 
 ## Aufgaben und Konzepte
 
-### Zusammengefasst: Allgemeiner Aufbau von
-
-#### Betriebssystemen
+### Zusammengefasst: allgemeiner Aufbau von Betriebssystemen
 
 #### Der Kernel
 
