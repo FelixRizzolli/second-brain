@@ -248,6 +248,66 @@ klassische Desktop angezeigt, und eine durch die Windows-8-Kacheln erweiterte Ve
 Klick auf die Start-Schaltfläche.
 
 #### Linux
+Der 386er-PC brachte nicht nur der Windows-Familie den Durchbruch, sondern war auch der Anlass für Linus Torvalds, das 
+Betriebssystem Linux zu entwickeln. Er war ein wenig enttäuscht von den eingeschränkten Möglichkeiten des zu Lehrzwecken 
+entwickelten abgespeckten Unix-Systems Minix und wollte auf keinen Fall Windows benutzen. Aus diesem Grund begann er mit 
+der Entwicklung seines eigenen Systems.
+
+Das Betriebssystem Linux ist ein voll ausgestattetes POSIX-konformes Unix-Betriebssystem, dessen Kernel allerdings von 
+seinem Erfinder Linus Torvalds vollkommen neu entwickelt wurde. Seit seiner ursprünglichen Entwicklung im Jahr 1991 
+wurde der Linux-Kernel durch die Mitarbeit zahlloser Freiwilliger immer weiter ausgebaut. Heute unterstützt er beinahe 
+jede erdenkliche Hardware und läuft nicht etwa nur auf der Intel-PC-Architektur, sondern wurde auf viele verschiedene 
+Plattformen portiert, beispielsweise PowerPC, Alpha, Sun SPARC oder diverse IBM-Großrechner. In Form von Google Android 
+läuft eine Variante auch auf zahllosen Smartphones und Tablets.
+
+Selbstverständlich besteht ein Unix-System wie Linux aber nicht nur aus dem Kernel. Um damit arbeiten zu können, wird 
+eine Benutzeroberfläche in Form einer Shell oder eines grafischen Desktops benötigt (alle aktuellen Linux-Distributionen 
+bieten beides). Ein weiterer wichtiger Bestandteil eines Unix-Systems sind die zahlreichen Systemprogramme. Die 
+Linux-Versionen dieser Programme sind kompatibel mit den entsprechenden Befehlen kommerzieller Unix-Versionen, 
+entstammen aber größtenteils dem GNU-Projekt (<a href="http://www.gnu.org">http://www.gnu.org</a>). Diese Abkürzung 
+steht für GNU’s Not Unix; es handelt sich um ein rekursives Akronym, in dem der erste Buchstabe immer wieder für den 
+Namen des Ganzen steht – eine beliebte Form der Unterhaltung in der Unix- und Open-Source-Szene. Aus diesem Grund müsste 
+ein vollständiges Linux-System aus Kernel und Dienstprogrammen korrekterweise als GNU/Linux bezeichnet werden, aber 
+daran hält sich nur die Distribution Debian.
+
+Das GNU-Projekt wurde 1984 von Richard Stallman ins Leben gerufen und setzte sich zum Ziel, freie Versionen sämtlicher 
+Unix-Systemprogramme zu entwickeln. Deshalb gründete Stallman gleichzeitig die Free Software Foundation (FSF, 
+<a href="http://www.fsf.org">http://www.fsf.org</a>). Als Linus Torvalds mit der Arbeit an Linux begann, existierte 
+bereits ein C-Compiler (der GNU C Compiler oder GCC); auch die meisten Standardbefehle waren bereits verfügbar. Die 
+meisten GNU-Varianten der Unix-Programme sind inzwischen sogar leistungsfähiger als die ursprünglichen Versionen. 
+Lediglich der lange geplante GNU-Kernel Hurd ist bis heute nicht als finale Version erschienen, zumal er durch die 
+Entwicklung von Linux im Grunde überflüssig wurde.
+
+Freie Software hat nicht nur etwas damit zu tun, dass die Programme kostenlos erhältlich sind, sondern auch damit, dass 
+man den Quellcode erhält und damit fast alles machen darf, was man möchte. Deshalb lautet ein Motto der Free Software 
+Foundation »Free software is a matter of liberty, not price« (»Freie Software ist eine Frage der Freiheit, nicht des 
+Preises«). Kommerzielle Softwarelizenzen enthalten nämlich in der Regel eine Reihe von Einschränkungen und erlauben im 
+Grunde nichts weiter, als die Software für ihren offiziellen Anwendungszweck einzusetzen. Die FSF hat dafür eine eigene 
+Softwarelizenz ausgearbeitet, die vor allem verhindern soll, dass kommerzielle Softwareentwickler freie Softwareprojekte 
+an sich binden und die ursprüngliche Freiheit beeinträchtigen. Unter dieser Lizenz, der GNU General Public License 
+(GPL), wird übrigens auch Linux selbst verbreitet.
+
+Zu Beginn seiner Entstehung war Linux vor allem im Kreis der Entwickler verbreitet, die daran arbeiteten. Es war 
+schwierig, den Linux-Kernel zu installieren und die GNU-Versionen aller erforderlichen Systemprogramme zu beschaffen und 
+miteinander zu koordinieren. In den ersten Jahren wurde Linux deshalb vornehmlich von Informatikern und interessierten 
+Studenten weitergereicht, da die Universitäten bereits über Internetanbindungen verfügten, als der Rest der Welt noch 
+nichts damit zu tun hatte.
+
+Einige der Studenten, die mit Linux arbeiteten, begannen allmählich, den Kernel und die Systemprogramme 
+zusammenzustellen und Installationsprogramme für diese Betriebssystempakete zu schreiben. Aus diesen ersten Bemühungen 
+entstanden allmählich verschiedene Linux-Distributionen, die anfangs auf Disketten, später auf CD-ROMs, noch später auf 
+DVDs und in den letzten Jahren vorwiegend als Download verbreitet wurden, oft zusammen mit mehr oder weniger 
+ausführlichen gedruckten Dokumentationen. Firmen wurden gegründet, die solche Distributionen erstellten und zu 
+vergleichsweise günstigen Preisen verkauften.
+
+Der Kauf einer Distribution hat nichts mit dem Erwerb kommerzieller Software gemeinsam: die Software, die man erhält, 
+darf auf beliebig vielen Rechnern installieren und an allen Bekannten weitergegeben werden. Die Distributoren erhalten 
+das Geld nicht für die Software selbst oder für ein Nutzungsrecht daran, sondern lediglich für ihre Arbeit an 
+Installationsprogrammen und Dokumentationen. Eine Distribution kann allerdings einzelne kommerzielle Programme 
+enthalten, für die andere Bedingungen gelten. Hierbei ist die Beschreibung, die der Distributor mitliefert, zu beachten.
+
+Heute ist eine Reihe verschiedener Distributionen erhältlich, die sich bezüglich ihres Umfangs, ihres 
+Anwendungsschwerpunkts und ihres Preises unterscheiden.
 
 ## Aufgaben und Konzepte
 
