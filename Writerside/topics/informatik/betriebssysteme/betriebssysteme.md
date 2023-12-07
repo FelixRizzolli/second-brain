@@ -456,10 +456,42 @@ Aufgabe zu erfüllen, aber nicht alle. Ebenso wenig sollten Systemprogramme mit 
 durcheinander gebracht werden, die mit vielen Betriebssystemen geliefert werden. Ein einfacher Taschenrechner, ein 
 Texteditor oder ein MP3-Player ist kein Systemprogramm, sondern eine Anwendung.
 
+#### Die Schnittstelle für Anwendungsprogramme
+Jedes Betriebssystem bietet Anwendungsprogrammen die Möglichkeit, seine Dienstleistungen in Anspruch zu nehmen. Dies 
+ermöglicht es Programmierern, bestimmte aufwendige und hardwareabhängige Aufgaben an das Betriebssystem zu delegieren. 
+Bei den meisten aktuellen Systemen bleibt ihnen auch gar nichts anderes übrig, weil der direkte Zugriff auf die Hardware 
+durch Anwendungsprogramme verhindert wird. Um eine Funktion des Betriebssystems zu verwenden, muss ein Programm einen 
+Systemaufruf (System Call) durchführen. Das Betriebssystem reagiert darauf, indem es den aktuellen Prozess unterbricht, 
+den geforderten Systembefehl im Kernelmodus ausführt und dessen Ergebnis an den aufrufenden Prozess zurückliefert.
 
-#### Die Schnittstelle für
+Unix-Systeme bieten nur verhältnismäßig wenige, dafür aber sehr mächtige Systemaufrufe an. Einige von ihnen sind auf 
+Dateien und andere Ein- und Ausgabekanäle bezogen, beispielsweise <code>create()</code> zum Erzeugen einer neuen Datei, 
+<code>open()</code> zum Öffnen, <code>read()</code> zum Lesen, <code>write()</code> zum Schreiben oder 
+<code>close()</code> zum Schließen. Andere Systemaufrufe beschäftigen sich mit der Prozessverwaltung; zum Beispiel 
+erzeugt <code>fork()</code> einen neuen Prozess als Kopie des bestehenden, <code>kill()</code> sendet Signale an 
+Prozesse, und <code>shmget()</code> fordert das Shared Memory (gemeinsame Speicherbereiche, die sich mehrere Prozesse 
+zum Datenaustausch teilen) an.
 
-#### Anwendungsprogramme
+Neben den eigentlichen Systemaufrufen basiert jedes Betriebssystem auf der Bibliothek der Programmiersprache, in der es 
+geschrieben wurde. Nach wie vor werden die meisten Betriebssysteme zu großen Teilen in der Programmiersprache C 
+geschrieben (nur einige sehr hardwarenahe Teile des Kernels werden in Assembler verfasst). Aus diesem Grund basiert die 
+Arbeitsweise vieler Systembereiche auf Funktionen der C-Standardbibliothek. Unix, Windows und viele andere Systeme 
+behandeln vieles aus der Sicht von Anwendungsprogrammierern recht ähnlich, weil es mithilfe der entsprechenden 
+Bibliotheksroutinen realisiert wurde.
+
+Ein Beispiel soll an dieser Stelle genügen, um einen Eindruck vom Einfluss der C-Standardbibliothek zu geben: Fast alle 
+Betriebssysteme speichern Datum und Uhrzeit als die Anzahl der Sekunden seit dem 
+<code>01. Januar 1970, 00:00 Uhr UTC</code>. Dieses Datum wird als EPOCH bezeichnet, weil es als der »epochemachende« 
+Erfindungszeitpunkt von Unix gilt. Diese Art der Speicherung von Datum und Uhrzeit ist in der C-Bibliotheksdatei 
+<code>time.h</code> definiert.
+
+Unter Windows gibt es eine äußerst umfangreiche Betriebssystemschnittstelle, die Win32 API. Sie besteht aus Tausenden 
+von Befehlen, von denen allerdings nicht alle echte Systemaufrufe sind. Viele von ihnen sind Bibliotheksfunktionen, die 
+beispielsweise den Zugriff auf die Bestandteile der grafischen Benutzeroberfläche ermöglichen. Win32 steht übrigens für 
+32-Bit-Windows, in Abgrenzung zu dem längst untergegangenen 16-Bit-Windows, dessen letzte Version Windows 3.11 war. Alle 
+Privatkunden-Versionen seit Windows 95 und alle professionellen Versionen seit der ersten NT-Version gehören zur 
+Win32-Familie; Windows XP, Windows Vista, Windows 7, 8 und 10 sowie die zugehörigen Server-Versionen sind auch in 
+64-Bit-Versionen für neuere Generationen der Intel- und AMD-Prozessoren verfügbar.
 
 #### Die Benutzeroberfläche
 
