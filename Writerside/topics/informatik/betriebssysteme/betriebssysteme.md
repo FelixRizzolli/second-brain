@@ -406,6 +406,27 @@ Außerdem besitzen veraltete Betriebssysteme kein richtiges Speichermanagement; 
 Speicherbereiche zugreifen und diese versehentlich überschreiben.
 
 #### Gerätetreiber
+Die Gerätetreiber (Device Drivers) sind spezielle kleine Programme, die sich um die Steuerung einzelner 
+Hardwarekomponenten kümmern. In manchen Betriebssystemen sind Treiber ein fester Bestandteil des Kernels, während sie in 
+den meisten neueren Systemen als Module vorliegen, die sich bei Bedarf laden und wieder aus dem Speicher entfernen 
+lassen.
+
+Es ist eine der schwierigsten Aufgaben für Programmierer, Gerätetreiber zu schreiben. Der Treiber bildet die 
+Schnittstelle zwischen Betriebssystem und Hardware. Er muss die allgemeinen Anforderungen des Betriebssystems an eine 
+bestimmte Geräteklasse in die spezifische Sequenz von Steuerbefehlen umsetzen, die das Gerät eines bestimmten 
+Herstellers versteht, und umgekehrt die Antworten des Geräts wieder in eine allgemein verständliche Form bringen.
+
+Aus der Sicht von Treibern lassen sich zwei grundsätzliche Arten von Geräten unterscheiden: Zeichengeräte (Character 
+Devices oder kurz Char Devices) tauschen Daten mit ihrer Umgebung als sequenzielle Datenströme aus. Die Daten werden 
+also Zeichen für Zeichen nacheinander ausgelesen. Typische Beispiele sind die Tastatur, ein Drucker oder ein 
+Bandlaufwerk. Blockgeräte (Block Devices) stellen sich dagegen ähnlich dar wie der Arbeitsspeicher: Der Zugriff auf den 
+Inhalt des Geräts kann in beliebiger Reihenfolge blockweise erfolgen. Zu den Blockgeräten zählen vornehmlich die meisten 
+Laufwerke wie die Festplatte oder ein CD-ROM-Laufwerk, aber auch zum Beispiel Grafikkarten.
+
+Damit ein Treiber für ein bestimmtes Gerät geschrieben werden kann, muss der Hersteller die Schnittstellen dieses Geräts 
+veröffentlichen. Einige Hersteller wollen dies nicht und bieten stattdessen lieber selbst Treiber für die wichtigsten 
+Betriebssysteme an. Bevor ein bestimmtes Gerät angeschafft wird, muss also sichergestellt werden, dass ein Treiber fürs 
+Betriebssystem verfügbar ist.
 
 #### Systemprogramme
 
