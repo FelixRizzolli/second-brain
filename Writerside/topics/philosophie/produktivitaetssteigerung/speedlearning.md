@@ -115,3 +115,71 @@ nach 20 Minuten schon wieder anfängt, den Stoff, den wir zu Beginn gelernt habe
 also, Lernen in mehrere Sequenzen à 20 Minuten zu packen und vor dem Lernen neuer Sequenzen zunächst die vorhergehenden 
 Lerninhalte zu wiederholen. Das gilt im Übrigen für alle Arten des Lernens, egal ob es sich um klassischen schulischen 
 Lernstoff handelt, um Fremdsprachen, Vorträge, Musikinstrumente und anderes.
+
+## Lernplan - Analyse
+
+Bevor wir uns daran machen, unser Lernthema innerhalb kürzester Zeit und auf eine sehr wirkungsvolle Art zu verinnerlichen, sollten wir uns erst
+einmal in die richtige mentale Stimmung versetzen. Das bedeutet, dass wir uns (gerade bei Themen die uns eher unangenehm sind, weil wir sie
+vielleicht nicht freiwillig, sondern gezwungenermaßen lernen müssen) zunächst einmal klarmachen, was uns an diesem Thema besonders
+interessiert. Folgende Fragen sollten wir uns stellen, bevor wir uns einem Lernthema widmen:
+<list style="bullet">
+    <li>
+        Was weiß ich bereits über dieses Thema?
+    </li>
+    <li>
+        Wie fühle ich mich bei dem Gedanken, mich mit diesem Thema zu beschäftigen?
+    </li>
+    <li>
+        Was interessiert mich besonders?
+    </li>
+    <li>
+        Wie viel Zeit möchte ich zum Erlernen der Fähigkeit oder zum Aneignen des Wissens aufwenden?
+    </li>
+    <li>
+        Was sind die geeigneten Lernunterlagen, Lehrer, Tutorials, Kurssysteme?
+    </li>
+    <li>
+        Welches Ziel verfolge ich, also welche Wirkung in meinem Leben soll spürbar sein?
+    </li>
+    <li>
+        Welches Ergebnis erwarte ich?
+    </li>
+    <li>
+        Wer kann mir helfen, zum Beispiel als Lernpartner oder als Mentor?
+    </li>
+    <li>
+        Was bin ich bereit zu investieren, um diesen Lernerfolg noch weiter zu beschleunigen?
+    </li>
+    <li>
+        Warum widme ich mich in den nächsten Wochen voll und ganz diesem Thema?
+    </li>
+    <li>
+        Welche Techniken haben in der Vergangenheit die besten Ergebnisse beim Lernen erzielt und wie kann ich diese 
+        Techniken auch auf das neue Wissensgebiet anwenden?
+    </li>
+</list>
+
+Fleiß schlägt stets Talent: Es kann sein, dass, selbst wenn jemand aus einer Ärztefamilie kommt und über alle Möglichkeiten verfügt, um ein
+hervorragender Mediziner zu werden, dennoch der Nachbar, dessen Eltern Handwerker sind, aufgrund seines Fleißes den ersten im Medizinstudium
+um Längen überholt und im fachlich deutlich überlegen ist.
+
+Drei Voraussetzungen muss das Lernen erfüllen: Effektivität, Adhärenz und Effizienz oder einfach gesagt: Was lerne ich? Warum lerne ich es? Wie
+lerne ich es?
+<list>
+    <li>
+        Die <strong>Effektivität</strong> des Lernens wird maßgeblich vom Unterrichtsmaterial beeinflusst. Der Lernende 
+        kann noch so motiviert sein, ohne die geeigneten Kursunterlagen ist das Projekt zum Scheitern verurteilt.
+    </li>
+    <li>
+        <strong>Adhärenz</strong> oder <strong>Durchhaltevermögen</strong> bedeuten, dass die Beschäftigung mit dem 
+        Zielthema Spaß machen muss und abwechslungsreich sein sollte. Nur so kann die Motivation dauerhaft am Leben 
+        gehalten werden und der relativ kurze Zeitraum von zehn Tagen bis zehn Wochen optimal ausgeschöpft werden. 
+        Hierbei sollte man beim Lernen zu Beginn sich hauptsächlich den Themen widmen, die einen persönlich 
+        interessieren.
+    </li>
+    <li>
+        Mit <strong>Effizienz</strong> ist der zeitliche Aspekt gemeint. Ein Wissensgebiet über mehrere Jahre zu lernen 
+        ist kein effizientes Ziel. Die investierte Zeit muss im Verhältnis zum Ergebnis stehen. So sollte zum Beispiel 
+        ein Unternehmen mit der Zeit seiner Mitarbeiter mindestens genauso sorgfältig umgehen wie mit seinen Finanzen. 
+    </li>
+</list>
