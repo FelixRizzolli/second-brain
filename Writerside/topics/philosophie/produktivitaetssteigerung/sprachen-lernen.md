@@ -55,6 +55,11 @@ Bus ... All diese Momente summieren sich. Sie ergeben Stunden, in denen für di
 kann.
 
 ### Sprachlern-Programme sind teuer
+Es benötigt keine teuren Sprachlern-Kurse, Software, Immersionsprogramme, Flüge rund um die Welt, Bücher und 
+Privatlehrer. Billigere Alternativen oder kostenlose Informationsquellen wie Online-Tools, Blogs oder gemeinsam 
+verbrachter Zeit mit ausländischen Freunden sind teils sogar überlegen. Höhere Ausgaben sind keine Garantie dafür, 
+leichter Erfolg zu haben als jemand, der mit einem deutlich kleineren Budget arbeitet.
+
 ### Ich warte auf den perfekten Sprachkurs
 ### Durch die falsche Lernmethode bin ich zum Scheitern verurteilt, bevor ich überhaupt angefangen habe
 ### Ich muss erst etwas lernen, bevor ich mich unterhalten kann
