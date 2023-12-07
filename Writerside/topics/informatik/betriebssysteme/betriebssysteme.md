@@ -312,8 +312,98 @@ Anwendungsschwerpunkts und ihres Preises unterscheiden.
 ## Aufgaben und Konzepte
 
 ### Zusammengefasst: allgemeiner Aufbau von Betriebssystemen
+Jedes Betriebssystem besitzt gewisse Grundbestandteile, denn alle Systeme müssen Computer verwalten, die bestimmte 
+Gemeinsamkeiten aufweisen. Beinahe jedes neuere Betriebssystem besteht aus dem Kernel, den mehr oder weniger fest zu 
+diesem gehörenden Gerätetreiber, den Systemprogrammen, einer Schnittstelle für Anwendungsprogramme und einer 
+Benutzeroberfläche.
 
 #### Der Kernel
+Der Kernel (das englische Wort für Kern, beispielsweise ein Obstkern) ist das grundlegende Computerprogramm, das 
+unmittelbar auf dem Prozessor des Rechners ausgeführt wird. Er läuft bis zum Herunterfahren des Systems permanent im 
+Hintergrund und steuert alle anderen Betriebssystemkomponenten sowie den Start und den Ablauf der Anwendungsprogramme. 
+Der Kernel initialisiert die Zusammenarbeit mit der Hardware, indem er die Treiber lädt und koordiniert. Aus einer 
+technischen Perspektive kann man sich vorstellen, dass der Kernel das einzige echte Programm ist, das permanent 
+ausgeführt wird, während alle anderen Programme, die später geladen werden, nur Unterprogramme sind, die vom Kernel 
+aufgerufen werden und die Kontrolle durch einen Rücksprung wieder abgeben.
+
+Es gibt unterschiedlich konzipierte Kernels. Das ältere Kernel-Konzept ist der sogenannte monolithische Kernel, der so 
+viele Funktionen wie möglich selbst ausführt. Moderner ist das Konzept des Mikrokernels, der so wenig wie möglich selbst 
+tut und die meisten Aufgaben an Prozesse delegiert, die im Benutzermodus laufen wie gewöhnliche Anwendungsprogramme.
+
+Da Mikrokernels kleine und elegante Programme sind und die einzelnen Teile des Betriebssystems nur bei Bedarf im 
+Speicher halten, müssten Betriebssysteme auf Mikrokernel-Basis theoretisch schneller und effizienter laufen als Systeme 
+mit monolithischen Kernels. Allerdings wird dabei oft vergessen, dass der ständige Wechsel zwischen Benutzer- und 
+Kernel-Modus Zeit und Ressourcen verbraucht. Außerdem können auch monolithische Kernel inzwischen häufig von einem der 
+entscheidenden Vorteile des Mikrokernels profitieren: Die meisten Gerätetreiber sind modular, können also je nach Bedarf 
+geladen und wieder aus dem Speicher entfernt werden. Dies ist besonders wichtig für hot-plugging-fähige Schnittstellen 
+wie USB, FireWire oder Bluetooth.
+
+Ein weiterer Fortschritt ist das Threading-Modell, das in immer mehr Betriebssystemen zum Einsatz kommt. Die 
+schwerfälligen Prozesse werden durch eine leichtgewichtige Alternative namens Threads ergänzt, was die Arbeit des 
+Kernels weiter beschleunigt.
+
+Anfang der 90er-Jahre schienen die Mikrokernel sich allmählich durchzusetzen, es wurden um diese Zeit kaum noch völlig 
+neue Betriebssysteme auf der Basis eines monolithischen Kernels konzipiert. Eine wichtige Ausnahme ist Linux – sein 
+Kernel ist bis heute monolithisch, verwendet aber modulare Gerätetreiber und inzwischen auch Threads. Andrew Tanenbaum, 
+der Entwickler von Minix und Autor mehrerer brillanter Fachbücher über Betriebssysteme und andere Informatikthemen, 
+verfasste aus diesem Grund in der Minix-Newsgroup einen berühmt gewordenen Beitrag mit dem Titel »Linux is obsolete« 
+(»Linux ist überholt«). Inzwischen gehört Linux allerdings zu denjenigen Systemen, die in seinem Lehrbuch »Moderne 
+Betriebssysteme« als Anschauungsbeispiele dienen.
+
+Ein wichtiges Betriebssystem mit Mikrokernel, und zwar dem bekannten Mach-Mikrokernel, ist macOS. Die meisten anderen 
+Unix-Systeme besitzen dagegen wie Linux einen monolithischen Kernel. In gewisser Weise lässt sich der Kernel von Windows 
+NT und seinen Nachfolgern auch als Mikrokernel beschreiben.
+
+Wenn ein Computer eingeschaltet wird, führt das BIOS des Rechners zunächst einige Überprüfungen durch und übergibt die 
+Kontrolle anschließend dem Bootloader eines Betriebssystems. Der Bootloader ermöglicht entweder die Auswahl mehrerer 
+Betriebssysteme, die auf den Datenträgern des Rechners installiert sind, oder startet unmittelbar ein bestimmtes System. 
+Das Booten (kurz für Bootstrapping –»die Stiefel schnüren«) eines Betriebssystems bedeutet zunächst, dass der Kernel 
+geladen und ausgeführt wird. Dieser erledigt alle weiteren erforderlichen Aufgaben.
+
+Wichtig ist es, die bei den meisten Betriebssystemen (insbesondere Unix und Windows) zu beobachtende Trennung zwischen 
+Kernelmodus und Benutzermodus zu verstehen. Ein Prozess, der im Kernelmodus läuft, besitzt gewisse Privilegien, die im 
+Benutzermodus nicht vorhanden sind. Bei den meisten Computern werden für die beiden Modi unterschiedliche Betriebsmodi 
+des Prozessors selbst verwendet. Beispielsweise besitzen Intel-Prozessoren und damit kompatible Prozessoren seit dem 
+386er vier verschiedene Modi, die sich durch einen unterschiedlich starken Schutz vor Interrupts, das heißt 
+Unterbrechungsanforderungen durch Hardware oder bestimmte Programmschritte, unterscheiden. Für gewöhnlich wird der Modus 
+mit dem stärksten Schutz als Kernelmodus und der mit dem geringsten als Benutzermodus verwendet.
+
+Prozesse im Kernelmodus erledigen wichtige Betriebssystemaufgaben, die nicht durch Prozesse im Benutzermodus 
+unterbrochen werden dürfen. Beispielsweise sorgen sie für die eigentliche Verarbeitung von Hardware-Interrupts, das 
+Öffnen und Schließen von Dateien oder die Speicherverwaltung. Auch wenn ein Prozess im Kernelmodus nicht von außen 
+unterbrochen werden kann, kann er freiwillig die Kontrolle an einen anderen Prozess abgeben. In der Regel ruft er den 
+Task Scheduler auf, der ebenfalls im Kernelmodus läuft und für die Verteilung der Rechenzeit an die verschiedenen 
+Prozesse zuständig ist.
+
+Ein Prozess im Benutzermodus kann jederzeit unterbrochen werden, etwa durch einen Hardware-Interrupt, durch einen 
+aufwachenden Kernelprozess oder dadurch, dass er selbst einen Befehl aufruft, der nur im Kernel-Modus ausgeführt werden 
+kann. Letzteres sind die sogenannten Systemaufrufe(System Calls), die es Programmierern ermöglichen, die eingebauten 
+Funktionen des Betriebssystems zu nutzen.
+
+Mikrokernel-basierte Betriebssysteme versuchen, so gut wie alle Aufgaben im Benutzermodus auszuführen. Der Kernel selbst 
+nimmt im Wesentlichen nur noch die Prozessverwaltung vor; selbst das Speichermanagement und die Ein-/Ausgabekontrolle 
+finden im Benutzermodus statt. Auf diese Weise kann ein Mikrokernel-System zwar flexibler auf Anforderungen reagieren, 
+muss dafür aber häufiger zwischen Kernel- und Benutzermodus hin- und herschalten, was zusätzliche Performance kostet.
+
+Windows NT und seine Nachfolger (einschließlich Vista, Windows 7, 8 und 10) verwenden einen Mittelweg zwischen 
+Mikrokernel-System und monolithischem Kernel-System: Gewisse Teile wurden aus dem Kernel ausgelagert und bilden 
+sogenannte Subsysteme, die im Benutzermodus laufen und verschiedene Teilfunktionen anbieten, die kernelartige Aufgaben 
+erledigen. Andere Teile des Betriebssystems laufen dagegen im Kernel-Modus.
+
+Es gibt in der Praxis keine Betriebssysteme mehr, die keine richtige Trennung zwischen Kernel- und Benutzermodus 
+durchführen. Die letzten waren MS-DOS in Kombination mit Windows 3.11, der letzten Windows-Version, die kein 
+vollständiges Betriebssystem war, und Mac OS bis zur Version 9(das aktuelle macOS ist dagegen eine völlige 
+Neuentwicklung, die von dem UNIX-System NeXTSTEP abstammt).
+
+Der auffälligste Unterschied zwischen einem modernen System und solchen altmodischen Betriebssystemen besteht darin, 
+dass Letztere nur das veraltete kooperative Multitasking verwenden – ein Prozess entscheidet selbst, wann er die 
+Kontrolle an das Betriebssystem zurückgeben möchte. Stürzt ein Programm ab, das in einem solchen Prozess läuft, dann 
+ist sehr wahrscheinlich das gesamte Betriebssystem instabil geworden. Das in modernen Systemen eingesetzte präemptive 
+Multitasking entscheidet dagegen selbst, wie lange Prozesse im Benutzermodus die Rechenzeit behalten dürfen, und 
+entzieht ihnen diese bei Bedarf wieder.
+
+Außerdem besitzen veraltete Betriebssysteme kein richtiges Speichermanagement; Prozesse können gegenseitig auf ihre 
+Speicherbereiche zugreifen und diese versehentlich überschreiben.
 
 #### Gerätetreiber
 
