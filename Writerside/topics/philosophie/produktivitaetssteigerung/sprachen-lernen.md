@@ -138,11 +138,31 @@ experimentieren und zu erkennen, das für einen persönlich gut funktioniert.
 
 ## Grundlegendes über Sprachen
 ### Die Funktion einer Sprache
+Jede Sprache verfügt über vier Funktionen:
+<list>
+    <li>
+        <strong>Kontaktaufnahme</strong> – Wenn wir eine aktiv anwenden wollen, müssen wir mit Menschen in Kontakt 
+        treten. Je besser unser Selbstvertrauen entwickelt ist, desto mehr positive Stimmung und dem Gespräch 
+        zuträgliche Emotionen werden wir an die Zuhörerschaft übertragen.
+    </li>
+    <li>
+        <strong>Kommunikation</strong> – sie findet überall statt. Überall da, wo wir etwas zu fragen oder zu erzählen 
+        haben. Z.B. bei einer Hotelreservierung oder im Rahmen von Smalltalk.
+    </li>
+    <li>
+        <strong>Sie dient dem Ausdruck des inneren Erlebens</strong> – Diesen Punkt erreichen wir, wenn wir uns in der 
+        Kommunikation der Zielsprache wohlfühlen. Wir können damit beispielsweise in einem Restaurant uns professionell 
+        Beschwerden, falls uns das servierte Gericht nicht schmeckt.
+    </li>
+    <li>
+        <strong>Sie schafft Kulturverständnis</strong> – Kulturverständnis meint die Fähigkeit, Ironie, Sarkasmus, 
+        Humor, Redensarten, Sprichwörter, Moral und kulturelle Besonderheiten zu erkennen und für sich zu nutzen.
+    </li>
+</list>
+
 ### Die Struktur einer Sprache – Grammatik
 ### Fließende Sprachbeherrschung
 ### Das CEFRL-System
-
-## Spezifische Ziele setzen
 
 ## Effizient lernen
 ### Eine Fremdsprache in 10 Wochen lernen
