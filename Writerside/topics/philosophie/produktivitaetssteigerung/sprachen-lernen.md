@@ -819,6 +819,84 @@ nach dem besten Lernmaterial zu suchen, dass wir kaufen können, währe besser i
 </table>
 
 ##### Füllwörter
+<table style="none">
+<tr>
+    <td>Verständlich.</td>
+    <td>Understandably.</td>
+</tr>
+<tr>
+    <td>Offen gesagt ...</td>
+    <td>Frankly speaking ...</td>
+</tr>
+<tr>
+    <td>Zwischen uns beiden ...</td>
+    <td>Between you and me ...</td>
+</tr>
+<tr>
+    <td>Wie auch immer ...</td>
+    <td>Anyway ...</td>
+</tr>
+<tr>
+    <td>Na dann ...</td>
+    <td>Well then ...</td>
+</tr>
+<tr>
+    <td>Nun ja, tatsächlich ...</td>
+    <td>Well, as a matter of fact ...</td>
+</tr>
+<tr>
+    <td>Wie soll ich sagen?</td>
+    <td>How can I put it?</td>
+</tr>
+<tr>
+    <td>Ich muss sagen, dass ...</td>
+    <td>I must say that ...</td>
+</tr>
+<tr>
+    <td>Erstens ...</td>
+    <td>First ...</td>
+</tr>
+<tr>
+    <td>Zweitens ...</td>
+    <td>Second ...</td>
+</tr>
+<tr>
+    <td>Du sollst wissen, dass .../Sie sollen wissen, dass ...</td>
+    <td>I would like you to know that ...</td>
+</tr>
+<tr>
+    <td>Ich fürchte, dass ...</td>
+    <td>I am afraid that ...</td>
+</tr>
+<tr>
+    <td>Ab und zu scheint es mir, dass ...</td>
+    <td>Now and then it seems to me, that ...</td>
+</tr>
+<tr>
+    <td>Im Grunde ...</td>
+    <td>After all ...</td>
+</tr>
+<tr>
+    <td>Soweit es mich betrifft ...</td>
+    <td>As far as I am concerned ...</td>
+</tr>
+<tr>
+    <td>Immer mehr ...</td>
+    <td>More and more ...</td>
+</tr>
+<tr>
+    <td>Tatsächlich ...</td>
+    <td>Actually ...</td>
+</tr>
+<tr>
+    <td>Scherz beiseite ...</td>
+    <td>All joking aside ...</td>
+</tr>
+<tr>
+    <td>Im Ernst ...</td>
+    <td>Now seriously ...</td>
+</tr>
+</table>
 
 ##### Erklären
 
