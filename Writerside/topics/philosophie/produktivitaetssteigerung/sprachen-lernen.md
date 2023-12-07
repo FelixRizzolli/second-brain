@@ -705,5 +705,44 @@ nach dem besten Lernmaterial zu suchen, dass wir kaufen können, währe besser i
 üben.
 
 #### Das wichtigste für den Start
+##### Entschuldigen
+<table style="none">
+<tr>
+    <td>Ärgern Sie sich nicht, aber ... / Ärger dich nicht, aber ...</td>
+    <td>Don't be upset, but ...</td>
+</tr>
+<tr>
+    <td>Das war ein Versprecher.</td>
+    <td>It was a slip of the tongue.</td>
+</tr>
+<tr>
+    <td>Das habe ich aus Versehen gesagt.</td>
+    <td>I said it by mistake.</td>
+</tr>
+<tr>
+    <td>Es tut mir leid, dass ...</td>
+    <td>I am sorry that ...</td>
+</tr>
+</table>
+
+
+##### Zustimmen / Ablehnen
+
+##### Schluss
+
+##### Füllwörter
+
+##### Erklären
+
+##### Öffnen
+
+##### Im Vorbeigehen
+
+##### Qualifizieren
+
+##### Zitieren
+
+##### Thema wechseln
+
 
 ## Quellen
