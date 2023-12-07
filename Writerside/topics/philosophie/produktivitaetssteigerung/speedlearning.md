@@ -396,3 +396,14 @@ Merken von Informationen beim Gedächtnistraining helfen kann.
         weshalb er leider nie seine <strong>Strümpfe (5)</strong> tragen konnte.”
     </p>
 </tip>
+
+## Quellen
+<tip>
+    <strong>(BUCH)</strong> 978-386881720, Speedlearning, Steven Frank, Redline Verlag, 2020
+</tip>
+<tip>
+    <strong>(WEBSEITE)</strong> 
+    <a href="https://www.studysmarter.de/magazine/mnemotechniken-lernen-uebungen/">
+        https://www.studysmarter.de/magazine/mnemotechniken-lernen-uebungen/
+    </a>, 2023-11-22 08:00
+</tip>
