@@ -899,6 +899,52 @@ nach dem besten Lernmaterial zu suchen, dass wir kaufen können, währe besser i
 </table>
 
 ##### Erklären
+<table style="none">
+<tr>
+    <td>Um genau zu sein .../Genauer gesagt ...</td>
+    <td>To be more precise ...</td>
+</tr>
+<tr>
+    <td>Und außerdem ...</td>
+    <td>And what's more ...</td>
+</tr>
+<tr>
+    <td>Wo ich schon davon spreche ...</td>
+    <td>Since I am already talking about it ...</td>
+</tr>
+<tr>
+    <td>Ich möchte betonen, dass ...</td>
+    <td>I would like to emphasize that ...</td>
+</tr>
+<tr>
+    <td>Soll ich es genauer erklären?</td>
+    <td>Should I explain in greater detail?</td>
+</tr>
+<tr>
+    <td>Lass es mich anders formulieren/Lassen Sie es mich anders formulieren.</td>
+    <td>Allow me to say it another way.</td>
+</tr>
+<tr>
+    <td>Das heißt ...</td>
+    <td>That is to say ...</td>
+</tr>
+<tr>
+    <td>Trotzdem ...</td>
+    <td>Nevertheless ...</td>
+</tr>
+<tr>
+    <td>Obwohl ...</td>
+    <td>Even though ...</td>
+</tr>
+<tr>
+    <td>Das klingt, als ob ...</td>
+    <td>That sounds like ...</td>
+</tr>
+<tr>
+    <td>Und deswegen ...</td>
+    <td>And that is why ...</td>
+</tr>
+</table>
 
 ##### Öffnen
 
