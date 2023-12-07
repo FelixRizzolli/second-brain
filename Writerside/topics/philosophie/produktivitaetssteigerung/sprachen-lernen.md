@@ -791,6 +791,32 @@ nach dem besten Lernmaterial zu suchen, dass wir kaufen können, währe besser i
 </table>
 
 ##### Schluss
+<table style="none">
+<tr>
+    <td>Mehr kann ich dazu nicht sagen.</td>
+    <td>That is all there is to say.</td>
+</tr>
+<tr>
+    <td>Das ist momentan alles.</td>
+    <td>That is all for now.</td>
+</tr>
+<tr>
+    <td>Um es zusammenzufassen ...</td>
+    <td>To sum up ...</td>
+</tr>
+<tr>
+    <td>Und das ist das Problem.</td>
+    <td>And there is the problem.</td>
+</tr>
+<tr>
+    <td>Ich hoffe, es ist nur eine Frage der Zeit.</td>
+    <td>I hope it is only a matter of time.</td>
+</tr>
+<tr>
+    <td>Das wird sich noch herausstellen / das bleibt abzuwarten.</td>
+    <td>That remains to be seen.</td>
+</tr>
+</table>
 
 ##### Füllwörter
 
