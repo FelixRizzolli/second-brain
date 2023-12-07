@@ -302,3 +302,19 @@ Zuerst wählen wir einen Raum, den sich unser Gehirn gut merken kann, dann deine
         </li>
     </list>
 </tip>
+
+### Gedächtnishilfen und Merksätze
+Zu den bekanntesten Gedächtnistrainings gehören <strong>Gedächtnishilfen</strong> (oder Eselsbrücken) und <strong>
+Merksprüche</sstrong>. Um uns Informationen zu merken, können wir uns passende Geschichten, Sprüche oder Zusammenhänge 
+ausdenken und mit unseren Lerninhalten in Beziehung setzen.
+
+<note>
+    Manchmal können absurde Beispiele besonders helfen. Sehr sinnvoll sind diese Mnemotechniken für Vokabeln.
+</note>
+
+<tip>
+    Wir möchten uns als Gedächtnistraining zum Beispiel die häufigsten <strong>Elemente der Erdkruste</strong> merken. 
+    Der Spruch “<strong>O</strong>h, <strong>S</strong>ie <strong>al</strong>tes <strong>Fe</strong>rkel!” beschreibt 
+    die Elemente O (Sauerstoff), Si (Sicilium), Al (Aluminium), Fe (Eisen). Durch diesen Satz kann sich unser Gehirn die 
+    Elemente leichter merken.
+</tip>
