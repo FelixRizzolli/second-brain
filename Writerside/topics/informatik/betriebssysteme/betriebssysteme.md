@@ -541,6 +541,21 @@ offiziell von Apple selbst angeboten und danach als Community Edition weitergef�
 heruntergeladen werden. Auch für Windows gibt es übrigens verschiedene X-Server von Drittanbietern.
 
 ### Prozessverwaltung
+Jedes moderne Betriebssystem ist in der Lage, scheinbar mehrere Aufgaben gleichzeitig auszuführen. Diese Fähigkeit wird 
+allgemein als Multitasking bezeichnet. Es geht dabei nicht nur um den bequemen Nebeneffekt, dass mehrere 
+Anwendungsprogramme geöffnet sein können und zwischen ihnen hin- und hergeschaltet werden kann, sondern vor allem um 
+Aufgaben, die das Betriebssystem im Hintergrund erledigen muss, während nur eines dieser Programme verwendet wird.
+
+Jede der einzelnen gleichzeitig stattfindenden Aufgaben wird unter den meisten Betriebssystemen durch einen Prozess 
+realisiert. Einem Prozess stehen aus seiner eigenen Sicht alle Ressourcen des Rechners exklusiv zur Verfügung: die 
+gesamte ungeteilte Rechenzeit des Prozessors, der vollständige Arbeitsspeicher und der alleinige Zugriff auf sämtliche 
+Ein- und Ausgabekanäle. Es ist Sache des Betriebssystems, die Ressourcen hinter den Kulissen zu verteilen. Ein Prozess, 
+der auf eine Ressource wartet, muss in einen Wartezustand versetzt und später wieder aufgerufen werden.
+
+Dieser Service eines Betriebssystems erleichtert es Anwendungsprogrammierern, sich auf ihre eigentlichen Aufgaben zu 
+konzentrieren. Wenn eine Bedingung eintritt, für die ein bestimmter Prozess nicht zuständig ist, übernimmt das System 
+automatisch die Kontrolle, legt den Prozess schlafen, löst das anstehende Problem und ruft den Prozess anschließend 
+wieder auf.
 
 #### Das Unix-Prozessmodell
 
