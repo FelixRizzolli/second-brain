@@ -139,7 +139,7 @@ experimentieren und zu erkennen, das für einen persönlich gut funktioniert.
 ## Grundlegendes über Sprachen
 ### Die Funktion einer Sprache
 Jede Sprache verfügt über vier Funktionen:
-<list>
+<list style="bullet">
     <li>
         <strong>Kontaktaufnahme</strong> – Wenn wir eine aktiv anwenden wollen, müssen wir mit Menschen in Kontakt 
         treten. Je besser unser Selbstvertrauen entwickelt ist, desto mehr positive Stimmung und dem Gespräch 
@@ -163,7 +163,7 @@ Jede Sprache verfügt über vier Funktionen:
 ### Die Struktur einer Sprache – Grammatik
 Jede Sprache folgt einer bestimmten Struktur. Diese Struktur wird in der jeweiligen Grammatik beschrieben. Die Grammatik lässt sich in folgende
 Teilbereiche unterteilen:
-<list>
+<list style="bullet">
     <li>
         <strong>Morphologie</strong> – die Formenlehre von Wörtern. Sie behandelt, vom Wort ausgehend, die Analyse der 
         Flexionsformen und der Wortarten. Daneben beinhaltet sie außerdem auch die Wortbildung, deren Funktion die 
@@ -351,7 +351,7 @@ Im Detail sieht es wie folgt aus:
 Für dieses Ziel sind meistens Sprachkurse, die im gewöhnlichen Buchhandel erworben werden können, optimal. Diese sollten 
 jedoch folgende Kriterien erfüllen:
 
-<list>
+<list style="bullet">
     <li>
         <strong>Texte</strong>, die für den Sprachkurs verwendet werden, müssen sowohl in Deutsch als auch in der zu 
         erlernenden Zielsprache abgedruckt sind. Es reicht nicht aus, nur die ersten sieben oder acht Kapitel als 
@@ -385,7 +385,7 @@ jedoch folgende Kriterien erfüllen:
 
 ### Lernmethoden
 #### Grundlegende Gesetze und Prinzipien
-<list>
+<list style="bullet">
     <li>
         <strong>In 20 Minuten zum Ziel</strong> – Wir sollten nie länger als 20 Minuten für eine Lerneinheit aufwenden. 
         Bereits nach 20 Minuten beginnt unser Gehirn damit, Gelerntes zu überschreiben.
@@ -440,7 +440,7 @@ geht.
 
 ### Aktionsplan
 Die besten Ideen der Welt sind wertlos, wenn sie nicht umgesetzt werden. Daher brauchen wir unbedingt einen Aktionsplan.
-<list>
+<list style="bullet">
     <li>
         Wir müssen genau entscheiden, was wir anstreben. Dazu hilft und das CEFRL-System. Wir müssen entscheiden, 
         welches Ziel etwas höher gesteckt ist als ein sicher erreichbares Ziel, sodass wir uns wirklich selbst 
@@ -476,7 +476,7 @@ dass das Lernen einer neuen Sprache für sie unmöglich ist, wenn sie es selbst 
 monatelang dieser Sprache ausgesetzt waren.
 
 Großartige Möglichkeiten von zu Hause aus sind:
-<list>
+<list style="bullet">
     <li>
         <strong>mit anderen Nicht-Muttersprachlern lernen</strong>: andere Lernende eignen sich ebenfalls bestens als 
         Übungspartner. Da beide lernen, entsteht weniger Verlegenheit, wenn jemand Fehler macht, und man kann den 
