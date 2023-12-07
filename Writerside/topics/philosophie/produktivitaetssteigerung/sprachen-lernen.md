@@ -385,7 +385,59 @@ jedoch folgende Kriterien erfüllen:
 
 ### Lernmethoden
 #### Grundlegende Gesetze und Prinzipien
+<list>
+    <li>
+        <strong>In 20 Minuten zum Ziel</strong> – Wir sollten nie länger als 20 Minuten für eine Lerneinheit aufwenden. 
+        Bereits nach 20 Minuten beginnt unser Gehirn damit, Gelerntes zu überschreiben.
+    </li>
+    <li>
+        <strong>Das Parkinsonsche Gesetz</strong> – Arbeit dehnt sich genau dem Maße aus, wie Zeit für ihre Erledigung 
+        zur Verfügung steht. Das bedeutet, wir müssen uns strenge Deadlines setzen.
+    </li>
+    <li>
+        <strong>80/20-Regel</strong> – Wir benötigen maximal zehn Wochen, um jede Sprache der Welt zu 80 % in allen 
+        für uns relevanten Situationen anwenden zu können. Für die restlichen 20 % benötigen wir den übrigen Rest 
+        unseres Lebens. Und auch Muttersprachler verfügen über kein 100- prozentiges Sprachverständnis.
+    </li>
+    <li>
+        <strong>Kein Englisch (Sprache ist austauschbar)</strong> – Auf die Frage: »Do you speak English?« sollten wir 
+        immer mit »No, I don't speak English« oder auch »just a little bit« antworten. Damit zwingen wir uns, uns mit 
+        unserem gegenüber in unserer Zielsprache zu unterhalten.
+    </li>
+    <li>
+        <strong>Burn-out – die totale Verausgabung</strong> ist leider einer der häufigsten Gründe, warum jemand es 
+        aufgibt, eine Sprache umfassend zu lernen. Es braucht auch Pausen.
+    </li>
+    <li>
+        <strong>Die Stichwort-Methode</strong> – ist eine effektive und amüsante Lernmethode für Vokabeln. Es handelt 
+        sich um die Assoziation markanter Bilder mit etwas, das ähnlich klingt wie das Wort, das man sich merken möchte. 
+        Immer wenn uns ein neues Wort oder eine neue Redewendung begegnet, die wir uns merken möchten, denken wir uns 
+        ein amüsantes, lebendiges und vergessliches Bild oder sogar eine Kurzgeschichte aus, damit sie in unserem 
+        Gedächtnis bleibt. An solche Bilder oder Stichworte erinnern wir uns viel leichter. Anregungen für Stichwort-
+        Assoziationen und wie wir darin besser werden finden wir unter: memrise.com.
+    </li>
+    <li>
+        <strong>Wiederholung mit Karteikarten</strong> – Bei der Wiederholung in bestimmten Abständen wird mit 
+        Karteikarten gearbeitet. Die schwierigen Wörter an die man sich nicht erinnern konnte liegen oben auf dem Stapel 
+        und die Wörter, die man bereits beherrscht, liegen ganz unten. Mit der Software Anki ist dies virtuell möglich.
+    </li>
+    <li>
+        <strong>Mini-Texte auswendig lernen</strong> – Mini-Teste sind unglaublich nützlich, weil jeder von uns ähnliche 
+        Gespräche hat, wenn wir als Anfänger in einer Fremdsprache erstmals mit jemandem sprechen. Wer sind Sie? Woher 
+        kommen Sie? Was machen Sie beruflich? Warum lernen Sie diese Sprache? Diese Sätze werden tatsächlich so häufig 
+        verwendet, dass wir den Text einfach nur auswendig lernen müssen um schneller und einfacher durchzukommen und 
+        auch sich selbst zu zwingen, die nächste Stufe des Sprachenlernens anzupacken.
+    </li>
+</list>
+
 #### Die wichtigsten Wörter
+Es gib Statistiken, wonach wir bis zu unserem siebzehnten Lebensjahr mit 60.000 Wörtern in Kontakt gekommen sind, also 
+Wörter oder Begriffe, die wir jemals gehört oder gelesen haben. Dazu zählen auch Fachbegriffe, Ortsnamen, Vor- und 
+Nachnamen uns so weiter. Laut Benny Lewis reichen 480 der wichtigsten Wörter aus, um alle möglichen Texte, mit denen wir 
+in Kontakt kommen, zu 51% zu verstehen. Diese 480 Wörter, sind jene 480 Wörter, die wir in den letzten sieben Tagen am 
+häufigsten verwendet haben. Mit diesen Wörtern sollten wir Anfangen, wenn es um sie Erweiterung unseres Wortschatzes 
+geht.
+
 ### Aktionsplan
 ### Immersion
 #### Reisen als Motivation
