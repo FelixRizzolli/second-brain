@@ -429,6 +429,33 @@ Betriebssysteme an. Bevor ein bestimmtes Gerät angeschafft wird, muss also sich
 Betriebssystem verfügbar ist.
 
 #### Systemprogramme
+Diejenigen Bestandteile des Betriebssystems, die nicht zum Kernel gehören, liegen in der Regel als unabhängige Programme 
+vor, die willkürlich geladen, ausgeführt und wieder beendet werden können. Bei einem Betriebssystem mit 
+Konsolen-Oberfläche muss man die Namen dieser Programme kennen, weil sie durch Eingabe ihres Namens aufgerufen werden. 
+In einer grafischen Benutzeroberfläche werden sie dagegen hinter den Kulissen automatisch aufgerufen, wenn 
+beispielsweise das Symbol des Programms per Doppelklick ausgewählt wird.
+
+Verschiedene Betriebssysteme verfügen über unterschiedlich mächtige Systemprogramme. Unix-Systeme sind mit besonders 
+leistungsfähigen Systemprogrammen ausgestattet, weshalb Unix-Benutzer häufiger als die Anwender anderer Betriebssysteme 
+die Konsole verwenden, obwohl auch Unix-Systeme inzwischen mit sehr überzeugenden grafischen Oberflächen ausgestattet 
+sind.
+
+Bei einem Unix-System kann jede beliebige Verwaltungsaufgabe über die Konsole erledigt werden, während unter Windows 
+einige Werkzeuge nur unter der grafischen Oberfläche zur Verfügung stehen. Aus diesem Grund können Unix-Rechner auch von 
+fern über ein Netzwerk bedient werden. Die Konsole kann über eine Terminal-Emulation zur Verfügung gestellt werden, ein 
+Programm auf einem anderen Rechner übernimmt also die Funktion eines Terminals. Das einzige System, bei dem 
+Systemprogramme nicht ohne Weiteres direkt aufgerufen werden konnten, weil es überhaupt keine Konsole besaß, war das 
+veraltete Mac OS bis einschließlich Version 9.
+
+Typische Systemprogramme sind beispielsweise Befehle zur Manipulation von Dateien und Verzeichnissen, etwa für das 
+Umbenennen, Löschen oder Kopieren. Außerdem gehören allerlei Steuerungs- und Analysewerkzeuge dazu.
+
+Systemprogramme sind übrigens nicht zu verwechseln mit Systemaufrufen. Letztere werden von Prozessen in Gang gesetzt, 
+die auf Dienstleistungen des Kernels zugreifen müssen. Viele Systemprogramme verwenden letztlich Systemaufrufe, um ihre 
+Aufgabe zu erfüllen, aber nicht alle. Ebenso wenig sollten Systemprogramme mit den einfachen Anwendungsprogrammen 
+durcheinander gebracht werden, die mit vielen Betriebssystemen geliefert werden. Ein einfacher Taschenrechner, ein 
+Texteditor oder ein MP3-Player ist kein Systemprogramm, sondern eine Anwendung.
+
 
 #### Die Schnittstelle für
 
