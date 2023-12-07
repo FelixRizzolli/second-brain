@@ -466,8 +466,62 @@ Die besten Ideen der Welt sind wertlos, wenn sie nicht umgesetzt werden. Daher b
 </list>
 
 ### Immersion
+Es ist nicht nötig im Ausland zu sein, um eine Sprache zu lernen. Das geht auch ganz bequem von zu Hause aus oder über 
+eine Community vor Ort. Es könnte sogar besser sein, die Sprache von zu Hause aus zu lernen. Das Problem ist die starke 
+Versuchung, mit Menschen abzuhängen, mit denen man sich problemlos austauschen kann, sodass man am Ende praktisch keine 
+einheimischen Freunde findet oder nur Einheimische trifft, die ausgezeichnet Englisch sprechen.
+
+Weil so viele Leute meinen, ein Aufenthalt im jeweiligen Land sei die Lösung ihrer Probleme, fangen sie an zu glauben, 
+dass das Lernen einer neuen Sprache für sie unmöglich ist, wenn sie es selbst dann nicht schaffen, nachdem sie 
+monatelang dieser Sprache ausgesetzt waren.
+
+Großartige Möglichkeiten von zu Hause aus sind:
+<list>
+    <li>
+        <strong>mit anderen Nicht-Muttersprachlern lernen</strong>: andere Lernende eignen sich ebenfalls bestens als 
+        Übungspartner. Da beide lernen, entsteht weniger Verlegenheit, wenn jemand Fehler macht, und man kann den 
+        gegenseitigen Fehler recht gut nachvollziehen.
+    </li>
+    <li>
+        <strong>Medien aus der Ferne konsumieren</strong>: Radiosender, Wikipedia Artikel in einer anderen Sprache, 
+        Filme in deren Originalsprache aus dem Zielland, Bücher, Comics...
+    </li>
+    <li>
+        <strong>Online-Sprachaustausch</strong>: mittels Zoom, Skype oder Discord kann man sich auch Online mit anderen 
+        zum Sprachaustausch vernetzen.
+    </li>
+</list>
+
 #### Reisen als Motivation
+Der wirksamste Nutzen eines Flugtickets liegt darin, den bevorstehenden Abflug als Motivation für besonders harte Arbeit 
+vor der Reise zu betrachten, damit wir in der Lage sind, unsere Erlebnisse in dem Land zu maximieren, sobald wir den 
+ersten Schritt aus dem Flieger gemacht haben. Wir sollten die geplante Reise als Selbstmotivation nutzen, um im Voraus 
+intensive Sprech- und Lernzeiten zu absolvieren. Sind wir erst einmal im Land angekommen, sind diese Aktivitäten 
+erledigt und wir können uns darauf konzentrieren, das Leben durch diese Sprache zu genießen.
+
 #### Hilfreiche Websites
+Die Website <a href="https://www.couchsurfing.com/">couchsurfing.org</a> ist unter Reisenden mit kleinem Budget bekannt. 
+Sie bietet eine Möglichkeit, sich mit Leuten zu vernetzen, die in Städten in aller Welt wohnen und einem dazu 
+einzuladen, bei ihnen auf der Couch zu übernachten (Couch-Suft). Das Tolle an der Site ist, dass die Mitglieder, da sie 
+Weltreisende sind, recht aufgeschlossen und sehr viel eher bereit sind, sich mit einem interessanten neuen Ausländer zu 
+treffen als in anderen Communitys.
+
+<a href="https://www.internations.org/">InterNations.org</a> veranstaltet in größeren Städten gesellschaftliche Events, 
+die eine gute Mischung von Leuten aus verschiedenen Ländern anziehen. In der Kurzdarstellung des Treffens mit den 
+Teilnehmerzahlen pro Land sieht man im Voraus, welche Nationalitäten teilnehmen werden, sodass man gute Aussichten hat, 
+jemanden zu treffen, mit dem man die Zielsprache üben kann.
+
+Bei <a hred="https://www.meetup.com/">Meetup.com</a>, deren Publikum vielleicht nicht so international ist, gibt es 
+spezielle Treffen, um besondere Sprachen zu üben.
+
+Über <a href="https://www.italki.com/de">Italki.com</a> kann man Sprachpartner suchen, eine Zeit im Voraus vereinbaren 
+und sich Referenzen von anderen anschauen, die bereits mit einer speziellen Person gesprochen haben, sodass man weis, ob 
+diese Person wahrscheinlich hilfsbereit und freundlich sein wird.
+
+In jedem sozialen Netzwerk gibt es letztlich die Möglichkeit Sprachtreffen zu organisieren. Findet man nichts, so kann 
+man selbst organisieren, um sich mit anderen Sprachlernern zu vernetzen. Findet man keine Muttersprachler, kann es auch 
+vorteilhaft sein, mit anderen zusammen zu lernen.
+
 #### Soziales Fallschirmspringen
 ### Sprechen
 #### Vorbereitung für das erste Gespräch
