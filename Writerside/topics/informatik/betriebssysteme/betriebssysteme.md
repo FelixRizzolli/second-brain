@@ -691,6 +691,23 @@ Anstelle dieses Modells sollte eine mehrstufige Anmeldung für die Verwendung vo
 </list>
 
 #### Threads
+Einige Prozesse müssen gemeinsam dasselbe Problem bearbeiten und ununterbrochen miteinander kommunizieren. Dies gilt 
+insbesondere für Prozesse, die nebeneinander im gleichen Anwendungsprogramm laufen. IPC oder andere Methoden der 
+Prozesskommunikation sind zwar möglich, verschwenden aber auf die Dauer Systemressourcen. Interessanter ist eine 
+Prozessvariante, bei der sich mehrere Abläufe von vornherein dieselben Ressourcen teilen.
+
+Zu diesem Zweck werden in vielen Betriebssystemen die leichtgewichtigen und schnell zu wechselnden Threads verwendet. 
+Diese besitzen innerhalb desselben übergeordneten Prozesses keine voneinander getrennten Speicherbereiche, sondern 
+greifen auf dieselbe Stelle des Speichers zu. Windows unterstützt Threads bereits seit den ersten Versionen von Windows 
+NT, in Unix-Systemen wurden sie erst später eingeführt. Zuletzt wurden sie unter Linux nachgerüstet; seit dem Kernel 2.4 
+können sie als stabil bezeichnet werden.
+
+Threads übernehmen häufig Aufgaben, die parallel innerhalb desselben Programms ausgeführt werden müssen. Besonders 
+anschaulich lässt sich dies anhand eines in Echtzeit laufenden 3D-Computerspiels erläutern: Eingaben zur Steuerung der 
+eigenen Spielfigur müssen gleichzeitig entgegengenommen werden, die Umgebung muss ständig neu gezeichnet werden, und es 
+müssen permanente Zustandskontrollen stattfinden. Es wäre für einen Programmierer ein Ärgernis, wenn er sich selbst 
+Gedanken darüber machen müsste, in welcher Reihenfolge die einzelnen Schritte wann stattfinden sollen. Werden die 
+verschiedenen Aufgaben dagegen in Threads verpackt, führt der Prozessor sie abwechselnd in kurzen Zeitintervallen aus.
 
 ### Speicherverwaltung
 
