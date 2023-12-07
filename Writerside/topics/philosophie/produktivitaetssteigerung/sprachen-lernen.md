@@ -607,11 +607,89 @@ Sicherheit wohl gesagt?
 
 ### Tipps
 #### Kognaten - Wörter gleicher Abstammung
+Ein Kognat ist ein Wort, das nicht nur aussieht und klingt wie ein Wort, das wir bereits kennen, sondern auch in unserer 
+Muttersprache dasselbe bedeutet wie in unserer Zielsprache. Egal welche Sprache wir lernen, wir werden feststellen, dass 
+einige internationale Wörter überall gleich sind, wenn auch mit der jeweiligen örtlichen Aussprache. »Obama« 
+beispielsweise bleibt wie die meisten Eigennamen in jeder Sprache, der wir begegnen, gleich. Auch Markennamen sind in 
+den verschiedenen Sprachen größtenteils sehr ähnlich wie beispielsweise Coca-Cola (sogar in Mandarin, wo es Kekou-Kele 
+heißt, ohne Berücksichtigung von Tonakzenten).
+
+Es gibt auch Kognaten, die nicht genau gleich geschrieben werden, bei denen man die Verbindung jedoch ohne viel Fantasie 
+herstellen kann wie bei posesión auf Spanisch und »posession« auf Englisch.
+
+Grundsätzlich sind Kognaten eine Menge frei verfügbares Vokabular und sie sind ein Grund, warum es nicht möglich ist, 
+eine Sprache wirklich »aus dem Nichts« anzufangen. Sushi, um ein Beispiel zu nennen, ist praktisch immer »Sushi«, egal 
+in welchem Land der Weld wir sind. In ganz Europa werden die Wörter für »Demokratie« und »Kommunismus« so ähnlich 
+ausgesprochen, dass man sich wirklich anstrengen müsste, sie nicht zu erkennen.
+
 #### Konjugationen
+Modalverben sind »Hilfs«-Verben (Hilfszeitwörter), die uns helfen, etwas auszudrücken, ohne dass wir uns zu sehr um die 
+Konjugation kümmern müssen. Bei der Konjugation verändern sich die Worte je nachdem, wer tätig ist. Auf Deutsch ergibt 
+das für das Verb »sein« »ich bin«, »du bist«, »er/sie/es ist«. Die Konjugation betrifft auch das Tempus des Verbs, es 
+gibt also an, wann die Tätigkeit stattfindet: »ich war« (Vergangenheit). Gäbe es keine Konjugation auf Deutsch, würden 
+wir »sein« verwenden anstelle von »bin«, »bist«, »ist«, »werde/wirst sein« und »war/warst« - so funktioniert es in 
+einigen asiatischen Sprachen wie Chinesisch.
+
+Wer Englisch lernt, ist froh, dass die englische Konjugation meist relativ einfach ist. in der Gegenwart wird häufig ein 
+s angefügt (»I eat« »he eats«, »I jog« »he jogs«). Leider ist das bei vielen anderen europäischen Sprachen anders. Daher 
+ist die Verwendung von Hilfsverben empfehlenswert. Hierbei wird einfach die Konjugation weniger Verben gelernt und die 
+Infinitiv form hinten dran gehängt. Anstatt zu sagen: »ich werde erzählen«, wobei die Konjugation im Futur 
+berücksichtigt werden müsste, kann auch »ich möchte erzählen« gesagt werden. Für jede Sprache sind folgende
+
+Modalverben empfehlenswert zu lernen: können, sollen, wollen, müssen und mögen. In vielen Sprachen gibt es von den 
+Personalpronomen eine zwanglose und eine Höflichkeitsform, was kompliziert klingen mag; um die Dinge jedoch zu 
+vereinfachen, kann man sich auf die Höflichkeitsform »Sie« beschränken und zumindest anfangs die vertraute Form 
+ignorieren. In vielen Ländern klingt es sonderbar, sich in der Höflichkeitsform an einen engen Freund oder einen sehr 
+jungen Menschen zu wenden, aber mit Fremden ist es besser diese Form zu nehmen.
+
 #### Traditionelles lernen für inhaltliche Probleme
+Es ist sehr schwierig, einen genauen Plan dafür zu erstellen, worauf das Hauptaugenmerk liegen sollte, weil jeder von 
+uns wegen der unterschiedlichen Schwerpunkte, Lernstrategien, Leidenschaften, Sprachwahl und persönlichen 
+Herausforderungen auf andere Probleme trifft. Letztlich können jedoch viele dieser Probleme unter die Kategorie 
+»inhaltliche Probleme« fallen. Probleme damit, wie die Sprache selbst funktioniert (wie Verben konjugiert, Sätze 
+strukturiert, Vokabeln erworben werden), im Gegensatz zu Problemen mit dem Selbstvertrauen oder fehlender Vertrautheit, 
+die meistens für Anfänger die größeren Probleme darstellen.
+
+Die Mehrheit der Lernmaterialien für Sprachen konzentriert sich speziell auf solche inhaltlichen Probleme. Beinahe jeder 
+Sprachlern-Kurs befasst sich damit, wie eine Sprache funktioniert, mit fachlichen Erklärungen, warum die Grammatik ist, 
+wie sie ist, wie Wörter gebildet werden, wie die Regeln zur unterschiedlichen Aussprache von Buchstaben in 
+unterschiedlichen Wörtern aussehen usw.
+
 #### Grammatik
+Für viele Menschen ist die Grammatik der abschreckendste Aspekt am Erlernen einer Sprache. Das Problem beim 
+Grammatiklernen zu Beginn eines Sprachlern-Projekts oder wenn wir noch nicht daran gewöhnt sind, in dieser Sprache auf 
+irgendeinem Niveau wirklich zu kommunizieren, besteht darin, dass wir nichts haben, woran wir diese langweiligen Regeln 
+festmachen können. Es ist eine unmenschliche Liste mit Regeln, die uns vergraulen, bevor wir überhaupt angefangen haben. 
+Nachdem wir jedoch etwas von der Sprache gelernt haben, sie im echten Leben gehört haben, versucht haben, darin zu 
+kommunizieren, und viel echtem Material ausgesetzt waren und wirklich versucht haben, sie zu verstehen, verfügen wir 
+über etwas Substanz, die wir an diesem tragenden Skelett anbringen können.
+
 #### Input: Filme und Bücher
+Eine TV-Show zu verstehen oder eine Zeitung lesen zu können, ist keine so wirksame Hilfe wie die mündliche Übung beim 
+Bereisen eines Landes oder bei geselligen Kontakten mit anderen Leuten. Als Anfänger können wir solche Medien auch nicht 
+genießen. Aber wenn wir auf dem Weg vom fließenden Sprechen in die sichere Sprachbeherrschung sind, dann macht es Sinn, 
+Filme und Bücher, welche wir in unserer Muttersprache schauen / lesen würden in der zu erlernenden Sprache konsumieren.
+
+Input kann eine große Hilfe sein, wenn wir wissen, dass er zu unserem Sprachniveau passt oder knapp darüber liegt. Nur 
+einer akustischen Berieselung zu lauschen oder jedes einzelne Wort im Wörterbuch nachschauen zu müssen, kann jedoch 
+schrecklich frustrierend sein. Es ist zudem eine erfolglose Lernerfahrung.
+
+Wir dürfen uns nicht mit anderen Dingen beschäftigen wenn wir etwas hören. Wir sollten stattdessen Notizen machen, um 
+dafür zu sorgen, dass wir dem, was wir hören, auch wirklich folgen, oder wir versuchen, es für uns selbst zu 
+wiederholen, und achten darauf, jedes Wort zu verstehen. Je weniger Aufmerksamkeit wir dafür aufwenden, desto weniger 
+effizient werden wir etwas lernen.
+
+
 #### In der Zielsprache denken
+In einer anderen Sprache zu denken, bedeutet für die meisten Menschen, ihren inneren Dialog in der Zielsprache zu führen 
+und ich bemühe mich, dies von Anfang an zu tun. Ist uns beispielsweise die Milch ausgegangen, sollten wir uns zwingen, 
+nicht in unserer Muttersprache zu denken: »Verdammt! Keine Milch mehr da. Sieht ganz so aus, als müsste ich einkaufen 
+gehen«, sondern denselben inneren Dialog in der Sprache zu führen, die wir lernen. Wenn wir ein Wort nicht kennen, 
+müssen wir nachschauen, weil unser innerer Dialog normalerweise dem Vokabular folgt, das wir verwenden würden und den 
+Unterhaltungen, die wir beiläufig mit Freunden führen würden. Wir können aber auch den Dialog führen, wenn wir nicht 
+alle Wörter kennen, nur mit einfacheren Wörtern und schlechter Grammatik, etwa: »Oh nein! Keine Milch. Ich muss 
+einkaufen!«
+
 ### Hilfsmittel
 #### Preiswerte allgemeine Kurse gegenüber teuren Kursen
 #### Der perfekte Lernansatz
