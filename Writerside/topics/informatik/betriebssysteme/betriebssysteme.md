@@ -1,4 +1,5 @@
 # Betriebssysteme
+<show-structure for="chapter,procedure" depth="2"/>
 
 ## Was ist ein Betriebssystem?
 Damit Anwendungsprogramme auf Computern laufen können, ist ein Betriebssystem erforderlich. Im Einzelnen erfüllen 
