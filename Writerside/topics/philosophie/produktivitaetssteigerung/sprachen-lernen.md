@@ -44,6 +44,16 @@ entscheidet über den persönlichen Erfolg. Erledigt man die Arbeit, die zum Erl
 mit »Naturtalenten« gleichziehen – oder diese sogar überrunden.
 
 ### Ich habe zu wenig Zeit dafür
+Wenn es überhaupt Menschen gibt, die sich in Vollzeit dem Lernen von Sprachen widmen, dann sind sie eine Rarität. So gut 
+wie alle erfolgreichen Sprachenlerner, haben dies neben einem Vollzeitjob, neben ihrem Studium, neben einer 
+Familiengründung, neben der Betreuung von Angehörigen oder einer Menge sonstigen Pflichten geschafft ~ sagt Benny Lewis.
+
+Zeit hat man nicht, Zeit muss man sich schaffen. Der Erfolg stellt sich ein, wenn ihm Zeit zur Verfügung gestellt wird. 
+Viel zu viele von uns vergeuden endlose Stunden vor dem Fernseher, mit Facebook und YouTube, beim Shoppen, Alkohol 
+trinken und zahllosen weiteren Aktivitäten; oder Wartezeiten im Aufzug, an der Kasse, auf einen Freund, auf den 
+Bus ... All diese Momente summieren sich. Sie ergeben Stunden, in denen für die Sprache gelernt oder geübt werden 
+kann.
+
 ### Sprachlern-Programme sind teuer
 ### Ich warte auf den perfekten Sprachkurs
 ### Durch die falsche Lernmethode bin ich zum Scheitern verurteilt, bevor ich überhaupt angefangen habe
