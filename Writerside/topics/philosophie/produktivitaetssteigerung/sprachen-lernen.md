@@ -699,7 +699,7 @@ stärker unter Druck fühlen, fleißig zu lernen, wenn wir so viel Geld ausgegeb
 #### Der perfekte Lernansatz
 Kein Kurs, egal wie überzeugend die Werbung dafür auch sein mag, kann die allumfassende Lösung für alle unsere Probleme 
 beim Sprachenlernen bieten. Wir sollten uns auf das Sprechen konzentrieren und Sprachkurse oder Bücher nur ein paar 
-Stunden lang zur allgemeinen Verbesserung verwenden. Ein großes Problem vieler Sprachenlerner ist, dass sie 
+Stunden lang zur allgemeinen Verbesserung verwenden. Ein großes Problem vieler Sprachlerner ist, dass sie 
 Lernmaterialien horten und meinen, mit allem ein bisschen experimentieren zu können. Die Zeit, die wir damit verbringen, 
 nach dem besten Lernmaterial zu suchen, dass wir kaufen können, währe besser investiert, die Sprache tatsächlich zu 
 üben.
