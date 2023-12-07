@@ -200,6 +200,151 @@ Laut dieser Definition gibt es für uns jedoch nicht den absoluten, wahrnehmbare
 spreche ich die Sprache fließend.« Das ist allerdings ein Problem, wenn wir uns ein bestimmtes Ziel setzen möchten.
 
 ### Das CEFRL-System
+Das <emphasis>Common European Framework of Reference for Languages</emphasis> (CEFRL) wurde vom Europarat in den 1990er 
+Jahren erarbeitet und 2001 zum ersten Mal veröffentlicht. Es ist eine umfassende Richtlinie zur Sprachbeurteilung. Das 
+System arbeitet mit einer Standardterminologie, die in ganz Europa für die jeweiligen Sprachniveaus akzeptiert wird. Es 
+wird auch von vielen Institutionen für die asiatischen Sprachen genutzt, auch wenn diese Länder sie offiziell nicht 
+anerkannt haben. Im Groben werden die Kompetenzniveaus wie folgt unterteilt:
+
+<list style="bullet">
+    <li>Kompetenzniveau A beschreibt eine elementare Sprachverwendung.</li>
+    <li>Kompetenzniveau B beschreibt eine selbständige Sprachverwendung.</li>
+    <li>Kompetenzniveau C beschreibt eine kompetente Sprachverwendung.</li>
+</list>
+
+Im Detail sieht es wie folgt aus:
+
+<table style="both">
+<tr>
+    <td>Stufe</td>
+    <td>Beschreibung</td>
+    <td>Beschreibung der erforderlichen Fähigkeiten</td>
+</tr>
+<tr>
+    <td>A1</td>
+    <td>Einstieg</td>
+    <td>
+        <list>
+            <li>
+                Kann vertraute, alltägliche Ausdrücke und ganz einfache Sätze verstehen und verwenden, die auf die 
+                Befriedigung konkreter Bedürfnisse zielen.
+            </li>
+            <li>
+                Kann sich und andere vorstellen und anderen Leuten Fragen zu ihrer Person stellen – z. B. wo sie wohnen, 
+                welche Leute sie kennen oder welche Dinge sie haben – und kann auf Fragen dieser Art Antwort geben.
+            </li>
+            <li>
+                Kann sich auf einfache Art verständigen, wenn die Gesprächspartner langsam und deutlich sprechen und 
+                bereit sind zu helfen.
+            </li>
+        </list>
+    </td>
+</tr>
+<tr>
+    <td>A2</td>
+    <td>Grundlagen</td>
+    <td>
+        <list>
+            <li>
+                Kann Sätze und häufig gebrauchte Ausdrücke verstehen, die mit Bereichen von ganz unmittelbarer Bedeutung 
+                zusammenhängen (z. B. Informationen zur Person und zur Familie, Einkaufen, Arbeit, nähere Umgebung).
+            </li>
+            <li>
+                Kann sich in einfachen, routinemäßigen Situationen verständigen, in denen es um einen einfachen und 
+                direkten Austausch von Informationen über vertraute und geläufige Dinge geht.
+            </li>
+            <li>
+                Kann mit einfachen Mitteln die eigene Herkunft und Ausbildung, die direkte Umgebung und Dinge im 
+                Zusammenhang mit unmittelbaren Bedürfnissen beschreiben.
+            </li>
+        </list>
+    </td>
+</tr>
+<tr>
+    <td>B1</td>
+    <td>Mittelstufe</td>
+    <td>
+        <list>
+            <li>
+                Kann die Hauptpunkte verstehen, wenn klare Standardsprache verwendet wird und wenn es um vertraute Dinge 
+                aus Arbeit, Schule, Freizeit usw. geht.
+            </li>
+            <li>
+                Kann die meisten Situationen bewältigen, denen man auf Reisen im Sprachgebiet begegnet.
+            </li>
+            <li>
+                Kann sich einfach und zusammenhängend über vertraute Themen und persönliche Interessengebiete äußern.
+            </li>
+            <li>
+                Kann über Erfahrungen und Ereignisse berichten, Träume, Hoffnungen und Ziele beschreiben und zu Plänen 
+                und Ansichten kurze Begründungen oder Erklärungen geben.
+            </li>
+        </list>
+    </td>
+</tr>
+<tr>
+    <td>B2</td>
+    <td>Gute Mittelstufe</td>
+    <td>
+        <list>
+            <li>
+                Kann die Hauptinhalte komplexer Texte zu konkreten und abstrakten Themen verstehen; versteht im eigenen 
+                Spezialgebiet auch Fachdiskussionen.
+            </li>
+            <li>
+                Kann sich so spontan und fließend verständigen, dass ein normales Gespräch mit Muttersprachlern ohne 
+                größere Anstrengung auf beiden Seiten gut möglich ist.
+            </li>
+            <li>
+                Kann sich zu einem breiten Themenspektrum klar und detailliert ausdrücken, einen Standpunkt zu einer
+                aktuellen Frage erläutern und die Vor- und Nachteile verschiedener Möglichkeiten angeben.
+            </li>
+        </list>
+    </td>
+</tr>
+<tr>
+    <td>C1</td>
+    <td>Fortgeschrittene Kenntnisse</td>
+    <td>
+        <list>
+            <li>
+                Kann ein breites Spektrum anspruchsvoller, längerer Texte verstehen und auch implizite Bedeutungen 
+                erfassen.
+            </li>
+            <li>
+                Kann sich spontan und fließend ausdrücken, ohne öfter deutlich erkennbar nach Worten suchen zu müssen.
+            </li>
+            <li>
+                Kann die Sprache im gesellschaftlichen und beruflichen Leben oder in Ausbildung und Studium wirksam und 
+                flexibel gebrauchen.
+            </li>
+            <li>
+                Kann sich klar, strukturiert und ausführlich zu komplexen Sachverhalten äußern und dabei verschiedene 
+                Mittel zur Textverknüpfung angemessen verwenden.
+            </li>
+        </list>
+    </td>
+</tr>
+<tr>
+    <td>C2</td>
+    <td>Exzellente Kenntnisse</td>
+    <td>
+        <list>
+            <li>
+                Kann praktisch alles, was er/sie liest oder hört, mühelos verstehen.
+            </li>
+            <li>
+                Kann Informationen aus verschiedenen schriftlichen und mündlichen Quellen zusammenfassen und dabei 
+                Begründungen und Erklärungen in einer zusammenhängenden Darstellung wiedergeben.
+            </li>
+            <li>
+                Kann sich spontan, sehr flüssig und genau ausdrücken und auch bei komplexeren Sachverhalten feinere 
+                Bedeutungsnuancen deutlich machen.
+            </li>
+        </list>
+    </td>
+</tr>
+</table>
 
 ## Effizient lernen
 ### Eine Fremdsprache in 10 Wochen lernen
