@@ -1103,6 +1103,36 @@ nach dem besten Lernmaterial zu suchen, dass wir kaufen können, währe besser i
 </table>
 
 ##### Thema wechseln
+<table style="none">
+<tr>
+    <td>Es scheint mir, dass ...</td>
+    <td>Now it occurs to me that ...</td>
+</tr>
+<tr>
+    <td>Da fällt mir ein/Übrigens ...</td>
+    <td>By the way ...</td>
+</tr>
+<tr>
+    <td>Dazu fällt mir eine interessante Geschichte ein.</td>
+    <td>I have an interesting story about it.</td>
+</tr>
+<tr>
+    <td>Und abgesehen davon ...</td>
+    <td>And besides that ...</td>
+</tr>
+<tr>
+    <td>Oh, beinah hätte ich es vergessen ...</td>
+    <td>Oh, I nearly forgot ...</td>
+</tr>
+<tr>
+    <td>Eine Sache noch ...</td>
+    <td>And one more thing ...</td>
+</tr>
+<tr>
+    <td>Andererseits ...</td>
+    <td>On the other hand ...</td>
+</tr>
+</table>
 
 
 ## Quellen
