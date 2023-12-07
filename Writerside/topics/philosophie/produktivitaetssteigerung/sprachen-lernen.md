@@ -692,7 +692,18 @@ einkaufen!«
 
 ### Hilfsmittel
 #### Preiswerte allgemeine Kurse gegenüber teuren Kursen
+Es besteht kein Zusammenhang zwischen dem Preis für einen Kurs und dessen Qualität, Nützlichkeit und Ergebnissen. Eine 
+Sache, die normalerweise wirksam ist, wenn wir viel Geld hingelegt haben, ist der rein psychologische Effekt, da wir uns 
+stärker unter Druck fühlen, fleißig zu lernen, wenn wir so viel Geld ausgegeben haben.
+
 #### Der perfekte Lernansatz
+Kein Kurs, egal wie überzeugend die Werbung dafür auch sein mag, kann die allumfassende Lösung für alle unsere Probleme 
+beim Sprachenlernen bieten. Wir sollten uns auf das Sprechen konzentrieren und Sprachkurse oder Bücher nur ein paar 
+Stunden lang zur allgemeinen Verbesserung verwenden. Ein großes Problem vieler Sprachenlerner ist, dass sie 
+Lernmaterialien horten und meinen, mit allem ein bisschen experimentieren zu können. Die Zeit, die wir damit verbringen, 
+nach dem besten Lernmaterial zu suchen, dass wir kaufen können, währe besser investiert, die Sprache tatsächlich zu 
+üben.
+
 #### Das wichtigste für den Start
 
 ## Quellen
