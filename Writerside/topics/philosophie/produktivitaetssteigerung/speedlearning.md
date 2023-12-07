@@ -363,3 +363,36 @@ Knien, dann unserem Bauch, und so weiter. Dann wiederholen wir die Begriffe, um 
         </li>
     </list>
 </tip>
+
+### Zahl-Reim-System
+Gedächtnistraining mit dem Zahl-Reim-System ist möglich, indem wir zu den <strong>Zahlen von 0 bis 9</strong> jeweils 
+<strong>ein Wort</strong> zum Merken hinzufügen. Die Wörter reimen sich auf die Bezugszahlen, was bei dem Lernen und 
+Merken von Informationen beim Gedächtnistraining helfen kann.
+
+<tip>
+    <p>
+        Wir möchten uns beim Gedächtnistraining die ersten Zahlen von <strong>Pi (3,1415)</strong> merken. Wir beginnen 
+        damit, unsere Wörter zum Merken (passend zu den Zahlen) festzulegen:
+    </p>
+    <list style="bullet">
+        <li>0 – Nacktmull</li>
+        <li>1 – Keins</li>
+        <li>2 – Frei</li>
+        <li>3 – Hai</li>
+        <li>4 – Bier</li>
+        <li>5 – Strümpf(e)</li>
+        <li>6 – Hex(e)</li>
+        <li>7 – Lieben</li>
+        <li>8 – Nacht</li>
+        <li>9 – Scheun(e)</li>
+    </list>
+    <p>
+        Nun merken wir uns die Zahlen und Wörter durch das Verknüpfen durch die Reime. Jetzt denken wir uns zum Beispiel 
+        eine Geschichte mit den Wörtern aus:
+    </p>
+    <p>
+        “Es war einmal ein <strong>Hai (3)</strong>, der <strong>keine (1)</strong> Flosse hatte. Er schwamm gerne im 
+        Wasser, aber noch lieber in <strong>Bier (4)</strong>. Außerdem hatte er <strong>keine (1)</strong> Füße, 
+        weshalb er leider nie seine <strong>Strümpfe (5)</strong> tragen konnte.”
+    </p>
+</tip>
