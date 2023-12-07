@@ -1,3 +1,3 @@
-# About Sprachen
+# Sprachen
 
 Start typing here...

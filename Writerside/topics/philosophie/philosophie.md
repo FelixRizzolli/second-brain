@@ -1,3 +1,3 @@
-# About Philosophie
+# Philosophie
 
 Start typing here...

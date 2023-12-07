@@ -1,3 +1,3 @@
-# About Wirtschaft
+# Wirtschaft
 
 Start typing here...

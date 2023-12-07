@@ -1,3 +1,3 @@
-# About Mathematik
+# Mathematik
 
 Start typing here...
