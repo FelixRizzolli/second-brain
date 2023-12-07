@@ -710,6 +710,69 @@ Gedanken darüber machen müsste, in welcher Reihenfolge die einzelnen Schritte 
 verschiedenen Aufgaben dagegen in Threads verpackt, führt der Prozessor sie abwechselnd in kurzen Zeitintervallen aus.
 
 ### Speicherverwaltung
+Eine der wichtigsten Aufgaben eines Betriebssystems besteht in der Verwaltung des fast immer zu kleinen 
+Arbeitsspeichers. So gut wie alle aktuellen Betriebssysteme verwenden eine echte virtuelle Speicheradressierung, bei der 
+die von den Programmen angesprochenen Speicheradressen nicht identisch mit den Hardwareadressen des RAM-Speichers sein 
+müssen.
+
+Genau wie Gerätetreiber und Prozessmanagement entbindet das Speichermanagement einen Programmierer von einer recht 
+frustrierenden Aufgabe, nämlich von der Verteilung des Arbeitsspeichers an die einzelnen Prozesse beziehungsweise 
+Programme. Da eine richtig funktionierende Speicherverwaltung jedem Programm vorgaukelt, ihm stünde der gesamte 
+Arbeitsspeicher zur Verfügung, muss man sich beim Programmieren nicht mehr viele Sorgen machen, ob der Arbeitsspeicher 
+reicht.
+
+In der Regel wird der virtuelle Speicherraum vom Betriebssystem in sogenannte Segmente unterteilt. Bei modernen 
+Computersystemen beherrscht bereits der Prozessor selbst die Speichersegmentierung und kann dadurch mehr Speicher 
+adressieren, als im physikalischen RAM zur Verfügung steht. Zu diesem Zweck enthalten aktuelle Prozessoren ein Bauteil 
+namens Memory Management Unit (MMU). Spricht ein Programm eine bestimmte Speicheradresse an, dann nimmt die MMU sie 
+entgegen und rechnet sie in die aktuell zugeordnete physikalische Speicheradresse um.
+
+Aus der Sicht des Speichermanagements im Betriebssystem wird der Speicher in einzelne Seiten unterteilt, die durch das 
+sogenannte Paging auf die Festplatte ausgelagert werden, wenn ein Programm sie gerade nicht benötigt, und in den 
+Arbeitsspeicher zurückgeholt werden, wenn es sie wieder braucht. Die Datei, in der sich die ausgelagerten Speicherseiten 
+befinden, wird als Auslagerungsdatei (Page File) bezeichnet. Unix-Systeme verwenden häufig keine einzelne Datei dafür, 
+sondern eine Plattenpartition eines speziellen Typs, die als Swap-Partition bezeichnet wird.
+
+Die MMU unterhält zu diesem Zweck eine Seitentabelle, die zu jedem Zeitpunkt darüber Auskunft gibt, welche virtuelle 
+Speicherseite sich gerade wo befindet, sei es im Arbeitsspeicher oder in der Auslagerungsdatei. Dass eine Speicherseite 
+benötigt wird, die zurzeit ausgelagert ist, wird dabei durch einen Page Fault (Seitenfehler) zum Ausdruck gebracht.
+
+Da das Speichermanagement auf den Fähigkeiten der zugrunde liegenden Hardware aufbaut, funktioniert es unter Windows und 
+Linux, sofern sie auf Intel-Rechnern oder Kompatiblen laufen, recht ähnlich. Auf einem solchen x86-System ist eine 
+Speicheradresse 32 Bit lang – es handelt sich schließlich um einen 32-Bit-Prozessor. Allerdings werden nicht einfach die 
+verfügbaren physikalischen Speicheradressen durchnummeriert. Stattdessen ist die Adresse in drei Bereiche unterteilt:
+
+<list>
+    <li>
+        Die zehn obersten Bits (31 bis 22) geben den Eintrag im Page Directory (Seitenverzeichnis) an, verweisen also 
+        auf eine Adresse in einem Speicherbereich, der eine Liste von Seitentabellen enthält.
+    </li>
+    <li>
+        Die nächsten zehn Bits (21 bis 12) enthalten die Nummer des Eintrags in der genannten Page Table 
+        (Seitentabelle). Dieser Eintrag verweist auf eine einzelne Speicherseite.
+    </li>
+    <li>
+        Die letzten zwölf Bits (11 bis 0) geben schließlich den Offset an, also das konkrete Byte innerhalb der 
+        Speicherseite. Dies führt dazu, dass eine Speicherseite eine Größe von 212 oder 4.096 Byte besitzt.
+    </li>
+</list>
+
+<img src="hardware_speichermanagement.png" alt="Hardware Speichermanagement" width="600"/>
+
+Auf diese Struktur der Hardware baut die Speicherverwaltung des Betriebssystems auf. Jedes Programm kann dynamisch mehr 
+Speicher anfordern und erhält ihn, indem zurzeit nicht benötigte Speicherseiten ausgelagert werden. Es kommt daher bei 
+einem modernen System nicht oft vor, dass eine Anwendung wegen Speichermangels abgebrochen werden muss oder gar nicht 
+erst startet. Allerdings wird ein Rechner, der zu wenig physikalischen Arbeitsspeicher besitzt, zu langsam, weil er mehr 
+mit dem Paging beschäftigt ist als mit der eigentlichen Arbeit.
+
+Da es inzwischen mehr 64- als 32-Bit-Architekturen gibt und sich dies bereits seit Jahren abzeichnete, wurde auch die 
+Speicherverwaltung entsprechend angepasst. Beispielsweise verwendet Linux schon seit Kernel 2.2 intern ein dreistufiges 
+Paging-Modell: Das Page Directory zeigt nicht gleich auf eine Page Table, sondern zunächst auf ein weiteres Verzeichnis, 
+genannt Middle Directory. Da unter 32-Bit-Architekturen keine Verwendung dafür besteht, wird der 
+Middle-Directory-Eintrag im Page Directory dadurch stillgelegt, dass er immer den Wert 0 besitzt, also immer auf 
+dasselbe vermeintliche Middle Directory zeigt. Da praktisch alle Linux-Versionen auf 64-Bit-Prozessoren laufen 
+beziehungsweise in entsprechenden Versionen verfügbar sind, ermöglicht dieses Vorgehen die Verwendung desselben 
+Speicherverwaltungsmodells für alle Linux-Versionen.
 
 ### Dateisysteme
 
