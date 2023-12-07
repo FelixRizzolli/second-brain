@@ -254,3 +254,22 @@ Gedanken an.
         austauscht.
     </li>
 </list>
+
+## Mnemotechnik
+Die Mnemotechniken sind ein gutes Gedächtnistraining, falls wir Sprachen, Vokabeln, Formeln oder sonstiges für Prüfungen 
+im Alltag lernen möchten. Mnemotechniken sind Lernmethoden, mit denen wir leichter, nachhaltig und dauerhaft 
+Informationen in unserem Gehirn abspeichern können. 
+
+#### Definition
+Mnemotechniken sind Methoden, die dazu dienen, sich anhand von Merkhilfen Informationen im Gedächtnis einzuprägen. Es 
+kann sich bei Mnemotechniken um Sprüche für kleinere Informationen handeln, zum Beispiel für Dinge, Namen, Bilder, 
+Routen, Wörter, Planeten, eine Zahl oder eine Fähigkeit.
+
+Auch weitere komplexere Systeme und Methoden, durch die du dir große Inhalte merken kannst, sind möglich. Mit ihnen 
+kannst du außerdem nachhaltiges Gedächtnistraining für dein Gehirn betreiben. Durch Visualisierung, Fantasie, und 
+Merktechniken kann sich deine Gedächtnisleistung verbessern.
+
+#### Psychologisch betrachtet
+Die Psychologie hinter Mnemotechniken sieht folgendermaßen aus: Informationen bleiben länger im Gehirn, wenn sie 
+bedeutungshaltige Interpretationen haben, also sinnvoll miteinander verbunden werden. Diese Techniken des 
+Gedächtnistrainings nutzen das Potenzial des Verbindens von Informationen aus und verbessern deine Merkfähigkeit.
