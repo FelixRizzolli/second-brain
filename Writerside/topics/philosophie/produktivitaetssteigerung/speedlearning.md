@@ -318,3 +318,21 @@ ausdenken und mit unseren Lerninhalten in Beziehung setzen.
     die Elemente O (Sauerstoff), Si (Sicilium), Al (Aluminium), Fe (Eisen). Durch diesen Satz kann sich unser Gehirn die 
     Elemente leichter merken.
 </tip>
+
+### Geschichtentechnik
+Bei der Geschichtentechnik geht es darum, unsere unverbundenen Inhalte und Begriffe in einer Geschichte zusammenhängend 
+zu <strong>verknüpfen</strong>. Durch Wiederholungen der Geschichte können wir uns den Lernstoff besser einprägen. Auch 
+hier können absurdere Geschichten einfacher verfestigt werden.
+
+<tip>
+    <p>
+        Wir möchten uns beim Gedächtnistraining eine kurze Definition der Sozialpsychologie merken: „Die 
+        Sozialpsychologie beschäftigt sich mit dem menschlichen Denken, Erleben und Verhalten im sozialen Kontext und 
+        stellt ein Teilgebiet der Psychologie dar.“ Dafür denken wir uns eine Geschichte aus:
+    </p>
+    <p>
+        „Es war einmal ein sehr trauriger Mensch, der sehr viel nachdenken musste, denn er erlebte den peinlichsten Tag 
+        seines ganzen Lebens, als er auf einer Banane ausrutschte. Er schämte sich für sein Verhalten, obwohl er nichts 
+        dafür konnte.“
+    </p>
+</tip>
