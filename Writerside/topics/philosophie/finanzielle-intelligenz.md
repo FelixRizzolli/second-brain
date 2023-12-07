@@ -587,8 +587,14 @@ Investieren ist nicht riskant. Aber ohne entsprechende Kenntnisse ist es riskant
     Verlag, 2021
 </tip>
 <tip>
-    <strong>(WEBSEITE)</strong> https://en.wikipedia.org/wiki/Poverty, 2023-06-03 06:30
+    <strong>(WEBSEITE)</strong>
+    <a href="https://en.wikipedia.org/wiki/Poverty">
+        https://en.wikipedia.org/wiki/Poverty
+    </a>, 2023-06-03 06:30
 </tip>
 <tip>
-    <strong>(WEBSEITE)</strong> https://de.wikipedia.org/wiki/Verm%C3%B6gen_(Wirtschaft), 2023-09-26 08:00
+    <strong>(WEBSEITE)</strong> 
+    <a href="https://de.wikipedia.org/wiki/Verm%C3%B6gen_(Wirtschaft)">
+        https://de.wikipedia.org/wiki/Vermögen_(Wirtschaft)
+    </a>, 2023-09-26 08:00
 </tip>
