@@ -775,6 +775,43 @@ beziehungsweise in entsprechenden Versionen verfügbar sind, ermöglicht dieses 
 Speicherverwaltungsmodells für alle Linux-Versionen.
 
 ### Dateisysteme
+Eine der wichtigsten Aufgaben eines Betriebssystems ist die Verwaltung von Dateien. Eine Datei ist eine benannte 
+Einheit, die auf einem Datenträger gespeichert wird. Die meisten Betriebssysteme sprechen nicht direkt die 
+Hardwaresektoren eines Datenträgers an, sondern unterteilen den Datenträger logisch in größere Abschnitte, die als 
+Zuordnungseinheiten (Cluster) bezeichnet werden. Dies hat den Vorteil, dass das System sich nicht weiter um die 
+tatsächliche Größe des Datenträgers kümmern muss.
+
+Ein gewisser Nachteil besteht dagegen darin, dass jede Datei mindestens eine ganze Zuordnungseinheit belegt und dass 
+eine neue belegt wird, wenn die Datei auch nur um ein Byte zu groß ist – das Verfahren ist vergleichbar mit einem 
+Parkhaus, in dem für »angefangene Stunden« bezahlt werden muss: 61 Minuten werden dort bereits als zwei Stunden 
+gewertet. Einige moderne Dateisysteme wie das Linux-eigene ext3 oder ext4 speichern die »überstehenden« Stücke von 
+Dateien, die keine ganze Zuordnungseinheit mehr füllen, deshalb zusammen in einer gemeinsamen Zuordnungseinheit.
+
+Die unterschiedlichen Betriebssysteme verwenden verschiedene Modelle, um Daten auf einem Datenträger abzulegen. Ein 
+solches Modell wird als Dateisystem bezeichnet. Da die meisten Betriebssysteme mit mehreren Dateisystemen umgehen 
+können, verwenden sie eine zweistufige Dateiverwaltung: Das eigentliche Dateisystem greift auf den Treiber für das 
+Laufwerk zu und organisiert die Daten auf dem eigentlichen Datenträger, während ein virtuelles Dateisystem den Zugriff 
+des Betriebssystems auf die verschiedenen tatsächlichen Dateisysteme und Datenträgerarten vereinheitlicht. Unter Unix 
+geht die Abstraktion von Dateien so weit, dass selbst der Zugriff auf Geräte über Special Files (Spezialdateien) oder 
+Gerätedateien erfolgt, die normalerweise im Verzeichnis /dev liegen.
+
+Als Benutzer eines Betriebssystems wird man vornehmlich mit dem virtuellen Dateisystem konfrontiert. Hier wird vor allem 
+geklärt, wie die einzelnen Datenträger und Partitionen angesprochen werden, wie Verzeichnisse organisiert sind, welche 
+Zeichen in Dateinamen erlaubt sind, wie lang diese Namen sein dürfen etc.
+
+Das virtuelle Dateisystem, das alle Unix-Systeme miteinander gemeinsam haben, unterstützt außerdem verschiedene 
+Sicherheitsaspekte, insbesondere die Zugriffsrechte für einzelne Benutzer und Gruppen. Windows bietet ähnliche 
+Fähigkeiten, allerdings nur für das Dateisystem NTFS.
+
+<note>
+    <p><strong>»Verzeichnis« oder »Ordner«?</strong></p>
+    <p>
+        Die symbolische Darstellung (das Icon) eines Verzeichnisses auf dem Desktop des GUIs eine Aktenmappe (englisch: 
+        folder) zeigt, was in den deutschen Versionen als Ordner lokalisiert wurde. In Wirklichkeit sind im Dateisystem 
+        immer Verzeichnisse (englisch: directories) zu finden. Sie sind die Ordnungs- und Organisationseinheiten des 
+        Dateisystems.
+    </p>
+</note>
 
 #### Das virtuelle Unix-Dateisystem
 
