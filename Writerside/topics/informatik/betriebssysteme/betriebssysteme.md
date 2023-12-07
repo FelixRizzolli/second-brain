@@ -558,6 +558,104 @@ automatisch die Kontrolle, legt den Prozess schlafen, löst das anstehende Probl
 wieder auf.
 
 #### Das Unix-Prozessmodell
+Besonders gut verständlich ist das Prozessverwaltungssystem von Unix. Für Unix-Prozesse gelten die folgenden Aussagen:
+<list>
+    <li>
+        Jeder Prozess ist durch eine eindeutige ganzzahlige Nummer gekennzeichnet, seine Prozess-ID (PID).
+    </li>
+    <li>
+        Der erste Prozess, der auf dem Rechner gestartet wird, heißt <code>init</code>, hat die PID 1 und erzeugt alle 
+        anderen Prozesse direkt oder indirekt.
+    </li>
+    <li>
+        Jeder Prozess läuft entweder im Kernelmodus oder im Benutzermodus, und zwar ein für alle Mal. Keiner kann den 
+        Modus nachträglich wechseln. Ein Anwendungsprogramm kann niemals selbst einen Prozess starten, der im 
+        Kernelmodus läuft – dafür gibt es Systemaufrufe.
+    </li>
+    <li>
+        Ein neuer Prozess wird durch einen speziellen Systemaufruf namens <code>fork()</code> erzeugt. Dieser 
+        Systemaufruf erzeugt eine identische Kopie des Prozesses, der ihn gestartet hat – der neue Prozess kann sich 
+        sogar daran »erinnern«, <code>fork()</code> aufgerufen zu haben. Lediglich die PID ist eine andere. In der Regel 
+        wird der neue Prozess anschließend für eine neue Aufgabe eingesetzt.
+    </li>
+    <li>
+        Jeder Prozess besitzt einen Parent-Prozess. Dabei handelt es sich um denjenigen Prozess, der ihn aufgerufen hat. 
+        Wenn der Parent-Prozess vor dem Child-Prozess beendet wird, wird das Child dem Ur-Prozess <code>init</code> 
+        zugewiesen. Auf diese Weise wird sichergestellt, dass Prozesse auch weiterhin einen Parent-Prozess besitzen.
+    </li>
+    <li>
+        Wird ein Child-Prozess dagegen beendet, wird er nicht komplett aus dem Speicher und aus der Prozesstabelle 
+        entfernt, sondern bleibt mit dem speziellen Status <code>defunct</code> (außer Betrieb) als sogenannter 
+        Zombie-Prozess bestehen. In diesem Zustand bleiben die Zombies, bis der Parent-Prozess den Systemaufruf 
+        <code>waitpid()</code> durchführt; dies wird als Reaping (Ernte) bezeichnet. Auf diese Weise kann der Parent den 
+        Exit-Status seiner Child-Prozesse untersuchen.
+    </li>
+    <li>
+        Jeder Prozess reagiert auf eine Reihe verschiedener Signale. Diese Signale sind durchnummeriert, in der Praxis 
+        werden jedoch symbolische Namen für diese Signale verwendet, die irgendwo in der Betriebssystembibliothek 
+        definiert sind. Signale werden mithilfe des Systemaufrufs <code>kill()</code> an einen Prozess gesandt. Der 
+        etwas seltsame Name rührt daher, dass das Standardsignal den Prozess auffordert, sich zu beenden, falls kein 
+        anderes Signal angegeben wird. Wichtige Signale sind etwa folgende: <code>SIGTERM</code> beendet den Prozess 
+        normal, <code>SIGKILL</code> erzwingt einen sofortigen Abbruch, <code>SIGHUP</code> (Hangup) weist darauf hin, 
+        dass eine Verbindung unterbrochen wurde (etwa eine Netzwerkverbindung), und <code>SIGALRM</code> zeigt an, dass 
+        ein Timer-Alarm ausgelöst wurde, den Programmierer wiederum verwenden können, um einen Prozess nach einer 
+        definierten Zeit wieder zu wecken.
+    </li>
+    <li>
+        Ein Prozess kann jederzeit selbst die Kontrolle abgeben, indem er den Systemaufruf <code>pause()</code> 
+        durchführt. In diesem Fall kann er durch ein Signal wieder geweckt werden.
+    </li>
+    <li>
+        Prozesse im Benutzermodus können auch von außen unterbrochen und später wieder aufgenommen werden.
+    </li>
+</list>
+
+Wenn ein Prozess unterbrochen wird, muss der Systemzustand, der derzeit herrscht, gespeichert werden, um ihn bei 
+Wiederaufnahme erneut herzustellen. Dazu gehören vor allem die Inhalte der Prozessorregister und der Flags sowie eine 
+Liste aller geöffneten Dateien. Wenn ein Prozess weiterläuft, findet er die Systemumgebung also genau so vor, wie er sie 
+verlassen hat.
+
+Neben der Prozess-ID besitzt jeder Prozess in einem Unix-System eine User-ID (UID) und eine Group-ID (GID). Diese beiden 
+Informationen sind für die Systemsicherheit wichtig: Die User-ID kennzeichnet den Benutzer, dem der Prozess gehört, die 
+Group-ID die Benutzergruppe. Ein Benutzer ist entweder eine bestimmte Person oder eine vom Betriebssystem definierte 
+Einheit; einer Gruppe können beliebig viele Benutzer angehören. Ein Prozess reagiert nur auf Signale, die von einem 
+anderen Prozess mit derselben UID und GID aus versandt wurden. Die einzige Ausnahme sind die UID und GID 0, die dem 
+Superuser root vorbehalten sind. Dieser spezielle Benutzer darf auf einem Unix-System alles, also auch jeden Prozess 
+beenden, unterbrechen oder anderweitig steuern.
+
+Mithilfe des Befehls ps kann auf einer Unix-Konsole angezeigt werden, welche Prozesse gerade laufen. Angezeigt werden 
+die PID, die UID, die GID und der Pfad des Prozesses. Der Pfad ist die genaue Ortsangabe der Programmdatei, die in dem 
+entsprechenden Prozess ausgeführt wird.
+
+Windows verwendet ein etwas komplexeres Prozessmodell. Vor allem wird ein neuer Prozess durch einen Systemaufruf namens 
+CreateProcess()erzeugt, der keine exakte Kopie des aufrufenden Prozesses erzeugt, sondern einen »leeren« Prozess, dem 
+anschließend eine Aufgabe zugewiesen werden muss. Außerdem ist jeder Prozess im Benutzermodus mit einer numerischen 
+Priorität ausgestattet. Diese entscheidet im Zweifelsfall, welcher Prozess Vorrang hat. Die Liste der laufenden Prozesse 
+wird auf der Registerkarte Prozesse des Task-Managers angezeigt. Hier besteht auch die Möglichkeit, abgestürzte Prozesse 
+zwangsweise zu beenden.
+
+Prozesse haben den Vorteil, dass sie vollkommen voneinander abgeschirmt laufen können: Sie besitzen getrennte 
+Speicherbereiche und können einander nicht in die Quere kommen. Manchmal kann dieser Vorteil jedoch auch ein Nachteil 
+sein, denn mitunter müssen Prozesse miteinander kommunizieren. Eine einfache, aber auf wenige »Wörter« beschränkte 
+Möglichkeit ist die bereits erwähnte Verwendung von Signalen.
+
+Eine andere Option besteht in der Verwendung sogenannter Pipes, die die Ausgabe eines Programms und damit eines 
+Prozesses mit der Eingabe eines anderen verknüpfen. Pipes werden in den Konsolen von Unix und Windows häufig eingesetzt, 
+um die Ausgabe eines Programms durch ein anderes zu filtern, können aber auch aus Programmen heraus geöffnet werden.
+
+Die effizienteste Möglichkeit der Kommunikation zwischen Prozessen heißt Inter Process Communication oder System V IPC. 
+Obwohl sie mit System V eingeführt wurde und nicht zum POSIX-Standard gehört, ist sie inzwischen in fast allen 
+Unix-Varianten verfügbar, zum Beispiel auch unter Linux. Im Wesentlichen verwendet die IPC zwei verschiedene 
+Mechanismen: In sogenannte Nachrichtenwarteschlangen (Message Queues) kann ein Prozess schreiben; ein anderer kann 
+sequenziell daraus lesen. Gemeinsame Speicherbereiche (Shared Memory) sind dagegen einfacher zu handhaben: Was ein 
+Prozess in diesem Speicherbereich ablegt, können andere beliebig oft lesen oder ändern.
+
+Eine eingeschränkte Form der Verständigung zwischen Prozessen findet schließlich durch Semaphore statt. Dabei handelt es 
+sich im Grunde um einen Zähler in einem gemeinsamen Speicherbereich, der von verschiedenen Prozessen reserviert 
+beziehungsweise freigegeben werden kann. Beim Reservieren wird der Zähler um 1 heruntergezählt, sofern er noch größer 
+als 0 ist, beim Freigeben wird 1 bis zu einem festgelegten Maximalwert addiert. So können mehrere Prozesse 
+beispielsweise eine beschränkte Anzahl von Ressourcen gemeinsam nutzen.
+
 
 #### Deadlocks
 
