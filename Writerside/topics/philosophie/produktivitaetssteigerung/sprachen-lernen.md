@@ -947,6 +947,24 @@ nach dem besten Lernmaterial zu suchen, dass wir kaufen können, währe besser i
 </table>
 
 ##### Öffnen
+<table style="none">
+<tr>
+    <td>Vielen Dank.</td>
+    <td>Thank you very much.</td>
+</tr>
+<tr>
+    <td>Das ist eine gute Frage.</td>
+    <td>That is a good question.</td>
+</tr>
+<tr>
+    <td>Das ist eine schwierige Frage.</td>
+    <td>That is such a difficult question.</td>
+</tr>
+<tr>
+    <td>Es war einmal .../Vor langer Zeit ...</td>
+    <td>Once upon a time .../Long ago ...</td>
+</tr>
+</table>
 
 ##### Im Vorbeigehen
 
