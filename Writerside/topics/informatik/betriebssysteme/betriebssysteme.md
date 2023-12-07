@@ -494,6 +494,51 @@ Win32-Familie; Windows XP, Windows Vista, Windows 7, 8 und 10 sowie die zugehör
 64-Bit-Versionen für neuere Generationen der Intel- und AMD-Prozessoren verfügbar.
 
 #### Die Benutzeroberfläche
+Es gibt zwei grundlegende Arten von Benutzeroberflächen: die Konsole oder Kommandozeile und die grafische Oberfläche. 
+Beide dienen dazu, mit dem Betriebssystem zu kommunizieren, und stellen ihre Ein- und Ausgabefähigkeiten auch 
+Anwendungsprogrammen zur Verfügung.
+
+Eine Kommandozeilenoberfläche wird (in Abgrenzung zum Kernel) auch Shell genannt. Um zu ermitteln, welche Befehle, von 
+der Shell unterstützt werden, hält die, Windows-Konsole einen Befehl namens <code>help</code> bereit, der eine Liste 
+aller Befehle mit einer kurzen Beschreibung anzeigt. <code>help BEFEHL</code> zeigt dagegen eine ausführliche 
+Beschreibung eines einzelnen Befehls an. Unter Unix heißt die entsprechende Anweisung <code>man BEFEHL</code>. Das hat 
+übrigens nichts mit dem dummen Klischee zu tun, dass Unix »nur was für Männer« sei – <code>man</code> ist einfach die 
+Abkürzung für Englisch: manual, also Handbuch.
+
+Die unter Windows verwendete Konsole entspricht noch heute weitgehend der Benutzeroberfläche von MS-DOS. Die Befehle, 
+die eingegeben werden können, sind fast alle kompatibel mit den alten DOS-Befehlen. Allerdings wurde inzwischen eine 
+Reihe von Komfortfunktionen eingebaut, die die Arbeit mit der Windows-Kommandozeile erleichtern.
+
+Unix-Shells sind allerdings im Vergleich zur Windows-Shell erheblich komfortabler. Das liegt natürlich zum Teil daran, 
+dass die zugrunde liegenden Systembefehle, die aufgerufen werden können, mächtiger sind als die Windows-Konsolenbefehle. 
+Aber auch die Shell selbst hat mehr Bequemlichkeit zu bieten als unter Windows. Beispielsweise wird unter Unix schon 
+seit Langem die Eingabevervollständigung angeboten – wenn Befehle oder Dateinamen eingegeben werden, kann die 
+Tabulator-Taste gedrückt werden, um einen begonnenen Namen zu ergänzen, falls er bereits eindeutig ist. Microsoft hat 
+dieses Feature erst unter Windows 2000 eingeführt.
+
+Grafische Benutzeroberflächen gibt es inzwischen für jedes Betriebssystem, und auch unter Linux und anderen 
+Unix-Systemen ist es heutzutage üblich, dass gleich das GUI gestartet wird, wenn der Rechner bootet. In einer grafischen 
+Oberfläche werden die einzelnen Programme und Dokumente in Fenstern dargestellt, die frei über den Bildschirm 
+verschoben, vergrößert und verkleinert und in einer beliebigen Stapelreihenfolge angeordnet werden können. Mit einer 
+Maus wird ein Zeiger über diese Oberfläche bewegt und es können Menübefehle ausgewählt, Schaltflächen angeklickt oder 
+Symbole verschoben werden.
+
+Unter Linux kann eine von vielen verschiedenen grafischen Oberflächen ausgesucht werden. Die grundlegenden 
+Grafikfähigkeiten werden von einer Komponente namens XWindow-Server oder kurz X-Server bereitgestellt, darauf aufbauend 
+läuft ein Window-Manager oder ein moderner, voll ausgestatteter Desktop. Die beiden häufigsten Desktops sind KDE und 
+GNOME.
+
+Windows und macOS lassen einem dagegen keine Wahl bei der Entscheidung für ein bestimmtes GUI, weil es ein fester 
+Bestandteil des Betriebssystems selbst ist. Selbst einige der elementarsten Programme sind so geschrieben, dass sie 
+diese eine Oberfläche voraussetzen. Beide Hersteller haben ihre grafischen Oberflächen in der neuesten Version ihrer 
+Betriebssysteme modernisiert; macOS verwendet eine elegante Oberfläche namens Aqua, die Windows-10-Oberfläche (seit 
+Windows 8 verfügbar) wird Metro genannt.
+
+Für macOS ist auch ein X-Server verfügbar, sodass der reichhaltige Bestand X-basierter Software, der für andere 
+Unix-Versionen vorhanden ist, bei Bedarf auch unter macOS zur Verfügung steht. Bis Mac OS X 10.5 wurde die Software 
+offiziell von Apple selbst angeboten und danach als Community Edition weitergeführt. Unter 
+<a href="http://xquartz.macosforge.org/landing/">http://xquartz.macosforge.org/landing/</a> kann die Software 
+heruntergeladen werden. Auch für Windows gibt es übrigens verschiedene X-Server von Drittanbietern.
 
 ### Prozessverwaltung
 
