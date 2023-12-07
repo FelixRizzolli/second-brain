@@ -158,6 +158,25 @@ inzwischen das Betriebssystem mit dem größten jährlichen Wachstum ist.
 
 
 ### PC-Betriebssysteme
+Eine völlig andere Entwicklungslinie im Bereich der Betriebssysteme begann mit der Entwicklung der Personal Computer ab 
+Mitte der 70er-Jahre. Auf das Timesharing und den Mehrbenutzerbetrieb wurde bei den ersten Versionen von 
+PC-Betriebssystemen zugunsten der Performance-steigerung zunächst völlig verzichtet.
+
+Der erste weitverbreitete PC war der von Steve Wozniak und Steve Jobs 1977 entwickelte Apple II. Er erlaubte es, an 
+einer wenig komfortablen Konsole BASIC- und Systembefehle einzutippen. Wurde einem Befehl eine Zeilennummer 
+vorangestellt, dann wurde er Teil eines im Arbeitsspeicher abgelegten Programms, das beispielsweise mithilfe von RUN 
+gestartet und über LIST auf dem Bildschirm angezeigt werden konnte. Befehle ohne Zeilennummer wurden dagegen unmittelbar 
+ausgeführt.
+
+Dieses Konzept wurde in den 80er-Jahren von unzähligen Homecomputern wie dem Commodore C64, dem Atari 800XL oder dem 
+Sinclair ZX81 und ZX Spectrum nachgeahmt. Diese in das ROM eingebauten BASIC-Editoren und -Interpreter lassen sich 
+allerdings nicht als vollwertige Betriebssysteme bezeichnen.
+
+Das erste »richtige« Betriebssystem für Personal Computer wurde von Gary Kildall entwickelt. Es hieß CP/M (Control 
+Program for Microcomputers). Im Vergleich zu den bereits weit fortgeschrittenen Betriebssystemen für Großrechner und 
+Kleincomputer war es ziemlich primitiv, hatte aber mehrere Vorteile: Es lief auf zwei verschiedenen, zu jener Zeit 
+weitverbreiteten Prozessorplattformen, dem Intel 8080 und dem Zilog Z80. Außerdem besaß es eine Dateiverwaltungsfunktion 
+für Diskettenlaufwerke und konnte über verschiedene Konsolenbefehle gesteuert werden.
 
 #### DOS und Windows
 
