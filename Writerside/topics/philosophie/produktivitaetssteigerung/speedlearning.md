@@ -61,3 +61,57 @@ und Kenntnisse zu erweitern. In Bezug auf das Lernen bedeutet das nun, dass man 
 welche Lerntypen es gibt, wie viel Zeit man investieren sollte oder ob man das nötige Talent für das jeweilige 
 Fachgebiet mit sich bringe, sondern dass man stattdessen einfach mit dem Lernen beginnen sollte uns so lange seine 
 Aufmerksamkeit auf dieses Ziel richten sollte, solange es eben dauert, bis eben jenes Ziel erreicht ist.
+
+## Wie unser Gehirn lernt
+Der Mensch lernt am effektivsten, wenn er etwas aktiv anwendet oder selbst erarbeitet.
+
+### Lerninhalte
+Unser Gehirn unterscheidet von sich aus nicht zwischen verschiedenen Lerninhalten.
+
+Neuropsychologisch betrachtet ist zum Beispiel das Lernen einer Fremdsprache nichts anderes als die Erweiterung unseres 
+muttersprachlichen Wortschatzes, weil es für unser Gehirn keinen Unterschied zwischen den einzelnen Sprachen gibt. 
+Dasselbe gilt auch für die Fachsprache.
+
+<tip>
+    Eine Fachsprache verfolgt zweierlei Zwecke: Dinge oder Sachverhalte werden durch einen brancheninternen Fachbegriff 
+    <strong>unmissverständlich</strong> umschrieben; der Laie, soll bei der Kommunikation zwischen zwei oder mehreren 
+    Personen den vorliegenden Sachverhalt nicht in Gänze <strong>verstehen</strong> können.
+</tip>
+
+Auch bei anderen Lerninhalten unterscheidet das Gehirn nicht zwischen unterschiedlichen Strukturen. So ist es für unsere 
+Nervenzellen der immer gleiche Prozess, ganz egal, ob wir Klavier oder Saxofon spielen lernen oder aber die Tastatur 
+eines Computers und die Knöpfe an unserer Spülmaschine bestätigen. Zu Beginn eines neuen Lernprozesses sind die 
+Grundelemente des Lernens sehr einfach und in den meisten Bereichen ähnlich. Mit fortschreitendem Lernerfolg nimmt die 
+Komplexität zu. 
+
+<note>
+    Es gibt kein Talent für Sprachen, Musik oder Sport – lediglich die richtige Lerntechnik, die am Ende zur 
+    höchstmöglichen Komplexität führt (und auf dem Weg dorthin die Motivation lebendig hält), unterscheidet den Dummkopf 
+    vom Genie.
+</note>
+
+### Spamfilter – 20 Sekunden; 20 Minuten; ...
+Unser Gehirn entscheidet nach zwanzig Sekunden zum ersten Mal, ob eine Information für uns sinnvoll, also merkwürdig 
+ist. Merkwürdige Informationen sind Umweltimpulse oder Einflüsse, die entweder wiederholt auftreten oder uns über einen 
+längeren Zeitraum emotional berühren.
+
+<tip>
+    Bei einem Gespräch, im Rahmen eines Meetings hören wir eine Formulierung auf Englisch, die äußerst elegant und smart 
+    auf uns wirkt, sodass wir beschließen uns diese Redewendung oder Formulierung zu merken. Vor Ablauf dieser zwanzig 
+    Sekunden bittet man uns jedoch um unsere Stellungnahme zu diesem Thema, und indem wir nun aktiv sprechen, 
+    entscheidet unser Gehirn, dass diese Redewendung, die wir uns eben noch merken wollten, nicht mehr relevant ist und 
+    deswegen keine Nerven-Verknüpfung hergestellt wird, die diese Redewendung abrufbar macht.
+</tip>
+
+Der nächste "Spamfilter" wird nach zwanzig Minuten aktiv und hier wird klar, weshalb wir in der Schule oder bei langen 
+Meetings nicht die Lern- oder Gedächtnisleistungen erzielen können, die wir uns wünschen. Es folgen die nächsten 
+Spamfilter nach vier Stunden, dann nach einem Tag, nach einer Woche, nach einem Monat, nach sechs Monaten, schließlich 
+nach einem Jahr und zuletzt nach fünf Jahren. Diese Abfolge der Spamfilter verdeutlicht, wie wir die 
+Wiederholungssequenzen beim Lernen planen müssen, um unser Gehirn das Lernen zu erleichtern.
+
+Bei allem, was wir lernen möchten, ist es wichtig, diese Spamfilter zu kennen und zu wissen, wann wir sinnvollerweise 
+den Lernstoff wiederholen sollten. Es ergibt zum Beispiel keinen Sinn, eine Stunde am Stück zu lernen, weil unser Gehirn 
+nach 20 Minuten schon wieder anfängt, den Stoff, den wir zu Beginn gelernt haben, zu überschreiben. Sinnvoller ist es 
+also, Lernen in mehrere Sequenzen à 20 Minuten zu packen und vor dem Lernen neuer Sequenzen zunächst die vorhergehenden 
+Lerninhalte zu wiederholen. Das gilt im Übrigen für alle Arten des Lernens, egal ob es sich um klassischen schulischen 
+Lernstoff handelt, um Fremdsprachen, Vorträge, Musikinstrumente und anderes.
