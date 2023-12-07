@@ -348,6 +348,41 @@ Im Detail sieht es wie folgt aus:
 
 ## Effizient lernen
 ### Eine Fremdsprache in 10 Wochen lernen
+Für dieses Ziel sind meistens Sprachkurse, die im gewöhnlichen Buchhandel erworben werden können, optimal. Diese sollten 
+jedoch folgende Kriterien erfüllen:
+
+<list>
+    <li>
+        <strong>Texte</strong>, die für den Sprachkurs verwendet werden, müssen sowohl in Deutsch als auch in der zu 
+        erlernenden Zielsprache abgedruckt sind. Es reicht nicht aus, nur die ersten sieben oder acht Kapitel als 
+        komplette Übersetzung vorliegen zu haben.
+    </li>
+    <li>
+        Zudem ist ein <strong>Grammatikteil</strong> als integrierter Bestandteil des Kurses obligat, in dem jederzeit 
+        gezielt nachgeschlagen werden kann.
+    </li>
+    <li>
+        Und schließlich müssen alle Textdialoge des Kurses zusätzlich als <strong>Audioformat</strong> vorliegen, damit 
+        die Aussprache und das Hörverständnis trainiert werden kann.
+    </li>
+    <li>
+        Außerdem sind <strong>Bildwörterbücher</strong> unterstützend empfehlenswert. Diese sind wunderbar geeignet, um 
+        Vokabeln zu einem speziellen Thema mithilfe von Mindmaps innerhalb von kürzester Zeit zu lernen.
+    </li>
+</list>
+
+<note>
+    Falls man vorhat mehrere Sprachen zu lernen, so wäre sinnvoll, nach dem Erlernen einer Sprache aus einer bestimmten 
+    Gruppe (romanische Sprache, germanische Sprache, slawische Sprache, ...) vor der Beschäftigung mit einer weiteren 
+    Sprache aus dieser Familie eine Sprache aus einer anderen Sprachfamilie zwischenzeitlich zu lernen.
+</note>
+
+<warning>
+    Sprache kommt von »sprechen« und deshalb sollten wir von Anfang an Situationen in unserem Alltag provozieren, in 
+    denen wir diese Sprache anwenden können. Egal, ob wir diese Wörter richtig aussprechen werden, egal, ob die 
+    Grammatik stimmt, und egal ob unser Gegenüber uns anfangs versteht. Übung macht den Meister!
+</warning>
+
 ### Lernmethoden
 #### Grundlegende Gesetze und Prinzipien
 #### Die wichtigsten Wörter
