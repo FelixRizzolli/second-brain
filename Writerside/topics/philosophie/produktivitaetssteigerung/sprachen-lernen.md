@@ -529,9 +529,82 @@ eignen sich gut für ein paar schnelle Übungssätze, aber man könnte die Leute
 sich später trifft, um sich eine Zeit lang in ihrer Sprache zu unterhalten.
 
 ### Sprechen
+Ewig lernen, bis zu einem vagen »Ich bin bereit«-Tag, ist nicht der richtige Weg. Die Sprache laut und mit einem echten 
+Menschen jeden Tag zu sprechen, ob nun persönlich oder online, ist die bei Weitem beste Möglichkeit, um mit 
+Riesenschritten auf ein gesprächstaugliches Sprachniveau zuzugehen und dann weiter zur fließenden Sprachbeherrschung.
+
+Da Kommunikation das Ziel einer Sprache ist, sollte sie die absolute Priorität nicht sein, dass es perfekt klingt, 
+sondern dass wir uns verständlich machen können.
+
+
 #### Vorbereitung für das erste Gespräch
+Sind wir am Anfang eine Sprache zu lernen, dann ist eine Vorbereitung von ein paar Stunden sehr sinnvoll. Diese sollte 
+folgendes Beinhalten:
+
+<list style="bullet">
+    <li>
+        Sprachführer beinhalten eine recht gute Sammlung vorgefertigter Redewendungen. Diese Bücher enthalten auch einen 
+        Ausspracheführer, sodass wir uns über die Lautschrift der Sprache noch keine Gedanken machen müssen.
+    </li>
+    <li>
+        Sätze für den Anfang währen:
+        <list>
+            <li>»Wie geht es Ihnen?«</li>
+            <li>»Wie heißen Sie?«</li>
+            <li>»Ich heiße ...«</li>
+            <li>»Das verstehe ich nicht.«</li>
+            <li>»Könnten Sie das wiederholen?« oder kürzer: »Bitte noch einmal.«</li>
+            <li>»Können Sie bitte langsamer sprechen?«</li>
+            <li>»Was bedeutet [Leerstelle ausfüllen]?« oder »Was heißt das?«</li>
+        </list>
+    </li>
+    <li>
+        Auch wichtig zu wissen sind: »Ja«, »Nein«, »Bitte«, »Danke«, »Hallo«, »Auf Wiedersehen«.
+    </li>
+</list>
+
+Sinnvoll wäre es auch sich bereits vorgefertigte Sätze und Redewendungen niederzuschreiben, damit man diese Notizen beim 
+Gespräch zur Unterstützung hat.
+
 #### Wenn uns die Worte fehlen
+Damit uns nicht die Worte fehlen können wir dem schon mal vorbeugen. Unserem Gegenüber ist bereits klar, dass wir 
+Sprachanfänger sind, deshalb wird er weder überrascht noch verärgert sein, wenn wir »Stützräder« brauchen. Deshalb 
+können wir uns eine Liste mit Worten und Redewendungen vorbereiten, auf die wir beim Gespräch zugriff, haben. 
+Beispielsweise einen Hilfszettel bei einem Gespräch in echt oder ein Worddokument auf dem zweiten Bildschirm bei einem 
+Online-Meeting.
+
+Im Anfängerstadium »übersetzen« wir normalerweise das, was wir sagen wollen, von unsrer Muttersprache in die 
+Zielsprache. Bei einem Satz wie: » Im Juli werde ich für einen zweiwöchigen Urlaub nach Spanien reisen.« Dann könnte es 
+passieren, dass wir uns nicht Sicher genug mit dem Futur » werde« fühlen und das Verb für »reisen« vergessen haben. Ein 
+traditioneller Sprachlerner würde an diesem Punkt wahrscheinlich aufgeben, weil er eben noch nicht »bereit« ist, und in 
+die Muttersprache umschwenken oder das Thema ganz meiden. Jemand, der wirklich auf Kommunikation fokussiert ist, wird 
+jedoch, anstatt genau das Richtige zu sagen, nach Wegen sichern, den Inhalt mit anderen Wörtern auszudrücken, sodass es 
+letztlich auf dasselbe herauskommt.
+
+Das Wort »möchte« ist als Ersatz für das Futur (»möchte sprechen« anstatt »werde sprechen«) in Ordnung. »Kann« lässt 
+sich in vielen direkten Fragen gut verwenden, anstatt also zu fragen: »Sprichst du Italienisch?«, könnte man dann auch 
+sagen: »Kannst du Italienisch sprechen?« der entscheidende Punkt dabei ist, die Standard-Infinitivform des Wortes 
+»sprechen« zu verwenden, ohne es konjugieren zu müssen. »Muss/müssen« eignet sich für alle Arten von Verpflichtungen. 
+Anstatt zu sagen: »Ich arbeite ab neun Uhr«, könnten wir auch sagen: »Ich muss um neun Uhr anfangen zu arbeiten.« Der 
+Sinn ist nicht ganz genau derselbe, aber ähnlich genug.
+
+Um bereits früher im Lernprozess mehr Unterhaltungen führen zu können, bringen einfache, umfassende Verben und Adjektive 
+uns weiter als ein umfangreiches Vokabular. Für Anfänger ist beispielsweise in den meisten Zusammenhängen »sehr gut« 
+eine prima Alternative zu »wunderbar«, »köstlich«, »nett«, »großartig«, »bewundernswert«, »talentiert«, »freundlich«, 
+und vielen weiteren Wörtern. Es ist keine tolle Alternative, aber es geht. Später können wir unsere Gedanken genauer 
+formulieren, aber anfangs müssen wir uns darauf konzentrieren, überhaupt etwas zu sagen. Abgesehen davon ist es ungleich 
+besser zu sagen, dass eine Essen »sehr gut« ist, als absolut das Wort »köstlich« verwenden zu wollen, sich nicht daran 
+zu erinnern und gar nichts zu sagen.
+
 #### Wenn wir die Antwort nicht verstehen
+Wir können nicht alles Wissen, erst recht am Anfang haben wir einen kleinen Wortschatz. Aber indem wir spezielle Wörter 
+oder Satzteile in der Rede einer Person verstehen, können wir daraus ableiten was die restlichen Wörter bedeuten 
+könnten. Anstatt zu denken: »Das verstehe ich nicht«, und uns vorzumachen, dass das, was wir gehört haben, alles 
+bedeuten könnte, sollten wir uns besser klarmachen, dass es nicht alles bedeuten kann; es muss in gewisser Weise mit dem 
+zu tun haben, worüber wir gesprochen haben. Was würde der Gesprächspartner in diesem Zusammenhang wahrscheinlich sagen, 
+welches einzelne Wort oder welche Wörter haben wir verstanden und was wurde, wenn wir darauf aufbauen, mit begründeter 
+Sicherheit wohl gesagt?
+
 ### Tipps
 #### Kognaten - Wörter gleicher Abstammung
 #### Konjugationen
