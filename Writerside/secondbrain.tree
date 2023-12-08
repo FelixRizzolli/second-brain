@@ -28,8 +28,20 @@
                     <toc-element topic="numpy.topic"/>
                 </toc-element>
                 -->
-                <toc-element topic="python-grundlagen-entwicklung.topic"/>
-                <toc-element topic="python-grundlagen-sprache.topic"/>
+                <toc-element topic="python-grundlagen.topic">
+                    <toc-element topic="python-grundlagen-entwicklung.topic">
+                    </toc-element>
+                    <toc-element topic="python-grundlagen-sprache.topic"/>
+                </toc-element>
+                <toc-element topic="python-datentypen.topic">
+                    <toc-element topic="python-datentypen-numerisch.topic"/>
+                    <toc-element topic="python-datentypen-sequentiell.topic"/>
+                    <toc-element topic="python-datentypen-listen.topic"/>
+                    <toc-element topic="python-datentypen-zuordnungen-mengen.topic"/>
+                    <toc-element topic="python-datentypen-collections.topic"/>
+                    <toc-element topic="python-datentypen-datum-zeit.topic"/>
+                    <toc-element topic="python-datentypen-enumerationen-flags.topic"/>
+                </toc-element>
                 <toc-element topic="python-advanced.topic">
                     <toc-element topic="python-advanced-funktionen.topic"/>
                     <toc-element topic="python-advanced-dekoratoren.topic"/>
