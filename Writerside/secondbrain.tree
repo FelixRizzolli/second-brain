@@ -21,7 +21,7 @@
             <toc-element topic="java.md"/>
             <toc-element topic="csharp.md"/>
         -->
-            <toc-element topic="python.md">
+            <toc-element topic="python.topic">
                 <!--
                 <toc-element topic="python-libraries-frameworks.md">
                     <toc-element topic="pandas.md"/>
