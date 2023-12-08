@@ -1,3 +1,0 @@
-# Deutsch
-
-Start typing here...

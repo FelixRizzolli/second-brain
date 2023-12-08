@@ -1,3 +1,0 @@
-# Sprachen
-
-Start typing here...
