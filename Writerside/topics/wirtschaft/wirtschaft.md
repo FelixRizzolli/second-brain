@@ -1,3 +1,0 @@
-# Wirtschaft
-
-Start typing here...
