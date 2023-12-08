@@ -90,7 +90,7 @@
     <toc-element topic="wirtschaft.md">
     </toc-element>
     <toc-element topic="truthiness.md">
-        <toc-element topic="erdstrahlen-wasseradern.md"/>
+        <toc-element topic="erdstrahlen-wasseradern.topic"/>
         <!--
         <toc-element topic="astrologie.md"/>
         <toc-element topic="belebtes-wasser.md"/>
