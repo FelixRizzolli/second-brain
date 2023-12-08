@@ -14,4 +14,8 @@
         <description>Created after removal of "Sprachen Lernen" from Sprachen</description>
         <accepts>sprachen-lernen.html</accepts>
     </rule>
+    <rule id="61436151">
+        <description>Created after removal of "Fortgeschrittene Programmiertechniken" from MySecondBrain</description>
+        <accepts>python-fortgeschrittene-programmiertechniken.html</accepts>
+    </rule>
 </rules>

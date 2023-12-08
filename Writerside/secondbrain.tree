@@ -28,6 +28,8 @@
                     <toc-element topic="numpy.topic"/>
                 </toc-element>
                 -->
+                <toc-element topic="python-grundlagen-entwicklung.topic"/>
+                <toc-element topic="python-grundlagen-sprache.topic"/>
             </toc-element>
         <!--
         </toc-element>

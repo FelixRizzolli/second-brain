@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Grundlagen (Sprache)" id="python-grundlagen-sprache">
+    <show-structure for="chapter,procedure" depth="2"/>
+
+    <chapter title="Datentypen (Übersicht)" id="datentypen">
+
+    </chapter>
+
+    <chapter title="Logische Ausdrücke" id="logische-ausdruecke">
+
+    </chapter>
+
+    <chapter title="Funktionen und Methoden" id="funktionen-methoden">
+
+    </chapter>
+
+    <chapter title="Kontrollstrukturen" id="kontrollstrukturen">
+
+    </chapter>
+</topic>
