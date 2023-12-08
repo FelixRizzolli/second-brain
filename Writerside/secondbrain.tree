@@ -30,12 +30,12 @@
                 -->
                 <toc-element topic="python-grundlagen-entwicklung.topic"/>
                 <toc-element topic="python-grundlagen-sprache.topic"/>
-                <toc-element topic="fortgeschrittene-programmiertechniken.topic">
-                    <toc-element topic="python-funktionen.topic"/>
-                    <toc-element topic="python-dekoratoren.topic"/>
-                    <toc-element topic="python-kontext-manager.topic"/>
-                    <toc-element topic="python-objektorientierte-programmierung.topic"/>
-                    <toc-element topic="python-generatoren-und-iteratoren.topic"/>
+                <toc-element topic="python-advanced.topic">
+                    <toc-element topic="python-advanced-funktionen.topic"/>
+                    <toc-element topic="python-advanced-dekoratoren.topic"/>
+                    <toc-element topic="python-advanced-kontext-manager.topic"/>
+                    <toc-element topic="python-advanced-oop.topic"/>
+                    <toc-element topic="python-advanced-generatoren-iteratoren.topic"/>
                 </toc-element>
                 <toc-element topic="python-standardbibliothek.topic">
                     <toc-element topic="python-standardbibliothek-mathematik.topic"/>
