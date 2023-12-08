@@ -4,78 +4,78 @@
 
 <instance-profile id="secondbrain"
                  name="MySecondBrain"
-                 start-page="informatik.md">
+                 start-page="informatik.topic">
 
-    <toc-element topic="informatik.md">
+    <toc-element topic="informatik.topic">
         <!--
-        <toc-element topic="webentwicklung.md">
-            <toc-element topic="javascript.md">
-                <toc-element topic="javascript-libraries-frameworks.md"/>
-                <toc-element topic="nextjs.md"/>
-                <toc-element topic="reactjs.md"/>
+        <toc-element topic="webentwicklung.topic">
+            <toc-element topic="javascript.topic">
+                <toc-element topic="javascript-libraries-frameworks.topic"/>
+                <toc-element topic="nextjs.topic"/>
+                <toc-element topic="reactjs.topic"/>
             </toc-element>
-            <toc-element topic="html.md"/>
-            <toc-element topic="css.md"/>
+            <toc-element topic="html.topic"/>
+            <toc-element topic="css.topic"/>
         </toc-element>
-        <toc-element topic="anwendungsentwicklung.md">
-            <toc-element topic="java.md"/>
-            <toc-element topic="csharp.md"/>
+        <toc-element topic="anwendungsentwicklung.topic">
+            <toc-element topic="java.topic"/>
+            <toc-element topic="csharp.topic"/>
         -->
             <toc-element topic="python.topic">
                 <!--
-                <toc-element topic="python-libraries-frameworks.md">
-                    <toc-element topic="pandas.md"/>
-                    <toc-element topic="numpy.md"/>
+                <toc-element topic="python-libraries-frameworks.topic">
+                    <toc-element topic="pandas.topic"/>
+                    <toc-element topic="numpy.topic"/>
                 </toc-element>
                 -->
             </toc-element>
         <!--
         </toc-element>
-        <toc-element topic="softwareentwicklung.md"/>
-        <toc-element topic="datenbanken.md"/>
+        <toc-element topic="softwareentwicklung.topic"/>
+        <toc-element topic="datenbanken.topic"/>
         -->
         <toc-element topic="betriebssysteme.topic">
             <!--
-            <toc-element topic="macos.md"/>
-            <toc-element topic="windows.md"/>
-            <toc-element topic="linux.md"/>
+            <toc-element topic="macos.topic"/>
+            <toc-element topic="windows.topic"/>
+            <toc-element topic="linux.topic"/>
             -->
         </toc-element>
         <!--
-        <toc-element topic="netzwerktechnik.md"/>
+        <toc-element topic="netzwerktechnik.topic"/>
         -->
     </toc-element>
-    <toc-element topic="mathematik.md">
+    <toc-element topic="mathematik.topic">
         <!--
-        <toc-element topic="statistik.md"/>
-        <toc-element topic="analysis.md"/>
+        <toc-element topic="statistik.topic"/>
+        <toc-element topic="analysis.topic"/>
         -->
     </toc-element>
-    <toc-element topic="philosophie.md">
+    <toc-element topic="philosophie.topic">
         <!--
-        <toc-element topic="emotionale-intelligenz.md"/>
+        <toc-element topic="emotionale-intelligenz.topic"/>
         -->
-        <toc-element topic="finanzielle-intelligenz.md"/>
+        <toc-element topic="finanzielle-intelligenz.topic"/>
         <!--
-        <toc-element topic="produktivitaetssteigerung.md">
+        <toc-element topic="produktivitaetssteigerung.topic">
         -->
             <toc-element topic="sprachen-lernen.topic"/>
             <toc-element topic="speedlearning.topic"/>
         <!--
         </toc-element>
-        <toc-element topic="kommunikation.md"/>
-        <toc-element topic="stoizismus.md">
+        <toc-element topic="kommunikation.topic"/>
+        <toc-element topic="stoizismus.topic">
         -->
             <toc-element topic="die-stoiker.topic"/>
         <!--
-            <toc-element topic="buch-dein-hindernis-ist-dein-weg.md"/>
-            <toc-element topic="buch-In-der-stille-liegt-dein-weg.md"/>
-            <toc-element topic="buch-dein-ego-ist-dein-feind.md"/>
-            <toc-element topic="die-vier-stoischen-tugenden.md">
-                <toc-element topic="stoische-tugend-mut.md"/>
-                <toc-element topic="stoische-tugend-disziplin.md"/>
-                <toc-element topic="stoische-tugend-weisheit.md"/>
-                <toc-element topic="stoische-tugend-gerechtigkeit.md"/>
+            <toc-element topic="buch-dein-hindernis-ist-dein-weg.topic"/>
+            <toc-element topic="buch-In-der-stille-liegt-dein-weg.topic"/>
+            <toc-element topic="buch-dein-ego-ist-dein-feind.topic"/>
+            <toc-element topic="die-vier-stoischen-tugenden.topic">
+                <toc-element topic="stoische-tugend-mut.topic"/>
+                <toc-element topic="stoische-tugend-disziplin.topic"/>
+                <toc-element topic="stoische-tugend-weisheit.topic"/>
+                <toc-element topic="stoische-tugend-gerechtigkeit.topic"/>
             </toc-element>
         </toc-element>
         -->
