@@ -34,7 +34,7 @@
         <toc-element topic="softwareentwicklung.md"/>
         <toc-element topic="datenbanken.md"/>
         -->
-        <toc-element topic="betriebssysteme.md">
+        <toc-element topic="betriebssysteme.topic">
             <!--
             <toc-element topic="macos.md"/>
             <toc-element topic="windows.md"/>
