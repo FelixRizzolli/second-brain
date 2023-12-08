@@ -40,6 +40,7 @@
             Python-Konferenzen statt.
         </p>
     </chapter>
+    
     <chapter title="Grundlegende Konzepte" id="grundlegende-konzepte">
         <table>
             <tr>
@@ -128,6 +129,7 @@
             </tr>
         </table>
     </chapter>
+
     <chapter title="Einsatzbeispiele" id="einsatzbeispiele">
         <p>
             Python erfreut sich großer Bekanntheit und Verbreitung sowohl bei Softwarefirmen und unter Wissenschaftlern
