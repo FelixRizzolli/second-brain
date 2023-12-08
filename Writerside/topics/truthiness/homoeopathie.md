@@ -1,3 +1,0 @@
-# Homöopathie
-
-Start typing here...

@@ -1,3 +1,0 @@
-# Astrologie
-
-Start typing here...

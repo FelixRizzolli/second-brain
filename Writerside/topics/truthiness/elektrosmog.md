@@ -1,3 +1,0 @@
-# Elektrosmog
-
-Start typing here...

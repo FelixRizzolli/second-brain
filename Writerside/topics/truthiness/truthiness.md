@@ -1,3 +1,0 @@
-# Truthiness
-
-Start typing here...
