@@ -1,3 +1,0 @@
-# Buch: Dein Ego ist dein Feind
-
-Start typing here...

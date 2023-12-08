@@ -1,3 +1,0 @@
-# Philosophie
-
-Start typing here...

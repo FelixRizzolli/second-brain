@@ -1,3 +1,0 @@
-# Produktivitätssteigerung
-
-Start typing here...

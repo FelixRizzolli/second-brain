@@ -1,3 +1,0 @@
-# Kommunikation
-
-Start typing here...

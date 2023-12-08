@@ -1,3 +1,0 @@
-# EQ - Emotionale Intelligenz
-
-Start typing here...

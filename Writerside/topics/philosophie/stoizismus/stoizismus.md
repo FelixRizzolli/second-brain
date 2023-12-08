@@ -1,3 +1,0 @@
-# Stoizismus
-
-Start typing here...

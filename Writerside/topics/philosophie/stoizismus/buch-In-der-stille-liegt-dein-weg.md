@@ -1,3 +1,0 @@
-# Buch: In der Stille liegt dein Weg
-
-Start typing here...
