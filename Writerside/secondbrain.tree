@@ -59,7 +59,7 @@
         <!--
         <toc-element topic="produktivitaetssteigerung.md">
         -->
-            <toc-element topic="sprachen-lernen.md"/>
+            <toc-element topic="sprachen-lernen.topic"/>
             <toc-element topic="speedlearning.topic"/>
         <!--
         </toc-element>
