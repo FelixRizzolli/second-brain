@@ -1,3 +1,0 @@
-# NumPy
-
-Start typing here...

@@ -1,3 +1,0 @@
-# Datenbanken
-
-Start typing here...

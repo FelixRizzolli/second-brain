@@ -1,3 +1,0 @@
-# Pandas
-
-Start typing here...

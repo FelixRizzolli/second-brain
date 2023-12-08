@@ -1,3 +1,0 @@
-# Softwareentwicklung
-
-Start typing here...

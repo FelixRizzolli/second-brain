@@ -1,3 +1,0 @@
-# CSS
-
-Start typing here...

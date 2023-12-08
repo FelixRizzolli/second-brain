@@ -1,3 +1,0 @@
-# Informatik
-
-Start typing here...

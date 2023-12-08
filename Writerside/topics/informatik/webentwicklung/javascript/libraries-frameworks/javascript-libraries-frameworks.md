@@ -1,3 +1,0 @@
-# Libraries &amp; Frameworks
-
-Start typing here...

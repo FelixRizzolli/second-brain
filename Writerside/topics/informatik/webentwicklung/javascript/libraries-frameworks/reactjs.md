@@ -1,3 +1,0 @@
-# ReactJS
-
-Start typing here...

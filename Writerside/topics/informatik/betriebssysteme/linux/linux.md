@@ -1,3 +1,0 @@
-# Linux
-
-Start typing here...

@@ -1,3 +1,0 @@
-# Anwendungsentwicklung
-
-Start typing here...

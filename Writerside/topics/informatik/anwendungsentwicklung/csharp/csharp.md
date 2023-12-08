@@ -1,3 +1,0 @@
-# CSharp
-
-Start typing here...

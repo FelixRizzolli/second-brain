@@ -1,3 +1,0 @@
-# NextJS
-
-Start typing here...
