@@ -1,3 +1,0 @@
-# Mathematik
-
-Start typing here...

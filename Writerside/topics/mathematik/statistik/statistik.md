@@ -1,3 +1,0 @@
-# Statistik
-
-Start typing here...
