@@ -128,4 +128,18 @@
             </tr>
         </table>
     </chapter>
+    <chapter title="Einsatzbeispiele" id="einsatzbeispiele">
+        <p>
+            Python erfreut sich großer Bekanntheit und Verbreitung sowohl bei Softwarefirmen und unter Wissenschaftlern
+            als auch in der Open-Source-Gemeinschaft. Die Palette der Produkte, die zumindest zum Teil in Python
+            geschrieben wurden, reicht von Webanwendungen (z. B. Google Mail, Google Maps, YouTube, Dropbox, reddit)
+            über Entwicklungswerkzeuge (z. B. Mercurial, SCons) bis hin zu wissenschaftlichen Plattformen für das
+            maschinelle Lernen (z. B. scikit-learn, PyTorch, TensorFlow) und für die Verarbeitung menschlicher
+            Sprache (z. B. NLTK).
+        </p>
+        <p>
+            Viele etablierte Anwendungen unterstützen Python als Skriptsprache für Erweiterungen. Beispiele dafür sind
+            die Grafik- und Visualisierungsanwendungen Maya, Blender, ParaView, Cinema 4D, Paint Shop Pro und GIMP.
+        </p>
+    </chapter>
 </topic>
