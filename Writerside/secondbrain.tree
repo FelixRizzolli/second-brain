@@ -28,10 +28,13 @@
                     <toc-element topic="numpy.topic"/>
                 </toc-element>
                 -->
+                <!--
                 <toc-element topic="python-grundlagen.topic">
+                -->
                     <toc-element topic="python-grundlagen-entwicklung.topic">
                     </toc-element>
                     <toc-element topic="python-grundlagen-sprache.topic"/>
+                <!--
                 </toc-element>
                 <toc-element topic="python-datentypen.topic">
                     <toc-element topic="python-datentypen-numerisch.topic"/>
@@ -58,6 +61,7 @@
                     <toc-element topic="python-standardbibliothek-datenspeicherung.topic"/>
                     <toc-element topic="python-standardbibliothek-netzwerkkommunikation.topic"/>
                 </toc-element>
+                -->
             </toc-element>
         <!--
         </toc-element>
