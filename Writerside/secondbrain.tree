@@ -80,22 +80,22 @@
         </toc-element>
         -->
     </toc-element>
-    <toc-element topic="sprachen.md">
+    <toc-element topic="sprachen.topic">
         <!--
-        <toc-element topic="deutsch.md"/>
-        <toc-element topic="italienisch.md"/>
-        <toc-element topic="englisch.md"/>
+        <toc-element topic="deutsch.topic"/>
+        <toc-element topic="italienisch.topic"/>
+        <toc-element topic="englisch.topic"/>
         -->
     </toc-element>
-    <toc-element topic="wirtschaft.md">
+    <toc-element topic="wirtschaft.topic">
     </toc-element>
-    <toc-element topic="truthiness.md">
+    <toc-element topic="truthiness.topic">
         <toc-element topic="erdstrahlen-wasseradern.topic"/>
         <!--
-        <toc-element topic="astrologie.md"/>
-        <toc-element topic="belebtes-wasser.md"/>
-        <toc-element topic="elektrosmog.md"/>
-        <toc-element topic="homoeopathie.md"/>
+        <toc-element topic="astrologie.topic"/>
+        <toc-element topic="belebtes-wasser.topic"/>
+        <toc-element topic="elektrosmog.topic"/>
+        <toc-element topic="homoeopathie.topic"/>
         -->
     </toc-element>
 </instance-profile>
