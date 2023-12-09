@@ -16,4 +16,28 @@
             JavaScript-Anwendungen verarbeiten.
         </p>
     </chapter>
+
+    <chapter title="Datenstrukturen und Formatdefinitionen" id="datenstrukturen-und-formatdefinitionen">
+
+        <chapter title="JSON Datentypen" id="json-datentypen">
+
+        </chapter>
+        <chapter title="JSON validieren" id="json-validieren">
+
+        </chapter>
+        <chapter title="Einschränkungen" id="einschraenkungen">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="Beispiel" id="beispiel">
+
+    </chapter>
+
+    <chapter title="JSON Schema" id="json-schema">
+
+        <chapter title="Beispiel" id="json-schema-beispiel">
+
+        </chapter>
+    </chapter>
 </topic>
