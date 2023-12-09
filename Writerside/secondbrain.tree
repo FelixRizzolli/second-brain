@@ -9,6 +9,12 @@
     <!-- ###########################[ INFORMATIK ]########################### -->
     <toc-element topic="mysecondbrain.topic"/>
     <toc-element topic="informatik.topic">
+        <toc-element topic="mainframe.topic">
+            <toc-element topic="tso.topic"/>
+            <toc-element topic="dfsort.topic"/>
+            <toc-element topic="jcl.topic"/>
+            <toc-element topic="cobol.topic"/>
+        </toc-element>
         <toc-element topic="softwareentwicklung.topic"/>
         <toc-element topic="webentwicklung.topic">
             <toc-element topic="html.topic"/>
