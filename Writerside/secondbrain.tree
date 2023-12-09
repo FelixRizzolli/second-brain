@@ -24,7 +24,13 @@
         <toc-element topic="auszeichnungssprachen.topic">
             <toc-element topic="json.topic"/>
             <toc-element topic="xml.topic">
+                <toc-element topic="xml-xslt.topic"/>
+                <toc-element topic="xml-xsd.topic"/>
+                <toc-element topic="xml-xquery.topic"/>
+                <toc-element topic="xml-xpath.topic"/>
+                <toc-element topic="xml-xlink-xpointer.topic"/>
                 <toc-element topic="xml-dom.topic"/>
+                <toc-element topic="xml-dtd.topic"/>
             </toc-element>
             <toc-element topic="yaml.topic"/>
             <toc-element topic="svg.topic"/>
