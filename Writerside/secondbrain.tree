@@ -6,6 +6,7 @@
                  name="MySecondBrain"
                  start-page="informatik.topic">
 
+    <!-- ###########################[ INFORMATIK ]########################### -->
     <toc-element topic="informatik.topic">
         <!--
         <toc-element topic="webentwicklung.topic">
@@ -101,12 +102,16 @@
         <toc-element topic="netzwerktechnik.topic"/>
         -->
     </toc-element>
+
+    <!-- ###########################[ MATHEMATIK ]########################### -->
     <toc-element topic="mathematik.topic">
         <!--
         <toc-element topic="statistik.topic"/>
         <toc-element topic="analysis.topic"/>
         -->
     </toc-element>
+
+    <!-- ###########################[ PHILOSOPHIE ]########################### -->
     <toc-element topic="philosophie.topic">
         <!--
         <toc-element topic="emotionale-intelligenz.topic"/>
@@ -136,6 +141,8 @@
         </toc-element>
         -->
     </toc-element>
+
+    <!-- ###########################[ SPRACHEN ]########################### -->
     <toc-element topic="sprachen.topic">
         <!--
         <toc-element topic="deutsch.topic"/>
@@ -143,8 +150,12 @@
         <toc-element topic="englisch.topic"/>
         -->
     </toc-element>
+
+    <!-- ###########################[ WIRTSCHAFT ]########################### -->
     <toc-element topic="wirtschaft.topic">
     </toc-element>
+
+    <!-- ###########################[ TRUTHINESS ]########################### -->
     <toc-element topic="truthiness.topic">
         <toc-element topic="erdstrahlen-wasseradern.topic"/>
         <!--
@@ -154,6 +165,8 @@
         <toc-element topic="homoeopathie.topic"/>
         -->
     </toc-element>
+
+    <!-- ###########################[ GESUNDHEIT ]########################### -->
     <toc-element topic="gesundheit.topic">
         <toc-element topic="ernaehrungskompass.topic"/>
         <toc-element topic="glukose.topic"/>
