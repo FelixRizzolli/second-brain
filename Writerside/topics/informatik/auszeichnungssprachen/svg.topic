@@ -13,7 +13,7 @@
     </chapter>
 
     <chapter title="SVG Elemente" id="svg-elemente">
-        <table style="header-column">
+        <table style="header-row">
             <tr>
                 <td>Element</td>
                 <td>Bedeutung</td>
@@ -286,7 +286,7 @@
             <a href="https://www.w3.org/TR/SVG2/styling.html">www.w3.org/TR/SVG2/styling.html</a>. 
         </p>
         <chapter title="Eine Auswahl von CSS-Eigenschaften" id="svg-css-eigenschaftentabelle">
-            <table style="header-column">
+            <table style="header-row">
                 <tr>
                     <td>Eigenschaft</td>
                     <td>Beschreibung</td>
