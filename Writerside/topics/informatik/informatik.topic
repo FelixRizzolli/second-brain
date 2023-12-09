@@ -10,7 +10,7 @@
         <description>...</description>
 
         <spotlight>
-            <a href="python.topic" type="data" description="Python" summary="..." />
+            <a href="python.topic" type="computer" description="Python" summary="..." />
             <a href="javascript.topic" type="world" description="JavaScript" summary="..." />
         </spotlight>
 
@@ -27,7 +27,7 @@
             <a href="webentwicklung.topic"
                description="Webentwicklung"
                summary="..."
-               type="server" />
+               type="world" />
             <a href="auszeichnungssprachen.topic"
                description="Auszeichnungssprachen"
                summary="..."
