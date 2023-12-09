@@ -108,6 +108,11 @@
             <toc-element topic="linux.topic"/>
         </toc-element>
         <toc-element topic="netzwerktechnik.topic"/>
+        <toc-element topic="design.topic">
+            <toc-element topic="design-responsive-webdesign.topic"/>
+            <toc-element topic="design-ui.topic"/>
+            <toc-element topic="design-ux.topic"/>
+        </toc-element>
     </toc-element>
 
     <!-- ###########################[ MATHEMATIK ]########################### -->
