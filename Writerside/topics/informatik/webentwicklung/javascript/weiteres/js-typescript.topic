@@ -97,6 +97,30 @@
     </chapter>
 
     <chapter title="Die Typzuweisung" id="typzuweisung">
+        <p>
+            In TypeScript kann bei der Variablendeklaration ein optionaler Typ angegeben werden
+            <strong>(= explizite Typzuweisung)</strong>. Wird die Variable mit einem Wert initialisiert, kann die
+            Typzuweisung weggelassen werden, da TypeScript automatisch den Typ des zugewiesenen Wertes übernimmt
+            <strong>(= implizite Typzuweisung)</strong>. Für die Deklaration stehen die Schlüsselworte <code>var</code>,
+            <code>let</code> und <code>const</code> zur Verfügung, wobei möglichst nur <code>let</code> und
+            <code>const</code> verwendet werden sollen. Es sollte auch so oft wie möglich const verwendet werden, um
+            eine versehentliche Neuzuweisung zu vermeiden. Erst wenn ein Wert neu zugewiesen werden muss oder man dies
+            bereits von vornherein weiß, sollte das <code>let</code>-Schlüsselwort verwendet werden.
+        </p>
+        <p>
+            <code>const</code> und <code>let</code> erzeugen Konstanten bzw. Variablen im Block-Scope, sodass man sehr
+            gute Kontrolle über die Gültigkeit hat. Hier ein Beispiel für eine Deklaration mit gleichzeitiger
+            Initialisierung einer Variable, bei der zusätzlich der Typ angegeben wird:
+        </p>
+
+        <code-block lang="typescript">
+            let title: string = 'Design Patterns';
+        </code-block>
+
+        <p>
+            Die Angabe des Typs wird immer durch Doppelpunkt getrennt hinter den Namen der Variable und vor das
+            Gleichheitszeichen geschrieben.
+        </p>
     </chapter>
 
     <chapter title="Datentypen" id="datentypen">
