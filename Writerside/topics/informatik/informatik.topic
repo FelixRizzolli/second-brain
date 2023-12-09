@@ -4,5 +4,54 @@
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Informatik" id="informatik">
-    <show-structure for="chapter,procedure" depth="2"/>
+
+    <section-starting-page>
+        <title>Informatik</title>
+        <description>...</description>
+
+        <spotlight>
+            <a href="python.topic" type="data" description="Python" summary="..." />
+            <a href="javascript.topic" type="world" description="JavaScript" summary="..." />
+        </spotlight>
+
+        <primary>
+            <title>Kategorien</title>
+            <a href="softwareentwicklung.topic"
+               description="Softwareentwicklung"
+               summary="..."
+               type="navigation" />
+            <a href="anwendungsentwicklung.topic"
+               description="Anwendungsentwicklung"
+               summary="..."
+               type="computer" />
+            <a href="webentwicklung.topic"
+               description="Webentwicklung"
+               summary="..."
+               type="server" />
+            <a href="auszeichnungssprachen.topic"
+               description="Auszeichnungssprachen"
+               summary="..."
+               type="development" />
+            <a href="datenbanken.topic"
+               description="Datenbanken"
+               summary="..."
+               type="data"/>
+            <a href="betriebssysteme.topic"
+               description="Betriebssysteme"
+               summary="..."
+               type="cross-platform" />
+            <a href="netzwerktechnik.topic"
+               description="Netzwerktechnik"
+               summary="..."
+               type="network"/>
+        </primary>
+
+        <secondary>
+            <title>Meine Leidenschaft</title>
+            <a href="javascript.topic"
+               description="JavaScript"
+               summary="..."
+               type="world" />
+        </secondary>
+    </section-starting-page>
 </topic>

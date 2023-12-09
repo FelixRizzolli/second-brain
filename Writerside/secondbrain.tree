@@ -8,6 +8,7 @@
 
     <!-- ###########################[ INFORMATIK ]########################### -->
     <toc-element topic="informatik.topic">
+        <toc-element topic="softwareentwicklung.topic"/>
         <toc-element topic="webentwicklung.topic">
             <toc-element topic="html.topic"/>
             <toc-element topic="css.topic"/>
@@ -41,51 +42,18 @@
                 </toc-element>
             </toc-element>
             <toc-element topic="php.topic"/>
-            <toc-element topic="pwa.topic">
-            </toc-element>
+            <toc-element topic="pwa.topic"/>
             <toc-element topic="seo.topic"/>
         </toc-element>
-        <!--
         <toc-element topic="anwendungsentwicklung.topic">
-            <toc-element topic="java.topic"/>
-            <toc-element topic="csharp.topic"/>
-        -->
-        <!--
-        <toc-element topic="auszeichnungssprachen.topic">
-        -->
-            <toc-element topic="json.topic"/>
-        <!--
-            <toc-element topic="xml.topic">
-                <toc-element topic="xml-xslt.topic"/>
-                <toc-element topic="xml-xsd.topic"/>
-                <toc-element topic="xml-xquery.topic"/>
-                <toc-element topic="xml-xpath.topic"/>
-                <toc-element topic="xml-xlink-xpointer.topic"/>
-                <toc-element topic="xml-dom.topic"/>
-                <toc-element topic="xml-dtd.topic"/>
-            </toc-element>
-            <toc-element topic="yaml.topic"/>
-        -->
-            <toc-element topic="svg.topic"/>
-        <!--
-            <toc-element topic="markdown.topic"/>
-            <toc-element topic="latex.topic"/>
-        </toc-element>
-        -->
-        <toc-element topic="python.topic">
-                <!--
+            <toc-element topic="python.topic">
                 <toc-element topic="python-libraries-frameworks.topic">
                     <toc-element topic="pandas.topic"/>
                     <toc-element topic="numpy.topic"/>
                 </toc-element>
-                -->
-                <!--
                 <toc-element topic="python-grundlagen.topic">
-                -->
-                    <toc-element topic="python-grundlagen-entwicklung.topic">
-                    </toc-element>
+                    <toc-element topic="python-grundlagen-entwicklung.topic"/>
                     <toc-element topic="python-grundlagen-sprache.topic"/>
-                <!--
                 </toc-element>
                 <toc-element topic="python-datentypen.topic">
                     <toc-element topic="python-datentypen-numerisch.topic"/>
@@ -112,53 +80,54 @@
                     <toc-element topic="python-standardbibliothek-datenspeicherung.topic"/>
                     <toc-element topic="python-standardbibliothek-netzwerkkommunikation.topic"/>
                 </toc-element>
-                -->
             </toc-element>
-        <!--
+            <toc-element topic="java.topic"/>
+            <toc-element topic="csharp.topic"/>
         </toc-element>
-        <toc-element topic="softwareentwicklung.topic"/>
+        <toc-element topic="auszeichnungssprachen.topic">
+            <toc-element topic="json.topic"/>
+            <toc-element topic="xml.topic">
+                <toc-element topic="xml-xslt.topic"/>
+                <toc-element topic="xml-xsd.topic"/>
+                <toc-element topic="xml-xquery.topic"/>
+                <toc-element topic="xml-xpath.topic"/>
+                <toc-element topic="xml-xlink-xpointer.topic"/>
+                <toc-element topic="xml-dom.topic"/>
+                <toc-element topic="xml-dtd.topic"/>
+            </toc-element>
+            <toc-element topic="yaml.topic"/>
+            <toc-element topic="svg.topic"/>
+            <toc-element topic="markdown.topic"/>
+            <toc-element topic="latex.topic"/>
+        </toc-element>
         <toc-element topic="datenbanken.topic"/>
-        -->
         <toc-element topic="betriebssysteme.topic">
-            <!--
             <toc-element topic="macos.topic"/>
             <toc-element topic="windows.topic"/>
             <toc-element topic="linux.topic"/>
-            -->
         </toc-element>
-        <!--
         <toc-element topic="netzwerktechnik.topic"/>
-        -->
     </toc-element>
 
     <!-- ###########################[ MATHEMATIK ]########################### -->
     <toc-element topic="mathematik.topic">
-        <!--
         <toc-element topic="statistik.topic"/>
         <toc-element topic="analysis.topic"/>
-        -->
     </toc-element>
 
     <!-- ###########################[ PHILOSOPHIE ]########################### -->
     <toc-element topic="philosophie.topic">
-        <!--
         <toc-element topic="emotionale-intelligenz.topic"/>
-        -->
         <toc-element topic="finanzielle-intelligenz.topic"/>
-        <!--
         <toc-element topic="produktivitaetssteigerung.topic">
-        -->
             <toc-element topic="sprachen-lernen.topic"/>
             <toc-element topic="speedlearning.topic"/>
-        <!--
         </toc-element>
         <toc-element topic="kommunikation.topic"/>
         <toc-element topic="stoizismus.topic">
-        -->
             <toc-element topic="die-stoiker.topic"/>
-        <!--
             <toc-element topic="buch-dein-hindernis-ist-dein-weg.topic"/>
-            <toc-element topic="buch-In-der-stille-liegt-dein-weg.topic"/>
+            <toc-element topic="buch-in-der-stille-liegt-dein-weg.topic"/>
             <toc-element topic="buch-dein-ego-ist-dein-feind.topic"/>
             <toc-element topic="die-vier-stoischen-tugenden.topic">
                 <toc-element topic="stoische-tugend-mut.topic"/>
@@ -167,16 +136,13 @@
                 <toc-element topic="stoische-tugend-gerechtigkeit.topic"/>
             </toc-element>
         </toc-element>
-        -->
     </toc-element>
 
     <!-- ###########################[ SPRACHEN ]########################### -->
     <toc-element topic="sprachen.topic">
-        <!--
         <toc-element topic="deutsch.topic"/>
         <toc-element topic="italienisch.topic"/>
         <toc-element topic="englisch.topic"/>
-        -->
     </toc-element>
 
     <!-- ###########################[ WIRTSCHAFT ]########################### -->
@@ -186,12 +152,10 @@
     <!-- ###########################[ TRUTHINESS ]########################### -->
     <toc-element topic="truthiness.topic">
         <toc-element topic="erdstrahlen-wasseradern.topic"/>
-        <!--
         <toc-element topic="astrologie.topic"/>
         <toc-element topic="belebtes-wasser.topic"/>
         <toc-element topic="elektrosmog.topic"/>
         <toc-element topic="homoeopathie.topic"/>
-        -->
     </toc-element>
 
     <!-- ###########################[ GESUNDHEIT ]########################### -->
