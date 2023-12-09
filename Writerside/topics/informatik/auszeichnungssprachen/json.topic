@@ -141,9 +141,42 @@
     </chapter>
 
     <chapter title="JSON Schema" id="json-schema">
+        <p>
+            JSON Schema gibt ein JSON-basiertes Format an, um die Struktur von JSON-Daten für die Validierung,
+            Dokumentation und Interaktionssteuerung zu definieren. Es enthält einen Vertrag für die JSON-Daten, die für
+            eine bestimmte Anwendung erforderlich sind, und wie diese Daten geändert werden können. Das JSON Schema
+            basiert auf den Konzepten des XML Schemas, ist jedoch JSON-basiert. Wie in XSD können dieselben
+            Serialisierungs- und Deserialisierungsprogramme sowohl für das Schema als auch für die Daten verwendet
+            werden. Es ist selbstbeschreibend und in einem Internet-Entwurf der Internet Engineering Task Force
+            festgelegt. Für verschiedene Programmiersprachen stehen mehrere Validatoren mit jeweils unterschiedlichen
+            Konformitätsstufen zur Verfügung.
+        </p>
 
         <chapter title="Beispiel" id="json-schema-beispiel">
-
+            <code-block lang="json">
+                {
+                    "$schema": "http://json-schema.org/draft/2019-09/schema",
+                    "title": "Politiker",
+                    "type": "object",
+                    "required": ["Vorname", "Nachname", "Geburtsdatum", "Nationalitaet"],
+                    "properties": {
+                        "Vorname": { "type": "string" },
+                        "Nachname": { "type": "string" },
+                        "Geburtsdatum": { "type": "date" },
+                        "Nationalitaet": { "type": "string" },
+                        "Partei": {
+                            "type": "object",
+                            "properties": {
+                                "Name": { "type": "string" },
+                            }
+                        },
+                        "Hauptsitz": { "type": "string" },
+                        "Gründungsdatum": { "type": "date" },
+                        "Gründungsort": { "type": "string" },
+                        "Amt": { "type": "string" }
+                    }
+                }
+            </code-block>
         </chapter>
     </chapter>
 </topic>
