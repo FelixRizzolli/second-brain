@@ -150,4 +150,5 @@
         <toc-element topic="homoeopathie.topic"/>
         -->
     </toc-element>
+    <toc-element topic="gesundheit.topic"/>
 </instance-profile>
