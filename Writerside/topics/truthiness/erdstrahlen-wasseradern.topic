@@ -89,48 +89,49 @@
     <chapter title="Quellen" id="quellen">
         <tip>
             <strong>(WEBSEITE)</strong>
-            <a href="https://de.wikipedia.org/wiki/Erdstrahlen">
+            <a href="https://de.wikipedia.org/wiki/Erdstrahlen" ignore-vars="true">
                 https://de.wikipedia.org/wiki/Erdstrahlen
             </a>, 2023-03-07 13:30
         </tip>
         <tip>
             <strong>(WEBSEITE)</strong>
-            <a href="https://de.wikipedia.org/wiki/Radi%C3%A4sthesie">
+            <a href="https://de.wikipedia.org/wiki/Radi%C3%A4sthesie" ignore-vars="true">
                 https://de.wikipedia.org/wiki/Radiästhesie
             </a>, 2023-03-07 14:00
         </tip>
         <tip>
             <strong>(WEBSEITE)</strong>
-            <a href="https://alpha-energy.at/pages/bovis-einheiten-einfach-erklaert">
+            <a href="https://alpha-energy.at/pages/bovis-einheiten-einfach-erklaert" ignore-vars="true">
                 https://alpha-energy.at/pages/bovis-einheiten-einfach-erklaert
             </a>, 2023-03-07 14:00
         </tip>
         <tip>
             <strong>(WEBSEITE)</strong>
-            <a href="https://de.wikipedia.org/wiki/Carpenter-Effekt">
+            <a href="https://de.wikipedia.org/wiki/Carpenter-Effekt" ignore-vars="true">
                 https://de.wikipedia.org/wiki/Carpenter-Effekt
             </a>, 2023-03-07 14:30
         </tip>
         <tip>
             <strong>(WEBSEITE)</strong>
-            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0965229905000506?via%3Dihub">
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0965229905000506?via%3Dihub" ignore-vars="true">
                 https://www.sciencedirect.com/science/article/abs/pii/S0965229905000506?via%3Dihub
             </a>, 2023-03-07 14:45
         </tip>
         <tip>
             <strong>(WEBSEITE)</strong>
-            <a href="https://web.archive.org/web/20100419060521/http://www.daserste.de/wwiewissen/beitrag_dyn~uid,gnfjmxirn4hdjfxb~cm.asp">
+            <a href="https://web.archive.org/web/20100419060521/http://www.daserste.de/wwiewissen/beitrag_dyn~uid,gnfjmxirn4hdjfxb~cm.asp"
+               ignore-vars="true">
                 https://web.archive.org/web/20100419060521/http://www.daserste.de/wwiewissen/beitrag_dyn~uid,gnfjmxirn4hdjfxb~cm.asp
             </a>, 2023-03-07 14:45
         </tip>
         <tip>
             <strong>(YOUTUBE)</strong>
-            <a href="https://www.youtube.com/watch?v=MWONKqdbiyY">
+            <a href="https://www.youtube.com/watch?v=MWONKqdbiyY" ignore-vars="true">
             </a>, 2023-03-07 15:00
         </tip>
         <tip>
             <strong>(YOUTUBE)</strong>
-            <a href="https://www.youtube.com/watch?v=-0hi0mUN4Fk">
+            <a href="https://www.youtube.com/watch?v=-0hi0mUN4Fk" ignore-vars="true">
                 https://www.youtube.com/watch?v=-0hi0mUN4Fk
             </a>, 2023-03-07 15:15
         </tip>

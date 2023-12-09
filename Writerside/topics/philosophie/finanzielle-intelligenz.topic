@@ -687,13 +687,13 @@
         </tip>
         <tip>
             <strong>(WEBSEITE)</strong>
-            <a href="https://en.wikipedia.org/wiki/Poverty">
+            <a href="https://en.wikipedia.org/wiki/Poverty" ignore-vars="true">
                 https://en.wikipedia.org/wiki/Poverty
             </a>, 2023-06-03 06:30
         </tip>
         <tip>
             <strong>(WEBSEITE)</strong>
-            <a href="https://de.wikipedia.org/wiki/Verm%C3%B6gen_(Wirtschaft)">
+            <a href="https://de.wikipedia.org/wiki/Verm%C3%B6gen_(Wirtschaft)" ignore-vars="true">
                 https://de.wikipedia.org/wiki/Vermögen_(Wirtschaft)
             </a>, 2023-09-26 08:00
         </tip>

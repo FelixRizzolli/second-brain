@@ -534,7 +534,7 @@
                         Bild oder sogar eine Kurzgeschichte aus, damit sie in unserem Gedächtnis bleibt. An solche
                         Bilder oder Stichworte erinnern wir uns viel leichter. Anregungen für Stichwort-Assoziationen
                         und wie wir darin besser werden finden wir unter:
-                        <a href="https://www.memrise.com/">memrise.com</a>.
+                        <a href="https://www.memrise.com/" ignore-vars="true">memrise.com</a>.
                     </li>
                     <li>
                         <strong>Wiederholung mit Karteikarten</strong> – Bei der Wiederholung in bestimmten Abständen
@@ -643,29 +643,29 @@
 
             <chapter title="Hilfreiche Websites" id="hilfreiche-websites">
                 <p>
-                    Die Website <a href="https://www.couchsurfing.com/">couchsurfing.org</a> ist unter Reisenden mit
-                    kleinem Budget bekannt. Sie bietet eine Möglichkeit, sich mit Leuten zu vernetzen, die in Städten in
-                    aller Welt wohnen und einem dazu einzuladen, bei ihnen auf der Couch zu übernachten (Couch-Suft).
-                    Das Tolle an der Site ist, dass die Mitglieder, da sie Weltreisende sind, recht aufgeschlossen und
-                    sehr viel eher bereit sind, sich mit einem interessanten neuen Ausländer zu treffen als in anderen
-                    Communitys.
+                    Die Website <a href="https://www.couchsurfing.com/" ignore-vars="true">couchsurfing.org</a> ist
+                    unter Reisenden mit kleinem Budget bekannt. Sie bietet eine Möglichkeit, sich mit Leuten zu
+                    vernetzen, die in Städten in aller Welt wohnen und einem dazu einzuladen, bei ihnen auf der Couch zu
+                    übernachten (Couch-Suft). Das Tolle an der Site ist, dass die Mitglieder, da sie Weltreisende sind,
+                    recht aufgeschlossen und sehr viel eher bereit sind, sich mit einem interessanten neuen Ausländer zu
+                    treffen als in anderen Communitys.
                 </p>
                 <p>
-                    <a href="https://www.internations.org/">InterNations.org</a> veranstaltet in größeren Städten
-                    gesellschaftliche Events, die eine gute Mischung von Leuten aus verschiedenen Ländern anziehen. In
-                    der Kurzdarstellung des Treffens mit den Teilnehmerzahlen pro Land sieht man im Voraus, welche
-                    Nationalitäten teilnehmen werden, sodass man gute Aussichten hat, jemanden zu treffen, mit dem man
-                    die Zielsprache üben kann.
+                    <a href="https://www.internations.org/" ignore-vars="true">InterNations.org</a> veranstaltet in
+                    größeren Städten gesellschaftliche Events, die eine gute Mischung von Leuten aus verschiedenen
+                    Ländern anziehen. In der Kurzdarstellung des Treffens mit den Teilnehmerzahlen pro Land sieht man im
+                    Voraus, welche Nationalitäten teilnehmen werden, sodass man gute Aussichten hat, jemanden zu
+                    treffen, mit dem man die Zielsprache üben kann.
                 </p>
                 <p>
-                    Bei <a hred="https://www.meetup.com/">Meetup.com</a>, deren Publikum vielleicht nicht so
-                    international ist, gibt es spezielle Treffen, um besondere Sprachen zu üben.
+                    Bei <a href="https://www.meetup.com/" ignore-vars="true">Meetup.com</a>, deren Publikum vielleicht
+                    nicht so international ist, gibt es spezielle Treffen, um besondere Sprachen zu üben.
                 </p>
                 <p>
-                    Über <a href="https://www.italki.com/de">Italki.com</a> kann man Sprachpartner suchen, eine Zeit im
-                    Voraus vereinbaren und sich Referenzen von anderen anschauen, die bereits mit einer speziellen
-                    Person gesprochen haben, sodass man weis, ob diese Person wahrscheinlich hilfsbereit und freundlich
-                    sein wird.
+                    Über <a href="https://www.italki.com/de" ignore-vars="true">Italki.com</a> kann man Sprachpartner
+                    suchen, eine Zeit im Voraus vereinbaren und sich Referenzen von anderen anschauen, die bereits mit
+                    einer speziellen Person gesprochen haben, sodass man weis, ob diese Person wahrscheinlich
+                    hilfsbereit und freundlich sein wird.
                 </p>
                 <p>
                     In jedem sozialen Netzwerk gibt es letztlich die Möglichkeit Sprachtreffen zu organisieren. Findet
@@ -1382,37 +1382,38 @@
         </tip>
         <tip>
             <strong>(WEBSEITE)</strong>
-            <a href="https://de.wikipedia.org/wiki/Grammatik">
+            <a href="https://de.wikipedia.org/wiki/Grammatik" ignore-vars="true">
                 https://de.wikipedia.org/wiki/Grammatik
             </a>, 2023-09-30 16:30
         </tip>
         <tip>
             <strong>(WEBSEITE)</strong>
-            <a href="https://de.wikipedia.org/wiki/Morphologie_(Linguistik)">
+            <a href="https://de.wikipedia.org/wiki/Morphologie_(Linguistik)" ignore-vars="true">
                 https://de.wikipedia.org/wiki/Morphologie_(Linguistik)
             </a>, 2023-09-30 16:30
         </tip>
         <tip>
             <strong>(WEBSEITE)</strong>
-            <a href="https://de.wikipedia.org/wiki/Syntax">
+            <a href="https://de.wikipedia.org/wiki/Syntax" ignore-vars="true">
                 https://de.wikipedia.org/wiki/Syntax
             </a>, 2023-09-30 16:30
         </tip>
         <tip>
             <strong>(WEBSEITE)</strong>
-            <a href="https://de.wikipedia.org/wiki/Phonologie">
+            <a href="https://de.wikipedia.org/wiki/Phonologie" ignore-vars="true">
                 https://de.wikipedia.org/wiki/Phonologie
             </a>, 2023-09-30 16:30
         </tip>
         <tip>
             <strong>(WEBSEITE)</strong>
-            <a href="https://de.wikipedia.org/wiki/Semantik">
+            <a href="https://de.wikipedia.org/wiki/Semantik" ignore-vars="true">
                 https://de.wikipedia.org/wiki/Semantik
             </a>, 2023-09-30 16:30
         </tip>
         <tip>
             <strong>(WEBSEITE)</strong>
-            <a href="https://de.wikipedia.org/wiki/Gemeinsamer_europ%C3%A4ischer_Referenzrahmen_f%C3%BCr_Sprachen">
+            <a href="https://de.wikipedia.org/wiki/Gemeinsamer_europ%C3%A4ischer_Referenzrahmen_f%C3%BCr_Sprachen"
+               ignore-vars="true">
                 https://de.wikipedia.org/wiki/Gemeinsamer_europäischer_Referenzrahmen_für_Sprachen
             </a>, 2023-10-01 07:30
         </tip>
