@@ -5,5 +5,27 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Glukose" id="Glukose">
     <show-structure for="chapter,procedure" depth="2"/>
-    
+
+    <chapter title="Was ist Glukose?" id="was-ist-glukose">
+        <p>
+            Pflanzen stellen mithilfe von Sonnenlicht, Kohlendioxid und Wasser organisches Material her. Der Name für
+            diesen Prozess lautet Fotosynthese, und sein Endprodukt heißt Glukose. Glukose ist ein äußerst vielseitiger
+            Stoff. Pflanzen können ihn direkt als Energie nutzen oder für schlechte Zeiten speichern. Unter anderem
+            benutzen sie Glukose für die Herstellung von Zellulose, einem wichtigen Baumaterial. Doch auch Wurzeln und
+            Früchte speichern Glukose in unterschiedlicher Form.
+        </p>
+        <p>
+            Da wir Menschen keine Fotosynthese betreiben können, nehmen wir Glukose hauptsächlich durch unsere Nahrung
+            auf. Essen wir beispielsweise Gemüse, nehmen wir in Zellulose umgewandelte Glukose zu uns – die sogenannten
+            Ballaststoffe. In Früchten steckt das, was wir Fruchtzucker oder Zucker nennen. Und in Wurzelgemüse und
+            Samen verbirgt sich Glukose in Form von Stärke. Alle vier Bestandteile – Ballaststoffe, Fruktose, Zucker und
+            Stärke – basieren also auf Glukose und werden in der Ernährungswissenschaft als Kohlenhydrate bezeichnet.
+        </p>
+        <p>
+            Einmal aufgenommen werden Stärke und Zucker in unserem Darm wieder in Glukose zurückverwandelt und über den
+            Blutkreislauf in die Zellen geschickt, wo wir sie als Energiequelle nutzen. Nicht jedoch die Ballaststoffe.
+            Die bleiben, wie sie sind, liefern also auch keine Energie für unsere Zellen. Darum werden sie meist auch
+            nicht zu den Kohlenhydraten gezählt, obwohl sie es eigentlich sind.
+        </p>
+    </chapter>
 </topic>
