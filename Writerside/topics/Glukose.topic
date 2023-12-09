@@ -4,6 +4,6 @@
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Glukose" id="Glukose">
-
-    <p>Start typing here...</p>
+    <show-structure for="chapter,procedure" depth="2"/>
+    
 </topic>
