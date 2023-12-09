@@ -228,6 +228,7 @@
                     <code-block lang="html">
                         &lt;body&gt;
                             &lt;object data="example.svg" width="500" height="500"&gt;
+                                &lt;!-- Für ältere Browser, die SVG nicht unterstützen --&gt;
                                 &lt;img src="example.png" width="500" height="500" alt="Alternatives PNG-Bild" /&gt;
                             &lt;/object&gt;
                         &lt;/body&gt;
