@@ -357,5 +357,6 @@
     </chapter>
 
     <chapter title="Das Verhalten von SVG-Elementen mit JavaScript beeinflussen" id="svg-js">
+        Informationen dazu gibt es in der <a href="js-svg.topic">JavaScript-Dokumentation</a>.
     </chapter>
 </topic>
