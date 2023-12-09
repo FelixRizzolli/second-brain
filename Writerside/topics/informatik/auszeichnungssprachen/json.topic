@@ -179,4 +179,18 @@
             </code-block>
         </chapter>
     </chapter>
+
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <strong>(BUCH)</strong>
+            978-3-8362-5697-1, JavaScript, Philip Ackermann, Rheinwerk Verlag GmbH, 2019
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://de.wikipedia.org/wiki/JavaScript_Object_Notation" ignore-vars="true">
+                https://de.wikipedia.org/wiki/JavaScript_Object_Notation
+            </a>, Datum 2022-08-20 Uhrzeit 07:45
+
+        </tip>
+    </chapter>
 </topic>
