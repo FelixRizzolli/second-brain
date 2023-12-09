@@ -13,6 +13,149 @@
     </chapter>
 
     <chapter title="SVG Elemente" id="svg-elemente">
+        <table>
+            <tr>
+                <td>Element</td>
+                <td>Bedeutung</td>
+                <td>Attribute</td>
+            </tr>
+            <tr>
+                <td><code>&lt;rect&gt;</code></td>
+                <td>Rechteck</td>
+                <td>
+                    <list>
+                        <li><code>x</code> x-Koordinate</li>
+                        <li><code>y</code> y-Koordinate</li>
+                        <li><code>width</code> Breite des Rechtecks</li>
+                        <li><code>height</code> Höhe des Rechtecks</li>
+                        <li><code>rx</code> horizontaler Radius für abgerundete Ecken</li>
+                        <li><code>ry</code> vertikaler Radius für abgerundete Ecken</li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;circle&gt;</code></td>
+                <td>Kreis</td>
+                <td>
+                    <list>
+                        <li><code>cx</code> x-Koordinate</li>
+                        <li><code>cy</code> y-Koordinate</li>
+                        <li><code>r</code> Radius</li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;ellipse&gt;</code></td>
+                <td>Ellipse</td>
+                <td>
+                    <list>
+                        <li><code>cx</code> x-Koordinate des Mittelpunkts</li>
+                        <li><code>cy</code> y-Koordinate des Mittelpunkts</li>
+                        <li><code>rx</code> Radius der Halbachse in x-Richtung</li>
+                        <li><code>ry</code> Radius der Halbachse in y-Richtung</li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;line&gt;</code></td>
+                <td>Linie mit zwei Punkten</td>
+                <td>
+                    <list>
+                        <li><code>x1</code> x-Koordinate des erste Punkts</li>
+                        <li><code>y1</code> y-Koordinate des erste Punkts</li>
+                        <li><code>x2</code> x-Koordinate des zweiten Punkts</li>
+                        <li><code>y2</code> y-Koordinate des zweiten Punkts</li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;polyline&gt;</code></td>
+                <td>Linie mit mehreren Zwischenpunkten</td>
+                <td>
+                    <list>
+                        <li>
+                            <code>points</code> Liste der x- und y-Koordinaten der einzelnen durch die Linien zu
+                            verbindenden Punkte, wobei die x-y-Paare durch Kommas oder Leerzeichen getrennt angegeben
+                            werden
+                        </li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;polygon&gt;</code></td>
+                <td>Polygon</td>
+                <td>
+                    <list>
+                        <li>
+                            <code>points</code> Liste der x- und y-Koordinaten der einzelnen durch die Linien zu
+                            verbindenden Punkte, wobei die x-y-Paare durch Kommas oder Leerzeichen getrennt angegeben
+                            werden
+                        </li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;path&gt;</code></td>
+                <td>Pfad</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><code>&lt;g&gt;</code></td>
+                <td>Gruppe von Grafikelementen</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><code>&lt;text&gt;</code></td>
+                <td>Textinhalte</td>
+                <td>
+                    <list>
+                        <li><code>x</code> x-Koordinate der Grundlinie</li>
+                        <li><code>y</code> y-Koordinate der Grundlinie</li>
+                        <li><code></code></li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;image&gt;</code></td>
+                <td>externe Bilder</td>
+                <td>
+                    <list>
+                        <li><code>x</code> x-Koordinate</li>
+                        <li><code>y</code> y-Koordinate</li>
+                        <li><code>width</code> Breite des Rechtecks</li>
+                        <li><code>height</code> Höhe des Rechtecks</li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;linearGradient&gt;</code></td>
+                <td>linearer Farbverlauf</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><code>&lt;radialGradient&gt;</code></td>
+                <td>radialer Farbverlauf</td>
+                <td></td>
+            </tr>
+        </table>
+
+        <code-block lang="xml">
+            &lt;svg xmlns="http://www.w3.org/2000/svg"&gt;
+                &lt;rect width="100%" height="100%" fill="#000000" /&gt;
+                &lt;circle id="circle" cx="100" cy="100" r="80" fill="#ffffff" /&gt;
+            &lt;/svg&gt;
+        </code-block>
+
+        <p>
+            Prinzipiell können SVG-Grafiken manuell erstellt werden, was aber oftmals recht mühsam ist, sobald es um das
+            Erstellen komplizierterer Grafiken geht. Einfacher ist es, entsprechende Grafiken in einem der zahlreichen
+            Vektorprogramme zu erstellen, in das SVG-Format zu exportieren (Programme wie Adobe Illustrator, Inkscape
+            oder Ähnliche bieten eine solche Option in der Regel an) und anschließend in der entsprechenden Webseite zu
+            verwenden.
+        </p>
+        <p>
+            Das Beispiel zeigt einen weißen Kreis auf schwarzem Untergrund.
+        </p>
     </chapter>
 
     <chapter title="SVG in HTML einbinden" id="svg-html">
