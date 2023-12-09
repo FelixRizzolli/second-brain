@@ -6,4 +6,18 @@
        title="SVG (Scalable Vector Graphics)" id="svg">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Was ist SVG?" id="was-ist-svg">
+    </chapter>
+
+    <chapter title="SVG Elemente" id="svg-elemente">
+    </chapter>
+
+    <chapter title="SVG in HTML einbinden" id="svg-html">
+    </chapter>
+
+    <chapter title="Das Aussehen von SVG-Elementen mit CSS beeinflussen" id="svg-css">
+    </chapter>
+
+    <chapter title="Das Verhalten von SVG-Elementen mit JavaScript beeinflussen" id="svg-js">
+    </chapter>
 </topic>

@@ -36,7 +36,9 @@
                 <toc-element topic="xml-dtd.topic"/>
             </toc-element>
             <toc-element topic="yaml.topic"/>
+        -->
             <toc-element topic="svg.topic"/>
+        <!--
             <toc-element topic="markdown.topic"/>
             <toc-element topic="latex.topic"/>
         </toc-element>
