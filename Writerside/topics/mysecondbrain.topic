@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="MySecondBrain" id="mysecondbrain" help-id="MySecondBrain">
+    <section-starting-page>
+        <title>My SecondBrain</title>
+        <description>...</description>
+
+        <spotlight>
+            <a href="informatik.topic" type="development" description="Informatik" summary="..." />
+            <a href="philosophie.topic" type="learn" description="Philosophie" summary="..." />
+        </spotlight>
+
+        <primary>
+            <title>Kategorien</title>
+            <a href="informatik.topic"
+               description="Informatik"
+               summary="..."
+               type="development" />
+            <a href="philosophie.topic"
+               description="Philosophie"
+               summary="..."
+               type="learn" />
+            <a href="wirtschaft.topic"
+               description="Wirtschaft"
+               summary="..."
+               type="academy" />
+            <a href="truthiness.topic"
+               description="Truthiness"
+               summary="..."
+               type="bug" />
+            <a href="sprachen.topic"
+               description="Sprachen"
+               summary="..."
+               type="data"/>
+            <a href="mathematik.topic"
+               description="Mathematik"
+               summary="..."
+               type="documents" />
+            <a href="gesundheit.topic"
+               description="Gesundheit"
+               summary="..."
+               type="navigation"/>
+        </primary>
+
+        <secondary>
+            <title>Meine Leidenschaft</title>
+            <a href="javascript.topic"
+               description="JavaScript"
+               summary="..."
+               type="development" />
+            <a href="stoizismus.topic"
+               description="Stoizismus"
+               summary="..."
+               type="academy" />
+            <a href="produktivitaetssteigerung.topic"
+               description="Produktivitätssteigerung"
+               summary="..."
+               type="academy" />
+        </secondary>
+    </section-starting-page>
+</topic>
