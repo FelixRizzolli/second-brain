@@ -6,4 +6,148 @@
        title="TypeScript" id="js-typescript">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Was ist TypeScript?" id="was-ist-typescript">
+    </chapter>
+
+    <chapter title="Was bringt ein Typsystem?" id="was-bringt-ein-typsystem">
+
+        <chapter title="TypeScript verwenden" id="typescript-verwenden">
+
+            <chapter title="Konfiguration" id="typescript-konfigurieren">
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="Die Typzuweisung" id="typzuweisung">
+    </chapter>
+
+    <chapter title="Datentypen" id="datentypen">
+
+        <chapter title="Einfache Datentypen bzw. Primitive von TypeScript" id="datentypen-primitive">
+
+            <chapter title="any" id="datentypen-primitive-any">
+            </chapter>
+
+            <chapter title="unknown" id="datentypen-primitive-unknown">
+            </chapter>
+
+            <chapter title="undefined" id="datentypen-primitive-undefined">
+            </chapter>
+        </chapter>
+
+        <chapter title="Komplexe Datentypen in TypeScript" id="datentypen-komplex">
+
+            <chapter title="null" id="datentypen-komplex-null">
+            </chapter>
+
+            <chapter title="object" id="datentypen-komplex-object">
+            </chapter>
+
+            <chapter title="array" id="datentypen-komplex-array">
+            </chapter>
+
+            <chapter title="touple" id="datentypen-komplex-touple">
+            </chapter>
+
+            <chapter title="enum" id="datentypen-komplex-enum">
+            </chapter>
+        </chapter>
+
+        <chapter title="Typ-Aliase und Interfaces" id="datentypen-aliase-interface">
+
+            <chapter title="Typ-Aliase" id="datentypen-aliase">
+            </chapter>
+
+            <chapter title="Interfaces" id="datentypen-interfaces">
+            </chapter>
+
+            <chapter title="Typ-Aliase vs. Interfaces" id="datentypen-alias-vs-interface">
+            </chapter>
+        </chapter>
+
+        <chapter title="Union Typen" id="datentypen-union">
+        </chapter>
+    </chapter>
+
+    <chapter title="Typisierung bei Funktionen" id="funktionen">
+
+        <chapter title="Spezielle Rückgabetypen für Funktionen: never und void"
+                 id="funktionen-return">
+        </chapter>
+
+        <chapter title="Parameter" id="funktionen-parameter">
+        </chapter>
+
+        <chapter title="Typ-Aliase für Funktionen" id="funktionen-aliase">
+        </chapter>
+    </chapter>
+
+    <chapter title="Klassen" id="klassen">
+
+        <chapter title="Zugriffmodifikatoren" id="klassen-zugriffmodifikatoren">
+        </chapter>
+
+        <chapter title="Konstruktor" id="klassen-konstruktor">
+        </chapter>
+
+        <chapter title="Vererbung" id="klassen-vererbung">
+        </chapter>
+
+        <chapter title="Methoden überschreiben mit override" id="klassen-override">
+        </chapter>
+
+        <chapter title="Abstrakte Klassen" id="klassen-abstrakt">
+        </chapter>
+    </chapter>
+
+    <chapter title="Casting" id="casting">
+
+        <chapter title="Force Casting" id="casting-force">
+        </chapter>
+    </chapter>
+
+    <chapter title="Generics" id="generics">
+
+        <chapter title="Funktionen" id="generics-funktionen">
+        </chapter>
+
+        <chapter title="Klassen" id="generics-klassen">
+        </chapter>
+
+        <chapter title="Typ-Aliase" id="generics-aliase">
+        </chapter>
+
+        <chapter title="Standardwerte" id="generics-standardwerte">
+        </chapter>
+
+        <chapter title="Erweitern" id="generics-erweitern">
+        </chapter>
+    </chapter>
+
+    <chapter title="Utility Types" id="utility-types">
+    </chapter>
+
+    <chapter title="keyof" id="keyof">
+    </chapter>
+
+    <chapter title="null &amp; undefined" id="null-undefined">
+
+        <chapter title="Typen" id="null-undefined-typen">
+        </chapter>
+
+        <chapter title="Optional Chaining" id="null-undefined-optional-chaining">
+        </chapter>
+
+        <chapter title="Nullish Coalescence" id="null-undefined-nullish-coalescence">
+        </chapter>
+
+        <chapter title="Null Assertion" id="null-undefined-null-assertion">
+        </chapter>
+
+        <chapter title="Array bounds handling" id="null-undefined-array-bounds-handling">
+        </chapter>
+    </chapter>
+
+    <chapter title="Quellen" id="quellen">
+    </chapter>
 </topic>
