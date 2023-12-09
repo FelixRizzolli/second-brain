@@ -6,4 +6,14 @@
        title="JSON (JavaScript Object Notation)" id="json">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Was ist JSON?" id="was-ist-json">
+        <p>
+            JSON (JavaScript Object Notation) ist ein programmiersprachenunabhängiges kompaktes Datenformat in einer
+            einfach lesbaren Textform für den Datenaustausch zwischen Anwendungen. Es gibt zahlreiche JSON-Parser und
+            Generatoren für nahezu alle Programmiersprachen. Dieses Format eignet sich wie das XML-Format immer dann,
+            wenn die Daten vom Server geladen werden sollen, um anhand dieser Daten Inhalte auf der Webseite zu
+            generieren. JSON ist aber um einiges schlanker als XML und lässt sich vergleichsweise einfach in
+            JavaScript-Anwendungen verarbeiten.
+        </p>
+    </chapter>
 </topic>

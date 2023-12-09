@@ -23,7 +23,9 @@
         -->
         <!--
         <toc-element topic="auszeichnungssprachen.topic">
+        -->
             <toc-element topic="json.topic"/>
+        <!--
             <toc-element topic="xml.topic">
                 <toc-element topic="xml-xslt.topic"/>
                 <toc-element topic="xml-xsd.topic"/>
