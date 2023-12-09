@@ -12,9 +12,32 @@
             <toc-element topic="html.topic"/>
             <toc-element topic="css.topic"/>
             <toc-element topic="javascript.topic">
-                <toc-element topic="javascript-libraries-frameworks.topic">
+                <toc-element topic="js-sprachkern.topic">
+                    <toc-element topic="js-oop.topic"/>
+                    <toc-element topic="js-funktionale-programmierung.topic"/>
+                </toc-element>
+                <toc-element topic="js-dynamische-inahlte.topic">
+                    <toc-element topic="js-ereignisse.topic"/>
+                    <toc-element topic="js-formulare.topic"/>
+                    <toc-element topic="js-svg.topic"/>
+                </toc-element>
+                <toc-element topic="js-browser-bom.topic"/>
+                <toc-element topic="js-apis.topic">
+                    <toc-element topic="js-apis-canvas.topic"/>
+                </toc-element>
+                <toc-element topic="js-professional.topic">
+                    <toc-element topic="js-entwurfsmuster.topic"/>
+                    <toc-element topic="js-architekturmuster.topic"/>
+                </toc-element>
+                <toc-element topic="js-libraries-frameworks.topic">
+                    <toc-element topic="js-jquery.topic"/>
                     <toc-element topic="reactjs.topic"/>
                     <toc-element topic="nextjs.topic"/>
+                </toc-element>
+                <toc-element topic="js-weiters.topic">
+                    <toc-element topic="js-typescript.topic"/>
+                    <toc-element topic="js-ecmascript.topic"/>
+                    <toc-element topic="js-ajax.topic"/>
                 </toc-element>
             </toc-element>
             <toc-element topic="php.topic"/>
