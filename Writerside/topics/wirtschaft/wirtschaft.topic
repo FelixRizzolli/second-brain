@@ -4,5 +4,35 @@
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Wirtschaft" id="wirtschaft">
-    <show-structure for="chapter,procedure" depth="2"/>
+    <section-starting-page>
+        <title>Philosophie</title>
+        <description>...</description>
+
+        <spotlight>
+            <a href="finanzielle-intelligenz.topic"
+               description="FQ - Finanzielle Intelligenz"
+               summary="..."
+               type="start" />
+            <a href="finanzielle-intelligenz.topic"
+               description="FQ - Finanzielle Intelligenz"
+               summary="..."
+               type="start" />
+        </spotlight>
+
+        <primary>
+            <title>Kategorien</title>
+            <a href="finanzielle-intelligenz.topic"
+               description="FQ - Finanzielle Intelligenz"
+               summary="..."
+               type="start" />
+        </primary>
+
+        <secondary>
+            <title>...</title>
+            <a href="finanzielle-intelligenz.topic"
+               description="FQ - Finanzielle Intelligenz"
+               summary="..."
+               type="start" />
+        </secondary>
+    </section-starting-page>
 </topic>
