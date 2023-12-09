@@ -18,15 +18,105 @@
     </chapter>
 
     <chapter title="Datenstrukturen und Formatdefinitionen" id="datenstrukturen-und-formatdefinitionen">
+        <p>
+            Die Daten können beliebig verschachtelt werden, beispielsweise ist eine indizierte Liste (englisch "array")
+            von Objekten möglich, welche wiederum arrays oder Objekte enthalten. Als Zeichenkodierung benutzt JSON
+            standardmäßig UTF-8. Auch UTF-16 und UTF-32 sind möglich.
+        </p>
 
         <chapter title="JSON Datentypen" id="json-datentypen">
+            <p>
+                Eine JSON-Datei ist ein großes Objekt, welches aus Eigenschaften besteht. Eine Eigenschaft besteht aus
+                einem Schlüssel und einem Wert, getrennt durch einen Doppelpunkt (<code>Schlüssel : Wert</code>). Die
+                Schlüssel sollten eindeutig sein, da unterschiedliche Parser mit mehrfach vorkommenden Schlüsseln
+                unterschiedlich umgehen.
+            </p>
 
+            <list>
+                <li>der <strong>Schlüssel</strong> ist eine <emphasis>Zeichenkette</emphasis>.</li>
+                <li>der <strong>Wert</strong> ist ein beliebiges <emphasis>Element</emphasis>.</li>
+            </list>
+
+            <table style="both">
+            <tr>
+                <td>Datentyp</td>
+                <td>Beschreibung</td>
+            </tr>
+            <tr>
+                <td>Nullwert</td>
+                <td>
+                    Der Nullwert wird durch das Schlüsselwort <code>null</code> dargestellt.
+                </td>
+            </tr>
+            <tr>
+                <td>Boolescher Wert</td>
+                <td>
+                    Ein boolescher Wert wird durch die Schlüsselwörter <code>true</code> und <code>false</code>
+                    dargestellt. Dies sind <strong>keine</strong> Zeichenketten. Sie werden daher, wie
+                    <code>null</code>, <strong>nicht</strong> in Anführungszeichen gesetzt.
+                </td>
+            </tr>
+            <tr>
+                <td>Zahl</td>
+                <td>
+                    Eine Zahl ist eine Folge der Ziffern <code>0</code>–<code>9</code>. Diese Folge kann durch ein
+                    negatives Vorzeichen <code>-</code> eingeleitet und durch einen Dezimalpunkt <code>.</code>
+                    unterbrochen sein. Die Zahl kann durch die Angabe eines Exponenten <code>e</code> oder
+                    <code>E</code> ergänzt werden, dem ein optionales Vorz eichen <code>+</code> oder <code>-</code> und
+                    eine Folge der Ziffern <code>0</code>–<code>9</code> folgt.
+                </td>
+            </tr>
+            <tr>
+                <td>Zeichenkette</td>
+                <td>
+                    beginnt und endet mit doppelten geraden Anführungszeichen (<code>"</code>). Sie kann Unicode-Zeichen
+                    und durch <code>\</code> eingeleitete Escape-Sequenzen enthalten.
+                </td>
+            </tr>
+            <tr>
+                <td>Array</td>
+                <td>
+                    beginnt mit <code>[</code> und endet mit <code>]</code>. Es enthält eine durch Kommata geteilte,
+                    indizierte Liste von Elementen gleichen oder verschiedenen Typs. Leere Arrays sind zulässig.
+                </td>
+            </tr>
+            <tr>
+                <td>Objekt</td>
+                <td>
+                    beginnt mit <code>{</code> und endet mit <code>}</code>. Es enthält eine durch Kommata geteilte,
+                    ungeordnete Liste von Eigenschaften. Objekte ohne Eigenschaften („leere Objekte“) sind zulässig.
+                </td>
+            </tr>
+            </table>
         </chapter>
+
         <chapter title="JSON validieren" id="json-validieren">
-
+            <p>
+                Ist man sich nicht ganz sicher sind, ob das JSON, das erstellt wurde, gültig ist, bietet sich eines der
+                vielen Onlinetools an, um JSON auf Gültigkeit zu überprüfen, beispielsweise
+                <a href="http://jsonlint.com">http://jsonlint.com</a>. Nur für den Fall, dass die Entwicklungsumgebung
+                oder der Editor keine solche Funktionalität anbietet.
+            </p>
         </chapter>
-        <chapter title="Einschränkungen" id="einschraenkungen">
 
+        <chapter title="Einschränkungen" id="einschraenkungen">
+            <p>
+                JSON unterstützt nicht alle von JavaScript unterstützten Datentypen. Bei nicht unterstützten Datentypen
+                wird folgendermaßen serialisiert:
+            </p>
+
+            <list>
+                <li>
+                    <code>NaN</code>, <code>Infinity</code> und <code>-Infinity</code> werden zu null serialisiert.
+                </li>
+                <li>
+                    <code>Date</code>-Objekte werden in eine Zeichenkette konvertiert, die einer
+                    Datumsformatbeschreibung nach ISO-8601 genügt.
+                </li>
+                <li>
+                    <code>Function</code>-, <code>RegExp</code>- und <code>Error</code>-Objekte werden verworfen.
+                </li>
+            </list>
         </chapter>
     </chapter>
 
