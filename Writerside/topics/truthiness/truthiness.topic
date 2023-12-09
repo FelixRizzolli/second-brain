@@ -4,5 +4,55 @@
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Truthiness" id="truthiness">
-    <show-structure for="chapter,procedure" depth="2"/>
+    <section-starting-page>
+        <title>Truthiness</title>
+        <description>...</description>
+
+        <spotlight>
+            <a href="erdstrahlen-wasseradern.topic"
+               description="Erdstrahlen &amp; Wasseradern"
+               summary="..."
+               type="bug" />
+            <a href="belebtes-wasser.topic"
+               description="Belebtes Wasser"
+               summary="..."
+               type="bug" />
+        </spotlight>
+
+        <primary>
+            <title>Kategorien</title>
+            <a href="erdstrahlen-wasseradern.topic"
+               description="Erdstrahlen &amp; Wasseradern"
+               summary="..."
+               type="bug" />
+            <a href="belebtes-wasser.topic"
+               description="Belebtes Wasser"
+               summary="..."
+               type="bug" />
+            <a href="elektrosmog.topic"
+               description="Elektrosmog"
+               summary="..."
+               type="bug" />
+            <a href="homoeopathie.topic"
+               description="Homöopathie"
+               summary="..."
+               type="bug" />
+            <a href="astrologie.topic"
+               description="Astrologie"
+               summary="..."
+               type="bug" />
+        </primary>
+
+        <secondary>
+            <title>...</title>
+            <a href="erdstrahlen-wasseradern.topic"
+               description="Erdstrahlen &amp; Wasseradern"
+               summary="..."
+               type="bug" />
+            <a href="belebtes-wasser.topic"
+               description="Belebtes Wasser"
+               summary="..."
+               type="bug" />
+        </secondary>
+    </section-starting-page>
 </topic>
