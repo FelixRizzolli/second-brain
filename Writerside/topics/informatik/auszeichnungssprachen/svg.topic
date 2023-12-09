@@ -7,6 +7,9 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Was ist SVG?" id="was-ist-svg">
+        Bei SVG handelt es sich um eine XML-basierte Auszeichnungssprache, um zweidimensionale Vektorgrafiken zu
+        beschreiben. Dazu definiert die entsprechende Spezifikation
+        (<a href="https://www.w3.org/TR/SVG2/">www.w3.org/TR/SVG2/</a>) verschiedene Elemente.
     </chapter>
 
     <chapter title="SVG Elemente" id="svg-elemente">
