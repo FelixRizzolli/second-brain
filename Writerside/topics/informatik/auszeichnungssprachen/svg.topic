@@ -159,6 +159,122 @@
     </chapter>
 
     <chapter title="SVG in HTML einbinden" id="svg-html">
+        <table style="both">
+            <tr>
+                <td>Option</td>
+                <td>Beschreibung</td>
+                <td>Beispiel (Code)</td>
+            </tr>
+            <tr>
+                <td>Einbinden über das <code>&lt;img&gt;</code>-Element</td>
+                <td>
+                    <p>
+                        Hierbei wird die entsprechende SVG-Datei einfach über das src-Attribut des
+                        <code>&lt;img&gt;</code>-Elements verlinkt. Browser, die mit SVG umgehen können, stellen
+                        anschließend das verlinkte SVG-Dokument an entsprechender Stelle im HTML dar.
+                    </p>
+                    <p>
+                        Links, die innerhalb des SVG-Inhalts definiert sind, werden bei dieser Art des Einbindens
+                        allerdings nicht unterstützt. Das Gleiche gilt für JavaScript-Code, der innerhalb des
+                        SVG-Dokuments auftaucht. Auch dieser wird nicht interpretiert bzw. ausgeführt.
+                    </p>
+                </td>
+                <td>
+                    <code-block lang="html">
+                        &lt;body&gt;
+                            &lt;img src="example.svg" alt="SVG-Grafik" width="500" height="500" /&gt;
+                        &lt;/body&gt;
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>Einbinden über das <code>&lt;iframe&gt;</code>-Element</td>
+                <td>
+                    <p>
+                        SVG-Dateien können auch als Quelle für den Inhalt von <code>&lt;iframe&gt;</code>-Elementen
+                        definiert werden. Innerhalb des Iframes wird dann die SVG-Datei dargestellt. Im Gegensatz zum
+                        Einbinden über das <code>&lt;img&gt;</code>-Element werden bei dieser Art des Einbindens Links
+                        innerhalb des SVG-Inhalts interpretiert, und auch eventuell vorhandenes JavaScript wird
+                        ausgeführt.
+                    </p>
+                </td>
+                <td>
+                    <code-block lang="html">
+                        &lt;body&gt;
+                            &lt;iframe src="example.svg" width="500" height="500" scrolling="no"&gt;
+                                &lt;!-- Für ältere Browser, die SVG nicht unterstützen --&gt;
+                                &lt;img src="example.png" width="500" height="500" alt="Alternatives PNG-Bild" /&gt;
+                            &lt;/iframe&gt;
+                        &lt;/body&gt;
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>Einbinden über das <code>&lt;object&gt;</code>-Element</td>
+                <td>
+                    <p>
+                        Es ist auch möglich, SVG-Dateien als Multimediaobjekt über das
+                        <code>&lt;object&gt;</code>-Element einzubinden. Für ältere Browser, die kein SVG darstellen
+                        können, ist es hierbei zudem möglich, zwischen dem öffnenden und dem schließenden
+                        <code>&lt;object&gt;</code>-Tag alternativen Inhalt, beispielsweise ein alternatives Bild,
+                        anzugeben.
+                    </p>
+                    <p>
+                        Wie beim Einbinden über das <code>&lt;iframe&gt;</code>-Element werden bei dieser Art der
+                        Einbindung Links innerhalb des SVG-Inhalts interpretiert, und auch JavaScript wird unterstützt.
+                    </p>
+                </td>
+                <td>
+                    <code-block lang="html">
+                        &lt;body&gt;
+                            &lt;object data="example.svg" width="500" height="500"&gt;
+                                &lt;img src="example.png" width="500" height="500" alt="Alternatives PNG-Bild" /&gt;
+                            &lt;/object&gt;
+                        &lt;/body&gt;
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>Einbinden als Hintergrundbild über CSS</td>
+                <td>
+                    <p>
+                        SVG-Dateien können auch (umgebend von <code>url()</code>) als Wert für die
+                        background-CSS-Eigenschaft verwendet werden. Im Beispiel wird der Inhalt der SVG-Datei als
+                        Hintergrundbild für das entsprechend durch die jeweilige CSS-Regel selektierte Element (bzw.
+                        Elemente) verwendet. Links innerhalb des SVG-Inhalts sowie dortiger JavaScript-Code werden
+                        allerdings nicht interpretiert.
+                    </p>
+                </td>
+                <td>
+                    <code-block lang="html">
+                        &lt;body&gt;
+                            &lt;div style="background: url(example.svg); width: 500px; height: 500px"&gt;&lt;/div&gt;
+                        &lt;/body&gt;
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>Inline-Definition im HTML</td>
+                <td>
+                    <p>
+                        Besonders bequem ist die Tatsache, dass SVG auch direkt »inline« innerhalb des HTML-Codes
+                        definiert werden kann. Der Browser interpretiert das SVG dann an Ort und Stelle, sodass auch
+                        Links und JavaScript interpretiert werden.
+                    </p>
+                </td>
+                <td>
+                    <code-block lang="html">
+                        &lt;body&gt;
+                            &lt;svg id="svg" version="1.1" baseProfile="full" width="500" height="500"
+                                    xmlns="http://www.w3.org/2000/svg"&gt;
+                                &lt;rect width="100%" height="100%" /&gt;
+                                &lt;circle id="circle" cx="100" cy="100" r="80" /&gt;
+                            &lt;/svg&gt;
+                        &lt;/body&gt;
+                    </code-block>
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="Das Aussehen von SVG-Elementen mit CSS beeinflussen" id="svg-css">
