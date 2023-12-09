@@ -4,5 +4,55 @@
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Philosophie" id="philosophie">
-    <show-structure for="chapter,procedure" depth="2"/>
+    <section-starting-page>
+        <title>Philosophie</title>
+        <description>...</description>
+
+        <spotlight>
+            <a href="speedlearning.topic"
+               description="Speedlearning"
+               summary="..."
+               type="library" />
+            <a href="finanzielle-intelligenz.topic"
+               description="FQ - Finanzielle Intelligenz"
+               summary="..."
+               type="start" />
+        </spotlight>
+
+        <primary>
+            <title>Kategorien</title>
+            <a href="stoizismus.topic"
+               description="Stoizismus"
+               summary="..."
+               type="academy" />
+            <a href="produktivitaetssteigerung.topic"
+               description=""
+               summary="..."
+               type="start" />
+            <a href="kommunikation.topic"
+               description="Komunikation"
+               summary="..."
+               type="support" />
+            <a href="emotionale-intelligenz.topic"
+               description="EQ - Emotionale Intelligenz"
+               summary="..."
+               type="account" />
+            <a href="finanzielle-intelligenz.topic"
+               description="FQ - Finanzielle Intelligenz"
+               summary="..."
+               type="start" />
+        </primary>
+
+        <secondary>
+            <title>Meine Leidenschaft</title>
+            <a href="stoizismus.topic"
+               description="Stoizismus"
+               summary="..."
+               type="academy" />
+            <a href="produktivitaetssteigerung.topic"
+               description=""
+               summary="..."
+               type="start" />
+        </secondary>
+    </section-starting-page>
 </topic>
