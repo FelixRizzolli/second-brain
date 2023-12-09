@@ -8,16 +8,21 @@
 
     <!-- ###########################[ INFORMATIK ]########################### -->
     <toc-element topic="informatik.topic">
-        <!--
         <toc-element topic="webentwicklung.topic">
-            <toc-element topic="javascript.topic">
-                <toc-element topic="javascript-libraries-frameworks.topic"/>
-                <toc-element topic="nextjs.topic"/>
-                <toc-element topic="reactjs.topic"/>
-            </toc-element>
             <toc-element topic="html.topic"/>
             <toc-element topic="css.topic"/>
+            <toc-element topic="javascript.topic">
+                <toc-element topic="javascript-libraries-frameworks.topic">
+                    <toc-element topic="reactjs.topic"/>
+                    <toc-element topic="nextjs.topic"/>
+                </toc-element>
+            </toc-element>
+            <toc-element topic="php.topic"/>
+            <toc-element topic="pwa.topic">
+            </toc-element>
+            <toc-element topic="seo.topic"/>
         </toc-element>
+        <!--
         <toc-element topic="anwendungsentwicklung.topic">
             <toc-element topic="java.topic"/>
             <toc-element topic="csharp.topic"/>
