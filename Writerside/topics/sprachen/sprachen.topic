@@ -4,5 +4,51 @@
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Sprachen" id="sprachen">
-    <show-structure for="chapter,procedure" depth="2"/>
+    <section-starting-page>
+        <title>Sprachen</title>
+        <description>...</description>
+
+        <spotlight>
+            <a href="italienisch.topic"
+               description="Italienisch"
+               summary="..."
+               type="support" />
+            <a href="englisch.topic"
+               description="Englisch"
+               summary="..."
+               type="support" />
+        </spotlight>
+
+        <primary>
+            <title>Kategorien</title>
+            <a href="italienisch.topic"
+               description="Italienisch"
+               summary="..."
+               type="support" />
+            <a href="englisch.topic"
+               description="Englisch"
+               summary="..."
+               type="support" />
+            <a href="deutsch.topic"
+               description="Deutsch"
+               summary="..."
+               type="support" />
+        </primary>
+
+        <secondary>
+            <title>...</title>
+            <a href="italienisch.topic"
+               description="Italienisch"
+               summary="..."
+               type="support" />
+            <a href="englisch.topic"
+               description="Englisch"
+               summary="..."
+               type="support" />
+            <a href="deutsch.topic"
+               description="Deutsch"
+               summary="..."
+               type="support" />
+        </secondary>
+    </section-starting-page>
 </topic>
