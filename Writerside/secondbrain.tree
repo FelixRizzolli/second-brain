@@ -21,6 +21,7 @@
             <toc-element topic="java.topic"/>
             <toc-element topic="csharp.topic"/>
         -->
+        <!--
         <toc-element topic="auszeichnungssprachen.topic">
             <toc-element topic="json.topic"/>
             <toc-element topic="xml.topic">
@@ -37,6 +38,7 @@
             <toc-element topic="markdown.topic"/>
             <toc-element topic="latex.topic"/>
         </toc-element>
+        -->
         <toc-element topic="python.topic">
                 <!--
                 <toc-element topic="python-libraries-frameworks.topic">
