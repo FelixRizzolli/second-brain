@@ -28,4 +28,40 @@
             nicht zu den Kohlenhydraten gezählt, obwohl sie es eigentlich sind.
         </p>
     </chapter>
+
+    <chapter title="Glukose und unsere Gesundheit" id="glukose-und-unsere-gesundheit">
+        <chapter title="Zellenergie" id="zellenergie">
+            <p>
+                Die Mitochondrien sind überall in unserem Körper aktiv und wandeln Glukose und Sauerstoff in Zellenergie
+                um.
+            </p>
+        </chapter>
+
+        <chapter title="Glukosespitzen" id="glukosespitzen">
+            <p>
+                Eine Glukosespitze ist, wenn der Blutzuckerspiegel nach dem Essen in kurzer Zeit sehr stark ansteigt -
+                kurzgesagt ein Blutzuckerhoch. Blutzucker wird in Milligramm pro Deziliter angegeben (mg/dl). Der
+                normale Nüchternblutzucker einer Nichtdiabetikerin sollte etwa zwischen 72 und 85 mg/dl liegen. Ein
+                essensbedingter Anstieg bei Nichtdiabetikern sollte nicht größer als 30 mg/dl sein. Größere Zunahmen
+                werden dementsprechend als Glukosespitzen bezeichnet.
+            </p>
+            <p>
+                Werden Mitochondrien bei einer Glukosespitze mit sehr viel Glukose auf einmal überschwemmt, sind sie
+                überfordert und es kommt zu unschönen Nebenwirkungen. Als Reaktion auf den Überfall werden sogenannte
+                freie Radikale freigesetzt. Freie Radikale erhöhen das Risiko für Diabetes, Herz-Kreislauf-Erkrankungen
+                und kognitive Defizite, außerdem lassen sie uns vorzeitig altern. Bei ständigen Glukosespitzen werden
+                langfristig unsere Mitochondrien und Organe beschädigt und können nicht mehr effizient arbeiten. Die
+                Folge: Wir fühlen uns schlapp und haben den ganzen Tag über kaum noch Energie.
+            </p>
+        </chapter>
+
+        <chapter title="Fetteinlagerungen und Entzündungen im Körper"
+                 id="fetteinlagerungen-und-entzuendungen-im-koerper">
+            <p>
+                Ständige Glukosespitzen führen zu Fetteinlagerungen und Entzündungen im Körper führen. Die Folgen
+                reichen von Fettleber bis hin zu Übergewicht und schlechtem Cholesterin im Blutkreislauf, was wiederum
+                Herzerkrankungen begünstigt.
+            </p>
+        </chapter>
+    </chapter>
 </topic>
