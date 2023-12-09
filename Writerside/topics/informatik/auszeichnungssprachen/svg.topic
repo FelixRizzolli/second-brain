@@ -13,7 +13,7 @@
     </chapter>
 
     <chapter title="SVG Elemente" id="svg-elemente">
-        <table>
+        <table style="header-column">
             <tr>
                 <td>Element</td>
                 <td>Bedeutung</td>
@@ -278,6 +278,81 @@
     </chapter>
 
     <chapter title="Das Aussehen von SVG-Elementen mit CSS beeinflussen" id="svg-css">
+        <p>
+            Die einzelnen Elemente innerhalb eines SVG-Dokuments lassen sich über CSS stylen, wobei die Eigenschaften
+            nicht denen entsprechen, die beim Stylen von HTML-Elementen verwendet werden. Eine Auswahl erlaubter
+            Elemente ist in der folgenden Tabelle zu sehen, eine vollständige Auflistung in der SVG-Spezifikation unter
+            <a href="https://www.w3.org/TR/SVG2/styling.html">www.w3.org/TR/SVG2/styling.html</a>. 
+        </p>
+        <chapter title="Eine Auswahl von CSS-Eigenschaften" id="svg-css-eigenschaftentabelle">
+            <table style="header-column">
+                <tr>
+                    <td>Eigenschaft</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>cursor</code></td>
+                    <td>Mauszeiger</td>
+                </tr>
+                <tr>
+                    <td><code>fill</code></td>
+                    <td>Füllfarbe</td>
+                </tr>
+                <tr>
+                    <td><code>fill-opacity</code></td>
+                    <td>Füllfarbe</td>
+                </tr>
+                <tr>
+                    <td><code>font-family</code></td>
+                    <td>Schriftart</td>
+                </tr>
+                <tr>
+                    <td><code>font-size</code></td>
+                    <td>Schriftgröße</td>
+                </tr>
+                <tr>
+                    <td><code>font-style</code></td>
+                    <td>Schriftstil</td>
+                </tr>
+                <tr>
+                    <td><code>stroke</code></td>
+                    <td>Rahmenfarbe</td>
+                </tr>
+                <tr>
+                    <td><code>stroke-opacity</code></td>
+                    <td>Rahmenfarbe Deckkraft</td>
+                </tr>
+                <tr>
+                    <td><code>stroke-width</code></td>
+                    <td>Rahmenbreite</td>
+                </tr>
+            </table>
+        </chapter>
+        <chapter title="Beispiel" id="svg-css-beispiel">
+            <code-block lang="css">
+                rect {
+                    stroke-width: 4;
+                    fill: #FFFFFF;
+                    stroke: #3080D0;
+                }
+                #circle:hover {
+                    cursor: pointer;
+                }
+                #circle {
+                    fill-opacity: 0.5;
+                    stroke-width: 4;
+                    fill: #3080D0;
+                    stroke: #3080D0;
+                }
+                #circle.active {
+                    fill: #000000;
+                }
+                text {
+                    fill: #FFFFFF;
+                    font-family: sans-serif;
+                }
+            </code-block>
+        </chapter>
     </chapter>
 
     <chapter title="Das Verhalten von SVG-Elementen mit JavaScript beeinflussen" id="svg-js">
