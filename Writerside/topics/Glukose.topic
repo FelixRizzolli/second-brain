@@ -151,4 +151,17 @@
             </p>
         </chapter>
     </chapter>
+
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <strong>(BUCH)</strong>
+            978-3453605992, Der Glukose-Trick, Jassie Ichauspe, Heyne Verlag, 2022-01-10
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://de.wikipedia.org/wiki/Glucose" ignore-vars="true">
+                https://de.wikipedia.org/wiki/Glucose
+            </a>, 2022-10-30 10:30
+        </tip>
+    </chapter>
 </topic>
