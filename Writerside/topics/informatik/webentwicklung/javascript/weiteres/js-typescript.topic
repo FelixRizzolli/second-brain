@@ -7,6 +7,14 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Was ist TypeScript?" id="was-ist-typescript">
+        <p>
+            TypeScript ist eine eigene Programmiersprache, die den Kern von JavaScript erweitert und um zusätzliche
+            Features ergänzt. Sie wird seit 2012 von Microsoft als Open-Source-Projekt entwickelt. Grundsätzlich ist
+            gültiger JavaScript-Code auch gültiger TypeScript-Code. In andere Richtung ist die Aussage aber nicht wahr –
+            weshalb es auch zu Syntaxfehlern führen würde, würde man TypeScript-Code direkt im Browser ausführen wollen
+            - TypeScript muss also in JavaScript "kompiliert" werden. In den vergangenen Jahren hat sich TypeScript als
+            der De-facto-Standard für typsicheres JavaScript durchgesetzt.
+        </p>
     </chapter>
 
     <chapter title="Was bringt ein Typsystem?" id="was-bringt-ein-typsystem">
