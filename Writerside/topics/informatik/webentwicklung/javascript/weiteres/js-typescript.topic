@@ -18,10 +18,80 @@
     </chapter>
 
     <chapter title="Was bringt ein Typsystem?" id="was-bringt-ein-typsystem">
+        <p>
+            Allgemein gesprochen erhält man von einem Typsystem zusätzliche Struktur und Sicherheit. Durch die
+            Festlegung welchen Typ eine bestimmte Variable, ein Parameter oder der Rückgabewert einer Funktion hat, wird
+            zwar die Freiheit eingeschränkt, die einem JavaScript bietet. Es bedeutet aber auch, dass man nicht mehr
+            versehentlich aus einer Stringvariable eine Zahl oder ein Boolean machen kann.
+        </p>
+        <p>
+            Hält man sich strikt an die Vorgaben des Typsystems und gibt bei jeder Variable und Funktion die Typen an,
+            zwingt es auch einem dazu, sich mehr Gedanken über den Aufbau der Applikation zu machen. Damit geht einher,
+            dass der Code dokumentiert wird. Ein Kommentarblock einer Funktion kann leicht veralten, da man nicht
+            gezwungen wird, ihn bei Änderung am Quellcode anzupassen. Bei der Verwendung eines Typsystems muss die
+            Typangabe in der Signatur einer Funktion angepasst werden, da man ansonsten bei der Überprüfung eine
+            Fehlermeldung erhält.
+        </p>
+        <p>
+            Die Lesbarkeit des Quellcodes wird durch den Einsatz eines Typsystems positiv beeinflusst. Bei einem Blick
+            auf die Signatur einer Funktion, sieht man sofort, was diese als Eingabe erwartet und was sie zurückgibt.
+            Werden die Typen noch mit einer sprechenden Benennung der Funktion selbst sowie der Parameter versehen,
+            sollte auch jemand, der die Funktion nicht selbst geschrieben hat, auf einen Blick erkennen können, was sie
+            tut.
+        </p>
+        <p>
+            Auch bei der Suche nach Fehlern und bei der Wartung von Applikationen kann ein Typsystem gute Dienste
+            leisten, da es das Risiko vermindert, dass bei komplexen Abhängigkeiten Probleme entstehen, weil sie direkt
+            im Quellcode festgehalten werden.
+        </p>
+        <p>
+            Der offensichtlichste Vorteil eines Typsystems ist eine verbesserte Unterstützung durch Programmierwerkzeuge
+            wie die Entwicklungsumgebung oder Werkzeuge zur statischen Codeanalyse. Die meisten Entwicklungsumgebungen
+            unterstützen die gängigen Typsysteme standardmäßig oder verfügen über Erweiterungen, die sich in wenigen
+            Schritten installieren lassen. Ist die Entwicklungsumgebung korrekt konfiguriert, erhält man schon während
+            der Entwicklung sofortiges Feedback zum Quellcode. Dies geschieht zum einen über Fehlermeldungen, wenn gegen
+            die Regeln des Typsystems verstoßen wird, und zum anderen durch Autovervollständigung während der
+            Entwicklung. So wird beispielsweise begonnen, den Namen einer Methode eines Objekts zu schreiben, und man
+            erhält mögliche Vorschläge. Dieses Feature existiert zwar auch für natives JavaScript, ist jedoch bei der
+            typsicheren Variante erheblich besser und zuverlässiger.
+        </p>
 
         <chapter title="TypeScript verwenden" id="typescript-verwenden">
+            <p>
+                TypeScript wird mittels eines Kompiler in JavaScript umgewandelt, damit der Code überall wie JavaScript
+                laufen kann. Dazu hat TypeScript einen offiziellen Kompiler der über npm installiert werden kann.
+            </p>
+
+            <code-block lang="bash">
+                npm install typescript --save-dev
+            </code-block>
+
+            <p>
+                Der Kompiler wird ins <code>node_modules</code> Verzeichnis installiert. Mit dem Befehl
+                <code>npx tsc</code> können wir den Kompiler starten.
+            </p>
 
             <chapter title="Konfiguration" id="typescript-konfigurieren">
+                <p>
+                    Standardmäßig gibt der TypeScript-Compiler eine Hilfemeldung aus, wenn er in einem leeren Projekt
+                    ausgeführt wird. Der Compiler kann mit einer ts <code>config.json</code>-Datei konfiguriert werden. Mit
+                    dem Befehl <code>npx tsc --init</code> kann die <code>tsconfig.json</code> mit den empfohlenen
+                    Einstellungen erstellt werden:
+                </p>
+
+                <code-block lang="json" collapsed-title="tsconfig.json" collapsible="true">
+                    {
+                        "include": ["src"],
+                        "compilerOptions": {
+                            "outDir": "./build"
+                        }
+                    }
+                </code-block>
+
+                <p>
+                    Durch diese Konfiguration werden die TypeScript-Dateien, die sich im <code>src/</code>-Verzeichnis
+                    des Projekts befinden, in JavaScript-Dateien im <code>build/</code>-Verzeichnis transpiliert.
+                </p>
             </chapter>
         </chapter>
     </chapter>
