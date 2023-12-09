@@ -9,6 +9,12 @@
     <!-- ###########################[ INFORMATIK ]########################### -->
     <toc-element topic="mysecondbrain.topic"/>
     <toc-element topic="informatik.topic">
+        <toc-element topic="mainframe.topic">
+            <toc-element topic="tso.topic"/>
+            <toc-element topic="dfsort.topic"/>
+            <toc-element topic="jcl.topic"/>
+            <toc-element topic="cobol.topic"/>
+        </toc-element>
         <toc-element topic="softwareentwicklung.topic"/>
         <toc-element topic="webentwicklung.topic">
             <toc-element topic="html.topic"/>
@@ -108,6 +114,11 @@
             <toc-element topic="linux.topic"/>
         </toc-element>
         <toc-element topic="netzwerktechnik.topic"/>
+        <toc-element topic="design.topic">
+            <toc-element topic="design-responsive-webdesign.topic"/>
+            <toc-element topic="design-ui.topic"/>
+            <toc-element topic="design-ux.topic"/>
+        </toc-element>
     </toc-element>
 
     <!-- ###########################[ MATHEMATIK ]########################### -->

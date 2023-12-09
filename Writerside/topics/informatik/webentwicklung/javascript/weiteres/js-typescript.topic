@@ -4,6 +4,252 @@
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="TypeScript" id="js-typescript">
+    <show-structure for="chapter,procedure" depth="2"/>
 
-    <p>Start typing here...</p>
+    <chapter title="Was ist TypeScript?" id="was-ist-typescript">
+        <p>
+            TypeScript ist eine eigene Programmiersprache, die den Kern von JavaScript erweitert und um zusätzliche
+            Features ergänzt. Sie wird seit 2012 von Microsoft als Open-Source-Projekt entwickelt. Grundsätzlich ist
+            gültiger JavaScript-Code auch gültiger TypeScript-Code. In andere Richtung ist die Aussage aber nicht wahr –
+            weshalb es auch zu Syntaxfehlern führen würde, würde man TypeScript-Code direkt im Browser ausführen wollen
+            - TypeScript muss also in JavaScript "kompiliert" werden. In den vergangenen Jahren hat sich TypeScript als
+            der De-facto-Standard für typsicheres JavaScript durchgesetzt.
+        </p>
+    </chapter>
+
+    <chapter title="Was bringt ein Typsystem?" id="was-bringt-ein-typsystem">
+        <p>
+            Allgemein gesprochen erhält man von einem Typsystem zusätzliche Struktur und Sicherheit. Durch die
+            Festlegung welchen Typ eine bestimmte Variable, ein Parameter oder der Rückgabewert einer Funktion hat, wird
+            zwar die Freiheit eingeschränkt, die einem JavaScript bietet. Es bedeutet aber auch, dass man nicht mehr
+            versehentlich aus einer Stringvariable eine Zahl oder ein Boolean machen kann.
+        </p>
+        <p>
+            Hält man sich strikt an die Vorgaben des Typsystems und gibt bei jeder Variable und Funktion die Typen an,
+            zwingt es auch einem dazu, sich mehr Gedanken über den Aufbau der Applikation zu machen. Damit geht einher,
+            dass der Code dokumentiert wird. Ein Kommentarblock einer Funktion kann leicht veralten, da man nicht
+            gezwungen wird, ihn bei Änderung am Quellcode anzupassen. Bei der Verwendung eines Typsystems muss die
+            Typangabe in der Signatur einer Funktion angepasst werden, da man ansonsten bei der Überprüfung eine
+            Fehlermeldung erhält.
+        </p>
+        <p>
+            Die Lesbarkeit des Quellcodes wird durch den Einsatz eines Typsystems positiv beeinflusst. Bei einem Blick
+            auf die Signatur einer Funktion, sieht man sofort, was diese als Eingabe erwartet und was sie zurückgibt.
+            Werden die Typen noch mit einer sprechenden Benennung der Funktion selbst sowie der Parameter versehen,
+            sollte auch jemand, der die Funktion nicht selbst geschrieben hat, auf einen Blick erkennen können, was sie
+            tut.
+        </p>
+        <p>
+            Auch bei der Suche nach Fehlern und bei der Wartung von Applikationen kann ein Typsystem gute Dienste
+            leisten, da es das Risiko vermindert, dass bei komplexen Abhängigkeiten Probleme entstehen, weil sie direkt
+            im Quellcode festgehalten werden.
+        </p>
+        <p>
+            Der offensichtlichste Vorteil eines Typsystems ist eine verbesserte Unterstützung durch Programmierwerkzeuge
+            wie die Entwicklungsumgebung oder Werkzeuge zur statischen Codeanalyse. Die meisten Entwicklungsumgebungen
+            unterstützen die gängigen Typsysteme standardmäßig oder verfügen über Erweiterungen, die sich in wenigen
+            Schritten installieren lassen. Ist die Entwicklungsumgebung korrekt konfiguriert, erhält man schon während
+            der Entwicklung sofortiges Feedback zum Quellcode. Dies geschieht zum einen über Fehlermeldungen, wenn gegen
+            die Regeln des Typsystems verstoßen wird, und zum anderen durch Autovervollständigung während der
+            Entwicklung. So wird beispielsweise begonnen, den Namen einer Methode eines Objekts zu schreiben, und man
+            erhält mögliche Vorschläge. Dieses Feature existiert zwar auch für natives JavaScript, ist jedoch bei der
+            typsicheren Variante erheblich besser und zuverlässiger.
+        </p>
+
+        <chapter title="TypeScript verwenden" id="typescript-verwenden">
+            <p>
+                TypeScript wird mittels eines Kompiler in JavaScript umgewandelt, damit der Code überall wie JavaScript
+                laufen kann. Dazu hat TypeScript einen offiziellen Kompiler der über npm installiert werden kann.
+            </p>
+
+            <code-block lang="bash">
+                npm install typescript --save-dev
+            </code-block>
+
+            <p>
+                Der Kompiler wird ins <code>node_modules</code> Verzeichnis installiert. Mit dem Befehl
+                <code>npx tsc</code> können wir den Kompiler starten.
+            </p>
+
+            <chapter title="Konfiguration" id="typescript-konfigurieren">
+                <p>
+                    Standardmäßig gibt der TypeScript-Compiler eine Hilfemeldung aus, wenn er in einem leeren Projekt
+                    ausgeführt wird. Der Compiler kann mit einer ts <code>config.json</code>-Datei konfiguriert werden. Mit
+                    dem Befehl <code>npx tsc --init</code> kann die <code>tsconfig.json</code> mit den empfohlenen
+                    Einstellungen erstellt werden:
+                </p>
+
+                <code-block lang="json" collapsed-title="tsconfig.json" collapsible="true">
+                    {
+                        "include": ["src"],
+                        "compilerOptions": {
+                            "outDir": "./build"
+                        }
+                    }
+                </code-block>
+
+                <p>
+                    Durch diese Konfiguration werden die TypeScript-Dateien, die sich im <code>src/</code>-Verzeichnis
+                    des Projekts befinden, in JavaScript-Dateien im <code>build/</code>-Verzeichnis transpiliert.
+                </p>
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="Die Typzuweisung" id="typzuweisung">
+        <p>
+            In TypeScript kann bei der Variablendeklaration ein optionaler Typ angegeben werden
+            <strong>(= explizite Typzuweisung)</strong>. Wird die Variable mit einem Wert initialisiert, kann die
+            Typzuweisung weggelassen werden, da TypeScript automatisch den Typ des zugewiesenen Wertes übernimmt
+            <strong>(= implizite Typzuweisung)</strong>. Für die Deklaration stehen die Schlüsselworte <code>var</code>,
+            <code>let</code> und <code>const</code> zur Verfügung, wobei möglichst nur <code>let</code> und
+            <code>const</code> verwendet werden sollen. Es sollte auch so oft wie möglich const verwendet werden, um
+            eine versehentliche Neuzuweisung zu vermeiden. Erst wenn ein Wert neu zugewiesen werden muss oder man dies
+            bereits von vornherein weiß, sollte das <code>let</code>-Schlüsselwort verwendet werden.
+        </p>
+        <p>
+            <code>const</code> und <code>let</code> erzeugen Konstanten bzw. Variablen im Block-Scope, sodass man sehr
+            gute Kontrolle über die Gültigkeit hat. Hier ein Beispiel für eine Deklaration mit gleichzeitiger
+            Initialisierung einer Variable, bei der zusätzlich der Typ angegeben wird:
+        </p>
+
+        <code-block lang="typescript">
+            let title: string = 'Design Patterns';
+        </code-block>
+
+        <p>
+            Die Angabe des Typs wird immer durch Doppelpunkt getrennt hinter den Namen der Variable und vor das
+            Gleichheitszeichen geschrieben.
+        </p>
+    </chapter>
+
+    <chapter title="Datentypen" id="datentypen">
+
+        <chapter title="Einfache Datentypen bzw. Primitive von TypeScript" id="datentypen-primitive">
+
+            <chapter title="any" id="datentypen-primitive-any">
+            </chapter>
+
+            <chapter title="unknown" id="datentypen-primitive-unknown">
+            </chapter>
+
+            <chapter title="undefined" id="datentypen-primitive-undefined">
+            </chapter>
+        </chapter>
+
+        <chapter title="Komplexe Datentypen in TypeScript" id="datentypen-komplex">
+
+            <chapter title="null" id="datentypen-komplex-null">
+            </chapter>
+
+            <chapter title="object" id="datentypen-komplex-object">
+            </chapter>
+
+            <chapter title="array" id="datentypen-komplex-array">
+            </chapter>
+
+            <chapter title="touple" id="datentypen-komplex-touple">
+            </chapter>
+
+            <chapter title="enum" id="datentypen-komplex-enum">
+            </chapter>
+        </chapter>
+
+        <chapter title="Typ-Aliase und Interfaces" id="datentypen-aliase-interface">
+
+            <chapter title="Typ-Aliase" id="datentypen-aliase">
+            </chapter>
+
+            <chapter title="Interfaces" id="datentypen-interfaces">
+            </chapter>
+
+            <chapter title="Typ-Aliase vs. Interfaces" id="datentypen-alias-vs-interface">
+            </chapter>
+        </chapter>
+
+        <chapter title="Union Typen" id="datentypen-union">
+        </chapter>
+    </chapter>
+
+    <chapter title="Typisierung bei Funktionen" id="funktionen">
+
+        <chapter title="Spezielle Rückgabetypen für Funktionen: never und void"
+                 id="funktionen-return">
+        </chapter>
+
+        <chapter title="Parameter" id="funktionen-parameter">
+        </chapter>
+
+        <chapter title="Typ-Aliase für Funktionen" id="funktionen-aliase">
+        </chapter>
+    </chapter>
+
+    <chapter title="Klassen" id="klassen">
+
+        <chapter title="Zugriffmodifikatoren" id="klassen-zugriffmodifikatoren">
+        </chapter>
+
+        <chapter title="Konstruktor" id="klassen-konstruktor">
+        </chapter>
+
+        <chapter title="Vererbung" id="klassen-vererbung">
+        </chapter>
+
+        <chapter title="Methoden überschreiben mit override" id="klassen-override">
+        </chapter>
+
+        <chapter title="Abstrakte Klassen" id="klassen-abstrakt">
+        </chapter>
+    </chapter>
+
+    <chapter title="Casting" id="casting">
+
+        <chapter title="Force Casting" id="casting-force">
+        </chapter>
+    </chapter>
+
+    <chapter title="Generics" id="generics">
+
+        <chapter title="Funktionen" id="generics-funktionen">
+        </chapter>
+
+        <chapter title="Klassen" id="generics-klassen">
+        </chapter>
+
+        <chapter title="Typ-Aliase" id="generics-aliase">
+        </chapter>
+
+        <chapter title="Standardwerte" id="generics-standardwerte">
+        </chapter>
+
+        <chapter title="Erweitern" id="generics-erweitern">
+        </chapter>
+    </chapter>
+
+    <chapter title="Utility Types" id="utility-types">
+    </chapter>
+
+    <chapter title="keyof" id="keyof">
+    </chapter>
+
+    <chapter title="null &amp; undefined" id="null-undefined">
+
+        <chapter title="Typen" id="null-undefined-typen">
+        </chapter>
+
+        <chapter title="Optional Chaining" id="null-undefined-optional-chaining">
+        </chapter>
+
+        <chapter title="Nullish Coalescence" id="null-undefined-nullish-coalescence">
+        </chapter>
+
+        <chapter title="Null Assertion" id="null-undefined-null-assertion">
+        </chapter>
+
+        <chapter title="Array bounds handling" id="null-undefined-array-bounds-handling">
+        </chapter>
+    </chapter>
+
+    <chapter title="Quellen" id="quellen">
+    </chapter>
 </topic>
