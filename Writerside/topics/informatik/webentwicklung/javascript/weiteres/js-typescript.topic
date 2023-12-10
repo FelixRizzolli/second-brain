@@ -210,8 +210,10 @@
         </chapter>
 
         <chapter title="Komplexe Datentypen in TypeScript" id="datentypen-komplex">
-
             <chapter title="null" id="datentypen-komplex-null">
+                <p>
+                    Der Typ <code>null</code> steht für den <code>null</code>-Wert von JavaScript.
+                </p>
             </chapter>
 
             <chapter title="object" id="datentypen-komplex-object">
