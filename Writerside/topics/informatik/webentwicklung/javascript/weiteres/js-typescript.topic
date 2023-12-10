@@ -464,6 +464,19 @@
         </chapter>
 
         <chapter title="Parameter" id="funktionen-parameter">
+            <p>
+                Funktionsparameter werden mit einer ähnlichen Syntax wie Variablendeklarationen typisiert. Wenn kein
+                Parametertyp definiert ist, verwendet TypeScript standardmäßig einen beliebigen, es sei denn, es sind
+                zusätzliche Typinformationen verfügbar, wie in den Abschnitten Standardparameter und Typ-Alias unten
+                gezeigt. Standardmäßig geht TypeScript davon aus, dass alle Parameter erforderlich sind, aber sie können
+                explizit als optional gekennzeichnet werden.
+            </p>
+
+            <code-block lang="typescript">
+                function add(a: number, b: number, c?: number) {
+                    return a + b + (c || 0);
+                }
+            </code-block>
         </chapter>
 
         <chapter title="Typ-Aliase für Funktionen" id="funktionen-aliase">
