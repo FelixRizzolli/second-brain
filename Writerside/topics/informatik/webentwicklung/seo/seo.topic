@@ -614,6 +614,80 @@
 
     <chapter title="Der Prozess und die Ziele " id="prozess-ziele">
 
+        Ein großer Fehler ist es, eine neue Website zuerst komplett zu erstellen und dann anschließend das Thema SEO anzugehen. Es gibt folgende Punkte, die den SEO-Prozess ausmachen:
+
+        <list>
+            <li>
+                <strong>Keywords</strong> – In der Keyword-Analyse geht es darum, die Begriffe zu finden, die den Inhalt
+                und Nutzwert einer Webseite gut beschreiben.
+            </li>
+            <li>
+                <strong>Content</strong> – Zur Content-Optimierung gehört die Optimierung von Inhaltselementen für
+                bestimmte Keywords bzw. Themen. Dazu gehören: Text, Bilder, Videos und PDF-Dateien.
+            </li>
+            <li>
+                <strong>Webpage</strong> – es ist auch wichtig den guten Content auch gut zu präsentieren hierzu gehört
+                optimierter Code sowie optimiertes Layout. Optimierung für Mobilgeräte und Ladezeiten spielen dabei
+                eine große Rolle. Auch die URL (lokaler Pfad) der einzelnen Webseiten und Hyperlinks spielen eine
+                wichtige Rolle.
+            </li>
+            <li>
+                <strong>Site, Server &amp; Domain</strong> – hierzu gehören: die Wahl des Domain-Namens, die
+                Informationsarchitektur, der Aufbau der URLs, die Performance und die Verfügbarkeit und Sicherheit.
+            </li>
+            <li>
+                <strong>Backlinks</strong> – eingehende Hyperlinks von anderen Webseiten (= Backlink-Management)
+            </li>
+            <li>
+                <strong>User Signals</strong> – dazu gehören: Erfahrungsberichte/Rezensionen, Click-Throught-Rate auf
+                der Suchergebnisseite, SERP Return Rate und die Time on Site.
+            </li>
+            <li>
+                <strong>Social SEO</strong> – beschäftigt sich mit Markensignale. Social-Media-Plattformen sind
+                hervorragend dafür geeignet, um eine Marke bekannt zu machen.
+            </li>
+            <li>
+                <strong>Shop SEO</strong> – Optimierung von Onlineshops
+            </li>
+            <li>
+                <strong>Local SEO</strong> – Suchergebnisse, die für den Standort des Suchenden optimiert sind.
+            </li>
+            <li>
+                <strong>Erfolgskontrolle</strong> – Es ist Empfehlenswert den Prozess für eine Website immer wieder und
+                so lange fortzuführen, wie die Website online ist.
+            </li>
+        </list>
+
+        <chapter title="Strategische SEO-Ziele" id="prozess-ziele-seostrategie">
+            <list>
+                <li>
+                    Unternehmen/Marke bekannter machen und häufigere in den Trefferlisten der Suchmaschine erscheinen
+                </li>
+                <li>
+                    Zahl der Besucher einer Website erhöhen
+                </li>
+                <li>
+                    Bestandskunden in Suchmaschinen abholen
+                </li>
+                <li>
+                    Marketingkosten einsparen
+                </li>
+                <li>
+                    Mitarbeiter-Akquise durch gute Auffindbarkeit von Stellenangeboten
+                </li>
+                <li>
+                    Backlinks erhöhen durch gute Auffindbarkeit von verlinkenswertem Content
+                </li>
+            </list>
+        </chapter>
+
+        <chapter title="Faktoren für den Aufwand" id="prozess-ziele-faktoren">
+            <list>
+                <li>Anzahl der Konkurrenzseiten</li>
+                <li>Optimierungsgrad der top rankenden Webseiten</li>
+                <li>Kompetenz des SEO-Experten</li>
+            </list>
+        </chapter>
     </chapter>
 
     <chapter title="Keywords" id="keywords">
