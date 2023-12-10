@@ -690,8 +690,57 @@
     </chapter>
 
     <chapter title="Casting" id="casting">
+        <p>
+            Bei der Arbeit mit Typen ist es manchmal notwendig, den Typ einer Variablen zu überschreiben, z. B. wenn von
+            einer Bibliothek falsche Typen bereitgestellt werden. Casting ist der Prozess des Überschreibens eines Typs.
+            Hierzu bietet TypeScript das Schlüsselwort as und die <code>&lt;&gt;</code>-Schreibweise. Bei der Verwendung
+            des <code>as</code>-Schlüsselworts wird der Typ der angegebenen Variable direkt geändert.
+        </p>
+
+        <code-block lang="typescript">
+            let x: unknown = 'hello';
+            console.log((x as string).length);
+        </code-block>
+
+        <p>
+            Casting ändert nicht wirklich den Typ der Daten in der Variablen, zum Beispiel wird der folgende Code nicht
+            wie erwartet funktionieren, da die Variable <code>x</code> immer noch eine <code>number</code> enthält.
+        </p>
+
+        <code-block lang="typescript">
+            let x: unknown = 4;
+            console.log((x as string).length); // Gibt undefined da Variablen des Datentyps number keine length Eigenschaft haben
+        </code-block>
+
+        <p>
+            TypeScript wird trotzdem versuchen, Casts zu typisieren, um zu verhindern, dass Casts nicht korrekt
+            erscheinen. Zum Beispiel wird das Folgende einen Typfehler auslösen, da TypeScript weiß, dass das Casting
+            eines <code>string</code> in eine <code>number</code> keinen Sinn macht, ohne die Daten zu konvertieren:
+        </p>
+
+        <code-block lang="typescript">
+            console.log((4 as string).length); // Error: Conversion of type 'number' to type 'string' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+        </code-block>
+
+        <p>
+            Die Verwendung von <code>&lt;&gt;</code> funktioniert genauso wie das Casting mit <code>as</code>. Diese Art
+            des Castings funktioniert aber nicht mit TSX, z. B. bei der Arbeit an React-Dateien.
+        </p>
+
+        <code-block lang="typescript">
+            console.log((4 as string).length); // Error: Conversion of type 'number' to type 'string' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+        </code-block>
 
         <chapter title="Force Casting" id="casting-force">
+            <p>
+                Um Typfehler zu umgehen, die TypeScript beim Casting auslösen kann, castet man zuerst auf unknown und
+                dann auf den Zieltyp.
+            </p>
+
+            <code-block lang="typescript">
+                let x = 'hello';
+                console.log(((x as unknown) as number).length); // x ist nicht vom Datentyp number deshalb wird hier undefined zurückgegeben.
+            </code-block>
         </chapter>
     </chapter>
 
