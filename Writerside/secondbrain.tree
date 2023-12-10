@@ -53,6 +53,9 @@
             <toc-element topic="seo.topic"/>
         </toc-element>
         <toc-element topic="anwendungsentwicklung.topic">
+            <toc-element topic="swift.topic"/>
+            <toc-element topic="kotlin.topic"/>
+            <toc-element topic="dart.topic"/>
             <toc-element topic="python.topic">
                 <toc-element topic="python-libraries-frameworks.topic">
                     <toc-element topic="pandas.topic"/>
@@ -107,11 +110,20 @@
             <toc-element topic="markdown.topic"/>
             <toc-element topic="latex.topic"/>
         </toc-element>
-        <toc-element topic="datenbanken.topic"/>
+        <toc-element topic="datenbanken.topic">
+            <toc-element topic="rdbms.topic"/>
+            <toc-element topic="nosql.topic"/>
+            <toc-element topic="sql.topic"/>
+            <toc-element topic="plsql.topic"/>
+        </toc-element>
         <toc-element topic="betriebssysteme.topic">
             <toc-element topic="macos.topic"/>
             <toc-element topic="windows.topic"/>
             <toc-element topic="linux.topic"/>
+        </toc-element>
+        <toc-element topic="app.topic">
+            <toc-element topic="app-vscode.topic"/>
+            <toc-element topic="app-webbrowser.topic"/>
         </toc-element>
         <toc-element topic="netzwerktechnik.topic"/>
         <toc-element topic="design.topic">

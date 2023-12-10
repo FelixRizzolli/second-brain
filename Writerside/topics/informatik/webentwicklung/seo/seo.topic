@@ -6,4 +6,1155 @@
        title="SEO (Search Engine Optimization)" id="seo">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <warning>
+        Diese Dokumentation wurde im Jahr <strong>2019</strong> verfasst und basiert auf den damaligen SEO-Trends und
+        -Praktiken. Da sich SEO ständig weiterentwickelt, können einige der hier enthaltenen Informationen veraltet oder
+        falsch sein. Ich empfehle deshalb, sich auf die neuesten SEO-Ressourcen zu beziehen, um die Website zu
+        optimieren.
+    </warning>
+
+    <chapter title="Was ist SEO?" id="was-ist-seo">
+        SEM (Search Engine Marketing) umfasst die Teilgebiete SEA (Search Engine Advertising - Suchmaschinenwerbung) und
+        SEO (Search Engine Optimization – Suchmaschinenoptimierung).
+    </chapter>
+
+    <chapter title="Allgemeines" id="allgemeines">
+
+        <chapter title="Suchmaschinen" id="allgemeines-suchmaschinen">
+            <p>
+                SEM (Search Engine Marketing) umfasst die Teilgebiete SEA (Search Engine Advertising -
+                Suchmaschinenwerbung) und SEO (Search Engine Optimization – Suchmaschinenoptimierung).
+            </p>
+            <p>
+                Anfangs war das Web noch relativ klein, und es wurden Listen von Webservern erstellt. Tim Berners-Lee
+                pflegte selbst eine solche Liste. Es entwickelten sich Webkataloge, wie z.B. das Yahoo-Verzeichnis oder
+                Open Directory Project (ODP) welche ein hierarchisches Verzeichnis von Websites in Kategorien und
+                Unterkategorien erstellten.
+            </p>
+            <p>
+                Da sich das WWW stark ausdehnte, musste eine Software her, welche das WWW permanent nach neuen Webseiten
+                durchsucht und einen Index der gefundenen Seiten automatisch erstellt. Die erste Suchmaschine solcher
+                Art war JumpStation (1993). Sie verwendete einen Webroboter welcher die Titel und Überschriften der
+                Webseiten in einem Index speicherte und für Suchtreffer nutzte. Ein Jahr später erschien WebCrawler
+                welcher den gesamten Text einer Webseite für den Aufbau des Suchindexes verwendete.
+            </p>
+
+            <chapter title="Google" id="allgemeines-google">
+                <p>
+                    Sergey Brin und Larry Page suchten eine Lösung für das Problem, dass die Qualität der Suchergebnisse
+                    immer weiter abnahm. Webseitenbetreiber verwendeten verschiedene Tricks, um ihre Seite in den
+                    Suchergebnissen auf die oberen Plätze zu bringen, auch wenn diese für die von den Suchenden
+                    eingegebenen Suchbegriffe gar nicht relevant waren.
+                </p>
+                <p>
+                    Ihre Lösung war: die Hypothese, dass die Verlinkung der Webseiten im WWW zu berücksichtigen, bessere
+                    Resultate liefern. Sie entwickelten einen neuen Algorithmus: das sog. PageRank-Verfahren, womit es
+                    Google tatsächlich gelang, deutlich bessere Suchergebnisse zu generieren als die Konkurrenz.
+                </p>
+            </chapter>
+
+            <chapter title="Bing" id="allgemeines-bing">
+                <p>
+                    Die Suchmaschine von Microsoft hieß in ihren Anfängen MSN-Search, welche Großteils auf
+                    Suchergebnisse anderer Suchmaschinen Zugriff. Sie entwickelten in den folgejahren eine eigene
+                    Suchtechnologie und benannten ihre Suchmaschine in Windows Live Search, die ein Jahr später nur noch
+                    Live Search und seit 2009 unter den Namen Bing bekannt ist. Alle Suchanfragen an die Yahoo-Websites
+                    werden heute von Bing beantwortet.
+                </p>
+            </chapter>
+
+            <chapter title="Yandex" id="allgemeines-yandex">
+                <p>
+                    Yandex ist mit 60 % (Stand 2019) Marktanteil in Russland die am meisten verwendete Suchmaschine
+                    und ist durch eine Kooperation mit Microsoft als die voreingestellte Suchmaschine in Windows 10 für
+                    den russischen Markt. Mittlerweile bietet Yandex ein ähnlich großes Angebot wie Google und könnte zu
+                    einem ernstzunehmenden Konkurrenten heranwachsen.
+                </p>
+            </chapter>
+
+            <chapter title="Baidu" id="allgemeines-baidu">
+                <p>
+                    Baidu ist mit knapp 60 % (Stand 2019) die marktführende Suchmaschine in China. Die arbeitet eng.
+                    mit den chinesischen Behörden zusammen und blockiert Inhalte, welche von der Regierung zensiert
+                    werden. Durch eine Kooperation mit Microsoft werden Suchanfragen mit englischen Begriffen werden an
+                    Bing weitergeleitet und dafür ist Baidu die voreingestellte Suchmaschine für Windows 10 auf dem
+                    chinesischen Markt.
+                </p>
+            </chapter>
+
+            <chapter title="Alternative Suchmaschinen" id="allgemeines-alternativen">
+                <p>
+                    Heute gewinnen auch immer mehr neuere Suchmaschinen wie DuckDuckGo, Qwant, Ixquick und Startpage an
+                    Marktanteilen, welche damit werben keine persönlichen Informationen zu sammeln.
+                </p>
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="Aufbau und Funktionsweise" id="aufbau">
+        <p>
+            Heute (Stand 2019) nutzen mehr als 3,8 Milliarden Menschen das Internet (52 % der Weltbevölkerung). Wie
+            viele Webseiten es insgesamt gibt, kann nicht gesagt werden. Analytiker schätzen den Google-Index bzw. das
+            WWW heute auf 47 bis 50 Milliarden Webseiten.
+        </p>
+
+        <chapter title="Systemkomponenten einer Suchmaschine" id="aufbau-systemkomponenten">
+            <chapter title="Das Webcrawler-System" id="aufbau-webcrawler">
+                <p>
+                    Das Webcrawler-System besteht aus Computerprogrammen, welche das WWW automatisch durchsuchen und
+                    Webseiten herunterladen und analysieren können. Der Crawler startet auf einer beliebigen Webseite
+                    und lädt diese für die weitere Analyse und Verarbeitung herunter.
+                </p>
+
+                <list>
+                    <li>
+                        <strong>Freshbots</strong> – besuchen neu gefundene Seiten. Sie analysieren vor allem reine
+                        Textinhalte und gehen nicht sehr tief in eine Seite hinein. Wird eine Seite nicht regelmäßig
+                        aktualisiert, so lässt auch die Besuchsfrequenz der Freshbots nach.
+                    </li>
+                    <li>
+                        <strong>Deepbots</strong>  – berücksichtigen ein größeres Spektrum an Dateitypen (Bilder,
+                        PDF ...) und erfassen möglichst viele Seiten einer Website.
+                    </li>
+                </list>
+            </chapter>
+            <chapter title="Der Scheduler" id="aufbau-scheduler">
+                <p>
+                    Der Scheduler sammelt und verwaltet die Adressen der Webseiten. Er bekommt von Crawlern ständig neue
+                    URLs gemeldet, die diese in den besuchten Webseiten finden. Findet er in den Webseiten Verlinkungen
+                    zu anderen Seiten, dann gleicht er diese mit den bereits gefundenen URLs ab, und sendet diese Seite
+                    evtl. einem Crawler.
+                </p>
+                <p>
+                    Da nahezu alle Webseiten direkt oder indirekt miteinander verlinkt sind, können Crawler somit das
+                    ganze WWW durchwandern. Trotzdem gibt es immer noch Webseiten, zu denen kein Link führt. Auch jene
+                    Seiten, die nur erreichbar sind, wenn man ein Formular ausfüllt oder sich registriert sind für
+                    Crawler nicht erreichbar; diese Seiten gehören zum sog. DeepWeb.
+                </p>
+            </chapter>
+            <chapter title="Der Index" id="aufbau-index">
+                <p>
+                    Der Index beinhaltet die Website in ihren Bestandteilen (Text, Bilder, Videos, HTML-Code) zerlegt
+                    welche von den Crawlern heruntergeladen wurden. Bei der Suche durchsucht die Suchmaschine den Index
+                    und nicht die Originalseite. Der Index ist quasi das Abbild des WWW und enthält dessen Seiten zu
+                    einem bestimmten Zeitpunkt.
+                </p>
+            </chapter>
+            <chapter title="Das Suchinterface" id="aufbau-suchinterface">
+                <p>
+                    Das Suchinterface ist im Wesentlichen ein einzelnes Formularfeld, in das der Suchende Suchwärter
+                    eingeben kann. Google bietet heute neben der normalen Suche auch eine „Erweiterte Suche“ wodurch der
+                    Suchende durch zahlreiche Optionen die Suche verfeinern kann.
+                </p>
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="Das Ranking" id="ranking">
+        <p>
+            Nach eigenen Aussagen berücksichtigt Google bei der Relevanzberechnung heute mehr als 200 Rankingfaktoren
+            „Signale“. Sie gelten als Betriebsgeheimnis und die Rankingalgorythmen sowie Signale ändern sich ständig.
+            Dabei kann ihre Bedeutung variieren, neue hinzukommen und ältere wegfallen.
+        </p>
+
+        <chapter title="Die Relevanzberechnung" id="ranking-relevanzberechnung">
+            <p>
+                Ein offensichtlicher Ansatz ist dabei, im Suchindex nachzuschauen, auf welchen Webseiten das Suchwort
+                überhaupt vorkommt. Folgende Punkte gelten für die Relevanzberechnung:
+            </p>
+
+            <list>
+                <li>
+
+                </li>
+                <li>
+                    <p>
+                        <strong>Häufigkeit des Suchbegriffs</strong> – kommt der Suchbegriff häufiger vor, so wird
+                        angenommen, dass das Dokument relevanter ist. Hervorhebungen – die Relevanz steigt durch
+                        Hervorhebung des Suchworts mittels entsprechenden HTML-Tags
+                    </p>
+
+                    <list>
+                        <li>
+                            Dokumenttitel <code>&lt;title&gt;</code>
+                        </li>
+                        <li>
+                            Überschriften <code>&lt;h1&gt;</code> bis <code>&lt;h6&gt;</code>
+                        </li>
+                        <li>
+                            Hervorhebung im Fließtext <code>&lt;strong&gt;</code>, <code>&lt;b&gt;</code>... In
+                            Auflistungen <code>&lt;li&gt;</code>
+                        </li>
+                        <li>
+                            In Hyperlinks <code>&lt;a&gt;</code>
+                        </li>
+                    </list>
+                </li>
+                <li>
+                    <strong>Position innerhalb des Dokuments</strong> – weiter oben im Fließtext = relevanter
+                </li>
+                <li>
+                    <strong>Kombination</strong> – Besonders relevant wird ein Dokument, wenn diese Kriterien kombiniert
+                    werden.
+                </li>
+                <li>
+                    <strong>Innerhalb der URL</strong> – im Domain-, Verzeichnis- oder Dateinamen
+                </li>
+            </list>
+
+            <p>
+                Der Webentwickler kann im HTML-Quellcode die Keywords unsichtbar machen und häufig wiederholen. Dadurch
+                ist es einfach Suchergebnisse zu manipulieren. Die beiden Google-Gründer Larry Page und Sergey Brin
+                entwickelten ein Konzept, welches die Lösung für dieses Problem darstellte: Das PageRank-Verfahren.
+            </p>
+        </chapter>
+
+        <chapter title="Das PageRank-Verfahren" id="ranking-pagerank">
+            <p>
+                Googles Hypothese war es: die Verlinkung der Webseiten im WWW für die Relevanzberechnung zu
+                berücksichtigen liefert bessere Resultate als herkömmliche Suchmaschinen. So sollen Webseiten, auf die
+                sehr viele andere Seiten verlinken, die eine hohe Zahl eingehender Links (sog. Backlinks) hat, besonders
+                gut und nützlicher sein als Webseite, auf die selten verlinkt wird. Die Link Popularity die absolute
+                Zahl der auf eine Webseite verweisenden Hyperlinks.
+            </p>
+            <p>
+                Ein ähnliches Prinzip existierte bereits: der Certification Index – wie häufiger eine wissenschaftliche
+                Publikation zitiert wurde als umso wichtiger galt sie.
+            </p>
+
+            <chapter title="Der Zufallssurfer" id="ranking-pagerank-zufallssurfer">
+            </chapter>
+
+            <chapter title="PageRank Ermitteln" id="ranking-pagerank-ermitteln">
+                <p>
+                    In der Google-Toolbar wurde früher eine Form des PagRank-Wertes angezeigt. Er wurde Toolbar-PageRank
+                    genannt. Er basiert auf einer logarithmischen Skala und zeigte werte von 0 bis 10 an. Diese Funktion
+                    wurde jedoch eingestellt.
+                </p>
+                <p>
+                    Es gibt immer noch Drittanbieter, welche mit eigenen Methoden einem dem Google Toolbar PageRank
+                    ähnlichen Wert ermitteln, um die Suchmaschinenoptimierung zu erleichtern.
+                </p>
+            </chapter>
+
+            <chapter title="Weiterentwicklung des PageRank-Verfahrens" id="ranking-pagerank-weiterentwicklung">
+                <p>
+                    Das PageRank-Verfahren ist nicht zu 100 % robust gegen Manipulationen und es wurde viel Linkspam
+                    betrieben, um einen besseren Platz auf der SERP zu erzielen. Es wurden Linkfarmen betrieben, deren
+                    Zweck daran Bestand, durch hundertfache Verlinkungen von Websites und Webseiten untereinander den
+                    PageRank einzelner Seiten zu erhöhen.
+                </p>
+                <p>
+                    Um dem entgegenzuwirken, berücksichtigt Google nun weitere Kriterien und hat folgende Konzepte
+                    entwickelt.
+                </p>
+
+                <list>
+                    <li>
+                        <p>
+                            <strong>Die Distanz zwischen Webseiten</strong> – folgende Verlinkungen werden weniger stark
+                            gewichtet
+                        </p>
+
+                        <list>
+                            <li>Links innerhalb einer Webseite.</li>
+                            <li>Verlinkte Websites auf demselben Server</li>
+                            <li>Verlinkte Websites in naheliegender geografischer Region (ermittelt durch IP)</li>
+                        </list>
+                    </li>
+                    <li>
+                        <strong>Die Domain Popularity</strong> – ersetzt weitgehend das Konzept der Link Popularity.
+                        Nicht mehr die absolute Zahl der eingehenden Links (Backlinks) ist entscheidend, sondern die
+                        Zahl der eingehenden Links von unterschiedlichen Domains.
+
+                    </li>
+                    <li>
+                        <strong>Die thematische Nähe</strong> – Mit der einführung des „Reasonable Surfer“ erfolgt die
+                        Link-Auswahl des sog. „Zufallssurfers“ nicht mehr rein zufällig irgendeinen Link, sondern mit
+                        höherer Wahrscheinlichkeit einem link, der einen thematischen Bezug zu der Webseite. Zudem
+                        werden folgende Punkte beachtet: Hervorhebung eines Links (z.B. Links in Überschriften) und
+                        Position des Links innerhalb des Dokuments (weiter oben = besser).
+
+                    </li>
+                    <li>
+                        <strong>Der „intelligent Surfer“</strong> – Mit RankBrain ein KI-Algorythmus, in dem Google
+                        schon seit Jahren investiert, wird die Suche des sog. „Zufallssurfers“ menschlicher. Mit
+                        RankBrain werden gezielter Links aufgerufen welche einen Mehrwert darstellen und weiterführende
+                        oder ergänzende Informationen zum Thema der Webseite haben.
+                    </li>
+                </list>
+
+                <p>
+                    Ohne qualitativ hochwertige Backlinks von Websites, die selbst über viel PageRank und Trust
+                    verfügen, schafft es kaum eine Webseite auf die erste Ergebnisseite von Google und schon gar nicht
+                    auf die Top-Rankingplätze.
+                </p>
+            </chapter>
+        </chapter>
+
+        <chapter title="Trust und TrustRank" id="ranking-trust">
+            <p>
+                Mit dem Trust-Wert hat Google einen neuen Wert in sein Rankingsystem eingeführt, welcher Auskunft
+                gibt wie vertrauenswürdig die Informationen auf einer Website sind. <strong>TrustRank</strong> ist
+                ein an das PageRank-Verfahren angelehnter Algorithmus zur Bewertung der Qualität von Webseiten.
+            </p>
+            <p>
+                Besonders vertrauenswürdige Websites (<strong>Authority Domains</strong>) zeichnet aus, dass sie
+                sorgfältig von Hand gepflegt und aktualisiert werden, dass sie mit einer sehr geringen
+                Wahrscheinlichkeit auf schlechte Webseiten (z.B. Spamseiten) verlinken, jedoch mit hoher
+                Wahrscheinlichkeit auf gute nützliche Sites.
+            </p>
+            <p>
+                Seiten, die durch Linkkauf, Linktausch oder Linkfarmen einen unnatürlich hohen PageRank-Wert haben
+                bekommen einen niedrigen TrustRank-Wert.
+            </p>
+        </chapter>
+
+        <chapter title="Das BadRank-Konzept" id="ranking-badrank">
+            <p>
+                Mit dem BadRank hat Google einen neuen Wert eingeführt mit den Sites, welche gegen die
+                Suchmaschinenrichtlinien verstoßen, indem sie Backlinks verkaufen oder Linkfarmen betreiben. Verweisen
+                Links auf Seiten, die selbst einen hohen BadRank haben, erben die verlinkten Seiten von diesen BadRank.
+                Websites, von denen man BadRank erben kann, bezeichnet Google als <strong>bad neighborhood</strong>.
+            </p>
+        </chapter>
+
+        <chapter title="Lösung für Webspam" id="ranking-webspam">
+            <p>
+                Mit einem selbst lernenden Algorithmus im sog. <strong>Panda-Update</strong> versuchte Google gezielt
+                minderwertige Seiten bzw. Domains zu identifizieren und in den Suchergebnissen herunterzustufen:
+            </p>
+
+            <list>
+                <li>Eine geringe Menge an originalen Inhalten</li>
+                <li>Hoher Prozentsatz an doppelten Inhalten</li>
+                <li>Zu viel Werbung</li>
+                <li>Seiteninhalt und Seitentitel stimmen nicht mit der Suchanfrage überein</li>
+                <li>Unnatürlich häufiges Vorkommen eines Wortes auf einer Seite</li>
+            </list>
+
+            <p>
+                Im sog. <strong>Penguin-Update</strong> wurden Websites, die über viele minderwertige Backlinks
+                verfügten mit einem schlechteren Ranking bestraft. Davon waren stark Sites betroffen, die aggressiven
+                und unvernünftigen Linkaufbau betrieben haben. Mit dem Update auf die Version 4 – Real Time Penguin
+                wurde diese Abstrafung bzw. auch Erholung in Echtzeit eingeführt.
+            </p>
+            <p>
+                Mit dem <strong>Hummingbird-Update</strong> wurde ein komplett neuer Ansatz eingeführt: Es sind nicht
+                mehr unbedingt Seiten, die für die Keywords, die in einer Suche vorkommen, optimiert sind, sondern
+                Seiten, die auf die Suchanfrage sie beste Antwort geben. Hierfür werden Textinhalte auf intelligente
+                Art und Weise mithilfe von Algorithmen, die eine systematische Analyse vornehmen, untersucht.
+            </p>
+        </chapter>
+
+        <chapter title="RankBrain" id="ranking-rankbrain">
+            <p>
+                15 % aller Sucheingaben sind für Google neu. Um Suchanfragen noch besser zu verstehen, die komplexer
+                oder nicht eindeutig sind oder sie Google noch nie gesehen hat, wurde RankBrain eingeführt. RankBrain
+                setzt zusätzlich die Technik des maschinellen Lernens (machine learning) ein. Es besitzt die Fähigkeit,
+                aus jeder Analyse zu lernen und sich durch Erstellung neuer Verknüpfungen in seinem neuronalen Netz und
+                damit verbundenen durch Erzeugung neuer Algorithmen selbstständig, d.h. ohne menschliches Zutun von
+                Softwareentwicklern, weiterzuentwickeln. So wird RankBrain automatisch immer besser darin, Suchanfragen
+                zu verstehen und die Webseiten mit den besten Rankings zu belohnen, die für die Nutzer den besten
+                Nutzwert bieten.
+            </p>
+            <p>
+                Ziel von Seitenbetreibern muss sein, mit hochwertigem einzigartigem und nützlichem Content sowie mit
+                vorbildlicher Usability für das perfekte Nutzererlebnis zu sorgen.
+            </p>
+        </chapter>
+
+        <chapter title="Die wichtigsten Punkte" id="ranking-wichtig">
+            <table>
+                <tr>
+                    <td><strong>Content</strong></td>
+                    <td>Qualitativ hochwertiger und einzigartiger Content.</td>
+                </tr>
+                <tr>
+                    <td><strong>Backlinks</strong></td>
+                    <td>Hochwertige Backlinks, die selbst hohe PageRank- und Trust-Werte haben.</td>
+                </tr>
+                <tr>
+                    <td><strong>RankBrain</strong></td>
+                    <td>Hoher Nutzwert.</td>
+                </tr>
+            </table>
+        </chapter>
+    </chapter>
+
+    <chapter title="Die wichtigsten Signale" id="wichtigste-signale">
+        <p>
+            Die Quellen für die Informationen von Rankingsignalen sind:
+        </p>
+        
+        <list>
+            <li>
+                <strong>Google selbst</strong> – An vielen Kerntechnologien hält Google Patente, und Patentschriften
+                sind öffentlich zugänglich. Darin kann man z.B. nachlesen, wie der berühmte PageRank-Algorithmus
+                funktioniert.
+            </li>
+            <li>
+                <strong>Untersuchungen und Erfahrungswerte von SEO-Experten</strong> – SEO-Experten schreiben über ihre
+                eigene Korrelationsstudie. Eine positive Korrelation bedeutet nicht unbedingt, dass es auch tatsächlich
+                einen direkten kausalen Zusammenhang zwischen einem vermuteten Rankingsignal und einem positiven Effekt
+                auf das Ranking gibt.
+            </li>
+        </list>
+
+        <chapter title="Webpage-Signale" id="signale-webpage">
+            <p>
+                Unter Webpage-Signale fällt die Qualität des HTML-Quellcodes, die Ladegeschwindigkeit, aber auch
+                PageRank und andere Backlinksignale
+            </p>
+
+            <list>
+                <li>
+                    <strong>Content-Qualität</strong> – die inhaltliche Qualität der Webseite: einzigartige Inhalte, der
+                    Nutzwert, die Länge des Textes (allgemein: längere Texte werden höher gerankt) wobei diese von der
+                    Kategorie abhängt, Bilder und deren Ladezeit, passende Videos, ergänzende Inhalte und weiterführende
+                    Links zu verwandten Themen
+                </li>
+                <li>
+                    <strong>Keywords</strong> – wenn Keywords auf der Webseite vorkommen und das Rankingsignal senden,
+                    dass es auf der Website um eben diese Themen geht, die durch die Keywords beschrieben werden. Eine
+                    zu starke Konzentration auf Keywords kann sich sogar negativ auswirken.
+                </li>
+                <li>
+                    <strong>HTML-Code</strong> – modernes HTML 5 und valides und gültiges HTML
+                </li>
+                <li>
+                    <strong>Mikroformate</strong> – damit können Inhalte auf der Website semantisch ausgezeichnet
+                    werden.
+                </li>
+                <li>
+                    <strong>Layout</strong> – nutzerfreundlich gestaltet, Hauptinhalt muss sofort erkennbar und leicht
+                    zugänglich ein, Nebeninhalte dürfen den Hauptinhalt nicht überdecken, Werbung muss als solche
+                    gekennzeichnet sein und das Seitenlayout muss professionellen Ansprüchen genügen. Dazu gehört auch
+                    eine responsive Seite welche auch für Mobilgeräte optimiert ist.
+                </li>
+                <li>
+                    <strong>Ladezeiten</strong> – eine Website muss schnell laden
+                </li>
+                <li>
+                    <p>
+                        <strong>Backlinks</strong> – ein gutes Backlink-Management sorgt für gute Rankingergebnisse und
+                        einen höheren PageRank und besseren Trust-Wert. Hierbei ist aber wichtig, dass die
+                        Suchmaschinenrichtlinien eingehalten werden, um keinen BadRank-Wert zu erhalten. Die Anzahl an
+                        Backlinks unterschiedlicher Domains beschreibt die Domainpopularität einer Seite, welche auch
+                        einen Einfluss auf das Ranking hat.
+                    </p>
+                    
+                    <list>
+                        <li>
+                            Die verlinkte Webseite wird relevanter für Keywords, die sich im Ankertext befinden.
+                        </li>
+                        <li>
+                            Auch auf Keywords im Umgebungstext wird geachtet, da der Anker oft nur ein
+                            &lt;a&gt;mehr&lt;/a&gt; ist. Somit steigt die Relevanz der Zielseite für Keywords im
+                            Umgebungstext des Links.
+                        </li>
+                        <li>
+                            Links, die im Quelltext weit oben stehen sind, relevanter.
+                        </li>
+                        <li>
+                            Ein natürliches Linkprofiel – Links von ganz unterschiedlichen Seiten und Links von
+                            thematisch verwandten Webseiten – spielt auch eine große Rolle.
+                        </li>
+                        <li>
+                            Google analysiert auch das Backlink-Wachstum. Steigt die Zahl natürlich und wächst
+                            kontinuierlich, so wird sie besser gerankt.
+                        </li>
+                        <li>
+                            Je länger ein Link besteht, desto wertvoller wird er.
+                        </li>
+                        <li>
+                            Durch eine sinnvolle interne Verlinkung erhöht sich auch der Nutzwert für die Besucher, und
+                            die Usability kann sich verbessern.
+                        </li>
+                    </list>
+                </li>
+            </list>
+        </chapter>
+
+        <chapter title="Website-Signale" id="signale-website">
+            <p>
+                Zu den Website-Signalen gehören:
+            </p>
+
+            <list>
+                <li>
+                    Nützliche und einzigartige Inhalte
+                </li>
+                <li>
+                    Eine gute Informationsarchitektur -&gt; Einteilung in Haupt- und Unterbereiche
+                </li>
+                <li>
+                    Regelmäßig (nicht nur sporadisch bzw. unregelmäßig) und neu publizierter Content
+                </li>
+                <li>
+                    Anzahl der Seiten – desto größer, desto besser, wenn die einzelnen Seiten auch einzigartige Inhalte
+                    bieten. Steigende Zahl an Seiten.
+                </li>
+                <li>
+                    Anbieterinformationen – Datenschutzhinweise, Impressum, Kontaktformular, Telefon, E-Mail
+                </li>
+            </list>
+        </chapter>
+
+        <chapter title="Domain-Signale" id="signale-domain">
+            <p>
+                Google wertet aus, wann eine Domain zum ersten Mal registriert wurde, und wie sie sich im Laufe der
+                Jahre entwickelt. Kauft man eine bereits existierende Domain, so kann es schwierig sein, eine Domain mit
+                einer „unrühmlichen Vergangenheit“ wiederzubeleben, d.h., zu guten Rankings zu führen.
+            </p>
+        </chapter>
+
+        <chapter title="Server-Signale" id="signale-server">
+            <p>
+                Zu den Server-Signalen gehören gehört die Verfügbarkeit (längere oder öfter auftretende Down-Zeiten sind
+                schlecht), die Performance (durchschnittliche Ladezeiten), sowie auch die Verwendung eines
+                <code>https</code>-Protokolls anstelle von <code>http</code>.
+            </p>
+        </chapter>
+
+        <chapter title="Nutzer-Signale" id="signale-nutzer">
+            <p>
+                Mit dem Google Chrome Webbrowser sammelt Google viele Daten wie die Durchklickrate, die SERP-Return-Rate
+                (wie schnell der Nutzer wieder von einer Seite zur Suche zurückkehrt), Time on Site (wie lange Suchende
+                auf einer gefundenen Webseite bleiben), Bounce Rate (= Absprungrate, der Prozentsatz von Besuchern einer
+                Website, die nur eine einzige Seite der Website betrachten und danach die Website sofort wieder
+                verlassen).
+            </p>
+        </chapter>
+
+        <chapter title="Nutzer-Interaktion" id="signale-nutzerinteraktion">
+            <p>
+                Zur Nutzer-Interaktion gehört beispielsweise das Hinterlassen eines Kommentars oder einer Bewertung oder
+                Aufrufen einer speziellen Funktion.
+            </p>
+        </chapter>
+
+        <chapter title="Markensignale" id="signale-marke">
+            <p>
+                Bekannte Marken kommen in den Top-Suchergebnissen immer häufiger vor, da sie Vertrauenswürdiger sind.
+                Eine vertrauenswürdige Marke macht aus:
+            </p>
+
+            <list>
+                <li>Seriöse Website mit Impressum, Anbieterinformationen, Rechtskonformität und Kontaktinfos</li>
+                <li>Aktive Social-Media-Accounts</li>
+                <li>Niedrige Absprungraten (Bounce Rates)</li>
+                <li>Domain-Registrierung für längeren Zeitraum</li>
+                <li>Backlinks von Authority Domains, seriösen Publikationsorganen und Unternehmenswebsites</li>
+            </list>
+
+            <p>
+                Zudem wird von Google auch analysiert, was andere im Web über eine Website sagen (Bewertungen,
+                Kundenmeinungen und Rezensionen), sowie auch ob eine Marke im Web öfters auch ohne Links genannt wird
+                und auch wie häufig ein Markenname in die Google-Suche eingegeben wird, und ob sich die Häufigkeit
+                verändert.
+            </p>
+        </chapter>
+
+        <chapter title="Soziale Signale" id="signale-sozial">
+        </chapter>
+
+        <chapter title="Negative Signale" id="signale-negativ">
+            <p>
+                Websites können aufgrund negativer Rankingsignale von Google bestraft (Google Penalty) oder auch 
+                komplett aus dem Suchindex verbannt werden. Gründe dafür sind:
+            </p>
+
+            <list>
+                <li>
+                    Minderwertige oder schädliche Backlinks oder an solchen Links verlinken – „Don’t link to bad
+                    neighbourhood“
+                </li>
+                <li>
+                    Verlinken zu URLs die es nicht mehr gibt – 404 not found
+                </li>
+                <li>
+                    Technische Probleme oder Hindernisse sowie verwenden von veralteten Technologien wie Adobe Flash und
+                    HTML-Framesets
+                </li>
+                <li>
+                    <p>
+                        Verstoß gegen die Google Webmaster-Richtlinien
+                    </p>
+
+                    <list>
+                        <li>Brückenseiten – Seiten die einfach nur weiterverlinken</li>
+                        <li>Automatisch erstellter Content</li>
+                        <li>Einfügen von Inhalten anderer Webseiten</li>
+                        <li>Teilnahme an Linkaustauschprogramm</li>
+                        <li>Kaufen von Backlinks</li>
+                        <li>Verborgener Text</li>
+                    </list>
+                </li>
+                <li>
+                    Überoptimierung – zu hohe Keyworddichte, unnatürliches Linkprofiel und ein zu rasantes,
+                    ungleichmäßiges Linkwachstum Negative Nutzerbewertungen
+                </li>
+                <li>
+                    <p>
+                        Eine manuelle Bestrafung durch Google da sie gegen die Webmaster-Richtlinien verstoßen:
+                    </p>
+                    
+                    <list>
+                        <li>Gehackte Website</li>
+                        <li>Nutzergenerierter Spam</li>
+                        <li>Kostenlose Spamhosts</li>
+                        <li>Markup mit Spamstrukturen</li>
+                        <li>Unnatürliche Links zur Website</li>
+                        <li>Inhalte von minderwertiger Qualität mit geringem oder gar keinem Mehrwert </li>
+                        <li>Cloaking bzw. irreführende Weiterleitungen</li>
+                        <li>Cloaking: Verstoß gegen die „Erste Klick gratis“-Richtlinie</li>
+                        <li>Unnatürliche Links von Ihrer Website</li>
+                        <li>Reine Spamwebsite</li>
+                        <li>Bilder-Cloaking</li>
+                        <li>Verborgener Text bzw. überflüssige Keywords</li>
+                    </list>
+                </li>
+            </list>
+        </chapter>
+    </chapter>
+
+    <chapter title="Der Prozess und die Ziele " id="prozess-ziele">
+
+        Ein großer Fehler ist es, eine neue Website zuerst komplett zu erstellen und dann anschließend das Thema SEO anzugehen. Es gibt folgende Punkte, die den SEO-Prozess ausmachen:
+
+        <list>
+            <li>
+                <strong>Keywords</strong> – In der Keyword-Analyse geht es darum, die Begriffe zu finden, die den Inhalt
+                und Nutzwert einer Webseite gut beschreiben.
+            </li>
+            <li>
+                <strong>Content</strong> – Zur Content-Optimierung gehört die Optimierung von Inhaltselementen für
+                bestimmte Keywords bzw. Themen. Dazu gehören: Text, Bilder, Videos und PDF-Dateien.
+            </li>
+            <li>
+                <strong>Webpage</strong> – es ist auch wichtig den guten Content auch gut zu präsentieren hierzu gehört
+                optimierter Code sowie optimiertes Layout. Optimierung für Mobilgeräte und Ladezeiten spielen dabei
+                eine große Rolle. Auch die URL (lokaler Pfad) der einzelnen Webseiten und Hyperlinks spielen eine
+                wichtige Rolle.
+            </li>
+            <li>
+                <strong>Site, Server &amp; Domain</strong> – hierzu gehören: die Wahl des Domain-Namens, die
+                Informationsarchitektur, der Aufbau der URLs, die Performance und die Verfügbarkeit und Sicherheit.
+            </li>
+            <li>
+                <strong>Backlinks</strong> – eingehende Hyperlinks von anderen Webseiten (= Backlink-Management)
+            </li>
+            <li>
+                <strong>User Signals</strong> – dazu gehören: Erfahrungsberichte/Rezensionen, Click-Throught-Rate auf
+                der Suchergebnisseite, SERP Return Rate und die Time on Site.
+            </li>
+            <li>
+                <strong>Social SEO</strong> – beschäftigt sich mit Markensignale. Social-Media-Plattformen sind
+                hervorragend dafür geeignet, um eine Marke bekannt zu machen.
+            </li>
+            <li>
+                <strong>Shop SEO</strong> – Optimierung von Onlineshops
+            </li>
+            <li>
+                <strong>Local SEO</strong> – Suchergebnisse, die für den Standort des Suchenden optimiert sind.
+            </li>
+            <li>
+                <strong>Erfolgskontrolle</strong> – Es ist Empfehlenswert den Prozess für eine Website immer wieder und
+                so lange fortzuführen, wie die Website online ist.
+            </li>
+        </list>
+
+        <chapter title="Strategische SEO-Ziele" id="prozess-ziele-seostrategie">
+            <list>
+                <li>
+                    Unternehmen/Marke bekannter machen und häufigere in den Trefferlisten der Suchmaschine erscheinen
+                </li>
+                <li>
+                    Zahl der Besucher einer Website erhöhen
+                </li>
+                <li>
+                    Bestandskunden in Suchmaschinen abholen
+                </li>
+                <li>
+                    Marketingkosten einsparen
+                </li>
+                <li>
+                    Mitarbeiter-Akquise durch gute Auffindbarkeit von Stellenangeboten
+                </li>
+                <li>
+                    Backlinks erhöhen durch gute Auffindbarkeit von verlinkenswertem Content
+                </li>
+            </list>
+        </chapter>
+
+        <chapter title="Faktoren für den Aufwand" id="prozess-ziele-faktoren">
+            <list>
+                <li>Anzahl der Konkurrenzseiten</li>
+                <li>Optimierungsgrad der top rankenden Webseiten</li>
+                <li>Kompetenz des SEO-Experten</li>
+            </list>
+        </chapter>
+    </chapter>
+
+    <chapter title="Keywords" id="keywords">
+        <p>
+            Der Begriff Keywords:
+        </p>
+        
+        <list>
+            <li>
+                Begriffe oder Begriffskombinationen, die einen Inhalt (meistens Text) in ihrer Summe möglichst eindeutig
+                charakterisieren und von anderen Inhalten differenzierbar machen.
+            </li>
+            <li>
+                Begriffe oder Begriffskombinationen, die von Internetnutzern in einer Suchanfrage verwendet werden.
+                Diese werden auch als Suchbegriffe bezeichnet.
+            </li>
+        </list>
+
+        <p>
+            Zu beachten ist, dass man Fachbegriffe oder firmeninterne, produktspezifische Begriffe, die nicht allgemein
+            bekannt sind, so gut als möglich vermeiden sollte. Man sollte sich auf Keywords konzentrieren, die ein hohes
+            Suchvolumen haben, um einen möglichst hohen Traffic zu erzielen.
+        </p>
+
+        <chapter title="Die Bedeutung der Suchintention" id="keywords-suchintention">
+            <p>
+                SEO muss das Ziel haben, dass die Zielgruppe der Website diese findet und sie ansteuert. Somit sollte
+                man sich mit der Intention (Absicht, Ziel) der Suchenden beschäftigen, um die passenden Keywords
+                auszuwählen. Google teilt die Suchintention in folgende Kategorien ein:
+            </p>
+
+            <list>
+                <li>
+                    <strong>Know query</strong> – Suche nach Informationen.
+                </li>
+                <li>
+                    <strong>Know simple query</strong> – Spezielle Form der Know query. Bei dieser besteht die ideale
+                    Antwort nur ais einer kurzen Definition oder Beschreibung
+                </li>
+                <li>
+                    <strong>Do query</strong> – Der Suchende möchte eine bestimmte Aktion ausführen, z.B. etwas
+                    bestellen, buchen oder herunterladen.
+                </li>
+                <li>
+                    <strong>Website query</strong> – Suche nach einer bestimmten Website.
+                </li>
+                <li>
+                    <strong>Visit-in-person query</strong> – Der Suchende mochte einen bestimmten Ort persönlich
+                    besuchen, z.B. ein Unternehmen, ein Restaurant, eine Tankstelle, ein Hotel, ein Museum o.ä.
+                </li>
+            </list>
+
+            <p>
+                Es ist empfehlenswert, die erarbeiteten Keywords unter dem Aspekt der Suchintention zu betrachten und
+                eine Klassifikation nach Suchintention der Zielgruppe vorzunehmen.
+            </p>
+        </chapter>
+        
+        <chapter title="Keyword-Kandidate ermitteln" id="keywords-kandidaten">
+            <p>
+                Die relevanten Keywords sind die Begriffe, die die potenziellen Kunden in die Suchmaske der
+                Suchmaschinen eingeben und mit denen die Webseite gefunden werden soll. Diese Keywords sollten bereits
+                zu Beginn eines Webprojekts ermittelt werden und die Content Gestaltung sollte nach ihnen ausgerichtet
+                werden. Keyword-Kandidaten können mit folgenden Techniken ermittelt werden:
+            </p>
+
+            <list>
+                <li>
+                    <strong>Brainstorming</strong>
+                </li>
+                <li>
+                    <strong>Kundenbefragung</strong> – Es bietet sich die Möglichkeit Kunden, Freunde und Kollegen zu
+                    befragen, mit welchen Suchbegriffen sie die zu optimierende Website suchen würden.
+                </li>
+                <li>
+                    <strong>Wettberwerbsanalyse</strong> – Oftmals findet man bei der Konkurrenz im HTML-Quellcode im
+                    Metatag mit dem Attribut <code>name="Keywords"</code> die Keywords, die sie verwendet haben.
+                    Suchmaschinen berücksichtigen dieses Metatag heute nicht mehr, da er in der Vergangenheit zu stark
+                    missbraucht wurde.
+                </li>
+                <li>
+                    <strong>Freie Online-Tools</strong> – welche häufig gesuchten Begriffe und deren verwandten anzeigen
+                </li>
+                <li>
+                    <strong>Kostenpflichtige Keyword-Datenbanken</strong>
+                </li>
+            </list>
+        </chapter>
+        
+        <chapter title="KEI (Keyword Effectiveness Index)" id="keywords-key">
+            <p>
+                In den meisten Fällen ist es unmöglich, eine Website für alle gefundenen relevanten Keyword-Paare zu
+                optimieren. Mit der Formel des sog. KEI lässt sich die Relevanz eines Keywords berechnen, um eine
+                bessere Auswahl zu treffen.
+            </p>
+
+            <code-block lang="tex">
+                \begin{equation}
+                KEI=\frac{P^2}{C}*1000
+                \end{equation}
+            </code-block>
+
+            <list>
+                <li>
+                    <code>P</code> ist die Popularität eines Keywords (= durchschnittliche Suchanfragen pro Monat)
+                </li>
+                <li>
+                    <code>C</code> steht für die Konkurrenz (= Zahl der Seiten, die eine Suchmaschine für das Keyword insgesamt findet
+                </li>
+                <li>Die Multiplikation mit <code>1000</code> ist, um zu viele Kommastellen zu vermeiden</li>
+            </list>
+        </chapter>
+        
+        <chapter title="Das Suchvolumen" id="keywords-suchvolumen">
+            <p>
+                Eine Webseite sollte niemals für bestimmte Keywords optimiert werden, ohne deren Suchvolumen zu kennen.
+                Denn der Optimierungsaufwand könnte sich auch nicht lohnen. Um das Suchvolumen zu ermitteln, muss
+                folgendes beachtet werden:
+            </p>
+
+            <list>
+                <li>
+                    Dad von Google angegebene Suchvolumen ist deutlich kleiner als der wirkliche wert, da Suchende
+                    durchschnittlich den Suchbegriff zweimal eingeben.
+                </li>
+                <li>
+                    Es ist sinnvoller das jährliche Suchvolumen eines Begriffes zu ermitteln, da das Suchvolumen bei den
+                    meisten Keywords größeren saisonalen Schwankungen unterworfen ist.
+                </li>
+            </list>
+
+            <p>
+                Für jedes Keyword, für das die Seite optimiert werden soll, soll zunächst das Marktpotenzial analysiert
+                werden und dann ob sich der Optimierungsaufwand lohnt. Mit Google Trends bekommt man einen relativen
+                Wert in Prozent des Suchvolumens eines Keywords.
+            </p>
+            <p>
+                Allgemein ist zu empfehlen die Keyword-Optimierung einer Webseite je nach Begriff und
+                Konkurrenzsituation auf 1 bis 3 Begriffen zu beschränken.
+            </p>
+        </chapter>
+    </chapter>
+
+    <chapter title="Content" id="content">
+        <p>
+            Seit dem Hummingbird-Update ist Google in der Lage, den Inhalt einer Website zu „verstehen“ und dessen
+            Qualität zu bestimmen. Google selbst betont nun auch, dass die Content-Qualität ein wichtiges Rankingsignal
+            ist und steht heute bei der Gewichtung sogar ganz oben. Dabei sollte man folgendes beachten:
+        </p>
+
+        <list>
+            <li>Sind die Informationen vertrauenswert?</li>
+            <li>Ist der Inhalt interessant und nützlich?</li>
+            <li>Wird das Thema umfassend fundiert behandelt?</li>
+            <li>Bietet die Website einen gewissen Mehrwert für den Nutzer?</li>
+        </list>
+
+        <p>
+            Das gog. Search Quality Team von Google beurteilt Webseiten manuelle auf der Basis der inzwischen
+            offengelegten Search Quality Rating Guidelines und kann Seiten auch manuell herabstufen oder hochstufen.
+        </p>
+
+        <chapter title="Der Content und die Suchintention" id="content-suchintention">
+            <p>
+                Der Content muss optimal zur Suchintention passen:
+            </p>
+
+            <list>
+                <li>
+                    <p><strong>Know</strong></p>
+                    
+                    <list>
+                        <li>Ausführliche Produktbeschreibung</li>
+                        <li>Redaktionelle Beiträge</li>
+                        <li>Blogbeiträge</li>
+                        <li>How-tos (genaue Anleitung, wie etwas gemacht wird) Whitepapers im PDF-Format</li>
+                        <li>Enzyklopädien Info-Grafiken Videos</li>
+                    </list>
+                </li>
+                <li>
+                    <p><strong>Know simple</strong></p>
+                    
+                    <list>
+                        <li>Glossar</li>
+                        <li>Wiki-Seiten</li>
+                        <li>Speziell hervorgehobene Definitionen oder Kurzerläuterungen</li>
+                    </list>
+                </li>
+                <li>
+                    <p><strong>Do (non-commercial)</strong></p>
+                    
+                    <list>
+                        <li>
+                            Der passende Content ist abhängig von der Art der Aktion.
+                        </li>
+                        <li>
+                            Die Elemente der Webseite, die die Aktion ermöglichen, sollten weit oben platziert und
+                            deutlich beschriftet werden.
+                        </li>
+                    </list>
+                </li>
+                <li>
+                    <p><strong>Do (commercial)</strong></p>
+
+                    <list>
+                        <li>
+                            Die Landingpage muss das unmittelbare Kaufinteresse deutlich unterstützen, z.B. durch
+                            Elemente wie Warenkorb, Bestell- oder Kauf-Buttons, Preisangabe ...
+                        </li>
+                    </list>
+                </li>
+                <li>
+                    <p><strong>Visit-in-Person</strong></p>
+
+                    <list>
+                        <li>Ortsinformationen, Anfahrtsbeschreibung, Öffnungszeiten ...</li>
+                    </list>
+                </li>
+                <li>
+                    <p><strong>Website (navigational)</strong></p>
+
+                    <list>
+                        <li>Eine geeignete Landingpage auf die einen Domain- und Markennamen optimiert werden.</li>
+                    </list>
+                </li>
+            </list>
+        </chapter>
+
+        <chapter title="Textoptimierung mit WDF und IDF" id="content-textoptimierung">
+            <p>
+                Die Keyworddichte (KD) beschreibt wie häufig ein Term (Wort- oder Wortkombination) in einem Dokument
+                bezogen auf die Gesamtzahl aller Terme vorkommt.
+            </p>
+
+            <code-block lang="tex">
+                \begin{equation}
+                    KD(i) = \frac{Freq(i, j)}{L} * 100
+                \end{equation}
+            </code-block>
+
+            <list>
+                <li><code>i</code> = Wort</li>
+                <li><code>j</code> = Dokument</li>
+                <li><code>L</code> = Gesamtzahl der Wörter in Dokument <code>j</code></li>
+                <li><code>Freq(i,j)</code> = Häufigkeit des Worts <code>i</code> im Dokument <code>j</code></li>
+            </list>
+
+            <chapter title="Das Konzept Within Document Frequency WDF" id="content-wdf">
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="Webpage" id="webpage">
+        <chapter title="Struktur und Layout" id="webpage-struktur">
+            <p>
+                Der Bereich einer Seite der anfangs, ohne zu scrollen sichtbar ist, wird als „above the fold“
+                bezeichnet. Dieser Bereich bietet besonders starke Rankingsignale.
+            </p>
+        </chapter>
+
+        <chapter title="HTML-Quellcode" id="webpage-quellcode">
+            <p>
+                Google Robots sind nicht so gut wie unsere Browser, so können Seiten, bei denen der Sließtag vergessen
+                wurde nicht gut analysiert werden. Somit ist es wichtig validen HTML-Code zu haben. Dieser kann mit dem
+                W3C-Validator kostenlos geprüft werden. Neue Projekte sollten bestens in HTML5 umg ersetzt werden. Auch
+                die Struktur soll semantisch sinnvoll gestaltet werden beispielsweiße eine richtige Ordnung der
+                <code>&lt;h1&gt;</code>- bis <code>&lt;h6&gt;</code>-Überschriften. Die Keyword-Verteilung: Seitentitel
+                (max. 55 Zeichen), Überschriften, Meta-Description (max. 320 Zeichen), Hervorhebungen im Text
+                <code>&lt;strong&gt;</code> <code>&lt;em&gt;</code>, <code>alt</code>-Attribute und generell gilt auch
+                je weiter oben (im HTML-Quellcode), desto höher werden sie gewichtet.
+                <code>&lt;meta name="robots" content= "noindex, nofollow"&gt;</code> - mit <code>noindex</code> wird die
+                Seite von dem Robot nicht indexiert, mit <code>nofollow</code> folgt der Robot der seite nicht.
+                <code>&lt;meta name="revisit-after" content=”30 days"&gt;</code> - Mit diesem Metatag kann man einer,
+                Suchmaschine vorschlagen in welchem Rhythmus sie die Seite wieder besuchen soll. Dies ist jedoch nur ein
+                Vorschlag und wird nicht unbedingt von der Suchmaschine verwendet.
+            </p>
+        </chapter>
+
+        <chapter title="Eingebundene Dateien" id="webpage-files">
+            <list>
+                <li>
+                    Bei Bildern die niedrigste sinnvolle Auflösung und das geeignetste Dateiformat verwenden, um beste
+                    Ladezeiten zu erzielen. Auch im <code>title</code>-Attribut für Tooltips und im
+                    <code>alt</code>-Attribut für den Alternativtext lassen sich Keywords platzieren. Der
+                    <code>&lt;figure&gt;</code>-Tag kann für Bildbeschreibungen verwendet werden und sendet ein
+                    positives Rankingsignal.
+                </li>
+                <li>
+                    Video Sitemaps
+                </li>
+                <li>
+                    Je weniger JS- und CSS-Dateien, desto besser, da jede eigene Datei einen eigenen http request
+                    erfordert und dies die Ladezeiten erhöht. Mit GZIP können die Dateien auch nochmals komprimiert
+                    werden.
+                </li>
+            </list>
+        </chapter>
+
+        <chapter title="OnePager" id="webpage-onepager">
+            <p>
+                Sogenannte OnePager sind relativ schwer für Suchmaschinen zu optimieren, daher ist von denen abzuraten.
+                Möchte man darauf trotzdem nicht verzichten so ist es am besten, wenn man auf der ganzen Seite sich auf
+                ein zentrales Thema fokussiert und am Anfang eine Navigation gestaltet die mit Links auf die einzelnen
+                Abschnitte verweist.
+            </p>
+        </chapter>
+
+        <chapter title="Optimierung für Mobile Geräte" id="webpage-mobile">
+            <list>
+                <li>
+                    Die Darstellungsgröße der Website muss sich so anpassen, dass der Benutzer nicht Zoomen oder
+                    seitlich scrollen muss. Texte lassen sich ohne Zoomen lesen.
+                </li>
+                <li>
+                    Die Abstände zwischen Hyperlinks sind so groß, dass der Benutzer den Link nicht verfehlt.
+                </li>
+                <li>
+                    Vermeiden von Flash da wenige Geräte diese Technologie unterstützen.
+                </li>
+                <li>
+                    Es gibt auch verschiedene Frameworks welche die Optimierung für mobile Geräte unterstützen:
+                    Bootstrap, Foundation, UIkit, AMP. Google bietet ein webbasiertes Testtool, um die Website auf
+                    Mobiltauglichkeit zu testen
+                </li>
+            </list>
+        </chapter>
+    </chapter>
+
+    <chapter title="Site, Server &amp; Domain" id="site-server-domain">
+        <p>
+            Es besteht die Möglichkeit verschiedene Domains zu die relevante Keywords enthalten. Doch Google erkennt
+            Duplikate und HTTP-Redirects und indexiert immer nur eine Kopie. Wenn man sich trotzdem für mehrere Domains
+            entscheidet, ist die beste Lösung für jedes Produkt eine einzelne Domain zu erstellen.
+        </p>
+        <p>
+            Es lohnt sich nur eine einzigartige Website unter einer neuen Subdomain oder neuem Hostname zu betreiben.
+        </p>
+        <p>
+            Parameter in der URL sollen vermieden werden, hier eignen sich eher Keywords direkt nach dem
+            <code>/</code>-Zeichen durch einen Bindestrich getrennt. URLs mit Keywords in Form einer Verzeichnisstruktur
+            sollten vermieden werden: <code>/elektro/kuechengeraete/Kaffeemaschine/Philips</code>
+        </p>
+        <p>
+            Moderne Webtechnologien verzichten auf Session-IDs wo die Parameter in der URL übergeben werden und arbeiten
+            stattdessen mit Cookies.
+        </p>
+        <p>
+            Durch eine <code>.htaccess</code> lasst sich sogenanntes URL-Rewriting betreiben. Mit regulären Ausdrücken
+            kann die URL umgeschrieben werden und somit suchmaschinenfräundlichere Links erstellen.
+        </p>
+
+        <chapter title="Verlinkungsstruktur" id="site-server-domain-verlinkungsstruktur">
+            <p>
+                Die Verlinkungsstruktur einer Website hat großen Einfluss auf das Ranking bei Google. Seiten die nahe
+                bei der Startseite verlinkt sind (= ein bis zwei Klicks entfernt) werden höher gelistet, als jene bei
+                denen es drei oder mehr Klicks benötigt, um sie zu erreichen.
+            </p>
+            <p>
+                Die Startseite hat in der Regel den höchsten PageRank Wert. Je mehr Klicks die Unterseite von der
+                Startseite entfernt ist, desto weniger PageRank erbt sie von ihr.
+            </p>
+        </chapter>
+
+        <chapter title="Duplicate Content" id="site-server-domain-duplicate-content">
+            <p>
+                Content der Doppelt vorkommt auch Duplicate Content oder Dubletten genannt ist nicht unbedingt schlimm.
+                Gefährlich wird es nur bei gezieltem Manipulationsversuch, z.B. wenn versucht wird, über duplizierten
+                Content auf Unmengen von Seiten eine erhöhte Visibility zu erreichen.
+            </p>
+            <p>
+                Mit dem Tag <code>&lt;link rel="canonical" href="http://www.example.com/original.html"&gt;</code> auf
+                der Kopie-Seite kann man Suchmaschinen mitteilen, welche die Originalseite ist. Dieser Tag sollte
+                möglichst weit oben im <code>head</code>-Tag platziert werden.
+            </p>
+        </chapter>
+
+        <chapter title="Schnelligkeit und Verfügbarkeit einer Website " id="site-server-domain-schnelligkeit">
+            <p>
+                Google misst die Performance, d.h. Ladezeiten und auch die Verfügbarkeit und Erreichbarkeit sehr genau
+                und führt darüber eine Statistik. Mit dem Tool Google Page Speed Analyzer können die Ladezeiten gemessen
+                werden. Hierbei sollte man 90/100 Punkten anstreben.
+            </p>
+        </chapter>
+
+        <chapter title="HTTPS" id="site-server-domain-https">
+            <p>
+                HTTPS verfügt gegenüber des HTTP-Protokolls eine hochkomplexe Verschlüsselungs- und
+                Authentifizierungstechnologie. Auch dies wertet Google als positives Rankingkriterium.
+            </p>
+        </chapter>
+
+        <chapter title="Die Steuerdatei robots.txt" id="site-server-domain-robots">
+            Suchmaschinen öffnen beim Besuch einer Webseite zunächst die <code>robots.txt</code>-Datei und befolgen die
+            dort angegebenen Anweisungen. Hierbei kann den Robots verboten werden bestimmte Verzeichnisse zu crawlen
+            oder Dateien zu öffnen.
+        </chapter>
+    </chapter>
+
+    <chapter title="Backlinks" id="backlinks">
+        <p>
+            Links sind und bleiben der wichtigste Rankingfaktor. Zu erfolgreichem Backlink-Management gehört:
+        </p>
+        
+        <list>
+            <li>
+                <strong>Backlink-Analyse</strong> – ein natürliches Linkprofiel zeichnet sich durch Vielfalt aus: eine 
+                dem Durchschnitt weitgehend entsprechende Verteilung von Follow- und Nofollow-Links sowie von Links auf 
+                die Startseite und von Links zu Unterseiten (Deep Links).
+            </li>
+            <li>
+                <p><strong>Backlink-Aufbau</strong></p>
+                
+                <list>
+                    <li>
+                        Quellen: Links von Authority Websites, Links von thematisch verwandten Websites, Links aus
+                        Webverzeichnissen, Nofollow-Links aus Foren und Blogs, hochwertiger Linktausch, Links aus
+                        sozialen Netzwerken.
+                    </li>
+                    <li>
+                        Ein kontinuierlicher Linkwachstum spricht für ein anhaltendes Interesse, eine Verlangsamung
+                        hingegen deuten darauf hin, dass Inhalte einer Website weniger relevant werden.
+                    </li>
+                    <li>
+                        Je weniger ausgehende Links auf einer Seite stehen, desto mehr PageRank wird vererbt, da die
+                        Zahl der ausgehenden Links in der PageRank-Formel im Nenner steht.
+                    </li>
+                </list>
+            </li>
+            <li>
+                <strong>Backlink-Entfernung</strong>
+            </li>
+            <li>
+                <p><strong>Optimierung von Ankertexten</strong> – Ankertexttypen:</p>
+
+                <list>
+                    <li>
+                        URLs – URL-Ankertexte sind für Google ein Indiz für natürliche Links, da dies unter Webmastern,
+                        Webdesignern und Webautoren eine verbreitete Methode der Verlinkung ist.
+                    </li>
+                    <li>
+                        Markenbegriffe – wie auch der Name der Webseite und oder Domain. Mit Markenbegriffen sollte man
+                        Vorsichtig sein und es damit nicht übertreiben, aber such sie zeichnen ein natürliches
+                        Linkprofiel aus.
+                    </li>
+                    <li>
+                        Kombination aus Markenbegriffen und Keywords – sind ein Indiz für ein unnatürliches Linkprofiel
+                    </li>
+                    <li>
+                        Sonstige Begriffe – sind einem völlig natürlich und werden von Google als Indiz für ein
+                        natürliches Linkprofiel gewertet.
+                    </li>
+                </list>
+            </li>
+        </list>
+    </chapter>
+
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <strong>(BUCH)</strong>
+            978-1791642211, SEO Praxisbuch, Thorsten Schneider, Independently published, 2018-12-13
+        </tip>
+    </chapter>
 </topic>

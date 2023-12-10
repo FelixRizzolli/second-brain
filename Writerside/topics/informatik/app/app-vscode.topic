@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="VSCode" id="app-vscode">
+    <show-structure for="chapter,procedure" depth="2"/>
+
+    <chapter title="Grundlegendes" id="basics">
+        <chapter title="CLI" id="basics-cli">
+            <table style="header-row">
+                <tr>
+                    <td>Befehl</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>code .</code></td>
+                    <td>Öffnet VSCode im aktuellen Verzeichnis der CL.</td>
+                </tr>
+                <tr>
+                    <td><code>code [path]</code></td>
+                    <td>Öffnet VSCode in einem bestimmten Verzeichnis.</td>
+                </tr>
+                <tr>
+                    <td><code>code [file]</code></td>
+                    <td>Öffnet VSCode mit einer bestimmten Datei.</td>
+                </tr>
+                <tr>
+                    <td><code>code -v</code></td>
+                    <td>Gibt die Versionsnummer von VSCode aus</td>
+                </tr>
+                <tr>
+                    <td><code>code --status</code></td>
+                    <td>Gibt diagnostische Informationen über VSCode aus.</td>
+                </tr>
+            </table>
+        </chapter>
+
+        <chapter title="Personalisierung" id="basics-personalisierung">
+            <img src="app_vscode_peronalisierung.png" alt="VSCode Personalisierung" />
+
+            <p>
+                VSCode bietet unzählige Personalisierungsmöglichkeiten.
+            </p>
+
+            <chapter title="Color Theme" id="basics-color-theme">
+                <p>
+                    Die in der Benutzeroberfläche von VSCode sichtbaren Farben fallen in zwei Kategorien:
+                </p>
+
+                <list>
+                    <li>
+                        <strong>Workbench Farben</strong>, die in Ansichten und Editoren verwendet werden, von der
+                        Aktivitätsleiste bis zur Statusleiste.
+                    </li>
+                    <li>
+                        <strong>Syntaxfarben und Stile</strong>, die für den Quellcode im Editor verwendet werden. Die
+                        Thematisierung dieser Farben ist unterschiedlich, da die Syntaxeinfärbung auf
+                        TextMate-Grammatiken und TextMate-Themen sowie auf semantischen Token basiert.
+                    </li>
+                    <li></li>
+                </list>
+
+                <p>
+                    Auf dieser Website werden mehrere Themes gegenübergestellt:
+                    <a href="https://vscodethemes.com/">https://vscodethemes.com/</a>
+                </p>
+            </chapter>
+
+            <chapter title="File Icon Theme" id="basics-file-icon-theme">
+                <p>
+                    Visual Studio Code zeigt in der gesamten Benutzeroberfläche Symbole neben den Dateinamen an, und
+                    Erweiterungen können neue Sets von Dateisymbolen beisteuern, aus denen der VSCode-Benutzer wählen
+                    kann. Das IconSet <code>vscode-icons</code> bietet beispielsweise ein breiteres Set an Icons wie der
+                    Standard, welches den Explorer übersichtlicher gestaltet:
+                    <a href="https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons">
+                        https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons
+                    </a>
+                </p>
+            </chapter>
+
+            <chapter title="Product Icon Theme" id="basics-product-icon-theme">
+                <p>
+                    Visual Studio Code enthält eine Reihe von integrierten Symbolen, die in Ansichten und im Editor
+                    verwendet werden, aber auch in Hover-Fenstern, in der Statusleiste und sogar in Erweiterungen
+                    referenziert werden können. Beispiele dafür sind die Symbole in Filteraktionsschaltflächen und
+                    Ansichtssymbolen, in der Statusleiste, Haltepunkten und den Faltungssymbolen in Bäumen und im
+                    Editor.
+                </p>
+                <p>
+                    Ein Product Icon Theme ermöglicht es einer Erweiterung, diese Symbole neu zu definieren, um VSCode
+                    ein benutzerdefiniertes Aussehen zu geben. Nicht abgedeckt durch Produktsymbolthemen sind die
+                    Dateisymbole (abgedeckt durch Dateisymbolthemen) und Symbole, die von Erweiterungen beigetragen
+                    werden.
+                </p>
+            </chapter>
+
+            <chapter title="Fonts &amp; Ligatures" id="basics-fonts-ligatures">
+                <p>
+                    Programmierer verwenden eine Vielzahl von Symbolen, die oft mit mehreren Zeichen kodiert sind. Für
+                    das menschliche Gehirn sind Sequenzen wie <code>-&gt;</code>, <code>&lt;=</code> oder
+                    <code>:=</code> einzelne logische Token, auch wenn sie zwei oder drei Zeichen auf dem Bildschirm
+                    einnehmen. Ihr Auge wendet eine Menge Energie auf, um mehrere Zeichen zu scannen, zu analysieren und
+                    zu einem einzigen logischen Zeichen zu verbinden. Idealerweise sollten alle Programmiersprachen mit
+                    vollwertigen Unicode-Symbolen für Operatoren ausgestattet sein, aber das ist noch nicht der Fall.
+                </p>
+                <p>
+                    Fira Code ist ein kostenloser Monospaced-Font mit Ligaturen für gängige Mehrzeichenkombinationen in
+                    der Programmierung. Dies ist nur eine Funktion zur Darstellung der Schriftart: Der zugrunde liegende
+                    Code bleibt ASCII-kompatibel. Dies hilft, den Code schneller zu lesen und zu verstehen. Für einige
+                    häufige Sequenzen wie <code>..</code> oder <code>//</code> ermöglichen Ligaturen die Korrektur der
+                    Abstände.
+                </p>
+
+                <img src="app_vscode_firacode.png" alt="FiraCode" width="500" />
+
+                <p>
+                    Hier zur Installationsanleitung:
+                    <a href="https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions">
+                        https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions
+                    </a>
+                </p>
+            </chapter>
+
+            <chapter title="Bracket Colorizer" id="basics-bracket-colorizer">
+                <img src="app_vscode_bracket_pair_colorizer.png" alt="Bracket Pair Colorizer" />
+
+                <p>
+                    Beim Umgang mit tief verschachtelten Klammern in Visual Studio Code kann es schwierig sein,
+                    herauszufinden, welche Klammern zusammenpassen und welche nicht.
+                </p>
+                <p>
+                    Um dies zu vereinfachen, entwickelte ein Benutzer namens CoenraadS im Jahr 2016 die großartige
+                    Bracket Pair Colorizer-Erweiterung zur Einfärbung übereinstimmender Klammern und veröffentlichte sie
+                    auf dem VS Code Marketplace. Diese Erweiterung wurde sehr beliebt und ist jetzt eine der 10 am
+                    häufigsten heruntergeladenen Erweiterungen auf dem Marketplace, mit über 6 Millionen Installationen.
+                    Um Leistungs- und Genauigkeitsprobleme zu beheben, legte CoenraadS 2018 mit Bracket Pair Colorizer
+                    2 nach, der mittlerweile ebenfalls über 3 Millionen Installationen hat.
+                </p>
+                <p>Im August 2021 wurde diese Eigenschaft in VSCode nativ implementiert.</p>
+
+                <list style="decimal">
+                    <li>
+                        <code>File Menu</code>
+                        <img src="right_arrow_3d.png" alt="right arrow" width="24"/>
+                        <code>Preferences</code>
+                        <img src="right_arrow_3d.png" alt="right arrow" width="24"/>
+                        <code>Settings</code>
+                    </li>
+                    <li>
+                        Nach dem Begriff <code>bracketPair</code> suchen
+                    </li>
+                    <li>
+                        <p>
+                            Die Checkbox anklicken, um Bracket Pair Colorization zu aktivieren:
+                        </p>
+                        <img src="app_vscode_bracket_pair_colorizer_search.png" alt="Bracket Pair Suche" />
+                    </li>
+                </list>
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="File Explorer" id="fileexplorer">
+        <table>
+            <tr>
+                <td>Shortcut</td>
+                <td>Beschreibung</td>
+            </tr>
+            <tr>
+                <td><code>CTRL</code>+<code>S</code></td>
+                <td>Speichert die Änderungen an einer Datei.</td>
+            </tr>
+            <tr>
+                <td><code>CTRL</code>+<code>W</code></td>
+                <td>Schließt eine Datei</td>
+            </tr>
+            <tr>
+                <td><code>CTRL</code>+<code>B</code></td>
+                <td>Öffnet und schließt den File Explorer</td>
+            </tr>
+        </table>
+        
+        <chapter title="Views" id="fileexplorer-views">
+            <p>
+                Im Explorer gibt es mehrere Views welche aktiviert und (bis auf die Folders-View) deaktiviert werden
+                können.
+            </p>
+            
+            <img src="app_vscode_fileexplorer_views.png" alt="FileExplorer Views" />
+
+            <p>
+                VSCode erkennt Scripts von Build Tools wie <code>npm</code>, <code>typescript</code>,
+                <code>gulp</code>, <code>docker</code> ... und erstellt dafür automatisch eigene Tasks. Hierbei
+                erscheint ein eigenes Panel im Explorer für in diesem Beispiel <code>NPM Scripts</code>.
+            </p>
+
+            <chapter title="Open Editors" id="fileexplorer-views-openeditors">
+                <img src="app_vscode_fileexplorer_views_openeditors.png" alt="FileExplorer Open Editors" />
+                
+                <list>
+                    <li>
+                        <code>New Untitled Text File</code> – Das Shortcut hierfür wäre <code>CTRL</code>+<code>N</code>
+                    </li>
+                    <li>
+                        <code>Toggle Vertical/Horizontal Editor Layout</code> – Das Shortcut hierfür wäre
+                        <code>SHIFT</code>+<code>ALT</code>+<code>0</code>
+                    </li>
+                    <li>
+                        <code>Save All</code>
+                    </li>
+                    <li>
+                        <code>Close All Editors</code>
+                    </li>
+                </list>
+            </chapter>
+
+            <chapter title="Folders" id="fileexplorer-views-folders">
+                <img src="app_vscode_fileexplorer_views_folders.png" alt="FileExplorer Folders"/>
+                
+                <list>
+                    <li>
+                        <code>New File...</code>
+                    </li>
+                    <li>
+                        <code>New Folder...</code>
+                    </li>
+                    <li>
+                        <code>Refresh Explorer</code>
+                    </li>
+                    <li>
+                        <code>Collapse Folders in Explorer</code>: ein unterbewertetes Feature - kann häufig sehr
+                        nützlich sein
+                    </li>
+                </list>
+            </chapter>
+        </chapter>
+
+        <chapter title="Unsichtbare Dateien und Ordner" id="unsichtbare-dateien-ordner">
+            <p>
+                In VSCode können Dateien und Order im Explorer ausgeblendet werden. Beispielsweise wird standardmäßig
+                das <code>.git</code>-Verzeichnis sowie einige andere ausgeblendet. Um diese Konfiguration zu ändern
+                werden die Einstellungen geöffnet <code>CTRL</code>+<code>,</code> und nach <code>Files: Exclude</code> 
+                gesucht:
+            </p>
+            
+            <img src="app_vscode_fileexplorer-exclude.png" alt="FileExplorer Exclude"/>
+        </chapter>
+
+        <chapter title="Auto-Directory" id="auto-directory">
+            <img src="app_vscode_autodirectory.png" alt="FileExplorer Auto-Directory"/>
+
+            <p>
+                In diesem Beispiel wird der Ordner <code>tabTest</code> und die folglich darin enthaltene Datei
+                <code>RICOTabTest.tsx</code> erstellt.
+            </p>
+        </chapter>
+
+        <chapter title="Nach Referenzen suchen" id="referenzen">
+            <chapter title="Suche im Workspace" id="referenzen-workspace">
+            </chapter>
+
+            <chapter title="Suche &amp; Springe zu ..." id="referenzen-jump">
+            </chapter>
+
+            <chapter title="Peek" id="referenzen-peek">
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="IntelliSense" id="intellisense">
+        <chapter title="Typen" id="intellisense-typen">
+        </chapter>
+
+        <chapter title="Autocomplete" id="intellisense-autocomplete">
+        </chapter>
+    </chapter>
+
+    <chapter title="Mit Tastatur arbeiten – Keyboard Shortcuts" id="keyboard">
+
+        <chapter title="Keyboard Navigation" id="keyboard-navigation">
+        </chapter>
+    </chapter>
+
+    <chapter title="Bearbeitungstricks" id="edit">
+
+        <chapter title="Codeteile einklappen" id="edit-collapse">
+        </chapter>
+
+        <chapter title="Multi Cursor + Multiline Editing" id="edit-multi">
+        </chapter>
+
+        <chapter title="Linked Editing" id="edit-linked">
+        </chapter>
+
+        <chapter title="Safe Rename" id="edit-safe-rename">
+        </chapter>
+
+        <chapter title="Code Actions" id="edit-code-actions">
+        </chapter>
+    </chapter>
+
+    <chapter title="Emmet" id="emmet">
+        <chapter title="Beispiele für Emmet Anweisungen" id="emmet-beispiele">
+        </chapter>
+
+        <chapter title="Emmet Cheat Sheet" id="emmet-cheat-sheet">
+        </chapter>
+
+        <chapter title="Emmet Wrap Abbreviation" id="emmet-wrap-abbreviation">
+        </chapter>
+    </chapter>
+
+    <chapter title="Snippets" id="snippets">
+        <chapter title="Built-in snippets" id="snippets-builtin">
+        </chapter>
+
+        <chapter title="Extensions" id="snippets-extensions">
+        </chapter>
+
+        <chapter title="Custom Snippets" id="snippets-custom">
+        </chapter>
+    </chapter>
+
+    <chapter title="GitHub Copilot" id="github-copilot">
+        
+    </chapter>
+
+    <chapter title="IDE – Integrated Development Environment" id="ide">
+        <chapter title="Terminal &amp; Tasks" id="ide-terminal">
+            <chapter title="Task erstellen" id="ide-terminal-tasks-erstellen">
+            </chapter>
+
+            <chapter title="Task ausführen" id="ide-terminal-tasks-ausführen">
+            </chapter>
+
+            <chapter title="Build Tools" id="ide-terminal-buildtools">
+            </chapter>
+
+            <chapter title="Terminal" id="ide-terminal-terminal">
+            </chapter>
+        </chapter>
+    </chapter>
+    
+    <chapter title="Git &amp; GitLens" id="git">
+
+        <chapter title="GitHub" id="github">
+        </chapter>
+    </chapter>
+
+    <chapter title="Debugger" id="debugger">
+    </chapter>
+
+    <chapter title="HTTP Client" id="httpclient">
+    </chapter>
+
+    <chapter title="Quellen" id="quellen">
+    </chapter>
+</topic>
