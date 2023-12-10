@@ -152,7 +152,7 @@
                     </li>
                     <li>
                         <p>
-                            Die Checkbox anklicken um Bracket Pair Colorization zu aktivieren:
+                            Die Checkbox anklicken, um Bracket Pair Colorization zu aktivieren:
                         </p>
                         <img src="app_vscode_bracket_pair_colorizer_search.png" alt="Bracket Pair Suche" width="400" />
                     </li>
@@ -162,6 +162,25 @@
     </chapter>
 
     <chapter title="File Explorer" id="fileexplorer">
+        <table>
+            <tr>
+                <td>Shortcut</td>
+                <td>Beschreibung</td>
+            </tr>
+            <tr>
+                <td><code>CTRL</code>+<code>S</code></td>
+                <td>Speichert die Änderungen an einer Datei.</td>
+            </tr>
+            <tr>
+                <td><code>CTRL</code>+<code>W</code></td>
+                <td>Schließt eine Datei</td>
+            </tr>
+            <tr>
+                <td><code>CTRL</code>+<code>B</code></td>
+                <td>Öffnet und schließt den File Explorer</td>
+            </tr>
+        </table>
+        
         <chapter title="Views" id="fileexplorer-views">
             <chapter title="Open Editors" id="fileexplorer-views-openeditors">
             </chapter>
