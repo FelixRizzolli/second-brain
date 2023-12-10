@@ -182,10 +182,57 @@
         </table>
         
         <chapter title="Views" id="fileexplorer-views">
+            <p>
+                Im Explorer gibt es mehrere Views welche aktiviert und (bis auf die Folders-View) deaktiviert werden
+                können.
+            </p>
+            
+            <img src="app_vscode_fileexplorer_views.png" alt="FileExplorer Views" width="425"/>
+
+            <p>
+                VSCode erkennt Scripts von Build Tools wie <code>npm</code>, <code>typescript</code>,
+                <code>gulp</code>, <code>docker</code> ... und erstellt dafür automatisch eigene Tasks. Hierbei
+                erscheint ein eigenes Panel im Explorer für in diesem Beispiel <code>NPM Scripts</code>.
+            </p>
+
             <chapter title="Open Editors" id="fileexplorer-views-openeditors">
+                <img src="app_vscode_fileexplorer_views_openeditors.png" alt="FileExplorer Open Editors" />
+                
+                <list>
+                    <li>
+                        <code>New Untitled Text File</code> – Das Shortcut hierfür wäre <code>CTRL</code>+<code>N</code>
+                    </li>
+                    <li>
+                        <code>Toggle Vertical/Horizontal Editor Layout</code> – Das Shortcut hierfür wäre
+                        <code>SHIFT</code>+<code>ALT</code>+<code>0</code>
+                    </li>
+                    <li>
+                        <code>Save All</code>
+                    </li>
+                    <li>
+                        <code>Close All Editors</code>
+                    </li>
+                </list>
             </chapter>
 
             <chapter title="Folders" id="fileexplorer-views-folders">
+                <img src="app_vscode_fileexplorer_views_folders.png" alt="FileExplorer Folders" />
+                
+                <list>
+                    <li>
+                        <code>New File...</code>
+                    </li>
+                    <li>
+                        <code>New Folder...</code>
+                    </li>
+                    <li>
+                        <code>Refresh Explorer</code>
+                    </li>
+                    <li>
+                        <code>Collapse Folders in Explorer</code>: ein unterbewertetes Feature - kann häufig sehr
+                        nützlich sein
+                    </li>
+                </list>
             </chapter>
         </chapter>
 
