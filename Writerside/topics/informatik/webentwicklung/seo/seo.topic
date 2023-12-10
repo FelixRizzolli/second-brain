@@ -34,7 +34,7 @@
 
             <chapter title="Google" id="allgemeines-google">
                 <p>
-                    Sergey Brain und Larry Page suchten eine Lösung für das Problem, dass die Qualität der Suchergebnisse
+                    Sergey Brin und Larry Page suchten eine Lösung für das Problem, dass die Qualität der Suchergebnisse
                     immer weiter abnahm. Webseitenbetreiber verwendeten verschiedene Tricks, um ihre Seite in den
                     Suchergebnissen auf die oberen Plätze zu bringen, auch wenn diese für die von den Suchenden
                     eingegebenen Suchbegriffe gar nicht relevant waren.
@@ -144,7 +144,235 @@
     </chapter>
 
     <chapter title="Das Ranking" id="ranking">
+        <p>
+            Nach eigenen Aussagen berücksichtigt Google bei der Relevanzberechnung heute mehr als 200 Rankingfaktoren
+            „Signale“. Sie gelten als Betriebsgeheimnis und die Rankingalgorythmen sowie Signale ändern sich ständig.
+            Dabei kann ihre Bedeutung variieren, neue hinzukommen und ältere wegfallen.
+        </p>
 
+        <chapter title="Die Relevanzberechnung" id="ranking-relevanzberechnung">
+            <p>
+                Ein offensichtlicher Ansatz ist dabei, im Suchindex nachzuschauen, auf welchen Webseiten das Suchwort
+                überhaupt vorkommt. Folgende Punkte gelten für die Relevanzberechnung:
+            </p>
+
+            <list>
+                <li>
+
+                </li>
+                <li>
+                    <p>
+                        <strong>Häufigkeit des Suchbegriffs</strong> – kommt der Suchbegriff häufiger vor, so wird
+                        angenommen, dass das Dokument relevanter ist. Hervorhebungen – die Relevanz steigt durch
+                        Hervorhebung des Suchworts mittels entsprechenden HTML-Tags
+                    </p>
+
+                    <list>
+                        <li>
+                            Dokumenttitel <code>&lt;title&gt;</code>
+                        </li>
+                        <li>
+                            Überschriften <code>&lt;h1&gt;</code> bis <code>&lt;h6&gt;</code>
+                        </li>
+                        <li>
+                            Hervorhebung im Fließtext <code>&lt;strong&gt;</code>, <code>&lt;b&gt;</code>... In
+                            Auflistungen <code>&lt;li&gt;</code>
+                        </li>
+                        <li>
+                            In Hyperlinks <code>&lt;a&gt;</code>
+                        </li>
+                    </list>
+                </li>
+                <li>
+                    <strong>Position innerhalb des Dokuments</strong> – weiter oben im Fließtext = relevanter
+                </li>
+                <li>
+                    <strong>Kombination</strong> – Besonders relevant wird ein Dokument, wenn diese Kriterien kombiniert
+                    werden.
+                </li>
+                <li>
+                    <strong>Innerhalb der URL</strong> – im Domain-, Verzeichnis- oder Dateinamen
+                </li>
+            </list>
+
+            <p>
+                Der Webentwickler kann im HTML-Quellcode die Keywords unsichtbar machen und häufig wiederholen. Dadurch
+                ist es einfach Suchergebnisse zu manipulieren. Die beiden Google-Gründer Larry Page und Sergey Brin
+                entwickelten ein Konzept, welches die Lösung für dieses Problem darstellte: Das PageRank-Verfahren.
+            </p>
+        </chapter>
+
+        <chapter title="Das PageRank-Verfahren" id="ranking-pagerank">
+            <p>
+                Googles Hypothese war es: die Verlinkung der Webseiten im WWW für die Relevanzberechnung zu
+                berücksichtigen liefert bessere Resultate als herkömmliche Suchmaschinen. So sollen Webseiten, auf die
+                sehr viele andere Seiten verlinken, die eine hohe Zahl eingehender Links (sog. Backlinks) hat, besonders
+                gut und nützlicher sein als Webseite, auf die selten verlinkt wird. Die Link Popularity die absolute
+                Zahl der auf eine Webseite verweisenden Hyperlinks.
+            </p>
+            <p>
+                Ein ähnliches Prinzip existierte bereits: der Certification Index – wie häufiger eine wissenschaftliche
+                Publikation zitiert wurde als umso wichtiger galt sie.
+            </p>
+
+            <chapter title="Der Zufallssurfer" id="ranking-pagerank-zufallssurfer">
+            </chapter>
+
+            <chapter title="PageRank Ermitteln" id="ranking-pagerank-ermitteln">
+                <p>
+                    In der Google-Toolbar wurde früher eine Form des PagRank-Wertes angezeigt. Er wurde Toolbar-PageRank
+                    genannt. Er basiert auf einer logarithmischen Skala und zeigte werte von 0 bis 10 an. Diese Funktion
+                    wurde jedoch eingestellt.
+                </p>
+                <p>
+                    Es gibt immer noch Drittanbieter, welche mit eigenen Methoden einem dem Google Toolbar PageRank
+                    ähnlichen Wert ermitteln, um die Suchmaschinenoptimierung zu erleichtern.
+                </p>
+            </chapter>
+
+            <chapter title="Weiterentwicklung des PageRank-Verfahrens" id="ranking-pagerank-weiterentwicklung">
+                <p>
+                    Das PageRank-Verfahren ist nicht zu 100 % robust gegen Manipulationen und es wurde viel Linkspam
+                    betrieben, um einen besseren Platz auf der SERP zu erzielen. Es wurden Linkfarmen betrieben, deren
+                    Zweck daran Bestand, durch hundertfache Verlinkungen von Websites und Webseiten untereinander den
+                    PageRank einzelner Seiten zu erhöhen.
+                </p>
+                <p>
+                    Um dem entgegenzuwirken, berücksichtigt Google nun weitere Kriterien und hat folgende Konzepte
+                    entwickelt.
+                </p>
+
+                <list>
+                    <li>
+                        <p>
+                            <strong>Die Distanz zwischen Webseiten</strong> – folgende Verlinkungen werden weniger stark
+                            gewichtet
+                        </p>
+
+                        <list>
+                            <li>Links innerhalb einer Webseite.</li>
+                            <li>Verlinkte Websites auf demselben Server</li>
+                            <li>Verlinkte Websites in naheliegender geografischer Region (ermittelt durch IP)</li>
+                        </list>
+                    </li>
+                    <li>
+                        <strong>Die Domain Popularity</strong> – ersetzt weitgehend das Konzept der Link Popularity.
+                        Nicht mehr die absolute Zahl der eingehenden Links (Backlinks) ist entscheidend, sondern die
+                        Zahl der eingehenden Links von unterschiedlichen Domains.
+
+                    </li>
+                    <li>
+                        <strong>Die thematische Nähe</strong> – Mit der einführung des „Reasonable Surfer“ erfolgt die
+                        Link-Auswahl des sog. „Zufallssurfers“ nicht mehr rein zufällig irgendeinen Link, sondern mit
+                        höherer Wahrscheinlichkeit einem link, der einen thematischen Bezug zu der Webseite. Zudem
+                        werden folgende Punkte beachtet: Hervorhebung eines Links (z.B. Links in Überschriften) und
+                        Position des Links innerhalb des Dokuments (weiter oben = besser).
+
+                    </li>
+                    <li>
+                        <strong>Der „intelligent Surfer“</strong> – Mit RankBrain ein KI-Algorythmus, in dem Google
+                        schon seit Jahren investiert, wird die Suche des sog. „Zufallssurfers“ menschlicher. Mit
+                        RankBrain werden gezielter Links aufgerufen welche einen Mehrwert darstellen und weiterführende
+                        oder ergänzende Informationen zum Thema der Webseite haben.
+                    </li>
+                </list>
+
+                <p>
+                    Ohne qualitativ hochwertige Backlinks von Websites, die selbst über viel PageRank und Trust
+                    verfügen, schafft es kaum eine Webseite auf die erste Ergebnisseite von Google und schon gar nicht
+                    auf die Top-Rankingplätze.
+                </p>
+            </chapter>
+        </chapter>
+
+        <chapter title="Trust und TrustRank" id="ranking-trust">
+            <p>
+                Mit dem Trust-Wert hat Google einen neuen Wert in sein Rankingsystem eingeführt, welcher Auskunft
+                gibt wie vertrauenswürdig die Informationen auf einer Website sind. <strong>TrustRank</strong> ist
+                ein an das PageRank-Verfahren angelehnter Algorithmus zur Bewertung der Qualität von Webseiten.
+            </p>
+            <p>
+                Besonders vertrauenswürdige Websites (<strong>Authority Domains</strong>) zeichnet aus, dass sie
+                sorgfältig von Hand gepflegt und aktualisiert werden, dass sie mit einer sehr geringen
+                Wahrscheinlichkeit auf schlechte Webseiten (z.B. Spamseiten) verlinken, jedoch mit hoher
+                Wahrscheinlichkeit auf gute nützliche Sites.
+            </p>
+            <p>
+                Seiten, die durch Linkkauf, Linktausch oder Linkfarmen einen unnatürlich hohen PageRank-Wert haben
+                bekommen einen niedrigen TrustRank-Wert.
+            </p>
+        </chapter>
+
+        <chapter title="Das BadRank-Konzept" id="ranking-badrank">
+            <p>
+                Mit dem BadRank hat Google einen neuen Wert eingeführt mit den Sites, welche gegen die
+                Suchmaschinenrichtlinien verstoßen, indem sie Backlinks verkaufen oder Linkfarmen betreiben. Verweisen
+                Links auf Seiten, die selbst einen hohen BadRank haben, erben die verlinkten Seiten von diesen BadRank.
+                Websites, von denen man BadRank erben kann, bezeichnet Google als <strong>bad neighborhood</strong>.
+            </p>
+        </chapter>
+
+        <chapter title="Lösung für Webspam" id="ranking-webspam">
+            <p>
+                Mit einem selbst lernenden Algorithmus im sog. <strong>Panda-Update</strong> versuchte Google gezielt
+                minderwertige Seiten bzw. Domains zu identifizieren und in den Suchergebnissen herunterzustufen:
+            </p>
+
+            <list>
+                <li>Eine geringe Menge an originalen Inhalten</li>
+                <li>Hoher Prozentsatz an doppelten Inhalten</li>
+                <li>Zu viel Werbung</li>
+                <li>Seiteninhalt und Seitentitel stimmen nicht mit der Suchanfrage überein</li>
+                <li>Unnatürlich häufiges Vorkommen eines Wortes auf einer Seite</li>
+            </list>
+
+            <p>
+                Im sog. <strong>Penguin-Update</strong> wurden Websites, die über viele minderwertige Backlinks
+                verfügten mit einem schlechteren Ranking bestraft. Davon waren stark Sites betroffen, die aggressiven
+                und unvernünftigen Linkaufbau betrieben haben. Mit dem Update auf die Version 4 – Real Time Penguin
+                wurde diese Abstrafung bzw. auch Erholung in Echtzeit eingeführt.
+            </p>
+            <p>
+                Mit dem <strong>Hummingbird-Update</strong> wurde ein komplett neuer Ansatz eingeführt: Es sind nicht
+                mehr unbedingt Seiten, die für die Keywords, die in einer Suche vorkommen, optimiert sind, sondern
+                Seiten, die auf die Suchanfrage sie beste Antwort geben. Hierfür werden Textinhalte auf intelligente
+                Art und Weise mithilfe von Algorithmen, die eine systematische Analyse vornehmen, untersucht.
+            </p>
+        </chapter>
+
+        <chapter title="RankBrain" id="ranking-rankbrain">
+            <p>
+                15 % aller Sucheingaben sind für Google neu. Um Suchanfragen noch besser zu verstehen, die komplexer
+                oder nicht eindeutig sind oder sie Google noch nie gesehen hat, wurde RankBrain eingeführt. RankBrain
+                setzt zusätzlich die Technik des maschinellen Lernens (machine learning) ein. Es besitzt die Fähigkeit,
+                aus jeder Analyse zu lernen und sich durch Erstellung neuer Verknüpfungen in seinem neuronalen Netz und
+                damit verbundenen durch Erzeugung neuer Algorithmen selbstständig, d.h. ohne menschliches Zutun von
+                Softwareentwicklern, weiterzuentwickeln. So wird RankBrain automatisch immer besser darin, Suchanfragen
+                zu verstehen und die Webseiten mit den besten Rankings zu belohnen, die für die Nutzer den besten
+                Nutzwert bieten.
+            </p>
+            <p>
+                Ziel von Seitenbetreibern muss sein, mit hochwertigem einzigartigem und nützlichem Content sowie mit
+                vorbildlicher Usability für das perfekte Nutzererlebnis zu sorgen.
+            </p>
+        </chapter>
+
+        <chapter title="Die wichtigsten Punkte" id="ranking-wichtig">
+            <table>
+                <tr>
+                    <td><strong>Content</strong></td>
+                    <td>Qualitativ hochwertiger und einzigartiger Content.</td>
+                </tr>
+                <tr>
+                    <td><strong>Backlinks</strong></td>
+                    <td>Hochwertige Backlinks, die selbst hohe PageRank- und Trust-Werte haben.</td>
+                </tr>
+                <tr>
+                    <td><strong>RankBrain</strong></td>
+                    <td>Hoher Nutzwert.</td>
+                </tr>
+            </table>
+        </chapter>
     </chapter>
 
     <chapter title="Die wichtigsten Signale" id="wichtigste-signale">
