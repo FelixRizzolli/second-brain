@@ -745,8 +745,25 @@
     </chapter>
 
     <chapter title="Generics" id="generics">
+        <p>
+            Generics ermöglichen die Erstellung von "Typvariablen", die zur Erstellung von Klassen, Funktionen und
+            yp-Aliase verwendet werden können, die die von ihnen verwendeten Typen nicht explizit definieren müssen.
+            Generics macht es einfacher, wiederverwendbaren Code zu schreiben.
+        </p>
 
         <chapter title="Funktionen" id="generics-funktionen">
+            <p>
+                Generics mit Funktionen helfen, verallgemeinerte Methoden zu erstellen, die die verwendeten und
+                zurückgegebenen Typen genauer darstellen. TypeScript kann auch den Typ des generischen Parameters aus
+                den Funktionsparametern ableiten.
+            </p>
+
+            <code-block lang="typescript">
+                function createPair&lt;S, T&gt;(v1: S, v2: T): [S, T] {
+                    return [v1, v2];
+                }
+                console.log(createPair&lt;string, number&gt;('hello', 42)); // ['hello', 42]
+            </code-block>
         </chapter>
 
         <chapter title="Klassen" id="generics-klassen">
