@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="VSCode" id="app-vscode">
+
+    <chapter title="Grundlegendes" id="basics">
+
+        <chapter title="CLI" id="basics-cli">
+        </chapter>
+
+        <chapter title="Personalisierung" id="basics-personalisierung">
+            <chapter title="Color Theme" id="basics-color-theme">
+            </chapter>
+
+            <chapter title="File Icon Theme" id="basics-file-icon-theme">
+            </chapter>
+
+            <chapter title="Product Icon Theme" id="basics-product-icon-theme">
+            </chapter>
+
+            <chapter title="Fonts &amp; Ligatures" id="basics-fonts-ligatures">
+            </chapter>
+
+            <chapter title="Bracket Colorizer" id="basics-bracket-colorizer">
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="File Explorer" id="fileexplorer">
+        <chapter title="Views" id="fileexplorer-views">
+            <chapter title="Open Editors" id="fileexplorer-views-openeditors">
+            </chapter>
+
+            <chapter title="Folders" id="fileexplorer-views-folders">
+            </chapter>
+        </chapter>
+
+        <chapter title="Unsichtbare Dateien und Ordner" id="unsichtbare-dateien-ordner">
+        </chapter>
+
+        <chapter title="Auto-Directory" id="auto-directory">
+        </chapter>
+
+        <chapter title="Nach Referenzen suchen" id="referenzen">
+            <chapter title="Suche im Workspace" id="referenzen-workspace">
+            </chapter>
+
+            <chapter title="Suche &amp; Springe zu ..." id="referenzen-jump">
+            </chapter>
+
+            <chapter title="Peek" id="referenzen-peek">
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="IntelliSense" id="intellisense">
+        <chapter title="Typen" id="intellisense-typen">
+        </chapter>
+
+        <chapter title="Autocomplete" id="intellisense-autocomplete">
+        </chapter>
+    </chapter>
+
+    <chapter title="Mit Tastatur arbeiten – Keyboard Shortcuts" id="keyboard">
+
+        <chapter title="Keyboard Navigation" id="keyboard-navigation">
+        </chapter>
+    </chapter>
+
+    <chapter title="Bearbeitungstricks" id="edit">
+
+        <chapter title="Codeteile einklappen" id="edit-collapse">
+        </chapter>
+
+        <chapter title="Multi Cursor + Multiline Editing" id="edit-multi">
+        </chapter>
+
+        <chapter title="Linked Editing" id="edit-linked">
+        </chapter>
+
+        <chapter title="Safe Rename" id="edit-safe-rename">
+        </chapter>
+
+        <chapter title="Code Actions" id="edit-code-actions">
+        </chapter>
+    </chapter>
+
+    <chapter title="Emmet" id="emmet">
+        <chapter title="Beispiele für Emmet Anweisungen" id="emmet-beispiele">
+        </chapter>
+
+        <chapter title="Emmet Cheat Sheet" id="emmet-cheat-sheet">
+        </chapter>
+
+        <chapter title="Emmet Wrap Abbreviation" id="emmet-wrap-abbreviation">
+        </chapter>
+    </chapter>
+
+    <chapter title="Snippets" id="snippets">
+        <chapter title="Built-in snippets" id="snippets-builtin">
+        </chapter>
+
+        <chapter title="Extensions" id="snippets-extensions">
+        </chapter>
+
+        <chapter title="Custom Snippets" id="snippets-custom">
+        </chapter>
+    </chapter>
+
+    <chapter title="GitHub Copilot" id="github-copilot">
+        
+    </chapter>
+
+    <chapter title="IDE – Integrated Development Environment" id="ide">
+        <chapter title="Terminal &amp; Tasks" id="ide-terminal">
+            <chapter title="Task erstellen" id="ide-terminal-tasks-erstellen">
+            </chapter>
+
+            <chapter title="Task ausführen" id="ide-terminal-tasks-ausführen">
+            </chapter>
+
+            <chapter title="Build Tools" id="ide-terminal-buildtools">
+            </chapter>
+
+            <chapter title="Terminal" id="ide-terminal-terminal">
+            </chapter>
+        </chapter>
+    </chapter>
+    
+    <chapter title="Git &amp; GitLens" id="git">
+
+        <chapter title="GitHub" id="github">
+        </chapter>
+    </chapter>
+
+    <chapter title="Debugger" id="debugger">
+    </chapter>
+
+    <chapter title="HTTP Client" id="httpclient">
+    </chapter>
+
+    <chapter title="Quellen" id="quellen">
+    </chapter>
+</topic>
