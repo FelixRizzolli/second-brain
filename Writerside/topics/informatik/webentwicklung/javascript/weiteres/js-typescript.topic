@@ -587,6 +587,34 @@
         </chapter>
 
         <chapter title="Vererbung" id="klassen-vererbung">
+            <p>
+                Für die Vererbung werden in TypeScript zwei Schlüsselwörter verwendet: <code>implements</code> und
+                <code>extends</code>. Mit dem Schlüsselwort implements können Interfaces verwendet werden, um den Typ zu
+                definieren, dem eine Klasse folgen muss. Mit dem Schlüsselwort <code>extends</code> kann eine Klasse
+                kann eine andere Klasse erweitern.
+            </p>
+
+            <code-block lang="typescript">
+                interface Shape {
+                    getArea: () => number;
+                }
+
+                class Rectangle implements Shape {
+                    public constructor(protected readonly width: number, protected readonly height: number) {}
+
+                    public getArea(): number {
+                        return this.width * this.height;
+                    }
+                }
+
+                class Square extends Rectangle {
+                    public constructor(width: number) {
+                        super(width, width);
+                    }
+
+                    // getArea wird von der Klasse Rectangle geerbt.
+                }
+            </code-block>
         </chapter>
 
         <chapter title="Methoden überschreiben mit override" id="klassen-override">
