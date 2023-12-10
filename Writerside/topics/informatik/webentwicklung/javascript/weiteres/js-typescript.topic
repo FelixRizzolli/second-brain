@@ -1091,6 +1091,18 @@
         </p>
 
         <chapter title="Typen" id="null-undefined-typen">
+            <p>
+                <code>null</code> und <code>undefined</code> sind primitive Typen und können wie andere Typen, z. B.
+                <code>string</code>, verwendet werden. Wenn <code>strictNullChecks</code> aktiviert ist, verlangt
+                TypeScript, dass Werte gesetzt werden, es sei denn, <code>undefined</code> wird explizit zum Typ
+                hinzugefügt.
+            </p>
+
+            <code-block lang="typescript">
+                let value: string | undefined | null = null;
+                value = 'hello';
+                value = undefined;
+            </code-block>
         </chapter>
 
         <chapter title="Optional Chaining" id="null-undefined-optional-chaining">
