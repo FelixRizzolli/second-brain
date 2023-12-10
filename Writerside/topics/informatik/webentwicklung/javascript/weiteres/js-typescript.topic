@@ -504,6 +504,52 @@
         </p>
 
         <chapter title="Zugriffmodifikatoren" id="klassen-zugriffmodifikatoren">
+            <p>
+                Im Gegensatz zu nativem JavaScript unterstützt TypeScript Zugriffsmodifikatoren, mit denen die
+                Sichtbarkeit von Eigenschaften und Methoden einer Klasse beeinflusst werden können. TypeScript verfügt
+                über folgende, auch aus anderen Programmiersprachen bekannten, Modifikatoren:
+            </p>
+
+            <table style="header-column">
+                <tr>
+                    <td><code>private</code></td>
+                    <td>
+                        auf diesen Eigenschaften und Methoden kann nur innerhalb der Klasse zugegriffen werden. Das
+                        bedeutet, dass sie nicht außerhalb, aber auch nicht in abgeleiteten Klassen verfügbar sind.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>protected</code></td>
+                    <td>
+                        auf diesen Eigenschaften kann in der Klasse und in deren Subklassen zugegriffen werden.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>public</code></td>
+                    <td>
+                        ist der standardmodifikator in TypeScript. Wird kein Modifikator angegeben, ist die Eigenschaft
+                        oder Methode automatisch <code>public</code> und kann überall in der Applikation verwendet
+                        werden.
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                Ein weiterer Modifikator, der im Zuge der Klassendefinition verwendet werden kann ist
+                <code>readonly</code>. Eigenschaften, die mit <code>readonly</code> ausgezeichnet sind, müssen im
+                Konstruktor oder bei ihrer Deklaration initialisiert werden und können später nicht mehr verändert
+                werden.
+            </p>
+
+            <code-block lang="typescript">
+                class Person {
+                    private readonly name: string;
+
+                    public constructor(name: string) { this.name = name; } // Die variable name kann nach Aufruf des Konstruktors nicht mehr verändert werden.
+
+                    public getName(): string { return this.name; }
+                }
+            </code-block>
         </chapter>
 
         <chapter title="Konstruktor" id="klassen-konstruktor">
