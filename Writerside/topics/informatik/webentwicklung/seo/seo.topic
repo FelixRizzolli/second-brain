@@ -6,4 +6,48 @@
        title="SEO (Search Engine Optimization)" id="seo">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Was ist SEO?" id="was-ist-seo">
+        SEM (Search Engine Marketing) umfasst die Teilgebiete SEA (Search Engine Advertising - Suchmaschinenwerbung) und
+        SEO (Search Engine Optimization – Suchmaschinenoptimierung).
+    </chapter>
+
+    <chapter title="Allgemeines" id="allgemeines">
+
+    </chapter>
+
+    <chapter title="Aufbau und Funktionsweise" id="aufbau-funktionsweise">
+
+    </chapter>
+
+    <chapter title="Das Ranking" id="ranking">
+
+    </chapter>
+
+    <chapter title="Die wichtigsten Signale" id="wichtigste-signale">
+
+    </chapter>
+
+    <chapter title="Der Prozess und die Ziele " id="prozess-ziele">
+
+    </chapter>
+
+    <chapter title="Keywords" id="keywords">
+
+    </chapter>
+
+    <chapter title="Content" id="content">
+
+    </chapter>
+
+    <chapter title="Webpage" id="webpage">
+
+    </chapter>
+
+    <chapter title="Site, Server &amp; Domain" id="site-server-domain">
+
+    </chapter>
+
+    <chapter title="Backlinks" id="backlinks">
+
+    </chapter>
 </topic>
