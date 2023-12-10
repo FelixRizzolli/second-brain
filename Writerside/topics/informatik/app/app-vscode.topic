@@ -237,6 +237,14 @@
         </chapter>
 
         <chapter title="Unsichtbare Dateien und Ordner" id="unsichtbare-dateien-ordner">
+            <p>
+                In VSCode können Dateien und Order im Explorer ausgeblendet werden. Beispielsweise wird standardmäßig
+                das <code>.git</code>-Verzeichnis sowie einige andere ausgeblendet. Um diese Konfiguration zu ändern
+                werden die Einstellungen geöffnet <code>CTRL</code>+<code>,</code> und nach <code>Files: Exclude</code> 
+                gesucht:
+            </p>
+            
+            <img src="app_vscode_fileexplorer-exclude.png" alt="FileExplorer Exclude"/>
         </chapter>
 
         <chapter title="Auto-Directory" id="auto-directory">
