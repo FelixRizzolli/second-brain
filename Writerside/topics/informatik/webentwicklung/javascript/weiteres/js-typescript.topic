@@ -1082,6 +1082,13 @@
     </chapter>
 
     <chapter title="null &amp; undefined" id="null-undefined">
+        <p>
+            TypeScript verfügt über ein leistungsfähiges System zum Umgang mit <code>null</code> oder
+            <code>undefined</code> Werten. Standardmäßig ist die Behandlung von <code>null</code> und
+            <code>undefined</code> Werten deaktiviert und kann durchs Setzen von <code>strictNullChecks</code> auf
+            <code>true</code> aktiviert werden. Der Rest dieser Seite gilt für den Fall, dass
+            <code>strictNullChecks</code> aktiviert ist.
+        </p>
 
         <chapter title="Typen" id="null-undefined-typen">
         </chapter>
