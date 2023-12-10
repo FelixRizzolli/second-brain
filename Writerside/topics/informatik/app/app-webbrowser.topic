@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Der Webbrowser" id="app-webbrowser">
+    <show-structure for="chapter,procedure" depth="2"/>
+
+    <chapter title="Shortcuts" id="shortcuts">
+        <table style="header-row">
+            <tr>
+                <td>Windows</td>
+                <td>macOS</td>
+                <td>Beschreibung</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>STRG</code> + <code>O</code>
+                </td>
+                <td>
+                    <code>COMMAND</code> + <code>O</code>
+                </td>
+                <td>
+                    Um eine Datei zu öffnen. Alternativ kann auch der "Link" <code>file:///</code>+Dateipfad
+                    verwendet werden.
+                </td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Seiten" id="pages">
+        <table style="header-row">
+            <tr>
+                <td>Seite</td>
+                <td>Beschreibung</td>
+            </tr>
+            <tr>
+                <td><code>about:blank</code></td>
+                <td>
+                    Öffnet eine Leere Seite mit dem minimalsten HTML-Gerüst. Eignet sich gut für Tests.
+                </td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <strong>(KURS)</strong>
+            JSINSTITUTE: JavaScript Essentials
+            <a href="https://edube.org/study/jse1" ignore-vars="true">
+                https://edube.org/study/jse1
+            </a>, 2023-10-27 11:00
+        </tip>
+    </chapter>
+</topic>

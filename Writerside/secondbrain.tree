@@ -121,6 +121,9 @@
             <toc-element topic="windows.topic"/>
             <toc-element topic="linux.topic"/>
         </toc-element>
+        <toc-element topic="app.topic">
+            <toc-element topic="app-webbrowser.topic"/>
+        </toc-element>
         <toc-element topic="netzwerktechnik.topic"/>
         <toc-element topic="design.topic">
             <toc-element topic="design-responsive-webdesign.topic"/>
