@@ -832,7 +832,112 @@
     </chapter>
 
     <chapter title="Content" id="content">
+        <p>
+            Seit dem Hummingbird-Update ist Google in der Lage, den Inhalt einer Website zu „verstehen“ und dessen
+            Qualität zu bestimmen. Google selbst betont nun auch, dass die Content-Qualität ein wichtiges Rankingsignal
+            ist und steht heute bei der Gewichtung sogar ganz oben. Dabei sollte man folgendes beachten:
+        </p>
 
+        <list>
+            <li>Sind die Informationen vertrauenswert?</li>
+            <li>Ist der Inhalt interessant und nützlich?</li>
+            <li>Wird das Thema umfassend fundiert behandelt?</li>
+            <li>Bietet die Website einen gewissen Mehrwert für den Nutzer?</li>
+        </list>
+
+        <p>
+            Das gog. Search Quality Team von Google beurteilt Webseiten manuelle auf der Basis der inzwischen
+            offengelegten Search Quality Rating Guidelines und kann Seiten auch manuell herabstufen oder hochstufen.
+        </p>
+
+        <chapter title="Der Content und die Suchintention" id="content-suchintention">
+            <p>
+                Der Content muss optimal zur Suchintention passen:
+            </p>
+
+            <list>
+                <li>
+                    <p><strong>Know</strong></p>
+                    
+                    <list>
+                        <li>Ausführliche Produktbeschreibung</li>
+                        <li>Redaktionelle Beiträge</li>
+                        <li>Blogbeiträge</li>
+                        <li>How-tos (genaue Anleitung, wie etwas gemacht wird) Whitepapers im PDF-Format</li>
+                        <li>Enzyklopädien Info-Grafiken Videos</li>
+                    </list>
+                </li>
+                <li>
+                    <p><strong>Know simple</strong></p>
+                    
+                    <list>
+                        <li>Glossar</li>
+                        <li>Wiki-Seiten</li>
+                        <li>Speziell hervorgehobene Definitionen oder Kurzerläuterungen</li>
+                    </list>
+                </li>
+                <li>
+                    <p><strong>Do (non-commercial)</strong></p>
+                    
+                    <list>
+                        <li>
+                            Der passende Content ist abhängig von der Art der Aktion.
+                        </li>
+                        <li>
+                            Die Elemente der Webseite, die die Aktion ermöglichen, sollten weit oben platziert und
+                            deutlich beschriftet werden.
+                        </li>
+                    </list>
+                </li>
+                <li>
+                    <p><strong>Do (commercial)</strong></p>
+
+                    <list>
+                        <li>
+                            Die Landingpage muss das unmittelbare Kaufinteresse deutlich unterstützen, z.B. durch
+                            Elemente wie Warenkorb, Bestell- oder Kauf-Buttons, Preisangabe ...
+                        </li>
+                    </list>
+                </li>
+                <li>
+                    <p><strong>Visit-in-Person</strong></p>
+
+                    <list>
+                        <li>Ortsinformationen, Anfahrtsbeschreibung, Öffnungszeiten ...</li>
+                    </list>
+                </li>
+                <li>
+                    <p><strong>Website (navigational)</strong></p>
+
+                    <list>
+                        <li>Eine geeignete Landingpage auf die einen Domain- und Markennamen optimiert werden.</li>
+                    </list>
+                </li>
+            </list>
+        </chapter>
+
+        <chapter title="Textoptimierung mit WDF und IDF" id="content-textoptimierung">
+            <p>
+                Die Keyworddichte (KD) beschreibt wie häufig ein Term (Wort- oder Wortkombination) in einem Dokument
+                bezogen auf die Gesamtzahl aller Terme vorkommt.
+            </p>
+
+            <code-block lang="tex">
+                \begin{equation}
+                    KD(i) = \frac{Freq(i, j)}{L} * 100
+                \end{equation}
+            </code-block>
+
+            <list>
+                <li><code>i</code> = Wort</li>
+                <li><code>j</code> = Dokument</li>
+                <li><code>L</code> = Gesamtzahl der Wörter in Dokument <code>j</code></li>
+                <li><code>Freq(i,j)</code> = Häufigkeit des Worts <code>i</code> im Dokument <code>j</code></li>
+            </list>
+
+            <chapter title="Das Konzept Within Document Frequency WDF" id="content-wdf">
+            </chapter>
+        </chapter>
     </chapter>
 
     <chapter title="Webpage" id="webpage">
