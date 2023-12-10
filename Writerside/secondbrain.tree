@@ -110,7 +110,12 @@
             <toc-element topic="markdown.topic"/>
             <toc-element topic="latex.topic"/>
         </toc-element>
-        <toc-element topic="datenbanken.topic"/>
+        <toc-element topic="datenbanken.topic">
+            <toc-element topic="rdbms.topic"/>
+            <toc-element topic="nosql.topic"/>
+            <toc-element topic="sql.topic"/>
+            <toc-element topic="plsql.topic"/>
+        </toc-element>
         <toc-element topic="betriebssysteme.topic">
             <toc-element topic="macos.topic"/>
             <toc-element topic="windows.topic"/>
