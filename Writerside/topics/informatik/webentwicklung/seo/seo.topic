@@ -13,6 +13,75 @@
 
     <chapter title="Allgemeines" id="allgemeines">
 
+        <chapter title="Suchmaschinen" id="allgemeines-suchmaschinen">
+            <p>
+                SEM (Search Engine Marketing) umfasst die Teilgebiete SEA (Search Engine Advertising -
+                Suchmaschinenwerbung) und SEO (Search Engine Optimization – Suchmaschinenoptimierung).
+            </p>
+            <p>
+                Anfangs war das Web noch relativ klein, und es wurden Listen von Webservern erstellt. Tim Berners-Lee
+                pflegte selbst eine solche Liste. Es entwickelten sich Webkataloge, wie z.B. das Yahoo-Verzeichnis oder
+                Open Directory Project (ODP) welche ein hierarchisches Verzeichnis von Websites in Kategorien und
+                Unterkategorien erstellten.
+            </p>
+            <p>
+                Da sich das WWW stark ausdehnte, musste eine Software her, welche das WWW permanent nach neuen Webseiten
+                durchsucht und einen Index der gefundenen Seiten automatisch erstellt. Die erste Suchmaschine solcher
+                Art war JumpStation (1993). Sie verwendete einen Webroboter welcher die Titel und Überschriften der
+                Webseiten in einem Index speicherte und für Suchtreffer nutzte. Ein Jahr später erschien WebCrawler
+                welcher den gesamten Text einer Webseite für den Aufbau des Suchindexes verwendete.
+            </p>
+
+            <chapter title="Google" id="allgemeines-google">
+                <p>
+                    Sergey Brain und Larry Page suchten eine Lösung für das Problem, dass die Qualität der Suchergebnisse
+                    immer weiter abnahm. Webseitenbetreiber verwendeten verschiedene Tricks, um ihre Seite in den
+                    Suchergebnissen auf die oberen Plätze zu bringen, auch wenn diese für die von den Suchenden
+                    eingegebenen Suchbegriffe gar nicht relevant waren.
+                </p>
+                <p>
+                    Ihre Lösung war: die Hypothese, dass die Verlinkung der Webseiten im WWW zu berücksichtigen, bessere
+                    Resultate liefern. Sie entwickelten einen neuen Algorithmus: das sog. PageRank-Verfahren, womit es
+                    Google tatsächlich gelang, deutlich bessere Suchergebnisse zu generieren als die Konkurrenz.
+                </p>
+            </chapter>
+
+            <chapter title="Bing" id="allgemeines-bing">
+                <p>
+                    Die Suchmaschine von Microsoft hieß in ihren Anfängen MSN-Search, welche Großteils auf
+                    Suchergebnisse anderer Suchmaschinen Zugriff. Sie entwickelten in den folgejahren eine eigene
+                    Suchtechnologie und benannten ihre Suchmaschine in Windows Live Search, die ein Jahr später nur noch
+                    Live Search und seit 2009 unter den Namen Bing bekannt ist. Alle Suchanfragen an die Yahoo-Websites
+                    werden heute von Bing beantwortet.
+                </p>
+            </chapter>
+
+            <chapter title="Yandex" id="allgemeines-yandex">
+                <p>
+                    Yandex ist mit 60 % (Stand 2019) Marktanteil in Russland die am meisten verwendete Suchmaschine
+                    und ist durch eine Kooperation mit Microsoft als die voreingestellte Suchmaschine in Windows 10 für
+                    den russischen Markt. Mittlerweile bietet Yandex ein ähnlich großes Angebot wie Google und könnte zu
+                    einem ernstzunehmenden Konkurrenten heranwachsen.
+                </p>
+            </chapter>
+
+            <chapter title="Baidu" id="allgemeines-baidu">
+                <p>
+                    Baidu ist mit knapp 60 % (Stand 2019) die marktführende Suchmaschine in China. Die arbeitet eng.
+                    mit den chinesischen Behörden zusammen und blockiert Inhalte, welche von der Regierung zensiert
+                    werden. Durch eine Kooperation mit Microsoft werden Suchanfragen mit englischen Begriffen werden an
+                    Bing weitergeleitet und dafür ist Baidu die voreingestellte Suchmaschine für Windows 10 auf dem
+                    chinesischen Markt.
+                </p>
+            </chapter>
+
+            <chapter title="Alternative Suchmaschinen" id="allgemeines-alternativen">
+                <p>
+                    Heute gewinnen auch immer mehr neuere Suchmaschinen wie DuckDuckGo, Qwant, Ixquick und Startpage an
+                    Marktanteilen, welche damit werben keine persönlichen Informationen zu sammeln.
+                </p>
+            </chapter>
+        </chapter>
     </chapter>
 
     <chapter title="Aufbau und Funktionsweise" id="aufbau-funktionsweise">
