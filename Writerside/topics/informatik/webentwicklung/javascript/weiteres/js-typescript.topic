@@ -357,6 +357,32 @@
             </chapter>
 
             <chapter title="Typ-Aliase vs. Interfaces" id="datentypen-alias-vs-interface">
+                <p>
+                    Neben Klassen gibt es noch Type-Aliase und Interfaces als Möglichkeiten eigene Typen zu definieren.
+                    Beide können zwar zur Angabe von Typen verwendet werden, also beispielsweise bei
+                    Variablendeklarationen oder in Funktionssignaturen, aber dennoch unterscheiden sich beide in einigen
+                    Punkten:
+                </p>
+
+                <list>
+                    <li>
+                        Interfaces können durch Interface Merging erweitert werden. Wird ein Interface mehrmals
+                        definiert, fügt TypeScript diese Definitionen zu einem Interface zusammen.
+                    </li>
+                    <li>
+                        Interfaces können mit dem extends-Schlüsselwort von anderen Interfaces erben. Bei Typen kann der
+                        <code>&amp;</code>-Operator verwendet werden, um ein Typ als Basis zu verwenden und weitere
+                        Informationen hinzuzufügen und so einen neuen Typ zu erzeugen.
+                    </li>
+                    <li>
+                        Type Aliases können nach ihrer Definition nicht mehr verändert werden.
+                    </li>
+                </list>
+
+                <p>
+                    Für einfache Fälle und wenn nicht sichergestellt werden muss, dass eine Klasse ein Interface
+                    implementiert werden muss, reicht in den meisten Fällen ein Typ-Alias aus.
+                </p>
             </chapter>
         </chapter>
 
