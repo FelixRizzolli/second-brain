@@ -480,6 +480,15 @@
         </chapter>
 
         <chapter title="Typ-Aliase für Funktionen" id="funktionen-aliase">
+            <p>
+                Funktionstypen können getrennt von Funktionen mit Typ-Aliasen angegeben werden. Diese Typen werden
+                ähnlich wie Pfeilfunktionen geschrieben.
+            </p>
+
+            <code-block lang="typescript">
+                type Negate = (value: number) => number;
+                const negateFunction: Negate = (value) => value * -1;
+            </code-block>
         </chapter>
     </chapter>
 
