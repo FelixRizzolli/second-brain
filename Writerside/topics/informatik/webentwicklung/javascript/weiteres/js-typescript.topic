@@ -553,6 +553,37 @@
         </chapter>
 
         <chapter title="Konstruktor" id="klassen-konstruktor">
+            <code-block lang="typescript">
+                class User {
+                    constructor(private firstname: string, private lastname: string) {}
+
+                    get fullname(): string {
+                        return `${this.firstname} ${this.lastname}`;
+                    }
+
+                    greet(greeting: string): string {
+                        return `${greeting} ${this.fullname}`;
+                    }
+                }
+
+                const klaus = new User('Klaus', 'Müller');
+                const greeting = klaus.greet('Hello');
+                console.log(greeting); // Hello Klaus Müller
+            </code-block>
+
+            <p>
+                In einer TypeScript-Klasse kann ein Konstruktor definiert werden. Das ist eine spezielle Methode, die
+                TypeScript aufruft, wenn eine neue Instanz der Klasse mit dem Schlüsselwort new erzeugt wird. Der Name
+                des Konstruktors lautet <code>constructor</code>. Im Konstruktor kann eine Parameterliste definiert
+                werden. Diese Werte werden als Argumente bei der Instanziierung übergeben.
+            </p>
+            <p>
+                Definiert man im Konstruktor eine Parameterliste und möchte man diese Werte bestimmten Eigenschaften der
+                Klasse zuweisen, so kann diese Operation direkt im Konstruktor durchgeführt werden. TypeScript sieht für
+                diesen sehr häufig verwendeten Use-Case eine Abkürzung vor: Wird bei einem Parameter eine Kombination
+                aus Zugriffsmodifikator, Eigenschaftsnamen und Typ angegeben, weist TypeScript diesen Wert automatisch
+                der angegebenen Klasseneigenschaft zu. Diese Kurzschreibweise trägt den Namen Parameter Properties.
+            </p>
         </chapter>
 
         <chapter title="Vererbung" id="klassen-vererbung">
