@@ -172,6 +172,18 @@
             </table>
 
             <chapter title="any" id="datentypen-primitive-any">
+                <p>
+                    TypeScript hat auch einen speziellen Typ, <code>any</code>, der immer dann verwendet wird, wenn man
+                    nicht will, dass ein bestimmter Wert Fehler bei der Typüberprüfung verursacht. Der
+                    <code>any</code>-Typ ist nützlich, wenn man keinen langen Typ schreiben möchte, nur um TypeScript
+                    davon zu überzeugen, dass eine bestimmte Code-Zeile in Ordnung ist.
+                </p>
+                <p>
+                    Wird kein Typ angegeben und TypeScript kann den Typ nicht aus dem Kontext ableiten, dann verwendet
+                    der Compiler normalerweise <code>any</code>. Normalerweise sollte man dies jedoch vermeiden, da
+                    <code>any</code> nicht typgeprüft ist. Compiler-Flag <code>noImplicitAny</code> wird verwendet, um
+                    jeden impliziten <code>any</code>-Typ als Fehler zu kennzeichnen.
+                </p>
             </chapter>
 
             <chapter title="unknown" id="datentypen-primitive-unknown">
