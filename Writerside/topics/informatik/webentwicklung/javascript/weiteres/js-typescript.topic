@@ -203,6 +203,9 @@
             </chapter>
 
             <chapter title="undefined" id="datentypen-primitive-undefined">
+                <p>
+                    Der Typ <code>undefined</code> steht für den <code>undefined</code>-Wert von JavaScript.
+                </p>
             </chapter>
         </chapter>
 
