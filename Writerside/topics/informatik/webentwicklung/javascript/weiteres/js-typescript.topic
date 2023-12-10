@@ -444,6 +444,23 @@
 
         <chapter title="Spezielle Rückgabetypen für Funktionen: never und void"
                  id="funktionen-return">
+            <table style="header-column">
+                <tr>
+                    <td><code>never</code></td>
+                    <td>
+                        Der Typ <code>never</code> steht für Werte, die niemals beobachtet werden. Wird dieser Typ als
+                        Rückgabetyp angegeben, dann bedeutet das, dass die Funktion eine Ausnahme auslöst oder die
+                        Ausführung des Programms beendet.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>void</code></td>
+                    <td>
+                        Der Rückgabe-Typ (eng. return type) <code>void</code> wird verwendet um zu signalisieren, dass
+                        diese Funktion keinen Wert zurückgibt.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Parameter" id="funktionen-parameter">
