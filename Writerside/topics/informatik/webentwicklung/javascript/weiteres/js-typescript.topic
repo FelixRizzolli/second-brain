@@ -493,6 +493,15 @@
     </chapter>
 
     <chapter title="Klassen" id="klassen">
+        <p>
+            Eine TypeScript-Klasse verhält sich sehr ähnlich wie eine Klasse in modernem JavaScript. So wird sie mit dem
+            <code>class</code>-Schlüsselwort definiert, gefolgt vom Namen der Klasse, der laut Namenskonvention mit
+            einem Großbuchstaben beginnen sollte. Nach dem Klassennamen kann das Schlüsselwort extends und ein
+            Klassenname angegeben werden, um von dieser Klasse zu erben. Oder es wird das Schlüsselwort implements
+            verwendet, um ein Interface anzugeben, welches die Klasse implementieren muss. In einer TypeScript-Klasse
+            Eigenschaften und Methoden definiert werden. Methoden folgen bei der Angabe der Signatur den gleichen Regeln
+            wie die Funktionen.
+        </p>
 
         <chapter title="Zugriffmodifikatoren" id="klassen-zugriffmodifikatoren">
         </chapter>
