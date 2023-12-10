@@ -266,6 +266,19 @@
             </chapter>
 
             <chapter title="touple" id="datentypen-komplex-touple">
+                <p>
+                    Ein Tupel ist ein typisiertes Array mit einer vordefinierten Länge und Typen für jeden Index. Tupel
+                    sind großartig, weil sie es ermöglichen, dass jedes Element im Array ein bekannter Wertetyp ist.
+                </p>
+
+                <code-block lang="typescript">
+                    let ourTuple: [number, boolean, string];                                // Definition
+                    ourTuple = [5, false, 'Coding God was here'];                           // korrekte Zuweisung
+                    ourTuple.push('Something new and wrong');                               // keine Typsicherheit nach Index 3+
+                    const roTuple: readonly [number, boolean, string] = [5, true, 'abc'];   // Readonly Tuple Definition
+                    ro.push('cba');                                                         // Schmeißt einen Fehler
+                    const graph: [x: number, y: number] = [55.2, 41.3];                     // Benannte Touples für einen Kontext der Werte
+                </code-block>
             </chapter>
 
             <chapter title="enum" id="datentypen-komplex-enum">
