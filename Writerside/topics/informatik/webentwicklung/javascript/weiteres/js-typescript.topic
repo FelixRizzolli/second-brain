@@ -798,6 +798,16 @@
         </chapter>
 
         <chapter title="Typ-Aliase" id="generics-aliase">
+            <p>
+                Generics in Typ-Aliase ermöglichen die Erstellung von Typen, die besser wiederverwendbar sind. Dies
+                funktioniert auch mit Schnittstellen mit der folgenden Syntax:
+                <code>interface Wrapped&lt;T&gt; {}</code>
+            </p>
+
+            <code-block lang="typescript">
+                type Wrapped&lt;T&gt; = { value: T };
+                const wrappedValue: Wrapped&lt;number&gt; = { value: 10 };
+            </code-block>
         </chapter>
 
         <chapter title="Standardwerte" id="generics-standardwerte">
