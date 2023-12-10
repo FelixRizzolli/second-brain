@@ -37,7 +37,7 @@
         </chapter>
 
         <chapter title="Personalisierung" id="basics-personalisierung">
-            <img src="app_vscode_peronalisierung.png" alt="VSCode Personalisierung" width="500" />
+            <img src="app_vscode_peronalisierung.png" alt="VSCode Personalisierung" />
 
             <p>
                 VSCode bietet unzählige Personalisierungsmöglichkeiten.
@@ -123,7 +123,7 @@
             </chapter>
 
             <chapter title="Bracket Colorizer" id="basics-bracket-colorizer">
-                <img src="app_vscode_bracket_pair_colorizer.png" alt="Bracket Pair Colorizer" width="500" />
+                <img src="app_vscode_bracket_pair_colorizer.png" alt="Bracket Pair Colorizer" />
 
                 <p>
                     Beim Umgang mit tief verschachtelten Klammern in Visual Studio Code kann es schwierig sein,
@@ -154,7 +154,7 @@
                         <p>
                             Die Checkbox anklicken, um Bracket Pair Colorization zu aktivieren:
                         </p>
-                        <img src="app_vscode_bracket_pair_colorizer_search.png" alt="Bracket Pair Suche" width="400" />
+                        <img src="app_vscode_bracket_pair_colorizer_search.png" alt="Bracket Pair Suche" />
                     </li>
                 </list>
             </chapter>
@@ -187,7 +187,7 @@
                 können.
             </p>
             
-            <img src="app_vscode_fileexplorer_views.png" alt="FileExplorer Views" width="425"/>
+            <img src="app_vscode_fileexplorer_views.png" alt="FileExplorer Views" />
 
             <p>
                 VSCode erkennt Scripts von Build Tools wie <code>npm</code>, <code>typescript</code>,
@@ -216,7 +216,7 @@
             </chapter>
 
             <chapter title="Folders" id="fileexplorer-views-folders">
-                <img src="app_vscode_fileexplorer_views_folders.png" alt="FileExplorer Folders" />
+                <img src="app_vscode_fileexplorer_views_folders.png" alt="FileExplorer Folders"/>
                 
                 <list>
                     <li>
@@ -248,6 +248,12 @@
         </chapter>
 
         <chapter title="Auto-Directory" id="auto-directory">
+            <img src="app_vscode_autodirectory.png" alt="FileExplorer Auto-Directory"/>
+
+            <p>
+                In diesem Beispiel wird der Ordner <code>tabTest</code> und die folglich darin enthaltene Datei
+                <code>RICOTabTest.tsx</code> erstellt.
+            </p>
         </chapter>
 
         <chapter title="Nach Referenzen suchen" id="referenzen">
