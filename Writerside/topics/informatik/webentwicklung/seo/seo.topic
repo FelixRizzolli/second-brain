@@ -1087,7 +1087,61 @@
     </chapter>
 
     <chapter title="Backlinks" id="backlinks">
+        <p>
+            Links sind und bleiben der wichtigste Rankingfaktor. Zu erfolgreichem Backlink-Management gehört:
+        </p>
+        
+        <list>
+            <li>
+                <strong>Backlink-Analyse</strong> – ein natürliches Linkprofiel zeichnet sich durch Vielfalt aus: eine 
+                dem Durchschnitt weitgehend entsprechende Verteilung von Follow- und Nofollow-Links sowie von Links auf 
+                die Startseite und von Links zu Unterseiten (Deep Links).
+            </li>
+            <li>
+                <p><strong>Backlink-Aufbau</strong></p>
+                
+                <list>
+                    <li>
+                        Quellen: Links von Authority Websites, Links von thematisch verwandten Websites, Links aus
+                        Webverzeichnissen, Nofollow-Links aus Foren und Blogs, hochwertiger Linktausch, Links aus
+                        sozialen Netzwerken.
+                    </li>
+                    <li>
+                        Ein kontinuierlicher Linkwachstum spricht für ein anhaltendes Interesse, eine Verlangsamung
+                        hingegen deuten darauf hin, dass Inhalte einer Website weniger relevant werden.
+                    </li>
+                    <li>
+                        Je weniger ausgehende Links auf einer Seite stehen, desto mehr PageRank wird vererbt, da die
+                        Zahl der ausgehenden Links in der PageRank-Formel im Nenner steht.
+                    </li>
+                </list>
+            </li>
+            <li>
+                <strong>Backlink-Entfernung</strong>
+            </li>
+            <li>
+                <p><strong>Optimierung von Ankertexten</strong> – Ankertexttypen:</p>
 
+                <list>
+                    <li>
+                        URLs – URL-Ankertexte sind für Google ein Indiz für natürliche Links, da dies unter Webmastern,
+                        Webdesignern und Webautoren eine verbreitete Methode der Verlinkung ist.
+                    </li>
+                    <li>
+                        Markenbegriffe – wie auch der Name der Webseite und oder Domain. Mit Markenbegriffen sollte man
+                        Vorsichtig sein und es damit nicht übertreiben, aber such sie zeichnen ein natürliches
+                        Linkprofiel aus.
+                    </li>
+                    <li>
+                        Kombination aus Markenbegriffen und Keywords – sind ein Indiz für ein unnatürliches Linkprofiel
+                    </li>
+                    <li>
+                        Sonstige Begriffe – sind einem völlig natürlich und werden von Google als Indiz für ein
+                        natürliches Linkprofiel gewertet.
+                    </li>
+                </list>
+            </li>
+        </list>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
