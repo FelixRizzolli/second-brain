@@ -842,6 +842,18 @@
         </chapter>
 
         <chapter title="Erweitern" id="generics-erweitern">
+            <p>
+                Constraints können zu generischen Typen hinzugefügt werden, um das Erlaubte zu begrenzen. Die
+                Einschränkungen machen es möglich, sich bei der Verwendung des generischen Typs auf einen spezifischeren
+                Typ zu verlassen. Dies kann mit einem Standardwert kombiniert werden.
+            </p>
+
+            <code-block lang="typescript">
+                function createLoggedPair&lt;S extends string | number, T extends string | number&gt;(v1: S, v2: T): [S, T] {
+                    console.log(`creating pair: v1='${v1}', v2='${v2}'`);
+                    return [v1, v2];
+                }
+            </code-block>
         </chapter>
     </chapter>
 
