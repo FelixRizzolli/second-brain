@@ -252,6 +252,17 @@
             </chapter>
 
             <chapter title="array" id="datentypen-komplex-array">
+                <p>
+                    TypeScript hat eine spezifische Syntax für Arrays:
+                </p>
+
+                <code-block lang="typescript">
+                    const names: string[] = [];                    // Definition eines String Arrays
+                    names.push("Dylan");                           // Hinzufügen eines Wertes: Ohne Fehler
+                    names.push(3);                                 // Hinzufügen eines Wertes: Error: Argument of type 'number' is not assignable to parameter of type 'string'.
+                    const names: readonly string[] = ["Dylan"];    // Definition eines Readonly String Arrays
+                    const numbers = [1, 2, 3];                     // Definition eines Arrays: bekommt automatisch den Typ number[] in diesem Fall
+                </code-block>
             </chapter>
 
             <chapter title="touple" id="datentypen-komplex-touple">
