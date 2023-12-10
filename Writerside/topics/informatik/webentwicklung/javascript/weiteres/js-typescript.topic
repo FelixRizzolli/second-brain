@@ -1159,6 +1159,21 @@
         </chapter>
 
         <chapter title="Null Assertion" id="null-undefined-null-assertion">
+            <p>
+                TypeScripts Inferenzsystem ist nicht perfekt. Es gibt Zeiten, in denen es sinnvoll ist, die Möglichkeit,
+                dass ein Wert <code>null</code> oder <code>undefined</code> ist, zu ignorieren. Eine einfache
+                Möglichkeit, dies zu tun, ist die Verwendung von Casting, aber TypeScript bietet auch den Operator
+                <code>!</code> als praktische Abkürzung. Genau wie das Casting kann auch dieses Verfahren unsicher sein
+                und sollte mit Vorsicht angewendet werden.
+            </p>
+
+            <code-block lang="typescript">
+                function getValue(): string | undefined {
+                    return 'hello';
+                }
+                let value = getValue();
+                console.log('value length: ' + value!.length);
+            </code-block>
         </chapter>
 
         <chapter title="Array bounds handling" id="null-undefined-array-bounds-handling">
