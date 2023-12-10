@@ -4,6 +4,7 @@
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="VSCode" id="app-vscode">
+    <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlegendes" id="basics">
 
