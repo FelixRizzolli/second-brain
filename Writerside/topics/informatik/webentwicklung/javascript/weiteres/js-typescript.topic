@@ -858,6 +858,173 @@
     </chapter>
 
     <chapter title="Utility Types" id="utility-types">
+        <p>
+            TypeScript wird mit einer großen Anzahl von Typen geliefert, die bei einigen gängigen Typmanipulationen helfen können und gewöhnlich als Hilfstypen bezeichnet werden. Hier die wichtigsten davon:
+        </p>
+
+        <table style="header-row">
+            <tr>
+                <td>Typ</td>
+                <td>Beschreibung</td>
+                <td>Beispiel</td>
+            </tr>
+            <tr>
+                <td><code>Partial</code></td>
+                <td>
+                    Ändert alle Eigenschaften eines Objekts in optionale Eigenschaften.
+                </td>
+                <td>
+                    <code-block>
+                        interface Point {
+                            x: number;
+                            y: number;
+                        }
+
+                        let pointPart: Partial&lt;Point&gt; = {}; // `Partial` allows x and y to be optional
+                        pointPart.x = 10;
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>Required</code></td>
+                <td>
+                    Ändert alle Eigenschaften eines Objekts in erforderlich (= required).
+                </td>
+                <td>
+                    <code-block>
+                        interface Car {
+                            make: string;
+                            model: string;
+                            mileage?: number;
+                        }
+
+                        let myCar: Required&lt;Car&gt; = { // `Required` forces mileage to be defined
+                            make: 'Ford',
+                            model: 'Focus',
+                            mileage: 12000
+                        };
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>Record</code></td>
+                <td>
+                    <p>
+                        Ist eine Abkürzung zur Definition eines Objekttyps mit einem bestimmten Schlüsseltyp und
+                        Wertetyp.
+                    </p>
+
+                    <note>
+                        <code>Record&lt;string, number&gt;</code> ist dasselbe wie
+                        <code>{ [key: string]: number }</code>
+                    </note>
+                </td>
+                <td>
+                    <code-block>
+                        const nameAgeMap: Record&lt;string, number&gt; = { 'Alice': 21, 'Bob': 25 };
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>Omit</code></td>
+                <td>
+                    Entfernt Schlüssel aus einem Objekttyp.
+                </td>
+                <td>
+                    <code-block>
+                        interface Person {
+                            name: string;
+                            age: number;
+                            location?: string;
+                        }
+
+                        const bob: Omit&lt;Person, 'age' | 'location'&gt; = {
+                            name: 'Bob'
+                        }; // `Omit` has removed age and location from the type and they can't be defined here
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>Pick</code></td>
+                <td>
+                    Entfernt alle Schlüssel außer den angegebenen aus einem Objekttyp.
+                </td>
+                <td>
+                    <code-block>
+                        interface Person {
+                            name: string;
+                            age: number;
+                            location?: string;
+                        }
+
+                        const bob: Pick&lt;Person, 'name'&gt; = {
+                            name: 'Bob'
+                        }; // `Pick` has only kept name, so age and location were removed from the type and they can't be defined here
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>Exclude</code></td>
+                <td>
+                    Entfernt Typen aus einem Union-Typen.
+                </td>
+                <td>
+                    <code-block>
+                        type Primitive = string | number | boolean
+                        const value: Exclude&lt;Primitive, string&gt; = true; // a string cannot be used here since Exclude removed it from the type.
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>ReturnType</code></td>
+                <td>
+                    Extrahiert den Rückgabetyp eines Funktionstyps.
+                </td>
+                <td>
+                    <code-block>
+                        type PointGenerator = () => { x: number; y: number; };
+                        const point: ReturnType&lt;PointGenerator&gt; = { x: 10, y: 20 };
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>Parameters</code></td>
+                <td>
+                    Extrahiert die Parametertypen eines Funktionstyps als Array.
+                </td>
+                <td>
+                    <code-block>
+                        type PointPrinter = (p: { x: number; y: number; }) => void;
+                        const point: Parameters&lt;PointPrinter&gt;[0] = { x: 10, y: 20 };
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>Readonly</code></td>
+                <td>
+                    Wird verwendet, um einen neuen Typ zu erstellen, bei dem alle Eigenschaften schreibgeschützt sind,
+                    d.h. sie können nicht geändert werden, sobald ihnen ein Wert zugewiesen wurde. Hierbei ist zu
+                    beachten, dass TypeScript dies bei der Kompilierung verhindert, aber theoretisch, da es zu
+                    JavaScript kompiliert wird, kann immer noch eine schreibgeschützte Eigenschaft außer Kraft gesetzt
+                    werden.
+                </td>
+                <td>
+                    <code-block>
+                        interface Person {
+                            name: string;
+                            age: number;
+                        }
+
+                        const person: Readonly = {
+                            name: "Dylan",
+                            age: 35,
+                        };
+
+                        person.name = 'Israel'; // prog.ts(11,8): error TS2540: Cannot assign to 'name' because it is a read-only property.
+                    </code-block>
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="keyof" id="keyof">
