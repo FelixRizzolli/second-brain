@@ -282,6 +282,33 @@
             </chapter>
 
             <chapter title="enum" id="datentypen-komplex-enum">
+                <p>
+                    Ein Enum ist eine spezielle "Klasse", die eine Gruppe von Konstanten (unveränderlichen Variablen)
+                    darstellt. Enums gibt es in zwei Varianten: <code>string</code> und <code>number</code>. Technisch
+                    gesehen können <code>string</code>- und <code>number</code> Enum-Werte gemischt werden, aber es wird
+                    empfohlen, dies nicht zu tun.
+                </p>
+
+                <code-block lang="typescript">
+                    enum CardinalDirections { North, East, South, West };   // Definition ohne Initialisierung (number)
+                    console.log(CardinalDirections.North);                  // Ausgabe: 0
+
+                    enum StatusCodes {                                      // Definition mit Initialisierung (number)
+                        NotFound = 404,
+                        Success = 200,
+                        Accepted = 202,
+                        BadRequest = 400
+                    }
+                    console.log(StatusCodes.NotFound);                      // Ausgabe: 404
+
+                    enum CardinalDirections {                               // Definition mit Initialisierung (string)
+                        North = 'North',
+                        East = "East",
+                        South = "South",
+                        West = "West"
+                    };
+                    console.log(CardinalDirections.North);                  // Ausgabe: 'North'
+                </code-block>
             </chapter>
         </chapter>
 
