@@ -53,6 +53,9 @@
             <toc-element topic="seo.topic"/>
         </toc-element>
         <toc-element topic="anwendungsentwicklung.topic">
+            <toc-element topic="swift.topic"/>
+            <toc-element topic="kotlin.topic"/>
+            <toc-element topic="dart.topic"/>
             <toc-element topic="python.topic">
                 <toc-element topic="python-libraries-frameworks.topic">
                     <toc-element topic="pandas.topic"/>
