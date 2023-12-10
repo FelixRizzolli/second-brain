@@ -1017,7 +1017,73 @@
     </chapter>
 
     <chapter title="Site, Server &amp; Domain" id="site-server-domain">
+        <p>
+            Es besteht die Möglichkeit verschiedene Domains zu die relevante Keywords enthalten. Doch Google erkennt
+            Duplikate und HTTP-Redirects und indexiert immer nur eine Kopie. Wenn man sich trotzdem für mehrere Domains
+            entscheidet, ist die beste Lösung für jedes Produkt eine einzelne Domain zu erstellen.
+        </p>
+        <p>
+            Es lohnt sich nur eine einzigartige Website unter einer neuen Subdomain oder neuem Hostname zu betreiben.
+        </p>
+        <p>
+            Parameter in der URL sollen vermieden werden, hier eignen sich eher Keywords direkt nach dem
+            <code>/</code>-Zeichen durch einen Bindestrich getrennt. URLs mit Keywords in Form einer Verzeichnisstruktur
+            sollten vermieden werden: <code>/elektro/kuechengeraete/Kaffeemaschine/Philips</code>
+        </p>
+        <p>
+            Moderne Webtechnologien verzichten auf Session-IDs wo die Parameter in der URL übergeben werden und arbeiten
+            stattdessen mit Cookies.
+        </p>
+        <p>
+            Durch eine <code>.htaccess</code> lasst sich sogenanntes URL-Rewriting betreiben. Mit regulären Ausdrücken
+            kann die URL umgeschrieben werden und somit suchmaschinenfräundlichere Links erstellen.
+        </p>
 
+        <chapter title="Verlinkungsstruktur" id="site-server-domain-verlinkungsstruktur">
+            <p>
+                Die Verlinkungsstruktur einer Website hat großen Einfluss auf das Ranking bei Google. Seiten die nahe
+                bei der Startseite verlinkt sind (= ein bis zwei Klicks entfernt) werden höher gelistet, als jene bei
+                denen es drei oder mehr Klicks benötigt, um sie zu erreichen.
+            </p>
+            <p>
+                Die Startseite hat in der Regel den höchsten PageRank Wert. Je mehr Klicks die Unterseite von der
+                Startseite entfernt ist, desto weniger PageRank erbt sie von ihr.
+            </p>
+        </chapter>
+
+        <chapter title="Duplicate Content" id="site-server-domain-duplicate-content">
+            <p>
+                Content der Doppelt vorkommt auch Duplicate Content oder Dubletten genannt ist nicht unbedingt schlimm.
+                Gefährlich wird es nur bei gezieltem Manipulationsversuch, z.B. wenn versucht wird, über duplizierten
+                Content auf Unmengen von Seiten eine erhöhte Visibility zu erreichen.
+            </p>
+            <p>
+                Mit dem Tag <code>&lt;link rel="canonical" href="http://www.example.com/original.html"&gt;</code> auf
+                der Kopie-Seite kann man Suchmaschinen mitteilen, welche die Originalseite ist. Dieser Tag sollte
+                möglichst weit oben im <code>head</code>-Tag platziert werden.
+            </p>
+        </chapter>
+
+        <chapter title="Schnelligkeit und Verfügbarkeit einer Website " id="site-server-domain-schnelligkeit">
+            <p>
+                Google misst die Performance, d.h. Ladezeiten und auch die Verfügbarkeit und Erreichbarkeit sehr genau
+                und führt darüber eine Statistik. Mit dem Tool Google Page Speed Analyzer können die Ladezeiten gemessen
+                werden. Hierbei sollte man 90/100 Punkten anstreben.
+            </p>
+        </chapter>
+
+        <chapter title="HTTPS" id="site-server-domain-https">
+            <p>
+                HTTPS verfügt gegenüber des HTTP-Protokolls eine hochkomplexe Verschlüsselungs- und
+                Authentifizierungstechnologie. Auch dies wertet Google als positives Rankingkriterium.
+            </p>
+        </chapter>
+
+        <chapter title="Die Steuerdatei robots.txt" id="site-server-domain-robots">
+            Suchmaschinen öffnen beim Besuch einer Webseite zunächst die <code>robots.txt</code>-Datei und befolgen die
+            dort angegebenen Anweisungen. Hierbei kann den Robots verboten werden bestimmte Verzeichnisse zu crawlen
+            oder Dateien zu öffnen.
+        </chapter>
     </chapter>
 
     <chapter title="Backlinks" id="backlinks">
