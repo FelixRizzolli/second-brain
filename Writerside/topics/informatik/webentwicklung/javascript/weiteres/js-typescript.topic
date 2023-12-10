@@ -406,6 +406,41 @@
     </chapter>
 
     <chapter title="Typisierung bei Funktionen" id="funktionen">
+        <code-block>
+            function add(a: number, b: number): number {
+                return a + b;
+            }
+            const getFullname = function (firstname: string, lastname: string): string {
+                return `${firstname} ${lastname}`;
+            };
+            const greet = (name: string): string => {
+                return `Hello ${name}`;
+            };
+        </code-block>
+
+        <p>
+            Funktionen können entweder als Arrow-Funktion, als benannte oder als anonyme Funktion auftreten. Für
+            TypeScript ist die Signatur der Funktion relevant, also die Parameterliste und der Rückgabewert. Im Beispiel
+            ist zu sehen:
+        </p>
+
+        <list>
+            <li>
+                eine benannte Funktion, also eine Funktion, die einen Namen hat
+            </li>
+            <li>
+                eine anonyme Funktion, also eine Funktion, die keinen Namen hat und die einer Konstante zugewiesen wurde
+            </li>
+            <li>
+                eine Arrow-Funktion
+            </li>
+        </list>
+
+        <p>
+            Egal für welchen Typ von Funktion man sich entscheidet, man sollte versuchen möglichst explizit zu sein und
+            immer die Typen für die Parameter und den Rückgabewert angeben. Gerade der Rückgabewert kann vor
+            Flüchtigkeitsfehlern bewahren, wenn beispielsweise ein <code>return</code>-Statement vergessen wird.
+        </p>
 
         <chapter title="Spezielle Rückgabetypen für Funktionen: never und void"
                  id="funktionen-return">
