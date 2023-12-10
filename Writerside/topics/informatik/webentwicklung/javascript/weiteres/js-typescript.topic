@@ -659,6 +659,33 @@
         </chapter>
 
         <chapter title="Abstrakte Klassen" id="klassen-abstrakt">
+            <p>
+                Klassen können so geschrieben werden, dass sie als Basisklasse für andere Klassen verwendet werden
+                können, ohne dass alle Mitglieder implementiert werden müssen. Dies geschieht durch die Verwendung des
+                Schlüsselworts <code>abstract</code>. Für Mitglieder, die nicht implementiert sind, wird ebenfalls das
+                Schlüsselwort <code>abstract</code> verwendet. Abstrakte Klassen können nicht direkt instanziiert
+                werden, da sie nicht alle ihre Mitglieder implementiert haben.
+            </p>
+
+            <code-block lang="typescript">
+                abstract class Polygon {
+                    public abstract getArea(): number;
+
+                    public toString(): string {
+                        return `Polygon[area=${this.getArea()}]`;
+                    }
+                }
+
+                class Rectangle extends Polygon {
+                    public constructor(protected readonly width: number, protected readonly height: number) {
+                        super();
+                    }
+
+                    public getArea(): number {
+                        return this.width * this.height;
+                    }
+                }
+            </code-block>
         </chapter>
     </chapter>
 
