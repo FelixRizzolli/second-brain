@@ -376,7 +376,240 @@
     </chapter>
 
     <chapter title="Die wichtigsten Signale" id="wichtigste-signale">
+        <p>
+            Die Quellen für die Informationen von Rankingsignalen sind:
+        </p>
+        
+        <list>
+            <li>
+                <strong>Google selbst</strong> – An vielen Kerntechnologien hält Google Patente, und Patentschriften
+                sind öffentlich zugänglich. Darin kann man z.B. nachlesen, wie der berühmte PageRank-Algorithmus
+                funktioniert.
+            </li>
+            <li>
+                <strong>Untersuchungen und Erfahrungswerte von SEO-Experten</strong> – SEO-Experten schreiben über ihre
+                eigene Korrelationsstudie. Eine positive Korrelation bedeutet nicht unbedingt, dass es auch tatsächlich
+                einen direkten kausalen Zusammenhang zwischen einem vermuteten Rankingsignal und einem positiven Effekt
+                auf das Ranking gibt.
+            </li>
+        </list>
 
+        <chapter title="Webpage-Signale" id="signale-webpage">
+            <p>
+                Unter Webpage-Signale fällt die Qualität des HTML-Quellcodes, die Ladegeschwindigkeit, aber auch
+                PageRank und andere Backlinksignale
+            </p>
+
+            <list>
+                <li>
+                    <strong>Content-Qualität</strong> – die inhaltliche Qualität der Webseite: einzigartige Inhalte, der
+                    Nutzwert, die Länge des Textes (allgemein: längere Texte werden höher gerankt) wobei diese von der
+                    Kategorie abhängt, Bilder und deren Ladezeit, passende Videos, ergänzende Inhalte und weiterführende
+                    Links zu verwandten Themen
+                </li>
+                <li>
+                    <strong>Keywords</strong> – wenn Keywords auf der Webseite vorkommen und das Rankingsignal senden,
+                    dass es auf der Website um eben diese Themen geht, die durch die Keywords beschrieben werden. Eine
+                    zu starke Konzentration auf Keywords kann sich sogar negativ auswirken.
+                </li>
+                <li>
+                    <strong>HTML-Code</strong> – modernes HTML 5 und valides und gültiges HTML
+                </li>
+                <li>
+                    <strong>Mikroformate</strong> – damit können Inhalte auf der Website semantisch ausgezeichnet
+                    werden.
+                </li>
+                <li>
+                    <strong>Layout</strong> – nutzerfreundlich gestaltet, Hauptinhalt muss sofort erkennbar und leicht
+                    zugänglich ein, Nebeninhalte dürfen den Hauptinhalt nicht überdecken, Werbung muss als solche
+                    gekennzeichnet sein und das Seitenlayout muss professionellen Ansprüchen genügen. Dazu gehört auch
+                    eine responsive Seite welche auch für Mobilgeräte optimiert ist.
+                </li>
+                <li>
+                    <strong>Ladezeiten</strong> – eine Website muss schnell laden
+                </li>
+                <li>
+                    <p>
+                        <strong>Backlinks</strong> – ein gutes Backlink-Management sorgt für gute Rankingergebnisse und
+                        einen höheren PageRank und besseren Trust-Wert. Hierbei ist aber wichtig, dass die
+                        Suchmaschinenrichtlinien eingehalten werden, um keinen BadRank-Wert zu erhalten. Die Anzahl an
+                        Backlinks unterschiedlicher Domains beschreibt die Domainpopularität einer Seite, welche auch
+                        einen Einfluss auf das Ranking hat.
+                    </p>
+                    
+                    <list>
+                        <li>
+                            Die verlinkte Webseite wird relevanter für Keywords, die sich im Ankertext befinden.
+                        </li>
+                        <li>
+                            Auch auf Keywords im Umgebungstext wird geachtet, da der Anker oft nur ein
+                            &lt;a&gt;mehr&lt;/a&gt; ist. Somit steigt die Relevanz der Zielseite für Keywords im
+                            Umgebungstext des Links.
+                        </li>
+                        <li>
+                            Links, die im Quelltext weit oben stehen sind, relevanter.
+                        </li>
+                        <li>
+                            Ein natürliches Linkprofiel – Links von ganz unterschiedlichen Seiten und Links von
+                            thematisch verwandten Webseiten – spielt auch eine große Rolle.
+                        </li>
+                        <li>
+                            Google analysiert auch das Backlink-Wachstum. Steigt die Zahl natürlich und wächst
+                            kontinuierlich, so wird sie besser gerankt.
+                        </li>
+                        <li>
+                            Je länger ein Link besteht, desto wertvoller wird er.
+                        </li>
+                        <li>
+                            Durch eine sinnvolle interne Verlinkung erhöht sich auch der Nutzwert für die Besucher, und
+                            die Usability kann sich verbessern.
+                        </li>
+                    </list>
+                </li>
+            </list>
+        </chapter>
+
+        <chapter title="Website-Signale" id="signale-website">
+            <p>
+                Zu den Website-Signalen gehören:
+            </p>
+
+            <list>
+                <li>
+                    Nützliche und einzigartige Inhalte
+                </li>
+                <li>
+                    Eine gute Informationsarchitektur -&gt; Einteilung in Haupt- und Unterbereiche
+                </li>
+                <li>
+                    Regelmäßig (nicht nur sporadisch bzw. unregelmäßig) und neu publizierter Content
+                </li>
+                <li>
+                    Anzahl der Seiten – desto größer, desto besser, wenn die einzelnen Seiten auch einzigartige Inhalte
+                    bieten. Steigende Zahl an Seiten.
+                </li>
+                <li>
+                    Anbieterinformationen – Datenschutzhinweise, Impressum, Kontaktformular, Telefon, E-Mail
+                </li>
+            </list>
+        </chapter>
+
+        <chapter title="Domain-Signale" id="signale-domain">
+            <p>
+                Google wertet aus, wann eine Domain zum ersten Mal registriert wurde, und wie sie sich im Laufe der
+                Jahre entwickelt. Kauft man eine bereits existierende Domain, so kann es schwierig sein, eine Domain mit
+                einer „unrühmlichen Vergangenheit“ wiederzubeleben, d.h., zu guten Rankings zu führen.
+            </p>
+        </chapter>
+
+        <chapter title="Server-Signale" id="signale-server">
+            <p>
+                Zu den Server-Signalen gehören gehört die Verfügbarkeit (längere oder öfter auftretende Down-Zeiten sind
+                schlecht), die Performance (durchschnittliche Ladezeiten), sowie auch die Verwendung eines
+                <code>https</code>-Protokolls anstelle von <code>http</code>.
+            </p>
+        </chapter>
+
+        <chapter title="Nutzer-Signale" id="signale-nutzer">
+            <p>
+                Mit dem Google Chrome Webbrowser sammelt Google viele Daten wie die Durchklickrate, die SERP-Return-Rate
+                (wie schnell der Nutzer wieder von einer Seite zur Suche zurückkehrt), Time on Site (wie lange Suchende
+                auf einer gefundenen Webseite bleiben), Bounce Rate (= Absprungrate, der Prozentsatz von Besuchern einer
+                Website, die nur eine einzige Seite der Website betrachten und danach die Website sofort wieder
+                verlassen).
+            </p>
+        </chapter>
+
+        <chapter title="Nutzer-Interaktion" id="signale-nutzerinteraktion">
+            <p>
+                Zur Nutzer-Interaktion gehört beispielsweise das Hinterlassen eines Kommentars oder einer Bewertung oder
+                Aufrufen einer speziellen Funktion.
+            </p>
+        </chapter>
+
+        <chapter title="Markensignale" id="signale-marke">
+            <p>
+                Bekannte Marken kommen in den Top-Suchergebnissen immer häufiger vor, da sie Vertrauenswürdiger sind.
+                Eine vertrauenswürdige Marke macht aus:
+            </p>
+
+            <list>
+                <li>Seriöse Website mit Impressum, Anbieterinformationen, Rechtskonformität und Kontaktinfos</li>
+                <li>Aktive Social-Media-Accounts</li>
+                <li>Niedrige Absprungraten (Bounce Rates)</li>
+                <li>Domain-Registrierung für längeren Zeitraum</li>
+                <li>Backlinks von Authority Domains, seriösen Publikationsorganen und Unternehmenswebsites</li>
+            </list>
+
+            <p>
+                Zudem wird von Google auch analysiert, was andere im Web über eine Website sagen (Bewertungen,
+                Kundenmeinungen und Rezensionen), sowie auch ob eine Marke im Web öfters auch ohne Links genannt wird
+                und auch wie häufig ein Markenname in die Google-Suche eingegeben wird, und ob sich die Häufigkeit
+                verändert.
+            </p>
+        </chapter>
+
+        <chapter title="Soziale Signale" id="signale-sozial">
+        </chapter>
+
+        <chapter title="Negative Signale" id="signale-negativ">
+            <p>
+                Websites können aufgrund negativer Rankingsignale von Google bestraft (Google Penalty) oder auch 
+                komplett aus dem Suchindex verbannt werden. Gründe dafür sind:
+            </p>
+
+            <list>
+                <li>
+                    Minderwertige oder schädliche Backlinks oder an solchen Links verlinken – „Don’t link to bad
+                    neighbourhood“
+                </li>
+                <li>
+                    Verlinken zu URLs die es nicht mehr gibt – 404 not found
+                </li>
+                <li>
+                    Technische Probleme oder Hindernisse sowie verwenden von veralteten Technologien wie Adobe Flash und
+                    HTML-Framesets
+                </li>
+                <li>
+                    <p>
+                        Verstoß gegen die Google Webmaster-Richtlinien
+                    </p>
+
+                    <list>
+                        <li>Brückenseiten – Seiten die einfach nur weiterverlinken</li>
+                        <li>Automatisch erstellter Content</li>
+                        <li>Einfügen von Inhalten anderer Webseiten</li>
+                        <li>Teilnahme an Linkaustauschprogramm</li>
+                        <li>Kaufen von Backlinks</li>
+                        <li>Verborgener Text</li>
+                    </list>
+                </li>
+                <li>
+                    Überoptimierung – zu hohe Keyworddichte, unnatürliches Linkprofiel und ein zu rasantes,
+                    ungleichmäßiges Linkwachstum Negative Nutzerbewertungen
+                </li>
+                <li>
+                    <p>
+                        Eine manuelle Bestrafung durch Google da sie gegen die Webmaster-Richtlinien verstoßen:
+                    </p>
+                    
+                    <list>
+                        <li>Gehackte Website</li>
+                        <li>Nutzergenerierter Spam</li>
+                        <li>Kostenlose Spamhosts</li>
+                        <li>Markup mit Spamstrukturen</li>
+                        <li>Unnatürliche Links zur Website</li>
+                        <li>Inhalte von minderwertiger Qualität mit geringem oder gar keinem Mehrwert </li>
+                        <li>Cloaking bzw. irreführende Weiterleitungen</li>
+                        <li>Cloaking: Verstoß gegen die „Erste Klick gratis“-Richtlinie</li>
+                        <li>Unnatürliche Links von Ihrer Website</li>
+                        <li>Reine Spamwebsite</li>
+                        <li>Bilder-Cloaking</li>
+                        <li>Verborgener Text bzw. überflüssige Keywords</li>
+                    </list>
+                </li>
+            </list>
+        </chapter>
     </chapter>
 
     <chapter title="Der Prozess und die Ziele " id="prozess-ziele">
