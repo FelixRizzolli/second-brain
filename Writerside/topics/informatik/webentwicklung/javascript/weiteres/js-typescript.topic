@@ -217,6 +217,38 @@
             </chapter>
 
             <chapter title="object" id="datentypen-komplex-object">
+                <p>
+                    Der spezielle Typ <code>object</code> bezieht sich auf jeden Wert, der kein primitiver Datentyp ist
+                    (<code>string</code>, <code>number</code>, <code>bigint</code>, <code>boolean</code>,
+                    <code>symbol</code>, <code>null</code> oder <code>undefined</code>). Er unterscheidet sich von dem
+                    leeren Objekttyp <code>{ }</code> und auch von dem globalen Typ <code>Object</code>.
+                    <code>Object</code> wird eigentlich nie verwenden werden. Auch bei Funktionen handelt es sich in
+                    JavaScript um Objekte: Sie haben Eigenschaften, haben <code>Object.prototype</code> in ihrer
+                    Prototyp-Kette, sind <code>instanceof object</code>, man kann <code>Object.keys</code> auf sie
+                    anwenden und so weiter. Aus diesem Grund werden Funktionstypen in TypeScript als <code>object</code>
+                    betrachtet.
+                </p>
+                <p>
+                    TypeScript hat eine spezifische Syntax zur Definition von Objekttypen. Objekttypen wie diese können
+                    auch separat geschrieben und sogar wiederverwendet werden, dafür werden Interfaces verwendet.
+                    Optionale Eigenschaften werden mit dem <code>?</code> gekennzeichnet. Wird Eigenschaft nicht als
+                    optional gekennzeichnet und sie wird bei der Zuweisung weggelassen, so wirft dies einen Fehler im
+                    Bezug zum folgenden Beispiel: <code>Error: Property 'mileage' is missing in type '{ type: string; }'
+                    but required in type '{ type: string; mileage: number; }'.</code>
+                </p>
+
+                <code-block lang="typescript">
+                    const car = { type: "Toyota" };                   // Definition eines Objekts: Objekttyp wird abgeleitet
+                    const car: { type: string } = { type: "Toyota" }; // Definition eines Objekts: Objekttyp wird explizit zugewiesen
+                    car.type = "Ford";                                // Wertzuweisung: Kein Fehler
+                    car.type = 2;                                     // Wertzuweisung: Error: Type 'number' is not assignable to type 'string'.
+
+                    // Optionale Eigenschaften
+                    const car: { type: string, mileage?: number } = {
+                        type: "Toyota"
+                    };
+                    car.mileage = 2000;
+                </code-block>
             </chapter>
 
             <chapter title="array" id="datentypen-komplex-array">
