@@ -941,7 +941,79 @@
     </chapter>
 
     <chapter title="Webpage" id="webpage">
+        <chapter title="Struktur und Layout" id="webpage-struktur">
+            <p>
+                Der Bereich einer Seite der anfangs, ohne zu scrollen sichtbar ist, wird als „above the fold“
+                bezeichnet. Dieser Bereich bietet besonders starke Rankingsignale.
+            </p>
+        </chapter>
 
+        <chapter title="HTML-Quellcode" id="webpage-quellcode">
+            <p>
+                Google Robots sind nicht so gut wie unsere Browser, so können Seiten, bei denen der Sließtag vergessen
+                wurde nicht gut analysiert werden. Somit ist es wichtig validen HTML-Code zu haben. Dieser kann mit dem
+                W3C-Validator kostenlos geprüft werden. Neue Projekte sollten bestens in HTML5 umg ersetzt werden. Auch
+                die Struktur soll semantisch sinnvoll gestaltet werden beispielsweiße eine richtige Ordnung der
+                <code>&lt;h1&gt;</code>- bis <code>&lt;h6&gt;</code>-Überschriften. Die Keyword-Verteilung: Seitentitel
+                (max. 55 Zeichen), Überschriften, Meta-Description (max. 320 Zeichen), Hervorhebungen im Text
+                <code>&lt;strong&gt;</code> <code>&lt;em&gt;</code>, <code>alt</code>-Attribute und generell gilt auch
+                je weiter oben (im HTML-Quellcode), desto höher werden sie gewichtet.
+                <code>&lt;meta name="robots" content= "noindex, nofollow"&gt;</code> - mit <code>noindex</code> wird die
+                Seite von dem Robot nicht indexiert, mit <code>nofollow</code> folgt der Robot der seite nicht.
+                <code>&lt;meta name="revisit-after" content=”30 days"&gt;</code> - Mit diesem Metatag kann man einer,
+                Suchmaschine vorschlagen in welchem Rhythmus sie die Seite wieder besuchen soll. Dies ist jedoch nur ein
+                Vorschlag und wird nicht unbedingt von der Suchmaschine verwendet.
+            </p>
+        </chapter>
+
+        <chapter title="Eingebundene Dateien" id="webpage-files">
+            <list>
+                <li>
+                    Bei Bildern die niedrigste sinnvolle Auflösung und das geeignetste Dateiformat verwenden, um beste
+                    Ladezeiten zu erzielen. Auch im <code>title</code>-Attribut für Tooltips und im
+                    <code>alt</code>-Attribut für den Alternativtext lassen sich Keywords platzieren. Der
+                    <code>&lt;figure&gt;</code>-Tag kann für Bildbeschreibungen verwendet werden und sendet ein
+                    positives Rankingsignal.
+                </li>
+                <li>
+                    Video Sitemaps
+                </li>
+                <li>
+                    Je weniger JS- und CSS-Dateien, desto besser, da jede eigene Datei einen eigenen http request
+                    erfordert und dies die Ladezeiten erhöht. Mit GZIP können die Dateien auch nochmals komprimiert
+                    werden.
+                </li>
+            </list>
+        </chapter>
+
+        <chapter title="OnePager" id="webpage-onepager">
+            <p>
+                Sogenannte OnePager sind relativ schwer für Suchmaschinen zu optimieren, daher ist von denen abzuraten.
+                Möchte man darauf trotzdem nicht verzichten so ist es am besten, wenn man auf der ganzen Seite sich auf
+                ein zentrales Thema fokussiert und am Anfang eine Navigation gestaltet die mit Links auf die einzelnen
+                Abschnitte verweist.
+            </p>
+        </chapter>
+
+        <chapter title="Optimierung für Mobile Geräte" id="webpage-mobile">
+            <list>
+                <li>
+                    Die Darstellungsgröße der Website muss sich so anpassen, dass der Benutzer nicht Zoomen oder
+                    seitlich scrollen muss. Texte lassen sich ohne Zoomen lesen.
+                </li>
+                <li>
+                    Die Abstände zwischen Hyperlinks sind so groß, dass der Benutzer den Link nicht verfehlt.
+                </li>
+                <li>
+                    Vermeiden von Flash da wenige Geräte diese Technologie unterstützen.
+                </li>
+                <li>
+                    Es gibt auch verschiedene Frameworks welche die Optimierung für mobile Geräte unterstützen:
+                    Bootstrap, Foundation, UIkit, AMP. Google bietet ein webbasiertes Testtool, um die Website auf
+                    Mobiltauglichkeit zu testen
+                </li>
+            </list>
+        </chapter>
     </chapter>
 
     <chapter title="Site, Server &amp; Domain" id="site-server-domain">
