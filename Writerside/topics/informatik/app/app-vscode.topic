@@ -7,8 +7,33 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlegendes" id="basics">
-
         <chapter title="CLI" id="basics-cli">
+            <table style="header-row">
+                <tr>
+                    <td>Befehl</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>code .</code></td>
+                    <td>Öffnet VSCode im aktuellen Verzeichnis der CL.</td>
+                </tr>
+                <tr>
+                    <td><code>code [path]</code></td>
+                    <td>Öffnet VSCode in einem bestimmten Verzeichnis.</td>
+                </tr>
+                <tr>
+                    <td><code>code [file]</code></td>
+                    <td>Öffnet VSCode mit einer bestimmten Datei.</td>
+                </tr>
+                <tr>
+                    <td><code>code -v</code></td>
+                    <td>Gibt die Versionsnummer von VSCode aus</td>
+                </tr>
+                <tr>
+                    <td><code>code --status</code></td>
+                    <td>Gibt diagnostische Informationen über VSCode aus.</td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Personalisierung" id="basics-personalisierung">
