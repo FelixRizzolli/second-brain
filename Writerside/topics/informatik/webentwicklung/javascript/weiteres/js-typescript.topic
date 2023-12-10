@@ -187,6 +187,19 @@
             </chapter>
 
             <chapter title="unknown" id="datentypen-primitive-unknown">
+                <p>
+                    Der Typ <code>unknown</code> steht für einen beliebigen Wert. Er ähnelt dem Typ <code>any</code>,
+                    ist aber sicherer, weil es nicht erlaubt ist, mit einem unbekannten Wert etwas zu tun.
+                </p>
+
+                <code-block lang="typescript">
+                    function f1(a: any) {
+                        a.b();  // -> OK
+                    }
+                    function f2(a: unknown) {
+                        a.b();  // -> Error: 'a' is of type 'unknown'.
+                    }
+                </code-block>
             </chapter>
 
             <chapter title="undefined" id="datentypen-primitive-undefined">
