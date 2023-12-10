@@ -338,6 +338,22 @@
             </chapter>
 
             <chapter title="Interfaces" id="datentypen-interfaces">
+                <p>
+                    Interfaces sind ähnlich wie Typ-Aliase, nur dass sie nur für Objekttypen gelten. Interfaces können
+                    die Definition der jeweils anderen erweitern. Das bedeutet, dass ein neues Interface mit denselben
+                    Eigenschaften wie das ursprüngliche Interface und zusätzlich etwas Neues erstellt werden kann.
+                </p>
+
+                <code-block lang="typescript">
+                    interface Rectangle { height: number, width: number };
+                    interface ColoredRectangle extends Rectangle { color: string };
+
+                    const coloredRectangle: ColoredRectangle = {
+                        height: 20,
+                        width: 10,
+                        color: "red"
+                    };
+                </code-block>
             </chapter>
 
             <chapter title="Typ-Aliase vs. Interfaces" id="datentypen-alias-vs-interface">
