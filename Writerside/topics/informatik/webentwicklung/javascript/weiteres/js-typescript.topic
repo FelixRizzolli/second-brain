@@ -767,6 +767,34 @@
         </chapter>
 
         <chapter title="Klassen" id="generics-klassen">
+            <p>
+                Generics können verwendet werden, um verallgemeinerte Klassen zu erstellen, wie <code>Map</code>.
+                TypeScript kann auch den Typ des generischen Parameters ableiten, wenn er in einem Konstruktorparameter
+                verwendet wird.
+            </p>
+
+            <code-block lang="typescript">
+                class NamedValue&lt;T&gt; {
+                    private _value: T | undefined;
+
+                    constructor(private name: string) {}
+                        public setValue(value: T) {
+                        this._value = value;
+                    }
+
+                    public getValue(): T | undefined {
+                        return this._value;
+                    }
+
+                    public toString(): string {
+                        return `${this.name}: ${this._value}`;
+                    }
+                }
+
+                let value = new NamedValue&lt;number&gt;('myNumber');
+                value.setValue(10);
+                console.log(value.toString()); // myNumber: 10
+            </code-block>
         </chapter>
 
         <chapter title="Typ-Aliase" id="generics-aliase">
