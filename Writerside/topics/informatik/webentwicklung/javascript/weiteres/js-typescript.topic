@@ -1192,5 +1192,117 @@
     </chapter>
 
     <chapter title="Quellen" id="quellen">
+        <tip>
+            <strong>(BUCH)</strong>
+            978-3836292543, React – Das umfassende Handbuch, Sebastian Springer, Rheinwerk Verlag GmbH, 2023
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_intro.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_intro.php
+            </a>, 2023-11-10 06:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_getstarted.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_getstarted.php
+            </a>, 2023-11-10 06:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_simple_types.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_simple_types.php
+            </a>, 2023-11-10 06:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.typescriptlang.org/docs/handbook/2/everyday-types.html" ignore-vars="true">
+                https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
+            </a>, 2023-11-10 06:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.typescriptlang.org/docs/handbook/2/functions.html" ignore-vars="true">
+                https://www.typescriptlang.org/docs/handbook/2/functions.html
+            </a>, 2023-11-10 07:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_tuples.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_tuples.php
+            </a>, 2023-11-11 17:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_arrays.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_arrays.php
+            </a>, 2023-11-11 18:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_object_types.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_object_types.php
+            </a>, 2023-11-12 06:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_enums.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_enums.php
+            </a>, 2023-11-12 06:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_aliases_and_interfaces.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_aliases_and_interfaces.php
+            </a>, 2023-11-12 07:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_union_types.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_union_types.php
+            </a>, 2023-11-12 07:15
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_functions.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_functions.php
+            </a>, 2023-11-12 07:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_casting.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_casting.php
+            </a>, 2023-11-12 08:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_classes.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_classes.php
+            </a>, 2023-11-12 08:15
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_basic_generics.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_basic_generics.php
+            </a>, 2023-11-12 09:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_utility_types.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_utility_types.php
+            </a>, 2023-11-12 10:15
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_keyof.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_keyof.php
+            </a>, 2023-11-12 10:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_null.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_null.php
+            </a>, 2023-11-12 10:30
+        </tip>
     </chapter>
 </topic>
