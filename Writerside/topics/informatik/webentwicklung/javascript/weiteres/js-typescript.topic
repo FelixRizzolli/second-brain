@@ -1106,6 +1106,36 @@
         </chapter>
 
         <chapter title="Optional Chaining" id="null-undefined-optional-chaining">
+            <p>
+                Optional Chaining ist eine JavaScript-Funktion, die gut mit der <code>null</code>-Behandlung von
+                TypeScript zusammenarbeitet. Sie ermöglicht den Zugriff auf Eigenschaften eines Objekts, die existieren
+                oder nicht existieren können, mit einer kompakten Syntax. Es kann mit dem Operator <code>?</code>. beim
+                Zugriff auf Eigenschaften verwendet werden.
+            </p>
+
+            <code-block lang="typescript">
+                interface House {
+                    sqft: number;
+                    yard?: {
+                        sqft: number;
+                    };
+                }
+
+                function printYardSize(house: House) {
+                    const yardSize = house.yard?.sqft;
+                    if (yardSize === undefined) {
+                        console.log('No yard');
+                    } else {
+                        console.log(`Yard is ${yardSize} sqft`);
+                    }
+                }
+
+                let home: House = {
+                    sqft: 500
+                };
+
+                printYardSize(home); // Ausgabe: 'No yard'
+            </code-block>
         </chapter>
 
         <chapter title="Nullish Coalescence" id="null-undefined-nullish-coalescence">
