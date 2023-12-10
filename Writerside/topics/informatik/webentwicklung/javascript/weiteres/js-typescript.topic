@@ -1177,6 +1177,17 @@
         </chapter>
 
         <chapter title="Array bounds handling" id="null-undefined-array-bounds-handling">
+            <p>
+                Auch wenn <code>strictNullChecks</code> aktiviert ist, geht TypeScript standardmäßig davon aus, dass ein
+                Array-Zugriff niemals <code>undefined</code> zurückgibt (es sei denn, <code>undefined</code> ist Teil
+                des Array-Typs). Die Konfiguration noUncheckedIndexedAccess kann verwendet werden, um dieses Verhalten
+                zu ändern.
+            </p>
+
+            <code-block lang="typescript">
+                let array: number[] = [1, 2, 3];
+                let value = array[0]; // Mit`noUncheckedIndexedAccess` hat dies den Typ `number | undefined`
+            </code-block>
         </chapter>
     </chapter>
 
