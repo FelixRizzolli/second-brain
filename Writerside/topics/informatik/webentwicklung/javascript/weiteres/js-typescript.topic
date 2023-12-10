@@ -124,132 +124,1185 @@
     </chapter>
 
     <chapter title="Datentypen" id="datentypen">
-
         <chapter title="Einfache Datentypen bzw. Primitive von TypeScript" id="datentypen-primitive">
+            <p>
+                Es gibt drei Hauptprimitive in JavaScript und TypeScript.
+            </p>
+
+            <table>
+                <tr>
+                    <td>Typ</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>boolean</code></td>
+                    <td>Wahrheitswerte <code>true</code> und <code>false</code></td>
+                </tr>
+                <tr>
+                    <td><code>number</code></td>
+                    <td>Zahlenwerte wie Ganzzahlen, Fließkommazahlen.</td>
+                </tr>
+                <tr>
+                    <td><code>string</code></td>
+                    <td>Zeichenketten</td>
+                </tr>
+            </table>
+
+            <p>
+                Es gibt auch 2 weniger verbreitete Primitive, die in späteren Versionen von Javascript und TypeScript
+                verwendet werden.
+            </p>
+
+            <table>
+                <tr>
+                    <td>Typ</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>bigint</code></td>
+                    <td>
+                        Dieser Datentyp steht für den in ES2020 eingeführten <code>BigInt</code> für sehr große
+                        Zahlenwerte.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>symbol</code></td>
+                    <td>Deutet darauf hin, dass es sich hierbei um einen eindeutigen Wert handelt.</td>
+                </tr>
+            </table>
 
             <chapter title="any" id="datentypen-primitive-any">
+                <p>
+                    TypeScript hat auch einen speziellen Typ, <code>any</code>, der immer dann verwendet wird, wenn man
+                    nicht will, dass ein bestimmter Wert Fehler bei der Typüberprüfung verursacht. Der
+                    <code>any</code>-Typ ist nützlich, wenn man keinen langen Typ schreiben möchte, nur um TypeScript
+                    davon zu überzeugen, dass eine bestimmte Code-Zeile in Ordnung ist.
+                </p>
+                <p>
+                    Wird kein Typ angegeben und TypeScript kann den Typ nicht aus dem Kontext ableiten, dann verwendet
+                    der Compiler normalerweise <code>any</code>. Normalerweise sollte man dies jedoch vermeiden, da
+                    <code>any</code> nicht typgeprüft ist. Compiler-Flag <code>noImplicitAny</code> wird verwendet, um
+                    jeden impliziten <code>any</code>-Typ als Fehler zu kennzeichnen.
+                </p>
             </chapter>
 
             <chapter title="unknown" id="datentypen-primitive-unknown">
+                <p>
+                    Der Typ <code>unknown</code> steht für einen beliebigen Wert. Er ähnelt dem Typ <code>any</code>,
+                    ist aber sicherer, weil es nicht erlaubt ist, mit einem unbekannten Wert etwas zu tun.
+                </p>
+
+                <code-block lang="typescript">
+                    function f1(a: any) {
+                        a.b();  // -> OK
+                    }
+                    function f2(a: unknown) {
+                        a.b();  // -> Error: 'a' is of type 'unknown'.
+                    }
+                </code-block>
             </chapter>
 
             <chapter title="undefined" id="datentypen-primitive-undefined">
+                <p>
+                    Der Typ <code>undefined</code> steht für den <code>undefined</code>-Wert von JavaScript.
+                </p>
             </chapter>
         </chapter>
 
         <chapter title="Komplexe Datentypen in TypeScript" id="datentypen-komplex">
-
             <chapter title="null" id="datentypen-komplex-null">
+                <p>
+                    Der Typ <code>null</code> steht für den <code>null</code>-Wert von JavaScript.
+                </p>
             </chapter>
 
             <chapter title="object" id="datentypen-komplex-object">
+                <p>
+                    Der spezielle Typ <code>object</code> bezieht sich auf jeden Wert, der kein primitiver Datentyp ist
+                    (<code>string</code>, <code>number</code>, <code>bigint</code>, <code>boolean</code>,
+                    <code>symbol</code>, <code>null</code> oder <code>undefined</code>). Er unterscheidet sich von dem
+                    leeren Objekttyp <code>{ }</code> und auch von dem globalen Typ <code>Object</code>.
+                    <code>Object</code> wird eigentlich nie verwenden werden. Auch bei Funktionen handelt es sich in
+                    JavaScript um Objekte: Sie haben Eigenschaften, haben <code>Object.prototype</code> in ihrer
+                    Prototyp-Kette, sind <code>instanceof object</code>, man kann <code>Object.keys</code> auf sie
+                    anwenden und so weiter. Aus diesem Grund werden Funktionstypen in TypeScript als <code>object</code>
+                    betrachtet.
+                </p>
+                <p>
+                    TypeScript hat eine spezifische Syntax zur Definition von Objekttypen. Objekttypen wie diese können
+                    auch separat geschrieben und sogar wiederverwendet werden, dafür werden Interfaces verwendet.
+                    Optionale Eigenschaften werden mit dem <code>?</code> gekennzeichnet. Wird Eigenschaft nicht als
+                    optional gekennzeichnet und sie wird bei der Zuweisung weggelassen, so wirft dies einen Fehler im
+                    Bezug zum folgenden Beispiel: <code>Error: Property 'mileage' is missing in type '{ type: string; }'
+                    but required in type '{ type: string; mileage: number; }'.</code>
+                </p>
+
+                <code-block lang="typescript">
+                    const car = { type: "Toyota" };                   // Definition eines Objekts: Objekttyp wird abgeleitet
+                    const car: { type: string } = { type: "Toyota" }; // Definition eines Objekts: Objekttyp wird explizit zugewiesen
+                    car.type = "Ford";                                // Wertzuweisung: Kein Fehler
+                    car.type = 2;                                     // Wertzuweisung: Error: Type 'number' is not assignable to type 'string'.
+
+                    // Optionale Eigenschaften
+                    const car: { type: string, mileage?: number } = {
+                        type: "Toyota"
+                    };
+                    car.mileage = 2000;
+                </code-block>
             </chapter>
 
             <chapter title="array" id="datentypen-komplex-array">
+                <p>
+                    TypeScript hat eine spezifische Syntax für Arrays:
+                </p>
+
+                <code-block lang="typescript">
+                    const names: string[] = [];                    // Definition eines String Arrays
+                    names.push("Dylan");                           // Hinzufügen eines Wertes: Ohne Fehler
+                    names.push(3);                                 // Hinzufügen eines Wertes: Error: Argument of type 'number' is not assignable to parameter of type 'string'.
+                    const names: readonly string[] = ["Dylan"];    // Definition eines Readonly String Arrays
+                    const numbers = [1, 2, 3];                     // Definition eines Arrays: bekommt automatisch den Typ number[] in diesem Fall
+                </code-block>
             </chapter>
 
             <chapter title="touple" id="datentypen-komplex-touple">
+                <p>
+                    Ein Tupel ist ein typisiertes Array mit einer vordefinierten Länge und Typen für jeden Index. Tupel
+                    sind großartig, weil sie es ermöglichen, dass jedes Element im Array ein bekannter Wertetyp ist.
+                </p>
+
+                <code-block lang="typescript">
+                    let ourTuple: [number, boolean, string];                                // Definition
+                    ourTuple = [5, false, 'Coding God was here'];                           // korrekte Zuweisung
+                    ourTuple.push('Something new and wrong');                               // keine Typsicherheit nach Index 3+
+                    const roTuple: readonly [number, boolean, string] = [5, true, 'abc'];   // Readonly Tuple Definition
+                    ro.push('cba');                                                         // Schmeißt einen Fehler
+                    const graph: [x: number, y: number] = [55.2, 41.3];                     // Benannte Touples für einen Kontext der Werte
+                </code-block>
             </chapter>
 
             <chapter title="enum" id="datentypen-komplex-enum">
+                <p>
+                    Ein Enum ist eine spezielle "Klasse", die eine Gruppe von Konstanten (unveränderlichen Variablen)
+                    darstellt. Enums gibt es in zwei Varianten: <code>string</code> und <code>number</code>. Technisch
+                    gesehen können <code>string</code>- und <code>number</code> Enum-Werte gemischt werden, aber es wird
+                    empfohlen, dies nicht zu tun.
+                </p>
+
+                <code-block lang="typescript">
+                    enum CardinalDirections { North, East, South, West };   // Definition ohne Initialisierung (number)
+                    console.log(CardinalDirections.North);                  // Ausgabe: 0
+
+                    enum StatusCodes {                                      // Definition mit Initialisierung (number)
+                        NotFound = 404,
+                        Success = 200,
+                        Accepted = 202,
+                        BadRequest = 400
+                    }
+                    console.log(StatusCodes.NotFound);                      // Ausgabe: 404
+
+                    enum CardinalDirections {                               // Definition mit Initialisierung (string)
+                        North = 'North',
+                        East = "East",
+                        South = "South",
+                        West = "West"
+                    };
+                    console.log(CardinalDirections.North);                  // Ausgabe: 'North'
+                </code-block>
             </chapter>
         </chapter>
 
         <chapter title="Typ-Aliase und Interfaces" id="datentypen-aliase-interface">
-
             <chapter title="Typ-Aliase" id="datentypen-aliase">
+                <p>
+                    Typ-Aliase ermöglichen die Definition von Typen mit einem eigenen Namen (einem Alias). Typ-Aliase
+                    können für primitive Typen wie Strings oder komplexere Typen wie Objekte und Arrays verwendet
+                    werden: <code>type CarModel = string;</code>
+                </p>
+
+                <code-block lang="typescript">
+                    type CarYear = number;
+                    type CarType = string;
+                    type CarModel = string;
+                    type Car = { year: CarYear, type: CarType, model: CarModel };
+
+                    const carYear: CarYear = 2001;
+                    const carType: CarType = "Toyota";
+                    const carModel: CarModel = "Corolla";
+                    const car: Car = {
+                        year: carYear,
+                        type: carType,
+                        model: carModel
+                    };
+                </code-block>
             </chapter>
 
             <chapter title="Interfaces" id="datentypen-interfaces">
+                <p>
+                    Interfaces sind ähnlich wie Typ-Aliase, nur dass sie nur für Objekttypen gelten. Interfaces können
+                    die Definition der jeweils anderen erweitern. Das bedeutet, dass ein neues Interface mit denselben
+                    Eigenschaften wie das ursprüngliche Interface und zusätzlich etwas Neues erstellt werden kann.
+                </p>
+
+                <code-block lang="typescript">
+                    interface Rectangle { height: number, width: number };
+                    interface ColoredRectangle extends Rectangle { color: string };
+
+                    const coloredRectangle: ColoredRectangle = {
+                        height: 20,
+                        width: 10,
+                        color: "red"
+                    };
+                </code-block>
             </chapter>
 
             <chapter title="Typ-Aliase vs. Interfaces" id="datentypen-alias-vs-interface">
+                <p>
+                    Neben Klassen gibt es noch Type-Aliase und Interfaces als Möglichkeiten eigene Typen zu definieren.
+                    Beide können zwar zur Angabe von Typen verwendet werden, also beispielsweise bei
+                    Variablendeklarationen oder in Funktionssignaturen, aber dennoch unterscheiden sich beide in einigen
+                    Punkten:
+                </p>
+
+                <list>
+                    <li>
+                        Interfaces können durch Interface Merging erweitert werden. Wird ein Interface mehrmals
+                        definiert, fügt TypeScript diese Definitionen zu einem Interface zusammen.
+                    </li>
+                    <li>
+                        Interfaces können mit dem extends-Schlüsselwort von anderen Interfaces erben. Bei Typen kann der
+                        <code>&amp;</code>-Operator verwendet werden, um ein Typ als Basis zu verwenden und weitere
+                        Informationen hinzuzufügen und so einen neuen Typ zu erzeugen.
+                    </li>
+                    <li>
+                        Type Aliases können nach ihrer Definition nicht mehr verändert werden.
+                    </li>
+                </list>
+
+                <p>
+                    Für einfache Fälle und wenn nicht sichergestellt werden muss, dass eine Klasse ein Interface
+                    implementiert werden muss, reicht in den meisten Fällen ein Typ-Alias aus.
+                </p>
             </chapter>
         </chapter>
 
         <chapter title="Union Typen" id="datentypen-union">
+            <p>
+                Union-Typen werden verwendet, wenn ein Wert mehr als einen einzigen Typ haben kann. Zum Beispiel, wenn
+                eine Eigenschaft ein <code>string</code> oder eine <code>number</code> sein kann. Mit dem <code>|</code>
+                sagen wir, dass unser Parameter beispielsweise ein <code>string</code> oder eine <code>number</code>
+                ist. Hierbei ist aber auch zu beachten, dass bei der Verwendung der Variable nur die Schnittmenge der
+                Funktionalität zwischen den Typen verwendet werden kann. Auf Variablen des Datentyps number gibt es
+                nicht die Methode <code>toUpperCase()</code>, so kann diese auch nicht auf dem Union-Typ
+                <code>string | number</code> verwendet werden.
+            </p>
+
+            <code-block lang="typescript">
+                function printStatusCode(code: string | number) {               // Union-Typ als Parameter
+                    console.log(`My status code is ${code.toUpperCase()}.`);    // Error: Property 'toUpperCase' does not exist ontype 'string | number'.
+                }
+            </code-block>
         </chapter>
     </chapter>
 
     <chapter title="Typisierung bei Funktionen" id="funktionen">
+        <code-block>
+            function add(a: number, b: number): number {
+                return a + b;
+            }
+            const getFullname = function (firstname: string, lastname: string): string {
+                return `${firstname} ${lastname}`;
+            };
+            const greet = (name: string): string => {
+                return `Hello ${name}`;
+            };
+        </code-block>
+
+        <p>
+            Funktionen können entweder als Arrow-Funktion, als benannte oder als anonyme Funktion auftreten. Für
+            TypeScript ist die Signatur der Funktion relevant, also die Parameterliste und der Rückgabewert. Im Beispiel
+            ist zu sehen:
+        </p>
+
+        <list>
+            <li>
+                eine benannte Funktion, also eine Funktion, die einen Namen hat
+            </li>
+            <li>
+                eine anonyme Funktion, also eine Funktion, die keinen Namen hat und die einer Konstante zugewiesen wurde
+            </li>
+            <li>
+                eine Arrow-Funktion
+            </li>
+        </list>
+
+        <p>
+            Egal für welchen Typ von Funktion man sich entscheidet, man sollte versuchen möglichst explizit zu sein und
+            immer die Typen für die Parameter und den Rückgabewert angeben. Gerade der Rückgabewert kann vor
+            Flüchtigkeitsfehlern bewahren, wenn beispielsweise ein <code>return</code>-Statement vergessen wird.
+        </p>
 
         <chapter title="Spezielle Rückgabetypen für Funktionen: never und void"
                  id="funktionen-return">
+            <table style="header-column">
+                <tr>
+                    <td><code>never</code></td>
+                    <td>
+                        Der Typ <code>never</code> steht für Werte, die niemals beobachtet werden. Wird dieser Typ als
+                        Rückgabetyp angegeben, dann bedeutet das, dass die Funktion eine Ausnahme auslöst oder die
+                        Ausführung des Programms beendet.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>void</code></td>
+                    <td>
+                        Der Rückgabe-Typ (eng. return type) <code>void</code> wird verwendet um zu signalisieren, dass
+                        diese Funktion keinen Wert zurückgibt.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Parameter" id="funktionen-parameter">
+            <p>
+                Funktionsparameter werden mit einer ähnlichen Syntax wie Variablendeklarationen typisiert. Wenn kein
+                Parametertyp definiert ist, verwendet TypeScript standardmäßig einen beliebigen, es sei denn, es sind
+                zusätzliche Typinformationen verfügbar, wie in den Abschnitten Standardparameter und Typ-Alias unten
+                gezeigt. Standardmäßig geht TypeScript davon aus, dass alle Parameter erforderlich sind, aber sie können
+                explizit als optional gekennzeichnet werden.
+            </p>
+
+            <code-block lang="typescript">
+                function add(a: number, b: number, c?: number) {
+                    return a + b + (c || 0);
+                }
+            </code-block>
         </chapter>
 
         <chapter title="Typ-Aliase für Funktionen" id="funktionen-aliase">
+            <p>
+                Funktionstypen können getrennt von Funktionen mit Typ-Aliasen angegeben werden. Diese Typen werden
+                ähnlich wie Pfeilfunktionen geschrieben.
+            </p>
+
+            <code-block lang="typescript">
+                type Negate = (value: number) => number;
+                const negateFunction: Negate = (value) => value * -1;
+            </code-block>
         </chapter>
     </chapter>
 
     <chapter title="Klassen" id="klassen">
+        <p>
+            Eine TypeScript-Klasse verhält sich sehr ähnlich wie eine Klasse in modernem JavaScript. So wird sie mit dem
+            <code>class</code>-Schlüsselwort definiert, gefolgt vom Namen der Klasse, der laut Namenskonvention mit
+            einem Großbuchstaben beginnen sollte. Nach dem Klassennamen kann das Schlüsselwort extends und ein
+            Klassenname angegeben werden, um von dieser Klasse zu erben. Oder es wird das Schlüsselwort implements
+            verwendet, um ein Interface anzugeben, welches die Klasse implementieren muss. In einer TypeScript-Klasse
+            Eigenschaften und Methoden definiert werden. Methoden folgen bei der Angabe der Signatur den gleichen Regeln
+            wie die Funktionen.
+        </p>
 
         <chapter title="Zugriffmodifikatoren" id="klassen-zugriffmodifikatoren">
+            <p>
+                Im Gegensatz zu nativem JavaScript unterstützt TypeScript Zugriffsmodifikatoren, mit denen die
+                Sichtbarkeit von Eigenschaften und Methoden einer Klasse beeinflusst werden können. TypeScript verfügt
+                über folgende, auch aus anderen Programmiersprachen bekannten, Modifikatoren:
+            </p>
+
+            <table style="header-column">
+                <tr>
+                    <td><code>private</code></td>
+                    <td>
+                        auf diesen Eigenschaften und Methoden kann nur innerhalb der Klasse zugegriffen werden. Das
+                        bedeutet, dass sie nicht außerhalb, aber auch nicht in abgeleiteten Klassen verfügbar sind.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>protected</code></td>
+                    <td>
+                        auf diesen Eigenschaften kann in der Klasse und in deren Subklassen zugegriffen werden.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>public</code></td>
+                    <td>
+                        ist der standardmodifikator in TypeScript. Wird kein Modifikator angegeben, ist die Eigenschaft
+                        oder Methode automatisch <code>public</code> und kann überall in der Applikation verwendet
+                        werden.
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                Ein weiterer Modifikator, der im Zuge der Klassendefinition verwendet werden kann ist
+                <code>readonly</code>. Eigenschaften, die mit <code>readonly</code> ausgezeichnet sind, müssen im
+                Konstruktor oder bei ihrer Deklaration initialisiert werden und können später nicht mehr verändert
+                werden.
+            </p>
+
+            <code-block lang="typescript">
+                class Person {
+                    private readonly name: string;
+
+                    public constructor(name: string) { this.name = name; } // Die variable name kann nach Aufruf des Konstruktors nicht mehr verändert werden.
+
+                    public getName(): string { return this.name; }
+                }
+            </code-block>
         </chapter>
 
         <chapter title="Konstruktor" id="klassen-konstruktor">
+            <code-block lang="typescript">
+                class User {
+                    constructor(private firstname: string, private lastname: string) {}
+
+                    get fullname(): string {
+                        return `${this.firstname} ${this.lastname}`;
+                    }
+
+                    greet(greeting: string): string {
+                        return `${greeting} ${this.fullname}`;
+                    }
+                }
+
+                const klaus = new User('Klaus', 'Müller');
+                const greeting = klaus.greet('Hello');
+                console.log(greeting); // Hello Klaus Müller
+            </code-block>
+
+            <p>
+                In einer TypeScript-Klasse kann ein Konstruktor definiert werden. Das ist eine spezielle Methode, die
+                TypeScript aufruft, wenn eine neue Instanz der Klasse mit dem Schlüsselwort new erzeugt wird. Der Name
+                des Konstruktors lautet <code>constructor</code>. Im Konstruktor kann eine Parameterliste definiert
+                werden. Diese Werte werden als Argumente bei der Instanziierung übergeben.
+            </p>
+            <p>
+                Definiert man im Konstruktor eine Parameterliste und möchte man diese Werte bestimmten Eigenschaften der
+                Klasse zuweisen, so kann diese Operation direkt im Konstruktor durchgeführt werden. TypeScript sieht für
+                diesen sehr häufig verwendeten Use-Case eine Abkürzung vor: Wird bei einem Parameter eine Kombination
+                aus Zugriffsmodifikator, Eigenschaftsnamen und Typ angegeben, weist TypeScript diesen Wert automatisch
+                der angegebenen Klasseneigenschaft zu. Diese Kurzschreibweise trägt den Namen Parameter Properties.
+            </p>
         </chapter>
 
         <chapter title="Vererbung" id="klassen-vererbung">
+            <p>
+                Für die Vererbung werden in TypeScript zwei Schlüsselwörter verwendet: <code>implements</code> und
+                <code>extends</code>. Mit dem Schlüsselwort implements können Interfaces verwendet werden, um den Typ zu
+                definieren, dem eine Klasse folgen muss. Mit dem Schlüsselwort <code>extends</code> kann eine Klasse
+                kann eine andere Klasse erweitern.
+            </p>
+
+            <code-block lang="typescript">
+                interface Shape {
+                    getArea: () => number;
+                }
+
+                class Rectangle implements Shape {
+                    public constructor(protected readonly width: number, protected readonly height: number) {}
+
+                    public getArea(): number {
+                        return this.width * this.height;
+                    }
+                }
+
+                class Square extends Rectangle {
+                    public constructor(width: number) {
+                        super(width, width);
+                    }
+
+                    // getArea wird von der Klasse Rectangle geerbt.
+                }
+            </code-block>
         </chapter>
 
         <chapter title="Methoden überschreiben mit override" id="klassen-override">
+            <p>
+                Wenn eine Klasse eine andere Klasse erweitert, kann sie die Mitglieder der Elternklasse mit demselben
+                Namen ersetzen. Neuere Versionen von TypeScript erlauben es, dies explizit mit dem Schlüsselwort
+                <code>override</code> zu markieren. Standardmäßig ist das Schlüsselwort <code>override</code> optional,
+                wenn eine Methode überschrieben wird, und dient nur dazu, zu verhindern, dass versehentlich eine Methode
+                überschrieben wird, die nicht existiert. Die Einstellung <code>noImplicitOverride</code> erzwingt, dass
+                beim Überschreiben von Methoden das Schlüsselwort <code>override</code> verwendet wird.
+            </p>
+
+            <code-block lang="typescript">
+                interface Shape {
+                    getArea: () => number;
+                }
+
+                class Rectangle implements Shape {
+                    // using protected for these members allows access from classes that extend from this class, such as Square
+                    public constructor(protected readonly width: number, protected readonly height: number) {}
+
+                    public getArea(): number {
+                        return this.width * this.height;
+                    }
+
+                    public toString(): string {
+                        return `Rectangle[width=${this.width}, height=${this.height}]`;
+                    }
+                }
+
+                class Square extends Rectangle {
+                    public constructor(width: number) {
+                        super(width, width);
+                    }
+
+                    // this toString replaces the toString from Rectangle
+                    public override toString(): string {
+                        return `Square[width=${this.width}]`;
+                    }
+                }
+            </code-block>
         </chapter>
 
         <chapter title="Abstrakte Klassen" id="klassen-abstrakt">
+            <p>
+                Klassen können so geschrieben werden, dass sie als Basisklasse für andere Klassen verwendet werden
+                können, ohne dass alle Mitglieder implementiert werden müssen. Dies geschieht durch die Verwendung des
+                Schlüsselworts <code>abstract</code>. Für Mitglieder, die nicht implementiert sind, wird ebenfalls das
+                Schlüsselwort <code>abstract</code> verwendet. Abstrakte Klassen können nicht direkt instanziiert
+                werden, da sie nicht alle ihre Mitglieder implementiert haben.
+            </p>
+
+            <code-block lang="typescript">
+                abstract class Polygon {
+                    public abstract getArea(): number;
+
+                    public toString(): string {
+                        return `Polygon[area=${this.getArea()}]`;
+                    }
+                }
+
+                class Rectangle extends Polygon {
+                    public constructor(protected readonly width: number, protected readonly height: number) {
+                        super();
+                    }
+
+                    public getArea(): number {
+                        return this.width * this.height;
+                    }
+                }
+            </code-block>
         </chapter>
     </chapter>
 
     <chapter title="Casting" id="casting">
+        <p>
+            Bei der Arbeit mit Typen ist es manchmal notwendig, den Typ einer Variablen zu überschreiben, z. B. wenn von
+            einer Bibliothek falsche Typen bereitgestellt werden. Casting ist der Prozess des Überschreibens eines Typs.
+            Hierzu bietet TypeScript das Schlüsselwort as und die <code>&lt;&gt;</code>-Schreibweise. Bei der Verwendung
+            des <code>as</code>-Schlüsselworts wird der Typ der angegebenen Variable direkt geändert.
+        </p>
+
+        <code-block lang="typescript">
+            let x: unknown = 'hello';
+            console.log((x as string).length);
+        </code-block>
+
+        <p>
+            Casting ändert nicht wirklich den Typ der Daten in der Variablen, zum Beispiel wird der folgende Code nicht
+            wie erwartet funktionieren, da die Variable <code>x</code> immer noch eine <code>number</code> enthält.
+        </p>
+
+        <code-block lang="typescript">
+            let x: unknown = 4;
+            console.log((x as string).length); // Gibt undefined da Variablen des Datentyps number keine length Eigenschaft haben
+        </code-block>
+
+        <p>
+            TypeScript wird trotzdem versuchen, Casts zu typisieren, um zu verhindern, dass Casts nicht korrekt
+            erscheinen. Zum Beispiel wird das Folgende einen Typfehler auslösen, da TypeScript weiß, dass das Casting
+            eines <code>string</code> in eine <code>number</code> keinen Sinn macht, ohne die Daten zu konvertieren:
+        </p>
+
+        <code-block lang="typescript">
+            console.log((4 as string).length); // Error: Conversion of type 'number' to type 'string' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+        </code-block>
+
+        <p>
+            Die Verwendung von <code>&lt;&gt;</code> funktioniert genauso wie das Casting mit <code>as</code>. Diese Art
+            des Castings funktioniert aber nicht mit TSX, z. B. bei der Arbeit an React-Dateien.
+        </p>
+
+        <code-block lang="typescript">
+            console.log((4 as string).length); // Error: Conversion of type 'number' to type 'string' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+        </code-block>
 
         <chapter title="Force Casting" id="casting-force">
+            <p>
+                Um Typfehler zu umgehen, die TypeScript beim Casting auslösen kann, castet man zuerst auf unknown und
+                dann auf den Zieltyp.
+            </p>
+
+            <code-block lang="typescript">
+                let x = 'hello';
+                console.log(((x as unknown) as number).length); // x ist nicht vom Datentyp number deshalb wird hier undefined zurückgegeben.
+            </code-block>
         </chapter>
     </chapter>
 
     <chapter title="Generics" id="generics">
+        <p>
+            Generics ermöglichen die Erstellung von "Typvariablen", die zur Erstellung von Klassen, Funktionen und
+            yp-Aliase verwendet werden können, die die von ihnen verwendeten Typen nicht explizit definieren müssen.
+            Generics macht es einfacher, wiederverwendbaren Code zu schreiben.
+        </p>
 
         <chapter title="Funktionen" id="generics-funktionen">
+            <p>
+                Generics mit Funktionen helfen, verallgemeinerte Methoden zu erstellen, die die verwendeten und
+                zurückgegebenen Typen genauer darstellen. TypeScript kann auch den Typ des generischen Parameters aus
+                den Funktionsparametern ableiten.
+            </p>
+
+            <code-block lang="typescript">
+                function createPair&lt;S, T&gt;(v1: S, v2: T): [S, T] {
+                    return [v1, v2];
+                }
+                console.log(createPair&lt;string, number&gt;('hello', 42)); // ['hello', 42]
+            </code-block>
         </chapter>
 
         <chapter title="Klassen" id="generics-klassen">
+            <p>
+                Generics können verwendet werden, um verallgemeinerte Klassen zu erstellen, wie <code>Map</code>.
+                TypeScript kann auch den Typ des generischen Parameters ableiten, wenn er in einem Konstruktorparameter
+                verwendet wird.
+            </p>
+
+            <code-block lang="typescript">
+                class NamedValue&lt;T&gt; {
+                    private _value: T | undefined;
+
+                    constructor(private name: string) {}
+                        public setValue(value: T) {
+                        this._value = value;
+                    }
+
+                    public getValue(): T | undefined {
+                        return this._value;
+                    }
+
+                    public toString(): string {
+                        return `${this.name}: ${this._value}`;
+                    }
+                }
+
+                let value = new NamedValue&lt;number&gt;('myNumber');
+                value.setValue(10);
+                console.log(value.toString()); // myNumber: 10
+            </code-block>
         </chapter>
 
         <chapter title="Typ-Aliase" id="generics-aliase">
+            <p>
+                Generics in Typ-Aliase ermöglichen die Erstellung von Typen, die besser wiederverwendbar sind. Dies
+                funktioniert auch mit Schnittstellen mit der folgenden Syntax:
+                <code>interface Wrapped&lt;T&gt; {}</code>
+            </p>
+
+            <code-block lang="typescript">
+                type Wrapped&lt;T&gt; = { value: T };
+                const wrappedValue: Wrapped&lt;number&gt; = { value: 10 };
+            </code-block>
         </chapter>
 
         <chapter title="Standardwerte" id="generics-standardwerte">
+            <p>
+                Generics können Standardwerte zugewiesen werden, die gelten, wenn kein anderer Wert angegeben oder
+                abgeleitet wird.
+            </p>
+
+            <code-block lang="typescript">
+                class NamedValue&lt;T = string&gt; {
+                    private _value: T | undefined;
+
+                    constructor(private name: string) {}
+
+                    public setValue(value: T) {
+                        this._value = value;
+                    }
+
+                    public getValue(): T | undefined {
+                        return this._value;
+                    }
+
+                    public toString(): string {
+                        return `${this.name}: ${this._value}`;
+                    }
+                }
+
+                let value = new NamedValue('myNumber');
+                value.setValue('myValue');
+                console.log(value.toString()); // myNumber: myValue
+            </code-block>
         </chapter>
 
         <chapter title="Erweitern" id="generics-erweitern">
+            <p>
+                Constraints können zu generischen Typen hinzugefügt werden, um das Erlaubte zu begrenzen. Die
+                Einschränkungen machen es möglich, sich bei der Verwendung des generischen Typs auf einen spezifischeren
+                Typ zu verlassen. Dies kann mit einem Standardwert kombiniert werden.
+            </p>
+
+            <code-block lang="typescript">
+                function createLoggedPair&lt;S extends string | number, T extends string | number&gt;(v1: S, v2: T): [S, T] {
+                    console.log(`creating pair: v1='${v1}', v2='${v2}'`);
+                    return [v1, v2];
+                }
+            </code-block>
         </chapter>
     </chapter>
 
     <chapter title="Utility Types" id="utility-types">
+        <p>
+            TypeScript wird mit einer großen Anzahl von Typen geliefert, die bei einigen gängigen Typmanipulationen helfen können und gewöhnlich als Hilfstypen bezeichnet werden. Hier die wichtigsten davon:
+        </p>
+
+        <table style="header-row">
+            <tr>
+                <td>Typ</td>
+                <td>Beschreibung</td>
+                <td>Beispiel</td>
+            </tr>
+            <tr>
+                <td><code>Partial</code></td>
+                <td>
+                    Ändert alle Eigenschaften eines Objekts in optionale Eigenschaften.
+                </td>
+                <td>
+                    <code-block>
+                        interface Point {
+                            x: number;
+                            y: number;
+                        }
+
+                        let pointPart: Partial&lt;Point&gt; = {}; // `Partial` allows x and y to be optional
+                        pointPart.x = 10;
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>Required</code></td>
+                <td>
+                    Ändert alle Eigenschaften eines Objekts in erforderlich (= required).
+                </td>
+                <td>
+                    <code-block>
+                        interface Car {
+                            make: string;
+                            model: string;
+                            mileage?: number;
+                        }
+
+                        let myCar: Required&lt;Car&gt; = { // `Required` forces mileage to be defined
+                            make: 'Ford',
+                            model: 'Focus',
+                            mileage: 12000
+                        };
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>Record</code></td>
+                <td>
+                    <p>
+                        Ist eine Abkürzung zur Definition eines Objekttyps mit einem bestimmten Schlüsseltyp und
+                        Wertetyp.
+                    </p>
+
+                    <note>
+                        <code>Record&lt;string, number&gt;</code> ist dasselbe wie
+                        <code>{ [key: string]: number }</code>
+                    </note>
+                </td>
+                <td>
+                    <code-block>
+                        const nameAgeMap: Record&lt;string, number&gt; = { 'Alice': 21, 'Bob': 25 };
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>Omit</code></td>
+                <td>
+                    Entfernt Schlüssel aus einem Objekttyp.
+                </td>
+                <td>
+                    <code-block>
+                        interface Person {
+                            name: string;
+                            age: number;
+                            location?: string;
+                        }
+
+                        const bob: Omit&lt;Person, 'age' | 'location'&gt; = {
+                            name: 'Bob'
+                        }; // `Omit` has removed age and location from the type and they can't be defined here
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>Pick</code></td>
+                <td>
+                    Entfernt alle Schlüssel außer den angegebenen aus einem Objekttyp.
+                </td>
+                <td>
+                    <code-block>
+                        interface Person {
+                            name: string;
+                            age: number;
+                            location?: string;
+                        }
+
+                        const bob: Pick&lt;Person, 'name'&gt; = {
+                            name: 'Bob'
+                        }; // `Pick` has only kept name, so age and location were removed from the type and they can't be defined here
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>Exclude</code></td>
+                <td>
+                    Entfernt Typen aus einem Union-Typen.
+                </td>
+                <td>
+                    <code-block>
+                        type Primitive = string | number | boolean
+                        const value: Exclude&lt;Primitive, string&gt; = true; // a string cannot be used here since Exclude removed it from the type.
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>ReturnType</code></td>
+                <td>
+                    Extrahiert den Rückgabetyp eines Funktionstyps.
+                </td>
+                <td>
+                    <code-block>
+                        type PointGenerator = () => { x: number; y: number; };
+                        const point: ReturnType&lt;PointGenerator&gt; = { x: 10, y: 20 };
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>Parameters</code></td>
+                <td>
+                    Extrahiert die Parametertypen eines Funktionstyps als Array.
+                </td>
+                <td>
+                    <code-block>
+                        type PointPrinter = (p: { x: number; y: number; }) => void;
+                        const point: Parameters&lt;PointPrinter&gt;[0] = { x: 10, y: 20 };
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>Readonly</code></td>
+                <td>
+                    Wird verwendet, um einen neuen Typ zu erstellen, bei dem alle Eigenschaften schreibgeschützt sind,
+                    d.h. sie können nicht geändert werden, sobald ihnen ein Wert zugewiesen wurde. Hierbei ist zu
+                    beachten, dass TypeScript dies bei der Kompilierung verhindert, aber theoretisch, da es zu
+                    JavaScript kompiliert wird, kann immer noch eine schreibgeschützte Eigenschaft außer Kraft gesetzt
+                    werden.
+                </td>
+                <td>
+                    <code-block>
+                        interface Person {
+                            name: string;
+                            age: number;
+                        }
+
+                        const person: Readonly = {
+                            name: "Dylan",
+                            age: 35,
+                        };
+
+                        person.name = 'Israel'; // prog.ts(11,8): error TS2540: Cannot assign to 'name' because it is a read-only property.
+                    </code-block>
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="keyof" id="keyof">
+        <p>
+
+        </p>
+
+        <table>
+            <tr>
+                <td><code>keyof</code> mit expliziten Schlüsseln</td>
+                <td><code>keyof</code> mit Indexsignaturen</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Wenn <code>keyof</code> auf einen Objekttyp mit expliziten Schlüsseln angewendet wird, wird ein
+                        Union-Typ mit diesen Schlüsseln erstellt.
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <code>keyof</code> kann auch mit Indexsignaturen verwendet werden, um den Indextyp zu
+                        extrahieren.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code-block lang="typescript">
+                        interface Person {
+                            name: string;
+                            age: number;
+                        }
+
+                        // `keyof Person` here creates a union type of "name" and "age", other strings will not be allowed
+                        function printPersonProperty(person: Person, property: keyof Person) {
+                            console.log(`Printing person property ${property}: "${person[property]}"`);
+                        }
+                        let person = { name: "Max", age: 27 };
+                        printPersonProperty(person, "name"); // Ausgabe der person Eigenschaft name: "Max"
+                    </code-block>
+                </td>
+                <td>
+                    <code-block lang="typescript">
+                        type StringMap = { [key: string]: unknown };
+
+                        // `keyof StringMap` resolves to `string` here
+                        function createStringPair(property: keyof StringMap, value: string): StringMap {
+                            return { [property]: value };
+                        }
+                    </code-block>
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="null &amp; undefined" id="null-undefined">
+        <p>
+            TypeScript verfügt über ein leistungsfähiges System zum Umgang mit <code>null</code> oder
+            <code>undefined</code> Werten. Standardmäßig ist die Behandlung von <code>null</code> und
+            <code>undefined</code> Werten deaktiviert und kann durchs Setzen von <code>strictNullChecks</code> auf
+            <code>true</code> aktiviert werden. Der Rest dieser Seite gilt für den Fall, dass
+            <code>strictNullChecks</code> aktiviert ist.
+        </p>
 
         <chapter title="Typen" id="null-undefined-typen">
+            <p>
+                <code>null</code> und <code>undefined</code> sind primitive Typen und können wie andere Typen, z. B.
+                <code>string</code>, verwendet werden. Wenn <code>strictNullChecks</code> aktiviert ist, verlangt
+                TypeScript, dass Werte gesetzt werden, es sei denn, <code>undefined</code> wird explizit zum Typ
+                hinzugefügt.
+            </p>
+
+            <code-block lang="typescript">
+                let value: string | undefined | null = null;
+                value = 'hello';
+                value = undefined;
+            </code-block>
         </chapter>
 
         <chapter title="Optional Chaining" id="null-undefined-optional-chaining">
+            <p>
+                Optional Chaining ist eine JavaScript-Funktion, die gut mit der <code>null</code>-Behandlung von
+                TypeScript zusammenarbeitet. Sie ermöglicht den Zugriff auf Eigenschaften eines Objekts, die existieren
+                oder nicht existieren können, mit einer kompakten Syntax. Es kann mit dem Operator <code>?</code>. beim
+                Zugriff auf Eigenschaften verwendet werden.
+            </p>
+
+            <code-block lang="typescript">
+                interface House {
+                    sqft: number;
+                    yard?: {
+                        sqft: number;
+                    };
+                }
+
+                function printYardSize(house: House) {
+                    const yardSize = house.yard?.sqft;
+                    if (yardSize === undefined) {
+                        console.log('No yard');
+                    } else {
+                        console.log(`Yard is ${yardSize} sqft`);
+                    }
+                }
+
+                let home: House = {
+                    sqft: 500
+                };
+
+                printYardSize(home); // Ausgabe: 'No yard'
+            </code-block>
         </chapter>
 
         <chapter title="Nullish Coalescence" id="null-undefined-nullish-coalescence">
+            <p>
+                Nullish Coalescence ist eine weitere JavaScript-Funktion, die auch gut mit der
+                <code>null</code>-Behandlung von TypeScript funktioniert. Sie ermöglicht das Schreiben von Ausdrücken,
+                die einen Fallback speziell für den Umgang mit <code>null</code> oder <code>undefined</code> haben. Dies
+                ist nützlich, wenn andere fehlerhafte Werte im Ausdruck vorkommen können, aber immer noch gültig sind.
+                Es kann mit dem Operator <code>??</code> in einem Ausdruck verwendet werden, ähnlich wie mit dem
+                Operator <code>&amp;&amp;</code>.
+            </p>
+
+            <code-block lang="typescript">
+                function printMileage(mileage: number | null | undefined) {
+                    console.log(`Mileage: ${mileage ?? 'Not Available'}`);
+                }
+
+                printMileage(null); // Ausgabe: 'Mileage: Not Available'
+                printMileage(0);    // Ausgabe: 'Mileage: 0'
+            </code-block>
         </chapter>
 
         <chapter title="Null Assertion" id="null-undefined-null-assertion">
+            <p>
+                TypeScripts Inferenzsystem ist nicht perfekt. Es gibt Zeiten, in denen es sinnvoll ist, die Möglichkeit,
+                dass ein Wert <code>null</code> oder <code>undefined</code> ist, zu ignorieren. Eine einfache
+                Möglichkeit, dies zu tun, ist die Verwendung von Casting, aber TypeScript bietet auch den Operator
+                <code>!</code> als praktische Abkürzung. Genau wie das Casting kann auch dieses Verfahren unsicher sein
+                und sollte mit Vorsicht angewendet werden.
+            </p>
+
+            <code-block lang="typescript">
+                function getValue(): string | undefined {
+                    return 'hello';
+                }
+                let value = getValue();
+                console.log('value length: ' + value!.length);
+            </code-block>
         </chapter>
 
         <chapter title="Array bounds handling" id="null-undefined-array-bounds-handling">
+            <p>
+                Auch wenn <code>strictNullChecks</code> aktiviert ist, geht TypeScript standardmäßig davon aus, dass ein
+                Array-Zugriff niemals <code>undefined</code> zurückgibt (es sei denn, <code>undefined</code> ist Teil
+                des Array-Typs). Die Konfiguration noUncheckedIndexedAccess kann verwendet werden, um dieses Verhalten
+                zu ändern.
+            </p>
+
+            <code-block lang="typescript">
+                let array: number[] = [1, 2, 3];
+                let value = array[0]; // Mit`noUncheckedIndexedAccess` hat dies den Typ `number | undefined`
+            </code-block>
         </chapter>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
+        <tip>
+            <strong>(BUCH)</strong>
+            978-3836292543, React – Das umfassende Handbuch, Sebastian Springer, Rheinwerk Verlag GmbH, 2023
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_intro.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_intro.php
+            </a>, 2023-11-10 06:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_getstarted.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_getstarted.php
+            </a>, 2023-11-10 06:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_simple_types.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_simple_types.php
+            </a>, 2023-11-10 06:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.typescriptlang.org/docs/handbook/2/everyday-types.html" ignore-vars="true">
+                https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
+            </a>, 2023-11-10 06:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.typescriptlang.org/docs/handbook/2/functions.html" ignore-vars="true">
+                https://www.typescriptlang.org/docs/handbook/2/functions.html
+            </a>, 2023-11-10 07:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_tuples.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_tuples.php
+            </a>, 2023-11-11 17:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_arrays.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_arrays.php
+            </a>, 2023-11-11 18:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_object_types.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_object_types.php
+            </a>, 2023-11-12 06:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_enums.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_enums.php
+            </a>, 2023-11-12 06:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_aliases_and_interfaces.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_aliases_and_interfaces.php
+            </a>, 2023-11-12 07:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_union_types.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_union_types.php
+            </a>, 2023-11-12 07:15
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_functions.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_functions.php
+            </a>, 2023-11-12 07:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_casting.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_casting.php
+            </a>, 2023-11-12 08:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_classes.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_classes.php
+            </a>, 2023-11-12 08:15
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_basic_generics.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_basic_generics.php
+            </a>, 2023-11-12 09:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_utility_types.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_utility_types.php
+            </a>, 2023-11-12 10:15
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_keyof.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_keyof.php
+            </a>, 2023-11-12 10:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/typescript/typescript_null.php" ignore-vars="true">
+                https://www.w3schools.com/typescript/typescript_null.php
+            </a>, 2023-11-12 10:30
+        </tip>
     </chapter>
 </topic>
