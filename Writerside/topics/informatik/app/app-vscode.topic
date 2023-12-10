@@ -37,19 +37,126 @@
         </chapter>
 
         <chapter title="Personalisierung" id="basics-personalisierung">
+            <img src="app_vscode_peronalisierung.png" alt="VSCode Personalisierung" width="500" />
+
+            <p>
+                VSCode bietet unzählige Personalisierungsmöglichkeiten.
+            </p>
+
             <chapter title="Color Theme" id="basics-color-theme">
+                <p>
+                    Die in der Benutzeroberfläche von VSCode sichtbaren Farben fallen in zwei Kategorien:
+                </p>
+
+                <list>
+                    <li>
+                        <strong>Workbench Farben</strong>, die in Ansichten und Editoren verwendet werden, von der
+                        Aktivitätsleiste bis zur Statusleiste.
+                    </li>
+                    <li>
+                        <strong>Syntaxfarben und Stile</strong>, die für den Quellcode im Editor verwendet werden. Die
+                        Thematisierung dieser Farben ist unterschiedlich, da die Syntaxeinfärbung auf
+                        TextMate-Grammatiken und TextMate-Themen sowie auf semantischen Token basiert.
+                    </li>
+                    <li></li>
+                </list>
+
+                <p>
+                    Auf dieser Website werden mehrere Themes gegenübergestellt:
+                    <a href="https://vscodethemes.com/">https://vscodethemes.com/</a>
+                </p>
             </chapter>
 
             <chapter title="File Icon Theme" id="basics-file-icon-theme">
+                <p>
+                    Visual Studio Code zeigt in der gesamten Benutzeroberfläche Symbole neben den Dateinamen an, und
+                    Erweiterungen können neue Sets von Dateisymbolen beisteuern, aus denen der VSCode-Benutzer wählen
+                    kann. Das IconSet <code>vscode-icons</code> bietet beispielsweise ein breiteres Set an Icons wie der
+                    Standard, welches den Explorer übersichtlicher gestaltet:
+                    <a href="https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons">
+                        https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons
+                    </a>
+                </p>
             </chapter>
 
             <chapter title="Product Icon Theme" id="basics-product-icon-theme">
+                <p>
+                    Visual Studio Code enthält eine Reihe von integrierten Symbolen, die in Ansichten und im Editor
+                    verwendet werden, aber auch in Hover-Fenstern, in der Statusleiste und sogar in Erweiterungen
+                    referenziert werden können. Beispiele dafür sind die Symbole in Filteraktionsschaltflächen und
+                    Ansichtssymbolen, in der Statusleiste, Haltepunkten und den Faltungssymbolen in Bäumen und im
+                    Editor.
+                </p>
+                <p>
+                    Ein Product Icon Theme ermöglicht es einer Erweiterung, diese Symbole neu zu definieren, um VSCode
+                    ein benutzerdefiniertes Aussehen zu geben. Nicht abgedeckt durch Produktsymbolthemen sind die
+                    Dateisymbole (abgedeckt durch Dateisymbolthemen) und Symbole, die von Erweiterungen beigetragen
+                    werden.
+                </p>
             </chapter>
 
             <chapter title="Fonts &amp; Ligatures" id="basics-fonts-ligatures">
+                <p>
+                    Programmierer verwenden eine Vielzahl von Symbolen, die oft mit mehreren Zeichen kodiert sind. Für
+                    das menschliche Gehirn sind Sequenzen wie <code>-&gt;</code>, <code>&lt;=</code> oder
+                    <code>:=</code> einzelne logische Token, auch wenn sie zwei oder drei Zeichen auf dem Bildschirm
+                    einnehmen. Ihr Auge wendet eine Menge Energie auf, um mehrere Zeichen zu scannen, zu analysieren und
+                    zu einem einzigen logischen Zeichen zu verbinden. Idealerweise sollten alle Programmiersprachen mit
+                    vollwertigen Unicode-Symbolen für Operatoren ausgestattet sein, aber das ist noch nicht der Fall.
+                </p>
+                <p>
+                    Fira Code ist ein kostenloser Monospaced-Font mit Ligaturen für gängige Mehrzeichenkombinationen in
+                    der Programmierung. Dies ist nur eine Funktion zur Darstellung der Schriftart: Der zugrunde liegende
+                    Code bleibt ASCII-kompatibel. Dies hilft, den Code schneller zu lesen und zu verstehen. Für einige
+                    häufige Sequenzen wie <code>..</code> oder <code>//</code> ermöglichen Ligaturen die Korrektur der
+                    Abstände.
+                </p>
+
+                <img src="app_vscode_firacode.png" alt="FiraCode" width="500" />
+
+                <p>
+                    Hier zur Installationsanleitung:
+                    <a href="https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions">
+                        https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions
+                    </a>
+                </p>
             </chapter>
 
             <chapter title="Bracket Colorizer" id="basics-bracket-colorizer">
+                <img src="app_vscode_bracket_pair_colorizer.png" alt="Bracket Pair Colorizer" width="500" />
+
+                <p>
+                    Beim Umgang mit tief verschachtelten Klammern in Visual Studio Code kann es schwierig sein,
+                    herauszufinden, welche Klammern zusammenpassen und welche nicht.
+                </p>
+                <p>
+                    Um dies zu vereinfachen, entwickelte ein Benutzer namens CoenraadS im Jahr 2016 die großartige
+                    Bracket Pair Colorizer-Erweiterung zur Einfärbung übereinstimmender Klammern und veröffentlichte sie
+                    auf dem VS Code Marketplace. Diese Erweiterung wurde sehr beliebt und ist jetzt eine der 10 am
+                    häufigsten heruntergeladenen Erweiterungen auf dem Marketplace, mit über 6 Millionen Installationen.
+                    Um Leistungs- und Genauigkeitsprobleme zu beheben, legte CoenraadS 2018 mit Bracket Pair Colorizer
+                    2 nach, der mittlerweile ebenfalls über 3 Millionen Installationen hat.
+                </p>
+                <p>Im August 2021 wurde diese Eigenschaft in VSCode nativ implementiert.</p>
+
+                <list style="decimal">
+                    <li>
+                        <code>File Menu</code>
+                        <img src="right_arrow_3d.png" alt="right arrow" width="24"/>
+                        <code>Preferences</code>
+                        <img src="right_arrow_3d.png" alt="right arrow" width="24"/>
+                        <code>Settings</code>
+                    </li>
+                    <li>
+                        Nach dem Begriff <code>bracketPair</code> suchen
+                    </li>
+                    <li>
+                        <p>
+                            Die Checkbox anklicken um Bracket Pair Colorization zu aktivieren:
+                        </p>
+                        <img src="app_vscode_bracket_pair_colorizer_search.png" alt="Bracket Pair Suche" width="400" />
+                    </li>
+                </list>
             </chapter>
         </chapter>
     </chapter>
