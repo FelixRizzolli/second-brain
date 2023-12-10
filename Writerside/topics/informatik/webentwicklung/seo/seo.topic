@@ -84,8 +84,63 @@
         </chapter>
     </chapter>
 
-    <chapter title="Aufbau und Funktionsweise" id="aufbau-funktionsweise">
+    <chapter title="Aufbau und Funktionsweise" id="aufbau">
+        <p>
+            Heute (Stand 2019) nutzen mehr als 3,8 Milliarden Menschen das Internet (52 % der Weltbevölkerung). Wie
+            viele Webseiten es insgesamt gibt, kann nicht gesagt werden. Analytiker schätzen den Google-Index bzw. das
+            WWW heute auf 47 bis 50 Milliarden Webseiten.
+        </p>
 
+        <chapter title="Systemkomponenten einer Suchmaschine" id="aufbau-systemkomponenten">
+            <chapter title="Das Webcrawler-System" id="aufbau-webcrawler">
+                <p>
+                    Das Webcrawler-System besteht aus Computerprogrammen, welche das WWW automatisch durchsuchen und
+                    Webseiten herunterladen und analysieren können. Der Crawler startet auf einer beliebigen Webseite
+                    und lädt diese für die weitere Analyse und Verarbeitung herunter.
+                </p>
+
+                <list>
+                    <li>
+                        <strong>Freshbots</strong> – besuchen neu gefundene Seiten. Sie analysieren vor allem reine
+                        Textinhalte und gehen nicht sehr tief in eine Seite hinein. Wird eine Seite nicht regelmäßig
+                        aktualisiert, so lässt auch die Besuchsfrequenz der Freshbots nach.
+                    </li>
+                    <li>
+                        <strong>Deepbots</strong>  – berücksichtigen ein größeres Spektrum an Dateitypen (Bilder,
+                        PDF ...) und erfassen möglichst viele Seiten einer Website.
+                    </li>
+                </list>
+            </chapter>
+            <chapter title="Der Scheduler" id="aufbau-scheduler">
+                <p>
+                    Der Scheduler sammelt und verwaltet die Adressen der Webseiten. Er bekommt von Crawlern ständig neue
+                    URLs gemeldet, die diese in den besuchten Webseiten finden. Findet er in den Webseiten Verlinkungen
+                    zu anderen Seiten, dann gleicht er diese mit den bereits gefundenen URLs ab, und sendet diese Seite
+                    evtl. einem Crawler.
+                </p>
+                <p>
+                    Da nahezu alle Webseiten direkt oder indirekt miteinander verlinkt sind, können Crawler somit das
+                    ganze WWW durchwandern. Trotzdem gibt es immer noch Webseiten, zu denen kein Link führt. Auch jene
+                    Seiten, die nur erreichbar sind, wenn man ein Formular ausfüllt oder sich registriert sind für
+                    Crawler nicht erreichbar; diese Seiten gehören zum sog. DeepWeb.
+                </p>
+            </chapter>
+            <chapter title="Der Index" id="aufbau-index">
+                <p>
+                    Der Index beinhaltet die Website in ihren Bestandteilen (Text, Bilder, Videos, HTML-Code) zerlegt
+                    welche von den Crawlern heruntergeladen wurden. Bei der Suche durchsucht die Suchmaschine den Index
+                    und nicht die Originalseite. Der Index ist quasi das Abbild des WWW und enthält dessen Seiten zu
+                    einem bestimmten Zeitpunkt.
+                </p>
+            </chapter>
+            <chapter title="Das Suchinterface" id="aufbau-suchinterface">
+                <p>
+                    Das Suchinterface ist im Wesentlichen ein einzelnes Formularfeld, in das der Suchende Suchwärter
+                    eingeben kann. Google bietet heute neben der normalen Suche auch eine „Erweiterte Suche“ wodurch der
+                    Suchende durch zahlreiche Optionen die Suche verfeinern kann.
+                </p>
+            </chapter>
+        </chapter>
     </chapter>
 
     <chapter title="Das Ranking" id="ranking">
