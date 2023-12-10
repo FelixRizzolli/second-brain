@@ -124,8 +124,52 @@
     </chapter>
 
     <chapter title="Datentypen" id="datentypen">
-
         <chapter title="Einfache Datentypen bzw. Primitive von TypeScript" id="datentypen-primitive">
+            <p>
+                Es gibt drei Hauptprimitive in JavaScript und TypeScript.
+            </p>
+
+            <table>
+                <tr>
+                    <td>Typ</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>boolean</code></td>
+                    <td>Wahrheitswerte <code>true</code> und <code>false</code></td>
+                </tr>
+                <tr>
+                    <td><code>number</code></td>
+                    <td>Zahlenwerte wie Ganzzahlen, Fließkommazahlen.</td>
+                </tr>
+                <tr>
+                    <td><code>string</code></td>
+                    <td>Zeichenketten</td>
+                </tr>
+            </table>
+
+            <p>
+                Es gibt auch 2 weniger verbreitete Primitive, die in späteren Versionen von Javascript und TypeScript
+                verwendet werden.
+            </p>
+
+            <table>
+                <tr>
+                    <td>Typ</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>bigint</code></td>
+                    <td>
+                        Dieser Datentyp steht für den in ES2020 eingeführten <code>BigInt</code> für sehr große
+                        Zahlenwerte.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>symbol</code></td>
+                    <td>Deutet darauf hin, dass es sich hierbei um einen eindeutigen Wert handelt.</td>
+                </tr>
+            </table>
 
             <chapter title="any" id="datentypen-primitive-any">
             </chapter>
