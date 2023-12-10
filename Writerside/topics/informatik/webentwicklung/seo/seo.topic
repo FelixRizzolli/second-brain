@@ -6,6 +6,13 @@
        title="SEO (Search Engine Optimization)" id="seo">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <warning>
+        Diese Dokumentation wurde im Jahr <strong>2019</strong> verfasst und basiert auf den damaligen SEO-Trends und
+        -Praktiken. Da sich SEO ständig weiterentwickelt, können einige der hier enthaltenen Informationen veraltet oder
+        falsch sein. Ich empfehle deshalb, sich auf die neuesten SEO-Ressourcen zu beziehen, um die Website zu
+        optimieren.
+    </warning>
+
     <chapter title="Was ist SEO?" id="was-ist-seo">
         SEM (Search Engine Marketing) umfasst die Teilgebiete SEA (Search Engine Advertising - Suchmaschinenwerbung) und
         SEO (Search Engine Optimization – Suchmaschinenoptimierung).
