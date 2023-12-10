@@ -1139,6 +1139,23 @@
         </chapter>
 
         <chapter title="Nullish Coalescence" id="null-undefined-nullish-coalescence">
+            <p>
+                Nullish Coalescence ist eine weitere JavaScript-Funktion, die auch gut mit der
+                <code>null</code>-Behandlung von TypeScript funktioniert. Sie ermöglicht das Schreiben von Ausdrücken,
+                die einen Fallback speziell für den Umgang mit <code>null</code> oder <code>undefined</code> haben. Dies
+                ist nützlich, wenn andere fehlerhafte Werte im Ausdruck vorkommen können, aber immer noch gültig sind.
+                Es kann mit dem Operator <code>??</code> in einem Ausdruck verwendet werden, ähnlich wie mit dem
+                Operator <code>&amp;&amp;</code>.
+            </p>
+
+            <code-block lang="typescript">
+                function printMileage(mileage: number | null | undefined) {
+                    console.log(`Mileage: ${mileage ?? 'Not Available'}`);
+                }
+
+                printMileage(null); // Ausgabe: 'Mileage: Not Available'
+                printMileage(0);    // Ausgabe: 'Mileage: 0'
+            </code-block>
         </chapter>
 
         <chapter title="Null Assertion" id="null-undefined-null-assertion">
