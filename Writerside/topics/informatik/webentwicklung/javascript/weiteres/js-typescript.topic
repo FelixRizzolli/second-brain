@@ -387,6 +387,21 @@
         </chapter>
 
         <chapter title="Union Typen" id="datentypen-union">
+            <p>
+                Union-Typen werden verwendet, wenn ein Wert mehr als einen einzigen Typ haben kann. Zum Beispiel, wenn
+                eine Eigenschaft ein <code>string</code> oder eine <code>number</code> sein kann. Mit dem <code>|</code>
+                sagen wir, dass unser Parameter beispielsweise ein <code>string</code> oder eine <code>number</code>
+                ist. Hierbei ist aber auch zu beachten, dass bei der Verwendung der Variable nur die Schnittmenge der
+                Funktionalität zwischen den Typen verwendet werden kann. Auf Variablen des Datentyps number gibt es
+                nicht die Methode <code>toUpperCase()</code>, so kann diese auch nicht auf dem Union-Typ
+                <code>string | number</code> verwendet werden.
+            </p>
+
+            <code-block lang="typescript">
+                function printStatusCode(code: string | number) {               // Union-Typ als Parameter
+                    console.log(`My status code is ${code.toUpperCase()}.`);    // Error: Property 'toUpperCase' does not exist ontype 'string | number'.
+                }
+            </code-block>
         </chapter>
     </chapter>
 
