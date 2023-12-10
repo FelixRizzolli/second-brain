@@ -691,7 +691,144 @@
     </chapter>
 
     <chapter title="Keywords" id="keywords">
+        <p>
+            Der Begriff Keywords:
+        </p>
+        
+        <list>
+            <li>
+                Begriffe oder Begriffskombinationen, die einen Inhalt (meistens Text) in ihrer Summe möglichst eindeutig
+                charakterisieren und von anderen Inhalten differenzierbar machen.
+            </li>
+            <li>
+                Begriffe oder Begriffskombinationen, die von Internetnutzern in einer Suchanfrage verwendet werden.
+                Diese werden auch als Suchbegriffe bezeichnet.
+            </li>
+        </list>
 
+        <p>
+            Zu beachten ist, dass man Fachbegriffe oder firmeninterne, produktspezifische Begriffe, die nicht allgemein
+            bekannt sind, so gut als möglich vermeiden sollte. Man sollte sich auf Keywords konzentrieren, die ein hohes
+            Suchvolumen haben, um einen möglichst hohen Traffic zu erzielen.
+        </p>
+
+        <chapter title="Die Bedeutung der Suchintention" id="keywords-suchintention">
+            <p>
+                SEO muss das Ziel haben, dass die Zielgruppe der Website diese findet und sie ansteuert. Somit sollte
+                man sich mit der Intention (Absicht, Ziel) der Suchenden beschäftigen, um die passenden Keywords
+                auszuwählen. Google teilt die Suchintention in folgende Kategorien ein:
+            </p>
+
+            <list>
+                <li>
+                    <strong>Know query</strong> – Suche nach Informationen.
+                </li>
+                <li>
+                    <strong>Know simple query</strong> – Spezielle Form der Know query. Bei dieser besteht die ideale
+                    Antwort nur ais einer kurzen Definition oder Beschreibung
+                </li>
+                <li>
+                    <strong>Do query</strong> – Der Suchende möchte eine bestimmte Aktion ausführen, z.B. etwas
+                    bestellen, buchen oder herunterladen.
+                </li>
+                <li>
+                    <strong>Website query</strong> – Suche nach einer bestimmten Website.
+                </li>
+                <li>
+                    <strong>Visit-in-person query</strong> – Der Suchende mochte einen bestimmten Ort persönlich
+                    besuchen, z.B. ein Unternehmen, ein Restaurant, eine Tankstelle, ein Hotel, ein Museum o.ä.
+                </li>
+            </list>
+
+            <p>
+                Es ist empfehlenswert, die erarbeiteten Keywords unter dem Aspekt der Suchintention zu betrachten und
+                eine Klassifikation nach Suchintention der Zielgruppe vorzunehmen.
+            </p>
+        </chapter>
+        
+        <chapter title="Keyword-Kandidate ermitteln" id="keywords-kandidaten">
+            <p>
+                Die relevanten Keywords sind die Begriffe, die die potenziellen Kunden in die Suchmaske der
+                Suchmaschinen eingeben und mit denen die Webseite gefunden werden soll. Diese Keywords sollten bereits
+                zu Beginn eines Webprojekts ermittelt werden und die Content Gestaltung sollte nach ihnen ausgerichtet
+                werden. Keyword-Kandidaten können mit folgenden Techniken ermittelt werden:
+            </p>
+
+            <list>
+                <li>
+                    <strong>Brainstorming</strong>
+                </li>
+                <li>
+                    <strong>Kundenbefragung</strong> – Es bietet sich die Möglichkeit Kunden, Freunde und Kollegen zu
+                    befragen, mit welchen Suchbegriffen sie die zu optimierende Website suchen würden.
+                </li>
+                <li>
+                    <strong>Wettberwerbsanalyse</strong> – Oftmals findet man bei der Konkurrenz im HTML-Quellcode im
+                    Metatag mit dem Attribut <code>name="Keywords"</code> die Keywords, die sie verwendet haben.
+                    Suchmaschinen berücksichtigen dieses Metatag heute nicht mehr, da er in der Vergangenheit zu stark
+                    missbraucht wurde.
+                </li>
+                <li>
+                    <strong>Freie Online-Tools</strong> – welche häufig gesuchten Begriffe und deren verwandten anzeigen
+                </li>
+                <li>
+                    <strong>Kostenpflichtige Keyword-Datenbanken</strong>
+                </li>
+            </list>
+        </chapter>
+        
+        <chapter title="KEI (Keyword Effectiveness Index)" id="keywords-key">
+            <p>
+                In den meisten Fällen ist es unmöglich, eine Website für alle gefundenen relevanten Keyword-Paare zu
+                optimieren. Mit der Formel des sog. KEI lässt sich die Relevanz eines Keywords berechnen, um eine
+                bessere Auswahl zu treffen.
+            </p>
+
+            <code-block lang="tex">
+                \begin{equation}
+                KEI=\frac{P^2}{C}*1000
+                \end{equation}
+            </code-block>
+
+            <list>
+                <li>
+                    <code>P</code> ist die Popularität eines Keywords (= durchschnittliche Suchanfragen pro Monat)
+                </li>
+                <li>
+                    <code>C</code> steht für die Konkurrenz (= Zahl der Seiten, die eine Suchmaschine für das Keyword insgesamt findet
+                </li>
+                <li>Die Multiplikation mit <code>1000</code> ist, um zu viele Kommastellen zu vermeiden</li>
+            </list>
+        </chapter>
+        
+        <chapter title="Das Suchvolumen" id="keywords-suchvolumen">
+            <p>
+                Eine Webseite sollte niemals für bestimmte Keywords optimiert werden, ohne deren Suchvolumen zu kennen.
+                Denn der Optimierungsaufwand könnte sich auch nicht lohnen. Um das Suchvolumen zu ermitteln, muss
+                folgendes beachtet werden:
+            </p>
+
+            <list>
+                <li>
+                    Dad von Google angegebene Suchvolumen ist deutlich kleiner als der wirkliche wert, da Suchende
+                    durchschnittlich den Suchbegriff zweimal eingeben.
+                </li>
+                <li>
+                    Es ist sinnvoller das jährliche Suchvolumen eines Begriffes zu ermitteln, da das Suchvolumen bei den
+                    meisten Keywords größeren saisonalen Schwankungen unterworfen ist.
+                </li>
+            </list>
+
+            <p>
+                Für jedes Keyword, für das die Seite optimiert werden soll, soll zunächst das Marktpotenzial analysiert
+                werden und dann ob sich der Optimierungsaufwand lohnt. Mit Google Trends bekommt man einen relativen
+                Wert in Prozent des Suchvolumens eines Keywords.
+            </p>
+            <p>
+                Allgemein ist zu empfehlen die Keyword-Optimierung einer Webseite je nach Begriff und
+                Konkurrenzsituation auf 1 bis 3 Begriffen zu beschränken.
+            </p>
+        </chapter>
     </chapter>
 
     <chapter title="Content" id="content">
