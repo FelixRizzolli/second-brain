@@ -1028,6 +1028,57 @@
     </chapter>
 
     <chapter title="keyof" id="keyof">
+        <p>
+
+        </p>
+
+        <table>
+            <tr>
+                <td><code>keyof</code> mit expliziten Schlüsseln</td>
+                <td><code>keyof</code> mit Indexsignaturen</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Wenn <code>keyof</code> auf einen Objekttyp mit expliziten Schlüsseln angewendet wird, wird ein
+                        Union-Typ mit diesen Schlüsseln erstellt.
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <code>keyof</code> kann auch mit Indexsignaturen verwendet werden, um den Indextyp zu
+                        extrahieren.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code-block lang="typescript">
+                        interface Person {
+                            name: string;
+                            age: number;
+                        }
+
+                        // `keyof Person` here creates a union type of "name" and "age", other strings will not be allowed
+                        function printPersonProperty(person: Person, property: keyof Person) {
+                            console.log(`Printing person property ${property}: "${person[property]}"`);
+                        }
+                        let person = { name: "Max", age: 27 };
+                        printPersonProperty(person, "name"); // Ausgabe der person Eigenschaft name: "Max"
+                    </code-block>
+                </td>
+                <td>
+                    <code-block lang="typescript">
+                        type StringMap = { [key: string]: unknown };
+
+                        // `keyof StringMap` resolves to `string` here
+                        function createStringPair(property: keyof StringMap, value: string): StringMap {
+                            return { [property]: value };
+                        }
+                    </code-block>
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="null &amp; undefined" id="null-undefined">
