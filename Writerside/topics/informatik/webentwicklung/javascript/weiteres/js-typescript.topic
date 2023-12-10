@@ -313,8 +313,28 @@
         </chapter>
 
         <chapter title="Typ-Aliase und Interfaces" id="datentypen-aliase-interface">
-
             <chapter title="Typ-Aliase" id="datentypen-aliase">
+                <p>
+                    Typ-Aliase ermöglichen die Definition von Typen mit einem eigenen Namen (einem Alias). Typ-Aliase
+                    können für primitive Typen wie Strings oder komplexere Typen wie Objekte und Arrays verwendet
+                    werden: <code>type CarModel = string;</code>
+                </p>
+
+                <code-block lang="typescript">
+                    type CarYear = number;
+                    type CarType = string;
+                    type CarModel = string;
+                    type Car = { year: CarYear, type: CarType, model: CarModel };
+
+                    const carYear: CarYear = 2001;
+                    const carType: CarType = "Toyota";
+                    const carModel: CarModel = "Corolla";
+                    const car: Car = {
+                        year: carYear,
+                        type: carType,
+                        model: carModel
+                    };
+                </code-block>
             </chapter>
 
             <chapter title="Interfaces" id="datentypen-interfaces">
