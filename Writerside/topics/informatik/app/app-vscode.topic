@@ -799,16 +799,104 @@
 
     <chapter title="IDE – Integrated Development Environment" id="ide">
         <chapter title="Terminal &amp; Tasks" id="ide-terminal">
+            <p>
+                Softwareentwickler verwenden mehrere Tools, welche Aufgaben innerhalb und außerhalb des
+                Softwareentwicklungskreislaufs (Bearbeiten, Kompilieren, Testen und Debuggen) automatisieren. Diese
+                Tools werden meist von der Befehlszeile aus ausgeführt. In VSCode können Tasks konfiguriert werden,
+                welche Skripte ausführen und Prozesse starten, sodass viele dieser vorhandenen Tools direkt von VSCode
+                aus verwendet werden können, ohne eine eigene Befehlszeile zu verwenden. Die Tasks werden im
+                Arbeitsbereich in der <code>tasks.json</code>-Datei im <code>.vscode</code>-Ordner gespeichert.
+            </p>
+
+            <warning>
+                Tasks können nur in einem Arbeitsbereich konfiguriert werden.
+            </warning>
+
             <chapter title="Task erstellen" id="ide-terminal-tasks-erstellen">
+                <list style="decimal">
+                    <li>
+                        <code>CTRL</code>+<code>SHIFT</code>+<code>P</code> oder <code>F1</code> als Shortcut um die
+                        Command Palette auszuführen
+                    </li>
+                    <li>
+                        <code>"Task: Configure Task"</code> eingeben, um die <code>tasks.json</code>-Datei zu
+                        erstellen/öffnen.
+                    </li>
+                    <li>
+                        <code-block lang="json" collapsed-title="tasks.json" collapsible="true">
+                            {
+                                // See https://go.microsoft.com/fwlink/?LinkId=733558
+                                // for the documentation about the tasks.json format
+                                "version": "2.0.0",
+                                "tasks": [
+                                    {
+                                        "label": "compileXSD",
+                                        "type": "shell",
+                                        "command": "powershell.exe S:\\projects\\gitlab\\m3\\scripts\\compile\\compile.ps1m3xsdrepo"
+                                    }
+                                ]
+                            }
+                        </code-block>
+                    </li>
+                </list>
             </chapter>
 
             <chapter title="Task ausführen" id="ide-terminal-tasks-ausführen">
+                <list style="decimal">
+                    <li>
+                        <code>CTRL</code>+<code>SHIFT</code>+<code>P</code> oder <code>F1</code> als Shortcut um die
+                        Command Palette auszuführen
+                    </li>
+                    <li>
+                        <code>"Task: Run Task"</code> eingeben, um einen Task auszuführen.
+                    </li>
+                    <li>
+                        Den Task auswählen, im Beispiel: <code>"compileXSD"</code>
+                    </li>
+                    <li>
+                        Und schlussendlich mit <code>"Continue without scanning the task output"</code> bestätigen.
+                    </li>
+                </list>
             </chapter>
 
             <chapter title="Build Tools" id="ide-terminal-buildtools">
+                <img src="app_vscode_tasks_buildtools.png" alt="VSCode - Build Tools"/>
+                
+                <p>
+                    VSCode erkennt Scripts von Build Tools wie <code>npm</code>, <code>typescript</code>,
+                    <code>gulp</code>, <code>docker</code> ... und erstellt dafür automatisch eigene Tasks. Hierbei
+                    erscheint ein eigenes Panel im Explorer für zum Beispiel NPM Scripts. Diese können auch von hier aus
+                    gestartet werden.
+                </p>
             </chapter>
 
             <chapter title="Terminal" id="ide-terminal-terminal">
+                <img src="app_vscode_tasks_terminal.png" alt="VSCode - Terminal"/>
+
+                <p>
+                    Arbeitet man mit mehreren Terminals, so hat man in VSCode einige Personalisierungsoptionen:
+                </p>
+
+                <list>
+                    <li>
+                        Es kann die <strong>Farbe</strong> eines Terminals geändert werden, um es schneller erkennen zu
+                        können bzw. besser von den anderen unterscheiden zu können.
+                    </li>
+                    <li>
+                        Es kann das <strong>Icon</strong> eines Terminals geändert werden, um es schneller erkennen zu 
+                        können bzw. besser von den anderen unterscheiden zu können.
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Split Terminal</strong> – zwei Terminals können nebeneinander gestellt werden
+                        </p>
+                        
+                        <img src="app_vscode_tasks_terminal_split.png" alt="VSCode - Terminal: Split"/>
+                    </li>
+                    <li>
+                        Dem Terminal kann ein <strong>Name</strong> gegeben werden.
+                    </li>
+                </list>
             </chapter>
         </chapter>
     </chapter>
