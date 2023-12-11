@@ -529,7 +529,7 @@
     </chapter>
 
     <chapter title="Mit Tastatur arbeiten – Keyboard Shortcuts" id="keyboard">
-        <img src="app_vscode_keyboard_shortcuts.png" alt="VSCode Keyboard Shortcuts"/>
+        <img src="app_vscode_keyboard_shortcuts.png" alt="VSCode Keyboard Shortcuts" />
 
         <p>
             Quelle:
@@ -557,7 +557,7 @@
                                 <code>CTRL</code>+<code>SHIFT</code>+<code>O</code>.
                             </p>
 
-                            <img src="app_vscode_navigation_symbols.png" alt="VSCode Keyboard Navigation - Symbols"/>
+                            <img src="app_vscode_navigation_symbols.png" alt="VSCode Keyboard Navigation - Symbols" />
                         </li>
                         <li>
                             <p>
@@ -566,7 +566,7 @@
                                 lassen sich nahezu alle in VSCode verfügbaren Panels und Menüs öffnen.
                             </p>
 
-                            <img src="app_vscode_navigation_commands.png" alt="VSCode Keyboard Navigation - Commands"/>
+                            <img src="app_vscode_navigation_commands.png" alt="VSCode Keyboard Navigation - Commands" />
                         </li>
                         <li>
                             Mit der Tastenkombination <code>CTRL</code>+<code>SHIFT</code>+<code>M</code> kann das
@@ -574,10 +574,7 @@
                         </li>
                     </list>
                 </li>
-                <li></li>
-                <li></li>
             </list>
-
         </chapter>
     </chapter>
 
