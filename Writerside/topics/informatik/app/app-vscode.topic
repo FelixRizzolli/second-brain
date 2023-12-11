@@ -663,6 +663,11 @@
             </p>
 
             <img src="app_vscode_edit_code_action.png" alt="VSCode - Code Action" />
+
+            <p>
+                In diesem Beispiel kann die Arrow-Funktion in eine Named-Funktion konvertiert werden. Die Nutzbarkeit
+                dieses Tools hängt stark von der Programmiersprache ab.
+            </p>
         </chapter>
     </chapter>
 
