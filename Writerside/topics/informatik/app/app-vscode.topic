@@ -305,10 +305,226 @@
     </chapter>
 
     <chapter title="IntelliSense" id="intellisense">
+        <p>
+            IntelliSense ist ein allgemeiner Begriff für ein Hilfsmittel zur automatischen Vervollständigung der
+            Bearbeitung von Quellcode durch einen Programmierer. Es bietet Codevorschläge und -erklärungen an, während
+            der Programmierer schreibt. So erleichtert es das Schreiben von Code, fördert das Verständnis von Syntax und
+            schult die Funktionsweise bestimmter Befehle. IntelliSense kann Codevorschläge basierend auf der Eingabe des
+            Benutzers anzeigen, z. B. wenn der Benutzer eine Variable oder eine Funktion eingibt. Es kann auch den
+            Benutzer darüber informieren, welche Optionen für bestimmte Funktionen oder Methoden verfügbar sind, indem
+            es die verfügbaren Argumente anzeigt.
+        </p>
+
+        <table style="none">
+            <tr>
+                <td><code>CTRL</code><code>SPACE</code></td>
+                <td>
+                    Triggert IntelliSense
+                </td>
+            </tr>
+            <tr>
+                <td><code>CTRL</code>+<code>SHIFT</code>+<code>SPACE</code></td>
+                <td>
+                    Zeigt die Parameter einer Funktion/Methode an und hilft einem somit bei der Auswahl der Argumente.
+                </td>
+            </tr>
+        </table>
+
         <chapter title="Typen" id="intellisense-typen">
+            <p>
+                VS Code IntelliSense bietet verschiedene Typen von Vervollständigungen, darunter Vorschläge des
+                Sprachservers, Snippets und einfache wortbasierte Textvervollständigungen.
+            </p>
+
+            <table>
+                <tr>
+                    <td>ICON</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Method_16x.svg"
+                             alt="VSCode Icon - Method" width="200" style="block" />
+                    </td>
+                    <td>Methoden und Funktionen</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Variable_16x.svg"
+                             alt="VSCode Icon - Variable" width="200" style="block" />
+                    </td>
+                    <td>Variablen</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Field_16x.svg"
+                             alt="VSCode Icon - Field" width="200" style="block" />
+                    </td>
+                    <td>Felder</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-parameter.svg"
+                             alt="VSCode Icon - Symbol Parameter" width="200" style="block" />
+                    </td>
+                    <td>Type Parameter</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-constant.svg"
+                             alt="VSCode Icon - Symbol Constant" width="200" style="block" />
+                    </td>
+                    <td>Konstanten</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Class_16x.svg"
+                             alt="VSCode Icon - Class" width="200" style="block" />
+                    </td>
+                    <td>Klassen</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Interface_16x.svg"
+                             alt="VSCode Icon - Interface" width="200" style="block" />
+                    </td>
+                    <td>Schnittstellen (Interfaces)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-structure.svg"
+                             alt="VSCode Icon - Symbol Structure" width="200" style="block" />
+                    </td>
+                    <td>Strukturen</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-event.svg"
+                             alt="VSCode Icon - Event" width="200" style="block" />
+                    </td>
+                    <td>Events</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-operator.svg"
+                             alt="VSCode Icon - Symbol Operator" width="200" style="block" />
+                    </td>
+                    <td>Operatoren</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Namespace_16x.svg"
+                             alt="VSCode Icon - Namespace" width="200" style="block" />
+                    </td>
+                    <td>Module / Namespaces</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Property_16x.svg"
+                             alt="VSCode Icon - Property" width="200" style="block" />
+                    </td>
+                    <td>Properties und Attribute</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/EnumItem_16x.svg"
+                             alt="VSCode Icon - EnumItem" width="200" style="block" />
+                    </td>
+                    <td>Werte und Enumerationen</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Reference_16x.svg"
+                             alt="VSCode Icon - Reference" width="200" style="block" />
+                    </td>
+                    <td>Referenzen</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Keyword_16x.svg"
+                             alt="VSCode Icon - Keyword" width="200" style="block" />
+                    </td>
+                    <td>Keywords</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-file.svg"
+                             alt="VSCode Icon - Symbol File" width="200" style="block" />
+                    </td>
+                    <td>Dateien</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/folder.svg"
+                             alt="VSCode Icon - Folder" width="200" style="block" />
+                    </td>
+                    <td>Ordner</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/ColorPalette_16x.svg"
+                             alt="VSCode Icon - ColorPalette" width="200" style="block" />
+                    </td>
+                    <td>Farben</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Ruler_16x.svg"
+                             alt="VSCode Icon - Ruler" width="200" style="block" />
+                    </td>
+                    <td>Units</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Snippet_16x.svg"
+                             alt="VSCode Icon - Snippet" width="200" style="block" />
+                    </td>
+                    <td>Snippet prefixes</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/String_16x.svg"
+                             alt="VSCode Icon - String" width="200" style="block" />
+                    </td>
+                    <td>Wörter</td>
+                </tr>
+            </table>
+
+            <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/intellisense_icons.png"
+                 alt="VSCode - IntelliSense" />
         </chapter>
 
         <chapter title="Autocomplete" id="intellisense-autocomplete">
+            <p>
+                Die Möglichkeiten der IntelliSense-Funktionen in VSCode hängen von der jeweiligen Sprache bzw. dessen 
+                Sprachdienst (= language service) ab. Für Sprachen bzw. Frameworks wie flutter gibt es eigene Extensions 
+                mit Sprachdiensten, welche den Funktionsumfang von IntelliSense erweitern. Ein Sprachdienst bietet 
+                intelligente Codevervollständigungen auf der Grundlage der Sprachsemantik und einer Analyse des 
+                Quellcodes. Wenn ein Sprachdienst mögliche Vervollständigungen kennt, werden die IntelliSense-Vorschläge 
+                während der Eingabe angezeigt. Wird mit der Eingabe von Zeichen fortgefahren, wird die Liste der
+                Elemente (Variablen, Methoden usw.) so gefiltert, dass sie nur Elemente enthält, die die eingegebenen 
+                Zeichen enthalten. Wird die Tabulatortaste <code>TAB</code> oder die Eingabetaste <code>ENTER</code> 
+                drücken, wird das ausgewählte Element eingefügt.
+            </p>
+            <p>
+                Mit der Tastenkombination <code>CTRL</code>+<code>SPACE</code> kann IntelliSense in jedem Editor 
+                getriggert werden. Wird es vom Sprachdienst unterstützt, dann kann dadurch auch die sogenannte quick 
+                info angezeigt werden:
+            </p>
+            
+            <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/intellisense_docs.gif"
+                 alt="VSCode - IntelliSense Autocomplete Usage" />
+
+            <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/paramater_info.png"
+                 alt="VSCode - IntelliSense Autocomplete Function Info" />
+            
+            <p>
+                Mit <code>CTRL</code>+<code>SHIFT</code>+<code>SPACE</code> werden die Parameter einer Funktion bzw.
+                Methode angezeigt:
+            </p>
+
+            <img src="app_vscode_intellisense_parameterinfo.png"
+                 alt="VSCode - IntelliSense Autocomplete Parameter Info" />
         </chapter>
     </chapter>
 
