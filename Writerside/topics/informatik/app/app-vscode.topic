@@ -529,8 +529,55 @@
     </chapter>
 
     <chapter title="Mit Tastatur arbeiten – Keyboard Shortcuts" id="keyboard">
+        <img src="app_vscode_keyboard_shortcuts.png" alt="VSCode Keyboard Shortcuts"/>
+
+        <p>
+            Quelle:
+            <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf" ignore-vars="true">
+                https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+            </a>
+            . In VSCode können alle Keyboard Shortcuts neu um konfiguriert werden oder neue hinzugefügt werden. Eines
+            der größten Tricks um schneller zu programmieren, ist es, Zeit zu investieren, um die Bearbeitung des Codes
+            ohne Maus zu üben.
+        </p>
 
         <chapter title="Keyboard Navigation" id="keyboard-navigation">
+            <list>
+                <li>
+                    <p>
+                        Mit der Tastenkombination <code>CTRL</code>+<code>P</code> lässt sich die Datei
+                        <strong>Navigation</strong> öffnen.
+                    </p>
+
+                    <list>
+                        <li>
+                            <p>
+                                Wird hier ein <code>@</code> eingegeben so kann nach <strong>Symbolen</strong> gesucht
+                                werden. Das direkte Shortcut dafür wäre
+                                <code>CTRL</code>+<code>SHIFT</code>+<code>O</code>.
+                            </p>
+
+                            <img src="app_vscode_navigation_symbols.png" alt="VSCode Keyboard Navigation - Symbols"/>
+                        </li>
+                        <li>
+                            <p>
+                                Wird hier ein &gt; eingegeben so kann nach <strong>Befehlen</strong> gesucht werden. Das
+                                direkte Shortcut dafür wäre <code>CTRL</code>+<code>SHIFT</code>+<code>P</code>. Hiermit
+                                lassen sich nahezu alle in VSCode verfügbaren Panels und Menüs öffnen.
+                            </p>
+
+                            <img src="app_vscode_navigation_commands.png" alt="VSCode Keyboard Navigation - Commands"/>
+                        </li>
+                        <li>
+                            Mit der Tastenkombination <code>CTRL</code>+<code>SHIFT</code>+<code>M</code> kann das
+                            <strong>"Problems Panel"</strong> angezeigt werden.
+                        </li>
+                    </list>
+                </li>
+                <li></li>
+                <li></li>
+            </list>
+
         </chapter>
     </chapter>
 
