@@ -258,12 +258,48 @@
 
         <chapter title="Nach Referenzen suchen" id="referenzen">
             <chapter title="Suche im Workspace" id="referenzen-workspace">
+                <p>
+                    <code>CTRL</code>+<code>SHIFT</code>+<code>F</code> – sucht in allen Dateien des Workspace; führt in
+                    vielen Fällen zu viele Suchergebnisse die eigentlich nicht benötigt werden.
+                </p>
+
+                <img src="app_vscode_fileexplorer_search.png" alt="Referenzen - Suche im Workspace" />
             </chapter>
 
             <chapter title="Suche &amp; Springe zu ..." id="referenzen-jump">
+                <p>
+                    Mittels Rechtsklick auf eine Methode oder Eigenschaft öffnet sich ein Kontextmenü:
+                </p>
+
+                <img src="app_vscode_fileexplorer_goto.png" alt="Referenzen - Springe zu"/>
+                
+                <p>
+                    Diese bietet mehrere Optionen:
+                </p>
+                
+                <list>
+                    <li>(<code>F12</code>) Go to Definition</li>
+                    <li>Go to Type Definition</li>
+                    <li>(<code>CTRL</code>+<code>F12</code>) Go to Implementations</li>
+                    <li>(<code>SHIFT</code>+<code>F12</code>) Go to References</li>
+                    <li>Go to Source Definition</li>
+                    <li>Peek</li>
+                    <li>(<code>SHIFT</code>+<code>ALT</code>+<code>F12</code>) Find All References</li>
+                    <li>Find All Implementations</li>
+                    <li>(<code>SHIFT</code>+<code>ALT</code>+<code>H</code>) Show Call Hierarchy</li>
+                </list>
             </chapter>
 
             <chapter title="Peek" id="referenzen-peek">
+                <p>
+                    Im Kontextmenü welches sich durch einen Rechtsklick auf eine Methode oder Eigenschaft öffnet, kann
+                    das Peak Menü ausgewählt werden. Peek erlaubt es im selben Editor-Fenster ein kleines Editor-Fenster
+                    einzuschließen, um schnelle Anpassungen vorzunehmen oder eine Vorschau zu erhalten was passiert.
+                </p>
+
+                <img src="app_vscode_fileexplorer_peek_options.png" alt="Referenzen - Peek Optionen" />
+
+                <img src="app_vscode_fileexplorer_peek_view.png" alt="Referenzen - Peek Ansicht" />
             </chapter>
         </chapter>
     </chapter>
