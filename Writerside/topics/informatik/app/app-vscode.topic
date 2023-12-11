@@ -925,5 +925,83 @@
     </chapter>
 
     <chapter title="Quellen" id="quellen">
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://fireship.io/courses/vscode-tricks/" ignore-vars="true">
+                https://fireship.io/courses/vscode-tricks/
+            </a>, 2023-05-21 08:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf" ignore-vars="true">
+                https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+            </a>, 2023-05-21 10:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://code.visualstudio.com/api/extension-guides/color-theme" ignore-vars="true">
+                https://code.visualstudio.com/api/extension-guides/color-theme
+            </a>, 2023-05-22 07:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://code.visualstudio.com/api/extension-guides/file-icon-theme" ignore-vars="true">
+                https://code.visualstudio.com/api/extension-guides/file-icon-theme
+            </a>, 2023-05-22 07:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://code.visualstudio.com/api/extension-guides/product-icon-theme" ignore-vars="true">
+                https://code.visualstudio.com/api/extension-guides/product-icon-theme
+            </a>, 2023-05-22 07:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://github.com/tonsky/FiraCode" ignore-vars="true">
+                https://github.com/tonsky/FiraCode
+            </a>, 2023-05-22 07:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://code.visualstudio.com/blogs/2021/09/29/bracket-pair-colorization" ignore-vars="true">
+                https://code.visualstudio.com/blogs/2021/09/29/bracket-pair-colorization
+            </a>, 2023-05-22 08:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://de.wikipedia.org/wiki/IntelliSense" ignore-vars="true">
+                https://de.wikipedia.org/wiki/IntelliSense
+            </a>, 2023-05-23 08:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://code.visualstudio.com/docs/editor/intellisense" ignore-vars="true">
+                https://code.visualstudio.com/docs/editor/intellisense
+            </a>, 2023-05-23 08:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://code.visualstudio.com/Docs/languages/html" ignore-vars="true">
+                https://code.visualstudio.com/Docs/languages/html
+            </a>, 2023-05-24 08:15
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://code.visualstudio.com/docs/editor/emmet" ignore-vars="true">
+                https://code.visualstudio.com/docs/editor/emmet
+            </a>, 2023-05-25 08:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://de.wikipedia.org/wiki/Emmet_(Software)" ignore-vars="true">
+                https://de.wikipedia.org/wiki/Emmet_(Software)
+            </a>, 2023-05-25 08:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://code.visualstudio.com/docs/editor/userdefinedsnippets" ignore-vars="true">
+                https://code.visualstudio.com/docs/editor/userdefinedsnippets
+            </a>, 2023-05-25 08:30
+        </tip>
     </chapter>
 </topic>
