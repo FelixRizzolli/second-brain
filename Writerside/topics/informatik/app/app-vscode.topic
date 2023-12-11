@@ -755,12 +755,41 @@
 
     <chapter title="Snippets" id="snippets">
         <chapter title="Built-in snippets" id="snippets-builtin">
+            <p>
+                VSCode hat bereits eine Sammlung von Snippets für mehrere Sprachen wie JavaScript, TypeScript, Markdown
+                und PHP eingebaut:
+            </p>
+            
+            <img src="https://code.visualstudio.com/assets/docs/editor/userdefinedsnippets/builtin-javascript-snippets.png"
+                 alt="VSCode - Built-in Snippets Example" />
+            
+            <p>
+                Eine Liste der Snippets kann über den Command (<code>CTRL</code>+<code>SHIFT</code>+<code>P</code>)
+                <code>Snippets: Insert Snippet</code> angezeigt werden:
+            </p>
+            
+            <img src="app_vscode_snippets_action.png" alt="VSCode - Built-in Snippets Action"/>
+            
+            <img src="app_vscode_snippets_list.png" alt="VSCode - Built-in Snippets List"/>
         </chapter>
 
         <chapter title="Extensions" id="snippets-extensions">
+            <p>
+                In VSCode gibt es auch viele Erweiterungen mit Snippets welche vom Marketplace heruntergeladen werden
+                können. Der Marketplace wird mit der Tastenkombination
+                <code>CTRL</code>+<code>SHIFT</code>+<code>X</code> geöffnet. Dort kann bei der Suche
+                <code>@category:"snippets"</code> eingegeben werden, um nach Extensions mit Snippets zu suchen.
+            </p>
         </chapter>
 
         <chapter title="Custom Snippets" id="snippets-custom">
+            <p>
+                In VSCode können auch eigene Snippets erstellt werden. Dafür empfiehlt es sich die dafür angelegte
+                Dokumentation zu lesen:
+                <a href="https://code.visualstudio.com/docs/editor/userdefinedsnippets">
+                    https://code.visualstudio.com/docs/editor/userdefinedsnippets
+                </a>
+            </p>
         </chapter>
     </chapter>
 
