@@ -579,20 +579,90 @@
     </chapter>
 
     <chapter title="Bearbeitungstricks" id="edit">
-
         <chapter title="Codeteile einklappen" id="edit-collapse">
+            <p>
+                In VSCode lassen sich Codeblöcke wie beispielsweise eine Funktion einklappen. Dafür stehen die Pfeile
+                neben der Zeilennummerierung.
+            </p>
+
+            <img src="app_vscode_edit_collapsed_false.png" alt="VSCode - Code nicht eingeklappt" />
+            
+            <img src="app_vscode_edit_collapsed_true.png" alt="VSCode - Code eingeklappt" />
+
+            <p>
+                Eine empfehlenswerte Taktik wäre: zuerst alles zusammenklappen und folglich jene Codeblöcke aufklappen
+                an denen man arbeiten muss.
+            </p>
+
+            <img src="app_vscode_edit_collapse_all.png" alt="VSCode - Code einklappen" />
         </chapter>
 
         <chapter title="Multi Cursor + Multiline Editing" id="edit-multi">
+            <table style="none">
+                <tr>
+                    <td><code>ALT</code>+<code>(CLICK)</code></td>
+                    <td>Mit <code>ALT</code>+<code>(CLICK)</code> lassen sich mehrere Cursors zugleich setzen. Dies ist
+                        viel schneller als Copy/Paste, wenn der Wert immer derselbe ist.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>CTRL</code>+<code>D</code></td>
+                    <td>
+                        Wird der Cursor auf ein Symbol gelegt und die Tastenkombination <code>CTRL</code>+<code>D</code>
+                        verwendet, so wird das komplette Symbol ausgewählt. Wird die Tastenkombination erneut betätigt,
+                        so wird das nächste gleichnamige Symbol auch ausgewählt.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Linked Editing" id="edit-linked">
+            <p>
+                Wenn ein Tag geändert wird, aktualisiert die Linked-Editing-Funktion automatisch den passenden
+                schließenden Tag. Die Funktion ist optional und kann durch Einstellung aktiviert werden:
+            </p>
+
+            <code-block lang="json">
+                "editor.linkedEditing": true
+            </code-block>
         </chapter>
 
         <chapter title="Safe Rename" id="edit-safe-rename">
+            <p>
+                Eine der härtesten Aufgaben eines Entwicklers ist es, den richtigen Bezeichner für eine Variable,
+                Funktion, Klasse, ... zu finden. Das bedeutet, dass man öfters mal diese umbenennt. Damit man nicht zu
+                jeder Stelle gehen muss, an der dieser Bezeichner verwendet wurde, geht man zuerst zur Implementation der
+                Variable (bzw. Funktion, ...) mittels <code>CTRL</code>+<code>F12</code> oder (Rechtsklick) + (Go to
+                Implementations) dort wählt man den Bezeichner und benennt ihn mittels <code>F2</code> bzw.
+                (Rechtsklick) + (Rename Symbol) um. Dies gibt einem die Option einen neuen Bezeichner einzugeben. Wird
+                er geändert so ändert sich der Bezeichner an allen stellen an denen er verwendet wird.
+            </p>
+
+            <table>
+                <tr>
+                    <td><code>CTRL</code>+<code>F12</code></td>
+                    <td>
+                        Springt zur Implementation – auch mit Rechtsklick + Go to Implementation möglich
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>F2</code></td>
+                    <td>
+                        Benennt den Bezeichner überall wo er verwendet wird um – auch mit Rechtsklick + Rename Symbol
+                        möglich.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Code Actions" id="edit-code-actions">
+            <p>
+                Die sogenannten Code Actions <img src="light_bulb_3d.png" alt="Light Bulb" width="20" style="inline"/>,
+                welche mit der Tastenkombination <code>CTRL</code>+<code>.</code> getriggert werden können, schlagen
+                verschiedene Verbesserungen vor:
+            </p>
+
+            <img src="app_vscode_edit_code_action.png" alt="VSCode - Code Action" />
         </chapter>
     </chapter>
 
