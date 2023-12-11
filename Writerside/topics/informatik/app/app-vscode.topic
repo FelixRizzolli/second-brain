@@ -902,6 +902,17 @@
     </chapter>
     
     <chapter title="Git &amp; GitLens" id="git">
+        <p>
+            Git ist ein Versionierungsverwaltungstool von Dateien. Git ist in VSCode direkt integriert.
+        </p>
+
+        <p>
+            GitLens bietet für VSCode und Git noch erweiterte Funktionalitäten die sehr nützlich sind für die
+            Zusammenarbeit in einem größeren Team. Mehr Informationen hier:
+            <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">
+                https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
+            </a>
+        </p>
 
         <chapter title="GitHub" id="github">
         </chapter>
