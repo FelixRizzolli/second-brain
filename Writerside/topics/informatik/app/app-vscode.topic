@@ -672,13 +672,84 @@
     </chapter>
 
     <chapter title="Emmet" id="emmet">
+        <img src="https://code.visualstudio.com/assets/docs/editor/emmet/emmet.gif" alt="VSCode - Emmet GIF"/>
+
+        <p>
+            Emmet ist ein quelloffenes Plugin für verschiedene Texteditoren, zur schnellen Erstellung von XML-, HTML-,
+            CSS-Code und weitere. Emmet ist in VSCode bereits fix integriert.
+        </p>
+        
         <chapter title="Beispiele für Emmet Anweisungen" id="emmet-beispiele">
+            <table>
+                <tr>
+                    <td>Emmet-Anweisung</td>
+                    <td>Ergebnis</td>
+                </tr>
+                <tr>
+                    <td><code>html&gt;head+body</code></td>
+                    <td>
+                        <code-block lang="html">
+                            &lt;html&gt;
+                                &lt;head&gt;&lt;/head&gt;
+                                &lt;body&gt;
+
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>ul.gallery>(li>a[href="img/$$$.jpg"]{Bild $$$})*3</code></td>
+                    <td>
+                        <code-block lang="html">
+                            &lt;ul class="gallery"&gt;
+                                &lt;li&gt;&lt;a href="img/001.jpg"&gt;Bild 001&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="img/002.jpg"&gt;Bild 002&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="img/003.jpg"&gt;Bild 003&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>pos.a</code></td>
+                    <td>
+                        <code-block lang="css">
+                            position:absolute;
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>ff:a</code></td>
+                    <td>
+                        <code-block lang="css">
+                            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        </code-block>
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Emmet Cheat Sheet" id="emmet-cheat-sheet">
+            <p>
+                Mehr Beispiele hier: <a href="https://docs.emmet.io/cheat-sheet">https://docs.emmet.io/cheat-sheet</a>
+            </p>
         </chapter>
 
         <chapter title="Emmet Wrap Abbreviation" id="emmet-wrap-abbreviation">
+            <p>
+                Mit dem Command <code>Emmet: Balance (outward)</code> lässt sich ein Elementmarkieren. Wird dieser
+                Befehl nochmals ausgeführt, dann markiert er auch die umliegenden Elemente, folglich das Elternelement
+                usw.:
+            </p>
+
+            <img src="app_vscode_emmet_balance.png" alt="VSCode - Emmet: Balance (outward)"/>
+
+            <p>
+                Mit dem Command <code>Emmet: Wrap with Abbreviation</code> lässt sich das markierte Element in einem
+                neuen Element einschließen:
+            </p>
+            
+            <img src="app_vscode_emmet_wrap_with_abbreviation.png" alt="VSCode - Emmet: Wrap with Abbreviation"/>
         </chapter>
     </chapter>
 
