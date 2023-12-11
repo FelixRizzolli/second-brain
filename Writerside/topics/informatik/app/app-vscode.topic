@@ -258,67 +258,538 @@
 
         <chapter title="Nach Referenzen suchen" id="referenzen">
             <chapter title="Suche im Workspace" id="referenzen-workspace">
+                <p>
+                    <code>CTRL</code>+<code>SHIFT</code>+<code>F</code> – sucht in allen Dateien des Workspace; führt in
+                    vielen Fällen zu viele Suchergebnisse die eigentlich nicht benötigt werden.
+                </p>
+
+                <img src="app_vscode_fileexplorer_search.png" alt="Referenzen - Suche im Workspace" />
             </chapter>
 
             <chapter title="Suche &amp; Springe zu ..." id="referenzen-jump">
+                <p>
+                    Mittels Rechtsklick auf eine Methode oder Eigenschaft öffnet sich ein Kontextmenü:
+                </p>
+
+                <img src="app_vscode_fileexplorer_goto.png" alt="Referenzen - Springe zu"/>
+                
+                <p>
+                    Diese bietet mehrere Optionen:
+                </p>
+                
+                <list>
+                    <li>(<code>F12</code>) Go to Definition</li>
+                    <li>Go to Type Definition</li>
+                    <li>(<code>CTRL</code>+<code>F12</code>) Go to Implementations</li>
+                    <li>(<code>SHIFT</code>+<code>F12</code>) Go to References</li>
+                    <li>Go to Source Definition</li>
+                    <li>Peek</li>
+                    <li>(<code>SHIFT</code>+<code>ALT</code>+<code>F12</code>) Find All References</li>
+                    <li>Find All Implementations</li>
+                    <li>(<code>SHIFT</code>+<code>ALT</code>+<code>H</code>) Show Call Hierarchy</li>
+                </list>
             </chapter>
 
             <chapter title="Peek" id="referenzen-peek">
+                <p>
+                    Im Kontextmenü welches sich durch einen Rechtsklick auf eine Methode oder Eigenschaft öffnet, kann
+                    das Peak Menü ausgewählt werden. Peek erlaubt es im selben Editor-Fenster ein kleines Editor-Fenster
+                    einzuschließen, um schnelle Anpassungen vorzunehmen oder eine Vorschau zu erhalten was passiert.
+                </p>
+
+                <img src="app_vscode_fileexplorer_peek_options.png" alt="Referenzen - Peek Optionen" />
+
+                <img src="app_vscode_fileexplorer_peek_view.png" alt="Referenzen - Peek Ansicht" />
             </chapter>
         </chapter>
     </chapter>
 
     <chapter title="IntelliSense" id="intellisense">
+        <p>
+            IntelliSense ist ein allgemeiner Begriff für ein Hilfsmittel zur automatischen Vervollständigung der
+            Bearbeitung von Quellcode durch einen Programmierer. Es bietet Codevorschläge und -erklärungen an, während
+            der Programmierer schreibt. So erleichtert es das Schreiben von Code, fördert das Verständnis von Syntax und
+            schult die Funktionsweise bestimmter Befehle. IntelliSense kann Codevorschläge basierend auf der Eingabe des
+            Benutzers anzeigen, z. B. wenn der Benutzer eine Variable oder eine Funktion eingibt. Es kann auch den
+            Benutzer darüber informieren, welche Optionen für bestimmte Funktionen oder Methoden verfügbar sind, indem
+            es die verfügbaren Argumente anzeigt.
+        </p>
+
+        <table style="none">
+            <tr>
+                <td><code>CTRL</code><code>SPACE</code></td>
+                <td>
+                    Triggert IntelliSense
+                </td>
+            </tr>
+            <tr>
+                <td><code>CTRL</code>+<code>SHIFT</code>+<code>SPACE</code></td>
+                <td>
+                    Zeigt die Parameter einer Funktion/Methode an und hilft einem somit bei der Auswahl der Argumente.
+                </td>
+            </tr>
+        </table>
+
         <chapter title="Typen" id="intellisense-typen">
+            <p>
+                VS Code IntelliSense bietet verschiedene Typen von Vervollständigungen, darunter Vorschläge des
+                Sprachservers, Snippets und einfache wortbasierte Textvervollständigungen.
+            </p>
+
+            <table>
+                <tr>
+                    <td>ICON</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Method_16x.svg"
+                             alt="VSCode Icon - Method" width="200" style="block" />
+                    </td>
+                    <td>Methoden und Funktionen</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Variable_16x.svg"
+                             alt="VSCode Icon - Variable" width="200" style="block" />
+                    </td>
+                    <td>Variablen</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Field_16x.svg"
+                             alt="VSCode Icon - Field" width="200" style="block" />
+                    </td>
+                    <td>Felder</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-parameter.svg"
+                             alt="VSCode Icon - Symbol Parameter" width="200" style="block" />
+                    </td>
+                    <td>Type Parameter</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-constant.svg"
+                             alt="VSCode Icon - Symbol Constant" width="200" style="block" />
+                    </td>
+                    <td>Konstanten</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Class_16x.svg"
+                             alt="VSCode Icon - Class" width="200" style="block" />
+                    </td>
+                    <td>Klassen</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Interface_16x.svg"
+                             alt="VSCode Icon - Interface" width="200" style="block" />
+                    </td>
+                    <td>Schnittstellen (Interfaces)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-structure.svg"
+                             alt="VSCode Icon - Symbol Structure" width="200" style="block" />
+                    </td>
+                    <td>Strukturen</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-event.svg"
+                             alt="VSCode Icon - Event" width="200" style="block" />
+                    </td>
+                    <td>Events</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-operator.svg"
+                             alt="VSCode Icon - Symbol Operator" width="200" style="block" />
+                    </td>
+                    <td>Operatoren</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Namespace_16x.svg"
+                             alt="VSCode Icon - Namespace" width="200" style="block" />
+                    </td>
+                    <td>Module / Namespaces</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Property_16x.svg"
+                             alt="VSCode Icon - Property" width="200" style="block" />
+                    </td>
+                    <td>Properties und Attribute</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/EnumItem_16x.svg"
+                             alt="VSCode Icon - EnumItem" width="200" style="block" />
+                    </td>
+                    <td>Werte und Enumerationen</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Reference_16x.svg"
+                             alt="VSCode Icon - Reference" width="200" style="block" />
+                    </td>
+                    <td>Referenzen</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Keyword_16x.svg"
+                             alt="VSCode Icon - Keyword" width="200" style="block" />
+                    </td>
+                    <td>Keywords</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-file.svg"
+                             alt="VSCode Icon - Symbol File" width="200" style="block" />
+                    </td>
+                    <td>Dateien</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/folder.svg"
+                             alt="VSCode Icon - Folder" width="200" style="block" />
+                    </td>
+                    <td>Ordner</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/ColorPalette_16x.svg"
+                             alt="VSCode Icon - ColorPalette" width="200" style="block" />
+                    </td>
+                    <td>Farben</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Ruler_16x.svg"
+                             alt="VSCode Icon - Ruler" width="200" style="block" />
+                    </td>
+                    <td>Units</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/Snippet_16x.svg"
+                             alt="VSCode Icon - Snippet" width="200" style="block" />
+                    </td>
+                    <td>Snippet prefixes</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/String_16x.svg"
+                             alt="VSCode Icon - String" width="200" style="block" />
+                    </td>
+                    <td>Wörter</td>
+                </tr>
+            </table>
+
+            <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/intellisense_icons.png"
+                 alt="VSCode - IntelliSense" />
         </chapter>
 
         <chapter title="Autocomplete" id="intellisense-autocomplete">
+            <p>
+                Die Möglichkeiten der IntelliSense-Funktionen in VSCode hängen von der jeweiligen Sprache bzw. dessen 
+                Sprachdienst (= language service) ab. Für Sprachen bzw. Frameworks wie flutter gibt es eigene Extensions 
+                mit Sprachdiensten, welche den Funktionsumfang von IntelliSense erweitern. Ein Sprachdienst bietet 
+                intelligente Codevervollständigungen auf der Grundlage der Sprachsemantik und einer Analyse des 
+                Quellcodes. Wenn ein Sprachdienst mögliche Vervollständigungen kennt, werden die IntelliSense-Vorschläge 
+                während der Eingabe angezeigt. Wird mit der Eingabe von Zeichen fortgefahren, wird die Liste der
+                Elemente (Variablen, Methoden usw.) so gefiltert, dass sie nur Elemente enthält, die die eingegebenen 
+                Zeichen enthalten. Wird die Tabulatortaste <code>TAB</code> oder die Eingabetaste <code>ENTER</code> 
+                drücken, wird das ausgewählte Element eingefügt.
+            </p>
+            <p>
+                Mit der Tastenkombination <code>CTRL</code>+<code>SPACE</code> kann IntelliSense in jedem Editor 
+                getriggert werden. Wird es vom Sprachdienst unterstützt, dann kann dadurch auch die sogenannte quick 
+                info angezeigt werden:
+            </p>
+            
+            <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/intellisense_docs.gif"
+                 alt="VSCode - IntelliSense Autocomplete Usage" />
+
+            <img src="https://code.visualstudio.com/assets/docs/editor/intellisense/paramater_info.png"
+                 alt="VSCode - IntelliSense Autocomplete Function Info" />
+            
+            <p>
+                Mit <code>CTRL</code>+<code>SHIFT</code>+<code>SPACE</code> werden die Parameter einer Funktion bzw.
+                Methode angezeigt:
+            </p>
+
+            <img src="app_vscode_intellisense_parameterinfo.png"
+                 alt="VSCode - IntelliSense Autocomplete Parameter Info" />
         </chapter>
     </chapter>
 
     <chapter title="Mit Tastatur arbeiten – Keyboard Shortcuts" id="keyboard">
+        <img src="app_vscode_keyboard_shortcuts.png" alt="VSCode Keyboard Shortcuts" />
+
+        <p>
+            Quelle:
+            <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf" ignore-vars="true">
+                https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+            </a>
+            . In VSCode können alle Keyboard Shortcuts neu um konfiguriert werden oder neue hinzugefügt werden. Eines
+            der größten Tricks um schneller zu programmieren, ist es, Zeit zu investieren, um die Bearbeitung des Codes
+            ohne Maus zu üben.
+        </p>
 
         <chapter title="Keyboard Navigation" id="keyboard-navigation">
+            <list>
+                <li>
+                    <p>
+                        Mit der Tastenkombination <code>CTRL</code>+<code>P</code> lässt sich die Datei
+                        <strong>Navigation</strong> öffnen.
+                    </p>
+
+                    <list>
+                        <li>
+                            <p>
+                                Wird hier ein <code>@</code> eingegeben so kann nach <strong>Symbolen</strong> gesucht
+                                werden. Das direkte Shortcut dafür wäre
+                                <code>CTRL</code>+<code>SHIFT</code>+<code>O</code>.
+                            </p>
+
+                            <img src="app_vscode_navigation_symbols.png" alt="VSCode Keyboard Navigation - Symbols" />
+                        </li>
+                        <li>
+                            <p>
+                                Wird hier ein &gt; eingegeben so kann nach <strong>Befehlen</strong> gesucht werden. Das
+                                direkte Shortcut dafür wäre <code>CTRL</code>+<code>SHIFT</code>+<code>P</code>. Hiermit
+                                lassen sich nahezu alle in VSCode verfügbaren Panels und Menüs öffnen.
+                            </p>
+
+                            <img src="app_vscode_navigation_commands.png" alt="VSCode Keyboard Navigation - Commands" />
+                        </li>
+                        <li>
+                            Mit der Tastenkombination <code>CTRL</code>+<code>SHIFT</code>+<code>M</code> kann das
+                            <strong>"Problems Panel"</strong> angezeigt werden.
+                        </li>
+                    </list>
+                </li>
+            </list>
         </chapter>
     </chapter>
 
     <chapter title="Bearbeitungstricks" id="edit">
-
         <chapter title="Codeteile einklappen" id="edit-collapse">
+            <p>
+                In VSCode lassen sich Codeblöcke wie beispielsweise eine Funktion einklappen. Dafür stehen die Pfeile
+                neben der Zeilennummerierung.
+            </p>
+
+            <img src="app_vscode_edit_collapsed_false.png" alt="VSCode - Code nicht eingeklappt" />
+            
+            <img src="app_vscode_edit_collapsed_true.png" alt="VSCode - Code eingeklappt" />
+
+            <p>
+                Eine empfehlenswerte Taktik wäre: zuerst alles zusammenklappen und folglich jene Codeblöcke aufklappen
+                an denen man arbeiten muss.
+            </p>
+
+            <img src="app_vscode_edit_collapse_all.png" alt="VSCode - Code einklappen" />
         </chapter>
 
         <chapter title="Multi Cursor + Multiline Editing" id="edit-multi">
+            <table style="none">
+                <tr>
+                    <td><code>ALT</code>+<code>(CLICK)</code></td>
+                    <td>Mit <code>ALT</code>+<code>(CLICK)</code> lassen sich mehrere Cursors zugleich setzen. Dies ist
+                        viel schneller als Copy/Paste, wenn der Wert immer derselbe ist.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>CTRL</code>+<code>D</code></td>
+                    <td>
+                        Wird der Cursor auf ein Symbol gelegt und die Tastenkombination <code>CTRL</code>+<code>D</code>
+                        verwendet, so wird das komplette Symbol ausgewählt. Wird die Tastenkombination erneut betätigt,
+                        so wird das nächste gleichnamige Symbol auch ausgewählt.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Linked Editing" id="edit-linked">
+            <p>
+                Wenn ein Tag geändert wird, aktualisiert die Linked-Editing-Funktion automatisch den passenden
+                schließenden Tag. Die Funktion ist optional und kann durch Einstellung aktiviert werden:
+            </p>
+
+            <code-block lang="json">
+                "editor.linkedEditing": true
+            </code-block>
         </chapter>
 
         <chapter title="Safe Rename" id="edit-safe-rename">
+            <p>
+                Eine der härtesten Aufgaben eines Entwicklers ist es, den richtigen Bezeichner für eine Variable,
+                Funktion, Klasse, ... zu finden. Das bedeutet, dass man öfters mal diese umbenennt. Damit man nicht zu
+                jeder Stelle gehen muss, an der dieser Bezeichner verwendet wurde, geht man zuerst zur Implementation der
+                Variable (bzw. Funktion, ...) mittels <code>CTRL</code>+<code>F12</code> oder (Rechtsklick) + (Go to
+                Implementations) dort wählt man den Bezeichner und benennt ihn mittels <code>F2</code> bzw.
+                (Rechtsklick) + (Rename Symbol) um. Dies gibt einem die Option einen neuen Bezeichner einzugeben. Wird
+                er geändert so ändert sich der Bezeichner an allen stellen an denen er verwendet wird.
+            </p>
+
+            <table>
+                <tr>
+                    <td><code>CTRL</code>+<code>F12</code></td>
+                    <td>
+                        Springt zur Implementation – auch mit Rechtsklick + Go to Implementation möglich
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>F2</code></td>
+                    <td>
+                        Benennt den Bezeichner überall wo er verwendet wird um – auch mit Rechtsklick + Rename Symbol
+                        möglich.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Code Actions" id="edit-code-actions">
+            <p>
+                Die sogenannten Code Actions <img src="light_bulb_3d.png" alt="Light Bulb" width="20" style="inline"/>,
+                welche mit der Tastenkombination <code>CTRL</code>+<code>.</code> getriggert werden können, schlagen
+                verschiedene Verbesserungen vor:
+            </p>
+
+            <img src="app_vscode_edit_code_action.png" alt="VSCode - Code Action" />
+
+            <p>
+                In diesem Beispiel kann die Arrow-Funktion in eine Named-Funktion konvertiert werden. Die Nutzbarkeit
+                dieses Tools hängt stark von der Programmiersprache ab.
+            </p>
         </chapter>
     </chapter>
 
     <chapter title="Emmet" id="emmet">
+        <img src="https://code.visualstudio.com/assets/docs/editor/emmet/emmet.gif" alt="VSCode - Emmet GIF"/>
+
+        <p>
+            Emmet ist ein quelloffenes Plugin für verschiedene Texteditoren, zur schnellen Erstellung von XML-, HTML-,
+            CSS-Code und weitere. Emmet ist in VSCode bereits fix integriert.
+        </p>
+        
         <chapter title="Beispiele für Emmet Anweisungen" id="emmet-beispiele">
+            <table>
+                <tr>
+                    <td>Emmet-Anweisung</td>
+                    <td>Ergebnis</td>
+                </tr>
+                <tr>
+                    <td><code>html&gt;head+body</code></td>
+                    <td>
+                        <code-block lang="html">
+                            &lt;html&gt;
+                                &lt;head&gt;&lt;/head&gt;
+                                &lt;body&gt;
+
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>ul.gallery>(li>a[href="img/$$$.jpg"]{Bild $$$})*3</code></td>
+                    <td>
+                        <code-block lang="html">
+                            &lt;ul class="gallery"&gt;
+                                &lt;li&gt;&lt;a href="img/001.jpg"&gt;Bild 001&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="img/002.jpg"&gt;Bild 002&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="img/003.jpg"&gt;Bild 003&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>pos.a</code></td>
+                    <td>
+                        <code-block lang="css">
+                            position:absolute;
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>ff:a</code></td>
+                    <td>
+                        <code-block lang="css">
+                            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        </code-block>
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Emmet Cheat Sheet" id="emmet-cheat-sheet">
+            <p>
+                Mehr Beispiele hier: <a href="https://docs.emmet.io/cheat-sheet">https://docs.emmet.io/cheat-sheet</a>
+            </p>
         </chapter>
 
         <chapter title="Emmet Wrap Abbreviation" id="emmet-wrap-abbreviation">
+            <p>
+                Mit dem Command <code>Emmet: Balance (outward)</code> lässt sich ein Elementmarkieren. Wird dieser
+                Befehl nochmals ausgeführt, dann markiert er auch die umliegenden Elemente, folglich das Elternelement
+                usw.:
+            </p>
+
+            <img src="app_vscode_emmet_balance.png" alt="VSCode - Emmet: Balance (outward)"/>
+
+            <p>
+                Mit dem Command <code>Emmet: Wrap with Abbreviation</code> lässt sich das markierte Element in einem
+                neuen Element einschließen:
+            </p>
+            
+            <img src="app_vscode_emmet_wrap_with_abbreviation.png" alt="VSCode - Emmet: Wrap with Abbreviation"/>
         </chapter>
     </chapter>
 
     <chapter title="Snippets" id="snippets">
         <chapter title="Built-in snippets" id="snippets-builtin">
+            <p>
+                VSCode hat bereits eine Sammlung von Snippets für mehrere Sprachen wie JavaScript, TypeScript, Markdown
+                und PHP eingebaut:
+            </p>
+            
+            <img src="https://code.visualstudio.com/assets/docs/editor/userdefinedsnippets/builtin-javascript-snippets.png"
+                 alt="VSCode - Built-in Snippets Example" />
+            
+            <p>
+                Eine Liste der Snippets kann über den Command (<code>CTRL</code>+<code>SHIFT</code>+<code>P</code>)
+                <code>Snippets: Insert Snippet</code> angezeigt werden:
+            </p>
+            
+            <img src="app_vscode_snippets_action.png" alt="VSCode - Built-in Snippets Action"/>
+            
+            <img src="app_vscode_snippets_list.png" alt="VSCode - Built-in Snippets List"/>
         </chapter>
 
         <chapter title="Extensions" id="snippets-extensions">
+            <p>
+                In VSCode gibt es auch viele Erweiterungen mit Snippets welche vom Marketplace heruntergeladen werden
+                können. Der Marketplace wird mit der Tastenkombination
+                <code>CTRL</code>+<code>SHIFT</code>+<code>X</code> geöffnet. Dort kann bei der Suche
+                <code>@category:"snippets"</code> eingegeben werden, um nach Extensions mit Snippets zu suchen.
+            </p>
         </chapter>
 
         <chapter title="Custom Snippets" id="snippets-custom">
+            <p>
+                In VSCode können auch eigene Snippets erstellt werden. Dafür empfiehlt es sich die dafür angelegte
+                Dokumentation zu lesen:
+                <a href="https://code.visualstudio.com/docs/editor/userdefinedsnippets">
+                    https://code.visualstudio.com/docs/editor/userdefinedsnippets
+                </a>
+            </p>
         </chapter>
     </chapter>
 
@@ -328,21 +799,120 @@
 
     <chapter title="IDE – Integrated Development Environment" id="ide">
         <chapter title="Terminal &amp; Tasks" id="ide-terminal">
+            <p>
+                Softwareentwickler verwenden mehrere Tools, welche Aufgaben innerhalb und außerhalb des
+                Softwareentwicklungskreislaufs (Bearbeiten, Kompilieren, Testen und Debuggen) automatisieren. Diese
+                Tools werden meist von der Befehlszeile aus ausgeführt. In VSCode können Tasks konfiguriert werden,
+                welche Skripte ausführen und Prozesse starten, sodass viele dieser vorhandenen Tools direkt von VSCode
+                aus verwendet werden können, ohne eine eigene Befehlszeile zu verwenden. Die Tasks werden im
+                Arbeitsbereich in der <code>tasks.json</code>-Datei im <code>.vscode</code>-Ordner gespeichert.
+            </p>
+
+            <warning>
+                Tasks können nur in einem Arbeitsbereich konfiguriert werden.
+            </warning>
+
             <chapter title="Task erstellen" id="ide-terminal-tasks-erstellen">
+                <list style="decimal">
+                    <li>
+                        <code>CTRL</code>+<code>SHIFT</code>+<code>P</code> oder <code>F1</code> als Shortcut um die
+                        Command Palette auszuführen
+                    </li>
+                    <li>
+                        <code>"Task: Configure Task"</code> eingeben, um die <code>tasks.json</code>-Datei zu
+                        erstellen/öffnen.
+                    </li>
+                    <li>
+                        <code-block lang="json" collapsed-title="tasks.json" collapsible="true">
+                            {
+                                // See https://go.microsoft.com/fwlink/?LinkId=733558
+                                // for the documentation about the tasks.json format
+                                "version": "2.0.0",
+                                "tasks": [
+                                    {
+                                        "label": "compileXSD",
+                                        "type": "shell",
+                                        "command": "powershell.exe S:\\projects\\gitlab\\m3\\scripts\\compile\\compile.ps1m3xsdrepo"
+                                    }
+                                ]
+                            }
+                        </code-block>
+                    </li>
+                </list>
             </chapter>
 
             <chapter title="Task ausführen" id="ide-terminal-tasks-ausführen">
+                <list style="decimal">
+                    <li>
+                        <code>CTRL</code>+<code>SHIFT</code>+<code>P</code> oder <code>F1</code> als Shortcut um die
+                        Command Palette auszuführen
+                    </li>
+                    <li>
+                        <code>"Task: Run Task"</code> eingeben, um einen Task auszuführen.
+                    </li>
+                    <li>
+                        Den Task auswählen, im Beispiel: <code>"compileXSD"</code>
+                    </li>
+                    <li>
+                        Und schlussendlich mit <code>"Continue without scanning the task output"</code> bestätigen.
+                    </li>
+                </list>
             </chapter>
 
             <chapter title="Build Tools" id="ide-terminal-buildtools">
+                <img src="app_vscode_tasks_buildtools.png" alt="VSCode - Build Tools"/>
+                
+                <p>
+                    VSCode erkennt Scripts von Build Tools wie <code>npm</code>, <code>typescript</code>,
+                    <code>gulp</code>, <code>docker</code> ... und erstellt dafür automatisch eigene Tasks. Hierbei
+                    erscheint ein eigenes Panel im Explorer für zum Beispiel NPM Scripts. Diese können auch von hier aus
+                    gestartet werden.
+                </p>
             </chapter>
 
             <chapter title="Terminal" id="ide-terminal-terminal">
+                <img src="app_vscode_tasks_terminal.png" alt="VSCode - Terminal"/>
+
+                <p>
+                    Arbeitet man mit mehreren Terminals, so hat man in VSCode einige Personalisierungsoptionen:
+                </p>
+
+                <list>
+                    <li>
+                        Es kann die <strong>Farbe</strong> eines Terminals geändert werden, um es schneller erkennen zu
+                        können bzw. besser von den anderen unterscheiden zu können.
+                    </li>
+                    <li>
+                        Es kann das <strong>Icon</strong> eines Terminals geändert werden, um es schneller erkennen zu 
+                        können bzw. besser von den anderen unterscheiden zu können.
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Split Terminal</strong> – zwei Terminals können nebeneinander gestellt werden
+                        </p>
+                        
+                        <img src="app_vscode_tasks_terminal_split.png" alt="VSCode - Terminal: Split"/>
+                    </li>
+                    <li>
+                        Dem Terminal kann ein <strong>Name</strong> gegeben werden.
+                    </li>
+                </list>
             </chapter>
         </chapter>
     </chapter>
     
     <chapter title="Git &amp; GitLens" id="git">
+        <p>
+            Git ist ein Versionierungsverwaltungstool von Dateien. Git ist in VSCode direkt integriert.
+        </p>
+
+        <p>
+            GitLens bietet für VSCode und Git noch erweiterte Funktionalitäten die sehr nützlich sind für die
+            Zusammenarbeit in einem größeren Team. Mehr Informationen hier:
+            <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">
+                https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
+            </a>
+        </p>
 
         <chapter title="GitHub" id="github">
         </chapter>
@@ -355,5 +925,83 @@
     </chapter>
 
     <chapter title="Quellen" id="quellen">
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://fireship.io/courses/vscode-tricks/" ignore-vars="true">
+                https://fireship.io/courses/vscode-tricks/
+            </a>, 2023-05-21 08:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf" ignore-vars="true">
+                https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+            </a>, 2023-05-21 10:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://code.visualstudio.com/api/extension-guides/color-theme" ignore-vars="true">
+                https://code.visualstudio.com/api/extension-guides/color-theme
+            </a>, 2023-05-22 07:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://code.visualstudio.com/api/extension-guides/file-icon-theme" ignore-vars="true">
+                https://code.visualstudio.com/api/extension-guides/file-icon-theme
+            </a>, 2023-05-22 07:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://code.visualstudio.com/api/extension-guides/product-icon-theme" ignore-vars="true">
+                https://code.visualstudio.com/api/extension-guides/product-icon-theme
+            </a>, 2023-05-22 07:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://github.com/tonsky/FiraCode" ignore-vars="true">
+                https://github.com/tonsky/FiraCode
+            </a>, 2023-05-22 07:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://code.visualstudio.com/blogs/2021/09/29/bracket-pair-colorization" ignore-vars="true">
+                https://code.visualstudio.com/blogs/2021/09/29/bracket-pair-colorization
+            </a>, 2023-05-22 08:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://de.wikipedia.org/wiki/IntelliSense" ignore-vars="true">
+                https://de.wikipedia.org/wiki/IntelliSense
+            </a>, 2023-05-23 08:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://code.visualstudio.com/docs/editor/intellisense" ignore-vars="true">
+                https://code.visualstudio.com/docs/editor/intellisense
+            </a>, 2023-05-23 08:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://code.visualstudio.com/Docs/languages/html" ignore-vars="true">
+                https://code.visualstudio.com/Docs/languages/html
+            </a>, 2023-05-24 08:15
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://code.visualstudio.com/docs/editor/emmet" ignore-vars="true">
+                https://code.visualstudio.com/docs/editor/emmet
+            </a>, 2023-05-25 08:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://de.wikipedia.org/wiki/Emmet_(Software)" ignore-vars="true">
+                https://de.wikipedia.org/wiki/Emmet_(Software)
+            </a>, 2023-05-25 08:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://code.visualstudio.com/docs/editor/userdefinedsnippets" ignore-vars="true">
+                https://code.visualstudio.com/docs/editor/userdefinedsnippets
+            </a>, 2023-05-25 08:30
+        </tip>
     </chapter>
 </topic>
