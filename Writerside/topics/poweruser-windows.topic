@@ -5,5 +5,5 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Windows" id="poweruser-windows">
     <show-structure for="chapter,procedure" depth="2"/>
-    
+
 </topic>
