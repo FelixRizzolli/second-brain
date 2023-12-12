@@ -174,6 +174,11 @@
 
     <!-- ###########################[ WIRTSCHAFT ]########################### -->
     <toc-element topic="wirtschaft.topic">
+        <toc-element topic="wirtschaft-anlageprodukte.topic">
+            <toc-element topic="wirtschaft-anlageprodukte-indizes.topic"/>
+            <toc-element topic="wirtschaft-anlageprodukte-aktien.topic"/>
+        </toc-element>
+        <toc-element topic="wirtschaft-boerse.topic"/>
     </toc-element>
 
     <!-- ###########################[ TRUTHINESS ]########################### -->
