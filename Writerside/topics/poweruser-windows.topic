@@ -9,7 +9,7 @@
     <chapter title="Zwischenablageverlauf" id="zwischenablageverlauf">
         <img src="poweruser_windows_zwischenablageverlauf.png" alt="Windows - Zwischenablageverlauf"/>
 
-        <table>
+        <table style="none">
             <tr>
                 <td><code>CTRL</code>+<code>C</code></td>
                 <td>Kopieren</td>
@@ -41,7 +41,7 @@
     <chapter title="Emoji Picker" id="emoji_picker">
         <img src="poweruser_windows_emojipicker.png" alt="Windows - Emoji Picker"/>
 
-        <table>
+        <table style="none">
             <tr>
                 <td><code>(WIN)</code>+<code>.</code></td>
                 <td>Öffnet den Emoji Picker</td>
@@ -59,7 +59,7 @@
             können hilfreich sein:
         </p>
 
-        <table>
+        <table style="none">
             <tr>
                 <td><code>msconfig</code></td>
                 <td>Systemkonfiguration</td>
