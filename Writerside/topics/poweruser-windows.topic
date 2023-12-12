@@ -129,4 +129,20 @@
             </tr>
         </table>
     </chapter>
+
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://support.microsoft.com/de-de/windows/hilfe-zur-zwischenablage-30375039-ce71-9fe4-5b30-21b7aab6b13f"
+               ignore-vars="true">
+                https://support.microsoft.com/de-de/windows/hilfe-zur-zwischenablage-30375039-ce71-9fe4-5b30-21b7aab6b13f
+            </a>, 2023-05-26 07:45
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://geekflare.com/de/windows-run-commands/" ignore-vars="true">
+                https://geekflare.com/de/windows-run-commands/
+            </a>, 2023-05-26 08:00
+        </tip>
+    </chapter>
 </topic>
