@@ -50,4 +50,46 @@
             </p>
         </chapter>
     </chapter>
+    
+    <chapter title="Vorbörslicher Aktienhandel" id="vorboerslicher_aktienhandel">
+        <p>
+
+            Beim vorbörslichen Handel mit Aktien werden Aktien noch vor dem eigentlichen Börsengang von den Anlegern
+            gekauft. Aktien werden hierbei vorher erworben und erst zu einem späteren Zeitpunkt börsennotiert.
+
+        </p>
+        <p>
+
+            Vorteil: Aktien kann man vorbörslich leichter und so viele man will erhalten, während oftmals bei
+            Neuemissionen an der Börse das Los und damit der Zufall entscheidet, wer wie viele Aktien bekommt. Immer
+            dann nämlich, wenn es mehr Interessenten als Aktien gibt, und das ist bei spannenden Unternehmen häufiger
+            der Fall.
+        </p>
+        <p>
+
+            Nachteil: Es ist nicht sicher, wie der Preis, der zu bezahlen ist, im Verhältnis zu dem Preis steht, zu dem
+            die Aktie schließlich an die Börse kommt! Wenn neue Aktien anfangs stark ansteigen, kann sich das durchaus
+            rechnen. Manchmal kommen Aktien auch gar nicht an die Börse, wenn die Unternehmen zum Beispiel kurzfristig
+            den Börsengang absagen.
+
+        </p>
+
+        <note>
+            Viele Banken bieten den vorbörslichen Aktienkauf nicht so gerne an und lehnen erst einmal ab. Hier muss man
+            zu einer anderen Bank oder Private Placement Anbieter wechseln. Private Placement Anbieter haben sich und
+            manche ihre Makler besonders auf den vorbörslichen Handel spezialisiert.
+        </note>
+
+        <warning>
+            Nicht börsennotierte Aktien sind viel schwerer zu verkaufen, weil man selbst einen Käufer finden muss. Zudem
+            wird der Wert dieser Aktie nicht durch eine transparente Preisbildung (wie es die Börse macht) festgestellt.
+            Käufer und Verkäufer verhandeln den Kurs selbst, zu dem die Aktie den Besitzer wechselt.
+        </warning>
+
+        <note>
+            Auch wenn der vorbörsliche Handel sehr kompliziert und zu gewagt ist, lohnt sich der Blick auf die
+            Entwicklung der Kurse vor dem Börsengang. Es ist ein guter Indikator, wie sich die Aktie entwickeln wird,
+            wenn sie tatsächlich an der Börse gehandelt wird.
+        </note>
+    </chapter>
 </topic>
