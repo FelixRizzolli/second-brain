@@ -52,4 +52,81 @@
             Im Emoji Picker können Emojis, Kaomoji und Symbole ausgewählt werden.
         </p>
     </chapter>
+    
+    <chapter title="Windows RUN" id="windows_run">
+        <p>
+            Mit der Tastenkombination <code>(WIN)</code>+<code>R</code> öffnet man Windows Run Command. Folgende Befehle
+            können hilfreich sein:
+        </p>
+
+        <table>
+            <tr>
+                <td><code>msconfig</code></td>
+                <td>Systemkonfiguration</td>
+            </tr>
+            <tr>
+                <td><code>resmon</code></td>
+                <td>Ressource Monitor</td>
+            </tr>
+            <tr>
+                <td><code>msinfo32</code></td>
+                <td>Systeminformationen</td>
+            </tr>
+            <tr>
+                <td><code>sdclt</code></td>
+                <td>Sicherungs- und Widerherstellungsfenster</td>
+            </tr>
+            <tr>
+                <td><code>main.cpl</code></td>
+                <td>Mauseigenschaften</td>
+            </tr>
+            <tr>
+                <td><code>regedit</code></td>
+                <td>Windows-Registrierungseditor</td>
+            </tr>
+            <tr>
+                <td><code>system.cpl</code></td>
+                <td>Systemeigenschaften</td>
+            </tr>
+            <tr>
+                <td><code>powercfg.cpl</code></td>
+                <td>Power-Optionen</td>
+            </tr>
+            <tr>
+                <td><code>charmap</code></td>
+                <td>
+                    Character Map App – Alternative wäre der Symbolreiter des Emoji Picker
+                    <code>(WIN)</code>+<code>.</code>
+                </td>
+            </tr>
+            <tr>
+                <td><code>devmgmt.msc</code></td>
+                <td>Geräte-Manager</td>
+            </tr>
+            <tr>
+                <td><code>services.msc</code></td>
+                <td>Service-App</td>
+            </tr>
+            <tr>
+                <td><code>appwiz.cpl</code></td>
+                <td>Programme und Funktionen</td>
+            </tr>
+            <tr>
+                <td><code>.</code></td>
+                <td>Öffnet den aktuellen Benutzerordner</td>
+            </tr>
+            <tr>
+                <td><code>osk</code></td>
+                <td>Bildschirmtastatur</td>
+            </tr>
+            <tr>
+                <td><code>mstsc</code></td>
+                <td>Remotedesktopverbindung</td>
+            </tr>
+            <tr>
+                <td><code>cmd</code></td>
+                <td>Eingabeaufforderung</td>
+            </tr>
+        </table>
+    </chapter>
 </topic>
