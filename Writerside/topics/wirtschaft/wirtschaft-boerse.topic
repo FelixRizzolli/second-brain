@@ -7,6 +7,29 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Die Börse" id="boerse">
+        <p>
+            Wo und wann auch immer Menschen sich trafen, miteinander palaverten und dem einen gefiel, was der andere
+            hatte, und umgekehrt, da entstanden Handelsplätze, Warentauschbörsen. Wird nur noch mit den Rechten an
+            diesen Waren gehandelt, dann spricht man von der echten Börse. Da die Waren am Handelsort ja nicht real
+            vorhanden sind, müssen sich Käufer und Verkäufer darauf verlassen können, dass alles mit rechten Dingen
+            zugeht, das es eine unparteiische Aufsicht gibt.
+
+        </p>
+        <p>
+            Die Börse ist ein organisierter Handelsplatz, an dem Kauf- und Verkaufanträge abgewickelt werden, die
+            Transaktionen. Ob es sich dabei um Wertpapiere, Aktien, Renten oder Tulpenzwiebeln handelt, ist egal,
+            wichtig ist nur, dass die Produkte am Handelsplatz nicht physisch vorhanden sind und austauschbar sind. Das
+            setzt aber voraus, dass die einzelnen Waren direkt vergleichbar sind, ob in Güteklassen sortiert (etwa bei
+            Kaffee- oder Getreidebörsen, den sogenannten Warenbörsen) der per Papier (bei Wertpapierbörsen)
+            zertifiziert. Es braucht einen hohen Organisationsgrad, eine strikte Überwachung und ein von allen Parteien
+            akzeptiertes Regelwerk, damit der Handel mit diesen nicht vor Ort befindlichen Objekten in geregelten Bahnen
+            verlaufen kann.
+        </p>
+        <p>
+            Aktiengesellschaften entstanden, da Unternehmen für große Projekte und weitreichende Investitionen viel Geld
+            benötigten, welches sie von Aktionären holten. Mittlerweile gibt es aber längst nicht nur mehr Aktien an der
+            Börse, sondern auch Terminkontrakte, Schweinehälften oder Emissionsrechte.
+        </p>
 
         <chapter title="Die Organisation der Börse" id="boerse_organisation">
         </chapter>
