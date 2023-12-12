@@ -147,11 +147,80 @@
         </chapter>
 
         <chapter title="Segmente" id="boerse_segmente">
+            <p>
+                Mittels Segmente bieten die Börsen eine Hilfe an um Aktien und die dahinterstehenden Unternehmen
+                einzuschätzen. Die Segmentierung findet einerseits durch das Börsengesetz statt, andererseits dürfen
+                aber auch die einzelnen Börsen jeweils eigene Segmente dazuerfinden. Das Börsengesetz unterscheidet seit
+                November 2007:
+            </p>
+
+            <list>
+                <li>regulierter Markt</li>
+                <li>Freiverkehr</li>
+            </list>
+
+            <p>
+                Das Kriterium dabei sind die jeweiligen Anforderungen an das Unternehmen, die in dieser Reihenfolge von
+                oben nach unten stark abnehmen. Die Börsensegmente geben somit einen wichtigen Hinweis auf die Qualität
+                der Aktie: Je höher das Segment, desto weniger riskant das Papier, desto geringer sind aber oft die
+                Kursausschläge insgesamt (also auch nach oben!). Das gilt so aber nur für Aktien deutscher Unternehmen,
+                denn ausländische Aktiengesellschaften notieren fast immer im Freiverkehr, selbst wenn es sich um
+                bedeutende, hochkapitalisierte Blue Chips handelt. Das Segment, in dem eine Aktie gehandelt wird, ist
+                aber lediglich ein Anhaltspunkt bei der Beurteilung einer Aktie, es gibt aber weder im Guten noch im
+                Schlechten eine Garantie!
+            </p>
 
             <chapter title="Freiverkehr" id="boerse_segmente_freiverkehr">
+                <p>
+                    Im Freiverkehr notieren diejenigen Aktien, die weder im amtlichen noch im geregelten Markt
+                    zugelassen sind. In diesem Segment werden neben kleinen deutschen Unternehmen vor allem ausländische
+                    Aktien, aber auch Anleihen, Optionsscheine und Index-, Währungs- und Zinszertifikate gehandelt.
+                    Oftmals gehen Börsenneulinge erst einmal in den Freiverkehr, denn je weniger
+                    Zulassungsvoraussetzungen Unternehmen erbringen müssen.
+                </p>
             </chapter>
 
             <chapter title="Beispiel: Segmente der Frankfurter Börse" id="boerse_segmente_beispiel">
+                <table style="both">
+                    <tr>
+                        <td>Börsensegment</td>
+                        <td>Voraussetzung</td>
+                    </tr>
+                    <tr>
+                        <td>Prime Standard</td>
+                        <td>
+                            Ad-hoc-Mitteilungen in deutscher und englischer Sprache; Quartalsberichte in Deutsch und
+                            Englisch; Analystenkonferenz(en), das heißt, Bankern muss persönlich Rechenschaft über den
+                            Geschäftsverlauf und die Zukunftserwartungen gegeben werden (Anforderungen der Deutschen
+                            Börse).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>General Standard</td>
+                        <td>
+                            Ad-hoc-Meldungen und Bilanzierung nach internationalem Standard werden vom Gesetzgeber
+                            verlangt.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Scale (qualifizierte r Freiverkehr)</td>
+                        <td>
+                            Eine von einer Wirtschaftsprüfungsgesellschaft abgesegneter Jahresabschluss und
+                            Halbjahresabschluss nach dem Handelsgesetzbuch; ein Firmenporträt mit Website; die sofortige
+                            Veröffentlichung aller Nachrichten, die den Kurs der Aktie beeinflussen könnten
+                            (Ad-hoc-Mitteilungen); Halbjahreszahlen müssen veröffentlicht werden.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Quotation Board (Freiverkehr)</td>
+                        <td>
+                            Genehmigter Emissionsprospekt, das heißt eine Zusammenstellung aller wichtigen
+                            Unternehmensdaten für die potenziellen Aktienkäufer, damit sie sich ein Bild über das
+                            Unternehmen, seine Produkte, sein Management und den künftigen Geschäftsverlauf machen
+                            können.
+                        </td>
+                    </tr>
+                </table>
             </chapter>
         </chapter>
 
