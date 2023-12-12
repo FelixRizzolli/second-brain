@@ -124,6 +124,7 @@
         <toc-element topic="poweruser.topic">
             <toc-element topic="poweruser-webbrowser.topic"/>
             <toc-element topic="poweruser-vscode.topic"/>
+            <toc-element topic="poweruser-windows.topic"/>
         </toc-element>
         <toc-element topic="app.topic">
         </toc-element>
