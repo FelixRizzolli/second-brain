@@ -6,4 +6,40 @@
        title="Indizes" id="wirtschaft-anlageprodukte-indizes">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <p>
+        Der Deutsche Aktienindex oder kurz DAX umfasst die vierzig (seit September 2021 vorher dreißig) größten und
+        wichtigsten Aktiengesellschaften in Deutschland, also etwa die Deutsche Bank, Daimler, Linde, SAP, Simens und
+        VW. Auswahlkriterien sind dabei unter anderem die Marktkapitalisierung und die Börsenumsätze.
+    </p>
+
+    <note>
+        Marktkapitalisierung ist ganz einfach der Börsenkurs der einzelnen Aktie mal die Anzahl der Aktien. So viel ist
+        das Unternehmen an der Börse tatsächlich gerade "wert". Die Börsenumsätze definieren sich aus der Anzahl der
+        getätigten Käufe und Verkäufe der Aktien einer Gesellschaft im Laufe eines Börsentages.
+    </note>
+
+    <warning>
+        Indizes werden von den Börsen oder Unternehmen, die sich darauf spezialisiert haben, auch als
+        Marketinginstrument kreiert um möglichst viele Anleger anzulocken. Nicht jeder Index ist daher wirklich
+        sinnvoll.
+    </warning>
+
+    <p>
+        In jüngster Zeit werden auch thematische Indizes immer wichtiger, wie etwa Nachhaltigkeits-Indizes, die hohe
+        Gewinne mit gutem Gewissen versprechen.
+    </p>
+    <p>
+        Indizes und Aktien bedingen einander: Stürzt eine einzelne Aktie tief ab, beeinflusst dies auch den Index, in
+        dem sie gelistet ist. Stürzt der Index, gehen auch Aktien von Unternehmen nach unten, die eigentlich gut
+        gewirtschaftet haben. Oft reist ein Index als Leitwolf auch noch gleich die anderen mit, der amerikanische Dow
+        Jones etwa den DAX.
+    </p>
+    
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <strong>(BUCH)</strong>
+            978-3527717408, Börse für Dummies (Ausgabe 6), Christine Bortenläger &amp; Ulrich Kirstein, John Wiley &amp;
+            Sons, 2021- 02-17
+        </tip>
+    </chapter>
 </topic>
