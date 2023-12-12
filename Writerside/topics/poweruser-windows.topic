@@ -37,4 +37,19 @@
             kann auch ein Inhalt welcher vorher kopiert/ausgeschnitten wurde eingefügt werden.
         </p>
     </chapter>
+
+    <chapter title="Emoji Picker" id="emoji_picker">
+        <img src="poweruser_windows_emojipicker.png" alt="Windows - Emoji Picker"/>
+
+        <table>
+            <tr>
+                <td><code>(WIN)</code>+<code>.</code></td>
+                <td>Öffnet den Emoji Picker</td>
+            </tr>
+        </table>
+
+        <p>
+            Im Emoji Picker können Emojis, Kaomoji und Symbole ausgewählt werden.
+        </p>
+    </chapter>
 </topic>
