@@ -122,10 +122,10 @@
             <toc-element topic="linux.topic"/>
         </toc-element>
         <toc-element topic="poweruser.topic">
+            <toc-element topic="poweruser-webbrowser.topic"/>
+            <toc-element topic="poweruser-vscode.topic"/>
         </toc-element>
         <toc-element topic="app.topic">
-            <toc-element topic="app-vscode.topic"/>
-            <toc-element topic="app-webbrowser.topic"/>
         </toc-element>
         <toc-element topic="netzwerktechnik.topic"/>
         <toc-element topic="design.topic">
