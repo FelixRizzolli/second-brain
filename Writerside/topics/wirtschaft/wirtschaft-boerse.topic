@@ -6,4 +6,74 @@
        title="Die Börse" id="wirtschaft-boerse">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Die Börse" id="boerse">
+
+        <chapter title="Die Organisation der Börse" id="boerse_organisation">
+        </chapter>
+
+        <chapter title="Wie die Börse funktioniert" id="boerse_funktionsweise">
+        </chapter>
+
+        <chapter title="Kennzeichen einer Wertpapierbörse" id="boerse_kennzeichen">
+        </chapter>
+
+        <chapter title="Segmente" id="boerse_segmente">
+
+            <chapter title="Freiverkehr" id="boerse_segmente_freiverkehr">
+            </chapter>
+
+            <chapter title="Beispiel: Segmente der Frankfurter Börse" id="boerse_segmente_beispiel">
+            </chapter>
+        </chapter>
+
+        <chapter title="Kürzel an der Börse" id="boerse_kuerzel">
+        </chapter>
+
+        <chapter title="Gesetzliche Bestimmungen und Aufsicht" id="boerse_gesetz">
+
+            <chapter title="Insidergeschäfte" id="boerse_gesetz_insidergeschaefte">
+            </chapter>
+
+            <chapter title="Organe" id="boerse_gesetz_organe">
+            </chapter>
+
+            <chapter title="EU" id="boerse_gesetz_eu">
+            </chapter>
+        </chapter>
+
+        <chapter title="Schwarzer Freitag - Black Friday" id="">
+        </chapter>
+    </chapter>
+
+    <chapter title="Börsen nicht nur für Wertpapiere" id="boersenprodukte">
+
+        <chapter title="Warenterminbörsen" id="boersenprodukte_warenterminboerse">
+        </chapter>
+
+        <chapter title="Futures und Optionen" id="boersenprodukte_futures_optionen">
+        </chapter>
+
+        <chapter title="Emissionshandel" id="boersenprodukte_emissionshandel">
+        </chapter>
+    </chapter>
+
+    <chapter title="Börsen als Unternehmen" id="boerse_unternehmen">
+
+        <chapter title="Internationaler Wettbewerb" id="boerse_unternehmen_wettbewerb">
+        </chapter>
+    </chapter>
+
+    <chapter title="Handel ohne Börse: Private Placement" id="private_placement">
+    </chapter>
+
+    <chapter title="Der Bär und der Bulle" id="baer_bulle">
+    </chapter>
+
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <strong>(BUCH)</strong>
+            978-3527717408, Börse für Dummies (Ausgabe 6), Christine Bortenläger &amp; Ulrich Kirstein, John Wiley &amp;
+            Sons, 2021- 02-17
+        </tip>
+    </chapter>
 </topic>
