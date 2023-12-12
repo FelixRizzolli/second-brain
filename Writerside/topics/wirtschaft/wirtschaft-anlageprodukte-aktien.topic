@@ -6,4 +6,48 @@
        title="Aktien" id="wirtschaft-anlageprodukte-aktien">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Aktienkurse" id="aktienkurse">
+        <p>
+            Aktienkurse verändern sich je nach Angebot und Nachfrage. Warum Aktionäre verstärkt hinter einem bestimmten
+            Papier herjagen, oder warum plötzlich viele Aktionäre ihr Papier verkaufen wollen, ist viel schwerer
+            herauszufinden. Gerät erst einmal die Verkaufswelle ins Rollen, zieht sie oft weitere Verkäufe nach sich.
+            Das Gleiche gilt, wenn große Kaufaufträge die Kurse nach oben treiben und den Trend verstärken.
+        </p>
+        <p>
+            Trends sind ein ganz wesentlicher Faktor an der Börse und führen, richtig erkannt und genutzt zu einem
+            positiven Ergebnis im eigenen Depot. Eine exakte Aussage treffen, wann welche Faktoren und Kombinationen
+            Kursveränderungen in welcher Höhe auslösen, das können nicht einmal die Experten. Darum bleibt an der Börse
+            immer ein Restrisiko bestehen und auch erfahrene Börsianer fahren regelmäßig Verluste ein.
+        </p>
+        <p>
+            Aktienkurse – aber auch die Notierungen anderer Wertpapiere wie etwa Anleihen und Renten sowie Devisen –
+            sind volatil, das heißt, sie bewegen sich nach oben und nach unten.
+        </p>
+
+
+        <chapter title="Faktor: Die Größe eines Unternehmens" id="aktienkurse_faktor_groesse">
+            <p>
+                Bei täglichen Kursbewegungen gilt die Faustregel, dass je kleiner und unbekannter das Unternehmen ist,
+                desto höher die können die Kursausschläge ausfallen. Je mehr Aktien eines Unternehmens gehandelt werden
+                – und bei den Großen gehen leicht einmal Aktien im Wert von 1 Milliarde Euro an einem Tag um –, desto
+                weniger fällt ein Angebot- oder Nachfrageüberhang ins Gewicht. Werden jedoch nur wenige Aktien pro Tag
+                gehandelt und wollen dann aus irgendeinem Grund – etwa auf Empfehlung eines obskuren Anlageberaters –
+                mehrere Anleger genau diese Aktie besitzen, dann kann dies den Kurs ganz schön nach oben treiben – oder
+                im umgekehrten Fall nach unten.
+            </p>
+        </chapter>
+
+        <chapter title="Faktor: Indizes" id="aktienkurse_faktor_indizes">
+            <p>
+                Konzerne werden in Indizes zusammengefasst und je nachdem, ob sich diese Indizes nach oben oder unten
+                bewegen, erleben die Börsen verschiedene Stimmungen, denn die Indizes fungieren als Stimmungsbarometer.
+            </p>
+            <p>
+                Verfestigt und verstetigt sich ein Aufwärtstrend, spricht man von einer <strong>Hausse</strong>,
+                umgekehrt <strong>Baisse</strong>. Werden die Kurse geradezu nach oben katapultiert, sprechen Börsianer
+                von einem <strong>Hype</strong> und bei einem <strong>Crash</strong> purzeln die Kurse tief und heftig
+                in den Keller.
+            </p>
+        </chapter>
+    </chapter>
 </topic>
