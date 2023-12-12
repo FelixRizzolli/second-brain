@@ -225,6 +225,115 @@
         </chapter>
 
         <chapter title="Kürzel an der Börse" id="boerse_kuerzel">
+            <p>
+                Folgende Kürzel werden in Fachzeitschriften verwendet:
+            </p>
+
+            <table>
+                <tr>
+                    <td>Abkürzung</td>
+                    <td>Langfassung</td>
+                    <td>Bedeutung</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td>Bezahlt</td>
+                    <td>
+                        Es gab Käufer und Verkäufer und damit echte Umsätze.
+                    </td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>Geld</td>
+                    <td>
+                        Nur Käufer traten auf, aber keine Verkäufer, es fand kein Umsatz statt.
+                    </td>
+                </tr>
+                <tr>
+                    <td>bG</td>
+                    <td>Bezahlt Geld</td>
+                    <td>
+                        Es gab mehr Käufer als Verkäufer, es konnte nur ein Teil der Aufträge bedient werden.
+                    </td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>Brief</td>
+                    <td>
+                        Es gab ausschließlich Verkaufsorders, aber keine Käufer und damit keinen Umsatz.
+                    </td>
+                </tr>
+                <tr>
+                    <td>bB</td>
+                    <td>Bezahlt Brief</td>
+                    <td>
+                        Es gab mehr Verkäufer als Käufer, es konnte nur ein Teil der Verkäufe getätigt werden.
+                    </td>
+                </tr>
+                <tr>
+                    <td>rG</td>
+                    <td>Repariert Geld</td>
+                    <td>
+                        Es gab Nachfrage nach diesem Papier, aber sie konnte nur zum Teil bedient werden, also nicht
+                        alle Kaufaufträge konnten ausgeführt werden.
+                    </td>
+                </tr>
+                <tr>
+                    <td>rB</td>
+                    <td>Repariert Brief</td>
+                    <td>
+                        Das Angebot übertraf die Nachfrage, das heißt, nicht alle Verkaufsaufträge konnten ausgeführt werden.
+                    </td>
+                </tr>
+                <tr>
+                    <td>T</td>
+                    <td>Taxe</td>
+                    <td>
+                        Weder Verkäufer noch Käufer für diese Aktie, der Kurs wurde geschätzt.
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                Je nachdem, welcher Buchstabe nun hinter der Aktie steht, ging der Kurs der Aktie nach oben oder nach
+                unten, denn die Kurse entstehen durch Angebot und Nachfrage. Heute wo Anleger jederzeit im Internet den
+                jeweils aktuellsten Kurs und den Verlauf über Stunden, Tage, Wochen und so weiter verfolgen können,
+                verlieren diese Abkürzungen mehr und mehr ihre Bedeutung und werden in einigen Kurstabellen gar nicht
+                mehr aufgeführt. Folgende Abkürzungen sind aber weiterhin wichtig:
+            </p>
+
+            <table>
+                <tr>
+                    <td>Abkürzung</td>
+                    <td>Langfassung</td>
+                    <td>Bedeutung</td>
+                </tr>
+                <tr>
+                    <td>WKN</td>
+                    <td>Wertpapierkennnummer</td>
+                    <td>
+                        Unverwechselbare Nummer jeder Aktie und jedes Wertpapiers, sie ist immer sechsstellig.
+                    </td>
+                </tr>
+                <tr>
+                    <td>ISIN</td>
+                    <td>International Sevurities Identification Number (Internationale Wertpapierkennnummer)</td>
+                    <td>
+                        Zwölfstellige, international anerkannte Nummer, die mehr und mehr die WKN ablöst. In Deutschland
+                        beginnt die ISIN mit DE und drei Nullen, dann folgt die bisherige WKN, daran wird dann noch eine
+                        Prüfziffer angehängt.
+                    </td>
+                </tr>
+                <tr>
+                    <td>KGV</td>
+                    <td>Kurs-Gewinn-Verhältnis</td>
+                    <td>
+                        Der Aktienkurs geteilt durch den Unternehmensgewinn pro Aktie. Eine oft verwendete, vom
+                        Aussagegehalt allerdings umstrittene Kennziffer, die aussagt, inwieweit der Gewinn eines
+                        Unternehmens den Kurs beeinflusst.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Gesetzliche Bestimmungen und Aufsicht" id="boerse_gesetz">
