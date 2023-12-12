@@ -6,4 +6,35 @@
        title="Windows" id="poweruser-windows">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Zwischenablageverlauf" id="zwischenablageverlauf">
+        <img src="poweruser_windows_zwischenablageverlauf.png" alt="Windows - Zwischenablageverlauf"/>
+
+        <table>
+            <tr>
+                <td><code>CTRL</code>+<code>C</code></td>
+                <td>Kopieren</td>
+            </tr>
+            <tr>
+                <td><code>CTRL</code>+<code>X</code></td>
+                <td>Ausschneiden</td>
+            </tr>
+            <tr>
+                <td><code>CTRL</code>+<code>V</code></td>
+                <td>Einfügen</td>
+            </tr>
+            <tr>
+                <td><code>(WIN)</code>+<code>V</code></td>
+                <td>Öffnet Zwischenablageverlauf</td>
+            </tr>
+        </table>
+
+        <p>
+
+            Wird ein Inhalt in Windows kopiert oder ausgeschnitten, so landet er automatisch in die Zwischenablage,
+            damit er folglich eingefügt werden kann. In Windows 10 und Windows 11 bietet Microsoft auch einen
+            Zwischenablageverlauf an. Dabei handelt es sich um ein Panel welches mit der Tastenkombination
+            <code>(WIN)</code>+<code>V</code> geöffnet werden kann und den Verlauf der Zwischenablage anzeigt. Damit
+            kann auch ein Inhalt welcher vorher kopiert/ausgeschnitten wurde eingefügt werden.
+        </p>
+    </chapter>
 </topic>
