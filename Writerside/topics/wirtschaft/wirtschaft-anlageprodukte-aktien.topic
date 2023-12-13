@@ -25,7 +25,7 @@
         </p>
 
 
-        <chapter title="Faktor: Die Größe eines Unternehmens" id="aktienkurse_faktor_groesse">
+        <chapter title="Faktor: Die Größe eines Unternehmens" id="aktienkurse-faktor-groesse">
             <p>
                 Bei täglichen Kursbewegungen gilt die Faustregel, dass je kleiner und unbekannter das Unternehmen ist,
                 desto höher die können die Kursausschläge ausfallen. Je mehr Aktien eines Unternehmens gehandelt werden
@@ -37,7 +37,7 @@
             </p>
         </chapter>
 
-        <chapter title="Faktor: Indizes" id="aktienkurse_faktor_indizes">
+        <chapter title="Faktor: Indizes" id="aktienkurse-faktor-indizes">
             <p>
                 Konzerne werden in Indizes zusammengefasst und je nachdem, ob sich diese Indizes nach oben oder unten
                 bewegen, erleben die Börsen verschiedene Stimmungen, denn die Indizes fungieren als Stimmungsbarometer.
@@ -51,7 +51,7 @@
         </chapter>
     </chapter>
     
-    <chapter title="Vorbörslicher Aktienhandel" id="vorboerslicher_aktienhandel">
+    <chapter title="Vorbörslicher Aktienhandel" id="vorboerslicher-aktienhandel">
         <p>
 
             Beim vorbörslichen Handel mit Aktien werden Aktien noch vor dem eigentlichen Börsengang von den Anlegern
