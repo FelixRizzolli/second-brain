@@ -6,4 +6,109 @@
        title="XML - XSD (XML Schema Definition)" id="xml-xsd">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlegendes zu XML Schema Definition" id="grundlagen">
+
+        <chapter title="Sichere Datenkommunikation" id="grundlagen-sicherheit">
+        </chapter>
+
+        <chapter title="Wohlgeformt ist nicht genug!" id="grundlagen-wohlgeformt">
+        </chapter>
+    </chapter>
+
+    <chapter title="Einfache Elemente" id="simple">
+
+        <chapter title="Elementattribute" id="simple-attribut">
+        </chapter>
+
+        <chapter title="Das schema-Element" id="simple-schema">
+        </chapter>
+    </chapter>
+
+    <chapter title="Komplexe Elemente" id="komplex">
+
+        <chapter title="Komplexe Elemente welche nur Attribute enthalten" id="komplex-attribut">
+        </chapter>
+
+        <chapter title="Komplexe Elemente welche nur Elemente enthalten" id="komplex-element">
+        </chapter>
+
+        <chapter title="Komplexe Elemente welche nur Text enthalten" id="komplex-text">
+        </chapter>
+
+        <chapter title="Komplexe Elemente mit verschiedenen Inhalt" id="komplex-verschieden">
+        </chapter>
+
+        <chapter title="Das any Element" id="komplex-any">
+        </chapter>
+
+        <chapter title="Das anyAttribute Element" id="komplex-anyattribute">
+        </chapter>
+    </chapter>
+
+    <chapter title="Elementsubstitution" id="elementsubstitution">
+
+        <chapter title="Elementsubstitution blockieren" id="elementsubstitution-blockieren">
+        </chapter>
+
+        <chapter title="substitutionGroup" id="elementsubstitution-substitutiongroup">
+        </chapter>
+    </chapter>
+
+    <chapter title="Indikatoren" id="indikatoren">
+
+        <chapter title="Sortierindikatoren" id="indikatoren-sort">
+        </chapter>
+
+        <chapter title="Vorkommensindikatoren" id="indikatoren-vorkommen">
+        </chapter>
+
+        <chapter title="Gruppenindikatoren" id="indikatoren-gruppe">
+
+            <chapter title="Elementgruppen" id="indikatoren-gruppe-element">
+            </chapter>
+
+            <chapter title="Attributgruppen" id="indikatoren-gruppe-attribut">
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="Einschränkungen (restrictions/facets)" id="restrictions">
+    </chapter>
+
+    <chapter title="Attribute" id="attribute">
+
+        <chapter title="Attributattribute" id="attribute-attribute">
+        </chapter>
+    </chapter>
+
+    <chapter title="Datentypen" id="datentypen">
+
+        <chapter title="XSD String Datentypen" id="datentypen-string">
+
+            <chapter title="Einschränkungen" id="datentypen-string-restrictions">
+            </chapter>
+        </chapter>
+
+        <chapter title="XSD Date/Time Datentypen" id="datentypen-datetime">
+
+            <chapter title="Einschränkungen" id="datentypen-datetime-restrictions">
+            </chapter>
+        </chapter>
+
+        <chapter title="XSD numerische Datentypen" id="datentypen-numerisch">
+
+            <chapter title="Einschränkungen" id="datentypen-numerisch-restrictions">
+            </chapter>
+        </chapter>
+
+        <chapter title="XSD verschiedene Datentypen" id="datentypen-verschieden">
+
+            <chapter title="Einschränkungen" id="datentypen-verschieden-restrictions">
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="Quellen" id="quellen">
+    </chapter>
+
 </topic>
