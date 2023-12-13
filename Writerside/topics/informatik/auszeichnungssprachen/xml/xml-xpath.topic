@@ -6,4 +6,43 @@
        title="XML - XPath" id="xml-xpath">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlegendes zu XPath" id="">
+    </chapter>
+
+    <chapter title="Beispieldokument" id="">
+    </chapter>
+
+    <chapter title="Syntax" id="syntax">
+
+        <chapter title="Knoten auswählen" id="syntax-knoten-auswaehlen">
+
+            <chapter title="Beispiele" id="syntax-knoten-auswaehlen-beispiele">
+            </chapter>
+        </chapter>
+
+        <chapter title="Prädikate" id="syntax-praedikate">
+        </chapter>
+
+        <chapter title="Unbekannte Knoten auswählen" id="syntax-unbekannte-knoten">
+        </chapter>
+
+        <chapter title="Mehrere Pfade auswählen" id="syntax-mehrere-pfade-auswaehlen">
+        </chapter>
+    </chapter>
+
+    <chapter title="Achsen (Axes)" id="achsen">
+
+        <chapter title="Location Path Expression" id="achsen-lpe">
+        </chapter>
+
+        <chapter title="Beispiele" id="achsen-beispiele">
+        </chapter>
+    </chapter>
+
+    <chapter title="Operatoren" id="operatoren">
+    </chapter>
+
+    <chapter title="Quellen" id="quellen">
+    </chapter>
+
 </topic>
