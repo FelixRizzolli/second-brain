@@ -238,6 +238,63 @@
         </p>
 
         <chapter title="XML Beispiel" id="xml-aufbau-beispiel">
+            <code-block lang="xml">
+                &lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;
+                &lt;comics&gt;
+                    &lt;comic language="en-US"&gt;
+                        &lt;publisher&gt;Marvel&lt;/publisher&gt;
+                        &lt;series&gt;The Amazing Spider-Man&lt;/series&gt;
+                        &lt;format&gt;Comic Book&lt;/format&gt;
+                        &lt;issue&gt;663&lt;/issue&gt;
+                        &lt;title&gt;The Return Of Anti-Venom&lt;/title&gt;
+                        &lt;subtitle&gt;Part One: The Ghost of Jean DeWolff&lt;/subtitle&gt;
+                        &lt;authors&gt;
+                            &lt;author role="Writer"&gt;Dan Slott&lt;/author&gt;
+                            &lt;author role="Pencils"&gt;Giuseppe Camuncoli&lt;/author&gt;
+                        &lt;/authors&gt;
+                        &lt;price currency="USD"&gt;3.99&lt;/price&gt;
+                    &lt;/comic&gt;
+                    &lt;comic language="en-US"&gt;
+                        &lt;publisher&gt;Marvel&lt;/publisher&gt;
+                        &lt;series&gt;Ultimate Spider-Man&lt;/series&gt;
+                        &lt;format&gt;Trade Paperback&lt;/format&gt;
+                        &lt;issue original="1-13"&gt;1&lt;/issue&gt;
+                        &lt;title&gt;Ultimate Spider-Man&lt;/title&gt;
+                        &lt;subtitle&gt;Ultimate Collection&lt;/subtitle&gt;
+                        &lt;authors&gt;
+                            &lt;author role="Writer"&gt;Brian Michael Bendis&lt;/author&gt;
+                            &lt;author role="Pencils"&gt;Mark Bagley&lt;/author&gt;
+                        &lt;/authors&gt;
+                        &lt;price currency="USD"&gt;24.99&lt;/price&gt;
+                    &lt;/comic&gt;
+                    &lt;comic language="en-US"&gt;
+                        &lt;publisher&gt;DC Comics&lt;/publisher&gt;
+                        &lt;series&gt;Action Comics&lt;/series&gt;
+                        &lt;format&gt;Comic Book&lt;/format&gt;
+                        &lt;issue&gt;901&lt;/issue&gt;
+                        &lt;title&gt;Reign Of The Doomsdays&lt;/title&gt;
+                        &lt;subtitle&gt;Part 1&lt;/subtitle&gt;
+                        &lt;authors&gt;
+                            &lt;author role="Writer"&gt;Paul Cornell&lt;/author&gt;
+                            &lt;author role="Artist"&gt;Kenneth Rocafort&lt;/author&gt;
+                            &lt;author role="Artist"&gt;Jesus Merino&lt;/author&gt;
+                        &lt;/authors&gt;
+                        &lt;price currency="USD">2.99&lt;/price&gt;
+                    &lt;/comic&gt;
+                    &lt;comic language="en-US"&gt;
+                        &lt;publisher&gt;Bongo Comics&lt;/publisher&gt;
+                        &lt;series&gt;Simpsons Comics&lt;/series&gt;
+                        &lt;format&gt;Comic Book&lt;/format&gt;
+                        &lt;issue>178&lt;/issue&gt;
+                        &lt;title&gt;The Thingama-Bob From Outer Space&lt;/title&gt;
+                        &lt;authors&gt;
+                            &lt;author role="Writer"&gt;Eric Rogers&lt;/author&gt;
+                            &lt;author role="Pencils"&gt;John Costanza&lt;/author&gt;
+                        &lt;/authors&gt;
+                        &lt;price currency="USD"&gt;2.99&lt;/price&gt;
+                    &lt;/comic&gt;
+                &lt;/comics&gt;
+            </code-block>
         </chapter>
 
         <chapter title="Die XML-Steueranweisungen und XML-Deklatation" id="xml-aufbau-deklaration">
