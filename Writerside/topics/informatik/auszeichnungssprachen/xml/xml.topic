@@ -298,6 +298,40 @@
         </chapter>
 
         <chapter title="Die XML-Steueranweisungen und XML-Deklatation" id="xml-aufbau-deklaration">
+            <p>
+                Eine XML-Steueranweisung (auch PI, Processing Instruction) kann in XML-Dokumenten an beliebiger Stelle
+                vorkommen. Es handelt sich um Anweisungen für interpretierende Geräte oder Programme, die mit dem
+                Dokument selbst nichts zu tun haben. Eine XML-Steueranweisung hat folgende Syntax:
+            </p>
+
+            <code-block lang="xml">
+                &lt;?Ziel Daten?&gt;
+            </code-block>
+
+            <p>
+                Als Ziel muss ein Bezeichner (Name) angegeben werden, für welche Anwendung diese Verarbeitungsanweisung
+                wirksam ist. Das Ziel der Verarbeitungsanweisung darf nicht die Zeichenfolge XML sein, da dies die
+                XML-Deklaration wäre. Die Daten können alle Zeichen mit Ausnahme der Kombination <code>?&gt;</code>
+                enthalten. In den Daten können auch Pseudoattribute eingetragen werden, die ähnlich wie
+                Attribut-Werte-Paare aussehen, vom Parser jedoch nicht als solche behandelt werden.
+            </p>
+            <p>
+                Die XML-Deklaration steht am Beginn des Prologes einer XML-Datei. In der XML-Deklaration seht zum
+                Beispiel: die verwendete XML-Version (im Beispiel <code>1.0</code>) und der verwendete Zeichensatz im
+                Dokument (im Beispiel <code>utf-8</code>):
+            </p>
+
+            <code-block lang="xml">
+                &lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;
+            </code-block>
+
+            <p>
+                Das Attribut <code>standalone</code> gibt an, ob sich das Dokument auf ein externes Formatdokument wie
+                ein DTD oder ein XML Schema bezieht. Der Wert <code>yes</code> besagt, dass das Dokument selbstständig
+                ist und nicht von einer solchen Standardisierung abhängt. Ein solches Dokument muss wohlgeformt sein,
+                aber es ist nicht valide, da es keine Spezifikation gibt, gegen die seine Gültigkeit geprüft werden
+                könnte.
+            </p>
         </chapter>
 
         <chapter title="XML-Elemente" id="xml-aufbau-elemente">
