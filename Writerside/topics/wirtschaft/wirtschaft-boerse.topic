@@ -31,7 +31,7 @@
             Börse, sondern auch Terminkontrakte, Schweinehälften oder Emissionsrechte.
         </p>
 
-        <chapter title="Die Organisation der Börse" id="boerse_organisation">
+        <chapter title="Die Organisation der Börse" id="boerse-organisation">
             <p>
                 Börsen sind öffentlich-rechtliche Institutionen, die von ganz normalen, privatwirtschaftlich
                 organisierten Unternehmen getragen werden. Deshalb müssen auch Börsen Gewinne erzielen und um ihre
@@ -63,7 +63,7 @@
             </p>
         </chapter>
 
-        <chapter title="Wie die Börse funktioniert" id="boerse_funktionsweise">
+        <chapter title="Wie die Börse funktioniert" id="boerse-funktionsweise">
             <p>
                 Nach theoriegeladenem Juristendeutsch finden an der Börse zweiseitige Verpflichtungs- und
                 Erfüllungsgeschäfte statt, bei denen sich die Parteien über Art, Menge und Preis der betreffenden
@@ -112,7 +112,7 @@
             </p>
         </chapter>
 
-        <chapter title="Kennzeichen einer Wertpapierbörse" id="boerse_kennzeichen">
+        <chapter title="Kennzeichen einer Wertpapierbörse" id="boerse-kennzeichen">
             <list>
                 <li>
                     Die Papiere können ausgetauscht werden, weil sie exakt vergleichbar, juristisch »vertretbar« sind,
@@ -146,7 +146,7 @@
             </list>
         </chapter>
 
-        <chapter title="Segmente" id="boerse_segmente">
+        <chapter title="Segmente" id="boerse-segmente">
             <p>
                 Mittels Segmente bieten die Börsen eine Hilfe an um Aktien und die dahinterstehenden Unternehmen
                 einzuschätzen. Die Segmentierung findet einerseits durch das Börsengesetz statt, andererseits dürfen
@@ -170,7 +170,7 @@
                 Schlechten eine Garantie!
             </p>
 
-            <chapter title="Freiverkehr" id="boerse_segmente_freiverkehr">
+            <chapter title="Freiverkehr" id="boerse-segmente-freiverkehr">
                 <p>
                     Im Freiverkehr notieren diejenigen Aktien, die weder im amtlichen noch im geregelten Markt
                     zugelassen sind. In diesem Segment werden neben kleinen deutschen Unternehmen vor allem ausländische
@@ -180,7 +180,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Beispiel: Segmente der Frankfurter Börse" id="boerse_segmente_beispiel">
+            <chapter title="Beispiel: Segmente der Frankfurter Börse" id="boerse-segmente-beispiel">
                 <table style="both">
                     <tr>
                         <td>Börsensegment</td>
@@ -224,7 +224,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Kürzel an der Börse" id="boerse_kuerzel">
+        <chapter title="Kürzel an der Börse" id="boerse-kuerzel">
             <p>
                 Folgende Kürzel werden in Fachzeitschriften verwendet:
             </p>
@@ -336,7 +336,7 @@
             </table>
         </chapter>
 
-        <chapter title="Gesetzliche Bestimmungen und Aufsicht" id="boerse_gesetz">
+        <chapter title="Gesetzliche Bestimmungen und Aufsicht" id="boerse-gesetz">
             <p>
                 Börsen sind straff organisierte Handelsplätze. Klar, dass es da eine ganze Reihe von Vorschriften und
                 Gesetzen gibt. In Deutschland gibt es Folgendes:
@@ -361,7 +361,7 @@
                 </li>
             </list>
 
-            <chapter title="Insidergeschäfte" id="boerse_gesetz_insidergeschaefte">
+            <chapter title="Insidergeschäfte" id="boerse-gesetz-insidergeschaefte">
                 <p>
                     Wenn etwa Manager und Mitarbeiter eines Unternehmens über Dinge Bescheid wissen, die die "normalen" 
                     Anleger noch nicht wissen können, und aus diesem Wissen heraus schnell Aktien verkaufen oder kaufen, 
@@ -369,7 +369,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Organe" id="boerse_gesetz_organe">
+            <chapter title="Organe" id="boerse-gesetz-organe">
                 <table style="both">
                     <tr>
                         <td>Organ</td>
@@ -418,7 +418,7 @@
                 </table>
             </chapter>
 
-            <chapter title="EU" id="boerse_gesetz_eu">
+            <chapter title="EU" id="boerse-gesetz-eu">
                 <p>
                     Die EU startete die EU-Richtline zur Harmonisierung der Finanzmärkte, kurz MiFID (Markets in
                     Financial Instruments Directive) genannt. Die Regelungen dienen vor allem dem Schutz der Anleger,
@@ -469,26 +469,26 @@
 
     <chapter title="Börsen nicht nur für Wertpapiere" id="boersenprodukte">
 
-        <chapter title="Warenterminbörsen" id="boersenprodukte_warenterminboerse">
+        <chapter title="Warenterminbörsen" id="boersenprodukte-warenterminboerse">
         </chapter>
 
-        <chapter title="Futures und Optionen" id="boersenprodukte_futures_optionen">
+        <chapter title="Futures und Optionen" id="boersenprodukte-futures-optionen">
         </chapter>
 
-        <chapter title="Emissionshandel" id="boersenprodukte_emissionshandel">
-        </chapter>
-    </chapter>
-
-    <chapter title="Börsen als Unternehmen" id="boerse_unternehmen">
-
-        <chapter title="Internationaler Wettbewerb" id="boerse_unternehmen_wettbewerb">
+        <chapter title="Emissionshandel" id="boersenprodukte-emissionshandel">
         </chapter>
     </chapter>
 
-    <chapter title="Handel ohne Börse: Private Placement" id="private_placement">
+    <chapter title="Börsen als Unternehmen" id="boerse-unternehmen">
+
+        <chapter title="Internationaler Wettbewerb" id="boerse-unternehmen-wettbewerb">
+        </chapter>
     </chapter>
 
-    <chapter title="Der Bär und der Bulle" id="baer_bulle">
+    <chapter title="Handel ohne Börse: Private Placement" id="private-placement">
+    </chapter>
+
+    <chapter title="Der Bär und der Bulle" id="baer-bulle">
     </chapter>
 
     <chapter title="Quellen" id="quellen">
