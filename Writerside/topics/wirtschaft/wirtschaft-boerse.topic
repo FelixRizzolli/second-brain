@@ -468,14 +468,97 @@
     </chapter>
 
     <chapter title="Börsen nicht nur für Wertpapiere" id="boersenprodukte">
+        <p>
+            Es gibt für viele Dinge Börsen, nicht nur für Wertpapiere und Aktien. Denn Börsen sind einfach nur
+            Handelsplätze. Die einzige Bedingung, damit sie sich Börsen nennen dürfen, ist die Tatsache, dass die Güter
+            nicht wirklich real, materialisiert, am Handelsplatz selbst vorhanden sein müssen.
+        </p>
 
         <chapter title="Warenterminbörsen" id="boersenprodukte-warenterminboerse">
+            <p>
+                Traditionsreiche Börsen sind die Waren(termin)börsen für "Commodities" wie Kaffee und Kakao, Getreide
+                und Vieh, Baumwolle und Sojabohnen, aber auch Rohstoffe wie Kupfer, Gold oder Zinn. An Warenterminbörsen
+                werden beispielsweise Kontrakte gehandelt, die dazu berechtigen, so und so viele Schweinebäuche zu einem
+                vorab bestimmten Preis zu kaufen oder zu verkaufen. Je nach Missernten und Viehkrankheiten steigen die
+                Preise sprunghaft an oder fallen wieder.
+            </p>
+            <p>
+                Um sich vor den Risiken der Preisschwankungen zu schützen, werden die Kauf- und Verkaufspreise über
+                Papiere, die sogenannten Derivate, abgesichert. Diese Derivate sind Finanzinstrumente, die den Inhaber
+                berechtigen, bestimmte Waren zu einem vorab festgelegten Preis zu kaufen oder zu verkaufen. Die
+                einzelnen Angaben der Derivate sind dabei genau bestimmt und gleich: Menge, Qualitäten, Laufzeiten,
+                Termine. Variabel ist der Preis.
+            </p>
+            <p>
+                Bei Warenterminbörsen spielt man ein Spiel mit vielen Unbekannten (Wetter, Krankheiten, politische
+                Änderungen, Schürfergebnisse ...). Im Zweifelsfall können Insider ihre speziellen Märkte weit besser
+                einschätzen als Privatanleger.
+            </p>
+            <p>
+                Der Handel findet genau wie an der Wertpapierbörse über Broker statt. Keine Sorge, die Geschäfte finden
+                üblicherweise nur mit den Derivaten statt. Man muss also keine Angst haben, dass eines Tages plötzlich
+                dreihundert Schweinehälften vor die Haustüre gekippt werden.
+            </p>
+
+            <note>
+                Rohstoffe und Warentermingeschäfte ticken völlig anders als Aktien und Wertpapiere. Sie können deshalb
+                eine interessante Zugabe zum Anlageportfolio darstellen, weil sich diese Märkte durch eine Baisse an den
+                Börsen nicht sonderlich beeinflussen lassen.
+            </note>
         </chapter>
 
         <chapter title="Futures und Optionen" id="boersenprodukte-futures-optionen">
+            <p>
+                Futures oder Optionen sind Transaktionen, Geschäfte, die zwar bereits in der Gegenwart abgeschlossen,
+                aber erst in der Zukunft abgewickelt werden. Das Zentrum für Terminbörsen ist mit CME (Chicago
+                Mercantile Exchange) und CBoT (Chicago Board of Trade) Chicago. Hier werden Futures und Optionen auf
+                Aktien, Aktienindizes und Anleihen gehandelt. Aber auch an vielen normalen Börsen können zahlreiche
+                (verbriefte) Terminmarktprodukte wie Optionsscheine oder Hebelzertifikate gehandelt werden.
+            </p>
         </chapter>
 
         <chapter title="Emissionshandel" id="boersenprodukte-emissionshandel">
+            <p>
+                Der Emissionshandel entwickelte sich im Rahmen der europäischen Gesetzgebung.
+            </p>
+            <p>
+                Die Idee dahinter: Die natürlichen Ressourcen sollen auch in Geldwerten ausgedrückt werden. Gerade der
+                Ausstoß von Treibhausgas-Emissionen, Hauptverantwortliche für den Klimawandel, soll mehr oder weniger
+                bestraft werden. Je mehr Ausstoß, desto mehr soll gezahlt werden, wer jedoch weniger Dreck in die Luft
+                pafft, soll dies honoriert bekommen. Für jedes klimaschädliche Kohlendioxid benötigt ein Unternehmen
+                jetzt Berechtigungen, mit denen es handeln kann. Wer unterdurchschnittlich wenig benötigt, kann den Rest
+                verkaufen, wessen Maschinen überproportional viel Dreck verursachen, der muss blechen. Klar, dass der
+                Umweltschutzgedanke nur dann zur Geltung kommt, wenn Jahr für Jahr die Berechtigungen gesenkt werden,
+                damit in neue, weniger schadstoffbelastende Maschinen und Prozesse investiert wird. So erhalten die
+                Unternehmen bestimmte Vorgaben, die sie zu erfüllen haben, ansonsten werden Strafen fällig. Man kann
+                also nicht einfach ganz viele Berechtigungen erwerben und lustig weiter die Umwelt verschmutzen.
+            </p>
+            <p>
+                Eingeführt wurde der Emissionshandel erst 2005 durch die Europäische Union für bestimmte Branchen. Seit
+                2012 kam zum Beispiel die Luftfahrtbranche hinzu und so sind derzeit insgesamt etwa 11.000 Anlagen
+                emissionshandelspflichtig. Ab 2021 soll in Deutschland noch ein ergänzendes Emissisonshandelsssystem für
+                nahezu alle übrigen Kohlendioxid-Emissionen eingeführt werden, die durch die Verbrennung von Kohle, Öl
+                und Gas entstehen. Berechtigungen gibt es pro Tonne Kohlendioxid. Gehandelt wird aber nicht an der
+                Frankfurter Börse, sondern an der Deutschen Emissionshandelsstelle im Umweltbundesamt,
+                Emissionshandelsstelle ist eine rein virtuelle Organisation, die ausschließlich elektronisch handelt.
+            </p>
+
+            <note>
+                <p><strong>Kurzbeschreibung</strong></p>
+                <p>
+                    Das Emissionshandelsregister zeigt auf, wie viele Emissionsberechtigungen die Unternehmen aus der
+                    Energiewirtschaft und aus Branchen, die besonders viel Kohlendioxid ausstoßen, benötigen. Über das
+                    Konto können also jährlich die Emissionsberechtigungen abgerechnet werden, die Kontoführungsgebühr
+                    kostet laut Auskunft der Deutschen Emissionshandelsstelle (DEHSt) 400 Euro, ab 2021 erhöht es sich
+                    auf 600 Euro.
+                </p>
+            </note>
+
+            <p>
+                Der Emissionshandel ist also noch am ehesten mit Warentermingeschäften zu vergleichen, allerdings eignet
+                er sich nicht zum wilden Spekulieren. Ziel des Emissionshandels soll je gerade das Vermeiden von
+                Emissionen sein.
+            </p>
         </chapter>
     </chapter>
 
