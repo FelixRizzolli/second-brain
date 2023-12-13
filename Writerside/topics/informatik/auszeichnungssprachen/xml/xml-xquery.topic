@@ -6,4 +6,57 @@
        title="XML - XQuery" id="xml-xquery">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlegendes zu XQuery" id="grundlagen">
+    </chapter>
+
+    <chapter title="Beispiel" id="beispiel">
+    </chapter>
+
+    <chapter title="Aufbau von XQuery" id="aufbau">
+    </chapter>
+
+    <chapter title="FLWOR Ausdrücke" id="flwor">
+
+        <chapter title="Grundlagen" id="flwor-grundlagen">
+        </chapter>
+
+        <chapter title="Die for Klausel" id="flwor-for">
+        </chapter>
+
+        <chapter title="Die let Klausel" id="flwor-let">
+        </chapter>
+
+        <chapter title="Die where Klausel" id="flwor-where">
+        </chapter>
+
+        <chapter title="Die order by Klausel" id="flwor-order">
+        </chapter>
+
+        <chapter title="Die return Klausel" id="flwor-return">
+        </chapter>
+
+        <chapter title="Das Ergebnis in einer HTML-Liste ausgeben" id="flwor-ergebnis-html">
+        </chapter>
+    </chapter>
+
+    <chapter title="Syntax" id="syntax">
+
+        <chapter title="Grundlegende Regeln" id="syntax-regeln">
+        </chapter>
+
+        <chapter title="Bedingungen" id="syntax-bedingungen">
+        </chapter>
+    </chapter>
+
+    <chapter title="Benutzerdefinierte XQuery Funktionen" id="benutzerdefiniert">
+
+        <chapter title="Syntax" id="benutzerdefiniert-syntax">
+        </chapter>
+
+        <chapter title="Beispiel" id="benutzerdefiniert-beispiel">
+        </chapter>
+    </chapter>
+
+    <chapter title="Quellen" id="quellen">
+    </chapter>
 </topic>
