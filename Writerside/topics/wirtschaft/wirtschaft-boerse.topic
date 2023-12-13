@@ -337,18 +337,133 @@
         </chapter>
 
         <chapter title="Gesetzliche Bestimmungen und Aufsicht" id="boerse_gesetz">
+            <p>
+                Börsen sind straff organisierte Handelsplätze. Klar, dass es da eine ganze Reihe von Vorschriften und
+                Gesetzen gibt. In Deutschland gibt es Folgendes:
+            </p>
+
+            <list>
+                <li>
+                    <strong>Börsengesetz</strong> – darin ist festgelegt, welche Organe eine Börse haben muss und wie
+                    Wertpapiere zum Börsenhandel zugelassen werden.
+                </li>
+                <li>
+                    <strong>Börsenordnung</strong> – diese ist zusätzlich zum Börsengesetz und für jede einzelne Börse
+                    besonders. Hier geht es eher um den eigentlichen Betrieb an den einzelnen Börsenplätzen. Auch die
+                    Bedeutung der Kurszusätze und Kurshinweise findet sich in der Börsenordnung.
+                </li>
+                <li>
+                    <strong>Wertpapierhandelsgesetz</strong> – verbietet beispielsweise Insidergeschäfte.
+                </li>
+                <li>
+                    <strong>Bürgerliches Gesetzbuch</strong> – hier finden sich Vorschriften zum Börsenhandel etwa mit
+                    festverzinslichen Wertpapieren als Inhaberschuldverschreibungen.
+                </li>
+            </list>
 
             <chapter title="Insidergeschäfte" id="boerse_gesetz_insidergeschaefte">
+                <p>
+                    Wenn etwa Manager und Mitarbeiter eines Unternehmens über Dinge Bescheid wissen, die die "normalen" 
+                    Anleger noch nicht wissen können, und aus diesem Wissen heraus schnell Aktien verkaufen oder kaufen, 
+                    je nach erwartetem Kursverlauf, spricht man von Insidergeschäften, die verboten sind.
+                </p>
             </chapter>
 
             <chapter title="Organe" id="boerse_gesetz_organe">
+                <table style="both">
+                    <tr>
+                        <td>Organ</td>
+                        <td>Zusammensetzung</td>
+                        <td>Aufgaben</td>
+                    </tr>
+                    <tr>
+                        <td>Börsenrat</td>
+                        <td>
+                            4 Mitglieder aus Kreditinstituten, Börsenteilnehmern (Maklern), Emittenten (das sind die
+                            Unternehmen, deren Aktien gehandelt werden) und Anlegern
+                        </td>
+                        <td>
+                            Oberstes Organ: Bestellung und Überwachung der Geschäftsführung, Börsen- und
+                            Gebührenordnung.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Börsengeschäftsführung</td>
+                        <td>
+                            Ein oder mehrere Geschäftsführer, für höchstens fünf Jahre bestellt
+                        </td>
+                        <td>
+                            Laufende Leitungsfunktion der Börse: Zulassung und Ausschluss von Unternehmen und Personen
+                            zum oder vom Börsenhandel; Börsenorganisation und Geschäftsablauf
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Börsenschiedsgericht</td>
+                        <td>
+
+                        </td>
+                        <td>
+                            Entscheidet über Streitigkeiten aus Börsengeschäften zwischen Börsenteilnehmern
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Handelsüberwachungsstelle HÜSt</td>
+                        <td>
+
+                        </td>
+                        <td>
+                            Überwacht den Handel, die Preisfeststellung und die Geschäftsabwicklung
+                        </td>
+                    </tr>
+                </table>
             </chapter>
 
             <chapter title="EU" id="boerse_gesetz_eu">
+                <p>
+                    Die EU startete die EU-Richtline zur Harmonisierung der Finanzmärkte, kurz MiFID (Markets in
+                    Financial Instruments Directive) genannt. Die Regelungen dienen vor allem dem Schutz der Anleger,
+                    denn sie verbessern die Transparenz bei Wertpapiergeschäften. In der Folge der Finanzkriese kamen
+                    noch jede Menge weitere Regelungen hinzu.
+                </p>
+
+                <warning>
+                    Wichtig ist: Banken sind seit dem 1. November 2007 dazu verpflichtet, bei Wertpapieraufträgen das
+                    bestmögliche Ergebnis für ihre Kunden zu erreichen (das hielten wir bisher für selbstverständlich).
+                </warning>
             </chapter>
         </chapter>
 
-        <chapter title="Schwarzer Freitag - Black Friday" id="">
+        <chapter title="Schwarzer Freitag - Black Friday" id="boerse-gesetz-black-frieday">
+            <p>
+                Nach dem Ersten Weltkrieg hatten sich die USA zu der weltweiten Wirtschaftsmacht etabliert. Hier
+                entwickelte John Ford das erste Förderband, jeder sollte sein eigenes Auto bekommen, die Wirtschaft
+                boomte wie nie. Die Kurse der Aktien an der Börse kletterten in schwindelerregenden Höhen, da jedermann
+                dachte, alles wird besser, teurer, größer, schöner ...
+            </p>
+            <p>
+                Immer mehr Amerikaner, gerade auch Kleinanleger, fingen an, wie wild zu spekulieren, und zwar oft auf
+                Pump. Da damals nur etwa 20 Prozent der tatsächlichen Kurswerte bei den Maklern auch als Sicherheit
+                hinterlegt werden mussten, war dies zuerst kein großes Problem. Am Vormittag des 24. Oktobers
+                schließlich geschah, was Pessimisten längst vorausgesagt hatten: Die Kurse an der Wall Street fielen,
+                erst langsam, dann lawinenartig immer schneller. Es begann übrigens an einem Donnerstag, der berühmte
+                »Schwarze Freitag« ließ die Kurse nur noch weiter absacken, vor allem an den Börsen in Europa. Nach
+                einer nur kurzfristigen Erholung sanken die Aktienkurse in den USA - und im Gefolge weltweit - bis 1933
+                weiter ab, auf etwa 25 Prozent des Wertes von vor dem Crash!
+            </p>
+            <p>
+                Bis heute ist nicht wirklich klar, was der tatsächliche Auslöser für den plötzlichen Kurssturz war.
+                Lassen wir den Börsen-Altmeister André Kostolany (1906 - 1999) kurz zu Wort kommen, denn er hat den
+                unschätzbaren Vorteil, dass er damals dabei gewesen war: »Die Katastrophe platzte urplötzlich wie eine
+                Naturkatastrophe mitten in eine Atmosphäre wirtschaftlicher Euphorie, die teilweise von der
+                amerikanischen Regierung, Präsident Hoover, künstlich aufrechterhalten wurde.« Das kommt uns, einige
+                Finanzkrisen weiter, heute irgendwie bekannt vor.
+            </p>
+            <p>
+                Am eindringlichsten verdeutlichen ein paar ausgewählte Aktienkurse den tiefen Sturz von 1929: Das Papier
+                der New-York-Central-Eisenbahn fiel von 216 Dollar 1929 auf 5 Dollar 1932, General Motors fielen von 92
+                Dollar auf 4,5 Dollar - mussten damals aber nicht vom Staat aufgefangen werden -, Chrysler von 135 auf 5
+                Dollar und General Electric von 220 Dollar auf 20 Dollar.
+            </p>
         </chapter>
     </chapter>
 
