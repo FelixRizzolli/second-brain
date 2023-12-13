@@ -6,4 +6,42 @@
        title="XML - DTD (Document Type Definition)" id="xml-dtd" help-id="xml-dtds">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlegendes zu DTD" id="grundlagen">
+
+        <chapter title="Die DTD" id="grundlagen-dtd">
+        </chapter>
+
+        <chapter title="Die Bausteine von XML Dokumenten " id="grundlagen-bausteine">
+        </chapter>
+    </chapter>
+
+    <chapter title="Elemente" id="elemente">
+
+        <chapter title="Vorgegebene Reihenfolge " id="elemente-reihenfolge">
+        </chapter>
+
+        <chapter title="Alternativen" id="elemente-alternativen">
+        </chapter>
+
+        <chapter title="Häufigkeitsmodifikatoren" id="elemente-haeufigkeitsmodifikatoren">
+        </chapter>
+    </chapter>
+
+    <chapter title="Attribute" id="attribute">
+
+        <chapter title="Atribut-Type" id="attribute-typ">
+        </chapter>
+
+        <chapter title="Attribut-Value" id="attribute-wert">
+        </chapter>
+
+        <chapter title="Bemerkung" id="attribute-bemerkung">
+        </chapter>
+    </chapter>
+
+    <chapter title="Entitys" id="entitys">
+    </chapter>
+
+    <chapter title="Quellen" id="quellen">
+    </chapter>
 </topic>
