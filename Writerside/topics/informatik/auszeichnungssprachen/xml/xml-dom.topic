@@ -6,4 +6,30 @@
        title="XML - DOM (Document Object Model)" id="xml-dom">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlegendes zum XML DOM" id="grundlagen">
+
+        <chapter title="Beispiel" id="grundlagen-beispiel">
+        </chapter>
+
+        <chapter title="Text wird immer in Textknoten gespeichert." id="grundlagen-text">
+        </chapter>
+
+        <chapter title="XML DOM Knotenbaum (node tree)" id="grundlagen-knotenbaum">
+        </chapter>
+
+        <chapter title="Eltern, Kinder und Geschwister von Knoten" id="grundlagen-knoten">
+        </chapter>
+
+        <chapter title="Zugriff auf Knoten" id="grundlagen-zugriff">
+        </chapter>
+    </chapter>
+
+    <chapter title="Eigenschaften (Properties)" id="eigenschaften">
+    </chapter>
+
+    <chapter title="Methoden (Methods)" id="methoden">
+    </chapter>
+
+    <chapter title="Quellen" id="quellen">
+    </chapter>
 </topic>
