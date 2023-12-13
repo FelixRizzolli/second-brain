@@ -7,14 +7,84 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Was ist XML?" id="xml">
+        <p>
+            XML (Extensible Markup Language), ist eine Metasprache zur Definition beliebiger Auszeichnungssprachen. 
+            Diese Sprachen können Textdokumente, Vektorgrafiken, multimediale Präsentationen, Datenbanken oder andere 
+            Arten von strukturierten Daten Beschreiben. XML wurde vom W3C entworfen und standardisiert. Die 
+            XML-Spezifikation selbst enthält nur wenige formale Regeln für den Aufbau von Dokumenten. Hält man sich an 
+            diese Regeln, erzeugt man ein wohlgeformtes XML-Dokument. Dokumente die auf Formatdefinitionen wie DTD 
+            (= Document Type Definition), XLS (= XML Schema) oder RELAX NG basieren sind nicht nur wohlgeformt, sondern 
+            auch gültig (oder valide). Der überwiegende Einsatz von XML beruht auf dem Einsatz vorhandener XML-basierter 
+            Sprachen wie die Webseiten-Auszeichnungssprache XHTML, das Vektorgrafikformat SVG (= Scalable Vector 
+            Graphics) oder die beliebte Handbuch- und Dokumentationssprache DocBook. Auch Anwendungsprogramme wie 
+            LibreOffice/OpenOffice.org und neuere Versionen der Microsoft-Office-Programme verwenden XML-basierte 
+            Datenformate, hierbei ist die Office-Arbeitsdatei ein ZIP-Archiv, in dem sich verschiedene XML-Dokumente und 
+            eventuell weitere Ressourcen wie Bilddateien befinden. Gespeichert werden XML-Dokumente entweder als Datei 
+            mit der Endung .xml, wenn es sich um allgemeine XML-Dokumente handelt, oder mit einer speziellen 
+            Dateierweiterung, falls ein besonderes XML-Format verwendet wird (SVG <code>.svg</code>; XHTML 
+            <code>.html</code> oder <code>.htm</code>).
+        </p>
+
         <chapter title="Klartextbasierte Dokumentformate vs. Binärdateien" id="xml-format">
+            <list>
+                <li>
+                    Sämtliche Konfigurations- und Strukturinformationen sind für Menschen lesbar und können notfalls
+                    auch manuell geändert werden.
+                </li>
+                <li>
+                    Die Dokumente lassen sich auf jedem beliebigen Computersystem in einem einfachen Texteditor öffnen
+                    und eventuell bearbeiten. Der reine Textinhalt erschließt sich auch Anwendern, die die verwendeten
+                    Auszeichnungsbefehle nicht verstehen.
+                </li>
+                <li>
+                    Der Austausch von Dokumenten mit anderen Anwendungen, neunen Versionen einer Anwendung oder
+                    Programmiersprachen ist erheblich einfacher als bei Binärformaten.
+                </li>
+            </list>
+
+            <p>
+                Der entscheidende Nachteil gegenüber Binärdateiformaten ist, dass textbasierte Formate mehr
+                Speicherplatz benötigen.
+            </p>
         </chapter>
+
         <chapter title="XML im Vergleich zu anderen Auszeichnungssprachen" id="xml-vergleich">
+            <p>
+                Fast alle textbasierten Auszeichnungssprachen außer XML haben eine spezielle Aufgabe: Beispielsweise
+                dient LaTeX dem Erstellen von Vorlagen für den professionellen Satz; PostScript beschreibt dagegen
+                fertig formatierte Ausgabeseiten für High-End-Drucker und -Belichter. Darüber hinaus besitzen
+                Unix-Serveranwendungen und viele andere Programme jeweils ein eigenes ASCII-basiertes
+                Konfigurationsdateiformat. XML ist dagegen eine universelle Sprache. In einem XML-Dokument kann die
+                Musik-CD-Sammlung, die Doktorarbeit oder Geschäftsdaten gespeichert werden. XML beschreibt hier aber
+                immer nur die Struktur und den Aufbau der Daten. Das Layout der Druck- oder Webversion von Textinhalten
+                muss durch eine externe Stil- oder Formatierungssprache wie XSLT beschrieben werden.
+            </p>
         </chapter>
+
         <chapter title="XML HttpRequest" id="xml-httprequest">
+            <p>
+                Alle modernen Browser haben ein eingebautes XMLHttpRequest-Objekt, um Daten von einem Server 
+                anzufordern. Das XMLHttpRequest-Objekt kann verwendet werden, um Daten von einem Webserver anzufordern. 
+                Das XMLHttpRequest-Objekt ist ein Traum für Entwickler, denn kann man:
+            </p>
+            
+            <list>
+                <li>eine Webseite aktualisieren, ohne die Seite neu zu laden</li>
+                <li>Daten von einem Server anfordern - nachdem die Seite geladen wurde</li>
+                <li>Daten von einem Server empfangen - nachdem die Seite geladen wurde</li>
+                <li>Daten an einen Server senden - im Hintergrund</li>
+            </list>
         </chapter>
+
         <chapter title="XML Parser" id="xml-parser">
+            <p>
+                Alle gängigen Browser verfügen über einen eingebauten XML-Parser für den Zugriff auf und die Bearbeitung
+                von XML. Das XML DOM (Document Object Model) definiert die Eigenschaften und Methoden für den Zugriff
+                auf und die Bearbeitung von XML. Bevor jedoch auf ein XML-Dokument zugegriffen werden kann, muss es in
+                ein XML-DOM-Objekt geladen werden. Der XML-Parser wandelt den Text in ein XML-DOM-Objekt um.
+            </p>
         </chapter>
+
         <chapter title="XML AJAX" id="xml-ajax">
         </chapter>
     </chapter>
@@ -30,7 +100,7 @@
         <chapter title="XML Beispiel" id="xml-aufbau-beispiel">
         </chapter>
 
-        <chapter title="Die XML Steueranweisungen und XML-Deklatation" id="xml-aufbau-deklaration">
+        <chapter title="Die XML-Steueranweisungen und XML-Deklatation" id="xml-aufbau-deklaration">
         </chapter>
 
         <chapter title="XML-Elemente" id="xml-aufbau-elemente">
