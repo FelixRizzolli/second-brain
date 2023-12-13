@@ -227,6 +227,15 @@
     </chapter>
 
     <chapter title="Der Aufbau von XML-Dokumenten" id="xml-aufbau">
+        <p>
+            Jedes XML-Dokument besteht aus einer Hierarchie ineinander verschachtelter Steueranweisungen, sie als
+            Elemente oder Tags bezeichnet werden, und kann zusätzlich einfachen Text enthalten. Die XML-Tags werden in
+            spitze Klammern gesetzt, also zwischen ein <code>&lt;</code>-Zeichen und ein <code>&gt;</code>-Zeichen. Sie
+            können ein oder mehrere Attribute in der Form <code>attribut="wert"</code> enthalten. Jedes Tag wird unter
+            Angabe seiner Bezeichnung geöffnet. (zum Beispiel <code>&lt;test&gt;</code>) und weiter unten im Dokument
+            durch eine Wiederholung mit vorangestelltem Slash (<code>/</code>) wieder geschlossen (etwa
+            <code>&lt;/codetest&gt;</code>).
+        </p>
 
         <chapter title="XML Beispiel" id="xml-aufbau-beispiel">
         </chapter>
