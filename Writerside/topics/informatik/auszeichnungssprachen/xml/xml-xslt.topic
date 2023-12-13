@@ -6,4 +6,21 @@
        title="XML - XSLT (eXtensible Stylesheet Language Transformations)" id="xml-xslt">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlegendes zu XSL und XSLT" id="grundlagen">
+
+        <chapter title="XSLT" id="grundlagen-xslt">
+        </chapter>
+    </chapter>
+
+    <chapter title="XSLT Transformation" id="transformation">
+
+        <chapter title="XML in XHTML umwandeln" id="transformation-xml-html">
+        </chapter>
+    </chapter>
+
+    <chapter title="XSLT Elemente" id="elemente">
+    </chapter>
+
+    <chapter title="Quellen" id="quellen">
+    </chapter>
 </topic>
