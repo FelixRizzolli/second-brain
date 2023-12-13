@@ -6,4 +6,58 @@
        title="XML (Extensible Markup Language)" id="xml">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Was ist XML?" id="xml">
+        <chapter title="Klartextbasierte Dokumentformate vs. Binärdateien" id="xml-format">
+        </chapter>
+        <chapter title="XML im Vergleich zu anderen Auszeichnungssprachen" id="xml-vergleich">
+        </chapter>
+        <chapter title="XML HttpRequest" id="xml-httprequest">
+        </chapter>
+        <chapter title="XML Parser" id="xml-parser">
+        </chapter>
+        <chapter title="XML AJAX" id="xml-ajax">
+        </chapter>
+    </chapter>
+
+    <chapter title="Terminologie" id="terminologie">
+
+        <chapter title="Beziehungen von Knoten" id="terminologie-knoten">
+        </chapter>
+    </chapter>
+
+    <chapter title="Der Aufbau von XML-Dokumenten" id="xml-aufbau">
+
+        <chapter title="XML Beispiel" id="xml-aufbau-beispiel">
+        </chapter>
+
+        <chapter title="Die XML Steueranweisungen und XML-Deklatation" id="xml-aufbau-deklaration">
+        </chapter>
+
+        <chapter title="XML-Elemente" id="xml-aufbau-elemente">
+
+            <chapter title="Benennung der XML-Elemente" id="xml-aufbau-elemente-benennung">
+            </chapter>
+        </chapter>
+
+        <chapter title="XML Attribute" id="xml-aufbau-attribute">
+        </chapter>
+
+        <chapter title="Entity-Referenzen" id="xml-aufbau-entityreferenzen">
+        </chapter>
+
+        <chapter title="CDATA-Abschnitte" id="xml-aufbau-cdata">
+        </chapter>
+
+        <chapter title="Kommentare" id="xml-aufbau-kommentare">
+        </chapter>
+    </chapter>
+
+    <chapter title="Namespaces (Namensräume)" id="namespaces">
+    </chapter>
+
+    <chapter title="Wohlgeformtheit" id="wohlgeformtheit">
+    </chapter>
+
+    <chapter title="Quellen" id="quellen">
+    </chapter>
 </topic>
