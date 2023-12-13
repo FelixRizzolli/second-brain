@@ -90,8 +90,139 @@
     </chapter>
 
     <chapter title="Terminologie" id="terminologie">
+        <code-block lang="xml">
+            &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+            &lt;bookstore&gt;
+                &lt;book&gt;
+                    &lt;title&gt;Harry Potter&lt;/title&gt;
+                    &lt;author&gt;J K. Rowling&lt;/author&gt;
+                    &lt;year&gt;2005&lt;/year&gt;
+                    &lt;price&gt;29.99&lt;/price&gt;
+                &lt;/book&gt;
+                &lt;book&gt;
+                    &lt;title lang="en"&gt;Learning XML&lt;/title&gt;
+                    &lt;price&gt;39.95&lt;/price&gt;
+                &lt;/book&gt;
+            &lt;/bookstore&gt;
+        </code-block>
+
+        <table style="header-row">
+            <tr>
+                <td>DE</td>
+                <td>EN</td>
+                <td>Anmerkung</td>
+            </tr>
+            <tr>
+                <td>Knoten</td>
+                <td>node</td>
+                <td>
+                    <p>
+                        In XPath gibt es sieben Arten von Knoten: Element-, Attribut-, Text-, Namespace-, Steuerungs-,
+                        Kommentar- und Wurzelknoten. XML-Dokumente werden als Bäume von Knoten behandelt. Das oberste
+                        Element des Baums wird als Wurzelelement bezeichnet.
+                    </p>
+
+                    <code-block lang="xml">
+                        &lt;bookstore&gt; &lt;!-- root element node --&gt;
+                    </code-block>
+                    <code-block lang="xml">
+                        &lt;author&gt;J K. Rowling&lt;/author&gt; &lt;!-- element node --&gt;
+                    </code-block>
+                    <code-block lang="xml">
+                        lang="en" &lt;!-- attribute node --&gt;
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>Atomarer Wert</td>
+                <td>atomic value</td>
+                <td>
+                    <p>
+                        Atomare Werte sind Knoten, die weder Kinder noch Eltern haben.
+                    </p>
+
+                    <code-block lang="xml">
+                        J K. Rowling
+                    </code-block>
+                    <code-block lang="xml">
+                        "en"
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>Element</td>
+                <td>item</td>
+                <td>
+                    Elemente sind atomare Werte oder Knoten.
+                </td>
+            </tr>
+        </table>
 
         <chapter title="Beziehungen von Knoten" id="terminologie-knoten">
+            <table>
+                <tr>
+                    <td>DE</td>
+                    <td>EN</td>
+                    <td>Beispiel</td>
+                    <td>Anmerkung</td>
+                </tr>
+                <tr>
+                    <td>Elternteil</td>
+                    <td>parent</td>
+                    <td>
+                        Im obigen Beispiel ist das <code>book</code>-Element das Elternteil der Elemente
+                        <code>title</code>, <code>author</code>, <code>year</code> und <code>price</code>.
+                    </td>
+                    <td>
+                        Jedes Element und Attribut hat einen Elternteil.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kind</td>
+                    <td>child</td>
+                    <td>
+                        Im obigen Beispiel sind die Elemente <code>title</code>, <code>author</code>, <code>year</code>
+                        und <code>price</code> alle untergeordnete Elemente (= Kindelemente) des Elements
+                        <code>book</code>.
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Geschwister</td>
+                    <td>siblings</td>
+                    <td>
+                        Im obigen Beispiel sind die Elemente <code>title</code>, <code>author</code>, <code>year</code>
+                        und <code>price</code> alle Geschwister.
+                    </td>
+                    <td>
+                        Elementknoten können null, ein oder mehrere Kinder haben.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Vorfahre</td>
+                    <td>anecestors</td>
+                    <td>
+                        Im obigen Beispiel sind die Vorfahren des Elements <code>title</code> das Element
+                        <code>book</code> und das Element <code>bookstore</code>.
+                    </td>
+                    <td>
+                        Geschwister sind Knoten, die denselben Elternteil haben.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nachkommen</td>
+                    <td>descendants</td>
+                    <td>
+                        Im obigen Beispiel sind die Elemente <code>book</code>, <code>title</code>, <code>author</code>,
+                        <code>year</code> und <code>price</code> die Nachkommen des Elements <code>bookstore</code>.
+                    </td>
+                    <td>
+                        Ein Vorfahre kann ein Elternteil eines Knotens, Elternteil eines Elternteils usw. sein.
+                    </td>
+                </tr>
+            </table>
         </chapter>
     </chapter>
 
