@@ -6,4 +6,32 @@
        title="XML - XLink und XPointer" id="xml-xlink-xpointer" help-id="XML-xlink-xpointer">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="XLink und XPointer" id="grundlagen">
+
+        <chapter title="XLink" id="grundlagen-xlink">
+        </chapter>
+
+        <chapter title="XPointer" id="grundlagen-xpointer">
+        </chapter>
+    </chapter>
+    <chapter title="XLink" id="xlink">
+
+        <chapter title="XLink Syntax" id="xlink-syntax">
+        </chapter>
+
+        <chapter title="XLink Beispiel" id="xlink-beispiel">
+        </chapter>
+
+        <chapter title="XLink Details" id="xlink-details">
+        </chapter>
+
+        <chapter title="XLink Attribute" id="xlink-attribute">
+        </chapter>
+    </chapter>
+
+    <chapter title="XPointer" id="xpointer">
+    </chapter>
+
+    <chapter title="Quellen" id="quellen">
+    </chapter>
 </topic>
