@@ -33,5 +33,11 @@
     </chapter>
 
     <chapter title="Quellen" id="quellen">
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xml_xlink.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xml_xlink.asp
+            </a>, 2023-02-26 17:45
+        </tip>
     </chapter>
 </topic>
