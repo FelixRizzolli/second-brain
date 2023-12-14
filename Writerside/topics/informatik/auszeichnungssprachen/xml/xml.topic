@@ -621,6 +621,49 @@
     </chapter>
 
     <chapter title="Namespaces (Namensräume)" id="namespaces">
+        <p>
+            Da in XML-Dokumenten mehrere Dokumenttypen vermischt werden können, wurden Namensräume (= Namespaces)
+            eingeführt, die die Unterscheidung von Elementen aus verschiedenen DTDs zulassen. Der Standardnamensraum
+            eines Dokuments zeichnet sich dadurch aus, dass seine Elemente ohne spezielles Präfix verwendet werden
+            können. Werden weitere Namensräume eingebunden, wird deren Elementen ein Namensraumpräfix vorangestellt, das
+            durch einen Doppelpunkt vom eigentlichen Elementnamen getrennt wird. Namensräume werden mithilfe von
+            <code>xmlns</code>-Angaben innerhalb eines Elements in das Dokument eingebunden. In der Regel stehen sie im
+            Wurzelelement. Der Standardnamensraum wird einfach als <code>xmlns</code> bezeichnet während zusätzliche
+            Namensräume mit <code>xmlns:namensraum</code> angegeben werden. Unter den angegebenen URLs muss sich kein
+            spezielles Dokument befinden, das den Namensraum definiert – allerdings ist es üblich, dort eine kurze
+            Beschreibung des Namensraums im HTML-Format abzulegen. Wichtig ist nur, dass verschiedene Namensraumangaben
+            auch unterschiedliche URLs verwenden.
+        </p>
+
+        <code-block lang="xml">
+            <![CDATA[
+            <comics xmlns="http://api.webpage.com/dtds/comics.dtd"
+                    xmlns:html="http://www.w3.org/1999/xhtml">
+                <comic language="en-US">
+                    <publisher>Marvel</publisher>
+                    <series>Ultimate Spider-Man</series>
+                    <format>Trade Paperback</format>
+                    <issue original="1-13">1</issue>
+                    <title>Ultimate Spider-Man</title>
+                    <subtitle>Ultimate Collection</subtitle>
+                    <authors>
+                        <author role="Writer">Brian Michael Bendis</author>
+                        <author role="Pencils">Mark Bagley</author>
+                    </authors>
+                    <summary>
+                        <html:p>
+                            Der erste Band der Sammelausgabe von
+                            <html:i>Ultimate Spider-Man</html:i> beschreibt, wie
+                            der Schüler <html:b>Peter Parker</html:b> zum Superhelden
+                            <html:b>Spider-Man</html:b> wird und seine ersten Abenteuer
+                            erlebt.
+                        </html:p>
+                    </summary>
+                    <price currency="USD">24.99</price>
+                </comic>
+            </comics>
+            ]]>
+        </code-block>
     </chapter>
 
     <chapter title="Wohlgeformtheit" id="wohlgeformtheit">
