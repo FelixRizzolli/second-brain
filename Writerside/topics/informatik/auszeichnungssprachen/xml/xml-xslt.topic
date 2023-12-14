@@ -22,5 +22,75 @@
     </chapter>
 
     <chapter title="Quellen" id="quellen">
+        <tip>
+            <strong>(BUCH)</strong>
+            978-3836254663, IT Handbuch für Fachinformatiker, Sascha Kersken, Rheinwerk Verlag GmbH, 2017
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xml_xslt.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xml_xslt.asp
+            </a>, 2023-02-23 19:45
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xsl_intro.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xsl_intro.asp
+            </a>, 2023-02-23 20:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xsl_languages.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xsl_languages.asp
+            </a>, 2023-02-23 20:15
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xsl_transformation.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xsl_transformation.asp
+            </a>, 2023-02-24 15:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xsl_templates.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xsl_templates.asp
+            </a>, 2023-02-24 16:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xsl_value_of.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xsl_value_of.asp
+            </a>, 2023-02-24 16:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xsl_for_each.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xsl_for_each.asp
+            </a>, 2023-02-24 16:45
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xsl_sort.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xsl_sort.asp
+            </a>, 2023-02-24 17:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xsl_if.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xsl_if.asp
+            </a>, 2023-02-24 17:15
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xsl_choose.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xsl_choose.asp
+            </a>, 2023-02-24 17:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xsl_apply_templates.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xsl_apply_templates.asp
+            </a>, 2023-02-24 17:30
+        </tip>
     </chapter>
 </topic>
