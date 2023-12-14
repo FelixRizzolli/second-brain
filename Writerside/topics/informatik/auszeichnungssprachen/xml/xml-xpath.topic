@@ -6,10 +6,10 @@
        title="XML - XPath" id="xml-xpath">
     <show-structure for="chapter,procedure" depth="2"/>
 
-    <chapter title="Grundlegendes zu XPath" id="">
+    <chapter title="Grundlegendes zu XPath" id="grundlagen">
     </chapter>
 
-    <chapter title="Beispieldokument" id="">
+    <chapter title="Beispieldokument" id="beispiel">
     </chapter>
 
     <chapter title="Syntax" id="syntax">
