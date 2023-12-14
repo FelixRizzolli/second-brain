@@ -477,6 +477,36 @@
         </chapter>
 
         <chapter title="XML Attribute" id="xml-aufbau-attribute">
+            <p>
+                Attribute stehen nur beim öffnenden Tag und werden beim schließenden niemals wiederholt. Die Form ist
+                stets <code>attributname="attributwert"</code> oder <code>attributname='attributwert'</code>. Die
+                doppelten oder einfachen Anführungszeichen sind zwingend erforderlich. Werden einfache Anführungszeichen
+                verwendet, dann können im Wert auch doppelte Anführungszeichen verwendet werden. Zwischen dem
+                Attributnamen, dem Gleichheitszeichen und dem öffnenden Anführungszeichen ist kein Abstand erlaubt,
+                während mehrere Attribute durch Whitespace voneinander getrennt werden, genau wie Tag-Name und Attribut.
+                Allgemein werden Attribute häufig verwendet um Ordnungskriterien oder Metainformationen für Elemente
+                anzugeben. Allerdings ergäbe sich kein Unterschied im Informationsgehalt des Dokuments bei folgendem
+                Beispiel:
+            </p>
+
+            <code-block lang="xml">
+                &lt;comic language="en-US"&gt;
+                    ...
+                &lt;/comic&gt;
+            </code-block>
+
+            <code-block lang="xml">
+                &lt;comic&gt;
+                    &lt;language&gt;en-US&lt;/language&gt;
+                    ...
+                &lt;/comic&gt;
+            </code-block>
+
+            <warning>
+                Attribute sind nur für Informationen geeignet, die nur einmal pro Element vorkommen. Es können nicht
+                zwei Attribute gleichen Namens in ein und demselben Tag verwendet werden. Außerdem ist ein Attribut
+                naturgemäß nicht für mehrgliedrige Angaben geeignet, die eigentlich verschachtelt werden müssen.
+            </warning>
         </chapter>
 
         <chapter title="Entity-Referenzen" id="xml-aufbau-entityreferenzen">
