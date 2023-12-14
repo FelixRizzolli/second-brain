@@ -67,6 +67,13 @@
         </chapter>
 
         <chapter title="Text wird immer in Textknoten gespeichert." id="grundlagen-text">
+            <p>
+                Ein häufiger Fehler bei der DOM-Verarbeitung ist die Erwartung, dass ein Elementknoten Text enthält. Der
+                Text eines Elementknotens wird jedoch in einem Textknoten gespeichert. In diesem Beispiel:
+                <code>&lt;year&gt;2005&lt;/year&gt;</code>, enthält der Elementknoten <code>&lt;year&gt;</code> einen
+                Textknoten mit dem Wert <code>"2005"</code>. <code>"2005"</code> ist nicht der Wert des Elements
+                <code>&lt;year&gt;</code> !
+            </p>
         </chapter>
 
         <chapter title="XML DOM Knotenbaum (node tree)" id="grundlagen-knotenbaum">
