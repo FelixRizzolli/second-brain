@@ -77,6 +77,15 @@
         </chapter>
 
         <chapter title="XML DOM Knotenbaum (node tree)" id="grundlagen-knotenbaum">
+            <p>
+                Das XML-DOM betrachtet ein XML-Dokument als Baumstruktur. Die Baumstruktur wird als Knotenbaum (eng. 
+                node tree) bezeichnet. Auf alle Knoten kann über den Baum zugegriffen werden. Ihr Inhalt kann geändert 
+                oder gelöscht werden, und es können neue Elemente erstellt werden. Der Knotenbaum zeigt die Menge der 
+                Knoten und die Verbindungen zwischen ihnen. Der Baum beginnt mit dem Wurzelknoten und verzweigt sich bis 
+                zu den Textknoten auf der untersten Ebene des Baums:
+            </p>
+            
+            <img src="xml_knotenbaum.png" alt="XML - Knotenbaum"/>
         </chapter>
 
         <chapter title="Eltern, Kinder und Geschwister von Knoten" id="grundlagen-knoten">
