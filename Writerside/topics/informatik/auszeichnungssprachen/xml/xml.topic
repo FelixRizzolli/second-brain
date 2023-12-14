@@ -335,8 +335,144 @@
         </chapter>
 
         <chapter title="XML-Elemente" id="xml-aufbau-elemente">
+            <p>
+                XML Elemente können enthalten: Text, Attribute, andere Elemente oder einen Mix aus allem. Es ist
+                wichtig, dass genau ein Tag, das Wurzelelement, das gesamte Dokument umschließt. Innerhalb des
+                Wurzelelements sind weitere Elemente mit ihren Unterelementen und Textinhalten verschachtelt. Das
+                Wichtigste ist dabei, dass auf die korrekte Reihenfolge bei der Verschachtelung geachtet wird. Die
+                hierarchische Gliederung von XML-Dokumenten ergibt eine Art Baumdiagramm. Das Wurzelelement bildet
+                logischerweise die Wurzel, die verschachtelten Elemente sind die Äste und Zweige und die Textinhalte die
+                Blätter.
+            </p>
+
+            <img src="xml_hierarchische_gliederung.png" alt="XML - Hierarchische Gliederung"/>
+
+            <p>
+                Die Namen von Tags und Attributen dürfen aus Buchstaben und Ziffern sowie aus den folgenden
+                Sonderzeichen bestehen: <code>_</code> (Unterstrich), <code>-</code> (Bindestrich) und <code>.</code>
+                (Punkt). Das erste Zeichen darf keine Ziffer sein. Es wird zwischen Groß- und Kleinschreibung
+                unterschieden.
+            </p>
+            <p>
+                Jedes XML-Tag, das geöffnet wurde, muss auch wieder geschlossen werden, damit es ein XML-Element ergibt.
+                In der Regel steht zwischen den beiden Tags Inhalt, der aus tiefer verschachtelten Tags oder aus
+                einfachem Text bestehen kann. Mitunter kommt es jedoch vor, dass ein Element leer ist, also keinen
+                weiteren Inhalt enthält. Beispiel:
+            </p>
+
+            <code-block lang="xml">
+                &lt;cover file="simpsons_178.png" type="image/png"&gt;&lt;/cover&gt;
+            </code-block>
+
+            <p>
+                Da alle erforderlichen Informationen über das Cover-Bild bereits in den Attributen stehen, benötigt das
+                Element cover keinen verschachtelten Inhalt. In XML gibt es hierfür auch eine Kurzschreibweise. Das
+                <code>cover</code>-Element kann entsprechend dieser Syntax auch folgendermaßen geschrieben werden:
+            </p>
+
+            <code-block lang="xml">
+                &lt;cover file="simpsons_178.png" type="image/png" /&gt;
+            </code-block>
+
+            <p>
+                Der Slash am Ende des Tags ersetzt das vollständige schließende Tag. Das Leerzeichen vor dem End-Slash
+                ist nach der eigentlichen XML-Syntax nicht erforderlich.
+            </p>
 
             <chapter title="Benennung der XML-Elemente" id="xml-aufbau-elemente-benennung">
+                <p>
+                    Folgende <strong>Regeln</strong> gelten für die Namensgebung von XML-Elementen:
+                </p>
+
+                <list>
+                    <li>
+                        Elementnamen sind case-sensitive.
+                    </li>
+                    <li>
+                        Elementnamen müssen mit einem Buchstaben oder Unterstrich beginnen.
+                    </li>
+                    <li>
+                        Es gibt keine reservierten Wörter bis auf XML, somit dürfen Elementnamen nicht mit XML wie "xml", "XML", "Xml" usw. beginnen.
+                    </li>
+                    <li>
+                        Elementnamen können Buchstaben, Zahlen, Bindestriche, Unterstriche, und Punkte enthalten.
+                    </li>
+                </list>
+
+                <p>
+                    Es gelten folgende <strong>Best Practices</strong> bei der Benennung von XML-Elementen:
+                </p>
+
+                <list>
+                    <li>
+                        Elementnamen sollen beschreibend sein wie <code>&lt;person&gt;</code>,
+                        <code>&lt;firstname&gt;</code>, <code>&lt;lastname&gt;</code>.
+                    </li>
+                    <li>
+                        Elementnamen sollten kurz und simpel sein wie <code>&lt;book_title&gt;</code> statt
+                        <code>&lt;the_title_of_the_book&gt;</code>.
+                    </li>
+                    <li>
+                        Bindestriche sollten vermieden werden, da manche Software beim Beispiel
+                        <code>&lt;first-name&gt;</code> versucht name von first zu subtrahieren.
+                    </li>
+                    <li>
+                        Punkte sollten vermieden werden, da manche Software denkt, dass beim Beispiel
+                        <code>&lt;first.name&gt;</code> name eine Eigenschaft des Objekts first ist.
+                    </li>
+                    <li>
+                        Doppelpunkte dürfen nicht verwendet werden, da diese für Namespaces reserviert sind.
+                    </li>
+                </list>
+
+                <p>
+                    Für XML gibt es mehrere Naming Conventions. Wichtig ist, dass man bei der Namensgebung konsistent
+                    bleibt.
+                </p>
+
+                <table>
+                    <tr>
+                        <td>Style</td>
+                        <td>Beispiel</td>
+                        <td>Beschreibung</td>
+                    </tr>
+                    <tr>
+                        <td>Lower case</td>
+                        <td><code>&lt;firstname&gt;</code></td>
+                        <td>
+                            Alle Buchstaben werden kleingeschrieben.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Upper case</td>
+                        <td><code>&lt;FIRSTNAME&gt;</code></td>
+                        <td>
+                            Alle Buchstaben werden großgeschrieben.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Snake case</td>
+                        <td><code>&lt;first_name&gt;</code></td>
+                        <td>
+                            Mit Unterstrich werden Wörter getrennt (wird üblicherweise in SQL-Datenbanken verwendet)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pascal case</td>
+                        <td><code>&lt;FirstName&gt;</code></td>
+                        <td>
+                            Der erste Buchstabe von jedem Wort wird großgeschrieben (wird üblicherweise in C verwendet)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Camel case</td>
+                        <td><code>&lt;firstName&gt;</code></td>
+                        <td>
+                            Der erste Buchstabe von jedem Wort (bis auf dem ersten Wort) wird großgeschrieben (wird
+                            üblicherweise in JavaScript verwendet).
+                        </td>
+                    </tr>
+                </table>
             </chapter>
         </chapter>
 
