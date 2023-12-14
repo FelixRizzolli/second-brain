@@ -132,6 +132,101 @@
     </chapter>
 
     <chapter title="Eigenschaften (Properties)" id="eigenschaften">
+        <p>
+            Eigenschaften werden oft als etwas bezeichnet, das ist (z. B. der Knotenname ist <code>"book"</code>).
+            Typische Eigenschaften sind:
+        </p>
+
+        <table>
+            <tr>
+                <td>Eigenschaften</td>
+                <td>Beschreibung</td>
+            </tr>
+            <tr>
+                <td><code>documentElement</code></td>
+                <td>
+                    Diese Eigenschaft hat das XML-Dokument selbst und ist das Wurzelelement.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.nodeName</code></td>
+                <td>
+                    Der Name des Knotens <code>x</code> bei Elementknoten Tagname, bei Attributknoten Attributname, bei
+                    einem Taxtknoten ist es immer <code>#text</code> und bei einem Dokumentknoten immer
+                    <code>#document</code>. Diese Eigenschaft ist nicht manipulierbar (read only).
+
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.nodeType</code></td>
+                <td>
+                    Der Typ des Knotens <code>x</code>. Es gibt folgende Knotentypen: Element, Attribute, Text,
+                    Kommentar und Dokument. Diese Eigenschaft ist nicht manipulierbar (read only).
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.nodeValue</code></td>
+                <td>
+                    Der Wert des Knotens <code>x</code>. Für ein Elementknoten ist der Wert nicht definiert
+                    (= undefined), für ein Textknoten ist der Wert der Text selbst und für ein Attributknoten ist der
+                    Wert des Attributs.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.parentNode</code></td>
+                <td>
+                    Diese Eigenschaft enthält ein Knotenlistenobjekt der Elternknoten des Knotens <code>x</code>.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.childNodes</code></td>
+                <td>
+                    Diese Eigenschaft enthält ein Knotenlistenobjekt der Kindknoten des Knotens <code>x</code>.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.firstChild</code></td>
+                <td>
+                    Diese Eigenschaft enthält den ersten Kindknoten des Knotens <code>x</code>.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.lastChild</code></td>
+                <td>
+                    Diese Eigenschaft enthält den letzten Kindknoten des Knotens <code>x</code>.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.nextSibling</code></td>
+                <td>
+                    Diese Eigenschaft enthält den nächsten Geschwisterknoten des Knotens <code>x</code>.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.previousSibling</code></td>
+                <td>
+                    Diese Eigenschaft enthält den vorherigen Geschwisterknoten des Knotens <code>x</code>.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.attributes</code></td>
+                <td>
+                    Die Attribute des Knotens <code>x</code>. Die Attributeigenschaft <code>attributes</code> eines
+                    Elementknotens gibt eine Liste von Attributknoten zurück. Dies wird als <code>named node map</code>
+                    bezeichnet und ähnelt einer Knotenliste, mit Ausnahme einiger Unterschiede bei den Methoden und
+                    Eigenschaften. Eine Attributliste hält sich selbst auf dem neuesten Stand. Wenn ein Attribut
+                    gelöscht oder hinzugefügt wird, wird die Liste automatisch aktualisiert.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.length</code></td>
+                <td>
+                    Die Länge eines Knotenlistenobjekts. Ein Knotenlistenobjekt hält sich selbst auf dem neuesten Stand.
+                    Wenn ein Element gelöscht oder hinzugefügt wird, wird die Liste automatisch aktualisiert. Die
+                    Längeneigenschaft <code>length</code> einer Knotenliste ist die Anzahl der Knoten in der Liste.
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="Methoden (Methods)" id="methoden">
