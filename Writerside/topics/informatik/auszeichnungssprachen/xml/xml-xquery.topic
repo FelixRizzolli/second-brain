@@ -58,5 +58,59 @@
     </chapter>
 
     <chapter title="Quellen" id="quellen">
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xml_xquery.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xml_xquery.asp
+            </a>, 2023-02-25 06:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xquery_intro.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xquery_intro.asp
+            </a>, 2023-02-25 06:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xquery_example.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xquery_example.asp
+            </a>, 2023-02-25 06:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xquery_flwor.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xquery_flwor.asp
+            </a>, 2023-02-25 06:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xquery_flwor_html.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xquery_flwor_html.asp
+            </a>, 2023-02-25 07:15
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xquery_add.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xquery_add.asp
+            </a>, 2023-02-25 07:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xquery_syntax.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xquery_syntax.asp
+            </a>, 2023-02-25 07:40
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xquery_select.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xquery_select.asp
+            </a>, 2023-02-25 08:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xquery_functions.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xquery_functions.asp
+            </a>, 2023-02-25 08:00
+        </tip>
     </chapter>
 </topic>
