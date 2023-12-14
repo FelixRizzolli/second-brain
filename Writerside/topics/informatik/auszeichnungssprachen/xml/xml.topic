@@ -667,6 +667,43 @@
     </chapter>
 
     <chapter title="Wohlgeformtheit" id="wohlgeformtheit">
+        <p>
+            Jedes XML-Dokument muss eine Reihe formaler Regeln erfüllen, um wohlgeformt zu sein. XML-Dateien, die diesen
+            Regeln nicht genügen, werden von XML-Parsern in Anwendungen und Programmiersprachen nicht verarbeitet,
+            sondern erzeugen Fehlermeldungen.
+        </p>
+        
+        <list>
+            <li>
+                Ein XML-Dokument benötigt genau ein Wurzelelement: Ein bestimmtes Element muss alle anderen Elemente und
+                Textinhalte umschließen. Alle Elemente müssen korrekt ineinander verschachtelt werden; das zuletzt
+                geöffnete Element wird als Erstes wieder geschlossen.
+            </li>
+            <li>
+                Jedes Element besteht aus einem öffnenden und einem schließenden Tag; »Einfach-Tags« wie in klassischem
+                HTML gibt es nicht. Für leere Tags existiert die spezielle Kurzfassung mit dem End-Slash.
+            </li>
+            <li>
+                Attribute haben die Form <code>name="wert"</code>. Der Wert muss stets in Anführungszeichen stehen.
+            </li>
+            <li>
+                Die Namen von Elementen und Attributen dürfen nur Buchstaben, Ziffern, Unterstriche, Bindestriche und
+                Punkte enthalten. Es wird zwischen Groß- und Kleinschreibung unterschieden. Das erste Zeichen darf keine
+                Ziffer sein.
+            </li>
+            <li>
+                Bestimmte Zeichen sind in XML-Dokumenten nicht zulässig: <code>&lt;</code>, <code>&gt;</code>,
+                <code>&amp;</code>, <code>&quot;</code> und <code>&apos;</code> müssen durch die Entity-Referenzen
+                <code>&amp;lt;</code>, <code>&amp;gt;</code>, <code>&amp;amp;</code>, <code>&amp;quot;</code>
+                beziehungsweise <code>&amp;apos;</code> ersetzt werden. Die Definition weiterer Entity-Referenzen ist
+                zulässig, aber sie dürfen nicht undefiniert verwendet werden.
+            </li>
+            <li>
+                CDATA-Blöcke ermöglichen die beliebige Verwendung der Sonderzeichen, die normalerweise durch
+                Entity-Referenzen ersetzt werden müssen. Ein CDATA-Abschnitt steht zwischen
+                <code>&lt;![CDATA[ und ]]&gt;</code>.
+            </li>
+        </list>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
