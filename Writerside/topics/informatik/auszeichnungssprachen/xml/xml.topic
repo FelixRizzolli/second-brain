@@ -510,6 +510,54 @@
         </chapter>
 
         <chapter title="Entity-Referenzen" id="xml-aufbau-entityreferenzen">
+            <p>
+                Einige Zeichen sind in XML-Dokumenten nicht zulässig und müssen durch spezielle Escape-Sequenzen ersetzt
+                werden, die als Entity-Referenzen bezeichnet werden. Eine Entity-Referenz beginnt mit einem
+                <code>&amp;</code>-Zeichen, darauf folgen ein spezieller Code und am Ende ein Semikolon.
+            </p>
+
+            <table>
+                <tr>
+                    <td>Zeichen</td>
+                    <td>Entity-Referenz</td>
+                    <td>Bedeutung</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;</code></td>
+                    <td><code>&amp;lt;</code></td>
+                    <td>less than (kleiner als)</td>
+                </tr>
+                <tr>
+                    <td><code>&gt;</code></td>
+                    <td><code>&amp;gt;</code></td>
+                    <td>greater than (größer als)</td>
+                </tr>
+                <tr>
+                    <td><code>&amp;</code></td>
+                    <td><code>&amp;amp;</code></td>
+                    <td>Amperstand (and per se and)</td>
+                </tr>
+                <tr>
+                    <td><code>&apos;</code></td>
+                    <td><code>&amp;apos;</code></td>
+                    <td>Apostroph</td>
+                </tr>
+                <tr>
+                    <td><code>&quot;</code></td>
+                    <td><code>&amp;quot;</code></td>
+                    <td>quotation mark (Anführungszeichen)</td>
+                </tr>
+            </table>
+
+            <p>
+                All diese Zeichen haben im XML-Code eine spezielle Bedeutung. Neben diesen vorgefertigten
+                Entity-Referenzen können in XML auch beliebige Unicode-Zeichen numerisch angegeben werden. Die Syntax
+                ist entweder <code>&amp;#Dezimalcode;</code> oder <code>&amp;#xHexadezimalcode;</code>. Beispielsweise
+                kann ein Registered-Trademark-Zeichen <code>®</code> durch die Zeichenfolge <code>&amp;#174;</code>
+                (dezimal) oder <code>&amp;#xAE;</code> (hexadezimal) erzeugt werden. Eigene Entity's können innerhalb
+                von DTDs definiert und innerhalb der Dokumente darauf referenziert werden. Dies ermöglicht den schnellen
+                Zugriff auf häufig benötigte Sonderzeichen oder sogar XML-Codeblöcke.
+            </p>
         </chapter>
 
         <chapter title="CDATA-Abschnitte" id="xml-aufbau-cdata">
