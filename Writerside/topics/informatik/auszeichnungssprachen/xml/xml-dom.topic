@@ -89,6 +89,26 @@
         </chapter>
 
         <chapter title="Eltern, Kinder und Geschwister von Knoten" id="grundlagen-knoten">
+            <p>
+                Die Knoten im Knotenbaum stehen in einer hierarchischen Beziehung zueinander. Die Begriffe Elternteil
+                (eng. parent), Kind (eng. child) und Geschwister (eng. sibling) werden verwendet, um die Beziehungen zu
+                beschreiben. Elternknoten haben Kinder. Kinder auf der gleichen Ebene werden als Geschwister (Brüder
+                oder Schwestern) bezeichnet.
+            </p>
+
+            <list>
+                <li>In einem Knotenbaum wird der oberste Knoten als Wurzel bezeichnet.</li>
+                <li>Jeder Knoten, außer der Wurzel, hat genau einen Elternknoten.</li>
+                <li>Ein Knoten kann eine beliebige Anzahl von Kindern haben.</li>
+                <li>Ein Blatt ist ein Knoten, der keine Kinder hat.</li>
+                <li>Geschwisterknoten sind Knoten mit demselben Elternteil</li>
+            </list>
+
+            <p>
+                Die folgende Abbildung veranschaulicht einen Teil des Knotenbaums und die Beziehung zwischen den Knoten:
+            </p>
+
+            <img src="xml_knotenbaum_beziehungen.png" alt="XML - Knotenbaum (Beziehungen)"/>
         </chapter>
 
         <chapter title="Zugriff auf Knoten" id="grundlagen-zugriff">
