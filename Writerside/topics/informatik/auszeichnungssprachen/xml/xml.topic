@@ -561,6 +561,35 @@
         </chapter>
 
         <chapter title="CDATA-Abschnitte" id="xml-aufbau-cdata">
+            <p>
+                Der normale Text in XML-Dokumenten besteht aus sogenannten PCDATA-Abschnitten. PCDATA steht für parsed
+                character data. Dies bedeutet, dass einige Sonderzeichen innerhalb des Textes gemäß ihrer speziellen
+                XML-Bedeutung behandelt werden – es sei denn, es werden Entity-Referenzen verwendet. In einigen Fällen
+                können Entity-Referenzen aber sehr störend sein. Im folgenden Beispiel wird XML-Code in XML dargestellt,
+                welcher durch die Häufung von Entity-Referenzen absolut unleserlich wird:
+            </p>
+
+            <code-block lang="xml">
+                &lt;codeblock&gt;
+                    &amp;lt;cover file=&quot;simpsons_178.png&quot; type=&quot;image/png&quot; /&amp;gt;
+                &lt;/codeblock&gt;
+            </code-block>
+
+            <p>
+
+            </p>
+
+            <code-block lang="xml">
+                &lt;codeblock&gt;
+                    &lt;![CDATA[  &lt;cover file="simpsons_178.png"  type="image/png" /&gt;]]&gt;
+                &lt;/codeblock&gt;
+            </code-block>
+
+            <p>
+                Es versteht sich von selbst, dass die Zeichenfolge <code>]]&gt;</code> innerhalb eines CDATA-Blocks
+                unzulässig ist – schließlich beendet sie ebendiesen Block. Genau deshalb wurde eine so unwahrscheinliche
+                Zeichensequenz gewählt.
+            </p>
         </chapter>
 
         <chapter title="Kommentare" id="xml-aufbau-kommentare">
