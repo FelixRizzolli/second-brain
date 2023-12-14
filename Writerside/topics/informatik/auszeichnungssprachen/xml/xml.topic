@@ -91,19 +91,21 @@
 
     <chapter title="Terminologie" id="terminologie">
         <code-block lang="xml">
-            &lt;?xml version="1.0" encoding="UTF-8"?&gt;
-            &lt;bookstore&gt;
-                &lt;book&gt;
-                    &lt;title&gt;Harry Potter&lt;/title&gt;
-                    &lt;author&gt;J K. Rowling&lt;/author&gt;
-                    &lt;year&gt;2005&lt;/year&gt;
-                    &lt;price&gt;29.99&lt;/price&gt;
-                &lt;/book&gt;
-                &lt;book&gt;
-                    &lt;title lang="en"&gt;Learning XML&lt;/title&gt;
-                    &lt;price&gt;39.95&lt;/price&gt;
-                &lt;/book&gt;
-            &lt;/bookstore&gt;
+            <![CDATA[
+            <?xml version="1.0" encoding="UTF-8"?>
+            <bookstore>
+                <book>
+                    <title>Harry Potter</title>
+                    <author>J K. Rowling</author>
+                    <year>2005</year>
+                    <price>29.99</price>
+                </book>
+                <book>
+                    <title lang="en">Learning XML</title>
+                    <price>39.95</price>
+                </book>
+            </bookstore>
+            ]]>
         </code-block>
 
         <table style="header-row">
@@ -239,61 +241,63 @@
 
         <chapter title="XML Beispiel" id="xml-aufbau-beispiel">
             <code-block lang="xml">
-                &lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;
-                &lt;comics&gt;
-                    &lt;comic language="en-US"&gt;
-                        &lt;publisher&gt;Marvel&lt;/publisher&gt;
-                        &lt;series&gt;The Amazing Spider-Man&lt;/series&gt;
-                        &lt;format&gt;Comic Book&lt;/format&gt;
-                        &lt;issue&gt;663&lt;/issue&gt;
-                        &lt;title&gt;The Return Of Anti-Venom&lt;/title&gt;
-                        &lt;subtitle&gt;Part One: The Ghost of Jean DeWolff&lt;/subtitle&gt;
-                        &lt;authors&gt;
-                            &lt;author role="Writer"&gt;Dan Slott&lt;/author&gt;
-                            &lt;author role="Pencils"&gt;Giuseppe Camuncoli&lt;/author&gt;
-                        &lt;/authors&gt;
-                        &lt;price currency="USD"&gt;3.99&lt;/price&gt;
-                    &lt;/comic&gt;
-                    &lt;comic language="en-US"&gt;
-                        &lt;publisher&gt;Marvel&lt;/publisher&gt;
-                        &lt;series&gt;Ultimate Spider-Man&lt;/series&gt;
-                        &lt;format&gt;Trade Paperback&lt;/format&gt;
-                        &lt;issue original="1-13"&gt;1&lt;/issue&gt;
-                        &lt;title&gt;Ultimate Spider-Man&lt;/title&gt;
-                        &lt;subtitle&gt;Ultimate Collection&lt;/subtitle&gt;
-                        &lt;authors&gt;
-                            &lt;author role="Writer"&gt;Brian Michael Bendis&lt;/author&gt;
-                            &lt;author role="Pencils"&gt;Mark Bagley&lt;/author&gt;
-                        &lt;/authors&gt;
-                        &lt;price currency="USD"&gt;24.99&lt;/price&gt;
-                    &lt;/comic&gt;
-                    &lt;comic language="en-US"&gt;
-                        &lt;publisher&gt;DC Comics&lt;/publisher&gt;
-                        &lt;series&gt;Action Comics&lt;/series&gt;
-                        &lt;format&gt;Comic Book&lt;/format&gt;
-                        &lt;issue&gt;901&lt;/issue&gt;
-                        &lt;title&gt;Reign Of The Doomsdays&lt;/title&gt;
-                        &lt;subtitle&gt;Part 1&lt;/subtitle&gt;
-                        &lt;authors&gt;
-                            &lt;author role="Writer"&gt;Paul Cornell&lt;/author&gt;
-                            &lt;author role="Artist"&gt;Kenneth Rocafort&lt;/author&gt;
-                            &lt;author role="Artist"&gt;Jesus Merino&lt;/author&gt;
-                        &lt;/authors&gt;
-                        &lt;price currency="USD">2.99&lt;/price&gt;
-                    &lt;/comic&gt;
-                    &lt;comic language="en-US"&gt;
-                        &lt;publisher&gt;Bongo Comics&lt;/publisher&gt;
-                        &lt;series&gt;Simpsons Comics&lt;/series&gt;
-                        &lt;format&gt;Comic Book&lt;/format&gt;
-                        &lt;issue>178&lt;/issue&gt;
-                        &lt;title&gt;The Thingama-Bob From Outer Space&lt;/title&gt;
-                        &lt;authors&gt;
-                            &lt;author role="Writer"&gt;Eric Rogers&lt;/author&gt;
-                            &lt;author role="Pencils"&gt;John Costanza&lt;/author&gt;
-                        &lt;/authors&gt;
-                        &lt;price currency="USD"&gt;2.99&lt;/price&gt;
-                    &lt;/comic&gt;
-                &lt;/comics&gt;
+                <![CDATA[
+                <?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;
+                <comics>
+                    <comic language="en-US"&gt;
+                        <publisher>Marvel</publisher>
+                        <series>The Amazing Spider-Man</series>
+                        <format>Comic Book</format>
+                        <issue>663</issue>
+                        <title>The Return Of Anti-Venom</title>
+                        <subtitle>Part One: The Ghost of Jean DeWolff</subtitle>
+                        <authors>
+                            <author role="Writer">Dan Slott</author>
+                            <author role="Pencils">Giuseppe Camuncoli</author>
+                        </authors>
+                        <price currency="USD">3.99</price>
+                    </comic>
+                    <comic language="en-US">
+                        <publisher>Marvel</publisher>
+                        <series>Ultimate Spider-Man</series>
+                        <format>Trade Paperback</format>
+                        <issue original="1-13">1</issue>
+                        <title>Ultimate Spider-Man</title>
+                        <subtitle>Ultimate Collection</subtitle>
+                        <authors>
+                            <author role="Writer">Brian Michael Bendis</author>
+                            <author role="Pencils">Mark Bagley</author>
+                        </authors>
+                        <price currency="USD">24.99</price>
+                    </comic>
+                    <comic language="en-US">
+                        <publisher>DC Comics</publisher>
+                        <series>Action Comics</series>
+                        <format>Comic Book</format>
+                        <issue>901</issue>
+                        <title>Reign Of The Doomsdays</title>
+                        <subtitle>Part 1</subtitle>
+                        <authors>
+                            <author role="Writer">Paul Cornell</author>
+                            <author role="Artist">Kenneth Rocafort</author>
+                            <author role="Artist">Jesus Merino</author>
+                        </authors>
+                        <price currency="USD">2.99</price&gt;
+                    </comic>
+                    <comic language="en-US">
+                        <publisher>Bongo Comics</publisher>
+                        <series>Simpsons Comics</series>
+                        <format>Comic Book</format>
+                        <issue>178</issue>
+                        <title>The Thingama-Bob From Outer Space</title>
+                        <authors>
+                            <author role="Writer">Eric Rogers</author>
+                            <author role="Pencils">John Costanza</author>
+                        </authors>
+                        <price currency="USD">2.99</price>
+                    </comic>
+                </comics>
+                ]]>
             </code-block>
         </chapter>
 
@@ -305,7 +309,9 @@
             </p>
 
             <code-block lang="xml">
-                &lt;?Ziel Daten?&gt;
+                <![CDATA[
+                <?Ziel Daten?>
+                ]]>
             </code-block>
 
             <p>
@@ -322,7 +328,9 @@
             </p>
 
             <code-block lang="xml">
-                &lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;
+                <![CDATA[
+                <?xml version="1.0" encoding="utf-8" standalone="yes"?>
+                ]]>
             </code-block>
 
             <p>
@@ -361,7 +369,9 @@
             </p>
 
             <code-block lang="xml">
-                &lt;cover file="simpsons_178.png" type="image/png"&gt;&lt;/cover&gt;
+                <![CDATA[
+                <cover file="simpsons_178.png" type="image/png"&gt;&lt;/cover>
+                ]]>
             </code-block>
 
             <p>
@@ -371,7 +381,9 @@
             </p>
 
             <code-block lang="xml">
-                &lt;cover file="simpsons_178.png" type="image/png" /&gt;
+                <![CDATA[
+                <cover file="simpsons_178.png" type="image/png" />
+                ]]>
             </code-block>
 
             <p>
@@ -490,16 +502,20 @@
             </p>
 
             <code-block lang="xml">
-                &lt;comic language="en-US"&gt;
+                <![CDATA[
+                <comic language="en-US">
                     ...
-                &lt;/comic&gt;
+                </comic>
+                ]]>
             </code-block>
 
             <code-block lang="xml">
-                &lt;comic&gt;
-                    &lt;language&gt;en-US&lt;/language&gt;
+                <![CDATA[
+                <comic>
+                    <language&gt;en-US&lt;/language>
                     ...
-                &lt;/comic&gt;
+                </comic>
+                ]]>
             </code-block>
 
             <warning>
@@ -570,9 +586,11 @@
             </p>
 
             <code-block lang="xml">
-                &lt;codeblock&gt;
-                    &amp;lt;cover file=&quot;simpsons_178.png&quot; type=&quot;image/png&quot; /&amp;gt;
-                &lt;/codeblock&gt;
+                <![CDATA[
+                <codeblock>
+                    &lt;cover file=&quot;simpsons_178.png&quot; type=&quot;image/png&quot; /&gt;
+                </codeblock>
+                ]]>
             </code-block>
 
             <p>
@@ -602,11 +620,11 @@
 
             <code-block lang="xml">
                 <![CDATA[
-                    <authors>
-                        <author role="Writer">Brian Michael Bendis</author>
-                        <author role="Pencils">Mark Bagley</author>
-                        <!-- An dieser Stelle fehlen Inks, Colors und Letters -->
-                    </authors>
+                <authors>
+                    <author role="Writer">Brian Michael Bendis</author>
+                    <author role="Pencils">Mark Bagley</author>
+                    <!-- An dieser Stelle fehlen Inks, Colors und Letters -->
+                </authors>
                 ]]>
             </code-block>
 
