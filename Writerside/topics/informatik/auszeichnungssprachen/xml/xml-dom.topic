@@ -230,6 +230,135 @@
     </chapter>
 
     <chapter title="Methoden (Methods)" id="methoden">
+        <p>
+            Methoden werden oft als etwas bezeichnet, das getan wird (z.B. den Knoten <code>"book"</code> löschen).
+            Typische Methoden sind:
+        </p>
+
+        <table>
+            <tr>
+                <td>Methode</td>
+                <td>Beschreibung</td>
+            </tr>
+            <tr>
+                <td><code>x.getElementsByTagName(name)</code></td>
+                <td>
+                    Holt alle Elemente aus dem Knoten <code>x</code>, mit einem speziellen Tagnamen.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.appendChild(node)</code></td>
+                <td>
+                    Fügt ein Kindknoten node zum bestehenden Knoten <code>x</code> hinzu. Der neue Knoten wird nach
+                    allen vorhandenen Kindknoten hinzugefügt (angehängt).
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.insertBefore(newNode, node)</code></td>
+                <td>
+                    Fügt ein Kindknoten newNode vor einem speziellen bestehenden Knoten node im Knoten <code>x</code>
+                    hinzu. Diese Methode wird verwendet, wenn Position des Knotens wichtig ist.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.insertData(offset, string)</code></td>
+                <td>
+                    Fügt Text <code>string</code> beginnend an einer speziellen Stelle <code>offset</code> einem
+                    existierenden Textknoten <code>x</code> hinzu.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.removeChild(node)</code></td>
+                <td>
+                    Entfernt ein Kindknoten <code>node</code> vom Knoten <code>x</code>. Wenn ein Knoten entfernt wird,
+                    werden auch alle seine Kindknoten entfernt.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.removeAttribute(attribute)</code></td>
+                <td>
+                    Entfernt das Attribut <code>attribute</code> vom Elementknoten <code>x</code>.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.replaceChild(node)</code></td>
+                <td>
+                    Ersetzt den Knoten <code>x</code> mit dem übergebenen Knoten node.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.replaceData(offset, length, string)</code></td>
+                <td>
+                    Wird verwendet um den Text im Knoten <code>x</code> zu ersetzten. Dabei ist <code>offset</code> – wo
+                    die Ersetzung der Zeichen beginnen soll, der Offset-Wert beginnt bei Null; <code>length</code> – wie
+                    viele Zeichen ersetzt werden sollen und <code>string</code> – die einzufügende Zeichenfolge.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.getAttribute(attribute)</code></td>
+                <td>
+                    Gibt den Wert eines Attributs <code>attribute</code> vom Knoten <code>x</code> zurück.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.getAttributeNode(attribute)</code></td>
+                <td>
+                    Gibt den Attributknoten des Attributs <code>attribute</code> vom Knoten <code>x</code> zurück.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.setAttribute(attribute, attributeValue)</code></td>
+                <td>
+                    Setzt den Wert <code>attributeValue</code> eines Attributs <code>attribute</code> vom Knoten
+                    <code>x</code>. Ist das Attribut nicht vorhanden wird es neu gesetzt, ist es bereits vorhanden, wird
+                    es überschrieben.
+                </td>
+            </tr>
+            <tr>
+                <td><code>xmlDoc.createElement(element)</code></td>
+                <td>
+                    Erstellt einen neuen Elementknoten <code>element</code>, welcher später als Argument z.B. in der
+                    <code>appendChild()</code>-Methode auf ein Elementknoten übergeben werden kann.
+                </td>
+            </tr>
+            <tr>
+                <td><code>xmlDoc.createAttribute(attribute)</code></td>
+                <td>
+                    Erstellt einen neuen Attributknoten <code>attribute</code>, welcher später als Argument z.B. in der
+                    <code>setAttributeNode()</code>-Methode auf einen Elementknoten übergeben werden kann. Existiert das
+                    Attribut bereits, dann wird es ersetzt.
+                </td>
+            </tr>
+            <tr>
+                <td><code>xmlDoc.createTextNode(string)</code></td>
+                <td>
+                    Erstellt einen neuen Textknoten <code>string</code>, welcher später als Argument z.B. in der
+                    <code>appendChild()</code>-Methode auf ein Elementknoten übergeben werden kann.
+                </td>
+            </tr>
+            <tr>
+                <td><code>xmlDoc.createCDATASection(string)</code></td>
+                <td>
+                    Erstellt ein neuen CDATA-Sectionknoten string, welcher später als Argument z.B. in der
+                    <code>appendChild()</code>-Methode auf ein Elementknoten übergeben werden kann.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.createComment(string)</code></td>
+                <td>
+                    Erstellt einen neuen Kommentarknoten string, welcher später als Argument z.B. in der
+                    <code>appendChild()</code>-Methode auf ein Elementknoten übergeben werden kann.
+                </td>
+            </tr>
+            <tr>
+                <td><code>x.cloneNode(boolean)</code></td>
+                <td>
+                    Die <code>cloneNode()</code>-Methode erstellt eine Kopie eines angegebenen Knotens, in diesem Fall
+                    <code>x</code>. Sie hat einen Parameter (<code>true</code> oder <code>false</code>) welcher angibt,
+                    ob der geklonte Knoten alle Attribute und Kindknoten des Originalknotens enthalten soll.
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
