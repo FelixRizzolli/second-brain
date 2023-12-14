@@ -43,5 +43,51 @@
     </chapter>
 
     <chapter title="Quellen" id="quellen">
+        <tip>
+            <strong>(BUCH)</strong>
+            978-3836254663, IT Handbuch für Fachinformatiker, Sascha Kersken, Rheinwerk Verlag GmbH, 2017
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xml_dtd_attributes.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xml_dtd_attributes.asp
+            </a>, 2023-02-21 15:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xml_dtd.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xml_dtd.asp
+            </a>, 2023-02-25 05:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xml_dtd_intro.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xml_dtd_intro.asp
+            </a>, 2023-02-25 05:15
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xml_dtd_building.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xml_dtd_building.asp
+            </a>, 2023-02-25 05:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xml_dtd_elements.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xml_dtd_elements.asp
+            </a>, 2023-02-25 05:45
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xml_dtd_el_vs_attr.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xml_dtd_el_vs_attr.asp
+            </a>, 2023-02-25 05:45
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xml_dtd_entities.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xml_dtd_entities.asp
+            </a>, 2023-02-25 05:45
+        </tip>
     </chapter>
 </topic>
