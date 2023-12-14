@@ -7,6 +7,26 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlegendes zum XML DOM" id="grundlagen">
+        <p>
+            Das Document Object Model (DOM) definiert einen Standard für den Zugriff auf und die Bearbeitung von
+            Dokumenten:
+        </p>
+
+        <tip>
+            <emphasis>
+                "Das W3C Document Object Model (DOM) ist eine plattform- und sprachneutrale Schnittstelle, die es
+                Programmen und Skripten ermöglicht, dynamisch auf Inhalt, Struktur und Stil eines Dokuments zuzugreifen
+                und diese zu aktualisieren."
+            </emphasis>
+        </tip>
+
+        <p>
+            Das XML DOM definiert eine plattformübergreifende W3C Standardmethode für den Zugriff auf und die
+            Bearbeitung von XML-Dokumenten. Es stellt ein XML-Dokument als Baumstruktur dar. Das DOM modelliert XML als
+            eine Menge von Knotenobjekten. Auf diese Knoten kann mit JavaScript oder anderen Programmiersprachen
+            zugegriffen werden. In den Beispielen wird JavaScript verwendet. Die Programmierschnittstelle zum DOM wird
+            durch eine Reihe von Standardeigenschaften und -methoden definiert.
+        </p>
 
         <chapter title="Beispiel" id="grundlagen-beispiel">
         </chapter>
