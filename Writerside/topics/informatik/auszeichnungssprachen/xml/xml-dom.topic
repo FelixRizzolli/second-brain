@@ -112,6 +112,22 @@
         </chapter>
 
         <chapter title="Zugriff auf Knoten" id="grundlagen-zugriff">
+            <p>
+                Es gibt folgende drei Möglichkeiten, um auf Knoten zuzugreifen:
+            </p>
+            
+            <list>
+                <li>
+                    Die Verwendung der Methode <code>getElementsByTagName()</code>, welche alle Knoten mit einem
+                    bestimmten übergebenen Tag-Namen im XML-Dokument sucht.
+                </li>
+                <li>
+                    Durchlaufen des Knotenbaums in einer Schleife.
+                </li>
+                <li>
+                    Durch die Navigation im Knotenbaum, unter Verwendung der Knotenbeziehungen.
+                </li>
+            </list>
         </chapter>
     </chapter>
 
