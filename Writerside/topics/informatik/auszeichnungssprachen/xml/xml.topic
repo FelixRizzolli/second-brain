@@ -593,6 +593,30 @@
         </chapter>
 
         <chapter title="Kommentare" id="xml-aufbau-kommentare">
+            <p>
+                XML-Dokumente können auch Kommentare enthalten. Diese werden naturgemäß ignoriert und dienen der
+                Übersicht im Dokument oder können zusätzliche Erläuterungen enthalten. Ein Kommentar wird durch die
+                Zeichenfolge <code>&lt;!--</code> eingeleitet und endet mit <code>--&gt;</code>. Kommentare können sich
+                über beliebig viele Zeilen erstrecken.
+            </p>
+
+            <code-block lang="xml">
+                <![CDATA[
+                    <authors>
+                        <author role="Writer">Brian Michael Bendis</author>
+                        <author role="Pencils">Mark Bagley</author>
+                        <!-- An dieser Stelle fehlen Inks, Colors und Letters -->
+                    </authors>
+                ]]>
+            </code-block>
+
+            <warning>
+                Werden Kommentare genutzt, um einen unerwünschten Bereich des XML-Dokuments vorübergehend zu
+                deaktivieren, muss darauf geachtet werden, dass der Block selbst keine Kommentare enthält, denn beim
+                ersten Auftreten der Sequenz <code>--&gt;</code> ist alles Weitere kein Kommentar mehr, und das nächste
+                <code>--&gt;</code> gilt wegen des alleinstehenden, nicht als Entity-Sequenz geschriebenen
+                <code>&gt;</code> sogar als Fehler.
+            </warning>
         </chapter>
     </chapter>
 
