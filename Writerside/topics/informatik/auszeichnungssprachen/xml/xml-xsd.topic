@@ -109,6 +109,130 @@
     </chapter>
 
     <chapter title="Quellen" id="quellen">
+        <tip>
+            <strong>(BUCH)</strong>
+            978-3836254663, IT Handbuch für Fachinformatiker, Sascha Kersken, Rheinwerk Verlag GmbH, 2017
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://de.wikipedia.org/wiki/XML_Schema" ignore-vars="true">
+                https://de.wikipedia.org/wiki/XML_Schema
+            </a>, 2023-02-20 13:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/xml_schema.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/xml_schema.asp
+            </a>, 2023-02-26 12:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/schema_intro.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/schema_intro.asp
+            </a>, 2023-02-26 12:45
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/schema_dtypes_string.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/schema_dtypes_string.asp
+            </a>, 2023-02-26 13:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/schema_dtypes_date.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/schema_dtypes_date.asp
+            </a>, 2023-02-26 13:45
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/schema_dtypes_numeric.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/schema_dtypes_numeric.asp
+            </a>, 2023-02-26 14:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/schema_dtypes_misc.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/schema_dtypes_misc.asp
+            </a>, 2023-02-26 14:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/schema_schema.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/schema_schema.asp
+            </a>, 2023-02-26 17:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/schema_simple.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/schema_simple.asp
+            </a>, 2023-02-26 17:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/schema_simple_attributes.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/schema_simple_attributes.asp
+            </a>, 2023-02-26 17:15
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/schema_complex.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/schema_complex.asp
+            </a>, 2023-02-26 17:15
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/schema_facets.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/schema_facets.asp
+            </a>, 2023-02-27 13:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/schema_complex_indicators.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/schema_complex_indicators.asp
+            </a>, 2023-02-27 14:45
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/schema_complex_any.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/schema_complex_any.asp
+            </a>, 2023-02-27 15:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/schema_complex_anyattribute.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/schema_complex_anyattribute.asp
+            </a>, 2023-02-27 16:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/schema_complex_empty.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/schema_complex_empty.asp
+            </a>, 2023-02-27 16:30
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/schema_complex_elements.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/schema_complex_elements.asp
+            </a>, 2023-02-27 16:45
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/schema_complex_text.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/schema_complex_text.asp
+            </a>, 2023-02-27 17:00
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/schema_complex_mixed.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/schema_complex_mixed.asp
+            </a>, 2023-02-27 17:15
+        </tip>
+        <tip>
+            <strong>(WEBSEITE)</strong>
+            <a href="https://www.w3schools.com/xml/schema_complex_subst.asp" ignore-vars="true">
+                https://www.w3schools.com/xml/schema_complex_subst.asp
+            </a>, 2023-02-27 17:30
+        </tip>
     </chapter>
 
 </topic>
