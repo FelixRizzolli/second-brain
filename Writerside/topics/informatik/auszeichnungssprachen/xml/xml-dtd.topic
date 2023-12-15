@@ -135,7 +135,7 @@
                 XML-Dokument eingebunden werden. Die DTD wird wie folgt interpretiert:
             </p>
 
-            <table>
+            <table style="header-row">
                 <tr>
                     <td>DTD-Statement</td>
                     <td>Beschreibung</td>
@@ -185,6 +185,54 @@
         </chapter>
 
         <chapter title="Die Bausteine von XML Dokumenten " id="grundlagen-bausteine">
+            <table style="header-row">
+                <tr>
+                    <td>Baustein</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td>Elemente</td>
+                    <td>
+                        Elemente sind die Hauptbausteine von XML und HTML Dokumenten. In HTML sind beispielsweise
+                        <code>body</code> und <code>table</code> Elemente. In XML können Elemente selbst definiert
+                        werden wie beispielsweise <code>note</code> und <code>message</code>. Elemente können leer sein,
+                        sowie Text oder andere Elemente beinhalten. Ein Beispiel von leeren in HTML wäre
+                        <code>&lt;hr /&gt;</code>, <code>&lt;br /&gt;</code> und <code>&lt;img /&gt;</code>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Attribute</td>
+                    <td>
+                        Attribute können Extrainformationen über Elemente bereitstellen und bestehen immer aus
+                        <code>name</code>/<code>value</code>-Paaren. Im HTML-Tag
+                        <code>&lt;img src="computer.gif" /&gt;</code> beinhaltet beispielsweise das
+                        <code>src</code>-Attribut die Information wo sich die Bilddatei befindet.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Entities</td>
+                    <td>
+                        Einige Zeichen in XML werden speziell für die Syntax verwendet. Deshalb würde es zu Problemen
+                        kommen wenn, wenn sie im Text vorkommen. Um dieses Problem zu entgehen werden die durch eine
+                        Entität ersetzt: Das Zeichen <code>&lt;</code> wird durch <code>&amp;lt;</code> ersetzt.
+                    </td>
+                </tr>
+                <tr>
+                    <td>PCDATA</td>
+                    <td>
+                        PCDATA bedeutet parsed character data. PCDATA ist Text, der von einem Parser geparst wird. Der
+                        Text wird vom Parser auf Entities und Markup untersucht. Tags innerhalb des Textes werden als
+                        Markup behandelt und Entities werden umgewandelt.
+                    </td>
+                </tr>
+                <tr>
+                    <td>CDATA</td>
+                    <td>
+                        CDATA bedeutet character data und ist Text, der NICHT von einem Parser geparst wird. Tags
+                        innerhalb des Textes werden NICHT als Markup behandelt und Entities werden nicht erweitert.
+                    </td>
+                </tr>
+            </table>
         </chapter>
     </chapter>
 
