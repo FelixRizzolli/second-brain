@@ -84,6 +84,104 @@
         </table>
 
         <chapter title="Die DTD" id="grundlagen-dtd">
+            <code-block lang="xml" collapsible="true" collapsed-title="note.xml">
+                <![CDATA[
+                <?xml version="1.0"?>
+
+                <!DOCTYPE note
+                [
+                    <!ELEMENT note (to,from,heading,body)>
+                    <!ELEMENT to (#PCDATA)>
+                    <!ELEMENT from (#PCDATA)>
+                    <!ELEMENT heading (#PCDATA)>
+                    <!ELEMENT body (#PCDATA)>
+                ]>
+
+                <note>
+                    <to>Tove</to>
+                    <from>Jani</from>
+                    <heading>Reminder</heading>
+                    <body>Don't forget me this weekend</body>
+                </note>
+                ]]>
+            </code-block>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="note.dtd">
+                <![CDATA[
+                <!ELEMENT note (to,from,heading,body)>
+                <!ELEMENT to (#PCDATA)>
+                <!ELEMENT from (#PCDATA)>
+                <!ELEMENT heading (#PCDATA)>
+                <!ELEMENT body (#PCDATA)>
+                ]]>
+            </code-block>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="note.xml">
+                <![CDATA[
+                <?xml version="1.0"?>
+                <!DOCTYPE note SYSTEM "note.dtd">
+                <note>
+                    <to>Tove</to>
+                    <from>Jani</from>
+                    <heading>Reminder</heading>
+                    <body>Don't forget me this weekend</body>
+                </note>
+                ]]>
+            </code-block>
+
+            <p>
+                Eine DTD kann im XML-Dokument (nach der Steueranweisung und vor dem XML-Dokument) definiert (siehe
+                links) werden oder auf eine externe Datei ausgelagert werden (siehe rechts) und folglich ins
+                XML-Dokument eingebunden werden. Die DTD wird wie folgt interpretiert:
+            </p>
+
+            <table>
+                <tr>
+                    <td>DTD-Statement</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>!DOCTYPE note</code></td>
+                    <td>
+                        definiert <code>note</code> als das Wurzelelement (= root-Element) des Dokuments.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>!ELEMENT note</code></td>
+                    <td>
+                        definiert, dass das <code>note</code>-Element die Elemente <code>to</code>, <code>from</code>,
+                        <code>heading</code> und <code>body</code> beinhalten muss.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>!ELEMENT to</code></td>
+                    <td>
+                        definiert, dass das <code>to</code>-Element einen Inhalt des Typs <code>#PCDATA</code>
+                        beinhaltet.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>!ELEMENT from</code></td>
+                    <td>
+                        definiert, dass das <code>from</code>-Element einen Inhalt des Typs <code>#PCDATA</code>
+                        beinhaltet.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>!ELEMENT heading</code></td>
+                    <td>
+                        definiert, dass das <code>heading</code>-Element einen Inhalt des Typs <code>#PCDATA</code>
+                        beinhaltet.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>!ELEMENT body</code></td>
+                    <td>
+                        definiert, dass das <code>body</code>-Element einen Inhalt des Typs <code>#PCDATA</code>
+                        beinhaltet.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Die Bausteine von XML Dokumenten " id="grundlagen-bausteine">
