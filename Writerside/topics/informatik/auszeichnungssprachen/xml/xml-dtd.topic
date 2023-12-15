@@ -293,7 +293,7 @@
 
             </p>
 
-            <table>
+            <table style="header-row">
                 <tr>
                     <td>Modifikator</td>
                     <td>Beschreibung</td>
@@ -354,7 +354,7 @@
         </code-block>
 
         <chapter title="Atribut-Type" id="attribute-typ">
-            <table>
+            <table style="header-row">
                 <tr>
                     <td>Typ</td>
                     <td>Beschreibung</td>
@@ -477,6 +477,40 @@
         </chapter>
 
         <chapter title="Attribut-Value" id="attribute-wert">
+            <table style="header-row">
+                <tr>
+                    <td>Wert</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>Literal</code></td>
+                    <td>
+                        Wird anstelle eines der drei Schlüsselwörter nur ein Standardwert in Anführungszeichen
+                        angegeben, hat das Attribut diesen Standardwert, wird es weggelassen. Wird es dagegen explizit
+                        angegeben, erhält es den entsprechenden Wert.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>#REQUIRED</code></td>
+                    <td>
+                        Das Attribut muss auf jeden Fall angegeben werden; es gibt keinen Standardwert.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>#IMPLIED</code></td>
+                    <td>
+                        Das Attribut kann weggelassen werden; einen Standardwert gibt es auch hier nicht.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>#FIXED Standardwert</code></td>
+                    <td>
+                        Das Attribut hat stets den hinter <code>#FIXED</code> angegebenen Standardwert. Wird es nicht
+                        angegeben, dann wird es vom Parser trotzdem mit dem Standardwert ausgewertet. Falls es explizit
+                        angegeben wird, muss es dagegen genau den Standardwert aufweisen.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Bemerkung" id="attribute-bemerkung">
