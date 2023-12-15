@@ -7,11 +7,45 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="XLink und XPointer" id="grundlagen">
+        <img src="xml_tools_overview.png" alt="XML - Tools"/>
 
         <chapter title="XLink" id="grundlagen-xlink">
+            <list>
+                <li>
+                    XLink wird verwendet, um Hyperlinks in XML-Dokumenten zu erstellen
+                </li>
+                <li>
+                    Jedes Element in einem XML-Dokument kann als Link fungieren
+                </li>
+                <li>
+                    Mit XLink können die Links außerhalb der verlinkten Dateien definiert werden
+                </li>
+                <li>
+                    XLink ist eine W3C-Empfehlung
+                </li>
+                <li>
+                    Es gibt keine Browserunterstützung für XLink in XML-Dokumenten. Allerdings unterstützen alle
+                    wichtigen Browser XLinks in SVG.
+                </li>
+            </list>
         </chapter>
 
         <chapter title="XPointer" id="grundlagen-xpointer">
+            <list>
+                <li>
+                    XPointer ermöglicht Links, die auf bestimmte Teile eines XML-Dokuments verweisen
+                </li>
+                <li>
+                    XPointer verwendet XPath-Ausdrücke, um im XML-Dokument zu navigieren
+                </li>
+                <li>
+                    XPointer ist eine W3C-Empfehlung
+                </li>
+                <li>
+                    Es gibt keine Browserunterstützung für XPointer. Aber XPointer wird in anderen XML-Sprachen
+                    verwendet.
+                </li>
+            </list>
         </chapter>
     </chapter>
     <chapter title="XLink" id="xlink">
