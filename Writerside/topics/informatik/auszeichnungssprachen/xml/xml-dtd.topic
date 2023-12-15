@@ -525,6 +525,60 @@
     </chapter>
 
     <chapter title="Entitys" id="entitys">
+        <p>
+            Entitys bieten vor allem die Möglichkeit, häufig vorkommende XML-Blöcke abzukürzen und Zeichen darzustellen,
+            die im aktuellen Zeichensatz des XML-Dokuments nicht vorhanden sind. Im XML-Dokument werden die in der DTD
+            definierten Entitys durch Entity-Referenzen angegeben.
+        </p>
+        <p>
+            Eigene Entitys können wie folgt definiert werden:
+        </p>
+
+        <code-block lang="xml">
+            <![CDATA[
+            <!-- SYNTAX -->
+            <!ENTITY entity-name "entity-value">
+
+            <!-- BEISPIEL -->
+            <!ENTITY copymsg "Copyright 2023 by Felix Rizzolli">
+            ]]>
+        </code-block>
+
+        <p>
+            Wird an irgendeiner Stelle eines XML-Dokuments, das von dieser DTD abhängt, die Entity-Referenz
+            <code>&amp;copymsg;</code> verwendet, wird sie automatisch durch den String
+            <code>"Copyright 2023 by Felix Rizzolli"</code> ersetzt. Entitys können aber nicht nur reinen Text
+            enthalten, sondern auch XML-Auszeichnungen. Einfache Anführungszeichen ermöglichen es hierbei, dass die
+            doppelten Anführungszeichen der enthaltenen Attributwerte einfach stehen gelassen werden können.
+        </p>
+
+        <code-block lang="xml">
+            <![CDATA[
+            <!ENTITY anschrift '<anschrift>
+                                    <name>Rheinwerk Verlag</name>
+                                    <strasse>Rheinwerkallee</strasse>
+                                    <hausnr>4</hausnr>
+                                    <plz>53227</plz>
+                                    <ort>Bonn</ort>
+                                </anschrift>'>
+            ]]>
+        </code-block>
+
+        <p>
+            Längere Entitys müssen nicht innerhalb der DTD selbst definiert werden, sondern können in eine externe
+            XML-Datei geschrieben werden. Auf diese Datei wird dann in der Entity-Deklaration mithilfe einer SYSTEM-ID
+            verwiesen:
+        </p>
+
+        <code-block lang="xml">
+            <![CDATA[
+            <!-- SYNTAX -->
+            <!ENTITY entity-name SYSTEM "URI/URL">
+
+            <!-- BEISPIEL -->
+            <!ENTITY anschrift SYSTEM "anschrift.xml">
+            ]]>
+        </code-block>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
