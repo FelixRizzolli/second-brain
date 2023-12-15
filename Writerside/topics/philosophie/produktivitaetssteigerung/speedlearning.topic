@@ -13,7 +13,7 @@
 
         <list style="decimal">
             <li>
-                <p><strong>Freunde, Familienmitglieder oder Bekannte beziehungsweise Arbeitskollegen</strong></p>
+                <p><b>Freunde, Familienmitglieder oder Bekannte beziehungsweise Arbeitskollegen</b></p>
                 <list style="bullet">
                     <li>
                         Die Frau, welche sich spontan dazu entschieden hat, Freunde zum Grillen einzuladen; der Chef,
@@ -30,7 +30,7 @@
                 </list>
             </li>
             <li>
-                <p><strong>Körperliche Symptome</strong></p>
+                <p><b>Körperliche Symptome</b></p>
                 <p>
                     Plötzliche Kopfschmerzen; sich fiebrig fühlen; Nackenschmerzen oder einfach nur fix und fertig sein.
                     Auch hier muss die Motivation groß genug oder die Disziplin stark genug sein um trotzdem
@@ -38,21 +38,21 @@
                 </p>
             </li>
             <li>
-                <p><strong>Emotionen</strong></p>
+                <p><b>Emotionen</b></p>
                 <p>
                     Man könnte sich über unsere Fortschritte lustig machen oder uns herausfordern, was uns demotivieren
                     könnte.
                 </p>
             </li>
             <li>
-                <p><strong>Probleme</strong></p>
+                <p><b>Probleme</b></p>
                 <p>
                     Wir werden immer mit Problemen konfrontiert werden: Ärger mit den Lehrern der Kinder,
                     Wasserrohrbruch in der Wohnung, ...
                 </p>
             </li>
             <li>
-                <p><strong>Schicksalsschläge</strong></p>
+                <p><b>Schicksalsschläge</b></p>
                 <p>
                     Plötzlich wird jemand aus der Familie schwer krank, oder jemand, den wir lieben verstirbt. Möglich
                     ist auch, dass wir plötzlich insolvent werden, oder unser Haus abbrennt.
@@ -95,9 +95,8 @@
 
             <tip>
                 Eine Fachsprache verfolgt zweierlei Zwecke: Dinge oder Sachverhalte werden durch einen brancheninternen
-                Fachbegriff <strong>unmissverständlich</strong> umschrieben; der Laie, soll bei der Kommunikation
-                zwischen zwei oder mehreren Personen den vorliegenden Sachverhalt nicht in Gänze
-                <strong>verstehen</strong> können.
+                Fachbegriff <b>unmissverständlich</b> umschrieben; der Laie, soll bei der Kommunikation zwischen zwei
+                oder mehreren Personen den vorliegenden Sachverhalt nicht in Gänze <b>verstehen</b> können.
             </tip>
 
             <p>
@@ -200,7 +199,7 @@
         <p>
             Fleiß schlägt stets Talent: Es kann sein, dass, selbst wenn jemand aus einer Ärztefamilie kommt und über
             alle Möglichkeiten verfügt, um ein hervorragender Mediziner zu werden, dennoch der Nachbar, dessen Eltern
-            Handwerker sind, aufgrund seines Fleißes den ersten im Medizinstudium um Längen überholt und im fachlich
+            Handwerker sind, aufgrund seines Fleißes, den ersten im Medizinstudium um Längen überholt und im fachlich
             deutlich überlegen ist.
         </p>
         <p>
@@ -210,22 +209,22 @@
 
         <list>
             <li>
-                Die <strong>Effektivität</strong> des Lernens wird maßgeblich vom Unterrichtsmaterial beeinflusst. Der
-                Lernende kann noch so motiviert sein, ohne die geeigneten Kursunterlagen ist das Projekt zum Scheitern
+                Die <b>Effektivität</b> des Lernens wird maßgeblich vom Unterrichtsmaterial beeinflusst. Der Lernende
+                kann noch so motiviert sein, ohne die geeigneten Kursunterlagen ist das Projekt zum Scheitern
                 verurteilt.
             </li>
             <li>
-                <strong>Adhärenz</strong> oder <strong>Durchhaltevermögen</strong> bedeuten, dass die Beschäftigung mit
-                dem Zielthema Spaß machen muss und abwechslungsreich sein sollte. Nur so kann die Motivation dauerhaft
-                am Leben gehalten werden und der relativ kurze Zeitraum von zehn Tagen bis zehn Wochen optimal
-                ausgeschöpft werden. Hierbei sollte man beim Lernen zu Beginn sich hauptsächlich den Themen widmen, die
-                einen persönlich interessieren.
+                <b>Adhärenz</b> oder <b>Durchhaltevermögen</b> bedeuten, dass die Beschäftigung mit dem Zielthema Spaß
+                machen muss und abwechslungsreich sein sollte. Nur so kann die Motivation dauerhaft am Leben gehalten
+                werden und der relativ kurze Zeitraum von zehn Tagen bis zehn Wochen optimal ausgeschöpft werden.
+                Hierbei sollte man beim Lernen zu Beginn sich hauptsächlich den Themen widmen, die einen persönlich
+                interessieren.
             </li>
             <li>
-                Mit <strong>Effizienz</strong> ist der zeitliche Aspekt gemeint. Ein Wissensgebiet über mehrere Jahre zu
-                lernen ist kein effizientes Ziel. Die investierte Zeit muss im Verhältnis zum Ergebnis stehen. So sollte
-                zum Beispiel ein Unternehmen mit der Zeit seiner Mitarbeiter mindestens genauso sorgfältig umgehen wie
-                mit seinen Finanzen.
+                Mit <b>Effizienz</b> ist der zeitliche Aspekt gemeint. Ein Wissensgebiet über mehrere Jahre zu lernen
+                ist kein effizientes Ziel. Die investierte Zeit muss im Verhältnis zum Ergebnis stehen. So sollte zum
+                Beispiel ein Unternehmen mit der Zeit seiner Mitarbeiter mindestens genauso sorgfältig umgehen wie mit
+                seinen Finanzen.
             </li>
         </list>
     </chapter>
@@ -245,66 +244,65 @@
 
         <list style="bullet">
             <li>
-                Im <strong>Power-Braintrust</strong> pflegen die Braintrust-Partner intensiven und vertrauensvollen
-                Kontakt. Sie treffen sich mindestens einmal pro Woche für 60 bis 90 Minuten, um über ihre Lernprojekte
-                und Erfolge zu sprechen, sich gegenseitig anzuspornen, Komplimente und konstruktive Kritik
-                auszutauschen, Brainstormings durchzuführen und Spaß zu haben.
+                Im <b>Power-Braintrust</b> pflegen die Braintrust-Partner intensiven und vertrauensvollen Kontakt. Sie
+                treffen sich mindestens einmal pro Woche für 60 bis 90 Minuten, um über ihre Lernprojekte und Erfolge zu
+                sprechen, sich gegenseitig anzuspornen, Komplimente und konstruktive Kritik auszutauschen,
+                Brainstormings durchzuführen und Spaß zu haben.
             </li>
             <li>
-                Im <strong>Standard-Braintrust</strong> sehen sich die Mitglieder möglicherweise nur einmal im Monat
-                oder gar nur einmal pro Jahr beziehungsweise telefonieren nur ab und zu. Sie haben zwar gemeinsame Ziele
-                in Bezug auf die Entwicklung ihrer Lernziele oder Projekte, aber die Zusammenarbeit ist nicht ganz so
-                intensiv. Ein Beispiel hierfür sind die Welt Interlingua Konferenzen.
+                Im <b>Standard-Braintrust</b> sehen sich die Mitglieder möglicherweise nur einmal im Monat oder gar nur
+                einmal pro Jahr beziehungsweise telefonieren nur ab und zu. Sie haben zwar gemeinsame Ziele in Bezug auf
+                die Entwicklung ihrer Lernziele oder Projekte, aber die Zusammenarbeit ist nicht ganz so intensiv. Ein
+                Beispiel hierfür sind die Welt Interlingua Konferenzen.
             </li>
             <li>
-                Zum <strong>Forum Braintrust</strong> gehört zum Beispiel die Organisation Polyglotter Unternehmer. Hier
-                treffen sich viermal im Jahr Unternehmer aus ganz Europa, die mindestens drei Sprachen oder mehr
-                sprechen, um sich gegenseitig im internationalen Business mit Know-how und Kontakten zu unterstützen.
+                Zum <b>Forum Braintrust</b> gehört zum Beispiel die Organisation Polyglotter Unternehmer. Hier treffen
+                sich viermal im Jahr Unternehmer aus ganz Europa, die mindestens drei Sprachen oder mehr sprechen, um
+                sich gegenseitig im internationalen Business mit Know-how und Kontakten zu unterstützen.
             </li>
             <li>
-                Eine stark abgeschwächte Form von Braintrusts sind auch sogenannte <strong>Internet-Foren</strong>.
-                Allerdings sind diese in der Regel sehr wenig effektiv.
+                Eine stark abgeschwächte Form von Braintrusts sind auch sogenannte <b>Internet-Foren</b>. Allerdings
+                sind diese in der Regel sehr wenig effektiv.
             </li>
             <li>
-                Zahlreiche international tätige Unternehmen verfügen über ein sogenanntes <strong>Advisory
-                Board</strong>, also über einen beratenden Beirat. Dieser gleicht in seiner Zusammensetzung einem
-                Verwaltungsrat, jedoch haften die Mitglieder des Advisory Boards nicht für ihre Entscheidungen und haben
-                auch nicht die gleichen Befugnisse. Sie erteilen lediglich Ratschläge in Bezug auf Fragen im Rahmen
-                internationaler Entwicklungen, entwickeln Ideen und teilen mit der Geschäftsleitung ihre umfangreiche
-                Erfahrung, ihr Fachwissen und ihre Kontakte. Jedes Unternahmen, das sich auf internationaler Bühne
-                erfolgreich präsentieren möchte, sollte sich Experten für internationale Beziehungen in sein Advisory
-                Board einladen.
+                Zahlreiche international tätige Unternehmen verfügen über ein sogenanntes <b>Advisory Board</b>, also
+                über einen beratenden Beirat. Dieser gleicht in seiner Zusammensetzung einem Verwaltungsrat, jedoch
+                haften die Mitglieder des Advisory Boards nicht für ihre Entscheidungen und haben auch nicht die
+                gleichen Befugnisse. Sie erteilen lediglich Ratschläge in Bezug auf Fragen im Rahmen internationaler
+                Entwicklungen, entwickeln Ideen und teilen mit der Geschäftsleitung ihre umfangreiche Erfahrung, ihr
+                Fachwissen und ihre Kontakte. Jedes Unternahmen, das sich auf internationaler Bühne erfolgreich
+                präsentieren möchte, sollte sich Experten für internationale Beziehungen in sein Advisory Board
+                einladen.
             </li>
             <li>
-                Bei dem <strong>Leads-Club</strong> geht es ausschließlich um das Vermitteln von Business-Kontakten auf
+                Bei dem <b>Leads-Club</b> geht es ausschließlich um das Vermitteln von Business-Kontakten auf
                 internationaler Ebene. Das bekannteste Beispiel hierfür ist ebenfalls die Organisation Polyglotter
                 Unternehmer.
             </li>
             <li>
-                Der <strong>Erfolgs- und Motivations-Club</strong> dient der Lernmotivation und Vermittlung wirksamer
-                Techniken und spornt zum Anwenden des Wissens an. Auch neu entwickelte APPs sind ein Thema für diese
-                Clubs.
+                Der <b>Erfolgs- und Motivations-Club</b> dient der Lernmotivation und Vermittlung wirksamer Techniken
+                und spornt zum Anwenden des Wissens an. Auch neu entwickelte APPs sind ein Thema für diese Clubs.
             </li>
             <li>
-                Ein <strong>Einzelcoaching</strong> bei einem Fachmann mit Expertise bietet die individuelle Form des
-                Braintrust. Beim Fremdsprachenlernen spricht der Coach in der Regel selbst mindestens fünf Sprachen
-                fließend und kann sich auf die speziellen Wünsche und Belange des Lernenden einstellen.
+                Ein <b>Einzelcoaching</b> bei einem Fachmann mit Expertise bietet die individuelle Form des Braintrust.
+                Beim Fremdsprachenlernen spricht der Coach in der Regel selbst mindestens fünf Sprachen fließend und
+                kann sich auf die speziellen Wünsche und Belange des Lernenden einstellen.
             </li>
             <li>
                 Wenn sich Partner entscheiden, gemeinsam den Sportbootführerschein zu erwerben, ein Musikinstrument,
-                eine Sprache oder eine Sportart zu erlernen, dann spricht man von einem <strong>partnerschaftlichen
-                Braintrust</strong>. Hier bieten sich zahlreiche Möglichkeiten für gemeinsame Lernaktivitäten. Diese
-                müssen jedoch konkret geplant werden und dürfen nicht dem Zufall überlassen bleiben. Das Lernen ist ein
+                eine Sprache oder eine Sportart zu erlernen, dann spricht man von einem <b>partnerschaftlichen
+                Braintrust</b>. Hier bieten sich zahlreiche Möglichkeiten für gemeinsame Lernaktivitäten. Diese müssen
+                jedoch konkret geplant werden und dürfen nicht dem Zufall überlassen bleiben. Das Lernen ist ein
                 Projekt, das nach spätestens zehn Wochen abgeschlossen sein sollte.
             </li>
             <li>
-                Unter den <strong>Einmal-pro-Jahr-Braintrust</strong> fallen Kongresse, Konferenzen und Treffen, die
-                sich inhaltlich mit Ihren Lernthemen beschäftigen. Mindestens steht weniger das Anwenden des Wissens im
+                Unter den <b>Einmal-pro-Jahr-Braintrust</b> fallen Kongresse, Konferenzen und Treffen, die sich
+                inhaltlich mit Ihren Lernthemen beschäftigen. Mindestens steht weniger das Anwenden des Wissens im
                 Vordergrund, sondern eher der Netzwerkgedanke.
             </li>
             <li>
-                Von einem <strong>Telefon-Braintrust</strong> spricht man, wenn man sich mit einem Lernpartner
-                telefonisch austauscht.
+                Von einem <b>Telefon-Braintrust</b> spricht man, wenn man sich mit einem Lernpartner telefonisch
+                austauscht.
             </li>
         </list>
     </chapter>
@@ -354,24 +352,22 @@
 
                 <tip>
                     <p>
-                        Sagen wir, wir möchten uns drei Eigenschaften von <strong>Mephisto</strong> aus Goethes Faust
-                        merken (<strong>böse</strong>, <strong>charmant</strong>, <strong>magisch</strong>):
+                        Sagen wir, wir möchten uns drei Eigenschaften von <b>Mephisto</b> aus Goethes Faust merken
+                        (<b>böse</b>, <b>charmant</b>, <b>magisch</b>):
                     </p>
                     <list style="decimal">
                         <li>
-                            Wir wählst unser <strong>Klassenzimmer</strong> als Raum aus.
+                            Wir wählen unser <b>Klassenzimmer</b> als Raum aus.
                         </li>
                         <li>
-                            Die <strong>xEingangstür</strong>, die <strong>Tafel</strong> und den
-                            <strong>Schrank</strong> legen wir als Ankerpunkte fest, die wir auch in dieser Reihenfolge
-                            ablaufen.
+                            Die <b>xEingangstür</b>, die <b>Tafel</b> und den <b>Schrank</b> legen wir als Ankerpunkte
+                            fest, die wir auch in dieser Reihenfolge ablaufen.
                         </li>
                         <li>
                             Wir verknüpfen die Punkte nun: Wir betreten das Klassenzimmer und merken, dass die
-                            Eingangstür auf <strong>magische</strong> Weise beginnt, zu schweben. Nun gehen wir zur
-                            Tafel und sehen, dass Mephisto vorne steht und auf <strong>charmante</strong> Weise zur
-                            Klasse redet. Dann öffnen wir den Schrank, aus dem plötzlich ganz viele
-                            <strong>böse</strong> Hunde rausspringen.
+                            Eingangstür auf <b>magische</b> Weise beginnt, zu schweben. Jetzt gehen wir zur Tafel und
+                            sehen, dass Mephisto vorne steht und auf <b>charmante</b> Weise zur Klasse redet. Dann
+                            öffnen wir den Schrank, aus dem plötzlich ganz viele<b>böse</b> Hunde rausspringen.
                         </li>
                         <li>
                             Jetzt wiederholen wir die Route.
@@ -382,10 +378,9 @@
 
             <chapter title="Gedächtnishilfen und Merksätze" id="gedaechtnishilfen-und-merksaetze">
                 <p>
-                    Zu den bekanntesten Gedächtnistrainings gehören <strong>Gedächtnishilfen</strong> (oder
-                    Eselsbrücken) und <strong>Merksprüche</sstrong>. Um uns Informationen zu merken, können wir uns
-                    passende Geschichten, Sprüche oder Zusammenhänge ausdenken und mit unseren Lerninhalten in Beziehung
-                    setzen.
+                    Zu den bekanntesten Gedächtnistrainings gehören <b>Gedächtnishilfen</b> (oder Eselsbrücken) und
+                    <b>Merksprüche</b>. Um uns Informationen zu merken, können wir uns passende Geschichten, Sprüche
+                    oder Zusammenhänge ausdenken und mit unseren Lerninhalten in Beziehung setzen.
                 </p>
 
                 <note>
@@ -394,20 +389,18 @@
                 </note>
 
                 <tip>
-                    Wir möchten uns als Gedächtnistraining zum Beispiel die häufigsten <strong>Elemente der
-                    Erdkruste</strong> merken. Der Spruch “<strong>O</strong>h, <strong>S</strong>ie
-                    <strong>al</strong>tes <strong>Fe</strong>rkel!” beschreibt die Elemente O (Sauerstoff), Si
-                    (Sicilium), Al (Aluminium), Fe (Eisen). Durch diesen Satz kann sich unser Gehirn die Elemente
-                    leichter merken.
+                    Wir möchten uns als Gedächtnistraining zum Beispiel die häufigsten <b>Elemente der Erdkruste</b>
+                    merken. Der Spruch “<b>O</b>h, <b>S</b>ie <b>al</b>tes <b>Fe</b>rkel!” beschreibt die Elemente O
+                    (Sauerstoff), Si (Sicilium), Al (Aluminium), Fe (Eisen). Durch diesen Satz kann sich unser Gehirn
+                    die Elemente leichter merken.
                 </tip>
             </chapter>
 
             <chapter title="Geschichtentechnik" id="geschichtentechnik">
                 <p>
                     Bei der Geschichtentechnik geht es darum, unsere unverbundenen Inhalte und Begriffe in einer
-                    Geschichte zusammenhängend zu <strong>verknüpfen</strong>. Durch Wiederholungen der Geschichte
-                    können wir uns den Lernstoff besser einprägen. Auch hier können absurdere Geschichten einfacher
-                    verfestigt werden.
+                    Geschichte zusammenhängend zu <b>verknüpfen</b>. Durch Wiederholungen der Geschichte können wir uns
+                    den Lernstoff besser einprägen. Auch hier können absurdere Geschichten einfacher verfestigt werden.
                 </p>
 
                 <tip>
@@ -427,35 +420,34 @@
 
             <chapter title="Körperliste" id="koerperliste">
                 <p>
-                    Die Körperliste ist eine Mnemotechnik, bei denen verschiedene <strong>Körperteile</strong> mit
-                    <strong>Lernbegriffen</strong> assoziiert werden. Wir verbinden beispielsweise einen Begriff mit
-                    unseren Füßen, einen anderen mit unseren Knien, dann unserem Bauch, und so weiter. Dann wiederholen
-                    wir die Begriffe, um sie uns zu merken.
+                    Die Körperliste ist eine Mnemotechnik, bei denen verschiedene <b>Körperteile</b> mit
+                    <b>Lernbegriffen</b> assoziiert werden. Wir verbinden beispielsweise einen Begriff mit unseren
+                    Füßen, einen anderen mit unseren Knien, dann unserem Bauch, und so weiter. Dann wiederholen wir die
+                    Begriffe, um sie uns zu merken.
                 </p>
 
                 <tip>
                     <p>
                         Wir möchten uns im Gedächtnistraining fünf Personen aus Shakespeares Romeo und Julia merken:
-                        <strong>Romeo, Julia, Bruder Lorenzo, Benvolio, Mercutio</strong>. Dafür finden wir die
-                        passenden Teile an deinem Körper:
+                        <b>Romeo, Julia, Bruder Lorenzo, Benvolio, Mercutio</b>. Dafür finden wir die passenden Teile an
+                        deinem Körper:
                     </p>
 
                     <list style="decimal">
                         <li>
-                            Unser <strong>linker Fuß ist Romeo</strong>, unser <strong>rechter Julia</strong>. Sie sind
-                            immer nahe beieinander, was ihre Liebe widerspiegelt.
+                            Unser <b>linker Fuß ist Romeo</b>, unser <b>rechter Julia</b>. Sie sind immer nahe
+                            beieinander, was ihre Liebe widerspiegelt.
                         </li>
                         <li>
-                            Unser <strong>Kopf ist Bruder Lorenzo</strong>, ein gebildeter Mönch, der sehr viel über
-                            Pflanzen weiß. Da er schlau ist, assoziieren wir Lorenzo natürlich mit unserem Kopf.
+                            Unser <b>Kopf ist Bruder Lorenzo</b>, ein gebildeter Mönch, der sehr viel über Pflanzen
+                            weiß. Da er schlau ist, assoziieren wir Lorenzo natürlich mit unserem Kopf.
                         </li>
                         <li>
-                            Unser <strong>Herz ist Benvolio</strong>. Er ist ein guter Mensch, wohlwollend und loyal
-                            gegenüber Romeo, weshalb unser Herz ihn repräsentiert.
+                            Unser <b>Herz ist Benvolio</b>. Er ist ein guter Mensch, wohlwollend und loyal gegenüber
+                            Romeo, weshalb unser Herz ihn repräsentiert.
                         </li>
                         <li>
-                            Unser <strong>Mund ist Mercutio</strong>, denn er hat ein loses Mundwerk und ist sehr
-                            sarkastisch.
+                            Unser <b>Mund ist Mercutio</b>, denn er hat ein loses Mundwerk und ist sehr sarkastisch.
                         </li>
                     </list>
                 </tip>
@@ -463,15 +455,15 @@
 
             <chapter title="Zahl-Reim-System" id="">
                 <p>
-                    Gedächtnistraining mit dem Zahl-Reim-System ist möglich, indem wir zu den <strong>Zahlen von 0 bis
-                    9</strong> jeweils<strong>ein Wort</strong> zum Merken hinzufügen. Die Wörter reimen sich auf die
-                    Bezugszahlen, was bei dem Lernen und Merken von Informationen beim Gedächtnistraining helfen kann.
+                    Gedächtnistraining mit dem Zahl-Reim-System ist möglich, indem wir zu den <b>Zahlen von 0 bis 9</b>
+                    jeweils <b>ein Wort</b> zum Merken hinzufügen. Die Wörter reimen sich auf die Bezugszahlen, was bei
+                    dem Lernen und Merken von Informationen beim Gedächtnistraining helfen kann.
                 </p>
 
                 <tip>
                     <p>
-                        Wir möchten uns beim Gedächtnistraining die ersten Zahlen von <strong>Pi (3,1415)</strong>
-                        merken. Wir beginnen damit, unsere Wörter zum Merken (passend zu den Zahlen) festzulegen:
+                        Wir möchten uns beim Gedächtnistraining die ersten Zahlen von <b>Pi (3,1415)</b> merken. Wir
+                        beginnen damit, unsere Wörter zum Merken (passend zu den Zahlen) festzulegen:
                     </p>
                     <list style="bullet">
                         <li>0 – Nacktmull</li>
@@ -490,10 +482,9 @@
                         uns zum Beispiel eine Geschichte mit den Wörtern aus:
                     </p>
                     <p>
-                        „Es war einmal ein <strong>Hai (3)</strong>, der <strong>keine (1)</strong> Flosse hatte. Er
-                        schwamm gerne im Wasser, aber noch lieber in <strong>Bier (4)</strong>. Außerdem hatte er
-                        <strong>keine (1)</strong> Füße, weshalb er leider nie seine <strong>Strümpfe (5)</strong>
-                        tragen konnte.“
+                        „Es war einmal ein <b>Hai (3)</b>, der <b>keine (1)</b> Flosse hatte. Er schwamm gerne im
+                        Wasser, aber noch lieber in <b>Bier (4)</b>. Außerdem hatte er <b>keine (1)</b> Füße, weshalb er
+                        leider nie seine <b>Strümpfe (5)</b> tragen konnte.“
                     </p>
                 </tip>
             </chapter>
@@ -502,11 +493,11 @@
 
     <chapter title="Quellen" id="quellen">
         <tip>
-            <strong>(BUCH)</strong>
+            <b>(BUCH)</b>
             978-386881720, Speedlearning, Steven Frank, Redline Verlag, 2020
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.studysmarter.de/magazine/mnemotechniken-lernen-uebungen/" ignore-vars="true">
                 https://www.studysmarter.de/magazine/mnemotechniken-lernen-uebungen/
             </a>, 2023-11-22 08:00
