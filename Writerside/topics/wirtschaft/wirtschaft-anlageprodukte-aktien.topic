@@ -43,10 +43,9 @@
                 bewegen, erleben die Börsen verschiedene Stimmungen, denn die Indizes fungieren als Stimmungsbarometer.
             </p>
             <p>
-                Verfestigt und verstetigt sich ein Aufwärtstrend, spricht man von einer <strong>Hausse</strong>,
-                umgekehrt <strong>Baisse</strong>. Werden die Kurse geradezu nach oben katapultiert, sprechen Börsianer
-                von einem <strong>Hype</strong> und bei einem <strong>Crash</strong> purzeln die Kurse tief und heftig
-                in den Keller.
+                Verfestigt und verstetigt sich ein Aufwärtstrend, spricht man von einer <b>Hausse</b>, umgekehrt
+                <b>Baisse</b>. Werden die Kurse geradezu nach oben katapultiert, sprechen Börsianer von einem
+                <b>Hype</b> und bei einem <b>Crash</b> purzeln die Kurse tief und heftig in den Keller.
             </p>
         </chapter>
     </chapter>
@@ -95,7 +94,7 @@
 
     <chapter title="Quellen" id="quellen">
         <tip>
-            <strong>(BUCH)</strong>
+            <b>(BUCH)</b>
             978-3527717408, Börse für Dummies (Ausgabe 6), Christine Bortenläger &amp; Ulrich Kirstein, John Wiley &amp;
             Sons, 2021- 02-17
         </tip>
