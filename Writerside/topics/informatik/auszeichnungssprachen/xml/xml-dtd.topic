@@ -237,6 +237,12 @@
     </chapter>
 
     <chapter title="Elemente" id="elemente">
+        <p>
+            Ein Element wird mithilfe einer <code>&lt;!ELEMENT&gt;</code>-Deklaration angegeben. Der Elementinhalt kann
+            aus einer Liste verschachtelter Elemente bestehen oder auf einfachen Textinhalten hinweisen. Enthält ein
+            Element verschachtelte Tas, dann werden für diese wiederum <code>&lt;!ELEMENT&gt;</code>-Definitionen
+            angegeben.
+        </p>
 
         <chapter title="Vorgegebene Reihenfolge " id="elemente-reihenfolge">
         </chapter>
