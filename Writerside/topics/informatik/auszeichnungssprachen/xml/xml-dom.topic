@@ -363,85 +363,85 @@
 
     <chapter title="Quellen" id="quellen">
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/xml_dom.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/xml_dom.asp
             </a>, 2023-02-22 20:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/dom_intro.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/dom_intro.asp
             </a>, 2023-02-26 06:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/dom_nodes.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/dom_nodes.asp
             </a>, 2023-02-26 06:30
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/dom_nodes_access.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/dom_nodes_access.asp
             </a>, 2023-02-26 06:30
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/dom_nodes_info.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/dom_nodes_info.asp
             </a>, 2023-02-26 07:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/dom_nodes_nodelist.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/dom_nodes_nodelist.asp
             </a>, 2023-02-26 07:30
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/dom_nodes_navigate.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/dom_nodes_navigate.asp
             </a>, 2023-02-26 07:45
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/dom_nodes_get.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/dom_nodes_get.asp
             </a>, 2023-02-26 08:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/dom_nodes_set.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/dom_nodes_set.asp
             </a>, 2023-02-26 08:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/dom_nodes_remove.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/dom_nodes_remove.asp
             </a>, 2023-02-26 08:15
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/dom_nodes_replace.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/dom_nodes_replace.asp
             </a>, 2023-02-26 08:15
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/dom_nodes_create.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/dom_nodes_create.asp
             </a>, 2023-02-26 08:30
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/dom_nodes_add.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/dom_nodes_add.asp
             </a>, 2023-02-26 08:30
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/dom_nodes_clone.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/dom_nodes_clone.asp
             </a>, 2023-02-26 08:45
