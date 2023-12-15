@@ -49,8 +49,32 @@
         </chapter>
     </chapter>
     <chapter title="XLink" id="xlink">
-
         <chapter title="XLink Syntax" id="xlink-syntax">
+            <p>
+                In HTML definiert das <code>&lt;a&gt;</code>-Element einen Hyperlink. In XML funktioniert dies jedoch
+                nicht. In XML-Dokumenten können beliebige Elementnamen verwendet werden - daher ist es für Browser
+                unmöglich vorherzusagen, wie Link-Elemente in XML-Dokumenten heißen werden.
+            </p>
+
+            <code-block lang="xml">
+                <![CDATA[
+                <?xml version="1.0" encoding="UTF-8"?>
+
+                <homepages xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <homepage xlink:type="simple" xlink:href="https://www.w3schools.com">Visit W3Schools</homepage>
+                  <homepage xlink:type="simple" xlink:href="http://www.w3.org">Visit W3C</homepage>
+                </homepages>
+                ]]>
+            </code-block>
+
+            <p>
+                Um Zugriff auf die XLink-Funktionen zu erhalten, müssen der XLink-Namespace deklariert werden. Der
+                XLink-Namespace ist: "http://www.w3.org/1999/xlink". Die Attribute <code>xlink:type</code> und
+                <code>xlink:href</code> in den <code>&lt;homepage&gt;</code>-Elementen stammen aus dem XLink-Namespace.
+                Das Attribut <code>xlink:type="simple"</code> erzeugt einen einfachen "HTML-ähnlichen" Link (d.h. "hier
+                klicken, um dorthin zu gelangen"). Das Attribut <code>xlink:href</code> gibt die URL an, zu der verlinkt
+                werden soll.
+            </p>
         </chapter>
 
         <chapter title="XLink Beispiel" id="xlink-beispiel">
