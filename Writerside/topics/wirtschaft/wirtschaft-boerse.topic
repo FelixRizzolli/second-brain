@@ -344,19 +344,19 @@
 
             <list>
                 <li>
-                    <strong>Börsengesetz</strong> – darin ist festgelegt, welche Organe eine Börse haben muss und wie
-                    Wertpapiere zum Börsenhandel zugelassen werden.
+                    <b>Börsengesetz</b> – darin ist festgelegt, welche Organe eine Börse haben muss und wie Wertpapiere
+                    zum Börsenhandel zugelassen werden.
                 </li>
                 <li>
-                    <strong>Börsenordnung</strong> – diese ist zusätzlich zum Börsengesetz und für jede einzelne Börse
-                    besonders. Hier geht es eher um den eigentlichen Betrieb an den einzelnen Börsenplätzen. Auch die
-                    Bedeutung der Kurszusätze und Kurshinweise findet sich in der Börsenordnung.
+                    <b>Börsenordnung</b> – diese ist zusätzlich zum Börsengesetz und für jede einzelne Börse besonders.
+                    Hier geht es eher um den eigentlichen Betrieb an den einzelnen Börsenplätzen. Auch die Bedeutung der
+                    Kurszusätze und Kurshinweise findet sich in der Börsenordnung.
                 </li>
                 <li>
-                    <strong>Wertpapierhandelsgesetz</strong> – verbietet beispielsweise Insidergeschäfte.
+                    <b>Wertpapierhandelsgesetz</b> – verbietet beispielsweise Insidergeschäfte.
                 </li>
                 <li>
-                    <strong>Bürgerliches Gesetzbuch</strong> – hier finden sich Vorschriften zum Börsenhandel etwa mit
+                    <b>Bürgerliches Gesetzbuch</b> – hier finden sich Vorschriften zum Börsenhandel etwa mit
                     festverzinslichen Wertpapieren als Inhaberschuldverschreibungen.
                 </li>
             </list>
@@ -544,7 +544,7 @@
             </p>
 
             <note>
-                <p><strong>Kurzbeschreibung</strong></p>
+                <p><b>Kurzbeschreibung</b></p>
                 <p>
                     Das Emissionshandelsregister zeigt auf, wie viele Emissionsberechtigungen die Unternehmen aus der
                     Energiewirtschaft und aus Branchen, die besonders viel Kohlendioxid ausstoßen, benötigen. Über das
@@ -687,7 +687,7 @@
 
     <chapter title="Quellen" id="quellen">
         <tip>
-            <strong>(BUCH)</strong>
+            <b>(BUCH)</b>
             978-3527717408, Börse für Dummies (Ausgabe 6), Christine Bortenläger &amp; Ulrich Kirstein, John Wiley &amp;
             Sons, 2021- 02-17
         </tip>
