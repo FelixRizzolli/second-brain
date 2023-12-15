@@ -13,38 +13,37 @@
         </p>
         <list>
             <li>
-                <strong>Prozessmanagement.</strong> Die Ressourcen des Computersystems müssen zwischen den verschiedenen
-                laufenden Programmen und Systemaufgaben verteilt werden. Zu diesem Zweck werden die einzelnen Aufgaben
-                als sogenannte Prozesse ausgeführt, die vom Betriebssystem als übergeordnetem Steuerprozess verwaltet
+                <b>Prozessmanagement.</b> Die Ressourcen des Computersystems müssen zwischen den verschiedenen laufenden
+                Programmen und Systemaufgaben verteilt werden. Zu diesem Zweck werden die einzelnen Aufgaben als
+                sogenannte Prozesse ausgeführt, die vom Betriebssystem als übergeordnetem Steuerprozess verwaltet
                 werden.
             </li>
             <li>
-                <strong>Speichermanagement.</strong> Das Speichermanagement sorgt dafür, dass immer die gerade
-                benötigten Speicherinhalte zur Verfügung stehen, ohne dass die Programmierer der Anwendungssoftware sich
-                sonderlich darum kümmern müssten.
+                <b>Speichermanagement.</b> Das Speichermanagement sorgt dafür, dass immer die gerade benötigten
+                Speicherinhalte zur Verfügung stehen, ohne dass die Programmierer der Anwendungssoftware sich sonderlich
+                darum kümmern müssten.
             </li>
             <li>
-                <strong>Steuerung und Abstraktion der Hardware.</strong> Computersysteme sind hochgradig modular
-                aufgebaut; jede Aufgabe kann durch viele verschiedene Geräte unterschiedlicher Hersteller erledigt
-                werden. Betriebssysteme lösen dieses Problem durch den Einsatz der sogenannten Gerätetreiber, die die
+                <b>Steuerung und Abstraktion der Hardware.</b> Computersysteme sind hochgradig modular aufgebaut; jede
+                Aufgabe kann durch viele verschiedene Geräte unterschiedlicher Hersteller erledigt werden.
+                Betriebssysteme lösen dieses Problem durch den Einsatz der sogenannten Gerätetreiber, die die
                 Steuerlogik für bestimmte Hardware enthalten. Vor dem Programmierer werden die konkreten Einzelheiten
                 bestimmter Geräte verborgen, weil es vollkommen unzumutbar wäre, beim Schreiben eines
                 Anwendungsprogramms auf die Besonderheiten Hunderter möglicher Geräte einzugehen.
             </li>
             <li>
-                <strong>Ein- und Ausgabesteuerung.</strong> Betriebssysteme steuern die Zusammenarbeit mit vielen
-                verschiedenen Ein- und Ausgabekanälen wie Tastatur und Bildschirm, Datenträgern oder Netzwerken.
+                <b>Ein- und Ausgabesteuerung.</b> Betriebssysteme steuern die Zusammenarbeit mit vielen verschiedenen
+                Ein- und Ausgabekanälen wie Tastatur und Bildschirm, Datenträgern oder Netzwerken.
             </li>
             <li>
-                <strong>Dateiverwaltung.</strong> Die Logik der Dateiverwaltung wird in Form sogenannter Dateisysteme
-                vom Betriebssystem zur Verfügung gestellt, damit alle Programme auf dieselbe Art und Weise darauf
-                zugreifen.
+                <b>Dateiverwaltung.</b> Die Logik der Dateiverwaltung wird in Form sogenannter Dateisysteme vom
+                Betriebssystem zur Verfügung gestellt, damit alle Programme auf dieselbe Art und Weise darauf zugreifen.
             </li>
             <li>
                 <p>
-                    <strong>Bereitstellen der Benutzeroberfläche.</strong> Das Betriebssystem selbst und alle Programme
-                    müssen mit dem Benutzer kommunizieren, um nach dessen Wünschen Aufgaben zu erledigen. Es existieren
-                    zwei Arten von Benutzeroberflächen:
+                    <b>Bereitstellen der Benutzeroberfläche.</b> Das Betriebssystem selbst und alle Programme müssen mit
+                    dem Benutzer kommunizieren, um nach dessen Wünschen Aufgaben zu erledigen. Es existieren zwei Arten
+                    von Benutzeroberflächen:
                 </p>
                 <list>
                     <li>
@@ -1063,7 +1062,7 @@
             </p>
 
             <note>
-                <p><strong>»Verzeichnis« oder »Ordner«?</strong></p>
+                <p><b>»Verzeichnis« oder »Ordner«?</b></p>
                 <p>
                     Die symbolische Darstellung (das Icon) eines Verzeichnisses auf dem Desktop des GUIs eine Aktenmappe
                     (englisch: folder) zeigt, was in den deutschen Versionen als Ordner lokalisiert wurde. In
@@ -1412,7 +1411,7 @@
 
     <chapter title="Quellen" id="quellen">
         <tip>
-            <strong>(BUCH)</strong>
+            <b>(BUCH)</b>
             978-3836254663, IT-Handbuch für Fachinformatiker, Sascha Kersken, Rheinwerk Verlag GmbH, 2017
         </tip>
     </chapter>
