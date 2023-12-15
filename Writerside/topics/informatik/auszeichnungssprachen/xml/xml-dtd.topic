@@ -334,6 +334,24 @@
     </chapter>
 
     <chapter title="Attribute" id="attribute">
+        <p>
+            Zulässige Attribute für ein Element werden in eine <code>&lt;!ATTLIST&gt;</code>-Angabe geschrieben. Es ist
+            aber mit keiner Definitionsmethode möglich eine bestimmte Reihenfolge der Attribute eines Elements
+            festzulegen.
+        </p>
+
+        <code-block lang="xml">
+            <![CDATA[
+            <!-- DTD SYNTAX -->
+            <!ATTLIST element-name attribute-name attribute-type attribute-value>
+
+            <!-- DTD EXAMPLE -->
+            <!ATTLIST payment type CDATA "check">
+
+            <!-- XML EXAMPLE -->
+            <payment type="check" />
+            ]]>
+        </code-block>
 
         <chapter title="Atribut-Type" id="attribute-typ">
         </chapter>
