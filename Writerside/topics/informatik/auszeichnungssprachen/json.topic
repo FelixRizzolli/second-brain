@@ -33,8 +33,8 @@
             </p>
 
             <list>
-                <li>der <strong>Schlüssel</strong> ist eine <emphasis>Zeichenkette</emphasis>.</li>
-                <li>der <strong>Wert</strong> ist ein beliebiges <emphasis>Element</emphasis>.</li>
+                <li>der <b>Schlüssel</b> ist eine <emphasis>Zeichenkette</emphasis>.</li>
+                <li>der <b>Wert</b> ist ein beliebiges <emphasis>Element</emphasis>.</li>
             </list>
 
             <table style="both">
@@ -52,8 +52,8 @@
                 <td>Boolescher Wert</td>
                 <td>
                     Ein boolescher Wert wird durch die Schlüsselwörter <code>true</code> und <code>false</code>
-                    dargestellt. Dies sind <strong>keine</strong> Zeichenketten. Sie werden daher, wie
-                    <code>null</code>, <strong>nicht</strong> in Anführungszeichen gesetzt.
+                    dargestellt. Dies sind <b>keine</b> Zeichenketten. Sie werden daher, wie <code>null</code>,
+                    <b>nicht</b> in Anführungszeichen gesetzt.
                 </td>
             </tr>
             <tr>
@@ -182,11 +182,11 @@
 
     <chapter title="Quellen" id="quellen">
         <tip>
-            <strong>(BUCH)</strong>
+            <b>(BUCH)</b>
             978-3-8362-5697-1, JavaScript, Philip Ackermann, Rheinwerk Verlag GmbH, 2019
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://de.wikipedia.org/wiki/JavaScript_Object_Notation" ignore-vars="true">
                 https://de.wikipedia.org/wiki/JavaScript_Object_Notation
             </a>, Datum 2022-08-20 Uhrzeit 07:45
