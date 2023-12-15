@@ -289,6 +289,47 @@
         </chapter>
 
         <chapter title="Häufigkeitsmodifikatoren" id="elemente-haeufigkeitsmodifikatoren">
+            <p>
+
+            </p>
+
+            <table>
+                <tr>
+                    <td>Modifikator</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>?</code></td>
+                    <td>Der Inhalt darf einmal oder keinmal vorkommen.</td>
+                </tr>
+                <tr>
+                    <td><code>+</code></td>
+                    <td>Der Inhalt muss mindestens einmal vorkommen.</td>
+                </tr>
+                <tr>
+                    <td><code>-</code></td>
+                    <td>Der Inhalt darf beliebig oft vorkommen.</td>
+                </tr>
+            </table>
+
+            <p>
+                Beispielsweise können Personen nicht nur einen Vornamen haben, sondern auch mehrere:
+            </p>
+
+
+            <code-block lang="xml">
+                <![CDATA[
+                <!-- DTD -->
+                <!ELEMENT author (lastname, firstname+)>
+
+                <!-- XML -->
+                <author>
+                    <lastname>Bendis</lastname>
+                    <firstname>Brian</firstname>
+                    <firstname>Michael</firstname>
+                </author>
+                ]]>
+            </code-block>
         </chapter>
     </chapter>
 
