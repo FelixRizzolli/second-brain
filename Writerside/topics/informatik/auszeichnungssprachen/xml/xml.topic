@@ -393,7 +393,7 @@
 
             <chapter title="Benennung der XML-Elemente" id="xml-aufbau-elemente-benennung">
                 <p>
-                    Folgende <strong>Regeln</strong> gelten für die Namensgebung von XML-Elementen:
+                    Folgende <b>Regeln</b> gelten für die Namensgebung von XML-Elementen:
                 </p>
 
                 <list>
@@ -412,7 +412,7 @@
                 </list>
 
                 <p>
-                    Es gelten folgende <strong>Best Practices</strong> bei der Benennung von XML-Elementen:
+                    Es gelten folgende <b>Best Practices</b> bei der Benennung von XML-Elementen:
                 </p>
 
                 <list>
@@ -726,83 +726,83 @@
 
     <chapter title="Quellen" id="quellen">
         <tip>
-            <strong>(BUCH)</strong>
+            <b>(BUCH)</b>
             978-3836254663, IT Handbuch für Fachinformatiker, Sascha Kersken, Rheinwerk Verlag GmbH, 2017
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://de.wikipedia.org/wiki/Extensible_Markup_Language" ignore-vars="true">
                 https://de.wikipedia.org/wiki/Extensible_Markup_Language
             </a>, 2023-02-20 13:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://de.wikipedia.org/wiki/XML_Schema" ignore-vars="true">
                 https://de.wikipedia.org/wiki/XML_Schema
             </a>, 2023-02-20 13:30
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://de.wikipedia.org/wiki/RELAX_NG" ignore-vars="true">
                 https://de.wikipedia.org/wiki/RELAX_NG
             </a>, 2023-02-20 13:30
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/xml_syntax.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/xml_syntax.asp
             </a>, 2023-02-22 16:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://de.wikipedia.org/wiki/XML-Deklaration" ignore-vars="true">
                 https://de.wikipedia.org/wiki/XML-Deklaration
             </a>, 2023-02-22 16:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://de.wikipedia.org/wiki/Verarbeitungsanweisung" ignore-vars="true">
                 https://de.wikipedia.org/wiki/Verarbeitungsanweisung
             </a>, 2023-02-22 16:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/xml_elements.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/xml_elements.asp
             </a>, 2023-02-22 16:45
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/xml_attributes.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/xml_attributes.asp
             </a>, 2023-02-22 19:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/xml_namespaces.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/xml_namespaces.asp
             </a>, 2023-02-22 19:30
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/xml_http.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/xml_http.asp
             </a>, 2023-02-22 20:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/xml_parser.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/xml_parser.asp
             </a>, 2023-02-22 20:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/xpath_nodes.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/xpath_nodes.asp
             </a>, 2023-02-23 13:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/xquery_terms.asp" ignore-vars="true">
                 https://www.w3schools.com/xml/xquery_terms.asp
             </a>, 2023-02-25 07:00
