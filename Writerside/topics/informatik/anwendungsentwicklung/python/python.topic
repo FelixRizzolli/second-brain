@@ -34,7 +34,7 @@
         <p>
             Seit 2001 existiert die gemeinnützige Python Software Foundation, die die Rechte am Python-Code besitzt und
             Lobbyarbeit für Python betreibt. So organisiert die Python Software Foundation beispielsweise die
-            PyCon-Konferenz, die jährlich in den USA stattfindet. Auch in Europa finden  regelmäßig größere und kleinere
+            PyCon-Konferenz, die jährlich in den USA stattfindet. Auch in Europa finden regelmäßig größere und kleinere
             Python-Konferenzen statt.
         </p>
     </chapter>
@@ -46,30 +46,30 @@
                 <td>Beschreibung</td>
             </tr>
             <tr>
-                <td><strong>Programmierparadigmen</strong></td>
+                <td><b>Programmierparadigmen</b></td>
                 <td>
-                    Python ist <strong>grundsätzlich imperativ</strong>, bietet aber auch die möglichkeit
-                    <strong>objektorientiert</strong> und <strong>funktional</strong> zu programmieren.
+                    Python ist <b>grundsätzlich imperativ</b>, bietet aber auch die möglichkeit <b>objektorientiert</b>
+                    und <b>funktional</b> zu programmieren.
                 </td>
             </tr>
             <tr>
-                <td><strong>Compiler</strong></td>
+                <td><b>Compiler</b></td>
                 <td>
-                    Bei Python handelt es sich um eine <strong>interpretierte Programmiersprache</strong>. Ähnlich wie
-                    Java oder C# verfügt Python über einen Compiler, der aus dem Quelltext ein Kompilat erzeugt, den
-                    sogenannten Byte-Code. Dieser Byte-Code wird dann in einer virtuellen Maschine, dem
-                    Python-Interpreter, ausgeführt.
+                    Bei Python handelt es sich um eine <b>interpretierte Programmiersprache</b>. Ähnlich wie Java oder
+                    C# verfügt Python über einen Compiler, der aus dem Quelltext ein Kompilat erzeugt, den sogenannten
+                    Byte-Code. Dieser Byte-Code wird dann in einer virtuellen Maschine, dem Python-Interpreter,
+                    ausgeführt.
                 </td>
             </tr>
             <tr>
-                <td><strong>Plattform</strong></td>
+                <td><b>Plattform</b></td>
                 <td>
                     Ein Python-Programm ist in der Regel auf allen Betriebssystemen unmodifiziert lauffähig, die vom
-                    Python-Interpreter unterstützt werden. Python ist also <strong>Plattformunabhängig</strong>.
+                    Python-Interpreter unterstützt werden. Python ist also <b>Plattformunabhängig</b>.
                 </td>
             </tr>
             <tr>
-                <td><strong>Standardbibliothek</strong></td>
+                <td><b>Standardbibliothek</b></td>
                 <td>
                     Ein grundlegendes Konzept von Python ist es daher, es dem Programmierer so einfach wie möglich zu
                     machen, die Standardbibliothek beliebig zu erweitern. Da Python als interpretierte
@@ -79,9 +79,9 @@
                 </td>
             </tr>
             <tr>
-                <td><strong>Open-Source</strong></td>
+                <td><b>Open-Source</b></td>
                 <td>
-                    Python steht unter der <strong><tooltip term="LIZENZ-PSF">PSF</tooltip>-Lizenz</strong>, die
+                    Python steht unter der <b><tooltip term="LIZENZ-PSF">PSF</tooltip>-Lizenz</b>, die
                     wesentlich weniger restriktiv ist als beispielsweise <tooltip term="LIZENZ-GNU">GNU</tooltip>. So
                     erlaubt es die <tooltip term="LIZENZ-PSF">PSF</tooltip>-Lizenz, den Python-Interpreter
                     lizenzkostenfrei in Anwendungen einzubetten und mit diesen auszuliefern, ohne dass der Code
@@ -90,7 +90,7 @@
                 </td>
             </tr>
             <tr>
-                <td><strong>Flexibilität</strong></td>
+                <td><b>Flexibilität</b></td>
                 <td>
                     Python kann als Programmiersprache für kleine und große Applikationen, als serverseitige
                     Programmiersprache im Internet oder als Skriptsprache für eine größere C- oder C++-Anwendung
@@ -98,16 +98,16 @@
                 </td>
             </tr>
             <tr>
-                <td><strong>Rapid Prototyping</strong></td>
+                <td><b>Rapid Prototyping</b></td>
                 <td>
-                    Python eignet sich gut, in möglichst kurzer Zeit einen lauffähigen <strong>Prototyp als eine Art
-                    Machbarkeitsstudie</strong> einer größeren Software zu erstellen, die dann später in einer anderen
+                    Python eignet sich gut, in möglichst kurzer Zeit einen lauffähigen <b>Prototyp als eine Art
+                    Machbarkeitsstudie</b> einer größeren Software zu erstellen, die dann später in einer anderen
                     Programmiersprache implementiert werden soll. Mithilfe eines solchen Prototyps lassen sich Probleme
                     und Designfehler bereits entdecken, bevor die tatsächliche Entwicklung der Software begonnen wird.
                 </td>
             </tr>
             <tr>
-                <td><strong>Erweiterbarkeit</strong></td>
+                <td><b>Erweiterbarkeit</b></td>
                 <td>
                     Da eine der Stärken von Python die Erweiterbarkeit ist, können Python-Entwickler aus einem reichen
                     Fundus von Drittanbieterbibliotheken schöpfen. So gibt es etwa Anbindungen an dei gängigsten
@@ -115,7 +115,7 @@
                 </td>
             </tr>
             <tr>
-                <td><strong>Data Science und AI</strong></td>
+                <td><b>Data Science und AI</b></td>
                 <td>
                     In den letzten Jahren hat sich Python zur zentralen Programmiersprache in den aufstrebenden
                     Datenwissenschaften und KI-Anwendgungen entwickelt. Python bietet mit den Bibliotheken NumPy,
