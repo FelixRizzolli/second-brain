@@ -50,11 +50,11 @@
 
                 <list>
                     <li>
-                        <strong>Workbench Farben</strong>, die in Ansichten und Editoren verwendet werden, von der
+                        <b>Workbench Farben</b>, die in Ansichten und Editoren verwendet werden, von der
                         Aktivitätsleiste bis zur Statusleiste.
                     </li>
                     <li>
-                        <strong>Syntaxfarben und Stile</strong>, die für den Quellcode im Editor verwendet werden. Die
+                        <b>Syntaxfarben und Stile</b>, die für den Quellcode im Editor verwendet werden. Die
                         Thematisierung dieser Farben ist unterschiedlich, da die Syntaxeinfärbung auf
                         TextMate-Grammatiken und TextMate-Themen sowie auf semantischen Token basiert.
                     </li>
@@ -546,13 +546,13 @@
                 <li>
                     <p>
                         Mit der Tastenkombination <code>CTRL</code>+<code>P</code> lässt sich die Datei
-                        <strong>Navigation</strong> öffnen.
+                        <b>Navigation</b> öffnen.
                     </p>
 
                     <list>
                         <li>
                             <p>
-                                Wird hier ein <code>@</code> eingegeben so kann nach <strong>Symbolen</strong> gesucht
+                                Wird hier ein <code>@</code> eingegeben so kann nach <b>Symbolen</b> gesucht
                                 werden. Das direkte Shortcut dafür wäre
                                 <code>CTRL</code>+<code>SHIFT</code>+<code>O</code>.
                             </p>
@@ -561,16 +561,16 @@
                         </li>
                         <li>
                             <p>
-                                Wird hier ein &gt; eingegeben so kann nach <strong>Befehlen</strong> gesucht werden. Das
-                                direkte Shortcut dafür wäre <code>CTRL</code>+<code>SHIFT</code>+<code>P</code>. Hiermit
-                                lassen sich nahezu alle in VSCode verfügbaren Panels und Menüs öffnen.
+                                Wird hier ein &gt; eingegeben so kann nach <b>Befehlen</b> gesucht werden. Das direkte
+                                Shortcut dafür wäre <code>CTRL</code>+<code>SHIFT</code>+<code>P</code>. Hiermit lassen
+                                sich nahezu alle in VSCode verfügbaren Panels und Menüs öffnen.
                             </p>
 
                             <img src="poweruser_navigation_commands.png" alt="VSCode Keyboard Navigation - Commands" />
                         </li>
                         <li>
                             Mit der Tastenkombination <code>CTRL</code>+<code>SHIFT</code>+<code>M</code> kann das
-                            <strong>"Problems Panel"</strong> angezeigt werden.
+                            <b>"Problems Panel"</b> angezeigt werden.
                         </li>
                     </list>
                 </li>
@@ -879,22 +879,22 @@
 
                 <list>
                     <li>
-                        Es kann die <strong>Farbe</strong> eines Terminals geändert werden, um es schneller erkennen zu
-                        können bzw. besser von den anderen unterscheiden zu können.
+                        Es kann die <b>Farbe</b> eines Terminals geändert werden, um es schneller erkennen zu können
+                        bzw. besser von den anderen unterscheiden zu können.
                     </li>
                     <li>
-                        Es kann das <strong>Icon</strong> eines Terminals geändert werden, um es schneller erkennen zu 
-                        können bzw. besser von den anderen unterscheiden zu können.
+                        Es kann das <b>Icon</b> eines Terminals geändert werden, um es schneller erkennen zu können bzw.
+                        besser von den anderen unterscheiden zu können.
                     </li>
                     <li>
                         <p>
-                            <strong>Split Terminal</strong> – zwei Terminals können nebeneinander gestellt werden
+                            <b>Split Terminal</b> – zwei Terminals können nebeneinander gestellt werden
                         </p>
                         
                         <img src="poweruser_vscode_tasks_terminal_split.png" alt="VSCode - Terminal: Split"/>
                     </li>
                     <li>
-                        Dem Terminal kann ein <strong>Name</strong> gegeben werden.
+                        Dem Terminal kann ein <b>Name</b> gegeben werden.
                     </li>
                 </list>
             </chapter>
@@ -926,79 +926,79 @@
 
     <chapter title="Quellen" id="quellen">
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://fireship.io/courses/vscode-tricks/" ignore-vars="true">
                 https://fireship.io/courses/vscode-tricks/
             </a>, 2023-05-21 08:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf" ignore-vars="true">
                 https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
             </a>, 2023-05-21 10:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://code.visualstudio.com/api/extension-guides/color-theme" ignore-vars="true">
                 https://code.visualstudio.com/api/extension-guides/color-theme
             </a>, 2023-05-22 07:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://code.visualstudio.com/api/extension-guides/file-icon-theme" ignore-vars="true">
                 https://code.visualstudio.com/api/extension-guides/file-icon-theme
             </a>, 2023-05-22 07:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://code.visualstudio.com/api/extension-guides/product-icon-theme" ignore-vars="true">
                 https://code.visualstudio.com/api/extension-guides/product-icon-theme
             </a>, 2023-05-22 07:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://github.com/tonsky/FiraCode" ignore-vars="true">
                 https://github.com/tonsky/FiraCode
             </a>, 2023-05-22 07:30
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://code.visualstudio.com/blogs/2021/09/29/bracket-pair-colorization" ignore-vars="true">
                 https://code.visualstudio.com/blogs/2021/09/29/bracket-pair-colorization
             </a>, 2023-05-22 08:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://de.wikipedia.org/wiki/IntelliSense" ignore-vars="true">
                 https://de.wikipedia.org/wiki/IntelliSense
             </a>, 2023-05-23 08:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://code.visualstudio.com/docs/editor/intellisense" ignore-vars="true">
                 https://code.visualstudio.com/docs/editor/intellisense
             </a>, 2023-05-23 08:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://code.visualstudio.com/Docs/languages/html" ignore-vars="true">
                 https://code.visualstudio.com/Docs/languages/html
             </a>, 2023-05-24 08:15
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://code.visualstudio.com/docs/editor/emmet" ignore-vars="true">
                 https://code.visualstudio.com/docs/editor/emmet
             </a>, 2023-05-25 08:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://de.wikipedia.org/wiki/Emmet_(Software)" ignore-vars="true">
                 https://de.wikipedia.org/wiki/Emmet_(Software)
             </a>, 2023-05-25 08:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://code.visualstudio.com/docs/editor/userdefinedsnippets" ignore-vars="true">
                 https://code.visualstudio.com/docs/editor/userdefinedsnippets
             </a>, 2023-05-25 08:30
