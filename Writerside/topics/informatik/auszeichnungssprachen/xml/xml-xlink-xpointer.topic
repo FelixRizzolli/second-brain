@@ -133,6 +133,77 @@
         </chapter>
 
         <chapter title="XLink Attribute" id="xlink-attribute">
+            <table>
+                <tr>
+                    <td>Attribute</td>
+                    <td>Werte</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>xlink:actuate</code></td>
+                    <td>
+                        <list>
+                            <li><code>onLoad</code></li>
+                            <li><code>onRequest</code></li>
+                            <li><code>other</code></li>
+                            <li><code>none</code></li>
+                        </list>
+                    </td>
+                    <td>
+                        <p>Legt fest, wann die verknüpfte Ressource gelesen und angezeigt wird:</p>
+
+                        <list>
+                            <li>
+                                <code>onLoad</code> - die Ressource soll geladen und angezeigt werden, wenn das Dokument
+                                geladen wird
+                            </li>
+                            <li>
+                                <code>onRequest</code> - die Ressource wird nicht gelesen oder angezeigt, bevor der Link
+                                angeklickt wird
+                            </li>
+                        </list>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>xlink:href</code></td>
+                    <td><emphasis>URL</emphasis></td>
+                    <td>
+                        Definiert den die URL auf die der Link referenziert.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>xlink:show</code></td>
+                    <td>
+                        <list>
+                            <li><code>embed</code></li>
+                            <li><code>new</code></li>
+                            <li><code>replace</code></li>
+                            <li><code>other</code></li>
+                            <li><code>none</code></li>
+                        </list>
+                    </td>
+                    <td>
+                        Definiert wo der Link geöffnet wird. Standardwert ist <code>replace</code>.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>xlink:type</code></td>
+                    <td>
+                        <list>
+                            <li><code>simple</code></li>
+                            <li><code>extended</code></li>
+                            <li><code>locator</code></li>
+                            <li><code>arc</code></li>
+                            <li><code>resource</code></li>
+                            <li><code>title</code></li>
+                            <li><code>none</code></li>
+                        </list>
+                    </td>
+                    <td>
+                        Definiert den Linktyp.
+                    </td>
+                </tr>
+            </table>
         </chapter>
     </chapter>
 
