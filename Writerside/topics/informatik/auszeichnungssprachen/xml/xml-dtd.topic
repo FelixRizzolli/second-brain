@@ -514,6 +514,13 @@
         </chapter>
 
         <chapter title="Bemerkung" id="attribute-bemerkung">
+            <p>
+                Trotz der vielen verschiedenen Attributtypen gibt es keine vernünftige Möglichkeit, die Intensität auf
+                eine ganze Zahl zwischen 0 und 255 einzuschränken – es sei denn, man hat Lust, anstelle von CDATA die
+                vollständige Liste (0 | 1 | 2 | ... | 254 | 255) einzugeben. Absolut unmöglich ist im Übrigen die
+                Beschränkung auf einen bestimmten Datentyp wie ganze Zahl, Datum/Uhrzeit oder Ähnliches. Für solche
+                Feinheiten ist das im weiteren Verlauf des Kapitels vorgestellte XML Schema geeigneter.
+            </p>
         </chapter>
     </chapter>
 
