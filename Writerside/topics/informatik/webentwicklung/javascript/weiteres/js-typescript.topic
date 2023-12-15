@@ -99,13 +99,13 @@
     <chapter title="Die Typzuweisung" id="typzuweisung">
         <p>
             In TypeScript kann bei der Variablendeklaration ein optionaler Typ angegeben werden
-            <strong>(= explizite Typzuweisung)</strong>. Wird die Variable mit einem Wert initialisiert, kann die
-            Typzuweisung weggelassen werden, da TypeScript automatisch den Typ des zugewiesenen Wertes übernimmt
-            <strong>(= implizite Typzuweisung)</strong>. Für die Deklaration stehen die Schlüsselworte <code>var</code>,
-            <code>let</code> und <code>const</code> zur Verfügung, wobei möglichst nur <code>let</code> und
-            <code>const</code> verwendet werden sollen. Es sollte auch so oft wie möglich const verwendet werden, um
-            eine versehentliche Neuzuweisung zu vermeiden. Erst wenn ein Wert neu zugewiesen werden muss oder man dies
-            bereits von vornherein weiß, sollte das <code>let</code>-Schlüsselwort verwendet werden.
+            <b>(= explizite Typzuweisung)</b>. Wird die Variable mit einem Wert initialisiert, kann die Typzuweisung
+            weggelassen werden, da TypeScript automatisch den Typ des zugewiesenen Wertes übernimmt <b>(= implizite
+            Typzuweisung)</b>. Für die Deklaration stehen die Schlüsselworte <code>var</code>,<code>let</code> und
+            <code>const</code> zur Verfügung, wobei möglichst nur <code>let</code> und <code>const</code> verwendet
+            werden sollen. Es sollte auch so oft wie möglich const verwendet werden, um eine versehentliche Neuzuweisung
+            zu vermeiden. Erst wenn ein Wert neu zugewiesen werden muss oder man dies bereits von vornherein weiß,
+            sollte das <code>let</code>-Schlüsselwort verwendet werden.
         </p>
         <p>
             <code>const</code> und <code>let</code> erzeugen Konstanten bzw. Variablen im Block-Scope, sodass man sehr
@@ -1193,113 +1193,113 @@
 
     <chapter title="Quellen" id="quellen">
         <tip>
-            <strong>(BUCH)</strong>
+            <b>(BUCH)</b>
             978-3836292543, React – Das umfassende Handbuch, Sebastian Springer, Rheinwerk Verlag GmbH, 2023
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/typescript/typescript_intro.php" ignore-vars="true">
                 https://www.w3schools.com/typescript/typescript_intro.php
             </a>, 2023-11-10 06:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/typescript/typescript_getstarted.php" ignore-vars="true">
                 https://www.w3schools.com/typescript/typescript_getstarted.php
             </a>, 2023-11-10 06:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/typescript/typescript_simple_types.php" ignore-vars="true">
                 https://www.w3schools.com/typescript/typescript_simple_types.php
             </a>, 2023-11-10 06:30
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.typescriptlang.org/docs/handbook/2/everyday-types.html" ignore-vars="true">
                 https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
             </a>, 2023-11-10 06:30
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.typescriptlang.org/docs/handbook/2/functions.html" ignore-vars="true">
                 https://www.typescriptlang.org/docs/handbook/2/functions.html
             </a>, 2023-11-10 07:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/typescript/typescript_tuples.php" ignore-vars="true">
                 https://www.w3schools.com/typescript/typescript_tuples.php
             </a>, 2023-11-11 17:30
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/typescript/typescript_arrays.php" ignore-vars="true">
                 https://www.w3schools.com/typescript/typescript_arrays.php
             </a>, 2023-11-11 18:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/typescript/typescript_object_types.php" ignore-vars="true">
                 https://www.w3schools.com/typescript/typescript_object_types.php
             </a>, 2023-11-12 06:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/typescript/typescript_enums.php" ignore-vars="true">
                 https://www.w3schools.com/typescript/typescript_enums.php
             </a>, 2023-11-12 06:30
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/typescript/typescript_aliases_and_interfaces.php" ignore-vars="true">
                 https://www.w3schools.com/typescript/typescript_aliases_and_interfaces.php
             </a>, 2023-11-12 07:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/typescript/typescript_union_types.php" ignore-vars="true">
                 https://www.w3schools.com/typescript/typescript_union_types.php
             </a>, 2023-11-12 07:15
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/typescript/typescript_functions.php" ignore-vars="true">
                 https://www.w3schools.com/typescript/typescript_functions.php
             </a>, 2023-11-12 07:30
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/typescript/typescript_casting.php" ignore-vars="true">
                 https://www.w3schools.com/typescript/typescript_casting.php
             </a>, 2023-11-12 08:00
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/typescript/typescript_classes.php" ignore-vars="true">
                 https://www.w3schools.com/typescript/typescript_classes.php
             </a>, 2023-11-12 08:15
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/typescript/typescript_basic_generics.php" ignore-vars="true">
                 https://www.w3schools.com/typescript/typescript_basic_generics.php
             </a>, 2023-11-12 09:30
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/typescript/typescript_utility_types.php" ignore-vars="true">
                 https://www.w3schools.com/typescript/typescript_utility_types.php
             </a>, 2023-11-12 10:15
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/typescript/typescript_keyof.php" ignore-vars="true">
                 https://www.w3schools.com/typescript/typescript_keyof.php
             </a>, 2023-11-12 10:30
         </tip>
         <tip>
-            <strong>(WEBSEITE)</strong>
+            <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/typescript/typescript_null.php" ignore-vars="true">
                 https://www.w3schools.com/typescript/typescript_null.php
             </a>, 2023-11-12 10:30
