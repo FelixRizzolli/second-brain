@@ -354,6 +354,126 @@
         </code-block>
 
         <chapter title="Atribut-Type" id="attribute-typ">
+            <table>
+                <tr>
+                    <td>Typ</td>
+                    <td>Beschreibung</td>
+                    <td>Beispiel</td>
+                </tr>
+                <tr>
+                    <td><code>CDATA</code></td>
+                    <td>
+                        beliebiger Text
+                    </td>
+                    <td>
+                        "Hallo" oder "25"
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>(en1|en2|...)</code></td>
+                    <td>
+                        Liste möglicher Alternativen wie (rot | gruen | blau)
+                    </td>
+                    <td>
+                        "kreuz" aus ("kreuz" | "pik" | "herz" | "karo")
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>ID</code></td>
+                    <td>
+                        Bezug auf ein Attribut vom Typ ID eines anderen Elements. Dient der Definition von Bezügen wie
+                        in relationalen Datenbanken.
+                    </td>
+                    <td>
+                        "isbn3898421376", "B12345" (Leider ist eine reine Zahl verboten, weil sie kein gültiger XML-Name
+                        ist.)
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>IDREF</code></td>
+                    <td>
+                        Bezug auf ein Attribut vom Typ ID eines anderen Elements. Dient der Definition von Bezügen wie
+                        in relationalen Datenbanken.
+                    </td>
+                    <td>
+                        (siehe ID)
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>IDREFS</code></td>
+                    <td>
+                        eine durch Leerzeichen getrennte Liste mehrerer IDs, auf die Bezug genommen wird
+                    </td>
+                    <td>
+                        "isbn3898421376 isbn3898423557"
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>NMTOKEN</code></td>
+                    <td>
+                        Darf nur die Zeichen enthalten, die in XML-Tag-Namen erlaubt sind. Ermöglicht eine stärkere
+                        Inhaltskontrolle als CDATA.
+                    </td>
+                    <td>
+                        "13.05.2011", "hallo", "funny-names"
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>NMTOKENS</code></td>
+                    <td>
+                        Liste mehrerer NMTOKEN-Werte. XML-Parser behandeln Leerzeichen als Trennzeichen für mehrere
+                        Einzelwerte.
+                    </td>
+                    <td>
+                        "kueche diele bad" (Parser bildet die Einzelwerte kueche, diele und bad)
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>ENTITY</code></td>
+                    <td>
+                        Verweist auf ein innerhalb der DTD definiertes Entity (Standard-Entitys wie <code>lt</code> oder
+                        <code>quot</code> sind nicht zulässig).
+                    </td>
+                    <td>
+                        (Entitys werden im Abschnitt »Entitys« noch genauer erläutert.)
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>ENTITIES</code></td>
+                    <td>
+                        eine durch Leerzeichen getrennte Liste mehrerer ENTITY-Werte
+                    </td>
+                    <td>
+                        (Entitys werden im Abschnitt »Entitys« noch genauer erläutert.)
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>NOTATION</code></td>
+                    <td>
+                        der Wert eines speziellen DTD-Konstrukts vom Typ <code>&lt;!NOTATION&gt;</code>, das die
+                        Abkürzung von SYSTEM- oder PUBLIC-IDs ermöglicht
+                    </td>
+                    <td>
+                        <p>"gif", bezogen auf:</p>
+
+                        <code-block lang="xml">
+                            <![CDATA[
+                            <!NOTATION gif SYSTEM "image/gif">
+                            <!NOTATION jpg SYSTEM "image/jpeg">
+                            <!NOTATION png SYSTEM "image/png">
+                            <!ATTLIST bild typ NOTATION(gif | jpg | png)>
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>xml:</code></td>
+                    <td>
+                        Der Wert ist ein vordefinierter XML-Wert
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Attribut-Value" id="attribute-wert">
