@@ -245,6 +245,16 @@
         </p>
 
         <chapter title="Vorgegebene Reihenfolge " id="elemente-reihenfolge">
+            <p>
+                Werden die Kind-Elemente in der DTD Kommasepariert angegeben, dann müssen sie in der vorgegebenen
+                Reihenfolge vorkommen.
+            </p>
+
+            <code-block lang="xml">
+                <![CDATA[
+                <!ELEMENT comic (publisher, format, issue, title, authors, price)>
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter title="Alternativen" id="elemente-alternativen">
