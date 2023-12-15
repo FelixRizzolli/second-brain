@@ -7,6 +7,81 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlegendes zu DTD" id="grundlagen">
+        <p>
+            Document Type Definition ist die traditionelle Methode, um ein Standard für ein XML-Dokument zu definieren.
+            Ein solcher Standard enthält Regeln, die bestimmen, welche Elemente und Attribute erforderlich oder zulässig
+            sind und in welcher Reihenfolge sie stehen müssen oder dürfen. DTD wurde bereits für SGML entworfen und mit
+            einigen notwendigen Änderungen und Ergänzungen für XML übernommen. Die Dateiendung für DTDs lautet
+            <path>.dtd</path>. Um ein XML-Dokument an den Regeln einer DTD zu binden, muss vor dem Wurzelelement eine
+            <code>&lt;!DOCTYPE&gt;</code>-Deklaration hingeschrieben werden, wo die URL bzw. die ID der DTD angegeben
+            wird. Es kann sich dabei um eine SYSTEM-ID handeln, die stets eine URL benötigt oder um eine PUBLIC-ID, die
+            sich auf eine öffentlich standardisierte DTD bezieht.
+        </p>
+
+        <table style="header-row">
+            <tr>
+                <td>Typ</td>
+                <td>Beispiel</td>
+                <td>Beschreibung</td>
+            </tr>
+            <tr>
+                <td>SYSTEM-ID</td>
+                <td>
+                    <code-block lang="xml">
+                        <![CDATA[
+                        <!DOCTYPE comics SYSTEM "comics.dtd">
+                        ]]>
+                    </code-block>
+                </td>
+                <td>
+                    In diesem Beispiel ist die DTD im selben Verzeichnis wie das XML-Dokument.
+                </td>
+            </tr>
+            <tr>
+                <td>SYSTEM-ID</td>
+                <td>
+                    <code-block lang="xml">
+                        <![CDATA[
+                        <!DOCTYPE comics SYSTEM "http://api.webpage.com/dtds/comics.dtd">
+                        ]]>
+                    </code-block>
+                </td>
+                <td>
+                    In diesem Beispiel liegt die DTD auf einem Webserver. Wird die DTD von einer URL bezogen, so läuft
+                    man immer mit der Gefahr, dass sie geändert oder entfernt werden könnte.
+                </td>
+            </tr>
+            <tr>
+                <td>PUBLIC-ID</td>
+                <td>
+                    <code-block lang="xml">
+                        <![CDATA[
+                        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+                        ]]>
+                    </code-block>
+                </td>
+                <td>
+                    Hier wird eine PUBLIC-ID verwendet, um die DTD unabhängig von ihrer konkreten URL zu kennzeichnen.
+                    Eine Anwendung, die ein Dokument auf der Grundlage dieser DTD validiert (ihre Gültigkeit überprüft),
+                    muss allerdings eine eingebaute Version dieser DTD enthalten oder wissen, wie sie diese online
+                    finden kann. Deshalb werden in der Praxis nur wenige öffentliche DTDs häufig verwendet.
+                </td>
+            </tr>
+            <tr>
+                <td>PUBLIC-ID</td>
+                <td>
+                    <code-block lang="xml">
+                        <![CDATA[
+                        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+                        ]]>
+                    </code-block>
+                </td>
+                <td>
+                    Um sicherzustellen, dass die DTD auf jeden Fall gefunden wird, wird in diesem Beispiel zusätzlich
+                    eine URL angegeben.
+                </td>
+            </tr>
+        </table>
 
         <chapter title="Die DTD" id="grundlagen-dtd">
         </chapter>
