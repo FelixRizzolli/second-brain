@@ -258,6 +258,34 @@
         </chapter>
 
         <chapter title="Alternativen" id="elemente-alternativen">
+            <p>
+                Mit der Pipe können Alternativen für Elemente definiert werden:
+                <code>&lt;!ELEMENT anschrift (postfach | strasse)&gt;</code> Alternativen können auch anstelle eines
+                Elements innerhalb einer Klammer definiert werden. Mit der Angabe der Alternative <code>#PCDATA</code>
+                wird ermöglicht, dass anstelle der möglichen Tags auch beliebiger Text zugelassen wird. Beispiel:
+            </p>
+
+            <code-block lang="xml">
+                <![CDATA[
+                <!-- DTD -->
+                <!ELEMENT anschrift (name, (#PCDATA | postfach | (strasse, hausnr)), plz, ort)>
+
+                <!-- XML -->
+                <anschrift>
+                  <name>Rheinwerk Verlag</name>
+                  <strasse>Rheinwerkallee</strasse>
+                  <hausnr>4</hausnr>
+                  <plz>53227</plz>
+                  <ort>Bonn</ort>
+                </anschrift>
+                <anschrift>
+                  <name>MICROGRAFX (Deutschland) GmbH</name>
+                  <postfach>14 18</postfach>
+                  <plz>85704</plz>
+                  <ort>Unterschleißheim</ort>
+                </anschrift>
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter title="Häufigkeitsmodifikatoren" id="elemente-haeufigkeitsmodifikatoren">
