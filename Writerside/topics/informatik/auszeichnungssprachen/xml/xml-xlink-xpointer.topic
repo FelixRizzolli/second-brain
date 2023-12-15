@@ -183,7 +183,7 @@
                         </list>
                     </td>
                     <td>
-                        Definiert wo der Link geöffnet wird. Standardwert ist <code>replace</code>.
+                        Definiert, wo der Link geöffnet wird. Standardwert ist <code>replace</code>.
                     </td>
                 </tr>
                 <tr>
@@ -208,6 +208,67 @@
     </chapter>
 
     <chapter title="XPointer" id="xpointer">
+        <p>
+            In diesem Beispiel wird XPointer in Verbindung mit XLink verwendet, um auf einen bestimmten Teil eines
+            anderen Dokuments zu verweisen.
+        </p>
+
+        <code-block lang="xml" collapsible="true"
+                    collapsed-title="XML-Zieldokument (das Dokument auf das verweist werden soll)">
+            <![CDATA[
+            <?xml version="1.0" encoding="UTF-8"?>
+
+            <dogbreeds>
+                <dog breed="Rottweiler" id="Rottweiler">
+                    <picture url="https://dog.com/rottweiler.gif" />
+                    <history>The Rottweiler's ancestors were probably Roman drover dogs....</history>
+                    <temperament>Confident, bold, alert and imposing, the Rottweiler is a popular choice for its ability to protect...</temperament>
+                </dog>
+
+                <dog breed="FCRetriever" id="FCRetriever">
+                    <picture url="https://dog.com/fcretriever.gif" />
+                    <history>One of the earliest uses of retrieving dogs was to help fishermen retrieve fish from the water...</history>
+                    <temperament>The flat-coated retriever is a sweet, exuberant, lively dog that loves to play and retrieve...</temperament>
+                </dog>
+            </dogbreeds>
+            ]]>
+        </code-block>
+
+        <p>
+            Das obige Dokument verwendet <code>id</code>-Attribute für jedes Element auf das Verlinkt wird. Anstatt also
+            auf das gesamte Dokument zu verlinken (wie bei XLink), kann mit XPointer auf bestimmte Teile des Dokuments
+            verlinkt werden. Um auf einen bestimmten Teil einer Seite zu verlinken, wird ein Nummernzeichen
+            (<code>#</code>) und einen XPointer-Ausdruck nach der URL im <code>xlink:href</code>-Attribut eingefügt,
+            etwa so: <code>xlink:href="https://dog.com/dogbreeds.xml#xpointer(id('Rottweiler'))"</code>. Der Ausdruck
+            bezieht sich auf das Element im Zieldokument, das den <code>id</code>-Wert <code>"Rottweiler"</code> hat.
+        </p>
+        <p>
+            XPointer erlaubt auch eine Shorthand-Methode für die Verknüpfung mit einem Element mit einer
+            <code>id</code>. Der Wert des <code>id</code>-Attributs kann direkt verwendet werden:
+            <code>xlink:href="https://dog.com/dogbreeds.xml#Rottweiler"</code>.
+        </p>
+        <p>
+            Das folgende XML-Dokument enthält Links zu weiteren Informationen über die Hunderasse für jeden der Hunde:
+        </p>
+
+        <code-block lang="xml" collapsible="true"
+                    collapsed-title="XML-Dokument mit Links">
+            <![CDATA[
+            <?xml version="1.0" encoding="UTF-8"?>
+
+            <mydogs xmlns:xlink="http://www.w3.org/1999/xlink">
+                <mydog>
+                    <description>Anton is my favorite dog. He has won a lot of.....</description>
+                    <fact xlink:type="simple" xlink:href="https://dog.com/dogbreeds.xml#Rottweiler">Fact about Rottweiler</fact>
+                </mydog>
+
+                <mydog>
+                    <description>Pluto is the sweetest dog on earth......</description>
+                    <fact xlink:type="simple" xlink:href="https://dog.com/dogbreeds.xml#FCRetriever">Fact about flat-coated Retriever</fact>
+                </mydog>
+            </mydogs>
+            ]]>
+        </code-block>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
