@@ -118,6 +118,18 @@
         </chapter>
 
         <chapter title="XLink Details" id="xlink-details">
+            <p>
+                Im obigen Beispiel wurden einfache XLinks demonstriert. XLink wird interessanter, wenn man auf entfernte
+                Orte als Ressourcen zugreift, anstatt auf eigenständige Seiten.
+            </p>
+            <p>
+                Wird der Wert des Attributs <code>xlink:show</code> auf <code>embed</code> gesetzt, sollte die verlinkte
+                Ressource innerhalb der Seite inline verarbeitet werden. Handelt es sich dabei um ein anderes
+                XML-Dokument kann eine Hierarchie von XML-Dokumenten aufgebaut werden.
+            </p>
+            <p>
+                Mit dem Attribut <code>xlink:actuate</code> kann auch angeben, WANN die Ressource erscheinen soll.
+            </p>
         </chapter>
 
         <chapter title="XLink Attribute" id="xlink-attribute">
