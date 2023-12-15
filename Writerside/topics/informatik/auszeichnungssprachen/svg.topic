@@ -359,4 +359,11 @@
     <chapter title="Das Verhalten von SVG-Elementen mit JavaScript beeinflussen" id="svg-js">
         Informationen dazu gibt es in der <a href="js-svg.topic">JavaScript-Dokumentation</a>.
     </chapter>
+
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3-836256971, JavaScript, Philip Ackermann, Rheinwerk Verlag GmbH, 2019
+        </tip>
+    </chapter>
 </topic>
