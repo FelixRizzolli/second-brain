@@ -7,10 +7,9 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <warning>
-        Diese Dokumentation wurde im Jahr <strong>2019</strong> verfasst und basiert auf den damaligen SEO-Trends und
-        -Praktiken. Da sich SEO ständig weiterentwickelt, können einige der hier enthaltenen Informationen veraltet oder
-        falsch sein. Ich empfehle deshalb, sich auf die neuesten SEO-Ressourcen zu beziehen, um die Website zu
-        optimieren.
+        Diese Dokumentation wurde im Jahr <b>2019</b> verfasst und basiert auf den damaligen SEO-Trends und -Praktiken.
+        Da sich SEO ständig weiterentwickelt, können einige der hier enthaltenen Informationen veraltet oder falsch
+        sein. Ich empfehle deshalb, sich auf die neuesten SEO-Ressourcen zu beziehen, um die Website zu optimieren.
     </warning>
 
     <chapter title="Was ist SEO?" id="was-ist-seo">
@@ -108,13 +107,13 @@
 
                 <list>
                     <li>
-                        <strong>Freshbots</strong> – besuchen neu gefundene Seiten. Sie analysieren vor allem reine
-                        Textinhalte und gehen nicht sehr tief in eine Seite hinein. Wird eine Seite nicht regelmäßig
-                        aktualisiert, so lässt auch die Besuchsfrequenz der Freshbots nach.
+                        <b>Freshbots</b> – besuchen neu gefundene Seiten. Sie analysieren vor allem reine Textinhalte
+                        und gehen nicht sehr tief in eine Seite hinein. Wird eine Seite nicht regelmäßig aktualisiert,
+                        so lässt auch die Besuchsfrequenz der Freshbots nach.
                     </li>
                     <li>
-                        <strong>Deepbots</strong>  – berücksichtigen ein größeres Spektrum an Dateitypen (Bilder,
-                        PDF ...) und erfassen möglichst viele Seiten einer Website.
+                        <b>Deepbots</b> – berücksichtigen ein größeres Spektrum an Dateitypen (Bilder, PDF ...) und
+                        erfassen möglichst viele Seiten einer Website.
                     </li>
                 </list>
             </chapter>
@@ -169,9 +168,9 @@
                 </li>
                 <li>
                     <p>
-                        <strong>Häufigkeit des Suchbegriffs</strong> – kommt der Suchbegriff häufiger vor, so wird
-                        angenommen, dass das Dokument relevanter ist. Hervorhebungen – die Relevanz steigt durch
-                        Hervorhebung des Suchworts mittels entsprechenden HTML-Tags
+                        <b>Häufigkeit des Suchbegriffs</b> – kommt der Suchbegriff häufiger vor, so wird angenommen,
+                        dass das Dokument relevanter ist. Hervorhebungen – die Relevanz steigt durch Hervorhebung des
+                        Suchworts mittels entsprechenden HTML-Tags
                     </p>
 
                     <list>
@@ -191,14 +190,14 @@
                     </list>
                 </li>
                 <li>
-                    <strong>Position innerhalb des Dokuments</strong> – weiter oben im Fließtext = relevanter
+                    <b>Position innerhalb des Dokuments</b> – weiter oben im Fließtext = relevanter
                 </li>
                 <li>
-                    <strong>Kombination</strong> – Besonders relevant wird ein Dokument, wenn diese Kriterien kombiniert
+                    <b>Kombination</b> – Besonders relevant wird ein Dokument, wenn diese Kriterien kombiniert
                     werden.
                 </li>
                 <li>
-                    <strong>Innerhalb der URL</strong> – im Domain-, Verzeichnis- oder Dateinamen
+                    <b>Innerhalb der URL</b> – im Domain-, Verzeichnis- oder Dateinamen
                 </li>
             </list>
 
@@ -252,8 +251,7 @@
                 <list>
                     <li>
                         <p>
-                            <strong>Die Distanz zwischen Webseiten</strong> – folgende Verlinkungen werden weniger stark
-                            gewichtet
+                            <b>Die Distanz zwischen Webseiten</b> – folgende Verlinkungen werden weniger stark gewichtet
                         </p>
 
                         <list>
@@ -263,13 +261,13 @@
                         </list>
                     </li>
                     <li>
-                        <strong>Die Domain Popularity</strong> – ersetzt weitgehend das Konzept der Link Popularity.
-                        Nicht mehr die absolute Zahl der eingehenden Links (Backlinks) ist entscheidend, sondern die
-                        Zahl der eingehenden Links von unterschiedlichen Domains.
+                        <b>Die Domain Popularity</b> – ersetzt weitgehend das Konzept der Link Popularity. Nicht mehr
+                        die absolute Zahl der eingehenden Links (Backlinks) ist entscheidend, sondern die Zahl der
+                        eingehenden Links von unterschiedlichen Domains.
 
                     </li>
                     <li>
-                        <strong>Die thematische Nähe</strong> – Mit der einführung des „Reasonable Surfer“ erfolgt die
+                        <b>Die thematische Nähe</b> – Mit der einführung des „Reasonable Surfer“ erfolgt die
                         Link-Auswahl des sog. „Zufallssurfers“ nicht mehr rein zufällig irgendeinen Link, sondern mit
                         höherer Wahrscheinlichkeit einem link, der einen thematischen Bezug zu der Webseite. Zudem
                         werden folgende Punkte beachtet: Hervorhebung eines Links (z.B. Links in Überschriften) und
@@ -277,10 +275,10 @@
 
                     </li>
                     <li>
-                        <strong>Der „intelligent Surfer“</strong> – Mit RankBrain ein KI-Algorythmus, in dem Google
-                        schon seit Jahren investiert, wird die Suche des sog. „Zufallssurfers“ menschlicher. Mit
-                        RankBrain werden gezielter Links aufgerufen welche einen Mehrwert darstellen und weiterführende
-                        oder ergänzende Informationen zum Thema der Webseite haben.
+                        <b>Der „intelligent Surfer“</b> – Mit RankBrain ein KI-Algorythmus, in dem Google schon seit
+                        Jahren investiert, wird die Suche des sog. „Zufallssurfers“ menschlicher. Mit RankBrain werden
+                        gezielter Links aufgerufen welche einen Mehrwert darstellen und weiterführende oder ergänzende
+                        Informationen zum Thema der Webseite haben.
                     </li>
                 </list>
 
@@ -295,14 +293,13 @@
         <chapter title="Trust und TrustRank" id="ranking-trust">
             <p>
                 Mit dem Trust-Wert hat Google einen neuen Wert in sein Rankingsystem eingeführt, welcher Auskunft
-                gibt wie vertrauenswürdig die Informationen auf einer Website sind. <strong>TrustRank</strong> ist
-                ein an das PageRank-Verfahren angelehnter Algorithmus zur Bewertung der Qualität von Webseiten.
+                gibt wie vertrauenswürdig die Informationen auf einer Website sind. <b>TrustRank</b> ist ein an das
+                PageRank-Verfahren angelehnter Algorithmus zur Bewertung der Qualität von Webseiten.
             </p>
             <p>
-                Besonders vertrauenswürdige Websites (<strong>Authority Domains</strong>) zeichnet aus, dass sie
-                sorgfältig von Hand gepflegt und aktualisiert werden, dass sie mit einer sehr geringen
-                Wahrscheinlichkeit auf schlechte Webseiten (z.B. Spamseiten) verlinken, jedoch mit hoher
-                Wahrscheinlichkeit auf gute nützliche Sites.
+                Besonders vertrauenswürdige Websites (<b>Authority Domains</b>) zeichnet aus, dass sie sorgfältig von
+                Hand gepflegt und aktualisiert werden, dass sie mit einer sehr geringen Wahrscheinlichkeit auf schlechte
+                Webseiten (z.B. Spamseiten) verlinken, jedoch mit hoher Wahrscheinlichkeit auf gute nützliche Sites.
             </p>
             <p>
                 Seiten, die durch Linkkauf, Linktausch oder Linkfarmen einen unnatürlich hohen PageRank-Wert haben
@@ -315,13 +312,13 @@
                 Mit dem BadRank hat Google einen neuen Wert eingeführt mit den Sites, welche gegen die
                 Suchmaschinenrichtlinien verstoßen, indem sie Backlinks verkaufen oder Linkfarmen betreiben. Verweisen
                 Links auf Seiten, die selbst einen hohen BadRank haben, erben die verlinkten Seiten von diesen BadRank.
-                Websites, von denen man BadRank erben kann, bezeichnet Google als <strong>bad neighborhood</strong>.
+                Websites, von denen man BadRank erben kann, bezeichnet Google als <b>bad neighborhood</b>.
             </p>
         </chapter>
 
         <chapter title="Lösung für Webspam" id="ranking-webspam">
             <p>
-                Mit einem selbst lernenden Algorithmus im sog. <strong>Panda-Update</strong> versuchte Google gezielt
+                Mit einem selbst lernenden Algorithmus im sog. <b>Panda-Update</b> versuchte Google gezielt
                 minderwertige Seiten bzw. Domains zu identifizieren und in den Suchergebnissen herunterzustufen:
             </p>
 
@@ -334,16 +331,16 @@
             </list>
 
             <p>
-                Im sog. <strong>Penguin-Update</strong> wurden Websites, die über viele minderwertige Backlinks
-                verfügten mit einem schlechteren Ranking bestraft. Davon waren stark Sites betroffen, die aggressiven
-                und unvernünftigen Linkaufbau betrieben haben. Mit dem Update auf die Version 4 – Real Time Penguin
-                wurde diese Abstrafung bzw. auch Erholung in Echtzeit eingeführt.
+                Im sog. <b>Penguin-Update</b> wurden Websites, die über viele minderwertige Backlinks verfügten mit
+                einem schlechteren Ranking bestraft. Davon waren stark Sites betroffen, die aggressiven und
+                unvernünftigen Linkaufbau betrieben haben. Mit dem Update auf die Version 4 – Real Time Penguin wurde
+                diese Abstrafung bzw. auch Erholung in Echtzeit eingeführt.
             </p>
             <p>
-                Mit dem <strong>Hummingbird-Update</strong> wurde ein komplett neuer Ansatz eingeführt: Es sind nicht
-                mehr unbedingt Seiten, die für die Keywords, die in einer Suche vorkommen, optimiert sind, sondern
-                Seiten, die auf die Suchanfrage sie beste Antwort geben. Hierfür werden Textinhalte auf intelligente
-                Art und Weise mithilfe von Algorithmen, die eine systematische Analyse vornehmen, untersucht.
+                Mit dem <b>Hummingbird-Update</b> wurde ein komplett neuer Ansatz eingeführt: Es sind nicht mehr
+                unbedingt Seiten, die für die Keywords, die in einer Suche vorkommen, optimiert sind, sondern Seiten,
+                die auf die Suchanfrage sie beste Antwort geben. Hierfür werden Textinhalte auf intelligente Art und
+                Weise mithilfe von Algorithmen, die eine systematische Analyse vornehmen, untersucht.
             </p>
         </chapter>
 
@@ -367,15 +364,15 @@
         <chapter title="Die wichtigsten Punkte" id="ranking-wichtig">
             <table>
                 <tr>
-                    <td><strong>Content</strong></td>
+                    <td><b>Content</b></td>
                     <td>Qualitativ hochwertiger und einzigartiger Content.</td>
                 </tr>
                 <tr>
-                    <td><strong>Backlinks</strong></td>
+                    <td><b>Backlinks</b></td>
                     <td>Hochwertige Backlinks, die selbst hohe PageRank- und Trust-Werte haben.</td>
                 </tr>
                 <tr>
-                    <td><strong>RankBrain</strong></td>
+                    <td><b>RankBrain</b></td>
                     <td>Hoher Nutzwert.</td>
                 </tr>
             </table>
@@ -389,15 +386,15 @@
         
         <list>
             <li>
-                <strong>Google selbst</strong> – An vielen Kerntechnologien hält Google Patente, und Patentschriften
-                sind öffentlich zugänglich. Darin kann man z.B. nachlesen, wie der berühmte PageRank-Algorithmus
+                <b>Google selbst</b> – An vielen Kerntechnologien hält Google Patente, und Patentschriften sind
+                öffentlich zugänglich. Darin kann man z.B. nachlesen, wie der berühmte PageRank-Algorithmus
                 funktioniert.
             </li>
             <li>
-                <strong>Untersuchungen und Erfahrungswerte von SEO-Experten</strong> – SEO-Experten schreiben über ihre
-                eigene Korrelationsstudie. Eine positive Korrelation bedeutet nicht unbedingt, dass es auch tatsächlich
-                einen direkten kausalen Zusammenhang zwischen einem vermuteten Rankingsignal und einem positiven Effekt
-                auf das Ranking gibt.
+                <b>Untersuchungen und Erfahrungswerte von SEO-Experten</b> – SEO-Experten schreiben über ihre eigene
+                Korrelationsstudie. Eine positive Korrelation bedeutet nicht unbedingt, dass es auch tatsächlich einen
+                direkten kausalen Zusammenhang zwischen einem vermuteten Rankingsignal und einem positiven Effekt auf
+                das Ranking gibt.
             </li>
         </list>
 
@@ -409,36 +406,35 @@
 
             <list>
                 <li>
-                    <strong>Content-Qualität</strong> – die inhaltliche Qualität der Webseite: einzigartige Inhalte, der
-                    Nutzwert, die Länge des Textes (allgemein: längere Texte werden höher gerankt) wobei diese von der
-                    Kategorie abhängt, Bilder und deren Ladezeit, passende Videos, ergänzende Inhalte und weiterführende
-                    Links zu verwandten Themen
+                    <b>Content-Qualität</b> – die inhaltliche Qualität der Webseite: einzigartige Inhalte, der Nutzwert,
+                    die Länge des Textes (allgemein: längere Texte werden höher gerankt) wobei diese von der Kategorie
+                    abhängt, Bilder und deren Ladezeit, passende Videos, ergänzende Inhalte und weiterführende Links zu
+                    verwandten Themen
                 </li>
                 <li>
-                    <strong>Keywords</strong> – wenn Keywords auf der Webseite vorkommen und das Rankingsignal senden,
-                    dass es auf der Website um eben diese Themen geht, die durch die Keywords beschrieben werden. Eine
-                    zu starke Konzentration auf Keywords kann sich sogar negativ auswirken.
+                    <b>Keywords</b> – wenn Keywords auf der Webseite vorkommen und das Rankingsignal senden, dass es auf
+                    der Website um eben diese Themen geht, die durch die Keywords beschrieben werden. Eine zu starke
+                    Konzentration auf Keywords kann sich sogar negativ auswirken.
                 </li>
                 <li>
-                    <strong>HTML-Code</strong> – modernes HTML 5 und valides und gültiges HTML
+                    <b>HTML-Code</b> – modernes HTML 5 und valides und gültiges HTML
                 </li>
                 <li>
-                    <strong>Mikroformate</strong> – damit können Inhalte auf der Website semantisch ausgezeichnet
-                    werden.
+                    <b>Mikroformate</b> – damit können Inhalte auf der Website semantisch ausgezeichnet werden.
                 </li>
                 <li>
-                    <strong>Layout</strong> – nutzerfreundlich gestaltet, Hauptinhalt muss sofort erkennbar und leicht
-                    zugänglich ein, Nebeninhalte dürfen den Hauptinhalt nicht überdecken, Werbung muss als solche
-                    gekennzeichnet sein und das Seitenlayout muss professionellen Ansprüchen genügen. Dazu gehört auch
-                    eine responsive Seite welche auch für Mobilgeräte optimiert ist.
+                    <b>Layout</b> – nutzerfreundlich gestaltet, Hauptinhalt muss sofort erkennbar und leicht zugänglich
+                    ein, Nebeninhalte dürfen den Hauptinhalt nicht überdecken, Werbung muss als solche gekennzeichnet
+                    sein und das Seitenlayout muss professionellen Ansprüchen genügen. Dazu gehört auch eine responsive
+                    Seite welche auch für Mobilgeräte optimiert ist.
                 </li>
                 <li>
-                    <strong>Ladezeiten</strong> – eine Website muss schnell laden
+                    <b>Ladezeiten</b> – eine Website muss schnell laden
                 </li>
                 <li>
                     <p>
-                        <strong>Backlinks</strong> – ein gutes Backlink-Management sorgt für gute Rankingergebnisse und
-                        einen höheren PageRank und besseren Trust-Wert. Hierbei ist aber wichtig, dass die
+                        <b>Backlinks</b> – ein gutes Backlink-Management sorgt für gute Rankingergebnisse und einen
+                        höheren PageRank und besseren Trust-Wert. Hierbei ist aber wichtig, dass die
                         Suchmaschinenrichtlinien eingehalten werden, um keinen BadRank-Wert zu erhalten. Die Anzahl an
                         Backlinks unterschiedlicher Domains beschreibt die Domainpopularität einer Seite, welche auch
                         einen Einfluss auf das Ranking hat.
@@ -620,48 +616,50 @@
     </chapter>
 
     <chapter title="Der Prozess und die Ziele " id="prozess-ziele">
-
-        Ein großer Fehler ist es, eine neue Website zuerst komplett zu erstellen und dann anschließend das Thema SEO anzugehen. Es gibt folgende Punkte, die den SEO-Prozess ausmachen:
+        <p>
+            Ein großer Fehler ist es, eine neue Website zuerst komplett zu erstellen und dann anschließend das Thema SEO
+            anzugehen. Es gibt folgende Punkte, die den SEO-Prozess ausmachen:
+        </p>
 
         <list>
             <li>
-                <strong>Keywords</strong> – In der Keyword-Analyse geht es darum, die Begriffe zu finden, die den Inhalt
-                und Nutzwert einer Webseite gut beschreiben.
+                <b>Keywords</b> – In der Keyword-Analyse geht es darum, die Begriffe zu finden, die den Inhalt und
+                Nutzwert einer Webseite gut beschreiben.
             </li>
             <li>
-                <strong>Content</strong> – Zur Content-Optimierung gehört die Optimierung von Inhaltselementen für
-                bestimmte Keywords bzw. Themen. Dazu gehören: Text, Bilder, Videos und PDF-Dateien.
+                <b>Content</b> – Zur Content-Optimierung gehört die Optimierung von Inhaltselementen für bestimmte
+                Keywords bzw. Themen. Dazu gehören: Text, Bilder, Videos und PDF-Dateien.
             </li>
             <li>
-                <strong>Webpage</strong> – es ist auch wichtig den guten Content auch gut zu präsentieren hierzu gehört
+                <b>Webpage</b> – es ist auch wichtig den guten Content auch gut zu präsentieren hierzu gehört
                 optimierter Code sowie optimiertes Layout. Optimierung für Mobilgeräte und Ladezeiten spielen dabei
                 eine große Rolle. Auch die URL (lokaler Pfad) der einzelnen Webseiten und Hyperlinks spielen eine
                 wichtige Rolle.
             </li>
             <li>
-                <strong>Site, Server &amp; Domain</strong> – hierzu gehören: die Wahl des Domain-Namens, die
-                Informationsarchitektur, der Aufbau der URLs, die Performance und die Verfügbarkeit und Sicherheit.
+                <b>Site, Server &amp; Domain</b> – hierzu gehören: die Wahl des Domain-Namens, die Informationsarchitektur,
+                der Aufbau der URLs, die Performance und die Verfügbarkeit und Sicherheit.
             </li>
             <li>
-                <strong>Backlinks</strong> – eingehende Hyperlinks von anderen Webseiten (= Backlink-Management)
+                <b>Backlinks</b> – eingehende Hyperlinks von anderen Webseiten (= Backlink-Management)
             </li>
             <li>
-                <strong>User Signals</strong> – dazu gehören: Erfahrungsberichte/Rezensionen, Click-Throught-Rate auf
-                der Suchergebnisseite, SERP Return Rate und die Time on Site.
+                <b>User Signals</b> – dazu gehören: Erfahrungsberichte/Rezensionen, Click-Throught-Rate auf der
+                Suchergebnisseite, SERP Return Rate und die Time on Site.
             </li>
             <li>
-                <strong>Social SEO</strong> – beschäftigt sich mit Markensignale. Social-Media-Plattformen sind
-                hervorragend dafür geeignet, um eine Marke bekannt zu machen.
+                <b>Social SEO</b> – beschäftigt sich mit Markensignale. Social-Media-Plattformen sind hervorragend dafür
+                geeignet, um eine Marke bekannt zu machen.
             </li>
             <li>
-                <strong>Shop SEO</strong> – Optimierung von Onlineshops
+                <b>Shop SEO</b> – Optimierung von Onlineshops
             </li>
             <li>
-                <strong>Local SEO</strong> – Suchergebnisse, die für den Standort des Suchenden optimiert sind.
+                <b>Local SEO</b> – Suchergebnisse, die für den Standort des Suchenden optimiert sind.
             </li>
             <li>
-                <strong>Erfolgskontrolle</strong> – Es ist Empfehlenswert den Prozess für eine Website immer wieder und
-                so lange fortzuführen, wie die Website online ist.
+                <b>Erfolgskontrolle</b> – Es ist Empfehlenswert den Prozess für eine Website immer wieder und so lange
+                fortzuführen, wie die Website online ist.
             </li>
         </list>
 
@@ -728,22 +726,22 @@
 
             <list>
                 <li>
-                    <strong>Know query</strong> – Suche nach Informationen.
+                    <b>Know query</b> – Suche nach Informationen.
                 </li>
                 <li>
-                    <strong>Know simple query</strong> – Spezielle Form der Know query. Bei dieser besteht die ideale
-                    Antwort nur ais einer kurzen Definition oder Beschreibung
+                    <b>Know simple query</b> – Spezielle Form der Know query. Bei dieser besteht die ideale Antwort nur
+                    ais einer kurzen Definition oder Beschreibung
                 </li>
                 <li>
-                    <strong>Do query</strong> – Der Suchende möchte eine bestimmte Aktion ausführen, z.B. etwas
-                    bestellen, buchen oder herunterladen.
+                    <b>Do query</b> – Der Suchende möchte eine bestimmte Aktion ausführen, z.B. etwas bestellen, buchen
+                    oder herunterladen.
                 </li>
                 <li>
-                    <strong>Website query</strong> – Suche nach einer bestimmten Website.
+                    <b>Website query</b> – Suche nach einer bestimmten Website.
                 </li>
                 <li>
-                    <strong>Visit-in-person query</strong> – Der Suchende mochte einen bestimmten Ort persönlich
-                    besuchen, z.B. ein Unternehmen, ein Restaurant, eine Tankstelle, ein Hotel, ein Museum o.ä.
+                    <b>Visit-in-person query</b> – Der Suchende mochte einen bestimmten Ort persönlich besuchen, z.B.
+                    ein Unternehmen, ein Restaurant, eine Tankstelle, ein Hotel, ein Museum o.ä.
                 </li>
             </list>
 
@@ -763,23 +761,23 @@
 
             <list>
                 <li>
-                    <strong>Brainstorming</strong>
+                    <b>Brainstorming</b>
                 </li>
                 <li>
-                    <strong>Kundenbefragung</strong> – Es bietet sich die Möglichkeit Kunden, Freunde und Kollegen zu
-                    befragen, mit welchen Suchbegriffen sie die zu optimierende Website suchen würden.
+                    <b>Kundenbefragung</b> – Es bietet sich die Möglichkeit Kunden, Freunde und Kollegen zu befragen,
+                    mit welchen Suchbegriffen sie die zu optimierende Website suchen würden.
                 </li>
                 <li>
-                    <strong>Wettberwerbsanalyse</strong> – Oftmals findet man bei der Konkurrenz im HTML-Quellcode im
-                    Metatag mit dem Attribut <code>name="Keywords"</code> die Keywords, die sie verwendet haben.
-                    Suchmaschinen berücksichtigen dieses Metatag heute nicht mehr, da er in der Vergangenheit zu stark
-                    missbraucht wurde.
+                    <b>Wettberwerbsanalyse</b> – Oftmals findet man bei der Konkurrenz im HTML-Quellcode im Metatag mit
+                    dem Attribut <code>name="Keywords"</code> die Keywords, die sie verwendet haben. Suchmaschinen
+                    berücksichtigen dieses Metatag heute nicht mehr, da er in der Vergangenheit zu stark missbraucht
+                    wurde.
                 </li>
                 <li>
-                    <strong>Freie Online-Tools</strong> – welche häufig gesuchten Begriffe und deren verwandten anzeigen
+                    <b>Freie Online-Tools</b> – welche häufig gesuchten Begriffe und deren verwandten anzeigen
                 </li>
                 <li>
-                    <strong>Kostenpflichtige Keyword-Datenbanken</strong>
+                    <b>Kostenpflichtige Keyword-Datenbanken</b>
                 </li>
             </list>
         </chapter>
@@ -864,7 +862,7 @@
 
             <list>
                 <li>
-                    <p><strong>Know</strong></p>
+                    <p><b>Know</b></p>
                     
                     <list>
                         <li>Ausführliche Produktbeschreibung</li>
@@ -875,7 +873,7 @@
                     </list>
                 </li>
                 <li>
-                    <p><strong>Know simple</strong></p>
+                    <p><b>Know simple</b></p>
                     
                     <list>
                         <li>Glossar</li>
@@ -884,7 +882,7 @@
                     </list>
                 </li>
                 <li>
-                    <p><strong>Do (non-commercial)</strong></p>
+                    <p><b>Do (non-commercial)</b></p>
                     
                     <list>
                         <li>
@@ -897,7 +895,7 @@
                     </list>
                 </li>
                 <li>
-                    <p><strong>Do (commercial)</strong></p>
+                    <p><b>Do (commercial)</b></p>
 
                     <list>
                         <li>
@@ -907,14 +905,14 @@
                     </list>
                 </li>
                 <li>
-                    <p><strong>Visit-in-Person</strong></p>
+                    <p><b>Visit-in-Person</b></p>
 
                     <list>
                         <li>Ortsinformationen, Anfahrtsbeschreibung, Öffnungszeiten ...</li>
                     </list>
                 </li>
                 <li>
-                    <p><strong>Website (navigational)</strong></p>
+                    <p><b>Website (navigational)</b></p>
 
                     <list>
                         <li>Eine geeignete Landingpage auf die einen Domain- und Markennamen optimiert werden.</li>
@@ -1100,12 +1098,12 @@
         
         <list>
             <li>
-                <strong>Backlink-Analyse</strong> – ein natürliches Linkprofiel zeichnet sich durch Vielfalt aus: eine 
-                dem Durchschnitt weitgehend entsprechende Verteilung von Follow- und Nofollow-Links sowie von Links auf 
-                die Startseite und von Links zu Unterseiten (Deep Links).
+                <b>Backlink-Analyse</b> – ein natürliches Linkprofiel zeichnet sich durch Vielfalt aus: eine dem
+                Durchschnitt weitgehend entsprechende Verteilung von Follow- und Nofollow-Links sowie von Links auf die
+                Startseite und von Links zu Unterseiten (Deep Links).
             </li>
             <li>
-                <p><strong>Backlink-Aufbau</strong></p>
+                <p><b>Backlink-Aufbau</b></p>
                 
                 <list>
                     <li>
@@ -1124,10 +1122,10 @@
                 </list>
             </li>
             <li>
-                <strong>Backlink-Entfernung</strong>
+                <b>Backlink-Entfernung</b>
             </li>
             <li>
-                <p><strong>Optimierung von Ankertexten</strong> – Ankertexttypen:</p>
+                <p><b>Optimierung von Ankertexten</b> – Ankertexttypen:</p>
 
                 <list>
                     <li>
@@ -1153,7 +1151,7 @@
 
     <chapter title="Quellen" id="quellen">
         <tip>
-            <strong>(BUCH)</strong>
+            <b>(BUCH)</b>
             978-1791642211, SEO Praxisbuch, Thorsten Schneider, Independently published, 2018-12-13
         </tip>
     </chapter>
