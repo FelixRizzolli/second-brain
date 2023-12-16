@@ -290,6 +290,98 @@
     </chapter>
 
     <chapter title="Achsen (Axes)" id="achsen">
+        <p>
+            Eine Achse stellt eine Beziehung zum (aktuellen) Kontextknoten dar und wird verwendet, um Knoten relativ zu
+            diesem Knoten in der Baumstruktur zu lokalisieren.
+        </p>
+
+        <table>
+            <tr>
+                <td>Achsenname</td>
+                <td>Beschreibung</td>
+            </tr>
+            <tr>
+                <td><code>ancestor</code></td>
+                <td>
+                    Wählt alle Vorfahren (Eltern, Großeltern, usw.) des aktuellen Knotens.
+                </td>
+            </tr>
+            <tr>
+                <td><code>ancestor-or-self</code></td>
+                <td>
+                    Wählt alle Vorfahren (Eltern, Großeltern, usw.) des aktuellen Knotens und den aktuellen Knoten
+                    selbst.
+                </td>
+            </tr>
+            <tr>
+                <td><code>attribute</code></td>
+                <td>
+                    Wählt alle Attribute des aktuellen Knotens.
+                </td>
+            </tr>
+            <tr>
+                <td><code>child</code></td>
+                <td>
+                    Wählt alle Kinder des aktuellen Knotens.
+                </td>
+            </tr>
+            <tr>
+                <td><code>descendant</code></td>
+                <td>
+                    Wählt alle Nachfahren (Kinder, Großkinder, usw.) des aktuellen Knotens.
+                </td>
+            </tr>
+            <tr>
+                <td><code>descendant-or-self</code></td>
+                <td>
+                    Wählt alle Nachfahren (Kinder, Großkinder, usw.) des aktuellen Knotens und den aktuellen Knoten
+                    selbst.
+                </td>
+            </tr>
+            <tr>
+                <td><code>following</code></td>
+                <td>
+                    Wählt alles im Dokument nach dem schließenden Tag des aktuellen Knotens.
+                </td>
+            </tr>
+            <tr>
+                <td><code>following-sibling</code></td>
+                <td>
+                    Wählt alle Geschwister nach dem schließenden Tag des aktuellen Knotens.
+                </td>
+            </tr>
+            <tr>
+                <td><code>namespace</code></td>
+                <td>
+                    Wählt alle Namespace-Knoten des aktuellen Knoten.
+                </td>
+            </tr>
+            <tr>
+                <td><code>parent</code></td>
+                <td>
+                    Wählt den Elternknoten des aktuellen Knotens.
+                </td>
+            </tr>
+            <tr>
+                <td><code>preceding</code></td>
+                <td>
+                    Wählt alle Knoten aus, die vor dem aktuellen Knoten im Dokument erscheinen, mit Ausnahme von
+                    Vorfahren, Attributknoten und Namespace-Knoten
+                </td>
+            </tr>
+            <tr>
+                <td><code>preceding-sibling</code></td>
+                <td>
+                    Wählt alle Geschwister vor dem aktuellen Knoten.
+                </td>
+            </tr>
+            <tr>
+                <td><code>self</code></td>
+                <td>
+                    Wählt den aktuellen Knoten selbst.
+                </td>
+            </tr>
+        </table>
 
         <chapter title="Location Path Expression" id="achsen-lpe">
         </chapter>
