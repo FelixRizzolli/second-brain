@@ -259,6 +259,33 @@
         </chapter>
 
         <chapter title="Mehrere Pfade auswählen" id="syntax-mehrere-pfade-auswaehlen">
+
+            <table>
+                <tr>
+                    <td>Pfad Ausdruck</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>//book/title | //book/price</code></td>
+                    <td>
+                        Wählt alle <code>title</code>- UND <code>price</code>-Elemente von allen
+                        <code>book</code>-Elementen.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>//title | //price</code></td>
+                    <td>
+                        Wählt alle <code>title</code>- UND <code>price</code>-Elemente aus dem ganzen Dokument.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>/bookstore/book/title | //price</code></td>
+                    <td>
+                        Wählt alle <code>title</code>-Elemente des <code>book</code>-Elements aus dem
+                        <code>bookstore</code>-Element UND alle <code>price</code>-Elemente im ganzen Dokument aus.
+                    </td>
+                </tr>
+            </table>
         </chapter>
     </chapter>
 
