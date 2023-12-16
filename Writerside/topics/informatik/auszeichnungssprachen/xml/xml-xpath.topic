@@ -215,6 +215,47 @@
         </chapter>
 
         <chapter title="Unbekannte Knoten auswählen" id="syntax-unbekannte-knoten">
+            <p>XPath Wildcards können verwendet werden, um unbekannte XML-Knoten auszuwählen.</p>
+
+            <table>
+                <tr>
+                    <td>Wildcard</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>*</code></td>
+                    <td>Wählt alle Elementknoten</td>
+                </tr>
+                <tr>
+                    <td><code>@*</code></td>
+                    <td>Wählt alle Attribute</td>
+                </tr>
+                <tr>
+                    <td><code>node()</code></td>
+                    <td>Wählt alle Knoten jeder Art
+                    </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td>Pfad Ausdruck</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>/bookstore/*</code></td>
+                    <td>Wählt alle Kindelemente des <code>bookstore</code>-Elements</td>
+                </tr>
+                <tr>
+                    <td><code>//*</code></td>
+                    <td>Wählt alle Elemente im Dokument</td>
+                </tr>
+                <tr>
+                    <td><code>//title[@*]</code></td>
+                    <td>Wählt alle <code>title</code>-Elemente welche mindestens ein Attribut haben.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Mehrere Pfade auswählen" id="syntax-mehrere-pfade-auswaehlen">
