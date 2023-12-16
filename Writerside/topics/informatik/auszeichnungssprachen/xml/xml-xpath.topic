@@ -384,6 +384,40 @@
         </table>
 
         <chapter title="Location Path Expression" id="achsen-lpe">
+            <p>
+                Ein Location-Path kann absolut oder relativ sein. Ein absoluter Location-Path startet mit einem Slash,
+                ein relativer Location-Path nicht. In beiden Fällen besteht ein Location-Path aus einen oder mehreren
+                Schritten (steps), jeweils durch einen Slash separiert:
+            </p>
+
+            <p>
+                Ein absoluter Location-Path: <path>/step/step/...</path>
+            </p>
+
+            <p>
+                Ein relativer Location-Path: <path>step/step/...</path>
+            </p>
+
+            <p>
+                Jeder Schritt (step) wird anhand der Knoten im aktuellen Knotensatz ausgewertet. Ein Schritt besteht 
+                aus:
+            </p>
+            
+            <list>
+                <li>
+                    eine Achse (definiert die Baumbeziehung zwischen den ausgewählten Knoten und dem aktuellen Knoten)
+                </li>
+                <li>
+                    ein Knotentest (identifiziert einen Knoten innerhalb einer Achse)
+                </li>
+                <li>
+                    null oder mehr Prädikate (um die ausgewählte Knotenmenge weiter zu verfeinern)
+                </li>
+            </list>
+
+            <p>
+                Die Syntax für einen Location-Step lautet: <code>axisname::nodetest[predicate]</code>
+            </p>
         </chapter>
 
         <chapter title="Beispiele" id="achsen-beispiele">
