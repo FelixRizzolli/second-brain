@@ -7,6 +7,27 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlegendes zu XPath" id="grundlagen">
+        <img src="xml_tools_overview.png" alt="XML - Tools"/>
+
+        <p>
+            XPath ist ein wichtiges Element des XSLT-Standards. XPath kann verwendet werden, um durch Elemente und 
+            Attribute in einem XML-Dokument zu navigieren.
+        </p>
+        
+        <list>
+            <li>XPath ist eine Syntax zur Definition von Teilen eines XML-Dokuments</li>
+            <li>XPath verwendet Pfadausdrücke, um in XML-Dokumenten zu navigieren.</li>
+            <li>XPath enthält eine Bibliothek von Standardfunktionen</li>
+            <li>XPath ist ein wichtiges Element in XSLT und XQuery</li>
+            <li>XPath ist eine W3C-Empfehlung</li>
+        </list>
+
+        <p>
+            XPath verwendet Pfadausdrücke, um Knoten oder Knotengruppen in einem XML-Dokument auszuwählen. Diese
+            Pfadausdrücke ähneln sehr den Ausdrücken, die man bei der Arbeit mit einem herkömmlichen
+            Computer-Dateisystem sieht. XPath-Ausdrücke können in JavaScript, Java, XML-Schema, PHP, Python, C und C++
+            und vielen anderen Sprachen verwendet werden.
+        </p>
     </chapter>
 
     <chapter title="Beispieldokument" id="beispiel">
