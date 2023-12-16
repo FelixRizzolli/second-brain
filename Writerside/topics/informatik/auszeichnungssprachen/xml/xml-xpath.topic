@@ -91,6 +91,55 @@
             </table>
 
             <chapter title="Beispiele" id="syntax-knoten-auswaehlen-beispiele">
+                <table>
+                    <tr>
+                        <td>Pfad Ausdruck</td>
+                        <td>Beschreibung</td>
+                    </tr>
+                    <tr>
+                        <td><code>bookstore</code></td>
+                        <td>
+                            Wählt alle Knoten mit dem Namen <code>bookstore</code> aus
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>/bookstore</code></td>
+                        <td>
+                            <p>
+                                Wählt das Wurzelelement <code>bookstore</code> aus
+                            </p>
+                            <p>
+                                Wenn der Pfad mit einem Schrägstrich (<code>/</code>) beginnt, handelt es sich immer um
+                                einen absoluten Pfad zu einem Element!
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>bookstore/book</code></td>
+                        <td>
+                            Wählt alle <code>book</code>-Elemente deren Elternelement <code>bookstore</code> ist.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>//book</code></td>
+                        <td>
+                            Wählt alle <code>book</code>-Elemente aus, egal wo sie definiert wurden.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>bookstore//book</code></td>
+                        <td>
+                            Wählt alle <code>book</code>-Elemente aus, welche Nachkommen des
+                            <code>bookstore</code>-Elements sind.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>//@lang</code></td>
+                        <td>
+                            Wählt alle Attribute aus, deren Name <code>lang</code> ist.
+                        </td>
+                    </tr>
+                </table>
             </chapter>
         </chapter>
 
