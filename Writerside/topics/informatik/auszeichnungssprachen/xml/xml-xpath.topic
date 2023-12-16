@@ -144,6 +144,74 @@
         </chapter>
 
         <chapter title="Prädikate" id="syntax-praedikate">
+            <p>
+                Prädikate werden verwendet, um einen bestimmten Knoten oder einen Knoten, der einen bestimmten Wert
+                enthält, zu finden. Prädikate sind immer in eckige Klammern eingebettet.
+            </p>
+
+            <table>
+                <tr>
+                    <td>Pfad Ausdruck</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>/bookstore/book[1]</code></td>
+                    <td>
+                        Wählt das erste <code>book</code>-Element welches ein Kindelement des
+                        <code>bookstore</code>-Elements ist.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>/bookstore/book[last()]</code></td>
+                    <td>
+                        Wählt das letzte <code>book</code>-Element welches ein Kindelement des
+                        <code>bookstore</code>-Elements ist.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>/bookstore/book[last()-1]</code></td>
+                    <td>
+                        Wählt das vorletzten <code>book</code>-Element welches ein Kindelement des
+                        <code>bookstore</code>-Elements ist.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>/bookstore/book[position()&lt;3]</code></td>
+                    <td>
+                        Wählt die ersten zwei <code>book</code>-Elemente welche ein Kindelement des
+                        <code>bookstore</code>-Elements ist.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>//title[@lang]</code></td>
+                    <td>
+                        Wählt alle <code>title</code>-Elemente, welche ein Attribut mit den Namen <code>lang</code>
+                        haben.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>//title[@lang='en']</code></td>
+                    <td>
+                        Wählt alle <code>title</code>-Elemente, welche ein Attribut mit den Namen <code>lang</code>
+                        haben und dessen Wert <code>"en"</code> ist.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>/bookstore/book[price>35.00]</code></td>
+                    <td>
+                        Wählt alle <code>book</code>-Elemente, des <code>bookstore</code>-Elements, die ein
+                        <code>price</code>-Element mit einem größeren Wert als <code>35.00</code> haben.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>/bookstore/book[price>35.00]/title</code></td>
+                    <td>
+                        Wählt das <code>title</code>-Element, des <code>book</code>-Elements, des
+                        <code>bookstore</code>-Elements, wo das <code>price</code>-Element im <code>book</code>-Element
+                        einen größeren Wert als <code>35.00</code> hat.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Unbekannte Knoten auswählen" id="syntax-unbekannte-knoten">
