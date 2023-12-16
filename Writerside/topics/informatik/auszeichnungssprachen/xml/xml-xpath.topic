@@ -421,6 +421,73 @@
         </chapter>
 
         <chapter title="Beispiele" id="achsen-beispiele">
+            <table>
+                <tr>
+                    <td>Beispiel</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>child::book</code></td>
+                    <td>
+                        Wählt alle <code>book</code>-Knoten welche Kinder des aktuellen Knotens sind.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>attribute::lang</code></td>
+                    <td>
+                        Wählt das <code>lang</code>-Attribut des aktuellen Knotens.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>child::*</code></td>
+                    <td>
+                        Wählt alle Kindelemente des aktuellen Knotens.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>attribute::*</code></td>
+                    <td>
+                        Wählt alle Attribute des aktuellen Knotens.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>child::text()</code></td>
+                    <td>
+                        Wählt alle Textknoten des aktuellen Knotens.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>child::node()</code></td>
+                    <td>
+                        Wählt alle Kindknoten des aktuellen Knotens.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>descendant::book</code></td>
+                    <td>
+                        Wählt alle <code>book</code>-Nachkommen des aktuellen Knotens.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>ancestor::book</code></td>
+                    <td>
+                        Wählt alle <code>book</code>-Vorfahren des aktuellen Knotens.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>ancestor-or-self::book</code></td>
+                    <td>
+                        Wählt alle <code>book</code>-Vorfahren des aktuellen Knotens und den aktuellen Knoten auch, wenn
+                        es ein <code>book</code>-Knoten ist.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>child::*/child::price</code></td>
+                    <td>
+                        Wählt alle <code>price</code>-Großkinder des aktuellen Knotens.
+                    </td>
+                </tr>
+            </table>
         </chapter>
     </chapter>
 
