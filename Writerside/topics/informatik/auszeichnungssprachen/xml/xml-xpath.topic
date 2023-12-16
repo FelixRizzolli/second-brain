@@ -492,6 +492,87 @@
     </chapter>
 
     <chapter title="Operatoren" id="operatoren">
+        <p>
+            Ein XPath-Ausdruck gibt entweder ein node-set, einen String, ein Boolean oder eine Nummer zurück.
+        </p>
+
+        <table>
+            <tr>
+                <td>Operator</td>
+                <td>Beschreibung</td>
+                <td>Beispiel</td>
+            </tr>
+            <tr>
+                <td><code>|</code></td>
+                <td>Verarbeitet zwei node-sets	</td>
+                <td><code>//book | //cd</code></td>
+            </tr>
+            <tr>
+                <td><code>+</code></td>
+                <td>Addition</td>
+                <td><code>6 + 4</code></td>
+            </tr>
+            <tr>
+                <td><code>-</code></td>
+                <td>Subtraktion</td>
+                <td><code>6 - 4</code></td>
+            </tr>
+            <tr>
+                <td><code>*</code></td>
+                <td>Multiplikation</td>
+                <td><code>6 * 4</code></td>
+            </tr>
+            <tr>
+                <td><code>div</code></td>
+                <td>Division</td>
+                <td><code>8 div 4</code></td>
+            </tr>
+            <tr>
+                <td><code>=</code></td>
+                <td>Vergleich</td>
+                <td><code>price=9.80</code></td>
+            </tr>
+            <tr>
+                <td><code>!=</code></td>
+                <td>NOT Vergleich</td>
+                <td><code>price!=9.80</code></td>
+            </tr>
+            <tr>
+                <td><code>&lt;</code></td>
+                <td>Kleiner als</td>
+                <td><code>price&lt;9.80</code></td>
+            </tr>
+            <tr>
+                <td><code>&lt;=</code></td>
+                <td>Kleiner oder gleich wie</td>
+                <td><code>price&lt;=9.80</code></td>
+            </tr>
+            <tr>
+                <td><code>&gt;</code></td>
+                <td>Größer als</td>
+                <td><code>price&gt;9.80</code></td>
+            </tr>
+            <tr>
+                <td><code>&gt;=</code></td>
+                <td>Größer oder gleich wie</td>
+                <td><code>price&gt;=9.80</code></td>
+            </tr>
+            <tr>
+                <td><code>or</code></td>
+                <td>Oder</td>
+                <td><code>price=9.80 or price=9.70</code></td>
+            </tr>
+            <tr>
+                <td><code>and</code></td>
+                <td>Und</td>
+                <td><code>price&gt;9.00 and price&lt;9.90</code></td>
+            </tr>
+            <tr>
+                <td><code>mod</code></td>
+                <td>Modulo</td>
+                <td><code>5 mod 2</code></td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
