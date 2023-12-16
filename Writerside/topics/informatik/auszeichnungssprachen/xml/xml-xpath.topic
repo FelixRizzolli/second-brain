@@ -51,8 +51,44 @@
     </chapter>
 
     <chapter title="Syntax" id="syntax">
-
         <chapter title="Knoten auswählen" id="syntax-knoten-auswaehlen">
+            <table>
+                <tr>
+                    <td>Ausdruck</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>nodename</code></td>
+                    <td>
+                        Wählt alle Knoten mit dem Namen <code>nodename</code> aus
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>/</code></td>
+                    <td>
+                        Wählt vom Wurzelknoten (root node) aus
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>//</code></td>
+                    <td>
+                        Wählt die Knoten im Dokument ab dem aktuellen Knoten aus, die der Auswahl entsprechen,
+                        unabhängig davon, wo sie sich befinden
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>.</code></td>
+                    <td>Wählt den aktuellen Knoten aus</td>
+                </tr>
+                <tr>
+                    <td><code>..</code></td>
+                    <td>Wählt den übergeordneten Knoten des aktuellen Knotens aus</td>
+                </tr>
+                <tr>
+                    <td><code>@</code></td>
+                    <td>Wählt Attribute aus</td>
+                </tr>
+            </table>
 
             <chapter title="Beispiele" id="syntax-knoten-auswaehlen-beispiele">
             </chapter>
