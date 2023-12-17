@@ -457,6 +457,10 @@
     </chapter>
 
     <chapter title="Benutzerdefinierte XQuery Funktionen" id="benutzerdefiniert">
+        <p>
+            Findet man eine benötigte Funktion nicht unter der XQuery-Funktion, so kann eine eigene definiert werden.
+            Benutzerdefinierte Funktionen können in der Abfrage oder in einer separaten Bibliothek definiert werden.
+        </p>
 
         <chapter title="Syntax" id="benutzerdefiniert-syntax">
         </chapter>
