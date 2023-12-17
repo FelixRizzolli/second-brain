@@ -7,6 +7,36 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlegendes zu XSL und XSLT" id="grundlagen">
+        <p>
+            XML beschreibt einzig und allein die Struktur eines Dokumentes. Für das Layout sind separate
+            Formatierungsangaben zuständig. XSL (eXtensible Stylesheet Language) ist mehr als nur eine
+            Formatierungssprache und besteht aus folgenden Komponenten:
+        </p>
+
+        <list>
+            <li>
+                XSL-Transformations (XSLT) beschreiben die Umwandlung (Transformation) beliebiger XML-Dokumente in
+                andere Formate wie <a href="html.topic">HTML</a> oder PDF.
+            </li>
+            <li>
+                <a href="xml-xpath.topic">XPath</a> eine Sprache zur Navigation in XML-Dokumenten.
+            </li>
+            <li>
+                XSL Formatting Objects (XSL-FO) ist eine eigene Sprache zur Definition von Formatierungen und Stilen.
+            </li>
+            <li>
+                <a href="xml-xquery.topic">XQuery</a> ist eine Sprache für Abfragen für XML-Dokumenten.
+            </li>
+        </list>
+
+        <p>
+            Eine Alternative für die Formatierung bieten die am häufigsten für <a href="html.topic">HTML</a>-Dokumente
+            eingesetzten <a href="css.topic">Cascading Style Sheets (CSS)</a>. Die empfohlene Formatierungssprache für
+            <a href="xml.topic">XML</a> ist aber XSLT. XSLT ist weitaus anspruchsvoller als CSS. Mit XSLT können
+            Elemente und Attribute zur Ausgabedatei hinzugefügt oder daraus entfernt werden. Es können auch Elemente neu
+            angeordnet und sortiert werden, sowie auch Tests durchgeführt werden, die entscheiden, welche Elemente
+            ausgeblendet werden oder angezeigt werden sollen, und vieles mehr.
+        </p>
 
         <chapter title="XSLT" id="grundlagen-xslt">
         </chapter>
