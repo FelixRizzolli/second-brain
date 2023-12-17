@@ -280,6 +280,67 @@
         </code-block>
 
         <chapter title="Komplexe Elemente welche nur Attribute enthalten" id="komplex-attribut">
+
+
+            <code-block lang="xml">
+                <![CDATA[
+                <product prodid="1345" />
+                ]]>
+            </code-block>
+
+            <chapter title="Beispiel (1)" id="komplex-attribut-beispiel1">
+                <code-block lang="xml">
+                    <![CDATA[
+                    <xs:element name="product">
+                        <xs:complexType>
+                            <xs:complexContent>
+                                <xs:restriction base="xs:integer">
+                                    <xs:attribute name="prodid" type="xs:positiveInteger"/>
+                                </xs:restriction>
+                            </xs:complexContent>
+                        </xs:complexType>
+                    </xs:element>
+                    ]]>
+                </code-block>
+            </chapter>
+
+            <chapter title="Beispiel (2)" id="komplex-attribut-beispiel2">
+                <code-block lang="xml">
+                    <![CDATA[
+                    <xs:element name="product">
+                        <xs:complexType>
+                            <xs:attribute name="prodid" type="xs:positiveInteger"/>
+                        </xs:complexType>
+                    </xs:element>
+                    ]]>
+                </code-block>
+
+                <p>
+                    Im Beispiel (1) wird ein komplexer Typ mit einem komplexen Inhalt definiert. Das Element
+                    <code>complexContent</code> signalisiert, dass beabsichtigt wird, das Inhaltsmodell eines komplexen
+                    Typs einzuschränken oder zu erweitern, und die Einschränkung von integer deklariert ein Attribut,
+                    führt aber keinen Elementinhalt ein. Es ist somit möglich die Deklaration wie im obigen Beispiel (2)
+                    kompakter zu schreiben.
+                </p>
+            </chapter>
+
+            <chapter title="Beispiel (3)" id="komplex-attribut-beispiel3">
+                <code-block lang="xml">
+                    <![CDATA[
+                    <xs:element name="product" type="prodtype"/>
+
+                    <xs:complexType name="prodtype">
+                        <xs:attribute name="prodid" type="xs:positiveInteger"/>
+                    </xs:complexType>
+                    ]]>
+                </code-block>
+
+                <p>
+                    Es besteht auch die Möglichkeit, das <code>complexType</code> Element auszulagern und ein Name zu
+                    geben. Damit kann es auch für andere Elemente verwendet werden und gestaltet das XSD-Dokument
+                    übersichtlicher.
+                </p>
+            </chapter>
         </chapter>
 
         <chapter title="Komplexe Elemente welche nur Elemente enthalten" id="komplex-element">
