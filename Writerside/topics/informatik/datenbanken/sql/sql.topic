@@ -6,4 +6,23 @@
        title="SQL" id="sql">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Was ist SQL?" id="was-ist-sql">
+        <p>
+            SQL ist eine Datenbanksprache zur Definition von Datenstrukturen in relationalen Datenbanken sowie zum
+            Bearbeiten (Einfügen, Verändern und Löschen) und Abfragen von darauf basierenden Datenbeständen.
+        </p>
+    </chapter>
+
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://de.wikipedia.org/wiki/SQL" ignore-vars="true">
+                https://de.wikipedia.org/wiki/SQL
+            </a>, 2023-11-18 07:45
+        </tip>
+    </chapter>
 </topic>
