@@ -19,10 +19,26 @@
 
     <chapter title="Inhaltsverzeichnis" id="inhaltsverzeichnis">
         <list>
-            <li><a href="sql-dml-insert.topic">Einfügeoperationen mittels <code>INSERT</code></a></li>
-            <li><a href="sql-dml-update.topic">Änderungsoperationen mittels <code>UPDATE</code></a></li>
-            <li><a href="sql-dml-delete.topic">Löschoperationen durch <code>DELETE</code></li>
-            <li><a href="sql-dml-insert.topic">Tabelle leeren mittels <code>TRUNCATE</code></a></li>
+            <li>
+                <a href="sql-dml-insert.topic">
+                    Einfügeoperationen mittels <code>INSERT</code>, <code>SELECT INTO</code>
+                </a>
+            </li>
+            <li>
+                <a href="sql-dml-update.topic">
+                    Änderungsoperationen mittels <code>UPDATE</code>
+                </a>
+            </li>
+            <li>
+                <a href="sql-dml-delete.topic">
+                    Löschoperationen durch <code>DELETE</code>
+                </a>
+            </li>
+            <li>
+                <a href="sql-dml-truncate.topic">
+                    Tabelle leeren mittels <code>TRUNCATE</code>
+                </a>
+            </li>
         </list>
     </chapter>
 
