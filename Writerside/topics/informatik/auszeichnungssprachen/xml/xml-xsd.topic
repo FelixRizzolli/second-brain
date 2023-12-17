@@ -1248,6 +1248,17 @@
     </chapter>
 
     <chapter title="Datentypen" id="datentypen">
+        <p>
+            Eine der größten Stärken von XML-Schemata ist die Unterstützung von Datentypen. Datentypen vereinfachen es:
+        </p>
+        
+        <list>
+            <li>den zulässigen Inhalt von Dokumenten zu beschreiben.</li>
+            <li>die Korrektheit von Daten zu validieren</li>
+            <li>Datenfacetten (Einschränkungen für Daten) zu definieren</li>
+            <li>Datenmuster (Datenformate) zu definieren</li>
+            <li>Daten zwischen verschiedenen Datentypen zu konvertieren.</li>
+        </list>
 
         <chapter title="XSD String Datentypen" id="datentypen-string">
 
