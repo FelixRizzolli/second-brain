@@ -97,6 +97,48 @@
         </p>
 
         <chapter title="Elementattribute" id="simple-attribut">
+            <code-block lang="xml">
+                <![CDATA[
+                <xs:element name="color" type="xs:string" default="red"/>
+                ]]>
+            </code-block>
+
+            <table>
+                <tr>
+                    <td>Attribut</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>name</code></td>
+                    <td>
+                        Mit diesem Attribut wird der Name des neuen Elementes definiert.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>type</code></td>
+                    <td>
+                        Mit diesem Attribut wird der Datentyp des neuen Elementes definiert. Beispiele hierfür währen:
+                        <code>xs:string</code>, <code>xs:decimal</code>, <code>xs:integer</code>,
+                        <code>xs:boolean</code>, <code>xs:date</code>, <code>xs:time</code>.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>default</code></td>
+                    <td>
+                        Ein Standardwert wird dem Element automatisch zugewiesen, wenn kein anderer Wert angegeben wird.
+                        Das Attribut default kann nicht zusammen mit <code>fixed</code> in derselben Elementdefinition
+                        verwendet werden.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>fixed</code></td>
+                    <td>
+                        Hiermit wird dem Element automatisch ein fester Wert zugewiesen, und es kann kein anderer Wert
+                        angegeben werden. Das Attribut default kann nicht zusammen mit <code>fixed</code> in derselben
+                        Elementdefinition verwendet werden.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Das schema-Element" id="simple-schema">
