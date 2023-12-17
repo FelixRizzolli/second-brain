@@ -1730,6 +1730,21 @@
             </table>
 
             <chapter title="Einschränkungen" id="datentypen-numerisch-restrictions">
+                <p>
+                    Einschränkungen, die mit numerischen Datentypen verwendet werden können:
+                </p>
+
+                <list>
+                    <li><code>enumeration</code></li>
+                    <li><code>fractionDigits</code></li>
+                    <li><code>maxExclusive</code></li>
+                    <li><code>maxInclusive</code></li>
+                    <li><code>minExclusive</code></li>
+                    <li><code>minInclusive</code></li>
+                    <li><code>pattern</code></li>
+                    <li><code>totalDigits</code></li>
+                    <li><code>whiteSpace</code></li>
+                </list>
             </chapter>
         </chapter>
 
