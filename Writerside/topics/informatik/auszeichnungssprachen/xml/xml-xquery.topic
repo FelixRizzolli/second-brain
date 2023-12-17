@@ -316,6 +316,25 @@
         </chapter>
 
         <chapter title="Die return Klausel" id="flwor-return">
+            <p>
+                Die Rückgabeklausel gibt an, was zurückgegeben werden soll.
+            </p>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="XQuery">
+                <![CDATA[
+                for $x in doc("books.xml")/bookstore/book
+                return $x/title
+                ]]>
+            </code-block>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="Ergebnis">
+                <![CDATA[
+                <title lang="en">Everyday Italian</title>
+                <title lang="en">Harry Potter</title>
+                <title lang="en">XQuery Kick Start</title>
+                <title lang="en">Learning XML</title>
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter title="Das Ergebnis in einer HTML-Liste ausgeben" id="flwor-ergebnis-html">
