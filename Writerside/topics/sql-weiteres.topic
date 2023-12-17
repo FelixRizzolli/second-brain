@@ -6,6 +6,31 @@
        title="Weiteres" id="sql-weiteres">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Inhaltsverzeichnis" id="inhaltsverzeichnis">
+        <list>
+            <li>
+                <a href="sql-weiteres-rechenoperationen.topic">
+                    Rechenoperationen
+                </a>
+            </li>
+            <li>
+                <a href="sql-weiteres-skalarfunktionen.topic">
+                    Skalarfunktionen
+                </a>
+            </li>
+            <li>
+                <a href="sql-weiteres-subqueries.topic">
+                    Subqueries
+                </a>
+            </li>
+            <li>
+                <a href="sql-weiteres-datetime.topic">
+                    Datum und Uhrzeit
+                </a>
+            </li>
+        </list>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
