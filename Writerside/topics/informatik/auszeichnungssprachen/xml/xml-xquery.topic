@@ -65,6 +65,61 @@
     </chapter>
 
     <chapter title="Aufbau von XQuery" id="aufbau">
+        <table>
+            <tr>
+                <td>Element</td>
+                <td>Beispiel</td>
+                <td>Beschreibung</td>
+            </tr>
+            <tr>
+                <td>Funktion</td>
+                <td><code><format color="Red">doc("books.xml")</format></code></td>
+                <td>
+                    XQuery verwendet Funktionen, um Daten aus einem XML-Dokument zu extrahieren. Die
+                    <code>doc()</code>-Funktion wird verwendet, um Informationen aus einer XML-Datei zu extrahieren.
+                </td>
+            </tr>
+            <tr>
+                <td>Pfadausdruck</td>
+                <td><code>doc("books.xml")<format color="Red">/bookstore/book/title</format></code></td>
+                <td>
+                    <p>
+                        XQuery verwendet Pfadausdrücke, um durch die Elemente in einem XML-Dokument zu navigieren. Das
+                        Beispiel extrahiert Folgendes:
+                    </p>
+
+                    <code-block lang="xml">
+                        <![CDATA[
+                        <title lang="en">Everyday Italian</title>
+                        <title lang="en">Harry Potter</title>
+                        <title lang="en">XQuery Kick Start</title>
+                        <title lang="en">Learning XML</title>
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>Prädikate</td>
+                <td><code>doc("books.xml")/bookstore/book<format color="Red">[price&lt;30]</format></code></td>
+                <td>
+                    <p>
+                        XQuery verwendet Prädikate, um die aus XML-Dokumenten extrahierten Daten einzuschränken.
+                        Das Beispiel extrahiert Folgendes:
+                    </p>
+
+                    <code-block lang="xml">
+                        <![CDATA[
+                        <book category="CHILDREN">
+                            <title lang="en">Harry Potter</title>
+                            <author>J K. Rowling</author>
+                            <year>2005</year>
+                            <price>29.99</price>
+                        </book>
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="FLWOR Ausdrücke" id="flwor">
