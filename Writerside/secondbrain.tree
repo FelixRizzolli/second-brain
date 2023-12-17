@@ -135,7 +135,13 @@
                     <toc-element topic="sql-dml-delete.topic"/>
                     <toc-element topic="sql-dml-truncate.topic"/>
                 </toc-element>
-                <toc-element topic="sql-ddl.topic"/>
+                <toc-element topic="sql-ddl.topic">
+                    <toc-element topic="sql-ddl-datenbankoperationen.topic"/>
+                    <toc-element topic="sql-ddl-tabellenoperationen.topic"/>
+                    <toc-element topic="sql-ddl-index.topic"/>
+                    <toc-element topic="sql-ddl-views.topic"/>
+                    <toc-element topic="sql-ddl-gespeicherte-prozeduren.topic"/>
+                </toc-element>
                 <toc-element topic="sql-dcl.topic"/>
                 <toc-element topic="sql-tcl.topic"/>
                 <toc-element topic="sql-weiteres.topic"/>
