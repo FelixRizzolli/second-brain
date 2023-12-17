@@ -794,6 +794,44 @@
         </chapter>
 
         <chapter title="Vorkommensindikatoren" id="indikatoren-vorkommen">
+            <table>
+                <tr>
+                    <td>Indikator</td>
+                    <td>Beschreibung</td>
+                    <td>Beispiel</td>
+                </tr>
+                <tr>
+                    <td><code>maxOccurs</code></td>
+                    <td>
+                        Gibt an, wie oft ein Element maximal vorkommen kann. Mit <code>maxOccurs="unbounded"</code> ist
+                        die Anzahl des vorkommend des Elements nicht mehr limitiert.
+                    </td>
+                    <td>
+                        <code-block lang="xml">
+                            <![CDATA[
+                            <xs:element name="person">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="full_name" type="xs:string"/>
+                                        <xs:element name="child_name" type="xs:string" maxOccurs="10" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>minOccurs</code></td>
+                    <td>
+                        Gibt an, wie oft ein Element minimal vorkommen muss.
+                    </td>
+                    <td>
+                        Dieses Beispiel zeigt, dass das Element <code>child_name</code> mindestens nullmal und maximal
+                        zehnmal im Element person vorkommen kann.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Gruppenindikatoren" id="indikatoren-gruppe">
