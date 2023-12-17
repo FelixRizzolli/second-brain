@@ -709,8 +709,88 @@
     </chapter>
 
     <chapter title="Indikatoren" id="indikatoren">
+        <p>
+            Mit Indikatoren ist es möglich, zu steuern, wie Elemente in Dokumenten verwendet werden sollen.
+        </p>
 
         <chapter title="Sortierindikatoren" id="indikatoren-sort">
+            <table>
+                <tr>
+                    <td>Indikator</td>
+                    <td>Beschreibung</td>
+                    <td>Beispiel</td>
+                </tr>
+                <tr>
+                    <td><code>all</code></td>
+                    <td>
+                        <p>
+                            Der <code>all</code>-Indikator gibt an, dass die untergeordneten Elemente in beliebiger
+                            Reihenfolge erscheinen können und dass jedes untergeordnete Element nur einmal vorkommen
+                            darf.
+                        </p>
+                        <p>
+                            Wird der <code>all</code>-Indikator verwendet kann der <code>minOccurs</code> Indikator auf
+                            <code>0</code> oder <code>1</code> und der <code>maxOccurs</code> nur auf <code>1</code>
+                            gesetzt werden.
+                        </p>
+                    </td>
+                    <td>
+                        <code-block lang="xml">
+                            <![CDATA[
+                            <xs:element name="person">
+                                <xs:complexType>
+                                    <xs:all>
+                                        <xs:element name="firstname" type="xs:string"/>
+                                        <xs:element name="lastname" type="xs:string"/>
+                                    </xs:all>
+                                </xs:complexType>
+                            </xs:element>
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>choice</code></td>
+                    <td>
+                        Der <code>choice</code>-Indikator gibt an, dass nur eines der Kindelemente vorkommen kann.
+                    </td>
+                    <td>
+                        <code-block lang="xml">
+                            <![CDATA[
+                            <xs:element name="person">
+                                <xs:complexType>
+                                    <xs:choice>
+                                        <xs:element name="employee" type="employee"/>
+                                        <xs:element name="member" type="member"/>
+                                    </xs:choice>
+                                </xs:complexType>
+                            </xs:element>
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>sequence</code></td>
+                    <td>
+                        Der <code>sequence</code>-Indikator gibt an, dass die untergeordneten Elemente in einer
+                        bestimmten Reihenfolge erscheinen müssen.
+                    </td>
+                    <td>
+                        <code-block lang="xml">
+                            <![CDATA[
+                            <xs:element name="person">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="firstname" type="xs:string"/>
+                                        <xs:element name="lastname" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Vorkommensindikatoren" id="indikatoren-vorkommen">
