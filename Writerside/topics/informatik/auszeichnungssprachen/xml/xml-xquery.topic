@@ -123,8 +123,68 @@
     </chapter>
 
     <chapter title="FLWOR Ausdrücke" id="flwor">
-
         <chapter title="Grundlagen" id="flwor-grundlagen">
+            <p>
+                FLWOR ist ein Akronym für "For, Let, Where, Order by, Return".
+            </p>
+
+            <code-block lang="xml">
+                <![CDATA[
+                <book category="CHILDREN">
+                    <title lang="en">Harry Potter</title>
+                    <author>J K. Rowling</author>
+                    <year>2005</year>
+                    <price>29.99</price>
+                </book>
+                ]]>
+            </code-block>
+
+            <table>
+                <tr>
+                    <td>Klausel</td>
+                    <td>Definition</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>for</code></td>
+                    <td><emphasis>OPTIONAL</emphasis> wählt eine Folge von Knoten aus</td>
+                    <td>
+                        Die <code>for</code>-Klausel wählt alle Buchelemente unter dem Element <code>bookstore</code> in
+                        einer Variablen namens <code>$x</code> aus.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>let</code></td>
+                    <td><emphasis>OPTIONAL</emphasis> bindet eine Sequenz an eine Variable</td>
+                    <td>
+                        <emphasis>(im Beispiel nicht vorhanden)</emphasis>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>where</code></td>
+                    <td><emphasis>OPTIONAL</emphasis> filtert die Knotenpunkte</td>
+                    <td>
+                        Die <code>where</code>-Klausel wählt nur <code>book</code>-Elemente aus, deren
+                        <code>price</code>-Element einen Wert von mehr als <code>30</code> hat.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>order by</code></td>
+                    <td><emphasis>OPTIONAL</emphasis> sortiert die Knotenpunkte</td>
+                    <td>
+                        Die <code>order by</code>-Klausel definiert die Sortierreihenfolge. Es wird nach dem Element
+                        <code>title</code> sortiert.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>return</code></td>
+                    <td>definiert was zurückgegeben werden soll (wird einmal für jeden Knoten ausgewertet)</td>
+                    <td>
+                        Die <code>return</code>-Klausel gibt an, was zurückgegeben werden soll. Hier werden die
+                        <code>title</code>-Elemente zurückgegeben.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Die for Klausel" id="flwor-for">
