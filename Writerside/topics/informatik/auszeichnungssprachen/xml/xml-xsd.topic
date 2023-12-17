@@ -456,7 +456,6 @@
             </chapter>
 
             <chapter title="Beispiel (2)" id="komplex-text-beispiel2">
-
                 <code-block lang="xml">
                     <![CDATA[
                     <xs:element name="shoesize" type="shoetype"/>
@@ -480,6 +479,58 @@
         </chapter>
 
         <chapter title="Komplexe Elemente mit verschiedenen Inhalt" id="komplex-verschieden">
+            <code-block lang="xml">
+                <![CDATA[
+                <letter>
+                  Dear Mr. <name>John Smith</name>.
+                  Your order <orderid>1032</orderid>
+                  will be shipped on <shipdate>2001-07-13</shipdate>.
+                </letter>
+                ]]>
+            </code-block>
+
+            <p>
+                Damit Text zwischen den Kindelementen von <code>letter</code> geschrieben werden kann, muss in der XSD
+                auf dem <code>complexType</code> das Attribut <code>mixed="true"</code> definiert werden.
+            </p>
+
+            <chapter title="Beispiel (1)" id="komplex-verschieden-beispiel1">
+                <code-block lang="xml">
+                    <![CDATA[
+                    <xs:element name="letter">
+                        <xs:complexType mixed="true">
+                            <xs:sequence>
+                                <xs:element name="name" type="xs:string"/>
+                                <xs:element name="orderid" type="xs:positiveInteger"/>
+                                <xs:element name="shipdate" type="xs:date"/>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    ]]>
+                </code-block>
+            </chapter>
+
+            <chapter title="Beispiel (2)" id="komplex-verschieden-beispiel2">
+                <code-block lang="xml">
+                    <![CDATA[
+                    <xs:element name="letter" type="lettertype"/>
+
+                    <xs:complexType name="lettertype" mixed="true">
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string"/>
+                            <xs:element name="orderid" type="xs:positiveInteger"/>
+                            <xs:element name="shipdate" type="xs:date"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                    ]]>
+                </code-block>
+
+                <p>
+                    Es besteht auch die Möglichkeit, das <code>complexType</code>-Element auszulagern und ein Name zu
+                    geben. Damit kann es auch für andere Elemente verwendet werden und gestaltet das XSD-Dokument
+                    übersichtlicher.
+                </p>
+            </chapter>
         </chapter>
 
         <chapter title="Das any Element" id="komplex-any">
