@@ -144,7 +144,12 @@
                 </toc-element>
                 <toc-element topic="sql-dcl.topic"/>
                 <toc-element topic="sql-tcl.topic"/>
-                <toc-element topic="sql-weiteres.topic"/>
+                <toc-element topic="sql-weiteres.topic">
+                    <toc-element topic="sql-weiteres-rechenoperationen.topic"/>
+                    <toc-element topic="sql-weiteres-skalarfunktionen.topic"/>
+                    <toc-element topic="sql-weiteres-subqueries.topic"/>
+                    <toc-element topic="sql-weiteres-datetime.topic"/>
+                </toc-element>
             </toc-element>
             <toc-element topic="plsql.topic"/>
         </toc-element>
