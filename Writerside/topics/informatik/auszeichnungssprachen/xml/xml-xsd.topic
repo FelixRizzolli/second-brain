@@ -587,6 +587,53 @@
         </chapter>
 
         <chapter title="Das anyAttribute Element" id="komplex-anyattribute">
+            <p>
+                Das <code>any</code>-Element ermöglicht es, das XML-Elemente mit Attributen zu erweitern, die nicht
+                durch das Schema definiert werden.
+            </p>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="Persons.xsd">
+                <![CDATA[
+                <xs:element name="person">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="firstname" type="xs:string"/>
+                            <xs:element name="lastname" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:anyAttribute/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:attribute name="eyecolor">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="blue|brown|green|grey"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+                ]]>
+            </code-block>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="Persons.xml">
+                <![CDATA[
+                <persons>
+                    <person eyecolor="green">
+                        <firstname>Hege</firstname>
+                        <lastname>Refsnes</lastname>
+                    </person>
+
+                    <person eyecolor="blue">
+                        <firstname>Stale</firstname>
+                        <lastname>Refsnes</lastname>
+                    </person>
+                </persons>
+                ]]>
+            </code-block>
+
+            <p>
+                Dieses XML-Dokument ist valide, da das XSD-Dokument es erlaubt dem <code>person</code>-Element ein
+                optionales Attribut hinzuzufügen.
+            </p>
         </chapter>
     </chapter>
 
