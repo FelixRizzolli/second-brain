@@ -137,6 +137,199 @@
     </chapter>
 
     <chapter title="XSLT Elemente" id="elemente">
+        <code-block lang="xml">
+            <![CDATA[
+            <?xml version="1.0" encoding="UTF-8"?>
+            <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+            <xsl:template match="/">
+            <html>
+                <body>
+                    <h2>My CD Collection</h2>
+                    <table border="1">
+                        <tr bgcolor="#9acd32">
+                            <th>Title</th>
+                            <th>Artist</th>
+                        </tr>
+                        <xsl:for-each select="catalog/cd">
+                            <xsl:sort select="artist"/>
+                            <tr>
+                                <td><xsl:value-of select="title"/></td>
+                                <td><xsl:value-of select="artist"/></td>
+                            </tr>
+                        </xsl:for-each>
+                    </table>
+                </body>
+            </html>
+            </xsl:template>
+
+            </xsl:stylesheet>
+            ]]>
+        </code-block>
+
+        <table>
+            <tr>
+                <td>Element</td>
+                <td>Beschreibung</td>
+                <td>Beispiel</td>
+            </tr>
+            <tr>
+                <td><code>&lt;xsl:template&gt;</code></td>
+                <td>
+                    Das <code>&lt;xsl:template&gt;</code> Element wird zum Erstellen von Vorlagen verwendet. Das
+                    <code>match</code>-Attribut wird verwendet, um eine Vorlage mit einem XML-Element zu verknüpfen. Das
+                    <code>match</code>-Attribut kann auch verwendet werden, um eine Vorlage für das gesamte XML-Dokument
+                    zu definieren. Der Wert des <code>match</code>-Attributs ist ein XPath-Ausdruck (d. h.
+                    <code>match="/"</code> definiert das gesamte Dokument).
+                </td>
+                <td>
+                    <code-block lang="xml">
+                        <![CDATA[
+                        <xsl:template match="expression">
+                            <html>
+                                ...
+                            </html>
+                        </xsl:template>
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;xsl:value-of&gt;</code></td>
+                <td>
+                    Das <code>&lt;xsl:value-of&gt;</code>-Element kann verwendet werden, um den Wert eines XML-Elements
+                    zu extrahieren und ihn dem Ausgabestream der Transformation hinzuzufügen.
+                </td>
+                <td>
+                    <code-block lang="xml">
+                        <![CDATA[
+                        <xsl:value-of select="expression" />
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;xsl:for-each&gt;</code></td>
+                <td>
+                    Das <code>&lt;xsl:for-each&gt;</code>-Element kann verwendet werden, um jedes XML-Element eines
+                    angegebenen Knotensatzes auszuwählen. Die Ausgabe der XML-Datei kann auch durch das
+                    <code>select</code>-Attribut gefiltert werden.
+                </td>
+                <td>
+                    <code-block lang="xml">
+                        <![CDATA[
+                        <xsl:for-each select="expression">
+                            ...
+                        </xsl:for-each>
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;xsl:sort&gt;</code></td>
+                <td>
+                    Um die Ausgabe zu sortieren, wird einfach ein <code>&lt;xsl:sort&gt;</code>-Element innerhalb des
+                    <code>&lt;xsl:for-each&gt;</code>-Elements in der XSL-Datei hinzugefügt.
+                </td>
+                <td>
+                    <code-block lang="xml">
+                        <![CDATA[
+                        <xsl:for-each select="expression">
+                            <xsl:sort select="expression"/>
+                            ...
+                        </xsl:for-each>
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;xsl:if&gt;</code></td>
+                <td>
+                    Das <code>&lt;xsl:if&gt;</code>-Element wird verwendet, um den Inhalt der XML-Datei einem bedingten
+                    Test zu unterziehen. Der Wert des erforderlichen <code>test</code>-Attributs enthält den
+                    auszuwertenden Ausdruck.
+                </td>
+                <td>
+                    <code-block lang="xml">
+                        <![CDATA[
+                        <xsl:if test="expression">
+                            ...some output if the expression is true...
+                        </xsl:if>
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;xsl:choose&gt;</code></td>
+                <td>
+                    Das Element <code>&lt;xsl:choose&gt;</code> wird in Verbindung mit <code>&lt;xsl:when&gt;</code> und
+                    <code>&lt;xsl:otherwise&gt;</code> verwendet, um mehrere bedingte Tests auszudrücken.
+                </td>
+                <td>
+                    <code-block lang="xml">
+                        <![CDATA[
+                        <xsl:choose>
+                            <xsl:when test="expression">
+                                ... some output ...
+                            </xsl:when>
+                            <xsl:otherwise>
+                                ... some output ....
+                            </xsl:otherwise>
+                        </xsl:choose>
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;xsl:apply-templates&gt;</code></td>
+                <td>
+                    Das <code>&lt;xsl:apply-templates&gt;</code>-Element wendet eine Vorlage auf das aktuelle Element
+                    oder auf die untergeordneten Knoten des aktuellen Elements an. Wird dem
+                    <code>&lt;xsl:apply-templates&gt;</code>-Element ein <code>select</code>-Attribut hinzugefügt,
+                    werden nur die untergeordneten Elemente verarbeitet, die dem Wert des Attributs entsprechen. Mit
+                    dem <code>select</code>-Attribut kann angegeben werden, in welcher Reihenfolge die Kindknoten
+                    abgearbeitet werden sollen.
+                </td>
+                <td>
+                    <code-block lang="xml">
+                        <![CDATA[
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+                        <xsl:template match="/">
+                            <html>
+                                <body>
+                                    <h2>My CD Collection</h2>
+                                    <xsl:apply-templates/>
+                                </body>
+                            </html>
+                        </xsl:template>
+
+                        <xsl:template match="cd">
+                            <p>
+                                <xsl:apply-templates select="title"/>
+                                <xsl:apply-templates select="artist"/>
+                            </p>
+                        </xsl:template>
+
+                        <xsl:template match="title">
+                            Title: <span style="color:#ff0000">
+                            <xsl:value-of select="."/></span>
+                            <br />
+                        </xsl:template>
+
+                        <xsl:template match="artist">
+                            Artist: <span style="color:#00ff00">
+                            <xsl:value-of select="."/></span>
+                            <br />
+                        </xsl:template>
+
+                        </xsl:stylesheet>
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
