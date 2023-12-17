@@ -52,6 +52,26 @@
     </chapter>
 
     <chapter title="XSLT Transformation" id="transformation">
+        <p>
+            Das root-Element, welches das Dokument als XSL-Stylesheet deklariert, ist
+            <code>&lt;xsl:stylesheet&gt;</code> oder <code>&lt;xsl:transform&gt;</code>. Diese beiden Elemente sind
+            Synonyme. Um auf XSLT Elemente zugreifen zu können muss dieses Element am Anfang des Dokuments definiert
+            werden. Das Argument <code>xmlns:xsl="http://www.w3.org/1999/XSL/Transform"</code> zeigt auf den offiziellen
+            W3C XSLT Namespace. Wird dieser Namespace verwendet, so muss auch die Versionsnummer mittels
+            <code>version="1.0"</code> mitgeliefert werden.
+        </p>
+
+        <code-block lang="xml">
+            <![CDATA[
+            <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            ]]>
+        </code-block>
+
+        <code-block lang="xml">
+            <![CDATA[
+            <xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            ]]>
+        </code-block>
 
         <chapter title="XML in XHTML umwandeln" id="transformation-xml-html">
         </chapter>
