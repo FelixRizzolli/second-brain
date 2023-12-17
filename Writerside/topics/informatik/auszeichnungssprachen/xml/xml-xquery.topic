@@ -260,6 +260,23 @@
         </chapter>
 
         <chapter title="Die let Klausel" id="flwor-let">
+            <p>
+                Die <code>let</code>-Klausel ermöglicht die Zuweisung von Variablen, um die mehrfache Wiederholung
+                desselben Ausdrucks zu vermeiden. Die <code>let</code>-Klausel führt nicht zu einer Iteration.
+            </p>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="XQuery">
+                <![CDATA[
+                let $x := (1 to 5)
+                return <test>{$x}</test>
+                ]]>
+            </code-block>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="Ergebnis">
+                <![CDATA[
+                <test>1 2 3 4 5</test>
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter title="Die where Klausel" id="flwor-where">
