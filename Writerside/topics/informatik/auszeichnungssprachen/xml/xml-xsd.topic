@@ -1261,6 +1261,112 @@
         </list>
 
         <chapter title="XSD String Datentypen" id="datentypen-string">
+            <table>
+                <tr>
+                    <td>Datentyp</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>string</code></td>
+                    <td>
+                        <p>
+                            Der Datentyp String kann Zeichen, Zeilenvorschübe, Wagenrückläufe und Tabulatorzeichen
+                            enthalten. Der XML-Prozessor wird den Wert nicht ändern, wenn der Datentyp string verwendet
+                            wird.
+                        </p>
+
+                        <code-block lang="xml">
+                            <![CDATA[
+                            <!-- XSD -->
+                            <xs:element name="customer" type="xs:token" />
+
+                            <!-- XML -->
+                            <customer>John Smith</customer>
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>normalizedString</code></td>
+                    <td>
+                        <p>
+                            Der Datentyp <code>normalizedString</code> ist vom Datentyp String abgeleitet. Der Datentyp
+                            <code>normalizedString</code> enthält ebenfalls Zeichen, aber der XML-Prozessor entfernt
+                            Zeilenvorschübe, Wagenrückläufe und Tabulatorzeichen.
+                        </p>
+
+                        <code-block lang="xml">
+                            <![CDATA[
+                            <!-- XSD -->
+                            <xs:element name="customer" type="xs:token" />
+
+                            <!-- XML -->
+                            <customer>John Smith</customer>
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>token</code></td>
+                    <td>
+                        <p>
+                            Der Token-Datentyp ist ebenfalls vom String-Datentyp abgeleitet. Der Token-Datentyp enthält
+                            ebenfalls Zeichen, aber der XML-Prozessor entfernt Zeilenvorschübe, Wagenrückläufe,
+                            Tabulatoren, führende und nachfolgende Leerzeichen sowie mehrere Leerzeichen.
+                        </p>
+
+                        <code-block lang="xml">
+                            <![CDATA[
+                            <!-- XSD -->
+                            <xs:element name="customer" type="xs:token" />
+
+                            <!-- XML -->
+                            <customer>John Smith</customer>
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>ENTITIES</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><code>ENTITY</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><code>ID</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><code>IDREF</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><code>language</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><code>Name</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><code>NCName</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><code>NMTOKEN</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><code>NMTOKENS</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><code>QName</code></td>
+                    <td></td>
+                </tr>
+            </table>
 
             <chapter title="Einschränkungen" id="datentypen-string-restrictions">
             </chapter>
