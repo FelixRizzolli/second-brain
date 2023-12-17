@@ -463,6 +463,22 @@
         </p>
 
         <chapter title="Syntax" id="benutzerdefiniert-syntax">
+            <code-block lang="xml">
+                declare function prefix:function_name($parameter as datatype)
+                as returnDatatype
+                {
+                ...function code here...
+                };
+            </code-block>
+
+            <p>Hinweise zu benutzerdefinierten Funktionen:</p>
+            
+            <list>
+                <li>Das Schlüsselwort <code>declare function</code> muss verwendet werden</li>
+                <li>Der Name der Funktion muss vorangestellt werden</li>
+                <li>Der Datentyp der Parameter entspricht meist den in XML Schema definierten Datentypen</li>
+                <li>Der Körper der Funktion muss von geschweiften Klammern umgeben sein</li>
+            </list>
         </chapter>
 
         <chapter title="Beispiel" id="benutzerdefiniert-beispiel">
