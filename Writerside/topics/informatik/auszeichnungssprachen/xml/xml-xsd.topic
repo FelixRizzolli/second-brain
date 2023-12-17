@@ -677,7 +677,7 @@
         <code-block lang="xml">
             <![CDATA[
             <kunde>
-                <navn>John Smith</navn>
+                <name>John Smith</name>
             </kunde>
             ]]>
         </code-block>
