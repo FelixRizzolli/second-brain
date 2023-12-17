@@ -114,7 +114,21 @@
             <toc-element topic="rdbms.topic"/>
             <toc-element topic="nosql.topic"/>
             <toc-element topic="sql.topic">
-                <toc-element topic="sql-dql.topic"/>
+                <toc-element topic="sql-dql.topic">
+                    <toc-element topic="sql-dql-konstanten.topic"/>
+                    <toc-element topic="sql-dql-aliase.topic"/>
+                    <toc-element topic="sql-dql-distinct.topic"/>
+                    <toc-element topic="sql-dql-funktionen.topic"/>
+                    <toc-element topic="sql-dql-limit.topic"/>
+                    <toc-element topic="sql-dql-operatoren.topic"/>
+                    <toc-element topic="sql-dql-orderby.topic"/>
+                    <toc-element topic="sql-dql-groupby.topic">
+                    </toc-element>
+                    <toc-element topic="sql-dql-having.topic"/>
+                    <toc-element topic="sql-dql-mengenoperationen.topic"/>
+                    <toc-element topic="sql-dql-case.topic"/>
+                    <toc-element topic="sql-dql-join.topic"/>
+                </toc-element>
                 <toc-element topic="sql-dml.topic">
                     <toc-element topic="sql-dml-insert.topic"/>
                     <toc-element topic="sql-dml-update.topic"/>
