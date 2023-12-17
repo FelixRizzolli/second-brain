@@ -1606,6 +1606,128 @@
         </chapter>
 
         <chapter title="XSD numerische Datentypen" id="datentypen-numerisch">
+            <table>
+                <tr>
+                    <td>Datentyp</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>byte</code></td>
+                    <td>
+                        Eine 8-Bit-Ganzzahl mit Vorzeichen.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>decimal</code></td>
+                    <td>
+                        <p>
+                            Ein dezimaler Wert.
+                        </p>
+
+                        <code-block lang="xml">
+                            <![CDATA[
+                            <!-- XSD -->
+                            <xs:element name="price" type="xs:decimal"/>
+
+                            <!-- XML -->
+                            <price>999.50</price>
+                            <price>+999.5450</price>
+                            <price>-999.5230</price>
+                            <price>0</price>
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>int</code></td>
+                    <td>
+                        Eine 32-Bit-Ganzzahl mit Vorzeichen.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>integer</code></td>
+                    <td>
+                        <p>
+                            Ein ganzzahliger Wert.
+                        </p>
+
+                        <code-block lang="xml">
+                            <![CDATA[
+                            <!-- XSD -->
+                            <xs:attribute name="disabled" type="xs:boolean"/>
+
+                            <!-- XML -->
+                            <price>999</price>
+                            <price>+999</price>
+                            <price>-999</price>
+                            <price>0</price>
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>long</code></td>
+                    <td>
+                        Eine 64-Bit-Ganzzahl mit Vorzeichen.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>negativeInteger</code></td>
+                    <td>
+                        Integer mit nur negativen Werten (<code>...</code>, <code>-2</code>, <code>-1</code>).
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>nonNegativeInteger</code></td>
+                    <td>
+                        Integer mit nur nicht-negativen Werten (<code>0</code>, <code>1</code>, <code>2</code>,
+                        <code>...</code>).
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>nonPositiveInteger</code></td>
+                    <td>
+                        Integer mit nur nicht-positiven Werten (<code>...</code>, <code>-2</code>, <code>-1</code>,
+                        <code>0</code>).
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>positiveInteger</code></td>
+                    <td>
+                        Integer mit nur positiven Werden (<code>1</code>, <code>2</code>, <code>...</code>).
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>short</code></td>
+                    <td>
+                        Eine 16-Bit Ganzzahl mit Vorzeichen.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>unsignedLong</code></td>
+                    <td>
+                        Ein 64-Bit Integer ohne Vorzeichen.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>unsignedInt</code></td>
+                    <td>
+                        Ein 32-Bit Integer ohne Vorzeichen.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>unsignedShort</code></td>
+                    <td>
+                        Ein 16-Bit Integer ohne Vorzeichen.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>unsignedByte</code></td>
+                    <td>
+                        Ein 8-Bit Integer ohne Vorzeichen.
+                    </td>
+                </tr>
+            </table>
 
             <chapter title="Einschränkungen" id="datentypen-numerisch-restrictions">
             </chapter>
