@@ -50,6 +50,15 @@
         </p>
 
         <chapter title="Sichere Datenkommunikation" id="grundlagen-sicherheit">
+            <p>
+                Bei der Übermittlung von Daten von einem Sender an einen Empfänger ist es wichtig, dass beide Teile die
+                gleichen "Erwartungen" an den Inhalt haben. Mit XML-Schemata kann der Sender die Daten in einer Weise
+                beschreiben, die der Empfänger versteht. Ein Datum wie: <code>"03-11-2004"</code> wird in einigen
+                Ländern als 3. November und in anderen Ländern als 11. März interpretiert werden. Ein XML-Element mit
+                einem Datentyp wie diesem: <code>&lt;date type="date"&gt;2004-03-11&lt;/date&gt;</code> gewährleistet
+                jedoch ein gegenseitiges Verständnis des Inhalts, da der XML-Datentyp <code>"date"</code> das Format
+                <code>"JJJJ-MM-TT"</code> erfordert.
+            </p>
         </chapter>
 
         <chapter title="Wohlgeformt ist nicht genug!" id="grundlagen-wohlgeformt">
