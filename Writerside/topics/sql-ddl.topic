@@ -6,6 +6,36 @@
        title="DDL (Data Definition Language)" id="sql-ddl">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Inhaltsverzeichnis" id="inhaltsverzeichnis">
+        <list>
+            <li>
+                <a href="sql-ddl-datenbankoperationen.topic">
+                    Datenbankoperationen (<code>CREATE</code>, <code>DROP</code>, <code>BACKUP</code>)
+                </a>
+            </li>
+            <li>
+                <a href="sql-ddl-tabellenoperationen.topic">
+                    Tabellenoperationen (<code>CREATE</code>, <code>DROP</code>, <code>ALTER</code>)
+                </a>
+            </li>
+            <li>
+                <a href="sql-ddl-index.topic">
+                    <code>INDEX</code>: Performance von Abfragen optimieren
+                </a>
+            </li>
+            <li>
+                <a href="sql-ddl-views.topic">
+                    Views
+                </a>
+            </li>
+            <li>
+                <a href="sql-ddl-gespeicherte-prozeduren.topic">
+                    Gespeicherte Prozeduren
+                </a>
+            </li>
+        </list>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
