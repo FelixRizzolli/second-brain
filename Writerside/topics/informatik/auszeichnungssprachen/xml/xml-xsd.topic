@@ -863,6 +863,21 @@
             </chapter>
 
             <chapter title="Attributgruppen" id="indikatoren-gruppe-attribut">
+                <code-block lang="xml">
+                    <![CDATA[
+                    <xs:attributeGroup name="personattrgroup">
+                        <xs:attribute name="firstname" type="xs:string"/>
+                        <xs:attribute name="lastname" type="xs:string"/>
+                        <xs:attribute name="birthday" type="xs:date"/>
+                    </xs:attributeGroup>
+
+                    <xs:element name="person">
+                        <xs:complexType>
+                            <xs:attributeGroup ref="personattrgroup"/>
+                        </xs:complexType>
+                    </xs:element>
+                    ]]>
+                </code-block>
             </chapter>
         </chapter>
     </chapter>
