@@ -87,6 +87,14 @@
     </chapter>
 
     <chapter title="Einfache Elemente" id="simple">
+        <p>
+            Ein einfaches Element ist ein XML-Element, das nur Text enthalten kann. Es kann keine anderen Elemente oder
+            Attribute enthalten. Die Einschränkung "nur Text" ist jedoch ziemlich irreführend. Der Text kann von vielen
+            verschiedenen Typen sein. Er kann einer der Typen sein, die in der XML-Schema-Definition enthalten sind
+            (boolean, string, date usw.), oder er kann ein benutzerdefinierter Typ sein, der selbst festgelegt wurde. Es
+            können auch Einschränkungen (Facetten) zu einem Datentyp hinzugefügt werden, um seinen Inhalt zu begrenzen,
+            oder es kann verlangt werden, dass die Daten einem bestimmten Muster entsprechen.
+        </p>
 
         <chapter title="Elementattribute" id="simple-attribut">
         </chapter>
