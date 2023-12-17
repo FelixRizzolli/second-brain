@@ -6,6 +6,38 @@
        title="TCL (Transaction Control Language)" id="sql-tcl">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einleitung" id="einleitung">
+
+        <chapter title="Warum müssen Datenbankoperationen verbindlich durchgeführt werden?"
+                 id="einleitung-verbindlichkeit">
+
+        </chapter>
+
+        <chapter title="Forderungen an relationale Datenbanksysteme" id="einleitung-forderungen">
+
+        </chapter>
+
+        <chapter title="Grundlegendes über Transaktionen" id="einleitung-grundlagen">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="Allgemeiner Aufbau einer Transaktion" id="aufbau">
+
+    </chapter>
+
+    <chapter title="Einen atomaren Datenzustand mit Transaktionen sicherstellen" id="atomarer-datenzustand">
+
+    </chapter>
+
+    <chapter title="Transaktion mit ROLLBACK rückgängig machen" id="rollback">
+
+    </chapter>
+
+    <chapter title="Operationen mit Transaktionen isoliert ausführen" id="isolierte-operationen">
+
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
