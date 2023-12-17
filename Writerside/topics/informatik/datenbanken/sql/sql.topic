@@ -149,10 +149,26 @@
                 <p><a href="sql-weiteres.topic"><b>Weiteres</b></a></p>
 
                 <list>
-                    <li><a href="sql-weiteres-rechenoperationen.topic">Rechenoperationen</a></li>
-                    <li><a href="sql-weiteres-skalarfunktionen.topic">Skalarfunktionen</a></li>
-                    <li><a href="sql-weiteres-subqueries.topic">Subqueries</a></li>
-                    <li><a href="sql-weiteres-datetime.topic">Datum und Uhrzeit</a></li>
+                    <li>
+                        <a href="sql-weiteres-rechenoperationen.topic">
+                            Rechenoperationen
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sql-weiteres-skalarfunktionen.topic">
+                            Skalarfunktionen
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sql-weiteres-subqueries.topic">
+                            Subqueries
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sql-weiteres-datetime.topic">
+                            Datum und Uhrzeit
+                        </a>
+                    </li>
                 </list>
             </li>
         </list>
