@@ -6,6 +6,17 @@
        title="DML (Data Manipulation Language)" id="sql-dml">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlegendes" id="grundlegendes">
+        <p>
+            Neben dem Abfragen von Zeilen durch die <code>SELECT</code>-Anweisung bietet SQL auch
+            <a href="sql-dml-insert.topic">Einfügeoperationen mittels <code>INSERT</code></a>,
+            <a href="sql-dml-update.topic">Änderungsoperationen mittels <code>UPDATE</code></a> und auch
+            <a href="sql-dml-delete.topic">Löschoperationen durch <code>DELETE</code></a> und
+            <a href="sql-dml-truncate.topic"><code>TRUNCATE</code></a>. Wenn das Löschen sehr schnell gehen soll, so
+            wird die <code>TRUNCATE</code>-Anweisung verwendet.
+        </p>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
