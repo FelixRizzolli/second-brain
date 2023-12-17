@@ -482,6 +482,20 @@
         </chapter>
 
         <chapter title="Beispiel" id="benutzerdefiniert-beispiel">
+            <code-block lang="xml" collapsible="true" collapsed-title="Funktionsdeklaration">
+                declare function local:minPrice($p as xs:decimal?,$d as xs:decimal?)
+                as xs:decimal?
+                {
+                let $disc := ($p * $d) div 100
+                return ($p - $disc)
+                };
+            </code-block>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="Anwendung der Funktion">
+                <![CDATA[
+                <minPrice>{local:minPrice($book/price,$book/discount)}</minPrice>
+                ]]>
+            </code-block>
         </chapter>
     </chapter>
 
