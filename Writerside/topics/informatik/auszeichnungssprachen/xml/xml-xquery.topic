@@ -280,6 +280,15 @@
         </chapter>
 
         <chapter title="Die where Klausel" id="flwor-where">
+            <p>
+                Die <code>where</code>-Klausel wird verwendet, um ein oder mehrere Kriterien für das Ergebnis anzugeben:
+            </p>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="XQuery">
+                <![CDATA[
+                where $x/price>30 and $x/price<100
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter title="Die order by Klausel" id="flwor-order">
