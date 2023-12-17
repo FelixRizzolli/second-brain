@@ -191,6 +191,93 @@
     </chapter>
 
     <chapter title="Komplexe Elemente" id="komplex">
+        <p>
+            Ein komplexes Element ist ein XML-Element, das andere Elemente und/oder Attribute enthält. Es gibt vier
+            Arten von komplexen Elementen (wovon jedes der Elemente Attribute enthalten kann):
+        </p>
+
+        <list>
+            <li>leere Elemente</li>
+            <li>Elemente, die nur andere Elemente enthalten</li>
+            <li>Elemente, die nur Text enthalten</li>
+            <li>Elemente, die sowohl andere Elemente als auch Text enthalten</li>
+        </list>
+
+        <code-block lang="xml">
+            <![CDATA[
+            <employee>
+                <firstname>John</firstname>
+                <lastname>Smith</lastname>
+            </employee>
+            ]]>
+        </code-block>
+
+        <p>
+            Das Element <code>employee</code> kann direkt deklariert werden, indem das Element benannt wird, etwa so:
+        </p>
+
+        <code-block lang="xml">
+            <![CDATA[
+            <xs:element name="employee">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="firstname" type="xs:string"/>
+                        <xs:element name="lastname" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            ]]>
+        </code-block>
+
+        <p>
+            Das Element <code>employee</code> kann ein <code>type</code>-Attribut haben, das auf den Namen des zu
+            verwendenden komplexen Typs verweist. Somit kann der Typ auch wiederverwendet werden:
+        </p>
+
+        <code-block lang="xml">
+            <![CDATA[
+            <xs:element name="employee" type="personinfo"/>
+            <xs:element name="student" type="personinfo"/>
+            <xs:element name="member" type="personinfo"/>
+
+            <xs:complexType name="personinfo">
+                <xs:sequence>
+                    <xs:element name="firstname" type="xs:string"/>
+                    <xs:element name="lastname" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            ]]>
+        </code-block>
+
+        <p>
+            Ein komplexer Typ kann auch auf einem bestehenden komplexen Typ aufbauen und einige Elemente hinzufügen,
+            etwa so:
+        </p>
+
+        <code-block lang="xml">
+            <![CDATA[
+            <xs:element name="employee" type="fullpersoninfo"/>
+
+            <xs:complexType name="personinfo">
+                <xs:sequence>
+                    <xs:element name="firstname" type="xs:string"/>
+                    <xs:element name="lastname" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+
+            <xs:complexType name="fullpersoninfo">
+                <xs:complexContent>
+                    <xs:extension base="personinfo">
+                        <xs:sequence>
+                            <xs:element name="address" type="xs:string"/>
+                            <xs:element name="city" type="xs:string"/>
+                            <xs:element name="country" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:extension>
+                </xs:complexContent>
+            </xs:complexType>
+            ]]>
+        </code-block>
 
         <chapter title="Komplexe Elemente welche nur Attribute enthalten" id="komplex-attribut">
         </chapter>
