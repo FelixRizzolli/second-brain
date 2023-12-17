@@ -835,6 +835,9 @@
         </chapter>
 
         <chapter title="Gruppenindikatoren" id="indikatoren-gruppe">
+            <p>
+                Gruppenindikatoren werden verwendet, um zusammengehörige Elementen zu definieren.
+            </p>
 
             <chapter title="Elementgruppen" id="indikatoren-gruppe-element">
             </chapter>
