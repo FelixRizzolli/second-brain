@@ -6,8 +6,4 @@
         <accepts>page.html</accepts>
     </rule>
     -->
-    <rule id="23b9f6ee">
-        <description>Created after removal of "Bilder und Grafiken dynamisch erstellen" from MySecondBrain</description>
-        <accepts>js-bilder-grafiken.html</accepts>
-    </rule>
 </rules>
