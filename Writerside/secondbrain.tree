@@ -113,7 +113,14 @@
         <toc-element topic="datenbanken.topic">
             <toc-element topic="rdbms.topic"/>
             <toc-element topic="nosql.topic"/>
-            <toc-element topic="sql.topic"/>
+            <toc-element topic="sql.topic">
+                <toc-element topic="sql-dql.topic"/>
+                <toc-element topic="sql-dml.topic"/>
+                <toc-element topic="sql-ddl.topic"/>
+                <toc-element topic="sql-dcl.topic"/>
+                <toc-element topic="sql-tcl.topic"/>
+                <toc-element topic="sql-weiteres.topic"/>
+            </toc-element>
             <toc-element topic="plsql.topic"/>
         </toc-element>
         <toc-element topic="betriebssysteme.topic">
