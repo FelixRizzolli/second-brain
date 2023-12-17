@@ -383,8 +383,26 @@
     </chapter>
 
     <chapter title="Syntax" id="syntax">
-
         <chapter title="Grundlegende Regeln" id="syntax-regeln">
+            <list>
+                <li>
+                    XQuery unterscheidet Groß- und Kleinschreibung
+                </li>
+                <li>
+                    XQuery-Elemente, -Attribute und -Variablen müssen gültige XML-Namen sein.
+                </li>
+                <li>
+                    Ein XQuery-Stringwert kann in einfachen oder doppelten Anführungszeichen stehen.
+                </li>
+                <li>
+                    Eine XQuery-Variable wird mit einem <code>$</code> gefolgt von einem Namen definiert, z. B.
+                    <code>$bookstore</code>
+                </li>
+                <li>
+                    XQuery-Kommentare werden durch (<code>:</code> und <code>:</code>) abgegrenzt, z. B.
+                    (<code>: XQuery-Kommentar :</code>)
+                </li>
+            </list>
         </chapter>
 
         <chapter title="Bedingungen" id="syntax-bedingungen">
