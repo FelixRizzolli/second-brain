@@ -883,6 +883,316 @@
     </chapter>
 
     <chapter title="Einschränkungen (restrictions/facets)" id="restrictions">
+        <table>
+            <tr>
+                <td>Einschränkung</td>
+                <td>Beschreibung</td>
+                <td>Beispiel</td>
+            </tr>
+            <tr>
+                <td><code>enumeration</code></td>
+                <td>
+                    Legt eine Liste zulässiger Werte fest.
+                </td>
+                <td>
+                    <p>
+                        Um den Inhalt eines XML-Elements auf eine Reihe akzeptabler Werte zu beschränken, wird die
+                        Aufzählungsbeschränkung verwendet. Im folgenden Beispiel wird ein Element namens car mit einer
+                        Einschränkung definiert. Die einzigen zulässigen Werte sind: <code>Audi</code>,
+                        <code>Golf</code>, <code>BMW</code>:
+                    </p>
+                    <code-block lang="xml">
+                        <![CDATA[
+                        <xs:element name="car">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Audi"/>
+                                    <xs:enumeration value="Golf"/>
+                                    <xs:enumeration value="BMW"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+
+                        <xs:element name="car" type="carType"/>
+
+                        <xs:simpleType name="carType">
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="Audi"/>
+                                <xs:enumeration value="Golf"/>
+                                <xs:enumeration value="BMW"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>length</code></td>
+                <td>
+                    Gibt die genaue Anzahl der zulässigen Zeichen oder Listenelemente an. Muss gleich oder größer als
+                    Null sein.
+                </td>
+                <td>
+                    <p>
+                        Dieses Beispiel definiert ein Element namens <code>password</code>, dessen Wert genau acht
+                        Zeichen lang sein muss:
+                    </p>
+
+                    <code-block lang="xml">
+                        <![CDATA[
+                        <xs:element name="password">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:length value="8"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>minLength</code></td>
+                <td>
+                    Gibt die Mindestanzahl der zulässigen Zeichen oder Listenelemente an. Muss gleich oder größer als
+                    Null sein.
+                </td>
+                <td>
+                    <p>
+                        Dieses Beispiel definiert ein Element namens <code>password</code>, dessen Wert mindestens fünf
+                        und maximal acht Zeichen lang sein muss:
+                    </p>
+
+                    <code-block lang="xml">
+                        <![CDATA[
+                        <xs:element name="password">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:minLength value="5"/>
+                                    <xs:maxLength value="8"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>maxLength</code></td>
+                <td>
+                    Gibt die maximal zulässige Anzahl von Zeichen oder Listenelementen an. Muss gleich oder größer als
+                    Null sein.
+                </td>
+                <td>
+                    *vorheriges Beispiel
+                </td>
+            </tr>
+            <tr>
+                <td><code>minInclusive</code></td>
+                <td>
+                    Gibt die unteren Grenzen für numerische Werte an (der Wert muss größer oder gleich diesem Wert
+                    sein).
+                </td>
+                <td>
+                    <p>
+                        Das folgende Beispiel definiert ein Element namens <code>age</code> mit einer Einschränkung. Der
+                        Wert von <code>age</code> kann nicht kleiner als <code>0</code> oder größer als <code>120</code>
+                        sein:
+                    </p>
+                    <code-block lang="xml">
+                        <![CDATA[
+                        <xs:element name="age">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:integer">
+                                    <xs:minInclusive value="0"/>
+                                    <xs:maxInclusive value="120"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>maxInclusive</code></td>
+                <td>
+                    Gibt die oberen Grenzen für numerische Werte an (der Wert muss kleiner oder gleich diesem Wert
+                    sein).
+                </td>
+                <td>
+                    *vorheriges Beispiel
+                </td>
+            </tr>
+            <tr>
+                <td><code>minExclusive</code></td>
+                <td>
+                    Gibt die unteren Grenzen für numerische Werte an (der Wert muss größer als dieser Wert sein).
+                </td>
+                <td>
+                    *vorheriges Beispiel
+                </td>
+            </tr>
+            <tr>
+                <td><code>maxExclusive</code></td>
+                <td>
+                    Gibt die Obergrenzen für numerische Werte an (der Wert muss kleiner als dieser Wert sein).
+                </td>
+                <td>
+                    *vorheriges Beispiel
+                </td>
+            </tr>
+            <tr>
+                <td><code>pattern</code></td>
+                <td>
+                    Definiert die genaue Abfolge von Zeichen, die zulässig sind.
+                </td>
+                <td>
+                    <p>
+                        Um den Inhalt eines XML-Elements einzuschränken und eine Reihe von Zahlen oder Buchstaben zu
+                        definieren, die verwendet werden können, wird die <code>pattern</code>-Einschränkung verwendet.
+                        Das nächste Beispiel definiert ein Element namens <code>initials</code> mit einer Einschränkung.
+                        Der einzige akzeptable Wert ist drei der Buchstaben von <code>a</code> bis <code>z</code> in
+                        Klein- oder Großbuchstaben:
+                    </p>
+                    <code-block lang="xml">
+                        <![CDATA[
+                        <xs:element name="initials">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[a-zA-Z][a-zA-Z][a-zA-Z]"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        ]]>
+                    </code-block>
+
+                    <p>*(1) Patterns</p>
+                </td>
+            </tr>
+            <tr>
+                <td><code>fractionDigits</code></td>
+                <td>
+                    Gibt die maximal zulässige Anzahl der Dezimalstellen an. Muss gleich oder größer als Null sein.
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><code>totalDigits</code></td>
+                <td>
+                    Gibt die genaue Anzahl der zulässigen Ziffern an. Muss größer als Null sein.
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><code>whiteSpace</code></td>
+                <td>
+                    Legt fest, wie Leerzeichen (Zeilenvorschübe, Tabulatoren, Leerzeichen und Wagenrücklauf) behandelt
+                    werden.
+                </td>
+                <td>
+                    <code-block lang="xml">
+                        <![CDATA[
+                        <xs:element name="address">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:whiteSpace value="preserve"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        ]]>
+                    </code-block>
+
+                    <p>*(2) Values</p>
+                </td>
+            </tr>
+        </table>
+
+        <chapter title="(1) Patterns" id="restrictions-pattern" collapsible="true">
+            <table>
+                <tr>
+                    <td>Beispiel</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>[0-9]</code></td>
+                    <td>
+                        Platzhalter für eine Zahl von <code>0</code> bis <code>9</code>.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>[a-z]</code></td>
+                    <td>
+                        Platzhalter für ein Buchstaben (kleingeschrieben) von <code>a</code> bis <code>z</code>.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>[A-Z]</code></td>
+                    <td>
+                        Platzhalter für ein Buchstaben (großgeschrieben) von <code>A</code> bis <code>Z</code>.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>[xyz]</code></td>
+                    <td>
+                        Platzhalter für den Buchstaben <code>x</code>, <code>y</code> oder <code>z</code>.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>([a-z])*</code></td>
+                    <td>
+                        Platzhalter für NULL oder mehrere Kleinbuchstaben.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>([a-z][A-Z])+</code></td>
+                    <td>
+                        Platzhalter für Buchstabenpaare, wobei der erste Buchstabe immer klein und der zweite immer
+                        großgeschrieben sein muss.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>male|female</code></td>
+                    <td>
+                        Platzhalter für den Wert <code>male</code> oder <code>female</code>.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>[a-zA-Z0-9]{8}</code></td>
+                    <td>
+                        Platzhalter für genau 8 Zeichen. Die Zeichen können Klein- oder Großbuchstaben von
+                        <code>a</code> bis <code>z</code> oder Zahlen von <code>0</code> bis <code>9</code> sein.
+                    </td>
+                </tr>
+            </table>
+        </chapter>
+        <chapter title="(1) Values" id="restrictions-value" collapsible="true">
+            <table>
+                <tr>
+                    <td><code>value</code></td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>preserve</code></td>
+                    <td>
+                        Vom XML Prozessor werden keine Leerzeichen gelöscht.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>replace</code></td>
+                    <td>
+                        Zeilenvorschübe, Tabulatoren Leerzeichen und CR werden mit Leerzeichen ersetzt.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>collapse</code></td>
+                    <td>
+                        Zeilenvorschübe, Tabulatoren Leerzeichen und CR werden mit Leerzeichen ersetzt; führende und
+                        nachfolgende Leerzeichen werden entfernt; mehrere Leerzeichen werden zu einem Leerzeichen
+                        zusammengefasst.
+                    </td>
+                </tr>
+            </table>
+        </chapter>
     </chapter>
 
     <chapter title="Attribute" id="attribute">
