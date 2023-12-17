@@ -4,6 +4,24 @@
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="DCL (Data Control Language)" id="sql-dcl">
+    <show-structure for="chapter,procedure" depth="2"/>
 
-    <p>Start typing here...</p>
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://de.wikipedia.org/wiki/SQL" ignore-vars="true">
+                https://de.wikipedia.org/wiki/SQL
+            </a>, 2020-11-13 15:10
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://de.wikipedia.org/wiki/Data_Control_Language" ignore-vars="true">
+                https://de.wikipedia.org/wiki/Data_Control_Language
+            </a>, 2020-11-13 15:30
+        </tip>
+    </chapter>
 </topic>
