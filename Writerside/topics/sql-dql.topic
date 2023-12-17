@@ -6,6 +6,72 @@
        title="DQL (Data Query Language)" id="sql-dql">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Inhaltsverzeichnis" id="inhaltsverzeichnis">
+        <list>
+            <li>
+                <a href="sql-dql-konstanten.topic">
+                    Konstanten
+                </a>
+            </li>
+            <li>
+                <a href="sql-dql-aliase.topic">
+                    Aliase (<code>AS</code>)
+                </a>
+            </li>
+            <li>
+                <a href="sql-dql-distinct.topic">
+                    Gleiche Ergebniszeilen ausschließen
+                </a>
+            </li>
+            <li>
+                <a href="sql-dql-funktionen.topic">
+                    Funktionen: <code>MIN</code>, <code>MAX</code>, <code>COUNT</code>, <code>AVG</code>,
+                    <code>SUM</code>
+                </a>
+            </li>
+            <li>
+                <a href="sql-dql-limit.topic">
+                    Ergebnisliste begrenzen (<code>LIMIT</code>, <code>TOP</code>, <code>FETCH</code>)
+                </a>
+            </li>
+            <li>
+                <a href="sql-dql-operatoren.topic">
+                    Operatoren
+                </a>
+            </li>
+            <li>
+                <a href="sql-dql-orderby.topic">
+                    Datensätze sortiert abfragen (<code>ORDER BY</code>)
+                </a>
+            </li>
+            <li>
+                <a href="sql-dql-groupby.topic">
+                    Spaltenwerte gruppieren (<code>GROUP BY</code>)
+                </a>
+            </li>
+            <li>
+                <a href="sql-dql-having.topic">
+                    <code>HAVING</code>: <code>WHERE</code> mit Aggregatfunktionen
+                </a>
+            </li>
+            <li>
+                <a href="sql-dql-mengenoperationen.topic">
+                    Mengenoperationen (<code>UNION</code>, <code>INTERSECT</code>, <code>EXEPT</code>)
+                </a>
+            </li>
+            <li>
+                <a href="sql-dql-case.topic">
+                    Bedingungslogik mit <code>CASE</code>
+                </a>
+            </li>
+            <li>
+                <a href="sql-dql-join.topic">
+                    Verbundene Tabellenabfragen mittels <code>JOIN</code>
+                </a>
+            </li>
+        </list>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
