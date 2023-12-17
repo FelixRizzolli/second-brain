@@ -74,6 +74,65 @@
         </code-block>
 
         <chapter title="XML in XHTML umwandeln" id="transformation-xml-html">
+            <p>
+                In folgendem Beispiel können die Daten aus einem XML-Dokument durch die Informationen aus einem
+                XSL-Dokument in einem Browser in XHTML transformiert und angezeigt werden.
+            </p>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="cdcatalog.xsl">
+                <![CDATA[
+                <?xml version="1.0" encoding="UTF-8"?>
+
+                <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+                <xsl:template match="/">
+                    <html>
+                        <body>
+                            <h2>My CD Collection</h2>
+                            <table border="1">
+                                <tr bgcolor="#9acd32">
+                                    <th>Title</th>
+                                    <th>Artist</th>
+                                </tr>
+                                <xsl:for-each select="catalog/cd">
+                                <tr>
+                                    <td><xsl:value-of select="title"/></td>
+                                    <td><xsl:value-of select="artist"/></td>
+                                </tr>
+                                </xsl:for-each>
+                            </table>
+                        </body>
+                    </html>
+                </xsl:template>
+
+                </xsl:stylesheet>
+                ]]>
+            </code-block>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="cdcatalog.xml">
+                <![CDATA[
+                <?xml version="1.0" encoding="UTF-8"?>
+                <?xml-stylesheet type="text/xsl" href="cdcatalog.xsl"?>
+
+                <catalog>
+                    <cd>
+                        <title>Empire Burlesque</title>
+                        <artist>Bob Dylan</artist>
+                        <country>USA</country>
+                        <company>Columbia</company>
+                        <price>10.90</price>
+                        <year>1985</year>
+                    </cd>
+                    .
+                    .
+                </catalog>
+                ]]>
+            </code-block>
+
+            <p>
+                Das Ergebnis kann man sich <a href="https://www.w3schools.com/xml/cdcatalog_with_xsl.xml">hier</a>
+                anschauen.
+            </p>
         </chapter>
     </chapter>
 
