@@ -683,6 +683,16 @@
         </code-block>
 
         <chapter title="Elementsubstitution blockieren" id="elementsubstitution-blockieren">
+            <p>
+                Um Elementsubstitution zu blockieren, kann dem Element das Attribut <code>block="substitution"</code>
+                hinzugefügt werden.
+            </p>
+
+            <code-block lang="xml">
+                <![CDATA[
+                <xs:element name="name" type="xs:string" block="substitution"/>
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter title="substitutionGroup" id="elementsubstitution-substitutiongroup">
