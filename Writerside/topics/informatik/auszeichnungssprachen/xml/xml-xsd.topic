@@ -638,6 +638,49 @@
     </chapter>
 
     <chapter title="Elementsubstitution" id="elementsubstitution">
+        <p>
+            Mit XML-Schemas kann ein Element ein anderes ersetzen. Angenommen, wir haben Benutzer aus zwei verschiedenen
+            Ländern: England und Norwegen. Wir möchten, dass der Benutzer wählen kann, ob er oder sie die norwegischen
+            Elementnamen oder die englischen Elementnamen im XML-Dokument verwenden möchte. Um dieses Problem zu lösen,
+            könnten wir eine <code>substitutionGroup</code> im XML-Schema definieren. Zuerst wird ein Head-Element und
+            dann die anderen Elemente deklariert, die angeben, dass sie das Head-Element ersetzen können.
+        </p>
+
+        <code-block lang="xml">
+            <![CDATA[
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="navn" substitutionGroup="name"/>
+
+            <xs:complexType name="custinfo">
+                <xs:sequence>
+                    <xs:element ref="name"/>
+                </xs:sequence>
+            </xs:complexType>
+
+            <xs:element name="customer" type="custinfo"/>
+            <xs:element name="kunde" substitutionGroup="customer"/>
+            ]]>
+        </code-block>
+
+        <p>
+            Beide der folgenden XML-Dokumente sind valide:
+        </p>
+
+        <code-block lang="xml">
+            <![CDATA[
+            <customer>
+                <name>John Smith</name>
+            </customer>
+            ]]>
+        </code-block>
+
+        <code-block lang="xml">
+            <![CDATA[
+            <kunde>
+                <navn>John Smith</navn>
+            </kunde>
+            ]]>
+        </code-block>
 
         <chapter title="Elementsubstitution blockieren" id="elementsubstitution-blockieren">
         </chapter>
