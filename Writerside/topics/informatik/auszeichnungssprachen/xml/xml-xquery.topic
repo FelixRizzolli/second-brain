@@ -338,6 +338,47 @@
         </chapter>
 
         <chapter title="Das Ergebnis in einer HTML-Liste ausgeben" id="flwor-ergebnis-html">
+            <code-block lang="xml">
+                <![CDATA[
+                <title lang="en">Everyday Italian</title>
+                <title lang="en">Harry Potter</title>
+                <title lang="en">XQuery Kick Start</title>
+                <title lang="en">Learning XML</title>
+                ]]>
+            </code-block>
+
+            <list>
+                <li>
+                    Dieser Code erstellt eine Punktliste mit der Überschrift <code>"Bookstore"</code> aus.
+                </li>
+                <li>
+                    In der <code>for</code>-Klausel werden alle <code>book</code>-Elemente aus dem
+                    <code>books.xml</code>-Dokument extrahiert.
+                </li>
+                <li>
+                    Mit der <code>order by</code>-Klausel wird angegeben, dass nach dem <code>title</code>-Element der
+                    einzelnen <code>book</code>-Elemente sortiert werden soll.
+                </li>
+                <li>
+                    <p>
+                        In der <code>return</code>-Klausel wird angegeben, dass ein Listenelement erstellt werden soll,
+                    </p>
+
+                    <list>
+                        <li>
+                            welches ein <code>class</code>-Attribut erhalten soll, dessen Inhalt den Inhalt des
+                            <code>category</code>-Attributs des <code>book</code>-Elements erhalten soll
+                        </li>
+                        <li>
+                            dessen Inhalt den Inhalt des <code>title</code>-Elements erhalten soll.
+                        </li>
+                    </list>
+                </li>
+            </list>
+
+            <p>
+                Durch die <code>data()</code>-Funktion wird nur der Inhalt des Elements bzw. des Attributs verwendet.
+            </p>
         </chapter>
     </chapter>
 
