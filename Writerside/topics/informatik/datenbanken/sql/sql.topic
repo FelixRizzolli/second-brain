@@ -13,7 +13,7 @@
         </p>
     </chapter>
 
-    <chapter title="Inhaltsverzeichnis">
+    <chapter title="Inhaltsverzeichnis" id="inhaltsverzeichnis">
         <list>
             <li>
                 <p><a href="sql-dql.topic"><b>DQL (Data Query Language)</b></a></p>
