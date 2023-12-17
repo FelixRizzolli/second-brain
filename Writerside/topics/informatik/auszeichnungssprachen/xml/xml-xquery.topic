@@ -292,6 +292,27 @@
         </chapter>
 
         <chapter title="Die order by Klausel" id="flwor-order">
+            <p>
+                Die <code>order by</code>-Klausel wird verwendet, um die Sortierreihenfolge des Ergebnisses anzugeben.
+                Im folgenden Beispiel wird das Ergebnis nach <code>category</code> und <code>title</code> sortieren:
+            </p>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="XQuery">
+                <![CDATA[
+                for $x in doc("books.xml")/bookstore/book
+                order by $x/@category, $x/title
+                return $x/title
+                ]]>
+            </code-block>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="Ergebnis">
+                <![CDATA[
+                <title lang="en">Harry Potter</title>
+                <title lang="en">Everyday Italian</title>
+                <title lang="en">Learning XML</title>
+                <title lang="en">XQuery Kick Start</title>
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter title="Die return Klausel" id="flwor-return">
