@@ -696,6 +696,15 @@
         </chapter>
 
         <chapter title="substitutionGroup" id="elementsubstitution-substitutiongroup">
+            <p>
+                Der Typ der substituierbaren Elemente muss derselbe sein wie der Typ des Head-Elements oder davon
+                abgeleitet sein. Wenn der Typ des ersetzbaren Elements derselbe ist wie der Typ des Head-Elements, muss
+                der Typ des ersetzbaren Elements nicht angegeben werden. Hierbei muss beachtet werden, dass alle
+                Elemente in der <code>substitutionGroup</code> (das Head-Element und die substituierbaren Elemente) als
+                globale Elemente deklariert werden müssen, sonst funktioniert es nicht! Globale Elemente sind Elemente,
+                die unmittelbare Kinder des schema Elements sind! Lokale Elemente sind Elemente, die in anderen
+                Elementen verschachtelt sind.
+            </p>
         </chapter>
     </chapter>
 
