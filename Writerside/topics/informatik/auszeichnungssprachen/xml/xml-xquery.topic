@@ -188,6 +188,75 @@
         </chapter>
 
         <chapter title="Die for Klausel" id="flwor-for">
+            <p>
+                Die <code>for</code>-Klausel bindet eine Variable an jedes Element, das durch den
+                <code>in</code>-Ausdruck zurückgegeben wird. Die <code>for</code>-Klausel führt zu einer Iteration. Es
+                können mehrere <code>for</code>-Klauseln im selben FLWOR-Ausdruck vorkommen.
+            </p>
+
+            <p>
+                Um eine bestimmte Anzahl von Schleifen in einer <code>for</code> Klausel zu bilden, kann das
+                Schlüsselwort <code>to</code> verwendet werden:
+            </p>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="XQuery">
+                <![CDATA[
+                for $x in (1 to 5)
+                return <test>{$x}</test>
+                ]]>
+            </code-block>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="Ergebnis">
+                <![CDATA[
+                <test>1</test>
+                <test>2</test>
+                <test>3</test>
+                <test>4</test>
+                <test>5</test>
+                ]]>
+            </code-block>
+
+            <p>
+                Das Schlüsselwort <code>at</code> kann zum Zählen der Iterationen verwendet werden:
+            </p>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="XQuery">
+                <![CDATA[
+                for $x at $i in doc("books.xml")/bookstore/book/title
+                return <book>{$i}. {data($x)}</book>
+                ]]>
+            </code-block>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="Ergebnis">
+                <![CDATA[
+                <book>1. Everyday Italian</book>
+                <book>2. Harry Potter</book>
+                <book>3. XQuery Kick Start</book>
+                <book>4. Learning XML</book>
+                ]]>
+            </code-block>
+
+            <p>
+                Es ist auch mehr als ein <code>in</code>-Ausdruck in der <code>for</code>-Klausel zulässig. Mehrere
+                <code>in</code>-Ausdrücke müssen Kommasepariert angegeben werden:
+            </p>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="XQuery">
+                <![CDATA[
+                for $x in (10,20), $y in (100,200)
+                return <test>x={$x} and y={$y}</test>
+                ]]>
+            </code-block>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="Ergebnis">
+                <![CDATA[
+                <test>x=10 and y=100</test>
+                <test>x=10 and y=200</test>
+                <test>x=20 and y=100</test>
+                <test>x=20 and y=200</test>
+                ]]>
+            </code-block>
+
         </chapter>
 
         <chapter title="Die let Klausel" id="flwor-let">
