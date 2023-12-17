@@ -39,6 +39,15 @@
         </p>
 
         <chapter title="XSLT" id="grundlagen-xslt">
+            <p>
+                Ein XSLT-Dokument beschreibt, welche Elemente und Attribute eines XML-Eingabedokuments in welche
+                Bestandteile eines Ausgabedokuments umgesetzt werden. Um die einzelnen Komponenten des Eingabedokuments
+                zu identifizieren, verwendet XSLT eine Sprache namens <a href="xml-xpath.topic">XPath</a>, die den
+                Zugriff auf die Baumstruktur jedes XML-Dokuments ermöglicht. Die Ausdrücke in
+                <a href="xml-xpath.topic">XPath</a> zum Auffinden der verschiedenen Knoten des XML-Baums ähneln Pfaden
+                im Dateisystem, einschließlich dem <code>/</code> zur Trennung übergeordneter von untergeordneten Knoten
+                sowie Konstrukten wie <code>..</code>, um im Baum nach oben zu wandern.
+            </p>
         </chapter>
     </chapter>
 
