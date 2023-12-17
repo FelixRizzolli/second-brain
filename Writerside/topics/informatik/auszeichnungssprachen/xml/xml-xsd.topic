@@ -344,6 +344,55 @@
         </chapter>
 
         <chapter title="Komplexe Elemente welche nur Elemente enthalten" id="komplex-element">
+            <code-block lang="xml">
+                <![CDATA[
+                <person>
+                    <firstname>John</firstname>
+                    <lastname>Smith</lastname>
+                </person>
+                ]]>
+            </code-block>
+
+            <p>
+                Mit dem <code>&lt;xs:sequence&gt;</code> Tag wird definiert, dass die im XSD definierten Elemente im
+                XML-Dokument in der definierten Reihenfolge erscheinen müssen.
+            </p>
+
+            <chapter title="Beispiel (1)" id="komplex-element-beispiel1">
+                <code-block lang="xml">
+                    <![CDATA[
+                    <xs:element name="person">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="firstname" type="xs:string"/>
+                                <xs:element name="lastname" type="xs:string"/>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    ]]>
+                </code-block>
+            </chapter>
+
+            <chapter title="Beispiel (2)" id="komplex-element-beispiel2">
+                <code-block lang="xml">
+                    <![CDATA[
+                    <xs:element name="person" type="persontype"/>
+
+                    <xs:complexType name="persontype">
+                        <xs:sequence>
+                            <xs:element name="firstname" type="xs:string"/>
+                            <xs:element name="lastname" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                    ]]>
+                </code-block>
+
+                <p>
+                    Es besteht auch die Möglichkeit, das <code>complexType</code>-Element auszulagern und ein Name zu
+                    geben. Damit kann es auch für andere Elemente verwendet werden und gestaltet das XSD-Dokument
+                    übersichtlicher.
+                </p>
+            </chapter>
         </chapter>
 
         <chapter title="Komplexe Elemente welche nur Text enthalten" id="komplex-text">
