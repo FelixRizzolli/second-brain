@@ -1749,6 +1749,80 @@
         </chapter>
 
         <chapter title="XSD verschiedene Datentypen" id="datentypen-verschieden">
+            <table>
+                <tr>
+                    <td>Datentyp</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>boolean</code></td>
+                    <td>
+                        <p>
+                            Der boolesche Datentyp wird verwendet, um den Wert auf <code>true</code> oder
+                            <code>false</code> einzuschränken.
+                        </p>
+
+                        <code-block lang="xml">
+                            <![CDATA[
+                            <!-- XSD -->
+                            <xs:attribute name="disabled" type="xs:boolean"/>
+
+                            <!-- XML -->
+                            <price disabled="true">999</price>
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>anyURI</code></td>
+                    <td>
+                        <p>
+                            Der Datentyp <code>anyURI</code> wird zur Angabe eines URI verwendet. Leerzeichen in einer
+                            URI müssen mit %20 ersetzt werden.
+                        </p>
+
+                        <code-block lang="xml">
+                            <![CDATA[
+                            <!-- XSD -->
+                            <xs:attribute name="src" type="xs:anyURI"/>
+
+                            <!-- XML -->
+                            <pic src="https://www.w3schools.com/images/smiley.gif" />
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>base64Binary</code></td>
+                    <td>
+                        Base64-kodierte Binärdaten; Binäre Datentypen werden verwendet, um binär-formatierte Daten
+                        auszudrücken.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>hexBinary</code></td>
+                    <td>
+                        Hexadezimal kodierte Binärdaten; Binäre Datentypen werden verwendet, um binär-formatierte Daten
+                        auszudrücken.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>double</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><code>float</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><code>NOTATION</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><code>QName</code></td>
+                    <td></td>
+                </tr>
+            </table>
 
             <chapter title="Einschränkungen" id="datentypen-verschieden-restrictions">
             </chapter>
