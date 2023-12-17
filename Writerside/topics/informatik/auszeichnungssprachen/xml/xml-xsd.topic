@@ -1398,6 +1398,195 @@
         </chapter>
 
         <chapter title="XSD Date/Time Datentypen" id="datentypen-datetime">
+            <table>
+                <tr>
+                    <td>Datentyp</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>date</code></td>
+                    <td>
+                        <p>
+                            Der Datentyp date wird zur Angabe eines Datums verwendet. Das Datum wird in der folgenden 
+                            Form angegeben: <code>"YYYY-MM-DD"</code>, wobei:
+                        </p>
+                        
+                        <list>
+                            <li><code>YYYY</code> das Jahr angibt</li>
+                            <li><code>MM</code> steht für den Monat</li>
+                            <li><code>DD</code> den Tag angibt</li>
+                        </list>
+
+                        <p>
+                            Alle Komponenten sind verpflichtend! Um eine Zeitzone anzugeben, kann entweder eine
+                            Datumszeit in UTC-Zeit eingegeben werden, indem ein "Z" hinter der Zeit hinzugefügt wird,
+                            oder es kann eine Abweichung von der UTC-Zeit angegeben werden, indem eine positive oder
+                            negative Zeit hinter der Zeit hinzugefügt wird.
+                        </p>
+
+                        <code-block lang="xml">
+                            <![CDATA[
+                            <!-- XSD -->
+                            <xs:element name="start" type="xs:date"/>
+
+                            <!-- XML -->
+                            <start>2002-09-24</start>
+                            <start>2002-09-24Z</start>
+                            <start>2002-09-24-06:00</start>
+                            <start>2002-09-24+06:00</start>
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>time</code></td>
+                    <td>
+                        <p>
+                            Der Datentyp Zeit wird zur Angabe einer Uhrzeit verwendet. Die Zeit wird in der folgenden
+                            Form angegeben: <code>"hh:mm:ss"</code>, wobei:
+                        </p>
+
+                        <list>
+                            <li><code>hh</code> steht für die Stunde</li>
+                            <li><code>mm</code> für die Minute steht</li>
+                            <li><code>ss</code> steht für die Sekunde</li>
+                        </list>
+
+                        <p>
+                            Alle Komponenten sind verpflichtend! Um eine Zeitzone anzugeben, kann entweder eine
+                            Datumszeit in UTC-Zeit eingegeben werden, indem ein "Z" hinter der Zeit hinzugefügt wird,
+                            oder es kann eine Abweichung von der UTC-Zeit angegeben werden, indem eine positive oder
+                            negative Zeit hinter der Zeit hinzugefügt wird.
+                        </p>
+
+                        <code-block lang="xml">
+                            <![CDATA[
+                            <!-- XSD -->
+                            <xs:element name="start" type="xs:time"/>
+
+                            <!-- XML -->
+                            <start>09:00:00</start>
+                            <start>09:30:10.5</start>
+                            <start>09:30:10Z</start>
+                            <start>09:30:10-06:00</start>
+                            <start>09:30:10+06:00</start>
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>dateTime</code></td>
+                    <td>
+                        <p>
+                            Der Datentyp dateTime wird zur Angabe eines Datums und einer Uhrzeit verwendet. Die
+                            <code>dateTime</code> wird in der folgenden Form angegeben:
+                            <code>"YYYY-MM-DDThh:mm:ss"</code>, wobei:
+                        </p>
+
+                        <list>
+                            <li><code>YYYY</code> das Jahr angibt</li>
+                            <li><code>MM</code> steht für den Monat</li>
+                            <li><code>DD</code> den Tag angibt</li>
+                            <li><code>T</code> den Beginn des gewünschten Zeitabschnitts angibt</li>
+                            <li><code>hh</code> steht für die Stunde</li>
+                            <li><code>mm</code> bezeichnet die Minute</li>
+                            <li><code>ss</code> steht für die Sekunde</li>
+                        </list>
+
+                        <p>
+                            Alle Komponenten sind verpflichtend! Um eine Zeitzone anzugeben, kann entweder eine
+                            Datumszeit in UTC-Zeit eingegeben werden, indem ein "Z" hinter der Zeit hinzugefügt wird,
+                            oder es kann eine Abweichung von der UTC-Zeit angegeben werden, indem eine positive oder
+                            negative Zeit hinter der Zeit hinzugefügt wird.
+                        </p>
+
+                        <code-block lang="xml">
+                            <![CDATA[
+                            <!-- XSD -->
+                            <xs:element name="startdate" type="xs:dateTime"/>
+
+                            <!-- XML -->
+                            <startdate>2002-05-30T09:00:00</startdate>
+                            <startdate>2002-05-30T09:30:10.5</startdate>
+                            <startdate>2002-05-30T09:30:10Z</startdate>
+                            <startdate>2002-05-30T09:30:10-06:00</startdate>
+                            <startdate>2002-05-30T09:30:10+06:00</startdate>
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>duration</code></td>
+                    <td>
+                        <p>
+                            Der Datentyp Dauer wird zur Angabe eines Zeitintervalls verwendet. Das Zeitintervall wird in
+                            der folgenden Form angegeben: <code>"PnYnMnDTnHnMnS"</code>, wobei:
+                        </p>
+
+                        <list>
+                            <li>
+                                <code>P</code> den Zeitraum angibt (erforderlich)
+                            </li>
+                            <li>
+                                <code>nY</code> die Anzahl der Jahre angibt
+                            </li>
+                            <li>
+                                <code>nM</code> die Anzahl der Monate angibt
+                            </li>
+                            <li>
+                                <code>nD</code> die Anzahl der Tage angibt
+                            </li>
+                            <li>
+                                <code>T</code> gibt den Beginn eines Zeitabschnitts an (erforderlich, wenn Stunden,
+                                Minuten oder Sekunden angegeben werden sollen)
+                            </li>
+                            <li>
+                                <code>nH</code> gibt die Anzahl der Stunden an
+                            </li>
+                            <li>
+                                <code>nM</code> gibt die Anzahl der Minuten an
+                            </li>
+                            <li>
+                                <code>nS</code> gibt die Anzahl der Sekunden an
+                            </li>
+                        </list>
+
+                        <code-block lang="xml">
+                            <![CDATA[
+                            <!-- XSD -->
+                            <xs:element name="period" type="xs:duration"/>
+
+                            <!-- XML -->
+                            <period>P5Y</period>
+                            <period>P5Y2M10D</period>
+                            <period>P5Y2M10DT15H</period>
+                            <period>PT15H</period>
+                            <period>-P10D</period>
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>gDay</code></td>
+                    <td>Definiert einen Teil eines Datums - den Tag (<code>DD</code>)</td>
+                </tr>
+                <tr>
+                    <td><code>gMonth</code></td>
+                    <td>Definiert einen Teil eines Datums - den Monat (<code>MM</code>)</td>
+                </tr>
+                <tr>
+                    <td><code>gMonthDay</code></td>
+                    <td>Definiert einen Teil eines Datums - den Monat und den Tag (<code>MM-DD</code>)</td>
+                </tr>
+                <tr>
+                    <td><code>gYear</code></td>
+                    <td>Definiert einen Teil eines Datums - das Jahr (<code>YYYY</code>)</td>
+                </tr>
+                <tr>
+                    <td><code>gYearMonth</code></td>
+                    <td>Definiert einen Teil eines Datums - das Jahr und den Monat (<code>YYYY-MM</code>)</td>
+                </tr>
+            </table>
 
             <chapter title="Einschränkungen" id="datentypen-datetime-restrictions">
             </chapter>
