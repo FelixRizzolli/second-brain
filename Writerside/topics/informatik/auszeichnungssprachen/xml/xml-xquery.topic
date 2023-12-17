@@ -406,6 +406,53 @@
         </chapter>
 
         <chapter title="Bedingungen" id="syntax-bedingungen">
+            <code-block lang="xml" collapsible="true" collapsed-title="XQuery">
+                <![CDATA[
+                for $x in doc("books.xml")/bookstore/book
+                return
+                    if ($x/@category="children")
+                    then <child>{data($x/title)}</child>
+                    else <adult>{data($x/title)}</adult>
+                ]]>
+            </code-block>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="Ergebnis">
+                <![CDATA[
+                <adult>Everyday Italian</adult>
+                <child>Harry Potter</child>
+                <adult>XQuery Kick Start</adult>
+                <adult>Learning XML</adult>
+                ]]>
+            </code-block>
+
+            <p>
+                In XQuery können "If-Then-Else"-Ausdrücke verwendet werden. Hierbei sind die Klammern um der Bedingung
+                verpflichtend. Auch die Angabe von <code>then</code> und <code>else</code> ist verpflichtend aber es
+                kann auch nur <code>then ()</code> oder <code>else ()</code> angegeben werden. Es gibt zwei Wege, um
+                Werte zu vergleichen:
+            </p>
+
+            <list style="decimal">
+                <li>
+                    Allgemeine Vergleiche: <code>=</code>, <code>!=</code>, <code>&lt;</code>, <code>&lt;=</code>,
+                    <code>&gt;</code>, <code>&gt;=</code>
+                </li>
+                <li>
+                    Wertevergleiche: <code>eq</code>, <code>ne</code>, <code>lt</code>, <code>le</code>,
+                    <code>gt</code>, <code>ge</code>
+                </li>
+            </list>
+
+            <p>
+                Der folgende Ausdruck gibt <code>true</code> zurück, wenn eines der <code>q</code>-Attribute einen Wert
+                größer als <code>10</code> hat: <code>$bookstore//book/@q &gt; 10</code>
+            </p>
+
+            <p>
+                Der folgende Ausdruck gibt <code>true</code> zurück, wenn es nur ein vom Ausdruck zurückgegebenes
+                Attribut <code>q</code> gibt und sein Wert größer als <code>10</code> ist. Wenn mehr als ein
+                <code>q</code> zurückgegeben wird, tritt ein Fehler auf: <code>$bookstore//book/@q gt 10</code>
+            </p>
         </chapter>
     </chapter>
 
