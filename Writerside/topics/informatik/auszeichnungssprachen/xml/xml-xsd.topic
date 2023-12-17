@@ -62,6 +62,27 @@
         </chapter>
 
         <chapter title="Wohlgeformt ist nicht genug!" id="grundlagen-wohlgeformt">
+            <p>
+                Ein wohlgeformtes XML-Dokument ist ein Dokument, das den XML-Syntaxregeln entspricht, wie:
+            </p>
+
+            <list>
+                <li>es muss mit der XML-Deklaration beginnen</li>
+                <li>es muss ein einziges Wurzelelement haben</li>
+                <li>Start-Tags müssen passende End-Tags haben</li>
+                <li>bei den Elementen wird zwischen Groß- und Kleinschreibung unterschieden</li>
+                <li>alle Elemente müssen geschlossen sein</li>
+                <li>alle Elemente müssen ordnungsgemäß verschachtelt sein</li>
+                <li>alle Attributwerte müssen in Anführungszeichen gesetzt werden</li>
+                <li>Entitäten müssen für Sonderzeichen verwendet werden</li>
+            </list>
+
+            <p>
+                Auch wenn Dokumente wohlgeformt sind, können sie dennoch Fehler enthalten, und diese Fehler können
+                schwerwiegende Folgen haben. Man stelle sich folgende Situation vor: Es werden 5 Bruttolaserdrucker,
+                statt 5 Laserdrucker bestellt. Mit XML-Schemata können die meisten dieser Fehler von der
+                Validierungssoftware erkannt werden.
+            </p>
         </chapter>
     </chapter>
 
