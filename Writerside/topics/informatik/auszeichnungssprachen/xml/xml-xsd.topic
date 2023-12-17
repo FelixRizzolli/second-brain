@@ -7,6 +7,47 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlegendes zu XML Schema Definition" id="grundlagen">
+        <p>
+            Ein XML Schema Definition ist eine alternative Möglichkeit zur Definition von Standards für XML-Dokumente
+            und wird mit der Dateiendung <path>.xsd</path> gespeichert. Gegenüber DTDs besitzt dieses Format vor allem
+            folgende Vorteile:
+        </p>
+
+        <list>
+            <li>
+                Die zulässigen Inhalte für Elemente und Attribute können wesentlich genauer angegeben werden.
+            </li>
+            <li>
+                Das Format ist selbst XML-basiert, verwendet also keine separate Syntax wie DTDs, sondern besteht aus
+                wohlgeformten XML-Dokumenten und kann mittels <a href="xml-dom.topic">XML DOM</a> manipuliert oder
+                mittels <a href="xml-xslt.topic">XSLT</a> transformiert werden.
+            </li>
+            <li>
+                XML Schemas unterstützen Datentypen.
+            </li>
+        </list>
+
+        <p>
+            Grundsätzlich wird jedes Element mithilfe einer <code>&lt;xs:element&gt;</code>-Deklaration angegeben.
+            Elemente, die nur einfachen Textinhalt und keine verschachtelten Elemente oder Attribute besitzen, benötigen
+            im Schema das Attribut <code>type</code>, das den zulässigen Typ des Inhalts angibt. Einige zulässige Typen
+            sind <code>"xs:string"</code> für beliebigen Text, <code>"xs:integer"</code> für ganze Zahlen oder
+            <code>"xs:language"</code> für eine ISO-Sprachangabe wie <code>en</code> (Englisch) oder <code>de</code>
+            (Deutsch). Diese und andere Inhaltstypen können sowohl für Elemente als auch für Attribute verwendet werden.
+        </p>
+        <p>
+            Elemente, die verschachtelte Elemente, gemischten Inhalt oder Attribute enthalten dürfen, benötigen zur
+            Angabe dieser Komponenten einen <code>&lt;xs:complexType&gt;</code>-Block. Für verschachtelte Elemente steht
+            innerhalb dieses Blocks entweder ein einzelnes Element, eine durch einen
+            <code>&lt;xs:sequence&gt;</code>-Abschnitt umschlossene Liste aufeinanderfolgender Elemente oder eine durch
+            <code>&lt;xs:choice&gt;</code> umhüllte Aufzählung von Alternativen.
+        </p>
+        <p>
+            XML Schemas sind erweiterbar, da sie in XML geschrieben werden. Mit einer erweiterbaren Schemadefinition
+            kann ein Schema in einem anderen Schema wiederverwendet werden, es können eigene Datentypen neben den
+            Standarddatentypen definiert werden, es kann auf mehrere Schemas im selben Schemadokument referenziert
+            werden.
+        </p>
 
         <chapter title="Sichere Datenkommunikation" id="grundlagen-sicherheit">
         </chapter>
