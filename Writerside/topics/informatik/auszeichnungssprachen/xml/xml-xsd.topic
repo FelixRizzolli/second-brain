@@ -534,6 +534,56 @@
         </chapter>
 
         <chapter title="Das any Element" id="komplex-any">
+            <p>
+                Das <code>any</code>-Element ermöglicht es, das XML-Dokument mit Elementen zu erweitern, die nicht durch
+                das Schema definiert werden.
+            </p>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="Persons.xsd">
+                <![CDATA[
+                <xs:element name="person">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="firstname" type="xs:string"/>
+                            <xs:element name="lastname" type="xs:string"/>
+                            <xs:any minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="children">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="childname" type="xs:string" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                ]]>
+            </code-block>
+
+            <code-block lang="xml" collapsible="true" collapsed-title="Persons.xml">
+                <![CDATA[
+                <persons>
+                    <person>
+                        <firstname>Hege</firstname>
+                        <lastname>Refsnes</lastname>
+                        <children>
+                            <childname>Cecilie</childname>
+                        </children>
+                    </person>
+
+                    <person>
+                        <firstname>Stale</firstname>
+                        <lastname>Refsnes</lastname>
+                    </person>
+                </persons>
+                ]]>
+            </code-block>
+
+            <p>
+                Dieses XML-Dokument ist valide, da das XSD-Dokument es erlaubt dem <code>person</code>-Element ein
+                optionales Element nach <code>lastname</code> hinzuzufügen.
+            </p>
         </chapter>
 
         <chapter title="Das anyAttribute Element" id="komplex-anyattribute">
