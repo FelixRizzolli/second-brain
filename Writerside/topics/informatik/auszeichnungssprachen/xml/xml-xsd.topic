@@ -142,6 +142,51 @@
         </chapter>
 
         <chapter title="Das schema-Element" id="simple-schema">
+            <p>
+                Das <code>schema</code>-Element ist das Wurzelelement jeder XSD. Es kann mehrere Attribute enthalten:
+            </p>
+
+            <table>
+                <tr>
+                    <td>Attribut</td>
+                    <td>Beispiel</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>xmlns</code></td>
+                    <td><code>xmlns="https://www.example.com"</code></td>
+                    <td>
+                        Gibt an, dass der Standard-Namespace <code>"https://www.example.com"</code> ist.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>xmlns:xs</code></td>
+                    <td><code>xmlns:xs="http://www.w3.org/2001/XMLSchema"</code></td>
+                    <td>
+                        Gibt an, dass die im Schema verwendeten Elemente und Datentypen aus dem Namespace
+                        <code>"http://www.w3.org/2001/XMLSchema"</code> stammen. Er gibt auch an, dass den Elementen und
+                        Datentypen, die aus dem Namensraum <code>"http://www.w3.org/2001/XMLSchema"</code> stammen, das
+                        Präfix <code>xs:</code> vorangestellt werden sollte.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>targetNamespace</code></td>
+                    <td><code>targetNamespace="https://www.example.com"</code></td>
+                    <td>
+                        Gibt an, dass die in diesem Schema definierten Elemente (<code>note</code>, <code>to</code>,
+                        <code>from</code>, <code>heading</code>, <code>body</code>.) aus dem Namensraum
+                        <code>"https://www.example.com"</code> stammen.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>elementFromDefault</code></td>
+                    <td><code>elementFormDefault="qualified"</code></td>
+                    <td>
+                        Gibt an, dass alle vom XML-Instanzdokument verwendeten Elemente, die in diesem Schema deklariert
+                        wurden, Namespace-qualifiziert sein müssen.
+                    </td>
+                </tr>
+            </table>
         </chapter>
     </chapter>
 
