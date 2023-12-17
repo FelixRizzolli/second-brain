@@ -1825,6 +1825,18 @@
             </table>
 
             <chapter title="Einschränkungen" id="datentypen-verschieden-restrictions">
+                <p>
+                    Einschränkungen, die mit den anderen Datentypen verwendet werden können:
+                </p>
+
+                <list>
+                    <li><code>enumeration</code> (ein boolescher Datentyp kann diese Einschränkung nicht verwenden)</li>
+                    <li><code>length</code> (ein boolescher Datentyp kann diese Einschränkung nicht verwenden)</li>
+                    <li><code>maxLength</code> (ein boolescher Datentyp kann diese Einschränkung nicht verwenden)</li>
+                    <li><code>minLength</code> (ein boolescher Datentyp kann diese Einschränkung nicht verwenden)</li>
+                    <li><code>pattern</code></li>
+                    <li><code>whiteSpace</code></li>
+                </list>
             </chapter>
         </chapter>
     </chapter>
