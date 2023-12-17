@@ -7,6 +7,19 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlegendes zu XQuery" id="grundlagen">
+        <img src="xml_tools_overview.png" alt="XML - Tools"/>
+
+        <p>
+            XQuery ist DIE Sprache für Abfragen auf XML-Dokumenten und baut dabei auf
+            <a href="xml-xpath.topic">XPath</a>-Ausdrücke. XQuery wird von allen größeren Datenbanken unterstützt und
+            ist eine W3C Empfehlung. XQuery kann verwendet werden, um Informationen zu extrahieren, um zusammengefasste
+            Berichte zu generieren, um XML in XHTML zu transformieren, um Web-Dokumente auf relevante Informationen zu
+            durchsuchen. In XQuery verwendet auch jene Funktionen wie in <a href="xml-xslt.topic">XSLT</a> und
+            <a href="xml-xpath.topic">XPath verwendet</a> werden können. Eine Liste der Funktionen ist hier:
+            <a href="https://www.w3schools.com/xml/xsl_functions.asp">
+                XPath, XQuery, and XSLT Function Reference (w3schools.com)
+            </a>
+        </p>
     </chapter>
 
     <chapter title="Beispiel" id="beispiel">
