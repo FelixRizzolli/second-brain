@@ -6,4 +6,12 @@
        title="Gespeicherte Prozeduren" id="sql-ddl-gespeicherte-prozeduren">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.w3schools.com/sql/sql_stored_procedures.asp" ignore-vars="true">
+                https://www.w3schools.com/sql/sql_stored_procedures.asp
+            </a>, 2022-11-13 17:45
+        </tip>
+    </chapter>
 </topic>
