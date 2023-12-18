@@ -405,16 +405,207 @@
         </chapter>
 
         <chapter title="LIKE" id="logisch-like">
+            <p>
+                Der <code>LIKE</code>-Operator wird in einer <code>WHERE</code>-Klausel verwendet, um nach einem
+                bestimmten Muster in einer Spalte zu suchen.
+            </p>
+
+            <code-block lang="sql">
+                SELECT  column1
+                     ,  column2
+                     ,  ...
+                  FROM table_name
+                 WHERE  columnN LIKE pattern
+                ;
+            </code-block>
 
             <chapter title="Wildcards" id="logisch-like-wildcards">
+                <p>
+                    Ein Wildcard (= Platzhalterzeichen) wird verwendet, um ein oder mehrere Zeichen in einer
+                    Zeichenfolge zu ersetzen. Platzhalterzeichen werden mit dem <code>LIKE</code>-Operator verwendet.
+                    Der <code>LIKE</code>-Operator wird in einer <code>WHERE</code>-Klausel verwendet, um nach einem
+                    bestimmten Muster in einer Spalte zu suchen.
+                </p>
+
                 <chapter title="Wildcards in MS-Access" id="logisch-like-wildcards-msaccess">
-
+                    <table>
+                        <tr>
+                            <td>Symbol</td>
+                            <td>Beschreibung</td>
+                            <td>Beispiel</td>
+                        </tr>
+                        <tr>
+                            <td><code>*</code></td>
+                            <td>
+                                Steht für null oder mehr Zeichen
+                            </td>
+                            <td>
+                                <code>'bl*'</code> findet bl, black, blue, und blob
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>?</code></td>
+                            <td>
+                                Stellt ein einzelnes Zeichen dar
+                            </td>
+                            <td>
+                                <code>'h?t'</code> findet hot, hat, und hit
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>[]</code></td>
+                            <td>
+                                Steht für ein beliebiges einzelnes Zeichen innerhalb der Klammern
+                            </td>
+                            <td>
+                                <code>'h[oa]t'</code> findet hot und hat, aber nicht hit
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>!</code></td>
+                            <td>
+                                Steht für jedes Zeichen, das nicht in den Klammern steht
+                            </td>
+                            <td>
+                                <code>'h[!oa]t'</code> findet hit, aber nicht hot und hat
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>-</code></td>
+                            <td>
+                                Stellt ein beliebiges einzelnes Zeichen innerhalb des angegebenen Bereichs dar
+                            </td>
+                            <td>
+                                <code>'c[a-b]t'</code> findet cat und cbt
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>#</code></td>
+                            <td>
+                                Stellt ein einzelnes numerisches Zeichen dar
+                            </td>
+                            <td>
+                                <code>'2#5'</code> findet 205, 225, 235, 245, 255, 265, 275, 285, and 295
+                            </td>
+                        </tr>
+                    </table>
                 </chapter>
+
                 <chapter title="Wildcards in SQL-Server" id="logisch-like-wildcards-sqlserver">
-
+                    <table>
+                        <tr>
+                            <td>Symbol</td>
+                            <td>Beschreibung</td>
+                            <td>Beispiel</td>
+                        </tr>
+                        <tr>
+                            <td><code>%</code></td>
+                            <td>
+                                Steht für null oder mehr Zeichen
+                            </td>
+                            <td>
+                                <code>'bl%'</code> findet bl, black, blue, und blob
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>_</code></td>
+                            <td>
+                                Stellt ein einzelnes Zeichen dar
+                            </td>
+                            <td>
+                                <code>'h_t'</code> findet hot, hat, und hit
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>[]</code></td>
+                            <td>
+                                Steht für ein beliebiges einzelnes Zeichen innerhalb der Klammern
+                            </td>
+                            <td>
+                                <code>'h[oa]t'</code> findet hot und hat, aber nicht hit
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>^</code></td>
+                            <td>
+                                Steht für jedes Zeichen, das nicht in den Klammern steht
+                            </td>
+                            <td>
+                                <code>'h[^oa]t'</code> findet hit, aber nicht hot und hat
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>^</code></td>
+                            <td>
+                                Stellt ein beliebiges einzelnes Zeichen innerhalb des angegebenen Bereichs dar
+                            </td>
+                            <td>
+                                <code>'c[a-b]t'</code> findet cat und cbt
+                            </td>
+                        </tr>
+                    </table>
                 </chapter>
-                <chapter title="Beispiele" id="logisch-like-wildcards-beispiele">
 
+                <chapter title="Beispiele" id="logisch-like-wildcards-beispiele">
+                    <p>
+                        Hier sind einige Beispiele für verschiedene <code>LIKE</code>-Operatoren mit den Platzhaltern
+                        <code>'%'</code> und <code>'_'</code>:
+                    </p>
+
+                    <table>
+                        <tr>
+                            <td><code>LIKE</code>-Operator</td>
+                            <td>Beschreibung</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>WHERE CustomerName LIKE 'a%'</code>
+                            </td>
+                            <td>
+                                Findet alle Werte, die mit <code>"a"</code> beginnen
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>WHERE CustomerName LIKE '%a'</code>
+                            </td>
+                            <td>
+                                Findet alle Werte, die mit <code>"a"</code> enden
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>WHERE CustomerName LIKE '%or%'</code>
+                            </td>
+                            <td>
+                                Findet alle Werte, die an irgendeiner Stelle "or" enthalten
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>WHERE CustomerName LIKE '_r%'</code>
+                            </td>
+                            <td>
+                                Findet alle Werte, die <code>"r"</code> an der zweiten Stelle haben
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>WHERE CustomerName LIKE 'a__%'</code>
+                            </td>
+                            <td>
+                                Findet alle Werte, die mit <code>"a"</code> beginnen und mindestens 3 Zeichen lang sind
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>WHERE CustomerName LIKE 'a%o'</code>
+                            </td>
+                            <td>
+                                Findet alle Werte, die mit <code>"a"</code> beginnen und mit <code>"o"</code> enden
+                            </td>
+                        </tr>
+                    </table>
                 </chapter>
             </chapter>
         </chapter>
