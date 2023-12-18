@@ -155,7 +155,31 @@
     </chapter>
 
     <chapter title="Operationen mit Transaktionen isoliert ausführen" id="isolierte-operationen">
+        <p>
+            Transaktionen werden isoliert voneinander durchgeführt. Im SQL-Standard werden vier Isolationsebenen
+            unterschieden:
+        </p>
 
+        <list>
+            <li>
+                <b>Read uncommited</b>: Die Ergebnisse von Einfüge- und Aktualisierungsoperationen können auch ohne eine
+                verbindliche abschließende <code>COMMIT</code>-Anweisung in einer parallel ablaufenden Transaktion
+                gelesen werden.
+            </li>
+            <li>
+                <b>Read commited</b>: Die Ergebnisse von Einfüge- und Aktualisierungsoperationen können nur nach einer
+                verbindlich abschließenden <code>COMMIT</code>-Anweisung in einer parallel ablaufenden Transaktion
+                gelesen werden.
+            </li>
+            <li>
+                <b>Repeatable read</b>: Innerhalb einer Transaktion ist sichergestellt, dass ein gelesener Datensatz
+                stets wiederholbar ist, auch dann, wenn we innerhalb einer anderen Transaktion verändert wird.
+            </li>
+            <li>
+                <b>Serializable</b>: Transaktionen werden sequentiell abgearbeitet. Die Isolationsebene serializable
+                stellt die höchste Isolationsstufe dar.
+            </li>
+        </list>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
