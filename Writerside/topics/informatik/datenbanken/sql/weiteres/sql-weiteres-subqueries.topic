@@ -7,11 +7,33 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlagen" id="grundlagen">
-
+        <p>
+            Unterabfragen, oder auch Subqueries genannt, bieten in SQL eine hohe Flexibilität bei der Lösungsfindung für
+            komplexe Anforderungen. Unterabfragen sind <code>SELECT</code>-Abfragen, die innerhalb einer übergeordneten
+            <code>SELECT</code>-Abfrage Verwendung finden. Solche Subqueries werden angewendet, wenn innerhalb einer
+            Abfrage Informationen oder Datensätze benötigt werden, die eine andere <code>SELECT</code>-Abfrage liefern
+            kann. Unterabfragen können überall dort verwendet werden, wo Ausdrücke stehen können. Unterabfragen können
+            in <code>SELECT</code>-Abfragen sowie auch in <code>INSERT</code>-, <code>UPDATE</code>- und
+            <code>DELETE</code>-Anweisungen verwendet werden.
+        </p>
+        <p>
+            Unterabfragen werden in zwei Kategorien unterteilt. In die erste Kategorie fallen die Unterabfragen, die
+            nicht in Beziehung zur übergeordneten Abfrage stehen. Diese Unterabfragen werden als <emphasis>nicht
+            korrelierende Abfragen</emphasis> bezeichnet. Zur zweiten Kategorie von Unterabfragen zählen diejenigen, die
+            in Beziehung zu einer übergeordneten Abfrage stehen können.
+        </p>
     </chapter>
 
     <chapter title="Korrelierende Unterabfragen" id="korrelierend">
-
+        <p>
+            Unterabfragen stehen in Korrelation zu einer übergeordneten Abfrage, wenn Spaltenwerte einer Unterabfrage
+            mit Spaltenwerte einer übergeordneten Abfrage verglichen werden, um eine Beziehung zwischen den Abfragen
+            herzustellen. Ein Vergleich dieser Art wird in der Regel in der <code>WHERE</code>-Klausel vorgenommen. Um
+            Spalten aus Abfragen und Unterabfragen vergleichen zu können, ist es sinnvoll, Tabellenaliasse zu verwenden.
+            Alternativ können auch Tabellennamen verwendet werden, um die jeweiligen Spalten einer Tabelle eindeutig zu
+            identifizieren. Korrelierende Unterabfragen werden für jede Zeile der untergeordneten Abfrage ausgeführt.
+            Das kann allerdings zu Problemen führen, wenn sehr große Datenbestände abgefragt werden.
+        </p>
     </chapter>
 
     <chapter title="Nicht korrelierende Unterabfragen" id="nicht-korellierend">
