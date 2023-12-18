@@ -113,7 +113,32 @@
     </chapter>
     
     <chapter title="SELECT INTO: Tabellen auf Basis von bestehenden Daten erstellen" id="select-into">
-        
+        <p>
+            Das <code>SELECT INTO</code>-Statement kopiert Daten aus einer Tabelle in eine neue Tabelle.
+        </p>
+
+        <code-block lang="sql">
+            SELECT  *
+              INTO newtable [IN externaldb]
+              FROM oldtable
+             WHERE  condition
+            ;
+        </code-block>
+
+        <p>
+            Die folgende SQL-Anweisung kopiert Daten aus mehr als einer Tabelle in eine neue Tabelle:
+        </p>
+
+        <code-block lang="sql">
+            SELECT  Customers.CustomerName
+                 ,  Orders.OrderID
+              INTO CustomersOrderBackup2017
+              FROM Customers
+              LEFT
+              JOIN Orders
+                ON  Customers.CustomerID = Orders.CustomerID
+            ;
+        </code-block>
     </chapter>
     
     <chapter title="INSERT INTO SELECT: Daten von anderen Tabellen kopieren" id="insert-into-select">
