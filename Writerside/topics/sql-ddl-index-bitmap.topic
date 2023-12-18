@@ -4,6 +4,14 @@
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Bitmap-Index" id="sql-ddl-index-bitmap">
+    <show-structure for="chapter,procedure" depth="2"/>
 
-    <p>Start typing here...</p>
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://de.wikipedia.org/wiki/Bitmap-Index" ignore-vars="true">
+                https://de.wikipedia.org/wiki/Bitmap-Index
+            </a>, 2020-12-17 15:10
+        </tip>
+    </chapter>
 </topic>

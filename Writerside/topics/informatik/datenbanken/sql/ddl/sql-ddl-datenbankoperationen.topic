@@ -6,4 +6,22 @@
        title="Datenbankoperationen (CREATE, DROP, BACKUP)" id="sql-ddl-datenbankoperationen">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.w3schools.com/sql/sql_create_db.asp" ignore-vars="true">
+                https://www.w3schools.com/sql/sql_create_db.asp
+            </a>, 2022-11-10 16:30
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.w3schools.com/sql/sql_drop_db.asp" ignore-vars="true">
+                https://www.w3schools.com/sql/sql_drop_db.asp
+            </a>, 2022-11-10 16:30
+        </tip>
+    </chapter>
 </topic>
