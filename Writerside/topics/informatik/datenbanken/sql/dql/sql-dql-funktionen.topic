@@ -6,4 +6,18 @@
        title="Funktionen: MIN, MAX, COUNT, AVG, SUM" id="sql-dql-funktionen">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.w3schools.com/sql/sql_min_max.asp" ignore-vars="true">
+                https://www.w3schools.com/sql/sql_min_max.asp
+            </a>, 2022-11-09 18:00
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.w3schools.com/sql/sql_count_avg_sum.asp" ignore-vars="true">
+                https://www.w3schools.com/sql/sql_count_avg_sum.asp
+            </a>, 2022-11-09 18:00
+        </tip>
+    </chapter>
 </topic>
