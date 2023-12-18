@@ -43,15 +43,26 @@
         </p>
 
         <code-block lang="sql">
-            INSERT INTO qualifikationen (qid, bezeichnung, kuerzel, kategorie) VALUES (1,‘Word‘,‘msw‘,‘Office‘);
-            INSERT INTO qualifikationen (kuerzel, qid, kategorie, bezeichnung) VALUES (‘mex‘,2,‘Office‘,‘Excel‘);
-            INSERT INTO qualifikationen (qid, bezeichnung) VALUES (3, ’Outlook‘);
+            INSERT INTO qualifikationen (qid, bezeichnung, kuerzel, kategorie) VALUES (1,'Word','msw','Office');
+            INSERT INTO qualifikationen (kuerzel, qid, kategorie, bezeichnung) VALUES ('mex',2,'Office','Excel');
+            INSERT INTO qualifikationen (qid, bezeichnung) VALUES (3, 'Outlook');
             INSERT INTO qualifikationen (qid) VALUES (4);
         </code-block>
     </chapter>
 
     <chapter title="INSERT ohne Spaltenangabe" id="ohne-spaltenausgabe">
+        <p>
+            Für alle Spalten einer Tabelle soll ein Spaltenwert eingefügt werden. Hier ist keine kommaseparierte Liste
+            von Spaltenangaben erforderlich. Die Spaltenwerte werden hinter der <code>VALUES</code>-Klausel in einer
+            umklammerten kommaseparierten Liste angegeben. Hier muss darauf geachtet werden, dass die Reihenfolge der
+            Spaltenwerte der Reihenfolge der Spalten in der Datenbank entspricht, wie sie in der Tabellenerstellung
+            festgelegt wurde. Da in diesem Fall die Spalten nicht mit einer kommaseparierten Liste angegeben werden,
+            müssen allen Spalten Werte zugeordnet werden.
+        </p>
 
+        <code-block lang="sql">
+            INSERT INTO qualifikationen VALUES (6, 'SAP Basis Know How','SAP','Office');
+        </code-block>
     </chapter>
     
     <chapter title="Ergebnistabelle für die Beispiele" id="ergebnistabelle">
