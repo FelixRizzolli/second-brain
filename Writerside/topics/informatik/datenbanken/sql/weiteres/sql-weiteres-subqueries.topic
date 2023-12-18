@@ -163,7 +163,36 @@
     </chapter>
 
     <chapter title="EXISTS: Auf die Existenz von Zeilen Prüfen" id="exists">
+        <p>
+            Mit dem <code>EXISTS</code>-Vergleichsoperator wird in einer <code>WHERE</code>-Klausel einer übergeordneten
+            Abfrage geprüft, ob einer Unterabfrage eine Zeile zurückgibt. Die Anzahl der Spalten sowie deren Inhalt, die
+            in diesem Fall von der Unterabfrage zurückgeliefert werden, sind nicht von Bedeutung. Es wird nur
+            ausgewertet, ob eine Zeile zurückgegeben wird.
+        </p>
 
+        <code-block lang="sql">
+            /* BEISPIELANWENDUNG (1) */
+            SELECT  m.vorname
+                 ,  m.nachname
+              FROM mitarbeiter AS m
+             WHERE EXISTS( SELECT  b.mitarbeiterid
+                             FROM bonus AS b
+                            WHERE  b.mitarbeiterid = m.mitarbeiterid
+                         )
+            ;
+        </code-block>
+
+        <code-block lang="sql">
+            /* BEISPIELANWENDUNG (2) */
+            SELECT  m.vorname
+                 ,  m.nachname
+              FROM mitarbeiter AS m
+             WHERE NOT EXISTS( SELECT  b.mitarbeiterid
+                                 FROM bonus AS b
+                                WHERE  b.mitarbeiterid = m.mitarbeiterid
+                             )
+            ;
+        </code-block>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
