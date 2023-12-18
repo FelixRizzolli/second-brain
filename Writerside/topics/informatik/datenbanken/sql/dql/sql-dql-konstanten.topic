@@ -31,6 +31,95 @@
             </li>
         </list>
     </chapter>
+    
+    <chapter title="Unterschiede zwischen: MySQL-Workbench, MS SQL-Server Editor und pgAdmin3" id="unterschiede">
+        <p>
+            Die Spaltenbezeichnung kann also je nach verwendetem Datenbanksystem unterschiedlich sein. Beispiel für die
+            Unterschiede:
+        </p>
+
+        <code-block lang="sql">
+            SELECT name, vorname, ' hat am ', gebdatum, ' Geburtstag' FROM mitarbeiter;
+        </code-block>
+
+        <chapter title="MySQL-Workbench" id="unterschiede-mysql">
+            <table style="header-row">
+                <tr>
+                    <td>name</td>
+                    <td>vorname</td>
+                    <td>hat am</td>
+                    <td>gebdatum</td>
+                    <td>Geburtstag</td>
+                </tr>
+                <tr>
+                    <td>Rizzolli</td>
+                    <td>Felix</td>
+                    <td>hat am</td>
+                    <td>2000-02-19</td>
+                    <td>Geburtstag</td>
+                </tr>
+                <tr>
+                    <td>Thaler</td>
+                    <td>Sigrid</td>
+                    <td>hat am</td>
+                    <td>1966-05-01</td>
+                    <td>Geburtstag</td>
+                </tr>
+            </table>
+        </chapter>
+
+        <chapter title="Microsoft SQL-Server Editor" id="unterschiede-mssqlserver">
+            <table style="header-row">
+                <tr>
+                    <td>name</td>
+                    <td>vorname</td>
+                    <td> </td>
+                    <td>gebdatum</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>Rizzolli</td>
+                    <td>Felix</td>
+                    <td>hat am</td>
+                    <td>2000-02-19</td>
+                    <td>Geburtstag</td>
+                </tr>
+                <tr>
+                    <td>Thaler</td>
+                    <td>Sigrid</td>
+                    <td>hat am</td>
+                    <td>1966-05-01</td>
+                    <td>Geburtstag</td>
+                </tr>
+            </table>
+        </chapter>
+
+        <chapter title="pgAdmin3" id="unterschiede-pgadmin3">
+            <table style="header-row">
+                <tr>
+                    <td>name</td>
+                    <td>vorname</td>
+                    <td>unknown</td>
+                    <td>gebdatum</td>
+                    <td>unknown</td>
+                </tr>
+                <tr>
+                    <td>Rizzolli</td>
+                    <td>Felix</td>
+                    <td>hat am</td>
+                    <td>2000-02-19</td>
+                    <td>Geburtstag</td>
+                </tr>
+                <tr>
+                    <td>Thaler</td>
+                    <td>Sigrid</td>
+                    <td>hat am</td>
+                    <td>1966-05-01</td>
+                    <td>Geburtstag</td>
+                </tr>
+            </table>
+        </chapter>
+    </chapter>
 
     <chapter title="Quellen" id="quellen">
         <tip>
