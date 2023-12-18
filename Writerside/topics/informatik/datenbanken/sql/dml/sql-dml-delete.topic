@@ -54,7 +54,42 @@
     </chapter>
 
     <chapter title="Das DELETE-Statement" id="delete">
+        <p>
+            Die Anweisung beginnt mit dem Wort <code>DELETE</code>, das der Datenbank mitteilt, dass eine Löschoperation
+            durchgeführt werden soll. Darauf folgt das Schlüsselwort <code>FROM</code> und der dazugehörige Tabellenname
+            aus welcher der oder die Datensätze gelöscht werden sollen. Soll nur ein bestimmter oder mehrere bestimmte
+            Datensätze gelöscht werden, so kann man noch eine <code>WHERE</code>-Klausel anhängen, welche die Bedingung
+            für das Löschen festlegt.
+        </p>
+        <p>
+            Auch hier ist, wie bei der <code>UPDATE</code>-Anweisung, am besten sicherzugehen und mit einer
+            <code>SELECT</code>-Anweisung die <code>WHERE</code>-Klausel nochmals überprüfen – dass sicher nur die
+            gewünschten Datensätze gelöscht werden. Löschoperationen können in der Regel nicht rückgängig gemacht
+            werden!
+        </p>
 
+        <code-block lang="sql">
+            -- Löscht alle Datensätze; Nicht in der Ergebnistabelle miteinbezogen.
+            DELETE
+              FROM qualifikationen
+            ;
+        </code-block>
+
+        <code-block lang="sql">
+            -- Löscht den Datensatz, welcher die Bezeichnung Word trägt.
+            DELETE
+              FROM qualifikationen
+             WHERE  qid = 1
+            ;
+        </code-block>
+
+        <code-block lang="sql">
+            -- Löscht 2 Datensätze, welche die Bezeichnung Outlook und MS Project tragen. */
+            DELETE
+              FROM qualifikationen
+             WHERE  kuerzel = 'nicht definiert'
+            ;
+        </code-block>
     </chapter>
 
     <chapter title="Ergebnistabelle" id="ergebnistabelle">
