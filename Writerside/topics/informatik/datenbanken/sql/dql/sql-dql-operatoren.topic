@@ -140,9 +140,16 @@
     </chapter>
 
     <chapter title="Logische Operatoren" id="logisch">
-
         <chapter title="AND, AND NOT, OR, OR NOT" id="logisch-and-or">
-
+            <p>
+                Filterabfragen können aus mehreren Bedingungen bestehen, die mittels logischer Operatoren (=
+                <code>AND</code>, <code>OR</code>, <code>AND NOT</code>, <code>OR NOT</code>) miteinander verknüpft werden.
+                Mit diesen Operatoren lassen sich zwei oder beliebig viele Bedingungen miteinander logisch verknüpfen. Die
+                Verknüpfungsoperatoren können auch in Kombination verwendet werden. Es kommt ganz auf die Anforderung der
+                Filterfunktionalität an, die zu realisieren ist. Eine <code>AND</code>-Verknüpfung wird immer vorrangig vor
+                einer <code>OR</code>-Verknüpfung ausgewertet. Mittels Klammersetzung kann wie in der Mathematik der Vorrang
+                geändert werden.
+            </p>
         </chapter>
 
         <chapter title="NOT" id="logisch-not">
