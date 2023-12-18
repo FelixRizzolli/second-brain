@@ -5,6 +5,30 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Einfügeoperationen mittels INSERT, SELECT INTO" id="sql-dml-insert">
     <show-structure for="chapter,procedure" depth="2"/>
+    
+    <chapter title="Einleitung" id="einleitung">
+        
+    </chapter>
+
+    <chapter title="INSERT mit expliziter Spaltenangabe" id="mit-spaltenausgabe">
+
+    </chapter>
+
+    <chapter title="INSERT ohne Spaltenangabe" id="ohne-spaltenausgabe">
+
+    </chapter>
+    
+    <chapter title="Ergebnistabelle für die Beispiele" id="ergebnistabelle">
+        
+    </chapter>
+    
+    <chapter title="SELECT INTO: Tabellen auf Basis von bestehenden Daten erstellen" id="select-into">
+        
+    </chapter>
+    
+    <chapter title="INSERT INTO SELECT: Daten von anderen Tabellen kopieren" id="insert-into-select">
+        
+    </chapter>
 
     <chapter title="Quellen" id="quellen">
         <tip>
