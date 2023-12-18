@@ -6,4 +6,52 @@
        title="Verbundene Tabellenabfragen mittels JOIN" id="sql-dql-join">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.w3schools.com/sql/sql_join.asp" ignore-vars="true">
+                https://www.w3schools.com/sql/sql_join.asp
+            </a>, 2020-12-09 11:05
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.sqlservertutorial.net/sql-server-basics/sql-server-cross-join/" ignore-vars="true">
+                https://www.sqlservertutorial.net/sql-server-basics/sql-server-cross-join/
+            </a>, 2020-12-09 15:10
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.w3schools.com/sql/sql_join_inner.asp" ignore-vars="true">
+                https://www.w3schools.com/sql/sql_join_inner.asp
+            </a>, 2022-11-13 16:00
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.w3schools.com/sql/sql_join_left.asp" ignore-vars="true">
+                https://www.w3schools.com/sql/sql_join_left.asp
+            </a>, 2022-11-13 16:10
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.w3schools.com/sql/sql_join_right.asp" ignore-vars="true">
+                https://www.w3schools.com/sql/sql_join_right.asp
+            </a>, 2022-11-13 16:20
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.w3schools.com/sql/sql_join_full.asp" ignore-vars="true">
+                https://www.w3schools.com/sql/sql_join_full.asp
+            </a>, 2022-11-13 16:30
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.w3schools.com/sql/sql_join_self.asp" ignore-vars="true">
+                https://www.w3schools.com/sql/sql_join_self.asp
+            </a>, 2022-11-13 16:40
+        </tip>
+    </chapter>
 </topic>
