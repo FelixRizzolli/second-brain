@@ -34,6 +34,33 @@
             identifizieren. Korrelierende Unterabfragen werden für jede Zeile der untergeordneten Abfrage ausgeführt.
             Das kann allerdings zu Problemen führen, wenn sehr große Datenbestände abgefragt werden.
         </p>
+
+        <code-block lang="sql">
+            /* BEISPIELANWENDUNG (1) */
+            SELECT  m.mitarbeiterid
+                 ,  m.vorname
+                 ,  m.nachname
+                 ,  m.bonus
+              FROM mitarbeiter AS m
+             WHERE m.bonus > ( SELECT MAX(bonuszahlung)
+                                 FROM bonus AS b
+                                WHERE m.mitarbeiterid = b. mitarbeiterid
+                                GROUP
+                                   BY mitarbeiterid )
+            ;
+        </code-block>
+
+        <code-block lang="sql">
+            /* BEISPIELANWENDUNG (2) */
+            SELECT  ( SELECT anrede
+                        FROM anrede AS a
+                       WHERE m.geschlecht = a.geschlecht
+                    ) AS anrede
+                 ,  vorname
+                 ,  nachname
+              FROM mitarbeiter AS m
+            ;
+        </code-block>
     </chapter>
 
     <chapter title="Nicht korrelierende Unterabfragen" id="nicht-korellierend">
