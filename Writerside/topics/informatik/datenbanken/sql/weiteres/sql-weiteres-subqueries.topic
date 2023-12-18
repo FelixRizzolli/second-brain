@@ -42,7 +42,7 @@
                  ,  m.nachname
                  ,  m.bonus
               FROM mitarbeiter AS m
-             WHERE m.bonus > ( SELECT MAX(bonuszahlung)
+             WHERE m.bonus > ( SELECT  MAX(bonuszahlung)
                                  FROM bonus AS b
                                 WHERE m.mitarbeiterid = b. mitarbeiterid
                                 GROUP
@@ -52,7 +52,7 @@
 
         <code-block lang="sql">
             /* BEISPIELANWENDUNG (2) */
-            SELECT  ( SELECT anrede
+            SELECT  ( SELECT  anrede
                         FROM anrede AS a
                        WHERE m.geschlecht = a.geschlecht
                     ) AS anrede
@@ -64,7 +64,69 @@
     </chapter>
 
     <chapter title="Nicht korrelierende Unterabfragen" id="nicht-korellierend">
+        <p>
+            Unterabfragen, die nicht in Beziehung zu einer übergeordneten Abfrage stehen werden als nicht korrelierende
+            Unterabfragen bezeichnet. Diese Art von Unterabfragen wird sehr häufig verwendet, um in einer
+            <code>WHERE</code>-Klausel einer übergeordneten Abfrage auf das Ergebnis einer Unterabfrage zu prüfen, aus
+            der ein oder mehrere Spaltenwerte resultierend aus einer Gruppierung zurückgeliefert werden. Ein weiterer
+            Anwendungsbereich von nicht korrelierenden Abfragen ist das Verbinden von Zeilen einer Tabelle mit den
+            Ergebniszeilen einer Unterabfrage. Ach in diesem Fall enthält die Unterabfrage häufig Resultate aus
+            Gruppierungen, die mit einem <code>JOIN</code> mit weiteren Informationen angereichert werden können.
+        </p>
+        <p>
+            Es wird zwischen folgenden Unterabfragen unterschieden:
+        </p>
+        
+        <list>
+            <li>Abfragen, die einen Spaltenwert zurückliefern</li>
+            <li>Abfragen, die mehrere Spaltenwerte einer Spalte zurückliefern</li>
+            <li>Abfragen, die mehrere Spaltenwerte aus mehreren Zeilen zurückliefern</li>
+        </list>
 
+        <p>
+            Diese Differenzierung ist notwendig, um den Einsatz von Unterabfragen bestimmen zu können. Wird der
+            <code>IN</code>-Operator in einer <code>WHERE</code>-Klausel einer übergeordneten Abfrage verwendet, so ist
+            es zulässig, dass einer Unterabfrage einen oder mehrere Spaltenwerte zurückliefert. Wird eine Unterabfrage
+            innerhalb eines <code>JOIN</code>s genutzt, so ist es zulässig, dass sie mehrere Spalten und mehrere Zeilen
+            zurückliefert. Wird hingegen in einer <code>WHERE</code>-Klausel einer übergeordneten Abfrage mit einer
+            Unterabfrage auf einen Spaltenwert einer übergeordneten Abfrage geprüft, so darf die Unterabfrage nur einen
+            Spaltenwert zurückgeben.
+        </p>
+        <p>
+            Eine nicht korrelierende Abfrage wird nur einmal ausgeführt. Die Ergebnistabelle kann dann von
+            übergeordneten Abfragen verwendet werden. Nicht korrelierende Abfragen sind also bei weitem nicht so
+            leistungshungrig wie korrelierende Abfragen.
+        </p>
+
+        <code-block lang="sql">
+            /* BEISPIELANWENDUNG MIT IN-Klausel */
+            SELECT  vorname
+                 ,  nachname
+              FROM mitarbeiter
+             WHERE mitarbeiterid IN ( SELECT  mitarbeiterid
+                                        FROM bonus
+                                       GROUP
+                                          BY mitarbeiterid
+                                    )
+            ;
+        </code-block>
+
+        <code-block lang="sql">
+            /* BEISPIELANWENDUNG MIT JOIN */
+            SELECT  m.vorname
+                 ,  m.nachname
+                 ,  b.maxbonuszahlung
+              FROM mitarbeiter AS m
+             INNER
+              JOIN  ( SELECT  mitarbeiterid
+                           ,  MAX(bonuszahlung) AS maxbonuszahlung
+                        FROM bonus
+                       GROUP
+                          BY mitarbeiterid
+                    ) AS b
+                ON  m.mitarbeiterid = b.mitarbeiterid
+            ;
+        </code-block>
     </chapter>
 
     <chapter title="ANY, SOME und ALL: Vergleiche mit Ergebnistabellen aus Unterabfragen durchführen" id="vergleiche">
