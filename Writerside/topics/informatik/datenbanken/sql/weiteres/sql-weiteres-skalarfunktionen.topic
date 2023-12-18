@@ -6,6 +6,22 @@
        title="Skalarfunktionen" id="sql-weiteres-skalarfunktionen">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlagen" id="grundlagen">
+
+    </chapter>
+
+    <chapter title="Funktionen für Textwerte" id="textwerte">
+
+    </chapter>
+
+    <chapter title="Funktionen für Zahlenwerte" id="zahlenwerte">
+
+    </chapter>
+
+    <chapter title="Verschachtelte Funktionsaufrufe" id="verschachtelt">
+
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
