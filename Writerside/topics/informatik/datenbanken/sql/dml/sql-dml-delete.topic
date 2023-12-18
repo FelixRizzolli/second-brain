@@ -93,7 +93,32 @@
     </chapter>
 
     <chapter title="Ergebnistabelle" id="ergebnistabelle">
-
+        <table>
+            <tr>
+                <td>qid</td>
+                <td>bezeichnung</td>
+                <td>kuerzel</td>
+                <td>kategorie</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Excel</td>
+                <td>mex</td>
+                <td>Office</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>PowerPoint</td>
+                <td>ppt</td>
+                <td>Office</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>SAP Basis Know How</td>
+                <td>SAP</td>
+                <td>Office</td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
