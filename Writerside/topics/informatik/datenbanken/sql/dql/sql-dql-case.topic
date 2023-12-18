@@ -4,6 +4,18 @@
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Bedingungslogik mit CASE" id="sql-dql-case">
+    <show-structure for="chapter,procedure" depth="2"/>
 
-    <p>Start typing here...</p>
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.w3schools.com/sql/sql_case.asp" ignore-vars="true">
+                https://www.w3schools.com/sql/sql_case.asp
+            </a>, 2022-11-10 11:30
+        </tip>
+    </chapter>
 </topic>
