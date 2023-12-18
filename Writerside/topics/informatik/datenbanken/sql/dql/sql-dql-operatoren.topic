@@ -662,11 +662,69 @@
         </chapter>
 
         <chapter title="ALL" id="logisch-all">
+            <p>
+                Der Operator <code>ALL</code>:
+            </p>
+            
+            <list>
+                <li>gibt einen booleschen Wert als Ergebnis zurück</li>
+                <li>gibt <code>TRUE</code> zurück, wenn alle Werte der Subquery die Bedingung erfüllen</li>
+                <li>wird im <code>SELECT</code>-, <code>WHERE</code>- und <code>HAVING</code>-Statement verwendet</li>
+            </list>
+
+            <p>
+                <code>ALL</code> bedeutet, dass die Bedingung nur dann erfüllt ist, wenn die Operation auf alle Werte im
+                Bereich zutrifft.
+            </p>
+            
             <chapter title="Syntax" id="logisch-all-syntax">
+                <code-block lang="sql">
+                    SELECT  ALL column_name(s)
+                    FROM table_name
+                    WHERE  condition
+                    ;
+                </code-block>
 
+                <code-block lang="sql">
+                    SELECT  column_name(s)
+                      FROM table_name
+                     WHERE  column_name operator ALL ( SELECT  column_name
+                                                         FROM table_name
+                                                        WHERE  condition )
+                    ;
+                </code-block>
+
+                <p>
+                    Der Operator muss ein Standardvergleichsoperator sein (<code>=</code>, <code>&lt;&gt;</code>,
+                    <code>!=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>&lt;</code> oder <code>&lt;=</code>).
+                </p>
             </chapter>
-            <chapter title="Beispiel" id="logisch-all-beispiel">
 
+            <chapter title="Beispiel" id="logisch-all-beispiel">
+                <p>
+                    Die folgende SQL-Anweisung listet ALLE Produktnamen auf:
+                </p>
+
+                <code-block lang="sql">
+                    SELECT  ALL ProductName
+                      FROM Products
+                     WHERE  TRUE
+                    ;
+                </code-block>
+
+                <p>
+                    Die folgende SQL-Anweisung listet den Produktnamen auf, wenn alle Datensätze in der Tabelle
+                    <code>OrderDetails</code> den Wert der Spalte <code>Quantity</code> gleich 10 haben.
+                </p>
+
+                <code-block lang="sql">
+                    SELECT  ProductName
+                      FROM Products
+                     WHERE  ProductID = ALL ( SELECT  ProductID
+                                                FROM OrderDetails
+                                               WHERE  Quantity = 10 )
+                    ;
+                </code-block>
             </chapter>
         </chapter>
 
