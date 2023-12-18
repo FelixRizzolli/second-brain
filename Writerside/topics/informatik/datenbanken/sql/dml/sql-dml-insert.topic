@@ -142,7 +142,41 @@
     </chapter>
     
     <chapter title="INSERT INTO SELECT: Daten von anderen Tabellen kopieren" id="insert-into-select">
-        
+        <p>
+            Die <code>INSERT INTO SELECT</code>-Anweisung kopiert Daten aus einer Tabelle und fügt sie in eine andere
+            Tabelle ein. Die <code>INSERT INTO SELECT</code>-Anweisung setzt voraus, dass die Datentypen in Quell- und
+            Zieltabelle übereinstimmen. Die vorhandenen Datensätze in der Zieltabelle bleiben unberührt.
+        </p>
+
+        <code-block lang="sql">
+            INSERT
+              INTO table2
+                 (  column1
+                 ,  column2
+                 ,  column3
+                 ,  ... )
+            SELECT  column1
+                 ,  column2
+                 ,  column3
+                 ,  ...
+              FROM table1
+             WHERE  condition
+            ;
+        </code-block>
+
+        <code-block lang="sql">
+            INSERT
+              INTO Customers
+                 (  CustomerName
+                 ,  City
+                 ,  Country )
+            SELECT  SupplierName
+                 ,  City
+                 ,  Country
+              FROM Suppliers
+             WHERE  Country = 'Germany'
+            ;
+        </code-block>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
