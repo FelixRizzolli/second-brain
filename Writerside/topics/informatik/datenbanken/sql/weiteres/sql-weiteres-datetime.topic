@@ -80,7 +80,32 @@
     </chapter>
 
     <chapter title="Extraktion von Zeit- und Datumsangaben" id="extraktion">
+        <p>
+            Mit der Skalarfunktion <code>EXTRACT(teileinesdatums FROM datum)</code> bietet der SQL-Standard eine
+            Funktion mit der Teile eines Datums extrahiert werden können. Dies kann der Tag eines Monats, ein Monat
+            eines Jahres oder aber auch ein Jahr selbst sein. Um die Datumsbestandteile zu extrahieren, bieten die
+            einzelnen Datenbankserver unterschiedliche Extraktionsmuster an.
+        </p>
 
+        <code-block lang="sql">
+            /* Beispiel mit einer MySQL-Datenbank */
+            SELECT  vorname
+                 ,  nachname
+                 ,  EXTRACT(year FROM gebdatum) AS gebdatumjahr
+                 ,  EXTRACT(year FROM eintrittsdatum) AS eintrittsdatumjahr
+            FROM mitarbeiter
+            ;
+        </code-block>
+
+        <code-block lang="sql">
+            /* Beispiel mit Microsoft SQL Server */
+            SELECT  vorname
+                 ,  nachname
+                 ,  DATEPART(year, gebdatum) AS gebdatumjahr
+                 ,  DATEPART(year, eintrittsdatum) AS eintrittsdatumjahr
+              FROM mitarbeiter
+            ;
+        </code-block>
     </chapter>
 
     <chapter title="Berechnungen mit Daten" id="berechnungen">
