@@ -65,6 +65,24 @@
     </chapter>
 
     <chapter title="Bitweise Operatoren" id="bitweise">
+        <table style="header-row">
+            <tr>
+                <td>Operator</td>
+                <td>Beschreibung</td>
+            </tr>
+            <tr>
+                <td><code>&amp;</code></td>
+                <td>Bitweises und <code>AND</code></td>
+            </tr>
+            <tr>
+                <td><code>|</code></td>
+                <td>Bitweises oder <code>OR</code></td>
+            </tr>
+            <tr>
+                <td><code>^</code></td>
+                <td>Bitweises exklusives oder <code>OR</code></td>
+            </tr>
+        </table>
 
         <chapter title="Zusammengesetzte Operatoren" id="bitweise-zusammengesetzt">
 
