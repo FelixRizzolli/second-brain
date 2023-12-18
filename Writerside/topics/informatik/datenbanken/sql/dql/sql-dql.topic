@@ -39,6 +39,30 @@
         </p>
     </chapter>
 
+    <chapter title="Abfrage mit WHERE Filtern" id="where">
+        <p>
+            Die <code>WHERE</code>-Klausel wird immer dann verwendet, wenn nur bestimmte Ergebniszeilen ausgegeben
+            werden sollen, welche einem gewissen Filterkriterium entsprechen. Hierzu werden die Spaltenwerte einer
+            Spalte mittels Vergleichsoperator mit einem oder mehreren anderen Werten verglichen. Entspricht der
+            Spaltenwert oder entsprechen die Spaltenwerte des jeweiligen Datensatzes dem Filterkriterium, so wird dieser
+            mit in die Ergebnistabelle aufgenommen. Das <code>WHERE</code>-Schlüsselwort folgt nach der Auswahl der
+            Tabelle/n durch <code>FROM</code>. Die Auswertung einer Bedingung, die zum Ziel hat, Zeilen in der
+            Ergebnistabelle einzutragen, wird als Selektion bezeichnet.
+        </p>
+        <p>
+            Als Beispiel: "Gib den Datensatz der Tabelle mitarbeiter zurück, wo (= where) der Name gleich Lang ist."
+        </p>
+
+        <code-block lang="sql">
+            SELECT * FROM mitarbeiter WHERE name='Rizzolli';
+        </code-block>
+
+        <p>
+            Zeichenketten (Aneinanderreihungen von beliebigen Zeichen) sowie Datumswerte werden in SQL immer mit
+            einfachen Hochkommata umschlossen (<code>'Rizzolli'</code> und <code>'1985-01-01'</code>).
+        </p>
+    </chapter>
+
     <chapter title="Inhaltsverzeichnis" id="inhaltsverzeichnis">
         <list>
             <li>
