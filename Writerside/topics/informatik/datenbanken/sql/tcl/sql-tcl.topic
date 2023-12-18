@@ -15,7 +15,21 @@
 
         <chapter title="Warum müssen Datenbankoperationen verbindlich durchgeführt werden?"
                  id="einleitung-verbindlichkeit">
-
+            <p>
+                Das erste Szenario betrifft schlicht und ergreifend Einflüsse, die wir nicht in der Hand haben.
+                Beispiel: Die Sicherung des Stromnetzes setzt abrupt den Datenbankserver außer Betrieb. Oder was wäre,
+                wenn es durch die Installation einiger Sicherheitsupdates zu einem Absturz des Betriebssystems käme?
+                Diese Vorstellungen sind eigentlich nicht beunruhigend. Herbei kann die Sicherung ersetzt und die
+                fehlerhaften Updates deinstalliert werden.
+            </p>
+            <p>
+                Fehler an der Datenbank oder am Datenbankserver sind jedoch nicht die einzigen Störungsquellen. Eine
+                Datenbank steht zentral zur Verfügung, und daher kann auch der Rechner ausfallen, von dem die
+                Operationen ausgeführt werden. Beispiel: Auf dem Rechner wird mit einer MySQL Workbench auf einem
+                entfernten MySQL-Datenbankserver gearbeitet und dabei bricht die Verbindung ab. Auch wenn solche Fehler
+                einfach behoben werden können, bleibt eine große Frage bestehen: Was passiert mit den Operationen, die
+                vor den Störungen oder mitten in einem Störfall durchgeführt werden?
+            </p>
         </chapter>
 
         <chapter title="Forderungen an relationale Datenbanksysteme" id="einleitung-forderungen">
