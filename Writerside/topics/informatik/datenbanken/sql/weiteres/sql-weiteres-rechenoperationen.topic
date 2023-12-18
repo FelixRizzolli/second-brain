@@ -100,7 +100,14 @@
     </chapter>
 
     <chapter title="Ausdrücke" id="ausdruecke">
-
+        <p>
+            In SQL werden sog. Ausdrücke verwendet. Hierbei kann es sich um werte, Konstanten, Variablen, Operationen,
+            Berechnungen und Vergleiche handeln, de ausgewertet werden. Ausdrücken ist gemein, dass sie ausgewertet
+            werden und zu einem Ergebnis führen. Ausdrücke können überall da verwendet werden, wo Werte erwartet werden.
+            Sie werden von der Datenbank ausgewertet (fachsprachlich: evaluiert) und liefern einen Wert zurück. Daher
+            können Ausdrücke in zahlreichen SQL-Anweisungen wie z.B. <code>INSERT</code> und <code>UPDATE</code>
+            eingesetzt werden.
+        </p>
     </chapter>
 
     <chapter title="Nach dem Ergebnis einer Berechnung filtern" id="filtern">
