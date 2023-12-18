@@ -35,7 +35,32 @@
         </table>
 
         <chapter title="Zusammengesetzte Operatoren" id="arithmetisch-zusammengesetzt">
-
+            <table style="header-row">
+                <tr>
+                    <td>Operator</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>+=</code></td>
+                    <td>Addieren gleich</td>
+                </tr>
+                <tr>
+                    <td><code>-=</code></td>
+                    <td>Subtrahieren gleich</td>
+                </tr>
+                <tr>
+                    <td><code>*=</code></td>
+                    <td>Multiplizieren gleich</td>
+                </tr>
+                <tr>
+                    <td><code>/=</code></td>
+                    <td>Dividieren gleich</td>
+                </tr>
+                <tr>
+                    <td><code>%=</code></td>
+                    <td>Modulo gleich</td>
+                </tr>
+            </table>
         </chapter>
     </chapter>
 
