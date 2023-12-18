@@ -150,6 +150,36 @@
                 einer <code>OR</code>-Verknüpfung ausgewertet. Mittels Klammersetzung kann wie in der Mathematik der Vorrang
                 geändert werden.
             </p>
+
+            <chapter title="AND" id="logisch-and">
+                <table style="header-row">
+                    <tr>
+                        <td>1. Bedingung</td>
+                        <td>2. Bedingung</td>
+                        <td>Ergebnis</td>
+                    </tr>
+                    <tr>
+                        <td>wahr</td>
+                        <td>wahr</td>
+                        <td>wahr</td>
+                    </tr>
+                    <tr>
+                        <td>falsch</td>
+                        <td>falsch</td>
+                        <td>falsch</td>
+                    </tr>
+                    <tr>
+                        <td>wahr</td>
+                        <td>falsch</td>
+                        <td>falsch</td>
+                    </tr>
+                    <tr>
+                        <td>falsch</td>
+                        <td>wahr</td>
+                        <td>falsch</td>
+                    </tr>
+                </table>
+            </chapter>
         </chapter>
 
         <chapter title="NOT" id="logisch-not">
