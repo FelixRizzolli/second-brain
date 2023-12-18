@@ -343,12 +343,64 @@
         </chapter>
 
         <chapter title="BETWEEN" id="logisch-between">
+            <p>
+                Der Operator <code>BETWEEN</code> wählt Werte innerhalb eines bestimmten Bereichs aus. Die Werte können
+                Zahlen, Text oder Daten sein. Der Operator <code>BETWEEN</code> ist inklusiv: Anfangs- und Endwerte sind
+                eingeschlossen.
+            </p>
 
             <chapter title="Syntax" id="logisch-between-syntax">
-
+                <code-block lang="sql">
+                    SELECT  column_name(s)
+                      FROM table_name
+                     WHERE  column_name BETWEEN value1
+                                            AND value2
+                    ;
+                </code-block>
             </chapter>
-            <chapter title="Beispiele" id="logisch-between-beispiele">
 
+            <chapter title="Beispiele" id="logisch-between-beispiele">
+                <code-block lang="sql">
+                    SELECT  *
+                      FROM Products
+                     WHERE  Price BETWEEN 10
+                                      AND 20
+                    ;
+                </code-block>
+
+                <code-block lang="sql">
+                    SELECT  *
+                      FROM Products
+                     WHERE  Price NOT BETWEEN 10
+                                          AND 20
+                    ;
+                </code-block>
+
+                <code-block lang="sql">
+                    SELECT  *
+                      FROM Products
+                     WHERE  ProductName BETWEEN 'Carnarvon Tigers'
+                                            AND 'Mozzarella di Giovanni'
+                     ORDER
+                        BY  ProductName
+                    ;
+                </code-block>
+
+                <code-block lang="sql">
+                    SELECT  *
+                      FROM Orders
+                     WHERE  OrderDate BETWEEN #07/01/1996#
+                                          AND #07/31/1996#
+                    ;
+                </code-block>
+
+                <code-block lang="sql">
+                    SELECT  *
+                      FROM Orders
+                     WHERE  OrderDate BETWEEN '1996-07-01'
+                                          AND '1996-07-31'
+                    ;
+                </code-block>
             </chapter>
         </chapter>
 
