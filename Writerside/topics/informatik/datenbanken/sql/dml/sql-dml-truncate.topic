@@ -6,6 +6,44 @@
        title="Tabelle leeren mittels TRUNCATE" id="sql-dml-truncate">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="TRUNCATE" id="truncate">
+        <p>
+            Wenn eine Tabelle sehr viele Datensätze bzw. Zeilen enthält, wird die <code>TRUNCATE</code>-Anweisung
+            genutzt, um sämtliche Zeilen zu löschen. Diese Anweisung wird mit dem Schlüsselwort <code>TRUNCATE</code>
+            eingeleitet. Darauf folgt das Schlüsselwort <code>FROM</code> und der Tabellenbezeichner.
+        </p>
+
+        <code-block lang="sql">
+            TRUNCATE FROM qualifikationen;
+        </code-block>
+
+        <p>
+            <code>TRUNCATE</code> ist sehr effizient, da bei der Ausführung keine Informationen gespeichert werden, die
+            ermöglichen, das Löschen wieder rückgängig zu machen. Dieses Verhalten hängt jedoch vom verwendeten
+            Datenbanksystem ab:
+        </p>
+
+        <list>
+            <li>
+                <b>MySQL</b> erlaubt es nicht Löschoperationen mittels <code>TRUNCATE</code> wieder rückgängig zu
+                machen. Sie löscht einfach die alte Tabelle und legt eine neue mit der alten Struktur wieder an.
+            </li>
+            <li>
+                Auch die <b>MS-Server-Datenbank</b> erlaubt es nicht Löschoperationen mittels <code>TRUNCATE</code>
+                wieder rückgängig zu machen, zudem erreicht sie eine hohe Effizienz, da sie bei diesem Vorgang keine
+                Änderungsprotokolle schreibt.
+            </li>
+            <li>
+                Mit <b>PostgreSQL</b> ist die Ausführung einer <code>TRUNCATE</code>-Anweisung unter bestimmten
+                Bedingungen wieder rückgängig zu machen.
+            </li>
+        </list>
+
+        <p>
+            Die <code>TRUNCATE</code>-Anweisung ist somit mit besonderer Vorsicht zu verwenden.
+        </p>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
