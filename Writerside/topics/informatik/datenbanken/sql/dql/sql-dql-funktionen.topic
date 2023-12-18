@@ -124,6 +124,21 @@
         </code-block>
     </chapter>
 
+    <chapter title="Die SUM()-Funktion" id="sum">
+        <p>
+            Die <code>SUM()</code>-Funktion gibt die Gesamtsumme einer numerischen Spalte zurück.
+        </p>
+
+        <code-block lang="sql">
+            SELECT  SUM(Price)
+              FROM Products
+             WHERE  SupplierID = 1
+            ;
+
+            -- Ergebnis = 47
+        </code-block>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(WEBSEITE)</b>
