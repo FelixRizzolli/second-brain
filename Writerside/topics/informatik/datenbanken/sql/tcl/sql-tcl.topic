@@ -7,6 +7,11 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Einleitung" id="einleitung">
+        <p>
+            Die Transaktionssicherheit, die relationale Datenbanksysteme gewährleisten, gehört zu den
+            Kernfunktionalitäten und bieten die Sicherheit, dass eine oder mehrere datentechnische Operationen wie
+            <code>INSERT</code>, <code>UPDATE</code> und <code>DELETE</code> durchgeführt werden.
+        </p>
 
         <chapter title="Warum müssen Datenbankoperationen verbindlich durchgeführt werden?"
                  id="einleitung-verbindlichkeit">
