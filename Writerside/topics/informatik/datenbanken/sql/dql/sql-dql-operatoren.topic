@@ -274,9 +274,19 @@
         </chapter>
 
         <chapter title="NOT" id="logisch-not">
+            <p>
+                Mit dem <code>NOT</code>-Operator können Bedingungen negiert werden.
+            </p>
 
             <chapter title="Syntax" id="logisch-not-syntax">
-
+                <code-block lang="sql">
+                    SELECT  column1
+                         ,  column2
+                         ,  ...
+                      FROM table_name
+                     WHERE  NOT condition
+                    ;
+                </code-block>
             </chapter>
         </chapter>
 
