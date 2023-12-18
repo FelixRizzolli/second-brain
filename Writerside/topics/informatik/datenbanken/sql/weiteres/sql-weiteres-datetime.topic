@@ -60,7 +60,23 @@
     </chapter>
 
     <chapter title="Formatierung von Zeit- und Datumsangaben" id="formatierung">
-
+        <p>
+            Manchmal ist es gewünscht, ein Datum in einem anderen Format als ISO 8901 darzustellen. Der SQL-Standard
+            gibt hier leider keine Vorgaben. Die einzelnen Datenbanksysteme haben dafür meist sehr variierende
+            Funktionsnamen und unterscheiden sich auch bei den sog. Pattern (englisch für Muster) die auf einem
+            Datumswert angewendet werden.
+        </p>
+        
+        <list>
+            <li>
+                <b>MySQL</b> verwendet bezeichnet die Funktion <code>DATE_FORMAT(datum, format)</code>
+            </li>
+            <li>
+                <b>PostgreSQL</b> bezeichnet die Funktion <code>TO_CHAR(datum, format)</code></li>
+            <li>
+                <b>Microsoft SQL Server</b> bezeichnet die Funktion <code>FORMAT(wert, format[,lokalisierung])</code>
+            </li>
+        </list>
     </chapter>
 
     <chapter title="Extraktion von Zeit- und Datumsangaben" id="extraktion">
