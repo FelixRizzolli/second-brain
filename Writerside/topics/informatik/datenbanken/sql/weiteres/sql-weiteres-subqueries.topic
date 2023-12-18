@@ -42,11 +42,11 @@
                  ,  m.nachname
                  ,  m.bonus
               FROM mitarbeiter AS m
-             WHERE m.bonus > ( SELECT  MAX(bonuszahlung)
-                                 FROM bonus AS b
-                                WHERE m.mitarbeiterid = b. mitarbeiterid
-                                GROUP
-                                   BY mitarbeiterid )
+             WHERE  m.bonus > ( SELECT  MAX(bonuszahlung)
+                                  FROM bonus AS b
+                                 WHERE m.mitarbeiterid = b. mitarbeiterid
+                                 GROUP
+                                    BY mitarbeiterid )
             ;
         </code-block>
 
@@ -103,11 +103,11 @@
             SELECT  vorname
                  ,  nachname
               FROM mitarbeiter
-             WHERE mitarbeiterid IN ( SELECT  mitarbeiterid
-                                        FROM bonus
-                                       GROUP
-                                          BY mitarbeiterid
-                                    )
+             WHERE  mitarbeiterid IN ( SELECT  mitarbeiterid
+                                         FROM bonus
+                                        GROUP
+                                           BY mitarbeiterid
+                                     )
             ;
         </code-block>
 
