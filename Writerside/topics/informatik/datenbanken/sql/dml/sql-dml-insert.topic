@@ -7,7 +7,27 @@
     <show-structure for="chapter,procedure" depth="2"/>
     
     <chapter title="Einleitung" id="einleitung">
-        
+        <p>
+            Um eine Zeile einer Tabelle hinzuzufügen wird bei der Anweisung mit dem Schlüsselwort <code>INSERT</code>
+            begonnen. So wird er Datenbank mitgeteilt, dass es sich bei diesem Befehl um das Einfügen einer neuen Zeile
+            handelt. Mit dem darauffolgenden Schlüsselwort <code>INTO</code> und der Tabellenbezeichnung wird angegeben
+            in welch Tabelle die neue Zeile eingefügt werden soll. Die <code>INSERT</code>-Anweisung sieht zwei
+            Varianten vor, Zeilen einzufügen: <code>INSERT</code> mit expliziter Spaltenangabe und <code>INSERT</code>
+            ohne Spaltenangabe.
+        </p>
+
+        <p>
+            Als Beispiel für die Erklärungen wird folgende Tabelle <code>qualifikationen</code> verwendet:
+        </p>
+
+        <table>
+            <tr>
+                <td>qid</td>
+                <td>bezeichnung</td>
+                <td>kuerzel</td>
+                <td>kategorie</td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="INSERT mit expliziter Spaltenangabe" id="mit-spaltenausgabe">
