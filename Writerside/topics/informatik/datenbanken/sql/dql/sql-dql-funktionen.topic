@@ -63,6 +63,21 @@
         </table>
     </chapter>
 
+    <chapter title="Die MIN()-Funktion" id="min">
+        <p>
+            Die <code>MIN()</code>-Funktion gibt den kleinsten Wert der ausgewählten Spalte zurück.
+        </p>
+
+        <code-block lang="sql">
+            SELECT  MIN(Price)
+              FROM Products
+             WHERE  SupplierID = 1
+            ;
+
+            -- Ergebnis = 10
+        </code-block>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(WEBSEITE)</b>
