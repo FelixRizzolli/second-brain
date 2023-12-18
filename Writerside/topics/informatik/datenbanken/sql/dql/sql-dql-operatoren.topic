@@ -107,7 +107,36 @@
     </chapter>
 
     <chapter title="Vergleichsoperatoren" id="vergleich">
-
+        <table style="header-row">
+            <tr>
+                <td>Operator</td>
+                <td>Beschreibung</td>
+            </tr>
+            <tr>
+                <td><code>=</code></td>
+                <td>gleich wie</td>
+            </tr>
+            <tr>
+                <td><code>&gt;</code></td>
+                <td>Größer als</td>
+            </tr>
+            <tr>
+                <td><code>&lt;</code></td>
+                <td>Kleiner als</td>
+            </tr>
+            <tr>
+                <td><code>&gt;=</code></td>
+                <td>Größer oder gleich wie</td>
+            </tr>
+            <tr>
+                <td><code>&lt;=</code></td>
+                <td>Kleiner oder gleich wie</td>
+            </tr>
+            <tr>
+                <td><code>&lt;&gt;</code></td>
+                <td>Ungleich wie</td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="Logische Operatoren" id="logisch">
