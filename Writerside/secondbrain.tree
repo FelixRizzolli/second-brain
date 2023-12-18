@@ -137,8 +137,15 @@
                 </toc-element>
                 <toc-element topic="sql-ddl.topic">
                     <toc-element topic="sql-ddl-datenbankoperationen.topic"/>
-                    <toc-element topic="sql-ddl-tabellenoperationen.topic"/>
-                    <toc-element topic="sql-ddl-index.topic"/>
+                    <toc-element topic="sql-ddl-tabellenoperationen.topic">
+                        <toc-element topic="sql-ddl-constraints-spalten.topic"/>
+                        <toc-element topic="sql-ddl-constraints-tabellen.topic"/>
+                        <toc-element topic="sql-ddl-datentypen.topic"/>
+                    </toc-element>
+                    <toc-element topic="sql-ddl-index.topic">
+                        <toc-element topic="sql-ddl-index-bitmap.topic"/>
+                        <toc-element topic="sql-ddl-bbauume.topic"/>
+                    </toc-element>
                     <toc-element topic="sql-ddl-views.topic"/>
                     <toc-element topic="sql-ddl-gespeicherte-prozeduren.topic"/>
                 </toc-element>
