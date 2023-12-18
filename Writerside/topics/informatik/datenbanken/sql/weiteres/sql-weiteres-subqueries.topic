@@ -130,7 +130,36 @@
     </chapter>
 
     <chapter title="ANY, SOME und ALL: Vergleiche mit Ergebnistabellen aus Unterabfragen durchführen" id="vergleiche">
+        <p>
+            <code>ANY</code>, <code>SOME</code> und <code>ALL</code> werden verwendet, um Bedingungen zu formulieren,
+            die auf Ergebnisse von Unterabfragen angewendet werden. <code>ANY</code> und <code>SOME</code> sind in ihrer
+            Funktion identisch und prüfe jeweils einen Spaltenwert einer übergeordneten Abfrage gegen Spaltenwerte einer
+            Unterabfrage. Die Bedingung muss nur einmal zutreffen, um wahr zu sein. Eine Bedingung, die mit
+            <code>ALL</code> gegen Spaltenwerte einer Unterabfrage prüft, muss für alle Spaltenwerte der Unterabfrage
+            erfüllt sein, um wahr zu sein.
+        </p>
 
+        <code-block lang="sql">
+            /* BEISPIELANWENDUNG (1) */
+            SELECT  mitarbeiterid
+                 ,  bezahlung
+              FROM bonus
+             WHERE  bezahlung = SOME ( SELECT  umsatz
+                                         FROM umsatz
+                                     )
+            ;
+        </code-block>
+
+        <code-block lang="sql">
+            /* BEISPIELANWENDUNG (2) */
+            SELECT  bonuszahlung
+                 ,  mitarbeiterid
+              FROM bonus
+             WHERE  bonuszahlung > ALL ( SELECT  umsatz
+                                           FROM umsatz
+                                       )
+            ;
+        </code-block>
     </chapter>
 
     <chapter title="EXISTS: Auf die Existenz von Zeilen Prüfen" id="exists">
