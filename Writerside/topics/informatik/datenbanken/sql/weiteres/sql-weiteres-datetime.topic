@@ -34,7 +34,29 @@
     </chapter>
 
     <chapter title="Ermittlung von Zeit- und Datumswerten" id="ermittlung">
+        <p>
+            Für die Arbeit mit Zeit- und Datumsangaben sieht der SQL-Standard folgende Skalarfunktionen vor:
+        </p>
 
+        <list>
+            <li><code>CURRENT_DATE</code> gibt das aktuelle Datum zurück.</li>
+            <li><code>CURRENT_TIME</code> gibt die aktuelle Uhrzeit zurück.</li>
+            <li><code>CURRENT_TIMESTAMP</code> gibt den aktuellen Zeitstempel zurück.</li>
+        </list>
+
+        <p>
+            Diese Skalarfunktionen können überall dort angewendet werden, Ausdrücke stehen können.
+        </p>
+        <p>
+            Der MS SQL Server unterstützt lediglich die <code>CURRENT_TIMESTAMP</code>-Skalarfunktion gemäß dem
+            SQL-Standard.
+        </p>
+
+        <code-block lang="sql">
+            SELECT CURRENT_TIMESTAMP;
+            SELECT CURRENT_TIMESTAMP zeitstempel;
+            SELECT CURRENT_TIMESTAMP AS zeitstempel;
+        </code-block>
     </chapter>
 
     <chapter title="Formatierung von Zeit- und Datumsangaben" id="formatierung">
