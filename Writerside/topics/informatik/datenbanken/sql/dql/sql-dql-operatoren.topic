@@ -6,6 +6,101 @@
        title="Operatoren" id="sql-dql-operatoren">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Arithmetische Operatoren" id="arithmetisch">
+
+        <chapter title="Zusammengesetzte Operatoren" id="arithmetisch-zusammengesetzt">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="Bitweise Operatoren" id="bitweise">
+
+        <chapter title="Zusammengesetzte Operatoren" id="bitweise-zusammengesetzt">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="Vergleichsoperatoren" id="vergleich">
+
+    </chapter>
+
+    <chapter title="Logische Operatoren" id="logisch">
+
+        <chapter title="AND, AND NOT, OR, OR NOT" id="logisch-and-or">
+
+        </chapter>
+
+        <chapter title="NOT" id="logisch-not">
+
+            <chapter title="Syntax" id="logisch-not-syntax">
+
+            </chapter>
+        </chapter>
+
+        <chapter title="IN" id="logisch-in">
+
+            <chapter title="Syntax" id="logisch-in-syntax">
+
+            </chapter>
+            <chapter title="Beispiele" id="logisch-in-beispiele">
+
+            </chapter>
+        </chapter>
+
+        <chapter title="BETWEEN" id="logisch-between">
+
+            <chapter title="Syntax" id="logisch-between-syntax">
+
+            </chapter>
+            <chapter title="Beispiele" id="logisch-between-beispiele">
+
+            </chapter>
+        </chapter>
+
+        <chapter title="LIKE" id="logisch-like">
+
+            <chapter title="Wildcards" id="logisch-like-wildcards">
+                <chapter title="Wildcards in MS-Access" id="logisch-like-wildcards-msaccess">
+
+                </chapter>
+                <chapter title="Wildcards in SQL-Server" id="logisch-like-wildcards-sqlserver">
+
+                </chapter>
+                <chapter title="Beispiele" id="logisch-like-wildcards-beispiele">
+
+                </chapter>
+            </chapter>
+        </chapter>
+
+        <chapter title="EXISTS" id="logisch-exists">
+
+            <chapter title="Syntax" id="logisch-exists-syntax">
+
+            </chapter>
+            <chapter title="Beispiele" id="logisch-exists-beispiele">
+
+            </chapter>
+        </chapter>
+
+        <chapter title="ALL" id="logisch-all">
+            <chapter title="Syntax" id="logisch-all-syntax">
+
+            </chapter>
+            <chapter title="Beispiel" id="logisch-all-beispiel">
+
+            </chapter>
+        </chapter>
+
+        <chapter title="ANY und SOME" id="logisch-anysome">
+            <chapter title="Syntax" id="logisch-anysome-syntax">
+
+            </chapter>
+            <chapter title="Beispiele" id="logisch-anysome-beispiele">
+
+            </chapter>
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
