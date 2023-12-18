@@ -216,7 +216,39 @@
     </chapter>
 
     <chapter title="Verschachtelte Funktionsaufrufe" id="verschachtelt">
+        <p>
+            Funktionsaufrufe können auch verschachtelt werden. Dabei sind die verschachtelten Funktionen immer von innen
+            nach außen zu betrachten und so bei der Formulierung von SQL-Anweisungen zu berücksichtigen.
+        </p>
 
+        <chapter title="SQL-Standard" id="verschachtelt-standard">
+            <code-block lang="sql">
+                SELECT  artikelbezeichnung
+                     ,  legierung
+                     ,  SUBSTRING(legierung
+                            FROM
+                                POSITION('Eisen' IN legierung)
+                            FOR
+                                CHAR_LENGTH('Eisen')
+                        ) AS eisen
+                  FROM produkt
+                ;
+            </code-block>
+        </chapter>
+
+        <chapter title="Microsoft SQL Server" id="verschachtelt-mssqlserver">
+            <code-block lang="sql">
+                SELECT  artikelbezeichnung
+                     ,  legierung
+                     ,  SUBSTRING(
+                            legierung,
+                            PATINDEX('%Eisen%', legierung),
+                            LEN('Eisen')
+                        ) AS eisen
+                  FROM produkt
+                ;
+            </code-block>
+        </chapter>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
