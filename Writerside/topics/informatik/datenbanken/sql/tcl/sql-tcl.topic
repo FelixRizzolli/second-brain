@@ -33,7 +33,46 @@
         </chapter>
 
         <chapter title="Forderungen an relationale Datenbanksysteme" id="einleitung-forderungen">
+            <p>
+                Die Forderungen werden in Kurzform auch ACID-Prinzip bezeichnet; die Abkürzung resultiert aus den
+                englischen Begriffen atomacity, consistency, isolation und durability.
+            </p>
 
+            <list>
+                <li>
+                    <b>Operationen sollen atomar in der Ausführung sein</b>: Operationen wie <code>INSERT</code>-,
+                    <code>UPDATE</code>- und <code>DELETE</code>-Anweisungen sollen ganz oder gar nicht ausgeführt
+                    werden. Wenn z.B. mehrere <code>INSERT</code>-Anweisungen hintereinander auf eine Tabelle ausgeführt
+                    werden sollen und nach der Hälfte der Einfügeanweisungen eine Störung eintritt, soll der
+                    ursprüngliche Zustand wiederhergestellt werden. Es gilt also die Forderung, dass nicht ein Teil von
+                    Operationen ausgeführt und anderer Teil aufgrund einer Störung nicht ausgeführt wird. In der
+                    Gesamtheit der Durchführung ist eine Folge von Operationen also unteilbar
+                    (<emphasis>atomar</emphasis>) durchzuführen.
+                </li>
+                <li>
+                    <b>Der Datenbestand soll konsistent sein</b>: Wenn Operationen wie <code>INSERT</code>- oder
+                    <code>UPDATE</code>-Anweisungen auf einer Datenbank durchgeführt werden, muss sichergestellt sein,
+                    dass der Datenbestand aus einem konsistenten Zustand in einem <emphasis>konsistenten</emphasis>
+                    Zustand belassen wird. Das betrifft insbesondere Schlüsselbeziehungen zwischen Tabellen bzw. die
+                    referentielle Integrität. Eine Störung darf also nicht dazu führen, dass Beziehungen zwischen Zeilen
+                    in einem nicht definierten Zustand vorliegen. Es gilt also die Forderung, dass eine Datenbank stets
+                    die Konsistenz der Daten sicherzustellen hat.
+                </li>
+                <li>
+                    <b>Operationen sollen isoliert voneinander durchgeführt werden</b>: Eine relationale Datenbank
+                    verwaltet Daten zentral. Eine relationale Datenbank im sogenannten Multiuser-Betrieb. Das heißt,
+                    dass mehrere Nutzer gleichzeitig auf die gleichen Datensätze zugreifen und diese gegebenenfalls
+                    ändern oder auch löschen können. Operationen, die gleichzeitig durch unterschiedliche Nutzer an
+                    einem Datensatz ausgeführt werden, dürfen sich nicht gegenseitig beeinflussen. Hier gilt die
+                    Forderung, dass diese Operationen stets <emphasis>isoliert</emphasis> voneinander durchgeführt
+                    werden.
+                </li>
+                <li>
+                    <b>Daten einer Datenbank sollen dauerhaft gespeichert werden</b>: Unabhängig von jeglichen
+                    Störszenarien gilt für eine relationale Datenbank die Forderung, dass die zu verwaltenden Daten
+                    <emphasis>dauerhaft</emphasis> gespeichert werden.
+                </li>
+            </list>
         </chapter>
 
         <chapter title="Grundlegendes über Transaktionen" id="einleitung-grundlagen">
