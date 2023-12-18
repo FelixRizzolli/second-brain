@@ -20,6 +20,58 @@
         einen Alias für eine Spalte handelt.
     </p>
 
+    <chapter title="Beispiele" id="beispiele">
+        <chapter title="Alias ohne AS-Schlüsselwort" id="beispiele-ohne-as">
+            <chapter title="Alias mit AS-Schlüsselwort" id="beispiele-ohne-as-spalte">
+                <code-block lang="sql">
+                    SELECT  'Hallo'   Begrüßung
+                         ,  name      Nachname
+                         ,  vorname   Vorname
+                      FORM mitarbeiter
+                    ;
+                </code-block>
+            </chapter>
+
+            <chapter title="Alias mit AS-Schlüsselwort" id="beispiele-ohne-as-tabelle">
+                <code-block lang="sql">
+                    SELECT  o.OrderID
+                         ,  o.OrderDate
+                         ,  c.CustomerName
+                      FROM Customers AS c
+                         , Orders    AS o
+                     WHERE  c.CustomerName='Around the Horn'
+                       AND  c.CustomerID=o.CustomerID
+                    ;
+                </code-block>
+            </chapter>
+        </chapter>
+
+        <chapter title="Alias mit AS-Schlüsselwort" id="beispiele-mit-as">
+            <chapter title="Alias mit AS-Schlüsselwort" id="beispiele-mit-as-spalte">
+                <code-block lang="sql">
+                    SELECT  'Hallo'   AS Begrüßung
+                         ,  name      AS Nachname
+                         ,  vorname   AS Vorname
+                      FORM mitarbeiter
+                    ;
+                </code-block>
+            </chapter>
+
+            <chapter title="Alias mit AS-Schlüsselwort" id="beispiele-mit-as-tabelle">
+                <code-block lang="sql">
+                    SELECT  o.OrderID
+                         ,  o.OrderDate
+                         ,  c.CustomerName
+                      FROM Customers    c
+                         , Orders       o
+                     WHERE  c.CustomerName = 'Around the Horn'
+                       AND  c.CustomerID   = o.CustomerID
+                    ;
+                </code-block>
+            </chapter>
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
