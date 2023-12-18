@@ -6,6 +6,30 @@
        title="Datum und Uhrzeit" id="sql-weiteres-datetime">
     <show-structure for="chapter,procedure" depth="2"/>
 
+
+    <chapter title="Grundlagen" id="grundlagen">
+
+        <chapter title="Datumsformate" id="grundlagen-datumsformate">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="Ermittlung von Zeit- und Datumswerten" id="ermittlung">
+
+    </chapter>
+
+    <chapter title="Formatierung von Zeit- und Datumsangaben" id="formatierung">
+
+    </chapter>
+
+    <chapter title="Extraktion von Zeit- und Datumsangaben" id="extraktion">
+
+    </chapter>
+
+    <chapter title="Berechnungen mit Daten" id="berechnungen">
+
+    </chapter>
+    
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
