@@ -136,7 +136,83 @@
     </chapter>
 
     <chapter title="Funktionen für Zahlenwerte" id="zahlenwerte">
-
+        <table>
+            <tr>
+                <td>Skalarfunktion</td>
+                <td>Funktionsbeschreibung</td>
+                <td>Beispiel</td>
+            </tr>
+            <tr>
+                <td><code>CHAR_LENGTH(spaltenname)</code></td>
+                <td>
+                    <p>
+                        Die Funktion <code>CHAR_LENGTH</code> gibt die Länge einer Zeichenkette zurück.
+                    </p>
+                    <p>
+                        MS SQL Server bietet <code>LEN()</code> anstelle der Funktion <code>CHAR_LENGTH()</code>.
+                    </p>
+                </td>
+                <td>
+                    <code-block lang="sql">
+                        SELECT  legierung
+                             ,  CHAR_LENGTH(legierung) AS larngezeichenkette
+                          FROM produkt
+                        ;
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>POSITION(zkette1 IN zkette2)</code></td>
+                <td>
+                    <p>
+                        Die Funktion <code>POSITION</code> leifert die numerische Position einer Zeichenkette. Im
+                        Beispiel (links) wird die Position der Zeichenkette <code>zkette1</code> in einer anderen
+                        Zeihenkette, <code>zkette2</code>, ermittelt.
+                    </p>
+                    <p>
+                        MS SQL Server bietet <code>CHARINDEX()</code> anstelle der Funktion <code>POSITION()</code>.
+                    </p>
+                </td>
+                <td>
+                    <code-block lang="sql">
+                        SELECT  legierung
+                             ,  POSITION('Eisen' IN legierung) AS startpos
+                          FROM produkt
+                        ;
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>POWER(Basis, Exponent)</code></td>
+                <td>
+                    Die Funktion <code>POWER</code> liefert zu einer Basis und ein Exponent als Ergebnis die Potenz
+                    zurück.
+                </td>
+                <td>
+                    <code-block lang="sql">
+                        SELECT  artikelbezeichnung
+                             ,  POWER(100,3) AS potenz
+                          FROM produkt
+                        ;
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>SQRT(spaltenname)</code></td>
+                <td>
+                    Die Funktion <code>SQRT</code> liefert zu einem numerischen Wert die Quadratwurzel als Ergebnis
+                    zurück.
+                </td>
+                <td>
+                    <code-block lang="sql">
+                        SELECT  artikelbezeichnung
+                             ,  SQRT(9) AS wurzel
+                          FROM produkt
+                        ;
+                    </code-block>
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="Verschachtelte Funktionsaufrufe" id="verschachtelt">
