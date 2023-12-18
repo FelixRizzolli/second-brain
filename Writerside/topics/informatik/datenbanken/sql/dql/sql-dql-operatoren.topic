@@ -291,12 +291,54 @@
         </chapter>
 
         <chapter title="IN" id="logisch-in">
+            <p>
+                Mit dem <code>IN</code>-Operator können mehrere Werte in einer <code>WHERE</code>-Klausel angegeben
+                werden. Der <code>IN</code>-Operator ist eine Kurzform für mehrere <code>OR</code>-Bedingungen.
+            </p>
 
             <chapter title="Syntax" id="logisch-in-syntax">
+                <code-block lang="sql">
+                    SELECT  column_name(s)
+                      FROM table_name
+                     WHERE  column_name IN ( value1
+                                           , value2
+                                           , ... )
+                    ;
+                </code-block>
 
+                <code-block lang="sql">
+                    SELECT  column_name(s)
+                      FROM table_name
+                     WHERE  column_name IN ( SELECT STATEMENT )
+                    ;
+                </code-block>
             </chapter>
             <chapter title="Beispiele" id="logisch-in-beispiele">
+                <code-block lang="sql">
+                    SELECT  *
+                      FROM Customers
+                     WHERE  Country IN ( 'Germany'
+                                       , 'France'
+                                       , 'UK' )
+                    ;
+                </code-block>
 
+                <code-block lang="sql">
+                    SELECT  *
+                      FROM Customers
+                     WHERE  Country NOT IN ( 'Germany'
+                                           , 'France'
+                                           , 'UK' )
+                    ;
+                </code-block>
+
+                <code-block lang="sql">
+                    SELECT  *
+                      FROM Customers
+                     WHERE  Country IN ( SELECT Country
+                                           FROM Suppliers )
+                    ;
+                </code-block>
             </chapter>
         </chapter>
 
