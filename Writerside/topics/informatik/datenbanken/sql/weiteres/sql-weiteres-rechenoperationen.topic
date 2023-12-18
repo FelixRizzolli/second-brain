@@ -128,7 +128,17 @@
     </chapter>
 
     <chapter title="Nach dem Ergebnis einer Berechnung sortieren lassen" id="sortieren">
-
+        <code-block lang="sql">
+            SELECT  name
+                 ,  vorname
+                 ,  bonus
+                 ,  monatslohn
+                 ,  bonus - monatslohn AS sonderbonus
+              FROM mitarbeiter
+             ORDER
+                BY (bonus - monatslohn /* sonderbonus */) DESC
+            ;
+        </code-block>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
