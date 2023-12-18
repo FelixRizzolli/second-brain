@@ -28,7 +28,7 @@
         <list>
             <li>numerische Skalarfunktionen</li>
             <li>Zeichenketten-Skalarfunktionen</li>
-            <li>Datums-Skalarfunktionen</li>
+            <li><a href="sql-weiteres-datetime.topic">Datums-Skalarfunktionen</a></li>
             <li>Konvertierungsfunktionen</li>
         </list>
     </chapter>
