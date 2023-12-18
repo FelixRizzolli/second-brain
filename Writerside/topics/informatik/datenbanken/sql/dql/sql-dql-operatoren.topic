@@ -7,6 +7,32 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Arithmetische Operatoren" id="arithmetisch">
+        <table style="header-row">
+            <tr>
+                <td>Operator</td>
+                <td>Beschreibung</td>
+            </tr>
+            <tr>
+                <td><code>+</code></td>
+                <td>Addieren</td>
+            </tr>
+            <tr>
+                <td><code>-</code></td>
+                <td>Subtrahieren</td>
+            </tr>
+            <tr>
+                <td><code>*</code></td>
+                <td>Multiplizieren</td>
+            </tr>
+            <tr>
+                <td><code>/</code></td>
+                <td>Dividieren</td>
+            </tr>
+            <tr>
+                <td><code>%</code></td>
+                <td>Modulo</td>
+            </tr>
+        </table>
 
         <chapter title="Zusammengesetzte Operatoren" id="arithmetisch-zusammengesetzt">
 
