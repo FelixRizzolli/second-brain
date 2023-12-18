@@ -13,6 +13,32 @@
         <code>hausnummer</code>, <code>ort</code>.
     </p>
 
+    <chapter title="Die Grundfunktion der Tabellenabfrage: SELECT" id="select">
+        <p>
+            Mit der SQL-Abfrage <code>SELECT name, vorname FROM mitarbeiter;</code> werden die Spalten <code>name</code>
+            und <code>vorname</code> aus der Tabelle <code>mitarbeiter</code> ausgelesen. Eine Abfrage beginnt mit dem
+            Schlüsselwort <code>SELECT</code>, um die Abfrage einzuleiten. Hinter dem <code>SELECT</code> folgen die
+            Spalten, die jeweils durch ein Komma separiert werden. Das Schlüsselwort <code>FROM</code> teilt der
+            Datenbank mit, aus welcher Tabelle die Spalten abgefragt werden. Die Reihenfolge, in der man die
+            Spaltennamen angibt, ist beliebig, bestimmt aber folglich die Reihenfolge, in der sie in der Ergebnistabelle
+            aufgelistet werden. Es lassen sich Spalten, falls nötig, auch mehrmals auflisten.
+        </p>
+        <p>
+            Möchte man eine ganze Tabelle ausgeben, so bietet SQL eine komfortablere Möglichkeit, als alle Spaltennamen
+            aufzulisten – den Asterisk <code>*</code> was so viel bedeutet wie Sternchen.
+        </p>
+
+        <code-block lang="sql">
+            SELECT * FROM mitarbeiter; /* Gibt die ganze Tabelle mitarbeiter aus. */
+        </code-block>
+
+        <p>
+            SQL ist case insensitive, was so viel bedeutet wie – es spielt keine Rolle, ob eine SQL-Anweisung in
+            Großbuchstaben, Kleinbuchstaben oder gar gemischt notiert wird. Für die Lesbarkeit ist es jedoch
+            empfehlenswert SQL-Schlüsselwörter immer in Großbuschstaben zu schreiben.
+        </p>
+    </chapter>
+
     <chapter title="Inhaltsverzeichnis" id="inhaltsverzeichnis">
         <list>
             <li>
