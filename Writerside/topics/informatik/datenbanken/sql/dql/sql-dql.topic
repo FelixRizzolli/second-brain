@@ -6,6 +6,13 @@
        title="DQL (Data Query Language)" id="sql-dql">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <p>
+        Für Beispiele wird hier eine <code>mitarbeiter</code>-Tabelle verwendet, welche folgende Spalten enthält:
+        <code>mitarbeiter</code>, <code>name</code>, <code>vorname</code>, <code>gebdatum</code>,
+        <code>eintrittsdatum</code>, <code>austrittsdatum</code>, <code>austrittsgrund</code>, <code>strasse</code>,
+        <code>hausnummer</code>, <code>ort</code>.
+    </p>
+
     <chapter title="Inhaltsverzeichnis" id="inhaltsverzeichnis">
         <list>
             <li>
