@@ -76,7 +76,28 @@
         </chapter>
 
         <chapter title="Grundlegendes über Transaktionen" id="einleitung-grundlagen">
+            <p>
+                Transaktionen fassen einzelne Operationen zu einer gesamtheitlichen Operation zusammen, die entweder
+                ganz oder gar nicht ausgeführt wird. Transaktionen führen eine Datenbank bei der Durchführung der
+                Operationen bzw. Einfüge-, Änderungs- und Löschanweisungen aus einem konsistenten Zustand in einen
+                konsistenten Zustand. Transaktionen stellen also gemäß dem ACID-Prinzip sicher, dass:
+            </p>
 
+            <list>
+                <li>
+                    eine oder mehrere Operationen ganz oder gar nicht durchgeführt werden,
+                </li>
+                <li>
+                    die referentielle Integrität der Daten stets erhalten bleibt und die Daten aus einem konsistenten
+                    Zustand in einen konsistenten Zustand überführt werden,
+                </li>
+                <li>
+                    konkurrierende Zugriffe auf gleiche Datensätze stets isoliert voneinander stattfinden,
+                </li>
+                <li>
+                    Daten dauerhaft gespeichert werden.
+                </li>
+            </list>
         </chapter>
     </chapter>
 
