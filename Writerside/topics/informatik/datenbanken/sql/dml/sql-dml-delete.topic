@@ -6,8 +6,51 @@
        title="Löschoperationen durch DELETE" id="sql-dml-delete">
     <show-structure for="chapter,procedure" depth="2"/>
 
-    <chapter title="Beispieltabelle" id="beispieltabelle">
-
+    <chapter title="Beispieltabelle - qualifikationen" id="beispieltabelle">
+        <table>
+            <tr>
+                <td>qid</td>
+                <td>bezeichnung</td>
+                <td>kuerzel</td>
+                <td>kategorie</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Word</td>
+                <td>mow</td>
+                <td>Office</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Excel</td>
+                <td>mex</td>
+                <td>Office</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Outlook</td>
+                <td>nicht definiert</td>
+                <td>Office</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>PowerPoint</td>
+                <td>ppt</td>
+                <td>Office</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>MS Project</td>
+                <td>nicht definiert</td>
+                <td>Office</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>SAP Basis Know How</td>
+                <td>SAP</td>
+                <td>Office</td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="Das DELETE-Statement" id="delete">
