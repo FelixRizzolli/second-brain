@@ -109,7 +109,34 @@
     </chapter>
 
     <chapter title="Berechnungen mit Daten" id="berechnungen">
+        <p>
+            Auch beim Rechnen mit Daten bieten die SQL-Dialekte der einzelnen Datenbanksysteme unterschiedliche Methoden
+            an.
+        </p>
 
+        <code-block lang="sql">
+            /* Beispiel mit einer MySQL-Datenbank */
+            SELECT DATE_ADD(datum, INTERVAL zahl datumeinheit);
+            SELECT DATE_SUB(datevalue, INTERVAL zahl datumseinheit);
+
+            SELECT DATE_ADD('2017-03-01', INTERVAL 10 DAY) AS datum;
+        </code-block>
+
+        <code-block lang="sql">
+            /* Beispiel mit einer PostgreSQL-Datenbank */
+            SELECT DATE 'jahr-monat-tag' + INTERVAL 'x datumeinheit';
+            SELECT DATE 'jahr-monat-tag' - INTERVAL 'x datumeinheit';
+
+            SELECT '2017-03-01' + INTERVAL '10 DAY' AS datum;
+        </code-block>
+
+        <code-block lang="sql">
+            /* Beispiel mit Microsoft SQL Server */
+            SELECT DATEADD(datumeinheit,zahl,datum);
+            SELECT DATEADD(datumeinheit,-zahl,datum);
+
+            SELECT DATEADD(day,10,'2017-03-01T00:00:00.000') AS datum;
+        </code-block>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
