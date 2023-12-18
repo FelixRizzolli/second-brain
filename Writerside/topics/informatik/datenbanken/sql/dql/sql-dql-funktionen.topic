@@ -109,6 +109,21 @@
         </code-block>
     </chapter>
 
+    <chapter title="Die AVG()-Funktion" id="avg">
+        <p>
+            Die <code>AVG()</code>-Funktion gibt den Durchschnittswert einer numerischen Spalte zurück.
+        </p>
+
+        <code-block lang="sql">
+            SELECT  AVG(Price)
+              FROM Products
+             WHERE  SupplierID = 1
+            ;
+
+            -- Ergebnis = 15.666666666666666
+        </code-block>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(WEBSEITE)</b>
