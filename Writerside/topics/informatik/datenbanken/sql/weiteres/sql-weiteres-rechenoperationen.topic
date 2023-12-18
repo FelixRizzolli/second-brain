@@ -6,6 +6,22 @@
        title="Rechenoperationen" id="sql-weiteres-rechenoperationen">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundrechenarten" id="grundrechenarten">
+
+    </chapter>
+
+    <chapter title="Ausdrücke" id="ausdruecke">
+
+    </chapter>
+
+    <chapter title="Nach dem Ergebnis einer Berechnung filtern" id="filtern">
+
+    </chapter>
+
+    <chapter title="Nach dem Ergebnis einer Berechnung sortieren lassen" id="sortieren">
+
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
