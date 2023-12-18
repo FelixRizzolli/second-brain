@@ -141,7 +141,17 @@
     </chapter>
 
     <chapter title="Transaktion mit ROLLBACK rückgängig machen" id="rollback">
+        <p>
+            Wurde eine Tranaktion noch nicht verbindlich mit <code>COMMIT</code> abgeschlossen, so besteht immer noch
+            die Möglichkeit, alle Anweisungen vom Start des Transaktionsblocks bis hin zur zuletzt ausgeführten
+            SQL-Anweisung rückgängig zu machen. Hierzu wird die <code>ROLLBACK</code>-Anweisung verwendet. Mit der
+            <code>ROLLBACK</code>-Anweisung werden alle Änderungen zurückgerollt, die nach dem Start des
+            Transaktionsblocks vorgenommen wurden.
+        </p>
 
+        <code-block lang="sql">
+            ROLLBACK;
+        </code-block>
     </chapter>
 
     <chapter title="Operationen mit Transaktionen isoliert ausführen" id="isolierte-operationen">
