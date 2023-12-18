@@ -729,11 +729,84 @@
         </chapter>
 
         <chapter title="ANY und SOME" id="logisch-anysome">
+            <p>
+                Die Operatoren <code>ANY</code> und <code>SOME</code> vergleichen einen Spaltenwert oder einen
+                Literalwert mit dem Ergebnis einer Unterabfrage, die einen einspaltigen Wert zurückgibt.
+                <code>ANY</code> und <code>SOME</code>  sind identisch.
+            </p>
+            <p>
+                Der Operator <code>ANY</code> / <code>SOME</code>:
+            </p>
+
+            <list>
+                <li>
+                    gibt einen booleschen Wert als Ergebnis zurück
+                </li>
+                <li>
+                    gibt <code>TRUE</code> zurück, wenn irgendeiner der Werte in der Unterabfrage die Bedingung erfüllt
+                </li>
+            </list>
+
+            <p>
+                <code>ANY</code> / <code>SOME</code> bedeutet, dass die Bedingung <code>TRUE</code> ist, wenn die
+                Operation für jeden der Werte im Bereich <code>TRUE</code> ist.
+            </p>
+
             <chapter title="Syntax" id="logisch-anysome-syntax">
+                <code-block lang="sql">
+                    SELECT  column_name(s)
+                      FROM table_name
+                     WHERE  column_name operator ANY ( SELECT  column_name
+                                                         FROM table_name
+                                                        WHERE  condition )
+                    ;
+                </code-block>
 
+                <code-block lang="sql">
+                    SELECT  column_name(s)
+                      FROM table_name
+                     WHERE  column_name operator SOME ( SELECT  column_name
+                                                          FROM table_name
+                                                         WHERE  condition )
+                    ;
+                </code-block>
+
+                <p>
+                    Der Operator muss ein Standardvergleichsoperator sein (<code>=</code>, <code>&lt;&gt;</code>,
+                    <code>!=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>&lt;</code> oder <code>&lt;=</code>).
+                </p>
             </chapter>
-            <chapter title="Beispiele" id="logisch-anysome-beispiele">
 
+            <chapter title="Beispiele" id="logisch-anysome-beispiele">
+                <p>
+                    Die folgende SQL-Anweisung listet den Produktnamen auf, wenn sie in der Tabelle
+                    <code>OrderDetails</code> einen Datensatz findet, dessen <code>Quantity</code> gleich
+                    <code>10</code> ist
+                </p>
+
+                <code-block lang="sql">
+                    SELECT  ProductName
+                      FROM Products
+                     WHERE  ProductID = ANY ( SELECT  ProductID
+                                                FROM OrderDetails
+                                               WHERE  Quantity = 10 )
+                    ;
+                </code-block>
+
+                <p>
+                    Die folgende SQL-Anweisung listet den Produktnamen auf, wenn sie in der Tabelle
+                    <code>OrderDetails</code> einen Datensatz findet, dessen <code>Quantity</code> größer als
+                    <code>1000</code> ist:
+                </p>
+
+                <code-block lang="sql">
+                    SELECT  ProductName
+                      FROM Products
+                     WHERE  ProductID = ANY ( SELECT  ProductID
+                                                FROM OrderDetails
+                                               WHERE  Quantity > 1000 )
+                    ;
+                </code-block>
             </chapter>
         </chapter>
     </chapter>
