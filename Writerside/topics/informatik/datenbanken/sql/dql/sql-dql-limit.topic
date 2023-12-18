@@ -6,6 +6,17 @@
        title="Ergebnisliste begrenzen (LIMIT, TOP, FETCH)" id="sql-dql-limit">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Die FETCH-Klausel" id="fetch">
+        <p>
+            Der SQL-Standard bietet mit der <code>FETCH</code>-Klausel die Möglichkeit, die Zeilen einer Ergebnisliste
+            einer Abfrage zu begrenzen. Dies eignet sich besonders beim Arbeiten mit großen sehr Datenmengen, wenn man
+            nicht alle Datensätze benötigt. Wenn beispielsweise das Auslesen von nur 5 Datensätzen reicht, um sich zu
+            vergewissern, ob eine Abfrage funktioniert, oder wenn man in einem Unternehmen als SQL-Entwickler neu ist
+            und sich einen kleinen Überblick mit Testabfragen machen will. Somit beansprucht man die Leistungsfähigkeit
+            der Datenbank nicht zu sehr.
+        </p>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
