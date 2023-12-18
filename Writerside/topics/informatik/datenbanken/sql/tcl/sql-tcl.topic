@@ -117,7 +117,27 @@
     </chapter>
 
     <chapter title="Einen atomaren Datenzustand mit Transaktionen sicherstellen" id="atomarer-datenzustand">
+        <p>
+            Ein Transaktionsblock, der eine oder mehrere SQL-Anweisungen enthalten kann, beginnt mit dem Schlüsselwort
+            <code>BEGIN</code>. Hinter dem Schlüsselwort folgen die SQL-Anweisungen. Der Transaktionsblock wird mit dem
+            Schlüsselwort <code>COMMIT</code> abgeschlossen.
+        </p>
 
+        <code-block lang="sql">
+            BEGIN;
+            INSERT INTO kunde_intern VALUES (8,'Logistik');
+            INSERT INTO kunde_intern VALUES (9,'Entwicklung');
+            INSERT INTO kunde_intern VALUES (10,'Öffentlichkeitsarbeit');
+            INSERT INTO kunde_intern VALUES (11,'Innovationszentrum');
+            COMMIT;
+        </code-block>
+
+        <chapter title="Microsoft SQL Server Datenbank" id="atomarer-datenzustand-mssqlserver">
+            <p>
+                Eine MS-SQL-Server-Datenbank beginnt eine Transaktion mit <code>BEGIN TRANSACTION</code> anstelle des
+                Schlüsselwortes <code>BEGIN</code>.
+            </p>
+        </chapter>
     </chapter>
 
     <chapter title="Transaktion mit ROLLBACK rückgängig machen" id="rollback">
