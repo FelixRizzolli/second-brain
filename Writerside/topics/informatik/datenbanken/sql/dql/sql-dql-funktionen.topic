@@ -78,6 +78,21 @@
         </code-block>
     </chapter>
 
+    <chapter title="Die MAX()-Funktion" id="max">
+        <p>
+            Die <code>MAX()</code>-Funktion gibt den größten Wert der ausgewählten Spalte zurück.
+        </p>
+
+        <code-block lang="sql">
+            SELECT  MAX(Price)
+              FROM Products
+             WHERE  SupplierID = 1
+            ;
+
+            -- Ergebnis = 19
+        </code-block>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(WEBSEITE)</b>
