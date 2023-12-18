@@ -5,6 +5,18 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Änderungsoperationen mittels UPDATE" id="sql-dml-update">
     <show-structure for="chapter,procedure" depth="2"/>
+    
+    <chapter title="Beispieltabelle" id="beispieltabelle">
+        
+    </chapter>
+
+    <chapter title="Das UPDATE-Statement" id="update">
+
+    </chapter>
+
+    <chapter title="Ergebnistabelle" id="ergebnistabelle">
+
+    </chapter>
 
     <chapter title="Quellen" id="quellen">
         <tip>
