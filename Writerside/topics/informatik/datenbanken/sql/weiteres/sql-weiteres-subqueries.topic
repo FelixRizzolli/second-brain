@@ -6,6 +6,26 @@
        title="Subqueries" id="sql-weiteres-subqueries">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlagen" id="grundlagen">
+
+    </chapter>
+
+    <chapter title="Korrelierende Unterabfragen" id="korrelierend">
+
+    </chapter>
+
+    <chapter title="Nicht korrelierende Unterabfragen" id="nicht-korellierend">
+
+    </chapter>
+
+    <chapter title="ANY, SOME und ALL: Vergleiche mit Ergebnistabellen aus Unterabfragen durchführen" id="vergleiche">
+
+    </chapter>
+
+    <chapter title="EXISTS: Auf die Existenz von Zeilen Prüfen" id="exists">
+
+    </chapter>
+    
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
