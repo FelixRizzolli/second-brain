@@ -70,6 +70,18 @@
         </chapter>
     </chapter>
 
+    <chapter title="DISTINCT innerhalb der COUNT-Funktion" id="count">
+        <p>
+            Die folgende SQL-Anweisung listet die Anzahl der verschiedenen (unterschiedlichen) Kundenländer auf:
+        </p>
+
+        <code-block lang="sql">
+            SELECT  COUNT(DISTINCT Country)
+              FROM Customers
+            ;
+        </code-block>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
