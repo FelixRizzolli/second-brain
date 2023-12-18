@@ -102,7 +102,18 @@
     </chapter>
 
     <chapter title="Allgemeiner Aufbau einer Transaktion" id="aufbau">
-
+        <p>
+            Eine Transaktion hat einen Startpunkt und einen Endpunkt. Zwischen dem Startpunkt und dem Endpunkt können
+            SQL-Anweisungen wie <code>INSERT</code>, <code>UPDATE</code>, <code>DELETE</code> oder auch
+            <code>SELECT</code> ausgeführt werden. Eine Transaktion stellt sicher, dass alle Operationen innerhalb des
+            Start- und Endpunkts vollständig ausgeführt werden. Diesen Operationen werden die ACID-Eigenschaften von der
+            Datenbank zugesichert.
+        </p>
+        <p>
+            Der Start- und Endpunkt einer Transaktion werden über bestimmte SQL-Anweisungen einer Datenbank mitgeteilt.
+            Heutige Datenbanksysteme wie die MySQL Workbench, das Microsoft SQL Server Management Studio oder der
+            pgAdmin einer PostgreSQL-Datenbank führen die Transaktionskontrolle implizit aus.
+        </p>
     </chapter>
 
     <chapter title="Einen atomaren Datenzustand mit Transaktionen sicherstellen" id="atomarer-datenzustand">
