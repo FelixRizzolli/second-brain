@@ -6,6 +6,32 @@
        title="Konstanten" id="sql-dql-konstanten">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einleitung" id="einleitung">
+        <p>
+            Werte, welche sich nicht ändern werden in SQL sowie in anderen Programmiersprachen als Konstanten
+            bezeichnet. Es gibt unterschiedliche Arten von Konstanten bzw. Werten, die in der Spaltenauswahlliste und an
+            anderer Stelle verwendet werden können. Zu ihnen zählen Textwerte, Datumswerte und numerische Werte.
+            Verschiedene SQL-Werkzeuge reagieren unterschiedlich auf Konstanten:
+        </p>
+
+        <code-block lang="sql">
+            SELECT 'Hallo Welt!';
+        </code-block>
+
+        <list>
+            <li>
+                Die MySQL-Workbench verwendet den Text nicht nur als Datenfeld, sondern auch als Spaltenbezeichner.
+            </li>
+            <li>
+                Der Microsoft SQL-Server Editor gibt hierbei keinen Spaltennamen aus.
+            </li>
+            <li>
+                Der SQL-Editor des pgAdmin3 Tool gibt als Spaltenbezeichner column unknown (englisch,
+                "Spalte unbekannt") an.
+            </li>
+        </list>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
