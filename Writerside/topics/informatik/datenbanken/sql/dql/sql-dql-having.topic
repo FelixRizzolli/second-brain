@@ -6,4 +6,22 @@
        title="HAVING: WHERE mit Aggregatfunktionen" id="sql-dql-having">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.w3schools.com/sql/sql_groupby.asp" ignore-vars="true">
+                https://www.w3schools.com/sql/sql_groupby.asp
+            </a>, 2022-11-13 11:00
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.w3schools.com/sql/sql_having.asp" ignore-vars="true">
+                https://www.w3schools.com/sql/sql_having.asp
+            </a>, 2022-11-13 11:00
+        </tip>
+    </chapter>
 </topic>
