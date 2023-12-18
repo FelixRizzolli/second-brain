@@ -93,6 +93,22 @@
         </code-block>
     </chapter>
 
+    <chapter title="Die COUNT()-Funktion" id="count">
+        <p>
+            Die <code>COUNT()</code>-Funktion gibt die Anzahl der Zeilen zurück, die einem bestimmten Kriterium
+            entsprechen.
+        </p>
+
+        <code-block lang="sql">
+            SELECT  COUNT(*)
+              FROM Products
+             WHERE  SupplierID = 1
+            ;
+
+            -- Ergebnis = 3
+        </code-block>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(WEBSEITE)</b>
