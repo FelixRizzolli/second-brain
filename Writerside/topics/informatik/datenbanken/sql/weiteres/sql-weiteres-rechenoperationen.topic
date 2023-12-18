@@ -111,7 +111,20 @@
     </chapter>
 
     <chapter title="Nach dem Ergebnis einer Berechnung filtern" id="filtern">
+        <code-block lang="sql">
+            SELECT  name
+                 ,  vorname
+                 ,  stundenlohn * stundenpromonat AS monatslohnberechnet
+                 ,  monatslohn
+              FROM mitarbeiter
+             WHERE stundenlohn * stundenpromonat &lt; monatslohn
+            ;
+        </code-block>
 
+        <p>
+            Mittels dieser Abfrage werden alle Datensätze geliefert, deren berechneter Wert kleiner ist als der
+            Monatslohn, der in der jeweiligen Spalte der Tabelle hinterlegt ist.
+        </p>
     </chapter>
 
     <chapter title="Nach dem Ergebnis einer Berechnung sortieren lassen" id="sortieren">
