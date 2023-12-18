@@ -31,7 +31,23 @@
     </chapter>
 
     <chapter title="INSERT mit expliziter Spaltenangabe" id="mit-spaltenausgabe">
+        <p>
+            Nach der Angabe der Tabelle, in die die neue Zeile eingefügt werden soll, folgen die Spalten welche
+            kommasepariert aufgelistet werden. Diese werden mit einem einfachen Klammern Paar <code>( )</code>
+            umschlossen. Nun wird das Schlüsselwort <code>VALUES</code> notiert, worauf ein weiteres einfaches Klammern
+            Paar die zur Spaltenliste dazugehörigen Werte enthält, welche den neuen Datensatz bilden. Die Reihenfolge,
+            in der die Spalten aufgelistet werden, ist beliebig, muss aber natürlich auch mit der Reihenfolg der
+            dazugehörigen Werte übereinstimmen. Es können auch Spalten ausgelassen werden, dabei fügt die Datenbank den
+            Wert <code>NULL</code> für dieses Datenfeld in die Tabelle ein. <code>NULL</code> kann auch direkt als Wert
+            eingetragen werden.
+        </p>
 
+        <code-block lang="sql">
+            INSERT INTO qualifikationen (qid, bezeichnung, kuerzel, kategorie) VALUES (1,‘Word‘,‘msw‘,‘Office‘);
+            INSERT INTO qualifikationen (kuerzel, qid, kategorie, bezeichnung) VALUES (‘mex‘,2,‘Office‘,‘Excel‘);
+            INSERT INTO qualifikationen (qid, bezeichnung) VALUES (3, ’Outlook‘);
+            INSERT INTO qualifikationen (qid) VALUES (4);
+        </code-block>
     </chapter>
 
     <chapter title="INSERT ohne Spaltenangabe" id="ohne-spaltenausgabe">
