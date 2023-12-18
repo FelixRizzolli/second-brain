@@ -85,7 +85,24 @@
         </table>
 
         <chapter title="Zusammengesetzte Operatoren" id="bitweise-zusammengesetzt">
-
+            <table style="header-row">
+                <tr>
+                    <td>Operator</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>&amp;=</code></td>
+                    <td>Bitweises und gleich</td>
+                </tr>
+                <tr>
+                    <td><code>|=</code></td>
+                    <td>Bitweises exklusives gleich</td>
+                </tr>
+                <tr>
+                    <td><code>^=</code></td>
+                    <td>Bitweises oder gleich</td>
+                </tr>
+            </table>
         </chapter>
     </chapter>
 
