@@ -8,9 +8,28 @@
 
 
     <chapter title="Grundlagen" id="grundlagen">
+        <p>
+            SQL bietet einige Skalarfunktionen an, die es ermöglichen, Zeit- und Datumsangaben zu formatieren und zu 
+            extrahieren. Euch eine Addition oder Subtraktion mit Datums- bzw. Zeitangaben ist möglich. Die Umsetzung ist 
+            je nach verwendetem Datenbanksystem verschieden.
+        </p>
 
         <chapter title="Datumsformate" id="grundlagen-datumsformate">
-
+            <p>
+                Leider hat man sich auf ein weltweit gültiges Datumsformat nicht geeinigt. Stadtessen gibt es eine Fülle
+                von gängigen Datumsformaten. Somit organisiert jede Datenbank ihre Datentypen etwas anders. Das gilt
+                auch für den Datentyp <code>DATE</code> der MySQL-Datenbank, deren Entwickler sich am internationalen
+                Standard der ISO 8601 orientieren.
+            </p>
+            <p>
+                Beispiele:
+            </p>
+            
+            <list>
+                <li><code>20.08.1970</code>, in Deutschland und anderen Ländern gebräuchliches Format</li>
+                <li><code>1970-08-20</code>, Datumsformat gemäß ISO 8601</li>
+                <li><code>08-20-1970</code>, in Amerika übliches Datumsformat</li>
+            </list>
         </chapter>
     </chapter>
 
@@ -29,7 +48,7 @@
     <chapter title="Berechnungen mit Daten" id="berechnungen">
 
     </chapter>
-    
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
