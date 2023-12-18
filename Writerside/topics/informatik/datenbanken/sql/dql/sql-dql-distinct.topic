@@ -6,6 +6,70 @@
        title="Gleiche Ergebniszeilen ausschließen" id="sql-dql-distinct">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Das Schlüsselwort DISTINCT" id="distinct">
+        <p>
+            Wird eine Abfrage für eine Tabelle formuliert, so kann es je nach Spaltenauswahl zu gleichen Ergebniszeilen
+            kommen. Sollen die Zeilen jedoch eindeutig ermittelt werden, so bietet SQL die
+            <code>DISTINCT</code>-Klausel. Diese wird in einer <code>SELECT</code>-Anweisung vor der Spaltenauswahl oder
+            dem Asterisk-Operator notiert.
+        </p>
+
+        <chapter title="Vorher: ohne DISTINCT" id="distinct-ohne">
+            <code-block lang="sql">
+                SELECT  name
+                     ,  vorname
+                  FROM mitarbeiter
+                ;
+            </code-block>
+
+            <table>
+                <tr>
+                    <td>name</td>
+                    <td>vorname</td>
+                </tr>
+                <tr>
+                    <td>Müller</td>
+                    <td>Ralf</td>
+                </tr>
+                <tr>
+                    <td>Müller</td>
+                    <td>Ralf</td>
+                </tr>
+                <tr>
+                    <td>Klein</td>
+                    <td>Thomas</td>
+                </tr>
+                <tr>
+                    <td>Klein</td>
+                    <td>Thomas</td>
+                </tr>
+            </table>
+        </chapter>
+
+        <chapter title="Nachher: mit DISTINCT" id="distinct-mit">
+            <code-block lang="sql">
+                SELECT  DISTINCT name, vorname
+                  FROM mitarbeiter
+                ;
+            </code-block>
+
+            <table>
+                <tr>
+                    <td>name</td>
+                    <td>vorname</td>
+                </tr>
+                <tr>
+                    <td>Müller</td>
+                    <td>Ralf</td>
+                </tr>
+                <tr>
+                    <td>Klein</td>
+                    <td>Thomas</td>
+                </tr>
+            </table>
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
