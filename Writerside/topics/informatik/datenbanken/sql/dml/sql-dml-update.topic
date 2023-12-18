@@ -54,6 +54,56 @@
     </chapter>
 
     <chapter title="Das UPDATE-Statement" id="update">
+        <p>
+            Datensätze einer Tabelle werden mit der <code>UPDATE</code>-Anweisung aktualisiert. Eingeleitet wird die
+            Anweisung mit dem Schlüsselwort <code>UPDATE</code> worauf der Tabellenname folgt. Hinter der
+            Tabellenbezeichnung wird das Schlüsselwort <code>SET</code> notiert, mit dem der Datenbank mitgeteilt wird,
+            dass nun eine oder mehrere Wertzuweisungen folgen. Die Wertzuweisung besteht aus Spaltenname worin sich das
+            zu ändernde Datenfeld befindet, dem Zuweisungsoperator <code>=</code> und dem neuen Wert, welcher zugewiesen
+            werden soll.
+        </p>
+
+        <code-block lang="sql">
+            UPDATE qualifikationen
+               SET  kategorie = 'Office'
+            ;
+        </code-block>
+
+        <p>
+            Wenn bestehende Spaltenwerte einer oder mehrerer Zeilen mit einer <code>UPDATE</code>-Anweisung geändert
+            werden sollen, wird die <code>WHERE</code>-Klausel mit einem Filterkriterium angewendet. So wird
+            sichergestellt, dass nur die ausgewählten Zeilen aktualisiert werden.
+        </p>
+
+        <code-block lang="sql">
+            UPDATE qualifikationen
+               SET  kuerzel = 'nicht definiert'
+             WHERE  kuerzel = NULL
+            ;
+        </code-block>
+
+        <p>
+            Eine Aktualisierung mit der <code>UPDATE</code>-Anweisung wird oft zusammen mit der
+            <code>WHERE</code>-Klausel genutzt. Nützlich ist es vor dem <code>UPDATE</code> die
+            <code>WHERE</code>-Klausel mit einer <code>SELECT</code>-Anweisung zu überprüfen und nachzuschauen, ob
+            wirklich nur die gewünschten Datensätze ausgewählt werden, welche geändert werden sollen.
+        </p>
+        <p>
+            Sollen alle Spaltenwerte einer oder mehrerer Spalten mit neuen Werten versehen werden, ist keine
+            <code>WHERE</code>-Klausel erforderlich. Sie benötigen nur die <code>SET</code>-Klausel und die
+            Wertzuweisungsliste.
+        </p>
+        <p>
+            Sollen mehrere Spalten eines Datensatzes geändert werden, so werden Wertzuweisungen kommasepariert notiert.
+        </p>
+
+        <code-block lang="sql">
+            UPDATE qualifikationen
+               SET  bezeichnung = 'PowerPoint'
+                 ,  kuerzel     = 'ppt'
+             WHERE  qid         = 4
+            ;
+        </code-block>
 
     </chapter>
 
