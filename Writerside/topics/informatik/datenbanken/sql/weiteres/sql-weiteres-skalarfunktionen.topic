@@ -34,7 +34,105 @@
     </chapter>
 
     <chapter title="Funktionen für Textwerte" id="textwerte">
-
+        <table>
+            <tr>
+                <td>Skalarfunktion</td>
+                <td>Funktionsbeschreibung</td>
+                <td>Beispiel</td>
+            </tr>
+            <tr>
+                <td><code>LOWER(spaltenname)</code></td>
+                <td>
+                    Der Funktion <code>LOWER</code> wird ein Spaltenname oder ein Text-literal übergeben. Sie wandelt
+                    dann sämtlich Buchstaben der Spaltenwerte in Kleinbuchstaben um und gibt diesen Wert zurück.
+                </td>
+                <td>
+                    <code-block lang="sql">
+                        SELECT  name
+                             ,  LOWER(name) AS nameklein
+                          FROM mitarbeiter
+                        ;
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>UPPER(spaltenname)</code></td>
+                <td>
+                    Der Funktion <code>UPPER</code> wird ein Spaltenname oder Literal übergeben. Sie wandelt sämtliche
+                    Zeichen der Spaltenwerte in Großbuchstaben um und gibt diesen Wert zurück.
+                </td>
+                <td>
+                    <code-block lang="sql">
+                        SELECT  name
+                             ,  UPPER(name) AS namegross
+                          FROM mitarbeiter
+                        ;
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>TRIM(spaltenname)</code></td>
+                <td>
+                    Der Funktion <code>TRIM</code> wird ein Spaltenname oder ein Literal übergeben. Sie entfernt
+                    sämtliche Leerzeichen und Tabulatoren vor und hinter den Spaltenwerten und gibt das Ergebnis als
+                    Wert zurück.
+                </td>
+                <td>
+                    <code-block lang="sql">
+                        SELECT  TRIM(artikelbezeichnung) AS artikelbezeichnungohneleerzeichen
+                          FROM mitarbeiter
+                        ;
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td><code>SUBSTRING(spaltenname FROM x FOR y)</code></td>
+                <td>
+                    Der Funktion <code>SUBSTRING</code> wird ein Spaltenwert oder ein Textliteral angegeben, gefolgt vom
+                    Schlüsselwort <code>FROM</code> und einem ganzzahlige numerischen Wert <code>x</code>, der die
+                    Startposition festlegt, worauf das Schlüsselwort <code>FOR</code> und schließlich ein ganzzahligen
+                    nummerischen Wert <code>y</code>, der die Länge der zu extrahierenden Zeichenkette festlegt.
+                </td>
+                <td>
+                    <code-block lang="sql">
+                        SELECT  artikelbezeichnung
+                             ,  SUBSTRING(artikelbezeichnung FROM 1 FOR 8) AS extrakt1bis8
+                          FROM produkt
+                         WHERE  SUBSTRING(artikelbezeichnung FROM 1 FOR 8) = 'Schraube'
+                        ;
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><code>SUBSTRING(spaltenname FROM x FOR y)</code></p>
+                    <p><code>(spaltenname1 || spaltenname2 || ...)</code></p>
+                    <p><code>(spaltenname1 + spaltenname2 + ...)</code></p>
+                </td>
+                <td>
+                    <p>
+                        Die MySQL-Funktion <code>CONCAT</code> fügt eine beliebige Anzahl von Spaltenwerten zusammen.
+                        Die Anzahl der als Parameter übergebenen Spaltennamen ist variabel.
+                    </p>
+                    <p>
+                        Im SQL-Standard wird der Concatination-Operator <code>||</code> verwendet, um Spaltenwerte
+                        aneinanderzufügen.
+                    </p>
+                    <p>
+                        MS SQL Server verwendet den <code>+</code>-Operator, um Spaltenwerte zusammenzufügen
+                    </p>
+                </td>
+                <td>
+                    <code-block lang="sql">
+                        SELECT  vorname
+                             ,  nachname
+                             ,  CONCAT(vorname, ' ', nachname) AS name
+                          FROM mitarbeiter
+                        ;
+                    </code-block>
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="Funktionen für Zahlenwerte" id="zahlenwerte">
