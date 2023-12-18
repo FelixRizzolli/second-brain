@@ -611,12 +611,53 @@
         </chapter>
 
         <chapter title="EXISTS" id="logisch-exists">
+            <p>
+                Der <code>EXISTS</code>-Operator wird verwendet, um zu prüfen, ob ein Datensatz in einer Unterabfrage
+                vorhanden ist. Der <code>EXISTS</code>-Operator gibt <code>TRUE</code> zurück, wenn die Unterabfrage
+                einen oder mehrere Datensätze zurückgibt.
+            </p>
 
             <chapter title="Syntax" id="logisch-exists-syntax">
-
+                <code-block lang="sql">
+                    SELECT  column_name(s)
+                      FROM table_name
+                     WHERE  EXISTS ( SELECT  column_name
+                                       FROM table_name
+                                      WHERE  condition )
+                    ;
+                </code-block>
             </chapter>
-            <chapter title="Beispiele" id="logisch-exists-beispiele">
 
+            <chapter title="Beispiele" id="logisch-exists-beispiele">
+                <p>
+                    Die folgende SQL-Anweisung gibt <code>TRUE</code> zurück und listet die Lieferanten mit einem
+                    Produktpreis von weniger als 20 auf:
+                </p>
+
+                <code-block lang="sql">
+                    SELECT  SupplierName
+                      FROM Suppliers
+                     WHERE  EXISTS ( SELECT  ProductName
+                                       FROM Products
+                                      WHERE  Products.SupplierID = Suppliers.supplierID
+                                        AND  Price               &lt; 20 )
+                    ;
+                </code-block>
+
+                <p>
+                    Die folgende SQL-Anweisung gibt <code>TRUE</code> zurück und listet die Lieferanten mit einem
+                    Produktpreis von 22 auf:
+                </p>
+
+                <code-block lang="sql">
+                    SELECT  SupplierName
+                      FROM Suppliers
+                     WHERE  EXISTS ( SELECT  ProductName
+                                       FROM Products
+                                      WHERE  Products.SupplierID = Suppliers.supplierID
+                                        AND  Price               = 22 )
+                    ;
+                </code-block>
             </chapter>
         </chapter>
 
