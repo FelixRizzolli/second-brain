@@ -7,7 +7,96 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundrechenarten" id="grundrechenarten">
+        <p>
 
+        </p>
+
+        <table>
+            <tr>
+                <td>Operator</td>
+                <td>Funktion</td>
+                <td>Beispiel</td>
+            </tr>
+            <tr>
+                <td><code>+</code></td>
+                <td>Addition</td>
+                <td><code>4 + 4 = 8</code></td>
+            </tr>
+            <tr>
+                <td><code>-</code></td>
+                <td>Subtraktion</td>
+                <td><code>5 - 1 = 4</code></td>
+            </tr>
+            <tr>
+                <td><code>*</code></td>
+                <td>Multiplikation</td>
+                <td><code>2 * 3 = 6</code></td>
+            </tr>
+            <tr>
+                <td><code>/</code></td>
+                <td>Division</td>
+                <td><code>6 / 3 = 2</code></td>
+            </tr>
+            <tr>
+                <td><code>%</code></td>
+                <td>Restwert einer Division (Modulo)</td>
+                <td><code>5 % 2 = 1</code></td>
+            </tr>
+        </table>
+
+        <code-block lang="sql">
+            SELECT  name
+                 ,  vorname
+                 ,  bonus
+                 ,  monatslohn
+                 ,  bonus + monatslohn AS summe
+              FROM mitarbeiter
+            ;
+        </code-block>
+
+        <code-block lang="sql">
+            SELECT  name
+                 ,  vorname
+                 ,  bonus
+                 ,  monatslohn
+                 ,  bonus + monatslohn + 1000 AS summe
+              FROM mitarbeiter
+            ;
+        </code-block>
+
+        <code-block lang="sql">
+            SELECT  name
+                 ,  vorname
+                 ,  bonus
+                 ,  monatslohn
+                 ,  bonus - monatslohn AS differenz
+              FROM mitarbeiter
+            ;
+        </code-block>
+
+        <code-block lang="sql">
+            SELECT  name
+                 ,  vorname
+                 ,  stundenpromonat
+                 ,  stundenlohn
+                 ,  stundenpromonat*stundenlohn AS gehalt
+              FROM mitarbeiter
+            ;
+        </code-block>
+
+        <code-block lang="sql">
+            SELECT name
+                 ,  vorname
+                 ,  monatslohn
+                 ,  stundenpromonat,
+                 ,   monatslohn / stundenpromonat AS stundenlohn
+              FROM mitarbeiter
+            ;
+        </code-block>
+
+        <code-block lang="sql">
+            SELECT 5 % 2 AS rest;
+        </code-block>
     </chapter>
 
     <chapter title="Ausdrücke" id="ausdruecke">
