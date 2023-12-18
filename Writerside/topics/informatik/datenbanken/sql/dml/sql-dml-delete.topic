@@ -6,6 +6,18 @@
        title="Löschoperationen durch DELETE" id="sql-dml-delete">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Beispieltabelle" id="beispieltabelle">
+
+    </chapter>
+
+    <chapter title="Das DELETE-Statement" id="delete">
+
+    </chapter>
+
+    <chapter title="Ergebnistabelle" id="ergebnistabelle">
+
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
