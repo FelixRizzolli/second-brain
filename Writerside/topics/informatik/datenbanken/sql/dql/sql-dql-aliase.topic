@@ -6,6 +6,20 @@
        title="Aliase (AS)" id="sql-dql-aliase">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <p>
+        Den einzelnen Spalten einer Spaltenauswahlliste können alternative Bezeichner, die als Alias bezeichnet werden,
+        zugeordnet werden. Das definierte Alias steht dann als Spaltenbezeichner in der Ergebnistabelle anstelle des
+        Originals. Dies eignet sich als sehr hilfreich, wenn man für eine Spalte einer Ergebnistabelle einen
+        aussagekräftigeren oder kürzeren Spaltenbezeichner wünscht. Auch für Konstanten können Spaltenbezeichner
+        definiert werden.
+    </p>
+    <p>
+        Der zu vergebende Alias wird in der Spaltenauswahlliste einer <code>SELECT</code>-Abfrage direkt hinter der
+        jeweiligen Spalte oder Konstante notiert. Zwischen der Spalte und dem Alias kann noch optional das Schlüsselwort
+        <code>AS</code> angegeben werden, um für bessere Lesbarkeit noch deutlicher zu machen, dass es sich hierbei um
+        einen Alias für eine Spalte handelt.
+    </p>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
