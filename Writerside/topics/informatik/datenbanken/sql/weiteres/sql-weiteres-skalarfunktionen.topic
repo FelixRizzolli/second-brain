@@ -7,7 +7,30 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlagen" id="grundlagen">
-
+        <p>
+            Funktionen, die einen Wert als Ergebnis einer Verarbeitung zurückliefern, werden als Skalarfunktionen
+            bezeichnet. Die Verarbeitung kann aus Berechnungen, Textoperationen oder Datums- und Zeitoperationen
+            resultieren. Skalarfunktionen werden auf Zeilenebene angewendet. Soll heißen: Alle Spalten, die in einer
+            Zeile vorkommen können auch als potenzielle Kandidaten für Parameterangaben für Skalarfunktionen verwendet
+            werden. Als Parameter werden je nach Skalarfunktion und ihrer Verwendung auch Literale (Zahlen, Text,
+            Datums-, Zeitangaben) verwendet. Es gibt auch zahlreiche Skalarfunktionen, die keinen Parameter übergeben
+            bekommen. Hierzu zählt z.B. die Skalarfunktion <code>SESSION_USER</code>. Sie liefert lediglich den Nutzer
+            zurück, der gerade in einer gültigen Sitzung aktiv ist. Es gibt zahlreiche Funktionen, und viele
+            unterscheiden sich in der Schreibweise und Anwendung in den unterschiedlichen Datenbanksystemen. Hierbei
+            sollte immer die jeweilige Dokumentation als weiterführende Literatur verwendet werden.
+        </p>
+        <p>
+            Funktionen sind kleine Programme, die bestimmte Aufgaben erfüllen. Skalarfunktionen können überall 
+            angewendet werden, wo Spaltenwerte bzw. Ausdrücke stehen können. Es gibt zahlreiche Funktionen für folgende 
+            Anwendungsgebiete:
+        </p>
+        
+        <list>
+            <li>numerische Skalarfunktionen</li>
+            <li>Zeichenketten-Skalarfunktionen</li>
+            <li>Datums-Skalarfunktionen</li>
+            <li>Konvertierungsfunktionen</li>
+        </list>
     </chapter>
 
     <chapter title="Funktionen für Textwerte" id="textwerte">
