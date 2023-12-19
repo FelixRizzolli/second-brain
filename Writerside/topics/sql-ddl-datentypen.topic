@@ -22,7 +22,76 @@
     </chapter>
 
     <chapter title="Datentypen für ganze Zahlen" id="ganze-zahlen">
-
+        <table>
+            <tr>
+                <td>Datentyp</td>
+                <td>Speicherbedarf</td>
+                <td>Minimaler Wert bis maximaler Wert</td>
+            </tr>
+            <tr>
+                <td><code>TINYINT</code></td>
+                <td>1Byte</td>
+                <td>von -128 bis 127 oder von 0 bis 255</td>
+            </tr>
+            <tr>
+                <td><code>SMALLINT</code></td>
+                <td>2Byte</td>
+                <td>von -32768 bis 32767 oder von 0 bis 65535</td>
+            </tr>
+            <tr>
+                <td><code>MEDIUMINT</code></td>
+                <td>3Byte</td>
+                <td>von -8388608 bis 8388607 oder von 0 bis 16777215</td>
+            </tr>
+            <tr>
+                <td><code>INT</code></td>
+                <td>4Byte</td>
+                <td>von -2147483648 bis 2147483647 oder von 0 bis 4294967295</td>
+            </tr>
+            <tr>
+                <td><code>BIGINT</code></td>
+                <td>8Byte</td>
+                <td>von -9223372036854775808 bis 9223372036854775807 oder von 0 bis 18446744073709551615</td>
+            </tr>
+        </table>
+        
+        <p>
+            Den Datentypen für ganze Zahlen kann man noch das Schlüsselwort <code>UNSIGNED</code> oder
+            <code>SIGNED</code> anhängen, dadurch wird bestimmt, ob die Zahl ein Vorzeichen haben kann
+            (<code>SIGNED</code>) oder nicht (<code>UNSIGNED</code>). Ohne Schlüsselwort wird standardmäßig mit
+            Vorzeichen (<code>SIGNED</code>) gewählt.
+        </p>
+        
+        <list>
+            <li>
+                <code>TINYINT</code> = von -128 bis 127
+            </li>
+            <li>
+                <code>TINYINT SIGNED</code> = von -128 bis 127
+            </li>
+            <li>
+                <code>TINYINT UNSIGNED</code> = von 0 bis 255
+            </li>
+        </list>
+        
+        <p>
+            Nicht alle Datenbanksysteme verwendet gleich viele oder dieselben Namen für Datentypen. Hierbei muss in der
+            jeweiligen Dokumentation nachgeschlagen werden welche Datentypen verwendet werden können.
+        </p>
+        
+        <list>
+            <li>
+                MySQL verwendet <code>TINYINT</code>, <code>SMALLINT</code>, <code>MEDIUMINT</code>, <code>INT</code>
+                und <code>BIGINT</code>
+            </li>
+            <li>
+                PostgreSQL verwendet <code>SMALLINT</code>, <code>INTEGER</code> und <code>BIGINT</code>
+            </li>
+            <li>
+                MS SQL-Server verwendet <code>TINYINT</code>, <code>SMALLINT</code>, <code>INTEGER</code> und
+                <code>BIGINT</code>
+            </li>
+        </list>
     </chapter>
 
     <chapter title="Datentypen für rationale Zahlen" id="rationale-zahlen">
