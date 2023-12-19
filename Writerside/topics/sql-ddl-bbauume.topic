@@ -51,7 +51,37 @@
         </warning>
 
         <chapter title="Maximale Höhe" id="funktionsweise-maximale-hoehe">
+            <p>
+                B-Baum der Ordnung <code>m</code> mit <code>n</code> Schlüsseln:
+            </p>
 
+            <code-block lang="tex">
+                \textbf{Eine } hoehe + 1 \textbf{ hat } k_{hoehe+1}\ge 2(m+1)^{h+1} \textbf{ Knoten}
+            </code-block>
+
+            <p>
+                Dabei teilt man den Wertebereich der Schlüssel in <code>n + 1</code> Intervalle ein:
+            </p>
+
+            <code-block lang="tex">
+                k_{hoehe+1}=n+1\ge 2(m+1)^{hoehe+1}
+            </code-block>
+
+            <p>
+                Daraus folgt wiederum:
+            </p>
+
+            <code-block lang="tex">
+                hoehe\le1+\log_{m+1}(\frac{n+1}{2})
+            </code-block>
+
+            <p>
+                Die Höhe muss immer eine ganze Zahl sein, deshalb gilt:
+            </p>
+
+            <code-block lang="tex">
+                hoehe\le\left\lfloor\log_{m+1}(\frac{n+1}{2})\right\rfloor+1
+            </code-block>
         </chapter>
 
         <chapter title="Suchen" id="funktionsweise-suchen">
