@@ -140,7 +140,33 @@
     </chapter>
 
     <chapter title="CHECK: Bedingungen für Spalten festlegen" id="check">
+        <p>
+            Mit der <code>CHECK</code>-Einschränkung kann einer Spalte eine Plausibilitätsprüfung zugeordnet werden,
+            welche für <code>INSERT</code>- und <code>UPDATE</code>-Anweisung gilt. Die Datenbank überprüft somit, für
+            jede Spalte mit Plausibilitätsprüfung, bei einer <code>INSERT</code>- und <code>UPDATE</code>-Anweisung, ob
+            die Werte der angegebenen Bedingungen entsprechen. Trifft dies nicht zu, so wird eine Fehlermeldung
+            ausgegeben und der neue Datensatz nicht eingetragen.
+        </p>
+        <p>
+            Die PostgreSQL- und MS-SQL-Server-Datenbank unterstützen eine solche <code>CHECK</code>-Einschränkung, wie
+            es der Standard vorsieht. Für MySQL steht diese hingegen bis zur Version 8.0.16 nicht zur Verfügung.
+        </p>
 
+        <code-block lang="sql">
+
+        </code-block>
+
+        <p>
+            Bei der <code>CHECK</code>-Einschränkung werden in einfachen Klammern die Bedingungen festgelegt. Diese
+            können mit logischen Verknüpfungsoperatoren wie <code>AND</code> und <code>OR</code> verknüpft werden.
+        </p>
+        <p>
+            Um eine <code>CHECK</code>-Einschränkung über mehrere Spalten anzuwenden, muss sie auf Tabellenebene
+            definiert werden:
+            <a href="sql-ddl-constraints-tabellen.topic">
+                <code>CONSTRAINTS</code> auf Tabellenebene
+            </a>
+        </p>
     </chapter>
 
     <chapter title="PRIMARY KEY: Primärschlüssel für eine Spalte festlegen" id="primary-key">
