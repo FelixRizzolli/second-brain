@@ -607,15 +607,92 @@
     </chapter>
 
     <chapter title="SELF JOIN" id="selfjoin">
-
         <chapter title="Beschreibung" id="selfjoin-beschreibung">
-
+            <p>
+                Mit einem <code>SELF JOIN</code> können hierarchische Strukturen einer Tabelle abgebildet werden, die
+                über die entsprechenden Voraussetzungen verfügt. Um hierarchische Strukturen einer Tabelle abzubilden,
+                werden die Zeilen einer Tabelle mit den Zeilen ebendieser einen Tabelle verbunden. Um dies zu
+                realisieren wird eine Fremdschlüsselbeziehung verwendet. Der Unterschied ist der, dass der
+                Fremdschlüssel nicht auf einen Primärschlüssel in einer anderen Tabelle verweist, sondern auf den
+                Primärschlüssel der in der gleichen Tabelle definiert wurde wie der Fremdschlüssel.
+            </p>
+            <p>
+                Ein <code>SELF JOIN</code> wird mit einem normalen <code>INNER JOIN</code>,
+                <code>LEFT OUTER JOIN</code>, ... realisiert wobei sowohl die linke Tabelle dieselbe wie die Rechte
+                des jeweiligen <code>JOIN</code>s ist.
+            </p>
         </chapter>
 
         <chapter title="Beispiel" id="selfjoin-beispiel">
+            <code-block lang="sql">
+                SELECT  ma1.mitarbeiterid  AS vorgesetzterid
+                     ,  ma1.name           AS vorgesetztername
+                     ,  ma2.name           AS mitarbeitername
+                     ,  ma2.mitarbeiterid  AS mitarbeiterid
+                  FROM mitarbeiterausbildungsbetrieb AS ma1
+                 INNER
+                  JOIN mitarbeiterausbildungsbetrieb AS ma2
+                    ON  ma1.mitarbeiterid = ma2.fk_mitarbeiterid
+                ;
+            </code-block>
 
             <chapter title="Ergebnistabelle" id="selfjoin-beispiel-ergebnistabelle">
-
+                <table>
+                    <tr>
+                        <td>vorgesetzterid</td>
+                        <td>vorgesetztername</td>
+                        <td>mitarbeitername</td>
+                        <td>mitarbeiterid</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Müller</td>
+                        <td>Ungern</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Müller</td>
+                        <td>Erdenschein</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Müller</td>
+                        <td>Sternenschein</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Müller</td>
+                        <td>Augustus</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Erdenfels</td>
+                        <td>Hoffnung</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Erdenfels</td>
+                        <td>Freud</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Erdenfels</td>
+                        <td>Bergfels</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Erdenfels</td>
+                        <td>Lemon</td>
+                        <td>10</td>
+                    </tr>
+                </table>
             </chapter>
         </chapter>
     </chapter>
