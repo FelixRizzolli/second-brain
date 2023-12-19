@@ -6,7 +6,10 @@
        title="Mengenoperationen (UNION, INTERSECT, EXEPT)" id="sql-dql-mengenoperationen">
     <show-structure for="chapter,procedure" depth="2"/>
 
-    <chapter title="Regeln für Mengenoperationen" id="regeln">
+    <warning>
+        Der SQL-Standard bietet drei Mengenoperationen, welche auf Ergebnistabellen mit Spaltenwerten angewandt werden
+        können. MySQL jedoch unterstützt nur die Vereinigungsmenge <code>UNION</code>.
+    </warning>
 
     </chapter>
 
