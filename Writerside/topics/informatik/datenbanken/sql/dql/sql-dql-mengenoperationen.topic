@@ -11,6 +11,29 @@
         können. MySQL jedoch unterstützt nur die Vereinigungsmenge <code>UNION</code>.
     </warning>
 
+    <chapter title="Regeln für Mengenoperationen" id="regeln">
+        <list>
+            <li>
+                Die Spalten und ihre Datentypzuordnung müssen in jeder Abfrage übereinstimmen.
+            </li>
+            <li>
+                Die Anzahl der Spalten in der Spaltenauswahlliste muss in jeder an einer Mengenoperation beteiligten
+                <code>SELECT</code>-Abfrage gleich sein.
+            </li>
+            <li>
+                <code>NULL</code>-Werte verhalten sich besonders und stellen daher eine Ausnahme dar. Da ein
+                <code>NULL</code>-Wert ja kein Wert ist und somit auch keinem Datentyp zuzuordnen ist, können Sie ihn
+                mit Spaltenwerten vereinen. In diesem Fall gilt die Regel nicht, dass die Datentypen übereinstimmen
+                müssen.
+            </li>
+            <li>
+                Auch die Vereinigung von Zeilen, deren Spalten ausschließlich <code>NULL</code>-Werte enthalten, ist
+                möglich.
+            </li>
+            <li>
+                Es gibt keine Begrenzung für die Anzahl der Vereinigung von Ergebnislisten.
+            </li>
+        </list>
     </chapter>
 
     <chapter title="Die Vereinigungsmenge (UNION)" id="union">
