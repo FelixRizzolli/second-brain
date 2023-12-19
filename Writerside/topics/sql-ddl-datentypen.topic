@@ -95,7 +95,34 @@
     </chapter>
 
     <chapter title="Datentypen für rationale Zahlen" id="rationale-zahlen">
+        <p>
+            In SQL unterscheidet man grundsätzlich zwischen zwei Datentyparten von rationalen Zahlen: den
+            Fließkomma-Datentypen und den Fixkomma-Datentypen. Fixkomma-Datentypen werden dann eingesetzt, wenn große
+            Genauigkeit erforderlich ist. Die Bruchstelle wird anstelle des Kommas mit einem Punkt gekennzeichnet.
+        </p>
 
+        <code-block lang="sql">
+            DECIMAL(p, s)
+        </code-block>
+        <code-block lang="sql">
+            NUMERIC(p, s)
+        </code-block>
+
+        <p>
+            Die Datentypen <code>DECIMAL</code> und <code>NUMERIC</code> gehören zu den Fixkomma-Datentypen. Die beiden
+            Datentypen unterscheiden sich nicht, <code>NUMERIC</code> wurde für die MySQL-Datenbank aus dem Datentyp
+            <code>DECIMAL</code> implementiert. Beide Typen können synonym verwendet werden, um rationale Zahlen
+            abzubilden – was aber nicht auch für alle anderen Datenbanken neben MySQL gelten muss.
+        </p>
+        <p>
+            Hinter der Datentypbezeichnung können in einfachen Klammern umschlossen zwei Argumente übergeben werden. Das
+            erste Argument <emphasis>p</emphasis> steht für <emphasis>precision</emphasis>, das zweite
+            <emphasis>s</emphasis> steht für <emphasis>scale</emphasis>. Mit <emphasis>p</emphasis> wird die
+            Gesamtanzahl der Ziffern des numerischen Wertes angegeben.
+        </p>
+        <p>
+            Beispiel: Kosten für ein Auto (= 59 999,99 €) -> <code>DECIMAL(7, 2)</code>
+        </p>
     </chapter>
 
     <chapter title="Datentypen für Datum und Zeit" id="datetime">
