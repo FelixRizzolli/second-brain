@@ -6,6 +6,24 @@
        title="Tabellenoperationen (CREATE, DROP, ALTER)" id="sql-ddl-tabellenoperationen">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="CREATE TABLE: Tabellen erstellen" id="create">
+        <chapter title="Reservierte Schlüsselwörter" id="create-schluesselwoerter">
+
+        </chapter>
+
+        <chapter title="CONSTRAINTS" id="create-constraints">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="DROP TABLE: Tabellen löschen" id="drop">
+
+    </chapter>
+
+    <chapter title="ALTER TABLE: Tabellen ändern" id="alter">
+
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
