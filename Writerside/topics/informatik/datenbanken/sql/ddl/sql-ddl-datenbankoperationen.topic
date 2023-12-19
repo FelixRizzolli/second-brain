@@ -7,7 +7,15 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="CREATE DATABASE: Datenbanken erstellen" id="create">
+        <p>
+            Im SQL-Standard wird das Erstellen von Datenbanken nicht vorgegeben. Die Anweisung
+            <code>CREATE DATABASE</code> zum Anlegen einer Datenbank wird jedoch von den meisten Datenbanken
+            unterstützt. Dafür benötigt es aber die entsprechenden Berechtigungen (Administratorenberechtigungen).
+        </p>
 
+        <code-block lang="sql">
+            CREATE DATABASE databasename;
+        </code-block>
     </chapter>
 
     <chapter title="DROP DATABASE: Datenbanken löschen" id="drop">
