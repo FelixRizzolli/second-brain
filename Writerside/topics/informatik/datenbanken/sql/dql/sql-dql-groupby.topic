@@ -355,7 +355,47 @@
         </chapter>
 
         <chapter title="Fall 2: NULL-Werte in Spalte auf die eine Aggregatfunktion angewendet wird" id="null-fall2">
+            <p>
+                In diesem Fall wird die Spalte von einer Aggregatfunktion wie <code>SUM</code> ignoriert. Grundsätzlich
+                ist es gut, dass die Aggregatfunktion die <code>NULL</code>-Werte ignoriert. Dennoch hier einige Details
+                zu diesem Verhalten:
+            </p>
+            
+            <list>
+                <li>
+                    Die Funktion <code>COUNT</code> zählt nur die Werte der jeweiligen Spalte über die aggregiert werden
+                    soll, die nicht NULL sind. Dieses Verhalten kann, muss aber nicht gewünscht sein. Alternativ können
+                    mittels <code>COUNT(*)</code> alle Zeilen einer Gruppe gezählt werden.
+                </li>
+                <li>
+                    Die Funktion <code>SUM</code> bildet einfach eine Summe über die zu aggregierende Spalte. Hier
+                    treten keine negativen Effekte, auf die das Ergebnis beeinflussen.
+                </li>
+                <li>
+                    Wird ein Minimal- oder Maximalwert mit <code>MIN</code> oder <code>MAX</code> ermittelt sind durch
+                    das Ignorieren der <code>NULL</code>-Werte ebenfalls keine negativen Auswirkungen zu erkennen.
+                </li>
+                <li>
+                    Auch die <code>AVG</code>-Funktion ignoriert die <code>NULL</code>-Werte wie die anderen
+                    Aggregatfunktionen. Kommen also <code>NULL</code>-Werte in einer aggregierten Spalte vor, so werden
+                    diese nicht in den Durchschnittswert mit einfließen. Das kann aber zu einem unerwünschten Ergebnis
+                    führen. Mit einer <code>CASE</code>-Klausel lassen sich diese Probleme korrigieren.
+                </li>
+            </list>
 
+            <code-block lang="sql">
+                SELECT  AVG( CASE
+                               WHEN bonuszahlung IS NULL
+                               THEN 0
+                               ELSE bonuszahlung
+                             END
+                            ) AS durchschnittbonuszahlung,
+                  FROM bonus
+                 WHERE  mitarbeiterid = 10
+                 GROUP
+                    BY  mitarbeiterid
+                ;
+            </code-block>
         </chapter>
     </chapter>
 
