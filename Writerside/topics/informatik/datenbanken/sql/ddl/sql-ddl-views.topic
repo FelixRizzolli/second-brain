@@ -67,11 +67,45 @@
     </chapter>
 
     <chapter title="CREATE VIEW: Views anlegen" id="create">
+        <p>
+            Views werden mit der <code>CREATE VIEW</code>-Anweisung angelegt. Die Namen der zu erstellenden Views dürfen
+            nicht identisch mit bestehenden Tabellennamen sein. Es ist daher ratsam, Views mit einem Präfix wie
+            <code>v_</code> zu versehen, um sie von Tabellen unterscheiden zu können. In der zugrundeliegenden
+            <code>SELECT</code>-Anweisung einer View dürfen keine gleichen Spaltennamen verwendet werden. Diese Gefahr
+            besteht insbesondere, wen <code>JOIN</code>s verwendet werden.
+        </p>
 
+        <code-block lang="sql">
+            CREATE VIEW v_mitarbeiter AS
+                 SELECT  mitarbeiterid
+                      ,  vorname
+                      ,  nachname
+                   FROM mitarbeiter
+            ;
+            SELECT  *
+              FROM v_mitarbeiter
+            ;
+        </code-block>
+        <code-block lang="sql">
+            CREATE VIEW v_mitarbeiterkontakt AS
+                 SELECT  m.mitarbeiterid
+                      ,  m.vorname
+                      ,  m.nachname
+                      ,  k.festnetz
+                      ,  k.mobilnetz
+                   FROM mitarbeiter AS m
+                  INNER
+                   JOIN kontakt AS k
+                     ON  m.mitarbeiterid = k.mitarbeiterid
+            ;
+            SELECT  *
+              FROM v_mitarbeiterkontakt
+            ;
+        </code-block>
     </chapter>
 
     <chapter title="Views und ORDER BY" id="orderby">
-
+        
     </chapter>
 
     <chapter title="DROP VIEW: Views ersetzen" id="drop">
