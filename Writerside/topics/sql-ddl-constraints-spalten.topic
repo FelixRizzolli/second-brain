@@ -6,6 +6,34 @@
        title="CONSTRAINTS auf Spaltenebene" id="sql-ddl-constraints-spalten">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlegendes" id="grundlegendes">
+
+    </chapter>
+
+    <chapter title="AUTO_INCREMENT: Automatisch hochzählende numerische Spalten" id="auto-increment">
+
+    </chapter>
+
+    <chapter title="NOT NULL: Spalten als Pflichtfelder definieren" id="not-null">
+
+    </chapter>
+
+    <chapter title="UNIQUE: Spalten mit einer Eindeutigkeitseinschränkung versehen" id="unique">
+
+    </chapter>
+
+    <chapter title="DEFAULT: Standardwerte für Spalten festlegen" id="default">
+
+    </chapter>
+
+    <chapter title="CHECK: Bedingungen für Spalten festlegen" id="check">
+
+    </chapter>
+
+    <chapter title="PRIMARY KEY: Primärschlüssel für eine Spalte festlegen" id="primary-key">
+
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
