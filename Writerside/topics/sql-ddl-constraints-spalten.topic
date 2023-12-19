@@ -118,7 +118,25 @@
     </chapter>
 
     <chapter title="DEFAULT: Standardwerte für Spalten festlegen" id="default">
+        <p>
+            Mit dem Schlüsselwort <code>DEFAULT</code> kann für eine Spalte ein Standardwert definiert werden. Dieser
+            Wert wird somit immer verwendet, falls bei einer <code>INSERT</code>-Anweisung der jeweiligen Spalte kein
+            Wert zugewiesen wird. Der Standartwert mittels <code>DEFAULT</code> sollte möglichst vor der
+            <code>UNIQUE</code>-Einschränkung und nach der <code>NULL</code>/<code>NOT NULL</code>-Einschränkung notiert
+            werden.
+        </p>
 
+        <code-block lang="sql">
+            CREATE
+             TABLE dienstwagen
+                 ( dienstwagenid    TINYINT        PRIMARY KEY
+                 , kennzeichen      CHAR(9)        NOT NULL
+                 , erstzulassung    DATE           NOT NULL
+                 , kostenstelle     SMALLINT       NOT NULL     DEFAULT 0
+                 , mitarbeiter      VARCHAR(300)   UNIQUE
+                 )
+            ;
+        </code-block>
     </chapter>
 
     <chapter title="CHECK: Bedingungen für Spalten festlegen" id="check">
