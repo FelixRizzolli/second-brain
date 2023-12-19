@@ -7,7 +7,18 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlagen" id="grundlagen">
-
+        <p>
+            Einer Spalte, die in einer Tabelle angelegt werden soll, muss immer ein Datentyp zugeordnet werden. Dieser
+            Datentyp enthält Informationen darüber, welche Elemente die Spalte speichern kann.
+        </p>
+        <p>
+            Durch den Datentyp kann auch der benötigte Speicherbedarf eingegrenzt werden. So benötigt beispielsweise ein
+            Datenfeld mit dem Datentyp <code>TINYINT</code> nur 1Byte, kann aber nur Zahlen von -128 bis 127 oder von 0
+            bis 255 aufnehmen, wo ein <code>INT</code> 4Byte benötigt, kann jedoch Zahlen von -2147483648 bis 2147483647
+            aufnehmen. Bei einer großen Datenbank ist die Auswahl die Datentypen sehr wichtig da sich der
+            Speicherunterschied deutlich erkennbar macht. Auch die Performance der Datenbank profitiert von einer
+            Datenbank mit gut gewählten Datentypen.
+        </p>
     </chapter>
 
     <chapter title="Datentypen für ganze Zahlen" id="ganze-zahlen">
