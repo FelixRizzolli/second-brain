@@ -159,7 +159,23 @@
         </chapter>
 
         <chapter title="B-Baum Löschen" id="bbaum-loeschen">
-
+            <p>
+                Das B-Baum Löschen stellt sich deutlich komplexer dar. Die allgemeine Unterscheidung der Durchführung
+                einer Lösch-Operation lässt sich in drei Fällen beschreiben:
+            </p>
+            
+            <list>
+                <li>
+                    Die Anzahl der Elemente bzw. Einträge eines Knotens, aus dem der gewünschte Wert gelöscht werden
+                    soll, ist immer noch entsprechend der Ordnung.
+                </li>
+                <li>
+                    Der Knoten besitzt nach dem Löschen zu wenig Einträge.
+                </li>
+                <li>
+                    Das Blatt besitzt nach dem Löschen zu wenig Elemente.
+                </li>
+            </list>
         </chapter>
     </chapter>
 
