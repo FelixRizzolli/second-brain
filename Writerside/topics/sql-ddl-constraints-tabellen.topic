@@ -7,7 +7,18 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Einleitung" id="einleitung">
-
+        <p>
+            Auf Tabellenebene können die Einschränkungen <code>PRIMARY KEY</code>, <code>UNIQUE</code> und
+            <code>CHECK</code> festgelegt werden. Eine <code>DEFAULT</code>-Einschränkung, die den Standardwert festlegt
+            oder eine <code>NOT NULL</code>-Einschränkung, die eine Spalte als Pflichtwert definiert können nur auf
+            Spaltenebene definiert werden. Einschränkungen auf Tabellenebene verhalten sich gleich wie auf Spaltenebene,
+            nur die Schreibweise ist anders.
+        </p>
+        <p>
+            Beim Erstellen einer Tabelle werden Einschränkungsdefinitionen immer hinter der letzten Spaltendefinition
+            notiert. Eingeleitet wird sie mit dem Schlüsselwort <code>CONSTRAINT</code> und den
+            Einschränkungsbezeichner. Der darauffolgende Teil ist je nach Einschränkungstyp unterschiedlich.
+        </p>
     </chapter>
 
     <chapter title="PRIMARY KEY: Primärschlüssel auf Tabellenebene" id="primary-key">
