@@ -75,7 +75,21 @@
     </chapter>
 
     <chapter title="Funktionsweise" id="funktionsweise">
-
+        <p>
+            Wie bei allen Datenbankindizes existiert von jedem dieser Einträge ein Verweis auf einen (externen)
+            Datenbankeintrag.
+        </p>
+        <p>
+            Das Durchsuchen der (vorzugsweise intern gespeicherten) Indextabelle geschieht über einfache binäre
+            Operationen, im Beispiel über Und-Verknüpfung mit einer Suchmaske. Sucht man in dem Beispiel nach Personen,
+            die männlich und verheiratet sind, so ist die Suchmaske 10010 (die Verweise der Treffer führen zu Fritz und
+            Hans).
+        </p>
+        <p>
+            Dadurch, dass binäre Operationen auf Prozessorebene ausgeführt werden können, bietet dies bei diesen
+            Vergleichsoperationen einen großen Geschwindigkeitsvorteil. Es wird also Rechenaufwand gegen Speicherplatz
+            getauscht.
+        </p>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
