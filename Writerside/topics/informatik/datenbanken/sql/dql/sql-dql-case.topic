@@ -22,13 +22,35 @@
     </chapter>
 
     <chapter title="Beispiele" id="beispiele">
-
         <chapter title="Bedingungslogik in einer Spaltenauswahlliste einer SELECT-Anweisung" id="beispiele-select">
-
+            <code-block lang="sql">
+                SELECT  vorname
+                     ,  nachname
+                     ,  CASE
+                          WHEN austrittsdatum IS NULL
+                          THEN 'aktiver Mitarbeiter'
+                          ELSE 'ausgetretener Mitarbeiter'
+                        END AS mitarbeiterstatus
+                  FROM mitarbeiter
+                ;
+            </code-block>
         </chapter>
 
         <chapter title="Bedingungslogik in einer ORDER BY-Klausel" id="beispiele-orderby">
-
+            <code-block lang="sql">
+                SELECT  vorname
+                     ,  nachname
+                     ,  austrittsgrund
+                  FROM mitarbeiter
+                 WHERE austrittsgrund IS NOT NULL
+                 ORDER
+                    BY CASE
+                         WHEN austrittsgrund='ruhestand' THEN 3
+                         WHEN austrittsgrund='veränderung' THEN 2
+                         WHEN austrittsgrund='abfindungsprogramm' THEN 1
+                       END
+                ;
+            </code-block>
         </chapter>
     </chapter>
 
