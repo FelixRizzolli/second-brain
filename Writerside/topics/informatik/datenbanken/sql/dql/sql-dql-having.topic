@@ -7,7 +7,22 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlegendes" id="grundlegendes">
+        <p>
+            Die <code>HAVING</code>-Klausel wurde zu SQL hinzugefügt, weil das Schlüsselwort <code>WHERE</code> nicht
+            mit Aggregatfunktionen verwendet werden kann.
+        </p>
 
+        <code-block lang="sql">
+            SELECT  column_name(s)
+              FROM table_name
+             WHERE  condition
+             GROUP
+                BY  column_name(s)
+            HAVING  condition
+             ORDER
+                BY  column_name(s)
+            ;
+        </code-block>
     </chapter>
 
     <chapter title="Daten für Beispiele" id="daten">
