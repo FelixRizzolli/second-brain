@@ -43,7 +43,21 @@
         </chapter>
 
         <chapter title="CONSTRAINTS" id="create-constraints">
+            <p>
+                Einer Spalte können Einschränkungen zugeordnet werden, welche für die <code>INSERT</code> und die
+                <code>UPDATE</code>-Anweisung gelten – werden diese nicht eingehalten, so wird die Anweisung nicht
+                ausgeführt und eine Fehlermeldung erscheint. Solche Einschränkungen nennt man <code>CONSTRAINTS</code>.
+                Dazu gehören: der Primärschlüssel, die <code>NOT NULL</code>-Einschränkung, die
+                <code>UNIQUE</code>-Einschränkung, der <code>DEFAULT</code>-Wert und die <code>CHECK</code>-Bedingung.
+            </p>
+            <p>
+                Mehr zu Constraints hier:
+            </p>
 
+            <list>
+                <li><a href="sql-ddl-constraints-spalten.topic"><code>CONSTRAINT</code>s auf Spaltenebene</a></li>
+                <li><a href="sql-ddl-constraints-tabellen.topic"><code>CONSTRAINT</code>s auf Tabellenebene</a></li>
+            </list>
         </chapter>
     </chapter>
 
