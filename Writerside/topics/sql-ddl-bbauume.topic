@@ -7,9 +7,18 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlagen" id="grundlagen">
+        <p>
+            Ein B-Baum ist eine Datenstruktur in der Informatik, die sich vor allem für Datenbanken und Dateisysteme
+            eignet. Dabei handelt es sich um <b>keinen Binärbaum</b>, sondern um einen <b>vollständig balancierten
+            Baum</b>, welcher in einem Knoten mehrere Elemente sortiert speichern kann.
+        </p>
 
         <chapter title="Geschichte" id="grundlagen-geschichte">
-
+            <p>
+                1972 wurden die B-Bäume (Englisch B-tree) von Rudolf Bayer und Edward M. McCreight entwickelt. In
+                Kombination mit dem relationalen Datenbankmodell wurde die erste Basis für SQL-Datenbanksysteme bei IBM
+                geschaffen, da der Baum eine perfekte Daten- und Indexstruktur zur Verwaltung von Indizes darstellt.
+            </p>
         </chapter>
     </chapter>
 
