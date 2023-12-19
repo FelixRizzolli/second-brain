@@ -294,7 +294,43 @@
         </chapter>
 
         <chapter title="MIN() und MAX()" id="aggregatfunktionen-minmax">
+            <code-block lang="sql">
+                SELECT  mitarbeiterid
+                     ,  MIN(bonuszahlung) AS minbonuszahlung
+                     ,  MAX(bonuszahlung) AS maxbonuszahlung
+                  FROM bonus
+                 GROUP
+                    BY  mitarbeiterid
+                ;
+            </code-block>
 
+            <table>
+                <tr>
+                    <td>mitarbeiterid</td>
+                    <td>minbonuszahlung</td>
+                    <td>maxbonuszahlung</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1800.00</td>
+                    <td>11700.00</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>3000.00</td>
+                    <td>7000.00</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>4500.00</td>
+                    <td>4500.00</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>2500.00</td>
+                    <td>17800.00</td>
+                </tr>
+            </table>
         </chapter>
     </chapter>
 
