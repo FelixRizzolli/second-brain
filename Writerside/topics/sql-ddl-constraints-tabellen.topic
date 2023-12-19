@@ -7,7 +7,13 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Einleitung" id="einleitung">
-
+        <p>
+            Einer Spalte können Einschränkungen zugeordnet werden, welche für die <code>INSERT</code> und die
+            <code>UPDATE</code>-Anweisung gelten – werden diese nicht eingehalten, so wird die Anweisung nicht
+            ausgeführt und eine Fehlermeldung erscheint. Solche Einschränkungen nennt man <code>CONSTRAINTS</code>. Dazu
+            gehören: der Primärschlüssel, die <code>NOT NULL</code>-Einschränkung, die
+            <code>UNIQUE</code>-Einschränkung, der <code>DEFAULT</code>-Wert und die <code>CHECK</code>-Bedingung.
+        </p>
     </chapter>
 
     <chapter title="PRIMARY KEY: Primärschlüssel auf Tabellenebene" id="primary-key">
