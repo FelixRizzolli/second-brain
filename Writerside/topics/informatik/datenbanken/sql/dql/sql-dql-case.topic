@@ -42,7 +42,7 @@
                      ,  nachname
                      ,  austrittsgrund
                   FROM mitarbeiter
-                 WHERE austrittsgrund IS NOT NULL
+                 WHERE  austrittsgrund IS NOT NULL
                  ORDER
                     BY CASE
                          WHEN austrittsgrund='ruhestand' THEN 3

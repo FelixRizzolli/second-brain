@@ -7,7 +7,45 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlegendes" id="grundlegendes">
-        
+        <p>
+            Mit folgenden <code>JOIN</code>-Typen können Tabellen verbunden abgefragt werden:
+        </p>
+
+        <list>
+            <li>
+                <code>INNER JOIN</code>: verbindet ausschließlich Zeilen mit gültigen Schlüsselwerten.
+            </li>
+            <li>
+                <code>LEFT OUTER JOIN</code>: verbindet Zeilen mit gültigen Schlüsselwerten und gibt Zeilen der linken
+                Tabelle aus, die nicht verbunden abgefragt werden können.
+            </li>
+            <li>
+                <code>RIGHT OUTER JOIN</code>: verbindet Zeilen mit gültigen Schlüsselwerten und gibt Zeilen der rechten
+                Tabelle aus, die nicht verbunden abgefragt werden können.
+            </li>
+            <li>
+                <code>FULL OUTER JOIN</code>: verbindet Zeilen mit gültigen Schlüsselwerten und gibt die Zeilen der
+                linken und rechten Tabelle aus, die nicht über Schlüsselwerte verbunden werden können.
+            </li>
+            <li>
+                <code>CROSS JOIN</code>: verbindet jede Zeile einer Tabelle mit jeder Zeile einer anderen Tabelle und
+                umgekehrt.
+            </li>
+            <li>
+                <code>SELF JOIN</code>: verbindet eine Zeile einer Tabelle mit Zeilen der gleichen Tabelle.
+            </li>
+        </list>
+
+        <p>
+            Die Verbindung zwischen den Zeilen wird bis auf den <code>CROSS JOIN</code> mit einer Bedingung stets über
+            Primärschlüsselwerte und darauf referenzierende Fremdschlüsselwerte hergestellt.
+        </p>
+        <p>
+            Die hier aufgeführten <code>JOIN</code>-Typen (bis auf <code>CROSS JOIN</code>) können nicht nur über
+            Schlüsselbeziehungen realisiert werden. Solange die Datentypen der Spalten, die an einem <code>JOIN</code>
+            beteiligt sind, identisch sind, kann mit einer Bedingung in einer <code>ON</code>-Klausel eine Verbindung
+            hergestellt werden.
+        </p>
     </chapter>
 
     <chapter title="Beispiele" id="beispiele">
