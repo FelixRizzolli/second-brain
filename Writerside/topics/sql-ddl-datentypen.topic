@@ -180,7 +180,51 @@
     </chapter>
 
     <chapter title="Datentypen für Zeichenketten" id="zeichenketten">
+        <p>
+            Zeichenketten bestehen aus einer Aneinanderreihung von einzelnen Zeichen. Hierbei ist der Zeichensatz von
+            großer Bedeutung. Der Zeichensatz UTF-8 ist einer der am weitesten verbreiteten Implementierungen von
+            Unicode-Standardzeichen. Der Unicode-Standard legt für beinah jedes nur vorstellbare Zeichen (darunter
+            Schriftzeichen jeglicher Sprache, Zeichen wie <code>@</code> welche nicht im Alphabet vorkommen und auch
+            Zahlen) eine eindeutige Nummer fest. Die unterschiedlichen Codelisten enthalten für diese Vielzahl von
+            Sprachen und Dialekten Zeichensätze, in denen die Zeichen einer Sprache hinterlegt sind. Zeichensätze
+            stellen die Basis dar, um mit Zeichenketten arbeiten zu können. Für die deutsche Sprache sind
+            Zeichencodelisten wie <emphasis>Basic Latin</emphasis> und <emphasis>Latin 1 Supplement</emphasis> wichtig,
+            da hier sämtliche Zeichen der deutschen Sprache hinterlegt sind.
+        </p>
+        
+        <table>
+            <tr>
+                <td>DATENTYP</td>
+                <td>MYSQL</td>
+                <td>POSTGRESQL</td>
+                <td>MS-SQL-SERVER</td>
+            </tr>
+            <tr>
+                <td><code>CHAR(L)</code></td>
+                <td>255</td>
+                <td>10 485 760</td>
+                <td>8 000</td>
+            </tr>
+            <tr>
+                <td><code>VARCHAR(L)</code></td>
+                <td>65 535 (seit v5.0.3)</td>
+                <td>10 485 760</td>
+                <td>8 000</td>
+            </tr>
+        </table>
 
+        <p>
+            Mit dem Argument L weist man der Zeichenkette die maximale Länge zu, welche ein Datenfeld der jeweiligen
+            Spalte haben kann. Die maximal möglichen Längen, welche zugewiesen werden können, sind von Datenbank zu
+            Datenbank unterschiedlich.
+        </p>
+        <p>
+            Angenommen für die Namen von Mitarbeiter wir der Datentyp <code>CHAR(100)</code> verwendet. Ein Eintrag wie
+            Beispielsweise 'Dirk' hat nur 4 von den 100 zur Verfügung stehenden Zeichen, der Rest wird mit Leerzeichen
+            ausgefüllt. Das bedeutet für jeden Eintrag werden 100 Zeichen verwendet, was 100Byte Speicherkapazität
+            entspricht. Der Datentyp <code>VARCHAR</code> verhält sich ähnlich. Hier werden jedoch nicht die
+            verbleibenden 96 Zeichen mit Leerzeichen gefüllt.
+        </p>
     </chapter>
 
     <chapter title="Datentypen umwandeln" id="typkonvertierung">
