@@ -230,18 +230,74 @@
     </chapter>
 
     <chapter title="JOIN / INNER JOIN" id="join">
+        <img src="datenbanken_sql_innerjoin.gif" alt="INNER JOIN"/>
+
+        <p>
+            In manchen Datenbanken wird <code>INNER JOIN</code> statt <code>JOIN</code> verwendet.
+        </p>
 
         <chapter title="Beschreibung" id="join-beschreibung">
+            <p>
+                Ein <code>INNER JOIN</code> verbindet Zeilen von Tabelle, indem auf Gleichheit von Primärschlüssel- und
+                Fremdschlüssel geprüft wird. Die Zeilen von Tabellen werden nur dann verbunden, wenn eine
+                Schlüsselbeziehung zwischen einer Eltern- und einer Kindtabelle existiert. Wenn Zeilen in den Tabellen
+                vorhanden sind, die über keine Beziehung verfügen, werden sie nicht berücksichtigt.
+            </p>
+            <p>
+                Hinter der <code>INNER JOIN</code>-Klausel wird die Tabelle, die verbunden abgefragt werden soll
+                angegeben. Die Bedingung, die auf die Gleichheit von Schlüsselwerten prüft (Primärschlüssel- und
+                Fremdschlüsselwerte), werden mit der <code>ON</code>-Klausel festgelegt. Das Schlüsselwort
+                <code>INNER</code> der <code>INNER JOIN</code>-Klausel ist optional.
+            </p>
 
             <chapter title="Mehrere Tabellen verbinden" id="join-beschreibung-verbinden">
-
+                <p>
+                    Es können natürlich auch mehrere Tabellen verbunden werden. Dabei muss immer lediglich hinter der
+                    letzten <code>ON</code>-Klausel eine weitere <code>INNER JOIN</code>-Klausel mit der dazugehörigen
+                    <code>ON</code>-Klausel angefügt werden.
+                </p>
             </chapter>
         </chapter>
 
         <chapter title="Beispiel" id="join-beispiel">
+            <code-block lang="sql">
+                SELECT  name
+                     ,  vorname
+                     ,  plz
+                     ,  ort
+                  FROM auszubildender
+                  JOIN adresse
+                    ON  ausid = fk_ausid
+                ;
+            </code-block>
 
             <chapter title="Ergebnistabelle" id="join-beispiel-ergebnistabelle">
-
+                <table>
+                    <tr>
+                        <td>name</td>
+                        <td>vorname</td>
+                        <td>plz</td>
+                        <td>ort</td>
+                    </tr>
+                    <tr>
+                        <td>Müller</td>
+                        <td>Ralf</td>
+                        <td>50827</td>
+                        <td>Köln</td>
+                    </tr>
+                    <tr>
+                        <td>Lang</td>
+                        <td>Peter</td>
+                        <td>50127</td>
+                        <td>Bonn</td>
+                    </tr>
+                    <tr>
+                        <td>Erde</td>
+                        <td>Sabine</td>
+                        <td>50129</td>
+                        <td>Bonn</td>
+                    </tr>
+                </table>
             </chapter>
         </chapter>
     </chapter>
