@@ -134,9 +134,28 @@
     </chapter>
 
     <chapter title="Mit einem B-Baum arbeiten" id="bbaum-arbeiten">
-
         <chapter title="B-Baum Einfügen" id="bbaum-einfuegen">
+            <p>
+                Wenn man in einen B-Baum einfügen möchte, wird erstmal das entsprechende Blatt gesucht, in dem das neue
+                Element eingefügt werden soll.
+            </p>
+            <p>
+                Nun muss zwischen zwei Fällen unterschieden werden:
+            </p>
 
+            <list style="decimal">
+                <li>
+                    <b>Die Anzahl der Einträge des Knotens ist nach dem Einfügen noch kleiner</b> <code>m</code>: Das
+                    bedeutet, dass der Knoten seine maximale Anzahl an Elementen nach dem Einfügen nicht überschritten hat.
+                    Deshalb kann der neue Wert ohne Probleme an seine richtige Position eingefügt werden und die Operation
+                    ist damit beendet.
+                </li>
+                <li>
+                    <b>Die Anzahl der Einträge des Knotens ist nach dem Einfügen größer gleich</b> <code>m</code>: Die
+                    Anzahl der maximalen Elemente wurde überstiegen. Deshalb muss er im weiteren Verlauf aufteilt werden, um
+                    ihn in den darüber liegenden Knoten einzufügen. Deshalb sagt man auch, dass ein B-Baum nach oben wächst!
+                </li>
+            </list>
         </chapter>
 
         <chapter title="B-Baum Löschen" id="bbaum-loeschen">
