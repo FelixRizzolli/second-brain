@@ -335,9 +335,23 @@
     </chapter>
 
     <chapter title="NULL-Werte berücksichtigen" id="null">
-
         <chapter title="Fall 1: NULL-Werte in der zu gruppierenden Spalte" id="null-fall1">
+            <p>
+                Wenn nach den Spaltenwerten einer Spalte gruppiert wird und dort <code>NULL</code>-Werte enthalten sind,
+                so wird eine Gruppierung über diese Gruppe von Spaltenwerten gebildet. Es würde wenig Sinn machen diese
+                Datensätze zu gruppieren und eine Aggregatfunktion darauf anzuwenden, da meist keinerlei Aussage darüber
+                erfolgt. Somit werden sie meistens mittels <code>WHERE</code>-Klausel herausgefiltert.
+            </p>
 
+            <code-block lang="sql">
+                SELECT  mitarbeiterid
+                     ,  SUM(bonuszahlung) AS summebonuszahlung
+                  FROM  bonus
+                 WHERE mitarbeiterid IS NOT NULL
+                 GROUP
+                    BY  mitarbeiterid
+                ;
+            </code-block>
         </chapter>
 
         <chapter title="Fall 2: NULL-Werte in Spalte auf die eine Aggregatfunktion angewendet wird" id="null-fall2">
