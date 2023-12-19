@@ -85,7 +85,36 @@
     </chapter>
 
     <chapter title="UNIQUE: Spalten mit einer Eindeutigkeitseinschränkung versehen" id="unique">
+        <p>
+            Mit der <code>UNIQUE</code>-Einschränkung stellt man sicher, dass ähnlich wie bei einem Primärschlüssel, das
+            Datenfeld nur einmal in der Spalte vorkommt. Die Eindeutigkeitseinschränkung <code>UNIQUE</code> wird immer
+            hinter einer <code>NULL</code> oder <code>NOT NULL</code>-Einschränkung notiert.
+        </p>
+        <p>
+            Auch hier gibt es keine Unterschiede zwischen den einzelnen Datenbanken. In einer MS-SQL-Server-Datenbank
+            kann der <code>NULL</code>-Wert nur einmal für eine Spalte, welche mit dem Schlüsselwort <code>UNIQUE</code>
+            versehen wurde, verwendet werden. Die PostgreSQL- und MySQL-Datenbanken lassen hingegen den
+            <code>NULL</code>-Wert für eine mit <code>UNIQUE</code> versehene Spalte mehrfach zu.
+        </p>
 
+        <code-block lang="sql">
+            CREATE
+             TABLE dienstwagen
+                 ( dienstwagenid   TINYINT        PRIMARY KEY
+                 , kennzeichen     CHAR(9)        NOT NULL
+                 , erstzulassung   DATE           NOT NULL
+                 , mitarbeiter     VARCHAR(300)   UNIQUE
+                 )
+            ;
+        </code-block>
+
+        <p>
+            Um eine <code>UNIQUE</code>-Einschränkung über mehrere Spalten anzuwenden, muss sie auf Tabellenebene
+            definiert werden:
+            <a href="sql-ddl-constraints-tabellen.topic">
+                <code>CONSTRAINTS</code> auf Tabellenebene
+            </a>
+        </p>
     </chapter>
 
     <chapter title="DEFAULT: Standardwerte für Spalten festlegen" id="default">
