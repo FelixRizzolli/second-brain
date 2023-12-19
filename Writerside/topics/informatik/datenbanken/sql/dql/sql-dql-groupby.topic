@@ -442,7 +442,21 @@
     </chapter>
 
     <chapter title="Nach zwei oder mehr Spalten gruppieren" id="mehr-spalten-gruppieren">
+        <p>
+            Je nach Anforderung kann auch über zwei, drei oder mehr Spalten gruppiert werden. Die zu gruppierenden
+            Spalten werden kommasepariert hinter der <code>GROUP BY</code>-Klausel angegeben.
+        </p>
 
+        <code-block lang="sql">
+            SELECT  ort
+                 ,  bezeichnung
+                 ,  COUNT(*) AS anzahlinstitute
+              FROM kreditinstitut
+             GROUP
+                BY  ort
+                 ,  bezeichnung
+            ;
+        </code-block>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
