@@ -76,7 +76,29 @@
     </chapter>
 
     <chapter title="UNIQUE: Die Eindeutigkeitseinschränkung auf Tabellenebene" id="unique">
+        <p>
+            Mit der <code>UNIQUE</code>-Einschränkung auf Tabellenebene verhält es sich ähnlich wie mit dem
+            Primärschlüssel. Auch hier kann man die Eindeutigkeit durch das Zusammensetzen mehrerer Spaltenwerte
+            überprüfen lassen.
+        </p>
 
+        <code-block lang="sql">
+            CREATE
+             TABLE zweigstellen
+                 ( globalid          TINYINT          PRIMARY KEY
+                 , land              VARCHAR(200)
+                 , zweigstellenid    TINYINT
+                 , namezweigstelle   VARCHAR(200)
+                 , CONSTRAINT uq_landzweigstelle UNIQUE (land, zweigstellenid)
+                 )
+            ;
+        </code-block>
+        <code-block lang="sql">
+            INSERT INTO zweigstellen VALUES (1, 'Deutschland', 1, 'Zweigstelle 1');
+            INSERT INTO zweigstellen VALUES (2, 'Deutschland', 2, 'Zweigstelle 2');
+            INSERT INTO zweigstellen VALUES (3, 'Holland', 1, 'Zweigstelle 3');
+            INSERT INTO zweigstellen VALUES (4, 'Holland', 2, 'Zweigstelle 4');
+        </code-block>
     </chapter>
 
     <chapter title="CHECK: Plausibilitätsprüfungs-Einschränkungen auf Tabellenebene" id="check">
