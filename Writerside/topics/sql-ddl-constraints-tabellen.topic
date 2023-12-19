@@ -7,61 +7,11 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Einleitung" id="einleitung">
-        <p>
-            Einer Spalte können Einschränkungen zugeordnet werden, welche für die <code>INSERT</code> und die
-            <code>UPDATE</code>-Anweisung gelten – werden diese nicht eingehalten, so wird die Anweisung nicht
-            ausgeführt und eine Fehlermeldung erscheint. Solche Einschränkungen nennt man <code>CONSTRAINTS</code>. Dazu
-            gehören: der Primärschlüssel, die <code>NOT NULL</code>-Einschränkung, die
-            <code>UNIQUE</code>-Einschränkung, der <code>DEFAULT</code>-Wert und die <code>CHECK</code>-Bedingung.
-        </p>
+
     </chapter>
 
     <chapter title="PRIMARY KEY: Primärschlüssel auf Tabellenebene" id="primary-key">
-        <p>
-            Während der Tabellenerstellung kann mit einer <code>CREATE TABLE</code>-Anweisung festgelegt werden, ob
-            automatisch ein ganzzahlig hochzählender Primärschlüssel eingefügt werden soll. Somit muss man auch nicht
-            mehr den Primärschlüssel bei der <code>INSERT</code>-Anweisung angeben, da er ja von selbst hochzählt. Um
-            dies zu erreichen, wendet die Datenbank den folgenden Ausdruck an, um inkrementell die Primärschlüssel
-            hochzuzählen: <code>X = X + 1</code>.
-        </p>
-        <p>
-            Die automatische Schlüsselwertgenerierung wird von Datenbank zu Datenbank unterschiedlich umgesetzt. In den
-            Tabellenerstellungsanweisungen werden beispielsweise folgende Schlüsselwärter angewendet:
-        </p>
-        
-        <list>
-            <li>
-                <code>AUTO_INCREMENT</code> für MySQL-Datenbank
-            </li>
-            <li>
-                <code>SERIAL</code> für eine PostgreSQL-Datenbank
-            </li>
-            <li>
-                <code>IDENTITY(startwert, inkrementwert)</code> für eine MS-SQL-Server-Datenbank. In den klammern
-                werden durch Komma getrennt der Startwert und die Schrittweite notiert, die durch die automatische
-                Schlüsselvergabe verwendet werden sollen.
-            </li>
-        </list>
-        
-        <p>
-            Die Auto-Inkrement-Funktionalität steht für Primärschlüssel vom Datentyp wie z.B. <code>CHAR</code>,
-            <code>VARCHAR</code> oder <code>DATE</code> nicht zur Verfügung.
-        </p>
-        <p>
-            Ein Beispiel für eine MySQL-Tabelle mit einem Primärschlüssel und Auto-Inkrement-Funktion:
-        </p>
-        
-        <code-block lang="sql">
-            CREATE
-             TABLE designwagen
-                 ( designwagenid  TINYINT  AUTO_INCREMENT PRIMARY KEY
-                 , kennzeichen    CHAR(9)
-                 , erstzulassung  DATE
-                 )
-            ;
 
-            INSERT INTO dienstwagen (kennzeichen, erstzulassung) VALUES ('XX-XX-XX1', '2014-04-01');
-        </code-block>
     </chapter>
 
     <chapter title="FOREIGN KEY: Fremdschlüssel auf Tabellenebene" id="foreign-key">
