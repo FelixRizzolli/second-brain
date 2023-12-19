@@ -7,9 +7,70 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Einleitung" id="einleitung">
+        <p>
+            Ein Bitmap-Index ist ein Datenbankindex, der dazu dient, mehrdimensionale Daten effizient zu indizieren.
+            Aufgrund seiner Eigenschaften findet der Bitmap-Index vor allem bei Data Warehouses Einsatz. Die Bezeichnung
+            kommt daher, dass ein Bitmap Index ein oder mehrere Attribute in Form eines Bitmusters speichert. Er ist vor
+            allem Sinnvoll einsetzbar für die Indizierung von Tabellenspalten, mit einer geringen Kardinalität (Anzahl
+            von unterschiedlichen Werten).
+        </p>
 
         <chapter title="Beispiel" id="einleitung-beispiel">
+            <table>
+                <tr>
+                    <td>name</td>
+                    <td>männlich</td>
+                    <td>weiblich</td>
+                    <td>ledig</td>
+                    <td>verheiratet</td>
+                    <td>geschieden</td>
+                </tr>
+                <tr>
+                    <td>Anne</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Emil</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Fritz</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Hans</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Willi</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </table>
 
+            <p>
+                In einen Index einer Personendatenbank werden die Attribute <emphasis>Geschlecht</emphasis> (zwei
+                mögliche Werte, Kardinalität = 2) und <emphasis>Familienstand</emphasis> (Kardinalität = 3) eingetragen.
+            </p>
         </chapter>
     </chapter>
 
