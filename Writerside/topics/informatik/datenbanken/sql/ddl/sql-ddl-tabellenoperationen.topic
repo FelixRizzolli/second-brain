@@ -33,7 +33,13 @@
         </code-block>
 
         <chapter title="Reservierte Schlüsselwörter" id="create-schluesselwoerter">
-
+            <p>
+                Jede Datenbank legt fest, welche Wörter nicht als Bezeichner für Datenbankobjekte verwendet werden
+                dürfen. In der Regel handelt es sich dabei um Wörter, die dem SQL-Sprachsatz entstammen. Somit ist es
+                wirklich keine gute Idee eine Tabelle oder Spalte <emphasis>select</emphasis> oder
+                <emphasis>create</emphasis> zu nennen. Die Liste der reservierten Schlüsselwörter ist in der
+                Dokumentation der jeweiligen Datenbank zu finden.
+            </p>
         </chapter>
 
         <chapter title="CONSTRAINTS" id="create-constraints">
