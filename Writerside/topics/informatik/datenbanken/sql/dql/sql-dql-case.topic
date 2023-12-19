@@ -7,7 +7,18 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Einleitung" id="einleitung">
-
+        <p>
+            Die <code>CASE</code>-Klausel ist in SQL dazu vorgesehen, Ausdrücke abhängig von Bedingungen
+            zurückzuliefern. Die Auswertung einer Bedingung kann wahr oder falsch sein. Von diesen beiden Zuständen
+            hängen Verzweigungsmöglichkeiten ab, die genutzt werden können, um bestimmte Ausdrücke zurückzuerhalten.
+            Wenn also eine Bedingung erfüllt ist, wird ein anderer Wert oder Ausdruck als Ergebnis zurückgeliefert. Im
+            Englischen wird eine derartige Entscheidungsfindung mit den Wörtern <code>WHEN</code> (»wenn«),
+            <code>THEN</code> (»dann«), und <code>ELSE</code> (»sonst«) abgebildet. Die Ausführung einer bedingten
+            Anweisung beginnt in SQL mit dem Schlüsselwort <code>CASE</code>. Hinter dem <code>CASE</code>-Schlüsselwort
+            werden die Bedingungen (<code>WHEN</code>-Bedingung) formuliert. Hinter den Bedingungen folgen schließlich
+            die bedingten Anweisungen (<code>THEN</code>-Ausdruck). Eine <code>CASE</code>-Klausel wird immer mit dem
+            Schlüsselwort <code>END</code> abgeschlossen.
+        </p>
     </chapter>
 
     <chapter title="Beispiele" id="beispiele">
