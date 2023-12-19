@@ -238,7 +238,7 @@
             <table>
                 <tr>
                     <td>mitarbeiterid</td>
-                    <td>anzahlderzeilenprogruppe</td>
+                    <td>summebonuszahlungen</td>
                 </tr>
                 <tr>
                     <td>1</td>
@@ -272,7 +272,7 @@
             <table>
                 <tr>
                     <td>mitarbeiterid</td>
-                    <td>anzahlderzeilenprogruppe</td>
+                    <td>durchschnittbonuszahlungen</td>
                 </tr>
                 <tr>
                     <td>1</td>
