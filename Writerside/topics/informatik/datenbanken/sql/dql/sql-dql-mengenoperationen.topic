@@ -6,6 +6,29 @@
        title="Mengenoperationen (UNION, INTERSECT, EXEPT)" id="sql-dql-mengenoperationen">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Regeln für Mengenoperationen" id="regeln">
+
+    </chapter>
+
+    <chapter title="Die Vereinigungsmenge (UNION)" id="union">
+
+        <chapter title="Beispiel" id="beispiele">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="Die Schnittmenge (INTERSECT)" id="intersect">
+
+    </chapter>
+
+    <chapter title="Die Differenzmenge (EXCEPT)" id="except">
+
+    </chapter>
+
+    <chapter title="Mengenoperationen in Kombination mit einer WHERE- oder ORDER BY-Klausel" id="where-orderby">
+
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
