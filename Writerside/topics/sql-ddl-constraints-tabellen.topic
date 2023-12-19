@@ -6,6 +6,26 @@
        title="CONSTRAINTS auf Tabellenebene" id="sql-ddl-constraints-tabellen">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einleitung" id="einleitung">
+
+    </chapter>
+
+    <chapter title="PRIMARY KEY: Primärschlüssel auf Tabellenebene" id="primary-key">
+
+    </chapter>
+
+    <chapter title="FOREIGN KEY: Fremdschlüssel auf Tabellenebene" id="foreign-key">
+
+    </chapter>
+
+    <chapter title="UNIQUE: Die Eindeutigkeitseinschränkung auf Tabellenebene" id="unique">
+
+    </chapter>
+
+    <chapter title="CHECK: Plausibilitätsprüfungs-Einschränkungen auf Tabellenebene" id="check">
+
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
