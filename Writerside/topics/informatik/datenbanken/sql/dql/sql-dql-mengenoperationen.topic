@@ -72,7 +72,176 @@
         </p>
 
         <chapter title="Beispiel" id="beispiele">
+            <chapter title="product-Tabelle" id="beispiele-product" collapsible="true">
+                <table>
+                    <tr>
+                        <td>artikelid</td>
+                        <td>artikelbezeichnung</td>
+                        <td>preis</td>
+                        <td>kategorie</td>
+                        <td>egierung</td>
+                    </tr>
+                    <tr>
+                        <td><code>INTEGER</code></td>
+                        <td><code>VARCHAR(300)</code></td>
+                        <td><code>DECIMAL(8,2)</code></td>
+                        <td><code>VARCHAR(200)</code></td>
+                        <td><code>VARCHAR(300)</code></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Schraube 1</td>
+                        <td>2.56</td>
+                        <td>Schrauben</td>
+                        <td>Zink/Eisen</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Schraube 2</td>
+                        <td>2.30</td>
+                        <td>Schrauben</td>
+                        <td>Kupfer/Eisen</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Schraube 3</td>
+                        <td>2.21</td>
+                        <td>Schrauben</td>
+                        <td>Nickel/Eisen</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Schraube 4</td>
+                        <td>2.11</td>
+                        <td>Schrauben</td>
+                        <td>Gold/Eisen</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Schraube 5</td>
+                        <td>1.50</td>
+                        <td>Schrauben</td>
+                        <td>Silber/Eisen</td>
+                    </tr>
+                </table>
+            </chapter>
 
+            <chapter title="produktarchiv-Tabelle" id="beispiele-produktarchiv" collapsible="true">
+                <table>
+                    <tr>
+                        <td>artikelid</td>
+                        <td>artikelbezeichnung</td>
+                        <td>preis</td>
+                        <td>kategorie</td>
+                        <td>legierung</td>
+                    </tr>
+                    <tr>
+                        <td><code>INTEGER</code></td>
+                        <td><code>VARCHAR(300)</code></td>
+                        <td><code>DECIMAL(8,2)</code></td>
+                        <td><code>VARCHAR(200)</code></td>
+                        <td><code>VARCHAR(300)</code></td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td>Schraube A</td>
+                        <td>2.56</td>
+                        <td>Schrauben</td>
+                        <td>Zink/Eisen</td>
+                    </tr>
+                    <tr>
+                        <td>101</td>
+                        <td>Schraube 2</td>
+                        <td>2.30</td>
+                        <td>Schrauben</td>
+                        <td>Kupfer/Eisen</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Schraube B</td>
+                        <td>2.21</td>
+                        <td>Schrauben</td>
+                        <td>Nickel/Eisen</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Schraube 4</td>
+                        <td>2.11</td>
+                        <td>Schrauben</td>
+                        <td>Gold/Eisen</td>
+                    </tr>
+                    <tr>
+                        <td>104</td>
+                        <td>Schraube C</td>
+                        <td>1.50</td>
+                        <td>Schrauben</td>
+                        <td>Silber/Eisen</td>
+                    </tr>
+                </table>
+            </chapter>
+
+            <code-block lang="sql">
+                SELECT  artikelbezeichnung
+                     ,  kategorie
+                     ,  legierung
+                  FROM produkt
+                 UNION
+                SELECT  artikelbezeichnung
+                     ,  kategorie
+                     ,  legierung
+                  FROM produktarchiv
+                ;
+            </code-block>
+            
+            <chapter title="Ergebnistabelle" id="beispiele-ergebnistabelle" collapsible="true">
+                <table>
+                    <tr>
+                        <td>artikelbezeichnung</td>
+                        <td>kategorie</td>
+                        <td>legierung</td>
+                    </tr>
+                    <tr>
+                        <td>Schraube 1</td>
+                        <td>Schrauben</td>
+                        <td>Zink/Eisen</td>
+                    </tr>
+                    <tr>
+                        <td>Schraube 2</td>
+                        <td>Schrauben</td>
+                        <td>Kupfer/Eisen</td>
+                    </tr>
+                    <tr>
+                        <td>Schraube 3</td>
+                        <td>Schrauben</td>
+                        <td>Nickel/Eisen</td>
+                    </tr>
+                    <tr>
+                        <td>Schraube 4</td>
+                        <td>Schrauben</td>
+                        <td>Gold/Eisen</td>
+                    </tr>
+                    <tr>
+                        <td>Schraube 5</td>
+                        <td>Schrauben</td>
+                        <td>Silber/Eisen</td>
+                    </tr>
+                    <tr>
+                        <td>Schraube A</td>
+                        <td>Schrauben</td>
+                        <td>Zink/Eisen</td>
+                    </tr>
+                    <tr>
+                        <td>Schraube C</td>
+                        <td>Schrauben</td>
+                        <td>Nickel/Eisen</td>
+                    </tr>
+                    <tr>
+                        <td>Schraube D</td>
+                        <td>Schrauben</td>
+                        <td>Silber/Eisen</td>
+                    </tr>
+                </table>
+            </chapter>
         </chapter>
     </chapter>
 
