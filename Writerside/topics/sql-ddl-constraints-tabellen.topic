@@ -102,7 +102,25 @@
     </chapter>
 
     <chapter title="CHECK: Plausibilitätsprüfungs-Einschränkungen auf Tabellenebene" id="check">
+        <p>
+            Auch die Plausibilitätsprüfung ist für MySQL erst ab der Version 8.0.16 verfügbar. Wie gewohnt beginnt man
+            die Einschränkung mit dem Schlüsselwort <code>CONSTRAINT</code> und dem Einschränkungsbezeichner. Darauf
+            folgt eine normale <code>CHECK</code>-Funktion.
+        </p>
 
+        <code-block lang="sql">
+            CREATE
+             TABLE zweigstellen
+                 ( globalid              TINYINT         PRIMARY KEY
+                 , land                  VARCHAR(200)
+                 , zweigstellenid        SMALLINT
+                 , namezweigstelle       VARCHAR(200)
+                 , mitarbeiterplanzahl   SMALLINT
+                 , mitarbeiteristzahl    SMALLINT
+                 , CONSTRAINT ch_mitarbeiterzahl CHECK ( mitarbeiterplanzahl >= mitarbeiteristzahl )
+                 )
+            ;
+        </code-block>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
