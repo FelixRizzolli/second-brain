@@ -101,7 +101,35 @@
         </chapter>
 
         <chapter title="Komplexität" id="funktionsweise-komplexitaet">
+            <list>
+                <li>
+                    <p>
+                        Maximale Anzahl von Zugriffen auf den Hintergrundspeicher:
+                    </p>
 
+                    <code-block lang="tex">
+                        O(\log_{t}(n))
+                    </code-block>
+                </li>
+                <li>
+                    <p>
+                        Suche innerhalb eines Knotens:
+                    </p>
+
+                    <code-block lang="tex">
+                        O(t)
+                    </code-block>
+                </li>
+                <li>
+                    <p>
+                        Gesamtlaufzeit:
+                    </p>
+
+                    <code-block lang="tex">
+                        O(t*\log_{t}(n))
+                    </code-block>
+                </li>
+            </list>
         </chapter>
     </chapter>
 
