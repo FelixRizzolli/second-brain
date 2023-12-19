@@ -6,6 +6,102 @@
        title="Verbundene Tabellenabfragen mittels JOIN" id="sql-dql-join">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlegendes" id="grundlegendes">
+        
+    </chapter>
+
+    <chapter title="Beispiele" id="beispiele">
+
+    </chapter>
+
+    <chapter title="JOIN / INNER JOIN" id="join">
+
+        <chapter title="Beschreibung" id="join-beschreibung">
+
+            <chapter title="Mehrere Tabellen verbinden" id="join-beschreibung-verbinden">
+
+            </chapter>
+        </chapter>
+
+        <chapter title="Beispiel" id="join-beispiel">
+
+            <chapter title="Ergebnistabelle" id="join-beispiel-ergebnistabelle">
+
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="LEFT JOIN / LEFT OUTER JOIN" id="leftjoin">
+
+        <chapter title="Beschreibung" id="leftjoin-beschreibung">
+
+        </chapter>
+
+        <chapter title="Beispiel" id="leftjoin-beispiel">
+
+            <chapter title="Ergebnistabelle" id="leftjoin-beispiel-ergebnistabelle">
+
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="RIGHT JOIN / RIGHT OUTER JOIN" id="rightjoin">
+
+        <chapter title="Beschreibung" id="rightjoin-beschreibung">
+
+        </chapter>
+
+        <chapter title="Beispiel" id="rightjoin-beispiel">
+
+            <chapter title="Ergebnistabelle" id="rightjoin-beispiel-ergebnistabelle">
+
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="FULL JOIN / FULL OUTER JOIN" id="fulljoin">
+
+        <chapter title="Beschreibung" id="fulljoin-beschreibung">
+
+        </chapter>
+
+        <chapter title="Beispiel" id="fulljoin-beispiel">
+
+            <chapter title="Ergebnistabelle" id="fulljoin-beispiel-ergebnistabelle">
+
+            </chapter>
+        </chapter>
+    </chapter>
+
+
+    <chapter title="CROSS JOIN" id="crossjoin">
+
+        <chapter title="Beschreibung" id="crossjoin-beschreibung">
+
+        </chapter>
+
+        <chapter title="Beispiel" id="crossjoin-beispiel">
+
+            <chapter title="Ergebnistabelle" id="crossjoin-beispiel-ergebnistabelle">
+
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="SELF JOIN" id="selfjoin">
+
+        <chapter title="Beschreibung" id="selfjoin-beschreibung">
+
+        </chapter>
+
+        <chapter title="Beispiel" id="selfjoin-beispiel">
+
+            <chapter title="Ergebnistabelle" id="selfjoin-beispiel-ergebnistabelle">
+
+            </chapter>
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
