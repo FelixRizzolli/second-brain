@@ -165,7 +165,25 @@
             </table>
 
             <chapter title="DISTINCT - Nur eindeutige Spaltenwerte" id="aggregatfunktionen-count-distinct">
+                <p>
+                    Mit dem Schlüsselwort <code>DISTINCT</code> vor der Spalte innerhalb der
+                    <code>COUNT()</code>-Funktion ausschließlich eindeutige Spaltenwerte berücksichtigt.
+                </p>
 
+                <code-block lang="sql">
+                    SELECT  COUNT(DISTINCT mitarbeiterid) AS anzahldermitarbeiter
+                      FROM bonus
+                    ;
+                </code-block>
+
+                <table>
+                    <tr>
+                        <td>anzahldermitarbeiter</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                    </tr>
+                </table>
             </chapter>
 
             <chapter title="Asterisk * - Anzahl der Zeilen innerhalb einer Gruppe"
