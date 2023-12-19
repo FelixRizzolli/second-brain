@@ -7,6 +7,31 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="CREATE TABLE: Tabellen erstellen" id="create">
+        <p>
+            Mit der <code>CREATE TABLE</code>-Anweisung werden Tabellen einer Datenbank erstellt. Dabei müssen auch die
+            einzelnen Spalten, welche die Tabelle enthalten soll, notiert werden. Bei den einzelnen Spalten kann es sich
+            um unterschiedliche Informationsarten handeln: ganze Zahlen, rationale Zahlen, Text oder Datumsangaben.
+            Hierfür werden <a href="sql-ddl-datentypen.topic">Datentypen</a> für die jeweiligen Spalten definiert.
+        </p>
+        <p>
+            Die SQL-Anweisung um eine Tabelle zu erstellen beginnt mit den Schlüsselwörtern <code>CREATE TABLE</code>.
+            Hinter diesen wird die Tabellenbezeichnung notiert, worauf zwei einfache Klammern folgen. In den Klammern
+            kommt der Spaltenname mit dazugehörigem Datentyp bei mehreren Angaben werden die Spalten kommasepariert
+            angegeben. Beispiel Tabelle für Dienstwagen:
+        </p>
+
+        <code-block lang="sql">
+            CREATE TABLE dienstwagen(
+                dienstwagenid       TINYINT         PRIMARY KEY,
+                kennzeichen         CHAR(9),
+                erstzulassung       DATE,
+                kostenstelle        TINYINT,
+                hersteller          VARCHAR(200),
+                modell              VARCHAR(200),
+                mitarbeiter         VARCHAR(300)
+            );
+        </code-block>
+
         <chapter title="Reservierte Schlüsselwörter" id="create-schluesselwoerter">
 
         </chapter>
