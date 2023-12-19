@@ -132,6 +132,37 @@
         </table>
 
         <chapter title="COUNT()" id="aggregatfunktionen-count">
+            <code-block lang="sql">
+                SELECT  mitarbeiterid
+                     ,  COUNT(bonusid) AS anzahlbonuszahlungen
+                  FROM bonus
+                 GROUP
+                    BY mitarbeiterid
+                ;
+            </code-block>
+            
+            <table>
+                <tr>
+                    <td>mitarbeiterid</td>
+                    <td>anzahlbonuszahlungen</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>3</td>
+                </tr>
+            </table>
 
             <chapter title="DISTINCT - Nur eindeutige Spaltenwerte" id="aggregatfunktionen-count-distinct">
 
