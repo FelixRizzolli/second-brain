@@ -569,18 +569,40 @@
             </chapter>
         </chapter>
     </chapter>
-    
+
     <chapter title="CROSS JOIN" id="crossjoin">
+        <img src="datenbanken_sql_crossjoin.png" alt="CROSS JOIN"/>
 
         <chapter title="Beschreibung" id="crossjoin-beschreibung">
-
+            <p>
+                Ein <code>CROSS JOIN</code> verbindet völlig unabhängig von Schlüsselbeziehungen zwischen Eltern- und
+                Kindtabellen die Zeilen einer anderen Tabelle. Betrachtet man eine Zeile der linken Tabelle, so wird
+                diese Zeile mit jeder Zeile der rechten Tabelle verbunden.
+            </p>
+            <p>
+                Mathematisch betrachtet handelt es sich hierbei um ein kartesisches Produkt. <code>CROSS JOIN</code>s
+                können verwendet werden, um Testdaten zu generieren oder um alle Zeilen von zwei Tabellen miteinander
+                verbunden auszugeben. Wird eine Tabelle von 20.000 Zeilen mit einer Tabelle von 100 Zeilen verbunden so
+                wird eine Ergebnistabelle mit 2.000.000 Zeilen generiert.
+            </p>
+            <p>
+                Da bei einem <code>CROSS JOIN</code> lediglich alle Zeilen einer Tabelle mit allen Zeilen einer anderen
+                Tabelle verbunden werden, wird die <code>ON</code>-Klausel nicht benötigt.
+            </p>
         </chapter>
 
         <chapter title="Beispiel" id="crossjoin-beispiel">
-
-            <chapter title="Ergebnistabelle" id="crossjoin-beispiel-ergebnistabelle">
-
-            </chapter>
+            <code-block lang="sql">
+                SELECT  name
+                     ,  vorname
+                     ,  plz
+                     ,  ort
+                     ,  strasse
+                  FROM auszubildender
+                 CROSS
+                  JOIN  adresse
+                ;
+            </code-block>
         </chapter>
     </chapter>
 
