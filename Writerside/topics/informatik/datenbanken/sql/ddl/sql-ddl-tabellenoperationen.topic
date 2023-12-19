@@ -62,7 +62,15 @@
     </chapter>
 
     <chapter title="DROP TABLE: Tabellen löschen" id="drop">
+        <p>
+            Mit der SQL-Anweisung <code>DROP TABLE</code> lässt sich eine Tabelle löschen. Die Anweisung ist einfach:
+            Sie beginnt mit den Schlüsselwörtern <code>DROP TABLE</code> und darauf folgt der Tabellenbezeichner der zu
+            löschenden Tabelle.
+        </p>
 
+        <code-block lang="sql">
+            DROP TABLE dienstwagen;
+        </code-block>
     </chapter>
 
     <chapter title="ALTER TABLE: Tabellen ändern" id="alter">
