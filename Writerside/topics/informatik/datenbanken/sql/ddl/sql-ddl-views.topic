@@ -32,7 +32,37 @@
         </list>
 
         <chapter title="INSERT, UPDATE und DELETE auf Views anwenden" id="grundlagen-cud">
-
+            <p>
+                Eine <code>INSERT</code>-Anweisung kann ohne weiteres auf Views verwendet werden, die nur eine Tabelle
+                abfragen. Hierbei muss darauf geachtet werden, dass in der zugrundeliegenden
+                <code>SELECT</code>-Anweisung auch die Primärschlüsselspalte abgefragt wird. Wenn in der Tabelle der
+                zugrundeliegenden <code>SELECT</code>-Anweisung Einschränkungen mit <code>NOT NULL</code> definiert
+                sind, sind diese ebenfalls beim Einfügen von Zeilen über eine View zu berücksichtigen. Wenn Zeilen in
+                eine View eingefügt werden sollen, der eine <code>SELECT</code>-Anweisung mit einem <code>JOIN</code>
+                zugrunde liegt, so kann nur in eine der zugrundeliegenden Tabellen eine neue Zeile eingefügt werden.
+            </p>
+            <p>
+                Views mit einem <code>SELECT</code>-Befehl, der nur eine Tabelle oder auch mehrere Tabellen abfragt,
+                können mit einer <code>UPDATE</code>-Anweisung aktualisiert werden.
+            </p>
+            <p>
+                Eine <code>DELETE</code>-Anweisung kann nur auf Views ausgeführt werden, deren zugrundeliegende
+                <code>SELECT</code>-Abfrage eine Tabelle abfragt. Liegt ein <code>JOIN</code> zugrunde, können die
+                Zeilen nicht gelöscht werden.
+            </p>
+            <p>
+                <code>INSERT</code>-, <code>UPDATE</code> und <code>DELETE</code>-Anweisungen können nicht auf eine View
+                ausgeführt werden, wenn sie folgende Klauseln oder Aggregatfunktionen enthalten: <code>DISTINCT</code>,
+                <code>SUM</code>, <code>MIN</code>, <code>MAX</code>, <code>AVG</code>, <code>COUNT</code>,
+                <code>GROUP BY</code>, <code>HAVING</code>, <code>HAVING ALL</code>, <code>LEFT OUTER JOIN</code>,
+                <code>RIGHT OUTER JOIN</code>, <code>FULL OUTER JOIN</code>, <code>UNION</code> und Unterabfragen in der
+                Spaltenauswahlliste.
+            </p>
+            <p>
+                <code>INSERT</code>- und <code>UPDATE</code>-Anweisungen können auch nicht auf Spalten angewendet
+                werden, die einen Ausdruck enthalten. Solche Ausdrücke sind beispielsweise:
+                <code>Spaltenwert1 + 2</code>, <code>TRIM(Spaltenname)</code>.
+            </p>
         </chapter>
     </chapter>
 
