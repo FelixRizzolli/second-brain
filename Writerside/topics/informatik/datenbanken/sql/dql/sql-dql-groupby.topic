@@ -6,6 +6,56 @@
        title="Spaltenwerte gruppieren (GROUP BY)" id="sql-dql-groupby">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlagen" id="grundlagen">
+        
+    </chapter>
+
+    <chapter title="Beispiele für Aggregatfunktionen" id="aggregatfunktionen">
+
+        <chapter title="COUNT()" id="aggregatfunktionen-count">
+
+            <chapter title="DISTINCT - Nur eindeutige Spaltenwerte" id="aggregatfunktionen-count-distinct">
+
+            </chapter>
+
+            <chapter title="Asterisk * - Anzahl der Zeilen innerhalb einer Gruppe"
+                     id="aggregatfunktionen-count-asterisk">
+
+            </chapter>
+        </chapter>
+
+        <chapter title="SUM()" id="aggregatfunktionen-count-sum">
+
+        </chapter>
+
+        <chapter title="AVG()" id="aggregatfunktionen-count-avg">
+
+        </chapter>
+
+        <chapter title="MIN() und MAX()" id="aggregatfunktionen-minmax">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="NULL-Werte berücksichtigen" id="null">
+
+        <chapter title="Fall 1: NULL-Werte in der zu gruppierenden Spalte" id="null-fall1">
+
+        </chapter>
+
+        <chapter title="Fall 2: NULL-Werte in Spalte auf die eine Aggregatfunktion angewendet wird" id="null-fall2">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="HAVING: Nach aggregierten Werten einer Gruppierung filtern" id="having">
+
+    </chapter>
+
+    <chapter title="Nach zwei oder mehr Spalten gruppieren" id="mehr-spalten-gruppieren">
+
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
