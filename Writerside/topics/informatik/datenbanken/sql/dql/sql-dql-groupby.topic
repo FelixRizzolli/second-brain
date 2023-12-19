@@ -400,7 +400,45 @@
     </chapter>
 
     <chapter title="HAVING: Nach aggregierten Werten einer Gruppierung filtern" id="having">
+        <p>
+            SQL bietet mit der <code>HAVING</code>-Klausel in Bezug auf aggregierte Werte eine spezielle Filterfunktion
+            an. Mit der <code>HAVING</code>-Klausel kann ein aggregierter Durchschnittswert mit einem Vergleichsoperator
+            gegen ein Literal geprüft werden.
+        </p>
 
+        <code-block lang="sql">
+            SELECT  bankleitzahl
+                 ,  COUNT(bankleitzahl) AS anzahlkreditinstitute
+              FROM kreditinstitut
+             GROUP
+                BY  bankleitzahl
+            HAVING  COUNT(bankleitzahl) = 1
+            ;
+        </code-block>
+
+        <p>
+            Mit der <code>GROUPP BY</code>-Klausel wird hier eine Gruppierung über die Spaltenwerte der Spalte
+            bankleitzahl gebildet. Hinter der <code>GROUP BY</code>-Klausel folgt die <code>HAVING</code>-Klausel, die
+            für das Filtern von gruppierten Werten zuständig ist. Hinter der <code>HAVING</code>-Klausel wird eine
+            Aggregatfunktion notiert, die auf die Gruppierung angewendet wird. Der Wert, der sich aus der
+            Aggregatfunktion ergibt, kann mithilfe eines Vergleichsoperators mit einem Literal oder aber dem Ergebnis
+            einer weiteren Aggregatfunktion verglichen werden. In diesem Beispiel wird mittels der
+            <code>COUNT</code>-Funktion in einer Bedingung geprüft, on der Wert, den die <code>COUNT</code>-Funktion
+            zurückliefert, gleich 1 ist. Somit werden alle Bankleitzahlen, denen nur ein Kreditinstitut zugeordnet ist,
+            ermittelt.
+        </p>
+        <p>
+            Die <code>WHERE</code>-Klausel kann nicht zum Filtern der aggregierten Ergebnisse einer Gruppierung
+            verwendet werden. Dies liegt daran, da eine <code>WHERE</code>-Klausel nur auf Zeilenebene angewendet werden
+            kann. Eine <code>WHERE</code>-Klausel wird also stets vor einer <code>GROUP BY</code>-Klausel ausgewertet.
+            Eine Aggregatfunktion kann also innerhalb der <code>WHERE</code>-Klausel auf kein Ergebnis einer Gruppierung
+            zurückgreifen, weil es schlicht und ergreifend noch nicht existiert.
+        </p>
+        <p>
+            Auf Zeilenebene kann die <code>WHERE</code>-Klausel gemeinsam mit einer <code>GROUP BY</code>-Klausel
+            verwendet werden, um vor der Gruppierung mit der <code>GROUP BY</code>-Klausel die Zeilen einer Tabelle
+            gemäß einer Bedingung zu Filtern.
+        </p>
     </chapter>
 
     <chapter title="Nach zwei oder mehr Spalten gruppieren" id="mehr-spalten-gruppieren">
