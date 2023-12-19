@@ -26,7 +26,134 @@
     </chapter>
 
     <chapter title="Daten für Beispiele" id="daten">
+        <chapter title="Customers Tabelle" id="daten-customers">
+            <table>
+                <tr>
+                    <td>CustomerID</td>
+                    <td>CustomerName</td>
+                    <td>ContactName</td>
+                    <td>Address</td>
+                    <td>City</td>
+                    <td>PostalCode</td>
+                    <td>Country</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Obere Str. 57</td>
+                    <td>Berlin</td>
+                    <td>12209</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ana Trujillo Emparedados y helados</td>
+                    <td>Ana Trujillo</td>
+                    <td>Avda. de la Constitución 2222</td>
+                    <td>México D.F.</td>
+                    <td>05021</td>
+                    <td>Mexico</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Antonio Moreno Taquería</td>
+                    <td>Antonio Moreno</td>
+                    <td>Mataderos 2312</td>
+                    <td>México D.F.</td>
+                    <td>05023</td>
+                    <td>Mexico</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Around the Horn</td>
+                    <td>Thomas Hardy</td>
+                    <td>120 Hanover Sq.</td>
+                    <td>London</td>
+                    <td>WA1 1DP</td>
+                    <td>UK</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Berglunds snabbköp</td>
+                    <td>Christina Berglund</td>
+                    <td>Berguvsvägen 8</td>
+                    <td>Luleå</td>
+                    <td>S-958 22</td>
+                    <td>Sweden</td>
+                </tr>
+            </table>
+        </chapter>
 
+        <chapter title="Orders Tabelle" id="daten-orders">
+            <table>
+                <tr>
+                    <td>OrderID</td>
+                    <td>CustomerID</td>
+                    <td>EmployeeID</td>
+                    <td>OrderDate</td>
+                    <td>ShipperID</td>
+                </tr>
+                <tr>
+                    <td>10248</td>
+                    <td>90</td>
+                    <td>5</td>
+                    <td>1996-07-04</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>10249</td>
+                    <td>81</td>
+                    <td>6</td>
+                    <td>1996-07-05</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>10250</td>
+                    <td>34</td>
+                    <td>4</td>
+                    <td>1996-07-08</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </chapter>
+
+        <chapter title="Employees Tabelle" id="daten-employees">
+            <table>
+                <tr>
+                    <td>EmployeeID</td>
+                    <td>LastName</td>
+                    <td>FirstName</td>
+                    <td>BirthDate</td>
+                    <td>Photo</td>
+                    <td>Notes</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Davolio</td>
+                    <td>Nancy</td>
+                    <td>1968-12-08</td>
+                    <td>EmpID1.pic</td>
+                    <td>Education includes a BA...</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Fuller</td>
+                    <td>Andrew</td>
+                    <td>1952-02-19</td>
+                    <td>EmpID2.pic</td>
+                    <td>Andrew received his BTS...</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Leverling</td>
+                    <td>Janet</td>
+                    <td>1963-08-30</td>
+                    <td>EmpID3.pic</td>
+                    <td>Janet has a BS degree...</td>
+                </tr>
+            </table>
+        </chapter>
     </chapter>
 
     <chapter title="Beispiele" id="beispiele">
