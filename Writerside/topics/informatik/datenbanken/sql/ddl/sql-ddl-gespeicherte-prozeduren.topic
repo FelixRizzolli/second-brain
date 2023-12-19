@@ -7,9 +7,24 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlagen" id="grundlagen">
+        <p>
+            Eine Stored Procedure ist ein vorbereiteter SQL-Code, der gespeichert werden kann, sodass der Code immer
+            wieder verwendet werden kann. Gibt es im Anwendungsszenario eine SQL-Anweisung, die immer wieder ausgeführt
+            werden muss, so kann diese als Stored Procedure gespeichert und folglich immer aufgerufen werden. Es können
+            auch Parameter an eine gespeicherte Prozedur übergeben werden, sodass die gespeicherte Prozedur auf der
+            Grundlage des/der übergebenen Parameterwertes/Parameter agieren kann.
+        </p>
 
-        <chapter title="Grundlagen" id="grundlagen-syntax">
+        <chapter title="Syntax" id="grundlagen-syntax">
+            <code-block lang="sql">
+                -- Deklaration
+                CREATE PROCEDURE procedure_name AS
+                    sql_statement
+                GO;
 
+                -- Aufruf
+                EXEC procedure_name;
+            </code-block>
         </chapter>
     </chapter>
 
