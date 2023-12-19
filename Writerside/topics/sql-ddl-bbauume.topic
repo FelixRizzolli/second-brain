@@ -85,7 +85,19 @@
         </chapter>
 
         <chapter title="Suchen" id="funktionsweise-suchen">
-
+            <list style="decimal">
+                <li>
+                    Startpunkt der Suche ist der <b>Wurzelknoten</b> mit der Überprüfung auf den gesuchten Wert.
+                </li>
+                <li>
+                    Findet man den gesuchten Wert nicht in der Wurzel, wird mittels des jeweiligen Verweises zum
+                    nächsten Knoten rekursiv fortgefahren und damit die <b>inneren Knoten</b> überprüft.
+                </li>
+                <li>
+                    Wird der Wert in den inneren Knoten nicht gefunden, werden im letzten Schritt die <b>Blätter</b>
+                    untersucht. Liegt der Wert auch dort nicht vor, ist er nicht im Baum gespeichert.
+                </li>
+            </list>
         </chapter>
 
         <chapter title="Komplexität" id="funktionsweise-komplexitaet">
