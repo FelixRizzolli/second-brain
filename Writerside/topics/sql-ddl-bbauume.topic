@@ -6,6 +6,50 @@
        title="Die B-Bäume" id="sql-ddl-bbauume">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlagen" id="grundlagen">
+
+        <chapter title="Geschichte" id="grundlagen-geschichte">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="Funktionsweise" id="funktionsweise">
+
+        <chapter title="Maximale Höhe" id="funktionsweise-maximale-hoehe">
+
+        </chapter>
+
+        <chapter title="Suchen" id="funktionsweise-suchen">
+
+        </chapter>
+
+        <chapter title="Komplexität" id="funktionsweise-komplexitaet">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="Mit einem B-Baum arbeiten" id="bbaum-arbeiten">
+
+        <chapter title="B-Baum Einfügen" id="bbaum-einfuegen">
+
+        </chapter>
+
+        <chapter title="B-Baum Löschen" id="bbaum-loeschen">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="Weitere Varianten" id="varianten">
+
+        <chapter title="B+ Baum" id="varianten-bplus">
+
+        </chapter>
+
+        <chapter title="B* Baum" id="varianten-basterisk">
+
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(WEBSEITE)</b>
