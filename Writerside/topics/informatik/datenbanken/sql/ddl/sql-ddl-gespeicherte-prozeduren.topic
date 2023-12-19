@@ -126,7 +126,24 @@
 
         <chapter title="Beispiel einer gespeicherten Prozedur mit mehreren Parametern"
                  id="beispiele-gespeicherte-prozedur-mit-parametern">
+            <p>
+                Das Einrichten mehrerer Parameter ist sehr einfach. Hierbei wird einfach jeder Parameter und dessen
+                Datentyp durch ein Komma getrennt gelistet. Die folgende SQL-Anweisung erstellt eine gespeicherte
+                Prozedur, die Kunden aus einer bestimmten Stadt mit einer bestimmten Postleitzahl aus der Tabelle
+                <code>Customers</code> auswählt:
+            </p>
 
+            <code-block lang="sql">
+                -- Deklaration
+                CREATE PROCEDURE SelectAllCustomers
+                    @City nvarchar(30), @PostalCode nvarchar(10)
+                AS
+                    SELECT * FROM Customers WHERE City = @City
+                GO;
+
+                -- Aufruf
+                EXEC SelectAllCustomers @City = 'London', @PostalCode = 'WA1 1DP';
+            </code-block>
         </chapter>
     </chapter>
 
