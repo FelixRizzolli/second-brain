@@ -194,11 +194,20 @@
         </list>
 
         <chapter title="B+ Baum" id="varianten-bplus">
-
+            <p>
+                Der B+ Baum stellt eine Variante des B-Baums dar. Dabei enthalten die inneren Knoten nur Schlüssel und
+                die eigentlichen Daten werden nur in Blattknoten gespeichert. Linke Kindknoten sind hier echt kleiner
+                als das rechte Elternelement und rechte größer gleich. Die Zugriffszeit auf ein Datenelement verbessert
+                sich durch diese Variation.
+            </p>
         </chapter>
 
         <chapter title="B* Baum" id="varianten-basterisk">
-
+            <p>
+                Der B* Baum stellt eine weitere Erweiterung des B-Baums mit einem Mindestfüllgrad von 2/3 durch eine
+                veränderte Split-Strategie. Dabei werden 2 volle Knoten auf 3 Knoten mit einer 2/3-Füllung aufgeteilt,
+                anstatt bei einem Überlauf direkt einen weiteren Knoten anzulegen.
+            </p>
         </chapter>
     </chapter>
 
