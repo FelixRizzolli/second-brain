@@ -6,6 +6,18 @@
        title="HAVING: WHERE mit Aggregatfunktionen" id="sql-dql-having">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlegendes" id="grundlegendes">
+
+    </chapter>
+
+    <chapter title="Daten für Beispiele" id="daten">
+
+    </chapter>
+
+    <chapter title="Beispiele" id="beispiele">
+
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
