@@ -246,7 +246,58 @@
     </chapter>
 
     <chapter title="Die Schnittmenge (INTERSECT)" id="intersect">
+        <p>
+            Der Ausgangspunkt ist wieder eine Mengenbetrachtung von zwei Mengen. Die Schnittmenge wird aus Elementen
+            gebildet, die in beiden Mengen enthalten sind. Eine Schnittmenge von zwei Mengen wird in SQL mit der
+            <code>INTERSECT</code>-Klausel ermittelt. Als Beispiel zwei Tabellen deren Datenwerte der Spalte element für
+            mengea 1,2,3,4,5,6,8 und für mengeb 2,5,6,7,8,9,10.
+        </p>
 
+        <code-block lang="sql">
+            SELECT element
+              FROM mengea
+            INTERSECT
+            SELECT element
+              FROM mengeb
+            ;
+        </code-block>
+
+        <p>
+            Die Datenwerte der Ergebnistabelle bzw. der Schnittwert beider Mengen lautet: 8,5,6,2. Würde es keine
+            übereinstimmenden Zeilen geben, so wird eine leere Schnittmenge zurückgegeben. Nun ein weiteres Beispiel mit
+            den Tabellen produkt und produktarchiv.
+        </p>
+
+        <code-block lang="sql">
+            SELECT  artikelbezeichnung
+                 ,  kategorie
+                 ,  legierung
+              FROM produkt
+            INTERSECT
+            SELECT  artikelbezeichnung
+                 ,  kategorie
+                 ,  legierung
+              FROM produktarchiv
+            ;
+        </code-block>
+        
+        <table>
+            <tr>
+                <td>artikelbezeichnung</td>
+                <td>kategorie</td>
+                <td>legierung</td>
+            </tr>
+            <tr>
+                <td>Schraube 2</td>
+                <td>Schrauben</td>
+                <td>Kupfer/Eisen</td>
+            </tr>
+            <tr>
+                <td>Schraube 4</td>
+                <td>Schrauben</td>
+                <td>Gold/Eisen</td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="Die Differenzmenge (EXCEPT)" id="except">
