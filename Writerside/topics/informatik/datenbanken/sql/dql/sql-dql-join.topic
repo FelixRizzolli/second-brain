@@ -471,20 +471,105 @@
     </chapter>
 
     <chapter title="FULL JOIN / FULL OUTER JOIN" id="fulljoin">
+        <img src="datenbanken_sql_fulljoin.gif" alt="FULL JOIN"/>
+
+        <p>
+            In manchen Datenbanken wird <code>FULL OUTER JOIN</code> statt <code>FULL JOIN</code> verwendet.
+        </p>
 
         <chapter title="Beschreibung" id="fulljoin-beschreibung">
-
+            <p>
+                Ein <code>FULL OUTER JOIN</code> verbindet die Zeilen aus zwei Tabellen, die übereinstimmende
+                Schlüsselwerte verfügen. Mit einem <code>FULL OUTER JOIN</code> werden auch die Zeilen ermittelt, die
+                über keine übereinstimmende Schlüsselwerte der Tabellen verbunden werden können. Ein
+                <code>FULL OUTER JOIN</code> ist also eine Mischung aus <code>INNER JOIN</code>,
+                <code>RIGHT OUTER JOIN</code> und <code>LEFT OUTER JOIN</code>.
+            </p>
+            <p>
+                Die MySQL-Datenbank unterstützt keinen <code>FULL OUTER JOIN</code> gemäß dem SQL-Standard.
+            </p>
         </chapter>
 
         <chapter title="Beispiel" id="fulljoin-beispiel">
+            <code-block lang="sql">
+                SELECT  name
+                     ,  vorname
+                     ,  plz
+                     ,  ort
+                  FROM auszubildener
+                  FULL OUTER
+                  JOIN adresse
+                    ON  ausid = fk_ausid
+                ;
+            </code-block>
 
             <chapter title="Ergebnistabelle" id="fulljoin-beispiel-ergebnistabelle">
-
+                <table>
+                    <tr>
+                        <td>name</td>
+                        <td>vorname</td>
+                        <td>plz</td>
+                        <td>ort</td>
+                    </tr>
+                    <tr>
+                        <td>Müller</td>
+                        <td>Ralf</td>
+                        <td>50827</td>
+                        <td>Köln</td>
+                    </tr>
+                    <tr>
+                        <td>Klein</td>
+                        <td>Sabine</td>
+                        <td>NULL</td>
+                        <td>NULL</td>
+                    </tr>
+                    <tr>
+                        <td>Lang</td>
+                        <td>Peter</td>
+                        <td>50127</td>
+                        <td>Bonn</td>
+                    </tr>
+                    <tr>
+                        <td>Berg</td>
+                        <td>Frank</td>
+                        <td>NULL</td>
+                        <td>NULL</td>
+                    </tr>
+                    <tr>
+                        <td>Erde</td>
+                        <td>Sabine</td>
+                        <td>50129</td>
+                        <td>Bonn</td>
+                    </tr>
+                    <tr>
+                        <td>Grün</td>
+                        <td>Justus</td>
+                        <td>NULL</td>
+                        <td>NULL</td>
+                    </tr>
+                    <tr>
+                        <td>NULL</td>
+                        <td>NULL</td>
+                        <td>50827</td>
+                        <td>Köln</td>
+                    </tr>
+                    <tr>
+                        <td>NULL</td>
+                        <td>NULL</td>
+                        <td>50127</td>
+                        <td>Bonn</td>
+                    </tr>
+                    <tr>
+                        <td>NULL</td>
+                        <td>NULL</td>
+                        <td>50129</td>
+                        <td>Bonn</td>
+                    </tr>
+                </table>
             </chapter>
         </chapter>
     </chapter>
-
-
+    
     <chapter title="CROSS JOIN" id="crossjoin">
 
         <chapter title="Beschreibung" id="crossjoin-beschreibung">
