@@ -6,6 +6,21 @@
        title="Bedingungslogik mit CASE" id="sql-dql-case">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einleitung" id="einleitung">
+
+    </chapter>
+
+    <chapter title="Beispiele" id="beispiele">
+
+        <chapter title="Bedingungslogik in einer Spaltenauswahlliste einer SELECT-Anweisung" id="beispiele-select">
+
+        </chapter>
+
+        <chapter title="Bedingungslogik in einer ORDER BY-Klausel" id="beispiele-orderby">
+
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
