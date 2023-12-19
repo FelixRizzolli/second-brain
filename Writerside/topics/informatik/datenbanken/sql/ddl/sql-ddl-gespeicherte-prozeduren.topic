@@ -88,7 +88,20 @@
 
         <chapter title="Beispiel einer einfachen gespeicherten Prozedur"
                  id="beispiele-einfache-gespeicherte-prozedur">
+            <p>
+                Die folgende SQL-Anweisung erstellt eine gespeicherte Prozedur namens <code>SelectAllCustomers</code>,
+                die alle Datensätze aus der Tabelle <code>Customers</code> auswählt:
+            </p>
 
+            <code-block lang="sql">
+                -- Deklaration
+                CREATE PROCEDURE SelectAllCustomers AS
+                    SELECT * FROM Customers
+                GO;
+
+                -- Aufruf
+                EXEC SelectAllCustomers;
+            </code-block>
         </chapter>
 
         <chapter title="Beispiel einer gespeicherten Prozedur mit einem Parameter"
