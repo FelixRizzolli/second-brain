@@ -351,7 +351,35 @@
         </chapter>
 
         <chapter title="Explizite Typkonvertierung" id="typkonvertierung-explizit">
+            <p>
+                Eine explizite Typkonvertierung wird mit der Skalarfunktion <code>CAST</code> realisiert. Hier wird ein
+                Spalten- oder Literalwert aus einem gegebenen Datentyp in einem Zieldatentyp konvertiert, der explizit
+                angegeben werden muss. Beispiel für explizite Typkonvertierung:
+            </p>
 
+            <code-block lang="sql">
+                SELECT CAST(5 AS DECIMAL(6,3)) AS konvertierungsergebnis;
+            </code-block>
+
+            <table>
+                <tr>
+                    <td>konvertierungsergebnis</td>
+                </tr>
+                <tr>
+                    <td>5.000</td>
+                </tr>
+            </table>
+
+            <p>
+                Hier wird ein ganzzahliges numerisches Literal 5 mit dem Aufruf <code>DECIMAL(6,3)</code> konvertiert.
+                Das bedeutet, dass eine ganze Zahl in einen Datentyp konvertiert werden soll, der maximal insgesamt
+                sechsstellig ist und drei Nachkommastellen hat.
+            </p>
+            <p>
+                Der <code>CAST</code>-Konvertierugsfunktion wird als Parameter zuerst der Wert der Konvertiert werden
+                soll übergeben. Nach dem Wert folgt das Schlüsselwort <code>AS</code> und darauf der jeweilige
+                Zieldatentyp, in den der Wert konvertiert werden soll.
+            </p>
         </chapter>
     </chapter>
 
