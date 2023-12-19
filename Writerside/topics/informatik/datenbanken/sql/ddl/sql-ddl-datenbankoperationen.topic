@@ -19,7 +19,15 @@
     </chapter>
 
     <chapter title="DROP DATABASE: Datenbanken löschen" id="drop">
+        <p>
+            Der Befehl <code>DROP DATABASE</code> wird verwendet, um eine Datenbank zu löschen. ACHTUNG: bevor eine
+            Datenbank gelöscht wird. Das Löschen einer Datenbank führt zum Verlust der gesamten in der Datenbank
+            gespeicherten Informationen!
+        </p>
 
+        <code-block lang="sql">
+            DROP DATABASE databasename;
+        </code-block>
     </chapter>
 
     <chapter title="BACKUP DATABASE: Ein Datenbankbackup erstellen" id="backup">
