@@ -6,6 +6,31 @@
        title="Gespeicherte Prozeduren" id="sql-ddl-gespeicherte-prozeduren">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlagen" id="grundlagen">
+
+        <chapter title="Grundlagen" id="grundlagen-syntax">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="Beispiele" id="beispiele">
+
+        <chapter title="Beispiel einer einfachen gespeicherten Prozedur"
+                 id="beispiele-einfache-gespeicherte-prozedur">
+
+        </chapter>
+
+        <chapter title="Beispiel einer gespeicherten Prozedur mit einem Parameter"
+                 id="beispiele-gespeicherte-prozedur-mit-parameter">
+
+        </chapter>
+
+        <chapter title="Beispiel einer gespeicherten Prozedur mit mehreren Parametern"
+                 id="beispiele-gespeicherte-prozedur-mit-parametern">
+
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(WEBSEITE)</b>
