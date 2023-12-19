@@ -126,7 +126,57 @@
     </chapter>
 
     <chapter title="Datentypen für Datum und Zeit" id="datetime">
+        <table>
+            <tr>
+                <td>Datentyp</td>
+                <td>von</td>
+                <td>bis</td>
+            </tr>
+            <tr>
+                <td><code>DATE</code></td>
+                <td><code>1000-01-01</code></td>
+                <td><code>9999-12-31</code></td>
+            </tr>
+            <tr>
+                <td><code>DATETIME</code></td>
+                <td><code>1000-01-01 00:00:00.000000</code></td>
+                <td><code>9999-12-31 23:59:59.999999</code></td>
+            </tr>
+            <tr>
+                <td><code>TIMESTAMP</code></td>
+                <td><code>1970-01-01 00:00:01.000000</code></td>
+                <td><code>2038-01-19 03:14:07.999999</code></td>
+            </tr>
+            <tr>
+                <td><code>TIME</code></td>
+                <td><code>-838:59:59.000000</code></td>
+                <td><code>838:59:59.000000</code></td>
+            </tr>
+            <tr>
+                <td><code>YEAR</code></td>
+                <td><code>1901</code></td>
+                <td><code>2155</code></td>
+            </tr>
+        </table>
 
+        <p>
+            Auch hier gibt es wider einige Unterschiede zwischen den einzelnen Datenbanken. MySQL verwendet die in der
+            Tabelle genannten Datentypen. PostgreSQL und MS-SQL-Server bieten noch einige weitere Zeit-Datentypen zur
+            Verfügung. Die Schreibweise kann auch von der Lokalisierung der Datenbank abhängig sein.
+        </p>
+        <p>
+            MySQL sowie PostgreSQL und MS-SQL-Server halten sich konsequent den Standard ISO 8601:
+        </p>
+
+        <list>
+            <li>
+                <code>yyyy-mm-dd</code> (Jahr, Monat, Tag)
+            </li>
+            <li>
+                <code>hh:mm:ss.f</code> (Stunden, Minuten, Sekunden und <code>f</code> = gebrochener Anteil einer
+                Sekunde)
+            </li>
+        </list>
     </chapter>
 
     <chapter title="Datentypen für Zeichenketten" id="zeichenketten">
