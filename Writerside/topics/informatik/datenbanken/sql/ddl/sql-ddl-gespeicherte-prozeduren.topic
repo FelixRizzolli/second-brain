@@ -106,7 +106,22 @@
 
         <chapter title="Beispiel einer gespeicherten Prozedur mit einem Parameter"
                  id="beispiele-gespeicherte-prozedur-mit-parameter">
+            <p>
+                Die folgende SQL-Anweisung erstellt eine gespeicherte Prozedur, die Kunden aus einer bestimmten Stadt
+                aus der Tabelle <code>Customers</code> auswählt:
+            </p>
 
+            <code-block lang="sql">
+                -- Deklaration
+                CREATE PROCEDURE SelectAllCustomers
+                    @City nvarchar(30)
+                AS
+                    SELECT * FROM Customers WHERE City = @City
+                GO;
+
+                -- Aufruf
+                EXEC SelectAllCustomers @City = 'London';
+            </code-block>
         </chapter>
 
         <chapter title="Beispiel einer gespeicherten Prozedur mit mehreren Parametern"
