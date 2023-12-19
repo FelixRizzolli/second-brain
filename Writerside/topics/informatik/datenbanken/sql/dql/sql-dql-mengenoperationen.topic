@@ -301,7 +301,64 @@
     </chapter>
 
     <chapter title="Die Differenzmenge (EXCEPT)" id="except">
+        <p>
+            Zur Differenzmengenbildung steht in SQL der <code>EXCEPT</code>-Mengenoperator zur Verfügung. Dabei werden
+            die Datensätze der Menge B welche identisch der Menge A sind aus Menge A entfernt. Die Differenz bildet das
+            Ergebnis Menge C. Als Beispiel zwei Tabellen deren Datenwerte der Spalte element für mengea 1,2,3,4,5,6,8
+            und für mengeb 2,5,6,7,8,9,10.
+        </p>
 
+        <code-block lang="sql">
+            SELECT element
+              FROM mengea
+            EXCEPT
+            SELECT element
+              FROM mengeb
+            ;
+        </code-block>
+
+        <p>
+            Die Datenwerte der Ergebnistabelle bzw. die Differenzbildung beider Mengen lautet: 1,3,4. Das Resultat der
+            Differenzoperation besteht nur noch aus den Elementen, die ausschließlich in Menge A enthalten sind. Die
+            Elemente, die auch in Menge B enthalten waren, wurden von Menge A subtrahiert. Für ein genaueres Beispiel
+            die Tabellen produkt und produktarchiv:
+        </p>
+
+        <code-block lang="sql">
+            SELECT  artikelbezeichnung
+                 ,  kategorie
+                 ,  legierung
+              FROM produkt
+            EXCEPT
+            SELECT  artikelbezeichnung
+                 ,  kategorie
+                 ,  legierung
+              FROM produktarchiv
+            ;
+        </code-block>
+        
+        <table>
+            <tr>
+                <td>artikelbezeichnung</td>
+                <td>kategorie</td>
+                <td>legierung</td>
+            </tr>
+            <tr>
+                <td>Schraube 1</td>
+                <td>Schrauben</td>
+                <td>Zink/Eisen</td>
+            </tr>
+            <tr>
+                <td>Schraube 3</td>
+                <td>Schrauben</td>
+                <td>Nickel/Eisen</td>
+            </tr>
+            <tr>
+                <td>Schraube 5</td>
+                <td>Schrauben</td>
+                <td>Silber/Eisen</td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="Mengenoperationen in Kombination mit einer WHERE- oder ORDER BY-Klausel" id="where-orderby">
