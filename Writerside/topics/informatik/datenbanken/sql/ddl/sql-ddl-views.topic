@@ -6,6 +6,29 @@
        title="Views" id="sql-ddl-views">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlegendes über Views" id="grundlagen">
+
+        <chapter title="INSERT, UPDATE und DELETE auf Views anwenden" id="grundlagen-cud">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="CREATE VIEW: Views anlegen" id="create">
+
+    </chapter>
+
+    <chapter title="Views und ORDER BY" id="orderby">
+
+    </chapter>
+
+    <chapter title="DROP VIEW: Views ersetzen" id="drop">
+
+    </chapter>
+
+    <chapter title="CREATE OR REPLACE VIEW: Views ersetzen" id="create-replace">
+
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
