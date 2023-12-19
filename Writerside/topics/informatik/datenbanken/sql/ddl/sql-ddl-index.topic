@@ -7,9 +7,59 @@
     <show-structure for="chapter,procedure" depth="2"/>
     
     <chapter title="INDEX" id="index">
+        <p>
+            Abfragen auf Tabellen, die sehr viele Zeilen enthalten, nehmen schon mal etwas Zeit in Anspruch. Das
+            betrifft insbesondere Abfragen mit einer <code>WHERE</code>-Klausel, mit der gezielt anhand eines Kriteriums
+            nach Zeilen gesucht wird. Aber auch <code>JOIN</code>s, die Zeilen aus Tabellen verbunden abfragen, können
+            lange dauern. Hierbei hilft ein Index, der auf eine oder mehrere Spalten festgelegt werden kann, um mit
+            großen Datenaufkommen performant zu arbeiten.
+        </p>
 
         <chapter title="Einführung" id="index-einfuehrung">
+            <p>
+                Das Arbeiten mit einem Index ähnelt dem mit einem Telefonbuch. Ein Telefonbuch ist in der Regel
+                alphabetisch sortiert. Hier hat man es mit einem Index zu tun, der es ermöglicht, sehr schnell gemäß dem
+                Kriterium des Nachnamens nach einer Telefonnummer zu suchen. Die Suche in einem Telefonbuch ohne
+                Ordnungskriterium ist vergleichbar mit einem geordneten Telefonbuch viel langsamer. So ähnlich verhält
+                es sich auch bei Datenbanken: ohne einen Index müssen die Datensätze sequentiell abgearbeitet werden.
+            </p>
+            <p>
+                Keiner der verschiedenen SQL-Standards definiert Befehle für Indizes. Die Befehle zum Anlegen und
+                Entfernen von Indizes sind daher immer datenbankspezifisch. Allerdings haben sich die Befehle
+                <code>CREATE INDEX</code> und <code>DROP INDEX</code> weitestgehend durchgesetzt.
+            </p>
 
+            <code-block lang="sql">
+                CREATE
+                 INDEX index_name
+                    ON table_name (  column1
+                     ,  column2
+                     ,  ... )
+                ;
+            </code-block>
+
+            <p>
+                <code>CREATE UNIQUE INDEX</code> erzeugt einen eindeutigen Index für eine Tabelle. Doppelte Werte sind
+                nicht erlaubt:
+            </p>
+
+            <code-block lang="sql">
+                CREATE
+                UNIQUE
+                 INDEX index_name
+                    ON table_name (  column1
+                     ,  column2
+                     ,  ... )
+                ;
+            </code-block>
+
+            <p>
+                <code>DROP INDEX</code> löscht einen Index von einer Tabelle:
+            </p>
+
+            <code-block lang="sql">
+                DROP INDEX index_name;
+            </code-block>
         </chapter>
     </chapter>
     
