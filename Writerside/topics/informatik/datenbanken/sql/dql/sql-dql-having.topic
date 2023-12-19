@@ -157,7 +157,74 @@
     </chapter>
 
     <chapter title="Beispiele" id="beispiele">
+        <p>
+            Die folgende SQL-Anweisung listet die Anzahl der Kunden in jedem Land auf. Berücksichtigen Sie nur Länder
+            mit mehr als 5 Kunden:
+        </p>
 
+        <code-block lang="sql">
+            SELECT  COUNT(CustomerID)
+                 ,  Country
+              FROM Customers
+             GROUP
+                BY  Country
+            HAVING  COUNT(CustomerID) > 5
+            ;
+        </code-block>
+
+        <p>
+            Die folgende SQL-Anweisung listet die Anzahl der Kunden in jedem Land auf, sortiert von oben nach unten (nur
+            Länder mit mehr als 5 Kunden berücksichtigen):
+        </p>
+
+        <code-block lang="sql">
+            SELECT  COUNT(CustomerID)
+                 ,  Country
+              FROM Customers
+             GROUP
+                BY  Country
+            HAVING  COUNT(CustomerID) > 5
+             ORDER
+                BY  COUNT(CustomerID) DESC
+            ;
+        </code-block>
+
+        <p>
+            Die folgende SQL-Anweisung listet die Mitarbeiter auf, die mehr als 10 Bestellungen registriert haben:
+        </p>
+
+        <code-block lang="sql">
+            SELECT  Employees.LastName
+                 ,  COUNT(Orders.OrderID) AS NumberOfOrders
+              FROM Orders
+             INNER
+              JOIN Employees
+                ON  Orders.EmployeeID = Employees.EmployeeID
+             GROUP
+                BY  LastName
+            HAVING  COUNT(Orders.OrderID) > 10
+            ;
+        </code-block>
+
+        <p>
+            Die folgende SQL-Anweisung listet auf, ob die Mitarbeiter "Davolio" oder "Fuller" mehr als 25 Bestellungen
+            registriert haben:
+        </p>
+
+        <code-block lang="sql">
+            SELECT  Employees.LastName
+                 ,  COUNT(Orders.OrderID) AS NumberOfOrders
+              FROM Orders
+             INNER
+              JOIN Employees
+                ON  Orders.EmployeeID = Employees.EmployeeID
+             WHERE  LastName = 'Davolio'
+                OR  LastName = 'Fuller'
+             GROUP
+                BY  LastName
+            HAVING  COUNT(Orders.OrderID) > 25
+            ;
+        </code-block>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
