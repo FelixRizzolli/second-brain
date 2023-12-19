@@ -180,6 +180,18 @@
     </chapter>
 
     <chapter title="Weitere Varianten" id="varianten">
+        <p>
+            B-Bäume können in weiteren Varianten und Spezialfällen auftreten:
+        </p>
+
+        <list>
+            <li>B+ Baum</li>
+            <li>B* Baum</li>
+            <li>2-3-4 Baum</li>
+            <li>AVL-Baum</li>
+            <li>Rot-Schwarz-Baum</li>
+            <li>R-Baum</li>
+        </list>
 
         <chapter title="B+ Baum" id="varianten-bplus">
 
