@@ -64,7 +64,48 @@
     </chapter>
     
     <chapter title="Indextypen" id="indextypen">
-        
+        <p>
+            Es gibt unterschiedliche Indextypen, die im Zusammenhang mit Datenbaken verwendet werden können:
+        </p>
+
+        <list>
+            <li>
+                <b>Die B-Bäume</b> - <a href="sql-ddl-bbauume.topic">B-Bäume</a> sind die am häufigsten genutzten
+                Indextypen. B-Bäume gehören zu den balancierten Bäumen, die Daten sortiert speichern. Im Gegensatz zu
+                den meisten anderen Bäumen werden Elemente hier zunächst in den Blättern eingefügt. B-Bäume wachsen
+                damit nach oben von den Blättern zur Wurzel. B-Bäume sind auf die Ablage in Sekundärspeichern optimiert
+                und daher von großer praktischer Relevanz.
+            </li>
+            <li>
+                <b>Der Bitmap-Index</b> - Der <a href="sql-ddl-index-bitmap.topic">Bitmap-Index</a> basiert aus der
+                Speicherung der Spaltenwerte in Form von Bitketten. Dieser Indextyp findet aus datenbanktechnischen
+                Gründen Verwendung bei geringer Selektivität und niedriger Aktualisierungserwartung der zu indizierenden
+                Spalte(n).
+            </li>
+            <li>
+                <b>Der Cluster Index</b> - Bei einem Cluster Index legt das DBMS nicht nur eine Liste von Zeigern auf
+                Datensätzen an, sondern versucht Werte deren Indizes nahe beieinander liegen auch physische im Speicher
+                nahe beieinander abzulegen. Das kann die Sache nach Werten dieser Spalte weiter beschleunigen.
+            </li>
+            <li>
+                <b>Der Funktionale Index</b> - Unter diesem Index versteht man eine spezielle Form, bei der im Gegensatz
+                zu normalen Index nicht die Feldwerte verwendet werden, sondern Werte, die mittels einer
+                Datenbankfunktion transformiert wurden.
+            </li>
+            <li>
+                <b>Der Reverse Index</b> - Darunter versteht man einen Index, indem die Werte Bit- oder Byteweise, vor
+                dem Speichern umgekehrt werden. Ein Reverse Index hat den Vorteil, dass beim Einfügen von fortlaufenden
+                Schlüsseln, der Speicher nicht reorganisiert werden muss. Ein Nachteil ist, dass ein Range-Scan nicht
+                über den Index evaluiert werden kann.
+            </li>
+            <li>
+                <b>Der Partitionierte Index</b> - Genauso wie Tabellen partitioniert werden können, können das auch
+                Indizes. Dabei wird unterschieden, ob die Partitionierung, sich an der ersten Spalte orientiert oder an
+                einer anderen Spalte. Normalerweise wird dieser Index angewandt, auch wenn die Tabelle schon
+                partitioniert wurde. In diesem Fall, bietet sich an, den Index nach denselben Kriterien zu
+                partitionieren.
+            </li>
+        </list>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
