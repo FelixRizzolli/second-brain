@@ -7,6 +7,29 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlegendes über Views" id="grundlagen">
+        <p>
+            Mittels einer View (Sichten) bietet SQL die Möglichkeit <code>SELECT</code>-Abfragen unter einem Namen
+            dauerhaft in einer Datenbank zu hinterlegen. Die gespeicherte View kann wie eine gewöhnliche Tabelle mit
+            einer <code>SELECT</code>-Anweisung abgefragt werden. Wird eine View abgefragt, so wird die
+            <code>SELECT</code>-Anweisung ausgeführt, die bei der Erstellung der View definiert wurde.
+        </p>
+        <p>
+            Es gibt zwei Gründe, Views zu verwenden:
+        </p>
+
+        <list style="decimal">
+            <li>
+                Mit Views besteht die Möglichkeit, komplexe SQL-Anweisungen dauerhaft in der Datenbank zu speichern und
+                auf die Views wie auf eine Tabelle mit einer <code>SELECT</code>-Anweisung zuzugreifen. Das erleichtert
+                den Umgang mit dem Datenbestand.
+            </li>
+            <li>
+                Ein komplexes Datenmodell und die beteiligten Tabellen (z.B. Tabellen einer Personalabteilung) sollen in
+                der Regel nicht jedem zugänglich gemacht werden. Mit Views können komplexe
+                <code>SELECT</code>-Anweisungen (gegebenenfalls mit vielen <code>JOIN</code>s) gekapselt werden. Die
+                tatsächlich abgefragte Tabelle bleibt dabei verborgen.
+            </li>
+        </list>
 
         <chapter title="INSERT, UPDATE und DELETE auf Views anwenden" id="grundlagen-cud">
 
