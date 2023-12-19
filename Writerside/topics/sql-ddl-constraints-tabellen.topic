@@ -54,7 +54,25 @@
     </chapter>
 
     <chapter title="FOREIGN KEY: Fremdschlüssel auf Tabellenebene" id="foreign-key">
+        <p>
+            Die <code>FOREIGN KEY</code>-Beschränkung wird verwendet, um Aktionen zu verhindern, die Verbindungen
+            zwischen Tabellen zerstören würden. Ein <code>FOREIGN KEY</code> ist ein Feld (oder eine Sammlung von
+            Feldern) in einer Tabelle, das sich auf den PRIMARY KEY einer anderen Tabelle bezieht. Die Tabelle mit dem
+            Fremdschlüssel wird als untergeordnete Tabelle und die Tabelle mit dem Primärschlüssel als referenzierte
+            oder übergeordnete Tabelle bezeichnet.
+        </p>
 
+        <code-block lang="sql">
+            CREATE
+             TABLE Orders
+                 ( OrderID                INT     NOT NULL
+                 , OrderNumber            INT     NOT NULL
+                 , PersonID               INT
+                 , PRIMARY KEY (OrderID)
+                 , CONSTRAINT FK_PersonOrder      FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+                 )
+            ;
+        </code-block>
     </chapter>
 
     <chapter title="UNIQUE: Die Eindeutigkeitseinschränkung auf Tabellenebene" id="unique">
