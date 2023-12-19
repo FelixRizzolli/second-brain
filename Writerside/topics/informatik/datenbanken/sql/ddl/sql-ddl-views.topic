@@ -141,7 +141,27 @@
     </chapter>
 
     <chapter title="CREATE OR REPLACE VIEW: Views ersetzen" id="create-replace">
+        <p>
+            Mit der <code>CREATE OR REPLACE VIEW</code>-Anweisung kann eine bestehende View ersetzt werden. Diese
+            Anweisung kann für die MySQL- und PostgreSQL-Datenbank genutzt werden.
+        </p>
 
+        <code-block lang="sql">
+            DROP VIEW v_mitarbeiterkontakt;
+
+            CREATE OR REPLACE VIEW v_mitarbeiterkontakt AS
+                            SELECT  m.mitarbeiterid
+                                 ,  m.vorname
+                                 ,  m.nachname
+                                 ,  k.festnetz
+                                 ,  k.mobilnetz
+                                 ,  k.email
+                              FROM mitarbeiter AS m
+                             INNER
+                              JOIN kontakt AS k
+                                ON  m.mitarbeiterid = k.mitarbeiterid
+            ;
+        </code-block>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
