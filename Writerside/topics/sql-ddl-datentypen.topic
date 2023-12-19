@@ -6,6 +6,37 @@
        title="Datentypen" id="sql-ddl-datentypen">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlagen" id="grundlagen">
+
+    </chapter>
+
+    <chapter title="Datentypen für ganze Zahlen" id="ganze-zahlen">
+
+    </chapter>
+
+    <chapter title="Datentypen für rationale Zahlen" id="rationale-zahlen">
+
+    </chapter>
+
+    <chapter title="Datentypen für Datum und Zeit" id="datetime">
+
+    </chapter>
+
+    <chapter title="Datentypen für Zeichenketten" id="zeichenketten">
+
+    </chapter>
+
+    <chapter title="Datentypen umwandeln" id="typkonvertierung">
+
+        <chapter title="Implizite Typkonvertierung" id="typkonvertierung-implizit">
+
+        </chapter>
+
+        <chapter title="Explizite Typkonvertierung" id="typkonvertierung-explizit">
+
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
