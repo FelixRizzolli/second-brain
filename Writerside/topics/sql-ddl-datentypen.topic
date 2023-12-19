@@ -265,7 +265,89 @@
         </p>
 
         <chapter title="Implizite Typkonvertierung" id="typkonvertierung-implizit">
+            <p>
+                Wenn die Datentypen innerhalb einer Operation oder eines Vergleichs in einer <code>WHERE</code>-Klausel
+                nicht kompatibel sind und keine Konvertierungsfunktion verwendet wird, versucht eine Datenbank
+                automatisch, die Datentypen passend zu machen. Die implizite Typkonvertierung bringt immer die Gefahr,
+                dass Ungenauigkeiten entstehen.
+            </p>
+            <p>
+                Für die inplizite Typkonvertierung wendet jede Datenbank unterschiedliche Regeln an. Um ganz
+                sicherzugehen, sollte bei der bewussten Nutzung der impliziten Typkonvertierung die jeweilige
+                Dokumentation der verwendeten Datenbank zurate genommen werden.
+            </p>
+            <p>
+                Beispiele für implizite Typkonvertierung:
+            </p>
 
+            <table>
+                <tr>
+                    <td>ABFRAGE</td>
+                    <td>MYSQL</td>
+                    <td>POSTGRESQL</td>
+                    <td>MS SQL-SERVER</td>
+                </tr>
+                <tr>
+                    <td>
+                        <code-block lang="sql">
+                            SELECT 4 + '9';
+                        </code-block>
+                    </td>
+                    <td><code>13</code></td>
+                    <td><code>13</code></td>
+                    <td><code>13</code></td>
+                </tr>
+                <tr>
+                    <td>
+                        <code-block lang="sql">
+                            SELECT 4 + '09';
+                        </code-block>
+                    </td>
+                    <td><code>13</code></td>
+                    <td><code>13</code></td>
+                    <td><code>13</code></td>
+                </tr>
+                <tr>
+                    <td>
+                        <code-block lang="sql">
+                            SELECT 4 + ' 09 ';
+                        </code-block>
+                    </td>
+                    <td><code>13</code></td>
+                    <td><code>13</code></td>
+                    <td><code>13</code></td>
+                </tr>
+                <tr>
+                    <td>
+                        <code-block lang="sql">
+                            SELECT 4 + '9.56';
+                        </code-block>
+                    </td>
+                    <td><code>13.53</code></td>
+                    <td><code>Konvertierungsfehler!</code></td>
+                    <td><code>Konvertierungsfehler!</code></td>
+                </tr>
+                <tr>
+                    <td>
+                        <code-block lang="sql">
+                            SELECT 4.53 + '9';
+                        </code-block>
+                    </td>
+                    <td><code>13.530000000000001</code></td>
+                    <td><code>13.53</code></td>
+                    <td><code>13.53</code></td>
+                </tr>
+                <tr>
+                    <td>
+                        <code-block lang="sql">
+                            SELECT '3.47' + '9.53';
+                        </code-block>
+                    </td>
+                    <td><code>13</code></td>
+                    <td><code>Konvertierungsfehler!</code></td>
+                    <td><code>3.499.53</code></td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Explizite Typkonvertierung" id="typkonvertierung-explizit">
