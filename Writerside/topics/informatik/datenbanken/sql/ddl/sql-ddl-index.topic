@@ -5,6 +5,17 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="INDEX: Performance von Abfragen optimieren" id="sql-ddl-index">
     <show-structure for="chapter,procedure" depth="2"/>
+    
+    <chapter title="INDEX" id="index">
+
+        <chapter title="Einführung" id="index-einfuehrung">
+
+        </chapter>
+    </chapter>
+    
+    <chapter title="Indextypen" id="indextypen">
+        
+    </chapter>
 
     <chapter title="Quellen" id="quellen">
         <tip>
