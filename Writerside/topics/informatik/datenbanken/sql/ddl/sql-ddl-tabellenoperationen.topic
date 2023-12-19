@@ -55,8 +55,8 @@
             </p>
 
             <list>
-                <li><a href="sql-ddl-constraints-spalten.topic"><code>CONSTRAINT</code>s auf Spaltenebene</a></li>
-                <li><a href="sql-ddl-constraints-tabellen.topic"><code>CONSTRAINT</code>s auf Tabellenebene</a></li>
+                <li><a href="sql-ddl-constraints-spalten.topic"><code>CONSTRAINTS</code> auf Spaltenebene</a></li>
+                <li><a href="sql-ddl-constraints-tabellen.topic"><code>CONSTRAINTS</code> auf Tabellenebene</a></li>
             </list>
         </chapter>
     </chapter>
@@ -74,7 +74,21 @@
     </chapter>
 
     <chapter title="ALTER TABLE: Tabellen ändern" id="alter">
+        <p>
+            Das <code>ALTER TABLE</code>-Statement wird verwendet, um Spalten in einer bestehenden Tabelle hinzuzufügen,
+            zu löschen oder zu ändern. Es wird auch verwendet, um verschiedene Beschränkungen
+            (= <code>CONSTRAINTS</code>) zu einer bestehenden Tabelle hinzuzufügen oder zu löschen.
+        </p>
 
+        <code-block lang="sql">
+            ALTER TABLE table_name ADD column_name datatype;
+        </code-block>
+        <code-block lang="sql">
+            ALTER TABLE table_name DROP COLUMN column_name;
+        </code-block>
+        <code-block lang="sql">
+            ALTER TABLE table_name ALTER COLUMN column_name datatype;
+        </code-block>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
