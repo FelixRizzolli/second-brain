@@ -6,6 +6,18 @@
        title="Datenbankoperationen (CREATE, DROP, BACKUP)" id="sql-ddl-datenbankoperationen">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="CREATE DATABASE: Datenbanken erstellen" id="create">
+
+    </chapter>
+
+    <chapter title="DROP DATABASE: Datenbanken löschen" id="drop">
+
+    </chapter>
+
+    <chapter title="BACKUP DATABASE: Ein Datenbankbackup erstellen" id="backup">
+
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
