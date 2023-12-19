@@ -303,15 +303,85 @@
     </chapter>
 
     <chapter title="LEFT JOIN / LEFT OUTER JOIN" id="leftjoin">
+        <img src="datenbanken_sql_leftjoin.gif" alt="LEFT JOIN"/>
+
+        <p>
+            In manchen Datenbanken wird <code>LEFT OUTER JOIN</code> statt <code>LEFT JOIN</code> verwendet.
+        </p>
 
         <chapter title="Beschreibung" id="leftjoin-beschreibung">
-
+            <p>
+                Ein <code>LEFT OUTER JOIN</code> verknüpft Zeilen von Tabellen über eine Fremdschlüsselbeziehung.
+                Zunächst einmal verbindet ein <code>LEFT OUTER JOIN</code> alle Zeilen von zwei Tabellen über eine
+                Schlüsselbeziehung. Immer dann, wenn ein Fremdschlüssel aus einer Kindtabelle auf einen Primärschlüssel
+                aus einer Elterntabelle referenziert, werden Zeilen entsprechend verbunden. Wie beim
+                <code>INNER JOIN</code>.
+            </p>
+            <p>
+                Ein <code>LEFT OUTER JOIN</code> gibt zusätzlich die Zeilen der links der
+                <code>LEFT OUTER JOIN</code>-Klausel notierten Tabelle aus, die nicht über Schlüsselwerte mit der
+                Tabelle, die rechts von der <code>LEFT OUTER JOIN</code>-Klausel notiert ist, verbunden werden können.
+            </p>
         </chapter>
 
         <chapter title="Beispiel" id="leftjoin-beispiel">
+            <code-block lang="sql">
+                SELECT  name
+                     ,  vorname
+                     ,  plz
+                     ,  ort
+                  FROM auszubildener
+                  LEFT OUTER
+                  JOIN adresse
+                    ON  ausid = fk_ausid
+                ;
+            </code-block>
 
             <chapter title="Ergebnistabelle" id="leftjoin-beispiel-ergebnistabelle">
-
+                <table>
+                    <tr>
+                        <td>name</td>
+                        <td>vorname</td>
+                        <td>plz</td>
+                        <td>ort</td>
+                    </tr>
+                    <tr>
+                        <td>Müller</td>
+                        <td>Ralf</td>
+                        <td>50827</td>
+                        <td>Köln</td>
+                    </tr>
+                    <tr>
+                        <td>Klein</td>
+                        <td>Sabine</td>
+                        <td>NULL</td>
+                        <td>NULL</td>
+                    </tr>
+                    <tr>
+                        <td>Lang</td>
+                        <td>Peter</td>
+                        <td>50127</td>
+                        <td>Bonn</td>
+                    </tr>
+                    <tr>
+                        <td>Berg</td>
+                        <td>Frank</td>
+                        <td>NULL</td>
+                        <td>NULL</td>
+                    </tr>
+                    <tr>
+                        <td>Erde</td>
+                        <td>Sabine</td>
+                        <td>50129</td>
+                        <td>Bonn</td>
+                    </tr>
+                    <tr>
+                        <td>Grün</td>
+                        <td>Justus</td>
+                        <td>NULL</td>
+                        <td>NULL</td>
+                    </tr>
+                </table>
             </chapter>
         </chapter>
     </chapter>
