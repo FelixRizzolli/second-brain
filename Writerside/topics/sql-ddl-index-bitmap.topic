@@ -6,6 +6,17 @@
        title="Bitmap-Index" id="sql-ddl-index-bitmap">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einleitung" id="einleitung">
+
+        <chapter title="Beispiel" id="einleitung-beispiel">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="Funktionsweise" id="funktionsweise">
+
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(WEBSEITE)</b>
