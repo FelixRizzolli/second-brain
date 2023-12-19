@@ -23,6 +23,32 @@
     </chapter>
 
     <chapter title="Funktionsweise" id="funktionsweise">
+        <p>
+            B-Bäume gehören zu den balancierten Bäumen, die Daten sortiert speichern. Im Gegensatz zu den meisten
+            anderen Bäumen werden Elemente hier zunächst in den Blättern eingefügt. B-Bäume wachsen damit nach oben von
+            den Blättern zur Wurzel. B-Bäume sind auf die Ablage in Sekundärspeichern optimiert und daher von großer
+            praktischer Relevanz.
+        </p>
+        <p>
+            In den Knoten eines B-Baumes ist eine variable Anzahl von Schlüsseln gespeichert. Diese ist in jedem Fall
+            nach oben begrenzt und oft auch nach unten. Eine häufig verwendete Begrenzung ist zum Beispiel "2 4". In
+            einem solchen Baum müssen in den Knoten mindestens 2 Elemente und dürfen maximal 4 Elemente gespeichert
+            werden. Die Schlüssel sind dabei aufsteigend sortiert.
+        </p>
+        <p>
+            Darüber hinaus werden noch "Anzahl Knoten +1" Verweise auf Kindknoten gespeichert. Ein Verweis zwischen zwei
+            Elementen eines Knotens zeigt dann auf einen Bereich, der nur Elemente enthält, die zwischen diesen
+            Elementen des Elternknotens liegen.
+        </p>
+        <p>
+            Die maximale Anzahl an Verweisen eines Knotens ist als Verzweigungsgrad oder Ordnung bekannt. Entsprechend
+            darf ein Knoten dann höchstens Verzweigungsgrad – 1 Elemente speichern.
+        </p>
+
+        <warning>
+            Wie es in der Informatik oftmals der Fall ist, so ist diese Definition nicht allgemeingültig. Manchmal wird
+            als Ordnung auch die maximale Anzahl an Elementen pro Knoten definiert.
+        </warning>
 
         <chapter title="Maximale Höhe" id="funktionsweise-maximale-hoehe">
 
