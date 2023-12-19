@@ -105,7 +105,14 @@
     </chapter>
 
     <chapter title="Views und ORDER BY" id="orderby">
-        
+        <p>
+            Mit der <code>DROP VIEW</code>-Anweisung wird eine View gelöscht. Die Anweisung kann für die MySQL-,
+            PostgreSQL- und MS-SQL-Server-Datenbank verwendet werden.
+        </p>
+
+        <code-block lang="sql">
+            DROP VIEW v_mitarbeiterkontakt;
+        </code-block>
     </chapter>
 
     <chapter title="DROP VIEW: Views ersetzen" id="drop">
