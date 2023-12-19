@@ -65,7 +65,23 @@
     </chapter>
 
     <chapter title="NOT NULL: Spalten als Pflichtfelder definieren" id="not-null">
+        <p>
+            Überall da, wo Spaltenwerte unbedingt erforderlich sind, kann bereits während der Tabellenerstellung mit
+            einer <code>NOT NULL</code>-Einschränkung sichergestellt werden, dass für das jeweilige Datenfeld immer
+            Werte eingetragen werden. Das gilt für Einfüge-Operationen mit <code>INSERT</code> wie für
+            Aktualisierungsoperationen mit einer <code>UPDATE</code>-Anweisung. Beispiel:
+        </p>
 
+        <code-block lang="sql">
+            CREATE
+             TABLE dienstwagen
+                 ( dienstwagenid     TINYINT        PRIMARY KEY
+                 , kennzeichen       CHAR(9)        NOT NULL
+                 , erstzulassung     DATE           NOT NULL
+                 , mitarbeiter       VARCHAR(300)
+                 )
+            ;
+        </code-block>
     </chapter>
 
     <chapter title="UNIQUE: Spalten mit einer Eindeutigkeitseinschränkung versehen" id="unique">
