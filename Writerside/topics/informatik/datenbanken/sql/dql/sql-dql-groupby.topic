@@ -260,7 +260,37 @@
         </chapter>
 
         <chapter title="AVG()" id="aggregatfunktionen-count-avg">
+            <code-block lang="sql">
+                SELECT  mitarbeiterid
+                     ,  AVG(bonuszahlung) AS durchschnittbonuszahlung
+                  FROM bonus
+                 GROUP
+                    BY  mitarbeiterid
+                ;
+            </code-block>
 
+            <table>
+                <tr>
+                    <td>mitarbeiterid</td>
+                    <td>anzahlderzeilenprogruppe</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>7500.00</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>4600.00</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>4500.00</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>8246.67</td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="MIN() und MAX()" id="aggregatfunktionen-minmax">
