@@ -153,7 +153,17 @@
         </p>
 
         <code-block lang="sql">
-
+            CREATE
+             TABLE dienstwagen
+                 ( dienstwagenid    SMALLINT      PRIMARY KEY
+                 , kennzeichen      CHAR(9)       NOT NULL
+                 , erstzulassung    DATE          NOT NULL
+                 , modell           VARCHAR(200)  CHECK( motor = ‘Diesel‘
+                                                      OR motor = ‘Benzin‘
+                                                      OR motor = ‘Super‘ )
+                 , mitarbeiter      VARCHAR(300)  UNIQUE
+            )
+            ;
         </code-block>
 
         <p>
@@ -170,7 +180,32 @@
     </chapter>
 
     <chapter title="PRIMARY KEY: Primärschlüssel für eine Spalte festlegen" id="primary-key">
+        <p>
+            Die <code>PRIMARY KEY</code>-Einschränkung identifiziert jeden Datensatz in einer Tabelle eindeutig. Ein
+            Primärschlüssel ist eine Kombination aus der <code>UNIQUE</code>- und der
+            <code>NOT NULL</code>-Einschränkung. Eine Tabelle kann nur <b>EINEN</b> Primärschlüssel haben; und in der
+            Tabelle kann dieser Primärschlüssel aus einzelnen oder mehreren Spalten (Feldern) bestehen.
+        </p>
 
+        <code-block lang="sql">
+            CREATE
+             TABLE dienstwagen
+                 ( dienstwagenid    TINYINT        PRIMARY KEY
+                 , kennzeichen      CHAR(9)        NOT NULL
+                 , erstzulassung    DATE           NOT NULL
+                 , kostenstelle     SMALLINT       NOT NULL     DEFAULT 0
+                 , mitarbeiter      VARCHAR(300)   UNIQUE
+                 )
+            ;
+        </code-block>
+
+        <p>
+            Um eine <code>PRIMARY KEY</code>-Einschränkung über mehrere Spalten anzuwenden, muss sie auf Tabellenebene
+            definiert werden:
+            <a href="sql-ddl-constraints-tabellen.topic">
+                <code>CONSTRAINTS</code> auf Tabellenebene
+            </a>
+        </p>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
