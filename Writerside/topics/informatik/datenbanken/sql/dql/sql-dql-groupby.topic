@@ -7,7 +7,58 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlagen" id="grundlagen">
-        
+        <p>
+            Die <code>GROUP BY</code>-Klausel schafft in SQL die Möglichkeit, Spaltenwerte einer Spalte zu einer Gruppe
+            zusammenzufassen. Das Zusammenfassen von Spaltenwerten kann auch als Verdichtung bezeichnet werden. Eine
+            Gruppierung kann aus einer oder mehreren Spalten bestehen. In der Spaltenauswahlliste sind dann nur die
+            Spalten zulässig, nach denen gruppiert wurde. Das folgende Beispiel berechnet durch die Aggregatfunktion
+            <code>AVG()</code> den Durchschnitt der Gehälter der einzelnen Gruppen:
+        </p>
+
+        <img src="datenbanken_sql_groupby1.png" alt="GROUP BY - Beispiel"/>
+
+        <p>
+            Wie im Beispiel können in der Spaltenauswahlliste Aggregatfunktionen enthalten sein, die beispielsweise eine
+            Summe über die eine Spalte bilden, die nicht den Gruppierungsspalten angehört. Zur Aggregation stehen
+            mehrere Aggregatfunktionen zur Verfügung. Je nach verwendeter Datenbank können auch andere
+            Aggregatfunktionen verwendet werden. Allgemein gültige sind:
+        </p>
+
+        <list>
+            <li>
+                <code>COUNT(spaltenwert)</code>: zählt die Spaltenwerte einer Gruppe
+            </li>
+            <li>
+                <code>SUM(spaltenwert)</code>: addiert nummerische Spaltenwerte einer Gruppe
+            </li>
+            <li>
+                <code>MIN(spaltenwert)</code>: ermittelt den minimalen Wert einer Gruppe
+            </li>
+            <li>
+                <code>MAX(spaltenwert)</code>: ermittelt den maximalen Wert einer Gruppe
+            </li>
+            <li>
+                <code>AVG(spaltenwert)</code>: ermittelt den arithmetischen Durchschnittswert einer Gruppe
+            </li>
+        </list>
+
+        <p>
+            Die <code>GROUP BY</code>-Klausel bietet mit der <code>HEAVING</code>-Klausel eine Möglichkeit, nach
+            gruppierten Werten zu filtern. Ähnlich wie in einer <code>WHERE</code>-Klausel werden hier
+            Vergleichsoperatoren verwendet, um Ergebnisse einer Operation, die auf eine Gruppierung angewendet wurde,
+            gegen andere Werte zu vergleichen.
+        </p>
+        <p>
+            Wenn eine <code>WHERE</code>-Klausel Anwendung finden soll, ist sie immer von der
+            <code>GROUP BY</code>-Klausel zu notieren, da die <code>WHERE</code>-Klausel auf Zeilenebene Informationen
+            filtert und vor der <code>GROUP BY</code>-Klausel ausgeführt wird.
+        </p>
+        <p>
+            Die <code>WHERE</code>-Klausel kann nicht zum Filtern von aggregierten Werten genutzt werden, da sie
+            ausschließlich auf Zeilenebene arbeitet. Die <code>WHERE</code>-Klausel wird vor der
+            <code>GROUP BY</code>-Klausel ausgeführt, sodass das Ergebnis einer Aggregation, die auf einer Gruppierung
+            basiert, zu dem Zeitpunkt der Anwendung der <code>WHERE</code>-Klausel also nicht zur Verfügung steht.
+        </p>
     </chapter>
 
     <chapter title="Beispiele für Aggregatfunktionen" id="aggregatfunktionen">
