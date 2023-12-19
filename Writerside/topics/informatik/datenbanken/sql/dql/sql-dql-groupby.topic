@@ -188,7 +188,40 @@
 
             <chapter title="Asterisk * - Anzahl der Zeilen innerhalb einer Gruppe"
                      id="aggregatfunktionen-count-asterisk">
+                <p>
+                    Wird der <code>COUNT()</code>-Funktion ein Asterisk <code>*</code> als Parameter übergeben, so zählt
+                    die Funktion lediglich die Anzahl der Zeilen innerhalb einer Gruppe.
+                </p>
 
+                <code-block lang="sql">
+                    SELECT  mitarbeiterid
+                         ,  COUNT(*) AS anzahlderzeilenprogruppe
+                      FROM bonus
+                    ;
+                </code-block>
+                
+                <table>
+                    <tr>
+                        <td>mitarbeiterid</td>
+                        <td>anzahlderzeilenprogruppe</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>3</td>
+                    </tr>
+                </table>
             </chapter>
         </chapter>
 
