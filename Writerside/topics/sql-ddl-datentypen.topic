@@ -228,6 +228,41 @@
     </chapter>
 
     <chapter title="Datentypen umwandeln" id="typkonvertierung">
+        <p>
+            Beim Arbeiten mit Spaltenwerten muss sichergestellt werden, dass sie zum jeweiligen Datentyp passen. Das
+            kommt beispielsweise auch bei Berechnungen und Vergleichen vor. SQL bietet die
+            <code>CAST</code>-Konvertierungsfunktion an, mit der ein Wert eines Datentyps in einen anderen Datentyp
+            umgewandelt wird. Das setzt allerdings voraus, dass die Werte tatsächlich in den Zieldatentyp umgewandelt
+            werden können. Ein Datum lässt sich z.B. nicht in einer ganzen Zahl umwandeln oder umgekehrt. In folgenden
+            Situationen kann es notwendig sein eine Typkonvertierung vorzunehmen:
+        </p>
+        
+        <list>
+            <li>
+                bei der Verwendung von arithmetischen Operatoren (<code>+</code>, <code>-</code>, <code>*</code>,
+                <code>/</code>, <code>%</code>)
+            </li>
+            <li>
+                bei Einfügeoperationen mit <code>INSERT</code> oder <code>UPDATE</code>
+            </li>
+            <li>
+                bei Vergleichen mittels einer Bedingung in einer <code>WHERE</code>-Klausel
+            </li>
+            <li>
+                bei der Sortierung mithilfe einer <code>ORDER BY</code>-Klausel
+            </li>
+            <li>
+                bei der Anwendung einer <code>UNION</code>-Klausel
+            </li>
+            <li>
+                bei Aufrufen von Skalarfunktionen mit Parametern
+            </li>
+        </list>
+
+        <p>
+            Bei der Datentypkonvertierung wird zwischen expliziter Typkonvertierung (explizit = ausdrücklich) und
+            impliziter Typkonvertierung (implizit bedeutet so viel wie bereits enthalten sein).
+        </p>
 
         <chapter title="Implizite Typkonvertierung" id="typkonvertierung-implizit">
 
