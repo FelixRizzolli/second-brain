@@ -226,7 +226,37 @@
         </chapter>
 
         <chapter title="SUM()" id="aggregatfunktionen-count-sum">
+            <code-block lang="sql">
+                SELECT  mitarbeiterid
+                     ,  SUM(bonuszahlung) AS summebonuszahlung
+                  FROM bonus
+                 GROUP
+                    BY  mitarbeiterid
+                ;
+            </code-block>
 
+            <table>
+                <tr>
+                    <td>mitarbeiterid</td>
+                    <td>anzahlderzeilenprogruppe</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>22500.00</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>13800.00</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>4500.00</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>24740.00</td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="AVG()" id="aggregatfunktionen-count-avg">
