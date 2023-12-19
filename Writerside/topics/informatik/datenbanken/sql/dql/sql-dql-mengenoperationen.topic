@@ -37,6 +37,39 @@
     </chapter>
 
     <chapter title="Die Vereinigungsmenge (UNION)" id="union">
+        <p>
+            Es kann mit dem <code>UNION</code>-Schlüsselwort eine Vereinigungsmenge aus einer Menge A und einer Menge B
+            gebildet werden. Natürlich können auch Elemente aus mehr als zwei Mengen gebildet werden. Als Beispiel zwei
+            Tabellen: Die Tabelle mengea enthält die Datenwerte 1,2,3,4,5,6 und 8 in der Spalte element. Die Tabelle
+            mengeb enthält die Datenwerte 2,5,6,7,8,9 und 10.
+        </p>
+
+        <code-block lang="sql">
+            SELECT element FROM mengea
+             UNION
+            SELECT element FROM mengeb
+            ;
+        </code-block>
+
+        <p>
+            Mit dieser SQL-Abfrage bildet sich die Vereinigungsmenge. Die Vereinigungsmenge enthält sie Datenwerte
+            1,2,3,4,5,6,7,8,9,10 in der Spalte element. Sind Dublikate auch erwünscht, so kann man der
+            <code>UNION</code>-Klausel das Schlüsselwort <code>ALL</code> anhängen:
+        </p>
+
+        <code-block lang="sql">
+            SELECT element FROM mengea
+             UNION ALL
+            SELECT element FROM mengeb
+            ;
+        </code-block>
+
+        <p>
+            Die Datenwerte der Spalte element dieser Vereinigungsmenge lauten: 1,2,2,3,4,5,5,6,6,7,8,8,9,10. Genauso wie
+            <code>ALL</code> lässt sich auch das Schlüsselwort <code>DISTINCT</code> der <code>UNION</code>-Klausel
+            anhängen. <code>DISTINCT</code> wird bereits standardmäßig verwendet lässt sich aber trotzdem optional
+            notieren, um die Anweisung klarer zu machen.
+        </p>
 
         <chapter title="Beispiel" id="beispiele">
 
