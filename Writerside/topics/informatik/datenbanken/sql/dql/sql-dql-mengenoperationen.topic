@@ -362,7 +362,56 @@
     </chapter>
 
     <chapter title="Mengenoperationen in Kombination mit einer WHERE- oder ORDER BY-Klausel" id="where-orderby">
+        <p>
+            Die an einer Mengenoperation beteiligten <code>SELECT</code>-Abfragen können jeweils eine
+            <code>WHERE</code>-Klausel zugeordnet bekommen, um gemäß einer Bedingung Zeilen zu filtern. Bei diesem
+            Vorgang werden immer die <code>SELECT</code>-Abfragen mit der <code>WHERE</code>-Klausel zuerst von der
+            Datenbank ausgeführt. Die Mengenoperation wird darauffolgend auf die Ergebnistabellen durchgeführt. Wird der
+            Datenbestand mit einer <code>WHERE</code>-Klausel gefiltert werden die Operationen viel schneller
+            abgearbeitet, da weniger Zeilen verglichen werden müssen.
+        </p>
 
+        <code-block lang="sql">
+            SELECT  artikelbezeichnung
+                 ,  kategorie
+                 ,  legierung
+              FROM produkt
+             WHERE  artikelbezeichnung = 'Schraube 1'
+             UNION ALL
+            SELECT  artikelbezeichnung
+                 ,  kategorie
+                 ,  legierung
+              FROM produkt
+             WHERE  artikelbezeichnung = 'Schraube 1'
+             ORDER
+                BY legierung
+            ;
+        </code-block>
+
+        <table>
+            <tr>
+                <td>artikelbezeichnung</td>
+                <td>kategorie</td>
+                <td>legierung</td>
+            </tr>
+            <tr>
+                <td>Schraube 2</td>
+                <td>Schrauben</td>
+                <td>Kupfer/Eisen</td>
+            </tr>
+            <tr>
+                <td>Schraube 1</td>
+                <td>Schrauben</td>
+                <td>Zink/Eisen</td>
+            </tr>
+        </table>
+
+        <p>
+            Eine <code>ORDER BY</code>-Klausel wird bei Mengenoperationen wie <code>UNION</code>, <code>INTERSECT</code>
+            und <code>EXCEPT</code> immer hinter der letzten <code>SELECT</code>-Anweisung notiert, um die resultierende
+            Ergebnistabelle zurückzuerhalten. Die <code>ORDER BY</code>-Klausel bezieht sich immer auf die
+            Ergebnistabelle.
+        </p>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
