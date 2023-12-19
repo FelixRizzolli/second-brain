@@ -22,7 +22,35 @@
     </chapter>
 
     <chapter title="PRIMARY KEY: Primärschlüssel auf Tabellenebene" id="primary-key">
+        <p>
+            Hier gibt es einen sehr wichtigen Punkt zu beachten. Soll eine Tabelle mehrere Spalten mit Primärschlüssel
+            enthalten, so müssen die Primärschlüssel auf Tabellenebene notiert werden, da auf Spaltenebene nur ein
+            Primärschlüssel pro Tabelle definiert werden darf. Beispiel:
+        </p>
 
+        <code-block lang="sql">
+            CREATE
+             TABLE zweigstellen
+                 ( land VARCHAR(200)
+                 , zweigstellenid TINYINT
+                 , namezweigstelle VARCHAR(200)
+                 , CONSTRAINT pk_land_zweigstellen PRIMARY KEY (land, zweigstellenid)
+                 )
+            ;
+        </code-block>
+
+        <p>
+            Hierbei wird der Primärschlüssel aus der Kombination der Spalten <code>land</code> und
+            <code>zweigstellenid</code> zusammengesetzt. Diese beiden Werte zusammengesetzt bilden einen eindeutig
+            identifizierbaren Wert. Folgende <code>INSERT</code>-Anweisungen sind somit möglich:
+        </p>
+
+        <code-block lang="sql">
+            INSERT INTO zweigstellen VALUES ('Deutschland', 1, 'Zweigstelle 1');
+            INSERT INTO zweigstellen VALUES ('Deutschland', 2, 'Zweigstelle 1');
+            INSERT INTO zweigstellen VALUES ('Holland', 1, 'Zweigstelle 3');
+            INSERT INTO zweigstellen VALUES ('Holland', 2, 'Zweigstelle 4');
+        </code-block>
     </chapter>
 
     <chapter title="FOREIGN KEY: Fremdschlüssel auf Tabellenebene" id="foreign-key">
