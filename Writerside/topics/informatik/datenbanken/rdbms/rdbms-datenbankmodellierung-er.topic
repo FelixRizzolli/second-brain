@@ -215,6 +215,14 @@
         </chapter>
 
         <chapter title="Pflichtattribute oder optionale Attribute" id="grundlagen-attribute-pflicht-optional">
+            <p>
+                In der Modellierung unterscheiden sich optionale Attribute von Attributen, die verbindlich anzugeben
+                sind. Pflichtattribute sind ebenfalls im ER-Modell zu kennzeichnen, um sie unterscheidbar zu machen.
+                Hierbei kann beispielsweise für Pflichtattribute ein <code>(P)</code> und für optionale Attribute ein
+                <code>(O)</code> in Klammern notiert werden.
+            </p>
+
+            <img src="datenbanken_rdbms_er_attribute_pflicht.jpg" alt="ER - ATTRIBUTE PFLICHT/OPTIONAL" />
         </chapter>
     </chapter>
 
