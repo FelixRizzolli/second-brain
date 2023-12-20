@@ -79,6 +79,25 @@
     </chapter>
 
     <chapter title="Kommentare in SQL" id="kommentare">
+        <p>
+            Kommentare werden zu Dokumentationszwecken verwendet. Beispiele für Kommentare sind:
+        </p>
+
+        <list>
+            <li>die anfordernde Stelle</li>
+            <li>die Funktion der Abfrage</li>
+            <li>das Datum der Fertigstellung</li>
+            <li>die Durchführung von Änderungen und den Grund der Änderung</li>
+            <li>der Name des Programmierers</li>
+        </list>
+
+        <p>
+            In SQL lassen sich zwei Möglichkeiten, Kommentare zu SQL-Anweisungen zu verfassen: Die erste Möglichkeit
+            besteht darin, einzeilige Kommentare zu verfassen, die mit einem doppelten Bindestrich <code>--</code>
+            eingeleitet werden. Die zweite Möglichkeit besteht darin, mehrzeilige Kommentare zu verfassen. Diese
+            beginnen stets mit einem Slash gefolgt von einem Sternchen <code>/*</code> und enden mit einem Sternchen
+            gefolgt von einem Slash <code>*/</code>.
+        </p>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
