@@ -15,7 +15,9 @@
             <toc-element topic="jcl.topic"/>
             <toc-element topic="cobol.topic"/>
         </toc-element>
-        <toc-element topic="softwareentwicklung.topic"/>
+        <toc-element topic="softwareentwicklung.topic">
+            <toc-element topic="swe-uml.topic"/>
+        </toc-element>
         <toc-element topic="webentwicklung.topic">
             <toc-element topic="html.topic"/>
             <toc-element topic="css.topic"/>

@@ -7,7 +7,10 @@
     <show-structure for="chapter,procedure" depth="2"/>
     
     <chapter title="Was ist UMS?" id="was-ist-uml">
-        
+        UML steht für Unified Modeling Language, also vereinheitlichte Modellierungssprache. Sie wurde ursprünglich
+        entwickelt, um Klassendiagramme in objektorientierten Programmiersprachen zu modellieren. Genauso wie mit dem
+        ER-Modell können auch mit speziellen UML-Notationen Datenbankmodelle erstellt werden. Mehr zum Thema UML im
+        Allgemeinen gibt es <a href="swe-uml.topic">hier</a> zu finden.
     </chapter>
     
     <chapter title="Die UML-Notation verwenden" id="anwendung">
