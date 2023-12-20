@@ -330,6 +330,108 @@
     </chapter>
 
     <chapter title="Die 3. Normalform" id="dritte-normalform">
+        <p>
+            Die 3. Normalform ist erfüllt, wenn die ersten beiden Normalformen erfüllt sind und alle Attribute
+            ausschließlich vom Gesamtschlüssel (der aus einem oder mehreren Attributen bestehen kann) abhängig sind.
+            Damit ist gemeint, dass ein Attribut sich nicht in einer transitiven Abhängigkeit zu einem
+            Nicht-Schlüsselattribut befinden darf. Eine transitive Abhängigkeit ist also gegeben, wenn ein Attribut auch
+            von einem Nicht-Schlüsselattribut abhängig ist, das wiederum vom Gesamtschlüssel abhängig ist.
+        </p>
+
+        <chapter title="Die 3. Normalform" id="dritte-normalform-beispiel">
+            <table>
+                <tr>
+                    <td>ausid</td>
+                    <td>name</td>
+                    <td>vorname</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Müller</td>
+                    <td>Ralf</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Klein</td>
+                    <td>Sabine</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Lang</td>
+                    <td>Peter</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>August</td>
+                    <td>Frank</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>adressid</td>
+                    <td>ausid</td>
+                    <td>strasse</td>
+                    <td>nr.</td>
+                    <td>plz</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>Mondstraße</td>
+                    <td>8</td>
+                    <td>50827</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>Sternstraße</td>
+                    <td>10</td>
+                    <td>50127</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>Sonnenstraße</td>
+                    <td>1</td>
+                    <td>50127</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>Jupiterstraße</td>
+                    <td>7</td>
+                    <td>50827</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>Marsstraße</td>
+                    <td>87</td>
+                    <td>50827</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>Uranusstraße</td>
+                    <td>36</td>
+                    <td>50827</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>plz</td>
+                    <td>ort</td>
+                </tr>
+                <tr>
+                    <td>50127</td>
+                    <td>Bonn</td>
+                </tr>
+                <tr>
+                    <td>50827</td>
+                    <td>Köln</td>
+                </tr>
+            </table>
+        </chapter>
     </chapter>
 
     <chapter title="Die Denormalisierung" id="denormalisierung">
