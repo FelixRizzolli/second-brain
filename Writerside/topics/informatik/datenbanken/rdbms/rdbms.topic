@@ -20,6 +20,17 @@
     </chapter>
 
     <chapter title="Tabellen" id="tabellen">
+        <p>
+            Tabellen stehen im Zentrum von SQL. SQL ermöglicht es Daten in Tabellen einzufügen, zu löschen, zu
+            aktualisieren und abzufragen. Eine Tabelle besteht aus einem Namen, der die Eigenschaften (Spalten), die in
+            einer Tabelle hinterlegt sind, zusammenfasst. Der Name einer Tabelle beschreibt, welche Informationen in
+            einer Tabelle gespeichert werden. Die Informationen über Mitarbeiter könnten daher in einer Tabelle
+            gespeichert werden. Die Informationen über Mitarbeiter können daher in einer Tabelle mit dem sprechenden
+            Namen mitarbeiter gespeichert werden. Die Eigenschaft einer Tabelle bilden eine Struktur, in der
+            Informationen gespeichert werden. Die Informationen (die Daten) einer Tabelle sind in den Zeilen (die
+            Datensätze) zu finden. Ein Wert innerhalb der Zeile wird gelesen, indem der Schnittpunkt zwischen einer
+            Zeile und einer Spalte ermittelt wird.
+        </p>
     </chapter>
 
     <chapter title="Herkunft von Datenbanken" id="herkunft">
