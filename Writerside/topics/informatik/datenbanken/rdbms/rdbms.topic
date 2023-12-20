@@ -56,9 +56,9 @@
     <chapter title="Datenbanksysteme" id="datenbanksysteme">
         <p>
             Es gibt zahlreiche Datenbanksysteme von den unterschiedlichsten Anbietern, die SQL unterstützen und Daten
-            bzw. Informationen in Tabellen speichern. Datenbanksysteme die Informationen in Tabellen speichern nennt man
-            relationale Datenbanksysteme. Zu den bekanntesten Vertretern gehören IBM DB2, Oracle DB, Microsoft SQL
-            Server, Oracle MySQL, Maria DB und PostgreSQL.
+            bzw. Informationen in Tabellen speichern. <b>Datenbanksysteme die Informationen in Tabellen speichern nennt
+            man relationale Datenbanksysteme</b>. Zu den bekanntesten Vertretern gehören IBM DB2, Oracle DB, Microsoft
+            SQL Server, Oracle MySQL, Maria DB und PostgreSQL.
         </p>
         <p>
             Sehr stark verbreitet ist MySQL. Das liegt unter anderem auch daran, dass die MySQL-Datenbank kostenlos
