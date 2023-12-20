@@ -164,6 +164,54 @@
         </chapter>
 
         <chapter title="Wertebereiche für Attribute" id="grundlagen-attribute-wertebereiche">
+            <p>
+                Ein Wertebereich entspricht sämtlichen Werten, die einem Attribut zugeordnet werden können. Ein
+                Wertebereich wird auch als Domain bezeichnet. Es gibt unterschiedliche Wertebereiche, die jeweils einem
+                Attribut einer Entität zugeordnet werden können. Hierzu gehören:
+            </p>
+            
+            <list>
+                <li>
+                    Zeichenketten einer definierten Länge
+                </li>
+                <li>
+                    Ganze Zahlen, die mit einer Begrenzung der kleinsten und größten Zahl ausgestattet sind
+                </li>
+                <li>
+                    Dezimalzahlen, die ebenfalls mit einer Begrenzung der kleinsten und größten Zahl ausgestattet sind
+                </li>
+                <li>
+                    Datumsangaben, die von einem verwendeten Kalender abhängig sind
+                </li>
+            </list>
+            
+            <table>
+                <tr>
+                    <td>Attribut</td>
+                    <td>mögliche Werte</td>
+                    <td>Datentyp</td>
+                </tr>
+                <tr>
+                    <td>ausid</td>
+                    <td>0 bis 10</td>
+                    <td><code>TINYINT(10)</code></td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>0 bis 120 Zeichen</td>
+                    <td><code>CHAR(120)</code></td>
+                </tr>
+                <tr>
+                    <td>vorname</td>
+                    <td>0 bis 120 Zeichen</td>
+                    <td><code>CHAR(120)</code></td>
+                </tr>
+                <tr>
+                    <td>geburtsdatum</td>
+                    <td>01.01.1900 bis 31.12.2050</td>
+                    <td><code>DATE</code></td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Pflichtattribute oder optionale Attribute" id="grundlagen-attribute-pflicht-optional">
