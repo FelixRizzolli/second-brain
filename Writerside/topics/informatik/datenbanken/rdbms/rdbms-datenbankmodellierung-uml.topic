@@ -5,6 +5,14 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Datenbankmodelle in UML-Notation darstellen" id="rdbms-datenbankmodellierung-uml">
     <show-structure for="chapter,procedure" depth="2"/>
+    
+    <chapter title="Was ist UMS?" id="was-ist-uml">
+        
+    </chapter>
+    
+    <chapter title="Die UML-Notation verwenden" id="anwendung">
+        
+    </chapter>
 
     <chapter title="Quellen" id="quellen">
         <tip>
