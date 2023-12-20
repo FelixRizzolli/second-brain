@@ -72,7 +72,7 @@
         </p>
 
         <chapter title="Beispiel" id="beispiele">
-            <chapter title="product-Tabelle" id="beispiele-product" collapsible="true">
+            <chapter title="product-Tabelle" id="beispiele-product">
                 <table>
                     <tr>
                         <td>artikelid</td>
@@ -126,7 +126,7 @@
                 </table>
             </chapter>
 
-            <chapter title="produktarchiv-Tabelle" id="beispiele-produktarchiv" collapsible="true">
+            <chapter title="produktarchiv-Tabelle" id="beispiele-produktarchiv">
                 <table>
                     <tr>
                         <td>artikelid</td>
@@ -193,7 +193,7 @@
                 ;
             </code-block>
             
-            <chapter title="Ergebnistabelle" id="beispiele-ergebnistabelle" collapsible="true">
+            <chapter title="Ergebnistabelle" id="beispiele-ergebnistabelle">
                 <table>
                     <tr>
                         <td>artikelbezeichnung</td>
