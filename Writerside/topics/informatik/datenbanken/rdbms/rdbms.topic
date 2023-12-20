@@ -71,6 +71,11 @@
     </chapter>
 
     <chapter title="SQL-Dialekte" id="dialekte">
+        <p>
+            SQL ist ein Standard, der durch die ISO (International Standardization Organisation) vorgegeben wird.
+            Dennoch gibt es im Sprachschatz jeweils unabhängig von der verwendeten Datenbank Abweichungen vom Standard.
+            Diese Unterschiede werden als SQL-Dialekte bezeichnet.
+        </p>
     </chapter>
 
     <chapter title="Kommentare in SQL" id="kommentare">
