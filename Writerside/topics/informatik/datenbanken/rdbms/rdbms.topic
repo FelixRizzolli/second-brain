@@ -34,6 +34,23 @@
     </chapter>
 
     <chapter title="Herkunft von Datenbanken" id="herkunft">
+        <p>
+            Edgar F. Codd entwickelte in den siebziger Jahren ein mathematisches Modell auf Grundlage der Mengenlehre.
+            Hierbei wird eine Menge betrachtet – die Tabelle – welche mit Elementen ausgestattet wird – die Spalten.
+            Dies Lässt sich in folgender Kurzschreibweise darstellen:
+        </p>
+
+        <code-block>
+            User={Firstname, Lastname, E-Mail, …}
+        </code-block>
+
+        <p>
+            Mathematisch betrachtet bedeutet das nichts anderes als eine Definition der Struktur der User-Tabelle. In
+            den geschweiften Klammern ist die Menge der Elemente (Spalten) aufgelistet. Zudem entwickelte Edgar F. Codd
+            eine Sprache, mit der Daten basierend auf einfachsten Operationen abgefragt, eingefügt, gelöscht oder
+            geändert werden können. Diese Überlegung bildete die Grundlage für das relationale Datenbankmodell und die
+            Sprache SQL.
+        </p>
     </chapter>
 
     <chapter title="Datenbanksysteme" id="datenbanksysteme">
