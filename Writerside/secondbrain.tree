@@ -111,7 +111,11 @@
             <toc-element topic="latex.topic"/>
         </toc-element>
         <toc-element topic="datenbanken.topic">
-            <toc-element topic="rdbms.topic"/>
+            <toc-element topic="rdbms.topic">
+                <toc-element topic="rdbms-datenbankmodellierung-er.topic"/>
+                <toc-element topic="rdbms-datenbankmodellierung-uml.topic"/>
+                <toc-element topic="rdbms-datenbankmodellierung-normalisierung.topic"/>
+            </toc-element>
             <toc-element topic="nosql.topic"/>
             <toc-element topic="sql.topic">
                 <toc-element topic="sql-dql.topic">
