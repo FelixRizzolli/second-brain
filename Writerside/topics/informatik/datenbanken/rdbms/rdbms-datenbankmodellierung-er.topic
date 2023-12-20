@@ -51,6 +51,13 @@
     </chapter>
 
     <chapter title="Entitäten" id="grundlagen-entitaeten">
+        <p>
+            Entitäten (Objekte) werden in einem ER-Modell als Rechteck notiert. Im Rechteck wird die Bezeichnung oder
+            der Name des abzubildenden Objekts angegeben. Für die Ausbildungsdatenbank werden somit Objekte wie
+            auszubildender, ausbildungsberuf usw. als Entitäten in einem Rechteck gekennzeichnet.
+        </p>
+
+        <img src="datenbanken_rdbms_er_entity.jpg" alt="ER - ENTITY"/>
     </chapter>
 
     <chapter title="Attribute" id="grundlagen-attribute">
