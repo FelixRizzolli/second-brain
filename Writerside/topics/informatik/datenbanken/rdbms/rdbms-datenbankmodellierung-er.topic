@@ -274,6 +274,61 @@
         <img src="datenbanken_rdbms_er_beziehungen_mit.png" alt="ER - Modell mit Beziehungen"/>
 
         <chapter title="Starke und schwache Entitäten " id="beziehungen-staerke">
+            <p>
+                Es gibt Entitäten, die eine Beziehung eingehen und dabei abhängig von der Existenz einer anderen Entität
+                sind. Die Beziehung zwischen einer schwachen und einer starken Entität hat sowohl Auswirkungen auf die
+                starke wie auf die schwache Entität. Folgende Fälle lassen sich beschreiben:
+            </p>
+
+            <list style="decimal">
+                <li>
+                    In einer Tabelle, die eine starke Entität repräsentiert, existiert eine Zeile autonom. Einfüge-,
+                    Aktualisierung- und Löschoperationen können hier völlig autonom betrachtet werden. Es gibt keine
+                    Beziehungen zu anderen Tabellen, die beachtet werden müssen.
+                </li>
+                <li>
+                    <p>
+                        In einer Tabelle, die eine schwache Entität repräsentiert, existieren Zeilen, die eine
+                        Beziehung zu Zeilen herstellen, die eine starke Entität repräsentiert. Diese Beziehung hat
+                        unmittelbar Auswirkungen auf Einfüge-, Aktualisierungs- und Löschoperationen.
+                    </p>
+
+                    <list style="alpha-lower">
+                        <li>
+                            Eine Zeile einer Tabelle, die eine starke Entität repräsentiert, kann nicht gelöscht werden,
+                            solange eine Beziehung aus einer Zeile einer Tabelle gegeben ist, die eine schwache Entität
+                            repräsentiert. Besteht hingegen keine solche Beziehung, so kann die Zeile der Tabelle, die
+                            einer starken Entität entspricht, einfach gelöscht werden.
+                        </li>
+                        <li>
+                            Eine Zeile aus einer Tabelle, die einer schwachen Entität entspricht, darf nur auf gültige
+                            Primärschlüsselwerte in den Zeilen der Tabelle verwiesen werden, die eine starke Entität
+                            darstellen. Wenn eine neue Zeile eingefügt wird, ist dies unbedingt zu beachten. Die einzige
+                            zulässige Ausnahme ist der Fall, dass eine Zeile aus einer Tabelle, die einer schwachen
+                            Entität entspricht, keine Beziehung zu einer Zeile einer Tabelle eingeht, die einer starken
+                            Entität entspricht. Dies ist etwa der Fall, wenn in einer Fremdschlüsselspalte
+                            <code>NULL</code>-Werte existieren.
+                        </li>
+                        <li>
+                            <p>
+                                Zeilen einer Tabelle, die einer schwachen Entität entspricht, können gelöscht werden,
+                                auch wenn eine Beziehung zu den Teilen einer starken Entität existiert.
+                            </p>
+                            <warning>
+                                Die schwache Entität mit den Fremdschlüsselwerten ist der Besitzer der Beziehung. Mit
+                                dem Löschen einer Zeile wird die Beziehung aufgehoben, die der starken Entität
+                                entspricht.
+                            </warning>
+                        </li>
+                        <li>
+                            Es dürfen keine Primärschlüsselwerte aus Zeilen einer Tabelle, die einer starken Entität
+                            entspricht, geändert werden, wenn mithilfe eines Fremdschlüssels eine Beziehung aus einer
+                            Tabelle, die einer schwachen Entität entspricht, existiert. Die Ausnahme in diesem Fall sind
+                            kaskadierte Lösch- und Änderungsoperationen, aber dazu an einem späteren Zeitpunkt mehr.
+                        </li>
+                    </list>
+                </li>
+            </list>
 
             <chapter title="Starke Entität: auszubildender" id="beziehungen-staerke-stark">
             </chapter>
