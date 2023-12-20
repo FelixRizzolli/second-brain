@@ -227,6 +227,51 @@
     </chapter>
 
     <chapter title="Beziehungen" id="beziehungen">
+        <p>
+            Entitäten können in Beziehung zu anderen Entitäten stehen. Wenn eine Beziehung identifiziert wurde, wird
+            diese Beziehung zwischen den Entitäten im Diagramm mit einer einfachen Verbindungslinie beschrieben.
+        </p>
+        <p>
+            Eine Beziehung wiederum ist mit einem Zahlenverhältnis versehen. Einem Mitarbeiter wird zum Beispiel ein
+            Arbeitsvertrag zugeordnet. Einem Mitarbeiter können mehrere Adressen zugeordnet werden. Außerdem ist es zum
+            Beispiel möglich, einem oder mehreren Mitarbeitern einen oder mehrere Fortbildungskurse zuzuordnen. Hier
+            wird von folgenden Beziehungstypen gesprochen:
+        </p>
+
+        <list>
+            <li>
+                <b><code>1:1</code>-Beziehung</b> – sie wird im ER-Modell jeweils am Anfang und am Ende einer
+                Beziehungslinie durch vertikale Striche dargestellt. Mit dieser Notation wird gekennzeichnet, dass die
+                jeweilige Entität exakt der jeweiligen anderen zugeordnet ist.
+            </li>
+            <li>
+                <b><code>1:n</code>-Beziehung</b> – hierfür wird ein vertikaler Strich auf der Seite der <code>1</code>
+                verwendet und die sogenannte Krähenfußnotation auf der Seite für <code>n</code> um eine
+                <code>n</code>-Fache-Beziehung zu einer Entität darzustellen.
+            </li>
+            <li>
+                <b><code>n:m</code>-Beziehung</b> – für das <code>n:m</code>-Verhältnis werden beiden Seiten der
+                Beziehungslinie mit der Krähenfußnotation gekennzeichnet.
+            </li>
+        </list>
+        
+        <p>
+            Die Beziehungstypen <code>1:1</code>, <code>1:n</code>, und <code>m:n</code> werden als Kardinalität
+            bezeichnet. Für die Ermittlung von Kardinalitäten einer Beziehung wird folgende Frage zweimal angewandt: Wie
+            viele Entitäten eines Typs kann einer Entität eines anderen Typs zugeordnet werden?
+        </p>
+        <p>
+            Nun sehen folgende Entitäten zur Verfügung deren Beziehungen ermittelt werden sollen: auszubildender,
+            ausbildungsvertrag, adresse, ausbildungsberuf und lehrfach.
+        </p>
+        
+        <img src="datenbanken_rdbms_er_beziehungen_ohne.png" alt="ER - Modell ohne Beziehungen"/>
+        
+        <p>
+            Die Beziehung dieser Entitäten sieht wie folgt aus:
+        </p>
+        
+        <img src="datenbanken_rdbms_er_beziehungen_mit.png" alt="ER - Modell mit Beziehungen"/>
 
         <chapter title="Starke und schwache Entitäten " id="beziehungen-staerke">
 
