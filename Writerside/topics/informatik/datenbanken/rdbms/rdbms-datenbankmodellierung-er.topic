@@ -6,4 +6,10 @@
        title="Das ER-Modell" id="rdbms-datenbankmodellierung-er">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018
+        </tip>
+    </chapter>
 </topic>
