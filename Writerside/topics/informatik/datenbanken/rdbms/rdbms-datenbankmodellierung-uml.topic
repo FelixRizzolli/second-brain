@@ -14,7 +14,29 @@
     </chapter>
     
     <chapter title="Die UML-Notation verwenden" id="anwendung">
-        
+        <p>
+            Entitäten werden in der UML-Notation durch Rechtecke dargestellt. Im oberen Bereich des Rechtecks wird der
+            Name einer Entität notiert.
+        </p>
+        <p>
+            Unterhalb des Namens werden die Attribute aufgelistet, die einer Entität zuzuordnen sind. In dieser
+            Auflistung werden bereits die Wertebereiche (Datentypen) den Attributen zugeordnet.
+        </p>
+        <p>
+            Wenn ein Attribut verbindlich anzugeben ist, wird es mit einer farblichen ausgefüllten vorangestellten Raute
+            versehen.
+        </p>
+        <p>
+            Handelt es sich bei einem Attribut um ein Primärschlüsselattribut, so wird dies mit einem vorangestellten
+            Schlüsselsymbol gekennzeichnet.
+        </p>
+        <p>
+            Beziehungen zwischen Entitäten werden auch in der UML-Notation durch einfache Verbindungslinien dargestellt.
+        </p>
+        <p>
+            Die Kardinalitäten, die für eine Beziehung definiert wird, wird hingegen mit ganzen Zahlen wie »1 zu 1..*«
+            (einem Mitarbeiter wird eine oder mehrere Adressen zugeordnet) dargestellt.
+        </p>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
