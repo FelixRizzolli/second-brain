@@ -7,6 +7,32 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Einleitung" id="einleitung">
+        <p>
+            Um dieses Thema besser zu erklären, benötigt es zuerst ein Beispiel: Beim Beispiel handelt es sich um eine
+            Ausbildungsdatenbank. Diese soll Ausbildungsfächer, Auszubildende, Ausbilder und einiges mehr verwalten.
+            Diese real existierenden Daten sollen nun datentechnisch abgebildet werden.
+        </p>
+
+        <chapter title="Der Anforderungskatalog" id="einleitung-anforderungskatalog">
+            <p>
+                Ein Anforderungskatalog stellt die Grundlage für ein Datenmodell dar. Es muss zuerst klar sein, welche
+                Sachverhalte datentechnisch abgebildet werden sollen, bevor ein Datenmodell erstellt werden kann. Ein
+                Anforderungskatalog resultiert wiederum aus einer Anforderungsanalyse.
+            </p>
+            <p>
+                Die Ausbildungsdatenbank soll unterschiedliche Informationen verwalten. Hierzu zählen:
+            </p>
+
+            <list>
+                <li>Ausbildungsberufe</li>
+                <li>Auszubildende</li>
+                <li>Adresse des Auszubildenden</li>
+                <li>Ausbilder</li>
+                <li>Ausbildungsfächer</li>
+                <li>Praxisseminare</li>
+                <li>Vermittlung theoretischer Ausbildungsinhalte</li>
+            </list>
+        </chapter>
     </chapter>
 
     <chapter title="Grundlagen" id="grundlagen">
