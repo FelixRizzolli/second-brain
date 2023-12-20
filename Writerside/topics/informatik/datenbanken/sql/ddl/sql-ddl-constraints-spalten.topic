@@ -108,13 +108,13 @@
             ;
         </code-block>
 
-        <p>
+        <note>
             Um eine <code>UNIQUE</code>-Einschränkung über mehrere Spalten anzuwenden, muss sie auf Tabellenebene
             definiert werden:
             <a href="sql-ddl-constraints-tabellen.topic">
                 <code>CONSTRAINTS</code> auf Tabellenebene
             </a>
-        </p>
+        </note>
     </chapter>
 
     <chapter title="DEFAULT: Standardwerte für Spalten festlegen" id="default">
@@ -170,13 +170,13 @@
             Bei der <code>CHECK</code>-Einschränkung werden in einfachen Klammern die Bedingungen festgelegt. Diese
             können mit logischen Verknüpfungsoperatoren wie <code>AND</code> und <code>OR</code> verknüpft werden.
         </p>
-        <p>
+        <note>
             Um eine <code>CHECK</code>-Einschränkung über mehrere Spalten anzuwenden, muss sie auf Tabellenebene
             definiert werden:
             <a href="sql-ddl-constraints-tabellen.topic">
                 <code>CONSTRAINTS</code> auf Tabellenebene
             </a>
-        </p>
+        </note>
     </chapter>
 
     <chapter title="PRIMARY KEY: Primärschlüssel für eine Spalte festlegen" id="primary-key">
@@ -199,13 +199,13 @@
             ;
         </code-block>
 
-        <p>
+        <note>
             Um eine <code>PRIMARY KEY</code>-Einschränkung über mehrere Spalten anzuwenden, muss sie auf Tabellenebene
             definiert werden:
             <a href="sql-ddl-constraints-tabellen.topic">
                 <code>CONSTRAINTS</code> auf Tabellenebene
             </a>
-        </p>
+        </note>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
