@@ -54,6 +54,20 @@
     </chapter>
 
     <chapter title="Datenbanksysteme" id="datenbanksysteme">
+        <p>
+            Es gibt zahlreiche Datenbanksysteme von den unterschiedlichsten Anbietern, die SQL unterstützen und Daten
+            bzw. Informationen in Tabellen speichern. Datenbanksysteme die Informationen in Tabellen speichern nennt man
+            relationale Datenbanksysteme. Zu den bekanntesten Vertretern gehören IBM DB2, Oracle DB, Microsoft SQL
+            Server, Oracle MySQL, Maria DB und PostgreSQL.
+        </p>
+        <p>
+            Sehr stark verbreitet ist MySQL. Das liegt unter anderem auch daran, dass die MySQL-Datenbank kostenlos
+            angeboten und oft im Verbund mit der Web-Programmiersprache <a href="php.topic">PHP</a> verwendet wird.
+            Zudem hat MySQL eine umfangreiche Dokumentation online unter
+            <a href="http://dev.mysql.com/doc">http://dev.mysql.com/doc</a>. MariaDB ist ein recht neues Datenbanksystem
+            und auch ein sogenanntes Fork von MySQL, also eine Abspaltung von MySQL. Die unterschiede zu MySQL sind
+            wirklich mit der Lupe zu suchen und betreffen hauptsächlich Lizenzfragen.
+        </p>
     </chapter>
 
     <chapter title="SQL-Dialekte" id="dialekte">
