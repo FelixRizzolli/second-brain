@@ -49,59 +49,61 @@
             </tr>
         </table>
 
-        <code-block lang="sql">
-            SELECT  name
-                 ,  vorname
-                 ,  bonus
-                 ,  monatslohn
-                 ,  bonus + monatslohn AS summe
-              FROM mitarbeiter
-            ;
-        </code-block>
+        <chapter title="Beispiele" id="grundrechenarten-beispiele" collapsible="true">
+            <code-block lang="sql">
+                SELECT  name
+                     ,  vorname
+                     ,  bonus
+                     ,  monatslohn
+                     ,  bonus + monatslohn AS summe
+                  FROM mitarbeiter
+                ;
+            </code-block>
 
-        <code-block lang="sql">
-            SELECT  name
-                 ,  vorname
-                 ,  bonus
-                 ,  monatslohn
-                 ,  bonus + monatslohn + 1000 AS summe
-              FROM mitarbeiter
-            ;
-        </code-block>
+            <code-block lang="sql">
+                SELECT  name
+                     ,  vorname
+                     ,  bonus
+                     ,  monatslohn
+                     ,  bonus + monatslohn + 1000 AS summe
+                  FROM mitarbeiter
+                ;
+            </code-block>
 
-        <code-block lang="sql">
-            SELECT  name
-                 ,  vorname
-                 ,  bonus
-                 ,  monatslohn
-                 ,  bonus - monatslohn AS differenz
-              FROM mitarbeiter
-            ;
-        </code-block>
+            <code-block lang="sql">
+                SELECT  name
+                     ,  vorname
+                     ,  bonus
+                     ,  monatslohn
+                     ,  bonus - monatslohn AS differenz
+                  FROM mitarbeiter
+                ;
+            </code-block>
 
-        <code-block lang="sql">
-            SELECT  name
-                 ,  vorname
-                 ,  stundenpromonat
-                 ,  stundenlohn
-                 ,  stundenpromonat*stundenlohn AS gehalt
-              FROM mitarbeiter
-            ;
-        </code-block>
+            <code-block lang="sql">
+                SELECT  name
+                     ,  vorname
+                     ,  stundenpromonat
+                     ,  stundenlohn
+                     ,  stundenpromonat*stundenlohn AS gehalt
+                  FROM mitarbeiter
+                ;
+            </code-block>
 
-        <code-block lang="sql">
-            SELECT name
-                 ,  vorname
-                 ,  monatslohn
-                 ,  stundenpromonat,
-                 ,   monatslohn / stundenpromonat AS stundenlohn
-              FROM mitarbeiter
-            ;
-        </code-block>
+            <code-block lang="sql">
+                SELECT name
+                     ,  vorname
+                     ,  monatslohn
+                     ,  stundenpromonat,
+                     ,   monatslohn / stundenpromonat AS stundenlohn
+                  FROM mitarbeiter
+                ;
+            </code-block>
 
-        <code-block lang="sql">
-            SELECT 5 % 2 AS rest;
-        </code-block>
+            <code-block lang="sql">
+                SELECT 5 % 2 AS rest;
+            </code-block>
+        </chapter>
     </chapter>
 
     <chapter title="Ausdrücke" id="ausdruecke">
