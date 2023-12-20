@@ -61,6 +61,48 @@
     </chapter>
 
     <chapter title="Attribute" id="grundlagen-attribute">
+        <p>
+            Eine Entität wie auszubildender besitzt auch Informationen bzw. Eigenschaften, die zur Verwaltung des
+            Auszubildenden erforderlich sind, dazu gehört beispielsweise der Name, der Vorname, das Geburtsdatum usw.
+            Diese Eigenschaften werden in einem ER-Modell als Attribute bezeichnet. Attribute werden unterhalb der
+            Entitätsbezeichnung in Ellipsen dargestellt. Von der Entitätsbezeichnung ausgehend, zeigen Pfeile auf die
+            jeweils zu einer Entität gehörenden Attribute.
+        </p>
+
+        <img src="datenbanken_rdbms_er_attribute.jpg" alt="ER - ATTRIBUTE"/>
+        
+        <table>
+            <tr>
+                <td>name</td>
+                <td>vorname</td>
+                <td>geburtsdatum</td>
+            </tr>
+            <tr>
+                <td>Müller</td>
+                <td>Ralf</td>
+                <td>01.04.2001</td>
+            </tr>
+            <tr>
+                <td>Klein</td>
+                <td>Sabine</td>
+                <td>10.05.2002</td>
+            </tr>
+            <tr>
+                <td>Lang</td>
+                <td>Peter</td>
+                <td>11.03.2001</td>
+            </tr>
+            <tr>
+                <td>Müller</td>
+                <td>Ralf</td>
+                <td>01.04.2001</td>
+            </tr>
+            <tr>
+                <td>Klein</td>
+                <td>Sabine</td>
+                <td>20.05.2003</td>
+            </tr>
+        </table>
 
         <chapter title="Schlüsselattribute" id="grundlagen-attribute-key">
         </chapter>
