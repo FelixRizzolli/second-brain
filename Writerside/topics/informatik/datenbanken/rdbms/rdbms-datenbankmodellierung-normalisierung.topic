@@ -20,80 +20,82 @@
                 Löschanomalien, die dabei entstehen und die konsistente Verwaltung der Daten sehr erschweren oder sogar 
                 unmöglich machen. Mehr dazu im Beispiel.
             </p>
-            
-            <table>
-                <tr>
-                    <td>id</td>
-                    <td>berufsbezeichnung</td>
-                    <td>lehrfach</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Elektroniker</td>
-                    <td>Deutsch</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Elektroniker</td>
-                    <td>Mathematik</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Elektroniker</td>
-                    <td>Integrierte Schaltungstechnik</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Industriekaufmann</td>
-                    <td>Deutsch</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Industriekaufmann</td>
-                    <td>Kommunikation</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Industriekaufmann</td>
-                    <td>Englisch</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Betriebswirt</td>
-                    <td>Deutsch</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Betriebswirt</td>
-                    <td>Kommunikation</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>Betriebswirt</td>
-                    <td>Buchhaltung</td>
-                </tr>
-            </table>
-            
-            <p>
-                Zweck der Tabelle ist, eine Zuordnung von Ausbildungsberufen und Lehrfächern datentechnisch abzubilden.
-                Das Problem: sie ist voll von redundanten Informationen. Die Werte der Spalte
-                <emphasis>berufsbezeichnung</emphasis> sind jeweils in drei Zeilen enthalten. Die Spalte
-                <emphasis>lehrfach</emphasis> enthält ebenfalls einige redundant vorkommende Werte. Zudem:
-            </p>
-            
-            <list>
-                <li>
-                    Soll hier eine Berufsbezeichnung geändert werden, so muss dies auf allen Datensätzen geschehen, in
-                    der diese vorkommt.
-                </li>
-                <li>
-                    Soll beispielsweise das Berufsbild Elektroniker gelöscht werden, so werden auch sämtliche
-                    Lehrfächer, die dem Berufsbild zugeordnet sind gelöscht.
-                </li>
-                <li>
-                    Und noch weitere Probleme könnten auftreten ...
-                </li>
-            </list>
+
+            <chapter title="Beispiel für Redundanz" id="grundlagen-redundanz-beispiel" collapsible="true">
+                <table>
+                    <tr>
+                        <td>id</td>
+                        <td>berufsbezeichnung</td>
+                        <td>lehrfach</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Elektroniker</td>
+                        <td>Deutsch</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Elektroniker</td>
+                        <td>Mathematik</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Elektroniker</td>
+                        <td>Integrierte Schaltungstechnik</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Industriekaufmann</td>
+                        <td>Deutsch</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Industriekaufmann</td>
+                        <td>Kommunikation</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Industriekaufmann</td>
+                        <td>Englisch</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Betriebswirt</td>
+                        <td>Deutsch</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Betriebswirt</td>
+                        <td>Kommunikation</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Betriebswirt</td>
+                        <td>Buchhaltung</td>
+                    </tr>
+                </table>
+
+                <p>
+                    Zweck der Tabelle ist, eine Zuordnung von Ausbildungsberufen und Lehrfächern datentechnisch abzubilden.
+                    Das Problem: sie ist voll von redundanten Informationen. Die Werte der Spalte
+                    <emphasis>berufsbezeichnung</emphasis> sind jeweils in drei Zeilen enthalten. Die Spalte
+                    <emphasis>lehrfach</emphasis> enthält ebenfalls einige redundant vorkommende Werte. Zudem:
+                </p>
+
+                <list>
+                    <li>
+                        Soll hier eine Berufsbezeichnung geändert werden, so muss dies auf allen Datensätzen geschehen, in
+                        der diese vorkommt.
+                    </li>
+                    <li>
+                        Soll beispielsweise das Berufsbild Elektroniker gelöscht werden, so werden auch sämtliche
+                        Lehrfächer, die dem Berufsbild zugeordnet sind gelöscht.
+                    </li>
+                    <li>
+                        Und noch weitere Probleme könnten auftreten ...
+                    </li>
+                </list>
+            </chapter>
         </chapter>
 
         <chapter title="Normalisierung" id="grundlagen-normalisierung">
