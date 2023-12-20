@@ -6,6 +6,24 @@
        title="RDBMS" id="rdbms">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einleitung" id="einleitung">
+    </chapter>
+
+    <chapter title="Tabellen" id="tabellen">
+    </chapter>
+
+    <chapter title="Herkunft von Datenbanken" id="herkunft">
+    </chapter>
+
+    <chapter title="Datenbanksysteme" id="datenbanksysteme">
+    </chapter>
+
+    <chapter title="SQL-Dialekte" id="dialekte">
+    </chapter>
+
+    <chapter title="Kommentare in SQL" id="kommentare">
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
