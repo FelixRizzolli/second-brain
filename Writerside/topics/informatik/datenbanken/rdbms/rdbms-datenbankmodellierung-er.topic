@@ -331,6 +331,44 @@
             </list>
 
             <chapter title="Starke Entität: auszubildender" id="beziehungen-staerke-stark">
+                <table>
+                    <tr>
+                        <td>ausid</td>
+                        <td>name</td>
+                        <td>vorname</td>
+                        <td>geburtsdatum</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Müller</td>
+                        <td>Ralf</td>
+                        <td>01.04.2001</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Klein</td>
+                        <td>Sabine</td>
+                        <td>10.05.2002</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Lang</td>
+                        <td>Peter</td>
+                        <td>11.03.2001</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Müller</td>
+                        <td>Ralf</td>
+                        <td>01.04.2001</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Klein</td>
+                        <td>Sabine</td>
+                        <td>20.05.2003</td>
+                    </tr>
+                </table>
             </chapter>
 
             <chapter title="Schwache Entität: adresse" id="beziehungen-staerke-schwach">
