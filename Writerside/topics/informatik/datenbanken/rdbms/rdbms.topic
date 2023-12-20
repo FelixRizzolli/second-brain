@@ -7,6 +7,16 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Einleitung" id="einleitung">
+        <p>
+            Datenbanken und SQL haben in der Informatik die Aufgabe, Daten auf eine einfache Art und Weise zu verwalten.
+            Zentrale Elemente sind hier die Abfragesprache SQL, die Tabellen, in denen die Daten gespeichert werden und
+            schließlich die Datenbanksysteme, in denen die Tabellen und Daten hinterlegt sind.
+        </p>
+        <p>
+            SQL steht für Structured Query Language, also eine strukturierte Abfragesprache für Datenbanken. SQL und
+            Datenbanken (die diese Abfragesprache unterstützen) sind weit verbreitet und werden in vielen Unternehmen
+            und Institutionen verwendet, um Informationen sicher zu verwalten und dauerhaft zu speichern.
+        </p>
     </chapter>
 
     <chapter title="Tabellen" id="tabellen">
