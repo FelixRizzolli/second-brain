@@ -372,6 +372,56 @@
             </chapter>
 
             <chapter title="Schwache Entität: adresse" id="beziehungen-staerke-schwach">
+                <table>
+                    <tr>
+                        <td>aid</td>
+                        <td>strasse</td>
+                        <td>nr.</td>
+                        <td>plz</td>
+                        <td>ort</td>
+                        <td>ausid</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Mondstraße</td>
+                        <td>8</td>
+                        <td>50827</td>
+                        <td>Köln</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Sternstraße</td>
+                        <td>10</td>
+                        <td>50127</td>
+                        <td>Bonn</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Sonnenstraße</td>
+                        <td>1</td>
+                        <td>50129</td>
+                        <td>Bonn</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Sternstraße</td>
+                        <td>25</td>
+                        <td>50126</td>
+                        <td>Bonn</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Jupiterstraße</td>
+                        <td>7</td>
+                        <td>50827</td>
+                        <td>Köln</td>
+                        <td>3</td>
+                    </tr>
+                </table>
             </chapter>
         </chapter>
     </chapter>
