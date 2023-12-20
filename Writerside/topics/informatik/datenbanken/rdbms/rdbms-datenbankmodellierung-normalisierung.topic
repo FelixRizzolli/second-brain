@@ -6,6 +6,43 @@
        title="Die Normalisierung" id="rdbms-datenbankmodellierung-normalisierung">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlagen" id="grundlagen">
+
+        <chapter title="Redundanz" id="redundanz">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="Die 1. Normalform" id="erste-normalform">
+
+        <chapter title="Beispiel einer nicht atomaren Tabelle" id="erste-normalform-nichtatomar">
+        </chapter>
+
+        <chapter title="Beispiel einer atomaren Tabelle" id="erste-normalform-atomar">
+        </chapter>
+    </chapter>
+
+    <chapter title="Die 2. Normalform" id="zweite-normalform">
+
+        <chapter title="Beispiel in der 2. Normalform" id="zweite-normalform-beispiel">
+        </chapter>
+    </chapter>
+
+    <chapter title="Die 3. Normalform" id="dritte-normalform">
+    </chapter>
+
+    <chapter title="Die Denormalisierung" id="denormalisierung">
+
+        <chapter title="Denormalisierung in der 1. Normalform" id="denormalisierung-erste-normalform">
+        </chapter>
+
+        <chapter title="Denormalisierung in der 2. Normalform" id="denormalisierung-zweite-normalform">
+        </chapter>
+
+        <chapter title="Denormalisierung in der 3. Normalform" id="denormalisierung-dritte-normalform">
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
