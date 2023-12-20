@@ -6,6 +6,40 @@
        title="Das ER-Modell" id="rdbms-datenbankmodellierung-er">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einleitung" id="einleitung">
+    </chapter>
+
+    <chapter title="Grundlagen" id="grundlagen">
+
+    </chapter>
+
+    <chapter title="Entitäten" id="grundlagen-entitaeten">
+    </chapter>
+
+    <chapter title="Attribute" id="grundlagen-attribute">
+
+        <chapter title="Schlüsselattribute" id="grundlagen-attribute-key">
+        </chapter>
+
+        <chapter title="Wertebereiche für Attribute" id="grundlagen-attribute-wertebereiche">
+        </chapter>
+
+        <chapter title="Pflichtattribute oder optionale Attribute" id="grundlagen-attribute-pflicht-optional">
+        </chapter>
+    </chapter>
+
+    <chapter title="Beziehungen" id="beziehungen">
+
+        <chapter title="Starke und schwache Entitäten " id="beziehungen-staerke">
+
+            <chapter title="Starke Entität: auszubildender" id="beziehungen-staerke-stark">
+            </chapter>
+
+            <chapter title="Schwache Entität: adresse" id="beziehungen-staerke-schwach">
+            </chapter>
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
