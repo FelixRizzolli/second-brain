@@ -435,14 +435,56 @@
     </chapter>
 
     <chapter title="Die Denormalisierung" id="denormalisierung">
+        <p>
+            Das Auflösen von Normalformen wird als Denormalisierung verstanden. Eine Denormalisierung sollte nur nach
+            einer intensiven Prüfung der fachlichen Anforderungen durchgeführt werden. Entitäten, die sich in der 1.
+            oder der 2. Normalform befinden, sollten auf keinen Fall einer Denormalisierung unterzogen werden. Für die
+            3. Normalform kann hingegen einer Denormalisierung sinnvoll sein. Dies hängt von den konkreten Anforderungen
+            ab.
+        </p>
+        <p>
+            Eine Motivation, ein Datenmodell zu denormalisieren, besteht darin, die Leistungsfähigkeit von Abfragen zu
+            erhöhen.
+        </p>
 
         <chapter title="Denormalisierung in der 1. Normalform" id="denormalisierung-erste-normalform">
+            <p>
+                Die 1. Normalform fordert, dass eine Entität atomar aufgebaut ist. Attribute einer Entität dürfen also
+                nicht mehr teilbar sein. Auch wird in der ersten Normalform gefordert, dass keine Mehrwertigkeit
+                besteht. Nachteile einer Tabelle, die diesen Anforderungen nicht genügen, sind immens. Die Wichtigste
+                ist, dass Einfüge-, Änderungs- und Löschanomalien auftreten, die direkt aus der Nichteinhaltung der
+                ersten Normalform erwachsen.
+            </p>
         </chapter>
 
         <chapter title="Denormalisierung in der 2. Normalform" id="denormalisierung-zweite-normalform">
+            <p>
+                Die 2. Normalform fordert, dass ein Attribut ausschließlich von einem Gesamtschlüssel und nicht bloß von
+                einem Teil eines Gesamtschlüssels abhängig ist. Die Auswirkungen der Rückführung der 2. Normalform sind
+                in unserem Ausgangsbeispiel, dass sämtliche Informationen, die zum Auszubildenden gespeichert werden,
+                mehrfach vorhanden sind - sie sind also redundant vorhanden. Daher treten auch hier Anomalien auf, wenn
+                wir Einfüge-, Änderungs- und Löschoperationen durchführen. So müssen Sie beispielsweise eine komplette
+                Zeile löschen, wenn Sie eine Adresse eines Auszubildenden mit mehreren Wohnorten entfernen möchten.
+                Diese Löschoperation umfasst dann auch den Auszubildenden selbst. Und was passiert, wenn einem
+                Auszubildenden nur ein Wohnort zugeordnet ist? in dem Fall kann die Adresse überhaupt nicht gelöscht
+                werden ohne den Auszubildenden, dem die Adresse zugeordnet ist, zu entfernen. Es ist daher also auch
+                nicht ratsam, die 2. Normalform zu denormalisieren.
+            </p>
         </chapter>
 
         <chapter title="Denormalisierung in der 3. Normalform" id="denormalisierung-dritte-normalform">
+            <p>
+                Die 3. Normalform fordert, dass kein Attribut transitiv von einem Schlüssel abhängig sein darf, uns
+                stellt so ebenfalls sicher, dass Redundanzen vermieden werden. Die Sicherstellung der 3. Normalform ist
+                nicht unbedingt erforderlich. Die transitive Abhängigkeit eines Attributs von einem
+                Nicht-Schlüsselattribut kann durchaus hingenommen werden, weil es die Komplexität eines Datenmodells
+                mindert. Hierbei wird also eine Schlüsselbeziehung zwischen zwei Tabellen gespart. Die Tabellen, deren
+                transitive Abhängigkeit nicht aufgelöst wurde, hat dann natürlich den Vorteil, dass zumindest in diesem
+                Fall keine Zeilen verbunden abgefragt werden müssen und somit die Abfrage schneller durchgeführt werden
+                kann. Auch hier kann es sinnvoll sein, eine Spalte einer Tabelle in der transitiven Abhängigkeit zu
+                belassen. Wenn es aus fachlicher Sicht erforderlich ist, ein redundanzfreies Datenmodell zu schaffen,
+                sollte die 3. Normalform umgesetzt werden. Hier kommt es also ganz auf die konkrete Aufgabenstellung an.
+            </p>
         </chapter>
     </chapter>
 
