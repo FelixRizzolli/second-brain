@@ -107,11 +107,119 @@
     </chapter>
 
     <chapter title="Die 1. Normalform" id="erste-normalform">
+        <p>
+            Eine Tabelle ist in der 1. Normalform, wenn die Attribute einer Entität atomar sind und keine mehrfach
+            vorkommenden Werte enthalten. Attribute sind atomar, wenn sie nicht mehr teilbar sind. Ein Attribut Person
+            ist z.B. in die Attribute Name, Vorname und Geburtsdatum teilbar. Eine weitere Voraussetzung ist die
+            Einwertigkeit der Attribute. Einwertigkeit bedeutet, dass ein Attribut jeweils nur ein Wert zulässig ist.
+        </p>
 
         <chapter title="Beispiel einer nicht atomaren Tabelle" id="erste-normalform-nichtatomar">
+            <table>
+                <tr>
+                    <td>ausid</td>
+                    <td>auszubildender</td>
+                    <td>adresse</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Müller Ralf</td>
+                    <td>Mondstraße 8, 50827, Köln</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Klein Sabine</td>
+                    <td>Sternstraße 10, 50127, Bonn</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Lang Peter</td>
+                    <td>Sonnenstraße 1, 50127, Bonn</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>August Frank</td>
+                    <td>Jupiterstraße 7, 50827, Köln</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Müller Ralf</td>
+                    <td>Marsstraße 87, 50827, Köln</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Klein Sabine</td>
+                    <td>Uranusstraße 36, 50127, Bonn</td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Beispiel einer atomaren Tabelle" id="erste-normalform-atomar">
+            <table>
+                <tr>
+                    <td>ausid</td>
+                    <td>name</td>
+                    <td>vorname</td>
+                    <td>strasse</td>
+                    <td>nr.</td>
+                    <td>plz</td>
+                    <td>ort</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Müller</td>
+                    <td>Ralf</td>
+                    <td>Mondstraße</td>
+                    <td>8</td>
+                    <td>50827</td>
+                    <td>Köln</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Klein</td>
+                    <td>Sabine</td>
+                    <td>Sternstraße</td>
+                    <td>10</td>
+                    <td>50127</td>
+                    <td>Bonn</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Lang</td>
+                    <td>Peter</td>
+                    <td>Sonnenstraße</td>
+                    <td>1</td>
+                    <td>50127</td>
+                    <td>Bonn</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>August</td>
+                    <td>Frank</td>
+                    <td>Jupiterstraße</td>
+                    <td>7</td>
+                    <td>50827</td>
+                    <td>Köln</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Müller</td>
+                    <td>Ralf</td>
+                    <td>Marsstraße</td>
+                    <td>87</td>
+                    <td>50827</td>
+                    <td>Köln</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Klein</td>
+                    <td>Sabine</td>
+                    <td>Uranusstraße</td>
+                    <td>36</td>
+                    <td>50827</td>
+                    <td>Köln</td>
+                </tr>
+            </table>
         </chapter>
     </chapter>
 
