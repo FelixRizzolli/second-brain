@@ -23,20 +23,31 @@
             MySQL, MS-SQL-Server und PostgreSQL mit jeweils der Einschränkung von 2 Datensätzen:
         </p>
 
-        <chapter title="Bei der MySQL-Datenbank wird die LIMIT-Klausel verwendet." id="unterschiede-mysql">
+        <chapter title="MySQL: LIMIT" id="unterschiede-mysql">
+            <p>
+                Bei der MySQL-Datenbank wird die LIMIT-Klausel verwendet.
+            </p>
+
             <code-block lang="sql">
                 SELECT name, vorname FROM mitarbeiter LIMIT 2;
             </code-block>
         </chapter>
 
-        <chapter title="Bei der MS-SQL-Server-Datenbank wird die TOP-Klausel verwendet." id="unterschiede-mssqlserver">
+        <chapter title="MS-SQL-Server: TOP-Klausel" id="unterschiede-mssqlserver">
+            <p>
+                Bei der MS-SQL-Server-Datenbank wird die TOP-Klausel verwendet.
+            </p>
+
             <code-block lang="sql">
                 SELECT TOP 2 name, vorname FROM mitarbeiter;
             </code-block>
         </chapter>
 
-        <chapter title="Bei der PostgreSQL-Datenbank wird Standardgemäß die FETCH-Klausel verwendet."
-                 id="unterschiede-postgresql">
+        <chapter title="PostgreSQL: FETCH-Klausel" id="unterschiede-postgresql">
+            <p>
+                Bei der PostgreSQL-Datenbank wird Standardgemäß die FETCH-Klausel verwendet.
+            </p>
+
             <code-block lang="sql">
                 SELECT name, vorname FROM mitarbeiter FETCH FIRST 2 ROWS ONLY;
             </code-block>
