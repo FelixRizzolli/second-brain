@@ -8,7 +8,12 @@
 
     <chapter title="Grundrechenarten" id="grundrechenarten">
         <p>
-
+            SQL bietet die Operatoren <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> und <code>%</code>
+            an, um Rechenoperationen durchzuführen. Berechnungen können an vielen Stellen durchgeführt werden,
+            beispielsweise: in der Spaltenauswahlliste, in einer <code>ORDER BY</code>-Klausel, in einer
+            <code>WHERE</code>-Klausel und anderen Orten einer <code>SELECT</code>-Anweisung. Für diese Operatoren
+            gelten die allgemein bekannten mathematischen Vorrangregeln. Wie in der Mathematik kann auch hier der
+            Vorrang der Rechenoperationen durch Klammersetzung verändert werden.
         </p>
 
         <table>
