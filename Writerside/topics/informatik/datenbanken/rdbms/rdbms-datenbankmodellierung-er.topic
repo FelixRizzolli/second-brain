@@ -36,7 +36,18 @@
     </chapter>
 
     <chapter title="Grundlagen" id="grundlagen">
-
+        <p>
+            Das ER-Modell (Entity-Relationship-Modell) wurde von Peter Chan Mitte der siebziger Jahre vorgestellt und
+            dient bis heute noch als praktisches Modell um Informationsstrukturen modellhaft abzubilden. Das Wort
+            <b>Entity</b> (deutsch: Entität) heißt so viel wie Objekt oder Ding, das real existiert. <b>Relationship</b>
+            lässt sich als Beziehung übersetzen. Mit einem ER-Modell können Objekte mit deren Eigenschaften und die
+            Beziehungen der Objekte untereinander modellhaft abgebildet werden.
+        </p>
+        <p>
+            Ein Modell ist immer das Ergebnis eines Entwurfs und bildet ab, was in der Realität umgesetzt werden soll.
+            Ein Entwurf wiederum entwickelt sich aus einer Phase, in der wir die Dinge oder Objekte, die es
+            datentechnisch zu verwalten gilt, identifizieren und analysieren.
+        </p>
     </chapter>
 
     <chapter title="Entitäten" id="grundlagen-entitaeten">
