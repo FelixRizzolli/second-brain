@@ -105,6 +105,62 @@
         </table>
 
         <chapter title="Schlüsselattribute" id="grundlagen-attribute-key">
+            <p>
+                Das Schlüsselattribut ist jede Spalte, in der die Datenfelder gespeichert werden, welche einen Datensatz
+                eindeutig identifizierbar machen. Dieses Attribut wird beim Bezeichner am Anfang mit einer Raute
+                <code>#</code> gekennzeichnet.
+            </p>
+            <p>
+                Lässt sich kein Attribut finden, welches einen Datensatz eindeutig identifizierbar macht, so wird ein
+                hierfür meist eine <code>ID</code> in Form einer eindeutigen Nummer verwendet. Ein derartiges
+                Schlüsselattribut wird auch als künstlicher Schlüssel oder Surrogatschlüssel bezeichnet.
+            </p>
+            
+            <img src="datenbanken_rdbms_er_attribute_key.jpg" alt="ER - ATTRIBUT KEY"/>
+            
+            <table>
+                <tr>
+                    <td>ausid</td>
+                    <td>name</td>
+                    <td>vorname</td>
+                    <td>geburtsdatum</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Müller</td>
+                    <td>Ralf</td>
+                    <td>01.04.2001</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Klein</td>
+                    <td>Sabine</td>
+                    <td>10.05.2002</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Lang</td>
+                    <td>Peter</td>
+                    <td>11.03.2001</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Müller</td>
+                    <td>Ralf</td>
+                    <td>01.04.2001</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Klein</td>
+                    <td>Sabine</td>
+                    <td>20.05.2003</td>
+                </tr>
+            </table>
+
+            <p>
+                Somit sind auch die beiden auszubildenden Müller Ralf welche zufällig am selben Tag Geburtstag haben
+                eindeutig identifizierbar.
+            </p>
         </chapter>
 
         <chapter title="Wertebereiche für Attribute" id="grundlagen-attribute-wertebereiche">
