@@ -21,11 +21,14 @@ Für jedes Hauptthema gibt es ein eigenes GitHub Projekt. Diesem Projekt werden 
 | Sprachen | Wie lerne ich Sprachen?, Deutsch, Italienisch, Englisch | https://github.com/users/FelixRizzolli/projects/8 |
 | Mathematik | Analysis, Statistik, Diskrete Mathematik, ... | https://github.com/users/FelixRizzolli/projects/5 |
 
-## Issues
+## Items & Issues
 
-Ein Issue ist hier meistens nur eine Informationsquelle, die zusammengefasst ins SecondBrain übertragen werden soll. 
+Ein GitHub Projekt Item ist meistens nur eine Informationsquelle, die mein interesse geweckt hat, und welche ich als 
+relevant genug empfinde, sie zusammengefasst ins SecondBrain zu übertragen. Vor deren Zusammenfassung analysiere ich das 
+Item, breche es auf mehrere Unteraufgaben herunter und füge diese mit weiteren Details in ein daraus entstehenden
+GitHub Issue ein. 
 
-### Issue Titel Standard
+### Item Titel Standard
 
 Struktur:
 
@@ -40,6 +43,47 @@ Beispiele:
 `(VIDEO) https://www.youtube.com/watch?v=r6tH55syq0o, "How programmers flex on each other", Fireship`
 
 `(PODCAST) https://www.ardaudiothek.de/episode/quarks-science-cops/die-akte-wuenschelrute-gefaehrliche-wasseradern-und-erdstrahlen/wdr/12551419/, "Die Akte Wünschelrute: Gefährliche Wasseradern und Erdstrahlen?"`
+
+### Issue
+
+#### Titel
+
+| Quellentyp | Titelzusammensetzung                   |
+|------------|----------------------------------------|
+| Buch       | Buchtitel, Buchautoren mit & Separiert |
+| Video      | Videotitel, Kanal                      |
+| Podcast    | Podcasttitel, Kanal                    |
+| Webseite   | Webseitentitel (Webseitendomäne)       |
+
+#### Beschreibung
+
+Die Beschreibung wird aufgeteilt auf "Details" und "Inhaltsverzeichnis / Aufgaben". Beim Inhaltsverzeichnis wird das 
+Issue auf mehreren kleineren Aufgaben heruntergebrochen. Die Details bestehen abhängig vom Quellentyp aus 
+unterschiedlichen informationen; nur der Inhaltstyp ist bei allen gegeben.
+
+ - **BUCH**
+   - ISBN
+   - Titel
+   - Autor
+   - Erscheinungsdatum
+   - Seiten
+ - **VIDEO**
+   - Link
+   - Titel
+   - Kanal
+   - Erscheinungsdatum
+   - Dauer
+ - **PODCAST**
+   - Link
+   - Titel
+   - Kanal
+   - Erscheinungsdatum
+   - Dauer
+ - **WEBSEITE**
+   - Link
+   - Titel
+   - Domäne
+   - Erscheinungsdatum
 
 ## Seitenaufbau
 
