@@ -50,10 +50,10 @@ Beispiele:
 
 | Quellentyp | Titelzusammensetzung                   |
 |------------|----------------------------------------|
-| Buch       | Buchtitel, Buchautoren mit & Separiert |
-| Video      | Videotitel, Kanal                      |
-| Podcast    | Podcasttitel, Kanal                    |
-| Webseite   | Webseitentitel (Webseitendomäne)       |
+| Buch       | "Buchtitel", Buchautoren mit & Separiert |
+| Video      | "Videotitel", Kanal                      |
+| Podcast    | "Podcasttitel", Kanal                    |
+| Webseite   | "Webseitentitel" (Webseitendomäne)       |
 
 #### Beschreibung
 
@@ -65,25 +65,25 @@ unterschiedlichen informationen; nur der Inhaltstyp ist bei allen gegeben.
    - ISBN
    - Titel
    - Autor
-   - Erscheinungsdatum
+   - Erscheinungsdatum (JJJJ-MM-TT)
    - Seiten
  - **VIDEO**
    - Link
    - Titel
    - Kanal
-   - Erscheinungsdatum
+   - Erscheinungsdatum (JJJJ-MM-TT)
    - Dauer
  - **PODCAST**
    - Link
    - Titel
    - Kanal
-   - Erscheinungsdatum
+   - Erscheinungsdatum (JJJJ-MM-TT)
    - Dauer
  - **WEBSEITE**
    - Link
    - Titel
    - Domäne
-   - Erscheinungsdatum
+   - Erscheinungsdatum (JJJJ-MM-TT)
 
 ## Seitenaufbau
 
