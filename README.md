@@ -65,7 +65,7 @@ unterschiedlichen informationen; nur der Inhaltstyp ist bei allen gegeben.
    - ISBN
    - Titel
    - Autor
-   - Erscheinungsdatum (JJJJ-MM-TT)
+   - Erscheinungsjahr (JJJJ)
    - Seiten
  - **VIDEO**
    - Link
