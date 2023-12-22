@@ -6,6 +6,40 @@
        title="Internationalisierung" id="swe-pk-internationalisierung">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlegendes" id="grundlegendes">
+        <p>
+            Sobald eine Anwendung mehrsprachig sein soll, ist eine Internationalisierung (kurz i18n für das i und das
+            letzte n sowie die dazwischen liegenden 18 Buchstaben in dem englischen Wort internationalization)
+            ebensolcher unumgänglich. Die Idee dabei ist, eine Anwendung so zu strukturieren, dass sie ohne großen
+            Aufwand an verschiedene Sprachen (oder noch allgemeiner: an verschiedene Regionen) angepasst werden kann.
+        </p>
+        <p>
+            In der Regel sind die Textinhalte einer Anwendung dabei für jede Sprache (bzw. für jedes Locale, dazu gleich
+            mehr) jeweils in einer separaten Datei enthalten und werden dann je nach Nutzereinstellungen bzw.
+            Spracheinstellungen geladen. Dies ist vom Prinzip her innerhalb einer Anwendung relativ einfach zu
+            implementieren, wenn man beispielsweise Templating-Engines verwendet, die die einzelnen Textbausteine aus
+            diesen »Wörterbuchdateien« beziehen.
+        </p>
+        <p>
+            Etwas komplexer ist da schon die Handhabung verschiedener Konventionen, was die Formatierung von
+            Zahlenwerten, Datums- und Zeitangaben oder den Vergleich von Zeichenketten angeht. In Deutschland steht bei
+            Datumsangaben bekanntermaßen zuerst der Tag, dann der Monat, dann das Jahr, jeweils mit Punkten voneinander
+            getrennt (z. B. 12.08.2017). In den USA dagegen steht der Monatsname an erster Position, gefolgt von Tag und
+            Jahr, wobei das Slash-Symbol als Trennzeichen verwendet wird (z. B. 08/12/2017). In Großbritannien ist es
+            dagegen von der Anordnung her wie in Deutschland, allerdings wird hier wie bei der amerikanischen
+            Schreibweise das Slash-Symbol als Trennzeichen verwendet: 12/08/2017.
+        </p>
+        <p>
+            Bei Zahlenwerten oder Währungsangaben sieht es ähnlich aus. Während in Deutschland als Tausendertrennzeichen
+            der Punkt verwendet wird, als Trennzeichen der Nachkommastellen das Komma und das Währungssymbol hinter dem
+            Zahlenwert steht (beispielsweise 123.456,79 €), ist es in den USA genau »andersrum«: Als
+            Tausendertrennzeichen wird hier das Komma verwendet, als Nachkommatrennzeichen der Punkt, und das
+            Währungssymbol steht vor dem Zahlenwert (beispielsweise € 123,456.79). Und in anderen Teilen der Welt sieht
+            es wiederum anders aus. Da kann es verständlicherweise schnell zu Verwirrung kommen, wenn man diese ganzen
+            Regeln selbst beachten und implementieren müsste.
+        </p>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
