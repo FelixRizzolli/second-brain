@@ -6,4 +6,16 @@
        title="Softwareentwicklungsprozesse" id="swe-prozesse">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <p>
+        Softwareprojekte werden heute professional geplant und durchgeführt. Im Laufe der Zeit hat sich die Art und
+        Weise der Durchführung stetig weiterentwickelt. Ein iteratives und agiles Vorgehen ist heute alternativlos.
+    </p>
+
+    <p>
+        Software als Produkt und als Projekt ist äußerst dynamisch, z.B. sind die maßgeblichen Anforderungen zu
+        Projektbeginn meist nicht vollständig erfassbar. Änderungswünsche an den Anforderungen während einer
+        Projektdurchführung bilden nicht die Ausnahme, sondern vielmehr den Regelfall. Um diesem Anspruch näherzukommen,
+        haben sich die Vorgehensweisen bei professioneller Softwareentwicklung stetig verändert und weiterentwickelt.
+        Dabei begann alles mit dem <a href="swe-prozesse-wasserfallmodell.topic">Wasserfallmodell</a>.
+    </p>
 </topic>
