@@ -16,7 +16,7 @@
 
         <primary>
             <title>Kategorien</title>
-            <a href="softwareentwicklung.topic"
+            <a href="swe.topic"
                description="Softwareentwicklung"
                summary="..."
                type="navigation" />

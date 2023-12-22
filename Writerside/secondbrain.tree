@@ -15,7 +15,24 @@
             <toc-element topic="jcl.topic"/>
             <toc-element topic="cobol.topic"/>
         </toc-element>
-        <toc-element topic="softwareentwicklung.topic">
+        <toc-element topic="swe.topic">
+            <toc-element topic="swe-spp.topic"/>
+            <toc-element topic="swe-prozesse.topic">
+                <toc-element topic="swe-prozesse-agil.topic"/>
+                <toc-element topic="swe-prozesse-scrum.topic"/>
+                <toc-element topic="swe-prozesse-iterativ.topic"/>
+                <toc-element topic="swe-prozesse-wasserfallmodell.topic"/>
+                <toc-element topic="swe-prozesse-vmodell.topic"/>
+                <toc-element topic="swe-prozesse-spiralmodell.topic"/>
+            </toc-element>
+            <toc-element topic="swe-pm.topic"/>
+            <toc-element topic="swe-pk.topic"/>
+            <toc-element topic="swe-cleancode.topic"/>
+            <toc-element topic="swe-vcs.topic">
+                <toc-element topic="swe-vcs-git.topic"/>
+                <toc-element topic="swe-vcs-cvs.topic"/>
+                <toc-element topic="swe-vcs-svn.topic"/>
+            </toc-element>
             <toc-element topic="swe-uml.topic"/>
         </toc-element>
         <toc-element topic="webentwicklung.topic">
