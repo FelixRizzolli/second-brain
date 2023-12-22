@@ -6,6 +6,35 @@
        title="Algorithmen" id="swe-pk-algorithmen">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einleitung" id="einleitung">
+
+    </chapter>
+
+    <chapter title="Algorithmen als Kernelemente des Programms" id="programm">
+
+        <chapter title="Bedingungen für Algorithmen" id="programm-bedingungen">
+
+        </chapter>
+
+        <chapter title="Wichtige Klassen von Algorithmen" id="programm-klassen">
+
+        </chapter>
+
+        <chapter title="Komplexität von Algorithmen" id="programm-komplexitaet">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="Entwurf von Algorithmen" id="entwurf">
+
+        <chapter title="Vorgehensweise" id="entwurf-vorgehensweise">
+
+            <chapter title="Visualisieren des Ablaufs von Algorithmen" id="entwurf-vorgehensweise-visualisierung">
+
+            </chapter>
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
