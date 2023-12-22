@@ -16,7 +16,13 @@
             <toc-element topic="cobol.topic"/>
         </toc-element>
         <toc-element topic="swe.topic">
-            <toc-element topic="swe-spp.topic"/>
+            <toc-element topic="swe-spp.topic">
+                <toc-element topic="swe-spp-analyse.topic"/>
+                <toc-element topic="swe-spp-entwurf.topic"/>
+                <toc-element topic="swe-spp-implementierung.topic"/>
+                <toc-element topic="swe-spp-testen.topic"/>
+                <toc-element topic="swe-spp-distribution.topic"/>
+            </toc-element>
             <toc-element topic="swe-prozesse.topic">
                 <toc-element topic="swe-prozesse-bdd.topic"/>
                 <toc-element topic="swe-prozesse-kanban.topic"/>
