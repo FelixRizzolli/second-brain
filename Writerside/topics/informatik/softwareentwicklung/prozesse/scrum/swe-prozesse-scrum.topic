@@ -66,17 +66,42 @@
 
     <chapter title="Verstehen der Kompetenzen" id="kompetenzen">
         <chapter title="Das Scrum Framework verstehen und anwenden" id="kompetenzen-anwendung">
+            <p>
+                Das Verständnis und die Anwendung des Scrum-Frameworks ermöglicht es Teams und Organisationen, iterativ
+                und inkrementell wertvolle Produkte in Form von fertiger (eng. "Done"), funktionstüchtiger und
+                releasefähiger Software in 30 Tagen oder weniger zu liefern. Der erfolgreiche Einsatz des
+                Scrum-Frameworks erfordert das Verständnis und die Anwendung der Scrum-Werte und der Grundsätze der
+                Empirie, um der Organisation professionell einen Mehrwert zu liefern und gleichzeitig die inhärente
+                Komplexität der Produktlieferung zu bewältigen. Das Scrum-Framework besteht aus Scrum-Teams und den
+                damit verbundenen Rollen, Events und Artefakten. Jede dieser Komponenten innerhalb des Frameworks dient
+                einem bestimmten Zweck und ist für den Erfolg und die Anwendung von Scrum unerlässlich. Die Regeln von
+                Scrum verbinden die Rollen, Events und Artefakte miteinander und regeln die Beziehungen und
+                Interaktionen zwischen ihnen.
+            </p>
+            <p>
+                Im Falle der Skalierung und der skalierten Implementierungen von Scrum sind die Minimierung
+                teamübergreifender Abhängigkeiten und die Lösung von Integrationsproblemen einzigartige und kritische
+                Herausforderungen, wenn mehrere Scrum-Teams zusammenarbeiten, um ein Produkt zu liefern. Der
+                <a href="swe-prozesse-scrum-scrumguide.topic">Scrum Guide</a> ist das Wissensfundament für das
+                Scrum-Framework und der <a href="swe-prozesse-scrum-nexusguide.topic">Nexus Guide</a> baut auf diesem
+                Fundament auf und beschreibt ein Framework welches die Zusammenarbeit mehrerer Scrum Teams vereinfacht.
+            </p>
 
+            <p>Mehr zu diesem Thema: <a href="swe-prozesse-scrum-anwendung.topic">HIER</a></p>
         </chapter>
+
         <chapter title="Personen und Teams entwickeln" id="kompetenzen-teams">
 
         </chapter>
+
         <chapter title="Produkte mit Agilität managen" id="kompetenzen-managen">
 
         </chapter>
+
         <chapter title="Produkte professionell entwickeln und ausliefern" id="kompetenzen-entwickeln">
 
         </chapter>
+
         <chapter title="Eine agile Organisation entwickeln" id="kompetenzen-organisation">
 
         </chapter>
