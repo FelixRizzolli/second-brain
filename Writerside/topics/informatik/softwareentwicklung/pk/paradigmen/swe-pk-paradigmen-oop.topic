@@ -424,7 +424,74 @@
         </chapter>
 
         <chapter title="Abstraktion &amp; Generalisierung / Spezialisierung" id="konzepte-abstraktion">
+            <p>
+                Klassen oder Prototypen definieren in der objektorientierten Programmierung die Grundlage für mehrere
+                Objektinstanzen, die über einen ähnlichen Zustand und ein ähnliches Verhalten verfügen. Klassen und
+                Prototypen können demnach auch als Abstraktion (eng.: <emphasis>Abstraction</emphasis>) der (konkreten)
+                Objektinstanzen angesehen werden. In Klassen und Prototypen wird das abstrakte Verhalten definiert (das
+                allen Objektinstanzen gemeinsam ist) bzw. die Eigenschaften, die den Zustand repräsentieren (und
+                ebenfalls allen Objektinstanzen gemeinsam sind). In den Objektinstanzen werden dann die Eigenschaften
+                mit konkreten Werten belegt, und damit wird der konkrete Zustand definiert.
+            </p>
+
             <chapter title="Generalisierung / Spezialisierung" id="konzepte-abstraktion-generalisierung">
+                <p>
+                    Die Zuordnung von Attributen und Methoden zu Ober- und Unterklassen folgt dabei den Prinzipien von
+                    Generalisierung und Spezialisierung.
+                </p>
+
+                <img src="swe-pk-paradigmen-oop-generalisierung.png" alt="Konzepte: Generalisierung"/>
+
+                <p>
+                    Innerhalb einer Klassenhierarchie sollten Attribute und Methoden so weit wie möglich oben angeordnet
+                    werden: Wenn alle Unterklassen über ein bestimmtes Merkmal verfügen, dann sollte dieses in die
+                    Oberklasse angeordnet werden, und die Unterklassen übernehmen dieses Merkmal automatisch per
+                    Vererbung. Auf diese Weise braucht man bestimmte Sachverhalte nur einmal codieren, d. h., man
+                    vermeidet Wiederholungen und Fehleranfälligkeiten. Bitte beachten Sie ebenfalls, dass eine
+                    Klassenhierarchie über viele Ebenen gebildet werden kann, d. h., Attribute und Methoden können sich
+                    in diesem Fall über mehrere Ebenen vererben.
+                </p>
+                <p>
+                    Ebenso muss man bei der Erstellung einer eigenen Klassenbibliothek beachten, dass zwischen Ober- und
+                    Unterklassen auch wirklich ein inhaltlicher Zusammenhang besteht. Man sollte also nur da Objekte in
+                    eine Hierarchie bringen, wo es auch Sinn macht. Obwohl die Objekte <code>Hund</code> und
+                    <code>Tisch</code> beide über <code>Beine</code> verfügen, sollte man sie nicht als Unterklassen
+                    einer gemeinsamen Oberklasse mit dem Attribut <code>AnzahlBeine</code> bilden. Das ergibt inhaltlich
+                    wenig Sinn und verwirrt bei der Programmentwicklung.
+                </p>
+                <p>
+                    Die Klassenhierarchie sollte ein modellhaftes Abbild eines Realitätsausschnitts sein. Hier kommt ja 
+                    auch niemand auf die Idee, einen Hund und einen Tisch einer gemeinsamen Kategorie zuzuordnen.
+                </p>
+                
+                <chapter title="Weiteres Beispiel" id="konzepte-abstraktion-generalisierung-beispiel" 
+                         collapsible="true">
+                    <img src="swe-pk-paradigmen-oop-generalisierung-beispiel.png" 
+                         alt="Konzepte: Generalisierung Beispiel"/>
+                    
+                    <p>
+                        Das Beispiel stammt aus einem vektorbasierten Grafikprogramm. Hier können wir einige
+                        interessante Beobachtungen machen:
+                    </p>
+                    
+                    <list>
+                        <li>
+                            <b>Zweck</b>: Die Klassenhierarchie ordnet typische Zeichenobjekte der Ebene in eine
+                            mehrstufige Vererbungsbeziehung zueinander. Ein Beispiel: Die Klassen <code>Triangle</code>
+                            (Dreieck) und <code>Quadrangle</code> (Viereck) sind spezielle Klassen der abstrakten Klasse
+                            <code>nAngle</code> (Vieleck). Man kann also kein Objekt der Klasse <code>nAngle</code>
+                            erzeugen, aber durchaus ein Objekt der Klasse <code>Triangle</code>. Für die anderen Klassen
+                            gelten ähnliche Zusammenhänge.
+                        </li>
+                        <li>
+                            <b>Ober-/Unterklassen</b>: die oberste Basisklasse für die Zeichenobjekte ist die Klasse
+                            <code>Figure</code>. Sie ist ebenfalls abstrakt und leitet von einer weiteren Klasse,
+                            <code>BasicObject</code>, ab. Die Klasse <code>BasicObject</code> enthält alle essenziellen
+                            Methoden zum Zeichnen. Sie könnte weitere Unterklassen außer <code>Figure</code> haben, die
+                            hier nicht dargestellt werden.
+                        </li>
+                    </list>
+                </chapter>
             </chapter>
 
             <chapter title="Abstrakte Klassen" id="konzepte-abstraktion-abstrakteklassen">
