@@ -6,6 +6,40 @@
        title="Scrum" id="swe-prozesse-scrum">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Was ist Scrum?" id="scrum">
+
+    </chapter>
+
+    <chapter title="Scrum Guide" id="scrumguide">
+
+    </chapter>
+
+    <chapter title="Nexus Guide" id="nexusguide">
+
+    </chapter>
+
+    <chapter title="Verstehen der Kompetenzen" id="kompetenzen">
+        <chapter title="Das Scrum Framework verstehen und anwenden" id="kompetenzen-anwendung">
+
+        </chapter>
+        <chapter title="Personen und Teams entwickeln" id="kompetenzen-teams">
+
+        </chapter>
+        <chapter title="Produkte mit Agilität managen" id="kompetenzen-managen">
+
+        </chapter>
+        <chapter title="Produkte professionell entwickeln und ausliefern" id="kompetenzen-entwickeln">
+
+        </chapter>
+        <chapter title="Eine agile Organisation entwickeln" id="kompetenzen-organisation">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="Scrum Glossar" id="glossar">
+
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
