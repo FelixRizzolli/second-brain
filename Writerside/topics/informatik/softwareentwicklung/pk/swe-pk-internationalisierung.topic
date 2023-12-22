@@ -40,6 +40,90 @@
         </p>
     </chapter>
 
+    <chapter title="Begriffsdefinitionen" id="begriffsdefinitionen">
+        <p>
+            Das Festlegen von Sprache bzw. einer Region, in der eine bestimmte Sprache gesprochen wird, geschieht über
+            sogenannte <b>Locales</b>. Laut Wikipedia handelt es sich dabei um einen »Einstellungssatz, der die
+            Gebietsschemaparameter (Standortparameter) für Computerprogramme enthält«, oder, anders gesagt, um einen
+            Identifier (auch Language Tag genannt), der genau definiert, welche Sprache verwendet werden soll und
+            demnach wie Zahlenwerte, Datums- und Zeitangaben formatiert und Zeichenketten verglichen werden sollen.
+        </p>
+        <p>
+            Der Aufbau eines <b>Language Tags</b> ist im IETF-Dokument BCP47 (
+            <a href="https://tools.ietf.org/html/bcp47">
+                https://tools.ietf.org/html/bcp47
+            </a>
+            ) spezifiziert: Generell besteht ein Language Tag aus durch Minuszeichen getrennte Buchstaben- und
+            Zahlenkombinationen (diese Kombinationen werden auch Sub Tags genannt).
+        </p>
+        <p>
+            Das erste <b>Sub Tag</b> ist das Language Sub Tag, welches entweder einen aus zwei Zeichen bestehenden Code
+            aus dem ISO-Standard 639-1 (
+            <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">
+                https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+            </a>
+            ) enthalten darf oder einen aus drei Zeichen bestehenden Code aus den ISO-Standards 639-2 (
+            <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes">
+                https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes
+            </a>
+            ), 639-3 (
+            <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-3_codes">
+                https://en.wikipedia.org/wiki/List_of_ISO_639-3_codes
+            </a>
+            ) und 639-5 (
+            <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-5_codes">
+                https://en.wikipedia.org/wiki/List_of_ISO_639-5_codes
+            </a>
+            ). Das Locale für Deutsch lautet beispielsweise <code>de</code>, das für Englisch <code>en</code>, das für
+            Italienisch <code>it</code> usw.
+        </p>
+        <p>
+            Alle weiteren Sub Tags sind optional und dienen dazu, die Sprache weiter einzugrenzen. Über das
+            <b>Region Sub Tag</b> lässt sich beispielsweise das Land bzw. die Region definieren, in der die Sprache
+            gesprochen wird: Das Locale <code>de-DE</code> beispielsweise definiert Deutsch, wie es in Deutschland
+            gesprochen wird, das Locale <code>de-AT</code> dagegen, wie es in Österreich gesprochen wird, das Locale
+            <code>en-US</code> definiert Englisch, wie es in den USA gesprochen wird, und das Locale <code>en-UK</code>
+            Englisch, wie es in Großbritannien gesprochen wird.
+        </p>
+        <p>
+            Über das sogenannte <b>Script Sub Tag</b> ist es zudem möglich, das zu verwendende Schriftsystem zu
+            definieren. Für viele Sprachen – wie beispielsweise Englisch – ist dies zwar überflüssig, weil hier nur ein
+            Schriftsystem verwendet werden kann. Allerdings gibt es auch Sprachen wie Chinesisch, die verschiedene
+            Schriftsysteme erlauben. Mögliche Werte für das Script Sub Tag sind in ISO 15924 definiert (
+            <a href="https://de.wikipedia.org/wiki/ISO_15924">
+                https://de.wikipedia.org/wiki/ISO_15924
+            </a>
+            ). Das Locale <code>de-Latn</code> definiert beispielsweise Deutsch in lateinischer Schrift, das Locale
+            <code>de-Latf</code> dagegen Deutsch in Fraktur, das Locale <code>zh-Hans</code> definiert Chinesisch in
+            vereinfachter Schrift und das Locale <code>zh-Hant</code> Chinesisch in traditioneller Schrift.
+        </p>
+        <p>
+            Über das <b>Variant Sub Tag</b> ist es darüber hinaus möglich, bestimmte Varianten einer Sprache zu
+            definieren. Beispielsweise repräsentiert das Locale <code>de-CH-1996</code> die Sprache Deutsch in der
+            Schweiz nach der Rechtschreibreform von 1996.
+        </p>
+        <p>
+            Über sogenannte <b>Extension Sub Tags</b> lassen sich Locale-Definitionen nahezu beliebig erweitern. Für
+            JavaScript ist in diesem Zusammenhang die in RFC 6067 definierte »BCP 47 Extension U« (
+            <a href="https://tools.ietf.org/html/rfc6067">
+                https://tools.ietf.org/html/rfc6067
+            </a>
+            ) von Bedeutung. Den Namen hat die Erweiterung aufgrund des Zeichens <code>u</code>, welches bei der
+            Definition eines Extension Sub Tags vorangestellt wird, gefolgt von einem Schlüssel und einem Wert. Das
+            Locale <code>de-DE-u-co-phonebk</code> beispielsweise definiert die Sprache Deutsch, gesprochen in
+            Deutschland, wobei als Sortierreihenfolge (<code>co</code> für collation) die Sortierung wie im deutschen
+            Telefonbuch (<code>phonebk</code> als Abkürzung für <emphasis>phonebook</emphasis>) verwendet wird.
+        </p>
+        <p>
+            Weitere Möglichkeiten, die sich über die »BCP 47 Extension U« ergeben, sind die Definition des zu
+            verwendenden Kalenders (über den Schlüssel <code>ca</code> für <emphasis>calender</emphasis>, also
+            beispielsweise <code>de-DE-u-ca-buddhist</code>), der zu verwendenden Währung (über den Schlüssel
+            <code>cu</code> für <emphasis>currency</emphasis>), des zu verwendenden Zahlensystems (über den Schlüssel
+            <code>nu</code> für <emphasis>numeric system</emphasis>) und der zu verwendenden Zeitzone (über den
+            Schlüssel <code>tz</code> für <emphasis>timezone</emphasis>).
+        </p>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
