@@ -144,8 +144,23 @@
             <p>Mehr dazu: <a href="swe-spp-testen.topic">HIER</a></p>
         </chapter>
 
-        <chapter title="5. Betrieb und Wartung" id="modell-wartung">
+        <chapter title="5. Betrieb und Wartung" id="modell-distribution">
+            <p>
+                Je nach Komplexität, Umfang und Art des Anwendungssystems gestaltet sich der Prozess der
+                <b>Inbetriebnahme</b> unterschiedlich aufwendig. So können klassische Client-Server-Applikationen
+                durchaus Installations- und Konfigurationsarbeiten in beachtlichem Umfang erfordern. Andererseits kann
+                dieser Schritt sich bei Web-Anwendungen auch lediglich auf die Installation auf einem Server
+                beschränken, während es auf Clientseite genügt, dass ein Browser vorhanden ist.
+            </p>
+            <p>
+                Welche Tätigkeiten zur <b>Wartungsphase</b> gehören, darüber kann man streiten. Nahezu unstrittig ist
+                es, dass das Korrigieren von bisher unentdeckt gebliebenen Fehlern in dieser Phase erledigt werden muss.
+                Dagegen ist es eine Frage der Definition und der vertraglichen Bestimmungen, inwieweit
+                Programmanpassungen zur Wartungsphase gehören oder Änderungswünsche den gesamten Entwicklungszyklus
+                erneut auslösen.
+            </p>
 
+            <p>Mehr dazu: <a href="swe-spp-distribution.topic">HIER</a></p>
         </chapter>
     </chapter>
 
