@@ -48,13 +48,13 @@
                     <li>Zulassungsjahr</li>
                 </list>
 
-                <p>
+                <note>
                     Es gibt weitere Attribute, die uns aber bei der Abbildung als Modell für eine Software nicht
                     interessieren. Soll beispielsweise eine Verwaltung für den Fuhrpark eines Unternehmens programmiert
                     werden, so müssen die dafür relevanten Eigenschaften der Fahrzeuge erfasst werden. Dies könnten die
                     eben genannten Attribute sein. Nicht von Interesse für die Software ist dagegen, ob das Auto eine
                     schöne Fußmatte hat und ob im Handschuhfach eine Beleuchtung eingebaut ist.
-                </p>
+                </note>
 
                 <chapter title="Attribute" id="grundlagen-objekte-eigenschaften-attribute">
                     <p>
@@ -97,11 +97,11 @@
                     <li><code>FahrtenbuchAnalysieren</code>.</li>
                 </list>
 
-                <p>
+                <note>
                     Natürlich verfügt das reale Objekt über viel mehr Funktionalität. Ein Automobil kann beispielsweise
                     beschleunigen und bremsen. In der Software bilden wir jedoch nur die interessierenden Methoden ab,
                     denn die Software ist ein stark vereinfachtes Modell der Wirklichkeit.
-                </p>
+                </note>
 
                 <chapter title="Getter und Setter" id="grundlagen-objekte-methoden-gettersetter">
                     <p>
@@ -299,10 +299,10 @@
     <chapter title="Wesentliche Konzepte der objektorientierten Programmierung" id="konzepte">
         <img src="swe-pk-paradigmen-oop-konzepte.png" alt="Konzepte"/>
 
-        <p>
+        <warning>
             Nicht jedes Prinzip wird in gleicher Art und Weise von jeder Programmiersprache umgesetzt. Hier gibt es
             Abweichungen und unterschiedliche Herangehensweisen.
-        </p>
+        </warning>
 
         <chapter title="Kapselung" id="konzepte-kapselung">
             <p>
@@ -416,11 +416,11 @@
                 <code>Hybridauto</code> die Methoden <code>BenzinTanken</code> und <code>StromLaden</code> hinzugefügt.
                 Wie gesagt, auch diese Klasse kennt die Methoden bremsen und <code>beschleunigen</code>.
             </p>
-            <p>
+            <warning>
                 Die Vererbung von Klassen bzw. Objekten repräsentiert eine Ist-ein-Beziehung: Eine Instanz von
                 Elektroauto ist auch gleichzeitig eine Instanz von Fahrzeug. Umgekehrt gilt dies allerdings nicht: Eine
                 Instanz von Fahrzeug ist nicht zwangsläufig eine Instanz von Elektroauto.
-            </p>
+            </warning>
         </chapter>
 
         <chapter title="Abstraktion &amp; Generalisierung / Spezialisierung" id="konzepte-abstraktion">
@@ -459,10 +459,10 @@
                     einer gemeinsamen Oberklasse mit dem Attribut <code>AnzahlBeine</code> bilden. Das ergibt inhaltlich
                     wenig Sinn und verwirrt bei der Programmentwicklung.
                 </p>
-                <p>
+                <warning>
                     Die Klassenhierarchie sollte ein modellhaftes Abbild eines Realitätsausschnitts sein. Hier kommt ja 
                     auch niemand auf die Idee, einen Hund und einen Tisch einer gemeinsamen Kategorie zuzuordnen.
-                </p>
+                </warning>
                 
                 <chapter title="Weiteres Beispiel" id="konzepte-abstraktion-generalisierung-beispiel" 
                          collapsible="true">
@@ -539,9 +539,9 @@
                 die Unterklassen dient. Sie enthält keinen Code. Erbt eine Klasse von einer Klasse welche eine abstrakte
                 Methode definiert hat, so zwingt der Compiler die Unterklasse jene Methode zu implementieren.
             </p>
-            <p>
+            <note>
                 Objektinstanzen einer Unterklasse können wie Objektinstanzen der jeweiligen Oberklasse behandelt werden.
-            </p>
+            </note>
 
             <chapter title="Beispiel" id="konzepte-polymorphismus-beispiel">
                 <img src="swe-pk-paradigmen-oop-polymorphismus.png" alt="Konzepte: Polymorphismus"/>
