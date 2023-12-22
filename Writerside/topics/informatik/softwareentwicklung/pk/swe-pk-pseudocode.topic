@@ -6,6 +6,36 @@
        title="Pseudocode" id="swe-pk-pseudocode">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Definition" id="definition">
+        <p>
+            Bei Pseudocode handelt sich um eine Mischung aus natürlicher Sprache und einer höheren Programmiersprache.
+            Die Beschreibung des Algorithmus gelingt exakter als bei ausschließlicher Verwendung einer natürlichen
+            Sprache, jedoch ist man nicht an alle Zwänge der endgültigen Programmiersprache gebunden. Die technischen
+            Facetten rücken in den Hintergrund. Der Fokus liegt auf dem Fachkonzept. Pseudocode stellt auch ein Mittel
+            der Kommunikation zwischen dem Fachexperten und dem Programmierer dar. Ebenfalls bietet sich die
+            Möglichkeit, den Übergang von der natürlichen Sprache zum Programmcode schrittweise auszugestalten, was
+            insbesondere bei hoher Komplexität hilfreich ist. Pseudocode sollte selbsterklärend und auch ohne exakte
+            Kenntnis einer Programmiersprache verstanden werden. Andererseits sollte es leicht möglich sein, anhand des
+            Pseudocodes direkt die Implementierung vorzunehmen. Damit kann Pseudocode als die eigentliche »Sprache« für
+            die Entwicklung von Algorithmen angesehen werden. Bei der Verwendung bedient man sich bekannter
+            Schlüsselwörter und Konzepte, die Bestandteil vieler moderner Programmiersprachen sind. Dies sind zum
+            Beispiel:
+        </p>
+
+        <list>
+            <li>Modulelemente wie Programmnamen und Klassennamen</li>
+            <li>Fallunterscheidungen wie if...then...else oder switch...case</li>
+            <li>Funktionsaufrufe</li>
+            <li>Schleifen wie repeat...until, while...do und do...while</li>
+            <li>Kommentare</li>
+            <li>...</li>
+        </list>
+
+        <p>
+            Zu beachten ist, dass eine eindeutige Vorgabe zur Symbolik nicht existiert. Meist orientiert man sich an der
+            Zielsprache, was jedoch zulasten der allgemeinen Verständlichkeit gehen kann.
+        </p>
+    </chapter>
 
     <chapter title="Quellen" id="quellen">
         <tip>
