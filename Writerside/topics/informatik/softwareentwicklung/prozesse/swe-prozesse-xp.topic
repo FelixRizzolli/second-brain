@@ -6,4 +6,10 @@
        title="Extreme Programming" id="swe-prozesse-xp">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018
+        </tip>
+    </chapter>
 </topic>
