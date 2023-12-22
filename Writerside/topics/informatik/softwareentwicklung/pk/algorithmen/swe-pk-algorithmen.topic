@@ -95,7 +95,123 @@
         </chapter>
 
         <chapter title="Komplexität von Algorithmen" id="programm-komplexitaet">
+            <p>
+                Deutlich schärfer sind Algorithmen im Hinblick auf ihre Komplexität voneinander abzugrenzen. Meist
+                besitzen die Verfahren einen Hauptparameter <code>N</code>, der die Laufzeit des Algorithmus am
+                stärksten beeinflusst. <code>N</code> kann zum Beispiel die Größe einer zu sortierenden oder zu
+                durchsuchenden Datenmenge oder die Anzahl der Knoten eines Graphen sein. Die Laufzeit des Algorithmus
+                wird dann in Abhängigkeit zu diesem Parameter N gemessen. Dabei unterscheidet man u. a. die folgenden
+                Klassen:
+            </p>
 
+            <list>
+                <li>
+                    <code>1</code>: Die Laufzeit des Algorithmus ist konstant und damit unabhängig vom Parameter
+                    <code>N</code>. Mit anderen Worten: Egal wie groß der Hauptparameter des Problems ist, die Laufzeit
+                    des Algorithmus ist davon nicht abhängig.
+                </li>
+                <li>
+                    <code>lg N</code>: Wenn die Laufzeit eines Programms logarithmisch ist, wird das Programm mit größer
+                    werdendem <code>N</code> allmählich langsamer. Die Laufzeit vergrößert sich jedoch nicht so stark,
+                    wie der Hauptparameter des Problems zunimmt. Ein solcher Algorithmus kann also durchaus sehr große
+                    Probleme bearbeiten. Hinweis: Bei der Anwendung des Logarithmus wird stets von der Basis
+                    <code>2</code> ausgegangen.
+                </li>
+                <li>
+                    <code>N</code>: Die Laufzeit des Programms ist linear zur Größe des Hauptparameters <code>N</code>.
+                    Verdoppelt sich die Menge der zu verarbeitenden Daten (falls die Daten der Hauptparameter sind),
+                    dann dauert es auch doppelt so lange, bis ein Ergebnis bestimmt ist.
+                </li>
+                <li>
+                    <code>N lg N</code>: Die Laufzeit des Algorithmus verhält sich linear logarithmisch zur Größe des
+                    Hauptparameters <code>N</code>. Wenn <code>N</code> verdoppelt wird, dann wird die Laufzeit mehr als
+                    verdoppelt.
+                </li>
+                <li>
+                    <code>N^2</code>: Die Laufzeit verhält sich quadratisch zum Hauptparameter <code>N</code>. Ein
+                    typischer Fall ist die Verarbeitung von paarweisen Kombinationen von Datenelementen, zum Beispiel in
+                    einer doppelt verschachtelten Schleife.
+                </li>
+                <li>
+                    <code>2^N</code>: Die Laufzeit wächst exponentiell zur Größe des Hauptparameters <code>N</code>,
+                    d.h., wenn dieser auch nur geringfügig größer wird, dann muss der Algorithmus ein Vielfaches an
+                    Schritten bis zur Lösung durchlaufen.
+                </li>
+            </list>
+
+            <p>
+                Folgendes Beispiel zeigt, wie sich die Laufzeit eines Algorithmus bei einem Wachstum des Parameters
+                <code>N</code> in Abhängigkeit von der Klassenzugehörigkeit ändert.
+            </p>
+
+            <table style="both">
+                <tr>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>lg N</td>
+                    <td>N lg N</td>
+                    <td>N^2</td>
+                    <td>2^N</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>30</td>
+                    <td>100</td>
+                    <td>2^10</td>
+                </tr>
+                <tr>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>6</td>
+                    <td>600</td>
+                    <td>10.000</td>
+                    <td>2^100</td>
+                </tr>
+                <tr>
+                    <td>1.000</td>
+                    <td>1.000</td>
+                    <td>9</td>
+                    <td>9.000</td>
+                    <td>1.000.000</td>
+                    <td>2^1.000</td>
+                </tr>
+                <tr>
+                    <td>10.000</td>
+                    <td>10.000</td>
+                    <td>13</td>
+                    <td>130.000</td>
+                    <td>100.000.000</td>
+                    <td>2^10.000</td>
+                </tr>
+                <tr>
+                    <td>100.000</td>
+                    <td>100.000</td>
+                    <td>16</td>
+                    <td>1.600.000</td>
+                    <td>10^10</td>
+                    <td>2^100.000</td>
+                </tr>
+                <tr>
+                    <td>1.000.000</td>
+                    <td>1.000.000</td>
+                    <td>19</td>
+                    <td>19.000.000</td>
+                    <td>10^12</td>
+                    <td>2^1.000.000</td>
+                </tr>
+            </table>
+
+            <p>
+                Angenommen es besteht ein Problem mit Hauptparameter <code>N = 10.000</code> und es gehört zur
+                Komplexitätsklasse <code>N^2</code>, dann sind <code>10^8</code> Rechenschritte zur Lösung des Problems
+                notwendig.
+            </p>
+            <p>
+                Es kann also oftmals Sinn ergeben Zeit und Ressourcen in die Komplexitätsreduktion eines Algorithmus zu
+                investieren.
+            </p>
         </chapter>
     </chapter>
 
