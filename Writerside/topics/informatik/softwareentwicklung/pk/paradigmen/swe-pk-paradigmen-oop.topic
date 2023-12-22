@@ -656,6 +656,44 @@
         </chapter>
 
         <chapter title="Softwarekomponenten" id="wiederverwendung-komponenten">
+            <p>
+                Je nach Programmtyp und Vorgehensweise wird also bei der Erstellung eines neuen Projekts ein bestimmtes
+                Set an vorhandene Softwarekomponenten zur Nutzung direkt angebunden. Weitere Bibliotheken werden dann
+                während der Programmentwicklung durch den Softwareentwickler verwendet. Diese Softwarekomponenten können
+                vom Hersteller der Programmiersprache, von sogenannten Drittanbietern und aus eigenen früheren Projekten
+                stammen. Üblicherweise ist es so, dass ein Projekt letztendlich auf einen Großteil von bereits
+                vorhandenen Softwarekomponenten zugreifen kann. Nur die spezifische Funktionalität eines Programms wird
+                dann neu entwickelt. Tatsächlich ist es erst dadurch möglich, die immer weiter steigenden Anforderungen
+                an neue Software in Sachen Umfang und Komplexität zu bewältigen.
+            </p>
+
+            <chapter title="Beispiel (.NET-Framework)" id="wiederverwendung-komponenten-beispiel-dotnet">
+                <p>
+                    Ein sehr gutes Beispiel ist das .Net-Framework, das eine sehr umfassende Klassenbibliothek mit
+                    mehreren Tausend Klassen für ein sehr breites Anwendungsspektrum bereitstellt. Für nahezu alle
+                    möglichen Anwendungsszenarien finden sich bereits vorgefertigte Implementierungen, auf die bei der
+                    Programmierung der eigenen Anwendung dann zurückgegriffen werden kann.
+                </p>
+            </chapter>
+
+            <chapter title="Beispiel (Java)" id="wiederverwendung-komponenten-beispiel-java">
+                <img src="swe-pk-paradigmen-oop-komponenten-java.png" alt="Wiederverwendung: Java Komponenten"/>
+
+                <p>
+                    Ein weiteres Beispiel ist die Umsetzung von grafischen Benutzeroberflächen für
+                    Standardapplikationen. Diese bestehen aus typischen Elementen wie speziellen Buttons,
+                    Menü-Elementen, Textfeldern usw. Programmiert man in Java, so steht dem Entwickler auch hier eine
+                    umfassende Klassenbibliothek zur Verfügung. Selbstverständlich findet man online bei den Herstellern
+                    der Bibliotheken die entsprechenden Dokumentationen. Für einen ersten Überblick bzw. bei der
+                    späteren Verwendung ist es jedoch äußert hilfreich, sich die relevanten Zusammenhänge in einem
+                    vereinfachten Klassendiagramm anzusehen.
+                </p>
+                <p>
+                    Diese Grafik (rechts) zeigt einen solchen Ausschnitt für die Java-Klassenbibliothek zum Erstellen
+                    von grafischen Benutzeroberflächen. Anhand eines solchen Klassendiagramms kann man erkennen, wie die
+                    konkreten Klassen als Ober- und Unterklassen zusammenhängen.
+                </p>
+            </chapter>
         </chapter>
     </chapter>
 
