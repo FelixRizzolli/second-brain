@@ -130,7 +130,18 @@
         </chapter>
 
         <chapter title="4. Test" id="modell-test">
+            <p>
+                Nach Umsetzung der Systemanforderungen mithilfe der gewählten Programmiersprache liegt ein lauffähiges
+                Programm vor. Ziel der Testphase ist eine Überprüfung des Systems als Ganzes. Die einzelnen Einheiten
+                werden in das Gesamtsystem integriert und getestet.
+            </p>
 
+            <warning>
+                Es darf nie ein unfertiges Programm mit bekannten Fehlern an den Kunden ausgeliefert werden und dabei
+                darauf zu hoffen, dass die Fehler keiner entdeckt. Dies kann sich später rächen!
+            </warning>
+
+            <p>Mehr dazu: <a href="swe-spp-testen.topic">HIER</a></p>
         </chapter>
 
         <chapter title="5. Betrieb und Wartung" id="modell-wartung">
