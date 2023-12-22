@@ -570,5 +570,24 @@
             <b>(BUCH)</b>
             978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018
         </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-German-m%C3%A4nnlich-male-version.pdf"
+               ignore-vars="true">
+                https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-German-m%C3%A4nnlich-male-version.pdf
+            </a>, 2022-08-13 09:00
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.scrum.org/Resources/Scrum-Glossary" ignore-vars="true">
+                https://www.scrum.org/Resources/Scrum-Glossary
+            </a>, 2023-02-28 07:00
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.scrum.org/professional-scrum-competencies" ignore-vars="true">
+                https://www.scrum.org/professional-scrum-competencies
+            </a>, 2023-02-28 07:30
+        </tip>
     </chapter>
 </topic>
