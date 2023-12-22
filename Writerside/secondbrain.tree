@@ -21,7 +21,16 @@
                 <toc-element topic="swe-prozesse-bdd.topic"/>
                 <toc-element topic="swe-prozesse-kanban.topic"/>
                 <toc-element topic="swe-prozesse-xp.topic"/>
-                <toc-element topic="swe-prozesse-scrum.topic"/>
+                <toc-element topic="swe-prozesse-scrum.topic">
+                    <toc-element topic="swe-prozesse-scrum-scrumguide.topic"/>
+                    <toc-element topic="swe-prozesse-scrum-nexusguide.topic"/>
+                    <toc-element topic="swe-prozesse-scrum-ebmguide.topic"/>
+                    <toc-element topic="swe-prozesse-scrum-framework.topic"/>
+                    <toc-element topic="swe-prozesse-scrum-teams.topic"/>
+                    <toc-element topic="swe-prozesse-scrum-managen.topic"/>
+                    <toc-element topic="swe-prozesse-scrum-entwickeln.topic"/>
+                    <toc-element topic="swe-prozesse-scrum-organisation.topic"/>
+                </toc-element>
                 <toc-element topic="swe-prozesse-iterativ.topic"/>
                 <toc-element topic="swe-prozesse-wasserfallmodell.topic"/>
                 <toc-element topic="swe-prozesse-vmodell.topic"/>
