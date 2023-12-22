@@ -10,7 +10,25 @@
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
-            978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018
+            978-3836256971, "JavaScript - Das umfassende Handbuch", Philip Ackermann, 2018
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://de.wikipedia.org/wiki/Namenskonvention_(Datenverarbeitung)" ignore-vars="true">
+                https://de.wikipedia.org/wiki/Namenskonvention_(Datenverarbeitung)
+            </a>, 2023-03-27 08:45
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://en.wikipedia.org/wiki/Camel_case" ignore-vars="true">
+                https://en.wikipedia.org/wiki/Camel_case
+            </a>, 2023-03-27 09:15
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://en.wikipedia.org/wiki/Naming_convention_(programming)" ignore-vars="true">
+                https://en.wikipedia.org/wiki/Naming_convention_(programming)
+            </a>, 2023-03-27 09:15
         </tip>
     </chapter>
 </topic>
