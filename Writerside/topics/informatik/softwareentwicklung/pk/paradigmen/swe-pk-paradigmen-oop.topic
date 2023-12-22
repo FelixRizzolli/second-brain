@@ -7,6 +7,21 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlegendes" id="grundlagen">
+        <p>
+            Die objektorientierte Programmierung basiert darauf, Elemente der Software, in Anlehnung an die
+            Gegebenheiten der realen Welt, als Objekte aufzufassen. Solche Objekte verfügen über Eigenschaften, die sie
+            genauer charakterisieren. Ebenso können Objekte bestimmte Tätigkeiten ausführen. Objekte können miteinander
+            kommunizieren und in einer bestimmten Beziehung zueinander stehen. Beispielsweise weisen ähnliche Objekte
+            einen gleichen Bauplan auf.
+        </p>
+        <p>
+            Der konkrete Umgang mit der Objektorientierung ist von Programmiersprache zu Programmiersprache
+            unterschiedlich. Spätestens wenn ein konkretes Programm erstellt wird, wird man sich damit auseinandersetzen
+            müssen. Das Grundverständnis von Klassen und ihren Objekten bleibt jedoch stets identisch.
+        </p>
+
+        <img src="swe-pk-paradigmen-oop-meinauto.png" alt="OOP - Beispiel"/>
+
         <chapter title="Objekte" id="grundlagen-objekte">
             <chapter title="Eigenschaften" id="grundlagen-objekte-eigenschaften">
                 <chapter title="Attribute" id="grundlagen-objekte-eigenschaften-attribute">
@@ -79,7 +94,7 @@
     <chapter title="Wiederverwendung" id="wiederverwendung">
         <chapter title="Verwaltung der Bibliotheken" id="wiederverwendung-bibliotheken">
         </chapter>
-        
+
         <chapter title="Softwarekomponenten" id="wiederverwendung-komponenten">
         </chapter>
     </chapter>
