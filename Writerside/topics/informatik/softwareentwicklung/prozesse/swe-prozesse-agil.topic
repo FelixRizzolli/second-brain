@@ -38,6 +38,21 @@
             kann.
         </p>
     </chapter>
+    
+    <chapter title="Entwicklung Softwareentwicklungsprozesse" id="entwicklung">
+        <p>
+            In den 1980er und frühen 1990er Jahren wurde ein großer Wert auf sorgfältige Projektplanung und
+            formalisierte Qualitätssicherung gelegt. Die Entwicklung erfolgte oft in großen Teams. Im Ergebnis wurde oft
+            mehr Zeit für die Planung der Entwicklung aufgewendet als für die tatsächliche Programmentwicklung und die
+            nachfolgenden Tests. Trotz dieses sehr planvollen und stark phasengetriebenen Vorgehens waren die Ergebnisse
+            nicht immer zufriedenstellend. Zu viele Projekte scheiterten oder konnten die Anforderungen und Wünsche der
+            Kunden nicht erfüllen. Als Folge wurde erstmalig Mitte der 1990er Jahre von »agilen« Methoden gesprochen.
+            Das Ziel war schnell formuliert: Die Entwickler sollten sich verstärkt um ihren eigentlichen Job der
+            Programmentwicklung kümmern und nicht mehr so viel Zeit für Entwurf und Dokumentation aufwenden.
+        </p>
+
+        <img src="swe_prozesse_entwicklung.jpg" alt="Entwicklung Softwareentwicklungsprozesse"/>
+    </chapter>
 
     <chapter title="Quellen" id="quellen">
         <tip>
