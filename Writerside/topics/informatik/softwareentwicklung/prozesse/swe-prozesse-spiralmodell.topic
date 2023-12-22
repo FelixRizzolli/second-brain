@@ -26,7 +26,15 @@
         </chapter>
 
         <chapter title="2. Beurteilung von Alternativen bzw. Risikoanalyse" id="modell-alternativen">
-
+            <p>
+                Aus den gewonnenen Erkenntnissen können mehrere Lösungsalternativen abgeleitet werden. Letztendlich muss
+                man sich für eine der Optionen entscheiden, deshalb sind die zur Auswahl stehenden Optionen auf ihre
+                Einigung zu beurteilen und das Risiko jeder Alternative einzuschätzen.
+            </p>
+            <p>
+                Ein Hilfsmittel ist das Erstellen von Prototypen. So kann man anhand eines Prototyps schnell erkennen,
+                ob eine Desktop- oder eine Web-Anwendung besser geeignet ist.
+            </p>
         </chapter>
 
         <chapter title="3. Entwicklung und Test" id="modell-entwicklung">
