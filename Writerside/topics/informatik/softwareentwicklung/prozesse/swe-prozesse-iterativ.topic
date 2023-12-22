@@ -6,6 +6,31 @@
        title="Iterative Softwareentwicklungsprozesse" id="swe-prozesse-iterativ">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <p>
+        Statt zu versuchen, die ganze Anwendung wie beim Wasserfallmodell »in einem Rutsch« zu erstellen, werden ihre
+        Funktionen schrittweise erstellt. Dabei werden stets alle Schritte von der Analyse bis zu den Programmtests
+        durchlaufen. Eine neue Programmversion kann dabei sowohl das Funktionsspektrum erweitern oder anpassen als auch
+        festgestellte Fehler vorheriger Entwicklungen korrigieren. Meist handelt es sich um einen Mix aus beidem.
+    </p>
+    <p>
+        Mit dieser Vorgehensweise ist es möglich, die Software mithilfe von Updates stets an aktuelle Gegebenheiten
+        anzupassen. Die Wartezeit bis zur ersten lauffähigen Anwendung, auch wenn diese gegebenenfalls zunächst nur
+        Teilfunktionalität bietet, verkürzt sich. Dieser Punkt gewinnt zunehmend an Bedeutung, denn um im Markt bestehen
+        zu können, ist es notwendig, die sogenannte <b>Time-to-Market</b> zu verkürzen. Einzelne Produktversionen können
+        den Status von Meilensteinen einnehmen. Derartige Meilensteine können zum Beispiel größere funktionelle
+        Anpassungen beinhalten.
+    </p>
+    <p>
+        Mit dem iterativen Vorgehen ist man besser in der Lage auf Änderungswünsche der Kunden zu reagieren als mit dem
+        Wasserfallmodell.
+    </p>
+    <p>
+        Eine explizite Wartungsphase gibt es im iterativen Modell nicht. Äußert der Kunde Änderungswünsche oder sind aus
+        anderen Gründen Programmanpassungen notwendig, so wird einen vollständig neuer Entwicklungszyklus gestartet.
+    </p>
+
+    <img src="sew_prozesse_iterativ.jpg" alt="Iteratives Modell"/>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
