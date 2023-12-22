@@ -23,6 +23,17 @@
         <img src="swe-pk-paradigmen-oop-meinauto.png" alt="OOP - Beispiel"/>
 
         <chapter title="Objekte" id="grundlagen-objekte">
+            <p>
+                Objekte sind also konkrete Ausprägungen, eine Instanz, einer Klasse. Instanz könnte man übersetzen mit
+                »gehört zur Klasse«: Entsprechend muss ein Objekt instanziiert werden. Dabei können von einer Klasse in
+                der Regel beliebig viele Objekte, auch als Instanzen bezeichnet, erstellt werden. Die einzelnen Objekte
+                können sich also in den konkreten Werten der Attribute unterscheiden.
+            </p>
+            <p>
+                Zum Beispiel können die Objekte Toyota Avensis und VW Golf erstellt werden, welche beide die Klasse Auto
+                verwenden. Sie unterscheiden sich in den Eigenschaften.
+            </p>
+
             <chapter title="Eigenschaften" id="grundlagen-objekte-eigenschaften">
                 <chapter title="Attribute" id="grundlagen-objekte-eigenschaften-attribute">
                 </chapter>
