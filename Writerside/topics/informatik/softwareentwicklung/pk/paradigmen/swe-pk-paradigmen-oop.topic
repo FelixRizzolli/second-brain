@@ -154,6 +154,19 @@
             </chapter>
 
             <chapter title="Garbage Collector" id="grundlagen-objekte-garbagecollector">
+                <p>
+                    Nachdem ein Objekt einer Klasse durch einen Konstruktor erstellt wurde, wird es im Speicher
+                    vorgehalten. Es sollte mindestens so lange existieren, wie es noch benötigt wird. Das ist der Fall,
+                    wenn noch auf das Objekt zugegriffen wird. Da einzelne Objekte einen beachtlichen Speicherbedarf
+                    haben können, sollten nicht mehr benötigte Objekte wieder gelöscht werden.
+                </p>
+                <p>
+                    Je nach Programmiersprache ist man entweder als Entwickler selbst für das Löschen nicht mehr
+                    benötigter Objekte zuständig, oder das System erledigt dies automatisch. Ersteres ist aufwendig und
+                    fehleranfällig. Die zweite Variante ist komfortabel und befreit den Entwickler vor lästiger
+                    Routinearbeit. Das System der automatischen Speicherfreigabe für nicht mehr benötigte Objekte wird
+                    als <b>Garbage-Collection</b> bezeichnet.
+                </p>
             </chapter>
         </chapter>
 
