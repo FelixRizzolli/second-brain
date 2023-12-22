@@ -587,6 +587,43 @@
     </chapter>
 
     <chapter title="Wiederverwendung" id="wiederverwendung">
+        <p>
+            Die objektorientierte Programmierung fördert insbesondere den Ansatz der Wiederverwendung. Quellcode zur
+            Lösung allgemeiner Probleme kann und sollte für ähnliche Fragestellungen zur Verfügung gestellt werden. Dies
+            geschieht in Form von Klassenbibliotheken, die als Referenzen in Projekte eingebunden werden.
+        </p>
+        <p>
+            Bei der objektorientierten Programmierung führt es dann zu folgendem beschriebenen grundsätzlichen
+            Systemaufbau:
+        </p>
+
+        <img src="swe-pk-paradigmen-oop-wiederverwendung.png" alt="Konzepte: Wiederverwendung"/>
+
+        <p>
+            Ausgangsbasis ist die jeweilige Programmiersprache, die die Prinzipien der objektorientierten Programmierung
+            möglichst umfassend unterstützt. Die Software als Modell wird dann in Form einer Klassenbibliothek
+            umgesetzt. Dabei wäre es natürlich möglich, sämtliche Funktionalität vollständig neu zu implementieren. Das
+            wäre jedoch nicht sinnvoll und nicht effektiv. Viele Aufgaben der Programmentwicklung sind wiederkehrend.
+            Typische Beispiele sind:
+        </p>
+
+        <list>
+            <li>
+                Benutzeroberflächen bestehen in fast allen Programmen aus ähnlichen Komponenten wie Buttons, Labels oder
+                Textboxen.
+            </li>
+            <li>
+                Funktionen wie Dateioperationen oder Suchfunktionen werden immer wieder benötigt.
+            </li>
+        </list>
+
+        <p>
+            Es ergibt also Sinn, den Quellcode in einer wiederverwendbaren Form zu schreiben und in allgemein
+            zugänglichen Klassenbibliotheken abzulegen. Ein Programm nutzt dabei also eigene und vorhandene
+            Softwarekomponenten. Alle eigenen und fremden Softwarekomponenten werden dabei üblicherweise in einem
+            Projekt zusammengefasst.
+        </p>
+
         <chapter title="Verwaltung der Bibliotheken" id="wiederverwendung-bibliotheken">
         </chapter>
 
