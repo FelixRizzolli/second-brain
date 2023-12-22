@@ -43,7 +43,21 @@
                 <toc-element topic="swe-prozesse-spiralmodell.topic"/>
             </toc-element>
             <toc-element topic="swe-pm.topic"/>
-            <toc-element topic="swe-pk.topic"/>
+            <toc-element topic="swe-pk.topic">
+                <toc-element topic="swe-pk-paradigmen.topic">
+                    <toc-element topic="swe-pk-paradigmen-funktional.topic"/>
+                    <toc-element topic="swe-pk-paradigmen-oop.topic"/>
+                </toc-element>
+                <toc-element topic="swe-pk-richtlinien.topic"/>
+                <toc-element topic="swe-pk-algorithmen.topic"/>
+                <toc-element topic="swe-pk-kommentare.topic"/>
+                <toc-element topic="swe-pk-testen.topic"/>
+                <toc-element topic="swe-pk-errorhandling.topic"/>
+                <toc-element topic="swe-pk-regex.topic"/>
+                <toc-element topic="swe-pk-internationalisierung.topic"/>
+                <toc-element topic="swe-pk-datenstrukturen.topic"/>
+                <toc-element topic="swe-pk-pseudocode.topic"/>
+            </toc-element>
             <toc-element topic="swe-cleancode.topic"/>
             <toc-element topic="swe-vcs.topic">
                 <toc-element topic="swe-vcs-git.topic"/>
