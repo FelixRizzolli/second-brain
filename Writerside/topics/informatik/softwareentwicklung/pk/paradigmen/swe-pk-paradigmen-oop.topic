@@ -511,6 +511,78 @@
         </chapter>
 
         <chapter title="Polymorphismus" id="konzepte-polymorphismus">
+            <p>
+                Das Prinzip der Polymorphie ist einfach und genial zugleich. Objekte verschiedener Klassen müssen
+                gelegentlich gleiche Funktionen ausführen. Mithilfe der Polymorphie ist es möglich, in einer Oberklasse
+                eine allgemein verwendbare Methode zu definieren und auch diese mit entsprechendem Quellcode zu
+                versehen. Abgeleitete Unterklassen haben dann grundsätzlich zwei Optionen:
+            </p>
+
+            <list>
+                <li>
+                    Sie verwenden die Methode der Oberklasse.
+                </li>
+                <li>
+                    Sie können eine eigene Methode mit gleichem Namen definieren und gewissermaßen die Methode der
+                    Oberklasse überschreiben.
+                </li>
+            </list>
+
+            <p>
+                Damit gilt folgendes Prinzip: Beim Aufruf einer Methode wird immer geprüft, ob es eine speziellere
+                Methode der zugehörigen Klasse gibt. Ist das nicht der Fall, dann wird die Methode der Oberklasse
+                verwendet. Es gilt also: Eine spezielle Implementierung (Attribut oder Methode) hat stets Vorrang vor
+                einer allgemeineren (generischen) Implementierung.
+            </p>
+            <p>
+                Es kann auch eine abstrakte Methode in der Oberklasse definiert werden, welche nur als Platzhalter für
+                die Unterklassen dient. Sie enthält keinen Code. Erbt eine Klasse von einer Klasse welche eine abstrakte
+                Methode definiert hat, so zwingt der Compiler die Unterklasse jene Methode zu implementieren.
+            </p>
+            <p>
+                Objektinstanzen einer Unterklasse können wie Objektinstanzen der jeweiligen Oberklasse behandelt werden.
+            </p>
+
+            <chapter title="Beispiel" id="konzepte-polymorphismus-beispiel">
+                <img src="swe-pk-paradigmen-oop-polymorphismus.png" alt="Konzepte: Polymorphismus"/>
+
+                <p>
+                    Im Beispiel ist eine Oberklasse <code>Buch</code> und zwei abgeleitete Klassen <code>Fachbuch</code>
+                    und <code>Hoerbuch</code> zu sehen. Die abstrakte Methode <code>info()</code> der Klasse
+                    <code>Buch</code> liefert eine Zeichenkette vom Datentyp <code>String</code>, die eine Information
+                    zum Buch ausgibt. Nur Objekte der abgeleiteten Klassen <code>Fachbuch</code> und
+                    <code>Hoerbuch</code> verfügen über die entsprechenden Daten, um Informationen auszugeben. Dazu wird
+                    jeweils eine Methode <code>info()</code> in den Klassen Fachbuch und <code>Hoerbuch</code>
+                    definiert. Diese Methoden enthalten dann auch den jeweils spezifischen Quellcode.
+                </p>
+
+                <code-block lang="java">
+                    Buch einBuch = new Fachbuch();
+                </code-block>
+
+                <p>
+                    Der Variablen <code>einBuch</code> wird ein Objekt von der Klasse <code>Fachbuch</code> zugeordnet.
+                    Später ist es durchaus erlaubt, das Objekt neu zuzuweisen, vielleicht dieses Mal als
+                    <code>Hoerbuch</code>. Wir würden dann schreiben:
+                </p>
+
+                <code-block lang="java">
+                    einBuch = new Hoerbuch();
+                </code-block>
+
+                <p>
+                    Egal zu welchem Zeitpunkt, es kann jederzeit die Methode <code>info()</code> aufgerufen werden. Je
+                    nachdem, ob es sich um ein Objekt der Klasse <code>Fachbuch</code> oder der Klasse
+                    <code>Hoerbuch</code> handelt, wird die korrekte Methode aufgerufen.
+                </p>
+                <p>
+                    Zusammengefasst: Das Prinzip der Polymorphie sorgt also dafür, dass der Compiler stets die richtigen
+                    Attribute und Methoden auswählt. Würden wir unsere kleine Klassenbibliothek später um eine Klasse
+                    <code>Roman</code> ergänzen, dann müsste auch diese eine Methode <code>info()</code> haben. Es
+                    würden sich nicht die Konventionen ändern, man braucht auch wieder nur die Methode
+                    <code>info()</code> aufrufen, und man bekommt dann die Informationen zum Roman angezeigt.
+                </p>
+            </chapter>
         </chapter>
     </chapter>
 
