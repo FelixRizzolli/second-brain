@@ -5,5 +5,29 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Porgrammierparadigmen" id="swe-pk-paradigmen">
     <show-structure for="chapter,procedure" depth="2"/>
+    
+    <chapter title="Was ist ein Programmierparadigma?" id="programmierparadigma">
+        
+    </chapter>
 
+    <chapter title="Übersicht" id="uebersicht">
+
+    </chapter>
+
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018
+        </tip>
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript - Das umfassende Handbuch", Philip Ackermann, 2018
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://de.wikipedia.org/wiki/Programmierparadigma" ignore-vars="true">
+                https://de.wikipedia.org/wiki/Programmierparadigma
+            </a>, 2023-08-16 18:00
+        </tip>
+    </chapter>
 </topic>
