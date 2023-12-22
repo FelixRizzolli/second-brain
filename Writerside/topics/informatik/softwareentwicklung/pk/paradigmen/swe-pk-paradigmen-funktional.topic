@@ -5,5 +5,11 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Funktionale Programmierung" id="swe-pk-paradigmen-funktional">
     <show-structure for="chapter,procedure" depth="2"/>
-
+    
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript - Das umfassende Handbuch", Philip Ackermann, 2018
+        </tip>
+    </chapter>
 </topic>
