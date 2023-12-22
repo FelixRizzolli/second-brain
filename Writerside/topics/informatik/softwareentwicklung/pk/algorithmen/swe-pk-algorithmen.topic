@@ -64,7 +64,34 @@
         </chapter>
 
         <chapter title="Wichtige Klassen von Algorithmen" id="programm-klassen">
-
+            <list>
+                <li>
+                    <b>Suchverfahren</b>: Sequentiell Suche, Binärsuche, paralleles Suchen...
+                </li>
+                <li>
+                    <b>Sortierverfahren</b>: Bubblesort, Insertionsort, Quicksort, Mergesort...
+                </li>
+                <li>
+                    <b>Mathematische und nummerische Algorithmen</b>: Hierzu gehören Verfahren, die die Schrittfolge zur
+                    Berechnung bestimmter Sachverhalte angeben.
+                </li>
+                <li>
+                    <b>Algorithmen zur Verarbeitung von Zeichenketten</b>: In diese Klasse gehören die Mustererkennung
+                    (Pattern Matching) und die Syntaxanalyse (Parsing).
+                </li>
+                <li>
+                    <b>Optimierungsverfahren</b>: Diese Algorithmen optimieren eine Größe in Hinblick auf ein bestimmtes
+                    Ziel. Zum Beispiel wird in einem Computerspiel der kürzeste Weg zum Gegner sehr oft mithilfe des
+                    sogenannten A*-Algorithmus gesucht.
+                </li>
+                <li>
+                    <b>Geometrische Algorithmen</b>: Diese Rechenvorschriften helfen dabei, geometrische Grundformen wie
+                    Linien oder Splines anhand bestimmter Punkte im zwei-oder dreidimensionalen Raum zu zeichnen.
+                </li>
+                <li>
+                    ...
+                </li>
+            </list>
         </chapter>
 
         <chapter title="Komplexität von Algorithmen" id="programm-komplexitaet">
