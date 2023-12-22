@@ -208,10 +208,10 @@
                 Komplexitätsklasse <code>N^2</code>, dann sind <code>10^8</code> Rechenschritte zur Lösung des Problems
                 notwendig.
             </p>
-            <p>
+            <note>
                 Es kann also oftmals Sinn ergeben Zeit und Ressourcen in die Komplexitätsreduktion eines Algorithmus zu
                 investieren.
-            </p>
+            </note>
         </chapter>
     </chapter>
 
