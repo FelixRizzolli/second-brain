@@ -199,7 +199,44 @@
         </chapter>
 
         <chapter title="Eine agile Organisation entwickeln" id="kompetenzen-organisation">
+            <p>
+                Unternehmen müssen schnell lernen und schnell auf die Marktbedingungen im digitalen Zeitalter reagieren.
+                <b>Eine agile Organisation zu entwickeln</b> beinhaltet Konzepte und Werkzeuge zur Messung und
+                Ermöglichung von Unternehmensagilität durch
+                <a href="swe-prozesse-scrum-ebmguide.topic">Evidence-Based Management (EBM)</a>. Außerdem wird die
+                Bedeutung von <b>Organisationsdesign und -kultur</b> untersucht, die menschliche Faktoren, Prozesse und
+                Strukturen in der Organisation umfassen, die die Agilität mit Scrum fördern oder hemmen können.
+            </p>
+            <p>
+                <a href="swe-prozesse-scrum-ebmguide.topic">Evidence-Based Management (EBM)</a> fördert rationale,
+                datengestützte Entscheidungen und wendet empirische Prozesstheorie auf die Entwicklung hochwertiger
+                Produkte an. EBM bietet eine Reihe von Perspektiven auf den Wert und die Fähigkeit der Organisation,
+                Wert zu liefern. Diese Perspektiven werden als Key Value Areas (KVAs) bezeichnet. Diese Bereiche
+                untersuchen die Ziele der Organisation (Unrealized Value), den aktuellen Zustand der Organisation in
+                Bezug auf diese Ziele (Current Value), die Reaktionsfähigkeit der Organisation bei der Bereitstellung
+                von Werten (Time-to-Market) und die Effektivität der Organisation bei der Bereitstellung von Werten
+                (Ability-to-Innovate). Die Konzentration auf diese vier Dimensionen ermöglicht es Unternehmen, besser zu
+                verstehen, wo sie stehen und wohin sie gehen müssen. Organisationsdesign und -kultur konzentrieren sich
+                darauf, zu verstehen, wie organisatorische Attribute die Strategie beeinflussen, Mitarbeiter stimulieren
+                und besondere Fähigkeiten aufbauen, die es einfacher oder schwieriger machen, den Kunden Wert zu
+                liefern. Organisationsdesign und der Einsatz von Werkzeugen, die dabei helfen, iterative und
+                inkrementelle, wertorientierte organisatorische Veränderungen zu steuern, sind entscheidend für die
+                Entwicklung und Kultivierung einer agilen Kultur.
+            </p>
+            <p>
+                Darüber hinaus nutzt Scrum Empirie und Selbstorganisation, um die <b>Portfolio-Planung</b> anzugehen. Es
+                ist wichtig zu erkennen, dass dieser Ansatz die gesamte Organisation betrifft, nicht nur die Agile
+                Leader, Scrum Master, Product Owner und Mitglieder des Entwicklungsteams. Jede Person, die Inputs oder
+                Outputs für ein oder mehrere Scrum-Teams hat, ist davon betroffen, wie das Team innerhalb der
+                Organisation arbeitet.
+            </p>
+            <p>
+                Scrum Master und Agile Leader achten besonders auf die Entwicklung der agilen Organisation, aber ein
+                Schlüsselelement für dieses Wachstum ist, dass alle Rollen in der Organisation die Wachstumsvision
+                verstehen.
+            </p>
 
+            <p>Mehr zu diesem Thema: <a href="swe-prozesse-scrum-organisation.topic">HIER</a></p>
         </chapter>
     </chapter>
 
