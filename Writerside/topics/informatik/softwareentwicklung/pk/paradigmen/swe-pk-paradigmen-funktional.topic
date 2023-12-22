@@ -5,7 +5,47 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Funktionale Programmierung" id="swe-pk-paradigmen-funktional">
     <show-structure for="chapter,procedure" depth="2"/>
-    
+
+    <chapter title="Grundlegende Prinzipien" id="grundlegende-prinzipien">
+        <p>
+            Die funktionale Programmierung folgt wie andere Programmierparadigmen auch verschiedenen Prinzipien bzw.
+            weist besondere Merkmale auf. Dies sind im Wesentlichen folgende:
+        </p>
+
+        <list>
+            <li>
+                <b>Funktionen sind Objekte erster Klasse</b> – Funktionen sind Objekte erster Klasse (sogenannte First
+                Class Objects oder auch First Class Citizens). Was das bedeutet: Funktionen können wie andere Objekte
+                und primitive Werte ebenfalls Variablen zugewiesen werden, sie können als Argumente anderer Funktionen
+                verwendet werden oder als deren Rückgabewert. In nicht funktionalen Programmiersprachen dagegen werden
+                Funktionen nicht als Objekte repräsentiert und können folglich auch nicht wie solche behandelt werden.
+            </li>
+            <li>
+                <b>Funktionen arbeiten mit unveränderlichen Datenstrukturen</b> – Die Datenstrukturen bei der
+                funktionalen Programmierung sind in der Regel unveränderlich bzw. werden nicht verändert. Vielmehr
+                erzeugen Operationen, die auf Datenstrukturen durchgeführt werden, falls nötig neue Datenstrukturen und
+                liefern diese als Ergebnis zurück. In rein funktionalen Programmiersprachen können beispielsweise Listen
+                oder andere Datenstrukturen, die einmal angelegt worden sind, nachträglich nicht mehr geändert werden
+                (bzw. nur über Umwege).
+            </li>
+            <li>
+                <b>Funktionen haben keine Nebeneffekte</b> – Bei der funktionalen Programmierung haben die Funktionen in
+                der Regel überhaupt keine Nebeneffekte und verhalten sich eher wie mathematische Funktionen. Das heißt,
+                Funktionen liefern in der funktionalen Programmierung bei gleichen Eingaben immer das gleiche Ergebnis,
+                lösen dabei aber keine Nebeneffekte aus. In rein funktionalen Sprachen werden Nebeneffekte bereits durch
+                die Sprache selbst verhindert.
+            </li>
+            <li>
+                <b>Funktionale Programme sind deklarativ</b> – Bei der imperativen Programmierung handelt es sich um
+                ein Programmierparadigma, bei dem man dem Computer sehr genau einzelne Anweisungen gibt, <b>wie</b> eine
+                Problemstellung gelöst werden soll. Funktionale Programme dagegen sind deklarativ, d. h., Sie
+                formulieren als Entwickler Ihr Programm eher so, dass Sie sagen, <b>was</b> gemacht werden soll. Dadurch
+                sind funktionale Programme gegenüber dem äquivalenten imperativen Code in der Regel lesbarer,
+                sprechender und kompakter.
+            </li>
+        </list>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
