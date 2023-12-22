@@ -91,7 +91,30 @@
         </chapter>
 
         <chapter title="Personen und Teams entwickeln" id="kompetenzen-teams">
+            <p>
+                Traditionelle Managementmodelle betrachten die Arbeit mit Menschen und die Teamentwicklung als Aufgabe
+                des Managers des Teams. Scrum überträgt dem Scrum Master die besondere Verantwortung, die Mitglieder des
+                Scrum Teams (und auch andere Mitglieder der Organisation) zu unterstützen und anzuleiten. Die
+                Teamentwicklung liegt jedoch nicht nur in der Verantwortung des Scrum Masters. Da Scrum-Teams sich
+                selbst verwalten, sind alle Teammitglieder dafür verantwortlich, das Team durch Techniken, die "Menschen
+                und Teams entwickeln", kontinuierlich zu verbessern.
+            </p>
+            <p>
+                Diese Kompetenz hat sechs Schwerpunktbereiche, von denen die letzten vier in der Regel gemeinsam
+                behandelt werden, da sie spezifische Fähigkeiten verkörpern, die zur kontinuierlichen Selbst- und
+                Teamverbesserung eingesetzt werden:
+            </p>
+            
+            <list>
+                <li>Selbstmanagement von Teams</li>
+                <li>Führungsstile</li>
+                <li>Moderieren</li>
+                <li>Trainieren</li>
+                <li>Lehren</li>
+                <li>Betreuen</li>
+            </list>
 
+            <p>Mehr zu diesem Thema: <a href="swe-prozesse-scrum-teams.topic">HIER</a></p>
         </chapter>
 
         <chapter title="Produkte mit Agilität managen" id="kompetenzen-managen">
