@@ -6,4 +6,19 @@
        title="Suchalgorithmen" id="swe-pk-algorithmen-suche" help-id="swe-pk-algorithmen-search;swe-pk-algorithmen-such">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einleitung" id="einleitung">
+
+    </chapter>
+
+    <chapter title="Binäre Suche" id="binaere">
+
+    </chapter>
+
+    <chapter title="Lineare Suche" id="linear">
+
+    </chapter>
+
+    <chapter title="Suchbäume" id="suchbaeume">
+
+    </chapter>
 </topic>
