@@ -92,7 +92,41 @@
         </chapter>
 
         <chapter title="3. Implementierung" id="modell-implementierung">
+            <p>
+                Das Ziel der Implementierung ist es, den Entwurf des Softwaresystems in ein lauffähiges Programm zu
+                verwandeln. Eng verbunden mit dem Schreiben des Programmcodes sind bestimmte Arten von Softwaretests.
+                Dazu gehören z.B. Modul-Tests oder Unit-Tests, welche die Funktionalität der erstellten Komponenten
+                überprüft. Diese sind aber zu unterscheiden von Tests des Gesamtsystems oder umfassender Teilsysteme.
+                Die Aufgaben der Implementierung sind:
+            </p>
 
+            <list>
+                <li>
+                    <b>Erstellung des User-Interfaces</b>, also den Teil der Software, welchen der Nutzer täglich sieht
+                    und mit dem er tagtäglich in Berührung kommt. Die konkrete Umsetzung ist abhängig vom Typ der
+                    Anwendung und von der gewählten Technologie. Bestehen bereits Prototypen aus der Entwurfsphase, so
+                    können diese eine große Hilfe sein.
+                </li>
+                <li>
+                    <b>Erarbeitung der Businesslogik</b>. Unter Businesslogik versteht man den inneren Ablauf der
+                    Anwendung, welcher mithilfe von Algorithmen beschrieben wird.
+                </li>
+                <li>
+                    <b>Umsetzung der Datenhaltung</b>. Diese beschäftigt sich mit folgenden Fragen: Wo werden die Daten
+                    gespeichert? Wird ein eigener Datenbankserver eingesetzt? Können die Daten in der Cloud gespeichert
+                    werden? Auf welche Weise erfolgt die Kommunikation mit dem Anwendungssystem?
+                </li>
+            </list>
+
+            <note>
+                In den Anfängen der Softwareentwicklung hat man lediglich von der Programmierung einer Anwendung
+                gesprochen. Dabei wurde die gesamte Analyse- und Entwurfsphase vernachlässigt bzw. die Entwickler haben
+                sie gewissermaßen nebenbei erledigt. Heute hingegen ist die Phase der Implementierung (Programmierung)
+                lediglich ein Teilabschnitt der Softwareerstellung, der primär die technische Umsetzung des Programms
+                umfasst.
+            </note>
+
+            <p>Mehr dazu: <a href="swe-spp-implementierung.topic">HIER</a></p>
         </chapter>
 
         <chapter title="4. Test" id="modell-test">
