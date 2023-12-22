@@ -22,6 +22,12 @@
     </chapter>
 
     <chapter title="Algorithmen als Kernelemente des Programms" id="programm">
+        <p>
+            Ein Algorithmus ist ein präzise festgelegtes Verfahren zur Lösung von Problemen bzw. einer Klasse von
+            Problemen. Das Verfahren besteht aus endlich vielen elementaren Lösungsschritten und produziert in endlicher
+            Zeit aus den Eingabedaten die gewünschten Ausgabedaten. Es ist möglich den Algorithmus wiederholt
+            anzuwenden.
+        </p>
 
         <chapter title="Bedingungen für Algorithmen" id="programm-bedingungen">
 
