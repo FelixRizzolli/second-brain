@@ -6,6 +6,19 @@
        title="Extreme Programming" id="swe-prozesse-xp">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einleitung" id="einleitung">
+        <p>
+            Extreme Programming, oder kurz XP wurde in den Jahren 1995–2000 von Kent Beck, Ward Cunningham und Ron
+            Jeffries bei Chrysler entwickelt. Der Name wurde dadurch geprägt, dass die gut bekannten Praktiken, zum
+            Beispiel iterative Entwicklung, »ins Extreme« gesteigert wurden.
+        </p>
+        <p>
+            Durch XP ist es möglich, mehrere neue Versionen eines Programms an einem Tag zu entwickeln, zu integrieren
+            und zu testen. Ziel ist es, die Entwicklung der Software den gegebenen Bedingungen anzupassen und sie
+            fortlaufend zu verbessern.
+        </p>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
