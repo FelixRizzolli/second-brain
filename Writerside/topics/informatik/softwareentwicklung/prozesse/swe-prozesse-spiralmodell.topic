@@ -7,7 +7,14 @@
     <show-structure for="chapter,procedure" depth="2"/>
     
     <chapter title="Einleitung" id="einleitung">
-        
+        <p>
+            Im Jahr 1998 hat Boehm als einer der Ersten über den Begriff des Risikogesteuerten Software-Frameworks
+            diskutiert. In seinem Werk hat er darauf hingewiesen, wie wichtig es ist, Risiken im Auge zu behalten. Viele
+            IT-Projekte scheitern bzw. werden zu höheren Kosten realisiert und nicht termingerecht abgeschlossen. Das
+            Spiralmodell soll dabei helfen, diese Risiken in den Griff zu bekommen.
+        </p>
+
+        <img src="swe-prozesse-spiral.jpg" alt="Das Spiralmodell"/>
     </chapter>
     
     <chapter title="Das Modell" id="modell">
