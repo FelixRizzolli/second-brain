@@ -247,9 +247,46 @@
         </p>
 
         <chapter title="Vorgehensweise" id="entwurf-vorgehensweise">
+            <list style="decimal">
+                <li>
+                    <b>Spezifizierung der Problemstellung</b>: Die Problemstellung ist fachlich aufzuarbeiten. Der
+                    Softwareentwickler muss sich so weit mit dem angegebenen Problem beschäftigen, dass er es vollständig
+                    verstanden hat. Je nachdem kann man sich auch bei Experten Hilfe holen.
+                </li>
+                <li>
+                    <b>Ausarbeiten eines Algorithmus</b>: Dies ist der Kern des Ablaufes. Komplexe Algorithmen werden
+                    nicht direkt in die Zielsprache übersetzt, sondern man bedient sich auf dem Weg dorthin
+                    unterschiedlicher Hilfsmittel. Grafisch kann man den Ablauf eines Algorithmus auf unterschiedliche
+                    Weise visualisieren. Eine gebräuchliche Vorstufe der Codierung in einer Programmiersprache ist die
+                    Darstellung mithilfe von <a href="swe-pk-pseudocode.topic">Pseudocode</a>.
+                </li>
+                <li>
+                    <b>Analyse des Fehlverhaltens</b>: Insbesondere bei Berechnungen kann es zu Fehlern kommen. Diese
+                    treten auch dann auf, wenn der eigentliche Algorithmus richtig arbeitet, aber zum Beispiel
+                    Rechenungenauigkeit zu einem nicht gewünschten Verhalten führt.
+                </li>
+                <li>
+                    <b>Analyse des Laufzeitverhaltens</b>: Insbesondere schrittweise Verfahren können einen hohen Bedarf
+                    an Rechenzeit verursachen. Ansatzpunkte um dies zu beschleunigen sind beispielsweise das Auslagern
+                    eines komplexen Rechenalgorithmus in einen eigenen Thread der Anwendung. Dieses Vorgehen kann bei
+                    heutigen Mehrkernprozessoren gegebenenfalls erhebliche Vorteile bieten, wenn die anderen
+                    Programmteile nicht auf die Abarbeitung des komplexen Algorithmus warten müssen.
+                </li>
+                <li>
+                    <b>Implementierung</b>: Diese erfolgt in der jeweiligen Programmiersprache.
+                </li>
+                <li>
+                    <b>Tests</b>: Dabei soll die logische Konsistenz überprüft werden. Ein systematisches Vorgehen ist
+                    hierbei zu empfehlen.
+                </li>
+            </list>
 
             <chapter title="Visualisieren des Ablaufs von Algorithmen" id="entwurf-vorgehensweise-visualisierung">
-
+                <p>
+                    Algorithmen weisen oft einen komplizierten Ablauf auf, deren Verständnis durch eine visuelle
+                    Darstellung deutlich verbessert werden kann. Dazu können beispielsweise Flussdiagramme,
+                    Struktogramme oder Aktivitätsdiagramme dienen.
+                </p>
             </chapter>
         </chapter>
     </chapter>
