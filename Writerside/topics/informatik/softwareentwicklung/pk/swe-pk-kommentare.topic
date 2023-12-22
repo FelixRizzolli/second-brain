@@ -6,4 +6,12 @@
        title="Kommentare" id="swe-pk-kommentare">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlegendes" id="grundlegendes">
+        <p>
+            Auch wenn Puristen behaupten, dass guter Quelltext selbsterklärend ist, so sollten insbesondere bei
+            komplexere Programmabläufe oder Quelltexte, mit Kommentaren versehen werden. Damit hilft man sich selbst zu
+            einem späteren Zeitpunkt, oder andere Programmierer den Quelltext leichter zu verstehen.
+        </p>
+    </chapter>
+
 </topic>
