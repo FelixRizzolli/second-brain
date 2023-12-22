@@ -495,6 +495,18 @@
             </chapter>
 
             <chapter title="Abstrakte Klassen" id="konzepte-abstraktion-abstrakteklassen">
+                <p>
+                    Abstrakte Klassen sind Klassen, die als Oberklassen fungieren, jedoch können von solchen Klassen
+                    selbst keine Objekte erstellt werden.
+                </p>
+                <p>
+                    Die Klasse <code>Fahrzeug</code> könnte zum Beispiel als abstrakte Klasse ausgeführt werden. Ein
+                    Objekt der allgemeinen Klasse <code>Fahrzeug</code> ergibt in der Regel keinen Sinn. Ein Fahrzeug
+                    ist stets ein konkretes Fahrzeug des Typs <code>Benzinauto</code>, <code>Dieselauto</code>,
+                    <code>Hybridauto</code> oder <code>Elektroauto</code>. Die Klasse <code>Fahrzeug</code> sammelt
+                    daher alle Attribute und Methoden, die für alle Fahrzeugtypen gelten, selbst kann sie aber nicht als
+                    Bauplan für ein konkretes Objekt stehen.
+                </p>
             </chapter>
         </chapter>
 
