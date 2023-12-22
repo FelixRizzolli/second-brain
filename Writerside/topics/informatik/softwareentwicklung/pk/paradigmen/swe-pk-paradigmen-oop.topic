@@ -297,6 +297,12 @@
     </chapter>
 
     <chapter title="Wesentliche Konzepte der objektorientierten Programmierung" id="konzepte">
+        <img src="swe-pk-paradigmen-oop-konzepte.png" alt="Konzepte"/>
+
+        <p>
+            Nicht jedes Prinzip wird in gleicher Art und Weise von jeder Programmiersprache umgesetzt. Hier gibt es
+            Abweichungen und unterschiedliche Herangehensweisen.
+        </p>
 
         <chapter title="Kapselung" id="konzepte-kapselung">
             <p>
