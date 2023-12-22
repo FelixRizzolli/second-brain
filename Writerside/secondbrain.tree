@@ -49,7 +49,11 @@
                     <toc-element topic="swe-pk-paradigmen-oop.topic"/>
                 </toc-element>
                 <toc-element topic="swe-pk-richtlinien.topic"/>
-                <toc-element topic="swe-pk-algorithmen.topic"/>
+                <toc-element topic="swe-pk-algorithmen.topic">
+                    <toc-element topic="swe-pk-algorithmen-verschlüsselung.topic"/>
+                    <toc-element topic="swe-pk-algorithmen-suche.topic"/>
+                    <toc-element topic="swe-pk-algorithmen-sort.topic"/>
+                </toc-element>
                 <toc-element topic="swe-pk-kommentare.topic"/>
                 <toc-element topic="swe-pk-testen.topic"/>
                 <toc-element topic="swe-pk-errorhandling.topic"/>
