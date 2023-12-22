@@ -6,6 +6,70 @@
        title="Programmierrichtlinien" id="swe-pk-richtlinien">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Namenskonventionen (naming conventions)" id="namingconventions">
+        <p>
+            Namenskonventionen sind Festlegungen / Vorschriften / Empfehlungen für Entwickler zur Benennung von
+            Bezeichnern für Objekte im Quelltext von Software. Der Einsatz solcher Namenskonventionen ist ein
+            Software-Qualitätsmerkmal für Änderbarkeit (Wartbarkeit) wodurch einfacheres Verstehen des Programmtextes
+            unterstützt wird. Namenskonventionen gelten – meist unternehmens- oder projektspezifisch – grundsätzlich für
+            alle in der Programmierung verwendeten Konstrukte – wie Datenfelder (Variablen, Konstanten), Objekte,
+            Funktionen, Typen, Klassen, Module, Prozeduren, usw. und sollen zu "lesbaren Code" beitragen.
+        </p>
+        <p>
+            Namenskonventionen sind strukturell/methodisch ein Teil der Programmierrichtlinien und bestimmen unter
+            anderem den Programmierstil für den Programmcode. Sie können je nach Situation/Unternehmen verbindlich
+            vorgegeben oder zur freiwilligen Anwendung formuliert sein.
+        </p>
+
+        <chapter title="Schreibweisen" id="namingconventions-schreibweisen">
+            <table>
+                <tr>
+                    <td>Schreibweise</td>
+                    <td>Name</td>
+                </tr>
+                <tr>
+                    <td><code>twowords</code></td>
+                    <td>flatcase</td>
+                </tr>
+                <tr>
+                    <td><code>TWOWORDS</code></td>
+                    <td>UPPERCASE, SCREAMINGCAMELCASE</td>
+                </tr>
+                <tr>
+                    <td><code>twoWords</code></td>
+                    <td>(lower) camelCase, dromedaryCase</td>
+                </tr>
+                <tr>
+                    <td><code>TwoWords</code></td>
+                    <td>PascalCase, UpperCamelCase, StudlyCase</td>
+                </tr>
+                <tr>
+                    <td><code>TWO_WORDS</code></td>
+                    <td>ALL_CAPS, SCREAMING_SNAKE_CASE, MACRO_CASE, CONSTANT_CASE</td>
+                </tr>
+                <tr>
+                    <td><code>two_Words</code></td>
+                    <td>camel_Snake_Case</td>
+                </tr>
+                <tr>
+                    <td><code>Two_Words</code></td>
+                    <td>Pascal_Snake_Case, Title_Case</td>
+                </tr>
+                <tr>
+                    <td><code>two-words</code></td>
+                    <td>kebab-case, dash-case, lisp-case, spinal-case</td>
+                </tr>
+                <tr>
+                    <td><code>TWO-WORDS</code></td>
+                    <td>TRAIN-Case, COBOL.CASE, SCREAMING-KEBAB-CASE</td>
+                </tr>
+                <tr>
+                    <td><code>Two-Words</code></td>
+                    <td>Train-Case, HTTP-Header-Case</td>
+                </tr>
+            </table>
+        </chapter>
+    </chapter>
 
     <chapter title="Quellen" id="quellen">
         <tip>
