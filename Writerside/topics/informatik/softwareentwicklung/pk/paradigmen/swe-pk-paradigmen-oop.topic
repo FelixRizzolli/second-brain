@@ -297,8 +297,32 @@
     </chapter>
 
     <chapter title="Wesentliche Konzepte der objektorientierten Programmierung" id="konzepte">
+
         <chapter title="Kapselung" id="konzepte-kapselung">
+            <p>
+                Unter dem Begriff Datenkapselung (bzw. im Englischen <emphasis>Encapsulation</emphasis> oder auch
+                <emphasis>Information Hiding</emphasis>) versteht man in der Objektorientierung das Zusammenfassen von
+                Eigenschaften und Methoden zu Klassen bzw. Prototypen, wobei die Details der Implementierung verborgen
+                bleiben: In der Regel stellt man die Eigenschaften nur über sogenannte Setter- und Getter-Methoden zur
+                Verfügung. Solche Zugriffsmethoden (eng.: <emphasis>Accessor Methods</emphasis> oder einfach
+                <emphasis>Accessors</emphasis>) können davor schützen, dass einer Eigenschaft ungültige Werte zugewiesen
+                werden. Erlaubt man dagegen einen direkten Zugriff auf die Eigenschaften (und erfüllt damit nicht das
+                Prinzip der Datenkapselung), ist dies nicht gewährleistet, da dann auch Werte zugewiesen werden können, die
+                nicht gültig sind. Der Datenzugriff wird bei einigen Programmiersprachen auch über spezielle Felder
+                geregelt, die jedoch wiederum intern auf <code>get</code>- und <code>set</code>-Methoden zurückgreifen. In
+                Programmiersprachen wie Java kann man über spezielle Schlüsselwörter verhindern, dass die Werte von
+                Eigenschaften von außen (d. h. von außerhalb einer Objektinstanz) geändert werden können (und zwar, indem
+                sie über das Schlüsselwort private als privat markiert werden).
+            </p>
+
+            <img src="swe-pk-paradigmen-oop-kapselung.png" alt="Konzept: Kapselung"/>
+
             <chapter title="Dateneigenschaften und Zugriffseigenschaften" id="konzepte-kapselung-eigenschaften">
+                <p>
+                    Dateneigenschaften bezeichnen solche Eigenschaften, auf die direkt zugegriffen wird, d.h. ohne
+                    Getter- und Setter-Methoden. Zugriffseigenschaften definieren Funktionen, die beim Lesen und
+                    Schreiben der entsprechenden Eigenschaft aufgerufen werden (sprich Getter- und Setter-Methoden).
+                </p>
             </chapter>
         </chapter>
 
