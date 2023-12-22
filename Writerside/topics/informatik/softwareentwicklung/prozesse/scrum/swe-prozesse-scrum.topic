@@ -156,7 +156,44 @@
         </chapter>
 
         <chapter title="Produkte professionell entwickeln und ausliefern" id="kompetenzen-entwickeln">
-
+            <p>
+                Die <b>professionelle Entwicklung und Bereitstellung von Produkten</b> mit Scrum führt zu qualitativ
+                hochwertigen Softwareprodukten, die iterativ und inkrementell mit relativ hoher Frequenz bereitgestellt
+                werden. Diese Produkte erfüllen die Anforderungen von Stakeholdern und Kunden und bieten Flexibilität
+                für eine frühzeitige Wertrealisierung und die Anpassung an sich ändernde Anforderungen. Professionelle
+                Softwareentwicklung erfordert die Zusammenarbeit zwischen den Teammitgliedern und der gesamten
+                Organisation, und es gibt eine Reihe von Fokusbereichen, die, wenn sie verstanden und angewandt werden,
+                die ganzheitliche Realisierung dieser End-to-End-Vision ermöglichen.
+            </p>
+            <p>
+                Das Management während der gesamten Lebensdauer der Anwendungsentwicklung, die Reduzierung der
+                Zykluszeiten und die Beseitigung von Verschwendung erfordern eine Reihe bewährter Tools und Prozesse,
+                die Unternehmen bei der Integration verschiedener Teams, Plattformen und Aktivitäten unterstützen. Die
+                Focus Area <b>Continuous Integration and Continuous Delivery</b> bietet eine Reihe von Praktiken und
+                Techniken zur kontinuierlichen Wertschöpfung, die die Ideen des häufigen Lernens mit den Konzepten der
+                kleinen Losgröße und der Automatisierung verbinden.
+            </p>
+            <p>
+                Die Scrum-Teams verwenden einen <b>emergenten Softwareentwicklungsansatz</b> für die Definition der
+                Gesamtstruktur, wobei die spezifischen detaillierten Designentscheidungen erst bei Bedarf getroffen
+                werden. Die Detailentscheidungen bauen auf dem Gesamtrahmen auf, um ein kohärentes Produkt zu schaffen,
+                das den Unternehmensstandards entspricht.
+            </p>
+            <p>
+                Scrum-Teams sollten sich auch auf die <b>Optimierung des Flusses</b> und die
+                <b>kontinuierliche Qualität</b> konzentrieren, um in jedem Sprint vollständig integrierte, getestete und
+                potenziell freigebbare "fertige" Produktinkremente bereitzustellen. Der Einsatz geeigneter
+                Engineering-Praktiken und -Werkzeuge erleichtert die konsistente Entwicklung integrierter
+                "Done"-Inkremente bei gleichzeitigem <b>Managen des technischen Risikos</b>, das andernfalls die
+                Fähigkeit des Teams beeinträchtigen könnte, das Produkt schnell und einfach an sich ändernde
+                Anforderungen anzupassen, wodurch die Agilität der Organisation beeinträchtigt würde.
+            </p>
+            <p>
+                Die Scrum-Teams sind natürlich die konkreten Entwickler von professioneller Software, aber eine gewisse
+                Beherrschung der professionellen Produktentwicklung und -bereitstellung ist für alle Rollen innerhalb
+                einer Organisation wichtig, um die Kommunikation, Zusammenarbeit und Beteiligung der Interessengruppen
+                zu erleichtern.
+            </p>
         </chapter>
 
         <chapter title="Eine agile Organisation entwickeln" id="kompetenzen-organisation">
