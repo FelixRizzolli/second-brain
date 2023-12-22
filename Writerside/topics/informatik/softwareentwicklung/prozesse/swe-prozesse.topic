@@ -72,11 +72,11 @@
     </chapter>
 
     <chapter title="Ziele der agilen Softwareentwicklung" id="ziele">
-        <p>
+        <note>
             »Agilität« steht für die Fähigkeit, mit Änderungen umzugehen, d. h. schnell und flexibel auf
             Kundenanforderungen zu reagieren. Änderungen werden nicht mehr als störend aufgefasst, sondern tragen dazu
             bei, dass das Anwendungssystem frühzeitig in die richtige Richtung gesteuert wird.
-        </p>
+        </note>
         <p>
             Ein wesentliches Ziel dieses Vorgehens ist es, in möglichst kurzer Zeit eine erste Version des späteren
             Endproduktes an den Kunden auszuliefern und bereits in sehr frühen Phasen des Entwicklungsprozesses mit
