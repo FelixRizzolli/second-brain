@@ -625,6 +625,34 @@
         </p>
 
         <chapter title="Verwaltung der Bibliotheken" id="wiederverwendung-bibliotheken">
+            <p>
+                Die Verwaltung der Bibliotheken und deren Abhängigkeiten untereinander muss man dabei üblicherweise
+                nicht per Hand vornehmen. Dabei helfen komfortable Programmierwerkzeuge in Form von integrierten
+                Entwicklungsumgebungen (IDE). Damit man die Bibliotheken nicht mühsam an unendlich vielen Orten
+                zusammensuchen muss, werden diese in zentralen Repositorien bereitgestellt. Entwickler können die
+                gewünschten Bibliotheken suchen, in ihr Projekt einbinden sowie gegenseitige Abhängigkeiten verwalten
+                und auflösen. Bei Aktualisierungen wird man benachrichtigt.
+            </p>
+
+            <chapter title="Beispiel (VisualStudio)" id="wiederverwendung-bibliotheken-beispiel">
+                <img src="swe-pk-paradigmen-oop-bibliotheken-beispiel-visualstudio.png"
+                     alt="Konzepte: Bibliotheken (Beispiel: VisualStudio)"/>
+
+                <p>
+                    Wir sehen die Entwicklungsumgebung Visual Studio. Am rechten Rand ist der Projektmappen-Explorer
+                    eingeblendet, der alle Bestandteile des aktuellen Projekts zeigt. Unterhalb von Verweise sehen Sie,
+                    welche externen Bibliotheken im aktuellen Projekt eingebunden sind. In diesem Fall sind es die
+                    beiden Bibliotheken <code>Microsoft.NetCore.UniversalWindowsPlatform</code> und
+                    <code>Microsoft.Xaml.Behavios.Uwp.Managed</code>. Deren Funktionen spielen jetzt nur eine
+                    untergeordnete Rolle. Es sind zwei grundsätzliche Bibliotheken zum Erstellen von Apps für die
+                    Universal Windows Platform. Im linken Teilbereich des Fensters sehen Sie den NuGet-Paketmanager. Mit
+                    dessen Hilfe werden die Bibliotheken zentral verwaltet. Die Entwickler der Bibliotheken können ihn
+                    über einen zentralen Server anderen Entwicklern zur Verfügung stellen. Mittels des NuGet-Managers
+                    kann man auf öffentlich zugängliche Bibliotheken über das Internet zugreifen. Alternativ können
+                    Softwareentwicklungsunternehmen ihre eigenen Softwarebibliotheken aufbauen und auf einem eigenen
+                    Unternehmensserver verwalten.
+                </p>
+            </chapter>
         </chapter>
 
         <chapter title="Softwarekomponenten" id="wiederverwendung-komponenten">
