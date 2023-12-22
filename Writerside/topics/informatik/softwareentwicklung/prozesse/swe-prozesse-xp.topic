@@ -19,6 +19,42 @@
         </p>
     </chapter>
 
+    <chapter title="Vorgehensweise" id="vorgehensweise">
+        <chapter title="User-Storys" id="vorgehensweise-userstorys">
+            <p>
+                Die Anforderungen werden in Form von <b>User-Storys</b> zusammengefasst und anschließend als eine Folge
+                von Aufgaben implementiert. Welche User-Story als nächste in ein Release aufgenommen wird, bestimmt sich
+                aufgrund von der zur Verfügung stehenden Zeit und der zugeordneten Priorität.
+            </p>
+        </chapter>
+
+        <chapter title="Pair-Programming" id="vorgehensweise-pp">
+            <p>
+                Großer Wert wird auf paarweise Zusammenarbeit gelegt. Sie arbeiten daher nicht mehr alleine an einem
+                Modul oder an einer neuen Funktion, sondern gemeinsam in Zweierteams. Für diese Arbeitsweise ist auch
+                der Begriff <b>Pair-Programming</b> üblich. Die Ergebnisse werden auf diese Weise sofort überprüft.
+            </p>
+        </chapter>
+
+        <chapter title="Test-Driven Development" id="tdd">
+            <p>
+                Statt erst Programmcode zu schreiben und dann umfangreich nach möglichen Fehlern zu suchen, werden Tests
+                für die einzelnen Aufgaben entwickelt. Diese sollen mit Erfolg abgeschlossen werden, bevor neuer Code in
+                das System integriert wird. Nach Fertigstellung einer Aufgabe ist diese auch sofort in das System zu
+                übernehmen. Diese Art des Vorgehens wird als <b>Test-Driven Development</b> bezeichnet.
+            </p>
+        </chapter>
+
+        <chapter title="Kunde vor Ort" id="vorgehensweise-kundevorort">
+            <p>
+                Ein <b>Kundenbevollmächtigter</b> ist am Entwicklungsprozess kontinuierlich beteiligt. Er soll dem
+                XP-Team ständig zur Verfügung stehen. Er ist dafür verantwortlich, dem Team die Systemanforderungen
+                mitzuteilen und Akzeptanztests für das System durchzuführen. Der Kunde arbeitet gewissermaßen aktiv am
+                Projekt mit.
+            </p>
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
