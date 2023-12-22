@@ -171,6 +171,40 @@
         </chapter>
 
         <chapter title="Klassen" id="grundlagen-klassen">
+            <p>
+                Ein konkretes Objekt gehört zu einer Klasse oder andersherum betrachtet, eine Klasse ist der Bauplan
+                bzw. die Struktur für die zugehörigen Objekte. Mit Struktur sind die Eigenschaften und Methoden des
+                Objekts gemeint.
+            </p>
+            <p>
+                Konkretisiert man ein Auto anhand seiner spezifischen Attribute, so gelangt man zum Objektbegriff.
+                Konkret: Das Fahrzeug mit dem Kennzeichen EF-LN 88 ist ein konkretes Objekt der Klasse Auto. Dabei weist
+                es die folgenden Werte der oben genannten Attribute auf:
+            </p>
+
+            <code-block>
+                Hersteller = "Toyota";
+                Typ = "Avensis";
+                Farbe = "grau";
+                Zulassungsjahr = 2012;
+            </code-block>
+
+            <p>
+                Ein anderes Objekt der Klasse Auto hat andere Werte bezüglich dieser Attribute, beispielsweise:
+            </p>
+
+            <code-block>
+                Hersteller = "VW";
+                Typ = "Golf";
+                Farbe = "rot";
+                Zulassungsjahr = 2014;
+            </code-block>
+
+            <p>
+                Beide Objekte verfügen also über die gleichen Attribute, aber gegebenenfalls über andere Werte dieser
+                Attribute. Sowohl der Toyota als auch der VW kennen die beiden oben genannten Methoden
+                <code>BehoerdlichZulassen</code> und <code>FahrtenbuchAnalysieren</code>.
+            </p>
         </chapter>
 
         <chapter title="Ereignisse" id="grundlagen-ereignisse">
