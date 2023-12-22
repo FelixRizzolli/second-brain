@@ -257,6 +257,12 @@
         </chapter>
 
         <chapter title="Modellierung von Klassen und Objekten" id="grundlagen-modellierung">
+            <p>
+                Zur Modellierung einzelner Klassen bzw. zur Darstellung der Beziehung von Klassen untereinander
+                verwendet man in der Software-Entwicklung häufig sogenannte »Klassendiagramme« der Modellierungssprache
+                UML (Unified Modelling Language), die Beziehung von Objekten stellt man dagegen in sogenannten
+                »Objektdiagrammen« dar.
+            </p>
         </chapter>
     </chapter>
 
