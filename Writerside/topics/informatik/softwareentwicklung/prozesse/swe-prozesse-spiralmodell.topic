@@ -19,7 +19,10 @@
     
     <chapter title="Das Modell" id="modell">
         <chapter title="1. Festlegung der Ziele" id="modell-ziele">
-            
+            <p>
+                Die Festlegung der Ziele bedeutet, dass sich mit den Anforderungen an das System intensiv
+                auseinandergesetzt wird. Dazu gehört es auch, auf die besonderen Einsatzbedingungen zu achten.
+            </p>
         </chapter>
 
         <chapter title="2. Beurteilung von Alternativen bzw. Risikoanalyse" id="modell-alternativen">
