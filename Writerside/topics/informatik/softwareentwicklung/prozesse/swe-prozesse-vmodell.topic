@@ -6,6 +6,29 @@
        title="Das V-Modell" id="swe-prozesse-vmodell">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <p>
+        Das V‐Modell erweitert den Betrachtungsrahmen über den eigentlichen Entwicklungszyklus hinaus und umfasst
+        zusätzlich die Punkte Projektmanagement, Qualitätssicherung, Ausschreibung und Vergabe. Es setzt sich aus vier
+        Submodellen zusammen: Softwareerstellung, Qualitätssicherung, Konfigurationsmanagement und Projektmanagement. Es
+        werden nicht nur Aktivitäten, deren Abfolge und die anzuwendenden Methoden beschrieben, sondern auch Regelungen
+        zur Arbeitsteilung inklusive der Rollenverteilung der Mitarbeiter.
+    </p>
+    <p>
+        Das V-Modell unterstützt Projekte sowohl aus Sicht der Auftraggeber als auch aus Sicht der Auftragnehmer.
+        Während des Arbeitsprozesses werden die Produkte Projekthandbuch, Projektplan, Qualitätssicherungshandbuch und
+        Produktbibliothek erstellt. Im Modell wird geregelt, »wer« »wann« »was« zu tun hat. Es wurde 1979 vom
+        US-Amerikanischen Softwareingenieur Barry Boehm entwickelt, und seine Anwendung ist seit 1997 für
+        Entwicklungsprozesse aller Bundesbehörden in Deutschland vorgeschrieben.
+    </p>
+
+    <img src="swe_prozesse_vmodell.jpg" alt="Das V-Modell"/>
+
+    <note>
+        Auch dieses Modell wurde im Laufe der Zeit an geänderte Erfordernisse angepasst. Eingeführt wurden insbesondere
+        neue Methoden und Technologien zur Skalierung auf unterschiedliche Projektgrößen. Die neue Version erhielt den
+        Namen <emphasis>V-Modell XT</emphasis>.
+    </note>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
