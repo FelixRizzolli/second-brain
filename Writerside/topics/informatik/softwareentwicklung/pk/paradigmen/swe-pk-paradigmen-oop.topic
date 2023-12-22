@@ -333,7 +333,41 @@
         </chapter>
 
         <chapter title="Geheimnisprinzip / Sichtbarkeit" id="konzepte-sichtbarkeit">
+            <p>
+                Das <b>Geheimnisprinzip</b> besagt, dass ein Objekt nach außen nur die Informationen und Methoden
+                bereitstellt, die zur Anwendung notwendig sind. Klassen sowie deren Attribute und Methoden können
+                unterschiedliche <b>Sichtbarkeiten</b> aufweisen. Die Sichtbarkeit wird durch den Modifizierer, dem
+                jeweiligem Schlüsselwort, bestimmt.
+            </p>
+
             <chapter title="Das Geheimnisprinzip" id="konzepte-sichtbarkeit-geheimnisprinzip">
+                <p>
+                    Ein Beispiel: Alle Objekte der Klasse Auto verfügen über die Methode
+                    <code>FahrtenbuchAnalysieren</code>. Für einen Benutzer ist es nicht von Interesse, wie dies
+                    innerhalb der Klasse umgesetzt wird. Es interessiert nur, dass der Aufruf der Methode zum
+                    gewünschten Ergebnis führt. Die Funktionsweise der Klasse wirkt nach außen wie eine Black Box.
+                </p>
+
+                <img src="swe-pk-paradigmen-oop-geheimnisprinzip.png" alt="Konzepte: Geheimnisprinzip"/>
+
+                <p>
+                    Das Prinzip der Black Box hat hier mehrere Bedeutungen. Möchte man die Funktionalität einer Klasse
+                    bzw. seiner Objekte nutzen, muss man in keiner Weise dabei wissen, wie die Verarbeitung intern
+                    funktioniert. Dieses Prinzip ist essenziell für die Wiederverwendung von Programmcode.
+                </p>
+                <p>
+                    Als Entwickler ist es üblich, für viele Standardaufgaben die Funktionalität einer allgemein zu
+                    verwendenden Klasse zu nutzen, beispielsweise einen speziellen Such-Algorithmus, der als Methode
+                    einer Klasse implementiert sein kann. Diese Algorithmen können sehr kompliziert sein, wie wir im
+                    kommenden Kapitel sehen werden. Die wirkliche Funktionsweise müssen wir jedoch nicht kennen. Es
+                    kommt lediglich darauf an, welche Inputdaten wir an den Algorithmus übergeben und welches Ergebnis
+                    wir zurückbekommen. Auch wenn zu einem späteren Zeitpunkt die Klasse aktualisiert wird, weil
+                    beispielsweise der verwendete Such-Algorithmus gegen ein leistungsfähigeres Exemplar ausgetauscht
+                    wird, ist das Geheimnisprinzip wichtig. Die Klasse kann problemlos in der ursprünglichen Form
+                    weiterverwendet werden. Dabei muss man sicherstellen, dass die Schnittstellen gegenüber der
+                    vorherigen Version unverändert bleiben. Die technische Umsetzung innerhalb der Klasse kann dabei
+                    angepasst werden.
+                </p>
             </chapter>
 
             <chapter title="Die Sichtbarkeit" id="konzepte-sichtbarkeit-sichtbarkeit">
