@@ -35,10 +35,43 @@
             </p>
 
             <chapter title="Eigenschaften" id="grundlagen-objekte-eigenschaften">
+                <p>
+                    Die Eigenschaften repräsentieren die Daten des Objekts. Ein Automobil ist je nach Sichtweise ein
+                    mehr oder weniger komplexes Objekt, das sich durch folgende <b>Attribute (Eigenschaften)</b>
+                    beschreiben lässt:
+                </p>
+
+                <list>
+                    <li>Hersteller</li>
+                    <li>Typ</li>
+                    <li>Farbe</li>
+                    <li>Zulassungsjahr</li>
+                </list>
+
+                <p>
+                    Es gibt weitere Attribute, die uns aber bei der Abbildung als Modell für eine Software nicht
+                    interessieren. Soll beispielsweise eine Verwaltung für den Fuhrpark eines Unternehmens programmiert
+                    werden, so müssen die dafür relevanten Eigenschaften der Fahrzeuge erfasst werden. Dies könnten die
+                    eben genannten Attribute sein. Nicht von Interesse für die Software ist dagegen, ob das Auto eine
+                    schöne Fußmatte hat und ob im Handschuhfach eine Beleuchtung eingebaut ist.
+                </p>
+
                 <chapter title="Attribute" id="grundlagen-objekte-eigenschaften-attribute">
+                    <p>
+                        Als <b>Attribute</b> werden Variablen bezeichnet, die grundsätzlich nur innerhalb der Klasse
+                        verwendet werden können. Sie sind daher als <code>private</code> deklariert. Will man auf die
+                        Werte dieser Attribute von außerhalb des Objekts zugreifen, muss man das über Methoden
+                        erledigen.
+                    </p>
                 </chapter>
 
                 <chapter title="Properties" id="grundlagen-objekte-eigenschaften-properties">
+                    <p>
+                        Moderne Programmiersprachen, wie C#, kennen auch das Konzept der <b>Properties</b>. Über eine
+                        Property kann von außen auf das zugeordnete Attribut zugegriffen werden. Die Property ist damit
+                        als <code>public</code> deklariert. Der Zugriff kann lesend oder schreibend sein bzw. beide
+                        Varianten umfassen.
+                    </p>
                 </chapter>
             </chapter>
 
