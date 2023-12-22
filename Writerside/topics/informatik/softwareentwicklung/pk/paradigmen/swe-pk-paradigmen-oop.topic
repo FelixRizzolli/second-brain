@@ -208,6 +208,52 @@
         </chapter>
 
         <chapter title="Ereignisse" id="grundlagen-ereignisse">
+            <p>
+                Ereignisse gehören streng betrachtet nicht zu den Grundpfeilern der objektorientierten Programmierung,
+                sondern zum Konzept der ereignisorientierten Entwicklung von Programmen. Es ist jedoch mit dem Konzept
+                der Klassen und Methoden eng verbunden.
+            </p>
+            <p>
+                Beispiele für Ereignisse:
+            </p>
+
+            <list>
+                <li>
+                    Ein Objekt der Klasse Auto ein Ereignis auslösen, wenn in den nächsten vier Wochen der TÜV abläuft.
+                    Die Software könnte in diesem Fall mit einem Hinweis den Bearbeiter auf diesen Umstand aufmerksam
+                    machen.
+                </li>
+                <li>
+                    Wenn der Nutzer auf ein Element der Benutzeroberfläche, zum Beispiel auf einen Button, klickt. Das
+                    zugehörige Ereignis heißt in diesem Fall zum Beispiel <code>ButtonClick</code>-Ereignis.
+                </li>
+                <li>
+                    Wischgesten bei einer Anwendung für Smartphone oder Tablet bzw. Mausbewegungen bei einem
+                    Zeichenprogramm.
+                </li>
+            </list>
+
+            <p>
+                Ein Ereignis wird von einem Objekt in einer bestimmten Situation ausgelöst. Grundsätzlich stellen
+                Ereignisse die Grundlagen für die Interaktionsfähigkeit der Anwendung dar. Um gegenseitig auf Ereignisse
+                zu reagieren, registrieren sich die Objekte untereinander. Beispielsweise kann ein Objekt A sich beim
+                Objekt B für ein bestimmtes Ereignis registrieren. Löst Objekt A dieses Ereignis aus, so bekommt Objekt
+                B das mit und kann seinerseits ein bestimmtes Verhalten auslösen.
+            </p>
+
+            <img src="swe-pk-paradigmen-oop-ereignisse.png" alt="Ereignisse"/>
+
+            <p>
+                Auf der linken Seite haben wir die Quelle (eng. <emphasis>Source</emphasis>), in Form eines konkreten
+                Objekts einer Klasse. Diese Quelle feuert in einer bestimmten Situation ein Ereignis
+                (eng. <emphasis>Event</emphasis>) ab. Beispielsweise könnte die Quelle ein Button sein, der auf das
+                Klicken durch den Nutzer reagiert. Andere Objekte – auch als <b>Listener</b> bezeichnet – »lauschen«
+                darauf, dass das betreffende Ereignis ausgelöst wird. Ist dies der Fall, dann reagieren sie in
+                vorgesehener Art und Weise. Dabei können mehrere Listener parallel das Auslösen eines bestimmten
+                Ereignisses überwachen. Ein Objekt der Klasse Berechnungen könnte eine neue Berechnung starten, sobald
+                der Nutzer auf den Button geklickt hat. Gleichzeitig könnte ein Objekt der Benutzeroberfläche darauf
+                reagieren und dem Nutzer mitteilen, dass nunmehr der Rechenvorgang gestartet wurde.
+            </p>
         </chapter>
 
         <chapter title="Modellierung von Klassen und Objekten" id="grundlagen-modellierung">
