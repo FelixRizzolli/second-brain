@@ -6,6 +6,83 @@
        title="OOP (Objektorientierte Programmierung)" id="swe-pk-paradigmen-oop">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlegendes" id="grundlagen">
+        <chapter title="Objekte" id="grundlagen-objekte">
+            <chapter title="Eigenschaften" id="grundlagen-objekte-eigenschaften">
+                <chapter title="Attribute" id="grundlagen-objekte-eigenschaften-attribute">
+                </chapter>
+
+                <chapter title="Properties" id="grundlagen-objekte-eigenschaften-properties">
+                </chapter>
+            </chapter>
+
+            <chapter title="Methoden" id="grundlagen-objekte-methoden">
+                <chapter title="Getter und Setter" id="grundlagen-objekte-methoden-gettersetter">
+                </chapter>
+
+                <chapter title="Konstruktor" id="grundlagen-objekte-methoden-konstruktor">
+                </chapter>
+
+                <chapter title="Destruktor" id="grundlagen-objekte-methoden-destruktor">
+                </chapter>
+
+                <chapter title="Methoden Überladen" id="grundlagen-objekte-methoden-ueberladen">
+                </chapter>
+            </chapter>
+
+            <chapter title="Garbage Collector" id="grundlagen-objekte-garbagecollector">
+            </chapter>
+        </chapter>
+
+        <chapter title="Klassen" id="grundlagen-klassen">
+        </chapter>
+
+        <chapter title="Ereignisse" id="grundlagen-ereignisse">
+        </chapter>
+
+        <chapter title="Modellierung von Klassen und Objekten" id="grundlagen-modellierung">
+        </chapter>
+    </chapter>
+
+    <chapter title="Unterschied zwischen primitiven Datentypen und Referenztypen" id="datentypen-unterschiede">
+    </chapter>
+
+    <chapter title="Wesentliche Konzepte der objektorientierten Programmierung" id="konzepte">
+        <chapter title="Kapselung" id="konzepte-kapselung">
+            <chapter title="Dateneigenschaften und Zugriffseigenschaften" id="konzepte-kapselung-eigenschaften">
+            </chapter>
+        </chapter>
+
+        <chapter title="Geheimnisprinzip / Sichtbarkeit" id="konzepte-sichtbarkeit">
+            <chapter title="Das Geheimnisprinzip" id="konzepte-sichtbarkeit-geheimnisprinzip">
+            </chapter>
+
+            <chapter title="Die Sichtbarkeit" id="konzepte-sichtbarkeit-sichtbarkeit">
+            </chapter>
+        </chapter>
+
+        <chapter title="Vererbung" id="konzepte-vererbung">
+        </chapter>
+
+        <chapter title="Abstraktion &amp; Generalisierung / Spezialisierung" id="konzepte-abstraktion">
+            <chapter title="Generalisierung / Spezialisierung" id="konzepte-abstraktion-generalisierung">
+            </chapter>
+
+            <chapter title="Abstrakte Klassen" id="konzepte-abstraktion-abstrakteklassen">
+            </chapter>
+        </chapter>
+
+        <chapter title="Polymorphismus" id="konzepte-polymorphismus">
+        </chapter>
+    </chapter>
+
+    <chapter title="Wiederverwendung" id="wiederverwendung">
+        <chapter title="Verwaltung der Bibliotheken" id="wiederverwendung-bibliotheken">
+        </chapter>
+        
+        <chapter title="Softwarekomponenten" id="wiederverwendung-komponenten">
+        </chapter>
+    </chapter>
 
     <chapter title="Quellen" id="quellen">
         <tip>
