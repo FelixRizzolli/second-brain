@@ -55,6 +55,16 @@
         </chapter>
     </chapter>
 
+    <chapter title="Prinzipien" id="prinzipien">
+        <list>
+            <li>inkrementelle Planung</li>
+            <li>einfacher Entwurf und keine Releases</li>
+            <li>kollektives Arbeiten und Pair-Programming</li>
+            <li>Test-Driven Development</li>
+            <li>Kunde vor Ort</li>
+        </list>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
