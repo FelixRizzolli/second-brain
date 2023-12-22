@@ -58,7 +58,30 @@
     </chapter>
 
     <chapter title="Übersicht" id="uebersicht">
-
+        <code-block lang="plantuml">
+            @startmindmap
+                * Programmierparadigmen
+                    * Konkatenativ
+                    * Graphensetzung
+                    * Datenstromorientiert
+                    * Generativ
+                    * Aspektorientiert
+                    * Agentenorientiert
+                    * Objektorientiert
+                    * Deklarativ
+                        * Constraint
+                        * Funktional
+                        * Logisch
+                    * Imperativ
+                        * Strukturiert
+                        * Prozedural
+                        * Modular
+                        * Programmierung mit abstrakten Datentypen
+                    * Komponentenorientiert
+                    * Generisch
+                    * Multiparadigmisch
+            @endmindmap
+        </code-block>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
