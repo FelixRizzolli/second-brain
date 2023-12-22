@@ -371,6 +371,26 @@
             </chapter>
 
             <chapter title="Die Sichtbarkeit" id="konzepte-sichtbarkeit-sichtbarkeit">
+                <p>
+                    Die Sichtbarkeit bestimmt, welche Elemente eines Objekts für andere Objekte sichtbar sind. Die
+                    beiden Extreme lauten:
+                </p>
+
+                <list>
+                    <li><code>private</code>: Das Element ist nur innerhalb der Klasse sichtbar.</li>
+                    <li><code>public</code>: Das Element ist für alle anderen Objekte sichtbar.</li>
+                </list>
+
+                <p>
+                    Beispielsweise werden Attribute, die nur für eine Berechnung innerhalb einer Methode benutzt werden,
+                    als <code>private</code> definiert. Soll auf die Daten eines Objekts auch von außen zugegriffen
+                    werden, so ist das Element als <code>public</code> zu kennzeichnen. Für die Klasse PKW könnte es
+                    beispielsweise sinnvoll sein, die Property Leistung als <code>public</code> zu definieren, denn so
+                    können andere Objekte diesen Wert erfragen. Je nach Programmiersprache kann man zwischen den beiden
+                    Extremen <code>public</code> und <code>private</code> weitere Abstufungen in den Sichtbarkeiten
+                    definieren. Beispielsweise könnte das Schlüsselwort <code>protected</code> darauf hinweisen, dass
+                    ein Zugriff von außen auf das Klassenelement möglich, aber nur innerhalb des Moduls erlaubt ist.
+                </p>
             </chapter>
         </chapter>
 
