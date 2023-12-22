@@ -38,7 +38,10 @@
         </chapter>
 
         <chapter title="3. Entwicklung und Test" id="modell-entwicklung">
-
+            <p>
+                In der dritten Phase kommt es zur technischen Umsetzung. Damit eine gewisse Qualität erreicht wird, wird
+                mit Tests das Ergebnis überprüft, welche ein sofortiges Feedback geben.
+            </p>
         </chapter>
 
         <chapter title="4. Planung des nächsten Zyklus" id="modell-weiterplanung">
