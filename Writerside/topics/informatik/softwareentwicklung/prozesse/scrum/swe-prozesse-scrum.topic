@@ -241,7 +241,328 @@
     </chapter>
 
     <chapter title="Scrum Glossar" id="glossar">
+        <table style="both">
+            <tr>
+                <td>Begriff (EN)</td>
+                <td>Beschreibung</td>
+            </tr>
+            <tr>
+                <td>Burn-down Chart</td>
+                <td>
+                    Ein Diagramm, das die Menge an Arbeit anzeigt, von der man annimmt, dass sie in einem Backlog
+                    verbleibt. Die Zeit wird auf der horizontalen Achse und die verbleibende Arbeit auf der vertikalen
+                    Achse dargestellt. Je weiter die Zeit fortschreitet und je mehr Aufgaben aus dem Backlog entnommen
+                    und erledigt werden, desto weniger Arbeit ist noch zu erwarten. Die verbleibende Arbeit kann auf
+                    verschiedene Arten bewertet werden, z. B. in Form von User-Story-Punkten oder Aufgabenstunden
+                    (eng. <emphasis>task hours</emphasis>). Die verbleibende Arbeit in Sprint Backlogs und Product
+                    Backlogs kann mithilfe eines Burn-Down-Diagramms kommuniziert werden. Siehe auch: Burnup-Diagramm.
+                </td>
+            </tr>
+            <tr>
+                <td>Burn-up Chart</td>
+                <td>
+                    Ein Diagramm, das den Umfang der geleisteten Arbeit anzeigt. Die Zeit wird auf der horizontalen
+                    Achse und die erledigte Arbeit auf der vertikalen Achse dargestellt. Je weiter die Zeit
+                    fortschreitet und je mehr Aufgaben aus dem Backlog entnommen und erledigt werden, desto mehr kann
+                    man erwarten, dass die Linie, die die geleistete Arbeit anzeigt, ansteigt. Der Arbeitsaufwand kann
+                    auf verschiedene Weise gemessen werden, z. B. in User-Story-Punkten oder Aufgabenstunden
+                    (eng. <emphasis>task hours</emphasis>). Der Arbeitsumfang, der als "in-scope" betrachtet wird, kann
+                    auch als Linie dargestellt werden; es ist zu erwarten, dass sich der Burn-up dieser Linie nähert,
+                    wenn die Arbeit abgeschlossen ist.
+                </td>
+            </tr>
+            <tr>
+                <td>Coherent/Coherence</td>
+                <td>
+                    Die Qualität der Beziehung zwischen bestimmten Product-Backlog-Elementen, die sie als Ganzes
+                    betrachtungswürdig machen kann. Siehe auch: Sprint-Ziel.
+                </td>
+            </tr>
+            <tr>
+                <td>Daily Scrum</td>
+                <td>
+                    Ein Scrum Event welches ein 15-minütiges Timebox-Event hält und an jedem Tag des Sprints
+                    stattfindet. Dabei planen die Entwickler die Arbeit für die nächsten 24 Stunden. Dies optimiert die
+                    Zusammenarbeit und die Leistung des Teams, indem die Arbeit seit dem letzten Daily Scrum überprüft
+                    und die anstehende Arbeit im Sprint prognostiziert wird. Das Daily Scrum wird jeden Tag zur gleichen
+                    Zeit und am gleichen Ort abgehalten, um die Komplexität zu reduzieren.
+                </td>
+            </tr>
+            <tr>
+                <td>Definition of Done</td>
+                <td>
+                    Ist eine formale Beschreibung des Zustands des Inkrements, wenn es die für das Produkt
+                    erforderlichen Qualitätsmaßnahmen erfüllt. In dem Moment, in dem ein Product Backlog Item die
+                    Definition of Done erfüllt, ist ein Inkrement geboren. Die Definition of Done schafft Transparenz,
+                    indem sie allen ein gemeinsames Verständnis davon vermittelt, welche Arbeit als Teil des Inkrements
+                    abgeschlossen wurde. Wenn ein Product Backlog Item nicht der Definition of Done entspricht, kann es
+                    nicht freigegeben oder sogar bei der Sprint Review vorgestellt werden.
+                </td>
+            </tr>
+            <tr>
+                <td>Developer</td>
+                <td>
+                    Als Entwickler (eng. <emphasis>Developer</emphasis>) bezeichnet sich jedes Mitglied eines
+                    Scrum-Teams, das sich verpflichtet, in jedem Sprint einen beliebigen Aspekt eines nutzbaren
+                    Inkrements zu erstellen, unabhängig von der technischen, funktionalen oder sonstigen
+                    Spezialisierung.
+                </td>
+            </tr>
+            <tr>
+                <td>Emergence</td>
+                <td>
+                    Als Emergence wird der Vorgang bezeichnet, bei dem neue Tatsachen oder neue Erkenntnisse über eine
+                    Tatsache entstehen oder in den Vordergrund treten, oder die Erkenntnisse über eine Tatsache
+                    unerwartet sichtbar werden.
+                </td>
+            </tr>
+            <tr>
+                <td>Empiricism</td>
+                <td>
+                    Als Empirismus (eng. <emphasis>empiricism</emphasis>) wir der Prozesssteuerungstyp bezeichnet, bei
+                    dem nur die Vergangenheit als sicher akzeptiert wird und bei der Entscheidungen auf Beobachtung
+                    (eng. <emphasis>observation</emphasis>), Erfahrung (eng. <emphasis>experience</emphasis>) und
+                    Experiment (eng. <emphasis>experimentation</emphasis>) beruhen. Der Empirismus beruht auf drei
+                    Säulen: Transparenz (eng. <emphasis>transparency</emphasis>), Kontrolle
+                    (eng. <emphasis>inspection</emphasis>) und Anpassung (eng. <emphasis>adaptation</emphasis>).
+                </td>
+            </tr>
+            <tr>
+                <td>Engineering standards</td>
+                <td>
+                    Ein gemeinsames Set von Entwicklungs- und Technologiestandards, die von den Entwicklern angewendet
+                    werden, um veröffentlichungsfähige (eng. <emphasis>releasable</emphasis>) Software-Inkremente zu
+                    erstellen.
+                </td>
+            </tr>
+            <tr>
+                <td>Forecast (of functionality)</td>
+                <td>
+                    Die Auswahl von Elementen aus dem Product Backlog, die der Entwickler für die Umsetzung in einem
+                    Sprint für machbar hält.
+                </td>
+            </tr>
+            <tr>
+                <td>Increment</td>
+                <td>
+                    Scrum-Artefakt, das die vollständige und wertvolle Arbeit definiert, die von den Entwicklern während
+                    eines Sprints produziert wird. Die Summe aller Inkremente bildet ein Produkt.
+                </td>
+            </tr>
+            <tr>
+                <td>Product Backlog</td>
+                <td>
+                    Ein Scrum-Artefakt, das aus einer geordneten Liste der Arbeiten besteht, die zu erledigen sind, um
+                    ein Produkt zu erstellen, zu pflegen und aufrechtzuerhalten. Wird vom Product Owner verwaltet.
+                </td>
+            </tr>
+            <tr>
+                <td>Product Backlog refinement</td>
+                <td>
+                    Die Aktivität in einem Sprint, durch die der Product Owner und die Entwickler dem Product Backlog
+                    mehr Granularität verleihen.
+                </td>
+            </tr>
+            <tr>
+                <td>Product Owner</td>
+                <td>
+                    Rolle in Scrum, die für die Maximierung des Werts eines Produkts verantwortlich ist, in erster Linie
+                    durch inkrementelles Management und die Formulierung von geschäftlichen und funktionalen Erwartungen
+                    an ein Produkt gegenüber den Entwicklern.
+                </td>
+            </tr>
+            <tr>
+                <td>Product Goal</td>
+                <td>
+                    Das Produktziel beschreibt einen zukünftigen Zustand des Produkts, der dem Scrum-Team als
+                    Zielvorgabe für die Planung dienen kann. Das Product Goal befindet sich im Product Backlog. Der Rest
+                    des Product Backlogs entsteht, um zu definieren, "was" das Product Goal erfüllen wird.
+                </td>
+            </tr>
+            <tr>
+                <td>Ready</td>
+                <td>
+                    Ein gemeinsames Verständnis zwischen dem Product Owner und den Entwicklern bezüglich der bevorzugten
+                    Beschreibungsebene der Product Backlog Items, die bei der Sprintplanung eingeführt werden.
+                </td>
+            </tr>
+            <tr>
+                <td>Refinement</td>
+                <td>
+                    siehe <emphasis>Product Backlog Refinement</emphasis>.
+                </td>
+            </tr>
+            <tr>
+                <td>Scrum</td>
+                <td>
+                    Scrum ist ein leichtgewichtiges Framework, das Menschen, Teams und Organisationen dabei hilft, durch
+                    adaptive Lösungen für komplexe Probleme, wie sie im Scrum Guide definiert sind, Werte zu schaffen.
+                </td>
+            </tr>
+            <tr>
+                <td>Scrum Board</td>
+                <td>
+                    Eine physische Tafel zur Visualisierung von Informationen für und durch das Scrum-Team, die häufig
+                    zur Verwaltung des Sprint Backlogs verwendet wird. Scrum Boards sind eine optionale Implementierung
+                    innerhalb von Scrum, um Informationen sichtbar zu machen.
+                </td>
+            </tr>
+            <tr>
+                <td>Scrum Guide</td>
+                <td>
+                    Die Definition von Scrum, verfasst und bereitgestellt von Ken Schwaber und Jeff Sutherland, den
+                    Mitbegründern von Scrum. Diese Definition besteht aus den Verantwortlichkeiten
+                    (eng. <emphasis>accountabilities</emphasis>), Ereignissen (eng. <emphasis>events</emphasis>),
+                    Artefakten (eng. <emphasis>artifacts</emphasis>) und den Regeln (eng. <emphasis>rules</emphasis>),
+                    die Scrum miteinander verbindet.
+                </td>
+            </tr>
+            <tr>
+                <td>Scrum Master</td>
+                <td>
+                    Rolle innerhalb eines Scrum-Teams, die dafür verantwortlich ist, ein Scrum-Team und seine Umgebung
+                    zu leiten, zu coachen, zu unterrichten und dabei zu unterstützen, Scrum richtig zu verstehen und
+                    anzuwenden.
+                </td>
+            </tr>
+            <tr>
+                <td>Scrum Team</td>
+                <td>
+                    Ein selbstverwaltetes Team, bestehend aus einem Scrum Master, einem Product Owner und Entwicklern.
+                </td>
+            </tr>
+            <tr>
+                <td>Scrum Values</td>
+                <td>
+                    Eine Reihe grundlegender Werte und Qualitäten, die dem Scrum-Rahmen zugrunde liegen: Engagement
+                    (eng. <emphasis>commitment</emphasis>), Mut (eng. <emphasis>courage</emphasis>), Fokus
+                    (eng. <emphasis>focus</emphasis>), Offenheit (eng. <emphasis>openness</emphasis>), und Respekt
+                    (eng. <emphasis>respect</emphasis>).
+                </td>
+            </tr>
+            <tr>
+                <td>Self-Managing</td>
+                <td>
+                    Scrum-Teams sind funktionsübergreifend, d. h. die Mitglieder verfügen über alle erforderlichen
+                    Fähigkeiten, um in jedem Sprint Werte zu schaffen. Sie verwalten sich auch selbst, d.h. sie
+                    entscheiden intern, wer was, wann und wie macht.
+                </td>
+            </tr>
+            <tr>
+                <td>Sprint</td>
+                <td>
+                    Scrum-Event, das auf einen Monat oder weniger begrenzt ist und als Container für die anderen
+                    Scrum-Events und -Aktivitäten dient. Sprints werden nacheinander durchgeführt, ohne Zwischenpausen.
+                </td>
+            </tr>
+            <tr>
+                <td>Sprint Backlog</td>
+                <td>
+                    Scrum-Artefakt, das einen Überblick über die Entwicklungsarbeit zur Erreichung des Sprint-Ziels
+                    gibt, typischerweise eine Vorhersage der Funktionalität und der zur Bereitstellung dieser
+                    Funktionalität erforderlichen Arbeit. Wird von den Entwicklern verwaltet.
+                </td>
+            </tr>
+            <tr>
+                <td>Sprint Goal</td>
+                <td>
+                    Ein kurzer Ausdruck des Zwecks eines Sprints, oft ein Geschäftsproblem, das behandelt wird. Die
+                    Funktionalität kann während des Sprints angepasst werden, um das Sprint-Ziel zu erreichen.
+                </td>
+            </tr>
+            <tr>
+                <td>Sprint Planning</td>
+                <td>
+                    Scrum Event, das auf 8 Stunden oder weniger begrenzt ist, um einen Sprint zu starten. Es dient dem
+                    Scrum-Team dazu, die Arbeit aus dem Product Backlog zu inspizieren, die als Nächstes erledigt werden
+                    sollte, und diese Arbeit in das Sprint Backlog zu integrieren.
+                </td>
+            </tr>
+            <tr>
+                <td>Sprint Retrospective</td>
+                <td>
+                    Scrum Event, das auf ein Zeitfenster von 3 Stunden oder weniger festgelegt ist, um einen Sprint zu
+                    beenden. Es dient dem Scrum Team zur Überprüfung des vergangenen Sprints und zur Planung von
+                    Verbesserungen, die in zukünftigen Sprints umgesetzt werden sollen.
+                </td>
+            </tr>
+            <tr>
+                <td>Sprint Review</td>
+                <td>
+                    Scrum Event, das auf eine Timebox von 4 Stunden oder weniger festgelegt ist, um die
+                    Entwicklungsarbeit eines Sprints abzuschließen. Es dient dem Scrum Team und den Stakeholdern dazu,
+                    das aus dem Sprint resultierende Produktinkrement zu inspizieren, die Auswirkungen der geleisteten
+                    Arbeit auf den Gesamtfortschritt in Richtung des Produktziels zu bewerten und das Product Backlog zu
+                    aktualisieren, um den Wert der nächsten Periode zu maximieren.
+                </td>
+            </tr>
+            <tr>
+                <td>Stakeholder</td>
+                <td>
+                    Eine Person außerhalb des Scrum-Teams mit einem spezifischen Interesse an und Wissen über ein
+                    Produkt, das für die inkrementelle Entdeckung erforderlich ist. Sie wird vom Product Owner vertreten
+                    und arbeitet aktiv mit dem Scrum Team beim Sprint Review zusammen.
+                </td>
+            </tr>
+            <tr>
+                <td>Technical Debt</td>
+                <td>
+                    Der typischerweise unvorhersehbare Aufwand für die Wartung des Produkts, der oft durch nicht ideale
+                    Designentscheidungen verursacht wird und zu den Gesamtbetriebskosten beiträgt. Kann unbeabsichtigt
+                    im Inkrement vorhanden sein oder absichtlich eingeführt werden, um den Wert früher zu realisieren.
+                </td>
+            </tr>
+            <tr>
+                <td>Values</td>
+                <td>
+                    <p>
+                        Wenn die Werte:
+                    </p>
 
+                    <list>
+                        <li>Engagement (eng. <emphasis>commitment</emphasis>),</li>
+                        <li>Mut (eng. <emphasis>courage</emphasis>),</li>
+                        <li>Fokus (eng. <emphasis>focus</emphasis>),</li>
+                        <li>Offenheit (eng. <emphasis>openness</emphasis>),</li>
+                        <li>und Respekt (eng. <emphasis>respect</emphasis>)</li>
+                    </list>
+
+                    <p>
+                        vom Scrum-Team verkörpert und gelebt werden, werden die Scrum-Säulen
+                        (eng. <emphasis>Scrum pillars</emphasis>):
+                    </p>
+
+                    <list>
+                        <li>Transparenz (eng. <emphasis>transparency</emphasis>),</li>
+                        <li>Kontrolle (eng. <emphasis>inspection</emphasis>),</li>
+                        <li>und Anpassung (eng. <emphasis>adaptation</emphasis>)</li>
+                    </list>
+
+                    <p>
+                        lebendig und schaffen Vertrauen für alle. Die Mitglieder des Scrum-Teams lernen und erforschen
+                        diese Werte, während sie mit den Scrum-
+                    </p>
+
+                    <list>
+                        <li>Ereignissen (eng. <emphasis>events</emphasis>)</li>
+                        <li>Rollen (eng. <emphasis>roles</emphasis>)</li>
+                        <li>und Artefakten (eng. <emphasis>artifacts</emphasis>)</li>
+                    </list>
+
+                    <p>
+                        arbeiten.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>Velocity</td>
+                <td>
+                    Eine optionale, aber häufig verwendete Angabe der Menge des Product Backlogs, die während eines
+                    Sprints von einem Scrum-Team in ein Produktinkrement umgewandelt wurde, das von den Entwicklern zur
+                    Verwendung innerhalb des Scrum-Teams verfolgt wird.
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
