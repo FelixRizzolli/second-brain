@@ -63,6 +63,7 @@
                 <toc-element topic="swe-vcs-git.topic"/>
                 <toc-element topic="swe-vcs-cvs.topic"/>
                 <toc-element topic="swe-vcs-svn.topic"/>
+                <toc-element topic="swe-vcs-vss.topic"/>
             </toc-element>
             <toc-element topic="swe-uml.topic"/>
         </toc-element>
