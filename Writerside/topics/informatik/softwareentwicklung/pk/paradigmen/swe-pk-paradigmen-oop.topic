@@ -395,6 +395,32 @@
         </chapter>
 
         <chapter title="Vererbung" id="konzepte-vererbung">
+            <p>
+                Mithilfe der <b>Vererbung</b> (eng.: <emphasis>Inheritance</emphasis>) können Attribute und Methoden
+                einer übergeordneten Klasse auf nachgelagerte Klassen vererbt bzw. abgeleitet werden. Das bedeutet, es
+                können Hierarchien von Klassen erstellt werden, die untereinander in Beziehung stehen. Die erbende
+                Klasse bzw. ableitende Klasse nennt man dabei auch Unterklasse, die vererbende Klasse auch Oberklasse.
+            </p>
+
+            <img src="swe-pk-paradigmen-oop-vererbung.png" alt="Konzepte: Vererbung"/>
+
+            <p>
+                Die Klasse <code>Fahrzeug</code> enthält die Attribute <code>Fahrzeuglänge</code>,
+                <code>Höchstgeschwindigkeit</code> und <code>maximaleLeistung</code> und ebenso die Methoden
+                <code>bremsen</code> und <code>beschleunigen</code>. Die Klasse <code>Fahrzeug</code> ist eine
+                sogenannte Oberklasse. Von dieser Klasse werden andere Klassen abgeleitet. In diesem Fall sind dies die
+                Klassen <code>Hybridauto</code>, <code>Elektroauto</code>, <code>Benzinauto</code> und
+                <code>Dieselauto</code>. Alle abgeleiteten Klassen verfügen automatisch über dieselben Attribute und
+                Methoden wie die Oberklasse. Dieses Prinzip nennt man Vererbung. In den abgeleiteten Klassen muss man
+                dann nur die zusätzlichen Attribute und Methoden hinzufügen. Beispielsweise werden der Klasse
+                <code>Hybridauto</code> die Methoden <code>BenzinTanken</code> und <code>StromLaden</code> hinzugefügt.
+                Wie gesagt, auch diese Klasse kennt die Methoden bremsen und <code>beschleunigen</code>.
+            </p>
+            <p>
+                Die Vererbung von Klassen bzw. Objekten repräsentiert eine Ist-ein-Beziehung: Eine Instanz von
+                Elektroauto ist auch gleichzeitig eine Instanz von Fahrzeug. Umgekehrt gilt dies allerdings nicht: Eine
+                Instanz von Fahrzeug ist nicht zwangsläufig eine Instanz von Elektroauto.
+            </p>
         </chapter>
 
         <chapter title="Abstraktion &amp; Generalisierung / Spezialisierung" id="konzepte-abstraktion">
