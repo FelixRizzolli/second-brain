@@ -6,4 +6,11 @@
        title="Softwareentwicklung" id="swe" help-id="softwareentwicklung">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Definition Softwareentwickler" id="definition">
+        <tip>
+            Der Softwareentwickler analysiert, plant und implementiert auf professionelle Art und Weise
+            informationstechnische Anwendungen und Softwarebausteine. Ebenso ist er für umfassende Tests und für eine
+            nahtlose Systemintegration zuständig.
+        </tip>
+    </chapter>
 </topic>
