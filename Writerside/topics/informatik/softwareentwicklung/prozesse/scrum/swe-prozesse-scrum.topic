@@ -118,7 +118,41 @@
         </chapter>
 
         <chapter title="Produkte mit Agilität managen" id="kompetenzen-managen">
+            <p>
+                <b>Agiles Produktmanagement</b> führt zu Produkten, die wertvolle Geschäftsergebnisse liefern, zu mehr
+                Flexibilität bei der Reaktion auf Veränderungen und zu größerer Transparenz bei
+                Investitionsentscheidungen in der Produktentwicklung. Eine klare und verständliche <b>Produktvision</b>
+                hilft dabei, die Produktentwicklung auf die <b>Geschäftsstrategie</b> des Unternehmens einschließlich
+                der strategischen Ziele und/oder der Geschäftsvision auszurichten, während der Fokus auf den
+                <b>Produktwert</b> die kontinuierlichen Verbesserungen des Produkts betrifft. Der Produktwert beinhaltet
+                Überlegungen wie eine größere Transparenz bei wertorientierten Entscheidungen und organisationsweite,
+                wertorientierte Ansätze. Zu den wichtigsten Grundsätzen dieses Schwerpunkts gehören die kontinuierliche
+                Definition des Wertes, die Messung des tatsächlich realisierten Wertes, die Validierung von Annahmen und
+                die Analyse von Trends.
+            </p>
+            <p>
+                Der Prozess der Anpassung der Produktvision an den Produktwert ist iterativ und inkrementell und wird
+                durch eine kontinuierliche Verfeinerung des Product Backlogs gesteuert. Ein effektives
+                <b>Product Backlog Management</b> erfordert den Input und die Zusammenarbeit einer Vielzahl von
+                <b>Stakeholdern und Kunden</b> - einschließlich des Scrum-Teams - und erfordert die Entwicklung von
+                Techniken, um ein angemessenes Maß an Transparenz auf der Grundlage der Bedürfnisse der Stakeholder
+                sicherzustellen. In ähnlicher Weise verwenden <b>Forecasting und Planning</b> einen iterativen und
+                inkrementellen Ansatz, um Komplexität, Veränderungen und die Realitäten der geschäftlichen
+                Verpflichtungen zu bewältigen. Die Beachtung dieser Schwerpunktbereiche führt zur Entwicklung und
+                Lieferung wertvoller Produktinkremente innerhalb von 30 Tagen oder weniger. Zu den weiteren Merkmalen
+                und Vorteilen dieses Ansatzes gehören eine erhöhte Transparenz des Fortschritts, realistischere und sich
+                entwickelnde Prognosen zur Steuerung der Erwartungen der Interessengruppen sowie die Anwendung
+                geeigneter Strategien für die Freigabe, den Vertrieb, die Vertragsgestaltung und die Zusammenarbeit mit
+                Partnern.
+            </p>
+            <p>
+                Der Product Owner konzentriert sich in der Regel auf das Management von Produkten mit Agilität, aber die
+                Beherrschung dieser Kompetenz wird von allen Mitgliedern des Scrum-Teams, den agile Leaders und den
+                Stakeholdern der Organisation verlangt, um sicherzustellen, dass der volle Wert der Verwendung des
+                Scrum-Frameworks und eines empirischen Prozesses erreicht wird.
+            </p>
 
+            <p>Mehr zu diesem Thema: <a href="swe-prozesse-scrum-managen.topic">HIER</a></p>
         </chapter>
 
         <chapter title="Produkte professionell entwickeln und ausliefern" id="kompetenzen-entwickeln">
