@@ -76,16 +76,80 @@
             </chapter>
 
             <chapter title="Methoden" id="grundlagen-objekte-methoden">
+                <p>
+                    Eine Methode enthält ähnlich wie eine Funktion, Funktionalität. Durch sie werden die Fähigkeiten
+                    eines Objektes beschrieben, also welche Funktionen bzw. Aufgaben ein Objekt ausführen kann.
+                </p>
+                <p>
+                    Methoden werden auch dazu verwendet, die Werte bestimmter Attribute zu verändern. Eine Methode
+                    Lackieren der Klasse Auto könnte also eine Veränderung der Farbe bewirken. Als Argument müsste die
+                    Methode die neue Farbe übermitteln. Aus unserem grauen Toyota könnte also mithilfe der Methode
+                    Lackieren ein farbenfrohes blaues Automobil werden. Ebenso dienen Methoden dazu, dass man die Werte
+                    von Attributen abfragen kann.
+                </p>
+                <p>
+                    Auch ein Auto verfügt stets über bestimmte Fähigkeiten. Mit Bezug auf die zu entwickelnde Software
+                    könnten folgende Methoden von Interesse sein:
+                </p>
+
+                <list>
+                    <li><code>BehoerdlichZulassen</code>, d. h. Anmeldung bei der zuständigen Behörde, und</li>
+                    <li><code>FahrtenbuchAnalysieren</code>.</li>
+                </list>
+
+                <p>
+                    Natürlich verfügt das reale Objekt über viel mehr Funktionalität. Ein Automobil kann beispielsweise
+                    beschleunigen und bremsen. In der Software bilden wir jedoch nur die interessierenden Methoden ab,
+                    denn die Software ist ein stark vereinfachtes Modell der Wirklichkeit.
+                </p>
+
                 <chapter title="Getter und Setter" id="grundlagen-objekte-methoden-gettersetter">
+                    <p>
+                        In welcher Form man die Werte von Attributen ändern kann, ist von Programmiersprache zu
+                        Programmiersprache etwas unterschiedlich. Historisch und in Anlehnung an die Grundidee der
+                        objektorientierten Programmierung kann man von außerhalb eines Objekts nicht auf die Attribute
+                        des Objekts direkt zugreifen, sie sind geheim. Dazu verwendet man Methoden. Wie man diese
+                        Methoden benennt, spielt grundsätzlich keine Rolle. Zur Vereinfachung dieser Notwendigkeit
+                        verwenden viele Sprachen spezielle Methoden, d. h. für das Lesen eine <code>get</code>- und für
+                        das Schreiben eine <code>set</code>-Methode. Beispielsweise könnte man mit der Methode
+                        <code>setFarbe</code> die Farbe des betreffenden Autoobjekts seinen Wünschen anpassen. Wollte
+                        man die aktuelle Farbe wissen, müsste man den Wert über die Methode <code>getFarbe</code>
+                        auslesen. Ebenso könnte man – wie im obigen Beispiel angeführt – eine Methode
+                        <code>Lackieren</code> erstellen, die auch die Farbe anpasst und vielleicht darüber hinaus noch
+                        etwas anderes macht, zum Beispiel eine Schutzversiegelung auf den Lack aufbringt.
+                    </p>
+                    <p>
+                        Da ständig auf die Attribute der Objekte lesend und schreiben zugegriffen werden muss, haben
+                        einige Programmiersprachen, zum Beispiel C#, noch mehr Vereinfachungen vorgesehen. Hier
+                        definiert man sogenannte Properties. Dabei kann man von außerhalb der Klasse so tun, als ob man
+                        direkt das betreffende Attribut liest oder schreibt. Im Hintergrund werden dazu jedoch weiterhin
+                        <code>get</code>- und <code>set</code>-Methoden aufgerufen. Um den Entwicklern das Leben jedoch
+                        zu erleichtern, werden diese <code>set</code>- und <code>get</code>-Methoden vom Compiler
+                        automatisch bei der Erstellung des Programms generiert.
+                    </p>
                 </chapter>
 
                 <chapter title="Konstruktor" id="grundlagen-objekte-methoden-konstruktor">
+                    <p>
+                        Der Konstruktor ist eine Methode, die ausgeführt wird, wenn ein Objekt einer Klasse erstellt
+                        wird. Sie kann beliebige Parameter übernehmen, mit denen das Objekt instanziiert wird.
+                    </p>
                 </chapter>
 
                 <chapter title="Destruktor" id="grundlagen-objekte-methoden-destruktor">
+                    <p>
+                        Die Destruktor-Methode kommt immer dann zum Einsatz, wenn ein Objekt aufgelöst wird.
+                    </p>
                 </chapter>
 
                 <chapter title="Methoden Überladen" id="grundlagen-objekte-methoden-ueberladen">
+                    <p>
+                        Überladen bedeutet, eine Methode erhält mehr Parameter als vorgegeben oder Parameter mit
+                        unterschiedlichen Datentypen. Zusammengefasst, es werden also Werte übergeben, die die Methode
+                        so nicht kennen kann. Überladen ist als Programmiertechnik ausgesprochen praktisch, da eine
+                        Methode mit verschiedenen Situationen umgehen kann, für die normalerweise mehrere Methoden
+                        notwendig wären.
+                    </p>
                 </chapter>
             </chapter>
 
