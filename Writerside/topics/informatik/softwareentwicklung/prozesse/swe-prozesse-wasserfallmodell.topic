@@ -7,7 +7,43 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Einleitung" id="einleitung">
+        <p>
+            Das Wasserfallmodell war das erste veröffentlichte sequentielle Vorgehensmodell für Softwareentwicklung. Anfangs wurde direkt nach der Kenntnis eines Problems mit der Programmierung begonnen. Nun bemühte man sich dem Entwicklungsprozess eine Struktur zu geben. Klar definierte Entwicklungsphasen wurden nacheinander abgearbeitet und jeweils vollständig abgeschlossen, bevor ihre Dokumente bzw. Ergebnisse an die nächste Phase übergeben werden.
+        </p>
+        <p>
+            Die Phasen des Wasserfallmodells sind:
+        </p>
 
+        <list>
+            <li><b>Analyse</b>: Erhebung der Anforderungen</li>
+            <li><b>Entwurf</b>: Festlegung der Architektur des Anwendungssystems</li>
+            <li><b>Implementierung</b>: Technische Umsetzung in einer Programmiersprache</li>
+            <li><b>Test</b>: Überprüfung der Lauffähigkeit des Anwendungssystems</li>
+            <li><b>Betrieb und Wartung</b>: Inbetriebnahme der Software und laufende Wartung</li>
+        </list>
+
+        <note>
+            Beim ursprünglichen Wasserfallmodell ist die Rückkehr zu einer früheren Phase nicht vorgesehen.
+        </note>
+
+        <p>
+            Anforderungen lassen sich oft nicht abschließend formulieren, bevor Kunden die fertige Software gesehen
+            haben - in vielen Fällen ist das nicht einmal ansatzweise möglich; Fehler, die beim Test hätten, bemerkt
+            werden sollen, zeigen sich erst im Betrieb und so weiter.
+        </p>
+
+        <note>
+            <p><b>Projektmanagement-Weisheit</b></p>
+            <p>Was du in einer frühen Phase versäumst, holt dich später zehnfach wieder ein.</p>
+        </note>
+
+        <p>
+            Das Strikte Nacheinander im Wasserfallmodell ist reine Theorie, das Modell wird in der beschriebenen Form
+            nur selten in der Praxis angewendet. Der Nachfolger ist das
+            <emphasis>Wasserfallmodell mit Rückkopplung</emphasis>.
+        </p>
+
+        <img src="swe_prozesse_wasserfallmodell.jpg" alt="Wasserfallmodell"/>
     </chapter>
 
     <chapter title="Das Modell" id="modell">
