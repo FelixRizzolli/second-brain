@@ -216,6 +216,35 @@
     </chapter>
 
     <chapter title="Entwurf von Algorithmen" id="entwurf">
+        <p>
+            Einfache Algorithmen kann man direkt niederschreiben, d.h. in der gewählten Programmiersprache codieren. Mit
+            der Zeit entwickelt man auch so viel Erfahrung, dass ein vorheriger Entwurf bei vielen Algorithmen nicht
+            mehr notwendig ist.
+        </p>
+        <p>
+            Beispiel für komplexere Algorithmen:
+        </p>
+
+        <list>
+            <li>
+                Bei der Programmierung eines Strategiespiels soll die Möglichkeit bestehen, den Computer als Gegner zu
+                wählen. Dazu muss ein Algorithmus entwickelt werden, der mit »durchdachten« Spielzügen auf die
+                Reaktionen des Spielers antwortet und sich gegebenenfalls automatisch dem Niveau des Spielers anpasst.
+            </li>
+            <li>
+                Für ein Transportunternehmen soll eine Software entwickelt werden, die die Beladung der LKW plant. Dabei
+                sind die Größe der Ladefläche, die Abmessungen der zu transportierenden Gegenstände und die Zeitpunkte
+                von Ein- und Ausladung zu berücksichtigen.
+            </li>
+        </list>
+
+        <p>
+            Derartige Algorithmen müssen schrittweise entwickelt werden. Dabei muss man oft nicht bei null anfangen,
+            sondern kann sich der Erkenntnisse aus anderen Wissensbereichen oder allgemein formulierter Lösungsansätze
+            bedienen. Vielleicht hat man auch Glück und kann in dem einen oder anderen Fall auf eine fertige
+            Programmbibliothek zurückgreifen. Für die Umsetzung eines Algorithmus in der Zielsprache - aber auch für
+            seine bloße Verwendung - muss man diesen verstanden haben.
+        </p>
 
         <chapter title="Vorgehensweise" id="entwurf-vorgehensweise">
 
