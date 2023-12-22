@@ -7,7 +7,42 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Was ist Scrum?" id="scrum">
+        <p>
+            Scrum ist ein leichtgewichtiges Rahmenwerk, welches Menschen, Teams und Organisationen hilft, Wert durch
+            adaptive Lösungen für komplexe Probleme zu generieren.
+        </p>
+        <p>
+            Kurz gesagt fordert Scrum, dass ein Scrum Master ein Umfeld fördert, in dem
+        </p>
 
+        <list>
+            <li>
+                in Product Owner die Arbeit für ein komplexes Problem in ein Product Backlog einsortiert;
+            </li>
+            <li>
+                das Scrum Team aus einer Auswahl dieser Arbeit innerhalb eines Sprints ein wertvolles Increment erzeugt;
+            </li>
+            <li>
+                das Scrum Team und dessen Stakeholder die Ergebnisse überprüfen und für den nächsten Sprint anpassen;
+            </li>
+            <li>
+                diese Schritte wiederholt werden.
+            </li>
+        </list>
+
+        <p>
+            Scrum ist einfach. Probiere es so aus, wie es ist, und finde heraus, ob seine Philosophie, Theorie und
+            Struktur dabei helfen, Ziele zu erreichen und Wert zu schaffen. Das Scrum-Rahmenwerk ist absichtlich
+            unvollständig und definiert nur Teile, die zur Umsetzung der Scrum-Theorie erforderlich sind. Scrum baut auf
+            der kollektiven Intelligenz der Personen auf, die es anwenden. Anstatt den Menschen detaillierte Anweisungen
+            zu geben, leiten die Regeln von Scrum ihre Beziehungen und Interaktionen.
+        </p>
+        <p>
+            Innerhalb des Rahmenwerks können verschiedene Prozesse, Techniken und Methoden eingesetzt werden. Scrum
+            umhüllt bestehende Praktiken oder macht sie überflüssig. Scrum macht die relative Wirksamkeit des aktuellen
+            Managements, der Umgebung und der Arbeitstechniken sichtbar, sodass Verbesserungen vorgenommen werden
+            können.
+        </p>
     </chapter>
 
     <chapter title="Scrum Guide" id="scrumguide">
