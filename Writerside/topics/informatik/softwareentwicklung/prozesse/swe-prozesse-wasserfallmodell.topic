@@ -80,7 +80,15 @@
         </chapter>
 
         <chapter title="2. Entwurf" id="modell-entwurf">
+            <p>
+                In der Entwurfsphase wird die grundlegende Architektur des Programmsystems bestimmt. Besteht eine
+                Software aus mehreren Komponenten, werden deren Beziehungen untereinander festgelegt. Eine typische
+                Aufgabe im Entwurf ist das grundsätzliche Klassendesign der Anwendung zu erarbeiten, sofern die
+                objektorientierte Programmentwicklung verwendet wird. Dabei kann eine Beschreibungssprache wie
+                <a href="swe-uml.topic">UML (Unified Modeling Language)</a> weiterhelfen.
+            </p>
 
+            <p>Mehr dazu: <a href="swe-spp-entwurf.topic">HIER</a></p>
         </chapter>
 
         <chapter title="3. Implementierung" id="modell-implementierung">
