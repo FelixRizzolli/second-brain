@@ -53,6 +53,32 @@
 
         <img src="swe_prozesse_entwicklung.jpg" alt="Entwicklung Softwareentwicklungsprozesse"/>
     </chapter>
+    
+    <chapter title="Ziele der agilen Softwareentwicklung" id="ziele">
+        <p>
+            »Agilität« steht für die Fähigkeit, mit Änderungen umzugehen, d. h. schnell und flexibel auf
+            Kundenanforderungen zu reagieren. Änderungen werden nicht mehr als störend aufgefasst, sondern tragen dazu
+            bei, dass das Anwendungssystem frühzeitig in die richtige Richtung gesteuert wird.
+        </p>
+        <p>
+            Ein wesentliches Ziel dieses Vorgehens ist es, in möglichst kurzer Zeit eine erste Version des späteren
+            Endproduktes an den Kunden auszuliefern und bereits in sehr frühen Phasen des Entwicklungsprozesses mit
+            Prototypen zu arbeiten. Frühe produktionsfähige Produktversionen sind zwar im Funktionsumgang eingeschränkt,
+            sie geben jedoch – genauso wie Prototypen – den Anwendern die Möglichkeit, rechtzeitig Feedback zu geben.
+            Das Feedback wiederum ist die Ausgangsbasis, um mögliche Modifikationen zeitnah in den weiteren
+            Projektverlauf einzuarbeiten.
+        </p>
+        <p>
+            Best Practice zur Umsetzung liefern folgende agile Methoden:
+        </p>
+
+        <list>
+            <li>Extreme Programming</li>
+            <li>Kanban</li>
+            <li>Behavior-Driven Development</li>
+            <li>Scrum</li>
+        </list>
+    </chapter>
 
     <chapter title="Quellen" id="quellen">
         <tip>
