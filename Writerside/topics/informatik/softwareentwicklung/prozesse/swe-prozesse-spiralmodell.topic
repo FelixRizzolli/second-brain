@@ -54,7 +54,21 @@
     </chapter>
     
     <chapter title="Fazit" id="fazit">
-        
+        <p>
+            Der Radius der Kurve beschreibt zum einen den Fortschritt des Projektes und zum anderen die kumulierten
+            Kosten. Mit anderen Worten, mit jedem Entwicklungszyklus steigen die bereits aufgewendeten finanziellen Mittel.
+        </p>
+
+        <note>
+            Anhand der erstellten Prototypen kann der Projektfortschritt beobachtet und überprüft werden. Diese
+            Möglichkeiten müssen genutzt werden, um drohende Risiken frühzeitig zu erkennen und darauf zu reagieren!
+        </note>
+
+        <p>
+            Das Spiralmodell ist insbesondere für größere Projekte und Vorhaben mit einem erheblichen Anteil an neuen
+            technischen Herausforderungen geeignet, da man jederzeit explizit auf mögliche Risiken achtet und
+            entsprechende Gegenmaßnahmen einleitet.
+        </p>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
