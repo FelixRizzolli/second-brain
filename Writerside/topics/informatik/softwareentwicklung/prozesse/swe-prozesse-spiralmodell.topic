@@ -45,7 +45,11 @@
         </chapter>
 
         <chapter title="4. Planung des nächsten Zyklus" id="modell-weiterplanung">
-
+            <p>
+                Ein besonderes Merkmal des Spiralmodells ist, dass am Ende eines Zyklus ein Review stattfindet. Dabei
+                werden die durchgeführten Maßnahmen und die erzielten Ergebnisse nochmals angeschaut. Daraus kann direkt
+                auf mögliche Verbesserungsmaßnahmen für den kommenden Entwicklungszyklus geschlossen werden.
+            </p>
         </chapter>
     </chapter>
     
