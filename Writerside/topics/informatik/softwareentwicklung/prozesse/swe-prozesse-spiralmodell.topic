@@ -5,6 +5,32 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Das Spiralmodell" id="swe-prozesse-spiralmodell">
     <show-structure for="chapter,procedure" depth="2"/>
+    
+    <chapter title="Einleitung" id="einleitung">
+        
+    </chapter>
+    
+    <chapter title="Das Modell" id="modell">
+        <chapter title="1. Festlegung der Ziele" id="modell-ziele">
+            
+        </chapter>
+
+        <chapter title="2. Beurteilung von Alternativen bzw. Risikoanalyse" id="modell-alternativen">
+
+        </chapter>
+
+        <chapter title="3. Entwicklung und Test" id="modell-entwicklung">
+
+        </chapter>
+
+        <chapter title="4. Planung des nächsten Zyklus" id="modell-weiterplanung">
+
+        </chapter>
+    </chapter>
+    
+    <chapter title="Fazit" id="fazit">
+        
+    </chapter>
 
     <chapter title="Quellen" id="quellen">
         <tip>
