@@ -13,4 +13,33 @@
             nahtlose Systemintegration zuständig.
         </tip>
     </chapter>
+
+    <chapter title="Wichtige Eigenschaften eines Softwareentwicklers" id="eigenschaften">
+        <list>
+            <li>
+                <b>Interesse an Neuem</b>: Die Technologien in der Softwareentwicklung entwickeln sich ständig weiter.
+                Um als Entwickler auf lange Zeit erfolgreich sein zu können, muss man neugierig und neuen Technologien
+                gegenüber aufgeschlossen sein. Die meisten Softwareentwickler sind Feuer und Flamme, wenn es darum geht,
+                eine neue Programmiersprache oder ein neues Tool auszuprobieren.
+            </li>
+            <li>
+                <b>Bereitschaft zum Lernen</b>: Genauso wie das Interesse an neuen Technologien ist die Motivation, sich
+                kontinuierlich weiterzubilden. Technologien kommen und gehen, Arbeitsweisen verändern sich ständig und
+                neue Herangehensweisen wollen erlernt werden. Ein Großteil der Entwickler bezeichnen sich selbst sogar
+                als Autodidakten.
+            </li>
+            <li>
+                <p>
+                    Gefragt sind neben fachlichen Fähigkeiten auch sog. <b>Soft Skills</b>:
+                </p>
+
+                <list>
+                    <li>Teamfähigkeit</li>
+                    <li>Aufgeschlossenheit</li>
+                    <li>Umsichtigkeit</li>
+                    <li>Kommunikation</li>
+                </list>
+            </li>
+        </list>
+    </chapter>
 </topic>
