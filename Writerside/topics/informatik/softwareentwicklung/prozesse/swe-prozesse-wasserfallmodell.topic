@@ -6,6 +6,28 @@
        title="Wasserfallmodell" id="swe-prozesse-wasserfallmodell">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einleitung" id="einleitung">
+
+    </chapter>
+
+    <chapter title="Das Modell" id="modell">
+        <chapter title="1. Analyse" id="modell-analyse">
+
+        </chapter>
+        <chapter title="2. Entwurf" id="modell-entwurf">
+
+        </chapter>
+        <chapter title="3. Implementierung" id="modell-implementierung">
+
+        </chapter>
+        <chapter title="4. Test" id="modell-test">
+
+        </chapter>
+        <chapter title="5. Betrieb und Wartung" id="modell-wartung">
+
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
