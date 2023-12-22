@@ -6,18 +6,96 @@
        title="Softwareentwicklungsprozesse" id="swe-prozesse">
     <show-structure for="chapter,procedure" depth="2"/>
 
-    <p>
-        Softwareprojekte werden heute professional geplant und durchgeführt. Im Laufe der Zeit hat sich die Art und
-        Weise der Durchführung stetig weiterentwickelt. Ein iteratives und agiles Vorgehen ist heute alternativlos.
-    </p>
+    <chapter title="Einleitung" id="einleitung">
+        <p>
+            Softwareprojekte werden heute professional geplant und durchgeführt. Im Laufe der Zeit hat sich die Art und
+            Weise der Durchführung stetig weiterentwickelt. Ein iteratives und agiles Vorgehen ist heute alternativlos.
+        </p>
 
-    <p>
-        Software als Produkt und als Projekt ist äußerst dynamisch, z.B. sind die maßgeblichen Anforderungen zu
-        Projektbeginn meist nicht vollständig erfassbar. Änderungswünsche an den Anforderungen während einer
-        Projektdurchführung bilden nicht die Ausnahme, sondern vielmehr den Regelfall. Um diesem Anspruch näherzukommen,
-        haben sich die Vorgehensweisen bei professioneller Softwareentwicklung stetig verändert und weiterentwickelt.
-        Dabei begann alles mit dem <a href="swe-prozesse-wasserfallmodell.topic">Wasserfallmodell</a>.
-    </p>
+        <p>
+            Software als Produkt und als Projekt ist äußerst dynamisch, z.B. sind die maßgeblichen Anforderungen zu
+            Projektbeginn meist nicht vollständig erfassbar. Änderungswünsche an den Anforderungen während einer
+            Projektdurchführung bilden nicht die Ausnahme, sondern vielmehr den Regelfall. Um diesem Anspruch
+            näherzukommen, haben sich die Vorgehensweisen bei professioneller Softwareentwicklung stetig verändert und
+            weiterentwickelt. Dabei begann alles mit dem
+            <a href="swe-prozesse-wasserfallmodell.topic">Wasserfallmodell</a>.
+        </p>
+    </chapter>
+
+
+    <chapter title="Das Problem" id="problem">
+        <p>
+            Eine vollständige und korrekte Erhebung der Anforderungen zu Projektbeginn ist nahezu unmöglich. Dies hat
+            mehrere Ursachen. Die wichtigsten sind:
+        </p>
+
+        <list>
+            <li>Unvollständigkeit der Anforderungen zu Beginn des Projektes,</li>
+            <li>Dynamische Änderungen in den Geschäftsmodellen während der Projektlaufzeit und </li>
+            <li>lange Projektlaufzeiten, teilweise von mehreren Jahren.</li>
+        </list>
+
+        <p>
+            Die Kunden haben meist nur eine ungefähre Vorstellung, in welcher Form eine Software das bestehende Problem
+            lösen soll. Darüber hinaus ist es schwierig, den Entwickler diese ungefähren Anforderungen der Software zu
+            vermitteln, beispielsweise sie für diesen Zweck auch vollständig nachvollziehbar zu dokumentieren.
+        </p>
+        <p>
+            Ein weiteres Problem ergibt sich aus der Dynamik der Geschäftsmodelle. Anforderungen und Rahmenbedingungen,
+            welche zum Zeitpunkt der erstmaligen Analyse galten, sind nicht über die gesamte Projektlaufzeit konstant.
+            Dabei ist zu beobachten, dass das Ausmaß an Dynamik im Laufe der Zeit zunimmt. Da die zu erstellenden
+            Anwendungssysteme immer komplexer und umfangreicher werden, nehmen auch die Laufzeiten der Projekte zu. Dies
+            wirkt sich negativ auf die Möglichkeiten einer umfassenden Planung aus. Je länger die Zeitspanne zwischen
+            Projektstart und endgültiger Bereitstellung der Software ist, desto schwieriger wird es, die dann geltenden
+            Kundenanforderungen zu erfüllen.
+        </p>
+        <p>
+            Dauert ein Projekt länger, so kann auch intern viel passieren: Mitarbeiter können das Unternehmen verlassen,
+            oder neue hinzukommen. Beides führt zu Veränderungen im Team, was sich auf dessen Arbeitsfähigkeit auswirken
+            kann.
+        </p>
+    </chapter>
+
+    <chapter title="Entwicklung Softwareentwicklungsprozesse" id="entwicklung">
+        <p>
+            In den 1980er und frühen 1990er Jahren wurde ein großer Wert auf sorgfältige Projektplanung und
+            formalisierte Qualitätssicherung gelegt. Die Entwicklung erfolgte oft in großen Teams. Im Ergebnis wurde oft
+            mehr Zeit für die Planung der Entwicklung aufgewendet als für die tatsächliche Programmentwicklung und die
+            nachfolgenden Tests. Trotz dieses sehr planvollen und stark phasengetriebenen Vorgehens waren die Ergebnisse
+            nicht immer zufriedenstellend. Zu viele Projekte scheiterten oder konnten die Anforderungen und Wünsche der
+            Kunden nicht erfüllen. Als Folge wurde erstmalig Mitte der 1990er Jahre von »agilen« Methoden gesprochen.
+            Das Ziel war schnell formuliert: Die Entwickler sollten sich verstärkt um ihren eigentlichen Job der
+            Programmentwicklung kümmern und nicht mehr so viel Zeit für Entwurf und Dokumentation aufwenden.
+        </p>
+
+        <img src="swe_prozesse_entwicklung.jpg" alt="Entwicklung Softwareentwicklungsprozesse"/>
+    </chapter>
+
+    <chapter title="Ziele der agilen Softwareentwicklung" id="ziele">
+        <p>
+            »Agilität« steht für die Fähigkeit, mit Änderungen umzugehen, d. h. schnell und flexibel auf
+            Kundenanforderungen zu reagieren. Änderungen werden nicht mehr als störend aufgefasst, sondern tragen dazu
+            bei, dass das Anwendungssystem frühzeitig in die richtige Richtung gesteuert wird.
+        </p>
+        <p>
+            Ein wesentliches Ziel dieses Vorgehens ist es, in möglichst kurzer Zeit eine erste Version des späteren
+            Endproduktes an den Kunden auszuliefern und bereits in sehr frühen Phasen des Entwicklungsprozesses mit
+            Prototypen zu arbeiten. Frühe produktionsfähige Produktversionen sind zwar im Funktionsumgang eingeschränkt,
+            sie geben jedoch – genauso wie Prototypen – den Anwendern die Möglichkeit, rechtzeitig Feedback zu geben.
+            Das Feedback wiederum ist die Ausgangsbasis, um mögliche Modifikationen zeitnah in den weiteren
+            Projektverlauf einzuarbeiten.
+        </p>
+        <p>
+            Best Practice zur Umsetzung liefern folgende agile Methoden:
+        </p>
+
+        <list>
+            <li>Extreme Programming</li>
+            <li>Kanban</li>
+            <li>Behavior-Driven Development</li>
+            <li>Scrum</li>
+        </list>
+    </chapter>
 
     <chapter title="Quellen" id="quellen">
         <tip>
