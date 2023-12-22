@@ -267,6 +267,33 @@
     </chapter>
 
     <chapter title="Unterschied zwischen primitiven Datentypen und Referenztypen" id="datentypen-unterschiede">
+        <p>
+            Der Unterschied zwischen primitiven Datentypen und Referenztypen ist die Art und Weise, wie die jeweiligen
+            Werte gespeichert werden.
+        </p>
+
+        <list>
+            <li>
+                Jedes Mal, wenn eine Variable deklariert wird, sieht der Computer dafür Speicherplatz vor und speichert
+                die Variable inklusive Wert in einer dafür vorgesehenen Speicheradresse. Beim primitiven Datentyp wird
+                jedes Mal, wenn einer Variable ein Wert zugewiesen wird, der gesamte Wert in diese Speicheradresse
+                kopiert.
+            </li>
+            <li>
+                Bei Referenztypen ist dies anders. Hier speichert der Computer in dem für die jeweilige Variable
+                vorgesehenen Register nicht den Wert selbst, sondern nur eine Referenz darauf (man spricht in diesem
+                Fall auch von Zeigern). Wenn zwei oder mehrere Variablen auf das gleiche Objekt zeigen, bedeutet das
+                aber auch, dass man – egal, auf welche der Variablen man zugreift – immer mit dem gleichen Objekt
+                arbeitet: Ändert man also, über eine der Variablen eine Eigenschaft des referenzierten Objekts, hat dies
+                auch Auswirkungen auf die andere Variable.
+            </li>
+        </list>
+
+        <p>
+            Übergibt man einer Funktion ein Argument primitiven Datentyps, wird der gesamte Wert übergeben und in den
+            Parameter der Funktion kopiert. Übergibt man einer Funktion dagegen ein Argument mit Referenztyp, wird nur
+            die Referenz auf das entsprechende Objekt übergeben.
+        </p>
     </chapter>
 
     <chapter title="Wesentliche Konzepte der objektorientierten Programmierung" id="konzepte">
