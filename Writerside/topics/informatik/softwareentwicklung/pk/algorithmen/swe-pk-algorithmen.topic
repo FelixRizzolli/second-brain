@@ -30,7 +30,37 @@
         </p>
 
         <chapter title="Bedingungen für Algorithmen" id="programm-bedingungen">
+            <p>
+                Jeder Software-Algorithmus muss ein paar folgende Bedingungen erfüllen, damit er als zulässig gilt:
+            </p>
 
+            <list>
+                <li>
+                    <b>Spezifikation</b>: Es muss <emphasis>genau</emphasis> angegeben sein, welche Eingabedaten
+                    erforderlich sind und welche Ausgabedaten der Algorithmus generieren soll.
+                </li>
+                <li>
+                    <b>Durchführbarkeit</b>: Das Verfahren muss <emphasis>vollständig</emphasis> beschrieben sein, d.h.
+                    es muss <emphasis>tatsächlich ausführbar</emphasis> sein. Die Schrittfolge des Algorithmus muss
+                    durchgängig sein und darf keine Lücken aufweisen.
+                </li>
+                <li>
+                    <b>Terminiertheit</b>: Es muss in der Regel feststehen, wann der Algorithmus beendet ist.
+                    Terminiertheit bedeutet, dass der Algorithmus zum Ende kommt, nicht dass er erfolgreich sein muss.
+                    Es gibt aber auch Algorithmen, welche kein definiertes Ende haben, d.h. in einer Art Endlosschleife
+                    laufen.
+                </li>
+                <li>
+                    <b>Determiniertheit</b>: Das bedeutet, dass man den Algorithmus wiederholt anwenden kann. Dabei sind
+                    die Ergebnisse nicht immer vollständig identisch, wenn sich beispielsweise die Eingabeparameter
+                    ändern.
+                </li>
+                <li>
+                    <b>Korrektheit</b>: Sind die Eingabedaten korrekt, dann muss der Algorithmus ein korrektes Ergebnis
+                    produzieren. Genügen die Eingabedaten der geforderten Spezifikation, dann muss der Algorithmus
+                    sicherstellen, dass auch die Ausgabedaten der geforderten Spezifikation genügen.
+                </li>
+            </list>
         </chapter>
 
         <chapter title="Wichtige Klassen von Algorithmen" id="programm-klassen">
