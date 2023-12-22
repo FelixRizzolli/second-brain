@@ -37,6 +37,27 @@
         </p>
     </chapter>
 
+    <chapter title="Beispiel" id="beispiel">
+        <code-block>
+            programmstart Login
+                lies Nutzername und Passwort
+                wenn Nutzerdaten gültig dann
+                    erzeuge Nutzersession
+                    zeige Willkommensseite
+                ansonsten
+                    wenn maximale Anzahl an Login-Versuchen erreicht dann
+                        unterprogrammaufruf Nutzer sperren
+                        unterprogrammaufruf E-Mail an Administrator senden
+                        zeige Fehlermeldung
+                        beende Programm
+                    ansonsten
+                        zeige Fehlermeldung
+                        leite weiter zur Eingabe
+                        gehe zu Nutzerdateneingabe
+            programmende Login
+        </code-block>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
