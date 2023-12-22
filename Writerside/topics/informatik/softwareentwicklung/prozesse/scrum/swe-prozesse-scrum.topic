@@ -46,11 +46,22 @@
     </chapter>
 
     <chapter title="Scrum Guide" id="scrumguide">
-
+        <p>
+            Scrum Guide beschreibt das Scrum-Framework. Scrum ist ein leichtgewichtiges Rahmenwerk, welches Menschen,
+            Teams und Organisationen hilft Wert durch adaptive Lösungen für komplexe Probleme zu generieren. Das
+            Scrum-Rahmenwerk ist absichtlich unvollständig und definiert nur Teile, die zur Umsetzung der Scrum-Theorie
+            erforderlich sind. Anstatt den Menschen detaillierte Anweisungen zu geben, leiten die Regeln von Scrum ihre
+            Beziehungen und Interaktionen. Innerhalb des Rahmenwerks können verschiedene Prozesse, Techniken und
+            Methoden eingesetzt werden. Scrum umhüllt bestehende Praktiken oder macht sie überflüssig. Scrum macht die
+            relative Wirksamkeit des aktuellen Managements, der Umgebung und der Arbeitstechniken sichtbar, sodass
+            Verbesserungen vorgenommen werden können.
+        </p>
     </chapter>
 
     <chapter title="Nexus Guide" id="nexusguide">
-
+        <p>
+            Nexus Guide baut auf dem Scrum Guide für das Nexus-Skalierungsframework auf.
+        </p>
     </chapter>
 
     <chapter title="Verstehen der Kompetenzen" id="kompetenzen">
