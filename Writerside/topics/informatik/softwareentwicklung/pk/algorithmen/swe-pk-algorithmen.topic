@@ -7,7 +7,18 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Einleitung" id="einleitung">
-
+        <p>
+            Das Grundprinzip der Computertechnik lautet EVA <path>Eingabe → Verarbeitung → Ausgabe</path>: eine Software
+            dient stets der Verarbeitung von Daten. Dabei werden diese von einem Ausgangsformat in ein Zielformat
+            transferiert.
+        </p>
+        <p>
+            Welche Daten man verwendet bzw. in welcher Form man die Zusammenhänge der realen Welt in Form von
+            Datenstrukturen verarbeitet, das muss der Programmierer festlegen. Ebenso ist es die Aufgabe des
+            Softwareentwicklers, den Weg von den Eingabe- zu den Ausgabedaten zu beschreiben, und zwar in einer Form,
+            welche der Computer verarbeiten kann. Diese Form der Datenverarbeitung basiert auf Algorithmen. Beide
+            Elemente, also Datenstrukturen und Algorithmen, bilden den Grundstock eines jeden Computerprogramms.
+        </p>
     </chapter>
 
     <chapter title="Algorithmen als Kernelemente des Programms" id="programm">
