@@ -18,7 +18,9 @@
         <toc-element topic="swe.topic">
             <toc-element topic="swe-spp.topic"/>
             <toc-element topic="swe-prozesse.topic">
-                <toc-element topic="swe-prozesse-agil.topic"/>
+                <toc-element topic="swe-prozesse-bdd.topic"/>
+                <toc-element topic="swe-prozesse-kanban.topic"/>
+                <toc-element topic="swe-prozesse-xp.topic"/>
                 <toc-element topic="swe-prozesse-scrum.topic"/>
                 <toc-element topic="swe-prozesse-iterativ.topic"/>
                 <toc-element topic="swe-prozesse-wasserfallmodell.topic"/>
