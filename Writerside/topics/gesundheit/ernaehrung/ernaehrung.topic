@@ -6,4 +6,10 @@
        title="Ernährung" id="ernaehrung" help-id="Ernährung">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3432114507, "Gesunde Ernährung", Walter C. Willett &amp; Patrick J. Skerrett, 2022
+        </tip>
+    </chapter>
 </topic>
