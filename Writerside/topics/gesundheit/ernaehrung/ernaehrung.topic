@@ -161,6 +161,65 @@
                 und falsch.
             </p>
         </chapter>
+
+        <chapter title="10 Regeln der DGE" id="ernaehrungsempfehlungen-dge">
+            <list style="decimal">
+                <li>
+                    <b>Lebensmittelvielfalt genießen</b>: Nutzen Sie die Lebensmittelvielfalt und essen Sie
+                    abwechslungsreich. Wählen Sie überwiegend pflanzliche Lebensmittel.
+                </li>
+                <li>
+                    <b>Gemüse und Obst – nimm "5 am Tag"</b>: Genießen Sie mindestens 3 Portionen Gemüse und 2 Portionen
+                    Obst am Tag. Zur bunten Auswahl gehören auch Hülsenfrüchte wie Linsen, Kichererbsen und Bohnen sowie
+                    (ungesalzene) Nüsse.
+                </li>
+                <li>
+                    <b>Vollkorn wählen</b>: Bei Getreideprodukten wie Brot, Nudeln, Reis und Mehl ist die
+                    Vollkornvariante die beste Wahl für Ihre Gesundheit.
+                </li>
+                <li>
+                    <p>
+                        <b>Mit tierischen Lebensmitteln die Auswahl ergänzen</b>: Essen Sie Milch und Milchprodukte wie
+                        Joghurt und Käse täglich, Fisch ein- bis zweimal pro Woche. Wenn Sie Fleisch essen, dann nicht
+                        mehr als 300 bis 600 g pro Woche.
+                    </p>
+                    <warning>
+                        Harvards Gesunder Teller empfiehlt Milch und Milchprodukte maximal zweimal täglich, rät aber
+                        insbesondere den Genuss von Käse aufgrund des hohen Gehalts an gesättigten Fetten
+                        einzuschränken.
+                    </warning>
+                </li>
+                <li>
+                    <b>Gesundheitsfördernde Fette nutzen</b>: Bevorzugen Sie pflanzliche Öle wie beispielsweise Rapsöl
+                    und daraus hergestellte Streichfette. Vermeiden Sie versteckte Fette. Fett steckt oft „unsichtbar“
+                    in verarbeiteten Lebensmitteln wie Wurst, Gebäck, Süßwaren, Fast-Food und Fertigprodukten.
+                </li>
+                <li>
+                    <b>Zucker und Salz einsparen</b>: Mit Zucker gesüßte Lebensmittel und Getränke sind nicht
+                    empfehlenswert. Vermeiden Sie diese möglichst und setzen Sie Zucker sparsam ein. Sparen Sie Salz und
+                    reduzieren Sie den Anteil salzreicher Lebensmittel. Würzen Sie kreativ mit Kräutern und Gewürzen.
+                </li>
+                <li>
+                    <b>Am besten Wasser trinken</b>: Trinken Sie rund 1,5 Liter jeden Tag. Am besten Wasser oder andere
+                    kalorienfreie Getränke wie ungesüßten Tee. Zuckergesüßte und alkoholische Getränke sind nicht
+                    empfehlenswert.
+                </li>
+                <li>
+                    <b>Schonend zubereiten</b>: Garen Sie Lebensmittel so lange wie nötig und so kurz wie möglich, mit
+                    wenig Wasser und wenig Fett. Vermeiden Sie beim Braten, Grillen, Backen und Frittieren das
+                    Verbrennen von Lebensmitteln.
+                </li>
+                <li>
+                    <b>Achtsam essen und genießen</b>: Gönnen Sie sich eine Pause für Ihre Mahlzeiten und lassen Sie
+                    sich Zeit beim Essen.
+                </li>
+                <li>
+                    <b>Auf das Gewicht achten und in Bewegung bleiben</b>: Vollwertige Ernährung und körperliche
+                    Aktivität gehören zusammen. Dabei ist nicht nur regelmäßiger Sport hilfreich, sondern auch ein
+                    aktiver Alltag, indem Sie z. B. öfter zu Fuß gehen oder Fahrrad fahren.
+                </li>
+            </list>
+        </chapter>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
@@ -174,6 +233,13 @@
                ignore-vars="true">
                 https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/translations/german/
             </a>, 2023-12-23 14:30
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.dge.de/gesunde-ernaehrung/dge-ernaehrungsempfehlungen/10-regeln/"
+               ignore-vars="true">
+                https://www.dge.de/gesunde-ernaehrung/dge-ernaehrungsempfehlungen/10-regeln/
+            </a>, 2023-12-23 17:30
         </tip>
     </chapter>
 </topic>
