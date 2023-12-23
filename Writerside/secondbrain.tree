@@ -296,7 +296,17 @@
     <!-- ###########################[ GESUNDHEIT ]########################### -->
     <toc-element topic="gesundheit.topic">
         <toc-element topic="immunsystem.topic"/>
-        <toc-element topic="ernaehrung.topic"/>
+        <toc-element topic="ernaehrung.topic">
+            <toc-element topic="ernaehrung-calcium.topic"/>
+            <toc-element topic="ernaehrung-nahrungsergänzungsmittel.topic"/>
+            <toc-element topic="ernaehrung-nachhaltigkeit.topic"/>
+            <toc-element topic="ernaehrung-lebenslagen.topic"/>
+            <toc-element topic="ernaehrung-getraenke.topic"/>
+            <toc-element topic="ernaehrung-proteine.topic"/>
+            <toc-element topic="ernaehrung-kohlenhydrate.topic"/>
+            <toc-element topic="ernaehrung-fette.topic"/>
+            <toc-element topic="ernaehrung-dieten.topic"/>
+        </toc-element>
         <toc-element topic="sport.topic"/>
         <toc-element topic="gesundheit-weiteres.topic">
             <toc-element topic="ernaehrungskompass.topic"/>
