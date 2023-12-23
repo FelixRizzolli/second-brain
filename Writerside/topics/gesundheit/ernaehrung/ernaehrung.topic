@@ -72,10 +72,61 @@
         </p>
     </chapter>
 
+    <chapter title="Der gesunde Teller" id="gesunder-teller">
+        <img src="ernaehrung_gesunder_teller.png" alt="Der gesunde Teller"/>
+
+        <p>
+            Der Harvards sogenannte <emphasis>Healthy Eating Plate</emphasis> (= Der Gesunde Teller) ist eine visueller
+            und wissenschaftlich begründeter Leitfaden, der es einem leichter macht, die gesündesten Optionen zu wählen.
+            Sowohl <emphasis>Der Gesunde Teller</emphasis> als auch seine ältere Schwester, die <emphasis>Healthy Eating
+            Pyramid</emphasis>, verbreiten die Botschaft, dass es vor allem um die Qualität der Ernährung geht.
+        </p>
+
+        <list>
+            <li>
+                Wir sollten die Hälfte unseres Tellers mit Gemüse und Obst belegen und uns hierbei auch um Vielfalt und
+                Farbe bemühen. Nicht vergessen: die Kartoffel zählt nicht dazu.
+            </li>
+            <li>
+                Rund ein Viertel unseres Tellers sollte aus Vollkorn bestehen. Intaktes und vollständiges Getreide wie
+                Vollkornweizen, Vollkorngerste, Weizenkörner, Hafer und Naturreis sowie Quinoa (ein sogenanntes
+                Pseudogetreide, ähnlich wie Getreide verwendet) sowie damit zubereitetes Essen wirkt sanfter auf den
+                Blutzucker und den Insulinspiegel aus als Weißbrot, weißer Reis und andere verarbeitete Körner und
+                Saaten.
+            </li>
+            <li>
+                Ein weiteres Viertel unseres Tellers sollte aus gesunden Eiweißquellen stammen. Fisch, Hühnerfleisch,
+                Bohnen, Sojabohnen und Nüsse sind allesamt gesunde und vielseitige Proteinquellen. Wir sollten jedoch
+                den Konsum von rotem Fleisch Einschränken und von verarbeitetem Fleisch wie Speck und würsten meiden.
+            </li>
+            <li>
+                Gesunde Pflanzenöle wie Oliven-, Raps-, Soja-, Maiskeim-, Sonnenblumen- und Erdnussöl sollten wir in
+                Maßen verwenden. Von Lebensmitteln mit teilgehärteten Ölen, die ungesunde künstliche Transfettsäuren
+                enthalten, sollten wir die Finger weg lassen. Butter und Kokosöl, bieten ein gutes Aroma, sollten aber
+                nicht unsere Hauptfette sein. Nicht zu vergessen: Fettarm bedeutet nicht gesund.
+            </li>
+            <li>
+                Wir sollten Wasser, Kaffee oder Tee trinken. Keine zuckerhaltigen Getränke. Wenn wir Milch mögen, dann
+                nicht mehr als zwei Gläser täglich. Falls wir Alkohol trinken, dann nur in Maßen - nicht mehr als zwei
+                alkoholische Getränke täglich für Männer und nicht mehr als eines für Frauen.
+            </li>
+            <li>
+                Bewegung ist gut zur Gewichtskontrolle und für den allgemeinen Gesundheitszustand.
+            </li>
+        </list>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
             978-3432114507, "Gesunde Ernährung", Walter C. Willett &amp; Patrick J. Skerrett, 2022
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/translations/german/"
+               ignore-vars="true">
+                https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/translations/german/
+            </a>, 2023-12-23 14:30
         </tip>
     </chapter>
 </topic>
