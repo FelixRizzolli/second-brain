@@ -6,6 +6,34 @@
        title="Ernährung" id="ernaehrung" help-id="Ernährung">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Wir essen, um zu leben" id="einleitung">
+        <p>
+            Warum wir eine gesunde Ernährung pflegen sollten:
+        </p>
+
+        <list>
+            <li>
+                Gutes Essen - gepaart mit einem Körpergewicht, das sich im gesunden Bereich bewegt, regelmäßiger
+                körperlichen Betätigung und Nichtrauchen - kann 80 Prozent der Herzanfälle, 90 Prozent der
+                Typ-2-Diabetes- und 70 Prozent der Darmkrebserkrankungen verhindern.
+            </li>
+            <li>
+                Sie kann uns helfen Schlaganfälle, Osteoporose, Verstopfung und andere Verdauungsleiden, grauem Star
+                sowie altersbedingtem Gedächtnisverlust oder Altersdemenz zu entgehen.
+            </li>
+            <li>
+                Sie gibt uns mehr Energie und ist auch dazu in der Lage hier und jetzt zu unserem Wohlbefinden
+                beizutragen.
+            </li>
+        </list>
+
+        <p>
+            Dagegen können schlechte Ernährungsentscheidungen (etwa zu viel von den falschen und zu wenig von den
+            richtigen Lebensmitteln oder insgesamt zu viel essen) uns in die entgegengesetzte Richtung lenken und die
+            Wahrscheinlichkeit erhöhen, das eine oder andere chronische Leiden zu entwickeln und früh zu sterben.
+        </p>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
