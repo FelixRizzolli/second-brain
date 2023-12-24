@@ -665,8 +665,23 @@
 
     <chapter title="Quicksort" id="quicksort">
         <chapter title="Definition" id="quicksort-definition">
-            <chapter title="Pivotelement" id="quicksort-definition-pivotelement">
+            <p>
+                Das Sortierverfahren gehört zu den <b>rekursiven und nicht stabilen Sortieralgorithmen</b>. Er lässt
+                sich aus dem englischen quick = schnell und sort = sortieren ableiten und wurde in den sechziger Jahren
+                von C. Antony R. Hoare in seiner Grundform entwickelt. Der Quicksort Algorithmus arbeitet wie der
+                Mergesort nach dem <b>Teile-und-herrsche-Verfahren</b> (eng. <emphasis>divide and conquer</emphasis>)
+                der Informatik.
+            </p>
 
+            <chapter title="Pivotelement" id="quicksort-definition-pivotelement">
+                <p>
+                    Das Pivotelement leitet sich vom französischem pivot = Dreh-/Angelpunkt ab. Es handelt sich dabei
+                    immer um ein <b>Element einer Zahlenmenge</b>, welches als Erstes von einem Algorithmus <b>bestimmt
+                    wird, um eine bestimmte Berechnung durchzuführen</b>. Innerhalb des Sortierverfahrens stellt das
+                    Element sozusagen eine Aufteilungsgrenze dar. Dabei wird dann jeweils nach dem kleinsten oder
+                    betragsmäßig größten Element in der aktuellen (Teil-)Liste gesucht und rekursiv sortiert. Die
+                    Auswahl des Elements wird <b>Pivotisierung</b> genannt.
+                </p>
             </chapter>
         </chapter>
 
