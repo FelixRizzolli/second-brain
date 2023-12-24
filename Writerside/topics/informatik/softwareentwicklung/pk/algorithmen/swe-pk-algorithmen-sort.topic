@@ -408,20 +408,54 @@
         </chapter>
 
         <chapter title="Varianten" id="varianten">
-            <chapter title="Bottom-Up-Heapsort" id="varianten-bottomupheapsort">
+            <p>
+                Für den Heapsort gibt es <b>verschiedene Varianten</b>. Neben dem Standard-Heapsort gibt es noch den
+                <b>Bottom-Up-Heapsort</b>, den <b>Smoothsort</b>, die <b>Ternären Heaps</b> und die <b>n-äre Heaps</b>,
+                welche die Komplexität in verschiedenen Bereichen potenziell steigern können.
+            </p>
 
+            <chapter title="Bottom-Up-Heapsort" id="varianten-bottomupheapsort">
+                <p>
+                    Die dabei populärste Variante ist der Bottom-Up-Heapsort, da er oft nur die Hälfte an
+                    Vergleichsoperationen benötigt und kommt damit der Laufzeit des Quicksort sehr Nahe. Aber wie
+                    funktioniert das? Da ein Binärbaum größtenteils aus Blättern besteht und sich durch das Sortieren
+                    die niedrigeren Werte bereits abgesenkt werden mussten, arbeitet die Variante mit der Annahme, dass
+                    ein Element bis zur Blattebene oder in der Nähe versickert werden muss. Entsprechend wird auf
+                    Verdacht bis zur Blattebene abgesenkt und auf den zweiten Vergleich verzichtet. Der
+                    Bottom-Up-Heapsort sollte aber nicht bei kleineren Feldern mit einfacher numerischer
+                    Vergleichsoperation benutzt werden oder sehr viele Elemente gleichwertig sind. Heißt also, man
+                    sollte ihn vor allem bei großen Datenmengen mit hohem Aufwand pro Vergleichsoperationen verwenden.
+                </p>
             </chapter>
 
             <chapter title="Smoothsort" id="varianten-smoothsort">
-
+                <p>
+                    Der Smoothsort ändert die Reihenfolge der Vorgehensweise. Während normalerweise vorsortierte Felder
+                    keinen Vorteil erbringen, da immer das größte Element an die Wurzel wandern muss, um die Zahl
+                    anschließend wieder mit dem letzten Knoten austauscht, arbeitet der Smoothsort direkt umgekehrt.
+                    Jedoch ist bei der Umsetzung die Gewährleistung des Heapstatus beim Sortieren sehr aufwändig.
+                </p>
             </chapter>
 
             <chapter title="Ternäre Heaps" id="varianten-ternaereheaps">
-
+                <p>
+                    Wie man sich vielleicht schon denken kann, werden hier statt binären Heaps, ternäre Heaps benutzt.
+                    Entsprechend läuft er nicht auf Basis eines Binärbaums, sondern ein vollständig besetzter Knoten hat
+                    jeweils 3 Kinder. Dadurch können die Vergleichsoperationen reduziert werden. Beispielsweise bei sehr
+                    großen Feldern, die mehrere Millionen Elemente enthalten, kann dabei 20-30 % der Vergleiche
+                    eingespart werden, wenn man sich das gleiche aber bei kleineren Feldern ansieht, kann es sogar sein,
+                    dass der Sortieralgorithmus dadurch langsamer als der Standard-Heapsort ist.
+                </p>
             </chapter>
 
             <chapter title="n-äre Heaps" id="varianten-naereheaps">
-
+                <p>
+                    Wie schon bei den Ternären Heaps, kann der Baum natürlich noch breiter, bzw. die Heaps noch flacher
+                    gestaltet werden, durch das <b>Erweitern der Anzahl von Kindern eines Vaters</b>. Dadurch steigt die
+                    Anzahl der Vergleichsoperationen zwar weiter an, jedoch können dadurch andere Vorteile bezüglich der
+                    Effizienz von Caches geschaffen werden, da der sonstige Aufwand weiter gesenkt werden kann und
+                    geordneter auf die Elemente zugegriffen werden kann.
+                </p>
             </chapter>
         </chapter>
     </chapter>
