@@ -61,10 +61,36 @@
         </p>
     </chapter>
 
+    <chapter title="Bubblesort" id="bubblesort">
+        <chapter title="Grundlagen" id="bubblesort-grundlagen">
+            <chapter title="Erklärung" id="bubblesort-grundlagen-erklaerung">
+
+            </chapter>
+
+            <chapter title="Prinzip" id="bubblesort-grundlagen-prinzip">
+
+            </chapter>
+        </chapter>
+
+        <chapter title="Pseudocode" id="bubblesort-pseudocode">
+
+        </chapter>
+
+        <chapter title="Bubblesort Laufzeit" id="bubblesort-laufzeit">
+
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://studyflix.de/informatik/bubblesort-1325" ignore-vars="true">
+                https://studyflix.de/informatik/bubblesort-1325
+            </a>, 2020-12-18 14:40
         </tip>
     </chapter>
 </topic>
