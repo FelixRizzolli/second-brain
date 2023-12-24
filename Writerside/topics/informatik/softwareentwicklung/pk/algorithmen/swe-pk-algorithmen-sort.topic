@@ -140,6 +140,31 @@
 
     <chapter title="Bucketsort" id="bucketsort">
         <chapter title="Grundlagen" id="bucketsort-grundlagen">
+            <p>
+                Der Bucketsort ist ein <b>nicht-vergleichsbasierter Sortieralgorithmus</b>. Er sortiert eine Liste von
+                gleichmäßig verteilten Elementen sehr schnell in linearer Zeit. Das Verfahren erfolgt dabei in drei
+                Schritten:
+            </p>
+
+            <list style="decimal">
+                <li>
+                    Zuerst erstellen wir sogenannte <b>Buckets</b>, in die wir dann die <b>Elemente</b> der unsortierten
+                    Liste <b>verteilen und ablegen</b>.
+                </li>
+                <li>
+                    Jeder einzelne dieser <b>Eimer</b> wird dann <b>mit einem weiteren Sortierverfahren</b> sortiert.
+                    Diese können etwa der <b>Mergesort</b> oder der <b>Insertionsort</b>.
+                </li>
+                <li>
+                    Der <b>Inhalt</b> der einzelnen Buckets wird dann durch eine Konkatenation <b>zu einer neuen
+                    Gesamtliste zusammengefügt</b>.
+                </li>
+            </list>
+
+            <p>
+                Da der Sortieralgorithmus Zwischenspeicher verwendet, arbeitet das Sortierverfahren somit
+                <b>out-of-place</b>.
+            </p>
         </chapter>
 
         <chapter title="Algorithmus" id="bucketsort-algorithmus">
