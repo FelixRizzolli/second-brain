@@ -629,7 +629,37 @@
         </chapter>
 
         <chapter title="Pseudocode" id="mergesort-pseudocode">
+            <p>
+                Der Algorithmus lässt sich in zwei Funktionen beschreiben, dafür wird zuerst einmal die Liste
+                <code>a</code> eingegeben und in eine linke und rechte Hälfte halbiert. Für beide Seiten soll dann
+                jeweils die Methode <code>merge_sort</code> ausgeführt werden (solange die Listen größer gleich 1 sind)
+                und die verschmolzene sortierte Liste mit der Funktion verschmelzen zurückgegeben werden.
+            </p>
 
+            <code-block>
+                <![CDATA[
+                merge_sort (Liste a)
+                    Falls die Liste a <= 1 ist, soll die Liste antworten – sonst
+                        soll die Liste in linke Liste l und rechte Liste r halbiert werden.
+                        l = merge_sort(l)
+                        r = merge_sort(r)
+                        zurückgeben verschmelze (l,r)
+                ]]>
+            </code-block>
+
+            <code-block>
+                <![CDATA[
+                merge_sort (Liste a)
+                    if a <= 1
+                    do
+                        int mitte = a.lenght / 2
+                        int l -> i <= mitte – 1
+                        int r -> i >= array.length – mitte – 1
+                        l = merge_sort(l)
+                        r = merge_sort(r)
+                        return verschmelze(l,r)
+                ]]>
+            </code-block>
         </chapter>
     </chapter>
 
