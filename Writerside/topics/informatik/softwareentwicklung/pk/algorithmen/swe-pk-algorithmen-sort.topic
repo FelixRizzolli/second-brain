@@ -168,8 +168,38 @@
         </chapter>
 
         <chapter title="Algorithmus" id="bucketsort-algorithmus">
+            <p>
+                Der <b>Bucketsort Algorithmus</b> lässt sich also folgendermaßen darstellen:
+            </p>
+
+            <list style="bullet">
+                <li>
+                    Für den Sortiervorgang wird einerseits eine zu sortierende Liste benötigt, zusätzlich aber auch eine
+                    Funktion, die jedes Element des Arrays einem Wert in dem Intervall <code>[0,n]</code> zuordnen kann.
+                    Die Liste selbst setzt sich dabei aus <code>n</code>-Elementen zusammen.
+                </li>
+                <li>
+                    Zum Sortieren werden Buckets benötigt, die das Intervall <code>[0,1]</code> in <code>n</code>
+                    Teilintervalle mit der Größe <code>1/n</code> unterteilen kann. Entsprechend kann damit dann jedes
+                    Element in den zugehörigen Eimer einsortiert werden. Für jeden Bucket wird dann für seine jeweiligen
+                    Inhalte ein <b>Insertionsort</b> durchgeführt (Es kann auch ein <b>Mergesort</b> verwendet werden!).
+                    Die Inhalte werden dann mittels Konkatenation zu einer fertig sortierten Gesamtliste zusammengefügt.
+                </li>
+            </list>
 
             <chapter title="Pseudocode" id="bucketsort-algorithmus-pseudocode">
+                <code-block>
+                    Bucketsort (liste, funktion)
+                        n = liste.size
+                        bucket = intervall(n)
+                            for (element in liste)
+                                bucket[floor (funktion(element) * n].add(element)
+                        ausgabearray []
+                        for (inhalt in buckets)
+                            x.insertionsort(inhalt)
+                            ausgabearray.append(x)
+                        return ausgabearray
+                </code-block>
             </chapter>
         </chapter>
 
