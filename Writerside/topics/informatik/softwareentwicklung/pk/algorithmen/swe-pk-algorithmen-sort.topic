@@ -752,6 +752,18 @@
         </chapter>
     </chapter>
 
+    <chapter title="Shellsort" id="shellsort">
+        <chapter title="Grundlagen" id="shellsort-grundlagen">
+
+        </chapter>
+        <chapter title="Implementierung" id="shellsort-implementierung">
+
+        </chapter>
+        <chapter title="Komplexität" id="shellsort-komplexitaet">
+
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
