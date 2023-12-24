@@ -233,9 +233,39 @@
 
     <chapter title="Counting Sort" id="countingsort">
         <chapter title="Grundlagen" id="countingsort-grundlagen">
+            <p>
+                Die Sortiertechnik basiert dabei auf Schlüssel zwischen einem bestimmten Bereich. Dabei wird die
+                <b>Anzahl der Elemente mit unterschiedlichen Schlüsselwerte gezählt</b>. Infolgedessen wird dann aus den
+                Ergebnissen eine <b>sortierte Liste aufgebaut</b>.
+            </p>
 
             <chapter title="Eigenschaften" id="countingsort-grundlagen-eigenschaften">
-
+                <p>
+                    Im Folgenden ein kurzer Überblick über die wichtigsten Eigenschaften eines Counting Sorts:
+                </p>
+                
+                <list>
+                    <li>
+                        Das Verfahren gehört zu den <b>stabilen Sortieralgorithmen</b>.
+                    </li>
+                    <li>
+                        Es handelt sich dabei um keinen vergleichsbasierter Sortieralgorithmus. Er arbeitet
+                        <b>adressbasiert</b>.
+                    </li>
+                    <li>
+                        Das Sortierverfahren zeigt sich am effizientesten, wenn der Bereich der Eingabedaten nicht
+                        unmittelbar größer ist als die Anzahl der zu sortierenden Elemente. Entsprechend wird diese Form
+                        der Sortierung meist <b>nur in einem mäßig großen Wertebereich verwendet</b>.
+                    </li>
+                    <li>
+                        Die Counting Sort Laufzeitkomplexität kann allgemein mit <code>O(n)</code> inklusive einem
+                        zusätzlichen Datenbereich als proportionalen Raum definiert werden.
+                    </li>
+                    <li>
+                        Das Sortierverfahren kann <b>durch eine Erweiterung</b> auch für das <b>Sortieren von negativen
+                        Zahlen</b> verwendet werden.
+                    </li>
+                </list>
             </chapter>
         </chapter>
 
