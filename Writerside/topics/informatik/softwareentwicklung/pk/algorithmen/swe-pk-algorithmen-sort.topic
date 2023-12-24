@@ -1081,7 +1081,14 @@
         </chapter>
 
         <chapter title="Laufzeit" id="selectionsort-laufzeit">
-
+            <p>
+                Der Sortieralgorithmus ist ein ziemlich besonderer Fall, denn es sind wie beim <b>Mergesort</b> keine
+                Unterschiede festzustellen. Die Laufzeit im <b>Selection Sort Worst Case entspricht genau der
+                Komplexität im Best Case</b>. Damit beträgt die <b>Selection Sort Laufzeit immer <code>O(n2)</code></b>.
+                Das hat einen ganz einfachen Grund, denn die Liste wird unabhängig von vorsortierten Daten immer von
+                vorne bis hinten komplett durchlaufen. Deshalb benötigt er Vergleiche, wovon die allgemeine Selection
+                Sort Laufzeit abgeleitet werden kann.
+            </p>
         </chapter>
     </chapter>
 
