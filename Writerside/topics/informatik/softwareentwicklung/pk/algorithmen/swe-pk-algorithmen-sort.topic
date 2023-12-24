@@ -885,6 +885,30 @@
         </chapter>
     </chapter>
 
+    <chapter title="Radix Sort" id="radixsort">
+        <chapter title="Grundlagen" id="radixsort-grundlagen">
+
+        </chapter>
+        
+        <chapter title="Vorgehensweise" id="radixsort-vorgehensweise">
+            <chapter title="Partitionierungsphase" id="radixsort-vorgehensweise-partitionierungsphase">
+
+            </chapter>
+
+            <chapter title="Sammelphase" id="radixsort-vorgehensweise-sammelphase">
+
+            </chapter>
+
+            <chapter title="Laufzeit" id="radixsort-vorgehensweise-laufzeit">
+
+            </chapter>
+        </chapter>
+
+        <chapter title="Beispiel" id="radixsort-beispiel">
+
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
