@@ -663,6 +663,32 @@
         </chapter>
     </chapter>
 
+    <chapter title="Quicksort" id="quicksort">
+        <chapter title="Definition" id="quicksort-definition">
+            <chapter title="Pivotelement" id="quicksort-definition-pivotelement">
+
+            </chapter>
+        </chapter>
+
+        <chapter title="Erklärung" id="erklaerung">
+            <chapter title="Pivotelement bestimmen" id="quicksort-erklaerung-pivotelement">
+
+            </chapter>
+
+            <chapter title="Teile und herrsche" id="quicksort-erklaerung-teileundherrsche">
+
+            </chapter>
+
+            <chapter title="Rekursiver Quicksort-Aufruf" id="quicksort-erklaerung-rekursiver">
+
+            </chapter>
+        </chapter>
+
+        <chapter title="Pseudocode für das In-Place-Verfahren" id="quicksort-pseudocode">
+
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
