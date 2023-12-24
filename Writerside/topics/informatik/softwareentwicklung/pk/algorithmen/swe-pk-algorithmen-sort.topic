@@ -462,9 +462,31 @@
 
     <chapter title="Insertionsort" id="insertionsort">
         <chapter title="Grundlagen" id="insertionsort-grundlagen">
+            <p>
+                Der Insertion Sort gehört zu den stabilen <b>Sortieralgorithmen</b> und kann als <b>Sortieren durch
+                Einfügen</b> beschrieben werden, deswegen auch <b>Einfügesortierenmethode</b> genannt. Das Ganze lässt
+                sich einfach durch die englischen Wörter insertion = Einfügen und sort = sortieren ableiten, weswegen
+                der Sortieralgorithmus auch manchmal als <b>Insertsort</b> bezeichnet wird. Allgemein kann auch noch
+                gesagt werden, dass der Sortieralgorithmus einfach zu implementieren ist und dabei bei kleiner <b>oder
+                schon teilweise vorsortierten Eingabemengen sehr effizient</b> arbeitet. Da das Sortierverfahren keinen
+                zusätzlichen Speicherplatz benötigt, arbeitet der Algorithmus <b>in-place</b>, was natürlich für seine
+                Speicherplatzkomplexität spricht.
+            </p>
 
             <chapter title="Prinzip" id="insertionsort-grundlagen-prinzip">
-
+                <p>
+                    Der <b>Grundgedanke</b> ist eigentlich ganz einfach, da es wahrscheinlich dem am nächsten kommt, wie
+                    man die Zahlen selbst ordnen würde. Dabei stellt man sich ein Kartenspiel vor, welches der Größe
+                    nach sortiert werden soll. In deiner Hand liegt die Karte Pik 5 und Pik 9. Als Nächstes wird die Pik
+                    6 gezogen. Diese Karte wird in der Mitte zwischen den beiden anderen eingeordnet. Genau so geht der
+                    Insertionsort auch vor.
+                </p>
+                <p>
+                    Der Insertionsort durchläuft Schritt für Schritt einen Array und <b>entnimmt</b> dabei aus der
+                    <b>unsortierten Eingabefolge ein Element</b> und <b>setzt</b> es dann an der entsprechend
+                    <b>richtigen Stelle wieder ein</b> – „Sortieren durch Einfügen“. Die <b>restlichen Elemente</b> des
+                    Arrays müssen dann wiederum <b>hinter dem neu eingefügten Wert verschoben</b> werden.
+                </p>
             </chapter>
         </chapter>
 
