@@ -491,16 +491,43 @@
         </chapter>
 
         <chapter title="Algorithmus" id="insertionsort-algorithmus">
+            <p>
+                Zuerst wird eine Liste übergeben. Gestartet wird immer mit dem ersten Element, also stellt dieser den
+                sortierten Bereich der Liste dar und der restliche Array gilt als unsortierter Bereich. Die Bedingung
+                ist, dass so lange der unsortierte Bereich Elemente hat, soll immer das erste Element aus dem
+                unsortierten Bereich an die richtige Stelle im sortierten Bereich eingeordnet werden. Zum Schluss erhält
+                man dann eine sortierte Liste.
+            </p>
 
             <chapter title="Pseudocode" id="insertionsort-algorithmus-pseudocode">
+                <p>
+                    Gegeben sei also eine Liste l. Als nächstes wird der sortierte Bereich mit dem ersten Element
+                    <code>a</code> definiert. Das erste Element im unsortierten Bereich wird als <code>b</code>
+                    bezeichnet. Das aktuelle <code>b</code> wird im Zwischenspeicher tmp gespeichert, solange der
+                    unsortierte Bereich Elemente besitzt. Das Element wird aus dem unsortierten Bereich entfernt und
+                    schließlich vom Zwischenspeicher in den sortierten Bereich eingefügt.
+                </p>
 
+                <code-block>
+                    <![CDATA[
+                    Insertionsort (Liste l)
+                        for a in 0 -> l.lenght – 2
+                            do
+                                b = a + 1
+                                tmp = l[b]
+                            while b > 0 AND tmp < l[b-1] do
+
+                            l[b] = l[b-1]
+                            b – –
+                            l[b] = tmp
+                    ]]>
+                </code-block>
             </chapter>
         </chapter>
 
         <chapter title="Laufzeit" id="insertionsort-laufzeit">
 
             <chapter title="Komplexität" id="insertionsort-laufzeit-komplexität">
-
             </chapter>
         </chapter>
     </chapter>
