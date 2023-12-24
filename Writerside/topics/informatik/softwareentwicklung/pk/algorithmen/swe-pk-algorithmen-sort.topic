@@ -1035,9 +1035,24 @@
     
     <chapter title="Selectionsort" id="selectionsort">
         <chapter title="Grundlagen" id="grundlagen">
+            <p>
+                Das Sortierverfahren gehört in der Informatik zu den einfachen und <b>instabilen Sortieralgorithmen</b>.
+                Er kann dir auch durch die Begriffe Selectsort oder Exchange Sort bekannt sein.
+            </p>
+            <p>
+                Das allgemeine Prinzip kann man sich als <b>"Sortieren durch Auswahl"</b> merken. Und das geht in genau
+                zwei Richtungen. Entweder sucht man dabei immer das kleinste (MinSort) oder das größte Element
+                (MaxSort). Das Vorgehen dabei bleibt immer gleich.
+            </p>
 
             <chapter title="Optimized Selection Sort Algorithm" id="selectionsort-grundlagen-ossa">
-
+                <p>
+                    Der <b>"Optimized Selection Sort Algorithm"</b> – kurz OSSA ist ein alternativer Ansatz des
+                    Selectionsorts. Dabei werden beide Optionen der Sortierung gleichzeitig angewendet, heißt also, dass
+                    der <b>MinSort und Maxsort parallel, gemeinsam arbeiten</b>. Entsprechend werden dabei dann immer
+                    das größte und kleinste Element in der unsortierten Liste gesucht und entsprechend nach vorne oder
+                    nach hinten eingesetzt werden. Dadurch kann im Normalfall eine Beschleunigung erreicht werden.
+                </p>
             </chapter>
         </chapter>
 
