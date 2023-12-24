@@ -686,16 +686,40 @@
         </chapter>
 
         <chapter title="Erklärung" id="erklaerung">
-            <chapter title="Pivotelement bestimmen" id="quicksort-erklaerung-pivotelement">
+            <p>
+                Das genaue Prinzip hinter dem Quicksort kann man nicht unbedingt verallgemeinern. Es kann gewisse
+                Abweichungen durch die jeweils verwendete Programmiersprache geben, wodurch der Ablauf tatsächlich
+                unterschiedlich beeinflusst werden kann. Trotzdem gibt es ein gewisses Grundprinzip.
+            </p>
 
+            <chapter title="Pivotelement bestimmen" id="quicksort-erklaerung-pivotelement">
+                <p>
+                    Dafür kann man eigentlich alle Elemente verwenden. Heißt, dass sowohl das erste als auch das letzte
+                    Element, einen Wert aus der Mitte oder sogar einen Zufallswert ausgewählt können. Für eine optimale
+                    Rekursion verwendet man eigentlich immer den <b>Median</b>.
+                </p>
             </chapter>
 
             <chapter title="Teile und herrsche" id="quicksort-erklaerung-teileundherrsche">
-
+                <p>
+                    Das Pivot-Element wird dann <b>in die Mitte gesetzt und die restlichen Werte sortiert</b>. Einmal
+                    nach <b>links</b>, wenn sie <b>kleiner</b> sind und einmal nach <b>rechts</b>, wenn sie
+                    <b>größer</b> sind. Dabei muss man die Elemente <b>immer der ursprünglichen Reihenfolge nach</b> von
+                    links nach rechts in ihrem Bereich einordnen.
+                </p>
             </chapter>
 
             <chapter title="Rekursiver Quicksort-Aufruf" id="quicksort-erklaerung-rekursiver">
-
+                <p>
+                    <b>Rekursiver Quicksort-Aufruf für beide Teile des Arrays (Vor und nach dem Pivot-Element):</b>
+                </p>
+                <p>
+                    Das pivot-Element ist danach an seinem richtigen Platz und es müssen Neue bestimmt werden. Natürlich
+                    wieder die ersten Elemente, aber <b>diesmal in beiden Bereichen</b>. Der Vorgang wird wiederholt,
+                    somit werden die restlichen Elemente wieder genau im selben Schema neben den pivot-Elementen
+                    eingeordnet. Im nächsten Schritt haben alle neuen pivot-Elemente keine Vergleichswerte mehr und sind
+                    damit auch direkt richtig platziert und damit sind alle Werte sortiert.
+                </p>
             </chapter>
         </chapter>
 
