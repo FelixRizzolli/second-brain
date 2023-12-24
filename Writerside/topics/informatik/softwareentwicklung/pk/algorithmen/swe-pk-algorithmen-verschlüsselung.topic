@@ -8,6 +8,24 @@
 
     <chapter title="AES Verschlüsselung" id="aes">
         <chapter title="Grundlagen" id="aes-grundlagen">
+            <p>
+                Die AES (Advanced Encryption Standard) Verschlüsselung wurde von Vincent Rijmen und Joan Daemen
+                entwickelt. Es wird auch als Rijndael-Algorithmus bezeichnet. AES ist der Nachfolger des DES
+                (Data Encryption Standards) und basiert auf der Blockverschlüsselung. Heutzutage wird es in vielen
+                Bereichen der Datenübertragung angewendet wie beispielsweise IPsec oder SSH.
+            </p>
+            <p>
+                AES ist ein symmetrisches Verschlüsselungsverfahren. Dies bedeutet, dass es im Gegensatz zur
+                asymmetrischen Verschlüsselung nur einen Schlüssel zum Verschlüsseln und zum Entschlüsseln gibt. Bei der
+                digitalen Datenübertragung wird der AES sehr oft im Bereich der Kommunikation und der
+                Dokumentenübermittlung eingesetzt. Der AES löste im Jahr 2000 den Vorgänger DES (Data Encryption
+                Standard) aufgrund seiner geringen Schlüssellänge von 56 Bit ab, als das NIST (National Institute of
+                Standard and Technoloy) ihn als neuen Standard festlegte. Der Grund für die Einführung der AES
+                Encryption war die Tatsache, dass die Rechenleistungen von Computern immer besser wurde und so die
+                Sicherheit gegen Brute-Force-Angriffe nicht mehr aufrechterhalten werden konnte. Beim AES sind mögliche
+                Schlüssellängen gegeben durch 128, 192 oder 256 Bit, weshalb man diese AES Varianten dann mit AES-128,
+                AES-192 und AES-256 bezeichnet.
+            </p>
 
             <chapter title="AES Schlüssel: AES-128, AES-192 und AES-256" id="aes-grundlagen-schluessel">
 
