@@ -326,7 +326,7 @@
     </chapter>
 
     <chapter title="Heapsort" id="heapsort">
-        <chapter title="Grundlagen" id="grundlagen">
+        <chapter title="Grundlagen" id="heapsort-grundlagen">
             <p>
                 Der Heapsort wurde von Robert W. Floyd und J. W. J Williams entwickelt. Er gehört zu den <b>instabilen
                 Sortieralgorithmen</b>, arbeitet dabei aber nach dem <b>in-place</b>-Prinzip. Die Funktionsweise basiert
@@ -341,7 +341,7 @@
             </p>
         </chapter>
 
-        <chapter title="Funktionsweise" id="funktionsweise">
+        <chapter title="Funktionsweise" id="heapsort-funktionsweise">
             <p>
                 Als erstes benötigt es eine Liste, die nach dem Heap Sort geordnet werden soll, in diesem Fall nach dem
                 Max-Heap – also von klein nach groß. Im nächsten Schritt muss also aus dem Array ein max-Heap gebaut
@@ -353,7 +353,7 @@
                 besteht.
             </p>
 
-            <chapter title="Pseudocode" id="funktionsweise-pseudocode">
+            <chapter title="Pseudocode" id="heapsort-funktionsweise-pseudocode">
                 <code-block>
                     <![CDATA[
                     Heapsort(arr) {
@@ -389,7 +389,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Komplexität" id="komplexitaet">
+        <chapter title="Komplexität" id="heapsort-komplexitaet">
             <p>
                 Die Heapsort Komplexität beträgt im Allgemeinen <code>O(nlog(n))</code> Vergleiche. Damit ist er
                 bezüglich vergleichsbasierten-Sortieralgorithmen das schnellste asymptotische Sortierverfahren. Jedoch
@@ -407,14 +407,14 @@
             </p>
         </chapter>
 
-        <chapter title="Varianten" id="varianten">
+        <chapter title="Varianten" id="heapsort-varianten">
             <p>
                 Für den Heapsort gibt es <b>verschiedene Varianten</b>. Neben dem Standard-Heapsort gibt es noch den
                 <b>Bottom-Up-Heapsort</b>, den <b>Smoothsort</b>, die <b>Ternären Heaps</b> und die <b>n-äre Heaps</b>,
                 welche die Komplexität in verschiedenen Bereichen potenziell steigern können.
             </p>
 
-            <chapter title="Bottom-Up-Heapsort" id="varianten-bottomupheapsort">
+            <chapter title="Bottom-Up-Heapsort" id="heapsort-varianten-bottomupheapsort">
                 <p>
                     Die dabei populärste Variante ist der Bottom-Up-Heapsort, da er oft nur die Hälfte an
                     Vergleichsoperationen benötigt und kommt damit der Laufzeit des Quicksort sehr Nahe. Aber wie
@@ -428,7 +428,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Smoothsort" id="varianten-smoothsort">
+            <chapter title="Smoothsort" id="heapsort-varianten-smoothsort">
                 <p>
                     Der Smoothsort ändert die Reihenfolge der Vorgehensweise. Während normalerweise vorsortierte Felder
                     keinen Vorteil erbringen, da immer das größte Element an die Wurzel wandern muss, um die Zahl
@@ -437,7 +437,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Ternäre Heaps" id="varianten-ternaereheaps">
+            <chapter title="Ternäre Heaps" id="heapsort-varianten-ternaereheaps">
                 <p>
                     Wie man sich vielleicht schon denken kann, werden hier statt binären Heaps, ternäre Heaps benutzt.
                     Entsprechend läuft er nicht auf Basis eines Binärbaums, sondern ein vollständig besetzter Knoten hat
@@ -448,7 +448,7 @@
                 </p>
             </chapter>
 
-            <chapter title="n-äre Heaps" id="varianten-naereheaps">
+            <chapter title="n-äre Heaps" id="heapsort-varianten-naereheaps">
                 <p>
                     Wie schon bei den Ternären Heaps, kann der Baum natürlich noch breiter, bzw. die Heaps noch flacher
                     gestaltet werden, durch das <b>Erweitern der Anzahl von Kindern eines Vaters</b>. Dadurch steigt die
