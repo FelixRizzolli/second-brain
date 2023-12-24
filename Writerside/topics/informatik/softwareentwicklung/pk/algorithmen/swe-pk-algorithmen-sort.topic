@@ -307,7 +307,21 @@
         </chapter>
 
         <chapter title="Laufzeit" id="countingsort-laufzeit">
+            <p>
+                Die Counting Sort Laufzeit ist immer <b>abhängig von der Anzahl der Elemente einer Liste <code>n</code>
+                und der Größe des entsprechenden Zahlenintervalls <code>k</code></b>. Deshalb handelt es sich bei der
+                Sortierung um einen linearen Zeitaufwand. Durch die vorhandene <code>for</code>-Schleife besitzt dabei
+                jeweils <code>n</code>- oder <code>k</code>-Durchläufe. Dadurch lässt sich eine Laufzeitkomplexität von
+                <code>O(n+k)</code> bestimmen. Entsprechend kann es sich für den Sortieralgorithmus vorteilhaft
+                auswirken, wenn die Intervalllänge im Gegensatz zur Anzahl der Objekte <code>n</code> deutlich kleiner
+                ist.
+            </p>
 
+            <chapter title="Speicherkapazität" id="countingsort-laufzeit-speicherkapazitaet">
+                Dadurch, dass der Counting Sort out-of-place arbeitet, braucht der Algorithmus eine temporäre Liste/ein
+                Hilfsarray zur Zwischenspeicherung unserer Zahlenwerte. Entsprechend beträgt der Speicherplatz
+                <code>k</code>-Elemente, wodurch die Speicherplatzkomplexität <code>O(n+k)</code> entspricht.
+            </chapter>
         </chapter>
     </chapter>
 
