@@ -64,11 +64,29 @@
     <chapter title="Bubblesort" id="bubblesort">
         <chapter title="Grundlagen" id="bubblesort-grundlagen">
             <chapter title="Erklärung" id="bubblesort-grundlagen-erklaerung">
-
+                <p>
+                    Der Grundgedanke des Sortieralgorithmus kommt tatsächlich von Luftblasen. Ein Glas gefüllt mit
+                    Mineralwasser: Darin steigen größere Luftblasen schneller auf als kleinere. Die sogenannten
+                    "Bubbles" sortieren sich also der Größe nach. Deswegen kann das Sortierverfahren auch als
+                    <b>"Sortieren durch Aufsteigen"</b> oder <b>"Austauschsortieren"</b> bezeichnet werden.
+                </p>
+                <p>
+                    Der Bubble Sort gehört zu den Sortieralgorithmen mit einem vergleichsbasierten Verfahren. Dabei ist
+                    das Sortierverfahren <b>stabil</b> und arbeitet <b>in-place</b>. Wegen seiner <b>durchschnittlichen
+                    Zeitkomplexität von <code>O(n²)</code></b> gilt er als ziemlich langsam und wird deshalb in der
+                    Praxis kaum verwendet.
+                </p>
             </chapter>
 
             <chapter title="Prinzip" id="bubblesort-grundlagen-prinzip">
-
+                <p>
+                    Beim Bubblesort Algorithmus wird ein Array – also eine Eingabe-Liste – immer <b>paarweise von links
+                    nach rechts in einer sogenannten Bubble-Phase durchlaufen</b>. Man startet also mit der ersten Zahl
+                    und vergleicht diese dann mit ihrem direkten Nachbarn nach dem Sortierkriterium. Sollten beide
+                    Elemente nicht in der richtigen Reihenfolge sein, werden sie ganz einfach miteinander vertauscht.
+                    Danach wird direkt das nächste Paar miteinander verglichen, bis die gesamte Liste einmal durchlaufen
+                    wurde. Die Phase wird so oft wiederholt, bis der gesamte Array vollständig sortiert ist.
+                </p>
             </chapter>
         </chapter>
 
