@@ -949,7 +949,87 @@
         </chapter>
 
         <chapter title="Beispiel" id="radixsort-beispiel">
+            <code-block lang="java">
+                <![CDATA[
+                class Radix_Sortieralgorithmus {
+                    public static void main (String[] args) {
+                        int liste[] = {…};
+                        int i = liste.length;
+                        radixsort(liste, i);
+                        ausgeben(liste, i);
+                    }
 
+                    static int maximum(int liste[], int i) {
+                        int max = liste[0];
+                        for (int a = 1; a < i; a++)
+                            if (liste[a] > max)
+                                max = liste[a];
+                        return max;
+                    }
+
+
+                    static void countingsort(int liste[], int i, int faktor) {
+                        int ausgabe[] = new int[i];
+                        int a;
+                        int zaehlen[] = new int[10];
+                        Arrays.fill(zaehlen,0);
+
+                        for (a = 0; a < i; a++)
+                            zaehlen[ (liste[a]/faktor)%10 ]++;
+                        for (a = 1; a < 10; a++)
+                            zaehlen[a] += zaehlen[a – 1];
+
+                        for (a = i – 1; a >= 0; a–) {
+                            ausgabe[zaehlen[ (liste[a]/faktor)%10 ] – 1] = liste[a];
+                            zaehlen[ (liste[a]/faktor)%10 ]–;
+                        }
+
+                        for (a = 0; a < i; a++)
+                            liste[a] = ausgabe[a];
+                    }
+
+                    static void radixsort(int liste[], int i) {
+                        int m = maximum(liste, i);
+
+                        for (int faktor = 1; m/faktor > 0; faktor *= 10)
+                            countingsort(liste, i, faktor);
+                    }
+
+                    static void ausgeben(int liste[], int i) {
+                        for (int a=0; a
+                            System.out.print(liste[a]+“ „);
+                    }
+                }
+                ]]>
+            </code-block>
+
+            <chapter title="Iterativ" id="iterativ">
+                <p>
+                    Im Folgenden ist ein Radix Sort Java-Methode zum Sortieren einer Integer-Liste. Bei dem Code werden
+                    potenzielle Vorzeichen nicht beachtet und sollte nur bei positiven Zahlen genutzt werden. Zusätzlich
+                    wird eine Schleife über alle Bits der Schlüssel bei 32 Bit gesetzt.
+                </p>
+
+                <code-block lang="java">
+                    <![CDATA[
+                    public static void radixsort(int[] i) {
+                        int nummer;
+                        int[] anzahlfach = new int[2];
+                        int[][] fach  = new int[2][i.length];
+                        for (int j=0; j<32; j++) {
+                            anzahlfach[0] = 0;
+                            anzahlfach[1] = 0;
+                            for (int k=0; k
+                                nummer = (i[k]>>j)&1;
+                                fach[nummer][anzahlfach[nummer]++] = i[k];
+                            }
+                            System.arraycopy(fach[0], 0, i, 0,       anzahlfach[0]);
+                            System.arraycopy(fach[1], 0, i, anzahlfach[0], anzahlfach[1]);
+                        }
+                    }
+                    ]]>
+                </code-block>
+            </chapter>
         </chapter>
     </chapter>
 
