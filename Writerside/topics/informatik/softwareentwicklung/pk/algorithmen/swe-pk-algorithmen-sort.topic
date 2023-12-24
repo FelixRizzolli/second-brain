@@ -327,7 +327,18 @@
 
     <chapter title="Heapsort" id="heapsort">
         <chapter title="Grundlagen" id="grundlagen">
-
+            <p>
+                Der Heapsort wurde von Robert W. Floyd und J. W. J Williams entwickelt. Er gehört zu den <b>instabilen
+                Sortieralgorithmen</b>, arbeitet dabei aber nach dem <b>in-place</b>-Prinzip. Die Funktionsweise basiert
+                eigentlich hauptsächlich auf <b>binären Heap Eigenschaften</b> als zentrale Datenstruktur und ist dabei
+                ein <b>fast vollständiger binärer Baum</b>. Die Knoten enthalten dann die Daten, die letztendlich
+                sortieren werden sollen.
+            </p>
+            <p>
+                Das <b>Sortierverfahren</b> hat eine Zeitkomplexität von <code>O(n log(n))</code>, damit gibt es keinen
+                asymptotisch schnelleren <b>Sortieralgorithmus</b> der vergleichsbasiert ist. Man kann ihn im
+                Allgemeinen durch seine Vorgehensweise auch als Verbesserung zum <b>Selectionsort</b> verstehen.
+            </p>
         </chapter>
         <chapter title="Funktionsweise" id="funktionsweise">
 
@@ -379,6 +390,12 @@
             <a href="https://studyflix.de/informatik/counting-sort-1407" ignore-vars="true">
                 https://studyflix.de/informatik/counting-sort-1407
             </a>, 2020-12-18 16:00
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://studyflix.de/informatik/heapsort-1326" ignore-vars="true">
+                https://studyflix.de/informatik/heapsort-1326
+            </a>, 2020-12-18 16:10
         </tip>
     </chapter>
 </topic>
