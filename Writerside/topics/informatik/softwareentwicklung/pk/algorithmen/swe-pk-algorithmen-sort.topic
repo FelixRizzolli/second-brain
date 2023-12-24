@@ -595,6 +595,20 @@
         </chapter>
     </chapter>
 
+    <chapter title="Mergesort" id="mergesort">
+        <chapter title="Allgemeines" id="mergesort-allgemeines">
+
+        </chapter>
+
+        <chapter title="Funktionsweise" id="mergesort-funktionsweise">
+
+        </chapter>
+
+        <chapter title="Pseudocode" id="mergesort-pseudocode">
+
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
