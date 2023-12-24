@@ -754,7 +754,18 @@
 
     <chapter title="Shellsort" id="shellsort">
         <chapter title="Grundlagen" id="shellsort-grundlagen">
-
+            <p>
+                Der Shellsort, den Donald Shell ursprünglich entwickelte, ist Teil von den <b>instabilen
+                Sortieralgorithmen</b>. Der Das Sortierverfahren arbeitet <b>in-place</b>. Der Shellsort weist
+                prinzipiell das Verhalten eines <b>Insertionsort</b> auf, wodurch er eine Art Variante des
+                Insertionsorts darstellt. Innerhalb des Sortieralgorithmus werden immer <b>Elemente verglichen, die
+                einen bestimmten Abstand voneinander haben</b> und dabei nicht direkt benachbart sind. Wie groß die
+                Feldbreite dabei sein muss, kann selbst bestimmt werden, sollte dabei aber möglichst effizient gewählt
+                werden. Wenn ein Element weit bewegt werden muss, werden viele Bewegungen benötigt. Die Grundidee ist
+                dabei, die Liste so umzusortieren, dass man durch das Entnehmen jedes h-Elements eine geordnete Folge
+                erhält. Während der Sortierungen wird der Wert solange reduziert, bis er 1 wird, womit die Lücke
+                zwischen den Elementen schrittweise verringert wird.
+            </p>
         </chapter>
         <chapter title="Implementierung" id="shellsort-implementierung">
             <p>
