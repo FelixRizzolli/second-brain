@@ -91,7 +91,15 @@
         </chapter>
 
         <chapter title="Pseudocode" id="bubblesort-pseudocode">
-
+            <code-block>
+                laenge = x.Anzahl;
+                for b = 1 to laenge
+                    for k = 0 to (laenge-b)
+                        if zahl[k] >  zahl[k+1]
+                            c = zahl [k]
+                            zahl[k] = zahl[k+1]
+                            zahl[k+1] = c
+            </code-block>
         </chapter>
 
         <chapter title="Bubblesort Laufzeit" id="bubblesort-laufzeit">
