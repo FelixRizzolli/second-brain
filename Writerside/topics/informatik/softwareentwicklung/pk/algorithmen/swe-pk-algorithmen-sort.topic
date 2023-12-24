@@ -103,7 +103,38 @@
         </chapter>
 
         <chapter title="Bubblesort Laufzeit" id="bubblesort-laufzeit">
-
+            <p>
+                In der Praxis wird der Sortieralgorithmus kaum verwendet. Grund hierfür ist seine sehr lange Laufzeit,
+                weswegen sich andere Sortierverfahren deutlich besser eignen. Beispielsweise der <b>Mergesort</b> oder
+                der <b>Heapsort</b> sind bei einem Datensatz im über vierstelligem Bereich tausendmal schneller.
+            </p>
+            <p>
+                Die Laufzeit im <b>Average-Case</b> beträgt genauso wie im <b>Worst-Case <code>O(n2)</code></b>. Das
+                liegt daran, dass der Algorithmus paarweise voranschreitet und damit entsprechend viele Paare
+                vergleichen muss.
+            </p>
+            <p>
+                Nur im <b>Best-Case</b> kann er eine Laufzeit von <b><code>O(n)</code></b> erreichen. Das ist der Fall,
+                wenn der Array bereits von Beginn an nach dem Sortierkriterium sortiert ist.
+            </p>
+            <p>
+                Die Berechnung von der Anzahl benötigter Vergleiche einer Datenfolge von der Länge <code>n</code>, lässt 
+                sich wie folgt darstellen:
+            </p>
+            
+            <code-block lang="tex">
+                n-1+n-2+...+1=\frac{(n(n-1)))}{2}\in O(n^{2})
+            </code-block>
+            
+            <p>
+                Bubblesort Laufzeit als Überblick:
+            </p>
+            
+            <list>
+                <li>Worst-Case: <code>O(n^2)</code></li>
+                <li>Average-Case: <code>O(n^2)</code></li>
+                <li>Best-Case: <code>O(n)</code></li>
+            </list>
         </chapter>
     </chapter>
 
