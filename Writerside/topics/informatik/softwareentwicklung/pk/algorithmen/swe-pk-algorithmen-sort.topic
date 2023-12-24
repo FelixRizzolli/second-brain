@@ -138,6 +138,20 @@
         </chapter>
     </chapter>
 
+    <chapter title="Bucketsort" id="bucketsort">
+        <chapter title="Grundlagen" id="bucketsort-grundlagen">
+        </chapter>
+
+        <chapter title="Algorithmus" id="bucketsort-algorithmus">
+
+            <chapter title="Pseudocode" id="bucketsort-algorithmus-pseudocode">
+            </chapter>
+        </chapter>
+
+        <chapter title="Komplexität" id="bucketsort-komplexitaet">
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
