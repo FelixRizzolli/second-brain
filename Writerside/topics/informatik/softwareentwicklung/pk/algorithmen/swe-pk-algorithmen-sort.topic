@@ -1057,7 +1057,27 @@
         </chapter>
 
         <chapter title="Funktionsweise und Pseudocode" id="selectionsort-funktionsweise">
+            <p>
+                Zuerst braucht es eine Liste. Diese ist anfangs komplett unsortiert, weswegen der sortierte Bereich zu
+                Beginn als leer gilt. Die Bedingung ist dabei, dass solange der unsortierte Bereich noch ein Element
+                enthält, soll nach dem kleinsten oder dem größten Element im unsortierten Bereich gesucht werden. Sollte
+                ein Element des unsortierten Bereichs kleiner als der Vergleichswert sein, dann wird das passende
+                Element aus dem unsortierten Bereich entfernt und in den Sortierten Bereich an seine richtige Position
+                eingefügt. Am Ende erhalten wir dann eine sortierte Liste.
+            </p>
 
+            <code-block>
+                Selectionsort (Liste l)
+                    For i = 0 to n-2
+                    Do
+                        Minimum = i
+                        For j = i + 1 to n-1
+                        Do
+                            If l[Minimum] > l[j] then Minimum = j
+                                tmp = l[i]
+                                l[i] = l[Minimum]
+                                l[Minimum] = tmp
+            </code-block>
         </chapter>
 
         <chapter title="Laufzeit" id="selectionsort-laufzeit">
