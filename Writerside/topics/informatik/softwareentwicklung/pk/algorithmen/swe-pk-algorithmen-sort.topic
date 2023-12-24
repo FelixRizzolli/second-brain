@@ -767,6 +767,7 @@
                 zwischen den Elementen schrittweise verringert wird.
             </p>
         </chapter>
+        
         <chapter title="Implementierung" id="shellsort-implementierung">
             <p>
                 Aufgebaut auf dem eben verwendeten Beispiel, werden im Folgenden zwei mögliche Implementierungen
@@ -835,8 +836,52 @@
                 ]]>
             </code-block>
         </chapter>
+        
         <chapter title="Komplexität" id="shellsort-komplexitaet">
-
+            <p>
+                Warum sollte man den Shell Sort verwenden, wenn man doch gleich den Insertionsort implementieren könnte?
+                Der Grund liegt darin, dass man durch die Aufteilung in Untersequenzen für viel <b>kürzere Strecken beim
+                Sortierten</b> sorgen kann. Beim herkömmlichen Insertionsort kann der Weg zwischen den Elementen beim
+                Austausch ziemlich groß sein, wodurch der Insertionsort in der Praxis zu einem ineffizienten
+                Sortierverfahren werden kann.
+            </p>
+            <p>
+                Beim Shellsort ist die Laufzeit – also die Komplexität – immer <b>abhängig von der Wahl der Folge für
+                die Spaltenanzahl</b>. Dabei eine optimale Wahl zu treffen ist sehr schwierig. <b>Je größer die Wahl des
+                Abstands</b> zwischen den einzelnen Sequenzen ist, <b>desto größer sind die entsprechenden
+                Verschiebungen</b>. Im Gegensatz dazu sind bei der Wahl von <b>kleinen Abständen</b> die benötigte
+                Anzahl von Durchläufen des Sortierverfahrens deutlich höher.
+            </p>
+            <p>
+                Im Allgemeinen wurde aber experimentell belegt, dass im <b>Durchschnitt die Komplexität in etwa bei</b>
+                <code>O(n^1.25)</code> liegt.
+            </p>
+            <p>
+                Die Laufzeitkomplexität lässt sich jedoch durch die <b>Abhängigkeit bezüglich der Folgen</b>
+                unterschiedlich darstellen, dafür werden im Folgenden <b>einige Beispiele</b> dargestellt:
+            </p>
+            
+            <list>
+                <li>
+                    Die ursprüngliche Folge von Donald Shell 1, 2, 4, 8, 16,...,2^k hat eine Komplexität von
+                    <code>O(n^2)</code>.
+                </li>
+                <li>
+                    Die Folge von Hibbard 1, 3, 7, 15, 31,..., 2^k– 1 hat eine Laufzeit von <code>O(n^1.5)</code>.
+                </li>
+                <li>
+                    Bei der Folge von Pratt 1, 2, 3, 4, 6, 8, 9, 12,..., 2^p3^q beträgt die Laufzeitkomplexität
+                    <code>O(n*log(n)^2)</code>.
+                </li>
+                <li>
+                    Eine weitere Folge ist von Sedgewick 1, 8, 23, 77, 281, 1073,...,4^(k+1)+3*2^k+1 zeichnet sich durch
+                    eine Laufzeit von <code>O(n^(4/3))</code> aus.
+                </li>
+                <li>
+                    Die Folge von Knuth 1, 4, 13, 40, 121, 364,...,(3^k-1)/2 hat wiederum eine Laufzeit von
+                    <code>O(n^1.5)</code>.
+                </li>
+            </list>
         </chapter>
     </chapter>
 
