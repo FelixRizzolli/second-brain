@@ -56,7 +56,35 @@
         </chapter>
 
         <chapter title="Verfahren" id="verfahren">
+            <p>
+                Als erstes erzeugt man unter Verwendung des Eingabeschlüssels die Rundenschlüssel. Für die erste Runde
+                verwendet man dabei den Eingabeschlüssel. Die anderen Schlüssel für die restlichen Runden erhält man
+                hingegen durch Substitution und XOR Verknüpfungen. Insgesamt besteht eine Runde aus vier verschiedenen
+                Schritten, auf die wir nun genauer eingehen werden:
+            </p>
 
+            <list style="decimal">
+                <li>
+                    <b>Substitution</b>: In diesem Schritt wird jedes Byte mit einer Substitutionsbox (S-Box)
+                    verschlüsselt. Die S-Box gibt dabei eine Regel an, wie ein Byte eines Blockes durch einen anderen
+                    Wert zu ersetzen ist. Dadurch werden die Bytes vermischt.
+                </li>
+                <li>
+                    <b>Shift Row</b>: Nach der Substitution werden nun die Zeilen in der Tabelle um eine bestimmte
+                    Anzahl an Spalten nach links verschoben. Die überlaufenden Zellen werden rechts an die jeweilige
+                    Zeile wieder angehängt.
+                </li>
+                <li>
+                    <b>Mix Column</b>: In diesem Schritt geht es nun darum, die Spalten zu vermischen. Hierfür wird jede
+                    Spalte mit einer bestimmten Matrix multipliziert. Die Bytes werden dabei nicht als Zahlen gesehen,
+                    sondern als Polynome. Dies bedeutet, dass die Multiplikation über einem Galois Feld (28)
+                    durchgeführt wird.
+                </li>
+                <li>
+                    <b>Key Addition</b>: Hier wird nun jeder Block mit dem aktuellen Rundenschlüssel XOR verknüpft.
+                    Diese XOR Verknüpfung läuft dabei bitweise ab.
+                </li>
+            </list>
         </chapter>
 
         <chapter title="Beispiel" id="beispiel">
