@@ -887,9 +887,24 @@
 
     <chapter title="Radix Sort" id="radixsort">
         <chapter title="Grundlagen" id="radixsort-grundlagen">
-
+            <p>
+                Der Radixsort kann aus dem lateinischen radix = Wurzel; Basis abgeleitet werden. Er ist auch als
+                Distributionsort oder Fachverteilen bekannt. Dabei handelt es sich um ein lineares Sortierverfahren
+                basierend auf dem <b>Counting Sort</b> und <b>Bucketsort</b>. Es kann <b>entweder stabile out-of-place
+                oder instabile in-place Varianten</b> realisiert werden. Des Weiteren kann zwischen Verfahren
+                unterschiedenen werden. Zum einen das MSD-Verfahren (englisch most significant digit), bei dem die
+                Stelle mit dem höchsten Wert beginnt oder das LSD-Verfahren (englisch least significant digit), bei dem
+                die niedrigste Stelle beginnt und sich zur höchstwertigen Stelle vorarbeitet.
+            </p>
+            <p>
+                Die Grundidee dahinter ist eigentlich nur, dass bei diesem Sortieralgorithmus mit Queues – also
+                Warteschlagen – gearbeitet wird. Das bedeutet, dass mit jedem zusätzlichen Schritt eine weitere
+                Sortierinformation resultiert. Das führt im Endeffekt zur fertigen Sortierung. Beim Radixsort bestehen
+                die Schlüssel aus Zeichen eines endlichen Alphabets der zu ordnenden Elemente. Dabei muss eine totale
+                Quasiordnung zwischen den Zeichen des Alphabets vorhanden sein.
+            </p>
         </chapter>
-        
+
         <chapter title="Vorgehensweise" id="radixsort-vorgehensweise">
             <chapter title="Partitionierungsphase" id="radixsort-vorgehensweise-partitionierungsphase">
 
