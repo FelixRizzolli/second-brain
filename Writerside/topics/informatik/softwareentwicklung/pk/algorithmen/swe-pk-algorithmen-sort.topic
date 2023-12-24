@@ -341,9 +341,48 @@
             </p>
         </chapter>
         <chapter title="Funktionsweise" id="funktionsweise">
+            <p>
+                Als erstes benötigt es eine Liste, die nach dem Heap Sort geordnet werden soll, in diesem Fall nach dem
+                Max-Heap – also von klein nach groß. Im nächsten Schritt muss also aus dem Array ein max-Heap gebaut
+                werden (<b>Build-Max-Heap</b>). Dann kommt auch schon der Hauptteil, welcher unterschiedlich benannt
+                werden kann. Bekannt als: <b>Heapyfy, Downheap, Versickern</b> oder eventuell auch <b>Versenken</b>.
+                Diese Prozedur beschreibt eine Prüfung der Heap-Bedingung bezüglich der Kinder mit ihrem jeweiligen
+                Vater. Wenn die Heap-Bedingung nicht erfüllt ist, muss das größere Kind mit dem Vater ausgetauscht
+                werden. Dies wird so oft wiederholt, bis die Heap-Size 1 ist, also nur noch ein "unsortiertes" Element
+                besteht.
+            </p>
 
             <chapter title="Pseudocode" id="funktionsweise-pseudocode">
+                <code-block>
+                    Heapsort(arr) {
+                        BuildMaxHeap(arr)
+                        for i
+                            tausche arr[1]  arr[i]
+                            heapsize
+                            Versickern(arr, 1)
+                    }
 
+                    BuildMaxHeap(arr) {
+                        heapsize
+                        for i
+                            Versickern(arr, i)
+                    }
+
+                    Versickern(arr, i) {
+                        l
+                        r
+                        if (l<=heapsize) and (arr[l]>arr[i])
+                            largest
+                        else
+                            largest
+                        if (r<=heapsize) and (arr[r]>arr[largest])
+                            largest
+                        if (largest != i) {
+                            tausche arr[i]  arr[largest]
+                            Versickern(arr, largest)
+                        }
+                    }
+                </code-block>
             </chapter>
         </chapter>
         <chapter title="Komplexität" id="komplexitaet">
