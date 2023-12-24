@@ -28,7 +28,14 @@
             </p>
 
             <chapter title="AES Schlüssel: AES-128, AES-192 und AES-256" id="aes-grundlagen-schluessel">
-
+                <p>
+                    Die Varianten der AES Verschlüsselung, AES-128, AES-192 und AES-256 beinhalten in ihrer Bezeichnung
+                    die Länge des Schlüssels in Bit. Durch die größeren Schlüssellängen des AES von 128, 192 oder 256
+                    konnte die Sicherheit, im Vergleich zum DES mit einer Schlüssellänge von 56 Bit, stark gesteigert
+                    werden. Die sicherste AES Variante ist damit AES-256. Möchte man mit dem Computer einen Schlüssel
+                    herausfinden, dann bräuchte dieser heutzutage (Stand 2019) schon bei einer Schlüssellänge von 128
+                    Bit länger, als das Universum alt ist.
+                </p>
             </chapter>
 
             <chapter title="Erklärung" id="aes-grundlagen-erklaerung">
