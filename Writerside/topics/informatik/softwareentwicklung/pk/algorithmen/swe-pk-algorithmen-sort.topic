@@ -231,6 +231,26 @@
         </chapter>
     </chapter>
 
+    <chapter title="Counting Sort" id="countingsort">
+        <chapter title="Grundlagen" id="countingsort-grundlagen">
+
+            <chapter title="Eigenschaften" id="countingsort-grundlagen-eigenschaften">
+
+            </chapter>
+        </chapter>
+
+        <chapter title="Funktionsweise" id="countingsort-funktionsweise">
+
+            <chapter title="Pseudocode" id="countingsort-funktionsweise-pseudocode">
+
+            </chapter>
+        </chapter>
+
+        <chapter title="Laufzeit" id="countingsort-laufzeit">
+
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
