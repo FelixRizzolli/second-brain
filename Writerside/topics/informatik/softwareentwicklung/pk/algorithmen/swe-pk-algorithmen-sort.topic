@@ -597,7 +597,16 @@
 
     <chapter title="Mergesort" id="mergesort">
         <chapter title="Allgemeines" id="mergesort-allgemeines">
-
+            <p>
+                Der Mergesort gehört zu den stabilen <b>Sortieralgorithmen</b>. Er leitet sich im Allgemeinen vom
+                englischen "merge", also verschmelzen und "sort", dem sortieren ab. Der Sinn dahinter ist einfach nur,
+                dass der Algorithmus die vorhandenen Daten als eine gesamte Liste betrachtet, die er dann in kleinere
+                Listen unterteilt. Man kann also sagen, er zerlegt ein Gesamtproblem in mehrere Teilprobleme und löst
+                diese dann Stück für Stück. Im Endeffekt setzt er sie dann zum Schluss zu einer Gesamtlösung zusammen.
+                Heißt also verallgemeinert, dass der Algorithmus nach dem Grundsatz teile- und herrsche arbeitet. Das
+                <b>Teile-und-herrsche-Verfahren</b> (eng. <emphasis>divide and conquer</emphasis>) stellt in der
+                Informatik ein Paradigma für den Entwurf eines effizienten Algorithmus dar.
+            </p>
         </chapter>
 
         <chapter title="Funktionsweise" id="mergesort-funktionsweise">
