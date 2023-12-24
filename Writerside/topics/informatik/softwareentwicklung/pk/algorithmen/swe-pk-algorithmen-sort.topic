@@ -610,7 +610,22 @@
         </chapter>
 
         <chapter title="Funktionsweise" id="mergesort-funktionsweise">
-
+            <p>
+                Die <b>Funktionsweise</b> lässt sich ganz einfach <b>in drei Schritten</b> erklären:
+            </p>
+            
+            <list>
+                <li>
+                    Eine Liste wird in zwei Hälften zerlegt. Diese <b>Unterteilung</b> wird solange fortgesetzt, bis nur
+                    noch ein Element in einer Menge vorhanden ist.
+                </li>
+                <li>
+                    Dann werden alle Teilstücke für sich <b>sortiert</b>.
+                </li>
+                <li>
+                    Anschließend müssen die Hälften dann <b>nach dem Suchkriterium zu einer Menge vermischt</b> werden.
+                </li>
+            </list>
         </chapter>
 
         <chapter title="Pseudocode" id="mergesort-pseudocode">
