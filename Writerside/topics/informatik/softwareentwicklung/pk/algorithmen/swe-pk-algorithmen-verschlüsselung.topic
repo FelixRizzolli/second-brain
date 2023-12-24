@@ -6,4 +6,31 @@
        title="Verschlüsselungsalgorithmen" id="swe-pk-algorithmen-verschlüsselung">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="AES Verschlüsselung" id="aes">
+
+    </chapter>
+
+    <chapter title="Asymmetrische Verschlüsselung" id="asymmetrisch">
+
+    </chapter>
+
+    <chapter title="Caesar Verschlüsselung" id="caesar">
+
+    </chapter>
+
+    <chapter title="Chinesischer Restsatz (Verschlüsselungsalgorihtmus)" id="chinesischerrestsatz">
+
+    </chapter>
+
+    <chapter title="RSA Verschlüsselung" id="rsa">
+
+    </chapter>
+
+    <chapter title="Symmetrische Verschlüsselung" id="symmetrisch">
+
+    </chapter>
+
+    <chapter title="Vigenere Verschlüsselung" id="vigenere">
+
+    </chapter>
 </topic>
