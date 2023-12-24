@@ -906,16 +906,45 @@
         </chapter>
 
         <chapter title="Vorgehensweise" id="radixsort-vorgehensweise">
-            <chapter title="Partitionierungsphase" id="radixsort-vorgehensweise-partitionierungsphase">
+            <p>
+                Als Prinzip heißt das, dass in jedem Durchlauf die einzelnen Elemente durchgegangen und dabei nur einen
+                bestimmten Teil davon begutachtet werden. Als Beispiel kann man sich ein Geburtsdatum vorstellen,
+                welches aus Tag, Monat und Jahr besteht. Dabei startet man immer beim letzten Element (z.B. das Jahr)
+                und arbeitet sich – Durchlauf für Durchlauf- zum ersten Element (z.B. Tag) in zwei Phasen vor.
+            </p>
 
+            <chapter title="Partitionierungsphase" id="radixsort-vorgehensweise-partitionierungsphase">
+                <p>
+                    In der Partitionierungsphase werden die <b>Daten in das vorhandene Fach aufgeteilt</b>. Dabei gibt
+                    es für <b>jedes einzelne Zeichen</b> des jeweiligen Alphabets ein <b>eigenes Fach</b>. Für
+                    Buchstaben also beispielweise jeweils ein Fach a, ein Fach b, etc. Man ordnet immer die
+                    zusammengehörige Elementreihe entsprechend des geprüften Elements in eine passende Spalte ein. Heißt
+                    also, wenn man das dritte Element der Reihe von hinten betrachtet, würde "abb" in das Fach "b"
+                    einsortiert werden.
+                </p>
             </chapter>
 
             <chapter title="Sammelphase" id="radixsort-vorgehensweise-sammelphase">
-
+                <p>
+                    Die zweite Phase ist die Sammelphase. Dabei fügt man die <b>Inhalte der einzelnen Fächer wieder zu
+                    einer neu sortierten Liste zusammen</b>, beginnend mit dem Fach mit der niedrigsten Wertigkeit.
+                    Dabei ist es wichtig zu beachten, dass die Reihenfolge der Elemente innerhalb der Fächer nicht
+                    verändert werden darf.
+                </p>
+                <p>
+                    Das Ganze wird <b>so oft wiederholt, bis alle einzelnen Stellen der Schlüssel einmal geprüft worden
+                    sind</b>.
+                </p>
             </chapter>
 
             <chapter title="Laufzeit" id="radixsort-vorgehensweise-laufzeit">
-
+                <p>
+                    <b>Die Laufzeit lässt sich in etwa mit <code>O(l*n)</code> abschätzen</b>. Das <b>l</b> ist dabei
+                    die <b>Länge eines Schlüssels</b>. <b>n</b> stellt die <b>Anzahl der zu sortierenden Elemente</b>
+                    dar. Entsprechend ist natürlich klar, dass die Laufzeit linear proportional mit der Anzahl der
+                    vorhandenen Elemente ist – also n. Eine lineare Laufzeit ist davon abhängig, ob die maximale Länge
+                    der zu sortierenden Elemente von Beginn an bekannt ist.
+                </p>
             </chapter>
         </chapter>
 
