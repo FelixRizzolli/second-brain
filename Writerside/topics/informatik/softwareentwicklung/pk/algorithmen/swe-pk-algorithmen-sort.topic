@@ -325,6 +325,38 @@
         </chapter>
     </chapter>
 
+    <chapter title="Heapsort" id="heapsort">
+        <chapter title="Grundlagen" id="grundlagen">
+
+        </chapter>
+        <chapter title="Funktionsweise" id="funktionsweise">
+
+            <chapter title="Pseudocode" id="funktionsweise-pseudocode">
+
+            </chapter>
+        </chapter>
+        <chapter title="Komplexität" id="komplexitaet">
+
+        </chapter>
+        <chapter title="Varianten" id="varianten">
+            <chapter title="Bottom-Up-Heapsort" id="varianten-bottomupheapsort">
+
+            </chapter>
+
+            <chapter title="Smoothsort" id="varianten-smoothsort">
+
+            </chapter>
+
+            <chapter title="Ternäre Heaps" id="varianten-ternaereheaps">
+
+            </chapter>
+
+            <chapter title="n-äre Heaps" id="varianten-naereheaps">
+
+            </chapter>
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
