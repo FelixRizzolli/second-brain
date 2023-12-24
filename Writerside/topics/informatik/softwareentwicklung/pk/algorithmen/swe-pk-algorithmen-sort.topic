@@ -526,8 +526,71 @@
         </chapter>
 
         <chapter title="Laufzeit" id="insertionsort-laufzeit">
+            <p>
+                Die Insertion Sort Laufzeit ist abhängig von der Anzahl von benötigten Verschiebungen, also auch
+                abhängig von der Anordnung von Elementen im unsortierten Bereich. Sowohl der durchschnittliche
+                Average-Case als auch der Worst-Case haben die Komplexität <code>O(n2)</code>. Der schlechteste Fall
+                tritt dann ein, wenn der Algorithmus beispielsweise absteigend sortiert ist und er dann aufsteigend
+                sortiert werden soll. Im Fall, dass die Liste bereits von Beginn an sortiert ist, ist die Komplexität
+                linear <code>O(n)</code>, dabei handelt es sich um den Best-Case. Dabei ist der Sortieralgorithmus sogar
+                besser als der <b>Quicksort</b>, <b>Mergesort</b>, <b>Heapsort</b>, usw.
+            </p>
+            <p>
+                Die <b>Insertion Sort Laufzeit</b> nochmal als <b>Überblick</b>:
+            </p>
+
+            <list>
+                <li>
+                    <p>
+                        Worst-Case/ Schlechtester Fall:
+                    </p>
+
+                    <code-block lang="tex">
+                        \frac{n(n-1)}{2}\in O(n^{2})
+                    </code-block>
+                </li>
+                <li>
+                    <p>
+                        Average Case/ Durchschnittliche Anzahl von Vergleichen:
+                    </p>
+
+                    <code-block lang="tex">
+                        \frac{n(n-1)}{4}\in O(n^{2})
+                    </code-block>
+                </li>
+                <li>
+                    <p>
+                        Best-Case/ Bestes Szenario:
+                    </p>
+
+                    <code-block lang="tex">
+                        O(n)
+                    </code-block>
+                </li>
+            </list>
+
+            <p>
+                Wenn für das Sortierverfahren die binäre Suche verwendet wird, kann man die Anzahl der Vergleiche und
+                Verschiebungen durch Sortieroperationen im Worst-Case folgendermaßen abschätzen:
+            </p>
+
+            <code-block lang="tex">
+                \log(n!)\in O(n\log n-n\log e+\log n)=O(n\log n-0,4426n+\log n)
+            </code-block>
 
             <chapter title="Komplexität" id="insertionsort-laufzeit-komplexität">
+                <p>
+                    Im Falle, dass der Array bereits "fast sortiert" ist, also jedes der Elemente fast am richtigen
+                    Platz ist, kann die Laufzeit auch <code>O(n)</code> sein. In diesem Fall und auch im
+                    Best-Case-Szenario ist der Insertion Sort ziemlich schnell. Jedoch in den anderen Fällen sehr
+                    langsam weswegen sich das Sortierverfahren <b>nur für kleinere Datenmengen oder für das Einfügen von
+                    weiteren Elementen</b> in eine schon geordnete Liste eignet.
+                </p>
+                <p>
+                    Zusätzlich kann noch gesagt werden, dass der Sortieralgorithmus bezüglich Speicherplatzkomplexität
+                    punkten kann. Da der Algorithmus mittel <b>in-place</b>-Verfahren arbeitet, wird kein zusätzlicher
+                    Speicherplatz benötigt.
+                </p>
             </chapter>
         </chapter>
     </chapter>
