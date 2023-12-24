@@ -757,7 +757,72 @@
 
         </chapter>
         <chapter title="Implementierung" id="shellsort-implementierung">
+            <p>
+                Aufgebaut auf dem eben verwendeten Beispiel, werden im Folgenden zwei mögliche Implementierungen
+                aufgelistet. Dabei wird ein <b>Shellsort Java-Quellcode</b> und eine <b>Python-Implementierung</b>
+                dargestellt.
+            </p>
 
+            <code-block lang="java" collapsed-title="JAVA" collapsible="true">
+                <![CDATA[
+                public class Shellsort{
+                    public static void sort(int[] liste) {
+                        int inner, outer;
+                        int tmp;
+                        int h = 1;
+                        while (h <= liste.length / 4) {
+                            h = h * 4+ 1;
+                        }
+                        while (h > 0) {
+                            for (outer = h; outer < liste.length; outer++) {
+                                tmp = liste[outer];
+                                inner = outer;
+                                while (inner > h – 1 && liste[inner – h] >= tmp) {
+                                    liste[inner] = liste[inner – h];
+                                    inner -= h;
+                                }
+                                liste[inner] = tmp;
+                            }
+                            h = (h – 1) / 4;
+                        }
+                    }
+
+                    public static void main(String[] args) {
+                        int [] liste= {4,10,2,8,1,7,12,3,6,11,5,9};
+                        System.out.println(„Eingabe Liste: “ + Arrays.toString(liste));
+                        sort(liste);
+                        System.out.println(„Sortierte Liste:  “ + Arrays.toString(liste));
+                    }
+                }
+                ]]>
+            </code-block>
+
+            <code-block lang="python" collapsed-title="PYTHON" collapsible="true">
+                <![CDATA[
+                def shellsort(liste):
+                    h = len(liste)
+                    gap = h//4
+                    whilegap > 0:
+                        for outer in range(gap,h):
+                            tmp =liste[outer]
+                            inner =outer
+                            while  j >=gap andliste[inner-gap] >tmp:
+                                liste[inner] =liste[inner-gap]
+                                inner -=gap
+                                liste[inner] =tmp
+                            gap //=4
+                        liste =[ 4, 10, 2, 8, 1, 7, 12, 3, 6, 11, 5, 9]
+                        h =len(liste)
+                    print(„Eingabeliste:“)
+                    forouter inrange(h):
+                        print(liste [outer]),
+
+                shellsort(liste)
+                print(„\nSortierte Liste:“)
+                forouter inrange(h):
+                    print(liste [outer]),
+                ]]>
+            </code-block>
         </chapter>
         <chapter title="Komplexität" id="shellsort-komplexitaet">
 
