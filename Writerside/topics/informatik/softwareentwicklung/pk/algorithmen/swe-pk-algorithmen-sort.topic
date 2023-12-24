@@ -724,7 +724,31 @@
         </chapter>
 
         <chapter title="Pseudocode für das In-Place-Verfahren" id="quicksort-pseudocode">
+            <code-block>
+                <![CDATA[
+                funktion quicksort(li, re)
+                    if li < re
+                        t = teilen(li, re)
+                        quicksort(li, t)
+                        quicksort(t+1, re)
+                    end
+                end
 
+                funktion teilen(li, re)
+                    i = li – 1
+                    j = re + 1
+                    pivot = Liste[(li + re) / 2]
+                    while Liste[i] < pivot
+                        i++
+                    while Liste [j] > pivot
+                        j++
+                    if (i < j)
+                        int a = Liste[i]
+                        Liste[i] = Liste[j]
+                        Liste[j] = a
+                    else return j
+                ]]>
+            </code-block>
         </chapter>
     </chapter>
 
