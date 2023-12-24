@@ -88,7 +88,93 @@
         </chapter>
 
         <chapter title="Beispiel" id="beispiel">
+            <p>
+                Im letzten Abschnitt wurde ganz allgemein beschrieben, wie man mit dem AES Verfahren Daten verschlüsseln
+                kann. Nun wird ein allgemeines Beispiel vorgeführt, um die Vorgehensweise zu verdeutlichen.
+            </p>
+            <p>
+                Dabei gehen wir von einer Blockgröße von 128 Bit aus. Dies bedeutet, dass unsere Tabelle aus 4 Spalten
+                besteht. Die Anzahl der Zeilen ist immer konstant vier. Da jede Zelle der Tabelle eine Größe von einem
+                Byte hat, kann man leicht nachrechnen, dass die Tabelle insgesamt 128 Bit enthält.
+            </p>
 
+            <code-block lang="tex">
+                \underset{Spalten}{\underbrace{4}} * \underset{Spalten}{\underbrace{4}} * \underset{1Byte=8Bit}{\underbrace{8Bit}} = 128Bit
+            </code-block>
+            
+            <p>
+                Als <b>Ausgangspunkt</b> gehen wir dabei von folgender <b>Tabelle</b> aus:
+            </p>
+
+            <table style="none">
+                <tr>
+                    <td><code>a(0,0)</code></td>
+                    <td><code>a(0,1)</code></td>
+                    <td><code>a(0,2)</code></td>
+                    <td><code>a(0,3)</code></td>
+                </tr>
+                <tr>
+                    <td><code>a(1,0)</code></td>
+                    <td><code>a(1,1)</code></td>
+                    <td><code>a(1,2)</code></td>
+                    <td><code>a(1,3)</code></td>
+                </tr>
+                <tr>
+                    <td><code>a(2,0)</code></td>
+                    <td><code>a(2,1)</code></td>
+                    <td><code>a(2,2)</code></td>
+                    <td><code>a(2,3)</code></td>
+                </tr>
+                <tr>
+                    <td><code>a(3,0)</code></td>
+                    <td><code>a(3,1)</code></td>
+                    <td><code>a(3,2)</code></td>
+                    <td><code>a(3,3)</code></td>
+                </tr>
+            </table>
+
+            <p>
+                Im ersten Schritt, der <b>Substitution</b> wird nun <b>jedes Byte <code>a(i,j)</code></b> unter
+                Verwendung einer <b>S-Box</b> durch ein anderes <b>Byte <code>b(i,j)</code></b> ersetzt, sodass dies zu
+                folgender Tabelle führt
+            </p>
+
+            <table style="none">
+                <tr>
+                    <td><code>b(0,0)</code></td>
+                    <td><code>b(0,1)</code></td>
+                    <td><code>b(0,2)</code></td>
+                    <td><code>b(0,3)</code></td>
+                </tr>
+                <tr>
+                    <td><code>b(1,0)</code></td>
+                    <td><code>b(1,1)</code></td>
+                    <td><code>b(1,2)</code></td>
+                    <td><code>b(1,3)</code></td>
+                </tr>
+                <tr>
+                    <td><code>b(2,0)</code></td>
+                    <td><code>b(2,1)</code></td>
+                    <td><code>b(2,2)</code></td>
+                    <td><code>b(2,3)</code></td>
+                </tr>
+                <tr>
+                    <td><code>b(3,0)</code></td>
+                    <td><code>b(3,1)</code></td>
+                    <td><code>b(3,2)</code></td>
+                    <td><code>b(3,3)</code></td>
+                </tr>
+            </table>
+
+            <p>
+                Anschließend wird mit der Shift Row Transformation jede Zeile im Kreis verschoben. Danach werden im
+                dritten Schritt, der Mix Column Transformation, die Spalten der Matrix vertauscht. Dabei wird jede
+                Spalte als vier-elementiger Vektor betrachtet und mit einer <b>4 * 4</b> Matrix <b>c(x)</b>
+                multipliziert. Dies ergibt dann den neuen Vektor. Bei dem letzten Schritt, der Key Addition, wird mit
+                dem Schlüssel ein Rundenschlüssel berechnet, welcher auch in Matrixform gegeben ist. Auf den Bytes
+                <code>a(i,j)</code> und dem Rundenschlüssel <code>k(i,j)</code> wird die Exklusiv-Oder Funktion
+                angewendet diese vier Schritte werden während der Verschlüsselung mehrfach durchlaufen.
+            </p>
         </chapter>
 
         <chapter title="Sicherheit, Verwendung und Alternativen" id="aes-weiteres">
