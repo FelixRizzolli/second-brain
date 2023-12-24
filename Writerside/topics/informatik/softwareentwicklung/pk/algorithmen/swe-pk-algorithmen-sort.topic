@@ -354,6 +354,7 @@
 
             <chapter title="Pseudocode" id="funktionsweise-pseudocode">
                 <code-block>
+                    <![CDATA[
                     Heapsort(arr) {
                         BuildMaxHeap(arr)
                         for i
@@ -382,6 +383,7 @@
                             Versickern(arr, largest)
                         }
                     }
+                    ]]>
                 </code-block>
             </chapter>
         </chapter>
