@@ -5,6 +5,61 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Sortieralgorithmen" id="swe-pk-algorithmen-sort">
     <show-structure for="chapter,procedure" depth="2"/>
+    
+    <chapter title="Einleitung" id="einleitung">
+        <p>
+            Ein Sortierverfahren ist ein Algorithmus, der dazu dient, Elemente einer Liste zu sortieren. Voraussetzung
+            ist, dass zwischen den Elementen eine Ordnung möglich ist. Es müssen also Vorgänger- und
+            Nachfolgerbeziehungen bzw. Gleichheit zwischen zwei zu vergleichenden Elementen bezüglich des
+            Sortierkriteriums herstellbar sein. Diese Forderung wird als <emphasis><b>Trichotomie</b></emphasis>
+            bezeichnet und sagt, dass für alle Elemente einer Menge bezüglich der Schlüssel <code>a</code>,
+            <code>b</code> gilt:
+        </p>
+
+        <list>
+            <li><code>a &lt; b</code> (lies: a vor b) oder</li>
+            <li><code>a = b</code> oder</li>
+            <li><code>a &gt; b</code> (lies: a nach b)</li>
+        </list>
+
+        <p>
+            Um das mit Symbolen darzustellen, verwendet man die gezeigten Zeichen.
+        </p>
+        <p>
+            Typische Beispiele sind die lexikografische Ordnung von Zeichenketten oder die numerische Ordnung von
+            Zahlen.
+        </p>
+        <p>
+            Eine weitere Voraussetzung dafür, dass man die Daten sortieren kann, ist
+            <emphasis><b>Transitivität</b></emphasis>. Ist sie gegeben, dann ist gewährleistet, dass die Sortierung
+            widerspruchsfrei durchgeführt werden kann. Es soll gelten: Gehört in der Liste Element <code>a</code> vor
+            Element <code>b</code> und gehört Element <code>b</code> vor Element <code>c</code>, so folgt, dass Element
+            <code>a</code> vor Element <code>c</code> anzuordnen ist.
+        </p>
+        <p>
+            Wichtige Merkmale eines Sortier-Algorithmus sind die Zahl der durchschnittlich benötigten Schritte, bis die
+            gewünschte Reihenfolge der Elemente vorliegt, und der benötigte <b>Speicherplatzbedarf</b>. Die Zahl der
+            Schritte gibt die <b>Komplexität</b> des Algorithmus an und bestimmt maßgeblich, wie lange der gesamte
+            Vorgang dauert.
+        </p>
+        <p>
+            Sortierverfahren können in <b>interne</b> und <b>externe</b> Verfahren unterteilt werden. Wenn es möglich
+            ist, die zu sortierenden Daten komplett im Hauptspeicher, zum Beispiel innerhalb einer Datenstruktur, zu
+            sortieren, so liegt ein internes Sortierverfahren vor. Bei größeren Datenbeständen ist es nicht handhabbar,
+            sämtliche Daten innerhalb des Arbeitsspeichers zu halten. Dann kommen externe Speichermedien wie Festplatten
+            zum Einsatz. Die Effizienz des Algorithmus ist hier besonders wichtig, da die Lese- und Schreibzugriffe auf
+            externe Medien viel Zeit beanspruchen.
+        </p>
+        <p>
+            Unter <b>Effizienz</b> eines Suchverfahrens versteht man, wie viele Schritte im Durchschnitt notwendig sind,
+            um den Sortiervorgang erfolgreich abzuschließen.
+        </p>
+        <p>
+            Ein Sortier-Algorithmus wird als <b>stabil</b> bezeichnet, wenn er die relative Reihenfolge von Elementen
+            beibehält, welche den gleichen Wert bezüglich des Sortierschlüssels aufweisen. Als <b>Sortierschlüssel</b>
+            bezeichnet man das Element, nachdem die Sortierung erfolgt.
+        </p>
+    </chapter>
 
     <chapter title="Quellen" id="quellen">
         <tip>
