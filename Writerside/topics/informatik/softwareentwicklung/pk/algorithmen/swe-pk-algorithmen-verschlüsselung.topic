@@ -52,21 +52,45 @@
         </chapter>
 
         <chapter title="Sicherheit, Verwendung und Alternativen" id="aes-weiteres">
-
             <chapter title="AES Verschlüsslung knacken" id="aes-weiteres-knacken">
-
+                <p>
+                    Um nun die, mit dem AES Verfahren verschlüsselten, Daten wieder zu entschlüsseln, werden die Daten
+                    zuerst wieder in eine Tabelle gelesen. Anschließend wendet man die gerade beschriebenen
+                    Transformationen genau in umgekehrter Reihenfolge an. Damit kann man die AES Verschlüsselung
+                    knacken.
+                </p>
             </chapter>
 
             <chapter title="Verwendung" id="aes-weiteres-verwendung">
-
+                <p>
+                    Die AES Verschlüsselung findet in den verschiedensten Bereichen Anwendung, wie zum Beispiel bei
+                    <b>WLAN</b> oder <b>WAP2</b>, sowie <b>SSH</b> und <b>IPsec</b>. Des Weiteren wird das AES Verfahren
+                    auch bei der <b>Verschlüsselung von Dateien</b> oder <b>Skype</b> benutzt. Die AES Verschlüsselung
+                    findet noch in vielen anderen Bereichen Anwendung, die hier nicht aufgezählt sind.
+                </p>
             </chapter>
 
             <chapter title="Sicherheit" id="aes-weiteres-sicherheit">
-
+                <p>
+                    Die Sicherheit der mit AES verschlüsselten Informationen wird heute als <b>relativ hoch</b>
+                    eingestuft, da <b>kein Algorithmus</b> bekannt ist, der den AES <b>knacken</b> könnte. Auch in den
+                    nächsten Jahren kann davon ausgegangen werden, dass es keine mathematische Lösung des Problems gibt,
+                    auf dem AES basiert. Zusätzlich ist die AES Verschlüsselung auch gegen <b>Brute-Force-Angriffe</b>
+                    in nächster Zeit sicher. Erst wenn die Rechenleistung der Computer noch viel größer wird, stellt das
+                    AES Verfahren keine sichere Verschlüsselungsmethode mehr dar. Das ist spätestens dann der Fall, wenn
+                    es einen effizient funktionierenden Quantencomputer gibt. Nach heutiger Einschätzung wird dies
+                    jedoch noch ein paar Jahre dauern, sodass die AES Verschlüsselung voraussichtlich <b>noch eine Weile
+                    als sicher eingestuft</b> werden kann.
+                </p>
             </chapter>
 
             <chapter title="Alternativen" id="aes-weiteres-alternativen">
-
+                <p>
+                    Angenommen, es wird in naher Zukunft doch eine Lücke in der AES Verschlüsslung gefunden, oder eine
+                    mathematische Lösung entwickelt, die den AES Algorithmus löst, so gibt es auch heute schon
+                    gleichwertige Alternativen. Hierunter fallen zum Beispiel die Verschlüsselungen <b>Twofish</b>,
+                    <b>Serpent</b>, <b>RC6</b> oder <b>MARS</b>.
+                </p>
             </chapter>
         </chapter>
     </chapter>
