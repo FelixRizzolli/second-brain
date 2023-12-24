@@ -340,6 +340,7 @@
                 Allgemeinen durch seine Vorgehensweise auch als Verbesserung zum <b>Selectionsort</b> verstehen.
             </p>
         </chapter>
+
         <chapter title="Funktionsweise" id="funktionsweise">
             <p>
                 Als erstes benötigt es eine Liste, die nach dem Heap Sort geordnet werden soll, in diesem Fall nach dem
@@ -387,9 +388,25 @@
                 </code-block>
             </chapter>
         </chapter>
-        <chapter title="Komplexität" id="komplexitaet">
 
+        <chapter title="Komplexität" id="komplexitaet">
+            <p>
+                Die Heapsort Komplexität beträgt im Allgemeinen <code>O(nlog(n))</code> Vergleiche. Damit ist er
+                bezüglich vergleichsbasierten-Sortieralgorithmen das schnellste asymptotische Sortierverfahren. Jedoch
+                kann er trotzdem beispielsweise mit dem <b>Quicksort</b> in seiner standardisierten Form nicht
+                mithalten. Da der Heapsort in <b>verschiedenen Prozeduren</b> abläuft, kann für jedes <b>eine eigene
+                Laufzeitkomplexität</b> festgestellt werden. Der <b>downheap</b> benötigt beispielsweise
+                <b><code>log(n)</code></b> Schritte beim Vergleichen. Der <b>buildheap</b> zeigt bei einer genaueren
+                Analyse auf, dass er nur <code>O(n)</code> Vergleiche braucht.
+            </p>
+            <p>
+                Wenn man sich die potenziellen Fälle genauer ansieht, kann gesagt werden, dass die Heapsort Laufzeit
+                sowohl im <b>Worst Case</b>, als auch im <b>Average Case</b> und <b>Best Case</b>
+                <code>O(nlog(n))</code> beträgt. Grund dafür ist, dass der Heap-Aufbau eine schrittweise vollständige
+                Invertierung der Sortierreihenfolge benötigt.
+            </p>
         </chapter>
+
         <chapter title="Varianten" id="varianten">
             <chapter title="Bottom-Up-Heapsort" id="varianten-bottomupheapsort">
 
