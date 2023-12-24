@@ -1032,6 +1032,23 @@
             </chapter>
         </chapter>
     </chapter>
+    
+    <chapter title="Selectionsort" id="selectionsort">
+        <chapter title="Grundlagen" id="grundlagen">
+
+            <chapter title="Optimized Selection Sort Algorithm" id="selectionsort-grundlagen-ossa">
+
+            </chapter>
+        </chapter>
+
+        <chapter title="Funktionsweise und Pseudocode" id="selectionsort-funktionsweise">
+
+        </chapter>
+
+        <chapter title="Laufzeit" id="selectionsort-laufzeit">
+
+        </chapter>
+    </chapter>
 
     <chapter title="Quellen" id="quellen">
         <tip>
