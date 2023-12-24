@@ -39,7 +39,19 @@
             </chapter>
 
             <chapter title="Erklärung" id="aes-grundlagen-erklaerung">
-
+                <p>
+                    Da es sich bei der AES Verschlüsselung um ein symmetrisches Verfahren handelt, wird ein- und
+                    derselbe Schlüssel zum Verschlüsseln als auch zum Entschlüsseln verwendet. Das AES
+                    Verschlüsselungsverfahren ist eine Blockchiffre, deren Blockgröße von der AES Encryption Variante
+                    abhängt. Zunächst schreibt man jeden Block in eine Tabelle mit vier Zeilen. Die Anzahl der Spalten
+                    hängt dabei von der gewählten AES Variante ab und reicht von 4 (128 Bit) bis 8 (256 Bit). Des
+                    Weiteren hat jede Zelle in der Tabelle eine Größe von einem Byte. Auf jeden Block werden nun
+                    nacheinander verschiedene Transformationen angewendet. Das Besondere beim AES Verfahren ist, dass
+                    ein Block nicht nur einmal verschlüsselt wird. Stattdessen werden verschiedene Teile des Schlüssels
+                    nacheinander angewendet. Die Anzahl dieser <b>Runden(r)</b> ist dabei von der
+                    <b>Schlüssellänge(k)</b> und der <b>Blockgröße(b)</b> abhängig. Im Folgenden wird nun der AES
+                    Algorithmus schematisch vorgestellt.
+                </p>
             </chapter>
         </chapter>
 
