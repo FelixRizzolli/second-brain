@@ -460,6 +460,29 @@
         </chapter>
     </chapter>
 
+    <chapter title="Insertionsort" id="insertionsort">
+        <chapter title="Grundlagen" id="insertionsort-grundlagen">
+
+            <chapter title="Prinzip" id="insertionsort-grundlagen-prinzip">
+
+            </chapter>
+        </chapter>
+
+        <chapter title="Algorithmus" id="insertionsort-algorithmus">
+
+            <chapter title="Pseudocode" id="insertionsort-algorithmus-pseudocode">
+
+            </chapter>
+        </chapter>
+
+        <chapter title="Laufzeit" id="insertionsort-laufzeit">
+
+            <chapter title="Komplexität" id="insertionsort-laufzeit-komplexität">
+
+            </chapter>
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
