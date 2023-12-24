@@ -270,9 +270,39 @@
         </chapter>
 
         <chapter title="Funktionsweise" id="countingsort-funktionsweise">
+            <p>
+                Für den Algorithmus muss am Anfang eine zu sortierende <b>Eingabeliste</b> übergeben werden. Im ersten
+                Schritt muss ein <b>Maximum der Zahlen</b> berechnet werden. Sollte es der Fall sein, dass es etwas
+                Größeres als das Aktuelle gibt, soll dies nun das neue Größte sein. Im Anschluss soll <b>eine temporäre
+                Liste in Form eines Hilfsarrays erstellt</b> werden. Im Anschluss werden dann <b>die Indizes aller
+                Zahlen überprüft</b> und dadurch entsprechend <b>gezählt</b>, wie oft jede Zahl vorhanden ist. Die
+                <b>Anzahl</b> wird entsprechend <b>in der temporären Liste gespeichert</b>. Jetzt geht es an die
+                Sortierung, entsprechend wird die tatsächliche, <b>finale Position</b> der Zahl in der sortierten
+                Reihenfolge gesucht. Beim Sortieren werden die Indizes der temporären Liste nach ihrer Anzahl geprüft.
+                Dabei soll die Anzahl von <code>i</code> durchgegangen werden, um entsprechende <b>gleiche Elemente
+                hintereinander einzutragen</b>. Die Zahl soll nun entsprechend in der richtigen Reihenfolge an die
+                entsprechende Position eingefügt werden, um dann als <b>sortierte Liste zurückgegeben</b> zu werden.
+            </p>
 
             <chapter title="Pseudocode" id="countingsort-funktionsweise-pseudocode">
-
+                <code-block>
+                    <![CDATA[
+                    countingsort int[] zahlen
+                        maximumZahlen = zahlen [0]
+                        for i=1; i < zahlen.länge; i++
+                            if zahlen[i] > maximumZahlen
+                                maximumZahlen = zahlen [i]
+                        temporäreListe = int [maximum+1]
+                        for i = 0; i < zahlen.länge; i++
+                            temporäreliste[zahlen[i]]++
+                        finaleposition = 0;
+                        for int i = 0; i <= maximum; i++
+                            for int j = 0; j < temporäreliste[i]; j++
+                                zahlen[finaleposition] = i
+                                finaleposition++
+                        return zahlen
+                    ]]>
+                </code-block>
             </chapter>
         </chapter>
 
