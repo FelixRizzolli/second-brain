@@ -204,6 +204,30 @@
         </chapter>
 
         <chapter title="Komplexität" id="bucketsort-komplexitaet">
+            <p>
+                Die Komplexität hängt von mehreren Faktoren ab. Zum einen von der Verteilung der Funktionswerte. Dabei
+                beträgt die <code>O</code>-Notation
+            </p>
+
+            <code-block lang="tex">
+                O(n)+\sum_{n-1}^{i=0} O(l*log*l)
+            </code-block>
+
+            <p>
+                Im günstigsten Fall sind die einzelnen Elemente annähernd <b>gleichverteilt</b>. Dann benötigt das
+                Zuweisen in die Buckets, ebenso wie die Konkatenation eine <b>Gesamtlaufzeit</b> von <code>O(n)</code>.
+                Bei anderen Werteverteilungen kann die Laufzeit jedoch vom Sortierverfahren, das für die einzelnen
+                Listen verwendet wird, dominiert werden – also dem Insertionsort oder Mergesort. Die Komplexität wird
+                also im Fall dieses Sortierverfahrens von verschiedenen Faktoren beeinflusst. <code>O(n)</code>
+                entspricht dabei auch gleichzeitig dem Average-Case.
+            </p>
+            <p>
+                Im Falle der Verwendung eines <b>Mergesorts</b> als angewendetes Sortierverfahren innerhalb eines
+                Buckets, beträgt die Laufzeitkomplexität <code>O(n*log*n)</code>.
+            </p>
+            <p>
+                Die <b>Speicherplatzkomplexität</b> ist <code>O(n)</code>.
+            </p>
         </chapter>
     </chapter>
 
