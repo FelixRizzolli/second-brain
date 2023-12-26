@@ -105,7 +105,10 @@
         </chapter>
 
         <chapter title="Speicherklasse" id="datenobjekte-speicherklasse">
-
+            <p>
+                Diese Eigenschaft bestimmt, in welchem Teil des Hauptspeichers das Datenobjekt angelegt wird.
+                Üblicherweise wird das durch das System festgelegt.
+            </p>
         </chapter>
 
         <chapter title="Eigentümer" id="datenobjekte-eigentuemer">
