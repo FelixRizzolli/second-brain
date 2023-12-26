@@ -7,7 +7,7 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Zwischenablageverlauf" id="zwischenablageverlauf">
-        <img src="poweruser_windows_zwischenablageverlauf.png" alt="Windows - Zwischenablageverlauf"/>
+        <img src="poweruser-windows-zwischenablageverlauf.png" alt="Windows - Zwischenablageverlauf"/>
 
         <table style="none">
             <tr>
@@ -39,7 +39,7 @@
     </chapter>
 
     <chapter title="Emoji Picker" id="emoji-picker">
-        <img src="poweruser_windows_emojipicker.png" alt="Windows - Emoji Picker"/>
+        <img src="poweruser-windows-emojipicker.png" alt="Windows - Emoji Picker"/>
 
         <table style="none">
             <tr>

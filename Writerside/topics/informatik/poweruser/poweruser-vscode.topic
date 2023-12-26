@@ -37,7 +37,7 @@
         </chapter>
 
         <chapter title="Personalisierung" id="basics-personalisierung">
-            <img src="poweruser_vscode_peronalisierung.png" alt="VSCode Personalisierung" />
+            <img src="poweruser-vscode-peronalisierung.png" alt="VSCode Personalisierung" />
 
             <p>
                 VSCode bietet unzählige Personalisierungsmöglichkeiten.
@@ -112,7 +112,7 @@
                     Abstände.
                 </p>
 
-                <img src="poweruser_vscode_firacode.png" alt="FiraCode" width="500" />
+                <img src="poweruser-vscode-firacode.png" alt="FiraCode" width="500" />
 
                 <p>
                     Hier zur Installationsanleitung:
@@ -123,7 +123,7 @@
             </chapter>
 
             <chapter title="Bracket Colorizer" id="basics-bracket-colorizer">
-                <img src="poweruser_vscode_bracket_pair_colorizer.png" alt="Bracket Pair Colorizer" />
+                <img src="poweruser-vscode-bracket-pair-colorizer.png" alt="Bracket Pair Colorizer" />
 
                 <p>
                     Beim Umgang mit tief verschachtelten Klammern in Visual Studio Code kann es schwierig sein,
@@ -154,7 +154,7 @@
                         <p>
                             Die Checkbox anklicken, um Bracket Pair Colorization zu aktivieren:
                         </p>
-                        <img src="poweruser_vscode_bracket_pair_colorizer_search.png" alt="Bracket Pair Suche" />
+                        <img src="poweruser-vscode-bracket-pair-colorizer-search.png" alt="Bracket Pair Suche" />
                     </li>
                 </list>
             </chapter>
@@ -187,7 +187,7 @@
                 können.
             </p>
             
-            <img src="poweruser_vscode_fileexplorer_views.png" alt="FileExplorer Views" />
+            <img src="poweruser-vscode-fileexplorer-views.png" alt="FileExplorer Views" />
 
             <p>
                 VSCode erkennt Scripts von Build Tools wie <code>npm</code>, <code>typescript</code>,
@@ -196,7 +196,7 @@
             </p>
 
             <chapter title="Open Editors" id="fileexplorer-views-openeditors">
-                <img src="poweruser_vscode_fileexplorer_views_openeditors.png" alt="FileExplorer Open Editors" />
+                <img src="poweruser-vscode-fileexplorer-views-openeditors.png" alt="FileExplorer Open Editors" />
                 
                 <list>
                     <li>
@@ -216,7 +216,7 @@
             </chapter>
 
             <chapter title="Folders" id="fileexplorer-views-folders">
-                <img src="poweruser_vscode_fileexplorer_views_folders.png" alt="FileExplorer Folders"/>
+                <img src="poweruser-vscode-fileexplorer-views-folders.png" alt="FileExplorer Folders"/>
                 
                 <list>
                     <li>
@@ -244,11 +244,11 @@
                 gesucht:
             </p>
             
-            <img src="poweruser_vscode_fileexplorer-exclude.png" alt="FileExplorer Exclude"/>
+            <img src="poweruser-vscode-fileexplorer-exclude.png" alt="FileExplorer Exclude"/>
         </chapter>
 
         <chapter title="Auto-Directory" id="auto-directory">
-            <img src="poweruser_vscode_autodirectory.png" alt="FileExplorer Auto-Directory"/>
+            <img src="poweruser-vscode-autodirectory.png" alt="FileExplorer Auto-Directory"/>
 
             <p>
                 In diesem Beispiel wird der Ordner <code>tabTest</code> und die folglich darin enthaltene Datei
@@ -263,7 +263,7 @@
                     vielen Fällen zu viele Suchergebnisse die eigentlich nicht benötigt werden.
                 </p>
 
-                <img src="poweruser_vscode_fileexplorer_search.png" alt="Referenzen - Suche im Workspace" />
+                <img src="poweruser-vscode-fileexplorer-search.png" alt="Referenzen - Suche im Workspace" />
             </chapter>
 
             <chapter title="Suche &amp; Springe zu ..." id="referenzen-jump">
@@ -271,7 +271,7 @@
                     Mittels Rechtsklick auf eine Methode oder Eigenschaft öffnet sich ein Kontextmenü:
                 </p>
 
-                <img src="poweruser_vscode_fileexplorer_goto.png" alt="Referenzen - Springe zu"/>
+                <img src="poweruser-vscode-fileexplorer-goto.png" alt="Referenzen - Springe zu"/>
                 
                 <p>
                     Diese bietet mehrere Optionen:
@@ -297,9 +297,9 @@
                     einzuschließen, um schnelle Anpassungen vorzunehmen oder eine Vorschau zu erhalten was passiert.
                 </p>
 
-                <img src="poweruser_vscode_fileexplorer_peek_options.png" alt="Referenzen - Peek Optionen" />
+                <img src="poweruser-vscode-fileexplorer-peek-options.png" alt="Referenzen - Peek Optionen" />
 
-                <img src="poweruser_vscode_fileexplorer_peek_view.png" alt="Referenzen - Peek Ansicht" />
+                <img src="poweruser-vscode-fileexplorer-peek-view.png" alt="Referenzen - Peek Ansicht" />
             </chapter>
         </chapter>
     </chapter>
@@ -523,13 +523,13 @@
                 Methode angezeigt:
             </p>
 
-            <img src="poweruser_vscode_intellisense_parameterinfo.png"
+            <img src="poweruser-vscode-intellisense-parameterinfo.png"
                  alt="VSCode - IntelliSense Autocomplete Parameter Info" />
         </chapter>
     </chapter>
 
     <chapter title="Mit Tastatur arbeiten – Keyboard Shortcuts" id="keyboard">
-        <img src="poweruser_vscode_keyboard_shortcuts.png" alt="VSCode Keyboard Shortcuts" />
+        <img src="poweruser-vscode-keyboard-shortcuts.png" alt="VSCode Keyboard Shortcuts" />
 
         <p>
             Quelle:
@@ -557,7 +557,7 @@
                                 <code>CTRL</code>+<code>SHIFT</code>+<code>O</code>.
                             </p>
 
-                            <img src="poweruser_vscode_navigation_symbols.png" alt="VSCode Keyboard Navigation - Symbols" />
+                            <img src="poweruser-vscode-navigation-symbols.png" alt="VSCode Keyboard Navigation - Symbols" />
                         </li>
                         <li>
                             <p>
@@ -566,7 +566,7 @@
                                 sich nahezu alle in VSCode verfügbaren Panels und Menüs öffnen.
                             </p>
 
-                            <img src="poweruser_navigation_commands.png" alt="VSCode Keyboard Navigation - Commands" />
+                            <img src="poweruser-navigation-commands.png" alt="VSCode Keyboard Navigation - Commands" />
                         </li>
                         <li>
                             Mit der Tastenkombination <code>CTRL</code>+<code>SHIFT</code>+<code>M</code> kann das
@@ -585,16 +585,16 @@
                 neben der Zeilennummerierung.
             </p>
 
-            <img src="poweruser_vscode_edit_collapsed_false.png" alt="VSCode - Code nicht eingeklappt" />
+            <img src="poweruser-vscode-edit-collapsed-false.png" alt="VSCode - Code nicht eingeklappt" />
             
-            <img src="poweruser_vscode_edit_collapsed_true.png" alt="VSCode - Code eingeklappt" />
+            <img src="poweruser-vscode-edit-collapsed-true.png" alt="VSCode - Code eingeklappt" />
 
             <p>
                 Eine empfehlenswerte Taktik wäre: zuerst alles zusammenklappen und folglich jene Codeblöcke aufklappen
                 an denen man arbeiten muss.
             </p>
 
-            <img src="poweruser_vscode_edit_collapse_all.png" alt="VSCode - Code einklappen" />
+            <img src="poweruser-vscode-edit-collapse-all.png" alt="VSCode - Code einklappen" />
         </chapter>
 
         <chapter title="Multi Cursor + Multiline Editing" id="edit-multi">
@@ -662,7 +662,7 @@
                 verschiedene Verbesserungen vor:
             </p>
 
-            <img src="poweruser_vscode_edit_code_action.png" alt="VSCode - Code Action" />
+            <img src="poweruser-vscode-edit-code-action.png" alt="VSCode - Code Action" />
 
             <p>
                 In diesem Beispiel kann die Arrow-Funktion in eine Named-Funktion konvertiert werden. Die Nutzbarkeit
@@ -742,14 +742,14 @@
                 usw.:
             </p>
 
-            <img src="poweruser_vscode_emmet_balance.png" alt="VSCode - Emmet: Balance (outward)"/>
+            <img src="poweruser-vscode-emmet-balance.png" alt="VSCode - Emmet: Balance (outward)"/>
 
             <p>
                 Mit dem Command <code>Emmet: Wrap with Abbreviation</code> lässt sich das markierte Element in einem
                 neuen Element einschließen:
             </p>
             
-            <img src="poweruser_vscode_emmet_wrap_with_abbreviation.png" alt="VSCode - Emmet: Wrap with Abbreviation"/>
+            <img src="poweruser-vscode-emmet-wrap-with-abbreviation.png" alt="VSCode - Emmet: Wrap with Abbreviation"/>
         </chapter>
     </chapter>
 
@@ -768,9 +768,9 @@
                 <code>Snippets: Insert Snippet</code> angezeigt werden:
             </p>
             
-            <img src="poweruser_vscode_snippets_action.png" alt="VSCode - Built-in Snippets Action"/>
+            <img src="poweruser-vscode-snippets-action.png" alt="VSCode - Built-in Snippets Action"/>
             
-            <img src="poweruser_vscode_snippets_list.png" alt="VSCode - Built-in Snippets List"/>
+            <img src="poweruser-vscode-snippets-list.png" alt="VSCode - Built-in Snippets List"/>
         </chapter>
 
         <chapter title="Extensions" id="snippets-extensions">
@@ -860,7 +860,7 @@
             </chapter>
 
             <chapter title="Build Tools" id="ide-terminal-buildtools">
-                <img src="poweruser_vscode_tasks_buildtools.png" alt="VSCode - Build Tools"/>
+                <img src="poweruser-vscode-tasks-buildtools.png" alt="VSCode - Build Tools"/>
                 
                 <p>
                     VSCode erkennt Scripts von Build Tools wie <code>npm</code>, <code>typescript</code>,
@@ -871,7 +871,7 @@
             </chapter>
 
             <chapter title="Terminal" id="ide-terminal-terminal">
-                <img src="poweruser_vscode_tasks_terminal.png" alt="VSCode - Terminal"/>
+                <img src="poweruser-vscode-tasks-terminal.png" alt="VSCode - Terminal"/>
 
                 <p>
                     Arbeitet man mit mehreren Terminals, so hat man in VSCode einige Personalisierungsoptionen:
@@ -891,7 +891,7 @@
                             <b>Split Terminal</b> – zwei Terminals können nebeneinander gestellt werden
                         </p>
                         
-                        <img src="poweruser_vscode_tasks_terminal_split.png" alt="VSCode - Terminal: Split"/>
+                        <img src="poweruser-vscode-tasks-terminal-split.png" alt="VSCode - Terminal: Split"/>
                     </li>
                     <li>
                         Dem Terminal kann ein <b>Name</b> gegeben werden.
