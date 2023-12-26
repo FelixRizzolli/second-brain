@@ -1046,7 +1046,48 @@
             </chapter>
 
             <chapter title="Datentyp Adresse" id="datentypen-grund-adresse">
+                <p>
+                    Der Datentyp Adresse dient der Darstellung bzw. Speicherung von Adressen von Datenobjekten. Die
+                    genaue Konstruktion dieses Datentyps ist von mehreren Faktoren abhängig, unter anderem von der Art
+                    des Rechnersystems, vom eingesetzten Betriebssystem und natürlich von der verwendeten
+                    Programmiersprache. Außer bei der systemnahen Programmierung ist es in der Regel heute nur äußert
+                    selten notwendig, auf die Adresse eines Datenobjekts zuzugreifen. Die Wahl des Orts, an dem ein
+                    Datenobjekt im Speicher abgelegt wird, überlässt man vollständig dem System. Beim Erstellen eines
+                    neuen Datenobjekts, zum Beispiel einer konkreten Instanz einer Klasse, reserviert das System den
+                    dazu notwendigen Speicherplatz. Wird dieser knapp, weil gegebenenfalls das Datenobjekt dynamisch mit
+                    der Laufzeit des Programms mehr Speicher benötigt, so sorgt das System von selbst dafür, dass mehr
+                    Speicherplatz zur Verfügung gestellt wird.
+                </p>
+                <p>
+                    Moderne Programmiersprachen, zum Beispiel Java oder C#, sorgen auch automatisiert dafür, dass nicht
+                    mehr benötigte Datenobjekte im Speicher wieder freigeben werden. Dazu wird der Speicher regelmäßig
+                    auf nicht mehr benutzte Datenobjekte untersucht. Der Vorteil besteht darin, dass der Programmierer
+                    nicht eigenständig für eine Freigabe sorgen muss. Das Vorgehen wird als Garbage Collection bzw.
+                    automatische Speicherbereinigung bezeichnet. Je nach Ansatz werden darüber hinaus zusätzlich noch
+                    die verwendeten Speicherbereiche zusammengefasst (Defragmentierung).
+                </p>
+                <p>
+                    Der wesentliche Vorteil der automatischen Speicherbereinigung gegenüber der manuellen
+                    Speicherverwaltung ist die Vermeidung von Speicherproblemen. Bei der Programmierung ist man sich oft
+                    nicht vollständig sicher, zu welcher Zeit bestimmte Objekte nicht mehr benutzt werden und daher
+                    wieder gelöscht werden können. Ein Löschen bedeutet eine Freigabe des Speichers. Auch bei späteren
+                    Programmänderungen kann es passieren, dass ein Objekt noch benötigt wird, dessen Speicher bereits
+                    freigegeben wurde. Erfolgt dann dennoch ein Zugriff auf ein nicht mehr existierendes Objekt, kommt
+                    es zu Fehlermeldungen, unvorhersehbaren Programmaktionen und üblicherweise zu sogenannten
+                    Schutzverletzungen, d. h., das Programm versucht einen Zugriff auf einen nicht reservieren
+                    Speicherbereich.
+                </p>
+                <p>
+                    Den Vorteil der Garbage Collection erkauft man sich mit einem erhöhten Ressourcenverbrauch, da die
+                    Freigabe nicht mehr benötigten Speichers stets zeitlich verzögert geschieht. Dies ist auch der
+                    Grund, weshalb es bei sehr speicherintensiven Programmen, zum Beispiel bei Bildbearbeitungssoftware,
+                    dennoch angezeigt sein kann, das System der automatischen Speicherbereinigung durch eine manuelle
+                    Speicherverwaltung zu ergänzen. In diesem Fall werden nicht mehr benötigte Objekte manuell im
+                    Programmcode freigeben. Bei Programmiersprachen, die nicht über eine Garbage Collection verfügen,
+                    muss die Freigabe stets per Hand erfolgen.
+                </p>
 
+                <img src="swe-pk-datenstrukturen-datentyp-adresse.png" alt="Datentyp Adresse"/>
             </chapter>
         </chapter>
 
