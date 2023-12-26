@@ -28,7 +28,7 @@
                 durch folgende Eigenschaften aus:
             </p>
             
-            <img src="swe-pk-datenstrukturen-datentypen-uebersicht.jpg" alt="Datenstrukturen - Übersicht"/>
+            <img src="swe-pk-datenstrukturen-datenobjekte-uebersicht.jpg" alt="Datenobjekte - Übersicht"/>
         </chapter>
 
         <chapter title="Datentyp" id="datenobjekte-datentyp">
@@ -124,6 +124,28 @@
     </chapter>
 
     <chapter title="Datentypen" id="datentypen">
+        <p>
+            Man unterscheidet zwischen Grunddatentypen und anwendungsorientierten Datentypen.
+        </p>
+
+        <img src="swe-pk-datenstrukturen-datentypen-uebersicht.jpg" alt="Datentypen - Übersicht"/>
+
+        <list>
+            <li>
+                <b>Grunddatentypen</b> werden durch die Programmiersprache direkt bereitgestellt. Sie decken die
+                wesentlichen Aspekte der Datenspeicherung in einem Computerprogramm ab, und sie stellen die Basis für
+                Erweiterungen jeder Art dar.
+            </li>
+            <li>
+                <b>Anwendungsorientierte Datentypen</b> lassen sich bei Zerlegung wieder auf Grunddatentypen
+                zurückführen. Hier werden mehrere Datenobjekte zu einem Gesamtkonstrukt zusammengefasst.
+            </li>
+            <li>
+                <b>Abgeleitete Datentypen</b> gehen in fast die gleiche Richtung. Hier geht es zum Beispiel darum, dass
+                Datenobjekte der gleichen Art zu einem Mengentyp wie einer Liste oder ein Array zusammengefasst werden.
+                Auf einzelnen Elemente einer solchen Liste kann dann üblicherweise mit einem Index zugegriffen werden.
+            </li>
+        </list>
 
         <chapter title="Grunddatentypen" id="datentypen-grund">
 
