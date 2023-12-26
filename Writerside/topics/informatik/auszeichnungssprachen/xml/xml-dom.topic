@@ -85,7 +85,7 @@
                 zu den Textknoten auf der untersten Ebene des Baums:
             </p>
             
-            <img src="xml_knotenbaum.png" alt="XML - Knotenbaum"/>
+            <img src="xml-knotenbaum.png" alt="XML - Knotenbaum"/>
         </chapter>
 
         <chapter title="Eltern, Kinder und Geschwister von Knoten" id="grundlagen-knoten">
@@ -108,7 +108,7 @@
                 Die folgende Abbildung veranschaulicht einen Teil des Knotenbaums und die Beziehung zwischen den Knoten:
             </p>
 
-            <img src="xml_knotenbaum_beziehungen.png" alt="XML - Knotenbaum (Beziehungen)"/>
+            <img src="xml-knotenbaum-beziehungen.png" alt="XML - Knotenbaum (Beziehungen)"/>
         </chapter>
 
         <chapter title="Zugriff auf Knoten" id="grundlagen-zugriff">

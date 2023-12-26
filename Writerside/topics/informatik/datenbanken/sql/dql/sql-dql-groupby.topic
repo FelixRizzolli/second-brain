@@ -15,7 +15,7 @@
             <code>AVG()</code> den Durchschnitt der Gehälter der einzelnen Gruppen:
         </p>
 
-        <img src="datenbanken_sql_groupby1.png" alt="GROUP BY - Beispiel"/>
+        <img src="datenbanken-sql-groupby1.png" alt="GROUP BY - Beispiel"/>
 
         <p>
             Wie im Beispiel können in der Spaltenauswahlliste Aggregatfunktionen enthalten sein, die beispielsweise eine

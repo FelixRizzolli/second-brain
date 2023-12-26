@@ -230,7 +230,7 @@
     </chapter>
 
     <chapter title="JOIN / INNER JOIN" id="join">
-        <img src="datenbanken_sql_innerjoin.gif" alt="INNER JOIN"/>
+        <img src="datenbanken-sql-innerjoin.gif" alt="INNER JOIN"/>
 
         <p>
             In manchen Datenbanken wird <code>INNER JOIN</code> statt <code>JOIN</code> verwendet.
@@ -303,7 +303,7 @@
     </chapter>
 
     <chapter title="LEFT JOIN / LEFT OUTER JOIN" id="leftjoin">
-        <img src="datenbanken_sql_leftjoin.gif" alt="LEFT JOIN"/>
+        <img src="datenbanken-sql-leftjoin.gif" alt="LEFT JOIN"/>
 
         <p>
             In manchen Datenbanken wird <code>LEFT OUTER JOIN</code> statt <code>LEFT JOIN</code> verwendet.
@@ -387,7 +387,7 @@
     </chapter>
 
     <chapter title="RIGHT JOIN / RIGHT OUTER JOIN" id="rightjoin">
-        <img src="datenbanken_sql_rightjoin.gif" alt="RIGHT JOIN"/>
+        <img src="datenbanken-sql-rightjoin.gif" alt="RIGHT JOIN"/>
 
         <p>
             In manchen Datenbanken wird <code>RIGHT OUTER JOIN</code> statt <code>RIGHT JOIN</code> verwendet.
@@ -471,7 +471,7 @@
     </chapter>
 
     <chapter title="FULL JOIN / FULL OUTER JOIN" id="fulljoin">
-        <img src="datenbanken_sql_fulljoin.gif" alt="FULL JOIN"/>
+        <img src="datenbanken-sql-fulljoin.gif" alt="FULL JOIN"/>
 
         <p>
             In manchen Datenbanken wird <code>FULL OUTER JOIN</code> statt <code>FULL JOIN</code> verwendet.
@@ -571,7 +571,7 @@
     </chapter>
 
     <chapter title="CROSS JOIN" id="crossjoin">
-        <img src="datenbanken_sql_crossjoin.png" alt="CROSS JOIN"/>
+        <img src="datenbanken-sql-crossjoin.png" alt="CROSS JOIN"/>
 
         <chapter title="Beschreibung" id="crossjoin-beschreibung">
             <p>

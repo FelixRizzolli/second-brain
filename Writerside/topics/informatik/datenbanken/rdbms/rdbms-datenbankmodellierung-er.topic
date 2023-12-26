@@ -57,7 +57,7 @@
             auszubildender, ausbildungsberuf usw. als Entitäten in einem Rechteck gekennzeichnet.
         </p>
 
-        <img src="datenbanken_rdbms_er_entity.jpg" alt="ER - ENTITY"/>
+        <img src="datenbanken-rdbms-er-entity.jpg" alt="ER - ENTITY"/>
     </chapter>
 
     <chapter title="Attribute" id="grundlagen-attribute">
@@ -69,7 +69,7 @@
             jeweils zu einer Entität gehörenden Attribute.
         </p>
 
-        <img src="datenbanken_rdbms_er_attribute.jpg" alt="ER - ATTRIBUTE"/>
+        <img src="datenbanken-rdbms-er-attribute.jpg" alt="ER - ATTRIBUTE"/>
         
         <table>
             <tr>
@@ -116,7 +116,7 @@
                 Schlüsselattribut wird auch als künstlicher Schlüssel oder Surrogatschlüssel bezeichnet.
             </p>
             
-            <img src="datenbanken_rdbms_er_attribute_key.jpg" alt="ER - ATTRIBUT KEY"/>
+            <img src="datenbanken-rdbms-er-attribute-key.jpg" alt="ER - ATTRIBUT KEY"/>
             
             <table>
                 <tr>
@@ -222,7 +222,7 @@
                 <code>(O)</code> in Klammern notiert werden.
             </p>
 
-            <img src="datenbanken_rdbms_er_attribute_pflicht.jpg" alt="ER - ATTRIBUTE PFLICHT/OPTIONAL" />
+            <img src="datenbanken-rdbms-er-attribute-pflicht.jpg" alt="ER - ATTRIBUTE PFLICHT/OPTIONAL" />
         </chapter>
     </chapter>
 
@@ -265,13 +265,13 @@
             ausbildungsvertrag, adresse, ausbildungsberuf und lehrfach.
         </p>
         
-        <img src="datenbanken_rdbms_er_beziehungen_ohne.png" alt="ER - Modell ohne Beziehungen"/>
+        <img src="datenbanken-rdbms-er-beziehungen-ohne.png" alt="ER - Modell ohne Beziehungen"/>
         
         <p>
             Die Beziehung dieser Entitäten sieht wie folgt aus:
         </p>
         
-        <img src="datenbanken_rdbms_er_beziehungen_mit.png" alt="ER - Modell mit Beziehungen"/>
+        <img src="datenbanken-rdbms-er-beziehungen-mit.png" alt="ER - Modell mit Beziehungen"/>
 
         <chapter title="Starke und schwache Entitäten " id="beziehungen-staerke">
             <p>

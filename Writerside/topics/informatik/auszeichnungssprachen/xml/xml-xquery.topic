@@ -7,7 +7,7 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlegendes zu XQuery" id="grundlagen">
-        <img src="xml_tools_overview.png" alt="XML - Tools"/>
+        <img src="xml-tools-overview.png" alt="XML - Tools"/>
 
         <p>
             XQuery ist DIE Sprache für Abfragen auf XML-Dokumenten und baut dabei auf

@@ -7,7 +7,7 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="XLink und XPointer" id="grundlagen">
-        <img src="xml_tools_overview.png" alt="XML - Tools"/>
+        <img src="xml-tools-overview.png" alt="XML - Tools"/>
 
         <chapter title="XLink" id="grundlagen-xlink">
             <list>

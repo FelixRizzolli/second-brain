@@ -1000,7 +1000,7 @@
                 </li>
             </list>
 
-            <img src="hardware_speichermanagement.png" alt="Hardware Speichermanagement" width="600"/>
+            <img src="hardware-speichermanagement.png" alt="Hardware Speichermanagement" width="600"/>
 
             <p>
                 Auf diese Struktur der Hardware baut die Speicherverwaltung des Betriebssystems auf. Jedes Programm kann

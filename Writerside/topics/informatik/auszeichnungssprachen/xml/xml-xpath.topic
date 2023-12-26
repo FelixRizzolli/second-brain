@@ -7,7 +7,7 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlegendes zu XPath" id="grundlagen">
-        <img src="xml_tools_overview.png" alt="XML - Tools"/>
+        <img src="xml-tools-overview.png" alt="XML - Tools"/>
 
         <p>
             XPath ist ein wichtiges Element des XSLT-Standards. XPath kann verwendet werden, um durch Elemente und 
