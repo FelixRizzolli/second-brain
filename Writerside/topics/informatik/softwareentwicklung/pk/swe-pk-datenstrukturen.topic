@@ -148,9 +148,58 @@
         </list>
 
         <chapter title="Grunddatentypen" id="datentypen-grund">
-
             <chapter title="Bit und Byte" id="datentypen-grund-bitbyte">
+                <p>
+                    Die Grundlage jeder Speicherung von Informationen in einem Rechner ist das Bit. Hier wird nur 
+                    zwischen den beiden Zuständen 0 und 1 unterschieden. Die kleinste adressierbare Einheit ist das 
+                    Byte. Es umfasst jeweils 8 Bit. Da jedes Bit die besagten zwei Werte annehmen kann, ergibt das 
+                    insgesamt 256 Kombinationen, denn 28 = 256. Neben der Darstellung in Binärform spielen noch 
+                    sedezimale (hexadezimale) und dezimale Darstellung eine wichtige Rolle.
+                </p>
 
+                <chapter title="Tabelle (Binär, Hexadezimal, Dezimal)" id="datentypen-grund-bitbyte-tabelle">
+                    <table style="header-row">
+                        <tr>
+                            <td>Binärdarstellung (Basis 2)</td>
+                            <td>Sedezimaldarstellung (Basis 16)</td>
+                            <td>Dezimaldarstellung (Basis 10)</td>
+                        </tr>
+                        <tr><td><code>0000 0000</code></td><td><code>00</code></td><td><code>0</code></td></tr>
+                        <tr><td><code>0000 0001</code></td><td><code>01</code></td><td><code>1</code></td></tr>
+                        <tr><td><code>0000 0010</code></td><td><code>02</code></td><td><code>2</code></td></tr>
+                        <tr><td><code>0000 0011</code></td><td><code>03</code></td><td><code>3</code></td></tr>
+                        <tr><td><code>0000 0100</code></td><td><code>04</code></td><td><code>4</code></td></tr>
+                        <tr><td><code>0000 0101</code></td><td><code>05</code></td><td><code>5</code></td></tr>
+                        <tr><td><code>0000 0110</code></td><td><code>06</code></td><td><code>6</code></td></tr>
+                        <tr><td><code>0000 0111</code></td><td><code>07</code></td><td><code>7</code></td></tr>
+                        <tr><td><code>0000 1000</code></td><td><code>08</code></td><td><code>8</code></td></tr>
+                        <tr><td><code>0000 1001</code></td><td><code>09</code></td><td><code>9</code></td></tr>
+                        <tr><td><code>0000 1010</code></td><td><code>0A</code></td><td><code>10</code></td></tr>
+                        <tr><td><code>0000 1011</code></td><td><code>0B</code></td><td><code>11</code></td></tr>
+                        <tr><td><code>0000 1100</code></td><td><code>0C</code></td><td><code>12</code></td></tr>
+                        <tr><td><code>0000 1101</code></td><td><code>0D</code></td><td><code>13</code></td></tr>
+                        <tr><td><code>0000 1110</code></td><td><code>0E</code></td><td><code>14</code></td></tr>
+                        <tr><td><code>0000 1111</code></td><td><code>0F</code></td><td><code>15</code></td></tr>
+                        <tr><td><code>0001 0000</code></td><td><code>10</code></td><td><code>16</code></td></tr>
+                        <tr><td><code>0001 0001</code></td><td><code>11</code></td><td><code>17</code></td></tr>
+                        <tr><td><code>...</code></td><td><code>...</code></td><td><code>...</code></td></tr>
+                        <tr><td><code>0001 1111</code></td><td><code>1F</code></td><td><code>31</code></td></tr>
+                        <tr><td><code>0010 0000</code></td><td><code>20</code></td><td><code>32</code></td></tr>
+                        <tr><td><code>0010 0001</code></td><td><code>21</code></td><td><code>33</code></td></tr>
+                        <tr><td><code>...</code></td><td><code>...</code></td><td><code>...</code></td></tr>
+                        <tr><td><code>0010 1111</code></td><td><code>2F</code></td><td><code>47</code></td></tr>
+                        <tr><td><code>0011 0000</code></td><td><code>30</code></td><td><code>48</code></td></tr>
+                        <tr><td><code>0011 0001</code></td><td><code>31</code></td><td><code>49</code></td></tr>
+                        <tr><td><code>...</code></td><td><code>...</code></td><td><code>...</code></td></tr>
+                        <tr><td><code>0011 1111</code></td><td><code>3F</code></td><td><code>63</code></td></tr>
+                        <tr><td><code>...</code></td><td><code>...</code></td><td><code>...</code></td></tr>
+                        <tr><td><code>1111 0000</code></td><td><code>F0</code></td><td><code>240</code></td></tr>
+                        <tr><td><code>1111 0001</code></td><td><code>F1</code></td><td><code>241</code></td></tr>
+                        <tr><td><code>...</code></td><td><code>...</code></td><td><code>...</code></td></tr>
+                        <tr><td><code>1111 1110</code></td><td><code>FE</code></td><td><code>254</code></td></tr>
+                        <tr><td><code>1111 1111</code></td><td><code>FF</code></td><td><code>255</code></td></tr>
+                    </table>
+                </chapter>
             </chapter>
 
             <chapter title="Datentyp Binärwert" id="datentypen-grund-binaerwert">
