@@ -53,6 +53,16 @@
         </chapter>
 
         <chapter title="Die Regression zur Mitte" id="recht-regression-zur-mitte">
+            <img src="truthiness-regression-zur-mitte.svg" alt="Regression zur Mitte"/>
+
+            <p>
+                Die Regression zur Mitte gilt oft bei chronischen Erkrankungen. Die Beschwerden bei chronischen
+                Erkrankungen treten meist Wellenförmig auf (ähnlich wie im Bild): Manchmal sind sie besonders Stark,
+                manchmal sind sie eher schwach. Meistens aber irgendwo im Mittelfeld. Und wann geht man zum Arzt?
+                Logisch dann, wenn die Beschwerden sehr stark sind. Und das bedeutet, dass es sehr wahrscheinlich ist,
+                dass die Beschwerden danach wieder nachlassen - egal ob man irgendwelche Pillen nimmt oder nicht; oder
+                ob sich eine Heilpraktikerin besonders gut um einen Gekümmert hat.
+            </p>
         </chapter>
 
         <chapter title="Die Zuwendung" id="recht-zuwendung">
