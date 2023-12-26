@@ -1092,6 +1092,24 @@
         </chapter>
 
         <chapter title="Spezifische Datentypen" id="datentypen-spezifisch">
+            <p>
+                Die Basis für diese Datentypen bilden die zuvor beschriebenen Grunddatentypen, d. h. die Datentypen für
+                Zahlen, Zeichenketten usw. Typische Varianten dieser Datentypen sind Felder, Listen oder Aufzählungen in
+                jeglicher Form. Bei ihnen geht es darum, dass man Datenobjekte eines Typs zu einer Struktur
+                zusammenfasst und beispielsweise über einen Index darauf zugreifen kann. Für diese Art von Datentypen
+                hält jede Programmiersprache üblicherweise einen bestimmten Satz an Möglichkeiten bereit.
+            </p>
+            <p>
+                Für jedes Programm kann der Entwickler in den meisten Programmiersprachen individuell eigene Datentypen
+                definieren. Beispielsweise kann man einen Datentyp Kunde definieren, der die wesentlichen Merkmale eines
+                Kunden wie Name, Adresse usw. enthält. Es handelt sich um einen komplexen Datentyp, der dann aus
+                einzelnen Grunddatentypen zusammengesetzt ist.
+            </p>
+            <p>
+                Wie bereits erwähnt spielen Felder und Auflistungen bei nahezu allen Programmieraufgaben eine größere
+                Rolle. Datentypen in Form eines Felds werden auch als Array bezeichnet. Es gibt viele
+                Konstruktionsvarianten dieses Datentyps, das Prinzip bleibt jedoch immer gleich.
+            </p>
 
             <chapter title="Arrays" id="datentypen-spezifisch-arrays">
 
