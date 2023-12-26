@@ -112,7 +112,10 @@
         </chapter>
 
         <chapter title="Eigentümer" id="datenobjekte-eigentuemer">
-
+            <p>
+                Dabei ist gemeint welcher Systemteil des Programms welche »Rechte« über das Datenobjekt hat. Mit Rechten
+                sind das Erzeugen, das Lesen, das Schreiben und das Löschen eines Datenobjekts gemeint.
+            </p>
         </chapter>
     </chapter>
 
