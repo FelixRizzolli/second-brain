@@ -157,7 +157,9 @@
                     sedezimale (hexadezimale) und dezimale Darstellung eine wichtige Rolle.
                 </p>
 
-                <chapter title="Tabelle (Binär, Hexadezimal, Dezimal)" id="datentypen-grund-bitbyte-tabelle">
+                <chapter title="Tabelle (Binär, Hexadezimal, Dezimal)"
+                         id="datentypen-grund-bitbyte-tabelle"
+                         collapsible="true">
                     <table style="header-row">
                         <tr>
                             <td>Binärdarstellung (Basis 2)</td>
@@ -271,7 +273,7 @@
                     doppelte ("…") oder einfache ('…') Anführungszeichen eingeschlossen.
                 </p>
 
-                <chapter title="ASCII Tabelle" id="datentypen-grund-zeichenkette-ascii">
+                <chapter title="ASCII Tabelle" id="datentypen-grund-zeichenkette-ascii" collapsible="true">
                     <table>
                         <tr>
                             <td><code>0</code></td>
