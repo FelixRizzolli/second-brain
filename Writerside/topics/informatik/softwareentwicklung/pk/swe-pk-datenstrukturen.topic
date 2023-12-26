@@ -63,7 +63,13 @@
         </chapter>
 
         <chapter title="Bezeichner" id="datenobjekte-bezeichner">
-
+            <p>
+                Der Bezeichner eines Datenobjekts gibt an, mit welchem Namen das Datenobjekt angesprochen wird. Dabei
+                muss beachtet werden, dass der Name grundsätzlich eindeutig sein muss, damit Verwechslungen zwischen
+                Datenobjekten ausgeschlossen sind. Diese Regel gilt immer in Bezug auf den sog. Gültigkeitsbereich. Der
+                Gültigkeitsbereich ist ein abgegrenzter Bereich unterschiedlichen Ausmaßes innerhalb des Quellcodes.
+                Dies kann zum Beispiel eine Methode, eine Klasse oder eine Bibliothek sein.
+            </p>
         </chapter>
 
         <chapter title="Lebensdauer" id="datenobjekte-lebensdauer">
