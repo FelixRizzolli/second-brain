@@ -73,7 +73,11 @@
         </chapter>
 
         <chapter title="Lebensdauer" id="datenobjekte-lebensdauer">
-
+            <p>
+                Die Lebensdauer eines Datenobjekts meint die Zeitspann von dessen Erzeugung bis zum Löschen. Bei vielen
+                Programmiersprachen sorgt das System selbst für ein automatisiertes Löschen des Datenobjekts, wenn es
+                nicht mehr benötigt wird.
+            </p>
         </chapter>
 
         <chapter title="Bindungszeitpunkt" id="datenobjekte-bindungszeitpunkt">
