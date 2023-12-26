@@ -203,7 +203,12 @@
             </chapter>
 
             <chapter title="Datentyp Binärwert" id="datentypen-grund-binaerwert">
-
+                <p>
+                    Beim Binärwert handelt es sich üblicherweise um den einfachsten Datentyp, den eine
+                    Programmiersprache zu bieten hat. Man unterscheidet lediglich die Zustände true und false. Die
+                    typischen Bezeichnungen für diesen Datentyp sind bool oder boolean. Ergebnisse von Prüfungen aller
+                    Art werden üblicherweise mit einer Variable vom Typ bool zurückgegeben.
+                </p>
             </chapter>
 
             <chapter title="Datentyp Zahl" id="datentypen-grund-zahl">
