@@ -81,7 +81,27 @@
         </chapter>
 
         <chapter title="Bindungszeitpunkt" id="datenobjekte-bindungszeitpunkt">
+            <p>
+                Mit Bindungszeitpunkt ist jener Zeitpunkt gemeint, wann das Datenobjekt wirklich erzeugt wird, d.h.,
+                wann der Speicherbereich dem Namen zugeordnet (gebunden) wird.
+            </p>
 
+            <list>
+                <li>
+                    Bei sog. <emphasis>stark typisierten Sprachen</emphasis> erfolgt die Bindung zur Entwurfszeit. Der
+                    Programmierer muss üblicherweise den Datentyp für ein Datenobjekt angeben.
+                </li>
+                <li>
+                    Bei nicht <emphasis>stark typisierten Sprachen</emphasis> passiert die Bindung erst zur Laufzeit.
+                    Erst dann versucht das Programm, einen sinnvollen Datentyp auszuwählen und darin die Informationen
+                    zu speichern.
+                </li>
+            </list>
+
+            <p>
+                Beide Varianten haben Vor- und Nachteile. Die frühe Datenbindung zur Entwurfszeit vermeidet Fehler; die
+                Datenbindung zur Laufzeit gibt dem System mehr Flexibilität.
+            </p>
         </chapter>
 
         <chapter title="Speicherklasse" id="datenobjekte-speicherklasse">
