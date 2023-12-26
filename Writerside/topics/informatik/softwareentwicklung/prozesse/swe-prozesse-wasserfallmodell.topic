@@ -43,7 +43,7 @@
             <emphasis>Wasserfallmodell mit Rückkopplung</emphasis>.
         </p>
 
-        <img src="swe_prozesse_wasserfallmodell.jpg" alt="Wasserfallmodell"/>
+        <img src="swe-prozesse-wasserfallmodell.jpg" alt="Wasserfallmodell"/>
     </chapter>
 
     <chapter title="Das Modell" id="modell">

@@ -175,13 +175,13 @@
             </tr>
             <tr>
                 <td>
-                    <img src="rich_dad_poor_dad_gewinn_und_verlustrechnung_arm.png" alt="" width="250" style="inline"/>
+                    <img src="rich-dad-poor-dad-gewinn-und-verlustrechnung-arm.png" alt="" width="250" style="inline"/>
                 </td>
                 <td>
-                    <img src="rich_dad_poor_dad_gewinn_und_verlustrechnung_mittelschicht.png" alt="" width="250" style="inline"/>
+                    <img src="rich-dad-poor-dad-gewinn-und-verlustrechnung-mittelschicht.png" alt="" width="250" style="inline"/>
                 </td>
                 <td>
-                    <img src="rich_dad_poor_dad_gewinn_und_verlustrechnung_reich.png" alt="" width="250" style="inline"/>
+                    <img src="rich-dad-poor-dad-gewinn-und-verlustrechnung-reich.png" alt="" width="250" style="inline"/>
                 </td>
             </tr>
             <tr>
@@ -351,7 +351,7 @@
         </chapter>
     </chapter>
     <chapter title="Cashflow Quadrant" id="cashflow-quadrant">
-        <img src="rich_dad_poor_dad_cashflow_quadrant.png" alt="" width="250" style="inline"/>
+        <img src="rich-dad-poor-dad-cashflow-quadrant.png" alt="" width="250" style="inline"/>
         <table style="header-column">
             <tr>
                 <td><b>E</b>mployee</td>
@@ -675,7 +675,7 @@
             </li>
         </list>
         <chapter title="Income Statement - Vorlage" id="income-statement">
-            <img src="rich_dad_poor_dad_income_statement.png" alt="" width="700" style="inline"/>
+            <img src="rich-dad-poor-dad-income-statement.png" alt="" width="700" style="inline"/>
         </chapter>
     </chapter>
     <chapter title="Quellen" id="quellen">
