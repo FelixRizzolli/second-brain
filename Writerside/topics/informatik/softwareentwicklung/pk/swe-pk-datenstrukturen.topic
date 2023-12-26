@@ -39,7 +39,18 @@
         </chapter>
 
         <chapter title="Wert" id="datenobjekte-wert">
-
+            <p>
+                In vielen Programmiersprachen muss zunächst das Datenobjekt deklariert werden, damit dafür Speicherplatz
+                reserviert wird. Die folglich erstmalige Zuweisung eines Wertes wird Definition genannt. Deklaration und
+                Definition kann oftmals auch kombiniert werden.
+            </p>
+            <p>
+                Eine Besonderheit in vielen Programmiersprachen ist der Wert Null. Dieser Wert ist vom Zahlenwert 0
+                verschieden. Der Wert Null ist vielmehr mit den Worten »nichts« oder »leer« zu interpretieren. Ein
+                solcher Wert für ein Datenobjekt spielt immer dann eine Rolle, wenn auf ein komplexes Objekt im Speicher
+                verwiesen wird. Null zeigt dann an, dass der Wert nicht definiert bzw. das Objekt noch nicht erstellt
+                wurde. Objekte sind in diesem Verständnis Datentypen einer bestimmten Klasse.
+            </p>
         </chapter>
 
         <chapter title="Adresse" id="datenobjekte-adresse">
