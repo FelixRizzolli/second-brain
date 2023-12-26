@@ -32,7 +32,10 @@
         </chapter>
 
         <chapter title="Datentyp" id="datenobjekte-datentyp">
-
+            <p>
+                Der Datentyp legt fest, welche Arten von Daten (z.B. Zahlen, Texte) darin gespeichert werden können und
+                welche Operationen mit dem Datenobjekt erlaubt sind.
+            </p>
         </chapter>
 
         <chapter title="Wert" id="datenobjekte-wert">
