@@ -54,7 +54,12 @@
         </chapter>
 
         <chapter title="Adresse" id="datenobjekte-adresse">
-
+            <p>
+                Jedes Datenobjekt hat eine Adresse. Diese Adresse gibt genau an, an welcher Stelle im Speicher
+                (Hauptspeicher des Computers) sich das Datenobjekt befindet. Manipulationen auf Speicherebene sind
+                komplex und fehlerbehaftet. Operationen auf Adressebene sind bei einem Datenobjekt also nur bei sehr
+                systemnaher Programmierung von zum Beispiel Hardwaretreibern notwendig.
+            </p>
         </chapter>
 
         <chapter title="Bezeichner" id="datenobjekte-bezeichner">
