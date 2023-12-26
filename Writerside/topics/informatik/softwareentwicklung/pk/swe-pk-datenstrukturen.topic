@@ -212,7 +212,52 @@
             </chapter>
 
             <chapter title="Datentyp Zahl" id="datentypen-grund-zahl">
+                <p>
+                    Mit einem Datenobjekt vom Typ Zahl kann gerechnet werden. Die Programmiersprachen unterscheiden meist
+                    mehrere Zahlentypen, zum Beispiel ganze Zahlen, Festkommazahlen oder Gleitkommazahlen. Bei der
+                    Darstellung von ganzen Zahlen kann man entscheiden, ob man negative Zahlen zulässt oder nicht. Die
+                    Größe des Wertebereichs hängt davon ab, wie viele Byte für den konkreten Zahlentyp zur Verfügung
+                    stehen.
+                </p>
+                <p>
+                    Für einige Aufgaben genügen ganze Zahlen, etwa für die Speicherung der Information, wie viele Kunden
+                    ein Unternehmen hat. Auch programmintern – zum Beispiel als Zählvariable für eine Schleife – werden
+                    ganzzahlige Datentypen verwendet. Für die Speicherung von Bruchzahlen stehen meist mehrere
+                    Datentypen zur Auswahl. Dabei kann man zwischen zwei grundsätzlichen Möglichkeiten unterscheiden,
+                    und zwar zwischen Festkommazahlen und Gleitkommazahlen.
+                </p>
+                <p>
+                    Bei <b>Festkommazahlen</b> ist die Anzahl der Nachkommastellen bereits bei der Definition des
+                    Datenobjekts festgelegt. Für Geldbeträge ist dies sinnvoll und ausreichend, zum Beispiel: Gehalt =
+                    3.500,89 Euro. Der restliche Speicherbereich ist für die Vorkommastellen reserviert.
+                </p>
+                <p>
+                    Bei <b>Gleitkommazahlen</b> ist die Position des Kommas nicht statisch festgelegt. Gleitkommazahlen
+                    sind Bruchzahlen und haben daher Stellen vor und nach dem Komma. Gleitkommazahlen greifen auf die
+                    Darstellung in Exponentialschreibweise zurück. Damit schafft man einen großen Wertebereich, d.h.,
+                    man kann durchaus sehr große bzw. sehr kleine Zahlen darstellen, und alternativ kann man bei Bedarf
+                    eine sehr hohe Genauigkeit erreichen.
+                </p>
 
+                <code-block lang="tex">
+                    18,4 = 1,84 * 10^{1}
+                </code-block>
+                <code-block lang="tex">
+                    Vorzeichen (V) ⋅ Mantisse (M) ⋅ Basis (B)^{hoch Exponent (E)}
+                </code-block>
+
+                <p>
+                    Die Mantisse bestimmt die Genauigkeit. Je größer die Mantisse, desto genauer ist die Zahl hinter dem
+                    Komma. Der Exponent bestimmt die Größe des Wertebereichs der Zahl.
+                </p>
+                <p>
+                    Eins darf man nicht vergessen: Die Darstellung von Gleitkommazahlen im Computer basiert stets nur
+                    auf Näherungswerten, d. h., exakte Werte von rationalen Zahlen sind nicht immer genau darzustellen.
+                    Dies muss man beim Rechnen mit Gleitkommazahlen beachten. Rundungsfehler können sich bei der
+                    weiteren Verarbeitung dann explosionsartig vergrößern. Ein Beispiel: Den exakten Wert der Zahl
+                    a = ⅓ kann man nur mit einer bestimmten Genauigkeit in Form einer Gleitkommazahl abbilden. Diese
+                    Genauigkeit genügt aber für die meisten Anforderungen.
+                </p>
             </chapter>
 
             <chapter title="Datentyp Zeichenkette" id="datentypen-grund-zeichenkette">
