@@ -7,7 +7,18 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Allgemeines über Datenstrukturen" id="allgemeines">
-
+        <p>
+            Datenstruktur dient der Speicherung und Organisation von Daten. Dabei handelt sich um eine Struktur, denn
+            die Daten werden in einer bestimmten Art und Weise angeordnet. Ziel ist es, die Daten in einem
+            Computerprogramm so zu strukturieren, dass zum einen der Entwickler damit leicht arbeiten kann und die
+            Verwendung der Daten im Programmcode möglichst intuitiv ist, und dass zum anderen der Computer effektiv auf
+            die Daten zugreifen kann.
+        </p>
+        <p>
+            Moderne Programmiersprachen stellen dem Entwickler eine Vielzahl von Datenstrukturen zur Verfügung. Es ist
+            aber auch möglich, sich seine eigenen Datenstrukturen zu definieren, um die Zusammenhänge eines spezifischen
+            Anwendungsfalls in der Praxis möglichst gut nachzubilden.
+        </p>
     </chapter>
 
     <chapter title="Datenobjekte" id="datenobjekte">
