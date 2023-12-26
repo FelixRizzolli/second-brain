@@ -9,18 +9,22 @@
         <description>...</description>
 
         <spotlight>
+            <a href="truthiness-grundlagen.topic"
+               description="Grundlagen"
+               summary="Wer heilt hat Recht; Qualität von Studien; ..."
+               type="library" />
             <a href="erdstrahlen-wasseradern.topic"
                description="Erdstrahlen &amp; Wasseradern"
-               summary="..."
-               type="bug" />
-            <a href="belebtes-wasser.topic"
-               description="Belebtes Wasser"
                summary="..."
                type="bug" />
         </spotlight>
 
         <primary>
             <title>Kategorien</title>
+            <a href="truthiness-grundlagen.topic"
+               description="Grundlagen"
+               summary="Wer heilt hat Recht; Qualität von Studien; ..."
+               type="library" />
             <a href="erdstrahlen-wasseradern.topic"
                description="Erdstrahlen &amp; Wasseradern"
                summary="..."
@@ -45,12 +49,12 @@
 
         <secondary>
             <title>...</title>
+            <a href="truthiness-grundlagen.topic"
+               description="Grundlagen"
+               summary="Wer heilt hat Recht; Qualität von Studien; ..."
+               type="library" />
             <a href="erdstrahlen-wasseradern.topic"
                description="Erdstrahlen &amp; Wasseradern"
-               summary="..."
-               type="bug" />
-            <a href="belebtes-wasser.topic"
-               description="Belebtes Wasser"
                summary="..."
                type="bug" />
         </secondary>
