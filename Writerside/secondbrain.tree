@@ -286,6 +286,7 @@
 
     <!-- ###########################[ TRUTHINESS ]########################### -->
     <toc-element topic="truthiness.topic">
+        <toc-element topic="truthiness-grundlagen.topic"/>
         <toc-element topic="erdstrahlen-wasseradern.topic"/>
         <toc-element topic="astrologie.topic"/>
         <toc-element topic="belebtes-wasser.topic"/>
