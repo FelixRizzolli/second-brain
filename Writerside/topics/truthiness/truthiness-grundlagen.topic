@@ -39,6 +39,21 @@
             <li>Placebo by Proxy</li>
             <li>Der "Aber-sie-war-so-nett-zu-mir"-Effekt</li>
         </list>
+
+        <chapter title="Der natürliche Krankheitsverlauf" id="recht-natuerlicher-krankheitsverlauf">
+        </chapter>
+
+        <chapter title="Die Regression zur Mitte" id="recht-regression-zur-mitte">
+        </chapter>
+
+        <chapter title="Die Zuwendung" id="recht-zuwendung">
+        </chapter>
+
+        <chapter title="Placebo by Proxy" id="recht-placebobyproxy">
+        </chapter>
+
+        <chapter title="Der &quot;Aber-sie-war-so-nett-zu-mir&quot;-Effekt" id="recht-abersiewarsonettzumir-effekt">
+        </chapter>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
