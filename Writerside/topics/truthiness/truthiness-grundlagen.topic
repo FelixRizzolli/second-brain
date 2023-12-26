@@ -37,8 +37,16 @@
             <li>Die Zuwendung</li>
             <li>Der Placebo Effekt</li>
             <li>Placebo by Proxy</li>
-            <li>Der "Aber-sie-war-so-nett-zu-mir"-Effekt</li>
         </list>
+
+        <p>
+            Wenn es uns nach einer Behandlung besser ging, dann muss man sich immer Fragen: Woran hat es gelegen? Es
+            kann eben ganz verschiedene Gründe haben und es muss nicht zwangsläufig an der Behandlung liegen. Die
+            Aussage <b>"Wer heilt, hat recht" ist also ein logischer Fehlschluss</b>. Es kann sein, dass der Heiler
+            tatsächlich recht hatte, es kann aber auch sein, dass es einfach nur Glück war. Obendrauf kommt auch noch
+            der <b>Confirmation-Bias</b>: Uns Menschen bleiben die Fälle, in denen es uns nach einer Behandlung besser
+            ging schneller und länger im Kopf hängen, als die anderen, bei denen die Behandlung nichts gebracht hat.
+        </p>
 
         <chapter title="Der natürliche Krankheitsverlauf" id="recht-natuerlicher-krankheitsverlauf">
             <p>
@@ -103,9 +111,6 @@
                 Veränderung zu sehen - eine Verbesserung. Gleichzeitig kommt auch die Zuwendung ins spiel, die dann
                 tatsächlich einen Effekt haben kann.
             </p>
-        </chapter>
-
-        <chapter title="Der &quot;Aber-sie-war-so-nett-zu-mir&quot;-Effekt" id="recht-abersiewarsonettzumir-effekt">
         </chapter>
     </chapter>
 
