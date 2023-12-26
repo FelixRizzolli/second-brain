@@ -22,9 +22,13 @@
     </chapter>
 
     <chapter title="Datenobjekte" id="datenobjekte">
-
         <chapter title="Einleitung" id="datenobjekte-einleitung">
-
+            <p>
+                Ein Datenobjekt dient der Speicherung einer Information in einer bestimmten Struktur. Es zeichnet sich
+                durch folgende Eigenschaften aus:
+            </p>
+            
+            <img src="swe_pk_datenstrukturen_uebersicht.jpg" alt="Datenstrukturen - Übersicht"/>
         </chapter>
 
         <chapter title="Datentyp" id="datenobjekte-datentyp">
