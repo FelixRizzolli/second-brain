@@ -1112,7 +1112,18 @@
             </p>
 
             <chapter title="Arrays" id="datentypen-spezifisch-arrays">
+                <p>
+                    Bei einem Array handelt sich um die strukturierte Ablage von mehreren Daten gleichen Typs im
+                    Speicher des Rechners, wobei der Zugriff auf die einzelnen Daten über einen Index möglich sein soll.
+                    Dieser Zugriff über einen Index beschreibt bereits den Sinn und Zweck des Einsatzes eines Arrays.
+                    Mit Indizes ist es möglich, automatisiert auf die Datensätze zuzugreifen, das kann beispielsweise
+                    innerhalb einer Schleife geschehen. Je nach Verwendungszweck kommen ein- oder mehrdimensionale
+                    Arrays zum Einsatz. Grafisch kann man sich ein eindimensionales Array als Liste (Vektor), ein
+                    zweidimensionales Array als Matrix und ein dreidimensionales Array als Quader vorstellen. Bei einer
+                    höheren Anzahl von Dimensionen wird es etwas schwieriger mit der Vorstellungskraft.
+                </p>
 
+                <img src="swe-pk-datenstrukturen-datentyp-array.png" alt="Datentyp - Array"/>
             </chapter>
         </chapter>
     </chapter>
