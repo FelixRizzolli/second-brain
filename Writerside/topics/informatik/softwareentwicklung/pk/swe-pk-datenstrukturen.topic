@@ -6,6 +6,86 @@
        title="Datenstrukturen" id="swe-pk-datenstrukturen">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Allgemeines über Datenstrukturen" id="allgemeines">
+
+    </chapter>
+
+    <chapter title="Datenobjekte" id="datenobjekte">
+
+        <chapter title="Einleitung" id="datenobjekte-einleitung">
+
+        </chapter>
+
+        <chapter title="Datentyp" id="datenobjekte-datentyp">
+
+        </chapter>
+
+        <chapter title="Wert" id="datenobjekte-wert">
+
+        </chapter>
+
+        <chapter title="Adresse" id="datenobjekte-adresse">
+
+        </chapter>
+
+        <chapter title="Bezeichner" id="datenobjekte-bezeichner">
+
+        </chapter>
+
+        <chapter title="Lebensdauer" id="datenobjekte-lebensdauer">
+
+        </chapter>
+
+        <chapter title="Bindungszeitpunkt" id="datenobjekte-bindungszeitpunkt">
+
+        </chapter>
+
+        <chapter title="Speicherklasse" id="datenobjekte-speicherklasse">
+
+        </chapter>
+
+        <chapter title="Eigentümer" id="datenobjekte-eigentuemer">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="Systematik" id="systematik">
+
+    </chapter>
+
+    <chapter title="Datentypen" id="datentypen">
+
+        <chapter title="Grunddatentypen" id="datentypen-grund">
+
+            <chapter title="Bit und Byte" id="datentypen-grund-bitbyte">
+
+            </chapter>
+
+            <chapter title="Datentyp Binärwert" id="datentypen-grund-binaerwert">
+
+            </chapter>
+
+            <chapter title="Datentyp Zahl" id="datentypen-grund-zahl">
+
+            </chapter>
+
+            <chapter title="Datentyp Zeichenkette" id="datentypen-grund-zeichenkette">
+
+            </chapter>
+
+            <chapter title="Datentyp Adresse" id="datentypen-grund-adresse">
+
+            </chapter>
+        </chapter>
+
+        <chapter title="Spezifische Datentypen" id="datentypen-spezifisch">
+
+            <chapter title="Arrays" id="datentypen-spezifisch-arrays">
+
+            </chapter>
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
