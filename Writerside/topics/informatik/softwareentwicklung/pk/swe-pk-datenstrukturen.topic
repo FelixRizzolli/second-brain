@@ -182,20 +182,20 @@
                         <tr><td><code>0000 1111</code></td><td><code>0F</code></td><td><code>15</code></td></tr>
                         <tr><td><code>0001 0000</code></td><td><code>10</code></td><td><code>16</code></td></tr>
                         <tr><td><code>0001 0001</code></td><td><code>11</code></td><td><code>17</code></td></tr>
-                        <tr><td><code>...</code></td><td><code>...</code></td><td><code>...</code></td></tr>
+                        <tr><td>...</td><td>...</td><td>...</td></tr>
                         <tr><td><code>0001 1111</code></td><td><code>1F</code></td><td><code>31</code></td></tr>
                         <tr><td><code>0010 0000</code></td><td><code>20</code></td><td><code>32</code></td></tr>
                         <tr><td><code>0010 0001</code></td><td><code>21</code></td><td><code>33</code></td></tr>
-                        <tr><td><code>...</code></td><td><code>...</code></td><td><code>...</code></td></tr>
+                        <tr><td>...</td><td>...</td><td>...</td></tr>
                         <tr><td><code>0010 1111</code></td><td><code>2F</code></td><td><code>47</code></td></tr>
                         <tr><td><code>0011 0000</code></td><td><code>30</code></td><td><code>48</code></td></tr>
                         <tr><td><code>0011 0001</code></td><td><code>31</code></td><td><code>49</code></td></tr>
-                        <tr><td><code>...</code></td><td><code>...</code></td><td><code>...</code></td></tr>
+                        <tr><td>...</td><td>...</td><td>...</td></tr>
                         <tr><td><code>0011 1111</code></td><td><code>3F</code></td><td><code>63</code></td></tr>
-                        <tr><td><code>...</code></td><td><code>...</code></td><td><code>...</code></td></tr>
+                        <tr><td>...</td><td>...</td><td>...</td></tr>
                         <tr><td><code>1111 0000</code></td><td><code>F0</code></td><td><code>240</code></td></tr>
                         <tr><td><code>1111 0001</code></td><td><code>F1</code></td><td><code>241</code></td></tr>
-                        <tr><td><code>...</code></td><td><code>...</code></td><td><code>...</code></td></tr>
+                        <tr><td>...</td><td>...</td><td>...</td></tr>
                         <tr><td><code>1111 1110</code></td><td><code>FE</code></td><td><code>254</code></td></tr>
                         <tr><td><code>1111 1111</code></td><td><code>FF</code></td><td><code>255</code></td></tr>
                     </table>
@@ -213,8 +213,8 @@
 
             <chapter title="Datentyp Zahl" id="datentypen-grund-zahl">
                 <p>
-                    Mit einem Datenobjekt vom Typ Zahl kann gerechnet werden. Die Programmiersprachen unterscheiden meist
-                    mehrere Zahlentypen, zum Beispiel ganze Zahlen, Festkommazahlen oder Gleitkommazahlen. Bei der
+                    Mit einem Datenobjekt vom Typ Zahl kann gerechnet werden. Die Programmiersprachen unterscheiden
+                    meist mehrere Zahlentypen, zum Beispiel ganze Zahlen, Festkommazahlen oder Gleitkommazahlen. Bei der
                     Darstellung von ganzen Zahlen kann man entscheiden, ob man negative Zahlen zulässt oder nicht. Die
                     Größe des Wertebereichs hängt davon ab, wie viele Byte für den konkreten Zahlentyp zur Verfügung
                     stehen.
