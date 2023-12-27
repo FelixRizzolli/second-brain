@@ -6,4 +6,17 @@
        title="RegEx - Reguläre Ausdrücke" id="swe-pk-regex">
     <show-structure for="chapter,procedure" depth="2"/>
 
+
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836240826, "PHP 7 und MySQL - Das umfassende Handbuch", Christian Wenz &amp; Tobias Hauser, 2016
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://regexlearn.com/de/learn/regex101" ignore-vars="true">
+                https://regexlearn.com/de/learn/regex101
+            </a>, 2022-12-07 16:30
+        </tip>
+    </chapter>
 </topic>
