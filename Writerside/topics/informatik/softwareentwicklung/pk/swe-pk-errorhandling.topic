@@ -440,9 +440,67 @@
     </chapter>
 
     <chapter title="Behandlung von Laufzeitfehlern" id="laufzeitfehler">
-
         <chapter title="Fehler mit dem try-catch-finally-Statement abfangen" id="laufzeitfehler-trycatch">
+            <p>
+                Über das Schlüsselwort <code>try</code> leitet man den Codeblock ein, der potenziell Fehler werfen
+                könnte. Folglich wird mit dem Schlüsselwort <code>catch</code> der Codeblock definiert, der ausgeführt
+                werden soll, wenn ein Fehler auftritt. Hier wird auch meistens als eine Art Funktionsparameter ein
+                Fehlerobjekt definiert, auf das man anschließend im <code>catch</code>-Codeblock zugreifen kann. In
+                einigen Fällen kann es sein, dass man unabhängig davon, ob ein Fehler auftritt oder nicht, nach
+                Ausführung des fehlerproduzierenden Codes spezielle Anweisungen ausführen möchte. Dieser Code wird in
+                einem Codeblock nach dem <code>finally</code>-Schlüsselwort platziert. Alle Anweisungen, die in diesem
+                <code>finally</code>-Block stehen, werden in jedem Fall ausgeführt: wenn ein Fehler auftritt und, auch,
+                wenn kein Fehler auftritt.
+            </p>
 
+            <code-block lang="mermaid">
+                <![CDATA[
+                stateDiagram-v2
+                [*] --> try
+
+                state try {
+                    state if_state <<choice>>
+                    Fehler --> if_state
+                        if_state --> Fehlerbedandlung: ja
+                        if_state --> Finally: nein
+                }
+
+                state catch(error) {
+                   Fehlerbedandlung --> Finally
+                }
+
+                state finally {
+                    Finally
+                }
+                ]]>
+            </code-block>
+
+            <p>
+                Es gibt in den meisten Programmiersprachen insgesamt drei Möglichkeiten von
+                <code>try</code>-Anweisungen:
+            </p>
+
+            <list>
+                <li>
+                    Verwendung von <code>try</code> in Kombination mit catch: Fehler produzierender Code wird
+                    aufgerufen, und eventuelle Fehler werden gefangen.
+                </li>
+                <li>
+                    Verwendung von <code>try</code> in Kombination mit <code>finally</code>: Fehlerproduzierender Code
+                    wird ausgeführt, eventuelle Fehler werden nicht gefangen, aber in jedem Fall die Anweisungen im
+                    <code>finally</code>-Block ausgeführt.
+                </li>
+                <li>
+                    Verwendung von <code>try</code> in Kombination mit catch und <code>finally</code>:
+                    Fehlerproduzierender Code wird aufgerufen, eventuelle Fehler werden gefangen und in jedem Fall die
+                    Anweisungen im <code>finally</code>-Block ausgeführt.
+                </li>
+            </list>
+
+            <p>
+                In einigen Programmiersprachen wie Java können mehrere <code>catch</code>-Blöcke verwendet werden, um
+                verschiedene Typen von Fehlern abzufangen und diese unterschiedlich zu behandeln.
+            </p>
         </chapter>
 
         <chapter title="Fehler mit dem throw-Statement auslösen" id="laufzeitfehler-throw">
