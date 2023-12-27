@@ -59,6 +59,11 @@
     </chapter>
 
     <chapter title="Verschiedene Fehlerarten" id="fehlerarten">
+        <p>
+            Fehler lassen sich meist mehreren Kategorien zuordnen. Diese Unterteilung nehmen wir vor, um die jeweiligen
+            Fehler frühzeitig zu erkennen und unter Anwendung den richtigen Werkzeugen zu beheben oder sogar zu
+            verhindern.
+        </p>
 
         <chapter title="Kompilierungsfehler bzw. Syntaxfehler" id="fehlerarten-syntax">
 
