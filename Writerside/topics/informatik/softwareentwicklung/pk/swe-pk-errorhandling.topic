@@ -265,7 +265,26 @@
         </chapter>
 
         <chapter title="Umgebungsfehler" id="fehlerarten-umgebung">
-
+            <p>
+                Auch wenn ein Programm für sich korrekt ist, kann es trotzdem zu Fehlern bei der Ausführung kommen. Dies
+                passiert, wenn die Umgebung des Programmes sich unerwartet verhält: Beispiele für solche Umgebungsfehler
+                sind Hardware-Fehler wie kaputte Festplatten, instabile Netzwerkverbindungen, defekte Sensoren oder
+                fehlerhafte Eingabedaten. Wenn etwa eine Wetterstation fehlerhafte Messdaten aufgrund eines kaputten
+                Thermometers erhält, so sind die daraus resultierenden Berechnungen falsch, egal, ob der Algorithmus
+                dafür korrekt ist.
+            </p>
+            <p>
+                Die Fehlerbehebung besteht hier im Korrigierten der Umgebung, im Beispiel muss das Thermometer
+                ausgetauscht werden. Dies ist jedoch meist nicht Aufgabe der Softwareentwickler. Stattdessen liegt bei
+                Informatikern der Fokus auf dem Entwickeln von <b>fehlertoleranten Systemen</b>, die trotz fehlerhafter
+                Umgebung funktionstüchtig sind. Das Erkennen und Vermeiden dieser Fehler ist schwierig, und der Ansatz
+                variiert je nach Umgebung. Eingabedaten, die stark vom erwarteten Wert abweichen (z.B. 100 °C beim
+                Thermometer der Wetterstation), können oftmals erkannt werden. Sind Messdaten jedoch falsch, aber
+                realistisch möglich, so kann eine Software die Abweichung nur durch weitere Kontrollgeräte bemerken.
+                Kritische Vorgänge, wie zum Beispiel Berechnungen eines Autopiloten im Flugzeug, werden auf
+                verschiedenen Geräten gleichzeitig ausgeführt, um so Hardware-Fehler zu erkennen und darauf reagieren zu
+                können.
+            </p>
         </chapter>
 
         <chapter title="Kommunikationsfehler" id="fehlerarten-kommunikation">
