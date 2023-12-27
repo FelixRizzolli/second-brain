@@ -146,7 +146,44 @@
         </chapter>
 
         <chapter title="Logische Fehler" id="fehlerarten-logik">
+            <p>
+                Logische Fehler (manchmal auch Denkfehler genannt) sind falsche Überlegungen in der konkreten
+                Problemlösung des Programmierers. Ist der Fehler gefunden, so ist er oftmals einfach zu beheben. Solche
+                Fehler lassen sich meist durch das Durchrechnen von Beispielwerten finden. Im Allgemeinen ist das Finden
+                des logischen Fehlers allerdings gerade der schwierige Schritt, da man feststellen muss, dass eine
+                getroffene Annahme falsch war.
+            </p>
 
+            <chapter title="Beispiel mit Laufzeitfehler" id="fehlerarten-logik-beispiel" collapsible="true">
+                <chapter title="Berechnung der Fläche eines Kreises (mit Fehler)"
+                         id="fehlerarten-logik-beispiel-mitfehler">
+                    <code-block>
+                        Eingabe: Die Anzahl Personen n
+                        Ausgabe: Die Anzahl Handschläge zwischen allen Personen
+                        1: Return n * (n-1)
+                    </code-block>
+
+                    <p>
+                        Dieses Programm soll berechnen, wie viele Handschläge es zwischen <code>n</code> Personen gibt,
+                        wenn jede Person jeder anderen die Hand gibt. Die Argumentation des Programmierers hier lautet:
+                        Es gibt <code>n</code> Personen, und jeder schüttelt jedem anderen, also <code>n-1</code>
+                        Personen, die Hand. Daher müsste es ja <code>n*(n-1)</code> viele Handschläge geben. Dies ist
+                        jedoch falsch, wie schon am Beispiel von <code>n=2</code> erkennbar ist: Der Algorithmus
+                        berechnet <code>2</code> als Ergebnis, während tatsächlich nur ein Handschlag stattfindet. Der
+                        Denkfehler besteht darin, dass wir bei der Berechnung <code>n*(n-1)</code> jeden Handschlag
+                        doppelt zählen, nämlich einmal für jede beteiligte Person. Teilen wir das Ergebnis noch durch
+                        <code>2</code> erhalten wir den korrekten Algorithmus:
+                    </p>
+                </chapter>
+                <chapter title="Berechnung der Fläche eines Kreises (Korrektur)"
+                         id="fehlerarten-logik-beispiel-ohnefehler">
+                    <code-block>
+                        Eingabe: Die Anzahl Personen n
+                        Ausgabe: Die Anzahl Handschläge zwischen allen Personen
+                        1: Return n * (n-1) / 2
+                    </code-block>
+                </chapter>
+            </chapter>
         </chapter>
 
         <chapter title="Designfehler" id="fehlerarten-design">
