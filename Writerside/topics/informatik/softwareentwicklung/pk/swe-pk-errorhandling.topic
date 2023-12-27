@@ -66,7 +66,51 @@
         </p>
 
         <chapter title="Kompilierungsfehler bzw. Syntaxfehler" id="fehlerarten-syntax">
+            <p>
+                Der erste Zeitpunkt, bei dem Fehler auftreten können, ist, wenn der Computer das Programm kompiliert, 
+                das heißt aus der Programmiersprache in Maschinencode übersetzt. Versteht der Compiler, also das 
+                Programm, das den Code übersetzt, diesen nicht, so tritt ein Kompilierungsfehler auf. 
+                Kompilierungsfehler entstehen aus Verletzung der Notationsregeln der verwendeten Programmiersprache. 
+                Diese Verletzung kann zum Beispiel ein Syntaxfehler sein, gewissermaßen eine falsche Verwendung der 
+                Grammatik der Programmiersprache. Bei Sprachen, deren Notationsregeln sehr streng sind, wird beim 
+                Kompilieren unter anderem festgestellt, wenn unbekannte Befehle verwendet werden, quasi ein Vokal, die 
+                der Computer noch nicht kennt.
+            </p>
 
+            <chapter title="Beispiel mit Kompilierungsfehler" id="fehlerarten-syntax-beispiel" collapsible="true">
+                <chapter title="Berechnung der Fläche eines Kreises (mit Fehler)" id="fehlerarten-syntax-beispiel-1">
+                    <code-block>
+                        Eingabe: Der Wert kreisRadius
+                        Ausgabe: Die Fläche des Kreises
+                        1: Return 3.14159 * radius * radius
+                    </code-block>
+
+                    <p>
+                        Das Programm soll zu einem gegebenen Kreisradius den entsprechenden Flächeninhalt des Kreises
+                        berechnen. Dabei hat der Programmierer statt des konkreten Variablennamens
+                        <code>kreisRadius</code> den Namen radius verwendet. Wird dieser Algorithmus als Programm in der
+                        Programmiersprache Java kompiliert, erhält man die Fehlermeldung <code>»Error, cannot find
+                        symbol radius«</code>, da die verwendete Variable radius nicht existiert.
+                    </p>
+                </chapter>
+
+                <chapter title="Berechnung der Fläche eines Kreises (ohne Fehler)" id="fehlerarten-syntax-beispiel-2">
+                    <code-block>
+                        Eingabe: Der Wert kreisRadius
+                        Ausgabe: Die Fläche des Kreises
+                        1: Return 3.14159 * kreisRadius * kreisRadius
+                    </code-block>
+
+                    <p>
+                        Solche Fehler werden vom Compiler erkannt, da ihm nicht klar ist, was in der jeweiligen Zeile zu
+                        tun ist. Die Fehlermeldung enthält Details, die dem Entwickler helfen, den Fehler im Code zu
+                        finden und zu beheben. Weil man während der Entwicklung eines Programms oft kompiliert, fallen
+                        diese Fehler schnell auf und sind meist leicht zu beheben. Einige Entwicklungsumgebung weisen
+                        zudem auf solche Fehler schon während des Programmierens hin und bieten eine schnelle Behebung
+                        an. Daher schaffen es diese Fehler selten in ein ausgeliefertes Programm.
+                    </p>
+                </chapter>
+            </chapter>
         </chapter>
 
         <chapter title="Laufzeitfehler" id="fehlerarten-laufzeit">
