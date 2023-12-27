@@ -7,6 +7,31 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Einleitung" id="einleitung">
+        <p>
+            Reguläre Ausdrücke sind Muster, mit denen Bereiche oder ein ganzer String erkannt werden können (= string 
+            pattern matching). Diese Muster folgen bestimmten Regeln und verwenden Metazeichen, um bestimmte Muster 
+            darzustellen. RegEx kann in folgenden Tools/Bereichen eingesetzt werden:
+        </p>
+        
+        <list>
+            <li>
+                In fast allen Programmiersprachen
+            </li>
+            <li>
+                Suchmaschinen
+            </li>
+            <li>
+                <p>IDEs und Text-Editoren</p>
+
+                <list>
+                    <li>VSCode</li>
+                    <li>Notepad++</li>
+                </list>
+            </li>
+            <li>
+                Splunk
+            </li>
+        </list>
     </chapter>
 
     <chapter title="RegEx Cheatsheet" id="cheatsheet">
