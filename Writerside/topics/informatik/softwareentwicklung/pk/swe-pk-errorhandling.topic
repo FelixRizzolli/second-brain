@@ -462,15 +462,15 @@
                     state if_state <<choice>>
                     Fehler --> if_state
                         if_state --> Fehlerbedandlung: ja
-                        if_state --> Finally: nein
+                        if_state --> c1: nein
                 }
 
                 state catch(error) {
-                   Fehlerbedandlung --> Finally
+                   Fehlerbehandlung --> c1
                 }
 
                 state finally {
-                    Finally
+                    state "..." as c1
                 }
                 ]]>
             </code-block>
