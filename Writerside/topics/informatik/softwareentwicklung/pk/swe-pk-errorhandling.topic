@@ -396,7 +396,20 @@
         </chapter>
 
         <chapter title="Programmierstiel" id="techniken-programmierstiel">
-
+            <p>
+                Durch Festlegen von Regeln (sogenannten <b>Coding Conventions</b>) kann der Programmierstil mehrerer
+                Personen vereinheitlicht werden. Diese Regeln betreffen unter anderem die Benennung von Variablen und
+                die Strukturierung des Codes.
+            </p>
+            <p>
+                Das Vereinheitlichen des Stils hat einen einfachen aber wichtigen Zweck: Unabhängig davon, wer welchen
+                Teil des Codes verfasst hat, ist dieser für alle Entwickler verständlicher und besser wartbarer, als
+                wenn jeder nach seinen ganz eigenen Vorlieben programmiert. Neue Mitarbeiter können sich außerdem
+                schneller in den existierenden Code einarbeiten, und Fehler können zügig gefunden und behoben werden.
+                Dies ist vergleichbar mit der Organisation von Ordnern in einem Regal: Wenn sich alle darauf einigen,
+                wie diese beschriftet uns sortiert werden sollen, so finden Mitarbeiter problemlos im Regal eines
+                Kollegen etwas, ohne zunächst deren persönliche Anordnung verstehen zu müssen.
+            </p>
         </chapter>
 
         <chapter title="Pair Programming" id="techniken-pairprogramming">
