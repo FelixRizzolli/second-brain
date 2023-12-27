@@ -35,6 +35,7 @@
     </chapter>
 
     <chapter title="RegEx Cheatsheet" id="cheatsheet">
+        <img src="swe-pk-regex-cheatsheet.png" alt="RegEx - Cheatsheet"/>
     </chapter>
 
     <chapter title="STEP1: Einführung" id="step1">
