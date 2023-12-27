@@ -591,7 +591,7 @@
             </p>
         </chapter>
 
-        <chapter title="Fehler an den Nutzer weiterleiten oder nicht?" id="laufzeitfehler-weiterleiten">
+        <chapter title="Fehler an den Nutzer weiterleiten, oder nicht?" id="laufzeitfehler-weiterleiten">
             <p>
                 Fehler auf die der Nutzer reagieren bzw. die der Nutzer umgehen kann, sollten auch an den Nutzer
                 weitergeleitet werden. Fehler dagegen, mit denen der Nutzer ohnehin nichts anfangen kann, sollten
