@@ -313,6 +313,10 @@
     </chapter>
 
     <chapter title="Techniken zur Fehlervermeidung" id="techniken">
+        <p>
+            Zur Vermeidung von Fehlern gibt es eine Vielzahl von Praktiken und Werkzeugen, deren korrekte Benutzung
+            helfen kann, korrekte und zuverlässige Programme zu schreiben.
+        </p>
 
         <chapter title="Testen" id="techniken-testen">
 
