@@ -428,7 +428,14 @@
         </chapter>
 
         <chapter title="Code Review" id="techniken-codereview">
-
+            <p>
+                Code Review ist ein formaler Prozess, bei dem geschriebener Code von anderen Entwicklern überprüft wird,
+                bevor er in die Software aufgenommen wird. Ähnlich wie beim Pair Programming ist hier die Motivation,
+                dass mithilfe der Kontrolle durch weitere Personen mehr Fehler gefunden und anschließend behoben werden
+                können. Je nach Umfang von Projekt und Team können noch genauere Praktiken durchgeführt werden. Es kann
+                beispielsweise sinnvoll sein, dass Code möglichst von einem Entwickler aus einem anderen Team überprüft
+                wird, damit dieser den Code kritischer und objektiver betrachtet als ein Teamkollege des Verfassers.
+            </p>
         </chapter>
     </chapter>
 
