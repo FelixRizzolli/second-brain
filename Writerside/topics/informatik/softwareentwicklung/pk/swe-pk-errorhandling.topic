@@ -377,8 +377,22 @@
             </p>
         </chapter>
 
-        <chapter title="A/B Testing" id="techniken-abtesting">
-
+        <chapter title="A/B-Testing" id="techniken-abtesting">
+            <p>
+                Ist ein Programm beriets ausgeliefert und gibt es Änderungen, die getestet werden müssen, so ist die
+                Praxis des A/B-Testens üblich. Dabei werden zwei oder mehr Versionen der Software (Version A und Version
+                B) an Endkunden ausgeliefert. Üblicherweise erhält dabei eine kleine Gruppe der Kunden bereits eine
+                Version mit neuen oder überarbeiteten Inhalten, während die übrigen Kunden als Kontrollgruppe dienen und
+                weiterhin die alte Version verwenden. Auf diese Weise kann nicht nur das Verhalten der Nutzer der neuen
+                Softwareversion untersucht werden, sondern es können auch viele Fehler gefunden werden, bevor die
+                Software an alle Kunden verteilt wird. Fehler werden zwar so nicht vermieden, doch ihr Schaden wird
+                stark eingegrenzt.
+            </p>
+            <p>
+                Je größer die Kundengruppe, desto effektiver ist diese Praktik: Facebook hat über eine Milliarde Nutzer
+                und nutzt regelmäßig A/B-Testing, um neue Funktionalitäten an einigen Tausend oder Millionen Nutzern
+                auszuprobieren, bevor sie für alle Nutzer zur Verfügung gestellt werden.
+            </p>
         </chapter>
 
         <chapter title="Programmierstiel" id="techniken-programmierstiel">
