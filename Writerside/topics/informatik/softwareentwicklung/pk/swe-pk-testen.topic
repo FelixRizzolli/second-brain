@@ -95,4 +95,75 @@
         </chapter>
     </chapter>
 
+    <chapter title="Das Prinzip der testgetriebenen Entwicklung" id="tdd">
+        <p>
+            Wenn man das Prinzip des automatisierten Testens in seinen Entwicklungsworkflow integriert, spricht man auch
+            von testgetriebener Entwicklung (auch <b>Test-Driven Development</b>, kurz TDD). Die grundlegende Idee dabei
+            ist ein iteratives Vorgehen: Bevor man mit der Implementierung einer neuen Komponente (beispielsweise einer
+            Funktion) beginnt, definiert man zunächst Unit-Tests und legt darüber fest, welche Anforderungen die neue
+            Komponente erfüllen muss. Beim TDD folgt man folgenden Schritten:
+        </p>
+
+        <code-block lang="mermaid">
+            <![CDATA[
+            stateDiagram-v2
+
+            state "Test schreiben" as step1
+            state "Test ausführen" as step2
+            state "Komponente implementieren" as step3
+            state "Test erneut ausführen" as step4
+            state "Komponente optimieren" as step5
+
+            step1 --> step2
+            step2 --> step3
+            step3 --> step4
+            step4 --> step5: Test erfolgreich
+            step5 --> step1
+            step5 --> step4
+            step4 --> step3: Test fehlgeschlagen
+            ]]>
+        </code-block>
+
+        <list>
+            <li>
+                <b>Test schreiben</b>: Bevor mit der Implementierung der neuen Komponente begonnen wird, werden im
+                Unit-Test über Assertions die Anforderungen an die zu implementierende Komponente definiert.
+            </li>
+            <li>
+                <b>Test ausführen</b>: Als Nächstes wird der Test ausgeführt, welcher zu Beginn fehlschlagen wird (da
+                die geforderte Funktionalität ja noch nicht implementiert wurde).
+            </li>
+            <li>
+                <b>Komponente implementieren</b>: Im nächsten Schritt wird die Komponente mit dem Ziel implementiert,
+                die Anforderungen des Tests zu erfüllen, sodass dieser bei erneuter Ausführung besteht.
+            </li>
+            <li>
+                <b>Test erneut ausführen</b>: Ob die Anforderungen korrekt implementiert wurden, wird durch erneutes
+                Ausführen des Tests überprüft. Erst wenn der Test erfolgreich ist, wird zum nächsten Schritt
+                übergegangen. Schlägt der Test dagegen fehl, passen wird die Komponente entsprechend angepasst und ein
+                neuer Testversuch wird gestartet.
+            </li>
+            <li>
+                <b>Komponente optimieren</b>: Im nächsten Schritt der Iteration kann nun die Komponente optimiert werden
+                (dies wird auch <b>Refactoring</b> genannt). Durch erneutes Ausführen des Tests kann dabei immer
+                sichergestellt werden, dass durch die Optimierungen die eigentliche Funktionalität nicht beeinträchtigt
+                wird.
+            </li>
+        </list>
+
+        <p>
+            Diese Abfolge von Schritten wird auch als »Red – Green – Refactor« bezeichnet, weil fehlgeschlagene Tests in
+            vielen Tools rot und erfolgreiche Tests grün gekennzeichnet werden.
+        </p>
+
+        <note>
+            <p><b>Modul, Unit, Komponente</b></p>
+
+            <p>
+                Die Begriffe Modul, Unit und Komponente werden im Zusammenhang mit dem Testen übrigens häufig synonym
+                verwendet. Daher spricht man auch von Modultests, Unit-Tests oder Komponententests.
+            </p>
+        </note>
+    </chapter>
+
 </topic>
