@@ -166,4 +166,10 @@
         </note>
     </chapter>
 
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript - Das umfassende Handbuch", Philip Ackermann, 2018
+        </tip>
+    </chapter>
 </topic>
