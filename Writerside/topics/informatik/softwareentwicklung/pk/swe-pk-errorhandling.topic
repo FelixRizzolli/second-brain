@@ -560,12 +560,12 @@
                 ]]>
             </code-block>
 
-            <p>
+            <note>
                 In den meisten Programmiersprachen können verschiedene Fehlertypen verwendet werden. Der Fehler, der
                 geworfen wird, sollte im Idealfall Rückschluss auf die Art des Fehlers ermöglichen. Im obigen
                 JavaScript-Beispiel wird <code>TypeError</code> für einen falschen Datentyp und <code>RangeError</code>
                 für eine ungültige Zahl verwendet.
-            </p>
+            </note>
         </chapter>
 
         <chapter title="Fehler und der Funktionsaufruf-Stack" id="laufzeitfehler-stack">
