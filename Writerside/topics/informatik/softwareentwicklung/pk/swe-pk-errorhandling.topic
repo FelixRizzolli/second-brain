@@ -78,7 +78,8 @@
             </p>
 
             <chapter title="Beispiel mit Kompilierungsfehler" id="fehlerarten-syntax-beispiel" collapsible="true">
-                <chapter title="Berechnung der Fläche eines Kreises (mit Fehler)" id="fehlerarten-syntax-beispiel-1">
+                <chapter title="Berechnung der Fläche eines Kreises (mit Fehler)"
+                         id="fehlerarten-syntax-beispiel-mitfehler">
                     <code-block>
                         Eingabe: Der Wert kreisRadius
                         Ausgabe: Die Fläche des Kreises
@@ -94,7 +95,8 @@
                     </p>
                 </chapter>
 
-                <chapter title="Berechnung der Fläche eines Kreises (ohne Fehler)" id="fehlerarten-syntax-beispiel-2">
+                <chapter title="Berechnung der Fläche eines Kreises (ohne Fehler)"
+                         id="fehlerarten-syntax-beispiel-ohnefehler">
                     <code-block>
                         Eingabe: Der Wert kreisRadius
                         Ausgabe: Die Fläche des Kreises
