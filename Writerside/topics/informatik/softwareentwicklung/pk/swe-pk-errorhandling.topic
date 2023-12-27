@@ -569,7 +569,26 @@
         </chapter>
 
         <chapter title="Fehler und der Funktionsaufruf-Stack" id="laufzeitfehler-stack">
+            <p>
+                Wird innerhalb einer Funktion ein Fehler geworfen, so springt das Programm aus dieser Funktion heraus.
+                Wird der Fehler in der Funktion, zu der das Programm zurückspringt, nicht gefangen, so springt das
+                Programm auch aus dieser Funktion heraus. Wird der Fehler auch in der nächsten (bzw. genauer: in der im
+                Funktionsaufruf-Stack vorherigen) Funktion nicht gefangen, springt das Programm auch hier heraus. Dies
+                wird so lange gemacht, bis der Fehler gefangen wird.
+            </p>
+            <p>
+                Hier ein Beispiel mit JavaScript:
+            </p>
 
+            <img src="swe-pk-fehlerbehandlung-funktionsaufrufstack.png" alt="Funktionsaufruf-Stack"/>
+
+            <p>
+                Die Frage, wie und an welcher Stelle im Code man Fehler am besten behandelt, lässt sich pauschal nicht
+                beantworten, da die Art und Weise der Fehlerbehandlung stark von der Art des Fehlers abhängt.
+                Prinzipiell kann man sich aber merken, dass Fehler nur an den Nutzer weitergeleitet werden sollen, wen
+                dieser mit den Fehlerinformationen auch etwas anfangen kann bzw. im Idealfall sogar weiß, was zu tun
+                ist, damit der Fehler nicht noch einmal auftritt.
+            </p>
         </chapter>
 
         <chapter title="Fehler an den Nutzer weiterleiten oder nicht?" id="laufzeitfehler-weiterleiten">
