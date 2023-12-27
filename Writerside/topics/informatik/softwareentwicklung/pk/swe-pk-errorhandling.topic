@@ -504,7 +504,68 @@
         </chapter>
 
         <chapter title="Fehler mit dem throw-Statement auslösen" id="laufzeitfehler-throw">
+            <p>
+                Um einen Fehler zu fangen, muss dieser Fehler natürlich auch irgendwo ausgelöst und geworfen werden.
+                Standard-Methoden besitzen eine Implementierung, welche bei Fehler diese wirft. In den meisten
+                Programmiersprachen hat man auch selbst die Möglichkeit, innerhalb einer Funktion selbst Fehler zu
+                werfen. Um dies zu tun, wird das Schlüsselwort <code>throw</code> verwendet. Hinter dem Schlüsselwort
+                <code>throw</code> schreibt man das Fehlerobjekt, welches den jeweiligen Fehler repräsentiert. Trifft
+                das Programm auf ein <code>throw</code>, wird dadurch aus der jeweiligen Funktion herausgesprungen. Die
+                in der Funktion nachfolgenden Anweisungen werden also nicht mehr ausgeführt.
+            </p>
 
+            <code-block lang="javascript">
+                console.log(checkAge(22));                // true
+                console.log(checkAge("Max Mustermann"));  // TypeError: Alter muss eine Zahl sein
+
+                function checkAge(age) {
+                    if(isNaN(parseFloat(age))) {
+                        throw new TypeError('Alter muss eine Zahl sein.');
+                    } else if (age &lt; 0) {
+                        throw new RangeError('Alter darf nicht negativ sein.');
+                    }
+                    return true;  // Im Fehlerfall wird diese Anweisung nicht mehr ausgeführt.
+                }
+
+                try {
+                    console.log(checkAge(-22)); // keine Ausgabe
+                } catch(error) {
+                    console.log(error);         // RangeError: Alter darf nicht negativ sein
+                }
+            </code-block>
+
+            <code-block lang="mermaid">
+                <![CDATA[
+                stateDiagram-v2
+                [*] --> try
+
+                state try {
+                    state "checkAge(-22);" as check
+                    check --> c1
+                }
+
+                state "function checkAge(age)" as fun {
+                    state "..." as c1
+                    state "throw new RangeError(...);" as throw
+                    state "..." as c2
+
+                    c1 --> throw
+                    throw --> c2
+                    c2 --> Fehlerbehandlung
+                }
+
+                state catch(error) {
+                   Fehlerbehandlung
+                }
+                ]]>
+            </code-block>
+
+            <p>
+                In den meisten Programmiersprachen können verschiedene Fehlertypen verwendet werden. Der Fehler, der
+                geworfen wird, sollte im Idealfall Rückschluss auf die Art des Fehlers ermöglichen. Im obigen
+                JavaScript-Beispiel wird <code>TypeError</code> für einen falschen Datentyp und <code>RangeError</code>
+                für eine ungültige Zahl verwendet.
+            </p>
         </chapter>
 
         <chapter title="Fehler und der Funktionsaufruf-Stack" id="laufzeitfehler-stack">
