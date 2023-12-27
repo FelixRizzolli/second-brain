@@ -7,7 +7,24 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Warum ist Software fehlerhaft?" id="warum_ist_software_fehlerhaft_">
+        <p>
+            Die Antwort ist einfach: Irren ist menschlich. Programme werden von Menschen geschrieben, und Menschen
+            machen Fehler. Dies sind beispielsweise Denkfehler oder auch Flüchtigkeitsfehler. Software-Projekte sind oft
+            sehr groß, kompliziert und unübersichtlich – viele Projekte bestehen aus mehreren Millionen Zeilen Coe! Dort
+            verliert ein Entwickler leicht den Überblick und macht so Fehler. Bleiben diese unentdeckt, werde sie mit
+            dem Programm an den Nutzer ausgeliefert und können dort zu unvorhergesehenen Problemen führen. Es gibt
+            jedoch Techniken zur Vermeidung von Fehlern, die – richtig eingesetzt – die Anzahl an unentdeckten Mängeln
+            reduzieren können.
+        </p>
 
+        <note>
+            <p><b>Ausnahmen und Ausnahmebehandlung</b></p>
+
+            <p>
+                Häufig ist in der Software-Entwicklung alternativ zu dem Begriff auch von Ausnahmen die Rede, die
+                Fehlerbehandlung nennt man häufig auch Ausnahmebehandlung.
+            </p>
+        </note>
     </chapter>
 
     <chapter title="Bugs" id="bugs">
