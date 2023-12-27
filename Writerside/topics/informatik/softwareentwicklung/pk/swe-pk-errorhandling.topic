@@ -288,7 +288,27 @@
         </chapter>
 
         <chapter title="Kommunikationsfehler" id="fehlerarten-kommunikation">
-
+            <p>
+                Programme werden in Softwareprojekten von Menschen für Menschen entwickelt. Jedoch kann es hier zu
+                verschiedenen Problemen kommen. Sind sich mehrere Entwickler, die am selben Projekt arbeiten, über die
+                Funktionsweise der Software uneinig, entwickeln sie nicht zusammenpassende Teile. Für eine erfolgreiche
+                Durchführung des Softwareprojekts müssen also alle Beteiligten ein gemeinsames Ziel verfolgen und ein
+                gemeinsames Verständnis über Inhalt und Verlauf des Projekts haben. Solche Kommunikationsfehler
+                passieren auch im Alltag häufig, doch selten sind sie so fatal wie im Fall der Mars-Sonde MCO: Diese
+                verbrannte in der Atmosphäre des Mars, weil die entwickelnden Teams der Firmen NASA und Lockheed Martin
+                verschieden Maßeinheiten (metrisch und imperial) bei ihren Berechnungen verwendeten und dadurch der
+                Ladeanflug missglückte.
+            </p>
+            <p>
+                Es ist nicht einfach, solche Kommunikationsprobleme zu bemerken, geschweige denn sie zu vermeiden. Eine
+                wichtige Rolle dabei spielt die Größe der beteiligten Teams. Je mehr Personen an einem Projekt beteiligt
+                sind, desto komplexer wird die Kommunikation, und das Risiko von Missverständnissen ist höher. Eine
+                mögliche Lösung ist es deshalb, kleine Teams an Teilproblemen arbeiten zu lassen und für eine
+                regelmäßige und gute Kommunikation zwischen den Teams zu sorgen. Auch bei der Kommunikation mit dem
+                Kunden können Fehler entstehen. Ein Entwickler, der einen Kunden missversteht, entwickelt möglicherweise
+                ein Programm, das von diesem so nicht gewünscht war. Missverständnisse können oft durch Nachfragen
+                bemerkt und geklärt werden.
+            </p>
         </chapter>
     </chapter>
 
