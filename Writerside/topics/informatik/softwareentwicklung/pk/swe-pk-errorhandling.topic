@@ -6,6 +6,86 @@
        title="Fehler und Fehlerbehandlung (error handling)" id="swe-pk-errorhandling">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Warum ist Software fehlerhaft?" id="warum_ist_software_fehlerhaft_">
+
+    </chapter>
+
+    <chapter title="Bugs" id="bugs">
+
+    </chapter>
+
+    <chapter title="Verschiedene Fehlerarten" id="fehlerarten">
+
+        <chapter title="Kompilierungsfehler bzw. Syntaxfehler" id="fehlerarten-syntax">
+
+        </chapter>
+
+        <chapter title="Laufzeitfehler" id="fehlerarten-laufzeit">
+
+        </chapter>
+
+        <chapter title="Logische Fehler" id="fehlerarten-logik">
+
+        </chapter>
+
+        <chapter title="Designfehler" id="fehlerarten-design">
+
+        </chapter>
+
+        <chapter title="Umgebungsfehler" id="fehlerarten-umgebung">
+
+        </chapter>
+
+        <chapter title="Kommunikationsfehler" id="fehlerarten-kommunikation">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="Techniken zur Fehlervermeidung" id="techniken">
+
+        <chapter title="Testen" id="techniken-testen">
+
+        </chapter>
+
+        <chapter title="A/B Testing" id="techniken-abtesting">
+
+        </chapter>
+
+        <chapter title="Programmierstiel" id="techniken-programmierstiel">
+
+        </chapter>
+
+        <chapter title="Pair Programming" id="techniken-pairprogramming">
+
+        </chapter>
+
+        <chapter title="Code Review" id="techniken-codereview">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="Behandlung von Laufzeitfehlern" id="laufzeitfehler">
+
+        <chapter title="Fehler mit dem try-catch-finally-Statement abfangen" id="laufzeitfehler-trycatch">
+
+        </chapter>
+
+        <chapter title="Fehler mit dem throw-Statement auslösen" id="laufzeitfehler-throw">
+
+        </chapter>
+
+        <chapter title="Fehler und der Funktionsaufruf-Stack" id="laufzeitfehler-stack">
+
+        </chapter>
+
+        <chapter title="Fehler an den Nutzer weiterleiten oder nicht?" id="laufzeitfehler-weiterleiten">
+
+        </chapter>
+    </chapter>
+
+    <chapter title="Den Code debuggen" id="debuggen">
+
+    </chapter>
 
     <chapter title="Quellen" id="quellen">
         <tip>
