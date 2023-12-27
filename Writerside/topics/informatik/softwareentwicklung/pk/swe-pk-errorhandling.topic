@@ -95,7 +95,7 @@
                     </p>
                 </chapter>
 
-                <chapter title="Berechnung der Fläche eines Kreises (ohne Fehler)"
+                <chapter title="Berechnung der Fläche eines Kreises (Korrektur)"
                          id="fehlerarten-syntax-beispiel-ohnefehler">
                     <code-block>
                         Eingabe: Der Wert kreisRadius
@@ -116,7 +116,33 @@
         </chapter>
 
         <chapter title="Laufzeitfehler" id="fehlerarten-laufzeit">
+            <p>
+                Laufzeitfehler treten bei der Ausführung eines Programms auf und führen zum Absturz der Software. Sie
+                werden meist durch bestimmte, unerwartete Eingaben ausgelöst.
+            </p>
+            <p>
+                Laufzeitfehler sind oft schwer zu entdecken, da sie meist nicht bei jeder Ausführung des
+                Programms, sondern nur bei manchen Eingaben auftreten. Zudem kann es sehr aufwendig und schwer
+                sein, die Ursache des Fehlers zu finden und zu beheben, denn ein Fehler in einer Codezeile
+                erzeugt potenziell zunächst nur ein falsches Zwischenergebnis, das erst an späterer Stelle der
+                Ausführung zu einem beobachtbaren Fehlverhalten des Programms führt.
+            </p>
 
+            <chapter title="Beispiel mit Laufzeitfehler" id="fehlerarten-laufzeit-beispiel" collapsible="true">
+                <code-block>
+                    Eingabe: Die Werte distanz und zeit
+                    Ausgabe: Die Geschwindigkeit
+                    1: Return distanz / zeit
+                </code-block>
+
+                <p>
+                    Die Funktion soll aus einer zurückgelegten Strecke und der dafür benötigten Zeit die
+                    Geschwindigkeit berechnen. Wenn nun jedoch als Zeit der Wert 0 angegeben wird, so wird versucht,
+                    durch null zu teilen, und das Programm stürzt ab. Je nach Einsatzgebiet der Software kann ein
+                    solcher Absturz fatal sein: In kritischen Systemen wie Flugzeugen führt er möglicherweise zum
+                    wortwörtlichen Absturz.
+                </p>
+            </chapter>
         </chapter>
 
         <chapter title="Logische Fehler" id="fehlerarten-logik">
