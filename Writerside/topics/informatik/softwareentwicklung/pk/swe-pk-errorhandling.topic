@@ -6,4 +6,15 @@
        title="Fehler und Fehlerbehandlung (error handling)" id="swe-pk-errorhandling">
     <show-structure for="chapter,procedure" depth="2"/>
 
+
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3-8362-4406-0, "Fit fürs Studium – Informatik", Philipp Fischbeck &amp; Arne Boockmeyer &amp; Stefan Neubert, 2019
+        </tip>
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript - Das umfassende Handbuch", Philip Ackermann, 2018
+        </tip>
+    </chapter>
 </topic>
