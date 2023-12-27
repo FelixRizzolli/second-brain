@@ -6,6 +6,172 @@
        title="RegEx - Reguläre Ausdrücke" id="swe-pk-regex">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einleitung" id="einleitung">
+    </chapter>
+
+    <chapter title="RegEx Cheatsheet" id="cheatsheet">
+    </chapter>
+
+    <chapter title="STEP1: Einführung" id="step1">
+
+        <chapter title="Was sind reguläre Ausdrücke Regex?" id="step1-erklaerung">
+        </chapter>
+
+        <chapter title="Basic Matcher" id="step1-basicmatcher">
+        </chapter>
+
+        <chapter title="Punkt .: Beliebiges Zeichen" id="step1-punkt">
+        </chapter>
+
+        <chapter title="Zeichensätze [abc]" id="step1-zeichensaetze">
+        </chapter>
+
+        <chapter title="Negierte Zeichensätze [^abc]" id="step1-negiertezeichensaetze">
+        </chapter>
+
+        <chapter title="Buchstabenbereich [a-z]" id="step1-buchstabenbereich">
+        </chapter>
+
+        <chapter title="Nummernbereich [0-9]" id="step1-nummerkreis">
+        </chapter>
+
+        <chapter title="Übungen" id="step1-uebungen">
+
+            <chapter title="Übung: Basic Matcher" id="step1-uebungen-basicmatcher">
+            </chapter>
+
+            <chapter title="Übung: Beliebiges Zeichen" id="step1-uebungen-zeichen">
+            </chapter>
+
+            <chapter title="Übung: Zeichensätze" id="step1-uebungen-zeichensaetze">
+            </chapter>
+
+            <chapter title="Übung: Negierte Zeichensätze" id="step1-uebungen-negiertezeichensaetze">
+            </chapter>
+
+            <chapter title="Übung: Buchstabenbereich" id="step1-uebungen-buchstabenbereich">
+            </chapter>
+
+            <chapter title="Übung: Nummernkreis" id="step1-uebungen-nummerkreis">
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="STEP2: Wiederholungen" id="step2">
+
+        <chapter title="Asterisk *" id="step2-asterisk">
+        </chapter>
+
+        <chapter title="Pluszeichen +" id="step2-plus">
+        </chapter>
+
+        <chapter title="Fragezeichen ?" id="step2-fragezeichen">
+        </chapter>
+
+        <chapter title="Geschweifte Klammern – 1" id="step2-geschweifteklammern1">
+        </chapter>
+
+        <chapter title="Geschweifte Klammern – 2" id="step2-geschweifteklammern2">
+        </chapter>
+
+        <chapter title="Geschweifte Klammern – 3" id="step2-geschweifteklammern3">
+        </chapter>
+
+        <chapter title="Übungen" id="step2-uebungen">
+
+            <chapter title="Übung: Asterisk *" id="step2-uebungen-asterisk">
+            </chapter>
+
+            <chapter title="Übung: Pluszeichen +" id="step2-uebungen-plus">
+            </chapter>
+
+            <chapter title="Übung: Fragezeichen ?" id="step2-uebungen-fragezeichen">
+            </chapter>
+
+            <chapter title="Übung: Geschweifte Klammern – 1" id="step2-uebungen-geschweifteklammern1">
+            </chapter>
+
+            <chapter title="Übung: Geschweifte Klammern – 2" id="step2-uebungen-geschweifteklammern2">
+            </chapter>
+
+            <chapter title="Übung: Geschweifte Klammern – 3" id="step2-uebungen-geschweifteklammern3">
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="STEP3" id="step3">
+        <chapter title="Klammern (): Gruppierung" id="step3-klammern">
+        </chapter>
+
+        <chapter title="Auf eine Gruppe verweisen" id="step3-verweisen">
+        </chapter>
+
+        <chapter title="Klammern (?:): Gruppierung ohne Erfassung" id="step3-guppierungohneerfassung">
+        </chapter>
+
+        <chapter title="Pipe-Zeichen |" id="step3-pipe">
+        </chapter>
+
+        <chapter title="Escape-Zeichen \" id="step3-escape">
+        </chapter>
+
+        <chapter title="Caret-Zeichen ^: Auswahl nach Zeilenanfang" id="step3-caret">
+        </chapter>
+
+        <chapter title="Dollarzeichen $: Auswahl nach Zeilenende" id="step3-dollar">
+        </chapter>
+
+        <chapter title="Wortzeichen \w: Buchstabe, Zahl und Unterstrich" id="step3-wort">
+        </chapter>
+
+        <chapter title="Außer Wortzeichen \W" id="step3-ausserwort">
+        </chapter>
+
+        <chapter title="Zahlenzeichen \d" id="step3-zahlen">
+        </chapter>
+
+        <chapter title="Außer Zahlenzeichen \D" id="step3-ausserzahlen">
+        </chapter>
+
+        <chapter title="Leerzeichen \s" id="step3-leer">
+        </chapter>
+
+        <chapter title="Außer Leerzeichen \S" id="step3-ausserleer">
+        </chapter>
+    </chapter>
+
+    <chapter title="STEP4: Lookarounds" id="step4">
+
+        <chapter title="Positiver Lookahead: (?=)" id="step4-positiver-lookahead">
+        </chapter>
+
+        <chapter title="Negativer Lookahead: (?!)" id="step4-negativer-lookahead">
+        </chapter>
+
+        <chapter title="Positiver Lookbehind: (?&lt;=)" id="step4-positiver-lookbehind">
+        </chapter>
+
+        <chapter title="Negativer Lookbehind: (?&lt;!)" id="step4-negativer-lookbehind">
+        </chapter>
+    </chapter>
+
+    <chapter title="STEP5: Flaggen" id="step5">
+
+        <chapter title="Globale Flagge" id="step5-globale-flagge">
+        </chapter>
+
+        <chapter title="Mehrzeiliges Flag" id="step5-mehrzeiliges-flag">
+        </chapter>
+
+        <chapter title="Groß-/Kleinschreibung beachten" id="step5-grosskleinschreibung">
+        </chapter>
+
+        <chapter title="Gieriger Abgleich" id="step5-geringer-abgleich">
+        </chapter>
+
+        <chapter title="Lazy Matching" id="step5-lazy-matching">
+        </chapter>
+    </chapter>
 
     <chapter title="Quellen" id="quellen">
         <tip>
