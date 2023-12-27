@@ -601,7 +601,11 @@
     </chapter>
 
     <chapter title="Den Code debuggen" id="debuggen">
-
+        <p>
+            Mithilfe eines Debuggers ist es möglich ein Programm an einer bestimmten Stelle zu pausieren und dann ab
+            dieser Stelle Schritt für Schritt die folgenden Anweisungen durchzugehen: sich jeweils die Variablenlegung
+            anzuschauen und vieles mehr. Damit lässt sich der Ablauf eines Programmes besonders gut nachvollziehen.
+        </p>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
