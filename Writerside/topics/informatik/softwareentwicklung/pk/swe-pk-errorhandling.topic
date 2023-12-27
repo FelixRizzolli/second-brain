@@ -187,7 +187,81 @@
         </chapter>
 
         <chapter title="Designfehler" id="fehlerarten-design">
+            <p>
+                Designfehler haben ihren Ursprung ähnlich wie logische Fehler in der Idee der Problemlösung, nicht in
+                einem Fehler der Umsetzung. Jedoch beziehen sich logische Fehler meist nur auf wenige Codezeilen oder
+                Funktionen, während Designfehler Planung und Entwurf einer Lösung betreffen, die für den Anwendungszweck
+                nicht oder nicht mehr geeignet ist.
+            </p>
 
+            <chapter title="Beispiel mit Designfehler" id="fehlerarten-design-beispiel" collapsible="true">
+                <code-block lang="plantuml">
+                    @startuml
+                    Alice -> Vidio: Anruf starten
+                    Vidio -> Bob: weiterleiten
+                    Bob -> Vidio: Anruf annehmen
+                    Vidio -> Alice: weiterleiten
+
+                    group wiederhole
+                        Alice -> Vidio: Audio + Video von Alice
+                        Vidio -> Bob: Audio + Video von Alice
+                        Bob -> Vidio: Audio + Video von Bob
+                        Vidio -> Alice: Audio + Video von Bob
+                    end
+                    @enduml
+                </code-block>
+
+                <p>
+                    In diesem Beispiel wird ein Designfehler in einer fiktiven Live-Videochat-Plattform namens »Vidio«
+                    dargestellt. Auf ihr können sich Nutzer wie Alice und Bob über Videochat miteinander unterhalten.
+                    Sämtliche Videodaten werden über den Dienst gesendet. Konkret sendet Alice an Vidio die Nachricht,
+                    dass sie Bob anrufen möchte. Daraufhin kontaktiert Vidio Bob. Dieser teilt Vidio mit, dass er den
+                    Anruf annimmt. Für den Anruf sendet nun Alice und Bob ihre Audio- und Videodaten an Vidio, das sie
+                    an Gesprächspartner weiterleitet.
+                </p>
+                <p>
+                    Diese Struktur kat diverse Vorteile. Beispielsweise könnte der Computer von Alice ohne Vidio gar
+                    nicht direkt den Computer von Bob kontaktieren, da Alice Bobs IP-Adresse nicht kennt. Vidio hat
+                    diese Informationen und kann so der Vermittler für beide sein. Für wenige Nutzer mag diese Struktur
+                    funktionieren. Allerdings leitet Vidio viele Daten einfach nur weiter und scheint fast überflüssig
+                    zu sein. Tatsächlich entsteht durch diesen Umweg ein sehr großes Datenvolumen seitens Vidio: Weil
+                    Vidio alle Anrufe vermittelt, muss der Dienst auch die Video- und Audiodaten aller Nutzer
+                    verarbeiten. Dadurch lässt sich der Dienst nicht problemlos auf eine größere Nutzerzahl erweitern.
+                    Je mehr Nutzer die Videoplattform hat, desto mehr Videodaten muss Vidio verarbeiten können.
+                    Eigentlich wird Vidio hier nur für den ersten Schritt der Kontaktaufnahme benötigt: Alice sieht,
+                    dass Bob online ist, und startet den Anrufversuch; Vidio stellt dann die Verbindung zwischen den
+                    beiden her. Zu diesem Zeitpunkt kann Vidio den beiden gegenseitig ihre IP-Adressen mitteilen, und
+                    Alice und Bob können ihren Videochat in direkter Verbindung führen.
+                </p>
+
+                <code-block lang="plantuml">
+                    @startuml
+                    Alice -> Vidio: Anruf starten
+                    Vidio -> Bob: weiterleiten
+                    Bob -> Vidio: Anruf annehmen
+                    Vidio -> Alice: weiterleiten
+
+                    group wiederhole
+                        Alice -> Bob: Audio + Video von Alice
+                        Bob -> Alice: Audio + Video von Bob
+                    end
+                    @enduml
+                </code-block>
+
+                <p>
+                    Weil Vidio nun nicht mehr sämtliche Audio- und Videodaten verarbeiten muss, ist der Dienst von der
+                    Hauptlast befreit und deutlich besser auf eine große Nutzerzahl erweiterbar. Auf dem Papier sieht
+                    das Beheben dieses Problems einfach aus. Aber in der Realität ist dieser Designfehler schon tief in
+                    der Software-Architektur verwurzelt und bedarf einer Überarbeitung großer Teile des Codes. Oftmals
+                    werden Designfehler erst sehr spät im Entwicklungsprozesses entdeckt, sodass das Beheben aufwendig
+                    und teuer ist.
+                </p>
+                <p>
+                    Die Wahrscheinlichkeit solcher Designfehler können durch eine gründliche Analyse der Anforderungen
+                    an die Software verringern. Außerdem wird durch kluge Strukturierung des Programmcodes nachträgliche
+                    Änderungen erleichtert.
+                </p>
+            </chapter>
         </chapter>
 
         <chapter title="Umgebungsfehler" id="fehlerarten-umgebung">
