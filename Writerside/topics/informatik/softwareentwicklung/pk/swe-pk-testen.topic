@@ -6,4 +6,41 @@
        title="Testen" id="swe-pk-testen">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Das Prinzip von automatisierten Tests" id="automatisiert">
+        <code-block lang="mermaid">
+            <![CDATA[
+            stateDiagram-v2
+
+            state "Zu testender Code (»System Under Test«)" as system {
+                state "Zu testende Funktion" as system_function
+            }
+
+            state "Testender Code (»Unit-Test«)" as unittest {
+                state "Testfall" as unittest_testfall {
+                    state "1.) Aufruf einer Funktion" as unittest_testfall_aufruf
+                    state "2.) Überprüfen des Rückgabewertes" as unittest_testfall_check
+                }
+            }
+
+            state "Test erfolgreich" as test_ok
+            state "Test fehlgeschlagen" as test_ko
+
+            unittest_testfall_aufruf --> system_function
+            system_function --> unittest_testfall_check
+            unittest_testfall_check --> test_ok: Anforderungen erfüllt
+            unittest_testfall_check --> test_ko: Anforderungen nicht erfüllt
+            ]]>
+        </code-block>
+
+        <p>
+            Die Idee von automatisierten Tests ist im Wesentlichen, dass man spezielle Programme (Testprogramme bzw.
+            <b>Unit-Tests</b>) schreibt, welche den zu testenden Code aufrufen und die Ergebnisse des Codes überprüfen.
+            Der zu testende Code kann eine einzelne Funktion sein, aber auch eine Kombination verschiedener Funktionen
+            oder verschiedener Klassen und Objekte. Im Allgemeinen spricht man daher auch von einer <b>Class Under
+            Test</b> oder, noch allgemeiner, von einem System Under Test. Die Überprüfungen innerhalb eines
+            <b>Unit-Tests</b> nennt man auch <b>Assertions</b>. Ein Unit-Test besteht in der Regel zudem aus mehreren
+            Testfällen (auch <b>Test-Cases</b> genannt).
+        </p>
+    </chapter>
+
 </topic>
