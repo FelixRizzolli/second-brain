@@ -28,7 +28,34 @@
     </chapter>
 
     <chapter title="Bugs" id="bugs">
+        <p>
+            Der Begriff Bug wird in der Informatik oft als Synonym für »Fehler« verwendet. Meistens benutzt man ihn, um
+            zu sagen, dass etwas um Programm schiefgeht, was funktionieren sollte. Für die Vermeidung und Behebung von
+            Fehlern ist es von großem Vorteil, präzisere Begriffe zu verwenden:
+        </p>
 
+        <list>
+            <li>
+                Ein Fehler beginnt immer mit einer <b>Fehlerhandlung</b>. Diese beschreibt die (meist menschliche)
+                Ursache für den Fehler.
+            </li>
+            <li>
+                Schließlich ist der Fehler im Code, und es kommt während einer Programmausführung zu einem
+                <b>Fehlerzustand</b> des Systems.
+            </li>
+            <li>
+                Schließlich wird eine <b>Fehlerwirkung</b> erreicht, wenn der Fehler sich nach außen zeigt,
+                beispielsweise durch die Ausgabe eines falschen Ergebnisses oder durch einen Absturz.
+            </li>
+            <li>
+                Das Suchen und Beheben von Fehlern bezeichnet man als <b>Debugging</b>.
+            </li>
+        </list>
+
+        <note>
+            Der Begriff Bug (aus dem Englischen für Insekt) geht darauf zurück, dass einer der ersten Fehler in einem
+            Computerprogramm laut Erzählungen tatsächlich auf ein (echtes) Insekt zurückzuführen war.
+        </note>
     </chapter>
 
     <chapter title="Verschiedene Fehlerarten" id="fehlerarten">
