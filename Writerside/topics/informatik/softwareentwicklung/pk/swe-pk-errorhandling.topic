@@ -413,7 +413,18 @@
         </chapter>
 
         <chapter title="Pair Programming" id="techniken-pairprogramming">
-
+            <p>
+                Pair Programming bedeutet, zu zweit zu programmieren. Das Prinzip ist vergleichbar mit dem Autofahren:
+                Es gibt einen Fahrer, der die Geräte bedient, und einen unterstützenden Beifahrer, der den Überblick
+                behält und auf die Route achtet. Der Fahrer sitzt am Computer und programmiert, während der Beifahrer
+                danebensitzt und den Fahrer unterstützt. Der Beifahrer kontrolliert den geschriebenen Code und spricht
+                gefundene Probleme an. Die Rollen werden regelmäßig getauscht. Warum führt dies zu weniger Fehlern? Vier
+                Augen sehen mehr als zwei. Insbesondere der Beifahrer kann gut den Überblick behalten und auf versteckte
+                Fehlerquellen achten, die der Fahrer nicht bemerkt. Auf diese Weise werden Fehler früh erkannt und
+                behoben. Pair Programming hat eine Vielzahl weiterer Vorteile: Insgesamt hat der geschriebene Code eine
+                bessere Qualität, und es findet ein guter Wissensaustausch zwischen den beiden Programmierern statt.
+                Dieser Austausch kenn spätere Kommunikationsfehler verhindern.
+            </p>
         </chapter>
 
         <chapter title="Code Review" id="techniken-codereview">
