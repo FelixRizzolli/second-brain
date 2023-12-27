@@ -319,7 +319,62 @@
         </p>
 
         <chapter title="Testen" id="techniken-testen">
+            <p>
+                Testen im Rahmen von Software-Entwicklung ist vergleichbar mit dem Testen von Technik in der echten
+                Welt: Fahrstühle durchlaufen Belastungstests, Autos werden testweise gefahren. Das Ziel der Tests ist
+                es, die spätere Verwendung und Umgebung zu simulieren, um so Aufschluss über die Qualität des
+                Testobjekts zu bekommen. Aber wie sehen solche Tests für Software aus?
+            </p>
+            <p>
+                Wir vergleichen das Verhalten des Programms auf bestimmten Eingaben mit einem Wunschverhalten,
+                insbesondere überprüfen wir Zustände und Ausgaben des Programms.
+            </p>
 
+            <chapter title="Beispiel: Tachenrechner testen" id="techniken-testen-beispiel" collapsible="true">
+                <p>
+                    Angenommen es soll ein Taschenrechner auf seine Korrektheit überprüft werden. Es ist klar, dass es
+                    unmöglich sein wird, alle erlaubten Eingaben auszuprobieren. Aber wir können dennoch versuchen, den
+                    Taschenrechner strukturiert zu testen. Wir führen typischerweise einzelne, voneinander unabhängige
+                    Tests auf dem Taschenrechner aus. Jeder dieser Tests besteht darin, dass wir eine bestimmte Rechnung
+                    eingeben und Zwischenergebnisse sowie das Endergebnis des Taschenrechners mit manuell berechneten
+                    Werten vergleichen. Einige der Tests sind sehr einfach und überprüfen nur einzelne Operationen wie
+                    Multiplikation der Addition von zwei Zahlen. Andere wiederum verwenden eine Vielzahl von Operationen
+                    oder testen zusätzliche Funktionen wie das Wechseln von Rechen-Modi.
+                </p>
+                <p>
+                    Damit wir diese Überprüfung nicht per Hand durchführen müssen, können wir die Werkzeuge nutzen, die
+                    uns von fast allen Programmiersprachen zum Ausführen von Tests zur Verfügung gestellt werden:
+                    <b>Unittests</b>
+                </p>
+            </chapter>
+
+            <note>
+                <p><b>Unittests</b></p>
+
+                <p>
+                    Unittests werden dafür verwendet kleine Teile einer Software zu testen. Die Ausführung dieser Tests
+                    kann nun manuell oder automatisch ausgelöst werden. Verändert ein Entwickler auf seinem Computer das
+                    Programm, so kann er anschließend die Korrektheit des Programms mithilfe der Tests ohne großen
+                    Aufwand überprüfen und sich danach zumindest sicher sein, dass es sich auf diesen Eingaben korrekt
+                    verhält. Die Tests können auch automatisiert immer dann ausgeführt werden, wenn ein Entwickler
+                    Änderungen in die Quellcodeverwaltung hochlädt.
+                </p>
+            </note>
+
+            <p>
+                Auch das Durchführen großer Tests, die umfangreiche Teile einer Software überprüfen, kann auf ähnlicher
+                Weise erfolgen. Dabei wird anhand von Integrationstests sichergestellt, dass die verschiedenen Teile
+                eines Programms korrekt miteinander interagieren. Am Beispiel des Taschenrechners stellt die Kombination
+                verschiedener Operationen einen Integrationstest dar.
+            </p>
+            <p>
+                Wie steht es jedoch mit dem Testen von Software-Anwendungen, die Nutzerinteraktionen wie Mausklicks oder
+                den Gebrauch in anderen Umgebungen erfordern, beispielsweise das Aufnehmen von Fotos mit der Kamera?
+                Teilweise sind auch diese simulierbar, aber mit steigenden Anforderungen wird es immer schwerer, die
+                Tests zu programmieren. In einem Computerspiel muss zum Beispiel der komplette Spielablauf überprüft
+                werden, inklusive aller Dialoge und möglichen Interaktionen mit der Spielewelt. Dafür werden oft
+                Menschen beauftragt, das Programm möglichst umfangreich zu testen.
+            </p>
         </chapter>
 
         <chapter title="A/B Testing" id="techniken-abtesting">
