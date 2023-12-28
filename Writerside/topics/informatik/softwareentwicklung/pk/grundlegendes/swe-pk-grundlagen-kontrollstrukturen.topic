@@ -592,10 +592,14 @@
             </p>
 
             <chapter title="Flussdiagramm für das Abbrechen einer Zählschleife" id="schleifen-abbrechen-break">
+                <img src="swe-pk-grundlagen-kontrollstrukturen-break-flussdiagramm.png"
+                     alt="Flussdiagramm des break-Statements"/>
             </chapter>
 
             <chapter title="Flussdiagramm für das Abbrechen einer Schleifeniteration in einer Zählschleife"
                      id="schleifen-abbrechen-continue">
+                <img src="swe-pk-grundlagen-kontrollstrukturen-continue-flussdiagramm.png"
+                     alt="Flussdiagramm des continue-Statements"/>
             </chapter>
         </chapter>
     </chapter>
