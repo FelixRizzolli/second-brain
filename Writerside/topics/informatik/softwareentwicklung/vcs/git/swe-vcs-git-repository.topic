@@ -6,4 +6,10 @@
        title="Repository" id="swe-vcs-git-repository">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler, 2020
+        </tip>
+    </chapter>
 </topic>
