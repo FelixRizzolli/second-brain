@@ -210,6 +210,11 @@
     </chapter>
 
     <chapter title="Rekursion" id="rekursion">
+        <p>
+            Ruft eine Funktion in ihrem Code-Block sich selbst auf, so nennt man dies Rekursion. Verwendet man die
+            Rekursion, so spart man oft mehr Zeilen als es mitschleifen möglich ist. Die Rekursion eignet sich für
+            Beispielsweise für die Berechnung der Fakultät.
+        </p>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
