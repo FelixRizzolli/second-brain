@@ -122,14 +122,72 @@
     </chapter>
 
     <chapter title="Arbeiten mit GIT" id="arbeiten">
+        <p>
+            Bei Linux und macOS wird ein Terminalfenster geöffnet, um kommandoorientiert zu arbeiten. Bei Windows gibt
+            es dagegen bis zu vier Varianten zur Wahl:
+        </p>
+
+        <list>
+            <li>Die Eingabeaufforderung (cmd.exe)</li>
+            <li>Git Bash</li>
+            <li>PowerShell</li>
+            <li>Windows Terminal</li>
+        </list>
 
         <chapter title="Die Eingabeaufforderung (cmd.exe)" id="arbeiten-cmd">
+            <p>
+                Die Eingabeaufforderung von Windows ist noch ein Überbleibsel aus den DOS-Zeiten und reicht auch aus, um
+                elementare Kommandos wie <code>cd</code>, <code>mkdir</code> und auch <code>git</code> auszuführen. Sie
+                sollte aber nicht als dauerhafte Option gewählt werden, da die uralte Struktur des Programms häufig zu
+                Problemen führt, web Zeichen außerhalb des ASCII-Zeichensatzes verwendet werden.
+            </p>
+
+            <chapter title="PowerShell" id="arbeiten-cmd-powershell">
+                <p>
+                    Die PowerShell besteht aus einem Kommandozeileninterpreter sowie einer Skriptsprache. Sie kann weit
+                    aus mehr als sie Eingabeaufforderung. Für eine effiziente Bedienung von Git durch die PowerShell
+                    gibt es
+                    <a href="https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell">
+                        »hier«
+                    </a>
+                    eine offizielle Dokumentation.
+                </p>
+            </chapter>
         </chapter>
 
         <chapter title="Windows Terminal" id="arbeiten-terminal">
+            <p>
+                2019 hat Microsoft ein neues Terminal veröffentlicht, welches die alte Eingabeaufforderung und die
+                PowerShell in einer vereint und zudem noch weitere Eigenschaften bietet. Wie in immer mehr
+                Microsoft-Projekten ist der Quellcode öffentlich und befindet sich in einem GitHub-Repository:
+                <a href="https://github.com/microsoft/terminal">https://github.com/microsoft/terminal</a>. Der Download
+                ist auch im Microsoft Store erhältlich.
+            </p>
+
+            <chapter title="Git Bash" id="arbeiten-terminal-gitbash">
+                <p>
+                    Git Bash wird bei der Installation von Git mitgeliefert und sieht der Eingabeaufforderung von
+                    Windows sehr ähnlich. Mit ihr können alle elementaren Linux-Kommandos verwendet werden. Um
+                    beispielsweise Dateien im aktuellen Verzeichnis aufzulisten wird <code>ls</code> anstelle von
+                    <code>dir</code> verwendet. Soweit es nicht namensgleiche Linux-Kommandos gibt, können DOS-Kommandos
+                    verwendet werden.
+                </p>
+                <p>
+                    Der größte Vorteil der Git Bash liegt in der Integration des <code>ssh</code>-Kommandos, welches im
+                    Zusammenspiel mit Git häufig verwendet wird.
+                </p>
+                <p>
+                    Git Bash ist Unicode-kompatibel und verwendet Standardmäßig den Zeichensatz UTF-8.
+                </p>
+            </chapter>
         </chapter>
 
         <chapter title="Git im WSL" id="arbeiten-wsl">
+            <p>
+                Werden die Projekte, welche mit git heruntergeladen werden vorwiegend in einer Linux-Umgebung (und nicht
+                mit Windows-Programmen) bearbeitet, so besteht auch die Möglichkeit Git im WSL (Windows Subsystem for
+                Linux) zu installieren und dort zu verwenden.
+            </p>
         </chapter>
     </chapter>
 
