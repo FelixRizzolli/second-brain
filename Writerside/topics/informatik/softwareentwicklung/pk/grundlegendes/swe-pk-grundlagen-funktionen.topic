@@ -163,6 +163,29 @@
         </chapter>
 
         <chapter title="Gültigkeitsbereiche" id="detail-gueltigkeitsbereiche">
+            <p>
+                Unter dem Gültigkeitsbereich bzw. auch Sichtbarkeitsberiech versteht man den Bereich in einem Programm,
+                in dem eine Variable oder Funktion gültig bzw. sichtbar ist und damit verwendet werden kann. Der
+                Ausführungskontext enthält Informationen zu diesem Gültigkeitsbereich. Prinzipiell kann der
+                Gültigkeitsberiech bei Programmiersprachen auf zwei verschiedene Arten festgelegt werden (die sich
+                jedoch gegenseitig ausschließen).
+            </p>
+
+            <list>
+                <li>
+                    Lexikalisch (bzw. statisch) bedeutet, dass sich der Gültigkeitsbereich aus dem umgebenen Quelltext
+                    ergibt.
+                </li>
+                <li>
+                    Dynamisch bedeutet, dass sich der Gültigkeitsbereich zur Laufzeit dynamisch abhängig von der
+                    Ausführung des Programms ergibt.
+                </li>
+            </list>
+
+            <p>
+                Da sich also beide Arten gegenseitig ausschließen, kann innerhalb einer Programmiersprache nur eine von
+                beiden Anwendung finden.
+            </p>
         </chapter>
 
         <chapter title="Kette von Gültigkeitsbereichen" id="detail-gueltigkeitsbereiche-kette">
