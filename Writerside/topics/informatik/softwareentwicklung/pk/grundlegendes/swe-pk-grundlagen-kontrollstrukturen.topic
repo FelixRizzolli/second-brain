@@ -509,6 +509,17 @@
         </chapter>
 
         <chapter title="Fußgesteuerte Schleifen – die do-while-Schleife" id="schleifen-dowhile">
+            <p>
+                Die fußgesteuerte Schleife funktioniert vom Prinzip her ähnlich wie die kopfgesteuerte Schleife,
+                allerdings genau entgegengesetzt. Mit anderen Worten: bevor die boolesche Bedingung überprüft wird, wird
+                bereits der Schleifenkörper einmal ausgeführt. Eingeleitet wird diese meist über das Schlüsselwort do,
+                gefolgt von einem Paar geschweiften Klammern, die den Schleifenkörper umfassen. Nach den schließenden
+                Klammern erst folgt das <code>while</code>-Schlüsselwort, gefolgt von der booleschen Bedingung.
+            </p>
+            <p>
+                Die fußgesteuerte Schleife wird aufgrund der verwendeten Schlüsselwörter auch als
+                <code>do-while</code>-Schleife bezeichnet.
+            </p>
 
             <chapter title="Syntax" id="schleifen-dowhile-syntax">
             </chapter>
