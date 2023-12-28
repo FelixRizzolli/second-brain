@@ -522,6 +522,11 @@
             </p>
 
             <chapter title="Syntax" id="schleifen-dowhile-syntax">
+                <code-block lang="javascript">
+                    do {
+                        // Schleifenkörper
+                    } while (Bedingung);
+                </code-block>
             </chapter>
 
             <chapter title="Flussdiagramm" id="schleifen-dowhile-flussdiagramm">
