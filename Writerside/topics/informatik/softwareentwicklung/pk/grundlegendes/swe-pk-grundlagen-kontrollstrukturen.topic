@@ -6,6 +6,88 @@
        title="Kontrollstrukturen" id="swe-pk-grundlagen-kontrollstrukturen">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlegendes" id="grundlagen">
+    </chapter>
+
+    <chapter title="Auswahlstrukturen" id="auswahl">
+
+        <chapter title="if-elseif-else-Statement" id="auswahl-if">
+        </chapter>
+
+        <chapter title="Bedingungsoperator bzw. Auswahloperator" id="auswahl-operator">
+        </chapter>
+
+        <chapter title="Fallunterscheidung: switch-Verzweigung" id="auswahl-switch">
+
+            <chapter title="Beispiel" id="auswahl-switch-beispiel">
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="Schleifen" id="schleifen">
+
+        <chapter title="Zählschleifen – die for-Schleife" id="schleifen-for">
+
+            <chapter title="Flussdiagramm" id="schleifen-for-flussdiagramm">
+            </chapter>
+
+            <chapter title="Arbeiten mit Arrays" id="schleifen-for-arrays">
+            </chapter>
+
+            <chapter title="Verschachtelung" id="schleifen-for-verschachtelung">
+            </chapter>
+        </chapter>
+
+        <chapter title="Kopfgesteuerte Schleifen – die while-Schleife" id="schleifen-while">
+
+            <chapter title="Syntax" id="schleifen-while-syntax">
+            </chapter>
+
+            <chapter title="Flussdiagramm" id="schleifen-while-flussdiagramm">
+            </chapter>
+        </chapter>
+
+        <chapter title="Fußgesteuerte Schleifen – die do-while-Schleife" id="schleifen-dowhile">
+
+            <chapter title="Syntax" id="schleifen-dowhile-syntax">
+            </chapter>
+
+            <chapter title="Flussdiagramm" id="schleifen-dowhile-flussdiagramm">
+            </chapter>
+
+            <chapter title="Kopfgesteuerte vs. fußgesteuerte Schleifen" id="schleifen-dowhile-unterschiede">
+            </chapter>
+        </chapter>
+
+        <chapter title="Die foreach-Schleife" id="schleifen-foreach">
+
+            <chapter title="Beispiel in C#" id="schleifen-foreach-beispiel">
+            </chapter>
+        </chapter>
+
+        <chapter title="Endlosschleifen" id="schleifen-endlosschleife">
+        </chapter>
+
+        <chapter title="Schleifen und Schleifeniterationen vorzeitig abbrechen" id="schleifen-abbrechen">
+
+            <chapter title="Flussdiagramm für das Abbrechen einer Zählschleife" id="schleifen-abbrechen-break">
+            </chapter>
+
+            <chapter title="Flussdiagramm für das Abbrechen einer Schleifeniteration in einer Zählschleife"
+                     id="schleifen-abbrechen-continue">
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="Komplexe Bedingungen" id="komplex">
+    </chapter>
+
+    <chapter title="Sprunganweisung: goto" id="goto">
+
+        <chapter title="Beispiel in PHP" id="goto-beispiel-php">
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
