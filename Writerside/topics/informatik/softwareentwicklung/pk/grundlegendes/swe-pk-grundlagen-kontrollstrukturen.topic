@@ -311,6 +311,75 @@
         </list>
 
         <chapter title="Zählschleifen – die for-Schleife" id="schleifen-for">
+            <p>
+                Zählschleifen eignen sich immer dann, wenn von Vornhinein klar ist, wie häufig eine bestimmte Anweisung
+                wiederholt werden soll. Diese Schleifenform gibt es in nahezu allen Programmiersprachen. Eingeleitet
+                wird eine Zählschleife meist über das Schlüsselwort <code>for</code> (weswegen die Zählschleife oft auch
+                als <code>for</code>-Schleife bezeichnet wird). Innerhalb des darauf folgenden runden Klammernpaares
+                werden drei Dinge definiert:
+            </p>
+
+            <list>
+                <li>
+                    <b>Initialisierung</b>: Hier wird der Code definiert, der vor Ausführung der gesamten Schleife
+                    einmal ausgeführt werden soll. In der Regel initialisiert man hier die Zählervariable.
+                </li>
+                <li>
+                    <b>Bedingung</b>: Hier wird der Code hingeschrieben, der vor Ausführung jeder Schleifeniteration
+                    überprüft, ob die Schleife weiter ausgeführt werden soll oder nicht. In der Regel überprüft man
+                    hier, ob die Zählervariable eine bestimmte Grenze (beispielsweise die Länge eines Arrays) schon
+                    erreicht hat.
+                </li>
+                <li>
+                    <b>Inkrementierungsausdruck</b>: Hier wird der Code hingeschrieben, der nach Ausführen jeder
+                    Schleifeniteration ausgeführt werden soll. In der Regen zählt man hier die Zählervariable hoch. Je
+                    nach Situation in der Praxis kann man die Schleife vor- oder rückwärts durchlaufen, dabei wird ein
+                    Dekrementierungsausdruck verwendet.
+                </li>
+            </list>
+
+            <p>
+                Initialisierung, Ausdruck und Inkrementierungsausdruck sind dabei über Semikolons voneinander getrennt.
+                Der eigentliche Code, der mehrfach ausgeführt werden soll, wird folglich (meist in geschweiften
+                Klammern) in den sogenannten Schleifenkörper, der unmittelbar auf die schließende runde Klammer folgt
+                definiert.
+            </p>
+
+            <code-block lang="javascript">
+                for (
+                    Initialisierung;           // wird vor Ausführen der Schleife ausgeführt
+                    Bedingung;                 // wird vor Ausführen einer Iteration überprüft
+                    Inkrementierungsausdruck;  // wird am Ende einer Iteration ausgeführt
+                ) {
+                    Schleifenkörper            // wird in jeder Iteration einmal ausgeführt
+                }
+            </code-block>
+
+            <p>
+                Bezüglich der Reihenfolge geschieht also folgendes:
+            </p>
+
+            <list style="decimal">
+                <li>
+                    Zu Beginn der Schleife wird einmal die Initialisierungsanweidung ausgeführt.
+                </li>
+                <li>
+                    Anschließend wird die Bedingung überprüft. Ist diese wahr ...
+                </li>
+                <li>
+                    ... wird der Schleifenkörper ausgeführt und ...
+                </li>
+                <li>
+                    ... anschließend der Inkrementierungsausdruck ausgewertet.
+                </li>
+                <li>
+                    Dann geht es weiter mit Überpüfen der Bedingung, Ausführen des Schleifenkörpers,
+                    Inkrementierungsausdruck usw. solange bis die Bedingung nicht mehr erfüllt ist.
+                </li>
+                <li>
+                    Ist dies der Fall, sprich, die Bedingung ergibt false, wird die Schleifenausführung beendet.
+                </li>
+            </list>
 
             <chapter title="Flussdiagramm" id="schleifen-for-flussdiagramm">
             </chapter>
