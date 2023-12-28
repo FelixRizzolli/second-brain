@@ -570,6 +570,17 @@
         </chapter>
 
         <chapter title="Endlosschleifen" id="schleifen-endlosschleife">
+            <p>
+                Eine Schleife wiederholt einen Vorgang. Das geschieht so lange, bis eine Bedingung für ein erneutes
+                Durchlaufen der Schleife nicht mehr erfüllt ist. Werden für die Prüfung der Abbruchbedingung numerische
+                Werte herangezogen, ist darauf zu achten, dass dieser bestimmte Wert auch wirklich jeweils erreicht
+                wird. Rechenergebnisse können durch den Computer durch die Kalkulation mithilfe von Näherungswerten
+                verfälscht werden. Ein Beispiel: Die Abbruchbedingung lautet <code>a==3</code>. Wenn <code>a</code> das
+                Ergebnis einer mathematischen Operation ist und aufgrund von Rundungen vielleicht <code>2,99</code>
+                lautet, so wird diese Bedingung nie erfüllt und in der Folge die Schleife endlos durchlaufen. Abhilfe
+                kann man zum Beispiel erreichen, wenn man die Prüfung nicht gegen den exakten Wert durchführt, sondern
+                eine bestimmte Toleranzgrenze, d.h. eine Fehlerschranke zulässt.
+            </p>
         </chapter>
 
         <chapter title="Schleifen und Schleifeniterationen vorzeitig abbrechen" id="schleifen-abbrechen">
