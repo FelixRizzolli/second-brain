@@ -576,9 +576,21 @@
         </chapter>
 
         <chapter title="Escape-Zeichen \" id="step3-escape">
+            <p>
+                Es gibt Sonderzeichen, die wir beim Schreiben von Regex verwenden. <code>{ } [ ] / \ + * . $^ | ?</code>
+                Bevor wir diese Zeichen selbst auswählen können, müssen wir ein Escape verwenden Zeichen <code>\</code>.
+                Um beispielsweise die Zeichen Punkt <code>.</code> und Sternchen <code>*</code> im Text auszuwählen,
+                fügen wir davor ein Escape-Zeichen <code>\</code> ein.
+            </p>
 
             <chapter title="Beispiel" id="step3-escape-beispiel" collapsible="true">
+                <code-block>
+                    (*) Asterisk.
+                </code-block>
 
+                <code-block>
+                    /(\*|\.)/g
+                </code-block>
             </chapter>
         </chapter>
 
