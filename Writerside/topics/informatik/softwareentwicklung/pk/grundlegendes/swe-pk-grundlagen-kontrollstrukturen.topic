@@ -407,6 +407,16 @@
             </chapter>
 
             <chapter title="Arbeiten mit Arrays" id="schleifen-for-arrays">
+                <p>
+                    Greift man innerhalb einer <code>for</code>-Schleife über einen Index auf eine Liste, wie im
+                    Beispiel auf ein Array, zu, so besteht die Gefahr, dass ein Zugriff auf die Datenstruktur außerhalb
+                    des zulässigen Indexbereichs durchgeführt wird. Das wäre dann der Fall, wenn man beispielsweise
+                    definieren würde, dass die Schleife 7-mal durchlaufen werden soll, jedoch im Array nur 4 Elemente
+                    gespeichert sind. In diesem Fall würde es zu einem Fehler führen, den man erst zur Laufzeit des
+                    Programms feststellen könnte. Dies kann man vermeiden, indem der Grenzwert aus der Datenstruktur
+                    selbst bestimmt wird. Werden die Elemente eines Arrays durchlaufen, so könnte man die Anzahl der
+                    Elemente des Arrays ermitteln und als Bedingung <code>i &lt; AnzahlDerElemente</code> setzen.
+                </p>
             </chapter>
 
             <chapter title="Verschachtelung" id="schleifen-for-verschachtelung">
