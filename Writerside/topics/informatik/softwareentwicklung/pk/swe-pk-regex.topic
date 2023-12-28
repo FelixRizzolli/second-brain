@@ -377,9 +377,21 @@
         </chapter>
 
         <chapter title="Geschweifte Klammern – 2" id="step2-geschweifteklammern2">
+            <p>
+                Um mindestens eine bestimmte Anzahl von Vorkommen eines Zeichens auszudrücken, schreiben wir das Ende
+                des Zeichens mindestens wie oft es vorkommen soll, mit einem Komma <code>,</code> am Ende, und in
+                geschweiften Klammern <code>{n, }</code>. Geben Sie zum Beispiel an, dass der folgende Buchstabe
+                <code>e</code> mindestens <code>3</code> Mal vorkommen kann.
+            </p>
 
             <chapter title="Beispiel" id="step2-geschweifteklammern2-beispiel" collapsible="true">
+                <code-block>
+                    ber beer beeer beeeer
+                </code-block>
 
+                <code-block>
+                    /be{3,}r/g
+                </code-block>
             </chapter>
         </chapter>
 
