@@ -6,6 +6,66 @@
        title="Grundlagen" id="swe-vcs-git-grundlagen">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="GIT konfigurieren" id="konfigurieren">
+
+        <chapter title="Name und E-Mail-Adresse einstellen (git config)" id="konfigurieren-config">
+        </chapter>
+
+        <chapter title="Sprache" id="konfigurieren-sprache">
+        </chapter>
+
+        <chapter title="Dateien ausschließen (.gitignore)" id="konfigurieren-gitignore">
+        </chapter>
+    </chapter>
+
+    <chapter title="Repository herunterladen (git clone)" id="clone">
+
+        <chapter title="Repository (Begriff) mit GitHub als Beispiel" id="clone-github">
+
+            <chapter title="Mitarbeit ohne Zugriffsrechte" id="clone-github-ohnerechte">
+            </chapter>
+
+            <chapter title="Repository herunterladen" id="clone-github-herunterladen">
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="Lokales Repository erstellen (git init)" id="init">
+    </chapter>
+
+    <chapter title="Dateien hinzufügen (git add)" id="add">
+    </chapter>
+
+    <chapter title="Zwischenstand speichern (git commit)" id="commit">
+
+        <chapter title="Sprache" id="commit-sprache">
+        </chapter>
+
+        <chapter title="Der Commit-Befehl" id="commit-befehl">
+
+            <chapter title="Ohne Zwischenspeichern" id="commit-befehl-ohnezwischenspeicher">
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="Überblick (git status)" id="status">
+    </chapter>
+
+    <chapter title="Repository zum Remote Server übertragen (git push)" id="push">
+    </chapter>
+
+    <chapter title="Lokales Repository aktualisieren (git pull)" id="pull">
+    </chapter>
+
+    <chapter title="Dateien umbenennen, verschieben und löschen (git mv, git rm)" id="dateien">
+
+        <chapter title="Das Kommando git mv" id="dateien-mv">
+        </chapter>
+
+        <chapter title="Das Kommando git rm" id="dateien-rm">
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
