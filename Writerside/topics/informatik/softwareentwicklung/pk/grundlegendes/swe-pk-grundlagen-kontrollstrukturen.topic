@@ -631,8 +631,24 @@
     </chapter>
 
     <chapter title="Sprunganweisung: goto" id="goto">
+        <p>
+            Mit der <code>goto</code>-Anweisung werden Sprünge im Codeablauf ermöglicht. Dafür müssen Marken gesetzt
+            werden, um einen Punkt zu kennzeichnen, zu dem gesprungen werden kann. In den Anfängen der Programmierung,
+            insbesondere in den ersten Dialekten der Sprache BASIC, wurde immer wieder der unmittelbare und direkte
+            Sprungbefehl <code>goto</code> verwendet. Die <code>goto</code>-Anweisung gehört auch heute noch zum
+            Sprachumfang vieler Programmiersprachen. Den Einsatz dieses Befehls muss jedoch vermieden werden! Er führt
+            zu schwer lesbarem und schlecht wartbarem Code, sogenanntem »Spaghetti-Code«. Es gilt: Alle auftretenden
+            Programmiersituationen lassen sich im Normalfall durch andere Sprachkonstruktionen ersetzen!
+        </p>
 
         <chapter title="Beispiel in PHP" id="goto-beispiel-php">
+            <code-block lang="php">
+                goto Marke;
+                echo('Ausgabe 1');
+
+                Marke:
+                echo('Ausgabe 2');
+            </code-block>
         </chapter>
     </chapter>
 
