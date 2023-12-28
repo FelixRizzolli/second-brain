@@ -5,4 +5,52 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Allgemeines über die Programmierung" id="swe-pk-grundlagen-allgemeines">
     <show-structure for="chapter,procedure" depth="2"/>
+
+    <chapter title="Geschichte zur Programmierung" id="geschichte">
+
+        <chapter title="Tabelle bekannter und zugleich historischer Programmiersprachen" id="geschichte-tabelle">
+        </chapter>
+    </chapter>
+
+    <chapter title="Generationen der Programmiersprachen" id="generationen">
+
+        <chapter title="Grundlegendes" id="generationen-grundlegendes">
+        </chapter>
+
+        <chapter title="Sprachen der ersten Generation: Maschinensprachen" id="generationen-gen1">
+        </chapter>
+
+        <chapter title="Sprachen der zweiten Generation: Assemblersprachen" id="generationen-gen2">
+        </chapter>
+
+        <chapter title="Sprachen der dritten Generation: Höhere Programmiersprachen" id="generationen-gen3">
+        </chapter>
+
+        <chapter title="Sprachen der vierten und höheren Generation" id="generationen-gen4">
+        </chapter>
+    </chapter>
+
+    <chapter title="Compiler &amp; Interpreter" id="compiler">
+
+        <chapter title="Kompilierte Programmiersprachen" id="compiler-kompiliert">
+        </chapter>
+
+        <chapter title="Interpretierte Programmiersprachen" id="compiler-interpretiert">
+        </chapter>
+
+        <chapter title="Vor- und Nachteile" id="compiler-procontra">
+        </chapter>
+
+        <chapter title="Zwischensprachen" id="compiler-zwischensprachen">
+        </chapter>
+
+        <chapter title="Übersicht über verschiedene Programmiersprachen" id="compiler-uebersicht">
+        </chapter>
+    </chapter>
+
+    <chapter title="Programmierparadigmen" id="programmierparadigmen">
+    </chapter>
+
+    <chapter title="Quellen" id="quellen">
+    </chapter>
 </topic>
