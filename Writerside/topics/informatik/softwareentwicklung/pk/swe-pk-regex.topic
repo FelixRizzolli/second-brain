@@ -324,9 +324,20 @@
         </chapter>
 
         <chapter title="Pluszeichen +" id="step2-plus">
+            <p>
+                Um anzuzeigen, dass ein Zeichen einmal oder mehrmals vorkommen kann, setzen wir ein Pluszeichen
+                <code>+</code> am Ende. Geben Sie beispielsweise an, dass der Buchstabe <code>e</code> einmal oder
+                mehrmals vorkommen kann der Text.
+            </p>
 
             <chapter title="Beispiel" id="step2-plus-beispiel" collapsible="true">
+                <code-block>
+                    br ber beer
+                </code-block>
 
+                <code-block>
+                    /be+r/g
+                </code-block>
             </chapter>
         </chapter>
 
