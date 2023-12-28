@@ -832,9 +832,20 @@
         </p>
 
         <chapter title="Globale Flagge" id="step5-globale-flagge">
+            <p>
+                Das <code>global</code>-Flag bewirkt, dass der Ausdruck alle Übereinstimmungen auswählt. Wenn es nicht
+                verwendet wird, wird nur die erste Übereinstimmung ausgewählt. Aktivieren Sie jetzt das
+                <code>global</code>-Flag, um alle Übereinstimmungen auswählen zu können.
+            </p>
 
             <chapter title="Beispiel" id="step5-globale-flagge-beispiel" collapsible="true">
+                <code-block>
+                    domain.com, test.com, site.com
+                </code-block>
 
+                <code-block>
+                    /\w+\.com/g
+                </code-block>
             </chapter>
         </chapter>
 
