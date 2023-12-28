@@ -226,6 +226,11 @@
     </chapter>
 
     <chapter title="Bereichsauflösungsoperatoren" id="bereichsaufloesung">
+        <list>
+            <li>
+                Bereichsauflösungsoperator (häufig <code>::</code> oder <code>.</code>)
+            </li>
+        </list>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
