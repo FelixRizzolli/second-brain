@@ -5,4 +5,19 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Kontrollstrukturen" id="swe-pk-grundlagen-kontrollstrukturen">
     <show-structure for="chapter,procedure" depth="2"/>
+
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836240826, "PHP 7 und MySQL - Das umfassende Handbuch", Christian Wenz &amp; Tobias Hauser, 2016
+        </tip>
+        <tip>
+            <b>(BUCH)</b>
+            978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018
+        </tip>
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript - Das umfassende Handbuch", Philip Ackermann, 2018
+        </tip>
+    </chapter>
 </topic>
