@@ -734,6 +734,10 @@
     </chapter>
 
     <chapter title="STEP4: Lookarounds" id="step4">
+        <p>
+            Wenn wir möchten, dass der Satz, den wir schreiben, vor oder nach einem anderen Satz steht, müssen wir "look
+            around". Machen Sie den nächsten Schritt, um zu lernen, wie man "looks around".
+        </p>
 
         <chapter title="Positiver Lookahead: (?=)" id="step4-positiver-lookahead">
 
