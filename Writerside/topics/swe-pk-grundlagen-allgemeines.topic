@@ -277,8 +277,17 @@
     </chapter>
 
     <chapter title="Generationen der Programmiersprachen" id="generationen">
-
         <chapter title="Grundlegendes" id="generationen-grundlegendes">
+            <p>
+                Programmiersprachen lassen sich nicht nur nach ihrem Verwendungszweck (kaufmännisch, technisch,
+                mathematisch) und ihrer Sprachkategorie (objektorientiert, funktional) einteilen, sondern auch nach
+                ihrem Grad der Abstraktion. Nach diesem Kriterium unterteilt man sie in Sprachen der ersten bis vierten
+                Generation. Heute kommen primär Programmiersprachen der dritten und vierten Generation zum Einsatz, das
+                heißt aber nicht, dass man eine Sprache einer früheren Generation nicht mehr verwendet.
+            </p>
+            
+            <img src="swe-pk-grundlagen-allgemeines-abstraktionsgrad.png"
+                 alt="Abstraktionsgrad einer Programmiersprache" />
         </chapter>
 
         <chapter title="Sprachen der ersten Generation: Maschinensprachen" id="generationen-gen1">
