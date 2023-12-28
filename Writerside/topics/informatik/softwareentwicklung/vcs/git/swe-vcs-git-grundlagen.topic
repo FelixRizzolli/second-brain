@@ -240,6 +240,10 @@
     </chapter>
 
     <chapter title="Lokales Repository aktualisieren (git pull)" id="pull">
+        Mit dem Befehl <code>git pull</code> werden bekannte Änderungen im externen Repository auf den lokalen Rechner
+        heruntergeladen. Bearbeiten zwei Entwickler eine Datei gleichzeitig, so kommt es beim Zusammenführen der
+        Änderungen zu einem Konflikt und die Ausführung von <code>git pull</code> bricht ab. Dieser Konflikt muss
+        manuell behoben werden.
     </chapter>
 
     <chapter title="Dateien umbenennen, verschieben und löschen (git mv, git rm)" id="dateien">
