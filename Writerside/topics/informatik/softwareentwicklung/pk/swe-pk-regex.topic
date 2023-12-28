@@ -116,9 +116,22 @@
         </chapter>
 
         <chapter title="Zeichensätze [abc]" id="step1-zeichensaetze">
+            <p>
+                Wenn eines der Zeichen in einem Wort mehrere Zeichen sein können, werden die Zeichen in eckige Klammern
+                <code>[]</code> mit allen alternativen Zeichen geschrieben. Zum Beispiel, um einen Ausdruck zu
+                schreiben, der alle Wörter im folgenden Beispieltext findet werden die Zeichen <code>a</code>,
+                <code>e</code>, <code>i</code>, <code>o</code>, <code>u</code> nebeneinander in eckige Klammern
+                <code>[]</code> angegeben.
+            </p>
 
             <chapter title="Beispiel" id="step1-zeichensaetze-beispiel" collapsible="true">
+                <code-block>
+                    bar ber bir bor bur
+                </code-block>
 
+                <code-block>
+                    /b[aeiou]r/g
+                </code-block>
             </chapter>
         </chapter>
 
