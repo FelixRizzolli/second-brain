@@ -71,7 +71,21 @@
             </toc-element>
             <toc-element topic="swe-cleancode.topic"/>
             <toc-element topic="swe-vcs.topic">
-                <toc-element topic="swe-vcs-git.topic"/>
+                <toc-element topic="swe-vcs-git.topic">
+                    <toc-element topic="swe-vcs-git-grundlagen.topic"/>
+                    <toc-element topic="swe-vcs-git-commits.topic"/>
+                    <toc-element topic="swe-vcs-git-hooks.topic"/>
+                    <toc-element topic="swe-vcs-git-merge.topic"/>
+                    <toc-element topic="swe-vcs-git-rebase.topic"/>
+                    <toc-element topic="swe-vcs-git-repository.topic"/>
+                    <toc-element topic="swe-vcs-git-stashing.topic"/>
+                    <toc-element topic="swe-vcs-git-tags.topic"/>
+                    <toc-element topic="swe-vcs-git-workflows.topic"/>
+                    <toc-element topic="swe-vcs-git-sub.topic"/>
+                    <toc-element topic="swe-vcs-git-loesungen.topic"/>
+                    <toc-element topic="swe-vcs-git-datenanalyse.topic"/>
+                    <toc-element topic="swe-vcs-git-remote.topic"/>
+                </toc-element>
                 <toc-element topic="swe-vcs-cvs.topic"/>
                 <toc-element topic="swe-vcs-svn.topic"/>
                 <toc-element topic="swe-vcs-vss.topic"/>
