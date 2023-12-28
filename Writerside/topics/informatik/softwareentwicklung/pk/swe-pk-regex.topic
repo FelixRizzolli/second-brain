@@ -136,9 +136,20 @@
         </chapter>
 
         <chapter title="Negierte Zeichensätze [^abc]" id="step1-negiertezeichensaetze">
+            <p>
+                Um alle Wörter im folgenden Text außer <code>ber</code> und <code>bor</code> zu finden, wird
+                <code>e</code> und <code>o</code> nebeneinander nach dem Caret-Zeichen <code>^</code> in eckigen
+                Klammern <code>[]</code> angegeben.
+            </p>
 
             <chapter title="Beispiel" id="step1-negiertezeichensaetze-beispiel" collapsible="true">
+                <code-block>
+                    bar ber bir bor bur
+                </code-block>
 
+                <code-block>
+                    /b[^eo]r/g
+                </code-block>
             </chapter>
         </chapter>
 
