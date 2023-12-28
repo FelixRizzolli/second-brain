@@ -516,10 +516,10 @@
                 gefolgt von einem Paar geschweiften Klammern, die den Schleifenkörper umfassen. Nach den schließenden
                 Klammern erst folgt das <code>while</code>-Schlüsselwort, gefolgt von der booleschen Bedingung.
             </p>
-            <p>
+            <note>
                 Die fußgesteuerte Schleife wird aufgrund der verwendeten Schlüsselwörter auch als
                 <code>do while</code>-Schleife bezeichnet.
-            </p>
+            </note>
 
             <chapter title="Syntax" id="schleifen-dowhile-syntax">
                 <code-block lang="javascript">
