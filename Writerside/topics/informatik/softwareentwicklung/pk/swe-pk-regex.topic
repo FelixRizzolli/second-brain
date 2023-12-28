@@ -39,6 +39,18 @@
     </chapter>
 
     <chapter title="STEP1: Einführung" id="step1">
+        <p>
+            RegEx ist die Abkürzung für <b>Regular Expression</b>. RegEx hilft, Text zuzuordnen, zu finden oder zu
+            verwalten. Im Beispiel wird nach <code>OK</code> gesucht.
+        </p>
+
+        <code-block>
+            Understand? OK or NOT
+        </code-block>
+
+        <code-block>
+            /OK/g
+        </code-block>
 
         <chapter title="Was sind reguläre Ausdrücke Regex?" id="step1-erklaerung">
 
