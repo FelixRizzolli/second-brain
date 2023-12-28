@@ -41,44 +41,95 @@
     <chapter title="STEP1: Einführung" id="step1">
 
         <chapter title="Was sind reguläre Ausdrücke Regex?" id="step1-erklaerung">
+
+            <chapter title="Beispiel" id="step1-erklaerung-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Basic Matcher" id="step1-basicmatcher">
+
+            <chapter title="Beispiel" id="step1-basicmatcher-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Punkt .: Beliebiges Zeichen" id="step1-punkt">
+
+            <chapter title="Beispiel" id="step1-punkt-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Zeichensätze [abc]" id="step1-zeichensaetze">
+
+            <chapter title="Beispiel" id="step1-zeichensaetze-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Negierte Zeichensätze [^abc]" id="step1-negiertezeichensaetze">
+
+            <chapter title="Beispiel" id="step1-negiertezeichensaetze-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Buchstabenbereich [a-z]" id="step1-buchstabenbereich">
+
+            <chapter title="Beispiel" id="step1-buchstabenbereich-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Nummernbereich [0-9]" id="step1-nummerkreis">
+
+            <chapter title="Beispiel" id="step1-nummerkreis-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Übungen" id="step1-uebungen">
-
             <chapter title="Übung: Basic Matcher" id="step1-uebungen-basicmatcher">
+
+                <chapter title="Lösung" id="step1-uebungen-basicmatcher-loesung" collapsible="true">
+
+                </chapter>
             </chapter>
 
             <chapter title="Übung: Beliebiges Zeichen" id="step1-uebungen-zeichen">
+
+                <chapter title="Lösung" id="step1-uebungen-zeichen-loesung" collapsible="true">
+
+                </chapter>
             </chapter>
 
             <chapter title="Übung: Zeichensätze" id="step1-uebungen-zeichensaetze">
+
+                <chapter title="Lösung" id="step1-uebungen-zeichensaetze-loesung" collapsible="true">
+
+                </chapter>
             </chapter>
 
             <chapter title="Übung: Negierte Zeichensätze" id="step1-uebungen-negiertezeichensaetze">
+
+                <chapter title="Lösung" id="step1-uebungen-negiertezeichensaetze-loesung" collapsible="true">
+
+                </chapter>
             </chapter>
 
             <chapter title="Übung: Buchstabenbereich" id="step1-uebungen-buchstabenbereich">
+
+                <chapter title="Lösung" id="step1-uebungen-buchstabenbereich-loesung" collapsible="true">
+
+                </chapter>
             </chapter>
 
             <chapter title="Übung: Nummernkreis" id="step1-uebungen-nummerkreis">
+
+                <chapter title="Lösung" id="step1-uebungen-nummerkreis-loesung" collapsible="true">
+
+                </chapter>
             </chapter>
         </chapter>
     </chapter>
@@ -86,116 +137,252 @@
     <chapter title="STEP2: Wiederholungen" id="step2">
 
         <chapter title="Asterisk *" id="step2-asterisk">
+
+            <chapter title="Beispiel" id="step2-asterisk-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Pluszeichen +" id="step2-plus">
+
+            <chapter title="Beispiel" id="step2-plus-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Fragezeichen ?" id="step2-fragezeichen">
+
+            <chapter title="Beispiel" id="step2-fragezeichen-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Geschweifte Klammern – 1" id="step2-geschweifteklammern1">
+
+            <chapter title="Beispiel" id="step2-geschweifteklammern1-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Geschweifte Klammern – 2" id="step2-geschweifteklammern2">
+
+            <chapter title="Beispiel" id="step2-geschweifteklammern2-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Geschweifte Klammern – 3" id="step2-geschweifteklammern3">
+
+            <chapter title="Beispiel" id="step2-geschweifteklammern3-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Übungen" id="step2-uebungen">
 
             <chapter title="Übung: Asterisk *" id="step2-uebungen-asterisk">
+
+                <chapter title="Lösung" id="step2-uebungen-asterisk-loesung" collapsible="true">
+
+                </chapter>
             </chapter>
 
             <chapter title="Übung: Pluszeichen +" id="step2-uebungen-plus">
+
+                <chapter title="Lösung" id="step2-uebungen-plus-loesung" collapsible="true">
+
+                </chapter>
             </chapter>
 
             <chapter title="Übung: Fragezeichen ?" id="step2-uebungen-fragezeichen">
+
+                <chapter title="Lösung" id="step2-uebungen-fragezeichen-loesung" collapsible="true">
+
+                </chapter>
             </chapter>
 
             <chapter title="Übung: Geschweifte Klammern – 1" id="step2-uebungen-geschweifteklammern1">
+
+                <chapter title="Lösung" id="step2-uebungen-geschweifteklammern1-loesung" collapsible="true">
+
+                </chapter>
             </chapter>
 
             <chapter title="Übung: Geschweifte Klammern – 2" id="step2-uebungen-geschweifteklammern2">
+
+                <chapter title="Lösung" id="step2-uebungen-geschweifteklammern2-loesung" collapsible="true">
+
+                </chapter>
             </chapter>
 
             <chapter title="Übung: Geschweifte Klammern – 3" id="step2-uebungen-geschweifteklammern3">
+
+                <chapter title="Lösung" id="step2-uebungen-geschweifteklammern3-loesung" collapsible="true">
+
+                </chapter>
             </chapter>
         </chapter>
     </chapter>
 
     <chapter title="STEP3" id="step3">
         <chapter title="Klammern (): Gruppierung" id="step3-klammern">
+
+            <chapter title="Beispiel" id="step3-klammern-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Auf eine Gruppe verweisen" id="step3-verweisen">
+
+            <chapter title="Beispiel" id="step3-verweisen-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Klammern (?:): Gruppierung ohne Erfassung" id="step3-guppierungohneerfassung">
+
+            <chapter title="Beispiel" id="step3-guppierungohneerfassung-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Pipe-Zeichen |" id="step3-pipe">
+
+            <chapter title="Beispiel" id="step3-pipe-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Escape-Zeichen \" id="step3-escape">
+
+            <chapter title="Beispiel" id="step3-escape-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Caret-Zeichen ^: Auswahl nach Zeilenanfang" id="step3-caret">
+
+            <chapter title="Beispiel" id="step3-caret-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Dollarzeichen $: Auswahl nach Zeilenende" id="step3-dollar">
+
+            <chapter title="Beispiel" id="step3-dollar-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Wortzeichen \w: Buchstabe, Zahl und Unterstrich" id="step3-wort">
+
+            <chapter title="Beispiel" id="step3-wort-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Außer Wortzeichen \W" id="step3-ausserwort">
+
+            <chapter title="Beispiel" id="step3-ausserwort-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Zahlenzeichen \d" id="step3-zahlen">
+
+            <chapter title="Beispiel" id="step3-zahlen-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Außer Zahlenzeichen \D" id="step3-ausserzahlen">
+
+            <chapter title="Beispiel" id="step3-ausserzahlen-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Leerzeichen \s" id="step3-leer">
+
+            <chapter title="Beispiel" id="step3-leer-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Außer Leerzeichen \S" id="step3-ausserleer">
+
+            <chapter title="Beispiel" id="step3-ausserleer-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
     </chapter>
 
     <chapter title="STEP4: Lookarounds" id="step4">
 
         <chapter title="Positiver Lookahead: (?=)" id="step4-positiver-lookahead">
+
+            <chapter title="Beispiel" id="step4-positiver-lookahead-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Negativer Lookahead: (?!)" id="step4-negativer-lookahead">
+
+            <chapter title="Beispiel" id="step4-negativer-lookahead-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Positiver Lookbehind: (?&lt;=)" id="step4-positiver-lookbehind">
+
+            <chapter title="Beispiel" id="step4-positiver-lookbehind-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Negativer Lookbehind: (?&lt;!)" id="step4-negativer-lookbehind">
+
+            <chapter title="Beispiel" id="step4-negativer-lookbehind-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
     </chapter>
 
     <chapter title="STEP5: Flaggen" id="step5">
 
         <chapter title="Globale Flagge" id="step5-globale-flagge">
+
+            <chapter title="Beispiel" id="step5-globale-flagge-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Mehrzeiliges Flag" id="step5-mehrzeiliges-flag">
+
+            <chapter title="Beispiel" id="step5-mehrzeiliges-flag-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Groß-/Kleinschreibung beachten" id="step5-grosskleinschreibung">
+
+            <chapter title="Beispiel" id="step5-grosskleinschreibung-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Gieriger Abgleich" id="step5-geringer-abgleich">
+
+            <chapter title="Beispiel" id="step5-geringer-abgleich-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
 
         <chapter title="Lazy Matching" id="step5-lazy-matching">
+
+            <chapter title="Beispiel" id="step5-lazy-matching-beispiel" collapsible="true">
+
+            </chapter>
         </chapter>
     </chapter>
 
