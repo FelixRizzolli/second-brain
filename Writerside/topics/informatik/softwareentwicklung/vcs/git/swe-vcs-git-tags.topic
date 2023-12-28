@@ -103,6 +103,14 @@
     </chapter>
 
     <chapter title="Tags nachträglich setzen" id="nachtraeglich-setzen">
+        <p>
+            Der Befehl <code>git tag</code> gilt standardmäßig für den aktuellen Commit. Wurde vergessen ein Tag zu
+            setzen, so kann dieser auch nachträglich mit den ersten Stellen des Hashcodes gesetzt werden.
+        </p>
+
+        <code-block lang="bash">
+            git tag 'iprot_v3.6.0' 612410
+        </code-block>
     </chapter>
 
     <chapter title="Tags löschen" id="loeschen">
