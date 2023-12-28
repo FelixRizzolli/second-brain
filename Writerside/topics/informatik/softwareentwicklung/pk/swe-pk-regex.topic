@@ -701,9 +701,18 @@
         </chapter>
 
         <chapter title="Leerzeichen \s" id="step3-leer">
+            <p>
+                <code>\s</code> wird verwendet, um nur Leerzeichen zu finden.
+            </p>
 
             <chapter title="Beispiel" id="step3-leer-beispiel" collapsible="true">
+                <code-block>
+                    abcABC123 _.:!?
+                </code-block>
 
+                <code-block>
+                    /\s/g
+                </code-block>
             </chapter>
         </chapter>
 
