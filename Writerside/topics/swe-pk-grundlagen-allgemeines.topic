@@ -545,6 +545,93 @@
         </chapter>
 
         <chapter title="Interpretierte Programmiersprachen" id="compiler-interpretiert">
+            <p>
+                Bei interpretierten Programmiersprachen ist es nicht notwendig, den Quelltext zu kompilieren. Der
+                Quelltext wird hier nicht durch einen Compiler übersetzt, sondern durch einen Interpreter ausgewertet.
+                Ein solcher Interpreter muss auf dem Rechner (bzw. auf dem entsprechenden Betriebssystem) installiert
+                sein, auf dem das Programm ausgeführt werden soll (im Unterschied zum Compiler, der nur auf dem Rechner
+                installiert sein muss, auf dem man den entsprechenden Quelltext kompiliert.
+            </p>
+
+            <code-block lang="mermaid">
+                stateDiagram-v2
+
+                QC: Quelltext
+                CMP: Interpreter
+                MC: Maschinencodesequenz
+
+                QC --> CMP
+                CMP --> MC
+            </code-block>
+
+            <p>
+                JavaScript ist eine interpretierte Programmiersprache. Das bedeutet, dass prinzipiell mit jedem
+                beliebigen Texteditor ein JavaScript-Programm geschrieben und der Quelltext ohne zusätzliche
+                Zwischenschritte direkt in einem Browser ausgeführt werden kann.
+            </p>
+
+            <code-block lang="mermaid">
+                stateDiagram-v2
+
+                JSQT: JavaScript-Quelltext
+                JSCMPWIN: JavaScript-Interpreter Windows
+                JSCMPLIN: JavaScript-Interpreter Linux
+                JSCMPMAC: JavaScript-Interpreter macOS
+                MCSWIN: Maschinencodesequenz Windows
+                MCSLIN: Maschinencodesequenz Linux
+                MCSMAC: Maschinencodesequenz macOS
+
+                JSQT --> JSCMPWIN
+                JSQT --> JSCMPLIN
+                JSQT --> JSCMPMAC
+                JSCMPWIN --> MCSWIN
+                JSCMPLIN --> MCSLIN
+                JSCMPMAC --> MCSMAC
+            </code-block>
+
+            <p>
+                Interpretierte Programmiersprachen benötigen zur Ausführung eines Programms einen Interpreter. Häufig
+                ist es dabei so, dass dieser ein Bestandteil einer sogenannten Laufzeitumgebung ist. Laufzeitumgebungen
+                (oder auch eng.: Runtime Environment, kurz RTE) dienen dazu, dass Anwendungsprogramme auf dem
+                jeweiligen Betriebssystem laufen können. Neben einem Interpreter stellen Laufzeitumgebungen
+                beispielsweise auch Grundfunktionen wie das Lesen und Schreiben von Dateinen, den Zugriff auf
+                Peripheriegeräte (wie Maus, Tastatur, Drucker etc.) zur Verfügung.
+            </p>
+            <p>
+                Neben den Browser gibt es auch die Laufzeitumgebung Node.js in der JavaScript ausgeführt werden kann.
+                Neben den Laufzeitumgebungen für JavaScript gibt es auch Laufzeitumgebungen für andere
+                Programmiersprachen. Bekannte Beispiele wären das Java Runtime Environment (JRE) für das Ausführen von
+                Java-Programmen oder Microsofts .NET Common Language Runtime, in der Programme ausgeführt werden können,
+                die in C#, Visual Basic oder C++ geschrieben sind.
+            </p>
+            <p>
+                Hier noch einen Überblick über das Prinzip von Laufzeitumgebungen und den Zusammenhang zu nativen
+                Anwendungen:
+            </p>
+
+            <code-block lang="mermaid">
+                stateDiagram-v2
+
+                JSAPP: JavaScript-Anwendung
+                JAVAAPP: Java-Anwendung
+                NETAPP: .NET-Anwendung
+                NATAPP: Native-Anwendung
+
+                JSI: Browser/Node.js
+                JRE: JRE
+                CLR: CLR
+
+                OS: Betriebssystem
+
+                JSAPP --> JSI
+                JAVAAPP --> JRE
+                NETAPP --> CLR
+
+                JSI --> OS
+                JRE --> OS
+                CLR --> OS
+                NATAPP --> OS
+            </code-block>
         </chapter>
 
         <chapter title="Vor- und Nachteile" id="compiler-procontra">
