@@ -538,10 +538,10 @@
                 Maschinencode kompiliertes Programm ausführen zu können. Das ist ein wesentlicher Unterschied zu
                 interpretierten Programmen.
             </p>
-            <p>
+            <note>
                 Programme, die für ein bestimmtes Betriebssystem kompiliert wurden, nennt man auch native Programme oder
                 native Anwendungen.
-            </p>
+            </note>
         </chapter>
 
         <chapter title="Interpretierte Programmiersprachen" id="compiler-interpretiert">
