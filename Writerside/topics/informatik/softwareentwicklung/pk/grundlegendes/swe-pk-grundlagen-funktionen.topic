@@ -18,6 +18,62 @@
     </chapter>
 
     <chapter title="Funktionsparameter" id="funktionsparameter">
+        <p>
+            Mithilfe von Funktionsparametern können Informationen an eine Funktion übergeben werden, die dann innerhalb
+            der Funktion zur Verfügung stehen. Um zu definieren, dass eine Funktion Parameter erwartet, werden die Namen
+            der Parameter in fast allen Programmiersprachen in den runden Klammern, der sogenannten Parameterliste,
+            gelistet. Bei streng typisierten Programmiersprachen muss man bei der Funktionsdeklaration auch die
+            Datentypen der einzelnen Parameter definieren.
+        </p>
+
+        <code-block lang="javascript" collapsed-title="Funktionsdeklaration mit Parameter in JavaScript"
+                    collapsible="true">
+            function showMessage(message) {
+                condole.log(message);
+            }
+        </code-block>
+
+        <p>
+            Um die Funktion folglich mit einem konkreten Argument aufzurufen, wird dieses beim Funktionsaufruf meist in
+            den runden Klammern, der Argumentliste, angegeben. In der Praxis verwendet man die Begriffe Parameter und
+            Argument gerne mal als synonym, auch wenn sie eigentlich eine unterschiedliche Bedeutung haben. Unter
+            Parameter versteht man das, was innerhalb der Signatur einer Funktion bzw. Methode aufgeführt ist. Die
+            Signatur einer Funktion bzw. Methode wiederum setzt sich im Falle von JavaScript aus dem Namen und der
+            Anzahl der Parameter zusammen. Unter dem Begriff Argument hingegen versteht man in der Regel das, was
+            konkret der jeweiligen Funktion bzw. Methode beim Aufruf als Wert übergeben wird.
+        </p>
+
+        <code-block lang="javascript" collapsed-title="Funktionsaufruf mit Argument in JavaScript"
+                    collapsible="true">
+            showMessage('Moriz: Hallo Max');
+            showMessage('Max: Hallo Moriz');
+        </code-block>
+
+        <p>
+            Mehrere Funktionsparameter werden meist Kommasepariert in der Parameterliste, also innerhalb der runden
+            Klammern, gelistet. Um eine Funktion, die mehrere Parameter erwartet, aufzurufen, werden auch die
+            entsprechenden Argumente kommasepariert hintereinander aufgeschrieben.
+        </p>
+
+        <code-block lang="javascript" collapsed-title="Funktionsaufruf mit Argument in JavaScript"
+                    collapsible="true">
+            function printPersonInformation(firstName, lastName, age) {
+                console.log('Vorname: ' + firstName);
+                console.log('Nachname: ' + lastName);
+                console.log('Alter: ' + age);
+            }
+
+            printPersonInformation('Max', 'Mustermann', 44);
+            printPersonInformation('Moritz', 'Mustermann', 55);
+        </code-block>
+        <code-block lang="javascript" collapsed-title="Ausgabe" collapsible="true">
+            Vorname: Max
+            Nachname: Mustermann
+            Alter: 44
+            Vorname: Moritz
+            Nachname: Mustermann
+            Alter: 55
+        </code-block>
     </chapter>
 
     <chapter title="Rückgabewerte" id="rueckgabewerte">
