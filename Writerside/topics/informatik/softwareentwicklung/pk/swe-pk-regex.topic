@@ -154,9 +154,21 @@
         </chapter>
 
         <chapter title="Buchstabenbereich [a-z]" id="step1-buchstabenbereich">
+            <p>
+                Um die Buchstaben im angegebenen Bereich zu finden, werden der Anfangsbuchstabe und der Endbuchstabe in
+                eckige Klammern <code>[]</code> mit einem Bindestrich dazwischen <code>-</code> geschrieben. Es wird
+                zwischen Groß- und Kleinschreibung unterschieden. Typ der Ausdruck, der alle Kleinbuchstaben zwischen
+                <code>e</code> und <code>o</code> auswählt, einschließlich sich selbst.
+            </p>
 
             <chapter title="Beispiel" id="step1-buchstabenbereich-beispiel" collapsible="true">
+                <code-block>
+                    abcdefghijklmnopqrstuvwxyz
+                </code-block>
 
+                <code-block>
+                    /[e-o]/g
+                </code-block>
             </chapter>
         </chapter>
 
