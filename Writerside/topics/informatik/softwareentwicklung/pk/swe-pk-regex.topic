@@ -299,6 +299,11 @@
     </chapter>
 
     <chapter title="STEP2: Wiederholungen" id="step2">
+        <p>
+            Einige Sonderzeichen werden verwendet, um anzugeben, wie oft ein Zeichen im Text wiederholt wird. Diese
+            Sonderzeichen sind das Plus <code>+</code>, das Sternchen <code>*</code> und das Fragezeichen
+            <code>?</code>.
+        </p>
 
         <chapter title="Asterisk *" id="step2-asterisk">
 
