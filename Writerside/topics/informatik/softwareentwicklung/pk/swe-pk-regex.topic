@@ -616,9 +616,21 @@
         </chapter>
 
         <chapter title="Dollarzeichen $: Auswahl nach Zeilenende" id="step3-dollar">
+            <p>
+                Lassen Sie uns das <code>$</code>-Zeichen nach dem <code>html</code>-Wert verwenden, um die
+                <code>html</code>-Texte nur am Ende der Zeile zu finden.
+            </p>
 
             <chapter title="Beispiel" id="step3-dollar-beispiel" collapsible="true">
+                <code-block>
+                    https://domain.com/what-is-html.html
+                    https://otherdomain.com/html-elements
+                    https://website.com/html5-features.html
+                </code-block>
 
+                <code-block>
+                    /html$/gm
+                </code-block>
             </chapter>
         </chapter>
 
