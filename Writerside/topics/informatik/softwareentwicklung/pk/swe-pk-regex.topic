@@ -890,9 +890,21 @@
         </chapter>
 
         <chapter title="Gieriger Abgleich" id="step5-geringer-abgleich">
+            <p>
+                RegEx führt standardmäßig einen Greedy-Match durch. Das bedeutet, dass das Matchmaking so lang wie
+                möglich sein wird. Sehen Sie sich das Beispiel unten an. Es bezieht sich auf alle Matches, die auf "r"
+                enden und beliebig sein können vorangestelltes Zeichen. Aber es hört nicht beim ersten Buchstaben
+                <code>r</code> auf.
+            </p>
 
             <chapter title="Beispiel" id="step5-geringer-abgleich-beispiel" collapsible="true">
+                <code-block>
+                    ber beer beeer beeeer
+                </code-block>
 
+                <code-block>
+                    /.*r/
+                </code-block>
             </chapter>
         </chapter>
 
