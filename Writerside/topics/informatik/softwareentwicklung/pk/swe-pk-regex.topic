@@ -685,9 +685,18 @@
         </chapter>
 
         <chapter title="Außer Zahlenzeichen \D" id="step3-ausserzahlen">
+            <p>
+                <code>\D</code> wird verwendet, um nicht-numerische Zeichen zu finden.
+            </p>
 
             <chapter title="Beispiel" id="step3-ausserzahlen-beispiel" collapsible="true">
+                <code-block>
+                    abcABC123 _.:!?
+                </code-block>
 
+                <code-block>
+                    /\D/g
+                </code-block>
             </chapter>
         </chapter>
 
