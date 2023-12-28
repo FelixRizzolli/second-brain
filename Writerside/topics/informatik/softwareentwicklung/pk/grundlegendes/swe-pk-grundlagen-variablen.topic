@@ -5,6 +5,27 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Variablen, Konstanten und Typisierung" id="swe-pk-grundlagen-variablen">
     <show-structure for="chapter,procedure" depth="2"/>
+    
+    <chapter title="Variablen" id="variablen">
+
+        <chapter title="Reservierte Schlüsselwörter" id="variablen-reserviert">
+        </chapter>
+
+        <chapter title="Vergebene Variablennamen: Standardvariablen" id="variablen-standardvariablen">
+        </chapter>
+
+        <chapter title="Erlaubte Zeichen" id="variablen-erlaubt">
+        </chapter>
+
+        <chapter title="Namenskonventionen" id="variablen-amenskonventionen">
+        </chapter>
+    </chapter>
+
+    <chapter title="Konstanten" id="konstanten">
+    </chapter>
+
+    <chapter title="Typisierung" id="typisierung">
+    </chapter>
 
     <chapter title="Quellen" id="quellen">
         <tip>
