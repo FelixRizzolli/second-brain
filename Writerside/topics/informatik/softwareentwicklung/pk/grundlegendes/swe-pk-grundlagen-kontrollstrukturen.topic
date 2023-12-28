@@ -288,6 +288,27 @@
     </chapter>
 
     <chapter title="Schleifen" id="schleifen">
+        <p>
+            Bei der Anwendung von Schleifen in einem Programm geht es um die Wiederholung von bestimmten Vorgängen.
+            Diese Vorgänge können identisch sein oder in Bestandteilen sich von Wiederholung zu Wiederholung nach einem
+            bestimmten Muster ändern. Diese Variation wird durch den Schleifendurchlauf selbst bestimmt und
+            beispielsweise durch die Schleifenvariablen gesteuert. In der Theorie existieren verschiedene
+            Schleifentypen, die auch Eingang in die Programmiersprachen gefunden haben. Es gibt kopfgesteuerte und
+            fußgesteuerte Schleifen:
+        </p>
+
+        <list>
+            <li>
+                Wird die Bedingung, ob die Schleife ein weiteres Mal durchlaufen wird, vor dem Schleifendurchlauf
+                geprüft, so spricht man von einer abweisenden Aussagenschleife bzw. einer <b>kopfgesteuerten
+                Schleife</b>. Ist die Bedingung schon bei der ersten Prüfung nicht erfüllt, so wird die Schleife niemals
+                durchlaufen.
+            </li>
+            <li>
+                Dagegen werden nicht abweisende Schleifen bzw. <b>fußgesteuerte Schleifen</b> mindestens einmal
+                durchlaufen. Das Abbruch- bzw. Terminationskriterium wird am Ende des Schleifendurchlaufs überprüft.
+            </li>
+        </list>
 
         <chapter title="Zählschleifen – die for-Schleife" id="schleifen-for">
 
