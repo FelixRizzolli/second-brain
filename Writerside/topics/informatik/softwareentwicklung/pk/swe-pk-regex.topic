@@ -199,12 +199,12 @@
 
                 <chapter title="Lösung" id="step1-uebungen-basicmatcher-loesung" collapsible="true">
                     <code-block>
-                        0123456789
+                        "Every man takes the limits of his own field of vision for the limits of the world."
+                        ― Arthur Schopenhauer
                     </code-block>
 
                     <code-block>
-                        "Every man takes the limits of his own field of vision for the limits of the world."
-                        ― Arthur Schopenhauer
+                        /of/g
                     </code-block>
                 </chapter>
             </chapter>
