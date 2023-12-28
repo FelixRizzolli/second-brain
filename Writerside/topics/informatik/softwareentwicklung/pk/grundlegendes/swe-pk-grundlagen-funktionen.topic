@@ -87,8 +87,41 @@
     </chapter>
 
     <chapter title="Funktionen im Detail" id="detail">
-
         <chapter title="Der Funktionsaufruf-Stack" id="detail-funktionsaufrufstack">
+            <p>
+                Innerhalb einer Anwendung werden alle Anweisungen der Reihe nach, also von oben nach unten, ausgeführt.
+                Trifft das Programm bei der Ausführung nun auf einen Funktionsaufruf, »springt« er in diese Funktion
+                hinein und führt alle dort enthaltenen Anweisungen aus. Am Ende der jeweiligen Funktion »springt« der
+                Interpreter wieder aus der Funktion heraus und fährt mit der Ausführung der Anweisung fort, die nach dem
+                Funktionsaufruf im Programm steht. Liefert die Funktion dabei einen Rückgabewert, kann mit diesem in dem
+                aufgerufenen Code weitergearbeitet werden.
+            </p>
+            <p>
+                Intern wird dazu ein sogenannter Funktionsaufruf-Stack (bzw. Methodenaufruf-Stack) verwaltet. Dabei
+                handelt es sich um einen »Stapel« von Funktionen, über die nachvollzogen werden kann, welche Funktionen
+                welche andere Funktion aufgerufen hat. Also: Jedes Mal, wenn das Programm in eine aufgerufene Funktion
+                hineinspringt, werden Informationen zu dieser Funktion auf dem Aufrufstack gelegt. Springt das Programm
+                aus der Funktion wider heraus, werden die entsprechenden Informationen wieder von dem Aufrufstack
+                entfernt.
+            </p>
+
+            <img src="swe-pk-grundlagen-funktionen-funktionsaufrufstack.png" alt="Funktionsaufrufstack"/>
+
+            <code-block lang="javascript" collapsed-title="Funktionsaufruf mit Argument in JavaScript"
+                        collapsible="true">
+                function doSomething() {
+                    doSomethingB();
+                }
+                function doSomethingB() {
+                    doSomethingC();
+                }
+                function doSomethingC() {
+                    doSomethingD();
+                }
+                function doSomethingD() {
+
+                }
+            </code-block>
         </chapter>
 
         <chapter title="Ausführungskontexte" id="detail-ausfuehrungskontext">
