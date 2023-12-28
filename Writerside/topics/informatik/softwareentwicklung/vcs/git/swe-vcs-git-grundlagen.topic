@@ -205,6 +205,14 @@
     </chapter>
 
     <chapter title="Überblick (git status)" id="status">
+        <p>
+            Um einen Überblick vom Zustand des Repositorys zu gewinne wird <code>git status</code> ausgeführt. Es zeigt
+            welche Dateien unter der Kontrolle von Git stehen, welche seit dem letzten Commit geändert wurden etc.
+        </p>
+
+        <code-block lang="bash">
+            git status
+        </code-block>
     </chapter>
 
     <chapter title="Repository zum Remote Server übertragen (git push)" id="push">
