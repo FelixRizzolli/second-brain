@@ -759,9 +759,21 @@
         </chapter>
 
         <chapter title="Negativer Lookahead: (?!)" id="step4-negativer-lookahead">
+            <p>
+                Zum Beispiel möchten wir andere Zahlen als den Stundenwert im Text auswählen. Daher müssen wir den
+                negativen Look-Ahead-Ausdruck <code>(?!)</code> nach unserem Ausdruck schreiben, um nur auszuwählen die
+                numerischen Werte, die kein <code>PM</code> nach sich haben. Fügen Sie <code>PM</code> nach dem
+                <code>!</code>-Zeichen in Klammern ein.
+            </p>
 
             <chapter title="Beispiel" id="step4-negativer-lookahead-beispiel" collapsible="true">
+                <code-block>
+                    Date: 4 Aug 3PM
+                </code-block>
 
+                <code-block>
+                    /\d+(?!PM)/g
+                </code-block>
             </chapter>
         </chapter>
 
