@@ -135,7 +135,7 @@
                 <tr>
                     <td><code>a</code></td>
                     <td><code>b</code></td>
-                    <td><code>a&amp;&amp;</code></td>
+                    <td><code>a&amp;&amp;b</code></td>
                 </tr>
                 <tr>
                     <td><code>false</code></td>
@@ -161,6 +161,37 @@
         </chapter>
 
         <chapter title="Der ODER-Operator" id="logisch-oder">
+            <p>
+                Beim ODER-Operator muss mindestens einer der zu vergleichenden Werte <code>true</code> sein.
+            </p>
+
+            <table>
+                <tr>
+                    <td><code>a</code></td>
+                    <td><code>b</code></td>
+                    <td><code>a||b</code></td>
+                </tr>
+                <tr>
+                    <td><code>false</code></td>
+                    <td><code>false</code></td>
+                    <td><code>false</code></td>
+                </tr>
+                <tr>
+                    <td><code>false</code></td>
+                    <td><code>true</code></td>
+                    <td><code>true</code></td>
+                </tr>
+                <tr>
+                    <td><code>true</code></td>
+                    <td><code>false</code></td>
+                    <td><code>true</code></td>
+                </tr>
+                <tr>
+                    <td><code>true</code></td>
+                    <td><code>true</code></td>
+                    <td><code>true</code></td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Der Negationsoperator" id="logisch-negation">
