@@ -322,11 +322,11 @@
                 wird, in die vom Prozessor ausführbare Maschinensprache transformiert. Assemblerprogrammierung ist sehr
                 hardwarenah.
             </p>
-            <p>
+            <note>
                 Assemblersprachen werden für die Entwicklung von Hardwaretreibern oder bei der Programmierung von
                 Software von Mikrocontrollern, da der Treiber meist ohne zeitliche Verzögerung auf die Ein- und Ausgänge
                 zugreifen muss.
-            </p>
+            </note>
 
             <code-block>
                 <![CDATA[
