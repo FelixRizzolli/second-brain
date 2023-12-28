@@ -156,13 +156,50 @@
     </chapter>
 
     <chapter title="Zwischenstand speichern (git commit)" id="commit">
+        <p>
+            Ein Commit ist eine Art Snapshot der bei Bedarf später widerhergestellt werden kann.
+        </p>
+
+        <note>
+            Mehrere kleine Commits sind besser als wenige große! Das gilt umso mehr, wenn an einem Projekt mehrere
+            Entwickler mitarbeiten. Ein paar Commits pro Tag können bei Projekten, an denen aktiv gearbeitet wird
+            sinnvoll sein; für Commits im Fünf-Minuten-Takt gilt dies aber nicht.
+        </note>
 
         <chapter title="Sprache" id="commit-sprache">
+            <warning>
+                Der Befehl git commit führt den Commit nur im lokalen Repository durch. Für die Synchronisation mit
+                externen Repositorys sind die Kommandos <code>git push</code> und <code>git pull</code> zuständig.
+            </warning>
         </chapter>
 
         <chapter title="Der Commit-Befehl" id="commit-befehl">
+            <p>
+                Bei jedem Commit muss mit <code>-m 'message'</code> eine Nachricht angegeben werden, die ganz kurz alle
+                Änderungen zusammenfasst. Die Commit-Message sollte kurz, aber aussagekräftig sein. Sie ist vor allem
+                für andere Entwickler eine wertvolle Information und oft die Basis für eine gezielte Suche.
+            </p>
+
+            <note>
+                Vor jedem Commit müssen alle neuen UND geänderten Dateien mit <code>git add</code> oder
+                <code>git stage</code> hinzugefügt und gestaged werden.
+            </note>
+
+            <code-block lang="bash">
+                git commit -m 'initial commit, hello world'
+            </code-block>
 
             <chapter title="Ohne Zwischenspeichern" id="commit-befehl-ohnezwischenspeicher">
+                <p>
+                    Wird dem Commit-Befehl der zusätzliche Parameter <code>-a</code> mitgegeben, so kann auf
+                    <code>git add</code> und <code>git stage</code> verzichtet werden. Dabei werden alle unter
+                    Git-Kontrolle befindlichen Dateien die sich seit dem letzten Commit geändert haben automatisch
+                    berücksichtigt. Für neu hinzugefügte Dateien wird aber immer noch git add benötigt.
+                </p>
+
+                <code-block lang="bash">
+                    git commit -a -m 'implemented getPerimeter for Rectangle class'
+                </code-block>
             </chapter>
         </chapter>
     </chapter>
