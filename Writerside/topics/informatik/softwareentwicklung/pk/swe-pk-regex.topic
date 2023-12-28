@@ -59,7 +59,7 @@
                 Darüber hinaus können wir testen, ob ein Text den von uns festgelegten Regeln entspricht.
             </p>
             <p>
-                Angenommen, in einer Liste mit Dateinamen sollen nur jene Dateien mit der Dateiendung <path>.pdf</path>
+                Angenommen, in einer Liste mit Dateinamen sollen nur jene Dateien mit der Dateiendung <code>.pdf</code>
                 gefunden werden. Hierfür wird der Ausdrucks <code>^\w+\.pdf$</code> verwendet. Die Bedeutung des
                 Ausdrucks wird Step by Step erklärt.
             </p>
@@ -80,9 +80,21 @@
         </chapter>
 
         <chapter title="Basic Matcher" id="step1-basicmatcher">
+            <p>
+                Das zu findende Zeichen oder Wort wird direkt geschrieben. Es ähnelt einem normalen Suchvorgang. Um
+                beispielsweise das Wort <code>curious</code> im Text zu finden, wird dasselbe eingegeben.
+            </p>
 
             <chapter title="Beispiel" id="step1-basicmatcher-beispiel" collapsible="true">
+                <code-block>
+                    "I have no special talents. I am only passionately curious."
 
+                    ― Albert Einstein
+                </code-block>
+
+                <code-block>
+                    /curious/gm
+                </code-block>
             </chapter>
         </chapter>
 
