@@ -21,6 +21,50 @@
         </p>
 
         <chapter title="if-elseif-else-Statement" id="auswahl-if">
+            <code-block lang="javascript">
+                if (Bedingung1) {
+                    // ...Anweisungsblock 1
+                } else if (Bedingung2) {
+                    // ...Anweisungsblock 2
+                } else {
+                    // ...Anweisungsblock 3
+                }
+            </code-block>
+
+            <p>
+                Sofern die Bedingung <code>Bedingung1</code> hinter dem Schlüsselwort <code>if</code> erfüllt ist, kommt
+                es zur Ausführung von <code>Anweisungsblock 1</code>. Ist die Bedingung nicht erfüllt, so wird die
+                Bedingung <code>Bedingung2</code> im hinter dem <code>else if</code>-Schlüsselwort geprüft. Ist diese
+                erfüllt, so kommt es zur Ausführung von <code>Anweisungsblock 2</code>. Das
+                <code>else if</code>-Statement ist optional und davon können beliebig viele gesetzt werden. Hierbei ist
+                aber auf die Reihenfolge zu achten! Sobald eine Bedingung zutrifft werden die nächsten nicht mehr
+                geprüft. Das <code>else</code>-Statement ist auch optional und kann nur einmal für eine
+                <code>if</code>-Anweisung gesetzt werden. Der Anweisungsblock (im Beispiel
+                <code>Anweisungsblock 3</code>) wird ausgeführt, falls alle Bedingungen, jene des
+                <code>if</code>-Statements als auch jene der else <code>if</code>-Statements nicht zutrafen.
+            </p>
+            <p>
+                Für die zu prüfende Bedingung gilt lediglich, dass diese vom Typ boolean (<code>true</code> oder
+                <code>false</code>) sein muss. Typischerweise kommen die Relationszeichen <code>==</code>,
+                <code>!=</code>, <code>&lt;</code> und <code>&gt;</code> zum Einsatz.
+            </p>
+            <p>
+                Die <code>else if</code>-Anweisung ist eigentlich eine Kombination aus <code>if</code> und
+                <code>else</code>, die Programmierer erfunden haben, um sich das Leben zu erleichtern. Alternative
+                Lösung:
+            </p>
+
+            <code-block lang="javascript">
+                if (Bedingung) {
+                    // ...Anweisungsblock 1
+                } else {
+                    if (Bedingung) {
+                        // ...Anweisungsblock 2
+                    } else {
+                        // ...Anweisungsblock 3
+                    }
+                }
+            </code-block>
         </chapter>
 
         <chapter title="Bedingungsoperator bzw. Auswahloperator" id="auswahl-operator">
