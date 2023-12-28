@@ -53,9 +53,29 @@
         </code-block>
 
         <chapter title="Was sind reguläre Ausdrücke Regex?" id="step1-erklaerung">
+            <p>
+                Reguläre Ausdrücke sind eine Zeichenkette, die ein Suchmuster ausdrückt. Oft als <b>RegEx</b> oder
+                <b>RegExp</b> abgekürzt. Sie werden besonders verwendet, um Wörter in Texten zu finden oder zu ersetzen.
+                Darüber hinaus können wir testen, ob ein Text den von uns festgelegten Regeln entspricht.
+            </p>
+            <p>
+                Angenommen, in einer Liste mit Dateinamen sollen nur jene Dateien mit der Dateiendung <path>.pdf</path>
+                gefunden werden. Hierfür wird der Ausdrucks <code>^\w+\.pdf$</code> verwendet. Die Bedeutung des
+                Ausdrucks wird Step by Step erklärt.
+            </p>
 
             <chapter title="Beispiel" id="step1-erklaerung-beispiel" collapsible="true">
+                <code-block>
+                    readme.md
+                    document.pdf
+                    image.png
+                    music.mp4
+                    manual.pdf
+                </code-block>
 
+                <code-block>
+                    /^\w+\.pdf$/gm
+                </code-block>
             </chapter>
         </chapter>
 
