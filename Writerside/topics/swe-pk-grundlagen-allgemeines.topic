@@ -449,6 +449,30 @@
     </chapter>
 
     <chapter title="Compiler &amp; Interpreter" id="compiler">
+        <p>
+            Als Entwickler speichert man das, was man mit einer Programmiersprache programmiert in ganz gewöhnlichen
+            Textdateien, die auch als Quelldateien (eng. Source Files) bezeichnet werden. Der Inhalt einer solchen Datei
+            wird dann auch als Quelltext bzw. Quellcode (eng. Source Code) bezeichnet. Damit der Computer die
+            Anweisungen, die im Quelltext formuliert sind, auch verstehen und umsetzen kann, muss der Quelltext in ein
+            für den Computer verständliches Format, den Maschinencode (sprich in Nullen und Einsen), übersetzt werden.
+            Dazu gibt es im Wesentlichen zwei verschiedene Wege: zum einen sogenannte Compiler und zum anderen
+            sogenannte Interpreter. Je nachdem, ob eine Programmiersprache einen Compiler oder einen Interpreter
+            verwendet handelt es sich dabei um eine kompilierte Programmiersprache, eine interpretierte
+            Programmiersprache oder um eine sogenannte Zwischensprache.
+        </p>
+
+        <code-block lang="mermaid">
+            stateDiagram-v2
+                DEV: Entwickler
+                QC: Quelltext
+                MC: Maschinencode
+                PC: Computer
+
+                DEV --> QC: versteht
+                QC --> MC: muss übersetzt werden
+                PC --> MC: versteht
+
+        </code-block>
 
         <chapter title="Kompilierte Programmiersprachen" id="compiler-kompiliert">
         </chapter>
