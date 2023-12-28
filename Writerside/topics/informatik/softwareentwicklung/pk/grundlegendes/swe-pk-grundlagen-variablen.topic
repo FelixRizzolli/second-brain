@@ -7,6 +7,26 @@
     <show-structure for="chapter,procedure" depth="2"/>
     
     <chapter title="Variablen" id="variablen">
+        <p>
+            Um mit einem Algorithmus eine Problemstellung zu lösen, ist es in den meisten Fällen notwendig,
+            vorübergehend bestimmte Informationen zwischenzuspeichern. Dies geschieht über sogenannte Variablen. Das
+            sind nichts anderes als veränderliche (variable) Zwischenspeicher, in denen Werte abgelegt werden können und
+            auf die später zugegriffen werden kann.
+        </p>
+        <p>
+            Um eine Variable verwenden zu können, sind zwei Schritte notwendig:
+        </p>
+
+        <list>
+            <li>
+                Die Variablendeklaration – hierbei wird die Variable erstellt, auf die dann im späteren Programmablauf
+                zugegriffen werden kann.
+            </li>
+            <li>
+                Die Variableninitialisierung – nachdem eine Variable deklariert wurde, kann ihr ein Wert zugewiesen
+                werden. Hierbei spricht man oft auch von einer Wertzuweisung.
+            </li>
+        </list>
 
         <chapter title="Reservierte Schlüsselwörter" id="variablen-reserviert">
         </chapter>
