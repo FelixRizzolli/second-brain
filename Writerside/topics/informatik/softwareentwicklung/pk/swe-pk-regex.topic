@@ -871,9 +871,21 @@
         </chapter>
 
         <chapter title="Groß-/Kleinschreibung beachten" id="step5-grosskleinschreibung">
+            <p>
+                Um die Groß-/Kleinschreibung des von uns geschriebenen Ausdrucks zu entfernen, müssen wir das Flag
+                <emphasis>Groß-/Kleinschreibung ignorieren</emphasis> aktivieren.
+            </p>
 
             <chapter title="Beispiel" id="step5-grosskleinschreibung-beispiel" collapsible="true">
+                <code-block>
+                    DOMAIN.COM
+                    TEST.COM
+                    SITE.COM
+                </code-block>
 
+                <code-block>
+                    /\w+\.com$/gmi
+                </code-block>
             </chapter>
         </chapter>
 
