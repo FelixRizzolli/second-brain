@@ -672,6 +672,58 @@
         </chapter>
 
         <chapter title="Zwischensprachen" id="compiler-zwischensprachen">
+            <p>
+                Es gibt einige Programmiersprachen, die sich nicht eindeutig einer der beiden genannten Kategorien
+                (kompiliert und interpretiert) zuordnen lassen, da bei ihnen sowohl Compiler als auch Interpreter zum
+                Einsatz kommen. In Java beispielsweise ist es so, dass der Quelltext durch einen Compiler in sogenannten
+                Bytecode kompiliert wird, eine Art Zwischencode, der seinerseits einen Interpreter benötigt, um
+                ausgeführt werden zu können.
+            </p>
+
+            <code-block lang="mermaid">
+                stateDiagram-v2
+
+                QT: Quelltext
+                CMP: Compiler
+                BC: Bytecode
+                IP: Interpreter
+                MCS: Maschinencodesequenz
+
+                QT --> CMP
+                CMP --> BC
+                BC --> IP
+                IP --> MCS
+            </code-block>
+
+            <p>
+                Der Vorteil davon: Java-Anwendungen müssen nicht (wie bei rein kompilierten Sprachen) auf dem gleichen
+                Betriebssystem kompiliert werden, auf dem sie später ausgeführt werden, da der Bytecode unabhängig vom
+                Betriebssystem ist. Das Einzige, was auf dem jeweiligen Zielbetriebssystem vorhanden sein muss, ist ein
+                Interpreter für diesen Bytecode, mit anderen Worten: eine Laufzeitumgebung für Java.
+            </p>
+
+            <code-block lang="mermaid">
+                stateDiagram-v2
+
+                JAVAQT: Java-Quelltext
+                JAVACMP: Java-Compiler
+                JAVABC: Java-Bytecode
+                JAVAIPWIN: Java-Interpreter Windows
+                JAVAIPLIN: Java-Interpreter Linux
+                JAVAIPMAC: Java-Interpreter macOS
+                MCWIN: Maschinencodesequenz Windows
+                MCLIN: Maschinencodesequenz Linux
+                MCMAC: Maschinencodesequenz macOS
+
+                JAVAQT --> JAVACMP
+                JAVACMP --> JAVABC
+                JAVABC --> JAVAIPWIN
+                JAVABC --> JAVAIPLIN
+                JAVABC --> JAVAIPMAC
+                JAVAIPWIN --> MCWIN
+                JAVAIPLIN --> MCLIN
+                JAVAIPMAC --> MCMAC
+            </code-block>
         </chapter>
 
         <chapter title="Übersicht über verschiedene Programmiersprachen" id="compiler-uebersicht">
