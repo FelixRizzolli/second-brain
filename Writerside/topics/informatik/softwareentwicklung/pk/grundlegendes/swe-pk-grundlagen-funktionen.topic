@@ -125,6 +125,41 @@
         </chapter>
 
         <chapter title="Ausführungskontexte" id="detail-ausfuehrungskontext">
+            <p>
+                Immer wenn in eine neue Funktion hineingesprungen wird, wird damit auch ein neuer sogenannter
+                Ausführungskontext betreten. Dieser Ausführungskontext bestimmt u.a., welche Variablen und Funktionen
+                zur Verfügung stehen. Ein Ausführungskontext legt im Wesentlichen folgende drei Dinge fest:
+            </p>
+            
+            <list>
+                <li>
+                    <b>Gültigkeitsbereich</b>: Welche Variablen, Funktionen und (im Falle eines Ausführungskontextes für
+                    Funktionscode) welche Parameter und welche Argumente stehen direkt im jeweiligen Ausführungskontext
+                    zur Verfügung?
+                </li>
+                <li>
+                    <b>Kette von Gültigkeitsbereichen</b>: Definiert, an welchen Stellen nach z.B. Variablen und
+                    Funktionen gesucht werden soll, wenn im Code Bezeichner verwendet werden, für die im jeweiligen
+                    (eigenen) Gültigkeitsbereich keine entsprechende gleichnamige Variable bzw. Funktion gefunden wurde.
+                </li>
+                <li>
+                    <b>Kontextobjekt</b>: Innerhalb eines Ausführungskontextes steht die besondere Eigenschaft this zur
+                    Verfügung, die das sogenannte Kontextobjekt referenziert.
+                </li>
+            </list>
+
+            <code-block lang="mermaid">
+                stateDiagram-v2
+
+                AK: Ausführungskontext
+                GB: Gültigkeitsbereich
+                KGB: Kette von Gültigkeitsbereichen
+                KO: Kontextobjekt
+
+                AK --> GB
+                AK --> KGB
+                AK --> KO
+            </code-block>
         </chapter>
 
         <chapter title="Gültigkeitsbereiche" id="detail-gueltigkeitsbereiche">
