@@ -635,6 +635,40 @@
         </chapter>
 
         <chapter title="Vor- und Nachteile" id="compiler-procontra">
+            <table>
+                <tr>
+                    <td>Compiler</td>
+                    <td>Interpreter</td>
+                </tr>
+                <tr>
+                    <td>
+                        Programm muss zur Ausführung jedes Mal neu kompiliert werden.
+                    </td>
+                    <td>
+                        Programm kann direkt ausgeführt werden.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ist in der Regel sehr performant, da der Quelltext zur Laufzeit nicht mehr umgewandelt werden
+                        muss.
+                    </td>
+                    <td>
+                        Tendenziell weniger performant als kompilierte Programme, da eine Umwandlung des Quelltextes zur
+                        Laufzeit des Programms stattfindet. Häufig kommen heutzutage in diesem Zusammenhang auch
+                        sogenannte Just-in-Time-Compiler (JIT) zum Einsatz, die den Quelltext bzw. häufig ausgeführten
+                        Quelltext in Maschinencode umwandeln, der dann relativ schnell ausgeführt werden kann.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Durch den zusätzlichen Kompilierungsschritten werden Syntaxfehler schneller erkannt.
+                    </td>
+                    <td>
+                        Da Syntaxfehler erst zur Laufzeit erkannt werden, können sie schnell übersehen werden.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter title="Zwischensprachen" id="compiler-zwischensprachen">
