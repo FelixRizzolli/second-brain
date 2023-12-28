@@ -825,6 +825,11 @@
     </chapter>
 
     <chapter title="STEP5: Flaggen" id="step5">
+        <p>
+            Flags ändern die Ausgabe des Ausdrucks. Aus diesem Grund werden Flags auch als <code>Modifikatoren</code>
+            bezeichnet. Legt fest, ob der eingegebene Ausdruck Text als separate Zeilen behandelt, Groß-/Kleinschreibung
+            beachtet oder alle Übereinstimmungen findet. Fahren Sie mit fort nächster Schritt, um die Flaggen zu lernen.
+        </p>
 
         <chapter title="Globale Flagge" id="step5-globale-flagge">
 
