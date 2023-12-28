@@ -850,9 +850,23 @@
         </chapter>
 
         <chapter title="Mehrzeiliges Flag" id="step5-mehrzeiliges-flag">
+            <p>
+                Regex sieht den gesamten Text als eine Zeile. Aber wir verwenden das <code>multiline-</code>Flag, um
+                jede Zeile separat zu behandeln. Auf diese Weise schreiben wir die Ausdrücke entsprechend dem Zeilenende
+                für jede Zeile separat. Aktivieren Sie nun das <code>multiline</code>-Flag, um alle Übereinstimmungen zu
+                finden.
+            </p>
 
             <chapter title="Beispiel" id="step5-mehrzeiliges-flag-beispiel" collapsible="true">
+                <code-block>
+                    domain.com
+                    test.com
+                    site.com
+                </code-block>
 
+                <code-block>
+                    /\w+\.com$/gm
+                </code-block>
             </chapter>
         </chapter>
 
