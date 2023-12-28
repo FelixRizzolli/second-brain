@@ -652,9 +652,19 @@
         </chapter>
 
         <chapter title="Außer Wortzeichen \W" id="step3-ausserwort">
+            <p>
+                Der Ausdruck <code>\W</code> wird verwendet, um andere Zeichen als Buchstaben, Zahlen und Unterstriche
+                zu finden.
+            </p>
 
             <chapter title="Beispiel" id="step3-ausserwort-beispiel" collapsible="true">
+                <code-block>
+                    abcABC123 _.:!?
+                </code-block>
 
+                <code-block>
+                    /\W/g
+                </code-block>
             </chapter>
         </chapter>
 
