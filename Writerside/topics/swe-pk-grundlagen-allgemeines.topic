@@ -463,14 +463,15 @@
 
         <code-block lang="mermaid">
             stateDiagram-v2
-                DEV: Entwickler
-                QC: Quelltext
-                MC: Maschinencode
-                PC: Computer
 
-                DEV --> QC: versteht
-                QC --> MC: muss übersetzt werden
-                PC --> MC: versteht
+            DEV: Entwickler
+            QC: Quelltext
+            MC: Maschinencode
+            PC: Computer
+
+            DEV --> QC: versteht
+            QC --> MC: muss übersetzt werden
+            PC --> MC: versteht
         </code-block>
 
         <chapter title="Kompilierte Programmiersprachen" id="compiler-kompiliert">
@@ -484,12 +485,13 @@
 
             <code-block lang="mermaid">
                 stateDiagram-v2
-                    QC: Quelltext
-                    CMP: Compiler
-                    MC: Maschinencode
 
-                    QC --> CMP
-                    CMP --> MC
+                QC: Quelltext
+                CMP: Compiler
+                MC: Maschinencode
+
+                QC --> CMP
+                CMP --> MC
             </code-block>
 
             <p>
@@ -512,20 +514,21 @@
 
             <code-block lang="mermaid">
                 stateDiagram-v2
-                    CPPQT: C++-Quelltext
-                    CPPCMPWIN: C++-Compiler Windows
-                    CPPCMPLIN: C++-Compiler Linux
-                    CPPCMPMAC: C++-Compiler macOS
-                    MCWIN: Ausführbare Maschinencodedatei Windows
-                    MCLIN: Ausführbare Maschinencodedatei Linux
-                    MCMAC: Ausführbare Maschinencodedatei macOS
 
-                    CPPQT --> CPPCMPWIN
-                    CPPQT --> CPPCMPLIN
-                    CPPQT --> CPPCMPMAC
-                    CPPCMPWIN --> MCWIN
-                    CPPCMPLIN --> MCLIN
-                    CPPCMPMAC --> MCMAC
+                CPPQT: C++-Quelltext
+                CPPCMPWIN: C++-Compiler Windows
+                CPPCMPLIN: C++-Compiler Linux
+                CPPCMPMAC: C++-Compiler macOS
+                MCWIN: Ausführbare Maschinencodedatei Windows
+                MCLIN: Ausführbare Maschinencodedatei Linux
+                MCMAC: Ausführbare Maschinencodedatei macOS
+
+                CPPQT --> CPPCMPWIN
+                CPPQT --> CPPCMPLIN
+                CPPQT --> CPPCMPMAC
+                CPPCMPWIN --> MCWIN
+                CPPCMPLIN --> MCLIN
+                CPPCMPMAC --> MCMAC
             </code-block>
 
             <p>
