@@ -280,9 +280,19 @@
             </chapter>
 
             <chapter title="Übung: Nummernkreis" id="step1-uebungen-nummerkreis">
+                <p>
+                    Geben Sie einen Ausdruck ein, um Zahlen von <code>2</code> bis <code>7</code> im Text auszuwählen.
+                    <code>2</code> und <code>7</code> sollten auch in diesem Bereich enthalten sein.
+                </p>
 
                 <chapter title="Lösung" id="step1-uebungen-nummerkreis-loesung" collapsible="true">
+                    <code-block>
+                        0123456789
+                    </code-block>
 
+                    <code-block>
+                        /[2-7]/g
+                    </code-block>
                 </chapter>
             </chapter>
         </chapter>
