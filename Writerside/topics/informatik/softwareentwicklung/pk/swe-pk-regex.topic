@@ -499,9 +499,20 @@
 
     <chapter title="STEP3" id="step3">
         <chapter title="Klammern (): Gruppierung" id="step3-klammern">
+            <p>
+                Wir können einen Ausdruck gruppieren und diese Gruppen verwenden, um einige Regeln zu referenzieren oder
+                durchzusetzen. Um einen Ausdruck zu gruppieren, schließen wir <code>()</code> in Klammern ein. Fürs
+                Erste gruppieren Sie einfach <code>haa</code> unten.
+            </p>
 
             <chapter title="Beispiel" id="step3-klammern-beispiel" collapsible="true">
+                <code-block>
+                    ha-ha,haa-haa
+                </code-block>
 
+                <code-block collapsed-title="Lösung" collapsible="true">
+                    /(haa)/g
+                </code-block>
             </chapter>
         </chapter>
 
