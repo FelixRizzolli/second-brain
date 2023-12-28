@@ -7,6 +7,51 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Geschichte zur Programmierung" id="geschichte">
+        <p>
+            Erste Ideen, die mit dem heutigen Ansatz der Programmierung im weitestgehenden Sinne vergleichbar sind,
+            stammen bereits aus dem 17. Jh. Als erste mechanische Rechenmaschine (1635) wird die sog. Rechenuhr des
+            deutschen Mathematikers Wilhelm Schickard (1592-1635) bezeichnet. Den Aufzeichnungen zufolge sollte sie alle
+            vier Grundrechenarten mit Zahlen bis zu einer Größe von einer Million beherrschen. Ob diese Maschine
+            tatsächlich gebaut wurde, ist nicht klar. Möglich wäre es jedoch gemäß der Aufzeichnungen gewesen. Den
+            gleichen Ansatz verfolgt die 1643 gebaute Pascaline des französischen Mathematikers Blaise Pascal
+            (1623–1662). Aufgrund von Ungenauigkeiten in der Konstruktion produzierte die Maschine jedoch fehlerhafte
+            Ergebnisse. Zu erwähnen ist in diesem Zusammenhang auch die Einführung des programmierbaren Webstuhls von
+            Joseph-Marie Jacquard. Der Webstuhl wurde durch Lochstreifen gesteuert, d. h., das zu webende Muster wurde
+            damit festgelegt. Die ersten Ideen zur Programmierung von Rechnern gehen zurück auf Charles Babbage
+            (1791–1871). Er entwarf zwei Rechenmaschinen, die Difference Engine (1823) und die Analytical Engine (1834),
+            die jedoch niemals fertiggestellt wurden. Die Operation, die ausgeführt werden sollte, war die Addition von
+            27-stelligen Dezimalzahlen. Die Logik steckte ohne Programmiersprache in einfachen Maschinenkonstruktionen.
+            Als Pionier auf dem Gebiet der Programmierung gilt Konrad Zuse (1910–1995). Konrad Zuse wurde am 22. Juni
+            1910 in Berlin geboren. Er hatte die Vision, stupide Rechenarbeiten auf eine Maschine zu übertragen. Konrad
+            Zuse wollte binär arbeitende Rechner bauen. Diese sollten mit sogenannten bistabilen Bauelementen arbeiten.
+            Nach diesem Prinzip, der Aussagenlogik, sollten nicht nur Zahlen verarbeitet werden, sondern die gesamte
+            Maschine sollte darauf beruhen. Die erste Maschine, Z1, konstruierte er in den Jahren 1936 bis 1938. Es war
+            die erste programmierbare Rechenmaschine der Welt. Einen Nachbau kann man heute im Museum für Verkehr und
+            Technik in Berlin besichtigen. Weiterentwicklungen waren die Z2 (Konstruktion 1938 bis 1939) und die Z3
+            (Konstruktion 1941). Die Z3 beinhaltete ca. 600 Relais im Rechenwerk und 1.400 Relais im Speicher. Die Z3
+            gilt heute als der erste funktionsfähige, frei programmierbare, auf dem binären Zahlensystem und der binären
+            Schaltungstechnik basierende Rechner der Welt. Die Z4, begonnen im Jahr 1942, wurde 1949 nach dem Krieg
+            restauriert und war ab 1950 fünf Jahre lang an der Eidgenössischen Technischen Hochschule in Zürich im
+            Einsatz. In den Jahren 1942 bis 1946 arbeitete Konrad Zuse an einer universellen algorithmischen Sprache,
+            Plankalkül. Plankalkül enthielt unter anderem Zuweisungszeichen, Datenstrukturen, Datentypen wie Gleit- und
+            Festkommazahlen, Unterprogrammtechnik, verschiedene Schleifentypen und darüber hinaus umfangreiche
+            Abhandlungen zu Schachprogrammen. Es wurde erst 1971 veröffentlicht.
+        </p>
+        <p>
+            Zur Macht der Computer soll Konrad Zuse gesagt haben:
+        </p>
+
+        <tip>
+            »Wenn die Computer zu mächtig werden, dann zieht doch einfach den Stecker aus der Steckdose«.
+        </tip>
+
+        <note>
+            <p><b>WICHTIG!</b></p>
+
+            <p>
+                Auch die historische Entwicklung von Programmiersprachen spielt bis heute eine große Rolle.
+            </p>
+        </note>
 
         <chapter title="Tabelle bekannter und zugleich historischer Programmiersprachen" id="geschichte-tabelle">
         </chapter>
