@@ -6,6 +6,39 @@
        title="Ausdrücke, Operatoren und Operanden" id="swe-pk-grundlagen-ausdruecke">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einführung" id="einfuehrung">
+    </chapter>
+
+    <chapter title="Arithmetische Operatoren" id="arithmetisch">
+
+        <chapter title="Konkatenationsoperator" id="arithmetisch-konkatenation">
+        </chapter>
+
+        <chapter title="Zuweisungsoperatoren" id="arithmetisch-zuweisung">
+        </chapter>
+
+        <chapter title="Vergleichsoperatoren" id="arithmetisch-vergleich">
+        </chapter>
+    </chapter>
+
+    <chapter title="Logische Operatoren" id="logisch">
+
+        <chapter title="Der UND-Operator" id="logisch-und">
+        </chapter>
+
+        <chapter title="Der ODER-Operator" id="logisch-oder">
+        </chapter>
+
+        <chapter title="Der Negationsoperator" id="logisch-negation">
+        </chapter>
+    </chapter>
+
+    <chapter title="Zugriffsoperatoren" id="zugriff">
+    </chapter>
+
+    <chapter title="Bereichsauflösungsoperatoren" id="bereichsaufloesung">
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
