@@ -6,4 +6,16 @@
        title="Tags" id="swe-vcs-git-tags">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler, 2020
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://git-scm.com/docs/git-check-ref-format" ignore-vars="true">
+                https://git-scm.com/docs/git-check-ref-format
+            </a>, 2020-11-11 07:10
+        </tip>
+    </chapter>
 </topic>
