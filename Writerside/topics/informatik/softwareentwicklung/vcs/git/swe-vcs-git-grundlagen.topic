@@ -61,13 +61,80 @@
     </chapter>
 
     <chapter title="Repository herunterladen (git clone)" id="clone">
-
         <chapter title="Repository (Begriff) mit GitHub als Beispiel" id="clone-github">
+            <p>
+                Ein Repository (wörtlich: Depot, Lager) ist die Sammlung aller Dateien eines Projekts inklusive
+                alter/geänderter Versionen. In GitHub können zusammen mit einem Repository auch weitere Daten verwaltet
+                werden (Issues, Dokumentation im Wiki-Format...).
+            </p>
+
+            <list>
+                <li>
+                    Mit Public ist das Repository für jeden sichtbar. Jeder kann die Dateien lesen und mit dem Befehl
+                    <code>git clone</code> herunterladen (aber nicht verändern).
+                </li>
+                <li>
+                    Private kennzeichnet Repositorys auf die nur der Besitzer selbst und von jenem ausgewählte
+                    Entwickler Zugriff haben.
+                </li>
+            </list>
+
+            <warning>
+                Auf einen öffentlichen Repository hat jeder Zugriff, so ist es kritisch, wenn dort vertrauliche Daten
+                wie beispielsweise Passwörter landen.
+            </warning>
+
+            <p>
+                Die Adresse des Repositorys ergibt sich aus https://github.com, dem Accountnamen und dem Projektnamen:
+                https://github.com/&lt;accountname&gt;/&lt;reponame&gt;
+            </p>
 
             <chapter title="Mitarbeit ohne Zugriffsrechte" id="clone-github-ohnerechte">
+                <p>
+                    Hat man keine Zugriffsrechte auf einem Projekt und möchte trotzdem einen Beitrag leisten, da man
+                    eine innovative Idee hat oder die Lösung für ein Problem, so kann eine Kopie des fremden Projekts
+                    auf dem eigenen Account erstellt werden. Diese Kopie wird Fork genannt. Auf dieser Kopie können nun
+                    Änderungen durchgeführt werden. Diese Änderungen können dann dem externen Projekt in Form eines
+                    sogenannten Pull-Requests angeboten werden (Auf GitLab wird das Merge-Request genannt).
+                </p>
             </chapter>
 
             <chapter title="Repository herunterladen" id="clone-github-herunterladen">
+                <p>
+                    Um eine Kopie eines Repositorys von GitHub auf dem lokalen Rechner zu erstellen wird der Befehl
+                    <code>git clone</code> verwendet. Dabei muss in der Konsole zuerst in das Projekt-Verzeichnis
+                    gewechselt werden.
+                </p>
+
+                <code-block lang="bash">
+                    cd mein-arbeitsverzeichnis
+                </code-block>
+
+                <code-block lang="bash">
+                    git clone https://github.com/FelixRizzolli/felixrizzolli.github.io.git
+                </code-block>
+
+                <warning>
+                    Es soll vermieden werden, ein Git-Repository in einem Verzeichnis zu speichern, welches mit einem
+                    Cloudspeicher oder zwischen mehreren Rechnern synchronisiert wird. Synchronisations-Tools können Git
+                    aus dem Gleichgewicht bringen.
+                </warning>
+
+                <note>
+                    Bei der erstmaligen Ausführung von git clone auf ein privates Repository verlangt Git eine
+                    Authentifizierung.
+                </note>
+
+                <note>
+                    <p><b>Nicht <code>cd</code> vergessen!</b></p>
+
+                    <p>
+                        <code>git clone</code> erzeugt ein neues Verzeichnis. Alle weiteren <code>git</code>-Kommandos
+                        sind in diesem Verzeichnis auszuführen. Wird der Wechsel mittels <code>cd</code> in das
+                        jeweilige Verzeichnis vergessen, so beklagt sich git darüber, dass es im aktuellen Verzeichnis
+                        kein Git-Repository erkannt wurde.
+                    </p>
+                </note>
             </chapter>
         </chapter>
     </chapter>
