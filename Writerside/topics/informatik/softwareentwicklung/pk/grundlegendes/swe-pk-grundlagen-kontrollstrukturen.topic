@@ -530,6 +530,8 @@
             </chapter>
 
             <chapter title="Flussdiagramm" id="schleifen-dowhile-flussdiagramm">
+                <img src="swe-pk-grundlagen-kontrollstrukturen-dowhile-flussdiagramm.png"
+                     alt="Flussdiagramm der do-while-Schleife"/>
             </chapter>
 
             <chapter title="Kopfgesteuerte vs. fußgesteuerte Schleifen" id="schleifen-dowhile-unterschiede">
