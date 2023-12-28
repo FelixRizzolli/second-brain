@@ -68,6 +68,34 @@
         </chapter>
 
         <chapter title="Bedingungsoperator bzw. Auswahloperator" id="auswahl-operator">
+            <p>
+                Für weniger komplexe Situationen können <code>if else</code>-Verzweigungen mithilfe des
+                Bedingungsoperators <code>?:</code> ausgedrückt werden. Dieser erwartet drei Operanden: Eine Bedingung
+                und zwei Ausdrücke, von denen je nach Ergebnis der Bedingung einer ausgeführt wird. Bedingte Anweisungen
+                und Verzweigungen dienen dazu, abhängig von einer oder mehreren Bedingungen einen von mehreren Wegen im
+                Programm einzuschlagen und die darin enthaltenen Anweisungen auszuführen. Der Bedingungsoperator dagegen
+                dient dazu, einer Variablen abhängig von einer einzelnen Bedingung einen von zwei Werten zuzuweisen.
+            </p>
+            <p>
+                Syntax: <code>Bedingung ? Ausdruck1: Ausdruck2;</code>
+            </p>
+
+            <code-block lang="javascript">
+                label1.text = checkbox1.checked ? "Rot" : "Grün";
+            </code-block>
+
+            <p>
+                Ist die Checkbox ausgewählt, dann ist der Rückgabewert <code>Rot</code>, ist das nicht der Fall, dann
+                lautet der Rückgabewert <code>Grün</code>. Mit einem <code>if else</code>-Statement würde es wird folgt
+                aussehen:
+            </p>
+
+            <code-block lang="javascript">
+                if (checkbox1.checked == true)
+                    label1.text = "Rot";
+                else
+                    label1.text = "Grün";
+            </code-block>
         </chapter>
 
         <chapter title="Fallunterscheidung: switch-Verzweigung" id="auswahl-switch">
