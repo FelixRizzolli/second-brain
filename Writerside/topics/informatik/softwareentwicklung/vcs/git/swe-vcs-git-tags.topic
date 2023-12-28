@@ -27,6 +27,23 @@
     </chapter>
 
     <chapter title="Tags auflisten" id="list">
+        <p>
+            Mit dem Befehl <code>git tag</code> oder <code>git tag --list</code> lassen sich alle Tags in alphabetischer
+            Reihenfolge auflisten. Dabei wird aber beispielsweise v0.7 vor v0.12 gelistet, da 7 nach 1 kommt. Damit Tags
+            in der richtigen Reihenfolge erscheinen muss eine entsprechende Nomenklatur überlegt werden: falls es mehr
+            als 10 Versionsnummern geben kann, dann z.B. v0.01. Tags können auch mit
+            <code>git tag --sort=committerdate</code> nach dem Commit-Zeitpunkt sortiert werden.
+        </p>
+
+        <code-block lang="bash">
+            git tag
+        </code-block>
+        <code-block lang="bash">
+            git tag --list
+        </code-block>
+        <code-block lang="bash">
+            git tag --sort=committerdate
+        </code-block>
     </chapter>
 
     <chapter title="Einfache Tags vs annotierte Tags" id="typen">
