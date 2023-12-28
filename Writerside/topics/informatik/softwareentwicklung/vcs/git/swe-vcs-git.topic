@@ -84,14 +84,40 @@
     </chapter>
 
     <chapter title="Installation" id="installation">
+        <note>
+            <p><b>Git ohne Installation</b></p>
+
+            <p>
+                In manchen Entwicklungsumgebungen wie beispielsweise Visual Studio oder Xcode sind Git-Bibliotheken bzw.
+                das Kommando <code>git</code> direkt enthalten.
+            </p>
+        </note>
 
         <chapter title="Linux" id="installation-linux">
+            <list>
+                <li>Debian, Raspbian, Ubuntu: <code>apt install git</code></li>
+                <li>CentOS/RHEL: <code>yum install git</code></li>
+                <li>Fedora: <code>dnf install git</code></li>
+                <li>SUSE/openSUSE: <code>zypper install git</code></li>
+            </list>
         </chapter>
 
         <chapter title="macOS (mit Homebrew)" id="installation-macos">
+            <list>
+                <li>In Xcode ist git bereits fix integriert</li>
+                <li>Homebrew: <a href="https://brew.sh">https://brew.sh</a></li>
+                <li>Command: <code>brew install git</code></li>
+            </list>
         </chapter>
 
         <chapter title="Windows" id="installation-windows">
+            <p>
+                Für Windows wird Git mit ein <a href="https://git-scm.com/downloads">Setup-Programm</a> installiert, was
+                auch gleich eine Terminal-Umgebung, die Git Bash mit den wichtigsten, aus der Linux-Welt bekannten
+                Komponenten, darunter die Shell <b>bash</b> sowie Kommandos wie <code>ls</code>, <code>find</code>,
+                <code>grep</code>, <code>tar</code>, <code>gzip</code> usw., mit installiert. Ebenfalls inkludiert ist
+                die Git GUI, eine grafische Git-Benutzeroberfläche.
+            </p>
         </chapter>
     </chapter>
 
