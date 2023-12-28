@@ -7,14 +7,56 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="GIT konfigurieren" id="konfigurieren">
+        <p>
+            Git kann zwar auch lokal verwendet werden, doch es ist sinnvoll bereits ein Repository auf einem externen
+            Git-Server zu erstellen, da die meisten Funktionen erst offensichtlich werden, wenn es zwei Repositorys gibt
+            - ein lokales und ein externes.
+        </p>
 
         <chapter title="Name und E-Mail-Adresse einstellen (git config)" id="konfigurieren-config">
+            <code-block lang="bash">
+                git config --global user.name "Felix Rizzolli"
+            </code-block>
+            <code-block lang="bash">
+                git config --global user.email "felix.rizzolli@outlook.de"
+            </code-block>
+
+            <p>
+                Mit dem Befehl <code>git config --global</code> werden Defaulteinstellungen für alle Git-Repositorys auf
+                dem Rechner in die <path>.gitconfig</path>-Datei gespeichert. Diese befindet sich im Home-Verzeichnis.
+                Die E-Mail-Adresse sollte mit der eigenen Adresse auf der jeweiligen Git-Plattform übereinstimmen. Diese
+                Daten werden nämlich später zusammen mit jedem Commit gespeichert.
+            </p>
         </chapter>
 
         <chapter title="Sprache" id="konfigurieren-sprache">
+            <p>
+                Es ist sinnvoll sich die Sprache von Git auf Englisch einzustellen, da es viel mehr englische Artikel,
+                zu beispielsweise Fehlermeldungen, im Internet gibt als Deutsche und man so viel schneller fündig wird.
+            </p>
+
+            <code-block lang="bash">
+                LANGUAGE=en git status
+            </code-block>
+
+            <code-block lang="bash">
+                export LANGUAGE=en
+            </code-block>
         </chapter>
 
         <chapter title="Dateien ausschließen (.gitignore)" id="konfigurieren-gitignore">
+            <p>
+                Die Dateien, die durch den Compiler erzeugt werden, die Backup-Dateien des jeweiligen Editors und auch
+                Dateien mit vertraulichen Informationen (wie Passwörtern) sollten nicht in der Repository landen und auf
+                einem Git-Server hochgeladen werden. In der Datei <path>.gitignore</path> können Dateien und Pfade
+                definiert werden, die von Git ignoriert werden sollen.
+            </p>
+
+            <code-block lang="bash">
+                # Java Dateien
+                *.class
+                *~
+            </code-block>
         </chapter>
     </chapter>
 
