@@ -555,9 +555,23 @@
         </chapter>
 
         <chapter title="Pipe-Zeichen |" id="step3-pipe">
+            <p>
+                Damit kann festgelegt werden, dass ein Ausdruck in verschiedenen Ausdrücken enthalten sein kann. Daher
+                werden alle möglichen Anweisungen durch das Pipe-Zeichen <code>|</code> getrennt geschrieben. Dies
+                unterscheidet sich vom Zeichensatz <code>[abc]</code>, Zeichensätze arbeiten auf Zeichenebene.
+                Alternativen befinden sich auf Ausdrucksebene. Beispielsweise würde der folgende Ausdruck sowohl
+                <code>cat</code> als auch <code>rat</code> auswählen. Fügen Sie am Ende des Ausdrucks ein weiteres
+                Pipe-Zeichen <code>|</code> hinzu und geben Sie dog ein, damit alle Wörter werden ausgewählt.
+            </p>
 
             <chapter title="Beispiel" id="step3-pipe-beispiel" collapsible="true">
+                <code-block>
+                    cat rat dog
+                </code-block>
 
+                <code-block>
+                    /(c|r)at|dog/g
+                </code-block>
             </chapter>
         </chapter>
 
