@@ -29,6 +29,14 @@
         </list>
 
         <chapter title="Reservierte Schlüsselwörter" id="variablen-reserviert">
+            <p>
+                Die meisten Programmiersprachen haben einige reservierte Schlüsselwörter, die Bestandteil der Sprache
+                sind und als Kennzeichner für den Compiler bzw. Interpreter dienen. Würden diese Schlüsselwörter als
+                Variablennamen verwendet werden, käme der Compiler/Interpreter durcheinander und würde entsprechend
+                einen Fehler melden. Beispiele aus der Programmiersprache JavaScript wären: <code>let</code>,
+                <code>var</code>, <code>async</code>, <code>await</code>, <code>break</code>, <code>case</code>,
+                <code>class</code>, <code>catch</code>, <code>const</code>, ...
+            </p>
         </chapter>
 
         <chapter title="Vergebene Variablennamen: Standardvariablen" id="variablen-standardvariablen">
