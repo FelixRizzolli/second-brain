@@ -247,11 +247,32 @@
     </chapter>
 
     <chapter title="Dateien umbenennen, verschieben und löschen (git mv, git rm)" id="dateien">
-
         <chapter title="Das Kommando git mv" id="dateien-mv">
+            <p>
+                Der Befehl <code>git mv</code> benennt eine bereits im Repository befindliche Datei um. Mit dem Kommando
+                kann aber auch eine Datei in ein anderes Verzeichnis verschoben werden. Beim nächsten Commit wird dabei
+                die Datei am neuen Ort gespeichert.
+            </p>
+
+            <code-block lang="bash">
+                git mv &lt;oldfilename&gt; &lt;newfilename&gt;
+            </code-block>
+
+            <code-block lang="bash">
+                git mv &lt;file&gt; &lt;into-another-directory&gt;/
+            </code-block>
         </chapter>
 
         <chapter title="Das Kommando git rm" id="dateien-rm">
+            <p>
+                Mit dem Befehl <code>git rm</code> wird eine Datei sowohl aus dem Arbeitsverzeichnis als auch aus dem
+                Repository gelöscht. Wenn die Datei seit dem letzten Commit verändert wurde, muss die Option
+                <code>--force</code> hinzugefügt werden.
+            </p>
+
+            <code-block lang="bash">
+                git rm
+            </code-block>
         </chapter>
     </chapter>
 
