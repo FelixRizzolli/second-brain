@@ -595,9 +595,23 @@
         </chapter>
 
         <chapter title="Caret-Zeichen ^: Auswahl nach Zeilenanfang" id="step3-caret">
+            <p>
+                Wir haben <code>[0-9]</code> verwendet, um Zahlen zu finden. Um nur Zahlen am Anfang einer Zeile zu
+                finden, stellen Sie diesem Ausdruck das <code>^</code>-Zeichen voran.
+            </p>
 
             <chapter title="Beispiel" id="step3-caret-beispiel" collapsible="true">
+                <code-block>
+                    Basic Omellette Recipe
 
+                    1. 3 eggs, beaten
+                    2. 1 tsp sunflower oil
+                    3. 1 tsp butter
+                </code-block>
+
+                <code-block>
+                    /^[0-9]/gm
+                </code-block>
             </chapter>
         </chapter>
 
