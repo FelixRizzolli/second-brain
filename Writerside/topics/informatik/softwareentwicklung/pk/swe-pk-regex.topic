@@ -193,9 +193,19 @@
 
         <chapter title="Übungen" id="step1-uebungen">
             <chapter title="Übung: Basic Matcher" id="step1-uebungen-basicmatcher">
+                <p>
+                    Schreiben Sie den Ausdruck, der die Wörter of im Text auswählt.
+                </p>
 
                 <chapter title="Lösung" id="step1-uebungen-basicmatcher-loesung" collapsible="true">
+                    <code-block>
+                        0123456789
+                    </code-block>
 
+                    <code-block>
+                        "Every man takes the limits of his own field of vision for the limits of the world."
+                        ― Arthur Schopenhauer
+                    </code-block>
                 </chapter>
             </chapter>
 
