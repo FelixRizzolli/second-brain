@@ -717,9 +717,18 @@
         </chapter>
 
         <chapter title="Außer Leerzeichen \S" id="step3-ausserleer">
+            <p>
+                <code>\S</code> wird verwendet, um Nicht-Leerzeichen zu finden.
+            </p>
 
             <chapter title="Beispiel" id="step3-ausserleer-beispiel" collapsible="true">
+                <code-block>
+                    abcABC123 _.:!?
+                </code-block>
 
+                <code-block>
+                    /\S/g
+                </code-block>
             </chapter>
         </chapter>
     </chapter>
