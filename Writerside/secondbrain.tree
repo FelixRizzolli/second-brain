@@ -72,6 +72,7 @@
             <toc-element topic="swe-cleancode.topic"/>
             <toc-element topic="swe-vcs.topic">
                 <toc-element topic="swe-vcs-git.topic">
+                    <toc-element topic="swe-vcs-git-branches.topic"/>
                     <toc-element topic="swe-vcs-git-grundlagen.topic"/>
                     <toc-element topic="swe-vcs-git-commits.topic"/>
                     <toc-element topic="swe-vcs-git-hooks.topic"/>
