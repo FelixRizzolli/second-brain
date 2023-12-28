@@ -7,6 +7,28 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Einführung" id="einfuehrung">
+        <p>
+            Ein Ausdruck ist eine mathematische Formel, die aus Operanden und Operatoren. Im Unterschied zu Anweisungen 
+            haben Ausdrücke immer ein Ergebnis, das durch den Ausdruck zurückgeliefert wird. Ein Ausdruck kann auch teil 
+            einer Anweisung sein. Im Beispiel <code>5 * 17</code> wäre das Ergebnis <code>85</code>, Der Operator ist 
+            <code>*</code> und die Operanden sind <code>5</code> und <code>17</code>. In der Praxis können Ausdrücke 
+            durchaus komplexer sein, mehrere Operanden, verschiedene Operatoren, Funktionsaufrufe etc. enthalten. Als 
+            Operanden können sowohl Variablen als auch einfache Werte (sogenannte Literale) verwendet werden. Operatoren 
+            verknüpfen innerhalb eines Ausdrucks die einzelnen Operanden, wobei je nach Anzahl der Operanden zwischen 
+            folgenden Arten von Operatoren unterschieden wird:
+        </p>
+        
+        <list>
+            <li>unärer Operator – ein Operator, der sich auf einen einzigen Operanden bezieht.</li>
+            <li>binärer Operator – ein Operator, der sich auf zwei Operanden bezieht.</li>
+            <li>ternärer Operator – ein Operator, der sich auf drei Operanden bezieht.</li>
+        </list>
+
+        <p>
+            Beispielbeschreibung aus JavaScript:
+        </p>
+
+        <img src="swe-pk-grundlagen-ausdruecke-anweisung.png" alt="Beispiel einer Anweisung in JavaScript"/>
     </chapter>
 
     <chapter title="Arithmetische Operatoren" id="arithmetisch">
