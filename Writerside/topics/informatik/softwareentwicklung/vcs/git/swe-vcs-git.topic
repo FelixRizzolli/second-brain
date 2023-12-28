@@ -29,6 +29,19 @@
     </chapter>
 
     <chapter title="Die Geschichte" id="geschichte">
+        <p>
+            Linus Torvalds suchte ein neues Versionsverwaltungssystem für die Weiterentwicklung des
+            <a href="linux.topic">Linux</a>-Kernels, um das damals genutzte BitKeeper abzulösen. Keines, der verfügbaren
+            Open-Source-Programmen, genügte seinen hohen Ansprüchen. So stoppte der Linux-Chefentwickler seine
+            Hauptarbeit und schuf in nur zwei Wochen das Grundgerüst von Git. Der Name Git steht sinngemäß für Blödmann
+            oder Depp, und auch die Hilfeseite man git bezeichnet das Programm als the stupid content tracker.
+        </p>
+        <p>
+            Das Ziel von Linus Torvalds war es ein dezentrales Versionsverwaltungssystem zu schaffen. Aber erst der
+            zentralistische Ansatz von GitHub und Co. machte Git für Entwickler richtig attraktiv. Diese Websites
+            vereinfachen das Hosting von Git-Projekten enorm - sogar der Linux-Kernel befindet sich mittlerweile auf
+            GitHub.
+        </p>
     </chapter>
 
     <chapter title="Einführung" id="einfuehrung">
