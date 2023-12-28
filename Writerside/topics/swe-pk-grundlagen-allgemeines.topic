@@ -471,10 +471,74 @@
                 DEV --> QC: versteht
                 QC --> MC: muss übersetzt werden
                 PC --> MC: versteht
-
         </code-block>
 
         <chapter title="Kompilierte Programmiersprachen" id="compiler-kompiliert">
+            <p>
+                Bei kompilierten Programmiersprachen ist es so, dass der Quelltext durch einen Compiler in Maschinencode
+                bzw. in eine ausführbare Maschinencodedatei umgewandelt wird. Dabei werden die im Quelltext formulierten
+                Anweisungen in einer Folge von Anweisungen für den Computer übersetzt. Die Programme, die auf diese
+                Weise durch einen Compiler erzeugt werden, können dann direkt ohne weitere Hilfskomponenten auf dem
+                Betriebssystem, für das sie kompiliert wurden, ausgeführt werden.
+            </p>
+
+            <code-block lang="mermaid">
+                stateDiagram-v2
+                    QC: Quelltext
+                    CMP: Compiler
+                    MC: Maschinencode
+
+                    QC --> CMP
+                    CMP --> MC
+            </code-block>
+
+            <p>
+                Beispiele für kompilierte Programmiersprachen sind C oder auch C++. Um beispielsweise ein in C++
+                geschriebenes Programm ausführen zu können, muss es vorher über einen entsprechenden C++ Compiler
+                umgewandelt werden. Da sich Letzterer aber von Betriebssystem zu Betriebssystem unterscheidet, muss für
+                jedes Betriebssystem auch eine eigene Version kompiliert werden.
+            </p>
+            <p>
+                Dazu wird für jedes Betriebssystem ein eigener Compiler benötigt. Um das Programm also unter Windows
+                laufen zu lassen, muss es auch zuvor unter Windows über einen entsprechenden Compiler kompiliert werden.
+                Um es unter Linux ausführen zu können, muss mit einem Compiler unter Linux kompiliert werden, und dies
+                gilt analog für macOS, wenn das Programm auf einem Mac ausgeführt werden soll. Es gibt zwar auch
+                Ansätze, um unter einem Betriebssystem für ein anderes zu kompilieren (beispielsweise unter Linux für
+                Windows oder umgekehrt, diese Technik nennt man Cross-Compilation), trotzdem ändert das nichts an der
+                Tatsache, dass man recht viel Aufwand betreiben muss, um ein C++-Programm unter verschiedenen
+                Betriebssystemen zum Laufen zu bringen. Und dabei haben wir noch gar nicht die Prozessarchitekturen (32
+                Bit, 64 Bit und ARM) berücksichtigt, für die auch jeweils noch mal anders kompiliert werden muss.
+            </p>
+
+            <code-block lang="mermaid">
+                stateDiagram-v2
+                    CPPQT: C++-Quelltext
+                    CPPCMPWIN: C++-Compiler Windows
+                    CPPCMPLIN: C++-Compiler Linux
+                    CPPCMPMAC: C++-Compiler macOS
+                    MCWIN: Ausführbare Maschinencodedatei Windows
+                    MCLIN: Ausführbare Maschinencodedatei Linux
+                    MCMAC: Ausführbare Maschinencodedatei macOS
+
+                    CPPQT --> CPPCMPWIN
+                    CPPQT --> CPPCMPLIN
+                    CPPQT --> CPPCMPMAC
+                    CPPCMPWIN --> MCWIN
+                    CPPCMPLIN --> MCLIN
+                    CPPCMPMAC --> MCMAC
+            </code-block>
+
+            <p>
+                Bei diesem ganzen Aufwand haben kompilierte Programme aber auch einen entscheidenden Vorteil: Der
+                jeweils erzeugte Maschinencode kann ohne andere Hilfsmittel auf dem jeweiligen Betriebssystem ausgeführt
+                werden. Es müssen also keine weiteren Programme auf dem Betriebssystem installiert sein, um ein in
+                Maschinencode kompiliertes Programm ausführen zu können. Das ist ein wesentlicher Unterschied zu
+                interpretierten Programmen.
+            </p>
+            <p>
+                Programme, die für ein bestimmtes Betriebssystem kompiliert wurden, nennt man auch native Programme oder
+                native Anwendungen.
+            </p>
         </chapter>
 
         <chapter title="Interpretierte Programmiersprachen" id="compiler-interpretiert">
