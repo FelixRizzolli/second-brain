@@ -669,9 +669,18 @@
         </chapter>
 
         <chapter title="Zahlenzeichen \d" id="step3-zahlen">
+            <p>
+                <code>\d</code> wird verwendet, um nur Zahlenzeichen zu finden.
+            </p>
 
             <chapter title="Beispiel" id="step3-zahlen-beispiel" collapsible="true">
+                <code-block>
+                    abcABC123 _.:!?
+                </code-block>
 
+                <code-block>
+                    /\d/g
+                </code-block>
             </chapter>
         </chapter>
 
