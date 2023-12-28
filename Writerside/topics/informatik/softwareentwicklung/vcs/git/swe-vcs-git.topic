@@ -45,10 +45,19 @@
     </chapter>
 
     <chapter title="Einführung" id="einfuehrung">
-
         <chapter title="Was ist Git?" id="einfuehrung-git">
+            <p>
+                Git ist ein dezentrales Versionsverwaltungssystem. Bei Softwareprojekten hilft Git dabei, sich die von
+                unterschiedlichen Entwicklern durchgeführten Änderungen zu merken. Binärdateien wie Office-Dokumente,
+                Bilder, Audios oder Videos sind für Git nicht geeignet, da sich dort die Änderungen schwer
+                nachvollziehen lassen.
+            </p>
 
             <chapter title="Das Kommando git" id="einfuehrung-git-kommando">
+                <p>
+                    Alle Git-Befehle lassen sich mit Optionen und Parametern durch das git-Kommando im Terminal oder in
+                    der PowerShell (sofern Git installiert ist) ausführen.
+                </p>
             </chapter>
         </chapter>
 
