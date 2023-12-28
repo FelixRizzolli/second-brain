@@ -44,6 +44,13 @@
             </toc-element>
             <toc-element topic="swe-pm.topic"/>
             <toc-element topic="swe-pk.topic">
+                <toc-element topic="swe-pk-grundlagen.topic">
+                    <toc-element topic="swe-pk-grundlagen-allgemeines.topic"/>
+                    <toc-element topic="swe-pk-grundlagen-ausdruecke.topic"/>
+                    <toc-element topic="swe-pk-grundlagen-funktionen.topic"/>
+                    <toc-element topic="swe-pk-grundlagen-kontrollstrukturen.topic"/>
+                    <toc-element topic="swe-pk-grundlagen-variablen.topic"/>
+                </toc-element>
                 <toc-element topic="swe-pk-paradigmen.topic">
                     <toc-element topic="swe-pk-paradigmen-funktional.topic"/>
                     <toc-element topic="swe-pk-paradigmen-oop.topic"/>
