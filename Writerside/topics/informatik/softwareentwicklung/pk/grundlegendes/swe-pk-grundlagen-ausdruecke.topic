@@ -120,6 +120,11 @@
     </chapter>
 
     <chapter title="Logische Operatoren" id="logisch">
+        <p>
+            Logische Operatoren, werden Operatoren genannt, die für das Arbeiten mit booleschen Werten zur Verfügung
+            stehen. Die bekanntesten Operatoren sind der UND-Operator, der ODER-Operator und der Negationsoperator. UND-
+            und ODER-Operatoren sind binäre Operatoren. Der Negationsoperator dagegen ist ein unärer Operator.
+        </p>
 
         <chapter title="Der UND-Operator" id="logisch-und">
         </chapter>
