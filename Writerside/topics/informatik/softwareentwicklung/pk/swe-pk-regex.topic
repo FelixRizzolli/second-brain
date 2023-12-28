@@ -359,9 +359,20 @@
         </chapter>
 
         <chapter title="Geschweifte Klammern – 1" id="step2-geschweifteklammern1">
+            <p>
+                Um eine bestimmte Anzahl von Vorkommen eines Zeichens auszudrücken, schreiben wir geschweifte Klammern
+                <code>{n}</code> zusammen mit der Häufigkeit, mit der es am Ende vorkommen soll. Geben Sie zum Beispiel
+                Folgendes an Buchstabe <code>e</code> darf nur <code>2</code> mal vorkommen.
+            </p>
 
             <chapter title="Beispiel" id="step2-geschweifteklammern1-beispiel" collapsible="true">
+                <code-block>
+                    ber beer beeer beeeer
+                </code-block>
 
+                <code-block>
+                    /be{2}r/g
+                </code-block>
             </chapter>
         </chapter>
 
