@@ -7,6 +7,25 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Was ist Git?" id="git">
+        <p>
+            Git ist ein Versionsverwaltungssystem, das sich mittlerweile zum Standard entwickelt hat. Es ermöglicht
+            allen Entwicklern den Zugriff auf das gesamte Projekt, sodass jeder Programmierer weiß, was die anderen
+            zuletzt gemacht haben. Jeder Entwickler kann den Code der anderen ausprobieren und das Zusammenspiel mit den
+            eigenen Änderungen Testen.
+        </p>
+        <p>
+            Andere Versionsverwaltungssysteme wären:
+        </p>
+
+        <list>
+            <li><a href="swe-vcs-cvs.topic">Concurrent Versions System (CVS)</a></li>
+            <li><a href="swe-vcs-svn.topic">Subversion (SVN)</a></li>
+            <li><a href="swe-vcs-vss.topic">Visual SourceSafe</a></li>
+        </list>
+
+        <p>
+            Webplattformen wie GitHub, GitLab, Azure DevOps und Bitbucket vereinfachen die Nutzung von Git.
+        </p>
     </chapter>
 
     <chapter title="Die Geschichte" id="geschichte">
