@@ -173,9 +173,21 @@
         </chapter>
 
         <chapter title="Nummernbereich [0-9]" id="step1-nummerkreis">
+            <p>
+                Um die Zahlen im angegebenen Bereich zu finden, werden die Startnummer und die Endnummer in eckige
+                Klammern <code>[]</code> mit einem Bindestrich <code>-</code> dazwischen geschrieben. Schreiben Sie
+                einen Ausdruck, der alle auswählt Zahlen zwischen <code>3</code> und <code>6</code>, einschließlich sich
+                selbst.
+            </p>
 
             <chapter title="Beispiel" id="step1-nummerkreis-beispiel" collapsible="true">
+                <code-block>
+                    0123456789
+                </code-block>
 
+                <code-block>
+                    /[3-6]/g
+                </code-block>
             </chapter>
         </chapter>
 
