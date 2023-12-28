@@ -245,9 +245,19 @@
             </chapter>
 
             <chapter title="Übung: Negierte Zeichensätze" id="step1-uebungen-negiertezeichensaetze">
+                <p>
+                    Schreiben Sie den Ausdruck auf, der mit etwas anderem als den Wörtern <code>beor</code> und
+                    <code>beur</code> im Text übereinstimmt. Verwenden Sie dazu den negierten Zeichensatz.
+                </p>
 
                 <chapter title="Lösung" id="step1-uebungen-negiertezeichensaetze-loesung" collapsible="true">
+                    <code-block>
+                        bear beor beer beur
+                    </code-block>
 
+                    <code-block>
+                        /be[^ou]r/g
+                    </code-block>
                 </chapter>
             </chapter>
 
