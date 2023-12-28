@@ -486,9 +486,19 @@
             </chapter>
 
             <chapter title="Übung: Geschweifte Klammern – 2" id="step2-uebungen-geschweifteklammern2">
+                <p>
+                    Schreiben Sie den Ausdruck mit geschweiften Klammern <code>{}</code>, der Texte findet, die
+                    mindestens <code>2</code> Zahlen nebeneinander enthalten.
+                </p>
 
                 <chapter title="Lösung" id="step2-uebungen-geschweifteklammern2-loesung" collapsible="true">
+                    <code-block>
+                        Release 10/9/2021
+                    </code-block>
 
+                    <code-block>
+                        /[0-9]{2,}/g
+                    </code-block>
                 </chapter>
             </chapter>
 
