@@ -212,14 +212,23 @@
             <chapter title="Übung: Beliebiges Zeichen" id="step1-uebungen-zeichen">
 
                 <chapter title="Lösung" id="step1-uebungen-zeichen-loesung" collapsible="true">
-
                 </chapter>
             </chapter>
 
             <chapter title="Übung: Zeichensätze" id="step1-uebungen-zeichensaetze">
+                <p>
+                    Schreiben Sie die Phrase, die zu jedem Wort im Text passt. Die einzigen Zeichen, die sich ändern,
+                    sind die Anfangsbuchstaben der Wörter.
+                </p>
 
                 <chapter title="Lösung" id="step1-uebungen-zeichensaetze-loesung" collapsible="true">
+                    <code-block>
+                        beer deer feer
+                    </code-block>
 
+                    <code-block>
+                        /[bdf]eer/g
+                    </code-block>
                 </chapter>
             </chapter>
 
