@@ -584,6 +584,12 @@
         </chapter>
 
         <chapter title="Schleifen und Schleifeniterationen vorzeitig abbrechen" id="schleifen-abbrechen">
+            <p>
+                Viele Programmiersprachen bieten ein Schlüsselwort, mit dem eine Schleife vorzeitig abgebrochen werden
+                kann. In JavaScript wird das Schlüsselwort <code>break</code> für einen kompletten Schleifenabbruch
+                verwendet und das Schlüsselwort <code>continue</code>, um die aktuelle Schleifeniteration abzubrechen
+                (und mit der nächsten Schleifeniteration fortzufahren.
+            </p>
 
             <chapter title="Flussdiagramm für das Abbrechen einer Zählschleife" id="schleifen-abbrechen-break">
             </chapter>
