@@ -130,6 +130,40 @@
     </chapter>
 
     <chapter title="Tags ändern bzw. korrigieren (Re-Tagging)" id="aendern">
+        <p>
+            Lokale tags können wie folgt geändert werden:
+        </p>
+
+        <code-block lang="bash">
+            git tag &lt;new&gt; &lt;old&gt;              //für einfache Tags
+        </code-block>
+        <code-block lang="bash">
+            git tag &lt;new&gt; &lt;old&gt;^{}           //für annotierte Tags
+        </code-block>
+        <code-block lang="bash">
+            git tag --delete &lt;old&gt;
+        </code-block>
+
+        <p>
+            Um diese Änderungen auch auf das Remote Repository zu übertragen, bedarf es noch an zwei weitere Kommandos:
+        </p>
+
+        <code-block lang="bash">
+            git push origin &lt;new&gt;
+        </code-block>
+        <code-block lang="bash">
+            git push origin --delete &lt;old&gt;
+        </code-block>
+
+        <p>
+            Haben die anderen Teammitglieder bereits die alten Tags heruntergeladen so werden diese Änderungen nicht mit
+            einem einfachen <code>git pull</code> übernommen, sondern benötigen die Parameter <code>--prune</code> und
+            <code>--tags</code>.
+        </p>
+
+        <code-block lang="bash">
+            git pull --prune --tags
+        </code-block>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
