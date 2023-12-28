@@ -797,6 +797,59 @@
     </chapter>
 
     <chapter title="Programmierparadigmen" id="programmierparadigmen">
+        <p>
+            Eine sehr wichtige Frage bei der Programmierung ist die Art und Weise, wie eine Aufgabe aus der realen Welt 
+            in Software abgebildet und damit bearbeitet wird. Je nach Problem existieren unterschiedliche Ansätze zum 
+            Aufbau des Programms. Diese Ansätze werden als Programmierparadigmen bezeichnet. Dabei wird zwischen 
+            folgenden grundsätzlichen Paradigmen unterschieden:
+        </p>
+        
+        <list>
+            <li>
+                <b>Imperativ</b>: Das Programm besteht aus einer Folge von Anweisungen, die streng sequentiell
+                abgearbeitet werden. Das Konzept des imperativen Programmierparadigmas beruht auf Funktionen und
+                Prozeduren zur Abbildung der Funktionalität.
+            </li>
+            <li>
+                <b>Objektbasiert</b>: Diese Programmiersprachen kennen Objekte, welche Daten und die zugehörigen
+                Funktionen zu einer Einheit, d.h. zu einem Objekt zusammenfassen. Vererbung oder die Abbildung von
+                Beziehungen zwischen Objekten werden jedoch nicht angeboten. Objektbasierte Sprachen können damit als
+                Vorstufe der objektorientierten Programmierung aufgefasst werden. Beispiel: Microsoft PowerShell.
+            </li>
+            <li>
+                <b>Objektorientiert</b>: Programmiersprachen dieser Gattung erweitern das objektbasierte
+                Programmierparadigma um typische Konzepte wie z.B. die Vererbung. Es ist heutzutage die am meisten
+                angewendete Vorgehensweise.
+            </li>
+            <li>
+                <b>Objektorientiert</b>: Programmiersprachen dieser Gattung erweitern das objektbasierte
+                Programmierparadigma um typische Konzepte wie z.B. die Vererbung. Es ist heutzutage die am meisten
+                angewendete Vorgehensweise.
+            </li>
+            <li>
+                <b>Funktional</b>: Ein funktionales Programm besteht nur aus einer Reihe von Funktionsaufrufen. Nahezu
+                alle Elemente können dabei als Funktionen aufgefasst werden. Einsatzgebiete sind Anwendungen der
+                künstlichen Intelligenz, Compilerbau und Computeralgebra-Systeme. Beispiele: Lisp, Haskell, F# und
+                Scala.
+            </li>
+            <li>
+                <b>Logisch</b>: Hier steht im Mittelpunkt der Aufbau einer Datenbasis, die aus Fakten und Regeln
+                besteht. Fakten sind dabei wahre Aussagen im Sinne der Mathematik. Im Fokus steht die
+                Problemformulierung, nicht der Lösungsalgorithmus. Beispiel: Prolog.
+            </li>
+            <li>
+                <b>Deklarativ</b>: Es ist der Überbegriff für das funktionale und das logische Programmierparadigma.
+            </li>
+        </list>
+
+        <p>
+            Computerprogramme können grundsätzlich nach unterschiedlichen Programmierparadigmen aufgebaut werden. Ein
+            »falsch« oder »richtig« gibt es dabei nicht, sondern eine ehr oder weniger gute Eignung. Viele
+            Programmiersprachen unterstützen meist auch nicht nur ein Paradigma, sondern mehrere Ansätze können
+            miteinander kombiniert werden. Insgesamt kann man aus heutiger Perspektive sagen, dass sich die
+            objektorientierte Programmierung seit Langem etabliert hat und heute als <emphasis>State of the
+            Art</emphasis> in vielen Bereichen der Softwareentwicklung gilt.
+        </p>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
