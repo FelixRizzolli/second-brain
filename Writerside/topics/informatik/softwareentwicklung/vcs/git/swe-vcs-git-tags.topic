@@ -7,6 +7,23 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Einführung" id="einfuehrung">
+        <p>
+            Standardmäßig werden Commits durch einen hexadezimalen Hashcode identifiziert. <b>Tags</b> bieten eine
+            alternative, um Commits zu kennzeichnen bzw. zu benennen. Tags werden üblicherweise verwendet um
+            Meilensteine, ausgelieferte Versionen oder besonders wichtige Commits zu markieren.
+        </p>
+
+        <code-block lang="bash">
+            git commit -m 'final work for version 1.0 done'
+        </code-block>
+        <code-block lang="bash">
+            git tag v1.0
+        </code-block>
+
+        <p>
+            Tag-Namen dürfen keine Leerzeichen enthalten. Auch für diverse Sonderzeichen bestehen Einschränkungen
+            (siehe <a href="https://git-scm.com/docs/git-check-ref-format">git-check-ref-format</a>)
+        </p>
     </chapter>
 
     <chapter title="Tags auflisten" id="list">
