@@ -518,7 +518,7 @@
             </p>
             <p>
                 Die fußgesteuerte Schleife wird aufgrund der verwendeten Schlüsselwörter auch als
-                <code>do-while</code>-Schleife bezeichnet.
+                <code>do while</code>-Schleife bezeichnet.
             </p>
 
             <chapter title="Syntax" id="schleifen-dowhile-syntax">
@@ -535,6 +535,16 @@
             </chapter>
 
             <chapter title="Kopfgesteuerte vs. fußgesteuerte Schleifen" id="schleifen-dowhile-unterschiede">
+                <p>
+                    In der Praxis wird die <code>while</code>-Schleife öfter als die <code>do while</code>-Schleife
+                    verwendet, da hierdurch sichergestellt ist, dass der Schleifenkörper nur dann ausgeführt wird, wenn
+                    die entsprechende Bedingung erfüllt ist. Die <code>do while</code>-Schleife sollte in der Regel nur
+                    dann verwendet werden, der Schleifenkörper mindestens einmal ausgeführt werden soll.
+                </p>
+                <p>
+                    Wie auch Zählschleifen lassen sich kopfgesteuerte und fußgesteuerte Schleifen verschachteln.
+                    Prinzipiell kann auch jeder Schleifentyp in allen anderen Schleifentypen verwendet werden.
+                </p>
             </chapter>
         </chapter>
 
