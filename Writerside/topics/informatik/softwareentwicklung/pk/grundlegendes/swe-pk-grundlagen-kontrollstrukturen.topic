@@ -503,6 +503,8 @@
             </chapter>
 
             <chapter title="Flussdiagramm" id="schleifen-while-flussdiagramm">
+                <img src="swe-pk-grundlagen-kontrollstrukturen-while-flussdiagramm.png"
+                     alt="Flussdiagramm der while-Schleife"/>
             </chapter>
         </chapter>
 
