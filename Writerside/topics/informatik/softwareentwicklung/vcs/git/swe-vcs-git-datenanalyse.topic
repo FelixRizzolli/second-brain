@@ -6,4 +6,22 @@
        title="Datenanalyse im Repoitory" id="swe-vcs-git-datenanalyse">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler, 2020
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://git-scm.com/docs/git-log" ignore-vars="true">
+                https://git-scm.com/docs/git-log
+            </a>, 2020-11-08 07:30
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://git-scm.com/docs/git-tag" ignore-vars="true">
+                https://git-scm.com/docs/git-tag
+            </a>, 2020-11-08 10:45
+        </tip>
+    </chapter>
 </topic>
