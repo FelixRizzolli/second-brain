@@ -605,6 +605,29 @@
     </chapter>
 
     <chapter title="Komplexe Bedingungen" id="komplex">
+        <p>
+            Mit dem UND-, ODER- und Negationsoperator ist es möglich sehr komplexe Bedingungen zu formulieren. In der 
+            folgenden <code>if</code>-Anweisung wird als Bedingung der Ausdruck 
+            <code>userIsLoggedIn &amp;&amp; userIsAdmin</code> verwendet, was bewirkt, dass der entsprechende 
+            Programmzweig in den geschweiften Klammern nur ausgeführt wird, wenn die UND-Verknüpfung der beiden 
+            Variablen <code>userIsLoggedIn</code> und <code>userIsAdmin</code> ein <code>true</code> ergibt.
+        </p>
+        
+        <code-block lang="javascript">
+            <![CDATA[
+            let userIsLoggedIn = true;
+            let userIsAdmin = false;
+            if (userIsLoggedIn && userIsAdmin) {
+                /* ... */
+            }
+            ]]>
+        </code-block>
+
+        <p>
+            In der Praxis lassen sich selbstverständlich noch wesentlich komplexere Bedingungen definieren. Der Fantasie
+            sind da keine Grenzen gesetzt. Alledings gilt auch hier wie so oft in der Programmierung, dass einfach
+            formulierter Code einfacher zu verstehen ist und als Wartbarer gilt.
+        </p>
     </chapter>
 
     <chapter title="Sprunganweisung: goto" id="goto">
