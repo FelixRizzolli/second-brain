@@ -510,16 +510,28 @@
                     ha-ha,haa-haa
                 </code-block>
 
-                <code-block collapsed-title="Lösung" collapsible="true">
+                <code-block>
                     /(haa)/g
                 </code-block>
             </chapter>
         </chapter>
 
         <chapter title="Auf eine Gruppe verweisen" id="step3-verweisen">
+            <p>
+                Die Wörter <code>ha</code> und <code>haa</code> sind unten gruppiert. Die erste Gruppe wird verwendet,
+                indem <code>\1</code> geschrieben wird, um ein erneutes Schreiben zu vermeiden. Hier gibt <code>1</code>
+                die Reihenfolge der Gruppierung an. Geben Sie ein <code>\2</code> am Ende des Ausdrucks, um auf die
+                zweite Gruppe zu verweisen.
+            </p>
 
             <chapter title="Beispiel" id="step3-verweisen-beispiel" collapsible="true">
+                <code-block>
+                    ha-ha,haa-haa
+                </code-block>
 
+                <code-block>
+                    /(ha)-\1,(haa)-\2/g
+                </code-block>
             </chapter>
         </chapter>
 
