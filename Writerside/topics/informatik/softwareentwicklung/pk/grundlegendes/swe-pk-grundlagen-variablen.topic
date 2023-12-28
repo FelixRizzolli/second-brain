@@ -60,6 +60,12 @@
         </chapter>
 
         <chapter title="Namenskonventionen" id="variablen-amenskonventionen">
+            <p>
+                Hier gibt es Informationen zu den Namenskonventionen:
+                <a href="swe-pk-richtlinien.topic#namingconventions">
+                    Programmierrichtlinien - Namenskonventionen
+                </a>
+            </p>
         </chapter>
     </chapter>
 
