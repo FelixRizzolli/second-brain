@@ -200,7 +200,12 @@
                  alt="Kette von Gültigkeitsbereichen"/>
         </chapter>
 
-        <chapter title="Kontextobjekt" id="detail-">
+        <chapter title="Kontextobjekt" id="detail-kontextobjekt">
+            <p>
+                Über das Schlüsselwort <code>this</code> spricht man innerhalb einer Objektmethode (oder eines
+                Konstruktors) die jeweilige Objektinstanz an, das aktuelle Objekt, »dieses« Objekt. Genauer gesagt nenn
+                man dieses Objekt Kontextobjekt.
+            </p>
         </chapter>
     </chapter>
 
