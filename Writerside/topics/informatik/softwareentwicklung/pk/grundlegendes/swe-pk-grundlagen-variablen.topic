@@ -84,6 +84,115 @@
     </chapter>
 
     <chapter title="Typisierung" id="typisierung">
+        <p>
+            Das Typsystem ist eine Komponente, die in Programmiersprachen zum Einsatz kommt, um den Wertebereich von
+            Variablen einzuschränken. Programmiersprachen, die über ein Typsystem verfügen, nennt man typisiert. Durch
+            die Typisierung soll sichergestellt werden, dass auf Inhalten von Variablen keine Operationen ausgeführt
+            werden, die syntaktisch oder semantisch fehlerhaft sind.
+        </p>
+        <p>
+            Ein Typsystem wird durch folgende Bestandteile gebildet:
+        </p>
+        
+        <list>
+            <li>
+                Die Typen selbst, die entweder mittels Typdefinition erzeugt oder in der jeweiligen Sprache fest
+                integriert (als primitive Datentypen) sind.
+            </li>
+            <li>
+                Die Möglichkeit Programmelemente (wie Variablen, Methodenparameter usw.) mittels Typannotation mit einem
+                bestimmten Typ zu deklarieren.
+            </li>
+            <li>
+                Regeln, nach denen die Werte von Ausdrücken einem bestimmten Typ zugeordnet werden.
+            </li>
+            <li>
+                Regeln zur Prüfung der Zuweisungskompatibilität von Typen.
+            </li>
+            <li>
+                Optionale weitere Sprachbestandteile wie typbezogene Operatoren (z.B. <code>instanceof</code> in
+                diversen Sprachen) oder eine Reflection API zur Ermittlung und Prüfung von Typinformationen zur
+                Laufzeit.
+            </li>
+        </list>
+        
+        <p>
+            Typsysteme lassen sich entlang dreier Dimensionen klassifizieren
+        </p>
+        
+        <list>
+            <li>
+                <p>
+                    <b>
+                        starke Typisierung (eng. <emphasis>strong typing</emphasis>) und schwache Typisierung (eng.
+                        <emphasis>weak typing</emphasis>)
+                    </b>
+                </p>
+                <p>
+                    Wie streng unterscheidet die Sprache die Typen? Welche Datentypen können ineinander umgewandelt
+                    werden? Erlaubt sie implizite Typumwandlungen? Erlaubt sie unsichere Typumwandlungen, bei denen z.B.
+                    Werte verloren gehen können?
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>
+                        dynamische Typisierung (eng. <emphasis>dynamic typing</emphasis>) und statische Typisierung
+                        (eng. <emphasis>static typing</emphasis>)
+                    </b>
+                </p>
+                <p>
+                    Typprüfungen können zur Übersetzungszeit oder zur Laufzeit vorgenommen werden. Im ersten Fall
+                    spricht man von statischer Typprüfung, im zweiten von dynamischer Typprüfung. Statische Typprüfungen
+                    erlauben das Auffinden von Zuweisungsfehlern vor der Laufzeit, während sie bei dynamischer
+                    Typisierung erst zur Laufzeit auffallen. Dafür erlaubt Letztere ein mächtiges Verhalten wie die
+                    korrekte Verarbeitung eigentlich inkompatibler Typen und Erweiterungen zur Laufzeit.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>
+                        explizite Typisierung (eng. <emphasis>explicit typing</emphasis>) und implizite Typisierung
+                        (eng. <emphasis>implicit typing</emphasis>)
+                    </b>
+                </p>
+                <p>
+                    Werden die Dateitypen explizit genannt oder per Typableitung (eng. type interface) ermittelt?
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>
+                        optionale Typisierung (eng. <emphasis>optional typing</emphasis>)
+                    </b>
+                </p>
+                <p>
+                    Typ-Annotationen werden zur Unterstützung der Programmierer genutzt, haben aber keine Auswirkungen
+                    auf die tatsächliche Umsetzung durch den Compiler zur Laufzeit.
+                </p>
+            </li>
+        </list>
+        
+        <p>
+            Zu den Aufgaben eines Typsystems gehören:
+        </p>
+        
+        <list>
+            <li>
+                Erkennung von Typverletzungen bei der Übersetzung und Ausführung. Die Typinformation kann dabei als eine
+                redundante Information aufgefasst werden, die verhindert, dass Variablen Werte zugewiesen werden, welche
+                die betreffende Variable niemals annehmen sollte (sogenannte Typinvarianten). Sie verhindert so die
+                Ausführung von Operationen auf den Inhalten dieser Variablen, die entweder unmöglich oder aus
+                programmlogischen Gründen nicht sinnvoll ist.
+            </li>
+            <li>
+                Typumwandlung (eng. <emphasis>type conversion</emphasis>), also Umwandlung bzw. Beförderung und
+                Degradierung von Typen (eng. type <emphasis>promotion</emphasis>, <emphasis>type demotion</emphasis>).
+                In vielen objektorientierten Sprachen stehen hierfür die drei Möglichkeiten
+                <emphasis>up cast</emphasis>, <emphasis>down cast</emphasis> und <emphasis>cross cast</emphasis> zur
+                Verfügung.
+            </li>
+        </list>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
