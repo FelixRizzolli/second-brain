@@ -15,6 +15,10 @@
     </chapter>
 
     <chapter title="Auswahlstrukturen" id="auswahl">
+        <p>
+            Bei den Auswahlstrukturen, auch bedingte Anweisungen und Verzweigungen genannt, geht es um die Auswahl
+            zwischen verschiedenen Alternativen.
+        </p>
 
         <chapter title="if-elseif-else-Statement" id="auswahl-if">
         </chapter>
