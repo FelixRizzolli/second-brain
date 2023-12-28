@@ -291,6 +291,26 @@
         </chapter>
 
         <chapter title="Sprachen der ersten Generation: Maschinensprachen" id="generationen-gen1">
+            <p>
+                Computer waren zu Beginn ausschließlich in Maschinensprache, d. h. als Folge von Nullen und Einsen zu
+                programmieren. Befehle und zu bearbeitende Daten wurden dabei in Kombination an den Prozessor gesandt.
+                Typische Operationen sind das Verschieben von Daten aus dem Speicher in bestimmte Register des
+                Prozessors und einfachste arithmetische Operationen, zum Beispiel Addition und Subtraktion, mit den
+                Inhalten der Register.
+            </p>
+
+            <code-block>
+                1: 10110000 01100011
+                2: (hex) B0 63
+                3: Operand 0x63 wird in AL-Register geladen
+            </code-block>
+
+            <p>
+                Man kann sagen, dass die Programmierung in Maschinensprache aus heutiger Sicht fast keine Bedeutung mehr
+                hat. Der Code in Maschinensprache unterscheidet sich von Prozessortyp zu Prozessortyp. Für jeden
+                Prozessortyp muss also ein eigenes Programm in Maschinensprache erstellt werden, damit es die gleichen
+                Aufgaben ausführt.
+            </p>
         </chapter>
 
         <chapter title="Sprachen der zweiten Generation: Assemblersprachen" id="generationen-gen2">
