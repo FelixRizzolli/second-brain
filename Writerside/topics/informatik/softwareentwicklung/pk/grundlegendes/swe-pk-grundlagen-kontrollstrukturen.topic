@@ -549,8 +549,23 @@
         </chapter>
 
         <chapter title="Die foreach-Schleife" id="schleifen-foreach">
+            <p>
+                Mit der <code>foreach</code>-Schleife kann nacheinander jedes Element einer Liste durchlaufen werden.
+                Natürlich ist es auch möglich, dies mit anderen Schleifenkonstruktionen nachzubilden, zum Beispiel
+                mithilfe einer <code>for</code>-Schleife. Mithilfe der <code>foreach</code>-Schleife können jedoch
+                einige Konstellationen einfacher und damit fehlerfreier abgebildet werden. Ein besonderes Merkmal dieser
+                Schleifenform besteht darin, dass keine separate Schleifenvariable für die Steuerung und die Prüfung der
+                Bedingung benötigt wird. Sämtliche Informationen werden automatisch aus der zu durchlaufenden Liste
+                entnommen.
+            </p>
 
             <chapter title="Beispiel in C#" id="schleifen-foreach-beispiel">
+                <code-block lang="javascript">
+                    string[] Laender = { "Deutschland", "Italien", "Spanien", "Portugal" };
+                    foreach (string Land in Laender) {
+                        textBox.Text = Laender[i];
+                    }
+                </code-block>
             </chapter>
         </chapter>
 
