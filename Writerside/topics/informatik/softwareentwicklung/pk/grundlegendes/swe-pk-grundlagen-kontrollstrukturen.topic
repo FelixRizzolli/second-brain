@@ -478,6 +478,21 @@
         </chapter>
 
         <chapter title="Kopfgesteuerte Schleifen – die while-Schleife" id="schleifen-while">
+            <p>
+                Die <code>while</code>-Schleife ist eine kopfgesteuerte Schleife und gilt als Mutter der Schleifen.
+                Mutter deswegen, weil sie in den meisten Programmiersprachen vorkommt und aus ihr die anderen
+                Schleifenarten gebildet werden können. Beide Schleifenarten, d.h. kopfgesteuerte Schleifen und
+                fußgesteuerte Schleifen, funktionieren vom Prinzip her gleich: Der Zweck beider Schleifen ist es, eine
+                oder mehrere Anweisungen wiederholt auszuführen, und zwar so lange, wie eine gegebene boolesche
+                Bedingung erfüllt ist. Der Unterschied der beiden Schleifenarten liegt darin, zu welchem Zeitpunkt die
+                boolesche Überprüfung stattfindet.
+            </p>
+            <p>
+                Bei der kopfgesteuerten Schleife wird als Erstes geprüft, ob die boolesche Bedingung erfüllt ist. Ist
+                dies der Fall, wird der Code in den geschweiften Klammern (dem Schleifenkörper) ausgeführt. Ist dagegen
+                die Bedingung nicht oder nicht mehr erfüllt, wird der Schleifenkörper nicht (mehr) ausgeführt und die
+                Ausführung des Programms nach der Schleife fortgesetzt.
+            </p>
 
             <chapter title="Syntax" id="schleifen-while-syntax">
             </chapter>
