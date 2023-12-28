@@ -415,11 +415,21 @@
         </chapter>
 
         <chapter title="Übungen" id="step2-uebungen">
-
             <chapter title="Übung: Asterisk *" id="step2-uebungen-asterisk">
+                <p>
+                    Verwenden Sie das Sternchen <code>*</code>, um den Ausdruck zu schreiben, der jedes Wort auswählt,
+                    geeignet für das Fehlen des Buchstabens <code>e</code> im Text und das Vorhandensein von mehr als
+                    einem.
+                </p>
 
                 <chapter title="Lösung" id="step2-uebungen-asterisk-loesung" collapsible="true">
+                    <code-block>
+                        dp dep deep
+                    </code-block>
 
+                    <code-block>
+                        /de*p/g
+                    </code-block>
                 </chapter>
             </chapter>
 
