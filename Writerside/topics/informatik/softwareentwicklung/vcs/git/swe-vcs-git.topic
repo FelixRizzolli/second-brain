@@ -62,8 +62,23 @@
         </chapter>
 
         <chapter title="Git-Oberflächen" id="einfuehrung-ui">
+            <p>
+                Nahezu alle Entwicklungsumgebungen (Visual Studio, Xcode, IntelliJ, Android Studio usw.) sowie die
+                meisten größeren Editoren (Atom, Sublime, VSCode etc.) stellen Menükommandos zur Auswahl, mit denen
+                elementare Git-Operationen unkompliziert durchgeführt werden können. Analog gilt das auch für die
+                Weboberflächen wie GitHub oder GitLab.
+            </p>
 
             <chapter title="Git vs. GitHub vs. GitLab" id="einfuehrung-ui-vergleich">
+                <p>
+                    Git ist ein dezentrales Werkzeug. In der Praxis sind aber externe Git-Repositorys wie GitHub oder
+                    GitLab allgegenwärtig. Sie vereinfachen den Datenaustausch, dienen als zusätzliches Backup und
+                    stellen diverse Zusatzfunktionen (Dokumentation, Bug-Tracker, Qualitätssicherung etc.) zur
+                    Verfügung.
+                </p>
+                <p>
+                    Git-Hoster wie GitHub oder GitLab sind keine Alternative zu Git, sondern eine Ergänzung.
+                </p>
             </chapter>
         </chapter>
     </chapter>
