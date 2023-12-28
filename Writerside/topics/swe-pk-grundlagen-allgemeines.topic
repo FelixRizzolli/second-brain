@@ -314,6 +314,48 @@
         </chapter>
 
         <chapter title="Sprachen der zweiten Generation: Assemblersprachen" id="generationen-gen2">
+            <p>
+                Programmiersprachen der zweiten Generation werden sogenannte Assemblersprachen bezeichnet. Auch diese
+                Sprachen sind auf den Befehlssatz des Prozessors ausgerichtet, aber die Anweisungen erfolgen durch im
+                Klartext formulierte Anweisungen. Diese Anweisungen beschreiben Operationen mit den Registern des
+                Prozessors. Assemblerprogramme werden durch einen Übersetzer, der sehr oft als Assembler bezeichnet
+                wird, in die vom Prozessor ausführbare Maschinensprache transformiert. Assemblerprogrammierung ist sehr
+                hardwarenah.
+            </p>
+            <p>
+                Assemblersprachen werden für die Entwicklung von Hardwaretreibern oder bei der Programmierung von
+                Software von Mikrocontrollern, da der Treiber meist ohne zeitliche Verzögerung auf die Ein- und Ausgänge
+                zugreifen muss.
+            </p>
+
+            <code-block>
+                <![CDATA[
+                START
+                    Btfsc      GPIO, 3     ; Abfrage des Eingangs GPIO3, ob Taste gedrückt
+                    Goto       START       ; Taste nicht gedrückt, springe zur Marke >START<
+                    Movfw      einer       ; Laden der Variablen >einer< in das W-Register
+                    Call       TabellePIN  ; Sprung zum Label >TabellePIN<
+
+                    bsf STATUS, RPO        ; Auswahl Bank 1
+                    movwf       TRISIO     ; Setzen der aktuellen Pin-Konfiguration
+                    bcf STATUS, RPO        ; Auswahl Bank 0
+                    movfw       einer      ; Laden der Variablen >einer< in das W-Register
+                    call        TablleLED  ; Sprung zum Label >TabelleLED<, Laden der Variablen
+                WARTE
+                    Btfss       GPIO, 3    ; Abfragen des Eingangs GPIO3, ob Taste gedrückt
+                    Goto        WARTE      ; Taste gedrückt, springe zur Marke >WARTE<
+                    Decfsz      einer, 1   ; Tastendruck zählen bis 0 erreicht
+                    Goto        START      ; Zurück zu >START<, sofern nicht 0 ; bei 0 geht es mit der Folgeanweisung weiter
+                    Movlw       D'8        ; Laden der Konstanten <acht>
+                    Movewf      einer      ; Erneutes Setzen von >einer< auf >acht<
+                    Goto        START      ; und von vorn
+                ]]>
+            </code-block>
+
+            <p>
+                In Assemblerprogrammen kann man schon ein wenig abstrakt arbeiten, d.h., man kann zum Beispiel Variablen
+                und Sprungmarken definieren sowie auch Kommentare setzten.
+            </p>
         </chapter>
 
         <chapter title="Sprachen der dritten Generation: Höhere Programmiersprachen" id="generationen-gen3">
