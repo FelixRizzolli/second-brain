@@ -76,6 +76,30 @@
     </chapter>
 
     <chapter title="Tags synchronisieren" id="synchronisieren">
+        <p>
+            Der Befehl <code>git push</code>, ohne weitere Parameter, überträgt Commits aber keine Tags ins Remote
+            Repository. Es gibt drei Möglichkeiten Tags ins Remote Repository zu übertragen:
+        </p>
+        
+        <list>
+            <li>
+                <code>git push origin &lt;tagname&gt;</code> überträgt nur den angegebenen Tag. Das Kommando
+                funktioniert für einfache und für annotierte Tags. Hier muss <code>origin</code> oder eine andere
+                Remote-Bezeichnung angeben werden, weil git andernfalls den Tag-Namen als Remote-Bezeichnung
+                interpretiert.
+            </li>
+            <li>
+                <code>git push --tags überträgt</code> alle Tags des aktiven Zweigs. Auch dieses Kommando berücksichtigt
+                sowohl einfache als auch annotierte Tags. Commits werden hingegen nicht übertragen. Um sowohl die
+                Commits als auch die Tags zu übertragen, benötigt es zwei Kommandos: <code>git push</code> und
+                <code>git push --tags</code>.
+            </li>
+            <li>
+                <code>git push --follow-tags</code> überträgt sowohl Commits und als auch die damit verbundenen Tags in
+                das Remote Repository. Diese Option berücksichtigt <emphasis>nur annotierte Tags</emphasis>, keine
+                einfachen Tags!
+            </li>
+        </list>
     </chapter>
 
     <chapter title="Tags nachträglich setzen" id="nachtraeglich-setzen">
