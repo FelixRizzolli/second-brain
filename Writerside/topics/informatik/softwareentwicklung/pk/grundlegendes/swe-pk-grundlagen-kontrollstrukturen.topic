@@ -172,6 +172,117 @@
             </code-block>
 
             <chapter title="Beispiel" id="auswahl-switch-beispiel">
+                <p>
+                    Der Vorteil der <code>switch</code>-Anweisung gegenüber der <code>if elseif else</code>-Verzweigung
+                    kann anhand des folgenden Beispiels erläutert werden: Angenommen es wird eine Webanwendung
+                    entwickelt, in der irgendeine Art von Testergebnissen ausgegeben werden soll. Abhängig vom
+                    Testergebnis sollen dabei unterschiedliche Icons dargestellt werden: Fehlerhafte Tests
+                    beispielsweise sollen ein Icon mit Namen <path>error.png</path> verwenden, bestandene Tests ein Icon
+                    mit Namen <path>pass.png</path> usw. Das Testergebnis wird innerhalb der Anwendung über die Werte
+                    <code>0</code> bis <code>3</code> codiert.
+                </p>
+                
+                <table>
+                    <tr>
+                        <td>Testergebnis</td>
+                        <td>Bedeutung</td>
+                        <td>Verwendetes Bild</td>
+                    </tr>
+                    <tr>
+                        <td><code>0</code></td>
+                        <td>Test bestanden</td>
+                        <td><path>pass.png</path></td>
+                    </tr>
+                    <tr>
+                        <td><code>1</code></td>
+                        <td>Infomeldung</td>
+                        <td><path>info.png</path></td>
+                    </tr>
+                    <tr>
+                        <td><code>2</code></td>
+                        <td>Warnung</td>
+                        <td><path>warning.png</path></td>
+                    </tr>
+                    <tr>
+                        <td><code>3</code></td>
+                        <td>Test fehlgeschlagen</td>
+                        <td><path>error.png</path></td>
+                    </tr>
+                    <tr>
+                        <td><code>4</code></td>
+                        <td>unbekanntes Testergebnis</td>
+                        <td><path>unknown.png</path></td>
+                    </tr>
+                    <tr>
+                        <td><code>5</code></td>
+                        <td>unbekanntes Testergebnis</td>
+                        <td><path>unknown.png</path></td>
+                    </tr>
+                    <tr>
+                        <td><code>-1</code></td>
+                        <td>unbekanntes Testergebnis</td>
+                        <td><path>unknown.png</path></td>
+                    </tr>
+                </table>
+
+                <p>
+                    Jetzt könnte man hingehen und das Testergebnis innerhalb einer
+                    <code>if elseif else</code>-Verzweigung testen nach dem Motto »Wenn das Testergebnis den Wert
+                    <code>0</code> hat, lade das Bild <path>pass.png</path>, wenn das Testergebnis den Wert
+                    <code>1</code> hat, lade Bild <path>info.png</path> usw.«. Der entsprechende Code (in
+                    <a href="javascript.topic">JavaScript</a>) würde dann wie folgt aussehen:
+                </p>
+
+                <code-block lang="javascript">
+                    let testResultElement = document.getElementById('testResult');
+                    let testResult = 0;              // Testergebnis, würde normalerweise berechnet
+                    let icon = null;                 // Variable, die den Bildnamen enthalten wird
+
+                    if(testResult === 0) {           // Prüfe das Testergebnis. Hat dieses den Wert 0,
+                        icon = 'pass.png';           // wird der Bildname "pass.png" verwendet.
+                    } else if(testResult === 1) {    // Hat das Testergebnis den Wert 1,
+                        icon = 'info.png';           // wird der Bildname "info.png" verwendet.
+                    } else if(testResult === 2) {    // Hat das Testergebnis den Wert 2,
+                        icon = 'warning.png';        // wird der Bildname "warning.png" verwendet.
+                    } else if(testResult === 3) {    // Hat das Testergebnis den Wert 3,
+                        icon = 'error.png';          // wird der Bildname "error.png" verwendet.
+                    } else {                         // Für alle anderen Werte
+                        icon = 'unknown.png';        // wird der Bildname "unknown.png" verwendet.
+                    }
+
+                    testResultElement.src = 'img/' + icon;  // Setzen des jeweiligen Bildes
+                </code-block>
+
+                <p>
+                    Ein Programm, das das Gleiche macht, aber statt einer <code>if elseif else</code>-Verzweigung eine
+                    <code>switch</code>-Verzeigung verwendet würde (in <a href="javascript.topic">JavaScript</a>) wie
+                    folgt aussehen:
+                </p>
+
+                <code-block lang="javascript">
+                    let testResultElement = document.getElementById('testResult');
+                    let testResult = 0;        // Testergebnis, würde normalerweise berechnet
+                    let icon = null;           // Variable, die den Bildnamen enthalten wird
+
+                    switch(testResult) {           // Prüfe das Testergebnis
+                        case 0:                    // Hat dieses den Wert 0,
+                            icon = 'pass.png';     // wird der Bildname "pass.png" verwendet.
+                            break;                 // Abbruch der switch-Anweisung
+                        case 1:                    // Hat das Testergebnis den Wert 1,
+                            icon = 'info.png';     // wird der Bildname "info.png" verwendet.
+                            break;                 // Abbruch der switch-Anweisung
+                        case 2:                    // Hat das Testergebnis den Wert 2,
+                            icon = 'warning.png';  // wird der Bildname "warning.png" verwendet.
+                            break;                 // Abbruch der switch-Anweisung
+                        case 3:                    // Hat das Testergebnis den Wert 3,
+                            icon = 'error.png';    // wird der Bildname "error.png" verwendet.
+                            break;                 // Abbruch der switch-Anweisung
+                        default:                   // Für alle anderen Werte
+                            icon = 'unknown.png';  // wird der Bildname "unknown.png" verwendet.
+                    }
+
+                    testResultElement.src = 'img/' + icon;
+                </code-block>
             </chapter>
         </chapter>
     </chapter>
