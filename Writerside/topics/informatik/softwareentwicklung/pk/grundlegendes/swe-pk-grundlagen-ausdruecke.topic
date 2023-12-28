@@ -100,6 +100,16 @@
         </table>
 
         <chapter title="Konkatenationsoperator" id="arithmetisch-konkatenation">
+            <p>
+                Als Konkatenation wird das Zusammenfügen von Zeichenketten bezeichnet. Viele Sprachen verwenden für die
+                Konkatenation den <code>+</code>-Operator.
+            </p>
+
+            <code-block lang="javascript">
+                let salutation = 'Ihr persönlicher Newsletter,'; // => 'Ihr persönlicher Newsletter,'
+                let name = 'Max Mustermann';                     // => 'Max Mustermann'
+                let message = salutation + ' ' + name;           // => 'Ihr persönlicher Newsletter, Max Mustermann'
+            </code-block>
         </chapter>
 
         <chapter title="Zuweisungsoperatoren" id="arithmetisch-zuweisung">
