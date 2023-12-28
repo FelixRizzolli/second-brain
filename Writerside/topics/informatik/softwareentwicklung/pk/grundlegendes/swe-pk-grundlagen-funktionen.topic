@@ -189,6 +189,15 @@
         </chapter>
 
         <chapter title="Kette von Gültigkeitsbereichen" id="detail-gueltigkeitsbereiche-kette">
+            <p>
+                Wenn innerhalb des Codes ein Bezeichner (also beispielsweise der Name einer Variablen, einer Funktion
+                oder eines Parameters) verwendet wird, es zu diesem Bezeichner aber keine Variable/Funktion/Paramerter
+                in dem jeweiligen Ausführungskontext gibt, wird über die sogenannte Kette von Gültigkeitsbereichen
+                (Scope-Chain) in den vorhergehenden bzw. übergeordneten Ausführungskontexten gesucht.
+            </p>
+
+            <img src="swe-pk-grundlagen-funktionen-gueltigkeitsbereichskette.png"
+                 alt="Kette von Gültigkeitsbereichen"/>
         </chapter>
 
         <chapter title="Kontextobjekt" id="detail-">
