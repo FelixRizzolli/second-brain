@@ -6,6 +6,51 @@
        title="GIT" id="swe-vcs-git">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Was ist Git?" id="git">
+    </chapter>
+
+    <chapter title="Die Geschichte" id="geschichte">
+    </chapter>
+
+    <chapter title="Einführung" id="einfuehrung">
+
+        <chapter title="Was ist Git?" id="einfuehrung-git">
+
+            <chapter title="Das Kommando git" id="einfuehrung-git-kommando">
+            </chapter>
+        </chapter>
+
+        <chapter title="Git-Oberflächen" id="einfuehrung-ui">
+
+            <chapter title="Git vs. GitHub vs. GitLab" id="einfuehrung-ui-vergleich">
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="Installation" id="installation">
+
+        <chapter title="Linux" id="installation-linux">
+        </chapter>
+
+        <chapter title="macOS (mit Homebrew)" id="installation-macos">
+        </chapter>
+
+        <chapter title="Windows" id="installation-windows">
+        </chapter>
+    </chapter>
+
+    <chapter title="Arbeiten mit GIT" id="arbeiten">
+
+        <chapter title="Die Eingabeaufforderung (cmd.exe)" id="arbeiten-cmd">
+        </chapter>
+
+        <chapter title="Windows Terminal" id="arbeiten-terminal">
+        </chapter>
+
+        <chapter title="Git im WSL" id="arbeiten-wsl">
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
