@@ -6,4 +6,40 @@
        title="Submodule und Subtrees" id="swe-vcs-git-sub">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Quellen" id="quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler, 2020
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://github.blog/2016-02-01-working-with-submodules/" ignore-vars="true">
+                https://github.blog/2016-02-01-working-with-submodules/
+            </a>, 2020-11-14 04:45
+        </tip>
+        <tip>
+            <b>(VIDEO)</b>
+            <a href="https://www.youtube.com/watch?v=8Z4Cmhji_FQ" ignore-vars="true">
+                https://www.youtube.com/watch?v=8Z4Cmhji_FQ
+            </a>, "Git Tutorial: All About Submodules", 2020-11-14 05:10
+        </tip>
+        <tip>
+            <b>(VIDEO)</b>
+            <a href="https://www.youtube.com/watch?v=8Z4Cmhji_FQ" ignore-vars="true">
+                https://www.youtube.com/watch?v=8Z4Cmhji_FQ
+            </a>, "Why Google Stores Billions of Lines of Code in a Single Repository", 2020-11-14 06:00
+        </tip>
+        <tip>
+            <b>(VIDEO)</b>
+            <a href="https://www.youtube.com/watch?v=8Z4Cmhji_FQ" ignore-vars="true">
+                https://www.youtube.com/watch?v=8Z4Cmhji_FQ
+            </a>, "How to git submodule tutorial", 2020-11-14 10:00
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://git-scm.com/docs/git-submodule" ignore-vars="true">
+                https://git-scm.com/docs/git-submodule
+            </a>, 2020-11-14 10:50
+        </tip>
+    </chapter>
 </topic>
