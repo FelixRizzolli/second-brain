@@ -740,9 +740,21 @@
         </p>
 
         <chapter title="Positiver Lookahead: (?=)" id="step4-positiver-lookahead">
+            <p>
+                Zum Beispiel möchten wir den Stundenwert im Text auswählen. Um daher nur die numerischen Werte
+                auszuwählen, denen <code>PM</code> folgt, müssen wir den positiven Look-Ahead-Ausdruck schreiben
+                <code>(?=)</code> nach unserem Ausdruck. Fügen Sie <code>PM</code> nach dem <code>=</code>-Zeichen in
+                Klammern ein.
+            </p>
 
             <chapter title="Beispiel" id="step4-positiver-lookahead-beispiel" collapsible="true">
+                <code-block>
+                    Date: 4 Aug 3PM
+                </code-block>
 
+                <code-block>
+                    /\d+(?=PM)/g
+                </code-block>
             </chapter>
         </chapter>
 
