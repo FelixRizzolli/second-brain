@@ -801,9 +801,25 @@
         </chapter>
 
         <chapter title="Negativer Lookbehind: (?&lt;!)" id="step4-negativer-lookbehind">
+            <p>
+                Zum Beispiel möchten wir im Text andere Zahlen als den Preiswert auswählen. Um daher nur numerische
+                Werte auszuwählen, denen kein <code>$</code> vorangestellt ist, müssen wir das negative Lookbehind
+                schreiben <code>(?&lt;!)</code> vor unserem Ausdruck. Fügen Sie <code>\$</code> nach dem <code>!</code>
+                innerhalb der Klammern hinzu.
+            </p>
+
+            <warning>
+                Dieser Ausdruck wird von einigen Browsern nicht unterstützt.
+            </warning>
 
             <chapter title="Beispiel" id="step4-negativer-lookbehind-beispiel" collapsible="true">
+                <code-block>
+                    Product Code: 1064 Price: $5
+                </code-block>
 
+                <code-block>
+                    /(?&lt;!\$)\d+/g
+                </code-block>
             </chapter>
         </chapter>
     </chapter>
