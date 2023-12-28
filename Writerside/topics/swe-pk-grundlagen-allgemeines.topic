@@ -436,6 +436,15 @@
         </chapter>
 
         <chapter title="Sprachen der vierten und höheren Generation" id="generationen-gen4">
+            <p>
+                Programmiersprachen der vierten und höheren Generation unterliegen keinem speziellen Paradigma. Es
+                handelt sich um Sprachen mit einem höheren Abstraktionsniveau, die auf spezielle Anwendungsbereiche
+                ausgerichtet sind. In diese Kategorie fallen zum einen Skriptsprachen wie z.B.
+                <a href="sql.topic">SQL</a> (Datenbankabfragesprache) oder TeX bzw. <a href="latex.topic">LaTeX</a>
+                (Seitenlayoutsprache). Zum anderen gehören deskriptive Sprachen dazu. Diese Sprachen dienen der
+                Beschreibung von Inhalten, weisen jedoch keine Programmlogik auf. Beispiele sind
+                <a href="xml.topic">XML</a> oder <a href="html.topic">HTML</a>.
+            </p>
         </chapter>
     </chapter>
 
