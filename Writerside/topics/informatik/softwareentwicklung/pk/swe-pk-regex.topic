@@ -262,9 +262,20 @@
             </chapter>
 
             <chapter title="Übung: Buchstabenbereich" id="step1-uebungen-buchstabenbereich">
+                <p>
+                    Schreiben Sie den Ausdruck, der die Buchstaben von <code>g</code> bis <code>k</code> im Text
+                    auswählt. Die Buchstaben <code>g</code> und <code>k</code> sollten ebenfalls in diesem Bereich
+                    enthalten sein.
+                </p>
 
                 <chapter title="Lösung" id="step1-uebungen-buchstabenbereich-loesung" collapsible="true">
+                    <code-block>
+                        abcdefghijklmnopqrstuvwxyz
+                    </code-block>
 
+                    <code-block>
+                        /[g-k]/g
+                    </code-block>
                 </chapter>
             </chapter>
 
