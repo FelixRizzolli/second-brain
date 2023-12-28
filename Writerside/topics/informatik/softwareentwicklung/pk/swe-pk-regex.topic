@@ -434,9 +434,19 @@
             </chapter>
 
             <chapter title="Übung: Pluszeichen +" id="step2-uebungen-plus">
+                <p>
+                    Schreiben Sie den Ausdruck mit dem Pluszeichen <code>+</code>, um Wörter auszuwählen, in denen der
+                    Buchstabe <code>e</code> einmal oder mehrmals im Text vorkommt.
+                </p>
 
                 <chapter title="Lösung" id="step2-uebungen-plus-loesung" collapsible="true">
+                    <code-block>
+                        dp dep deep
+                    </code-block>
 
+                    <code-block>
+                        /de+p/g
+                    </code-block>
                 </chapter>
             </chapter>
 
