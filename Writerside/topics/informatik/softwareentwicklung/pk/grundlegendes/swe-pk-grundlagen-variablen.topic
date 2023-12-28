@@ -52,6 +52,11 @@
         </chapter>
 
         <chapter title="Erlaubte Zeichen" id="variablen-erlaubt">
+            <p>
+                Unabhängig von den Schlüsselwörtern und bereits vergebenen Variablennamen können innerhalb von
+                Variablennamen auch nur bestimmte Zeichen verwendet werden. Welche verwendet werden dürfen und welche
+                nicht, ist abhängig von der Programmiersprache.
+            </p>
         </chapter>
 
         <chapter title="Namenskonventionen" id="variablen-amenskonventionen">
