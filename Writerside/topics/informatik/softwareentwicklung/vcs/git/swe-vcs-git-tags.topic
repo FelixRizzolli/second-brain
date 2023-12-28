@@ -114,6 +114,19 @@
     </chapter>
 
     <chapter title="Tags löschen" id="loeschen">
+        <p>
+            Der Befehl <code>git tag --delete &lt;tagname&gt;</code> löscht das angegebene Tag im lokalen Repository.
+            Wurde der Tag vorher bereits in ein entferntes Repository übertragen, bleibt er dort bestehen. Um ihn auch
+            dort zu löschen, wird der Befehl <code>git push origin --delete &lt;tagname&gt;</code> ausgeführt, wobei
+            gegebenenfalls <code>origin</code> durch den Namen des Remote Repositorys ersetzt werden muss.
+        </p>
+
+        <code-block lang="bash">
+            git tag --delete 'iprot_v3.6.0'
+        </code-block>
+        <code-block lang="bash">
+            git push origin --delete 'iprot_v3.6.0'
+        </code-block>
     </chapter>
 
     <chapter title="Tags ändern bzw. korrigieren (Re-Tagging)" id="aendern">
