@@ -143,6 +143,16 @@
     </chapter>
 
     <chapter title="Dateien hinzufügen (git add)" id="add">
+        <p>
+            Im jeweiligen Projektverzeichnis kann mit jedem beliebigen Editor eine Datei hinzugefügt und bearbeitet
+            werden. Diese Editoren benötigen keine Git-Funktionen. Für Git muss aber eine Datei explizit zum Repository
+            hinzugefügt bzw. in der Folge explizit im aktuellen Zustand zur Aufnahme in den nächsten Commit markiert
+            werden. Hierfür wird der Befehl <code>git add</code> verwendet.
+        </p>
+
+        <code-block lang="bash">
+            git add README.md
+        </code-block>
     </chapter>
 
     <chapter title="Zwischenstand speichern (git commit)" id="commit">
