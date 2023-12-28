@@ -197,16 +197,14 @@
                     Schreiben Sie den Ausdruck, der die Wörter of im Text auswählt.
                 </p>
 
-                <chapter title="Lösung" id="step1-uebungen-basicmatcher-loesung" collapsible="true">
-                    <code-block>
-                        "Every man takes the limits of his own field of vision for the limits of the world."
-                        ― Arthur Schopenhauer
-                    </code-block>
+                <code-block>
+                    "Every man takes the limits of his own field of vision for the limits of the world."
+                    ― Arthur Schopenhauer
+                </code-block>
 
-                    <code-block>
-                        /of/g
-                    </code-block>
-                </chapter>
+                <code-block collapsed-title="Lösung" collapsible="true">
+                    /of/g
+                </code-block>
             </chapter>
 
             <chapter title="Übung: Beliebiges Zeichen" id="step1-uebungen-zeichen">
@@ -215,16 +213,14 @@
                     auszuwählen. Der eingegebene Ausdruck muss mit jedem Zeichen übereinstimmen.
                 </p>
 
-                <chapter title="Lösung" id="step1-uebungen-zeichen-loesung" collapsible="true">
-                    <code-block>
-                        Geben Sie den Ausdruck ein, um einzelne Buchstaben, Zahlen, Leerzeichen und Sonderzeichen im
-                        Text auszuwählen. Der eingegebene Ausdruck muss mit jedem Zeichen übereinstimmen.
-                    </code-block>
+                <code-block>
+                    Geben Sie den Ausdruck ein, um einzelne Buchstaben, Zahlen, Leerzeichen und Sonderzeichen im
+                    Text auszuwählen. Der eingegebene Ausdruck muss mit jedem Zeichen übereinstimmen.
+                </code-block>
 
-                    <code-block>
-                        /./g
-                    </code-block>
-                </chapter>
+                <code-block collapsed-title="Lösung" collapsible="true">
+                    /./g
+                </code-block>
             </chapter>
 
             <chapter title="Übung: Zeichensätze" id="step1-uebungen-zeichensaetze">
@@ -233,15 +229,13 @@
                     sind die Anfangsbuchstaben der Wörter.
                 </p>
 
-                <chapter title="Lösung" id="step1-uebungen-zeichensaetze-loesung" collapsible="true">
-                    <code-block>
-                        beer deer feer
-                    </code-block>
+                <code-block>
+                    beer deer feer
+                </code-block>
 
-                    <code-block>
-                        /[bdf]eer/g
-                    </code-block>
-                </chapter>
+                <code-block collapsed-title="Lösung" collapsible="true">
+                    /[bdf]eer/g
+                </code-block>
             </chapter>
 
             <chapter title="Übung: Negierte Zeichensätze" id="step1-uebungen-negiertezeichensaetze">
@@ -250,15 +244,13 @@
                     <code>beur</code> im Text übereinstimmt. Verwenden Sie dazu den negierten Zeichensatz.
                 </p>
 
-                <chapter title="Lösung" id="step1-uebungen-negiertezeichensaetze-loesung" collapsible="true">
-                    <code-block>
-                        bear beor beer beur
-                    </code-block>
+                <code-block>
+                    bear beor beer beur
+                </code-block>
 
-                    <code-block>
-                        /be[^ou]r/g
-                    </code-block>
-                </chapter>
+                <code-block collapsed-title="Lösung" collapsible="true">
+                    /be[^ou]r/g
+                </code-block>
             </chapter>
 
             <chapter title="Übung: Buchstabenbereich" id="step1-uebungen-buchstabenbereich">
@@ -268,15 +260,13 @@
                     enthalten sein.
                 </p>
 
-                <chapter title="Lösung" id="step1-uebungen-buchstabenbereich-loesung" collapsible="true">
-                    <code-block>
-                        abcdefghijklmnopqrstuvwxyz
-                    </code-block>
+                <code-block>
+                    abcdefghijklmnopqrstuvwxyz
+                </code-block>
 
-                    <code-block>
-                        /[g-k]/g
-                    </code-block>
-                </chapter>
+                <code-block collapsed-title="Lösung" collapsible="true">
+                    /[g-k]/g
+                </code-block>
             </chapter>
 
             <chapter title="Übung: Nummernkreis" id="step1-uebungen-nummerkreis">
@@ -285,15 +275,13 @@
                     <code>2</code> und <code>7</code> sollten auch in diesem Bereich enthalten sein.
                 </p>
 
-                <chapter title="Lösung" id="step1-uebungen-nummerkreis-loesung" collapsible="true">
-                    <code-block>
-                        0123456789
-                    </code-block>
+                <code-block>
+                    0123456789
+                </code-block>
 
-                    <code-block>
-                        /[2-7]/g
-                    </code-block>
-                </chapter>
+                <code-block collapsed-title="Lösung" collapsible="true">
+                    /[2-7]/g
+                </code-block>
             </chapter>
         </chapter>
     </chapter>
