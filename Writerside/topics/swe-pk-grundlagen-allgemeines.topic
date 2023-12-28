@@ -54,6 +54,225 @@
         </note>
 
         <chapter title="Tabelle bekannter und zugleich historischer Programmiersprachen" id="geschichte-tabelle">
+            <table style="both">
+                <tr>
+                    <td>Name der Sprache</td>
+                    <td>Erscheinungsdatum</td>
+                    <td>Sprachkategorie</td>
+                    <td>Anwendungsgebiet/Bemerkung</td>
+                </tr>
+                <tr>
+                    <td>Fortan</td>
+                    <td>1954</td>
+                    <td>prozedural</td>
+                    <td>
+                        mathematisch-technische Probleme
+                    </td>
+                </tr>
+                <tr>
+                    <td>Algol 60</td>
+                    <td>1958</td>
+                    <td>prozedural</td>
+                    <td>
+                        mathematisch-wissenschaftliche Probleme
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="cobol.topic">COBOL</a></td>
+                    <td>1959</td>
+                    <td>prozedural, objektorientiert</td>
+                    <td>
+                        kaufmännische Probleme; keine klare Definition, unsystematischer Aufbau, eine der am weitest
+                        verbreiteten Sprachen; 1997 erweitert zu OO-Cobol mit objektorientierter Konzeption
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lisp</td>
+                    <td>1959</td>
+                    <td>funktional</td>
+                    <td>
+                        gut geeignet für sog. symbolische Berechnungen
+                    </td>
+                </tr>
+                <tr>
+                    <td>Basic</td>
+                    <td>1963</td>
+                    <td>prozedural</td>
+                    <td>
+                        universell; Sprachumfang nicht einheitlich festgelegt
+                    </td>
+                </tr>
+                <tr>
+                    <td>PL/I</td>
+                    <td>1964</td>
+                    <td>prozedural</td>
+                    <td>
+                        mathematisch-technische und kaufmännische Probleme; sehr umfangreich
+                    </td>
+                </tr>
+                <tr>
+                    <td>Simula 67</td>
+                    <td>1965</td>
+                    <td>prozedural</td>
+                    <td>
+                        mathematisch-wissenschaftliche Probleme und Simulationen
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pascal</td>
+                    <td>1971</td>
+                    <td>prozedural</td>
+                    <td>
+                        mathematisch-technische und kaufmännische Probleme; als Lehrsprache bekannt
+                    </td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>1974</td>
+                    <td>prozedural</td>
+                    <td>
+                        systemnahe Programmierung; sehr verbreitet
+                    </td>
+                </tr>
+                <tr>
+                    <td>Modula-2</td>
+                    <td>1976</td>
+                    <td>prozedural, objektorientiert</td>
+                    <td>
+                        mathematisch-technische und kaufmännische Probleme; Weiterentwicklung zu Modula-3
+                        (objektorientiert)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Prolog</td>
+                    <td>1977</td>
+                    <td>prädikativ</td>
+                    <td>
+                        Anwendung mit symbolischen Formeln; Einsatz bei Expertensystemen
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ada</td>
+                    <td>1979</td>
+                    <td>prozedural, objektorientiert</td>
+                    <td>
+                        Echtzeitanwendung; Weiterentwicklung von Pascal; Ada-95 um Objektorientierung erweitert
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="sql.topic">SQL</a></td>
+                    <td>1970</td>
+                    <td>deklarativ</td>
+                    <td>
+                        Datenbankanwendung; seit 1983 genormt
+                    </td>
+                </tr>
+                <tr>
+                    <td>Smalltalk-80</td>
+                    <td>1970</td>
+                    <td>objektorientiert</td>
+                    <td>
+                        universell; erste objektorientierte Sprache
+                    </td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>1980</td>
+                    <td>prozedural, objektorientiert</td>
+                    <td>
+                        universell; Obermenge von C
+                    </td>
+                </tr>
+                <tr>
+                    <td>Eiffel</td>
+                    <td>1986</td>
+                    <td>objektorientiert</td>
+                    <td>
+                        umfangreiche Softwaresysteme
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pearl</td>
+                    <td>1987</td>
+                    <td>prozedural, modular, teilweise objektorientiert</td>
+                    <td>
+                        plattformunabhängige, interpretierte Scriptsprache
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="java.topic">Java</a></td>
+                    <td>1990</td>
+                    <td>objektorientiert</td>
+                    <td>
+                        universell
+                    </td>
+                </tr>
+                <tr>
+                    <td>Haskell</td>
+                    <td>1990</td>
+                    <td>funktional</td>
+                    <td>
+                        Anwendungen in der Wissenschaft
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="python.topic">Python</a></td>
+                    <td>1991</td>
+                    <td>multiparadigmatisch</td>
+                    <td>
+                        universelle, üblicherweise interpretierte höhere Programmiersprache
+                    </td>
+                </tr>
+                <tr>
+                    <td>R</td>
+                    <td>1993</td>
+                    <td>funktional, dynamisch, objektorientiert</td>
+                    <td>
+                        freie Programmiersprache für statistische Berechnungen und Grafiken
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="javascript.topic">JavaScript</a></td>
+                    <td>1995</td>
+                    <td>objektorientiert, prozedural, funktional</td>
+                    <td>
+                        Scriptsprache für interaktive Web-Anwendungen
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="csharp.topic">C#</a></td>
+                    <td>2002</td>
+                    <td>objektorientiert</td>
+                    <td>
+                        Anwendung auf Microsoft-Plattformen
+                    </td>
+                </tr>
+                <tr>
+                    <td>Go</td>
+                    <td>2009</td>
+                    <td>multiparadigmatisch</td>
+                    <td>
+                        entwickelt von Google; kompilierbare Programmiersprache, die Nebenläufigkeit unterstützt und
+                        über eine automatische Speicherbereinigung verfügt
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rust</td>
+                    <td>2010</td>
+                    <td>multiparadigmatisch</td>
+                    <td>
+                        als sichere, nebenläufige und praxisnahe Sprache von Mozilla Research entwickelt
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="swift.topic">Swift</a></td>
+                    <td>2014</td>
+                    <td>multiparadigmatisch</td>
+                    <td>
+                        Programmiersprache von Apple für iOS, macOS, tvOS, watchOS und Linux
+                    </td>
+                </tr>
+            </table>
         </chapter>
     </chapter>
 
