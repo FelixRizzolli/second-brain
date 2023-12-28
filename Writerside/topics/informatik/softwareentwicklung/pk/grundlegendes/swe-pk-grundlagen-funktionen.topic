@@ -6,6 +6,36 @@
        title="Funktionen und Methoden" id="swe-pk-grundlagen-funktionen">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einleitung" id="einleitung">
+    </chapter>
+
+    <chapter title="Funktionsparameter" id="funktionsparameter">
+    </chapter>
+
+    <chapter title="Rückgabewerte" id="rueckgabewerte">
+    </chapter>
+
+    <chapter title="Funktionen im Detail" id="detail">
+
+        <chapter title="Der Funktionsaufruf-Stack" id="detail-funktionsaufrufstack">
+        </chapter>
+
+        <chapter title="Ausführungskontexte" id="detail-ausfuehrungskontext">
+        </chapter>
+
+        <chapter title="Gültigkeitsbereiche" id="detail-gueltigkeitsbereiche">
+        </chapter>
+
+        <chapter title="Kette von Gültigkeitsbereichen" id="detail-gueltigkeitsbereiche-kette">
+        </chapter>
+
+        <chapter title="Kontextobjekt" id="detail-">
+        </chapter>
+    </chapter>
+
+    <chapter title="Rekursion" id="rekursion">
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
