@@ -422,15 +422,13 @@
                     einem.
                 </p>
 
-                <chapter title="Lösung" id="step2-uebungen-asterisk-loesung" collapsible="true">
-                    <code-block>
-                        dp dep deep
-                    </code-block>
+                <code-block>
+                    dp dep deep
+                </code-block>
 
-                    <code-block>
-                        /de*p/g
-                    </code-block>
-                </chapter>
+                <code-block collapsed-title="Lösung" collapsible="true">
+                    /de*p/g
+                </code-block>
             </chapter>
 
             <chapter title="Übung: Pluszeichen +" id="step2-uebungen-plus">
@@ -439,15 +437,13 @@
                     Buchstabe <code>e</code> einmal oder mehrmals im Text vorkommt.
                 </p>
 
-                <chapter title="Lösung" id="step2-uebungen-plus-loesung" collapsible="true">
-                    <code-block>
-                        dp dep deep
-                    </code-block>
+                <code-block>
+                    dp dep deep
+                </code-block>
 
-                    <code-block>
-                        /de+p/g
-                    </code-block>
-                </chapter>
+                <code-block collapsed-title="Lösung" collapsible="true">
+                    /de+p/g
+                </code-block>
             </chapter>
 
             <chapter title="Übung: Fragezeichen ?" id="step2-uebungen-fragezeichen">
@@ -457,15 +453,13 @@
                     als auch an ausgewählt werden.
                 </p>
 
-                <chapter title="Lösung" id="step2-uebungen-fragezeichen-loesung" collapsible="true">
-                    <code-block>
-                        a, an
-                    </code-block>
+                <code-block>
+                    a, an
+                </code-block>
 
-                    <code-block>
-                        /an?/g
-                    </code-block>
-                </chapter>
+                <code-block collapsed-title="Lösung" collapsible="true">
+                    /an?/g
+                </code-block>
             </chapter>
 
             <chapter title="Übung: Geschweifte Klammern – 1" id="step2-uebungen-geschweifteklammern1">
@@ -474,15 +468,13 @@
                     <code>4</code> Zahlen nebeneinander enthalten.
                 </p>
 
-                <chapter title="Lösung" id="step2-uebungen-geschweifteklammern1-loesung" collapsible="true">
-                    <code-block>
-                        Release 10/9/2021
-                    </code-block>
+                <code-block>
+                    Release 10/9/2021
+                </code-block>
 
-                    <code-block>
-                        /[0-9]{4}/g
-                    </code-block>
-                </chapter>
+                <code-block collapsed-title="Lösung" collapsible="true">
+                    /[0-9]{4}/g
+                </code-block>
             </chapter>
 
             <chapter title="Übung: Geschweifte Klammern – 2" id="step2-uebungen-geschweifteklammern2">
@@ -491,15 +483,13 @@
                     mindestens <code>2</code> Zahlen nebeneinander enthalten.
                 </p>
 
-                <chapter title="Lösung" id="step2-uebungen-geschweifteklammern2-loesung" collapsible="true">
-                    <code-block>
-                        Release 10/9/2021
-                    </code-block>
+                <code-block>
+                    Release 10/9/2021
+                </code-block>
 
-                    <code-block>
-                        /[0-9]{2,}/g
-                    </code-block>
-                </chapter>
+                <code-block collapsed-title="Lösung" collapsible="true">
+                    /[0-9]{2,}/g
+                </code-block>
             </chapter>
 
             <chapter title="Übung: Geschweifte Klammern – 3" id="step2-uebungen-geschweifteklammern3">
@@ -508,15 +498,13 @@
                     mindestens <code>1</code> und höchstens <code>4</code> Zahlen nebeneinander enthalten.
                 </p>
 
-                <chapter title="Lösung" id="step2-uebungen-geschweifteklammern3-loesung" collapsible="true">
-                    <code-block>
-                        Release 10/9/2021
-                    </code-block>
+                <code-block>
+                    Release 10/9/2021
+                </code-block>
 
-                    <code-block>
-                        /[0-9]{1,4}/g
-                    </code-block>
-                </chapter>
+                <code-block collapsed-title="Lösung" collapsible="true">
+                    /[0-9]{1,4}/g
+                </code-block>
             </chapter>
         </chapter>
     </chapter>
