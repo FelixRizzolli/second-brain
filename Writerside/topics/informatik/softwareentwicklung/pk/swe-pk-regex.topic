@@ -306,9 +306,20 @@
         </p>
 
         <chapter title="Asterisk *" id="step2-asterisk">
+            <p>
+                Wir setzen ein Sternchen <code>*</code> an das Ende, um anzuzeigen, dass ein Zeichen überhaupt nicht
+                oder mehrfach übereinstimmen kann. Geben Sie zum Beispiel an, dass der Buchstabe <code>e</code> niemals
+                in der vorkommen sollte Text, oder es kann einmal oder mehrmals nebeneinander vorkommen.
+            </p>
 
             <chapter title="Beispiel" id="step2-asterisk-beispiel" collapsible="true">
+                <code-block>
+                    br ber beer
+                </code-block>
 
+                <code-block>
+                    /be*r/g
+                </code-block>
             </chapter>
         </chapter>
 
