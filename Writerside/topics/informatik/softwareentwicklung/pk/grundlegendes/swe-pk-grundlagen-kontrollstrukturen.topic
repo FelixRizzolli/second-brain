@@ -7,6 +7,11 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlegendes" id="grundlagen">
+        <p>
+            Um den Programmfluss zu kontrollieren, benötigt man sogenannte Kontrollstrukturen. Damit kann man die
+            Auswahl aus einer Anzahl von Möglichkeiten nach einem bestimmten Kriterium vornehmen (Auswahlstrukturen)
+            oder Wiederholungen (Schleifen) veranlassen.
+        </p>
     </chapter>
 
     <chapter title="Auswahlstrukturen" id="auswahl">
