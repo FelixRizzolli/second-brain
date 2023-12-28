@@ -778,9 +778,25 @@
         </chapter>
 
         <chapter title="Positiver Lookbehind: (?&lt;=)" id="step4-positiver-lookbehind">
+            <p>
+                Zum Beispiel möchten wir den Preiswert im Text auswählen. Daher müssen wir, um nur die Zahlenwerte
+                auszuwählen, denen <code>$</code> vorangestellt ist, den positiven Lookbehind-Ausdruck
+                <code>(?&lt;=)</code> vor unserem Ausdruck schreiben. Fügen Sie <code>\$</code> nach dem
+                <code>=</code>-Zeichen in den Klammern hinzu.
+            </p>
+
+            <warning>
+                Dieser Ausdruck wird von einigen Browsern nicht unterstützt.
+            </warning>
 
             <chapter title="Beispiel" id="step4-positiver-lookbehind-beispiel" collapsible="true">
+                <code-block>
+                    Product Code: 1064 Price: $5
+                </code-block>
 
+                <code-block>
+                    /(?&lt;=\$)\d+/g
+                </code-block>
             </chapter>
         </chapter>
 
