@@ -387,6 +387,23 @@
             </list>
 
             <chapter title="Flussdiagramm" id="schleifen-for-flussdiagramm">
+                <img src="swe-pk-grundlagen-kontrollstrukturen-for-flussdiagramm.png"
+                     alt="Flussdiagramm der for-Schleife"/>
+
+                <note>
+                    <p><b>Der Variablenname <code>i</code></b></p>
+
+                    <p>
+                        Der Name <code>i</code> ist für sich genommen natürlich kein aussagekräftiger Variablenname, im
+                        Kontext von Schleifen ist dieser Name für die Zählvariable aber mittlerweile recht gebräuchlich.
+                        Übrigens steht <code>i</code> als Abkürzung von Index, wobei diese Bezeichnung dem einen oder
+                        anderen vielleicht auch in dieser Form aus der Mathematik, beispielsweise aus Summenformeln,
+                        bekannt sein dürfte. Schachtelt man <code>for</code>-Schleifen ineinander, so nimmt man als
+                        Zählvariablen dann die Buchstaben <code>i</code>, <code>j</code> usw. Natürlich kann man als
+                        Schleifenvariablen auch andere Bezeichnungen verwenden, die aussagekräftiger sind und damit die
+                        Lesbarkeit des Quellcodes erhöhen.
+                    </p>
+                </note>
             </chapter>
 
             <chapter title="Arbeiten mit Arrays" id="schleifen-for-arrays">
