@@ -32,6 +32,72 @@
     </chapter>
 
     <chapter title="Arithmetische Operatoren" id="arithmetisch">
+        <p>
+            Arithmetische Operatoren sind Operatoren fürs Arbeiten und Rechnen mit Zahlen, zu denen die Addition, die
+            Subtraktion, die Multiplikation, die Division und der Rest-Operator (Modulo), sowie der Exponentialoperator
+            über den sich Potenzen berechnen lassen zählen. Hinzu kommen der Inkrement- und Dekrement-Operator, die
+            jeweils eins zu einer Zahl addieren (= Inkrement-Operator) bzw. eins von einer Zahl subtrahieren (=
+            Dekrement-Operator).
+        </p>
+
+        <p><b>Beispiele in JavaScript</b></p>
+
+        <table>
+            <tr>
+                <td>Rechenart</td>
+                <td>Operator</td>
+                <td>Beispiel</td>
+                <td>Ergebnis von <code>x</code></td>
+            </tr>
+            <tr>
+                <td>Addition</td>
+                <td><code>+</code></td>
+                <td><code>let x = 20 + 20;</code></td>
+                <td><code>40</code></td>
+            </tr>
+            <tr>
+                <td>Subtraktion</td>
+                <td><code>-</code></td>
+                <td><code>let x = 20 - 5;</code></td>
+                <td><code>15</code></td>
+            </tr>
+            <tr>
+                <td>Multiplikation</td>
+                <td><code>*</code></td>
+                <td><code>let x = 20 * 5;</code></td>
+                <td><code>100</code></td>
+            </tr>
+            <tr>
+                <td>Division</td>
+                <td><code>/</code></td>
+                <td><code>let x = 100 / 5;</code></td>
+                <td><code>20</code></td>
+            </tr>
+            <tr>
+                <td>Modulo</td>
+                <td><code>%</code></td>
+                <td><code>let x = 20 % 6;</code></td>
+                <td><code>2</code></td>
+            </tr>
+            <tr>
+                <td>Prozentrechnung</td>
+                <td><code>**</code></td>
+                <td><code>let x = 5 ** 5;</code></td>
+                <td><code>6</code></td>
+            </tr>
+            <tr>
+                <td>Inkrement</td>
+                <td><code>++</code></td>
+                <td><code>let x = 5; x++;</code></td>
+                <td><code>5</code></td>
+            </tr>
+            <tr>
+                <td>Dekrement</td>
+                <td><code>--</code></td>
+                <td><code>let x = 6; x--;</code></td>
+                <td><code>3125</code></td>
+            </tr>
+        </table>
 
         <chapter title="Konkatenationsoperator" id="arithmetisch-konkatenation">
         </chapter>
