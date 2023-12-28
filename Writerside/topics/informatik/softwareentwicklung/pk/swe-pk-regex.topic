@@ -210,8 +210,20 @@
             </chapter>
 
             <chapter title="Übung: Beliebiges Zeichen" id="step1-uebungen-zeichen">
+                <p>
+                    Geben Sie den Ausdruck ein, um einzelne Buchstaben, Zahlen, Leerzeichen und Sonderzeichen im Text
+                    auszuwählen. Der eingegebene Ausdruck muss mit jedem Zeichen übereinstimmen.
+                </p>
 
                 <chapter title="Lösung" id="step1-uebungen-zeichen-loesung" collapsible="true">
+                    <code-block>
+                        Geben Sie den Ausdruck ein, um einzelne Buchstaben, Zahlen, Leerzeichen und Sonderzeichen im
+                        Text auszuwählen. Der eingegebene Ausdruck muss mit jedem Zeichen übereinstimmen.
+                    </code-block>
+
+                    <code-block>
+                        /./g
+                    </code-block>
                 </chapter>
             </chapter>
 
