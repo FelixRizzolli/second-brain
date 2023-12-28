@@ -99,6 +99,77 @@
         </chapter>
 
         <chapter title="Fallunterscheidung: switch-Verzweigung" id="auswahl-switch">
+            <p>
+                Mithilfe der Fallunterscheidung, der sog. <code>switch</code>-Verzweigung oder auch Mehrfachverzweigung
+                genannt, kann ein Ausdruck, zum Beispiel eine Variable, mit mehreren möglichen Werten verglichen werden.
+                Die zu unterscheidenden Werte sind in sogenannte <code>case</code>-Blöcke geordnet. Trifft kein
+                <code>case</code>-Block zu, werden die Anweisungen nach dem Schlüsselwort <code>default</code> – hier in
+                der Bedeutung »für alle anderen Fälle« – ausgeführt. Jeder <code>case</code>-Block einer
+                <code>switch</code>-Verzweigung muss mit dem Befehl <code>break</code> abgeschlossen werden. Diese
+                Anweisung soll signalisieren, dass die Prüfung abgeschlossen ist, wenn eine Fallkonstellation zutrifft
+                und ausgeführt wurde.
+            </p>
+            <p>
+                Die Syntax vom <code>switch-case</code>-Statement ist ein wenig gewöhnungsbedürftig. Sie ist zwar
+                eigentlich leicht kürzer als eine <code>if</code>-Fallunterscheidung mit geschweiften Klammern,
+                allerdings erfordert switch die <code>break</code>-Anweisung. Schlussendlich bleibt es eine
+                Geschmacksfrage, für welche Variante man sich entscheidet.
+            </p>
+            <p>
+                Wenn in einer <code>switch</code>-Fallunterscheidung die <code>break</code>-Anweisung weglassen wird,
+                werden alle Anweisungen ab dem Fall, der zutrifft, ausgeführt. Dieses Verhalten kann manchmal gewünscht
+                sein, wenn man beispielsweise für mehrere Fälle dieselben Anweisungen ausführen möchte.
+            </p>
+
+            <code-block lang="javascript">
+                switch (Prüfausdruck) {
+                    [case Wert1:]
+                        //Anweisungen für Fall 1
+                        break;
+                    [case Wert2:]
+                        //Anweisungen für Fall 2
+                        break;
+                    [case Wert3:]
+                    [case Wert4:]
+                    [case Wert5:]
+                        //Anweisungen für Fall 3, 4 und 5
+                        break;
+                    [...]
+                    [default:]
+                        // Anweisungen für diejenigen Fälle,
+                        // in denen keine der vorhergehenden
+                        // Konstellationen erfüllt ist.
+                        break;
+                }
+            </code-block>
+
+            <p>
+                Möchte man abhängig von booleschen Bedingungen einen von mehreren Wegen im Programm einschlagen, sollten
+                bedingte Anweisungen oder Verzweigungen verwendet werden. Mehrfachverzweigungen über die
+                <code>switch</code>-Anweisung dagegen sind für das Testen von booleschen Bedingungen in der Regel nicht
+                geeignet. Folgende <code>switch</code>-Anweisung würde theoretisch und auch praktisch funktionieren,
+                hierbei wird aber die <code>switch</code>-Anweisung zweckentfremdet:
+            </p>
+
+            <code-block lang="javascript">
+                // Keine Best Practice: boolesche Bedingungen innerhalb einer switch-Anweisung
+                let age = prompt('Für welches Alter suchen Sie Filmtipps?');
+
+                switch(true) {
+                    case (age >= 18):
+                        console.log('Filme mit FSK6, FSK12, FSK16 und FSK18 anzeigen.');
+                        break;
+                    case (age >= 16):
+                        console.log('Filme mit FSK6, FSK12 und FSK16 anzeigen.');
+                        break;
+                    case (age >= 12):
+                        console.log('Filme mit FSK6 und FSK12 anzeigen.');
+                        break;
+                    case (age >= 6):
+                        console.log('Filme mit FSK6 anzeigen.');
+                        break;
+                }
+            </code-block>
 
             <chapter title="Beispiel" id="auswahl-switch-beispiel">
             </chapter>
