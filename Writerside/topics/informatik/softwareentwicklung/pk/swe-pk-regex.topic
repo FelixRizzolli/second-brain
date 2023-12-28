@@ -909,9 +909,21 @@
         </chapter>
 
         <chapter title="Lazy Matching" id="step5-lazy-matching">
+            <p>
+                Lazy Matchmaking stoppt im Gegensatz zu Greedy Matching beim ersten Matching. Fügen Sie zum Beispiel im
+                Beispiel unten ein "?" nach "*" hinzu, um das erste Match zu finden, das mit dem Buchstaben "r" endet
+                und ihm ein beliebiges Zeichen vorangestellt ist. Dies bedeutet, dass dieser Vergleich beim ersten
+                Buchstaben <code>r</code> stoppt.
+            </p>
 
             <chapter title="Beispiel" id="step5-lazy-matching-beispiel" collapsible="true">
+                <code-block>
+                    ber beer beeer beeeer
+                </code-block>
 
+                <code-block>
+                    /.*?r/
+                </code-block>
             </chapter>
         </chapter>
     </chapter>
