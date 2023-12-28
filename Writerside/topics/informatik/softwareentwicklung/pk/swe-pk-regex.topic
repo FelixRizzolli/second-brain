@@ -635,9 +635,19 @@
         </chapter>
 
         <chapter title="Wortzeichen \w: Buchstabe, Zahl und Unterstrich" id="step3-wort">
+            <p>
+                Der Ausdruck <code>\w</code> wird verwendet, um Buchstaben, Zahlen und Unterstriche zu finden. Lassen
+                Sie uns den Ausdruck <code>\w</code> verwenden, um Wortzeichen im Text zu finden.
+            </p>
 
             <chapter title="Beispiel" id="step3-wort-beispiel" collapsible="true">
+                <code-block>
+                    abcABC123 _.:!?
+                </code-block>
 
+                <code-block>
+                    /\w/g
+                </code-block>
             </chapter>
         </chapter>
 
