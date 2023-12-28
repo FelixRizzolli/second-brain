@@ -420,6 +420,60 @@
             </chapter>
 
             <chapter title="Verschachtelung" id="schleifen-for-verschachtelung">
+                <p>
+                    Hinsichtlich der Anweisungen, die in einem Schleifenkörper vorkommen, gibt es keinerlei
+                    Einschränkungen. So ist es beispielsweise auch möglich, andere Schleifen innerhalb eines
+                    Schleifenkörpers auszuführen. Diese Konstruktionen nennt man dann aufgrund dieser Verschachtelung
+                    auch geschachtelte Schleifen bzw. verschachtelte Schleifen. Hier wird jede Schleifeniteration der
+                    äußeren Schleife die komplette innere Schleife ausgeführt.
+                </p>
+
+                <code-block lang="php">
+                    <![CDATA[
+                    // Beispiel in PHP
+                    for ($i = 0; $i <= 10; $i++) {
+                        echo("Reihe $i: ");
+                        for ($j = 0; $j <= 10; $j++) {
+                            echo($j * $i . " ");
+                        }
+                        echo("<br />");
+                    }
+                    ]]>
+                </code-block>
+
+                <code-block>
+                    Reihe 1: 1 2 3 4 5 6 7 8 9 10
+                    Reihe 2: 2 4 6 8 10 12 14 16 18 20
+                    Reihe 3: 3 6 9 12 15 18 21 24 27 30
+                    Reihe 4: 4 8 12 16 20 24 28 32 36 40
+                    Reihe 5: 5 10 15 20 25 30 35 40 45 50
+                    Reihe 6: 6 12 18 24 30 36 42 48 54 60
+                    Reihe 7: 7 14 21 28 35 42 49 56 63 70
+                    Reihe 8: 8 16 24 32 40 48 56 64 72 80
+                    Reihe 9: 9 18 28 36 45 54 63 72 81 90
+                    Reihe 10: 10 20 30 40 50 60 70 80 90 100
+                </code-block>
+
+                <note>
+                    <p><b>Zählervariablen bei geschachtelten Schleifen</b></p>
+
+                    <p>
+                        Bei geschachtelten Schleifen sollte immer eine neue Zählervariable verwendet werden, damit sich
+                        die einzelnen Schleifen nicht gegenseitig in die Quere kommen. Als Konvention hat sich die
+                        Verwendung der Namen <code>i</code>, <code>j</code>, <code>k</code>, <code>l</code> usw.
+                        durchgesetzt.
+                    </p>
+                </note>
+                <note>
+                    <p><b>Maximale Tiefe von geschachtelten Schleifen</b></p>
+
+                    <p>
+                        Prinzipiell können Schleifen beliebig »tief« verschachtelt werden – verschachtelte Schleifen
+                        können ihrerseits wieder Schleifen enthalten, diese ebenfalls usw. In der Praxis ist es aber
+                        recht unüblich, mehr als drei Verschachtelungsebenen zu verwenden, da der hierfür notwendige
+                        Code schnell sehr unübersichtlich bzw. schwer verständlich wird.
+                    </p>
+                </note>
             </chapter>
         </chapter>
 
