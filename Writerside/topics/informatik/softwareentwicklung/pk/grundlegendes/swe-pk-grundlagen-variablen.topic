@@ -70,6 +70,17 @@
     </chapter>
 
     <chapter title="Konstanten" id="konstanten">
+        <p>
+            Der Wert einer Variable kann zu beliebiger Zeit geändert bzw. überschrieben werden. Manchmal möchte man das
+            aber verhindern, sprich, man braucht eigentlich so etwas wie eine »Variable«, deren Wert man nicht
+            überschreiben kann. Diese »Variablen« werden in der Programmierung als Konstanten bezeichnet, weil sie eben
+            nicht variabel, sondern konstant sind: Einmal zugewiesen, bleibt der Wert einer Konstante derselbe. Für
+            Konstanten wird meistens die
+            <a href="swe-pk-richtlinien.topic#namingconventions-schreibweisen">
+                Schreibweise
+            </a>
+            SCREAMING_SNAKE_CASE oder SCREAMING-KEBAB-CASE verwendet.
+        </p>
     </chapter>
 
     <chapter title="Typisierung" id="typisierung">
