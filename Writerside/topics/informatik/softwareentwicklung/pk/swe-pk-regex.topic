@@ -99,9 +99,19 @@
         </chapter>
 
         <chapter title="Punkt .: Beliebiges Zeichen" id="step1-punkt">
+            <p>
+                Der Punkt <code>.</code> ermöglicht die Auswahl eines beliebigen Zeichens, einschließlich Sonderzeichen
+                und Leerzeichen.
+            </p>
 
             <chapter title="Beispiel" id="step1-punkt-beispiel" collapsible="true">
+                <code-block>
+                    abcABC123 .:!?
+                </code-block>
 
+                <code-block>
+                    /./g
+                </code-block>
             </chapter>
         </chapter>
 
