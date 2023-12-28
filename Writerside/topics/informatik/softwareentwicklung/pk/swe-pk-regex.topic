@@ -342,9 +342,19 @@
         </chapter>
 
         <chapter title="Fragezeichen ?" id="step2-fragezeichen">
+            <p>
+                Um anzuzeigen, dass ein Zeichen optional ist, setzen wir ein <code>?</code> Fragezeichen an das Ende.
+                Geben Sie beispielsweise an, dass der folgende Buchstabe <code>u</code> optional ist.
+            </p>
 
             <chapter title="Beispiel" id="step2-fragezeichen-beispiel" collapsible="true">
+                <code-block>
+                    color, colour
+                </code-block>
 
+                <code-block>
+                    /colou?r/g
+                </code-block>
             </chapter>
         </chapter>
 
