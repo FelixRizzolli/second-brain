@@ -40,6 +40,15 @@
         </chapter>
 
         <chapter title="Vergebene Variablennamen: Standardvariablen" id="variablen-standardvariablen">
+            <p>
+                Während man Schlüsselwörter aus syntaktischen Gründen erst gar nicht als Variablennamen verwenden kann,
+                gibt es in einigen Programmiersprachen noch Namen, die zwar verwendet werden können, aber nicht
+                verwendet werden sollten. Die Rede ist von solchen Namen, die bereits für existierende sogenannte
+                globale Standardvariablen vergeben sind. In JavaScript wären Beispiele für Standardvariablen:
+                <code>alert</code>, <code>closed</code>, <code>frames</code>, <code>open</code>, <code>blur</code>,
+                <code>document</code>, <code>location</code>, <code>screen</code>, <code>close</code>,
+                <code>focus</code>, <code>navigator</code> und <code>window</code>.
+            </p>
         </chapter>
 
         <chapter title="Erlaubte Zeichen" id="variablen-erlaubt">
