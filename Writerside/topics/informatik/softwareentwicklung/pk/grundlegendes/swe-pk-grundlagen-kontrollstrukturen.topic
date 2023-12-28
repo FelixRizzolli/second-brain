@@ -48,23 +48,26 @@
                 <code>false</code>) sein muss. Typischerweise kommen die Relationszeichen <code>==</code>,
                 <code>!=</code>, <code>&lt;</code> und <code>&gt;</code> zum Einsatz.
             </p>
-            <p>
-                Die <code>else if</code>-Anweisung ist eigentlich eine Kombination aus <code>if</code> und
-                <code>else</code>, die Programmierer erfunden haben, um sich das Leben zu erleichtern. Alternative
-                Lösung:
-            </p>
 
-            <code-block lang="javascript">
-                if (Bedingung) {
-                    // ...Anweisungsblock 1
-                } else {
+            <note>
+                <p>
+                    Die <code>else if</code>-Anweisung ist eigentlich eine Kombination aus <code>if</code> und
+                    <code>else</code>, die Programmierer erfunden haben, um sich das Leben zu erleichtern. Alternative
+                    Lösung:
+                </p>
+
+                <code-block lang="javascript">
                     if (Bedingung) {
-                        // ...Anweisungsblock 2
+                        // ...Anweisungsblock 1
                     } else {
-                        // ...Anweisungsblock 3
+                        if (Bedingung) {
+                            // ...Anweisungsblock 2
+                        } else {
+                            // ...Anweisungsblock 3
+                        }
                     }
-                }
-            </code-block>
+                </code-block>
+            </note>
         </chapter>
 
         <chapter title="Bedingungsoperator bzw. Auswahloperator" id="auswahl-operator">
@@ -143,33 +146,35 @@
                 }
             </code-block>
 
-            <p>
-                Möchte man abhängig von booleschen Bedingungen einen von mehreren Wegen im Programm einschlagen, sollten
-                bedingte Anweisungen oder Verzweigungen verwendet werden. Mehrfachverzweigungen über die
-                <code>switch</code>-Anweisung dagegen sind für das Testen von booleschen Bedingungen in der Regel nicht
-                geeignet. Folgende <code>switch</code>-Anweisung würde theoretisch und auch praktisch funktionieren,
-                hierbei wird aber die <code>switch</code>-Anweisung zweckentfremdet:
-            </p>
+            <note>
+                <p>
+                    Möchte man abhängig von booleschen Bedingungen einen von mehreren Wegen im Programm einschlagen,
+                    sollten bedingte Anweisungen oder Verzweigungen verwendet werden. Mehrfachverzweigungen über die
+                    <code>switch</code>-Anweisung dagegen sind für das Testen von booleschen Bedingungen in der Regel
+                    nicht geeignet. Folgende <code>switch</code>-Anweisung würde theoretisch und auch praktisch
+                    funktionieren, hierbei wird aber die <code>switch</code>-Anweisung zweckentfremdet:
+                </p>
 
-            <code-block lang="javascript">
-                // Keine Best Practice: boolesche Bedingungen innerhalb einer switch-Anweisung
-                let age = prompt('Für welches Alter suchen Sie Filmtipps?');
+                <code-block lang="javascript">
+                    // Keine Best Practice: boolesche Bedingungen innerhalb einer switch-Anweisung
+                    let age = prompt('Für welches Alter suchen Sie Filmtipps?');
 
-                switch(true) {
-                    case (age >= 18):
-                        console.log('Filme mit FSK6, FSK12, FSK16 und FSK18 anzeigen.');
-                        break;
-                    case (age >= 16):
-                        console.log('Filme mit FSK6, FSK12 und FSK16 anzeigen.');
-                        break;
-                    case (age >= 12):
-                        console.log('Filme mit FSK6 und FSK12 anzeigen.');
-                        break;
-                    case (age >= 6):
-                        console.log('Filme mit FSK6 anzeigen.');
-                        break;
-                }
-            </code-block>
+                    switch(true) {
+                        case (age >= 18):
+                            console.log('Filme mit FSK6, FSK12, FSK16 und FSK18 anzeigen.');
+                            break;
+                        case (age >= 16):
+                            console.log('Filme mit FSK6, FSK12 und FSK16 anzeigen.');
+                            break;
+                        case (age >= 12):
+                            console.log('Filme mit FSK6 und FSK12 anzeigen.');
+                            break;
+                        case (age >= 6):
+                            console.log('Filme mit FSK6 anzeigen.');
+                            break;
+                    }
+                </code-block>
+            </note>
 
             <chapter title="Beispiel" id="auswahl-switch-beispiel">
                 <p>
