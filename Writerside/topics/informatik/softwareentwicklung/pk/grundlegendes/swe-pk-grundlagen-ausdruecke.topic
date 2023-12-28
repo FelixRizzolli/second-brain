@@ -217,6 +217,12 @@
     </chapter>
 
     <chapter title="Zugriffsoperatoren" id="zugriff">
+        <list>
+            <li>
+                Zugriffsoperator (normalerweise <code>.</code>), um auf eine Eigenschaft oder Methode eines Objektes
+                zuzugreifen
+            </li>
+        </list>
     </chapter>
 
     <chapter title="Bereichsauflösungsoperatoren" id="bereichsaufloesung">
