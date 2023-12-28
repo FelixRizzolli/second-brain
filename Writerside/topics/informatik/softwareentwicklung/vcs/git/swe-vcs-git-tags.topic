@@ -6,6 +6,27 @@
        title="Tags" id="swe-vcs-git-tags">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einführung" id="einfuehrung">
+    </chapter>
+
+    <chapter title="Tags auflisten" id="list">
+    </chapter>
+
+    <chapter title="Einfache Tags vs annotierte Tags" id="typen">
+    </chapter>
+
+    <chapter title="Tags synchronisieren" id="synchronisieren">
+    </chapter>
+
+    <chapter title="Tags nachträglich setzen" id="nachtraeglich-setzen">
+    </chapter>
+
+    <chapter title="Tags löschen" id="loeschen">
+    </chapter>
+
+    <chapter title="Tags ändern bzw. korrigieren (Re-Tagging)" id="aendern">
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
