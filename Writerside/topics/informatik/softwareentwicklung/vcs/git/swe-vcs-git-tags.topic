@@ -20,10 +20,10 @@
             git tag v1.0
         </code-block>
 
-        <p>
+        <note>
             Tag-Namen dürfen keine Leerzeichen enthalten. Auch für diverse Sonderzeichen bestehen Einschränkungen
             (siehe <a href="https://git-scm.com/docs/git-check-ref-format">git-check-ref-format</a>)
-        </p>
+        </note>
     </chapter>
 
     <chapter title="Tags auflisten" id="list">
