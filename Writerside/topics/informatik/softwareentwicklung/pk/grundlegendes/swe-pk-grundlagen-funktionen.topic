@@ -7,6 +7,14 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Einleitung" id="einleitung">
+        <p>
+            Je umfangreicher die Programme werden und je komplexer die Software ist, desto mehr Quelltext muss verwaltet
+            werden. Dazu kommt, dass sich mit der Zeit gewisse Aufgaben wiederholen. Es ist daher nur sinnvoll, den
+            Quelltext irgendwie in wiederverwendbare Codebausteine zusammenzufassen. Dies hat zum einen den Vorteil,
+            dass man den Überblick im Programm nicht verliert und zum anderen, dass diese Funktionen wiederverwendet
+            werden können, statt jedes Mal einzelne Anweisungen erneut hintereinander zu tippen. Eine Funktion lässt
+            sich nämlich an unterschiedlichen Stellen innerhalb eines Programms aufrufen.
+        </p>
     </chapter>
 
     <chapter title="Funktionsparameter" id="funktionsparameter">
