@@ -47,6 +47,32 @@
     </chapter>
 
     <chapter title="Einfache Tags vs annotierte Tags" id="typen">
+        <p>
+            Git kennt zwei Arten von Tags:
+        </p>
+
+        <list>
+            <li>
+                <code>git tag &lt;tagname&gt;</code>: Ein einfacher Tag ist eine simple Referenz auf den letzten Commit
+                im aktiven Zweig. Intern werden solche Referenzen in Form winziger Textdateien im Verzeichnis
+                <path>.git/refs/tag</path> gespeichert, wobei der Name der Datei dem Tag-Text entspricht. Die Datei
+                enthält den Hashcode des Commits.
+            </li>
+            <li>
+                <code>git tag -a &lt;tagname&gt;</code>: Ein annotierter Tag speichert neben den Tag-Text diverse
+                Zusatzinformationen, z.B. wann der Tag von wem erzeugt wurde. Außerdem kann mit der Option
+                <code>-m</code> ein zweiter, ausführlicher Message-Text gespeichert werden. (Mit <code>-m</code> kann
+                auf <code>-a</code> verzichtet werden.) Git-intern sind annotierte Tags eigene Objekte.
+                <path>.git/ref/tags/&lt;tagname&gt;</path> verweist nun nicht auf den Commit, sondern auf das
+                Tag-Objekt. Dies enthält Datum, Uhrzeit, die Tag Message und natürlich den Verweis auf den gerade
+                gültigen Commit.
+            </li>
+        </list>
+
+        <note>
+            Auch bei annotierten Tags ist der Verwaltungs-Overhead minimal. Es müssen also keine Effizienzeinbußen
+            befürchtet werden, wenn annotierte Tags verwendet werden.
+        </note>
     </chapter>
 
     <chapter title="Tags synchronisieren" id="synchronisieren">
