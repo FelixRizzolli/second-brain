@@ -359,6 +359,80 @@
         </chapter>
 
         <chapter title="Sprachen der dritten Generation: Höhere Programmiersprachen" id="generationen-gen3">
+            <p>
+                Ziel der Programmiersprachen der dritten Generation war es, eine neue Ebene der Abstraktion zu erreichen
+                und weitestgehende unabhängig von der verwendeten Hardware zu programmieren. Diese Art von
+                Programmiersprachen werden daher auch als höhere Programmiersprachen bezeichnet.
+            </p>
+            <p>
+                Eine der ersten Sprachen (1954) war Fortran (Formula Translator). 1959 wurde die Sprache Lisp (List
+                Processor) entwickelt, und ebenfalls 1959 wurde die Sprache <a href="cobol.topic">Cobol (Common Business
+                Oriented Language)</a> für primäre betriebswirtschaftliche Anwendungen entwickelt.
+            </p>
+            <p>
+                Die Sprache Algol 60 (1960) basierte auf dem Vorläufer Algol 58 (1958) und hat die Entwicklung und
+                Struktur der Programmiersprachen wesentlich mitbestimmt. Die Sprache Algol war maßgebend für die
+                Entwicklung weiterer Sprachen. Dazu zählen unter anderem Pascal, Simula und C. Mit der Einführung der
+                Sprache BASIC (Beginner’s All-purpose Symbolic Instruction Code) sollte der Einstieg in die
+                Programmierung für Anfänger erleichtert werden. BASIC, in den Anfängen wegen der oft fehleranfälligen
+                Struktur des erstellten Quellcodes kritisiert, hat dennoch eine beachtliche Erfolgsgeschichte.
+                BASIC-Dialekte existieren für nahezu alle Plattformen. Bekannte Meilensteine waren QuickBASIC und die
+                Entwicklung von Visual Basic. Heute ist Visual Basic .NET eine der wichtigen Programmiersprachen bei der
+                Entwicklung von Anwendungen für das .Net-Framework. Die grundlegenden Sprachmerkmale sind mit denen der
+                ersten Version nach wie vor vergleichbar, was einen Einstieg erleichtert. Hinzugekommen sind
+                professionelle Konzepte wie Objektorientierung und weitere moderne Ausdrucksformen. Dennoch nimmt ihre
+                Bedeutung laut Tiobe-Index (
+                <a href="https://www.tiobe.com/tiobe-index/">
+                    https://www.tiobe.com/tiobe-index/
+                </a>
+                ) ab.
+            </p>
+            <p>
+                Die Programmierung wird bis heute durch das objektorientierte Paradigma geprägt. Kernelement ist die
+                Vereinigung von Daten und der zugehörigen Methoden innerhalb eines Objekts. Einen ersten Ansatz in diese
+                Richtung wurde durch die Sprache Simula 67 gegangen. Simula war eine Spezialsprache zur Simulation von
+                Vorgängen in der realen Welt. Die Sprache Smalltalk gilt bis heute als die erste objektorientierte
+                Sprache, da ihr Konzept auf der reinen Objektorientierung beruht. Die Terminologie der heutigen
+                objektorientierten Sprachen beruht zu einem Großteil auf den Begrifflichkeiten in Smalltalk.
+            </p>
+            <p>
+                Um 1970 wurde durch Niklaus Wirth die Programmiersprache Pascal entwickelt. Pascal erlangte sehr schnell
+                Bedeutung in Lehre und Forschung. Der hauptsächliche Grund dafür ist die klare Strukturierung der
+                Sprache und der mit ihr erzeugten Programme. Die Weiterentwicklung von Pascal – primär um
+                objektorientierte Sprachkonzepte, aber auch um Anpassungen an neue Entwicklungsmöglichkeiten – führte zu
+                Object Pascal und Delphi. Delphi steht heute dabei für mehr als eine Programmiersprache. Es handelt sich
+                um einen umfassenden Entwicklungsansatz für die effiziente Erstellung von Anwendungen für
+                unterschiedliche Betriebssysteme. Die Kernelemente der zugrundeliegenden Programmiersprache beruhen
+                jedoch auf Pascal. Auf Pascal beruht ebenfalls die Weiterentwicklung zur Programmiersprache Modula-2.
+                Diese verfügt über ein strenges Modul- und Schnittstellenkonzept. Modula-2 wurde zu Oberon und später zu
+                Oberon-2, einer echten objektorientierten Sprache, ausgebaut.
+            </p>
+            <p>
+                Die Sprache C hat bis heute große Bedeutung. Sie ist weiterhin die häufigste Programmiersprache im
+                Bereich der hardwarenahen Entwicklung wie zum Beispiel Treiber, Betriebssysteme und Software für
+                eingebettete Systeme. C++ und Objective-C sind zwei objektorientierte Erweiterungen von C. C++ war sehr
+                lange die dominierende Sprache bei der Entwicklung von professionellen Anwendungen. Eine neuere
+                Sprachentwicklung ist <a href="java.topic">Java</a>. Java verzichtet gegenüber C++ auf das
+                fehleranfällige Zeigerkonzept. Die Plattformunabhängigkeit ermöglicht es, erstellte Anwendungen ohne
+                größere Änderungen in verschiedenen Systemumgebungen zu starten. Voraussetzung dafür ist, dass eine
+                Laufzeitumgebung auf dem Zielsystem vorhanden ist. Java wird auf Rechnern unterschiedlichster Kategorien
+                und Leistungsklassen angewendet.
+            </p>
+            <p>
+                Gehen wir noch einen Schritt in Richtung Zukunft: Weitere, neuere Sprachentwicklungen sind C# und F#,
+                die für die Softwareentwicklung mithilfe des .Net-Frameworks zur Verfügung stehen. C# ist dabei aus Java
+                hervorgegangen, enthält aber auch Elemente aus C. Die Sprache ist inzwischen ausgereift und stellt den
+                Quasi-Standard für die Entwicklung von Anwendungen mit .Net dar. F# ist eine noch relativ junge
+                Programmiersprache, die das funktionale Paradigma in den Fokus rückt. Eine weitere wichtige
+                Programmiersprache – primär für die Entwicklung von dynamischen Web-Anwendungen – ist die Sprache
+                <a href="php.topic">PHP (PHP: Hypertext Preprocessor)</a>, die auch kontinuierlich weiterentwickelt
+                wird.
+            </p>
+            <p>
+                Die Entwicklung der Programmiersprachen hat auch in der jüngeren Zeit nicht aufgehört. Neue Sprachen
+                sind beispielsweise <a href="swift.topic">Swift</a> von Apple (2014), Go von Google (2009) und Rust von
+                Mozilla (2010).
+            </p>
         </chapter>
 
         <chapter title="Sprachen der vierten und höheren Generation" id="generationen-gen4">
