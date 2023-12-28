@@ -469,9 +469,19 @@
             </chapter>
 
             <chapter title="Übung: Geschweifte Klammern – 1" id="step2-uebungen-geschweifteklammern1">
+                <p>
+                    Schreiben Sie den Ausdruck mit geschweiften Klammern <code>{}</code>, der Texte findet, die
+                    <code>4</code> Zahlen nebeneinander enthalten.
+                </p>
 
                 <chapter title="Lösung" id="step2-uebungen-geschweifteklammern1-loesung" collapsible="true">
+                    <code-block>
+                        Release 10/9/2021
+                    </code-block>
 
+                    <code-block>
+                        /[0-9]{4}/g
+                    </code-block>
                 </chapter>
             </chapter>
 
