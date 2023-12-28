@@ -451,9 +451,20 @@
             </chapter>
 
             <chapter title="Übung: Fragezeichen ?" id="step2-uebungen-fragezeichen">
+                <p>
+                    Schreiben Sie den Ausdruck, der anzeigt, dass der Buchstabe <code>n</code> im Text optional ist,
+                    indem Sie das Fragezeichen <code>?</code> verwenden. Somit können sowohl die Wörter <code>a</code>
+                    als auch an ausgewählt werden.
+                </p>
 
                 <chapter title="Lösung" id="step2-uebungen-fragezeichen-loesung" collapsible="true">
+                    <code-block>
+                        a, an
+                    </code-block>
 
+                    <code-block>
+                        /an?/g
+                    </code-block>
                 </chapter>
             </chapter>
 
