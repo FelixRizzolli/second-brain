@@ -396,9 +396,21 @@
         </chapter>
 
         <chapter title="Geschweifte Klammern – 3" id="step2-geschweifteklammern3">
+            <p>
+                Um das Vorkommen eines Zeichens in einem bestimmten Zahlenbereich auszudrücken, schreiben wir
+                geschweifte Klammern <code>{x,y}</code> mit dem Intervall, das wir bis zum Ende gehen möchten. Geben Sie
+                zum Beispiel an, dass die der folgende Buchstabe <code>e</code> darf nur zwischen <code>1</code> und
+                <code>3</code> vorkommen.
+            </p>
 
             <chapter title="Beispiel" id="step2-geschweifteklammern3-beispiel" collapsible="true">
+                <code-block>
+                    ber beer beeer beeeer
+                </code-block>
 
+                <code-block>
+                    /be{1,3}r/g
+                </code-block>
             </chapter>
         </chapter>
 
