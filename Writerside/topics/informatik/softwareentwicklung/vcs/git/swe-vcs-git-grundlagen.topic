@@ -216,6 +216,27 @@
     </chapter>
 
     <chapter title="Repository zum Remote Server übertragen (git push)" id="push">
+        <p>
+            Der Befehl <code>git push</code> überträgt Commits im lokalen Repository zu einem externen Repository. Damit
+            <code>git push</code> funktioniert muss das Kommando "erraten" welcher Zweig de Repositorys verarbeitet
+            werden soll und zu welchem externen Server die Daten übergeben werden sollen. Soweit diese Informationen
+            nicht aus <path>.git/config</path> hervorgehen, müssen entsprechende Parameter an <code>git push</code>
+            übergeben werden.
+        </p>
+
+        <code-block lang="bash">
+            git push origin master
+        </code-block>
+
+        <note>
+            <p><b><code>git pull</code> vor <code>git push</code></b></p>
+
+            <p>
+                Es kann oftmals vorkommen, dass in der Zwischenzeit ein anderer Programmierer Änderungen am Code
+                vorgenommen hat. Wenn <code>git push</code> diesen Fall erkennt, scheitert das Kommando. Best Practice
+                ist jedes mal vor <code>git push</code> den Befehl <code>git pull</code> auszuführen.
+            </p>
+        </note>
     </chapter>
 
     <chapter title="Lokales Repository aktualisieren (git pull)" id="pull">
