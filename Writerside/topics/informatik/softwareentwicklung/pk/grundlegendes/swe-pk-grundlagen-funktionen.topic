@@ -77,6 +77,13 @@
     </chapter>
 
     <chapter title="Rückgabewerte" id="rueckgabewerte">
+        <p>
+            Genauso wie es möglich ist, über Argumente bzw. Parameter bestimmte Informationen an eine Funktion zu
+            übergeben, ist es auch möglich, aus einer Funktion heraus Informationen an den aufgerufenen Code
+            zurückzugeben. Diese Information, die eine Funktion zurückgibt, nennt man Rückgabewert. Ein Rückgabewert
+            wird innerhalb der einer Funktion meist über das Schlüsselwort <code>return</code>, gefolgt von dem Wert,
+            der zurückgegeben werden soll, definiert.
+        </p>
     </chapter>
 
     <chapter title="Funktionen im Detail" id="detail">
