@@ -536,9 +536,21 @@
         </chapter>
 
         <chapter title="Klammern (?:): Gruppierung ohne Erfassung" id="step3-guppierungohneerfassung">
+            <p>
+                Sie können einen Ausdruck gruppieren und sicherstellen, dass er nicht durch Referenzen erfasst wird.
+                Unten sehen Sie beispielsweise zwei Gruppen. Die erste Gruppenreferenz, die wir mit <code>\1</code>
+                bezeichnen, zeigt jedoch tatsächlich die zweite an Gruppe, da die erste eine nicht einfangende Gruppe
+                ist.
+            </p>
 
             <chapter title="Beispiel" id="step3-guppierungohneerfassung-beispiel" collapsible="true">
+                <code-block>
+                    ha-ha,haa-haa
+                </code-block>
 
+                <code-block>
+                    /(?:ha)-ha,(haa)-\1/g
+                </code-block>
             </chapter>
         </chapter>
 
