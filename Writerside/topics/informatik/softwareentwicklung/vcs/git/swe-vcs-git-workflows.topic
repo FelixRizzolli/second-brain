@@ -261,6 +261,23 @@
         </chapter>
 
         <chapter title="Fazit" id="gitflow-fazit">
+            <p><b>Vorteile</b></p>
+
+            <list>
+                <li>sehr stabiler Master-Branch</li>
+                <li>gut nachvollziehbare Versionen</li>
+                <li>mehrere Versionen gleichzeitig in Produktion</li>
+            </list>
+
+            <p><b>Nachteile</b></p>
+
+            <list>
+                <li>sehr viel Merges</li>
+                <li>hohe Komplexität im Repository</li>
+                <li>Auseinanderdriften von Branches</li>
+                <li>langsames Ausrollen neuer Softwareversionen</li>
+                <li>starres Korsett</li>
+            </list>
         </chapter>
     </chapter>
 
