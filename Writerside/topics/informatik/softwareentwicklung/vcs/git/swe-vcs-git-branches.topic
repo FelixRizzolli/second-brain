@@ -6,6 +6,42 @@
        title="Branches" id="swe-vcs-git-branches">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlegendes" id="grundlagen">
+
+        <chapter title="Der Vorteil von mehreren Zweigen (Beispiel)" id="grundlagen-vorteile">
+        </chapter>
+
+        <chapter title="Arbeiten mit Zweigen (Workflows)" id="grundlagen-workflows">
+        </chapter>
+    </chapter>
+
+    <chapter title="Zweig/Branch wechseln und erstellen (git checkout)" id="ckeckout">
+
+        <chapter title="Einen neuen Branch erstellen" id="ckeckout-neu">
+        </chapter>
+
+        <chapter title="Branch wechseln" id="ckeckout-wechseln">
+        </chapter>
+
+        <chapter title="Branch erstellen und wechseln in einem Schritt" id="ckeckout-beides">
+        </chapter>
+    </chapter>
+
+    <chapter title="Einzelne Commits importieren (git cherry-pick)" id="cherrypick">
+
+        <chapter title="Beispiel" id="cherrypick-beispiel">
+        </chapter>
+
+        <chapter title="Commit importieren" id="cherrypick-importieren">
+        </chapter>
+    </chapter>
+
+    <chapter title="Branches in der Git-Datenbank" id="gitdatenbank">
+    </chapter>
+
+    <chapter title="Branches visualisieren" id="visualisieren">
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
