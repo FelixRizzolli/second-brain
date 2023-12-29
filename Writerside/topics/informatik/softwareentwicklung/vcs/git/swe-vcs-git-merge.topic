@@ -302,6 +302,22 @@
         </chapter>
 
         <chapter title="Whitespace-Probleme" id="konflikte-whitespace">
+            <p>
+                Standardmäßig berücksichtigt Git beim Vergleich von Codedateien auch den sogenannten Whitespace, also 
+                Leer- und Tabulatorzeichen. Wenn sich zwei Entwickler nicht darüber einig sind, wie der Code am 
+                schönsten eingerückt wird, kann es zu erheblichen Merge-Problemen führen. Hierfür gibt es zwei 
+                Möglichkeiten:
+            </p>
+            
+            <list>
+                <li>
+                    Klare Regeln festlegen: "Keiner ändert die Einrückung fremder Dateien!"
+                </li>
+                <li>
+                    Das Kommando <code>git merge -X ignore-all-space</code> womit Leer- und Tabulatorzeichen ignoriert
+                    werden.
+                </li>
+            </list>
         </chapter>
 
         <chapter title="Inhaltliche Merge-Konflikte" id="konflikte-inhalt">
