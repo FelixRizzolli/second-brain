@@ -321,6 +321,35 @@
         </chapter>
 
         <chapter title="Inhaltliche Merge-Konflikte" id="konflikte-inhalt">
+            <p>
+                Stellen Sie sich vor, Ben hat in der Datei B die Funktion <code>myfunc</code> programmiert und auch an
+                ein paar Stellen aufgerufen. Er stellt fest, dass das Design der Funktion nicht optimal ist, verändert
+                die Reihenfolge der ersten beiden Parameter und fügt einen optionalen dritten Parameter hinzu. Die
+                Stellen im Code, wo er selbst <code>myfunc</code> aufruft, passt er entsprechend an. Mit einem raschen
+                <code>grep</code> vergewissert es sich, dass bisher niemand sonst seine Funktion nutzt – es kann also
+                nichts passieren. Commit, Pull/Push und Feierabend.
+            </p>
+            <p>
+                Am selben Tag arbeitet auch Anna am Code. Nach einem Pull am Vormittag entdeckt sie <code>myfunc</code>
+                und kann damit ihren Code in der Datei A stark vereinfachen. Ein Geschenkt des Himmels, denkt sie.
+                (<code>myfunc</code> ist da noch im ursprünglichen Zustand.) Auch sie beendet den Tag zufrieden mit
+                Commit, Pull und Push. Git sieht kein Problem. Ben hat nur Datei B verändert, Anna nur A, der Code lässt
+                sich mühelos zusammenführen.
+            </p>
+            <p>
+                Der nächste Tag beginnt für beide Teammitglieder frustrierend: Schon beim ersten Versuch, das Programm
+                mit den nun für beide Seiten aktuellen Versionen der Dateien A und B auszuführen, treten Fehler auf.
+            </p>
+            <p>
+                Im beschriebenen Szenario ist die Korrektur natürlich trivial. Viel schlimmer ist es, wenn der Fehler
+                nicht so offensichtlich ist, nur bei einer seltenen Konstellation von Umständen auftritt und erst einen
+                Monat später entdeckt wird. Oder wenn das Zusammenspiel von zwei augenscheinlich unabhängigen Änderungen
+                im Code ein Sicherheitsproblem auslöst.
+            </p>
+            <p>
+                Das Problem löst sich nur durch den konsequenten Einsatz von automatisierter (Unit-)Tests lösen. Git
+                verwendet beim Merge-Prozess formale Regeln an, aber es "versteht" den Code nicht.
+            </p>
         </chapter>
 
         <chapter title="MERGE-Dateien" id="konflikte-dateien">
