@@ -7,6 +7,28 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Einleitung" id="einleitung">
+        <p>
+            Sowohl Submodules als auch Subtrees helfen bei der Integration fremder Git-Projekte ins eigene Projekt.
+            Generell gibt es mehrere Möglichkeiten, fremden Code in das eigene Projekt einzubauen:
+        </p>
+
+        <list>
+            <li>
+                <b>Kopieren</b>: Der unkomplizierteste Weg ist es, den Quellcode, beziehungsweise die Teile des
+                Quellcodes, die Sie benötigen, in ein Unterverzeichnis zu kopieren und ab dem Zeitpunkt im eigenen
+                Repository zu verwalten. Der große Nachteil: Bugfixes, die in dem fremden Projekt durchgeführt werden,
+                werden nicht automatisch auch im eigenen Projekt übernommen.
+            </li>
+            <li>
+                <b>Externer Paketmanager</b>: Viele moderne Programmiersprachen verwenden heute ihren eigenen
+                Paketmanager, um Bibliotheken in der korrekten Version für das Projekt zu verwalten. Bekannte Vertreter
+                sind etwa npm für Node.js, cargo für Rust, gem für Ruby, pip für Python oder NuGet für C#.
+            </li>
+            <li>
+                <b>Submodules oder Subtrees</b>: Mit diesen beiden Techniken kann der Quellcode des fremden Repositorys
+                mit dem eigenen Repository in unterschiedlicher Weise verbunden werden.
+            </li>
+        </list>
     </chapter>
 
     <chapter title="Submodule" id="submodule">
