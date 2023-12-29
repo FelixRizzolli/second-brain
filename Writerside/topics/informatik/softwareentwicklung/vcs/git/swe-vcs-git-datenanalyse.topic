@@ -40,6 +40,213 @@
             </p>
 
             <chapter title="Die wichtigsten Parameter für ein übersichtlicheres Logging" id="commit-gitlog-param">
+                <table>
+                    <tr>
+                        <td>Befehl</td>
+                        <td>Beschreibung</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code-block lang="bash">
+                                git log --graph
+                            </code-block>
+                        </td>
+                        <td>
+                            Mit diesem Parameter werden die Zweige in ASCII-Art visualisiert.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code-block lang="bash">
+                                git log --oneline
+                            </code-block>
+                        </td>
+                        <td>
+                            Mit diesem Parameter werden die Metadaten und Commit-Message in einer Zeile zusammengefasst.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code-block lang="bash">
+                                git log --all
+                            </code-block>
+                        </td>
+                        <td>
+                            Mit diesem Parameter werden auch die Commits anderer Zweige angezeigt.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code-block lang="bash">
+                                git log --decorate
+                            </code-block>
+                        </td>
+                        <td>
+                            Mit diesem Parameter lassen sich auch Tags anzeigen.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code-block lang="bash">
+                                git log --name-only
+                            </code-block>
+                        </td>
+                        <td>
+                            Durch diesen Parameter werden die geänderten Dateien aufgelisted.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code-block lang="bash">
+                                git log --name-status
+                            </code-block>
+                        </td>
+                        <td>
+                            <p>
+                                Mit diesem Parameter lässt sich die Art der Änderung pro Datei auflisten:
+                            </p>
+
+                            <list>
+                                <li><emphasis>m</emphasis> für <emphasis>modified</emphasis></li>
+                                <li><emphasis>d</emphasis> für <emphasis>deleted</emphasis></li>
+                                <li><emphasis>a</emphasis> für <emphasis>added</emphasis></li>
+                            </list>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code-block lang="bash">
+                                git log --pretty=online
+                                                =short
+                                                =medium
+                                                =full
+                                                =fuller
+                                                =...
+                            </code-block>
+                        </td>
+                        <td>
+                            Mit diesem Parameter definiert man das Ausgabeformat für die Metadaten und die Commit-Message.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code-block lang="bash">
+                                git log --numstat
+                            </code-block>
+                        </td>
+                        <td>
+                            Durch diesen Parameter wird die Anzahl der Zeilen pro Datei aufgelistet.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code-block lang="bash">
+                                git log --stat
+                            </code-block>
+                        </td>
+                        <td>
+                            Mit diesem Parameter wird der Umfang der Änderungen pro Datei als Balkendiagramm aufgelistet.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code-block lang="bash">
+                                git log --author &lt;name&gt;
+                            </code-block>
+                            <code-block lang="bash">
+                                git log --author 'FelixRizzolli'
+                            </code-block>
+                        </td>
+                        <td>
+                            Mit diesem Parameter können speziell nur die Commits gesucht werden die vom jeweiligen Autor stammen.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code-block lang="bash">
+                                git log &lt;branch&gt;
+                            </code-block>
+                            <code-block lang="bash">
+                                git log feature
+                            </code-block>
+
+                            <p> </p>
+
+                            <code-block lang="bash">
+                                git log &lt;branch&gt;..&lt;branch&gt;
+                            </code-block>
+                            <code-block lang="bash">
+                                git log master..feature
+                            </code-block>
+
+                            <p> </p>
+
+                            <code-block lang="bash">
+                                git log &lt;branch&gt;...&lt;branch&gt;
+                            </code-block>
+                            <code-block lang="bash">
+                                git log master...feature
+                            </code-block>
+                        </td>
+                        <td>
+                            <list>
+                                <li>
+                                    Der Befehl <code>git log &lt;branch&gt;</code> liefert alle Commits des aktuellen
+                                    bzw. des angegebenen Zweigs bis zurück zum Anfang der Commit-Abfolge, also in der
+                                    Regel bis hin zum ersten Commit des Repositorys.
+                                </li>
+                                <li>
+                                    Commits die spezifisch für einen Branch oder mehre Branches gelten können mit
+                                    <code>git log &lt;branch&gt;..&lt;branch&gt;</code> angezeigt werden.
+                                    <code>git log master..feature</code> zeigt somit nur die nicht mit master
+                                    zusammengeführten Commits des Feature-Zweigs an.
+                                </li>
+                                <li>
+                                    Mit drei Punkten werden zusätzlich die seit der Trennung der Zweige in master
+                                    durchgeführten Commits berücksichtigt.
+                                </li>
+                            </list>
+
+                            <p>
+                                Anstelle von Zweignamen können Sie auch Hashcodes oder andere Revisionsangaben
+                                verwenden.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code-block lang="bash">
+                                git log --since &lt;date&gt;
+                            </code-block>
+                            <code-block lang="bash">
+                                git log --after &lt;date&gt;
+                            </code-block>
+                            <code-block lang="bash">
+                                git log --until &lt;date&gt;
+                            </code-block>
+                            <code-block lang="bash">
+                                git log --before &lt;date&gt;
+                            </code-block>
+
+                            <p></p>
+
+                            <code-block lang="bash">
+                                git log --after 2020-05-01 --until 2020-05-31
+                            </code-block>
+                        </td>
+                        <td>
+                            Mit diesen Parametern können die angezeigten Commits zeitlich eingegrenzt werden. Im
+                            Beispiel werden jene Commits angezeigt, die im Mai 2020 entstanden sind.
+                        </td>
+                    </tr>
+                </table>
+
+                <p>
+                    Der Befehl bietet noch viele weitere Optionen:
+                    <a href="https://git-scm.com/docs/git-log">
+                        https://git-scm.com/docs/git-log
+                    </a>
+                </p>
             </chapter>
         </chapter>
 
