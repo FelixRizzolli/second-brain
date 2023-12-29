@@ -117,6 +117,20 @@
     </chapter>
 
     <chapter title="Octopus-Merge" id="octopus">
+        <p>
+            Der <code>git merge</code> Befehl kann sogar mehrere Zweige als Parameter aufnehmen. Dabei wird der aktuelle
+            Zweig mit allen übergebenen Zweigen zusammengeführt. Dieses Verfahren wird <b>Octopus-Merge</b> genannt. Der
+            einzige Vorteil eines Octopus-Merges im Vergleich zu mehreren Einzel-Merge-Prozessen besteht darin, dass es
+            – wenn alles gut geht – nur einen Merge-Commit gibt.
+        </p>
+        <p>
+            Schon ein gewöhnlicher Merge-Prozess, der zwei Zweige zusammenführt, kann genug Probleme verursachen. Je
+            mehr Zweige im Spiel sind, desto diffiziler wird die Behebung der anfallenden Konflikte oder Unklarheiten.
+        </p>
+        <p>
+            Wenn man die Git-Repository des Linux-Kernels durchsucht so kann man etliche Octopus-Merges finden, wobei
+            einer beachtliche 65 Zweige zusammenführt.
+        </p>
     </chapter>
 
     <chapter title="Merge Konflikte lösen" id="konflikte">
