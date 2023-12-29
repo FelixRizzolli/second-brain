@@ -25,6 +25,37 @@
         </chapter>
 
         <chapter title="Welcher Workflow ist der Richtige?" id="grundlagen-vergleich">
+            <p>
+                Für die Entscheidung welcher Workflow der Richtige ist, sind folgende Faktoren wichtig:
+            </p>
+
+            <list>
+                <li>
+                    <b>Erfahrung der Teammitglieder</b>: Haben alle Mitglieder im Team bereits eingehende Erfahrung mit
+                    Git, so kann jeder Beliebige Workflow gewählt werden. Für Git-Einsteiger helfen grafische
+                    Oberflächen wie GitHub oder GitLab sie bieten enorm. Außerdem kann die zusätzliche Dokumentation für
+                    den Merge/Pull-Request-Workflow sehr hilfreich sein.
+                </li>
+                <li>
+                    <b>Größe des Teams</b>: Trunk-based Development funktioniert vor allem mit kleineren Teams gut. Die
+                    anderen Workflows sollten auch bei großen Teams gut funktionieren.
+                </li>
+                <li>
+                    <b>Art der Software</b>: Wenn es bei Ihrem Projekt notwendig ist, mehrere stabile Versionen der
+                    Software in Produktion zu betreiben, ist ein Workflow mit parallelen Branches eine gute Wahl. Trotz
+                    der erhöhten Komplexität von GitFlow kann schnell zu einer Version gesprungen und dort Bugfixes
+                    eingespielt werden. Gibt es immer nur eine Version in Produktion, wie die z. B. bei einer
+                    Onlineplattform der Fall ist, kann ein agiler Arbeitsablauf wie das Trunk-based Development mehr
+                    Spaß machen und zu höherer Produktivität führen.
+                </li>
+                <li>
+                    <b>Verfügbarkeit von Infrastruktur</b>: Während manche Arbeitsabläufe ganz ohne zusätzliche Software
+                    außer Git auskommen, ist es bei anderen notwendig, weitere Programme zu verwenden. Trunk-based
+                    Development kann ohne CI-Pipeline nicht richtig funktionieren. Die Pipelines müssen einerseits
+                    konfiguriert werden und andererseits auf einer Computer-Infrastruktur ausgeführt werden. Beim
+                    Pull/Merge-Request-Workflow benötigt es eine Git-Plattform, die Kosten verursacht.
+                </li>
+            </list>
         </chapter>
     </chapter>
 
