@@ -27,6 +27,55 @@
     </chapter>
 
     <chapter title="Beispiel" id="beispiel">
+        <p>
+            Es gibt zwei Zeige. Einen develop-Zweig und einen feature-Zweig. Auf dem Feature-Zweig werden zwei Commits,
+            F1 und F2, gepostet. Auf dem develop-Zweig in der Zwischenzeit D1 und D2. Das neue Feature soll in ferner
+            Zukunft in den Zweig develop übernommen werden. Noch ist es noch nicht fertig, aber um möglichst nahe am
+            develop-Zweig zu bleiben und somit zukünftigen Merge-Problemen aus dem Weg zu gehen, soll die zuletzt in
+            develop durchgeführten Änderungen in den feature-Zweig übernommen werden. Dazu gibt es zwei Möglichkeiten:
+        </p>
+
+        <table>
+            <tr>
+                <td>Merge</td>
+                <td>Rebase</td>
+            </tr>
+            <tr>
+                <td>
+                    <code-block lang="bash">
+                        git checkout feature
+                    </code-block>
+                    <code-block lang="bash">
+                        git merge develop
+                    </code-block>
+                </td>
+                <td>
+                    <code-block lang="bash">
+                        git checkout feature
+                    </code-block>
+                    <code-block lang="bash">
+                        git rebase develop
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Die Commits D1 und D2 werden mit dem feature-Zweig zusammengeführt. Der develop-Branch bleibt
+                    unverändert und der feature-Zweig wird um einen Commit-Merge erweitert.
+                </td>
+                <td>
+                    Hierbei wird so getan als hätte es die Commits D1 und D2 schon vorher im feature-Zweig gegeben. Git
+                    ändert (rebases) dazu die Commits F1 und F2 und passt sie so an, als wären die Änderungen nach D2
+                    durchgeführt worden.
+                </td>
+            </tr>
+            <tr>
+                <td>(BILD Mitte)</td>
+                <td>(BILD Rechts)</td>
+            </tr>
+        </table>
+
+        <img src="swe-vcs-git-rebase.jpg" alt="git rebase"/>
     </chapter>
 
     <chapter title="Konzept" id="konzept">
