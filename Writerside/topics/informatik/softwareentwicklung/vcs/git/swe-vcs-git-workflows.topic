@@ -282,13 +282,37 @@
     </chapter>
 
     <chapter title="Trunk-based Development" id="tbd">
-
         <chapter title="Master-based Development" id="tbd-master">
+            <p>
+                Mit Trunk-based Development wird eine Arbeitstechnik bezeichnet, in der alle Änderungen möglichst
+                schnell am Hauptzweig der Entwicklung eingecheckt werden. Um in der Git-Nomenklatur zu bleiben, kann
+                Trunk auch mit Master ersetzt werden.
+            </p>
 
             <chapter title="Grundregeln" id="tbd-master-grundregeln">
+                <list>
+                    <li>keine langfristigen Branches neben master</li>
+                    <li>
+                        <p>wenn Feature-Branches eingesetzt werden:</p>
+
+                        <list>
+                            <li>ein Entwickler pro Feature-Branch</li>
+                            <li>
+                                maximale Dauer von ein bis zwei Tagen, <img src="warning_3d.png" alt="WARN" width="20"/>
+                                besser wenige Stunden
+                            </li>
+                        </list>
+                    </li>
+                </list>
             </chapter>
 
             <chapter title="Konzept" id="tbd-master-konzept">
+                <p>
+                    Beim Trunk-based Development müssen die Aufgabenstellungen sehr klein sein, da nur ein Mitarbeiter
+                    das Problem bearbeiten darf und dazu auch nur ein bis zwei Tage Zeit hat. Außerdem sind
+                    Feature-Branches im Trunk-based Development optional, denn im besten Fall pushen alle Teammitglieder
+                    direkt auf den Master-Branch.
+                </p>
             </chapter>
         </chapter>
 
