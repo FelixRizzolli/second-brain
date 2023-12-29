@@ -392,6 +392,49 @@
         </p>
 
         <chapter title="Der Befehl git merge-file" id="einzeldatei-befehl">
+            <p>
+                Zuerst muss die betroffene Datei aus dem anderen Zweig in das Projektverzeichnis kopieren. Zudem wird
+                auch die Version des letzten Merge-Prozesses zwischen den beiden Zweigen benötigt.
+            </p>
+
+            <code-block lang="bash">
+                git checkout master
+            </code-block>
+            <code-block lang="bash">
+                mkdir tmp
+            </code-block>
+            <code-block lang="bash">
+                git merge-base HEAD feature
+            </code-block>
+            <code-block lang="bash">
+                git show 8ed6b95:file1 > tmp/file1-base
+            </code-block>
+            <code-block lang="bash">
+                git show feature:file1 > tmp/file1-feature
+            </code-block>
+            <code-block lang="bash">
+                git merge-file file1 tmp/file1-base tmp/file1-feature
+            </code-block>
+            <code-block lang="bash">
+                rm -rf tmp
+            </code-block>
+
+            <p>
+                In diesem Beispiel wird davon ausgegangen, dass der Zweig master aktiv ist. Es sollen die Änderungen der
+                Datei <path>file1</path> aus dem Zweig feature zusammengeführt werden. git merge-base ermittelt den
+                letzten gemeinsamen Commit zwischen dem aktuellen Zweig und feature. Die beiden Kommandos
+                <code>git show</code> erzeugen Kopien der Basisversion und der Feature-Version von <path>file1</path>.
+                Schließlich führt <code>git merge-file</code> die Änderungen zusammen. Dabei wird <path>file1</path>
+                geändert.
+            </p>
+            <p>
+                Werfen Sie einen Blick in diese Datei, bevor Sie die Änderungen mit <code>git commit -a</code> speichern!
+            </p>
+            <p>
+                Wie bei <code>git merge</code> kann es auch bei <code>git file-merge</code> zu Konflikten kommen. Zur
+                Not kann mit <code>git restore file1</code> der ursprüngliche Zustand von file1 wiederhergestellt
+                werden.
+            </p>
         </chapter>
 
         <chapter title="Die einfachere Alternative" id="einzeldatei-alternative">
