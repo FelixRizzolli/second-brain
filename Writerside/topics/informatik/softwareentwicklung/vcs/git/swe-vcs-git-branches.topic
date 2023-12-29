@@ -116,21 +116,23 @@
     </chapter>
 
     <chapter title="Einzelne Commits importieren (git cherry-pick)" id="cherrypick">
-        <p>
-            Das letzte Release v1.0 im master-Branch ist Fehlerhaft und es wird bereits an einem neuen Feature im
-            develop-Branch gearbeitet. Um das neue Feature fertig zu stellen ist noch viel Arbeit geplant und der Fehler
-            ist gravierend, sodass nicht auf das nächste Feature-Update gewartet werden kann. Es werden folgende Steps
-            durchgeführt:
-        </p>
-
-        <list>
-            <li>wechsel in den master-Branch,</li>
-            <li>korrigieren des Bugs, commiten des Bugfixes,</li>
-            <li>v1.0.1 veröffentlichen,</li>
-            <li>wechsel in den develop-Branch.</li>
-        </list>
-
         <chapter title="Beispiel" id="cherrypick-beispiel">
+            <p>
+                Das letzte Release v1.0 im master-Branch ist Fehlerhaft und es wird bereits an einem neuen Feature im
+                develop-Branch gearbeitet. Um das neue Feature fertig zu stellen ist noch viel Arbeit geplant und der
+                Fehler ist gravierend, sodass nicht auf das nächste Feature-Update gewartet werden kann. Es werden
+                folgende Steps durchgeführt:
+            </p>
+
+            <list>
+                <li>wechsel in den master-Branch,</li>
+                <li>korrigieren des Bugs, commiten des Bugfixes,</li>
+                <li>v1.0.1 veröffentlichen,</li>
+                <li>wechsel in den develop-Branch.</li>
+            </list>
+        </chapter>
+
+        <chapter title="Commit importieren" id="cherrypick-importieren">
             <img src="swe-vcs-git-branches-cherrypick.jpg" alt="git cherry-pick"/>
 
             <p>
@@ -144,9 +146,6 @@
             <code-block lang="bash">
                 git cherry-pick ad43e20
             </code-block>
-        </chapter>
-
-        <chapter title="Commit importieren" id="cherrypick-importieren">
         </chapter>
     </chapter>
 
