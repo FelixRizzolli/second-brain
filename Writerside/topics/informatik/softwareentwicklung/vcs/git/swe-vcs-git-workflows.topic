@@ -167,8 +167,14 @@
     </chapter>
 
     <chapter title="Merge/Pull-Requests" id="mergepull">
-
         <chapter title="Das Feature-Branch-Modell der Remotes" id="mergepull-featurebranch">
+            <p>
+                Aufbauend auf das Feature-Branch-Modell haben die großen Git-Plattformen den Arbeitsablauf erweitert und
+                fügten Merge/Pull-Requests als festen Bestandteil ein. Die wesentliche Erweiterung im Vergleich zum
+                Feature-Branch-Workflow im vorangegangenen Kapitel stellt der verpflichtende Review-Prozess dar: Beim
+                Pushen auf das Remote Repository erhält der Entwickler eine mit remote: gekennzeichnete Antwort. Zudem
+                lässt sich dieser Workflow nur mit entsprechenden Git Servern umsetzen.
+            </p>
         </chapter>
 
         <chapter title="Forks" id="mergepull-forks">
