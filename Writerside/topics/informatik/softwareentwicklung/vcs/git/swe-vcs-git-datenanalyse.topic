@@ -497,6 +497,21 @@
         </chapter>
 
         <chapter title="Urheberschaft von Code herausfinden (git blame)" id="file-gitblame">
+            <p>
+                Mit dem Befehl <code>git blame &lt;file&gt;</code> wird die Datei <code>&lt;file&gt;</code> zeilenweise
+                mit dem jeweiligen verantwortlichen des jeweiligen Commits angezeigt. Folgende Parameter können eine
+                große Hilfe beim Lesen der Ausgabe bieten:
+            </p>
+
+            <list>
+                <li>
+                    <code>--color-lines</code> stellt Fortsetzungszeilen aus dem gleichen Commit in blauer Farbe dar.
+                </li>
+                <li>
+                    <code>--color-by-age</code> kennzeichnet frisch geänderten Code rot (Änderungen im letzten Monat)
+                    und mäßigt neuen Code weiß (Änderungen im letzten Jahr).
+                </li>
+            </list>
         </chapter>
     </chapter>
 
