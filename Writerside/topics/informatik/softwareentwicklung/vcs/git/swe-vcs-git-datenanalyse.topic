@@ -7,6 +7,16 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Einführung" id="einfuehrung">
+        <p>
+            Git bietet vielerlei Kommandos zum Durchsuchen des Repositorys. Neben den Kommandos gibt es auch
+            Entwicklungsumgebungen, Editoren, Weboberflächen von Git-Plattformen oder spezielle Programme wie GitKraken
+            die dabei mehr Komfort bieten. Auch VSCode in Kombination mit der Erweiterung GitLens ist sehr praktisch.
+        </p>
+        <p>
+            Trotzdem ist es sinnvoll zu verstehen wie Git intern funktioniert und welche Funktionen es auf Kommandoebene
+            gibt. Damit fällt einem die Anwendung solcher Tools umso leichter. Außerdem stößt jedes Tool früher an die
+            Grenzen als das Kommando git!
+        </p>
     </chapter>
 
     <chapter title="Commits durchsuchen" id="commit">
