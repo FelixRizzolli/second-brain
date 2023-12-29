@@ -214,6 +214,31 @@
         </chapter>
 
         <chapter title="Merge-Tools" id="konflikte-tools">
+            <p>
+                Für Merge-Konflikte gibt es spezielle Tools, die die jeweiligen Textpassagen farblich Markieren und so
+                beim Lösen des Konflikts helfen. Mit dem befehl <code>git mergetool</code> wird ein externes Programm
+                gestartet, das zwei oder drei Codeversionen der Konfliktdatei nebeneinanderstellt. Manche Merge-Tools
+                jedoch verzichten auf die Anzeige der Parent-Version. Das Ziel besteht darin, die lokale Version der
+                Datei so zu ändern, dass dort die richtigen Änderungen stehen.
+            </p>
+
+            <code-block lang="bash">
+                git mergetool --tool meld
+            </code-block>
+            <code-block>
+                Merging: lib/printhelper.php
+                Normal merge conflict for 'lib/printhelper.php':
+                  {local}: modified file
+                  {remote}: modified file
+            </code-block>
+            <code-block lang="bash">
+                git commit
+            </code-block>
+
+            <p>
+                Mit dem Befehl <code>git mergetool --tool-help</code> werde die Tools angezeigt, die infrage kommen und
+                welche davon installiert sind.
+            </p>
         </chapter>
 
         <chapter title="Konflikte bei binären Dateien" id="konfilikte-binaere-dateien">
