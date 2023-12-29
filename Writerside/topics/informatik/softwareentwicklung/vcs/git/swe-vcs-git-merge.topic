@@ -6,6 +6,57 @@
        title="Merge" id="swe-vcs-git-merge">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einführung" id="einfuehrung">
+    </chapter>
+
+    <chapter title="Zweige/Branches zusammenführen" id="merge">
+    </chapter>
+
+    <chapter title="Fast-forward-Merge" id="fastforward">
+    </chapter>
+
+    <chapter title="Octopus-Merge" id="octopus">
+    </chapter>
+
+    <chapter title="Merge Konflikte lösen" id="konflikte">
+
+        <chapter title="Weniger Konflikte durch häufige Merge-Prozesse" id="konflikte-vermeiden">
+        </chapter>
+
+        <chapter title="Kollisionen im Code" id="konflikte-codekollisionen">
+        </chapter>
+
+        <chapter title="Merge-Tools" id="konflikte-tools">
+        </chapter>
+
+        <chapter title="Konflikte bei binären Dateien" id="konfilikte-binaere-dateien">
+        </chapter>
+
+        <chapter title="Merge-Abbruch und Undo" id="konflikte-abbruch">
+        </chapter>
+
+        <chapter title="Whitespace-Probleme" id="konflikte-whitespace">
+        </chapter>
+
+        <chapter title="Inhaltliche Merge-Konflikte" id="konflikte-inhalt">
+        </chapter>
+
+        <chapter title="MERGE-Dateien" id="konflikte-dateien">
+        </chapter>
+    </chapter>
+
+    <chapter title="Merge für eine einzelne Datei" id="einzeldatei">
+
+        <chapter title="Der Befehl git merge-file" id="einzeldatei-befehl">
+        </chapter>
+
+        <chapter title="Die einfachere Alternative" id="einzeldatei-alternative">
+        </chapter>
+    </chapter>
+
+    <chapter title="Commit der letzten gemeinsamen Basis" id="merge-base">
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
