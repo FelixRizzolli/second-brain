@@ -462,6 +462,19 @@
     </chapter>
 
     <chapter title="Commit der letzten gemeinsamen Basis" id="merge-base">
+        <p>
+            Der Hashcode des Commits der letzten gemeinsamen Basis wird mit dem Befehl <code>git merge-base</code>
+            ermittelt.
+        </p>
+        <p>
+            Das folgende Beispiel geht davon aus, dass der Zweig master aktiv ist. Der Befehl
+            <code>git merge-base</code> ermittelt in diesem Fall den letzten gemeinsamen Commit zwischen dem aktuellen
+            Zweig und feature.
+        </p>
+
+        <code-block lang="bash">
+            git merge-base HEAD feature
+        </code-block>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
