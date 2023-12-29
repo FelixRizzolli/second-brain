@@ -385,6 +385,11 @@
     </chapter>
 
     <chapter title="Merge für eine einzelne Datei" id="einzeldatei">
+        <p>
+            Ein gewöhnlicher Merge-Prozess betrifft immer alle Dateien der betreffenden Commits. Hin und wieder entsteht
+            aber der Wunsch, nur eine einzige Datei zusammenzuführen. Dieser Prozess ist aber recht umständlich, wenn er
+            korrekterweise mit <code>git merge-file</code> ausgeführt wird.
+        </p>
 
         <chapter title="Der Befehl git merge-file" id="einzeldatei-befehl">
         </chapter>
