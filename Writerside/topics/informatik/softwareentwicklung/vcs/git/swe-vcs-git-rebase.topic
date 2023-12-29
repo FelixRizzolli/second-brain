@@ -101,6 +101,15 @@
     </chapter>
 
     <chapter title="Merge-Konflikte beim Rebasing" id="konflikte">
+        <p>
+            Falls Git bei den Umbauarbeiten Konflikte bemerkt, müssen diese manuell behoben, in einem Commit gespeichert
+            und den Rebasing-Vorgang dann mit <code>git rebase --continue</code> fortgesetzt werden.
+        </p>
+        <p>
+            Die Checkout-Optionen <code>--ours</code> und <code>--theirs</code> haben eine umgekehrte Wirkung wie bei
+            einem gewöhnlichen Merge-Prozess! Im Beispiel würde <code>--ours</code> den Zweig develop und
+            <code>--theirs</code> den eigenen Zweig feature bezeichnen.
+        </p>
     </chapter>
 
     <chapter title="Nebenwirkungen" id="nebenwirkungen">
