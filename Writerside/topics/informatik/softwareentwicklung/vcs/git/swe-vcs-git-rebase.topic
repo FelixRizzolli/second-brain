@@ -179,8 +179,23 @@
     </chapter>
 
     <chapter title="Squashing" id="squashing">
+        <p>
+            Mit dem Befehl <code>git merge --squash &lt;other&gt;</code> und folglich git commit kann der Zweig other zu
+            einem großen Commit zusammengefasst werden. Dieser Commit gilt als »gewöhnlicher« Commit. Als einziger
+            Parent gilt der vorige Commit des aktiven Zweigs. Anders als bei einem Merge-Commit fehlt aber ein
+            Parent-Verweis auf den anderen Zweig. Es kommt aber zu keinem Rebasing, das heißt, die ursprünglichen
+            Commits von <code>&lt;other&gt;</code> bleiben, wie sie sind. Mit dieser Methode ist, bekommt man eine
+            sauberere History.
+        </p>
 
         <chapter title="Beispiel" id="squashing-beispiel">
+            <img src="swe-vcs-git-rebase-squashing.jpg" alt="Beispiel: Squashing"/>
+
+            <p>
+                Der Nachteil des Squashings besteht darin, dass in der History des Hauptzweigs die Commit-Details des
+                Bugfix verloren gehen. In der Commit-Abfolge ist nicht erkenntlich, dass überhaupt ein Merge-Prozess
+                stattgefunden hat.
+            </p>
         </chapter>
     </chapter>
 
