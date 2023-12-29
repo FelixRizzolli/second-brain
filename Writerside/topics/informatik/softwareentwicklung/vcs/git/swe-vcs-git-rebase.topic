@@ -79,6 +79,25 @@
     </chapter>
 
     <chapter title="Konzept" id="konzept">
+        <p>
+            Beim Rebasing werden auf der Basis vorhanener Commits neue Commits (mit neuen Hashcodes) erzeugt und die
+            Referenzen zu den alten gelöscht. Diese werden dann mit der Zeit vom <emphasis>Garbage Collector</emphasis>
+            entfernt.
+        </p>
+        
+        <chapter title="Zurück zum Beispiel" id="beipsiel">
+            <p>
+                git übernimmt die Commits D1 und D2 und tut so, als wären diese Teile des Feature-Zweigs. Das ist
+                technisch kein Problem, an den Commits ändert sich ja nichts. Im Feature-Zweig werden F1 und F2 nun
+                zuerst gleichsam rückabgewickelt. Anschließend werden zwei neue Commits F1' und F2' erstellt, die die
+                ursprünglichen Änderungen von F1 und F2 neu verpacken – aber so, als wären die Änderungen auf der Basis
+                von Commit D2 zustande gekommen. F1' und F2' sind also <b>vollkommen neue Commits</b>. Zwar werden die
+                Metadaten – also die Commit-Message, der Zeitpunkt und der Autor – von den ursprünglichen Commits
+                übernommen, aber der Zustand der Dateien ist ein anderer – und der Hashcode natürlich auch! Der Vorteil
+                der Rebasing-Vorgehensweise besteht darin, dass kein Merge-Commit erforderlich ist. Ein
+                Fast-forward-Merge ohne eigenen Commit reicht aus.
+            </p>
+        </chapter>
     </chapter>
 
     <chapter title="Merge-Konflikte beim Rebasing" id="konflikte">
