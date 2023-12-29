@@ -313,6 +313,16 @@
     </chapter>
 
     <chapter title="Dateien durchsuchen" id="file">
+        <p>
+            Mit den Kommandos git show, git diff und git blame bietet Git alle Fragen rund um Dateien zu Beantworten.
+            Darunter:
+        </p>
+        
+        <list>
+            <li>Welchen Inhalt hatte eine Datei zu einem früheren Zeitpunkt?</li>
+            <li>Was hat sich seither geändert?</li>
+            <li>Und wer ist dafür verantwortlich?</li>
+        </list>
 
         <chapter title="Alte Versionen einer Datei ansehen (git show)" id="file-gitshow">
         </chapter>
