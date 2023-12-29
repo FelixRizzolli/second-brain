@@ -22,6 +22,72 @@
     </chapter>
 
     <chapter title="Zweige/Branches zusammenführen" id="merge">
+        <p>
+            Um die in enthaltenen Änderungen des newfeature Zweiges in master zu integrieren und den Zweig aufzulösen
+            wird zuerst in den master-Zweig gewechselt und dort der Befehl <code>git merge</code> verwendet.
+        </p>
+
+        <code-block lang="bash">
+            git checkout master
+        </code-block>
+        <code-block lang="bash">
+            git merge newfeature
+        </code-block>
+        
+        <p>
+            Was danach passiert hängt stark von den Begleitumständen ab.
+        </p>
+        <p>
+            Egal, von welcher Seite der Merge-Prozess gestartet wurde: Das Endergebnis in Ihrem Projektverzeichnis ist
+            in beiden Fällen dasselbe! Dennoch ist es keineswegs egal, von welcher Seite der Merge-Prozess ausgeführt
+            wird!
+        </p>
+        
+        <list>
+            <li>
+                Wird vom Master-Branch aus der Feature-Branch mit dem Master-Branch zusammenführen, ändert sich der
+                Master-Branch. Der Feature-Zweig bleibt, wie er ist.
+            </li>
+            <li>
+                Wird hingegen vom Feature-Branch aus der Master-Zweig zum Feature-Zweig gemerged, ändert sich der
+                Feature-Zweig. In diesem Fall bleibt der Master-Zweig unverändert.
+            </li>
+        </list>
+        
+        <p>
+            In jedem Fall können beide Zweige weitergenutzt werden. Der Merge-Prozess »schließt« keinen Zweig. Wenn ein
+            Zweig nicht mehr benötigt wird, muss er explizit mit <code>git branch -d</code> gelöscht werden.
+        </p>
+        
+        <table>
+            <tr>
+                <td>Gewöhnlicher Merge</td>
+                <td>
+                    Sofern im newfeature-Branch andere Codeteile verändert wurden als die auf dem master-Branch, kann
+                    Git die Änderungen selbstständig verarbeiten. Die durchgeführten Änderungen werden im Rahmen eines
+                    Commits gespeichert, wobei automatisch ein Editor erscheint, in dem eine vorgegebene Commit-Message
+                    bei Bedarf angepasst werden kann.
+                </td>
+            </tr>
+            <tr>
+                <td>Fast-forward Merge</td>
+                <td>
+                    Ein Sonderfall ist ein Merge-Prozess, bei dem der Basiszweig, seit der Aufspaltung in zwei Zweige,
+                    unverändert geblieben ist. In diesem Fall ist kein »echter« Merge erforderlich. Vielmehr reicht es
+                    aus, den Zeiger des Basiszweigs auf den letzten Commit zu stellen.
+                </td>
+            </tr>
+            <tr>
+                <td>Merge Konflikt</td>
+                <td>
+                    Bei einem Merge-Konflikt ist Git nicht in der Lage, die in den Zweigen durchgeführten Änderungen
+                    zusammenzuführen. Der häufigste Grund besteht darin, dass bestimmte Zeilen des Codes in beiden
+                    Zweigen unterschiedlich verändert wurden – z. B. ursprünglich <code>maxvalue=20</code>, aber
+                    <code>maxvalue=10</code> in Commit C und <code>maxvalue=30</code> in Commit E. Gits Automatismen
+                    versagen aber auch bei binären Dateien
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter title="Fast-forward-Merge" id="fastforward">
