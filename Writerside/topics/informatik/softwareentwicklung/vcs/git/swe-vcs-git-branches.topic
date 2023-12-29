@@ -68,14 +68,47 @@
     </chapter>
 
     <chapter title="Zweig/Branch wechseln und erstellen (git checkout)" id="ckeckout">
-
         <chapter title="Einen neuen Branch erstellen" id="ckeckout-neu">
+            <p>
+                Ein neuer Branch wird mit dem Befehl <code>git branch</code> erstellt.
+            </p>
+
+            <code-block lang="bash">
+                git branch newfeature
+            </code-block>
         </chapter>
 
         <chapter title="Branch wechseln" id="ckeckout-wechseln">
+            <p>
+                Mit dem Befehl <code>git checkout &lt;name&gt;</code> in einen Zweig. Die benutzerfreundlichere und
+                neuere Alternative ist git switch, was im Grunde genommen dasselbe bewirkt.
+            </p>
+
+            <code-block lang="bash">
+                git branch newfeature
+            </code-block>
+
+            <p>
+                Beim Checkout werden alle unter Git-Kontrolle stehenden Dateien ausgetauscht und durch die Versionen
+                ersetzt, die beim letzten Commit im jeweiligen Zweig gültig waren. Nicht unter Versionskontrolle
+                stehende Dateien rührt git checkout nicht an.
+            </p>
         </chapter>
 
         <chapter title="Branch erstellen und wechseln in einem Schritt" id="ckeckout-beides">
+            <p>
+                Um einen neuen Branch zu erzeugen und zeitgleich zu aktivieren, wird die Option <code>-b</code> dem
+                Befehl angehängt.
+            </p>
+
+            <code-block lang="bash">
+                git checkout -b newfeature
+            </code-block>
+
+            <p>
+                Sollte es zu diesem Zeitpunkt bereits Änderungen ohne Commit geben, dann werden diese Änderungen
+                automatisch in den neuen Zweig übernommen.
+            </p>
         </chapter>
     </chapter>
 
