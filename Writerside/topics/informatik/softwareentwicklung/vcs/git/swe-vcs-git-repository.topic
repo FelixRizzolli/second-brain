@@ -158,11 +158,44 @@
     </chapter>
 
     <chapter title="Fork" id="fork">
+        <p>
+            Um ein Open-Source-Projekt eines öffentlichen GitHub-Repositorys herunterzuladen, kann man den Befehl
+            <code>git clone</code> ausführen. Ist man selbst kein Mitglied des Entwicklerteams, so können Änderungen mit
+            <code>git push</code> nicht hochgeladen werden.
+        </p>
 
         <chapter title="Forks erstellen" id="fork-erstellen">
+            <p>
+                Um die Zusammenarbeit in Open-Source-Projekten zu erleichtern und nicht jeden x-Beliebigen Entwicklern
+                die Rechte zum Repository zu geben hat GitHub vor vielen Jahren das Erstellen von sog. Forks etabliert.
+                Um an einem fremden Projekt mitzuarbeiten, gibt es auf der jeweiligen GitHub-Seite den Button
+                <ui-path>Fork</ui-path>. Damit wird eine Kopie des fremden Repositorys auf dem eigenen GitHub-Account
+                erstellt. Mit <code>git clone</code> kann nun der Fork ein lokales Repository auf dem Rechner erstellt
+                werden. Wird der Befehl <code>git push</code> ausgeführt so wirken sich die Änderungen nur auf dem Fork
+                aus.
+            </p>
         </chapter>
 
         <chapter title="Der Pull-Request" id="fork-pull">
+            <p>
+                In der GitHub-Weboberfläche kann nun ein Pull-Request erstellt werden <ui-path>(Reiter) Pull requests →
+                (Button) New pull request</ui-path>. Damit wird man auf die Seite des ursprünglichen Projekts
+                umgeleitet. GitHub zeigt dabei eine Zusammenfassung der durchgeführten Änderungen an. In einem weiteren
+                Schritt kann eine Nachricht an die Entwickler des externen Repositorys übermittelt werden. Üblicherweise
+                handelt es sich dabei um Informationen was geändert wurde und eventuell auch warum.
+            </p>
+            <p>
+                Nun entscheiden die oder der Besitzer des fremden Repositorys, ob er die Änderungen akzeptiert (Merge
+                pull request), sie ablehnt oder auch Verbesserungsvorschläge bzw. weitere Änderungen einfordert
+                (Comment).
+            </p>
+            <p>
+                Pull-Requests bieten die einzige Möglichkeit, an GitHub-Projekten teilzunehmen, ohne Mitglied des
+                jeweiligen Teams zu sein. Pull-Requests werden aber häufig auch projektintern verwendet, um allzu viele
+                unkoordinierte Änderungen am Repository zu verhindern. Da Forks und Pull-Requests keine Git-Techniken
+                sind, gibt es dafür auch keine <code>git</code>-Subkommandos. Zudem kann auch die Nomenklatur je nach
+                Plattform variieren. In GitLab werden sie beispielsweise Merge-Requests genannt.
+            </p>
         </chapter>
     </chapter>
 
