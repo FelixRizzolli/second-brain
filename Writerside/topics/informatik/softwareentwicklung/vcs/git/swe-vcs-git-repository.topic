@@ -6,6 +6,46 @@
        title="Repository" id="swe-vcs-git-repository">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Repository in der Theorie" id="theorie">
+
+        <chapter title="Mehr zu Repositorys" id="theorie-mehr">
+        </chapter>
+
+        <chapter title="Origin" id="theorie-origin">
+        </chapter>
+
+        <chapter title="Hooks" id="theorie-hooks">
+        </chapter>
+
+        <chapter title="Submodule" id="theorie-submodule">
+
+            <chapter title="Subtrees" id="theorie-submodule-subtrees">
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="Remote Repositorys" id="remote">
+
+        <chapter title="Initialisierungsarbeiten" id="remote-init">
+        </chapter>
+
+        <chapter title="Push und Pull" id="remote-pushpull">
+        </chapter>
+
+        <chapter title="Einen eigenen Git-Server konfigurieren" id="remote-konfigurieren">
+        </chapter>
+    </chapter>
+
+    <chapter title="Fork" id="fork">
+
+        <chapter title="Forks erstellen" id="fork-erstellen">
+        </chapter>
+
+        <chapter title="Der Pull-Request" id="fork-pull">
+        </chapter>
+    </chapter>
+
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
