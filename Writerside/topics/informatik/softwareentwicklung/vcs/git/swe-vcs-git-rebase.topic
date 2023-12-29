@@ -7,6 +7,23 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Einführung" id="einfuehrung">
+        <p>
+            Der Befehl <code>git rebase</code> kann anstelle von <code>git merge</code> verwendet werden oder in der
+            Form <code>git pull --rebase</code>. In diesem Fall wird anstelle des im Rahmen des Pull-Prozesses
+            erforderlichen <code>git merge</code> eben ein <code>git rebase</code> ausgeführt.
+        </p>
+
+        <code-block lang="bash">
+            git rebase &lt;other&gt;
+        </code-block>
+        <code-block lang="bash">
+            git pull --rebase
+        </code-block>
+
+        <p>
+            Mit <code>git rebase</code> darf nie der Verlauf von Commits in einem öffentlichen Zweig, wenn die Commits
+            bereits hochgeladen wurden, verändert werden. Komplett tabu ist diesbezüglich der Master-Zweig.
+        </p>
     </chapter>
 
     <chapter title="Beispiel" id="beispiel">
