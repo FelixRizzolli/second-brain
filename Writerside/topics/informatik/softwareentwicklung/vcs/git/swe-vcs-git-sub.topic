@@ -118,6 +118,9 @@
     </chapter>
 
     <chapter title="Mehr zu Submodules und Subtrees" id="mehr">
+        <a href="https://training.github.com/downloads/submodule-vs-subtree-cheat-sheet/">
+            https://training.github.com/downloads/submodule-vs-subtree-cheat-sheet/
+        </a>
     </chapter>
 
     <chapter title="Monorepos" id="monorepos">
