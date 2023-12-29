@@ -148,6 +148,21 @@
         </chapter>
 
         <chapter title="Fazit" id="featurebranching-fazit">
+            <p><b>Vorteile</b></p>
+
+            <list>
+                <li>ungestörte Entwicklung von neuen Funktionen</li>
+                <li>Code-Reviews vor dem Merge des Feature-Branches</li>
+                <li>übersichtliche Git-History</li>
+                <li>Master-Branch bleibt stabil</li>
+            </list>
+
+            <p><b>Nachteile</b></p>
+
+            <list>
+                <li>mögliche Codeduplizierung in gemeinsamen Bibliotheken</li>
+                <li>zu komplizierte Merges wegen zu langer Entwicklung</li>
+            </list>
         </chapter>
     </chapter>
 
