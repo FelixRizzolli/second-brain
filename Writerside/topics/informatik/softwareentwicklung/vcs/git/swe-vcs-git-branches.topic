@@ -147,21 +147,21 @@
         </chapter>
 
         <chapter title="Commit importieren" id="cherrypick-importieren">
-            <p>
-                Zweige in Git sind einfach nur Zeiger (Pointer) auf einen Commit. Wird ein neuer Zweig erstellt, so
-                landet in <path>.git/refs/heads</path> eine neue Datei, deren Namen dem Branch-Namen entspricht. Die
-                Textdatei (41 Byte) enthält nur den Hashcode des letzten Commits des Zweigs.
-            </p>
-            <p>
-                Bei einem Checkout wird einfach der letzte Commit des jeweiligen Branches in das Arbeitsverzeichnis
-                kopiert. Außerdem ändert sich beim Checkout die winzige Datei <path>.git/HEAD</path>: Sie enthält nun
-                statt anfänglich <path>refs/heads/master</path> die Bezeichnung des gerade gültigen Zweigs, also z.B.
-                <path>refs/heads/new_feature</path>.
-            </p>
         </chapter>
     </chapter>
 
     <chapter title="Branches in der Git-Datenbank" id="gitdatenbank">
+        <p>
+            Zweige in Git sind einfach nur Zeiger (Pointer) auf einen Commit. Wird ein neuer Zweig erstellt, so
+            landet in <path>.git/refs/heads</path> eine neue Datei, deren Namen dem Branch-Namen entspricht. Die
+            Textdatei (41 Byte) enthält nur den Hashcode des letzten Commits des Zweigs.
+        </p>
+        <p>
+            Bei einem Checkout wird einfach der letzte Commit des jeweiligen Branches in das Arbeitsverzeichnis
+            kopiert. Außerdem ändert sich beim Checkout die winzige Datei <path>.git/HEAD</path>: Sie enthält nun
+            statt anfänglich <path>refs/heads/master</path> die Bezeichnung des gerade gültigen Zweigs, also z.B.
+            <path>refs/heads/new_feature</path>.
+        </p>
     </chapter>
 
     <chapter title="Branches visualisieren" id="visualisieren">
