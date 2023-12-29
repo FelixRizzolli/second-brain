@@ -68,14 +68,92 @@
     </chapter>
 
     <chapter title="Remote Repositorys" id="remote">
+        <p>
+            Git wurde, im Gegensatz zu vielen anderen Verwaltungsprogrammen, mit der Vision einer dezentralen
+            Organisation konzipiert. Beispiel: Drei Entwickler konfigurieren jeweils, auf ihren eigenen Rechner, ihren
+            eigenen Git-Server. Danach kann jeder, mit entsprechenden Zugriffsrechten, mit jedem Commits austauschen
+            Zweige zusammenführen usw. Die meisten waren jedoch schon mit dem (wenn auch geringen) Aufwand überfordert,
+            ihren jeweils eigenen Git-Server zu konfigurieren. Für das Arbeiten im Tea ist es praktischer, wenn es einen
+            zentralen Server gibt, auf den alle Teammitglieder zugreifen können.
+        </p>
+        <p>
+            Als eine der ersten Firmen hat <b>GitHub</b> das hier schlummernde Marktpotential erkannt, eine
+            Weboberfläche zusammengestellt und entsprechende Dienste sowohl kostenlos als auch kommerziell angeboten.
+        </p>
 
         <chapter title="Initialisierungsarbeiten" id="remote-init">
+            <p>
+                Ein klokales Repository mit einem entfernten verbinden:
+            </p>
+            
+            <list>
+                <li>
+                    Wenn das Remote Repository bereits existiert, so kann es geklont werden. Dafür wird der Befehl
+                    <code>git clone</code> verwendet.
+                </li>
+                <li>
+                    <p>
+                        Wurde das Projekt zuerst lokal gestartet und soll erst später in ein anfänglich leeres Remote
+                        Repository übertragen werden sow werden folgende Schritte abgearbeitet:
+                    </p>
+                    
+                    <list>
+                        <li>
+                            Ordner des Repositorys erstellen und in das jeweilige Verzeichnis wechseln:
+                            <code>mkdir &lt;reponame&gt;</code> und <code>cd &lt;reponame&gt;</code>.
+                        </li>
+                        <li>
+                            Repository mit git init initialisieren und dies speichern mit
+                            <code>git commit -a -m 'initial commit'</code>.
+                        </li>
+                        <li>
+                            Dem lokalen Repository das entfernte Repository mit dem Befehl
+                            <code>git remote add origin git@github.com:&lt;account&gt;/&lt;reponame&gt;.git</code>
+                            hinzufügen.
+                        </li>
+                        <li>
+                            Mit dem Befehl <code>git push -u</code> das Repository zum Default-Repository ernennen.
+                        </li>
+                    </list>
+                </li>
+            </list>
         </chapter>
 
         <chapter title="Push und Pull" id="remote-pushpull">
+            <p>
+                Nachdem das Remote Repository geklont wurde, können die Entwickler mit dem Codieren beginnen. die
+                Änderungen werden durch den Befehl <code>git add</code>. in den Stash geladen und mittels
+                <code>git commit</code>, von dort aus, ins lokale Repository aufgenommen. Mit dem Befehl
+                <code>git push</code> werden die durchgeführten Commits vom lokalen Repository aufs Remote Repository
+                übertragen. Haben mehrere Entwickler in derselben Datei an derselben Codestelle Änderungen durchgeführt,
+                so kann es zu Merge-Konflikten kommen. Es ist empfehlenswert, immer vor dem Befehl <code>git push</code>
+                ein <code>git pull</code> auszuführen. Dabei werden die Änderungen vom Remote-Repository ins lokale
+                Repository geladen und zusammengeführt.
+            </p>
+
+            <note>
+                <p><b>Rebasing</b></p>
+
+                <p>
+                    Wenn mehrere Personen an gemeinsamen Zweigen arbeiten, kommt es bei <code>git pull</code> ständig zu
+                    Merge-Prozessen. Das ist nicht nur lästig, sondern führt auch zu einer sehr unübersichtlichen
+                    Commit-Abfolge. Abhilfe schafft <code>git pull --rebase</code>. Befor diese Option gewählt wird
+                    sollte man sich mit dem Thema <a href="swe-vcs-git-rebase.topic">Rebasing</a> und dessen
+                    Nebenwirkungen genauer auseinandersetzen.
+                </p>
+            </note>
         </chapter>
 
         <chapter title="Einen eigenen Git-Server konfigurieren" id="remote-konfigurieren">
+            <p>
+                Mit der folgenden Anleitung lasst sich ganz einfach ein eigener Git-Server konfigurieren:
+                <a href="https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols">
+                    https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols
+                </a>. Das Ergebmis ist dann in gewissermaßen "GitHub selbstgebaut in zehn Minuten". Dabei fehlen aber
+                sämtliche Zusatzfunktionen von der Weboberfläche über die Bug-Datenbank (Issues) bis hin zur
+                Zwei-Faktor-Authentifizierung. Es gibt schon einen Grund, warum Microsoft 7,5 Milliarden US$ in die Hand
+                genommen hat, um GitHub zu erwerben.
+            </p>
         </chapter>
     </chapter>
 
