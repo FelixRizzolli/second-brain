@@ -242,6 +242,41 @@
         </chapter>
 
         <chapter title="Konflikte bei binären Dateien" id="konfilikte-binaere-dateien">
+            <p>
+                Bei binären Dateien (Bilder, Word-Dokumente, PDF- und ZIP-Dateien etc.) kann Git nicht die Änderungen
+                zwischen den zwei Versione der Datei erkennen. Wenn eine Binärdatei in zwei Zeigen einen
+                unterschiedlichen Inhalt hat, hat Git keinerlei Anhatspunkt, welches die "bessere" Datei ist. In so
+                einem Fall wird der Befehl <code>git checkout</code> verwendet, um explizit entweder die Version des
+                aktuellen/eigenen Zweigs <code>--ours</code> oder die des anderen/fremden Zweigs <code>--theirs</code>
+                zu verwenden.
+            </p>
+
+            <code-block lang="bash">
+                git checkout --ours --image.png
+            </code-block>
+            <code-block lang="bash">
+                git commit -a
+            </code-block>
+
+            <p> </p>
+
+            <code-block lang="bash">
+                git checkout --theirs --image.png
+            </code-block>
+            <code-block lang="bash">
+                git commit -a
+            </code-block>
+
+            <p>
+                Mit <code>git commit -a</code> wird der Commit abgeschlossen. Die Option <code>-a</code> ist
+                erforderlich, damit die mit <code>git checkout</code> veränderte Datei berücksichtigt wird. (Alternativ
+                kann vorher <code>git add &lt;file&gt;</code> ausgeführt werden.)
+            </p>
+            <p>
+                Beim Rebasing haben die Parameter <code>--ours</code> und <code>--theirs</code> eine inversive
+                Bedeutung! Das liegt daran, dass beim Rebasing die fremden Commits als Basis verwendet werden und die
+                eigenen entsprechend angepasst werden. Der Merge-Prozess erfolgt daher in umgekehrter Richtung.
+            </p>
         </chapter>
 
         <chapter title="Merge-Abbruch und Undo" id="konflikte-abbruch">
