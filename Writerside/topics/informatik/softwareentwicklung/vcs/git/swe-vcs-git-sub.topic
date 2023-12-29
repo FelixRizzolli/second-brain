@@ -32,8 +32,69 @@
     </chapter>
 
     <chapter title="Submodule" id="submodule">
+        <p>
+            Ein Submodule ist ein Git-Repository in einem Git-Repository. Mit dem Befehl <code>git submodule add</code>
+            kann Repository als Submodul ins eigene Repository hinzugefügt werden. Dabei klont Git das vollständige
+            Repository in den ausgewählten Unterordner. Die Änderung muss noch mittels <code>git add</code> in den Stash
+            geladen und mittels Commit ins Repository aufgenommen werden, damit der Prozess abgeschlossen ist.
+        </p>
+
+        <code-block lang="bash">
+            git submodule add https://github.com/&gt;user&lt;/&gt;submodule&lt; &gt;folder&lt;
+        </code-block>
+        <code-block lang="bash">
+            git add .
+        </code-block>
+        <code-block lang="bash">
+            git commit -m 'add submodule &gt;submodule&lt;'
+        </code-block>
+
+        <p>
+            Wurde ein Submodul hinzugefügt, so wird eine neue Datei namens <path>.gitmodules</path> erstellt. Diese
+            Datei unterliegt der Versionskontrolle. Sie wird zusammen mit dem Rest des Projekts gepusht und gepullt. So
+            wissen auch andere Entwickler, die dieses Projekt klonen, wo die Submodule beziehen können. Hier ein
+            Musterbeispiel:
+        </p>
+
+        <code-block>
+            <![CDATA[
+            [submodule "<submodule>"]
+                path = <folder>
+                url = https://github.com/<user>/<submodule>
+            ]]>
+        </code-block>
+
+        <p>
+            Obwohl das ein das Submodul im Arbeitsverzeichnis des eigenen Repositorys liegt, versteht es Git als ein
+            Submodul und überwacht seinen Inhalt nicht, solange man sich nicht in diesem Verzeichnis befindet. Git sieht
+            es viel mehr als einen besonderen Commit dieses Repositorys an. Wird im Original-Repository des Submodules
+            ein Fehler behoben, also ein Commit gepusht, so referenziert das Submodul immer noch auf den alten Commit.
+        </p>
 
         <chapter title="Submodule aktualisieren" id="submodule-aktualisieren">
+            <p>
+                Der Befehl <code>git pull</code> holt standardmäßig rekursiv die Änderungen der Submodule. Er
+                aktualisiert jedoch nicht die Submodule. Um ein Submodul zu aktualisieren, muss in das jeweilige
+                Verzeichnis gewechselt und dort der Befehl <code>git submodule update --init --recursive</code>
+                ausgeführt werden.
+            </p>
+
+            <code-block lang="bash">
+                git submodule update --init --recursive
+            </code-block>
+        </chapter>
+        
+        <chapter title="Repository mit Submodules klonen" id="submodule-klonen">
+            <p>
+                Möchte man eine Repository klonen die Submodules enthält, so muss der Parameter
+                <code>--recurse-submodules</code> hinzugefügt werden, da sonst nur der leere Ordner für das Modul
+                erstellt wird! Um die Module im Nachhinein zu laden, muss
+                <code>git submodule update --init --recursive</code> im Verzeichnis des Submodules verwendet werden.
+            </p>
+
+            <code-block lang="bash">
+                git submodule update --init --recursive
+            </code-block>
         </chapter>
     </chapter>
 
