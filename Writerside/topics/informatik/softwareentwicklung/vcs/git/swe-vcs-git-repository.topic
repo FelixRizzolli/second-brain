@@ -7,19 +7,62 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Repository in der Theorie" id="theorie">
-
-        <chapter title="Mehr zu Repositorys" id="theorie-mehr">
-        </chapter>
+        <p>
+            Ein Repository ist die Sammlung (das Depot, das Archiv aller Dateien eines Projektes inklusive ihrer
+            Geschichte. Das Repository ist vergleichbar mit einem Datenbanksystem, das sämtliche Zustände des Projekts
+            von der ersten Datei bis zum aktuellen Zustand enthält, samt Informationen, wer wann welche Änderungen
+            durchgeführt hat. Im Repository ist somit nachvollziehbar, in welchen Schritten jede Datei den gerade
+            aktuellen Zustand erreicht hat. Diese Information wird <b>History</b> genannt.
+        </p>
+        <p>
+            Innerhalb des Repositorys kann es beliebig viele Zweige (Branches) geben. Zweige helfen z.B. dabei, neue
+            Features zu entwickeln, ohne an der Stabilität der Hauptversion zu rütteln. Zweige geben mehreren
+            Entwicklern die Möglichkeit, unabhängig voneinander verschiedene Aufgaben zu erledigen. Jeder Zweig hat sein
+            eigenes Set von Dateien bzw. von Dateiversionen.
+        </p>
+        <p>
+            Eine besondere Rolle spielt der <b>Master</b>-Zwig. Beim Einrichten eines neuen Repositorys wird automatisch
+            der (zu diesem Zeitpunkt einzige) Master-Zweig eingerichtet. Es gilt als Defaultzweig - und die meisten
+            Git-Anwender belassen es dabei. Intern ist der Master-Zweig ein Zweig wie jeder andere.
+        </p>
+        <p>
+            Ein Git-Repository besteht aus den Dateien im <b>Working Directory</b>, die den aktuellen Zustand des gerade
+            aktiven Zweigs widerspiegeln, und der "Repository-Datenbank im Unterverzeichnis <path>.git</path>. Anstelle
+            vom Working Directory" Sind auch der Begriff <b>Workspace</b> sowie die deutschen Bezeichnungen
+            <b>Arbeitsverzeichnis</b> oder <b>Projektverzeichnis</b> üblich.
+        </p>
 
         <chapter title="Origin" id="theorie-origin">
+            <p>
+                Das Repository <b>Origin</b> (wörtlich Ursprung) ist das Repository von dem das Projekt ursprünglich
+                geklont wurde, bzw. das explizit als externes Default-Repository konfiguriert wurde. Push- und
+                Pull-Operationen, bei denen nicht explizit ein anderes Remote Repository angegeben wurde, betreffen
+                automatsch den Origin.
+            </p>
         </chapter>
 
         <chapter title="Hooks" id="theorie-hooks">
+            <p>
+                Git kann beim Eintreten bestimmter Ereignisse automatisch ein Script ausführen. Die Konfiguration dieses
+                Features erfolgt über Hooks. Mehr zu Hooks <a href="swe-vcs-git-hooks.topic">»hier«</a>
+            </p>
         </chapter>
 
         <chapter title="Submodule" id="theorie-submodule">
+            <p>
+                Manche Projekte greifen auf Subprojekte (Bibliotheken, Datenbanktreiber etc.) zurück. Damit parallel zum
+                Projekt auch am Code der Subprojekte Änderungen durchgeführt werden können, gleichzeitig aber das
+                Projekt in seiner Gesamtheit in einem Verzeichnis belassen werden kann, gibt es in Git Submodule. Dieses
+                Feature ermöglicht es, in Verzeichnissen eines Git-Repositorys unterzubringen. Trotzdem bleiben die
+                Commits unabhängig voneinander.
+            </p>
 
             <chapter title="Subtrees" id="theorie-submodule-subtrees">
+                <p>
+                    Subtrees sind eine Variante von Submodulen. Auch hier wird ein externes Repository in das eigene
+                    integriert. Allerdings werden in diesem Fall ale Dateien in einer Git-Datenbank verwaltet. was den
+                    Umgang etwas vereinfacht.
+                </p>
             </chapter>
         </chapter>
     </chapter>
