@@ -144,6 +144,73 @@
         </chapter>
 
         <chapter title="Kollisionen im Code" id="konflikte-codekollisionen">
+            <p>
+                Die häufigste Ursache von Merge-Konflikten sind in unterschiedlichen Branches oder von unterschiedlichen
+                Entwicklern durchgeführte Änderungen desselben Codes.
+            </p>
+
+            <code-block>
+                #ursprünglicher Code (master)
+                maxvalue = 20
+
+                #veränderter Code (branch1)
+                maxvalue = 30
+
+                #veränderter Code (branch2)
+                maxvalue = 10
+            </code-block>
+            <code-block lang="bash">
+                git checkout branch2
+            </code-block>
+            <code-block lang="bash">
+                git merge branch1
+            </code-block>
+            <code-block>
+                Auto-merging code.py
+                CONFLICT (content): Merge conflict in code.py
+                Automatic merge failed; fix conflicts and then commit the result.
+            </code-block>
+
+            <p>
+                Das Zusammenführen scheitert, da es für Git keine Möglichkeit gibt, festzustellen, welche der beiden
+                Änderungen besser bzw. "richtiger" ist. Die restlichen Dateien, bei denen es keine Probleme gegeben hat,
+                hat Git in der Zwischenzeit bereits zusammengeführt. Die problematischen Dateien wurden zwar auch
+                zusammengeführt enthalten aber spezielle Markierungen mit beiden Versionen des Codes.
+            </p>
+
+            <code-block>
+                <![CDATA[
+                <<<<<<< HEAD
+                        maxvalue = 10
+                =======
+                maxvalue = 30
+                >>>>>>> branch1
+                ]]>
+            </code-block>
+
+            <p>
+                Dabei ist die erste Variante (zwischen <code>&lt;&lt;&lt;</code> und <code>===</code>) der Codes des
+                aktuellen Zweigs bzw. bei einem Merge-Konflikt bei Pull der Code des aktuellen Branches. Zwischen
+                <code>===</code> und <code>&gt;&gt;&gt;</code> folgt der Code des fremden Branchs bzw. bei Pull der Code
+                aus dem Remote Repository.
+            </p>
+            <p>
+                Um den Merge-Konflikt zu lösen, muss sich für eine Variante entschieden, und die Konfliktmarkierungen
+                gelöscht werden. Anschließend muss die Datei in den nächsten Commit aufgenommen und dieser durchgeführt
+                werden. Damit ist der Merge-Prozess abgeschlossen.
+            </p>
+
+            <code-block lang="bash">
+                git add code.py
+            </code-block>
+            <code-block lang="bash">
+                git commit -m 'merge branch1 into branch2'
+            </code-block>
+
+            <p>
+                In der Praxis sind bei größeren Merge-Prozessen oft mehrere Dateien und Codepassagen betroffen.
+                Dementsprechend mühsam kann es sein, sämtliche Konflikte zu beheben.
+            </p>
         </chapter>
 
         <chapter title="Merge-Tools" id="konflikte-tools">
