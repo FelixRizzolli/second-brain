@@ -60,6 +60,21 @@
     </chapter>
 
     <chapter title="Das Ein-Mann-Team und die Solo-Entwicklung" id="solo">
+        <p>
+            Sobald ein Projekt den Hello-World-Status verlässt ist es schon sinnvoll, dass eine Versionsverwaltung
+            eingesetzt wird. Die Software dazu ist gratis und der Mehraufwand bei den Arbeitsabläufen ist minimal.
+        </p>
+        <p>
+            Bei der Solo-Entwicklung findet de Entwicklung nur am Master-Branch statt. Es werden von Zeit zu Zeit
+            Commits, welche auch als eine Art Dokumentation des Codes bzw. der verrichteten Arbeit dienen, erstellt.
+            Folglich werden immer wieder wird auf dem Remote, das als Backup für den Quellcode dient, gepusht.
+        </p>
+        <p>
+            Bildet sich im Zuge der Entwicklung eine neue Idee, die ausprobiert werden soll, so kann es sinnvoll sein,
+            deren Entwicklung auf einen neuen Branch zu verlagern. Wird die Weiterentwicklung dieser Idee aufgrund eines
+            Problems unterbrochen, so kann zu einem späteren Zeitpunkt immer noch darauf zugegriffen werden oder Code in
+            einer anderen Form verwendet werden.
+        </p>
 
         <chapter title="Fazit" id="solo-fazit">
         </chapter>
