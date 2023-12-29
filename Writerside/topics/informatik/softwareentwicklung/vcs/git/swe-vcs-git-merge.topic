@@ -438,6 +438,26 @@
         </chapter>
 
         <chapter title="Die einfachere Alternative" id="einzeldatei-alternative">
+            <p>
+                Eine alternative, viel einfachere Vorgehensweise bietet das Kommando
+                <code>git checkout --patch &lt;branch&gt; &lt;file&gt;</code>. Das Kommando überschreibt einfach die
+                vorhandene Version der Datei mit der des angegebenen Zweigs.
+            </p>
+            <p>
+                Allerdings ist bei diesem Kommando Vorsicht angebracht: git checkout führt keinen echten Merge-Vorgang
+                durch. Die seit der Trennung der Zweige im aktuellen Zweig durchgeführten Änderungen gehen verloren!
+            </p>
+            <p>
+                Dank der Option <code>--patch</code> die besteht Möglichkeit, interaktiv für jeden Codeblock zu
+                entscheiden, ob die Änderungen übernommen werden sollen oder nicht.
+            </p>
+
+            <code-block lang="bash">
+                git checkout master
+            </code-block>
+            <code-block lang="bash">
+                git checkout --patch feature file1
+            </code-block>
         </chapter>
     </chapter>
 
