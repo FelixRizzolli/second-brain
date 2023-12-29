@@ -6,6 +6,69 @@
        title="Stashing" id="swe-vcs-git-stashing">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einführung" id="einfuehrung">
+        <p>
+            Mit <code>git stash</code> können aktuelle Änderungen im Arbeitsverzeichnis gespeichert werden, ohne dabei
+            einen Commit durchzuführen. <emphasis>Stashing</emphasis> (von <emphasis>to stash</emphasis>, verstauen,
+            aufbewahren) ist dann praktisch, wenn die aktuelle Arbeit unterbrochen werden muss, um z. B. vorübergehend
+            in einen anderen Zweig zu wechseln, um dort rasch einen Bugfix durchzuführen. Das erst halbfertig neue
+            Feature soll aber noch nicht per Commit in das Repository aufgenommen werden, z.B. weil die Änderungen bei
+            den Teamkollegen Probleme verursachen könnten.
+        </p>
+    </chapter>
+
+    <chapter title="Änderungen zwischenspeichern und wiederherstellen" id="stashing">
+        <p>
+            Der Befehl <code>git stash</code> stellt den Zustand beim letzten Commit wieder her und speichert alle
+            Änderungen im Stash-Bereich.
+        </p>
+
+        <code-block lang="bash">
+            git stash
+        </code-block>
+
+        <p>
+            Später können die Änderungen mit <code>git stash pop</code> wiederhergestellt werden. Das Arbeitsverzeichnis
+            darf dabei, seit dem letzten Commit oder Checkout, keine Änderungen aufweisen. Ist dies nicht der Fall, kann
+            es zu Merge-Konflikten kommen.
+        </p>
+
+        <code-block lang="bash">
+            git stash pop
+        </code-block>
+    </chapter>
+
+    <chapter title="Mehrere Änderungen verwalten" id="verwalten">
+        <p>
+            Der Befehl <code>git stash</code> kann mehrfach ausgeführt werden und so mehrere Änderung-Sets speichern.
+            Der Befehl <code>git stash pop</code> verarbeitet die Änderungen in umgekehrter Reihenfolge wieder ab: Die
+            zuletzt gespeicherten Änderungen werden zuerst angewendet, also <emphasis>first in, last out</emphasis>. Um
+            dabei noch die Übersicht bewahren zu können gibt es den Befehl <code>git stash list</code>. Dieser zeigt
+            eine Liste aller zwischengespeicherten Stashes an, jeweils mit der Information, welcher Commit gerade gültig
+            war, als <code>git stash</code> ausgeführt wurde.
+        </p>
+
+        <code-block lang="bash">
+            git stash list
+        </code-block>
+
+        <p>
+            Der Befehl <code>git stash drop</code> kann einen Stash löschen, der nicht mehr benötigt wird.
+        </p>
+
+        <code-block lang="bash">
+            git stash drop
+        </code-block>
+
+        <p>
+            Mit dem Befehl <code>git stash clear</code> werden alle Stashes gelöscht.
+        </p>
+
+        <code-block lang="bash">
+            git stash clear
+        </code-block>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
