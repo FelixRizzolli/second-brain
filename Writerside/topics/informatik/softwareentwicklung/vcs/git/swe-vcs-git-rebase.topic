@@ -113,6 +113,24 @@
     </chapter>
 
     <chapter title="Nebenwirkungen" id="nebenwirkungen">
+        <p>
+            Das Ergebnis von <code>git log --graph</code> sieht nach einem Rebasing natürlich wesentlich aufgeräumter
+            aus. Es gibt aber auch zwei Nebenwirkungen:
+        </p>
+        
+        <list>
+            <li>
+                Die Commits F1' und F2' hat es in dieser Form nie gegeben. Der Befehl git rebase hat künstliche Commits
+                erzeugt, die Daten aus diversen Commits kombiniert. Es könnte sein, dass es im Commit F1' zu einem Bug
+                kommt, den es in F1 noch nicht gegeben hat.
+            </li>
+            <li>
+                Zusammen mit jedem Commit werden zwei Zeitangaben gespeichert, das <emphasis>Author Date</emphasis> und
+                das <emphasis>Commit Date</emphasis>. Normalerweise stimmen beide Zeitangaben überein. Beim Rebasing
+                wird das Commit Date des neu erzeugten Commits mit dem gerade aktuellen Datum aktualisiert. Das Author
+                Date bleibt dagegen unverändert.
+            </li>
+        </list>
     </chapter>
 
     <chapter title="Rebasing-Sonderfälle und Rebasing-Undo" id="sonderfaelle">
