@@ -5,6 +5,105 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Workflows" id="swe-vcs-git-workflows" help-id="vcs-git-workflows">
     <show-structure for="chapter,procedure" depth="2"/>
+    
+    <chapter title="Grundlegendes" id="grundlagen">
+
+        <chapter title="Anweisungen für das Team" id="grundlagen-team">
+        </chapter>
+
+        <chapter title="Welcher Workflow ist der Richtige?" id="grundlagen-vergleich">
+        </chapter>
+    </chapter>
+
+    <chapter title="Das Ein-Mann-Team und die Solo-Entwicklung" id="solo">
+
+        <chapter title="Fazit" id="solo-fazit">
+        </chapter>
+    </chapter>
+
+    <chapter title="Feature-Branches für Teams" id="featurebranching">
+
+        <chapter title="Neues Feature, neuer Branch" id="featurebranching-neu">
+
+            <chapter title="Code-Review" id="featurebranching-neu-codereview">
+            </chapter>
+
+            <chapter title="Merge" id="featurebranching-neu-merge">
+            </chapter>
+
+            <chapter title="Rebase" id="featurebranching-neu-rebase">
+            </chapter>
+        </chapter>
+
+        <chapter title="best practice" id="featurebranching-bestpractice">
+        </chapter>
+
+        <chapter title="Fazit" id="featurebranching-fazit">
+        </chapter>
+    </chapter>
+
+    <chapter title="Merge/Pull-Requests" id="mergepull">
+
+        <chapter title="Das Feature-Branch-Modell der Remotes" id="mergepull-featurebranch">
+        </chapter>
+
+        <chapter title="Forks" id="mergepull-forks">
+        </chapter>
+
+        <chapter title="Fazit" id="mergepull-fazit">
+        </chapter>
+    </chapter>
+
+    <chapter title="Gitflow (Long-Running Branches)" id="gitflow">
+
+        <chapter title="Der Gitflow-Workflow" id="gitflow-workflow">
+
+            <chapter title="Master, Develop, Feature" id="gitflow-workflow-branches">
+            </chapter>
+
+            <chapter title="Hot Bugfix" id="gitflow-workflow-hotfix">
+            </chapter>
+
+            <chapter title="Bugfix im Develop-Branch" id="gitflow-workflow-bugfix">
+            </chapter>
+
+            <chapter title="Release-Branches" id="gitflow-workflow-release">
+            </chapter>
+        </chapter>
+
+        <chapter title="Fazit" id="gitflow-fazit">
+        </chapter>
+    </chapter>
+
+    <chapter title="Trunk-based Development" id="tbd">
+
+        <chapter title="Master-based Development" id="tbd-master">
+
+            <chapter title="Grundregeln" id="tbd-master-grundregeln">
+            </chapter>
+
+            <chapter title="Konzept" id="tbd-master-konzept">
+            </chapter>
+        </chapter>
+
+        <chapter title="Continuous Integration" id="tbd-ci">
+
+            <chapter title="Release-ready" id="tbd-ci-release">
+            </chapter>
+        </chapter>
+
+        <chapter title="Continuous Development" id="tbd-cd">
+
+            <chapter title="Feature-Flags / Featured-Toggles" id="tbd-cd-featureflags">
+            </chapter>
+        </chapter>
+
+        <chapter title="Achtung!" id="tbd-achtung">
+        </chapter>
+
+        <chapter title="Fazit" id="tbd-fazit">
+        </chapter>
+    </chapter>
 
     <chapter title="Quellen" id="quellen">
         <tip>
