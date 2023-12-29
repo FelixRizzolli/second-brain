@@ -7,8 +7,21 @@
     <show-structure for="chapter,procedure" depth="2"/>
     
     <chapter title="Grundlegendes" id="grundlagen">
-
         <chapter title="Anweisungen für das Team" id="grundlagen-team">
+            <p>
+                Um alleine oder vor allem in einem Team, erfolgreich und produktiv mit Git zu arbeiten gibt es gewisse
+                Abläufe: sog. Workflows. Welche dieser Abläufe für das eigene Team der richtige ist, hängt neben dem
+                Produkt auch ein wenig vom persönlichen Geschmack ab.
+            </p>
+            <p>
+                Es ist sinnvoll zum Projektstart mit dem Team gewisse Regeln für die Zusammenarbeit am Quellcode
+                festzulegen. Die festgelegten Anweisungen müssen folglich in physischer oder digitaler Form für jedes
+                Teammitglied in greifbarer nähe sein.
+            </p>
+            <p>
+                Je nach Teamgröße kann es auch sinnvoll sein, einen Git-Tutor zu bestimmen, der als Ansprechpartner bei
+                Problemen fungiert.
+            </p>
         </chapter>
 
         <chapter title="Welcher Workflow ist der Richtige?" id="grundlagen-vergleich">
