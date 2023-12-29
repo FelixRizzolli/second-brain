@@ -6,6 +6,30 @@
        title="Rebase" id="swe-vcs-git-rebase">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einführung" id="einfuehrung">
+    </chapter>
+
+    <chapter title="Beispiel" id="beispiel">
+    </chapter>
+
+    <chapter title="Konzept" id="konzept">
+    </chapter>
+
+    <chapter title="Merge-Konflikte beim Rebasing" id="konflikte">
+    </chapter>
+
+    <chapter title="Nebenwirkungen" id="nebenwirkungen">
+    </chapter>
+
+    <chapter title="Rebasing-Sonderfälle und Rebasing-Undo" id="sonderfaelle">
+    </chapter>
+
+    <chapter title="Squashing" id="squashing">
+
+        <chapter title="Beispiel" id="squashing-beispiel">
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
