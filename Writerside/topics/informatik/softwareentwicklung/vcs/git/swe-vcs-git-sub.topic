@@ -99,6 +99,22 @@
     </chapter>
 
     <chapter title="Subtrees" id="subtree">
+        <p>
+            Der administrative Aufwand hat vermutlich dazu geführt, dass sie Git-Entwickler eine weitere Variante
+            entwickelt haben, Module in einem Git-Repository zu verwalten: Subtrees. Subtrees bieten eine etwas
+            einfachere Möglichkeit im eigenen Git-Repositorys den Quellcode eines anderen Repositorys zu verwenden.
+            Während bei Submodulen nur die Referenz auf den Commit im Modul vom Hauptprojekt verwaltet wird, wird bei
+            Subtrees der ganze Quellcode des Moduls eingebunden. In der Standardvariante wird dabei auch die ganze
+            Git-History mit importiert, was in den meisten Fällen nicht notwendig ist. Das Subtree-Kommando sieht dafür
+            die Option <code>--squash</code> vor, die die Git-History in einen einzigen Commit verpackt.
+        </p>
+
+        <code-block lang="bash">
+            git subtree add --prefix=&lt;folder&gt; https://github.com/&lt;user&gt;/&lt;subtree&gt;
+        </code-block>
+        <code-block lang="bash">
+            git subtree add --prefix=&lt;folder&gt; --squash https://github.com/&lt;user&gt;/&lt;subtree&gt;
+        </code-block>
     </chapter>
 
     <chapter title="Mehr zu Submodules und Subtrees" id="mehr">
