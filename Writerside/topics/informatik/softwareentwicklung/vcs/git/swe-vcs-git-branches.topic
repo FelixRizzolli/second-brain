@@ -116,11 +116,48 @@
     </chapter>
 
     <chapter title="Einzelne Commits importieren (git cherry-pick)" id="cherrypick">
+        <p>
+            Das letzte Release v1.0 im master-Branch ist Fehlerhaft und es wird bereits an einem neuen Feature im
+            develop-Branch gearbeitet. Um das neue Feature fertig zu stellen ist noch viel Arbeit geplant und der Fehler
+            ist gravierend, sodass nicht auf das nächste Feature-Update gewartet werden kann. Es werden folgende Steps
+            durchgeführt:
+        </p>
+
+        <list>
+            <li>wechsel in den master-Branch,</li>
+            <li>korrigieren des Bugs, commiten des Bugfixes,</li>
+            <li>v1.0.1 veröffentlichen,</li>
+            <li>wechsel in den develop-Branch.</li>
+        </list>
 
         <chapter title="Beispiel" id="cherrypick-beispiel">
+            <img src="swe-vcs-git-branches-cherrypick.jpg" alt="git cherry-pick"/>
+
+            <p>
+                Betrifft der Bug auch den new_feature-Branch so muss dieser hier ebenfalls sofort behoben werden. Mit
+                dem Befehl <code>git cherry-pick</code>, und den als Parameter angegebenen Hascode des jeweiligen
+                Commits, wird der Commit auch in den new_feature-Branch aufgenommen. Wird dies vergessen so tritt der
+                Fehler im new_feature-Branch weiterhin auf aber beim Zusammenführen des new_feature-Branches und dem
+                master-Branch durch merge bleibt der Bugfix aktiv.
+            </p>
+
+            <code-block lang="bash">
+                git cherry-pick ad43e20
+            </code-block>
         </chapter>
 
         <chapter title="Commit importieren" id="cherrypick-importieren">
+            <p>
+                Zweige in Git sind einfach nur Zeiger (Pointer) auf einen Commit. Wird ein neuer Zweig erstellt, so
+                landet in <path>.git/refs/heads</path> eine neue Datei, deren Namen dem Branch-Namen entspricht. Die
+                Textdatei (41 Byte) enthält nur den Hashcode des letzten Commits des Zweigs.
+            </p>
+            <p>
+                Bei einem Checkout wird einfach der letzte Commit des jeweiligen Branches in das Arbeitsverzeichnis
+                kopiert. Außerdem ändert sich beim Checkout die winzige Datei <path>.git/HEAD</path>: Sie enthält nun
+                statt anfänglich <path>refs/heads/master</path> die Bezeichnung des gerade gültigen Zweigs, also z.B.
+                <path>refs/heads/new_feature</path>.
+            </p>
         </chapter>
     </chapter>
 
