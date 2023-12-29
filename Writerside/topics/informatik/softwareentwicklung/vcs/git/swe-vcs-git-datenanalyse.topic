@@ -20,8 +20,24 @@
     </chapter>
 
     <chapter title="Commits durchsuchen" id="commit">
-
         <chapter title="Das Kommando git log" id="commit-gitlog">
+            <p>
+                Das Kommando <code>git log</code> zeigt, ausgehend vom aktuellen Commit, die vorangegangenen Commits an.
+                Das ist möglich, weil zusammen mit jedem Commit auch eine Referenz auf den Parent-Commit gespeichert
+                wird. (Bei Merge-Commits gibt es entsprechend mindestens zwei Parents.) Standardmäßig zeigt
+                <code>git log</code> zu jedem Commit alle Metadaten (Datum, Autor, Zweig etc.) sowie die jeweilige
+                Commit-Message an.
+            </p>
+
+            <code-block lang="bash">
+                git log
+            </code-block>
+
+            <p>
+                Um das Kommando zu testen, bietet das Repository des Linux-Kernel eine wunderbare Spielwiese. Dabei ist
+                zu beachten, dass das Repository mehr als 4 GB an Speicherplatz benötigt. Link:
+                <a href="https://github.com/torvalds/linux.git">https://github.com/torvalds/linux.git</a>
+            </p>
 
             <chapter title="Die wichtigsten Parameter für ein übersichtlicheres Logging" id="commit-gitlog-param">
             </chapter>
