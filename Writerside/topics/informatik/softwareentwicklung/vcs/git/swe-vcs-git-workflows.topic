@@ -209,19 +209,54 @@
     </chapter>
 
     <chapter title="Gitflow (Long-Running Branches)" id="gitflow">
-
         <chapter title="Der Gitflow-Workflow" id="gitflow-workflow">
+            <p>
+                In diesem Workflow laufen zwei Branchs parallel und stehen über die gesamte Projektlaufzeit zur
+                Verfügung. Neben dem Master-Branch gibt es also (mindestens) einen weiteren Branch, der oft develop oder
+                next genannt wird und auf dem die eigentliche Entwicklung stattfindet. Der Code auf diesem Branch sollte
+                nach dem Modell stabil sein und für Nightly Builds verwendet werden. Auf den Master-Branch werden nur
+                fertige Versionen gemergt, normale Commits werden hier nicht gemacht.
+            </p>
 
             <chapter title="Master, Develop, Feature" id="gitflow-workflow-branches">
+                <p>
+                    Mit den Feature-Branches wird wie im Workflow Feature-Branches für Teams umgegangen, damit der
+                    Develop-Branch seine stabilität beibehält. Dass dieser Workflow komplexer ist, ist offensichtlich
+                    und zeigt auch folgender Graph:
+                </p>
+
+                <img src="swe-vcs-git-workflows-gitflow.jpg" alt="Komplexer Git Workflow"/>
+
+                <p>
+                    Große Feature-Updates sowie Finale Versionen werden mit Versionsnummern getaggt (z.B. v1.0, v1.1,
+                    ... v2.0, ...) und in den Master-Branch gemergt.
+                </p>
             </chapter>
 
             <chapter title="Hot Bugfix" id="gitflow-workflow-hotfix">
+                <p>
+                    Im Betrieb der Software taucht nun ein schwerwiegendes Problem auf, das sofort behoben werden muss.
+                    Dazu wird ein neuer Branch direkt vom Master-Branch als Basis erzeugt. Der Fehler wird in einem
+                    Commit behoben und der Hotfix-Branch in den Master gemergt. Die Softwareversion wird um einen
+                    Patch-Level auf v1.0.1 erhöht und im Repository entsprechend getaggt. Der Hotfix-Branch muss
+                    außerdem auf den Develop-Branch gemergt werden, um den Fehler auch dort zu eliminieren.
+                </p>
             </chapter>
 
             <chapter title="Bugfix im Develop-Branch" id="gitflow-workflow-bugfix">
+                <p>
+                    Handet es sich nicht um kritische Fehler, so wird keine neue Softwareversion veröffentlicht, sondern
+                    diese Änderungen werden in die nächste Version einfließen. Die Bugfixes werden aber sofort auf den
+                    Develop-Branch gemergt.
+                </p>
             </chapter>
 
             <chapter title="Release-Branches" id="gitflow-workflow-release">
+                <p>
+                    Mit der Fertigstellung einer neuen Major-Version wird ein neuer Release-Branch angelegt (zum
+                    Beispiel release-v2). Solche Release-Branches laufen wie develop parallel zum master aber nur so
+                    lange wie die Version aktiv unterstützt wird.
+                </p>
             </chapter>
         </chapter>
 
