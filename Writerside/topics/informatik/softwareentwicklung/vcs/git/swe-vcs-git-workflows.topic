@@ -384,6 +384,19 @@
         </chapter>
 
         <chapter title="Fazit" id="tbd-fazit">
+            <p><b>Vorteile</b></p>
+
+            <list>
+                <li>Quellcode ist immer release-ready</li>
+                <li>keine komplizierten Merges</li>
+                <li>kein Code Freeze vor Releases</li>
+            </list>
+
+            <p><b>Nachteile</b></p>
+
+            <list>
+                <li>schwieriger Einstieg für unerfahrene Entwickler, kompensierbar durch Pair-Programming</li>
+            </list>
         </chapter>
     </chapter>
 
