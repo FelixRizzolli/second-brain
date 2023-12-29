@@ -85,7 +85,10 @@
             </p>
 
             <code-block lang="bash">
-                git branch newfeature
+                git checkout newfeature
+            </code-block>
+            <code-block lang="bash">
+                git switch newfeature
             </code-block>
 
             <p>
