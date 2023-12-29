@@ -325,6 +325,18 @@
         </list>
 
         <chapter title="Alte Versionen einer Datei ansehen (git show)" id="file-gitshow">
+            <p>
+                Das Kommando <code>git show &lt;revision&gt;:&lt;file&gt;</code> gibt die Datei
+                <code>&lt;file&gt;</code> in dem Zustand aus, den sie hatte, als er Commit <code>&lt;revison&gt;</code>
+                aktuell war.
+            </p>
+
+            <code-block lang="bash">
+                git show &lt;revision&gt;:&lt;file&gt;
+            </code-block>
+            <code-block lang="bash">
+                git show v2.0:index.php      //Zeigt die Datei des Commits der mit dem Tag v2.0 gekennzeichnet wurde
+            </code-block>
         </chapter>
 
         <chapter title="Unterschiede zwischen Dateien ansehen (git diff)" id="file-gitdiff">
