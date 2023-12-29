@@ -6,6 +6,91 @@
        title="Commits" id="swe-vcs-git-commits">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Grundlagen" id="grundlagen">
+
+        <chapter title="Der aktuelle Zustandsspeicher: Staging Area" id="grundlagen-stage">
+        </chapter>
+
+        <chapter title="Der letzte Commit: HEAD" id="grundlagen-letzter-commit">
+        </chapter>
+
+        <chapter title="Sauber einen Zweig wechseln: Checkout" id="grundlagen-checkout">
+        </chapter>
+
+        <chapter title="Commit Intern" id="grundlagen-intern">
+        </chapter>
+    </chapter>
+
+    <chapter title="Referenzen auf Commits" id="referenzen">
+
+        <chapter title="Referenznamen (Refernames)" id="referenzen-refnames">
+        </chapter>
+
+        <chapter title="refname@{date}" id="referenzen-datum">
+        </chapter>
+
+        <chapter title="refname@{n}" id="referenzen-n">
+        </chapter>
+
+        <chapter title="Zugriff auf Vorgängerversionen" id="referenzen-last">
+
+            <chapter title="Die Tildensyntax" id="referenzen-last-tilde">
+            </chapter>
+
+            <chapter title="Die Zirkumflexsyntax" id="referenzen-last-zirkumflex">
+            </chapter>
+        </chapter>
+
+        <chapter title="Beispiele" id="referenzen-beispiele">
+        </chapter>
+
+        <chapter title="Referenzen auf Dateien" id="referenzen-dateien">
+        </chapter>
+    </chapter>
+
+    <chapter title="Alte Version einer Datei anzeigen (git show)" id="gitshow">
+    </chapter>
+
+    <chapter title="Änderungen vergleichen (git diff)" id="gitdiff">
+    </chapter>
+
+    <chapter title="Änderungen rückgängig machen (git reset, restore)" id="rueckgaengig">
+
+        <chapter title="Datei aus dem Stage-Bereich entfernen (git reset)" id="rueckgaengig-gitreset">
+        </chapter>
+
+        <chapter title="Den zuletzt durchgeführten Commit widerrufen (git restore)" id="rueckgaengig-gitrestore">
+        </chapter>
+    </chapter>
+
+    <chapter title="Die letzten Commits widerrufen (git revert)" id="gitrevert">
+
+        <chapter title="Einen Commit widerrufen" id="gitrevert-commit">
+        </chapter>
+
+        <chapter title="Mehrere Commits widerrufen" id="gitrevert-commits">
+        </chapter>
+
+        <chapter title="Commit-Message für Revert-Vorgänge zusammenfassen" id="gitrevert-zusammenfassen">
+        </chapter>
+    </chapter>
+
+    <chapter title="Die letzten Commits aus dem Repository löschen (git reset)" id="gitreset">
+    </chapter>
+
+    <chapter title="Vorübergehend zu einem älteren Commit wechseln (git checkout)" id="gitckeckout">
+    </chapter>
+
+    <chapter title="Commit-Message ändern" id="commit-message-aendern">
+
+        <chapter title="Commit-Massage des letzten Commits ändern" id="commit-message-aendern-letzter">
+        </chapter>
+
+        <chapter title="Commit-Message des letzten Commits in einem externen Repository ändern"
+                 id="commit-message-aendern-extern">
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
