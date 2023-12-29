@@ -165,6 +165,32 @@
     </chapter>
 
     <chapter title="Branches visualisieren" id="visualisieren">
+        <p>
+            Git fehlen Tools ein Projekt mit vielen Branches, die parallel laufen (auch <b>Lanes</b> genannt) zu
+            visualisieren. Dazu gibt es kommerzielle Zusatztools wie:
+        </p>
+        
+        <list>
+            <li>Git Flow Chart <a href="https://gfc.io">https://gfc.io</a></li>
+            <li>Git Kraken <a href="https://www.gitkraken.com/git-client">https://www.gitkraken.com/git-client</a></li>
+        </list>
+
+        <p>
+            Mit dem Befehl <code>git branch</code> werden alle Branches ausgegeben, wobei der aktuell aktive Zweig
+            markiert wird. Mit den zusätzlichen Optionen <code>--merged</code> bzw. <code>--no-merged</code> wird die
+            Ausgabe auf jene Branches reduziert, deren letzter Commit mit dem gerade aktuellen Zweig bereits
+            zusammengeführt wurde bzw. eben noch nicht zusammengeführt wurde.
+        </p>
+
+        <code-block lang="bash">
+            git branch
+        </code-block>
+        <code-block lang="bash">
+            git branch --merged
+        </code-block>
+        <code-block lang="bash">
+            git branch --no-merged
+        </code-block>
     </chapter>
 
     <chapter title="Quellen" id="quellen">
