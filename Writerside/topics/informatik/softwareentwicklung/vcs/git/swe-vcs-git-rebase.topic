@@ -134,6 +134,48 @@
     </chapter>
 
     <chapter title="Rebasing-Sonderfälle und Rebasing-Undo" id="sonderfaelle">
+        <p>
+            Wird dem Befehl git rebase die Option -i angehängt, so gelangt man in einen Editor, der die durchzuführenden
+            Aktionen zusammenfasst. Hier können nun die Kommandos geändert und so beispielsweise neue Commits festgelegt
+            (edit) oder zwei alte Commits zu einem neuen zusammengefasst (squash) werden.
+        </p>
+
+        <code-block lang="bash">
+            git rebase -i &lt;other&gt;
+        </code-block>
+
+        <p>
+            Mehr dazu:
+        </p>
+
+        <list>
+            <li>
+                <a href="https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History">
+                    https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
+                </a>
+            </li>
+            <li>
+                <a href="https://thoughtbot.com/blog/git-interactive-rebase-squash-amend-rewriting-history">
+                    https://thoughtbot.com/blog/git-interactive-rebase-squash-amend-rewriting-history
+                </a>
+            </li>
+        </list>
+
+        <p>
+            Mit <code>git rebase &lt;hash&gt;</code> kann das Rebasing an einem bestimmten Punkt gestartet werden. Der
+            Hashcode muss dabei auf den Commit vor dem ersten Commit verweisen, wo der Rebasing-Prozess beginnen soll.
+            Dies soll aber nicht auf Commits angewendet werden, die bereits hochgeladen wurden.
+        </p>
+        <p>
+            Der Befehl <code>git rebase --onto &lt;newbase&gt; &lt;other&gt;</code> transferiert den Zweig other an
+            einen neuen Ort abseits vom Hauptzweig.
+        </p>
+        <p>
+            Soll ein Rebasing-Vorgang rückgängig gemacht werden, so kann der Befehl
+            <code>git reset --hard &lt;hash&gt;</code> ausgeführt werden. Hierbei soll der Hashcode des letzten
+            Original-Commits verwendet werden. (Im vorigen Beispiel wäre das der Hashcode von F2.) Der Hashcode kann mit
+            <code>git reflog</code> ermittelt werden.
+        </p>
     </chapter>
 
     <chapter title="Squashing" id="squashing">
