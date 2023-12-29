@@ -95,16 +95,42 @@
     </chapter>
 
     <chapter title="Feature-Branches für Teams" id="featurebranching">
-
         <chapter title="Neues Feature, neuer Branch" id="featurebranching-neu">
+            <p>
+                Mit Feature-Branches kann das Konfliktpotential reduziert werden, indem Arbeitspakete auf Personen
+                aufgeteilt werden und die Entwicklung jeweils in einem eigenen Branch, dem Feature-Branch, stattfindet.
+                Schreibzugriffe auf den Master-Branch werden dadurch seltener, was zu weniger Merges und einer
+                unkomplizierten Entwicklung am Feature-Branch führt. Im Extremfall darf nur eine Person auf den Branch
+                schreiben, alle anderen im Team entwickeln in ihren Feature-Branches und schicken, sobald sie damit
+                fertig sind, einen Merge/Pull-Request an die berechtigte Person.
+            </p>
 
             <chapter title="Code-Review" id="featurebranching-neu-codereview">
+                <p>
+                    Code-Reviews sind in agilen Softwareentwicklungsprozessen oft ein integrierter Bestandteil. Mit
+                    Feature-Branches ist es sehr einfach die Änderungen zu begutachten. Treten im Code-Review noch
+                    Probleme auf, so können diese vor dem Merge mit dem master noch durch weitere Commits behoben
+                    werden.
+                </p>
             </chapter>
 
             <chapter title="Merge" id="featurebranching-neu-merge">
+                <p>
+                    Da die Merge-Vorgänge auf dem Master-Branch immer Fast-forward-Merges sind, erscheint der
+                    eigentliche Merge nicht mehr in der Git-History. Wird Wert darauf gelegt, dass die Merges nicht
+                    verloren gehen, muss git merge mit der Option <code>--no-ff</code> aufgerufen werde, um einen
+                    expliziten Commit zu erzwingen. Hierbei ist anzumerken, dass die Git-History ohne Merge-Commits
+                    aufgeräumter beleibt.
+                </p>
             </chapter>
 
             <chapter title="Rebase" id="featurebranching-neu-rebase">
+                <p>
+                    Die Grundregel für Rebasing lautet, dass Rebases nie auf einen schon hochgeladenen öffentlichen
+                    Branch angewendet werden darf. Daher sollte das Rebasing nur angewendet werden, wenn der
+                    Feature-Zweig noch nicht mit git push in ein Remote Repository hochgeladen wurde. Die Commits am
+                    Feature-Branch werden beim Rebasing vom master neu geschrieben.
+                </p>
             </chapter>
         </chapter>
 
