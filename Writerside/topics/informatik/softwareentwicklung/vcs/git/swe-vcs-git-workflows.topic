@@ -192,6 +192,19 @@
         </chapter>
 
         <chapter title="Fazit" id="mergepull-fazit">
+            <p><b>Vorteile</b></p>
+
+            <list>
+                <li>Code-Review, bevor auf master gemerged wird</li>
+                <li>gute Dokumentation der Arbeitsabläufe</li>
+                <li>stabiler Master-Branch</li>
+            </list>
+
+            <p><b>Nachteile</b></p>
+
+            <list>
+                <li>parallele Branches bei zu langsamen Code-Reviews</li>
+            </list>
         </chapter>
     </chapter>
 
