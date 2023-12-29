@@ -372,6 +372,15 @@
         </chapter>
 
         <chapter title="Achtung!" id="tbd-achtung">
+            <p>
+                Die Anforderungen an die Entwickler sind höher als beim Feature-Branch-Workflow, wo der Neuling im Team
+                beim Pull-Request wertvolle Tipps bekommt, bevor ein Fehler in den Master-Branch gelangt. Beim
+                Trunk-based Development unterbricht ein unerfahrener Entwickler womöglich den gewohnten Arbeitsablauf
+                für das ganze Team, weil die Pipeline nach einem Fehler stockt.
+            </p>
+            <p>
+                Um den Einstieg für unerfahrene Entwickler zu erleichtern, eignet sich Pair Programming gut.
+            </p>
         </chapter>
 
         <chapter title="Fazit" id="tbd-fazit">
