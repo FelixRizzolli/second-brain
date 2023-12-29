@@ -40,13 +40,13 @@
         </p>
 
         <code-block lang="bash">
-            git submodule add https://github.com/&gt;user&lt;/&gt;submodule&lt; &gt;folder&lt;
+            git submodule add https://github.com/&lt;user&gt;/&lt;submodule&gt; &lt;folder&gt;
         </code-block>
         <code-block lang="bash">
             git add .
         </code-block>
         <code-block lang="bash">
-            git commit -m 'add submodule &gt;submodule&lt;'
+            git commit -m 'add submodule &lt;submodule&gt;'
         </code-block>
 
         <p>
