@@ -135,6 +135,16 @@
         </chapter>
 
         <chapter title="best practice" id="featurebranching-bestpractice">
+            <p>
+                Mit vielen kleinen, sog. Mini-Feature-Branches, funktioniert der Workflow ganz unkompliziert. Während
+                der Entwicklung kann der Feature-Branch mit dem Master-Branch auch immer wieder gemergt oder gerebaset
+                werden, damit der abschließende Merge in den Master nicht zu kompliziert wird.
+            </p>
+            <p>
+                Wenn im Laufe des Projektes Funktionen entwickelt werden, die auch von anderen Entwicklern gebraucht
+                werden, kann es hier zu parallelen Entwicklungen kommen. Das lässt sich mit guter Kommunikation
+                verhindern, aber es bleibt ein Problem, das bei diesem Workflow bedacht werden muss.
+            </p>
         </chapter>
 
         <chapter title="Fazit" id="featurebranching-fazit">
