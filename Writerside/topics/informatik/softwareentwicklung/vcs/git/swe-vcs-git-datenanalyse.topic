@@ -290,6 +290,25 @@
         </chapter>
 
         <chapter title="Referenzlog (git reflog)" id="commit-gitreflog">
+            <p>
+                Der Referenzlog enthält alle durchgeführten Kommandos, die den globalen HEAD oder den Head eines Zweiges
+                verändert haben. Mit dem Befehl <code>git reflog</code> werden diese Aktionen samt den Hashcodes der
+                Commits aufgelistet.
+            </p>
+
+            <code-block lang="bash">
+                git reflog
+            </code-block>
+
+            <p>
+                Eine detailliertere Ausgabe bietet der Befehl <code>git log</code> mit der Option
+                <code>--walk-reflog</code> oder <code>--reflog</code>. Bei <code>--walk-reflog</code> kann der gleiche
+                Commit mehrfach auftauchen, z. B. immer dann, wenn zuvor mit git checkout den Zweig gewechselt wurde.
+            </p>
+
+            <code-block lang="bash">
+                git log --walk-reflog
+            </code-block>
         </chapter>
     </chapter>
 
