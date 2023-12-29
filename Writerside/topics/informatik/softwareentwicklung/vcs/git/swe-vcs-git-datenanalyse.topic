@@ -6,6 +6,51 @@
        title="Datenanalyse im Repoitory" id="swe-vcs-git-datenanalyse">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einführung" id="einfuehrung">
+    </chapter>
+
+    <chapter title="Commits durchsuchen" id="commit">
+
+        <chapter title="Das Kommando git log" id="commit-gitlog">
+
+            <chapter title="Die wichtigsten Parameter für ein übersichtlicheres Logging" id="commit-gitlog-param">
+            </chapter>
+        </chapter>
+
+        <chapter title="Markierte Commits (git tag)" id="commit-gittag">
+        </chapter>
+
+        <chapter title="Referenzlog (git reflog)" id="commit-gitreflog">
+        </chapter>
+    </chapter>
+
+    <chapter title="Dateien durchsuchen" id="file">
+
+        <chapter title="Alte Versionen einer Datei ansehen (git show)" id="file-gitshow">
+        </chapter>
+
+        <chapter title="Unterschiede zwischen Dateien ansehen (git diff)" id="file-gitdiff">
+
+            <chapter title="Unterschiede zwischen Commits ansehen" id="file-gitdiff-unterschiede">
+            </chapter>
+
+            <chapter title="Ergebnis gezielt einschränken" id="file-gitdiff-einschraenken">
+            </chapter>
+        </chapter>
+
+        <chapter title="Dateien durchsuchen (git grep)" id="file-gitgrep">
+        </chapter>
+
+        <chapter title="Urheberschaft von Code herausfinden (git blame)" id="file-gitblame">
+        </chapter>
+    </chapter>
+
+    <chapter title="Fehler suchen" id="fehlersuche">
+    </chapter>
+
+    <chapter title="Statistik und Visualisierung" id="statistik">
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
