@@ -280,6 +280,25 @@
         </chapter>
 
         <chapter title="Merge-Abbruch und Undo" id="konflikte-abbruch">
+            <p>
+                Mit dem Befehl <code>git merge --abort</code> lasst sich ein Merge-Prozess abbrechen. Das Projekt
+                befindet sich dann im gleichen Zustand wie vor dem Merge. Es soll unbedingt vermieden werden einen
+                Merge-Prozess mit Gewalt durchzuziehen. Es ist besser den Merge-Prozess abzubrechen und sich bei einem
+                erfahrenen Git-Nutzer hilfe zu holen.
+            </p>
+
+            <code-block lang="bash">
+                git merge --abort
+            </code-block>
+
+            <p>
+                Ist es bereits zu spät, so kann man mittels <code>git reset --hard &lt;lasthash&gt;</code> zum letzten
+                Commit vor dem Merge-Prozess zurückkehren.
+            </p>
+
+            <code-block lang="bash">
+                git reset --hard HEAD~
+            </code-block>
         </chapter>
 
         <chapter title="Whitespace-Probleme" id="konflikte-whitespace">
