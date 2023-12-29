@@ -77,6 +77,20 @@
         </p>
 
         <chapter title="Fazit" id="solo-fazit">
+            <p><b>Vorteile</b></p>
+
+            <list>
+                <li>Dokumentation der Arbeit</li>
+                <li>Zurückspringen zu früheren Versionen</li>
+                <li>einfaches Ausprobieren von Ideen mit Branches</li>
+                <li>Backup bei Verwendung von Remotes</li>
+            </list>
+
+            <p><b>Nachteile</b></p>
+
+            <list>
+                <li>erhöhter Arbeitsaufwand durch Commits/Pushes</li>
+            </list>
         </chapter>
     </chapter>
 
