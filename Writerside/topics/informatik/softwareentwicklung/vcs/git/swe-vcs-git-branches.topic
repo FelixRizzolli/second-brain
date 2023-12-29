@@ -7,11 +7,63 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlegendes" id="grundlagen">
+        <p>
+            Repository-Zweige kommen ins spiel, wenn an mehreren Versionen gleichzeitig gearbeitet werden soll.
+        </p>
 
         <chapter title="Der Vorteil von mehreren Zweigen (Beispiel)" id="grundlagen-vorteile">
+            <p>
+                Stellen Sie sich vor, das bis hierher entwickelte Programm läuft nun stabil und geht in den
+                Produktionseinsatz. Jetzt wollen Sie das Programm weiterentwickeln, ohne die Stabilität der
+                Produktivversion zu gefährden. Dazu trennen sie den Code in zwei Zweige auf:
+            </p>
+
+            <list>
+                <li>
+                    Im produktiven Zweig führen Sie nur winzige Bugfixes durch, sollte sich dazu die Notwendigkeit
+                    ergeben.
+                </li>
+                <li>
+                    Der Entwickler- oder Feature-Zweig ist dagegen für die Weiterentwicklung. Erst wenn sich die neue
+                    Version nach vielen Tests stabilisiert, wollen Sie sie mit der Hauptversion wieder zusammenführen
+                    und an ihre Kunden ausliefern (z.B. in Form eines Webservices).
+                </li>
+            </list>
         </chapter>
 
         <chapter title="Arbeiten mit Zweigen (Workflows)" id="grundlagen-workflows">
+            <list>
+                <li>
+                    <a href="swe-vcs-git-workflows.topic#solo">
+                        Solo-Entwicklung
+                    </a>
+                </li>
+                <li>
+                    <a href="swe-vcs-git-workflows.topic#featurebranching">
+                        Feature-Branches für Teams
+                    </a>
+                </li>
+                <li>
+                    <a href="swe-vcs-git-workflows.topic#mergepull">
+                        Merge/Pull-Requests
+                    </a>
+                </li>
+                <li>
+                    <a href="swe-vcs-git-workflows.topic#gitflow">
+                        Gitflow (Long-Running Branches)
+                    </a>
+                </li>
+                <li>
+                    <a href="swe-vcs-git-workflows.topic#tbd">
+                        Trunk-based Development
+                    </a>
+                </li>
+                <li>
+                    <a href="swe-vcs-git-workflows.topic#grundlagen-vergleich">
+                        Welcher Workflow ist der Richtige?
+                    </a>
+                </li>
+            </list>
         </chapter>
     </chapter>
 
