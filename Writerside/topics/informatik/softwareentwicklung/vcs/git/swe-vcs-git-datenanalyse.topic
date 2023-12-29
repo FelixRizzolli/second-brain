@@ -433,6 +433,67 @@
         </chapter>
 
         <chapter title="Dateien durchsuchen (git grep)" id="file-gitgrep">
+            <p>
+                Mit dem Befehl <code>git grep &lt;pattern&gt;</code> können Dateien auf einem bestimmten Suchbegriff,
+                der exakt dem Übergebenen regulären Ausdruck entspricht, durchsucht werden. Standardmäßig berücksichtigt
+                das Kommando alle Dateien im Projektverzeichnis. Mit der Option <code>-i</code> wird die Groß- und
+                Kleinschreibung nicht beachtet.
+            </p>
+
+            <code-block lang="bash">
+                git grep SKAction
+            </code-block>
+            <code-block>
+                ios-pacman/Maze.swift: let setGlitter = SKAction.setTextur...
+                ios-pacman/Maze.swift: let setStandard = SKAction.setText...
+                ios-pacman/Maze.swift: let waitShort = SKAction.wait(forDu...
+                ...
+            </code-block>
+
+            <p>
+                Wird der Parameter <code>--count</code> mitgegeben, so zeigt die Ausgabe nur wie oft der Begriff in den
+                jeweiligen Dateien vorkommt.
+            </p>
+
+            <code-block lang="bash">
+                git grep --count CGSize
+            </code-block>
+            <code-block>
+                ios-pacman/CGOperators.swift:6
+                ios-pacman/Global.swi ft:1
+                ios-pacman/Maze.swift:4
+                ...
+            </code-block>
+
+            <p>
+                Mit der Option <code>-n</code> kann die Suche auch auf ein bestimmtes Verzeichnis beschränkt werden.
+            </p>
+
+            <code-block lang="bash">
+                git grep -n margin css/
+            </code-block>
+            <code-block>
+                css/config.json:100: "@form-group-margin-bottom": "15px",
+                css/config.json:144: "@navbar-margin-bottom": "@line-heig...
+                css/editglobal.css:25: margin-top: 1px;
+                css/editglobal.css:29: margin-top: 0px;
+                ...
+            </code-block>
+
+            <p>
+                Es kann auch in einer älteren Version nach einem Begriff gesucht werden:
+                <code>git grep &lt;pattern&gt; &lt;revision&gt;</code>
+            </p>
+
+            <code-block lang="bash">
+                git grep 'UPDATE person' v2.0
+            </code-block>
+            <code-block>
+                v2.0:lib/delete.php: $sql = "UPDATE person SET sta...
+                v2.0:lib/person.php: $sql = sprintf("UPDATE person...
+                v2.0:lib/personengruppe.php: $sql = sprintf("UPDATE person...
+                ...
+            </code-block>
         </chapter>
 
         <chapter title="Urheberschaft von Code herausfinden (git blame)" id="file-gitblame">
