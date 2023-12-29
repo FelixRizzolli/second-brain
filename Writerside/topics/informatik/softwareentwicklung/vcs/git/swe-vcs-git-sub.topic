@@ -124,14 +124,52 @@
     </chapter>
 
     <chapter title="Monorepos" id="monorepos">
+        <p>
+            Mono bezieht sich darauf, dass ein einziges Repository verwendet wird, um darin viele verschiedene Projekte
+            zu verwalten.
+        </p>
 
         <chapter title="Vorteile" id="monorepos-vorteile">
+            <list>
+                <li>
+                    Wenn jeder Entwickler über seine Arbeitskopie Zugriff auf den Quellcode aller Projekte hat, ist es
+                    einfacher, Doppelentwicklungen zu verhindern.
+                </li>
+                <li>
+                    Außerdem lassen sich die Abhängigkeiten von Projekten untereinander bzw. zu Software von
+                    Drittherstellern besser verwalten, wenn sich sämtliche Projekte in einem Repository befinden.
+                </li>
+                <li>
+                    Außerdem lassen sich Arbeitsabläufe wie ein Refactoring über mehrere Projekte mit einem einzigen
+                    Commit bewerkstelligen, was für eine aufgeräumte History sorgt.
+                </li>
+            </list>
         </chapter>
 
         <chapter title="Nachteile" id="monorepos-nachteile">
+            <p>
+                Derartige Datenmengen sind mit Git ohne weitere Anpassungen nicht mehr zu verwalten. Google und Facebook
+                verwenden deswegen selbst entwickelte Erweiterungen zur Verwaltung dieser Repositorys. Beispielsweise
+                arbeitet Microsoft an dem Projekt Virtual File System (VFS) for Git, das riesige Monorepos verwalten
+                können soll; die Software läuft aber nur auf Windows und benötigt eine angepasste Git-Version. Einen
+                echten Vorteil können Monorepos aber erst bieten, wenn es Werkzeuge gibt, die alle Abhängigkeiten
+                zwischen den Projekten analysieren können und dann die notwendigen Tests, Builds und Releases starten.
+            </p>
         </chapter>
 
         <chapter title="Googles Monorepository" id="monorepos-google">
+            <p>
+                Bei Monorepositorys handelt es sich um Repositorys die auch jene des Linux-Kernels (aktuell 4,1 GB) bei
+                weitem überschreiten. Hier Google als Beispiel genannt:
+            </p>
+            <p>
+                In einem Vortrag aus dem Jahr 2015 hat eine Managerin von Google ein paar Zahlen sowie auch Vor- und
+                Nachteile ihres monolithischen Repositorys präsentiert. Im Januar 2015 hatte Google 1 Milliarde Dateien
+                (davon 9 Millionen Dateien mit Quellcode - ausgeschlossen Dokumentationen, generierte Dateien,
+                Konfigurationsdateien, gelöschte Dateien usw.) mit insgesamt 2 Milliarden Codezeilen in einer History
+                von 35 Millionen Commits (durchschnittlich 45 Tausend pro Tag). Diese Repository benötigt 86 TB an
+                Speicher. Mehr dazu: <a href="https://www.youtube.com/watch?v=W71BTkUbdqE">»hier«</a>.
+            </p>
         </chapter>
     </chapter>
 
