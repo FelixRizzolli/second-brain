@@ -340,11 +340,95 @@
         </chapter>
 
         <chapter title="Unterschiede zwischen Dateien ansehen (git diff)" id="file-gitdiff">
+            <p>
+                Mit dem Befehl <code>git diff</code> können die Änderungen zwischen der aktuellen Version und einer
+                älteren Version sowie auch zwischen zwei älteren Versionen angezeigt werden. Die Ausgabe besteht aus
+                mehreren Blöcken, die mit <code>@@</code> eingeleitet werden und die Position angeben. Zur Orientierung
+                helfen einige Zeilen Code, den Kontext herzustellen. Anschließend folgen die geänderten Zeilen, denen
+                <code>-</code> oder <code>+</code> vorangestellt ist, je nachdem, ob sie gelöscht oder hinzugefügt
+                wurden.
+            </p>
+
+            <code-block lang="bash">
+                git diff &lt;revision&gt; &lt;file&gt;
+            </code-block>
+            <code-block lang="bash">
+                git diff v2.0 index.php
+            </code-block>
+
+            <p> </p>
+
+            <code-block lang="bash">
+                git diff &lt;revision&gt;..&lt;revision&gt; &lt;file&gt;
+            </code-block>
+            <code-block lang="bash">
+                git diff v1.0..v2.0 index.php
+            </code-block>
+
+            <p>
+                Sollen nur die Änderungen angezeigt werden so kann die Ausgebe mit dem Parameter
+                <code>--compact-summary</code> zusammengefasst werden.
+            </p>
+
+            <note>
+                <p><b>Range-Syntax mit drei Punkten</b></p>
+
+                <p>
+                    Die Variante <code>git diff &lt;rev1&gt;..&lt;rev2&gt;</code> ist vor allem dann zweckmäßig, wenn es
+                    sich bei den Revisionen um Zweige handelt. In diesem Fall ermittelt <code>git diff</code> zuerst die
+                    letzte gemeinsame Basis beider Zweige und zeigt dann an, was sich in <code>&lt;rev2&gt;</code> im
+                    Vergleich zum letzten gemeinsamen Commit verändert hat. Anders als bei
+                    <code>&lt;rev1&gt;..&lt;rev2&gt;</code> werden aber alle Änderungen ignoriert, die seither in
+                    <code>&lt;rev1&gt;</code> passiert sind.
+                </p>
+            </note>
 
             <chapter title="Unterschiede zwischen Commits ansehen" id="file-gitdiff-unterschiede">
+                <p>
+                    Wird die Datei nicht angegeben, so zeigt der Befehl <code>git diff &lt;revision&gt;</code> alle
+                    geänderten Dateien seit der angegebenen Version bzw. zwischen zwei Versionen/Commits an. Bei
+                    umfangreichen Änderungen fehlt der Platz, um für jede geänderte Zeile ein <code>+</code> oder ein
+                    <code>-</code> auszugeben. Stattdessen wird nach <code>|</code> die Gesamtanzahl der geänderten
+                    Zeilen angegeben. Die Anzahl der Plus- und Minus-Zeichen ist relativ zu der Datei mit den größten
+                    Änderungen. Je länger der Balken aus den Zeichen ist, desto umfangreicher sind die Änderungen
+                    ausgefallen.
+                </p>
+
+                <code-block lang="bash">
+                    git diff --compact-summary v1.0..v2.0 index.php
+                </code-block>
+
+                <code-block>
+                      css/autocompleteList.css
+                    | 225 +-
+                      css/editproject.css (new)
+                    | 13 +
+                      css/edituser.css
+                    | 99 +-
+                      css/iprot.css
+                    | 648 ++++-
+                      css/iprot/jquery-ui-1.8.13.custom.css
+                    | 2 +-
+                      css/mobile.css (new)
+                    | 17 +
+                      ...
+                      269 files changed, 22819 insertions(+), 12792 deletions(-)
+                </code-block>
             </chapter>
 
             <chapter title="Ergebnis gezielt einschränken" id="file-gitdiff-einschraenken">
+                <list>
+                    <li>
+                        Mit den Parametern <code>-G &lt;pattern&gt;</code> werden Suchmuster (mit
+                        <a href="swe-pk-regex.topic">regulären Ausdrücken</a>)
+                        angegeben. Der Befehl <code>git diff</code> liefert dann nur die Textdateien, deren Änderungen
+                        den Suchausdruck enthalten, wobei die Groß- und Kleinschreibung exakt übereinstimmen muss.
+                    </li>
+                    <li>
+                        <code>--diff-filter=A|C|M|R</code> filtert jene Dateien heraus, die hinzugefügt (added), kopiert
+                        (copied), gelöscht (deleted), verändert (modified) oder umbenannt (renamed) wurden.
+                    </li>
+                </list>
             </chapter>
         </chapter>
 
