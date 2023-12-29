@@ -134,8 +134,13 @@
     </chapter>
 
     <chapter title="Merge Konflikte lösen" id="konflikte">
-
         <chapter title="Weniger Konflikte durch häufige Merge-Prozesse" id="konflikte-vermeiden">
+            <p>
+                Beim Zusammenführen von Zweigen vergleicht Git immer nur den neusten Commit aus beiden Zweigen sowie die
+                gemeinsame Basis (also den ersten Parent-Commit beider Zweige). Sollten aber Konflikte auftreten, so
+                sind si umso leichter zu lösen, je weniger Dateien bzw. Stellen im Code betroffen sind und je jünger der
+                Code ist.
+            </p>
         </chapter>
 
         <chapter title="Kollisionen im Code" id="konflikte-codekollisionen">
