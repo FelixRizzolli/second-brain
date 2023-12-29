@@ -6,6 +6,33 @@
        title="Submodule und Subtrees" id="swe-vcs-git-sub">
     <show-structure for="chapter,procedure" depth="2"/>
 
+    <chapter title="Einleitung" id="einleitung">
+    </chapter>
+
+    <chapter title="Submodule" id="submodule">
+
+        <chapter title="Submodule aktualisieren" id="submodule-aktualisieren">
+        </chapter>
+    </chapter>
+
+    <chapter title="Subtrees" id="subtree">
+    </chapter>
+
+    <chapter title="Mehr zu Submodules und Subtrees" id="mehr">
+    </chapter>
+
+    <chapter title="Monorepos" id="monorepos">
+
+        <chapter title="Vorteile" id="monorepos-vorteile">
+        </chapter>
+
+        <chapter title="Nachteile" id="monorepos-nachteile">
+        </chapter>
+
+        <chapter title="Googles Monorepository" id="monorepos-google">
+        </chapter>
+    </chapter>
+
     <chapter title="Quellen" id="quellen">
         <tip>
             <b>(BUCH)</b>
