@@ -178,6 +178,17 @@
         </chapter>
 
         <chapter title="Forks" id="mergepull-forks">
+            <p>
+                In Kombination mit Merge/Pull-Requests kann auch einen Workflow eingeführt werden, bei dem alle
+                Entwickler eigene Repositorys verwalten, auf die nur sie selbst Schreibzugriff haben. Diese Technik
+                kommt der ursprünglichen Idee Torvalds sehr nahe. Da es GitHub damals noch nicht gab, mussten Entwickler
+                eigene Git-Server betreiben, von denen andere Entwickler wiederum dann pullen konnten. Dafür ist der in
+                Git integrierte Server <b>git deamon</b> gedacht.
+            </p>
+            <p>
+                Forks mit Pull/Merge-Requests sind ein äußerst praktischer Arbeitsablauf für gelegentliche Beiträge von
+                unterschiedlichen Personen bei fremden Projekten.
+            </p>
         </chapter>
 
         <chapter title="Fazit" id="mergepull-fazit">
