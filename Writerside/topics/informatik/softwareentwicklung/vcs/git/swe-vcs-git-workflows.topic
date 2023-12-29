@@ -317,8 +317,25 @@
         </chapter>
 
         <chapter title="Continuous Integration" id="tbd-ci">
+            <p>
+                Voraussetzung für ein erfolgreiches Arbeiten mit dieser Technik ist eine funktionierende
+                Continuous-Integration-Pipeline, die mit ausreichend Tests die Funktionalität der Software sicherstellt.
+                Wenn es Probleme im Code gibt, schlägt die Pipeline Alarm, und der Entwickler, der den Fehler ausgelöst
+                hat, ist angehalten, den Fehler so rasch wie möglich zu beheben. Denn solange die Pipeline defekt ist,
+                kommt kein Commit eines Teammitglieds mehr in die fertige Software.
+            </p>
+            <p>
+                Die Entwickler trauen sich somit nicht die Pipeline zu zerstören und Commits werden vor dem Pushen auf
+                den Server gut getestet, was der Qualität des gesamten Quellcodes zugutekommt.
+            </p>
 
             <chapter title="Release-ready" id="tbd-ci-release">
+                <p>
+                    Mit Continuous Deployment spielt man in der ersten Liga der Softwareautomatisierung. Auf das
+                    Kommando <code>git push</code> eines Entwicklers kommt dann, sofern die Pipeline erfolgreich ist,
+                    sofort eine neue Version auf die Produktivumgebung! Trunk-based Development ist die ideale Basis für
+                    Continuous Development.
+                </p>
             </chapter>
         </chapter>
 
