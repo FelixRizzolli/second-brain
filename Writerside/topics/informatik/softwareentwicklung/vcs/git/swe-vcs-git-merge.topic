@@ -91,6 +91,29 @@
     </chapter>
 
     <chapter title="Fast-forward-Merge" id="fastforward">
+        <p>
+            Angenommen nach dem Commit B des master-Zweiges wurde ein neuer Zweig new_feature erstellt. Dort wurden die
+            Commits C und D durchgeführt. Am ursprünglichen Zweig (hier master) mussten in der Zwischenzeit keine
+            Änderungen durchgeführt werden.
+        </p>
+        
+        <img src="swe-vcs-git-merge-fastforward.jpg" alt="Fast-forward-Merge"/>
+
+        <p>
+            Wenn nun in den Master-Zweig gewechselt und <code>git merge new_feature</code> ausgeführt wird, ist gar kein
+            richtiger Merge-Prozess erforderlich. Es reicht aus, den Zeiger des Master-Zweigs auf Commit D zu versetzen
+            (fast forward). HEAD zeigt automatisch auf das Ende des aktuellen Zweigs, hier also ebenfalls auf Commit D.
+            Unverändert verweist auch new_feature auf diesen Commit. Weil bei der Veränderung des Zeigers master
+            keinerlei Änderung an den Git-Objekten erforderlich ist, kommt es beim Merge-Prozess zu keinem eigenen
+            Commit. Dementsprechend entfällt auch die Eingabe einer Commit-Message. Der offensichtliche Vorteil eines
+            Fast-forward-Merge-Prozesses ist dessen Einfachheit und Geschwindigkeit. Der Nachteil: Es ist später nicht
+            mehr nachvollziehbar, dass die Commits C und D als Teil des Zweigs new_feature entstanden sind. Wenn Sie
+            diese Intransparenz stört, können Sie git merge mit der Option <code>--no-ff</code> ausführen.
+        </p>
+        <p>
+            Selbstverständlich bleiben auch nach einem Fast-forward-Merge beide Zweige erhalten. In beiden Zweigen kann
+            die Entwicklung fortgesetzt werden, z. B. durch die neuen Commits E in master und F in new_feature.
+        </p>
     </chapter>
 
     <chapter title="Octopus-Merge" id="octopus">
