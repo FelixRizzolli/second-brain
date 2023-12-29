@@ -7,6 +7,18 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Einführung" id="einfuehrung">
+        <p>
+            Der Merge-Befehl wird verwendet, um Zweige zusammenzuführen. Oftmals findet Git selbständig Lösungen für das
+            Zusammenführen der Dateien. Zum Beispiel, wenn die Änderungen in unterschiedlichen Teilen einer Codedatei,
+            oder gar unterschiedlichen Dateien erfolgen. Bei komplizierteren Fällen wird die Entscheidung jedoch dem
+            Entwickler überlassen.
+        </p>
+        <p>
+            Durch wiederholte Merge-Vorgänge entsteht oft eine unübersichtliche Struktur im lokalen Repository, bei der
+            sich ständig Zweige öffnen und wieder schließen. Durch das sogenannte
+            <a href="swe-vcs-git-rebase.topic">Rebasing</a> kann die Commit-Abfolge (die History) aufgeräumt und
+            gewissermaßen begradigt werden.
+        </p>
     </chapter>
 
     <chapter title="Zweige/Branches zusammenführen" id="merge">
