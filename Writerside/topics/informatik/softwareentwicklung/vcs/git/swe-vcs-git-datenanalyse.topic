@@ -251,6 +251,42 @@
         </chapter>
 
         <chapter title="Markierte Commits (git tag)" id="commit-gittag">
+            <p>
+                Der Befehl <code>git tag</code> liefert eine Liste aller Tags.
+            </p>
+
+            <code-block lang="bash">
+                git tag
+            </code-block>
+
+            <p>
+                Mittels <code>git tag --list &lt;pattern&gt;</code> kann das Ergebnis auf Tags, die dem Suchmuster
+                entsprechen, eingeschränkt werden.
+            </p>
+
+            <code-block lang="bash">
+                git tag list &lt;pattern&gt;
+            </code-block>
+            <code-block lang="bash">
+                git tag list 'v-*'          //Zeigt alle Tags die mit 'v-' anfangen
+            </code-block>
+
+            <p>
+                Mit git log &lt;pattern&gt; werden die Commits gelistet, die zu jenem Release geführt haben.
+            </p>
+
+            <code-block lang="bash">
+                git tag 'v-1.0'
+            </code-block>
+
+            <p>
+                Mit dem Befehl <code>git log --simplify-by-decoration</code> werden Commits angezeigt, die Tags
+                enthalten oder auf einen Zweig verweisen.
+            </p>
+
+            <code-block lang="bash">
+                git log --simplify-by-decoration
+            </code-block>
         </chapter>
 
         <chapter title="Referenzlog (git reflog)" id="commit-gitreflog">
