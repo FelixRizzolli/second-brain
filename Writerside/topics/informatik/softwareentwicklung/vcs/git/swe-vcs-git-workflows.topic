@@ -331,17 +331,43 @@
 
             <chapter title="Release-ready" id="tbd-ci-release">
                 <p>
-                    Mit Continuous Deployment spielt man in der ersten Liga der Softwareautomatisierung. Auf das
-                    Kommando <code>git push</code> eines Entwicklers kommt dann, sofern die Pipeline erfolgreich ist,
-                    sofort eine neue Version auf die Produktivumgebung! Trunk-based Development ist die ideale Basis für
-                    Continuous Development.
+                    Der letzte Stand der Entwicklung sollte immer release-ready sein, da ja keine Fehler auf die
+                    Repostory landen sollten. Die Pipeline entwickelt sich während der Projektlaufzeit ständig mit und
+                    wird mit jedem ausgemerzten Fehler und jedem neuen Test immer verlässlicher.
                 </p>
             </chapter>
         </chapter>
 
         <chapter title="Continuous Development" id="tbd-cd">
+            <p>
+                Mit Continuous Deployment spielt man in der ersten Liga der Softwareautomatisierung. Auf das Kommando
+                <code>git push</code> eines Entwicklers kommt dann, sofern die Pipeline erfolgreich ist, sofort eine
+                neue Version auf die Produktivumgebung! Trunk-based Development ist die ideale Basis für Continuous
+                Development.
+            </p>
 
             <chapter title="Feature-Flags / Featured-Toggles" id="tbd-cd-featureflags">
+                <p>
+                    Werden komplexe Funktionen entwickelt, die nicht in ein bis zwei Tagen fertig sind so werden, sog.
+                    Featured-Flags oder Featured-Toggles implementiert. Dabei werden im Code Abfragen eingebaut, die
+                    entscheiden, ob gewisse Funktionen zur Verfügung stehen oder nicht. Die Bedingungen dazu können aus
+                    einer Konfigurationsdatei oder aus einer Datenbank zur Laufzeit der Software ermittelt werden.
+                </p>
+                <p>
+                    Dabei kann es sich auch um eine einfache <code>if</code>-Abfrage handeln wie beispielsweise:
+                </p>
+
+                <code-block lang="java">
+                    if (Features.fancyEffect == true) {
+                        FancyEffect fe = new FancyEffekt();
+                        fe.show();
+                    }
+                </code-block>
+
+                <p>
+                    Es können auch die jeweiligen Funktionen, die noch in der Testphase sind nur für gewisse
+                    Nutzergruppen freigeschaltet worden. Zum Beispiel ein Betaprogramm für Betatester oder Developer.
+                </p>
             </chapter>
         </chapter>
 
