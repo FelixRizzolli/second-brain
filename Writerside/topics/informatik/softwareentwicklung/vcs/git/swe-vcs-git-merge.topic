@@ -353,6 +353,34 @@
         </chapter>
 
         <chapter title="MERGE-Dateien" id="konflikte-dateien">
+            <p>
+                Bei einem aufgrund eines Konflikts gescheiterten Merge-Prozess enthält das Verzeichnis <path>.git</path>
+                eine ganze Reihe von Dateien mit Statusinformationen:
+            </p>
+
+            <list>
+                <li>
+                    <path>MERGE_HEAD</path> enthält den Hashcode des Zweigs, der zusammengeführt werden soll. Bei einem
+                    Octopus-Merge enthält die Datei entsprechend die Hashcodes aller Zweige.
+                </li>
+                <li>
+                    <path>MERGE_MODE</path> ist normalerweise leer. Nur wenn Sie <code>git merge --no-ff</code>
+                    ausführen, enthält die Datei eine entsprechende Information.
+                </li>
+                <li>
+                    <path>MERGE_MSG</path> enthält die vorgesehene Commit-Message. (Es gibt auch die Datei
+                    <path>COMMIT_EDITMSG</path>. Sie enthält den Text der letzten Commit-Message und ist für den
+                    Merge-Prozess nicht relevant.)
+                </li>
+                <li>
+                    <path>ORIG_HEAD</path> enthält den Hashcodes des aktiven Zweigs.
+                </li>
+            </list>
+
+            <p>
+                Sobald Sie den Commit abschließen bzw. abbrechen, verschwinden die <path>MERGE</path>-Dateien wieder.
+                (<path>ORIG_HEAD</path> bleibt erhalten.)
+            </p>
         </chapter>
     </chapter>
 
