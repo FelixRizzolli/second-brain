@@ -20,10 +20,10 @@
             git pull --rebase
         </code-block>
 
-        <p>
+        <warning>
             Mit <code>git rebase</code> darf nie der Verlauf von Commits in einem öffentlichen Zweig, wenn die Commits
             bereits hochgeladen wurden, verändert werden. Komplett tabu ist diesbezüglich der Master-Zweig.
-        </p>
+        </warning>
     </chapter>
 
     <chapter title="Beispiel" id="beispiel">
@@ -105,11 +105,12 @@
             Falls Git bei den Umbauarbeiten Konflikte bemerkt, müssen diese manuell behoben, in einem Commit gespeichert
             und den Rebasing-Vorgang dann mit <code>git rebase --continue</code> fortgesetzt werden.
         </p>
-        <p>
+
+        <warning>
             Die Checkout-Optionen <code>--ours</code> und <code>--theirs</code> haben eine umgekehrte Wirkung wie bei
             einem gewöhnlichen Merge-Prozess! Im Beispiel würde <code>--ours</code> den Zweig develop und
             <code>--theirs</code> den eigenen Zweig feature bezeichnen.
-        </p>
+        </warning>
     </chapter>
 
     <chapter title="Nebenwirkungen" id="nebenwirkungen">
