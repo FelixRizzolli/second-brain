@@ -47,6 +47,14 @@
         </chapter>
 
         <chapter title="Sauber einen Zweig wechseln: Checkout" id="grundlagen-checkout">
+            <p>
+                Mit einem <b>Checkout</b> werden die aktuellen Dateien des Projektverzeichnisses durch die des Zweiges
+                ersetzt. Dabei können neue Dateien hinzukommen, vorhandene Dateien sich ändern und andere können
+                verschwinden. Normalerweise wird vor dem Wechsel eines Zweiges ein Commit ausgeführt. Sind die
+                Änderungen aber noch nicht committauglich, so wird eine Möglichkeit benötigt die Änderungen
+                vorübergehend zu speichern. Genau dazu dient der Stash, eine Art Stauraum für noch nicht 
+                committauglichen Code.
+            </p>
         </chapter>
 
         <chapter title="Commit Intern" id="grundlagen-intern">
