@@ -556,12 +556,39 @@
     </chapter>
 
     <chapter title="Commit-Message ändern" id="commit-message-aendern">
-
         <chapter title="Commit-Massage des letzten Commits ändern" id="commit-message-aendern-letzter">
+            <p>
+                Sofern es den letzten Commit betrifft und die Änderungen noch nicht mit anderen Repositorys
+                synchronisiert sind, lässt sich die Message ganz einfach mit <code>git commit --amend</code> ändern.
+            </p>
+            <p>
+                Im Hintergrund bewirkt <code>git commit --amend</code> ein Reset zum vorletzten Commit. Anschließend
+                werden die Änderungen des letzten Commits neuerlich angewendet, aber mit einer neuen Commit-Message
+                versehen. Dabei entsteht auch ein neues Commit-Object mit einem neuen Hashcode. Es wurde ein History
+                Rewrite gemacht.
+            </p>
+            <p>
+                Eine echte Änderung einer Commit-Message ist unmöglich, weil das Commit-Objekt durch einen Hashcode
+                abgesichert ist.
+            </p>
         </chapter>
 
         <chapter title="Commit-Message des letzten Commits in einem externen Repository ändern"
                  id="commit-message-aendern-extern">
+            <p>
+                Der Befehl ist derselbe: <code>git commit --amend</code>. Doch um die veränderte Commit-History
+                hochzuladen reicht ein simpler <code>git push</code> Befehl nicht aus, sondern muss vom Parameter
+                <code>--force</code> begleitet werden.
+            </p>
+            <p>
+                <code>git push --force</code> ist eine ausgesprochen gefährliche Operation, weil dabei Commits anderer
+                Teammitglieder, die sich nicht schon lokal im Repository befinden, überschrieben werden. Außerdem führt
+                das nächste <code>git pull</code> bei den anderen Teammitgliedern zu einem Fehler, wenn diese zuvor
+                schon den ursprünglichen (fehlerhaften) Commit heruntergeladen haben. Die anderen Entwickler sind dann
+                gezwungen, <code>git fetch</code> und <code>git rebase</code> auszuführen, um auf ihren Rechnern die
+                gleiche Commit-Abfolge wiederherzustellen, die Sie vorgegeben haben. <code>git push --force</code> ist
+                ein sicherer Weg, wenn man sich richtig unbeliebt im Team machen will.
+            </p>
         </chapter>
     </chapter>
 
