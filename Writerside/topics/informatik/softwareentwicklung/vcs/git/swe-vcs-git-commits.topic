@@ -34,6 +34,16 @@
         </chapter>
 
         <chapter title="Der letzte Commit: HEAD" id="grundlagen-letzter-commit">
+            <p>
+                Mit jedem Commit werden die im Stage-Bereich vorgemerkten Änderungen dauerhaft in der
+                Repository-Datenbank gespeichert. Der letzte (aktuellste) Commit im aktuellen Zweig wird
+                <code>HEAD</code> genannt.
+            </p>
+            <p>
+                Zu beachten ist, dass Git zwischen <code>Head</code> und <code>HEAD</code> differenziert: Für jeden
+                Zweig gibt es einen aktuellsten Commit, also einen <code>Head</code>. Der <code>HEAD</code> mit lauter
+                Großbuchstaben bezeichnet dagegen explizit den aktiven Zweig, der gerade bearbeitet wird.
+            </p>
         </chapter>
 
         <chapter title="Sauber einen Zweig wechseln: Checkout" id="grundlagen-checkout">
