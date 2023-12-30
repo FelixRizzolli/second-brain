@@ -269,6 +269,12 @@
                     <li><code>rev^^</code> = <code>rev~2</code></li>
                     <li><code>rev^^^</code> = <code>rev~3</code></li>
                 </list>
+
+                <warning>
+                    In der <code>cmd.exe</code> ist <code>^</code> ein Sonderzeichen. Um es anzuwenden, muss es entweder
+                    verdoppelt oder unter Anführungszeichen angegeben werden. <code>HEAD^^</code> in
+                    <code>cmd.exe</code> wäre gleichbedeutend mit <code>HEAD^</code> in der Bash.
+                </warning>
             </chapter>
         </chapter>
 
