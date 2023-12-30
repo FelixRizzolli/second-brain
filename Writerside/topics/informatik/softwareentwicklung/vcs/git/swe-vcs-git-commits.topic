@@ -474,6 +474,23 @@
         </chapter>
 
         <chapter title="Mehrere Commits widerrufen" id="gitrevert-commits">
+            <p>
+                Möchte man mehrere Commits widerrufen, so kann man diese nacheinander angeben. Das Widerrufen der
+                Commits wird zwar mit einem Befehl aber nacheinander ausgeführt, somit müssen auch mehrere
+                Commit-Messages angegeben werden.
+            </p>
+
+            <code-block lang="bash">
+                git revert HEAD HEAD~
+            </code-block>
+
+            <p>
+                Es kann auch eine Gruppe von Commits rückgängig gemacht werden.
+            </p>
+
+            <code-block lang="bash">
+                git revert HEAD~3^..HEAD          //Widerruft HEAD~3, HEAD~2, HEAD~1 und HEAD
+            </code-block>
         </chapter>
 
         <chapter title="Commit-Message für Revert-Vorgänge zusammenfassen" id="gitrevert-zusammenfassen">
