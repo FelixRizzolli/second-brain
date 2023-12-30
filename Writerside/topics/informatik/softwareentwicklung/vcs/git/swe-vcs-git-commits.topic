@@ -7,8 +7,30 @@
     <show-structure for="chapter,procedure" depth="2"/>
 
     <chapter title="Grundlagen" id="grundlagen">
-
         <chapter title="Der aktuelle Zustandsspeicher: Staging Area" id="grundlagen-stage">
+            <p>
+                Bevor Änderungen dauerhaft ins Repository gespeichert werden, muss ausgewählt werden welche Änderungen
+                berücksichtigt werden.
+            </p>
+
+            <note>
+                <p><b>Beispiel</b></p>
+
+                <p>
+                    Es wurden drei neue Dateien erstellt. Zwei Dateien enthalten Code und sollen Teil des Projekts sein.
+                    Die dritte Datei enthält aber persönliche Anmerkungen und soll nicht in das Repository übernommen
+                    werden.
+                </p>
+            </note>
+
+            <p>
+                Für diese Differenzierung (siehe Beispiel) sieht Git die <b>Staging Area</b> vor (oft kurz <b>Stage</b>,
+                <b>Index</b> oder <b>Cache</b> genannt). Der Stage-Bereich umfasst den gesamten aktiven Zweig inklusive
+                aller Änderungen, die beim nächsten Commit dauerhaft gespeichert werden sollen. Um eine Datei im
+                gegenwärtigen Zustand in den Stage-Bereich zu befördern, wird der Befehl
+                <code>git add &lt;file&gt;</code> oder das gleichwertige Kommando <code>git stage &lt;file&gt;</code>
+                ausgeführt.
+            </p>
         </chapter>
 
         <chapter title="Der letzte Commit: HEAD" id="grundlagen-letzter-commit">
