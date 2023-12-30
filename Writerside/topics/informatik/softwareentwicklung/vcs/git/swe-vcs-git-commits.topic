@@ -96,6 +96,51 @@
     </chapter>
 
     <chapter title="Referenzen auf Commits" id="referenzen">
+        <p>
+            Bei einigen <code>git</code>-Kommandos verweist ein Parameter auf einen Commit oder ein anderes Objekt im
+            Git-Repository. Die Git-Nomenklatur spricht in diesem Zusammenhang von <emphasis>Revisionen</emphasis>, also
+            von Zuständen oder Versionen eines Objekts im Git-Repository.
+        </p>
+        <p>
+            Hashcodes von Commits, welche mittels <code>git log --online</code> ermittelt werden können, bieten die
+            einfachste Form von Referenzen. Normalerweise reicht die Nennung der ersten Zeichen des hexadezimalen
+            Objekts – sofern es nicht zwei Objekte gibt, deren Hashcode mit den gleichen Zeichen beginnt. Mit den ersten
+            7 Zeichen ist die Wahrscheinlichkeit auf Duplikate sehr gering.
+        </p>
+        <p>
+            Computern fällt das Hantieren mit Hashcodes leichter als Menschen. Deswegen bietet Git eine Menge anderer
+            Optionen, um auf eine bestimmte Revision eines Objekts hinzuweisen. Eine davon sind
+            <a href="swe-vcs-git-tags.topic">Tags</a>, welche für ganz wichtige Commits wie beispielsweise Releases
+            verwendet werden.
+        </p>
+        <p>
+            Andere Möglichkeiten sind:
+        </p>
+
+        <list>
+            <li>
+                <code>HEAD@{4}</code> bezeichnet den Commit vier lokale Aktionen vor dem letzten Commit. Die
+                Schreibweise <code>{date}</code> bezieht sich auf das Referenz-Log (Reflog), als Aktionen kommen neben
+                Commits auch Pull-, Push- und Checkout-Kommandos infrage.
+            </li>
+            <li>
+                <code>develop@{2 weeks ago}</code> steht für den letzten Zustand im Zweig develop, der zumindest zwei
+                Wochen alt ist. Auch diese Schreibweise bezieht sich auf das Reflog.
+            </li>
+            <li>
+                <code>HEAD~2</code> verweist auf den Vor-Vorgänger des aktuellen Commits. Statt des Reflogs werden hier
+                die Parent-Informationen der Commit-Objekte
+            </li>
+            <li>
+                <code>@^2</code> bezeichnet den zweiten Elternteil den aktuellen Commit. (Bei Merge-Prozessen kann ein
+                Commit mehrere Elternteile haben.) <code>@</code> ist dabei eine Kurzschreibweise für HEAD.
+            </li>
+        </list>
+
+        <p>
+            Alle Varianten gibt es in der <a href="https://git-scm.com/docs/gitrevisions">offiziellen Dokumentation</a>
+            zu lesen, folglich werden die wichtigsten gelistet und genauer beschrieben.
+        </p>
 
         <chapter title="Referenznamen (Refernames)" id="referenzen-refnames">
         </chapter>
