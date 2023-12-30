@@ -279,6 +279,86 @@
         </chapter>
 
         <chapter title="Beispiele" id="referenzen-beispiele">
+            <code-block lang="bash">
+                git show HEAD
+            </code-block>
+            <code-block>
+                cdb0642 Gedanken zum Vorwort
+            </code-block>
+
+            <p></p>
+
+            <code-block lang="bash">
+                git show HEAD~
+            </code-block>
+            <code-block>
+                860c2da git gui überarbeitet
+            </code-block>
+
+            <p></p>
+
+            <code-block lang="bash">
+                git show @~
+            </code-block>
+            <code-block>
+                860c2da git gui überarbeitet
+            </code-block>
+
+            <p></p>
+
+            <code-block lang="bash">
+                git show master~
+            </code-block>
+            <code-block>
+                860c2da git gui überarbeitet
+            </code-block>
+
+            <p></p>
+
+            <code-block lang="bash">
+                git show @^
+            </code-block>
+            <code-block>
+                860c2da git gui überarbeitet
+            </code-block>
+
+            <p></p>
+
+            <code-block lang="bash">
+                git show @~2
+            </code-block>
+            <code-block>
+                882dbcc Commit-Undo, Revisions-Syntax
+            </code-block>
+
+            <p></p>
+
+            <code-block lang="bash">
+                git show @~3
+            </code-block>
+            <code-block>
+                14f0aa5 Merge branch ...
+            </code-block>
+
+            <p></p>
+
+            <code-block lang="bash">
+                git show 14f0aa5^
+            </code-block>
+            <code-block>
+                caf4b7d auf Meta-Paket git-all hinweisen
+            </code-block>
+
+            <p></p>
+
+            <code-block lang="bash">
+                git show 14f0aa5^2
+            </code-block>
+            <code-block>
+                a91d855 git-filter-repo tool
+            </code-block>
+            
+            <img src="swe-vcs-git-commit-referenzen.jpg" alt="Referenzen"/>
         </chapter>
 
         <chapter title="Referenzen auf Dateien" id="referenzen-dateien">
