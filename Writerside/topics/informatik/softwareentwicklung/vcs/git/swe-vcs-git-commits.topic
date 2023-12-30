@@ -511,6 +511,20 @@
     </chapter>
 
     <chapter title="Die letzten Commits aus dem Repository löschen (git reset)" id="gitreset">
+        <p>
+            Mit dem Befehl <code>git reset</code> kann auch zu einem früheren Commit zurückgekehrt werden. Dabei werden
+            alle Commits bis dahin aus dem Repository wieder gelöscht.
+        </p>
+        <p>
+            Genaugenommen stimmt, dass nicht, denn alle Commits samt aller Änderungen bleiben vorerst in der
+            Git-Datenbank. Der Garbage Collector bzw. <code>git gc</code> wird die losen Objekte, aber früher oder
+            später löschen.
+        </p>
+        <p>
+            Die Vorgehensweise ist sehr komfortabel, aber weniger transparent als git revert. Denn hierbei wird die
+            Geschichte umgeschrieben und so ein <emphasis>History Rewrite</emphasis> hat nicht nur auf politischer Ebene
+            einen schalen Beigeschmack, sondern gilt auch in Git-Kreisen als problematisch.
+        </p>
     </chapter>
 
     <chapter title="Vorübergehend zu einem älteren Commit wechseln (git checkout)" id="gitckeckout">
