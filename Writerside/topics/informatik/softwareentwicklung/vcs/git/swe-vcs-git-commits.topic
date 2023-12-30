@@ -173,6 +173,31 @@
 
         <chapter title="refname@{date}" id="referenzen-datum">
             <p>
+                Mit <code>refname@{date}</code> können Refnames um eine Zeitangabe ergänzt werden. Damit wird das erste
+                Objekt vor der Zeitangabe im betreffenden Zweig ausgewählt. Wenn verfügbare Objekt und zeigt eine
+                Warnung an.
+            </p>
+            <p>
+                Ausdrücke, die Leerzeichen enthalten müssen in Anführungszeichen gestellt werden. Alternativ zu
+                Leerzeichen kann auch ein Punkt verwendet werden.
+            </p>
+
+            <code-block lang="bash">
+                git show HEAD@{yesterday}
+            </code-block>
+            <code-block lang="bash">
+                git show '@{1 day ago}'
+            </code-block>
+            <code-block lang="bash">
+                git show develop@{2.hours.ago}
+            </code-block>
+            <code-block lang="bash">
+                git show 'master@{2 months 3 weeks ago}'
+            </code-block>
+        </chapter>
+
+        <chapter title="refname@{n}" id="referenzen-n">
+            <p>
                 Die Schreibweise <code>refname@{n}</code> bezeichnet den Zustand des Objekts <code>n</code> Aktionen
                 früher. Dabei werden nicht nur Commits, sondern auch Aktionen wie <code>git checkout</code> oder
                 <code>git reset</code> beachtet. <code>HEAD@{2}</code> kann daher der vorvorletzte Commit sein, muss es
@@ -185,9 +210,6 @@
                 Git-Objekte, die dem Reflog bekannt sind! Bei einem Repository, das gerade mit <code>git clone</code>
                 heruntergeladen wurde, gibt es noch keinen Reflog.
             </p>
-        </chapter>
-
-        <chapter title="refname@{n}" id="referenzen-n">
         </chapter>
 
         <chapter title="Zugriff auf Vorgängerversionen" id="referenzen-last">
