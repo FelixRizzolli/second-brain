@@ -91,11 +91,11 @@
                 git switch newfeature
             </code-block>
 
-            <p>
+            <note>
                 Beim Checkout werden alle unter Git-Kontrolle stehenden Dateien ausgetauscht und durch die Versionen
                 ersetzt, die beim letzten Commit im jeweiligen Zweig gültig waren. Nicht unter Versionskontrolle
                 stehende Dateien rührt git checkout nicht an.
-            </p>
+            </note>
         </chapter>
 
         <chapter title="Branch erstellen und wechseln in einem Schritt" id="ckeckout-beides">
@@ -108,10 +108,10 @@
                 git checkout -b newfeature
             </code-block>
 
-            <p>
+            <note>
                 Sollte es zu diesem Zeitpunkt bereits Änderungen ohne Commit geben, dann werden diese Änderungen
                 automatisch in den neuen Zweig übernommen.
-            </p>
+            </note>
         </chapter>
     </chapter>
 
