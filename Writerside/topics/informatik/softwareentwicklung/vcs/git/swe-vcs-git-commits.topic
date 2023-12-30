@@ -494,6 +494,19 @@
         </chapter>
 
         <chapter title="Commit-Message für Revert-Vorgänge zusammenfassen" id="gitrevert-zusammenfassen">
+            <p>
+                Werden mehrere Revert-Vorgänge zu einem Befehl zusammengefasst so muss trotzdem pro Schritt immer
+                jeweils eine Commit-Message angegeben werden. Um dies zu umgehen, gibt es den Parameter
+                <code>--no-commit</code> bzw. <code>-n</code>. Damit werden alle Revert-Vorgänge zusammengefasst, aber
+                noch nicht per Commit-Kommando bestätigt. Das Commit-Kommando muss somit separat angegeben werden.
+            </p>
+
+            <code-block lang="bash">
+                git revert -n HEAD~2^..HEAD
+            </code-block>
+            <code-block lang="bash">
+                git commit -m 'revert last three commits at once'
+            </code-block>
         </chapter>
     </chapter>
 
