@@ -37,27 +37,30 @@
         <p>
             Was danach passiert hängt stark von den Begleitumständen ab.
         </p>
-        <p>
-            Egal, von welcher Seite der Merge-Prozess gestartet wurde: Das Endergebnis in Ihrem Projektverzeichnis ist
-            in beiden Fällen dasselbe! Dennoch ist es keineswegs egal, von welcher Seite der Merge-Prozess ausgeführt
-            wird!
-        </p>
-        
-        <list>
-            <li>
-                Wird vom Master-Branch aus der Feature-Branch mit dem Master-Branch zusammenführen, ändert sich der
-                Master-Branch. Der Feature-Zweig bleibt, wie er ist.
-            </li>
-            <li>
-                Wird hingegen vom Feature-Branch aus der Master-Zweig zum Feature-Zweig gemerged, ändert sich der
-                Feature-Zweig. In diesem Fall bleibt der Master-Zweig unverändert.
-            </li>
-        </list>
-        
-        <p>
-            In jedem Fall können beide Zweige weitergenutzt werden. Der Merge-Prozess »schließt« keinen Zweig. Wenn ein
-            Zweig nicht mehr benötigt wird, muss er explizit mit <code>git branch -d</code> gelöscht werden.
-        </p>
+
+        <note>
+            <p>
+                Egal, von welcher Seite der Merge-Prozess gestartet wurde: Das Endergebnis in Ihrem Projektverzeichnis
+                ist in beiden Fällen dasselbe! Dennoch ist es keineswegs egal, von welcher Seite der Merge-Prozess
+                ausgeführt wird!
+            </p>
+
+            <list>
+                <li>
+                    Wird vom Master-Branch aus der Feature-Branch mit dem Master-Branch zusammenführen, ändert sich der
+                    Master-Branch. Der Feature-Zweig bleibt, wie er ist.
+                </li>
+                <li>
+                    Wird hingegen vom Feature-Branch aus der Master-Zweig zum Feature-Zweig gemerged, ändert sich der
+                    Feature-Zweig. In diesem Fall bleibt der Master-Zweig unverändert.
+                </li>
+            </list>
+
+            <p>
+                In jedem Fall können beide Zweige weitergenutzt werden. Der Merge-Prozess »schließt« keinen Zweig. Wenn
+                ein Zweig nicht mehr benötigt wird, muss er explizit mit <code>git branch -d</code> gelöscht werden.
+            </p>
+        </note>
         
         <table>
             <tr>
