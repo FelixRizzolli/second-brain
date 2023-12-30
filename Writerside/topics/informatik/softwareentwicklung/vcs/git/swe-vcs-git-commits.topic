@@ -446,8 +446,31 @@
     </chapter>
 
     <chapter title="Die letzten Commits widerrufen (git revert)" id="gitrevert">
-
         <chapter title="Einen Commit widerrufen" id="gitrevert-commit">
+            <p>
+                Mit dem Befehl <code>git revert HEAD</code> wird der letzte Commit widerrufen. Hierbei werden mittels
+                Commit, die Änderungen im zuletzt durchgeführten Commit invers auf die aktuellen Änderungen angewendet,
+                und ausgeführt. Bei der Ausführung des Kommandos wird ein Editor gestartet, in dem die Commit-Message
+                angegeben werden muss.
+            </p>
+
+            <code-block lang="bash">
+                git revert HEAD
+            </code-block>
+            <code-block lang="bash">
+                git revert HEAD~2                //Widerruft nur die Änderungen vom drittletzten Commit
+            </code-block>
+            
+            <p>
+                Der Befehl kann nicht ausgeführt werden, falls Änderungen am Arbeitsverzeichnis durchgeführt wurden. Es
+                stehen folgende Optionen zur Verfügung:
+            </p>
+            
+            <list>
+                <li>Änderungen verwerfen mit <code>git restore .</code></li>
+                <li>Änderungen im Stash-Bereich zwischenspeichern mit <code>git stash</code></li>
+                <li>Die Änderungen in einem Commit speichern und dann den vorletzten widerrufen</li>
+            </list>
         </chapter>
 
         <chapter title="Mehrere Commits widerrufen" id="gitrevert-commits">
