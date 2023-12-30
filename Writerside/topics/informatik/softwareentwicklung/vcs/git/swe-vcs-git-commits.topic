@@ -213,11 +213,62 @@
         </chapter>
 
         <chapter title="Zugriff auf Vorgängerversionen" id="referenzen-last">
-
             <chapter title="Die Tildensyntax" id="referenzen-last-tilde">
+                <p>
+                    Mit der Tildensyntax wird jeweils der erste Elternteil angesprochen werden:
+                </p>
+
+                <list>
+                    <li>
+                        <code>rev~</code> verweist auf den Vorgänger (Parent) der angegebenen Revision.
+                    </li>
+                    <li>
+                        <code>rev~1</code> ist gleichwertig zu <code>rev~</code>.
+                    </li>
+                    <li>
+                        <code>rev~2</code> verweist auf den Vor-Vorgänger.
+                    </li>
+                    <li>
+                        <code>rev~3</code>, <code>rev~4</code> verweist auf den Vor-Vor-Vorgänger usw.
+                    </li>
+                </list>
             </chapter>
 
             <chapter title="Die Zirkumflexsyntax" id="referenzen-last-zirkumflex">
+                <p>
+                    Das Zeichen <code>^</code> wird Zirkumflex genannt. Es ist dann relevant, wenn ein Commit mehrere
+                    Vorgänger (Parents) hat. Das ist z.B. nach einem Merge-Prozess der Fall.
+                </p>
+
+                <list>
+                    <li>
+                        <code>rev^</code> bezeichnet wie <code>rev~</code> den ersten Elternteil (biologisch gesehen
+                        z.B. die Mutter).
+                    </li>
+                    <li>
+                        <code>rev^1</code> ist gleichwertig zu <code>rev^</code>.
+                    </li>
+                    <li>
+                        <code>rev^2</code> bezeichnet den zweiten Elternteil (z. B. den Vater). Bei einem Merge-Prozess
+                        war <code>rev^</code> der damals aktive Zweig, <code>rev^2</code> der andere Zweig.
+                    </li>
+                    <li>
+                        <code>rev^3</code>, <code>rev^4</code> usw. bezeichnen weitere Vorgänger derselben Ebene in der
+                        Reihenfolge, in der sie beim Merge-Kommando angegeben wurden. Biologische Vergleiche werden
+                        jetzt schwierig. Auch in Git sind derartige Fälle selten. Es gibt aber den selten eingesetzten
+                        Octopus-Merge, der mehrere Zweige auf einmal zusammenführt.
+                    </li>
+                </list>
+
+                <p>
+                    Das Zirkumflexzeichen darf auch mehrfach angegeben werden. Dabei gilt:
+                </p>
+
+                <list>
+                    <li><code>rev^</code> = <code>rev~</code></li>
+                    <li><code>rev^^</code> = <code>rev~2</code></li>
+                    <li><code>rev^^^</code> = <code>rev~3</code></li>
+                </list>
             </chapter>
         </chapter>
 
