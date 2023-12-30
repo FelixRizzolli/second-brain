@@ -147,9 +147,9 @@
                 Refnames sind Namen, die in <path>.git/refs</path> verwendet werden, also Namen lokaler bzw. entfernter
                 Zweige wie master oder <path>refs/remote/origin/develop</path>. Erlaubt ist außerdem <code>HEAD</code>
                 zur Bezeichnung des aktuellsten Commits des aktuellen Zweigs. Je nach Kontext (z. B. während eines
-                Merge-Prozesses) sind auch <path>FETCH_HEAD</path>, <path>MERGE_HEAD</path>, <path>ORIG_HEAD</path> und
-                <path>CHERRY_PICK_HEAD</path> zulässige Namen. Das Zeichen <code>@</code> für sich ist eine
-                Kurzschreibweise für <path>HEAD</path>.
+                Merge-Prozesses) sind auch <code>FETCH_HEAD</code>, <code>MERGE_HEAD</code>, <code>ORIG_HEAD</code> und
+                <code>CHERRY_PICK_HEAD</code> zulässige Namen. Das Zeichen <code>@</code> für sich ist eine
+                Kurzschreibweise für <code>HEAD</code>.
             </p>
 
             <chapter title="Beispiele" id="referenzen-refnames-beispiele">
@@ -172,6 +172,19 @@
         </chapter>
 
         <chapter title="refname@{date}" id="referenzen-datum">
+            <p>
+                Die Schreibweise <code>refname@{n}</code> bezeichnet den Zustand des Objekts <code>n</code> Aktionen
+                früher. Dabei werden nicht nur Commits, sondern auch Aktionen wie <code>git checkout</code> oder
+                <code>git reset</code> beachtet. <code>HEAD@{2}</code> kann daher der vorvorletzte Commit sein, muss es
+                aber nicht.
+            </p>
+            <p>
+                Im Referenz-Log (kurz Reflog) werden Git-Aktionen protokolliert, die den Head eines Zweigs des lokalen
+                Repositorys verändern. Alte Einträge werden aus Platzgründen aus dem Reflog entfernt. Die beiden
+                Schreibweisen <code>refname@{date}</code> und <code>refname@{n}</code> funktionieren ausschließlich für
+                Git-Objekte, die dem Reflog bekannt sind! Bei einem Repository, das gerade mit <code>git clone</code>
+                heruntergeladen wurde, gibt es noch keinen Reflog.
+            </p>
         </chapter>
 
         <chapter title="refname@{n}" id="referenzen-n">
