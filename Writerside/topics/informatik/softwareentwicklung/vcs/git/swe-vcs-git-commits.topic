@@ -405,11 +405,43 @@
     </chapter>
 
     <chapter title="Änderungen rückgängig machen (git reset, restore)" id="rueckgaengig">
-
         <chapter title="Datei aus dem Stage-Bereich entfernen (git reset)" id="rueckgaengig-gitreset">
+            <p>
+                Der Befehl <code>git reset &lt;file&gt;</code> entfernt die Datei aus dem Stage-Bereich ohne die Datei
+                im Projektverzeichnis zu ändern. Wenn alle Dateien im Projektverzeichnis vom Commit ausgeschlossen
+                werden sollen, so wird lediglich der Befehl <code>git reset</code> ohne weitere Parameter ausgeführt.
+            </p>
+
+            <code-block lang="bash">
+                git reset &lt;file&gt;
+            </code-block>
+            <code-block lang="bash">
+                git reset
+            </code-block>
         </chapter>
 
         <chapter title="Den zuletzt durchgeführten Commit widerrufen (git restore)" id="rueckgaengig-gitrestore">
+            <p>
+                Der Befehl <code>git restore &lt;file&gt;</code> kann die jeweilige Datei in den Zustand bringen, in dem
+                sie beim letzten Commit war. Das Kommando überschreibt die seither durchgeführten Änderungen ohne
+                Rückfrage und ohne Undo-Möglichkeit. Um alle Dateien des Projektverzeichnisses wiederherzustellen wird
+                ein Punkt als Platzhalter für die Datei gesetzt.
+            </p>
+
+            <code-block lang="bash">
+                git restore &lt;file&gt;
+            </code-block>
+            <code-block lang="bash">
+                git restore -s HEAD~3
+            </code-block>
+            <code-block lang="bash">
+                git restore .
+            </code-block>
+
+            <p>
+                Die gewünschte Version der Datei kann mit <code>git show</code> oder <code>git diff</code> gefunden
+                werden.
+            </p>
         </chapter>
     </chapter>
 
