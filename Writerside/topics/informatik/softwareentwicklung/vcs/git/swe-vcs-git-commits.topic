@@ -362,6 +362,16 @@
         </chapter>
 
         <chapter title="Referenzen auf Dateien" id="referenzen-dateien">
+            <p>
+                Sofern eine Referenz auf einen Commit oder auf ein Tree-Objekt verweist, können alle bisher
+                beschriebenen Syntaxformen um <code>:&lt;file&gt;</code> ergänzt werden. Beispielsweise zeigt
+                <code>git show 3cb2907:file1</code> die Datei <code>file1</code> in dem Zustand, in dem sie beim Commit
+                <code>3cb2907</code> war.
+            </p>
+
+            <code-block lang="bash">
+                git show HEAD:index.html
+            </code-block>
         </chapter>
     </chapter>
 
