@@ -39,11 +39,12 @@
                 Repository-Datenbank gespeichert. Der letzte (aktuellste) Commit im aktuellen Zweig wird
                 <code>HEAD</code> genannt.
             </p>
-            <p>
+
+            <note>
                 Zu beachten ist, dass Git zwischen <code>Head</code> und <code>HEAD</code> differenziert: Für jeden
                 Zweig gibt es einen aktuellsten Commit, also einen <code>Head</code>. Der <code>HEAD</code> mit lauter
                 Großbuchstaben bezeichnet dagegen explizit den aktiven Zweig, der gerade bearbeitet wird.
-            </p>
+            </note>
         </chapter>
 
         <chapter title="Sauber einen Zweig wechseln: Checkout" id="grundlagen-checkout">
@@ -177,10 +178,11 @@
                 Objekt vor der Zeitangabe im betreffenden Zweig ausgewählt. Wenn verfügbare Objekt und zeigt eine
                 Warnung an.
             </p>
-            <p>
+
+            <note>
                 Ausdrücke, die Leerzeichen enthalten müssen in Anführungszeichen gestellt werden. Alternativ zu
                 Leerzeichen kann auch ein Punkt verwendet werden.
-            </p>
+            </note>
 
             <code-block lang="bash">
                 git show HEAD@{yesterday}
@@ -203,13 +205,14 @@
                 <code>git reset</code> beachtet. <code>HEAD@{2}</code> kann daher der vorvorletzte Commit sein, muss es
                 aber nicht.
             </p>
-            <p>
+
+            <note>
                 Im Referenz-Log (kurz Reflog) werden Git-Aktionen protokolliert, die den Head eines Zweigs des lokalen
                 Repositorys verändern. Alte Einträge werden aus Platzgründen aus dem Reflog entfernt. Die beiden
                 Schreibweisen <code>refname@{date}</code> und <code>refname@{n}</code> funktionieren ausschließlich für
                 Git-Objekte, die dem Reflog bekannt sind! Bei einem Repository, das gerade mit <code>git clone</code>
                 heruntergeladen wurde, gibt es noch keinen Reflog.
-            </p>
+            </note>
         </chapter>
 
         <chapter title="Zugriff auf Vorgängerversionen" id="referenzen-last">
@@ -438,10 +441,10 @@
                 git restore .
             </code-block>
 
-            <p>
+            <note>
                 Die gewünschte Version der Datei kann mit <code>git show</code> oder <code>git diff</code> gefunden
                 werden.
-            </p>
+            </note>
         </chapter>
     </chapter>
 
@@ -460,17 +463,19 @@
             <code-block lang="bash">
                 git revert HEAD~2                //Widerruft nur die Änderungen vom drittletzten Commit
             </code-block>
-            
-            <p>
-                Der Befehl kann nicht ausgeführt werden, falls Änderungen am Arbeitsverzeichnis durchgeführt wurden. Es
-                stehen folgende Optionen zur Verfügung:
-            </p>
-            
-            <list>
-                <li>Änderungen verwerfen mit <code>git restore .</code></li>
-                <li>Änderungen im Stash-Bereich zwischenspeichern mit <code>git stash</code></li>
-                <li>Die Änderungen in einem Commit speichern und dann den vorletzten widerrufen</li>
-            </list>
+
+            <note>
+                <p>
+                    Der Befehl kann nicht ausgeführt werden, falls Änderungen am Arbeitsverzeichnis durchgeführt wurden.
+                    Es stehen folgende Optionen zur Verfügung:
+                </p>
+
+                <list>
+                    <li>Änderungen verwerfen mit <code>git restore .</code></li>
+                    <li>Änderungen im Stash-Bereich zwischenspeichern mit <code>git stash</code></li>
+                    <li>Die Änderungen in einem Commit speichern und dann den vorletzten widerrufen</li>
+                </list>
+            </note>
         </chapter>
 
         <chapter title="Mehrere Commits widerrufen" id="gitrevert-commits">
@@ -515,11 +520,13 @@
             Mit dem Befehl <code>git reset</code> kann auch zu einem früheren Commit zurückgekehrt werden. Dabei werden
             alle Commits bis dahin aus dem Repository wieder gelöscht.
         </p>
-        <p>
+
+        <note>
             Genaugenommen stimmt, dass nicht, denn alle Commits samt aller Änderungen bleiben vorerst in der
             Git-Datenbank. Der Garbage Collector bzw. <code>git gc</code> wird die losen Objekte, aber früher oder
             später löschen.
-        </p>
+        </note>
+
         <p>
             Die Vorgehensweise ist sehr komfortabel, aber weniger transparent als git revert. Denn hierbei wird die
             Geschichte umgeschrieben und so ein <emphasis>History Rewrite</emphasis> hat nicht nur auf politischer Ebene
@@ -567,10 +574,11 @@
                 versehen. Dabei entsteht auch ein neues Commit-Object mit einem neuen Hashcode. Es wurde ein History
                 Rewrite gemacht.
             </p>
-            <p>
+
+            <note>
                 Eine echte Änderung einer Commit-Message ist unmöglich, weil das Commit-Objekt durch einen Hashcode
                 abgesichert ist.
-            </p>
+            </note>
         </chapter>
 
         <chapter title="Commit-Message des letzten Commits in einem externen Repository ändern"
@@ -580,7 +588,8 @@
                 hochzuladen reicht ein simpler <code>git push</code> Befehl nicht aus, sondern muss vom Parameter
                 <code>--force</code> begleitet werden.
             </p>
-            <p>
+
+            <note>
                 <code>git push --force</code> ist eine ausgesprochen gefährliche Operation, weil dabei Commits anderer
                 Teammitglieder, die sich nicht schon lokal im Repository befinden, überschrieben werden. Außerdem führt
                 das nächste <code>git pull</code> bei den anderen Teammitgliedern zu einem Fehler, wenn diese zuvor
@@ -588,7 +597,7 @@
                 gezwungen, <code>git fetch</code> und <code>git rebase</code> auszuführen, um auf ihren Rechnern die
                 gleiche Commit-Abfolge wiederherzustellen, die Sie vorgegeben haben. <code>git push --force</code> ist
                 ein sicherer Weg, wenn man sich richtig unbeliebt im Team machen will.
-            </p>
+            </note>
         </chapter>
     </chapter>
 
