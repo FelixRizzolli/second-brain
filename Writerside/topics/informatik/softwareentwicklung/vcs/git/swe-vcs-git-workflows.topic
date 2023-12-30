@@ -140,11 +140,12 @@
                 der Entwicklung kann der Feature-Branch mit dem Master-Branch auch immer wieder gemergt oder gerebaset
                 werden, damit der abschließende Merge in den Master nicht zu kompliziert wird.
             </p>
-            <p>
+
+            <warning>
                 Wenn im Laufe des Projektes Funktionen entwickelt werden, die auch von anderen Entwicklern gebraucht
                 werden, kann es hier zu parallelen Entwicklungen kommen. Das lässt sich mit guter Kommunikation
                 verhindern, aber es bleibt ein Problem, das bei diesem Workflow bedacht werden muss.
-            </p>
+            </warning>
         </chapter>
 
         <chapter title="Fazit" id="featurebranching-fazit">
@@ -378,9 +379,10 @@
                 Trunk-based Development unterbricht ein unerfahrener Entwickler womöglich den gewohnten Arbeitsablauf
                 für das ganze Team, weil die Pipeline nach einem Fehler stockt.
             </p>
-            <p>
+
+            <note>
                 Um den Einstieg für unerfahrene Entwickler zu erleichtern, eignet sich Pair Programming gut.
-            </p>
+            </note>
         </chapter>
 
         <chapter title="Fazit" id="tbd-fazit">
