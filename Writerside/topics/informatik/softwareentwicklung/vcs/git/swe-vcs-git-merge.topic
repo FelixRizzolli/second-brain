@@ -126,14 +126,16 @@
             einzige Vorteil eines Octopus-Merges im Vergleich zu mehreren Einzel-Merge-Prozessen besteht darin, dass es
             – wenn alles gut geht – nur einen Merge-Commit gibt.
         </p>
-        <p>
+
+        <warning>
             Schon ein gewöhnlicher Merge-Prozess, der zwei Zweige zusammenführt, kann genug Probleme verursachen. Je
             mehr Zweige im Spiel sind, desto diffiziler wird die Behebung der anfallenden Konflikte oder Unklarheiten.
-        </p>
-        <p>
+        </warning>
+
+        <note>
             Wenn man die Git-Repository des Linux-Kernels durchsucht so kann man etliche Octopus-Merges finden, wobei
             einer beachtliche 65 Zweige zusammenführt.
-        </p>
+        </note>
     </chapter>
 
     <chapter title="Merge Konflikte lösen" id="konflikte">
@@ -210,10 +212,10 @@
                 git commit -m 'merge branch1 into branch2'
             </code-block>
 
-            <p>
+            <note>
                 In der Praxis sind bei größeren Merge-Prozessen oft mehrere Dateien und Codepassagen betroffen.
                 Dementsprechend mühsam kann es sein, sämtliche Konflikte zu beheben.
-            </p>
+            </note>
         </chapter>
 
         <chapter title="Merge-Tools" id="konflikte-tools">
@@ -275,11 +277,12 @@
                 erforderlich, damit die mit <code>git checkout</code> veränderte Datei berücksichtigt wird. (Alternativ
                 kann vorher <code>git add &lt;file&gt;</code> ausgeführt werden.)
             </p>
-            <p>
+
+            <note>
                 Beim Rebasing haben die Parameter <code>--ours</code> und <code>--theirs</code> eine inversive
                 Bedeutung! Das liegt daran, dass beim Rebasing die fremden Commits als Basis verwendet werden und die
                 eigenen entsprechend angepasst werden. Der Merge-Prozess erfolgt daher in umgekehrter Richtung.
-            </p>
+            </note>
         </chapter>
 
         <chapter title="Merge-Abbruch und Undo" id="konflikte-abbruch">
@@ -349,10 +352,11 @@
                 Monat später entdeckt wird. Oder wenn das Zusammenspiel von zwei augenscheinlich unabhängigen Änderungen
                 im Code ein Sicherheitsproblem auslöst.
             </p>
-            <p>
+
+            <warning>
                 Das Problem löst sich nur durch den konsequenten Einsatz von automatisierter (Unit-)Tests lösen. Git
                 verwendet beim Merge-Prozess formale Regeln an, aber es "versteht" den Code nicht.
-            </p>
+            </warning>
         </chapter>
 
         <chapter title="MERGE-Dateien" id="konflikte-dateien">
@@ -430,9 +434,11 @@
                 Schließlich führt <code>git merge-file</code> die Änderungen zusammen. Dabei wird <path>file1</path>
                 geändert.
             </p>
-            <p>
+
+            <note>
                 Werfen Sie einen Blick in diese Datei, bevor Sie die Änderungen mit <code>git commit -a</code> speichern!
-            </p>
+            </note>
+
             <p>
                 Wie bei <code>git merge</code> kann es auch bei <code>git file-merge</code> zu Konflikten kommen. Zur
                 Not kann mit <code>git restore file1</code> der ursprüngliche Zustand von file1 wiederhergestellt
