@@ -228,7 +228,7 @@
             git push origin master
         </code-block>
 
-        <note>
+        <warning>
             <p><b><code>git pull</code> vor <code>git push</code></b></p>
 
             <p>
@@ -236,7 +236,7 @@
                 vorgenommen hat. Wenn <code>git push</code> diesen Fall erkennt, scheitert das Kommando. Best Practice
                 ist jedes mal vor <code>git push</code> den Befehl <code>git pull</code> auszuführen.
             </p>
-        </note>
+        </warning>
     </chapter>
 
     <chapter title="Lokales Repository aktualisieren (git pull)" id="pull">
