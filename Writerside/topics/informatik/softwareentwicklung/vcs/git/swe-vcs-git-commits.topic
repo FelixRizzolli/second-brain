@@ -528,6 +528,31 @@
     </chapter>
 
     <chapter title="Vorübergehend zu einem älteren Commit wechseln (git checkout)" id="gitckeckout">
+        <p>
+            Die Befehle <code>git reset</code> und <code>git revert</code> haben beide das Ziel, dauerhaft zu einem 
+            früheren Commit zurückzukehren. Der Befehl git checkout bietet die Möglichkeit, dies vorübergehend zu tun.
+        </p>
+
+        <code-block lang="bash">
+            git checkout 4d37367
+        </code-block>
+        
+        <p>
+            Möchte man mit hier weiterarbeiten so gibt es zwei Möglichkeiten:
+        </p>
+        
+        <list>
+            <li>
+                Es können ausgehend vom aktuellen Zustand Änderungen und weitere Commits durchgeführt werden. Damit
+                entsteht an dieser Stelle ein neuer, vorerst namenloser (anonymer) Zweig. Das Checkout-Kommando schlägt
+                vor, diesen Zweig gegebenenfalls mit <code>git switch -c &lt;newbranch&gt;</code> dauerhaft zu erzeugen
+                und zu benennen.
+            </li>
+            <li>
+                Alternativ kann mit <code>git switch</code> - oder mit <code>git checkout &lt;oldbranch&gt;</code> zum
+                zuletzt aktiven Zweig zurückgekehrt werden.
+            </li>
+        </list>
     </chapter>
 
     <chapter title="Commit-Message ändern" id="commit-message-aendern">
