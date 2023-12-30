@@ -391,6 +391,17 @@
     </chapter>
 
     <chapter title="Änderungen vergleichen (git diff)" id="gitdiff">
+        <p>
+            Mit dem Befehl <code>git diff</code> können, statt nur den alten Zustand einer Datei, auch die Änderungen
+            zwischen der Versionen angezeigt werden.
+        </p>
+
+        <code-block lang="bash">
+            git diff HEAD~ &lt;file&gt;           //Unterschied zwischen vorherigem Commit und aktuellen Commit
+        </code-block>
+        <code-block lang="bash">
+            git diff HEAD~3 HEAD &lt;file&gt;     //unterschied zwischen letzten Commit und drittletzten Commit
+        </code-block>
     </chapter>
 
     <chapter title="Änderungen rückgängig machen (git reset, restore)" id="rueckgaengig">
