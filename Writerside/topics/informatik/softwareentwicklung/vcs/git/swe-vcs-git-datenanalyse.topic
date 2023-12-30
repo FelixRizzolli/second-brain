@@ -33,11 +33,11 @@
                 git log
             </code-block>
 
-            <p>
+            <note>
                 Um das Kommando zu testen, bietet das Repository des Linux-Kernel eine wunderbare Spielwiese. Dabei ist
                 zu beachten, dass das Repository mehr als 4 GB an Speicherplatz benötigt. Link:
                 <a href="https://github.com/torvalds/linux.git">https://github.com/torvalds/linux.git</a>
-            </p>
+            </note>
 
             <chapter title="Die wichtigsten Parameter für ein übersichtlicheres Logging" id="commit-gitlog-param">
                 <table>
@@ -207,10 +207,10 @@
                                 </li>
                             </list>
 
-                            <p>
+                            <note>
                                 Anstelle von Zweignamen können Sie auch Hashcodes oder andere Revisionsangaben
                                 verwenden.
-                            </p>
+                            </note>
                         </td>
                     </tr>
                     <tr>
