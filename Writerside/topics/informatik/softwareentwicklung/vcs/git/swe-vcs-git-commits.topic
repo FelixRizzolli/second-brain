@@ -58,6 +58,40 @@
         </chapter>
 
         <chapter title="Commit Intern" id="grundlagen-intern">
+            <p>
+                Der Befehl <code>git add</code> verschiebt die Änderungen vom Projektverzeichnis (Workspace) im
+                Stage-Bereich. Durch einen Commit werden die Änderungen dauerhaft ins Repository aufgenommen. Aus sicht
+                von Commit kann eine Datei also gleichzeitig drei Zustände habe:
+            </p>
+            
+            <list>
+                <li>den aktuellen Zustand im Projektverzeichnis</li>
+                <li>den Zustand im Stage-Bereich (staged)</li>
+                <li>den Zustand im Repository (committed)</li>
+            </list>
+            
+            <p>
+                Bei einem Commit entstehen in der Git-Datenbank mehrere Objekte:
+            </p>
+            
+            <list>
+                <li>
+                    Das Commit-Objekt fasst die Metadaten zusammen. (Wer? Wann?) Es enthält die Commit-Message, einen
+                    Verweis auf den vorigen Commit im gleichen Branch (parent) und einen Verweis auf ein Tree-Objekt.
+                </li>
+                <li>
+                    Das Tree-Objekt verweist auf die Blobs aller Dateien des aktiven Zweigs (und nicht nur auf
+                    neue/geänderte Dateien). Mit der Kombination aus Commit- und Tree-Objekt kann unkompliziert auf
+                    sämtliche versionierte Dateien des betreffenden Zweigs zugegriffen werden. (Der Parent-Verweis ist
+                    nur von Interesse, wenn man an historischen Informationen interessiert ist, wie es zum aktuellen
+                    Zustand gekommen ist.)
+                </li>
+                <li>
+                    Für jede versionierte Datei gibt es ein Blob (Binary Large Object) mit dem Inhalt der Datei.
+                </li>
+            </list>
+
+            <img src="swe-vcs-git-commit-intern.jpg" alt="Commit"/>
         </chapter>
     </chapter>
 
