@@ -143,6 +143,32 @@
         </p>
 
         <chapter title="Referenznamen (Refernames)" id="referenzen-refnames">
+            <p>
+                Refnames sind Namen, die in <path>.git/refs</path> verwendet werden, also Namen lokaler bzw. entfernter
+                Zweige wie master oder <path>refs/remote/origin/develop</path>. Erlaubt ist außerdem <code>HEAD</code>
+                zur Bezeichnung des aktuellsten Commits des aktuellen Zweigs. Je nach Kontext (z. B. während eines
+                Merge-Prozesses) sind auch <path>FETCH_HEAD</path>, <path>MERGE_HEAD</path>, <path>ORIG_HEAD</path> und
+                <path>CHERRY_PICK_HEAD</path> zulässige Namen. Das Zeichen <code>@</code> für sich ist eine
+                Kurzschreibweise für <path>HEAD</path>.
+            </p>
+
+            <chapter title="Beispiele" id="referenzen-refnames-beispiele">
+                <code-block lang="bash">
+                    git show @
+                </code-block>
+                <code-block lang="bash">
+                    git show HEAD
+                </code-block>
+                <code-block lang="bash">
+                    git show master
+                </code-block>
+                <code-block lang="bash">
+                    git show refs/heads/feature_xy
+                </code-block>
+                <code-block lang="bash">
+                    git show refs/remotes/origin/develop
+                </code-block>
+            </chapter>
         </chapter>
 
         <chapter title="refname@{date}" id="referenzen-datum">
