@@ -376,6 +376,18 @@
     </chapter>
 
     <chapter title="Alte Version einer Datei anzeigen (git show)" id="gitshow">
+        <p>
+            Mit dem Befehl <code>git show</code> kann man den früheren Zeitpunkt einer Datei ansehen. Dabei wird
+            entweder der Hashcode des Commits, ein <a href="swe-vcs-git-tags.topic">Tag</a>, der Name eines Zweigs oder
+            das <code>HEAD</code>-Argument angegeben.
+        </p>
+
+        <code-block lang="bash">
+            git show HEAD~3:&lt;file&gt;                //Drittletzter Commit
+        </code-block>
+        <code-block lang="bash">
+            git show v1.0.0                       //Objekt auf dem der Tag zeigt
+        </code-block>
     </chapter>
 
     <chapter title="Änderungen vergleichen (git diff)" id="gitdiff">
