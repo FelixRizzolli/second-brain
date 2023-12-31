@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Verschwörungstheorien" id="verschwoerungstheorien">
+    <show-structure for="chapter,procedure" depth="2"/>
+
+    <chapter title="Test zur Verschwörungsmentalität" id="test">
+        <p>
+            Mithilfe eines kurzen Tests kann herausgefunden werden, wie es um die eigene Verschwörungsmentalität
+            bestellt ist.
+        </p>
+
+        <chapter title="Fragen" id="test-fragen" collapsible="true">
+            <p>
+                <b>Aussage 1</b>: Die meisten Menschen erkennen nicht, in welchem Ausmaß unser Leben durch geheim 
+                ausgeheckte Verschwörungen bestimmt wird.
+            </p>
+            
+            <list>
+                <li>Stimme überhaupt nicht zu (1 Punkt)</li>
+                <li>Stimme nicht zu (2 Punkte)</li>
+                <li>Stimme teilweise nicht zu (3 Punkte)</li>
+                <li>Teils, teils (4 Punkte)</li>
+                <li>Stimme teilweise zu (5 Punkte)</li>
+                <li>Stimme zu (6 Punkte)</li>
+                <li>Stimme voll und ganz zu (7 Punkte)</li>
+            </list>
+
+            <p>
+                <b>Aussage 2</b>: Es gibt geheime Organisationen, die großen Einfluss auf politische Entscheidungen
+                haben.
+            </p>
+
+            <list>
+                <li>Stimme überhaupt nicht zu (1 Punkt)</li>
+                <li>Stimme nicht zu (2 Punkte)</li>
+                <li>Stimme teilweise nicht zu (3 Punkte)</li>
+                <li>Teils, teils (4 Punkte)</li>
+                <li>Stimme teilweise zu (5 Punkte)</li>
+                <li>Stimme zu (6 Punkte)</li>
+                <li>Stimme voll und ganz zu (7 Punkte)</li>
+            </list>
+
+            <p>
+                <b>Aussage 3</b>: Die verschiedenen in den Medien zirkulierenden Verschwörungserzählungen halte ich für
+                ausgemachten Blödsinn.
+            </p>
+
+            <list>
+                <li>Stimme überhaupt nicht zu (7 Punkt)</li>
+                <li>Stimme nicht zu (6 Punkte)</li>
+                <li>Stimme teilweise nicht zu (5 Punkte)</li>
+                <li>Teils, teils (4 Punkte)</li>
+                <li>Stimme teilweise zu (3 Punkte)</li>
+                <li>Stimme zu (2 Punkte)</li>
+                <li>Stimme voll und ganz zu (1 Punkte)</li>
+            </list>
+
+            <p>
+                <b>Aussage 4</b>: Es gibt keinen vernünftigen Grund, Regierungen, Geheimdiensten oder Medien zu
+                misstrauen.
+            </p>
+
+            <list>
+                <li>Stimme überhaupt nicht zu (7 Punkt)</li>
+                <li>Stimme nicht zu (6 Punkte)</li>
+                <li>Stimme teilweise nicht zu (5 Punkte)</li>
+                <li>Teils, teils (4 Punkte)</li>
+                <li>Stimme teilweise zu (3 Punkte)</li>
+                <li>Stimme zu (2 Punkte)</li>
+                <li>Stimme voll und ganz zu (1 Punkte)</li>
+            </list>
+
+            <p>
+                <b>Aussage 5</b>: Politiker und andere Führungspersönlichkeiten sind nur Marionetten der
+                dahinterstehenden Mächte.
+            </p>
+
+            <list>
+                <li>Stimme überhaupt nicht zu (1 Punkt)</li>
+                <li>Stimme nicht zu (2 Punkte)</li>
+                <li>Stimme teilweise nicht zu (3 Punkte)</li>
+                <li>Teils, teils (4 Punkte)</li>
+                <li>Stimme teilweise zu (5 Punkte)</li>
+                <li>Stimme zu (6 Punkte)</li>
+                <li>Stimme voll und ganz zu (7 Punkte)</li>
+            </list>
+        </chapter>
+
+        <chapter title="Auswertung" id="test-auswertung" collapsible="true">
+            <note>
+                Der Test verdeutlicht eine wichtige Erkenntnis der Wissenschaft: So gut wie jeder Mensch bringt die
+                Veranlagung dafür mit, an Verschwörungserzählungen zu glauben. In einem gewissen Rahmen ist das absolut
+                normal. Wie so oft macht auch hier erst die Dosis das Gift.
+            </note>
+
+            <chapter title="0-16 Punkte" id="test-auswertung-0016">
+                <p>
+                    Sie gehören zu dem Teil der Bevölkerung, der Verschwörungserzählungen am wenigsten zustimmt. Sie
+                    haben vermutlich ein hohes Vertrauen in den Staat und seine Institutionen, wählen wahrscheinlich
+                    eher eine der klassischen »Volksparteien« und lassen Ihr Kind vermutlich impfen. Sie gehen davon
+                    aus, dass die Geheimdienste einen guten Job machen und man ihnen deswegen auch bedingungslos
+                    vertrauen kann.
+                </p>
+            </chapter>
+
+            <chapter title="16-23 Punkte" id="test-auswertung-1623">
+                <p>
+                    Sie liegen in Bezug auf Ihre Verschwörungsmentalität genau in der Mitte der Bevölkerung. Vermutlich
+                    sind Sie weder vollkommen vertrauensselig gegenüber den staatlichen Institutionen, noch lehnen Sie
+                    diese vollkommen ab. Sie wählen tendenziell eher Parteien der Mitte der Gesellschaft, vertrauen der
+                    medizinischen Forschung, denken aber dennoch, dass die Pharmaindustrie nicht nur Gutes im Schilde
+                    führt.
+                </p>
+            </chapter>
+
+            <chapter title="23-35 Punkte" id="test-auswertung-2335">
+                <p>
+                    Sie gehören zu dem Teil der Bevölkerung mit der am stärksten ausgeprägten Verschwörungsmentalität.
+                    Basierend auf Ihrem Testergebnis gehen wir davon aus, dass Sie dem Staat eher skeptisch
+                    gegenüberstehen. Wenn Sie wählen gehen, dann entweder ungültig oder eine Partei, die in Opposition
+                    zu den sogenannten »Volksparteien« steht. Es ist auch wahrscheinlicher, dass Sie den Medien
+                    grundsätzlich misstrauen.
+                </p>
+            </chapter>
+        </chapter>
+    </chapter>
+</topic>
