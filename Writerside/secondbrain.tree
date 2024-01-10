@@ -308,13 +308,17 @@
 
     <!-- ###########################[ TRUTHINESS ]########################### -->
     <toc-element topic="truthiness.topic">
-        <toc-element topic="verschwoerungstheorien.topic"/>
-        <toc-element topic="truthiness-grundlagen.topic"/>
-        <toc-element topic="erdstrahlen-wasseradern.topic"/>
-        <toc-element topic="astrologie.topic"/>
-        <toc-element topic="belebtes-wasser.topic"/>
-        <toc-element topic="elektrosmog.topic"/>
-        <toc-element topic="homoeopathie.topic"/>
+        <toc-element topic="Faktencheck.topic">
+            <toc-element topic="erdstrahlen-wasseradern.topic"/>
+            <toc-element topic="belebtes-wasser.topic"/>
+            <toc-element topic="homoeopathie.topic"/>
+            <toc-element topic="elektrosmog.topic"/>
+            <toc-element topic="astrologie.topic"/>
+        </toc-element>
+        <toc-element topic="truthiness-grundlagen.topic">
+            <toc-element topic="verschwoerungstheorien.topic"/>
+            <toc-element topic="Esoterik.topic"/>
+        </toc-element>
     </toc-element>
 
     <!-- ###########################[ GESUNDHEIT ]########################### -->
