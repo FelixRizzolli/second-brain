@@ -258,8 +258,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Verschwörung vs. Wissenschaft" id="verschwoerung-vs-wissenschaft">
-        <chapter title="Expertenbaias" id="verschwoerung-vs-wissenschaft-expertenbaias">
+    <chapter title="Wissenschaftliche Erklärungen" id="wissenschaft">
+        <chapter title="Expertenbaias" id="wissenschaft-expertenbaias">
             <p>
                 Unter normalen Umständen haben die meisten Menschen etwas, das sich Expertenbias nennt. Das bedeutet:
                 Wenn wir denken, dass ein Mensch Experte in einem bestimmten Thema ist, nehmen wir dessen Aussagen als
@@ -270,7 +270,7 @@
             </p>
         </chapter>
 
-        <chapter title="Need for Cognition" id="verschwoerung-vs-wissenschaft-need-for-cognition">
+        <chapter title="Need for Cognition" id="wissenschaft-needforcognition">
             <p>
                 Menschen unterscheiden sich stark darin, wie sie mit Informationen umgehen. In der
                 Persönlichkeitspsychologie bezeichnet man das als Erkenntnisbedürfnis (eng.
@@ -289,7 +289,7 @@
             </p>
         </chapter>
 
-        <chapter title="Ankerheuristik" id="verschwoerung-vs-wissenschaft-ankerheuristik">
+        <chapter title="Ankerheuristik" id="wissenschaft-ankerheuristik">
             <p>
                 Als Ankerheuristik wird in der Psychologie ein Mechanismus bezeichnet, welcher oft bei der Beantwortung
                 von fragen bzw. der Entscheidungsfindung in Kraft tritt. Unser Gehirn macht sich bei Entscheidungen
@@ -307,7 +307,7 @@
             </p>
         </chapter>
 
-        <chapter title="Confirmation Baias" id="verschwoerung-vs-wissenschaft-confirmationbaias">
+        <chapter title="Confirmation Baias" id="wissenschaft-confirmationbaias">
             <p>
                 Der <emphasis>Confirmation Baias</emphasis> (zu Deutsch »Bestätigungsfehler«) dafür, dass wir
                 insbesondere jene Informationen als hochwertiger einstufen, die uns in unserer Meinung bestärken.
