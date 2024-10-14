@@ -3,63 +3,41 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="informatik"
        title="Informatik"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <link-summary rel="description"/>
 
     <section-starting-page>
         <title>Informatik</title>
-        <description>...</description>
+        <description id="description">
+            Dieser Bereich bietet umfassende Informationen und Ressourcen zu verschiedenen Themen der Informatik. Von
+            Anwendungsentwicklung über Betriebssysteme bis hin zu Netzwerktechnik und Webentwicklung – hier gibt es
+            einen Überblick sowie Links zu detaillierten Unterseiten, die tiefer in jedes Thema eintauchen. Ziel ist es,
+            fundiertes Wissen und nützliche Anleitungen bereitzustellen, um die faszinierende Welt der Informatik zu
+            erkunden.
+        </description>
 
         <spotlight>
-            <a description="Python" href="python.topic" summary="..." type="computer"/>
-            <a description="JavaScript" href="javascript.topic" summary="..." type="world"/>
+            <a href="python.topic" type="computer"/>
+            <a href="javascript.topic" type="world"/>
         </spotlight>
 
         <primary>
             <title>Kategorien</title>
-            <a description="Softwareentwicklung"
-               href="swe.topic"
-               summary="..."
-               type="navigation"/>
-            <a description="Anwendungsentwicklung"
-               href="anwendungsentwicklung.topic"
-               summary="..."
-               type="computer"/>
-            <a description="Webentwicklung"
-               href="webentwicklung.topic"
-               summary="..."
-               type="world"/>
-            <a description="Auszeichnungssprachen"
-               href="auszeichnungssprachen.topic"
-               summary="..."
-               type="development"/>
-            <a description="Datenbanken"
-               href="datenbanken.topic"
-               summary="..."
-               type="data"/>
-            <a description="Betriebssysteme"
-               href="betriebssysteme.topic"
-               summary="..."
-               type="cross-platform"/>
-            <a description="Netzwerktechnik"
-               href="netzwerktechnik.topic"
-               summary="..."
-               type="network"/>
-            <a description="Design"
-               href="design.topic"
-               summary="..."
-               type="creative"/>
-            <a description="Mainframe"
-               href="mainframe.topic"
-               summary="..."
-               type="server"/>
+            <a href="swe.topic" type="navigation"/>
+            <a href="anwendungsentwicklung.topic" type="computer"/>
+            <a href="webentwicklung.topic" type="world"/>
+            <a href="auszeichnungssprachen.topic" type="development"/>
+            <a href="datenbanken.topic" type="data"/>
+            <a href="betriebssysteme.topic" type="cross-platform"/>
+            <a href="netzwerktechnik.topic" type="network"/>
+            <a href="design.topic" type="creative"/>
+            <a href="mainframe.topic" type="server"/>
         </primary>
 
         <secondary>
             <title>Meine Leidenschaft</title>
-            <a description="JavaScript"
-               href="javascript.topic"
-               summary="..."
-               type="world"/>
+            <a href="javascript.topic" type="world"/>
         </secondary>
     </section-starting-page>
 </topic>

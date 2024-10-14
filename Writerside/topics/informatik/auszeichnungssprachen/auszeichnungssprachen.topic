@@ -6,6 +6,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
 
+    <link-summary>
+        Auszeichnungssprachen werden verwendet, um Dokumente zu strukturieren und formatieren. Sie ermöglichen es,
+        Texten bestimmte Bedeutungselemente hinzuzufügen, wie Überschriften, Absätze oder Hervorhebungen. Zu den
+        bekanntesten Auszeichnungssprachen gehören HTML (für Webseiten) und XML (für den Datenaustausch). Sie sind
+        essenziell für die Erstellung und Darstellung von Inhalten im Web und anderen digitalen Medien.
+    </link-summary>
+
     <!-- TODO -->
-    <p>Start typing here...</p>
 </topic>

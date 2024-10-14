@@ -7,5 +7,12 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <link-summary>
+        Netzwerktechnik befasst sich mit der Einrichtung, Verwaltung und Wartung von Computernetzwerken. Sie umfasst
+        sowohl die physischen Komponenten (wie Router, Switches und Kabel) als auch die Software zur Verwaltung von
+        Datenübertragungen und Verbindungen. Ziel ist es, zuverlässige, schnelle und sichere Kommunikationswege zu
+        schaffen, die den Datenaustausch zwischen verschiedenen Geräten und Systemen ermöglichen. Netzwerktechnik ist
+        essenziell für den reibungslosen Betrieb moderner IT-Infrastrukturen.
+    </link-summary>
     <!-- TODO -->
 </topic>

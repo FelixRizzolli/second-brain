@@ -7,5 +7,12 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <link-summary>
+        Datenbanken sind organisierte Sammlungen von Daten, die elektronisch gespeichert und verwaltet werden. Sie
+        ermöglichen effizientes Speichern, Abrufen und Verwalten großer Datenmengen. Datenbanksysteme wie MySQL,
+        PostgreSQL, Oracle und MongoDB bieten die Werkzeuge, um strukturierte Daten (wie Tabellen) oder unstrukturierte
+        Daten (wie Dokumente) zu speichern und zu verwalten. Sie sind entscheidend für Anwendungen, die Daten
+        zuverlässig und skalierbar verarbeiten müssen.
+    </link-summary>
     <!-- TODO -->
 </topic>

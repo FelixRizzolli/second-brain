@@ -3,8 +3,16 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="mainframe"
        title="Mainframe"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
 
+    <link-summary>
+        Mainframe-Computer sind leistungsstarke Systeme, die zur Verarbeitung großer Datenmengen und zur Ausführung
+        umfangreicher Anwendungen in Unternehmen verwendet werden. Sie zeichnen sich durch hohe Zuverlässigkeit,
+        Sicherheit und die Fähigkeit aus, mehrere gleichzeitige Transaktionen effizient zu verarbeiten. Mainframes sind
+        in der Finanzindustrie, im Gesundheitswesen und bei Regierungsbehörden weit verbreitet und bieten unverzichtbare
+        Unterstützung für kritische Geschäftsprozesse.
+    </link-summary>
+    
     <!-- TODO -->
-    <p>Start typing here...</p>
 </topic>

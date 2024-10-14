@@ -3,14 +3,19 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic help-id="softwareentwicklung"
        id="swe"
-       title="Softwareentwicklung" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       title="Softwareentwicklung" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
+
+    <link-summary rel="definition-content"/>
 
     <chapter id="definition" title="Definition Softwareentwickler">
         <tip>
-            Der Softwareentwickler analysiert, plant und implementiert auf professionelle Art und Weise
-            informationstechnische Anwendungen und Softwarebausteine. Ebenso ist er für umfassende Tests und für eine
-            nahtlose Systemintegration zuständig.
+            <p id="definition-content">
+                Der Softwareentwickler analysiert, plant und implementiert auf professionelle Art und Weise
+                informationstechnische Anwendungen und Softwarebausteine. Ebenso ist er für umfassende Tests und für
+                eine nahtlose Systemintegration zuständig.
+            </p>
         </tip>
     </chapter>
 

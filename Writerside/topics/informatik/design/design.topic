@@ -7,5 +7,10 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <link-summary>
+        Design im Kontext der Anwendungsentwicklung bezieht sich auf die Planung und Gestaltung von Software. Es umfasst
+        die Benutzeroberfläche (UI) und das Benutzererlebnis (UX), um benutzerfreundliche und ästhetisch ansprechende
+        Anwendungen zu schaffen. Gutes Design erleichtert die Nutzung und verbessert die Effizienz der Software.
+    </link-summary>
     <!-- TODO -->
 </topic>

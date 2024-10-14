@@ -7,6 +7,15 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <link-summary>
+        Python ist eine vielseitige, interpretierte Programmiersprache, die für ihre einfache Lesbarkeit und
+        Benutzerfreundlichkeit bekannt ist. Sie unterstützt mehrere Programmierparadigmen, einschließlich
+        objektorientierter, prozeduraler und funktionaler Programmierung. Python ist weit verbreitet in Webentwicklung,
+        Datenanalyse, künstlicher Intelligenz und wissenschaftlichem Rechnen. Durch eine große Anzahl an Bibliotheken
+        und einer aktiven Community ist Python eine beliebte Wahl sowohl für Einsteiger als auch für erfahrene
+        Entwickler.
+    </link-summary>
+
     <!-- TODO -->
     <chapter id="geschichte-und-entstehung" title="Geschichte und Entstehung">
         <p>
