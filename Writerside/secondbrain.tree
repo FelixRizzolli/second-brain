@@ -115,6 +115,9 @@
                     <toc-element topic="js-architekturmuster.topic"/>
                 </toc-element>
                 <toc-element topic="js-libraries-frameworks.topic">
+                    <toc-element topic="nuxtjs.topic"/>
+                    <toc-element topic="vuejs.topic"/>
+                    <toc-element topic="nodejs.topic"/>
                     <toc-element topic="js-jquery.topic"/>
                     <toc-element topic="reactjs.topic"/>
                     <toc-element topic="nextjs.topic"/>
@@ -193,7 +196,9 @@
                 <toc-element topic="rdbms-datenbankmodellierung-uml.topic"/>
                 <toc-element topic="rdbms-datenbankmodellierung-normalisierung.topic"/>
             </toc-element>
-            <toc-element topic="nosql.topic"/>
+            <toc-element topic="nosql.topic">
+                <toc-element topic="mongodb.topic"/>
+            </toc-element>
             <toc-element topic="sql.topic">
                 <toc-element topic="sql-dql.topic">
                     <toc-element topic="sql-dql-konstanten.topic"/>

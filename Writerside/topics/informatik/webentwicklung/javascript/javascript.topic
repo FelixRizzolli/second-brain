@@ -14,4 +14,497 @@
         Angular und Vue.js ist JavaScript ein unverzichtbares Werkzeug für Webentwickler, das sowohl auf der Client- als
         auch auf der Serverseite genutzt werden kann.
     </link-summary>
+
+    <chapter id="was-ist-js" title="Was ist JavaScript?">
+        <p>
+            Die Programmiersprache Java hat nichts mit der Skript-Sprache JavaScript zu tun. Netscape hat den Namen
+            JavaScript vom Vertragspartner Sun Microsystems lizenziert. Das war vermutlich ein Marketing-Trick, um im
+            Fahrwasser der damals sehr erfolgreichen Sprache Java mitzuschwimmen. 2009 wurde Sun dann für 7,4
+            Milliarden US-Dollar von Oracle gekauft – dadurch ist nun Oracle Besitzer der Marke JavaScript. Java ist
+            nicht gerade ein Synonym für „schlank und modern“, deshalb sagen erfahrene Entwickler meist JS, um den
+            Bezug auf Java zu vermeiden.
+        </p>
+        <p>
+            JavaScript hat sich seit 2010/2011 auch als Sprache im Serverbereich verbreitet, im Wesentlichen durch die
+            Plattform <a href="nodejs.topic"/>.
+        </p>
+        <p>
+            JavaScript ist heutzutage allgegenwertig! Espruino und Tessel sind zwei Boards, mit denen sich JavaScript
+            direkt auf der Hardware ausführen lässt. Somit kann über JS die Blumen bewässert werden usw.
+        </p>
+        <p>
+            Programmiersprachen lassen sich oft einem sogenannten Paradigma (Weltanschauung) zuordnen, wie z.B.
+            funktional oder objektorientiert. Bei JS handelt es sich aber um eine sogenannte Multiparadigmen-Sprache.
+            Das bedeutet, dass Elemente aus mehreren <a href="swe-pk-paradigmen.topic"/> verwendet werden. JS verwendet
+            prozedurale, strukturelle und funktionale Elemente, zudem ist auch objektorientierte Programmierung möglich.
+        </p>
+    </chapter>
+
+    <chapter id="entstehungsgeschichte" title="Entstehungsgeschichte">
+        <p>
+            JavaScript wurde 1995 innerhalb kürzester Zeit (nämlich in etwa 12 Tagen) von Brendan Eich für den Netscape
+            Navigator entwickelt, damals noch unter den Namen Mocha bzw. LiveScript. Den jetzigen Namen JavaScript trägt
+            die Sprache erst seit dem Jahr 1996. Zu verdanken ist diese finale Namensänderung einer Kooperation zwischen
+            Netscape und Sun, der Firma, die hinter der Programmiersprache Java steckt(e), wobei man sich bei der
+            Namenswahl augenscheinlich die damalige Popularität von Java zunutze machen wollte.
+        </p>
+        <p>
+            Kurze Zeit, nachdem JavaScript erschienen war, implementierte Microsoft eine mehr oder weniger kompatible
+            Sprache für den Internet Explorer 3.0, mit leicht abgewandeltem Namen: JScript. Um diese beiden ähnlichen
+            Sprachen unter einen Hut zu bringen, wurde JavaScript daraufhin von Netscape bei der ECMA, der European
+            Computer Manufacturers Association, eingereicht, mit dem Ziel, einen einheitlichen Standard für die Sprache
+            zu schaffen. Dieser Standard läuft seitdem unter dem Namen <a href="js-ecmascript.topic"/>, der 2015 in
+            Version 6 (kurz ES6 bzw. ES2015) verabschiedet wurde <a
+                href="https://www.ecma-international.org/publications/standards/Ecma-262.htm"/>. Kurz nach dieser
+            Version einigte man sich darauf, statt alle paar Jahre fortan jährlich eine neue Version herauszubringen
+            (auch wenn diese nur wenige Änderungen und Neuerungen enthalten sollte). Folglich tragen die Versionen seit
+            2015 auch die Bezeichnungen ES2015, ES2016, ES2017 usw.
+        </p>
+        <p>
+            JavaScript ist demnach »nur« eine Implementierung dieses Standards (weitere sind beispielsweise QtScript,
+            das aus Flash bekannte ActionScript sowie das in vielen Adobe-Produkten verwendete ExtendScript).
+        </p>
+    </chapter>
+
+    <chapter id="anwendungsgebiete" title="Anwendungsgebiete von JavaScript">
+        <p>
+            JavaScript spielt heutzutage nicht nur bei der Entwicklung von Webseiten und Webanwendungen eine tragende
+            Rolle. Auch wenn es den Anschein erwecken mag, als bräuchte man außer JavaScript keine andere
+            Programmiersprache mehr, weil man ja damit ohnehin alles machen kann, ist dem natürlich nicht so. In den
+            letzten Jahren hat sich ein ungeheurer Boom um JavaScript entwickelt, der in gewisser Weise aber auch zu
+            hinterfragen ist. Vieles lässt sich in JavaScript auch nicht so einfach umsetzen, für vieles andere sind
+            andere Programmiersprachen besser geeignet. Hier wird natürlich Erfahrung benötigt um entscheiden zu können,
+            welche Programmiersprache jeweils die bessere Wahl für eine gegebene Problemstellung ist.
+        </p>
+
+        <chapter id="anwendungsgebiete-client" title="Clientseitige JavaScript-Webanwendungen">
+            <p>
+                JavaScript hat seine Wurzeln im Bereich der Frontend-Entwicklung, und es wurde lange Zeit hauptsächlich
+                dafür eingesetzt, die Oberfläche einer Website mit dynamischen Effekten »aufzuhübschen«. Dies wurde als
+                DHTML (Dynamisches HTML) bezeichnet. Eine Funktionalität, die einige Webseiten implementiert haben, ist
+                die Sortierung von Tabellen und das Filtern von Tabelleneinträgen nach bestimmten Kriterien. Beides sind
+                typische Anwendungsfälle für das dynamische Verändern einer Webseite und damit die Verwendung von
+                JavaScript.
+            </p>
+            <p>
+                Ein wichtiger Meilenstein für JavaScript und Grundlage für komplexere Webanwendungen war die Einführung
+                des sogenannten XMLHttpRequest-Objekt bzw. des damit verbundenen Ajax (Asynchronous JavaScript and XML),
+                über das es erstmals möglich war, asynchrone Anfragen aus dem Browser heraus an einen Server zu schicken
+                und dabei sowohl Daten zu speichern als auch Daten zu laden. Damit steigt in der Regel die
+                Nutzerfreundlichkeit einer Webanwendung, Ladezeiten können vermieden werden und die Webanwendung fühlt
+                sich dynamischer an. Ein typisches Anwendungsbeispiel für das dynamische Nachladen von Inhalten auf
+                einer Website sind Newsticker, die sich in bestimmten Zeitabständen selbstständig aktualisieren, ohne
+                dass man als Nutzer die Webseite neu aufruft. Was heutzutage selbstverständlich ist, war lange Zeit in
+                dieser Form nicht umsetzbar.
+            </p>
+            <p>
+                Dies war zugleich der Startschuss für Webanwendungen, die sich von der Nutzung her mehr nach
+                Desktop-Anwendungen »anfühlen«, auch als Rich Internet Applications
+                (RIAs) bezeichnet. Oft ist eine solche Anwendung als sogenannte Single-Page Application (SPA) aufgebaut,
+                das heißt, die Logik ist nicht wie bei klassischen
+                Webanwendungen über mehrere Webseiten verteilt, sondern spielt sich innerhalb einer einzelnen Webseite
+                ab. Inhalte werden dann je nach Nutzeraktion dynamisch
+                generiert oder nachgeladen, die Webseite entsprechend dynamisch aktualisiert.
+            </p>
+            <p>
+                Zum Austausch von Inhalten zwischen Client und Server kommt dabei oft das <a href="json.topic"/>
+                -Austauschformat (JavaScript Object Notation) zum Einsatz, das mittlerweile sogar XML als
+                Standardaustauschformat zwischen Anwendungen ernsthafte Konkurrenz macht. Vorteil: JSON kann direkt von
+                JavaScript verarbeitet und genutzt werden. Idealerweise werden die Daten dann auch noch im gleichen
+                Format in einer entsprechenden dokumentbasierten Datenbank wie <a href="mongodb.topic"/> gespeichert.
+            </p>
+            <p>
+                Ein weiterer typischer Anwendungsfall für die Verwendung von JavaScript innerhalb einer Webseite ist die
+                Validierung von Formulareingaben, sprich die Überprüfung von Nutzereingaben auf Gültigkeit, z.B. um zu
+                überprüfen, ob eine gültige E-Mail-Adresse oder eine gültige Telefonnummer eingegeben wurde. Auch wenn
+                <a href="html.topic"/> mit dem Versionswechsel von HTML 4.1 auf HTML5 einen ebenfalls großen Sprung
+                gemacht hat und nun auch viele Formulareingaben ohne das Zutun von JavaScript direkt überprüft werden
+                können, ist man mit JavaScript nach wie vor um einiges flexibler.
+            </p>
+            <p>
+                HTML stellt eine Reihe von Basiskomponenten für die Benutzeroberflächen bereitstellt, wie beispielsweise
+                Textfelde, Radiobuttons, Checkboxen, Tabellen, Listen, etc. Komplexe Oberflächenelemente wie
+                beispielsweise Registerkarten, auf- und zu-klappbare Bereiche (sogenannte Accordions), individuell
+                anpassbare Dialoge oder Ähnliches stellt die Sprache HTML dagegen nicht zur Verfügung. Auch hier muss
+                man stattdessen auf JavaScript zurückgreifen.
+            </p>
+        </chapter>
+
+        <chapter id="anwendungsgebiete-server" title="Serverseitige JavaScript-Webanwendungen">
+            <p>
+                Bis vor wenigen Jahren konnte JavaScript nicht oder nur über sehr große Umwege für die
+                Backend-Programmierung verwendet werden. Die Serverseite war Sprachen wie <a href="java.topic"/>
+                oder <a href="php.topic"/> vorbehalten. Insbesondere die Einführung von <a href="nodejs.topic"/>,
+                einer auf V8 basierenden Laufzeitumgebung, führte jedoch dazu, dass seitdem quasi ein Boom der
+                serverseitigen JavaScript-Anwendungen herrscht. Node.js stellt beispielsweise Packages bereit, über die
+                sich ein kompletter Webserver umsetzen lässt. Über zusätzliche Module lassen sich zudem relativ einfach
+                beispielsweise REST-basierte (Representational State Transfer) Webservices implementieren,
+                Datenbankzugriffe vereinfachen oder mehrsprachige Anwendungen entwickeln.
+            </p>
+            <p>
+                Node.js ist aber nicht nur als Webserver geeignet: Prinzipiell lassen sich mit Node.js alle Arten von
+                kommandozeilenbasierten Anwendungen erstellen. Node.js kann als eine Art Unix-Shell angesehen werden,
+                die statt Shell-Skripten eben JavaScript interpretiert und ausführt. Über den Node Package Manager (NPM)
+                beispielsweise, lassen sich Programmmodule bequem (auch für Nicht-JavaScript-Anwendungen) über die
+                Kommandozeile installieren.
+            </p>
+            <p>
+                Node.js gilt aufgrund seiner Architektur als höchst skalierbar, äußerst performant sowie echtzeitfähig.
+                Es ist daher mittlerweile keine Seltenheit mehr, dass in einem Projekt alle Komponenten einer
+                Client-Server-Anwendung in JavaScript programmiert werden. Vorteil davon: Ein Entwickler mit
+                JavaScript-Kenntnissen kann innerhalb eines solchen Projekts sowohl clientseitige als auch serverseitige
+                Komponenten entwickeln.
+            </p>
+        </chapter>
+
+        <chapter id="anwendungsgebiete-desktop" title="Desktop-JavaScript-Anwendungen">
+            <p>
+                In Kombination mit HTML und CSS kommt JavaScript mittlerweile nicht mehr nur im Browser zum Einsatz,
+                sondern auch in Desktopanwendungen. Frameworks wie Electron <a href="https://electronjs.org/"/> und
+                NW.js <a href="https://nwjs.io/"/> versprechen sogar die betriebssystemunabhängige Entwicklung von
+                Desktop-Anwendungen für Linux, Windows und Mac.
+            </p>
+        </chapter>
+
+        <chapter id="anwendungsgebiete-mobile" title="Mobile JavaScript-Anwendungen">
+            <p>
+                In Kombination mit HTML und CSS kommt JavaScript mittlerweile nicht mehr nur im Browser zum Einsatz,
+                sondern auch in Desktopanwendungen. Frameworks wie Electron <a href="https://electronjs.org/"/> und
+                NW.js <a href="https://nwjs.io/"/> versprechen sogar die betriebssystemunabhängige Entwicklung von
+                Desktop-Anwendungen für Linux, Windows und Mac.
+            </p>
+        </chapter>
+
+        <chapter id="anwendungsgebiete-embedded" title="Embedded-Anwendungen">
+            <p>
+                Auch im Bereich der Embedded-Anwendungen hält JavaScript Einzug. Beispiele hierfür sind die beiden
+                Mikrocontroller Tessel <a href="https://tessel.io"/> und Espruino <a href="http://www.espruino.com"/>,
+                auf denen nativ bereits JavaScript zur Verfügung steht. Des Weiteren existieren bereits verschiedene
+                JavaScript-Bibliotheken zum Thema IoT (Internet of Things) wie beispielsweise die Bibliothek johnny-five
+                <a href="https://github.com/rwaldron/johnny-five"/>, über die man unter anderem einen Arduino
+                <a href="http://www.arduino.cc"/> steuern kann. Prinzipiell tut sich in diesem Bereich derzeit recht
+                viel, da man auch erkannt hat, dass JavaScript eine attraktive Sprache ist.
+            </p>
+        </chapter>
+    </chapter>
+
+    <chapter id="laufzeitumgebungen" title="Laufzeitumgebungen">
+        <p>
+            Um JavaScript-Programme ausführen zu können, wird eine Laufzeitumgebung benötigt. Davon existieren für
+            JavaScript gleich mehrere: Zum einen verwendet jeder der bekannteren Browserhersteller eine eigene, zum
+            anderen gibt es weitere Laufzeitumgebungen, die es ermöglichen, JavaScript außerhalb des Browsers (das heißt
+            »headless«) auszuführen.
+        </p>
+
+        <table style="both">
+            <tr>
+                <td>Name</td>
+                <td>Beschreibung</td>
+            </tr>
+            <tr>
+                <td>
+                    V8
+                </td>
+                <td>
+                    <p>
+                        Die von Google entwickelte, in C++ geschriebene V8-Engine kommt sowohl in Google Chrome als auch
+                        in Node.js zum Einsatz. V8 ist betriebssystemunabhängig und läuft auf Windows 7 und neuer, auf
+                        macOS (10.5 und neuer) und verschiedenen Linux-Systemen. Laut verschiedenen Benchmarks ist V8
+                        schneller als andere Laufzeitumgebungen <a href="https://developers.google.com/v8"/>, wobei
+                        die hohe Geschwindigkeit vor allem durch folgende drei Designprinzipien erreicht wird:
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            durch schnellen Zugriff auf Objekteigenschaften,
+                        </li>
+                        <li>
+                            dynamische Generierung von Maschinencode (Just-in-time-Kompilierung oder kurz JIT)
+                        </li>
+                        <li>
+                            und effiziente Garbage Collection (Details siehe unter
+                            <a href="https://developers.google.com/v8/design"/>).
+                        </li>
+                    </list>
+
+                    <p>
+                        Für .NET-Entwickler besonders interessant: V8 kann über JavaScript .NET
+                        <a href="http://javascriptdotnet.codeplex.com"/> in entsprechende Anwendungen integriert werden.
+                        Auf diese Weise kann JavaScript direkt aus .NET heraus aufgerufen werden.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    SpiderMonkey, TraceMonkey, JägerMonkey, OdinMonkey
+                </td>
+                <td>
+                    <p>
+                        SpiderMonkey ist eine in C implementierte JavaScript-Laufzeitumgebung, die Brendan Eich
+                        ursprünglich für den Netscape Navigator entwickelte, die inzwischen aber von der Mozilla
+                        Foundation weiterentwickelt wird. Verwendet wird sie hauptsächlich in verschiedenen
+                        Mozilla-Produkten wie Firefox und Thunderbird.
+                    </p>
+
+                    <p>
+                        Im Laufe der Jahre wurde SpiderMonkey immer weiterentwickelt und durch Module ergänzt, unter
+                        anderem bzw. vor allem mit dem Ziel, die Performance zu verbessern. Diese Erweiterungen und
+                        Updates sind unter den folgenden Namen bekannt:
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            <b>TraceMonkey</b>
+                            , das die Laufzeitumgebung unter anderem um
+                            Just-in-time-Kompilierung erweiterte
+                        </li>
+                        <li>
+                            <b>JägerMonkey</b>
+                            , das weitere Optimierungen der Just-in-time-Kompilierung
+                            brachte
+                        </li>
+                        <li>
+                            <b>OdinMonkey</b>
+                            , das die Laufzeitumgebung für die JavaScript-Erweiterung asm.js <a
+                                href="http://asmjs.org"/> anpasste, mit deren Hilfe es möglich ist, JavaScript-Programme
+                            zu erstellen, die bezüglich der Ausführungsgeschwindigkeit mit Java- oder C#-Programmen
+                            vergleichbar sind
+                        </li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    JavaScriptCore
+                </td>
+                <td>
+                    Das von Apple entwickelte JavaScriptCore kommt in verschiedenen macOS-Anwendungen zum Einsatz,
+                    beispielsweise im Safari-Browser. Über eine C-API und eine darauf basierende Objective-C-API ist es
+                    möglich, aus entsprechendem Code JavaScript aufzurufen und auf diese Weise JavaScript in native
+                    macOS-Anwendungen zu integrieren.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Chakra
+                </td>
+                <td>
+                    Chakra ist eine von Microsoft entwickelte JavaScript-Laufzeitumgebung, die vom Microsoft Edge
+                    Browser verwendet wird und als Fork der gleichnamigen JScript-Laufzeitumgebung entstand, die beim
+                    Microsoft Internet Explorer zum Einsatz kommt. Hinsichtlich der Performance wurde diese Version von
+                    Chakra (unter anderem dank JIT-Kompilierung) stark verbessert. Anfang 2016 wurde die Engine unter
+                    einer Open-Source-Lizenz veröffentlicht <a href="https://github.com/Microsoft/ChakraCore"/>.
+                    Microsoft verwendet aber Chakra im Edge Browser nicht mehr, da der neue Edge auf Google Chromium und
+                    somit auch der V8-Engine basiert.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Rhino
+                </td>
+                <td>
+                    Rhino ist eine komplett in Java geschriebene JavaScript-Laufzeitumgebung, mit deren Hilfe JavaScript
+                    innerhalb der JVM (Java Virtual Machine) ausgeführt werden kann. Rhino wurde in den letzten Jahren
+                    von Sun bzw. Oracle etwas stiefmütterlich behandelt und ist mittlerweile in die Jahre gekommen, wird
+                    aber trotzdem noch in einigen Projekten verwendet. Ein prominentes Beispiel ist Vert.x
+                    <a href="http://vertx.io"/>, eine Plattform für die Entwicklung moderner Webanwendungen, die sich
+                    stark an Node.js orientiert und es ebenfalls ermöglicht, neben Sprachen wie Java, Groovy und Ruby
+                    (bzw. JRuby) auch JavaScript direkt auszuführen.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Nashorn
+                </td>
+                <td>
+                    <p>
+                        Nashorn ist ebenfalls eine in Java geschriebene JavaScript-Engine, seit Java 8 im JDK (Java
+                        Development Kit) enthalten. Sie gilt als Nachfolger von Rhino. JavaScript-Code wird von Nashorn
+                        in Java-Bytecode kompiliert und auf der JVM ausgeführt. Insbesondere was die
+                        Ausführungsgeschwindigkeit angeht, ist Nashorn dabei dank der mit Java 7 eingeführten
+                        Invoke-Dynamic-Anweisung deutlich schneller als Rhino.
+                    </p>
+                    <p>
+                        Prinzipiell lässt sich Nashorn auf zwei verschiedene Weisen nutzen: Entweder es wird ähnlich wie
+                        Node.js von der Kommandozeile aus gestartet (über das im JDK enthaltene Tool jjs), oder es wird
+                        über entsprechende Klassen direkt in ein Java-Programm eingebunden. Dabei ist es unter anderem
+                        möglich, sowohl aus Java heraus JavaScript aufzurufen als auch umgekehrt aus JavaScript
+                        Java-Code aufzurufen.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dyn.js
+                </td>
+                <td>
+                    <p>
+                        Bei Dyn.js handelt es sich um eine weitere JavaScript-Laufzeitumgebung für die JVM, die vor
+                        allem »aus der Not« heraus entstand: Die Tatsache, dass Rhino lange Zeit nicht wirklich
+                        weiterentwickelt wurde und keine neuen Java-Features wie Invoke-Dynamic verwendete, führte in
+                        der Community zu der Reaktion, kurzerhand eine eigene Laufzeitumgebung zu entwickeln, die genau
+                        diese neuen Features nutzt und einen Geschwindigkeitsvorteil gegenüber Rhino verspricht.
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            Die Auswahl der Laufzeitumgebung hängt vom jeweiligen Projekt ab:
+        </p>
+
+        <list>
+            <li>
+                Handelt es sich um eine
+                <b>Webanwendung</b>
+                , bei der JavaScript ausschließlich auf der Clientseite eingesetzt wird, kommen als
+                Ziel-Laufzeitentwicklungen die der jeweiligen Browserhersteller infrage. Sollen dabei verschiedene
+                Browser unterstützt werden, bietet die Website unter <a
+                    href="http://pointedears.de/scripts/test/es-matrix/"/> einen guten Überblick über den Support
+                einzelner JavaScript-Versionen und Features. Bezogen auf die relativ neuen Features seit ES2015 ist
+                dagegen die Website unter <a href="http://kangax.github.io/compat-table/es6/"/> ein guter Anlaufpunkt,
+                denn hier unterstützen bei weitem (noch) nicht alle Browser die gleichen neuen Features (wobei sich dank
+                sogenannter Polyfill-Bibliotheken auch viele Features für ältere Browser aktivieren lassen). Bezüglich
+                Web-APIs bietet zusätzlich die Website <a href="https://caniuse.com/"/> einen guten Überblick, ob und ab
+                welcher Version eine bestimmte API in welchem Browser unterstützt wird.
+            </li>
+            <li>
+                Soll JavaScript auf der
+                <b>Serverseite</b>
+                eingesetzt werden, ist Node.js (das wiederum die
+                V8-Laufzeitumgebung verwendet) oder alternativ Vert.x (Rhino) die richtige Wahl, wobei Ersteres
+                sicherlich populärer ist, Letzteres aber auch die Integration anderer auf der JVM laufender Sprachen
+                ermöglicht.
+            </li>
+            <li>
+                Soll dagegen JavaScript nur als
+                <b>Teilkomponente</b>
+                einer (bestehenden) Java- oder JEE-Anwendung integriert werden, lohnt sich ein Blick auf Nashorn oder
+                Dyn.js. Für die Integration in eine .NET-Anwendung bietet sich JavaScript .NET an, das ebenfalls V8 als
+                Laufzeitumgebung verwendet.
+            </li>
+        </list>
+
+        <chapter id="laufzeitumgebungen-interpreter-und-jit" title="Interpreter und Just-in-time-Compiler">
+            <p>
+                Im Gegensatz zu Sprachen wie C++, bei denen der Quelltext vor Ausführung eines Programms in
+                Maschinencode kompiliert wird, handelt es sich bei JavaScript um eine Sprache, bei der der Quelltext
+                direkt zur Laufzeit von einem Interpreter ausgewertet wird. Der Vorteil von kompilierten Programmen ist,
+                dass sie in der Regel schneller sind als Programme, die erst noch zur Laufzeit ausgewertet werden
+                müssen. Ein Vorteil von interpretierten Programmen ist dagegen, dass sie sich (sofern eine entsprechende
+                Laufzeitumgebung installiert ist) auf jedem Betriebssystem ohne Kompilierungsschritt ausführen lassen
+                und somit betriebssystemunabhängig sind. Kompilierte Programme dagegen sind lediglich auf dem Zielsystem
+                lauffähig, für das sie kompiliert wurden. Um ein solches Programm für mehrere Betriebssysteme lauffähig
+                zu machen, muss zunächst für jedes eine entsprechende Version kompiliert werden.
+            </p>
+            <p>
+                JavaScript ist also eine interpretierte Sprache und somit erst einmal prinzipiell »langsamer« als
+                kompilierte Sprachen. Um diesem Verlust entgegenzuwirken und die Ausführungsgeschwindigkeit dennoch zu
+                steigern, arbeiten viele Laufzeitumgebungen daher mit der sogenannten Just-in-time-Kompilierung
+                (JIT-Kompilierung). Das Prinzip ist dabei, ein Programm oder (häufig ausgeführte) Teile eines Programms
+                zur Laufzeit in Maschinencode zu übersetzen. Solcher Maschinencode kann dann gegenüber reinem Quelltext,
+                der erst von einem Interpreter ausgewertet werden muss, viel schneller ausgeführt werden.
+            </p>
+        </chapter>
+    </chapter>
+
+    <chapter id="programmierrichtlinien" title="Programmierrichtlinien">
+        <p>
+            Damit nicht völliges Chaos ausbricht und der Code konsistent bleibt, sollten spezifische Regeln zur
+            Schreibweise verwendet werden. Eine Sammlung solcher Regeln heißt Programmierrichtlinien. Das Einhalten der
+            Programmierrichtlinien macht den Code lesbarer und hilft somit auch eventuell den zukünftigen
+            Wartungsprogrammierer.
+        </p>
+
+        <tip>
+            Jeder Narr kann Code schreiben, den ein Computer versteht. Gute Programmierer schreiben Code, den Menschen
+            verstehen.
+            ~ Fowler (1999)
+        </tip>
+
+        <chapter id="programmierrichtlinien-in-js" title="Programmierrichtlinien in JavaScript">
+            <list type="bullet">
+                <li>
+                    Jede Anweisung kommt in eine neue Zeile
+                </li>
+                <li>
+                    Jede Anweisung wird mit einem Semikolon beendet.
+                </li>
+            </list>
+
+            <p>
+                Versetzt man JS in den sogenannten <code>strict</code> mode verhält sich JS tatsächlich strikter. Das
+                bedeutet:
+            </p>
+
+            <list>
+                <li>
+                    Einige Richtlinien, die der standard mode als reine Konvention betrachtet, führen im strict mode zu
+                    einer Fehlermeldung.
+                </li>
+                <li>
+                    Viele veraltete Sprachkonstrukte werden nicht mehr akzeptiert (z.B. die with-Anweisung)
+                </li>
+                <li>
+                    Fehlerhafter oder problematischer Code, den JS im standard mode ohne Murren akzeptiert, führt nun zu
+                    einer (meist) aussagekräftigen Fehlermeldung. Damit werden Fehler frühzeitig und oft ohne aufwendige
+                    Fehlersuche bemerkt
+                </li>
+                <li>
+                    Einige der neueren Sprachkonstrukte (z.B. let) lassen sich in den meisten Umgebungen überhaupt nur
+                    im strict mode verwenden.
+                </li>
+            </list>
+
+            <p>
+                Um JS den strict mode zu versetzen, genügt folgender Befehl:
+            </p>
+
+            <code-block lang="javascript">
+                'use strict';
+            </code-block>
+        </chapter>
+    </chapter>
+
+    <chapter id="typsysteme" title="Typsysteme in JavaScript">
+        <p>
+            Typsysteme für JavaScript lassen sich grob in zwei Kategorien unterteilen: in Werkzeuge, die mithilfe
+            bestimmter Annotationen die Einhaltung der Regeln überprüfen, und in vollwertige Typsysteme, bei denen der
+            Quellcode in einer eigenen Sprache formuliert wird. Bei der ersten Kategorie liegt der Quellcode bereits in
+            JavaScript vor und wird lediglich um die Typangaben ergänzt. Bevor der Quellcode ausgeführt werden kann,
+            müssen die Typangaben entfernt werden, da ansonsten Syntaxfehler geworfen werden würden. Ein typischer
+            Vertreter dieser Art ist Flow.
+        </p>
+        <p>
+            Die zweite Art der Typsysteme, zu denen beispielsweise <a href="js-typescript.topic"/> gehört, nutzt
+            ebenfalls Annotationen, um die Einhaltung der Typregeln zu überprüfen. Der TypeScript-Code wird vor der
+            Ausführung in JavaScript übersetzt. Dabei werden die Typangaben entfernt und zusätzlich bestimmte Features
+            emuliert. Der TypeScript-Compiler ist in der Lage verschiedene JavaScript-Versionen zu erzeugen – sowohl
+            modernen Code, wie er nur in einem modernen Browser lauffähig ist, als auch älteren JavaScript-Quellcode,
+            der der Spezifikation von ECMAScript 3 oder ECMAScript 5 folgt.
+        </p>
+    </chapter>
+
+    <chapter id="quellen" title="Quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript", Philip Ackermann, 2019
+        </tip>
+        <tip>
+            <b>(BUCH)</b>
+            978-3836292543, "React – Das umfassende Handbuch", Sebastian Springer, 2023
+        </tip>
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256872, "Professionell entwickeln mit JavaScrip", Philip Ackermann, 2018
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://v8.dev/"/>, 2023-08-22 17:45
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://github.com/chakra-core/ChakraCore,"/>, 2023-08-22 18:00
+        </tip>
+    </chapter>
 </topic>

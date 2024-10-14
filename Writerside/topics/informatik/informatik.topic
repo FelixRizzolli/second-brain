@@ -5,11 +5,10 @@
        title="Informatik"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
-    <link-summary rel="description"/>
 
     <section-starting-page>
         <title>Informatik</title>
-        <description id="description">
+        <description>
             Dieser Bereich bietet umfassende Informationen und Ressourcen zu verschiedenen Themen der Informatik. Von
             Anwendungsentwicklung über Betriebssysteme bis hin zu Netzwerktechnik und Webentwicklung – hier gibt es
             einen Überblick sowie Links zu detaillierten Unterseiten, die tiefer in jedes Thema eintauchen. Ziel ist es,
