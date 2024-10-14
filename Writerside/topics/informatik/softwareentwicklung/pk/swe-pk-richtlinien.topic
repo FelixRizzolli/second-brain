@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Programmierrichtlinien" id="swe-pk-richtlinien">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-pk-richtlinien"
+       title="Programmierrichtlinien"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Namenskonventionen (naming conventions)" id="namingconventions">
+    <chapter id="namingconventions" title="Namenskonventionen (naming conventions)">
         <p>
             Namenskonventionen sind Festlegungen / Vorschriften / Empfehlungen für Entwickler zur Benennung von
             Bezeichnern für Objekte im Quelltext von Software. Der Einsatz solcher Namenskonventionen ist ein
@@ -21,7 +21,7 @@
             vorgegeben oder zur freiwilligen Anwendung formuliert sein.
         </p>
 
-        <chapter title="Schreibweisen" id="namingconventions-schreibweisen">
+        <chapter id="namingconventions-schreibweisen" title="Schreibweisen">
             <table>
                 <tr>
                     <td>Schreibweise</td>
@@ -71,7 +71,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836256971, "JavaScript - Das umfassende Handbuch", Philip Ackermann, 2018

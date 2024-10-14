@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Die Börse" id="wirtschaft-boerse">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="wirtschaft-boerse"
+       title="Die Börse"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Die Börse" id="boerse">
+    <chapter id="boerse" title="Die Börse">
         <p>
             Wo und wann auch immer Menschen sich trafen, miteinander palaverten und dem einen gefiel, was der andere
             hatte, und umgekehrt, da entstanden Handelsplätze, Warentauschbörsen. Wird nur noch mit den Rechten an
@@ -31,7 +32,7 @@
             Börse, sondern auch Terminkontrakte, Schweinehälften oder Emissionsrechte.
         </p>
 
-        <chapter title="Die Organisation der Börse" id="boerse-organisation">
+        <chapter id="boerse-organisation" title="Die Organisation der Börse">
             <p>
                 Börsen sind öffentlich-rechtliche Institutionen, die von ganz normalen, privatwirtschaftlich
                 organisierten Unternehmen getragen werden. Deshalb müssen auch Börsen Gewinne erzielen und um ihre
@@ -49,7 +50,7 @@
                 Börse geschlossen blieb, oder auch den Handel mit einem Papier endgültig einstellen.
             </p>
 
-            <img src="wirtschaft-boerse-organisation.png" alt="Börse München - Organisation"/>
+            <img alt="Börse München - Organisation" src="wirtschaft-boerse-organisation.png"/>
 
             <p>
                 Die Börse kann man sich vereinfacht wie ein großes Gebäude mit vielen Säulen vorstellen. Das vornehme
@@ -63,7 +64,7 @@
             </p>
         </chapter>
 
-        <chapter title="Wie die Börse funktioniert" id="boerse-funktionsweise">
+        <chapter id="boerse-funktionsweise" title="Wie die Börse funktioniert">
             <p>
                 Nach theoriegeladenem Juristendeutsch finden an der Börse zweiseitige Verpflichtungs- und
                 Erfüllungsgeschäfte statt, bei denen sich die Parteien über Art, Menge und Preis der betreffenden
@@ -112,7 +113,7 @@
             </p>
         </chapter>
 
-        <chapter title="Kennzeichen einer Wertpapierbörse" id="boerse-kennzeichen">
+        <chapter id="boerse-kennzeichen" title="Kennzeichen einer Wertpapierbörse">
             <list>
                 <li>
                     Die Papiere können ausgetauscht werden, weil sie exakt vergleichbar, juristisch »vertretbar« sind,
@@ -146,7 +147,7 @@
             </list>
         </chapter>
 
-        <chapter title="Segmente" id="boerse-segmente">
+        <chapter id="boerse-segmente" title="Segmente">
             <p>
                 Mittels Segmente bieten die Börsen eine Hilfe an um Aktien und die dahinterstehenden Unternehmen
                 einzuschätzen. Die Segmentierung findet einerseits durch das Börsengesetz statt, andererseits dürfen
@@ -170,7 +171,7 @@
                 Schlechten eine Garantie!
             </p>
 
-            <chapter title="Freiverkehr" id="boerse-segmente-freiverkehr">
+            <chapter id="boerse-segmente-freiverkehr" title="Freiverkehr">
                 <p>
                     Im Freiverkehr notieren diejenigen Aktien, die weder im amtlichen noch im geregelten Markt
                     zugelassen sind. In diesem Segment werden neben kleinen deutschen Unternehmen vor allem ausländische
@@ -180,7 +181,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Beispiel: Segmente der Frankfurter Börse" id="boerse-segmente-beispiel">
+            <chapter id="boerse-segmente-beispiel" title="Beispiel: Segmente der Frankfurter Börse">
                 <table style="both">
                     <tr>
                         <td>Börsensegment</td>
@@ -224,7 +225,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Kürzel an der Börse" id="boerse-kuerzel">
+        <chapter id="boerse-kuerzel" title="Kürzel an der Börse">
             <p>
                 Folgende Kürzel werden in Fachzeitschriften verwendet:
             </p>
@@ -282,7 +283,8 @@
                     <td>rB</td>
                     <td>Repariert Brief</td>
                     <td>
-                        Das Angebot übertraf die Nachfrage, das heißt, nicht alle Verkaufsaufträge konnten ausgeführt werden.
+                        Das Angebot übertraf die Nachfrage, das heißt, nicht alle Verkaufsaufträge konnten ausgeführt
+                        werden.
                     </td>
                 </tr>
                 <tr>
@@ -336,7 +338,7 @@
             </table>
         </chapter>
 
-        <chapter title="Gesetzliche Bestimmungen und Aufsicht" id="boerse-gesetz">
+        <chapter id="boerse-gesetz" title="Gesetzliche Bestimmungen und Aufsicht">
             <p>
                 Börsen sind straff organisierte Handelsplätze. Klar, dass es da eine ganze Reihe von Vorschriften und
                 Gesetzen gibt. In Deutschland gibt es Folgendes:
@@ -361,15 +363,15 @@
                 </li>
             </list>
 
-            <chapter title="Insidergeschäfte" id="boerse-gesetz-insidergeschaefte">
+            <chapter id="boerse-gesetz-insidergeschaefte" title="Insidergeschäfte">
                 <p>
-                    Wenn etwa Manager und Mitarbeiter eines Unternehmens über Dinge Bescheid wissen, die die "normalen" 
-                    Anleger noch nicht wissen können, und aus diesem Wissen heraus schnell Aktien verkaufen oder kaufen, 
+                    Wenn etwa Manager und Mitarbeiter eines Unternehmens über Dinge Bescheid wissen, die die "normalen"
+                    Anleger noch nicht wissen können, und aus diesem Wissen heraus schnell Aktien verkaufen oder kaufen,
                     je nach erwartetem Kursverlauf, spricht man von Insidergeschäften, die verboten sind.
                 </p>
             </chapter>
 
-            <chapter title="Organe" id="boerse-gesetz-organe">
+            <chapter id="boerse-gesetz-organe" title="Organe">
                 <table style="both">
                     <tr>
                         <td>Organ</td>
@@ -418,7 +420,7 @@
                 </table>
             </chapter>
 
-            <chapter title="EU" id="boerse-gesetz-eu">
+            <chapter id="boerse-gesetz-eu" title="EU">
                 <p>
                     Die EU startete die EU-Richtline zur Harmonisierung der Finanzmärkte, kurz MiFID (Markets in
                     Financial Instruments Directive) genannt. Die Regelungen dienen vor allem dem Schutz der Anleger,
@@ -433,7 +435,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Schwarzer Freitag - Black Friday" id="boerse-gesetz-black-frieday">
+        <chapter id="boerse-gesetz-black-frieday" title="Schwarzer Freitag - Black Friday">
             <p>
                 Nach dem Ersten Weltkrieg hatten sich die USA zu der weltweiten Wirtschaftsmacht etabliert. Hier
                 entwickelte John Ford das erste Förderband, jeder sollte sein eigenes Auto bekommen, die Wirtschaft
@@ -467,14 +469,14 @@
         </chapter>
     </chapter>
 
-    <chapter title="Börsen nicht nur für Wertpapiere" id="boersenprodukte">
+    <chapter id="boersenprodukte" title="Börsen nicht nur für Wertpapiere">
         <p>
             Es gibt für viele Dinge Börsen, nicht nur für Wertpapiere und Aktien. Denn Börsen sind einfach nur
             Handelsplätze. Die einzige Bedingung, damit sie sich Börsen nennen dürfen, ist die Tatsache, dass die Güter
             nicht wirklich real, materialisiert, am Handelsplatz selbst vorhanden sein müssen.
         </p>
 
-        <chapter title="Warenterminbörsen" id="boersenprodukte-warenterminboerse">
+        <chapter id="boersenprodukte-warenterminboerse" title="Warenterminbörsen">
             <p>
                 Traditionsreiche Börsen sind die Waren(termin)börsen für "Commodities" wie Kaffee und Kakao, Getreide
                 und Vieh, Baumwolle und Sojabohnen, aber auch Rohstoffe wie Kupfer, Gold oder Zinn. An Warenterminbörsen
@@ -507,7 +509,7 @@
             </note>
         </chapter>
 
-        <chapter title="Futures und Optionen" id="boersenprodukte-futures-optionen">
+        <chapter id="boersenprodukte-futures-optionen" title="Futures und Optionen">
             <p>
                 Futures oder Optionen sind Transaktionen, Geschäfte, die zwar bereits in der Gegenwart abgeschlossen,
                 aber erst in der Zukunft abgewickelt werden. Das Zentrum für Terminbörsen ist mit CME (Chicago
@@ -517,7 +519,7 @@
             </p>
         </chapter>
 
-        <chapter title="Emissionshandel" id="boersenprodukte-emissionshandel">
+        <chapter id="boersenprodukte-emissionshandel" title="Emissionshandel">
             <p>
                 Der Emissionshandel entwickelte sich im Rahmen der europäischen Gesetzgebung.
             </p>
@@ -562,7 +564,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Börsen als Unternehmen" id="boerse-unternehmen">
+    <chapter id="boerse-unternehmen" title="Börsen als Unternehmen">
         <p>
             Börsen – besser gesagt Börsenträger – sind ganz normale Unternehmen, nur haben sie zusätzlich – als
             öffentlich-rechtliche Institutionen – noch hoheitliche Aufgaben, die Kursfeststellung zum Beispiel, zu
@@ -572,7 +574,7 @@
             Marktteilnehmer im Besitz der Regionalbörsen, heute zumeist in Form von Aktionären.
         </p>
 
-        <chapter title="Internationaler Wettbewerb" id="boerse-unternehmen-wettbewerb">
+        <chapter id="boerse-unternehmen-wettbewerb" title="Internationaler Wettbewerb">
             <p>
                 Nach dem Handelsvolumen in Aktien nahmen nach einer Aufstellung der World Federation of Exchanges (WFE)
                 2019 die ersten fünf Plätze die folgenden Börsenplätze ein:
@@ -601,7 +603,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Handel ohne Börse: Private Placement" id="private-placement">
+    <chapter id="private-placement" title="Handel ohne Börse: Private Placement">
         <p>
             Es gibt auch Wertpapiere, die direkt gehandelt werden können, ganz ohne Börse. Den Handel ohne Börse nennt
             man Private Placement.
@@ -674,7 +676,7 @@
         </p>
     </chapter>
 
-    <chapter title="Der Bär und der Bulle" id="baer-bulle">
+    <chapter id="baer-bulle" title="Der Bär und der Bulle">
         <p>
             Der Bulle steht für steigende Aktienkurse, für einen Boom, für due Hausse. Der Bär steht für sinkende Kurse,
             schlechte Laune und repräsentiert die Baisse. Der Grund dafür ist: das Verhaltensmuster eines Bullen ist nun
@@ -685,7 +687,7 @@
         </p>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3527717408, Börse für Dummies (Ausgabe 6), Christine Bortenläger &amp; Ulrich Kirstein, John Wiley &amp;

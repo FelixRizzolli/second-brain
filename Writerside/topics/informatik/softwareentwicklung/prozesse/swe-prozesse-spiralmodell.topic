@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Das Spiralmodell" id="swe-prozesse-spiralmodell">
-    <show-structure for="chapter,procedure" depth="2"/>
-    
-    <chapter title="Einleitung" id="einleitung">
+<topic id="swe-prozesse-spiralmodell"
+       title="Das Spiralmodell"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
+
+    <chapter id="einleitung" title="Einleitung">
         <p>
             Im Jahr 1998 hat Boehm als einer der Ersten über den Begriff des Risikogesteuerten Software-Frameworks
             diskutiert. In seinem Werk hat er darauf hingewiesen, wie wichtig es ist, Risiken im Auge zu behalten. Viele
@@ -14,18 +14,18 @@
             Spiralmodell soll dabei helfen, diese Risiken in den Griff zu bekommen.
         </p>
 
-        <img src="swe-prozesse-spiral.jpg" alt="Das Spiralmodell"/>
+        <img alt="Das Spiralmodell" src="swe-prozesse-spiral.jpg"/>
     </chapter>
-    
-    <chapter title="Das Modell" id="modell">
-        <chapter title="1. Festlegung der Ziele" id="modell-ziele">
+
+    <chapter id="modell" title="Das Modell">
+        <chapter id="modell-ziele" title="1. Festlegung der Ziele">
             <p>
                 Die Festlegung der Ziele bedeutet, dass sich mit den Anforderungen an das System intensiv
                 auseinandergesetzt wird. Dazu gehört es auch, auf die besonderen Einsatzbedingungen zu achten.
             </p>
         </chapter>
 
-        <chapter title="2. Beurteilung von Alternativen bzw. Risikoanalyse" id="modell-alternativen">
+        <chapter id="modell-alternativen" title="2. Beurteilung von Alternativen bzw. Risikoanalyse">
             <p>
                 Aus den gewonnenen Erkenntnissen können mehrere Lösungsalternativen abgeleitet werden. Letztendlich muss
                 man sich für eine der Optionen entscheiden, deshalb sind die zur Auswahl stehenden Optionen auf ihre
@@ -37,14 +37,14 @@
             </p>
         </chapter>
 
-        <chapter title="3. Entwicklung und Test" id="modell-entwicklung">
+        <chapter id="modell-entwicklung" title="3. Entwicklung und Test">
             <p>
                 In der dritten Phase kommt es zur technischen Umsetzung. Damit eine gewisse Qualität erreicht wird, wird
                 mit Tests das Ergebnis überprüft, welche ein sofortiges Feedback geben.
             </p>
         </chapter>
 
-        <chapter title="4. Planung des nächsten Zyklus" id="modell-weiterplanung">
+        <chapter id="modell-weiterplanung" title="4. Planung des nächsten Zyklus">
             <p>
                 Ein besonderes Merkmal des Spiralmodells ist, dass am Ende eines Zyklus ein Review stattfindet. Dabei
                 werden die durchgeführten Maßnahmen und die erzielten Ergebnisse nochmals angeschaut. Daraus kann direkt
@@ -52,11 +52,12 @@
             </p>
         </chapter>
     </chapter>
-    
-    <chapter title="Fazit" id="fazit">
+
+    <chapter id="fazit" title="Fazit">
         <p>
             Der Radius der Kurve beschreibt zum einen den Fortschritt des Projektes und zum anderen die kumulierten
-            Kosten. Mit anderen Worten, mit jedem Entwicklungszyklus steigen die bereits aufgewendeten finanziellen Mittel.
+            Kosten. Mit anderen Worten, mit jedem Entwicklungszyklus steigen die bereits aufgewendeten finanziellen
+            Mittel.
         </p>
 
         <note>
@@ -71,7 +72,7 @@
         </p>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018

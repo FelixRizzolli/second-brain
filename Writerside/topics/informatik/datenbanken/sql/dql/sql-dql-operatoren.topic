@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Operatoren" id="sql-dql-operatoren">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-dql-operatoren"
+       title="Operatoren"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Arithmetische Operatoren" id="arithmetisch">
+    <chapter id="arithmetisch" title="Arithmetische Operatoren">
         <table style="header-row">
             <tr>
                 <td>Operator</td>
@@ -34,7 +34,7 @@
             </tr>
         </table>
 
-        <chapter title="Zusammengesetzte Operatoren" id="arithmetisch-zusammengesetzt">
+        <chapter id="arithmetisch-zusammengesetzt" title="Zusammengesetzte Operatoren">
             <table style="header-row">
                 <tr>
                     <td>Operator</td>
@@ -64,7 +64,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Bitweise Operatoren" id="bitweise">
+    <chapter id="bitweise" title="Bitweise Operatoren">
         <table style="header-row">
             <tr>
                 <td>Operator</td>
@@ -84,7 +84,7 @@
             </tr>
         </table>
 
-        <chapter title="Zusammengesetzte Operatoren" id="bitweise-zusammengesetzt">
+        <chapter id="bitweise-zusammengesetzt" title="Zusammengesetzte Operatoren">
             <table style="header-row">
                 <tr>
                     <td>Operator</td>
@@ -106,7 +106,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Vergleichsoperatoren" id="vergleich">
+    <chapter id="vergleich" title="Vergleichsoperatoren">
         <table style="header-row">
             <tr>
                 <td>Operator</td>
@@ -139,19 +139,24 @@
         </table>
     </chapter>
 
-    <chapter title="Logische Operatoren" id="logisch">
-        <chapter title="AND, AND NOT, OR, OR NOT" id="logisch-and-or">
+    <chapter id="logisch" title="Logische Operatoren">
+        <chapter id="logisch-and-or" title="AND, AND NOT, OR, OR NOT">
             <p>
                 Filterabfragen können aus mehreren Bedingungen bestehen, die mittels logischer Operatoren (=
-                <code>AND</code>, <code>OR</code>, <code>AND NOT</code>, <code>OR NOT</code>) miteinander verknüpft werden.
-                Mit diesen Operatoren lassen sich zwei oder beliebig viele Bedingungen miteinander logisch verknüpfen. Die
-                Verknüpfungsoperatoren können auch in Kombination verwendet werden. Es kommt ganz auf die Anforderung der
-                Filterfunktionalität an, die zu realisieren ist. Eine <code>AND</code>-Verknüpfung wird immer vorrangig vor
-                einer <code>OR</code>-Verknüpfung ausgewertet. Mittels Klammersetzung kann wie in der Mathematik der Vorrang
+                <code>AND</code>, <code>OR</code>, <code>AND NOT</code>, <code>OR NOT</code>) miteinander verknüpft
+                werden.
+                Mit diesen Operatoren lassen sich zwei oder beliebig viele Bedingungen miteinander logisch verknüpfen.
+                Die
+                Verknüpfungsoperatoren können auch in Kombination verwendet werden. Es kommt ganz auf die Anforderung
+                der
+                Filterfunktionalität an, die zu realisieren ist. Eine <code>AND</code>-Verknüpfung wird immer vorrangig
+                vor
+                einer <code>OR</code>-Verknüpfung ausgewertet. Mittels Klammersetzung kann wie in der Mathematik der
+                Vorrang
                 geändert werden.
             </p>
 
-            <chapter title="AND" id="logisch-and">
+            <chapter id="logisch-and" title="AND">
                 <table style="header-row">
                     <tr>
                         <td>1. Bedingung</td>
@@ -181,7 +186,7 @@
                 </table>
             </chapter>
 
-            <chapter title="AND NOT" id="logisch-andnot">
+            <chapter id="logisch-andnot" title="AND NOT">
                 <table style="header-row">
                     <tr>
                         <td>1. Bedingung</td>
@@ -211,7 +216,7 @@
                 </table>
             </chapter>
 
-            <chapter title="OR" id="logisch-or">
+            <chapter id="logisch-or" title="OR">
                 <table style="header-row">
                     <tr>
                         <td>1. Bedingung</td>
@@ -241,7 +246,7 @@
                 </table>
             </chapter>
 
-            <chapter title="OR NOT" id="logisch-ornot">
+            <chapter id="logisch-ornot" title="OR NOT">
                 <table style="header-row">
                     <tr>
                         <td>1. Bedingung</td>
@@ -273,153 +278,153 @@
             </chapter>
         </chapter>
 
-        <chapter title="NOT" id="logisch-not">
+        <chapter id="logisch-not" title="NOT">
             <p>
                 Mit dem <code>NOT</code>-Operator können Bedingungen negiert werden.
             </p>
 
-            <chapter title="Syntax" id="logisch-not-syntax">
+            <chapter id="logisch-not-syntax" title="Syntax">
                 <code-block lang="sql">
-                    SELECT  column1
-                         ,  column2
-                         ,  ...
-                      FROM table_name
-                     WHERE  NOT condition
+                    SELECT column1
+                    , column2
+                    , ...
+                    FROM table_name
+                    WHERE NOT condition
                     ;
                 </code-block>
             </chapter>
         </chapter>
 
-        <chapter title="IN" id="logisch-in">
+        <chapter id="logisch-in" title="IN">
             <p>
                 Mit dem <code>IN</code>-Operator können mehrere Werte in einer <code>WHERE</code>-Klausel angegeben
                 werden. Der <code>IN</code>-Operator ist eine Kurzform für mehrere <code>OR</code>-Bedingungen.
             </p>
 
-            <chapter title="Syntax" id="logisch-in-syntax">
+            <chapter id="logisch-in-syntax" title="Syntax">
                 <code-block lang="sql">
-                    SELECT  column_name(s)
-                      FROM table_name
-                     WHERE  column_name IN ( value1
-                                           , value2
-                                           , ... )
+                    SELECT column_name(s)
+                    FROM table_name
+                    WHERE column_name IN ( value1
+                    , value2
+                    , ... )
                     ;
                 </code-block>
 
                 <code-block lang="sql">
-                    SELECT  column_name(s)
-                      FROM table_name
-                     WHERE  column_name IN ( SELECT STATEMENT )
+                    SELECT column_name(s)
+                    FROM table_name
+                    WHERE column_name IN ( SELECT STATEMENT )
                     ;
                 </code-block>
             </chapter>
-            <chapter title="Beispiele" id="logisch-in-beispiele">
+            <chapter id="logisch-in-beispiele" title="Beispiele">
                 <code-block lang="sql">
-                    SELECT  *
-                      FROM Customers
-                     WHERE  Country IN ( 'Germany'
-                                       , 'France'
-                                       , 'UK' )
+                    SELECT *
+                    FROM Customers
+                    WHERE Country IN ( 'Germany'
+                    , 'France'
+                    , 'UK' )
                     ;
                 </code-block>
 
                 <code-block lang="sql">
-                    SELECT  *
-                      FROM Customers
-                     WHERE  Country NOT IN ( 'Germany'
-                                           , 'France'
-                                           , 'UK' )
+                    SELECT *
+                    FROM Customers
+                    WHERE Country NOT IN ( 'Germany'
+                    , 'France'
+                    , 'UK' )
                     ;
                 </code-block>
 
                 <code-block lang="sql">
-                    SELECT  *
-                      FROM Customers
-                     WHERE  Country IN ( SELECT Country
-                                           FROM Suppliers )
+                    SELECT *
+                    FROM Customers
+                    WHERE Country IN ( SELECT Country
+                    FROM Suppliers )
                     ;
                 </code-block>
             </chapter>
         </chapter>
 
-        <chapter title="BETWEEN" id="logisch-between">
+        <chapter id="logisch-between" title="BETWEEN">
             <p>
                 Der Operator <code>BETWEEN</code> wählt Werte innerhalb eines bestimmten Bereichs aus. Die Werte können
                 Zahlen, Text oder Daten sein. Der Operator <code>BETWEEN</code> ist inklusiv: Anfangs- und Endwerte sind
                 eingeschlossen.
             </p>
 
-            <chapter title="Syntax" id="logisch-between-syntax">
+            <chapter id="logisch-between-syntax" title="Syntax">
                 <code-block lang="sql">
-                    SELECT  column_name(s)
-                      FROM table_name
-                     WHERE  column_name BETWEEN value1
-                                            AND value2
+                    SELECT column_name(s)
+                    FROM table_name
+                    WHERE column_name BETWEEN value1
+                    AND value2
                     ;
                 </code-block>
             </chapter>
 
-            <chapter title="Beispiele" id="logisch-between-beispiele">
+            <chapter id="logisch-between-beispiele" title="Beispiele">
                 <code-block lang="sql">
-                    SELECT  *
-                      FROM Products
-                     WHERE  Price BETWEEN 10
-                                      AND 20
+                    SELECT *
+                    FROM Products
+                    WHERE Price BETWEEN 10
+                    AND 20
                     ;
                 </code-block>
 
                 <code-block lang="sql">
-                    SELECT  *
-                      FROM Products
-                     WHERE  Price NOT BETWEEN 10
-                                          AND 20
+                    SELECT *
+                    FROM Products
+                    WHERE Price NOT BETWEEN 10
+                    AND 20
                     ;
                 </code-block>
 
                 <code-block lang="sql">
-                    SELECT  *
-                      FROM Products
-                     WHERE  ProductName BETWEEN 'Carnarvon Tigers'
-                                            AND 'Mozzarella di Giovanni'
-                     ORDER
-                        BY  ProductName
+                    SELECT *
+                    FROM Products
+                    WHERE ProductName BETWEEN 'Carnarvon Tigers'
+                    AND 'Mozzarella di Giovanni'
+                    ORDER
+                    BY ProductName
                     ;
                 </code-block>
 
                 <code-block lang="sql">
-                    SELECT  *
-                      FROM Orders
-                     WHERE  OrderDate BETWEEN #07/01/1996#
-                                          AND #07/31/1996#
+                    SELECT *
+                    FROM Orders
+                    WHERE OrderDate BETWEEN #07/01/1996#
+                    AND #07/31/1996#
                     ;
                 </code-block>
 
                 <code-block lang="sql">
-                    SELECT  *
-                      FROM Orders
-                     WHERE  OrderDate BETWEEN '1996-07-01'
-                                          AND '1996-07-31'
+                    SELECT *
+                    FROM Orders
+                    WHERE OrderDate BETWEEN '1996-07-01'
+                    AND '1996-07-31'
                     ;
                 </code-block>
             </chapter>
         </chapter>
 
-        <chapter title="LIKE" id="logisch-like">
+        <chapter id="logisch-like" title="LIKE">
             <p>
                 Der <code>LIKE</code>-Operator wird in einer <code>WHERE</code>-Klausel verwendet, um nach einem
                 bestimmten Muster in einer Spalte zu suchen.
             </p>
 
             <code-block lang="sql">
-                SELECT  column1
-                     ,  column2
-                     ,  ...
-                  FROM table_name
-                 WHERE  columnN LIKE pattern
+                SELECT column1
+                , column2
+                , ...
+                FROM table_name
+                WHERE columnN LIKE pattern
                 ;
             </code-block>
 
-            <chapter title="Wildcards" id="logisch-like-wildcards">
+            <chapter id="logisch-like-wildcards" title="Wildcards">
                 <p>
                     Ein Wildcard (= Platzhalterzeichen) wird verwendet, um ein oder mehrere Zeichen in einer
                     Zeichenfolge zu ersetzen. Platzhalterzeichen werden mit dem <code>LIKE</code>-Operator verwendet.
@@ -427,7 +432,7 @@
                     bestimmten Muster in einer Spalte zu suchen.
                 </p>
 
-                <chapter title="Wildcards in MS-Access" id="logisch-like-wildcards-msaccess">
+                <chapter id="logisch-like-wildcards-msaccess" title="Wildcards in MS-Access">
                     <table>
                         <tr>
                             <td>Symbol</td>
@@ -491,7 +496,7 @@
                     </table>
                 </chapter>
 
-                <chapter title="Wildcards in SQL-Server" id="logisch-like-wildcards-sqlserver">
+                <chapter id="logisch-like-wildcards-sqlserver" title="Wildcards in SQL-Server">
                     <table>
                         <tr>
                             <td>Symbol</td>
@@ -546,7 +551,7 @@
                     </table>
                 </chapter>
 
-                <chapter title="Beispiele" id="logisch-like-wildcards-beispiele">
+                <chapter id="logisch-like-wildcards-beispiele" title="Beispiele">
                     <p>
                         Hier sind einige Beispiele für verschiedene <code>LIKE</code>-Operatoren mit den Platzhaltern
                         <code>'%'</code> und <code>'_'</code>:
@@ -610,37 +615,37 @@
             </chapter>
         </chapter>
 
-        <chapter title="EXISTS" id="logisch-exists">
+        <chapter id="logisch-exists" title="EXISTS">
             <p>
                 Der <code>EXISTS</code>-Operator wird verwendet, um zu prüfen, ob ein Datensatz in einer Unterabfrage
                 vorhanden ist. Der <code>EXISTS</code>-Operator gibt <code>TRUE</code> zurück, wenn die Unterabfrage
                 einen oder mehrere Datensätze zurückgibt.
             </p>
 
-            <chapter title="Syntax" id="logisch-exists-syntax">
+            <chapter id="logisch-exists-syntax" title="Syntax">
                 <code-block lang="sql">
-                    SELECT  column_name(s)
-                      FROM table_name
-                     WHERE  EXISTS ( SELECT  column_name
-                                       FROM table_name
-                                      WHERE  condition )
+                    SELECT column_name(s)
+                    FROM table_name
+                    WHERE EXISTS ( SELECT column_name
+                    FROM table_name
+                    WHERE condition )
                     ;
                 </code-block>
             </chapter>
 
-            <chapter title="Beispiele" id="logisch-exists-beispiele">
+            <chapter id="logisch-exists-beispiele" title="Beispiele">
                 <p>
                     Die folgende SQL-Anweisung gibt <code>TRUE</code> zurück und listet die Lieferanten mit einem
                     Produktpreis von weniger als 20 auf:
                 </p>
 
                 <code-block lang="sql">
-                    SELECT  SupplierName
-                      FROM Suppliers
-                     WHERE  EXISTS ( SELECT  ProductName
-                                       FROM Products
-                                      WHERE  Products.SupplierID = Suppliers.supplierID
-                                        AND  Price               &lt; 20 )
+                    SELECT SupplierName
+                    FROM Suppliers
+                    WHERE EXISTS ( SELECT ProductName
+                    FROM Products
+                    WHERE Products.SupplierID = Suppliers.supplierID
+                    AND Price &lt; 20 )
                     ;
                 </code-block>
 
@@ -650,22 +655,22 @@
                 </p>
 
                 <code-block lang="sql">
-                    SELECT  SupplierName
-                      FROM Suppliers
-                     WHERE  EXISTS ( SELECT  ProductName
-                                       FROM Products
-                                      WHERE  Products.SupplierID = Suppliers.supplierID
-                                        AND  Price               = 22 )
+                    SELECT SupplierName
+                    FROM Suppliers
+                    WHERE EXISTS ( SELECT ProductName
+                    FROM Products
+                    WHERE Products.SupplierID = Suppliers.supplierID
+                    AND Price = 22 )
                     ;
                 </code-block>
             </chapter>
         </chapter>
 
-        <chapter title="ALL" id="logisch-all">
+        <chapter id="logisch-all" title="ALL">
             <p>
                 Der Operator <code>ALL</code>:
             </p>
-            
+
             <list>
                 <li>gibt einen booleschen Wert als Ergebnis zurück</li>
                 <li>gibt <code>TRUE</code> zurück, wenn alle Werte der Subquery die Bedingung erfüllen</li>
@@ -676,21 +681,21 @@
                 <code>ALL</code> bedeutet, dass die Bedingung nur dann erfüllt ist, wenn die Operation auf alle Werte im
                 Bereich zutrifft.
             </p>
-            
-            <chapter title="Syntax" id="logisch-all-syntax">
+
+            <chapter id="logisch-all-syntax" title="Syntax">
                 <code-block lang="sql">
-                    SELECT  ALL column_name(s)
+                    SELECT ALL column_name(s)
                     FROM table_name
-                    WHERE  condition
+                    WHERE condition
                     ;
                 </code-block>
 
                 <code-block lang="sql">
-                    SELECT  column_name(s)
-                      FROM table_name
-                     WHERE  column_name operator ALL ( SELECT  column_name
-                                                         FROM table_name
-                                                        WHERE  condition )
+                    SELECT column_name(s)
+                    FROM table_name
+                    WHERE column_name operator ALL ( SELECT column_name
+                    FROM table_name
+                    WHERE condition )
                     ;
                 </code-block>
 
@@ -700,15 +705,15 @@
                 </p>
             </chapter>
 
-            <chapter title="Beispiel" id="logisch-all-beispiel">
+            <chapter id="logisch-all-beispiel" title="Beispiel">
                 <p>
                     Die folgende SQL-Anweisung listet ALLE Produktnamen auf:
                 </p>
 
                 <code-block lang="sql">
-                    SELECT  ALL ProductName
-                      FROM Products
-                     WHERE  TRUE
+                    SELECT ALL ProductName
+                    FROM Products
+                    WHERE TRUE
                     ;
                 </code-block>
 
@@ -718,21 +723,21 @@
                 </p>
 
                 <code-block lang="sql">
-                    SELECT  ProductName
-                      FROM Products
-                     WHERE  ProductID = ALL ( SELECT  ProductID
-                                                FROM OrderDetails
-                                               WHERE  Quantity = 10 )
+                    SELECT ProductName
+                    FROM Products
+                    WHERE ProductID = ALL ( SELECT ProductID
+                    FROM OrderDetails
+                    WHERE Quantity = 10 )
                     ;
                 </code-block>
             </chapter>
         </chapter>
 
-        <chapter title="ANY und SOME" id="logisch-anysome">
+        <chapter id="logisch-anysome" title="ANY und SOME">
             <p>
                 Die Operatoren <code>ANY</code> und <code>SOME</code> vergleichen einen Spaltenwert oder einen
                 Literalwert mit dem Ergebnis einer Unterabfrage, die einen einspaltigen Wert zurückgibt.
-                <code>ANY</code> und <code>SOME</code>  sind identisch.
+                <code>ANY</code> und <code>SOME</code> sind identisch.
             </p>
             <p>
                 Der Operator <code>ANY</code> / <code>SOME</code>:
@@ -752,22 +757,22 @@
                 Operation für jeden der Werte im Bereich <code>TRUE</code> ist.
             </p>
 
-            <chapter title="Syntax" id="logisch-anysome-syntax">
+            <chapter id="logisch-anysome-syntax" title="Syntax">
                 <code-block lang="sql">
-                    SELECT  column_name(s)
-                      FROM table_name
-                     WHERE  column_name operator ANY ( SELECT  column_name
-                                                         FROM table_name
-                                                        WHERE  condition )
+                    SELECT column_name(s)
+                    FROM table_name
+                    WHERE column_name operator ANY ( SELECT column_name
+                    FROM table_name
+                    WHERE condition )
                     ;
                 </code-block>
 
                 <code-block lang="sql">
-                    SELECT  column_name(s)
-                      FROM table_name
-                     WHERE  column_name operator SOME ( SELECT  column_name
-                                                          FROM table_name
-                                                         WHERE  condition )
+                    SELECT column_name(s)
+                    FROM table_name
+                    WHERE column_name operator SOME ( SELECT column_name
+                    FROM table_name
+                    WHERE condition )
                     ;
                 </code-block>
 
@@ -777,7 +782,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Beispiele" id="logisch-anysome-beispiele">
+            <chapter id="logisch-anysome-beispiele" title="Beispiele">
                 <p>
                     Die folgende SQL-Anweisung listet den Produktnamen auf, wenn sie in der Tabelle
                     <code>OrderDetails</code> einen Datensatz findet, dessen <code>Quantity</code> gleich
@@ -785,11 +790,11 @@
                 </p>
 
                 <code-block lang="sql">
-                    SELECT  ProductName
-                      FROM Products
-                     WHERE  ProductID = ANY ( SELECT  ProductID
-                                                FROM OrderDetails
-                                               WHERE  Quantity = 10 )
+                    SELECT ProductName
+                    FROM Products
+                    WHERE ProductID = ANY ( SELECT ProductID
+                    FROM OrderDetails
+                    WHERE Quantity = 10 )
                     ;
                 </code-block>
 
@@ -800,18 +805,18 @@
                 </p>
 
                 <code-block lang="sql">
-                    SELECT  ProductName
-                      FROM Products
-                     WHERE  ProductID = ANY ( SELECT  ProductID
-                                                FROM OrderDetails
-                                               WHERE  Quantity > 1000 )
+                    SELECT ProductName
+                    FROM Products
+                    WHERE ProductID = ANY ( SELECT ProductID
+                    FROM OrderDetails
+                    WHERE Quantity > 1000 )
                     ;
                 </code-block>
             </chapter>
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

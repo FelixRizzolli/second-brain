@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Grundlagen" id="swe-vcs-git-grundlagen">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-vcs-git-grundlagen"
+       title="Grundlagen"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="GIT konfigurieren" id="konfigurieren">
+    <chapter id="konfigurieren" title="GIT konfigurieren">
         <p>
             Git kann zwar auch lokal verwendet werden, doch es ist sinnvoll bereits ein Repository auf einem externen
             Git-Server zu erstellen, da die meisten Funktionen erst offensichtlich werden, wenn es zwei Repositorys gibt
             - ein lokales und ein externes.
         </p>
 
-        <chapter title="Name und E-Mail-Adresse einstellen (git config)" id="konfigurieren-config">
+        <chapter id="konfigurieren-config" title="Name und E-Mail-Adresse einstellen (git config)">
             <code-block lang="bash">
                 git config --global user.name "Felix Rizzolli"
             </code-block>
@@ -29,7 +29,7 @@
             </p>
         </chapter>
 
-        <chapter title="Sprache" id="konfigurieren-sprache">
+        <chapter id="konfigurieren-sprache" title="Sprache">
             <p>
                 Es ist sinnvoll sich die Sprache von Git auf Englisch einzustellen, da es viel mehr englische Artikel,
                 zu beispielsweise Fehlermeldungen, im Internet gibt als Deutsche und man so viel schneller fündig wird.
@@ -44,7 +44,7 @@
             </code-block>
         </chapter>
 
-        <chapter title="Dateien ausschließen (.gitignore)" id="konfigurieren-gitignore">
+        <chapter id="konfigurieren-gitignore" title="Dateien ausschließen (.gitignore)">
             <p>
                 Die Dateien, die durch den Compiler erzeugt werden, die Backup-Dateien des jeweiligen Editors und auch
                 Dateien mit vertraulichen Informationen (wie Passwörtern) sollten nicht in der Repository landen und auf
@@ -60,8 +60,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Repository herunterladen (git clone)" id="clone">
-        <chapter title="Repository (Begriff) mit GitHub als Beispiel" id="clone-github">
+    <chapter id="clone" title="Repository herunterladen (git clone)">
+        <chapter id="clone-github" title="Repository (Begriff) mit GitHub als Beispiel">
             <p>
                 Ein Repository (wörtlich: Depot, Lager) ist die Sammlung aller Dateien eines Projekts inklusive
                 alter/geänderter Versionen. In GitHub können zusammen mit einem Repository auch weitere Daten verwaltet
@@ -89,7 +89,7 @@
                 https://github.com/&lt;accountname&gt;/&lt;reponame&gt;
             </p>
 
-            <chapter title="Mitarbeit ohne Zugriffsrechte" id="clone-github-ohnerechte">
+            <chapter id="clone-github-ohnerechte" title="Mitarbeit ohne Zugriffsrechte">
                 <p>
                     Hat man keine Zugriffsrechte auf einem Projekt und möchte trotzdem einen Beitrag leisten, da man
                     eine innovative Idee hat oder die Lösung für ein Problem, so kann eine Kopie des fremden Projekts
@@ -99,7 +99,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Repository herunterladen" id="clone-github-herunterladen">
+            <chapter id="clone-github-herunterladen" title="Repository herunterladen">
                 <p>
                     Um eine Kopie eines Repositorys von GitHub auf dem lokalen Rechner zu erstellen wird der Befehl
                     <code>git clone</code> verwendet. Dabei muss in der Konsole zuerst in das Projekt-Verzeichnis
@@ -139,10 +139,10 @@
         </chapter>
     </chapter>
 
-    <chapter title="Lokales Repository erstellen (git init)" id="init">
+    <chapter id="init" title="Lokales Repository erstellen (git init)">
     </chapter>
 
-    <chapter title="Dateien hinzufügen (git add)" id="add">
+    <chapter id="add" title="Dateien hinzufügen (git add)">
         <p>
             Im jeweiligen Projektverzeichnis kann mit jedem beliebigen Editor eine Datei hinzugefügt und bearbeitet
             werden. Diese Editoren benötigen keine Git-Funktionen. Für Git muss aber eine Datei explizit zum Repository
@@ -155,7 +155,7 @@
         </code-block>
     </chapter>
 
-    <chapter title="Zwischenstand speichern (git commit)" id="commit">
+    <chapter id="commit" title="Zwischenstand speichern (git commit)">
         <p>
             Ein Commit ist eine Art Snapshot der bei Bedarf später widerhergestellt werden kann.
         </p>
@@ -166,14 +166,14 @@
             sinnvoll sein; für Commits im Fünf-Minuten-Takt gilt dies aber nicht.
         </note>
 
-        <chapter title="Sprache" id="commit-sprache">
+        <chapter id="commit-sprache" title="Sprache">
             <warning>
                 Der Befehl git commit führt den Commit nur im lokalen Repository durch. Für die Synchronisation mit
                 externen Repositorys sind die Kommandos <code>git push</code> und <code>git pull</code> zuständig.
             </warning>
         </chapter>
 
-        <chapter title="Der Commit-Befehl" id="commit-befehl">
+        <chapter id="commit-befehl" title="Der Commit-Befehl">
             <p>
                 Bei jedem Commit muss mit <code>-m 'message'</code> eine Nachricht angegeben werden, die ganz kurz alle
                 Änderungen zusammenfasst. Die Commit-Message sollte kurz, aber aussagekräftig sein. Sie ist vor allem
@@ -189,7 +189,7 @@
                 git commit -m 'initial commit, hello world'
             </code-block>
 
-            <chapter title="Ohne Zwischenspeichern" id="commit-befehl-ohnezwischenspeicher">
+            <chapter id="commit-befehl-ohnezwischenspeicher" title="Ohne Zwischenspeichern">
                 <p>
                     Wird dem Commit-Befehl der zusätzliche Parameter <code>-a</code> mitgegeben, so kann auf
                     <code>git add</code> und <code>git stage</code> verzichtet werden. Dabei werden alle unter
@@ -204,7 +204,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Überblick (git status)" id="status">
+    <chapter id="status" title="Überblick (git status)">
         <p>
             Um einen Überblick vom Zustand des Repositorys zu gewinne wird <code>git status</code> ausgeführt. Es zeigt
             welche Dateien unter der Kontrolle von Git stehen, welche seit dem letzten Commit geändert wurden etc.
@@ -215,7 +215,7 @@
         </code-block>
     </chapter>
 
-    <chapter title="Repository zum Remote Server übertragen (git push)" id="push">
+    <chapter id="push" title="Repository zum Remote Server übertragen (git push)">
         <p>
             Der Befehl <code>git push</code> überträgt Commits im lokalen Repository zu einem externen Repository. Damit
             <code>git push</code> funktioniert muss das Kommando "erraten" welcher Zweig de Repositorys verarbeitet
@@ -239,15 +239,15 @@
         </warning>
     </chapter>
 
-    <chapter title="Lokales Repository aktualisieren (git pull)" id="pull">
+    <chapter id="pull" title="Lokales Repository aktualisieren (git pull)">
         Mit dem Befehl <code>git pull</code> werden bekannte Änderungen im externen Repository auf den lokalen Rechner
         heruntergeladen. Bearbeiten zwei Entwickler eine Datei gleichzeitig, so kommt es beim Zusammenführen der
         Änderungen zu einem Konflikt und die Ausführung von <code>git pull</code> bricht ab. Dieser Konflikt muss
         manuell behoben werden.
     </chapter>
 
-    <chapter title="Dateien umbenennen, verschieben und löschen (git mv, git rm)" id="dateien">
-        <chapter title="Das Kommando git mv" id="dateien-mv">
+    <chapter id="dateien" title="Dateien umbenennen, verschieben und löschen (git mv, git rm)">
+        <chapter id="dateien-mv" title="Das Kommando git mv">
             <p>
                 Der Befehl <code>git mv</code> benennt eine bereits im Repository befindliche Datei um. Mit dem Kommando
                 kann aber auch eine Datei in ein anderes Verzeichnis verschoben werden. Beim nächsten Commit wird dabei
@@ -263,7 +263,7 @@
             </code-block>
         </chapter>
 
-        <chapter title="Das Kommando git rm" id="dateien-rm">
+        <chapter id="dateien-rm" title="Das Kommando git rm">
             <p>
                 Mit dem Befehl <code>git rm</code> wird eine Datei sowohl aus dem Arbeitsverzeichnis als auch aus dem
                 Repository gelöscht. Wenn die Datei seit dem letzten Commit verändert wurde, muss die Option
@@ -276,10 +276,11 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
-            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler, 2020
+            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler,
+            2020
         </tip>
     </chapter>
 </topic>

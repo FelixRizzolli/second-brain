@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Spaltenwerte gruppieren (GROUP BY)" id="sql-dql-groupby">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-dql-groupby"
+       title="Spaltenwerte gruppieren (GROUP BY)"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlagen" id="grundlagen">
+    <chapter id="grundlagen" title="Grundlagen">
         <p>
             Die <code>GROUP BY</code>-Klausel schafft in SQL die Möglichkeit, Spaltenwerte einer Spalte zu einer Gruppe
             zusammenzufassen. Das Zusammenfassen von Spaltenwerten kann auch als Verdichtung bezeichnet werden. Eine
@@ -15,7 +15,7 @@
             <code>AVG()</code> den Durchschnitt der Gehälter der einzelnen Gruppen:
         </p>
 
-        <img src="datenbanken-sql-groupby1.png" alt="GROUP BY - Beispiel"/>
+        <img alt="GROUP BY - Beispiel" src="datenbanken-sql-groupby1.png"/>
 
         <p>
             Wie im Beispiel können in der Spaltenauswahlliste Aggregatfunktionen enthalten sein, die beispielsweise eine
@@ -61,7 +61,7 @@
         </p>
     </chapter>
 
-    <chapter title="Beispiele für Aggregatfunktionen" id="aggregatfunktionen">
+    <chapter id="aggregatfunktionen" title="Beispiele für Aggregatfunktionen">
         <table>
             <tr>
                 <td>bonusid</td>
@@ -131,16 +131,16 @@
             </tr>
         </table>
 
-        <chapter title="COUNT()" id="aggregatfunktionen-count">
+        <chapter id="aggregatfunktionen-count" title="COUNT()">
             <code-block lang="sql">
-                SELECT  mitarbeiterid
-                     ,  COUNT(bonusid) AS anzahlbonuszahlungen
-                  FROM bonus
-                 GROUP
-                    BY mitarbeiterid
+                SELECT mitarbeiterid
+                , COUNT(bonusid) AS anzahlbonuszahlungen
+                FROM bonus
+                GROUP
+                BY mitarbeiterid
                 ;
             </code-block>
-            
+
             <table>
                 <tr>
                     <td>mitarbeiterid</td>
@@ -164,15 +164,15 @@
                 </tr>
             </table>
 
-            <chapter title="DISTINCT - Nur eindeutige Spaltenwerte" id="aggregatfunktionen-count-distinct">
+            <chapter id="aggregatfunktionen-count-distinct" title="DISTINCT - Nur eindeutige Spaltenwerte">
                 <p>
                     Mit dem Schlüsselwort <code>DISTINCT</code> vor der Spalte innerhalb der
                     <code>COUNT()</code>-Funktion ausschließlich eindeutige Spaltenwerte berücksichtigt.
                 </p>
 
                 <code-block lang="sql">
-                    SELECT  COUNT(DISTINCT mitarbeiterid) AS anzahldermitarbeiter
-                      FROM bonus
+                    SELECT COUNT(DISTINCT mitarbeiterid) AS anzahldermitarbeiter
+                    FROM bonus
                     ;
                 </code-block>
 
@@ -186,20 +186,20 @@
                 </table>
             </chapter>
 
-            <chapter title="Asterisk * - Anzahl der Zeilen innerhalb einer Gruppe"
-                     id="aggregatfunktionen-count-asterisk">
+            <chapter id="aggregatfunktionen-count-asterisk"
+                     title="Asterisk * - Anzahl der Zeilen innerhalb einer Gruppe">
                 <p>
                     Wird der <code>COUNT()</code>-Funktion ein Asterisk <code>*</code> als Parameter übergeben, so zählt
                     die Funktion lediglich die Anzahl der Zeilen innerhalb einer Gruppe.
                 </p>
 
                 <code-block lang="sql">
-                    SELECT  mitarbeiterid
-                         ,  COUNT(*) AS anzahlderzeilenprogruppe
-                      FROM bonus
+                    SELECT mitarbeiterid
+                    , COUNT(*) AS anzahlderzeilenprogruppe
+                    FROM bonus
                     ;
                 </code-block>
-                
+
                 <table>
                     <tr>
                         <td>mitarbeiterid</td>
@@ -225,13 +225,13 @@
             </chapter>
         </chapter>
 
-        <chapter title="SUM()" id="aggregatfunktionen-count-sum">
+        <chapter id="aggregatfunktionen-count-sum" title="SUM()">
             <code-block lang="sql">
-                SELECT  mitarbeiterid
-                     ,  SUM(bonuszahlung) AS summebonuszahlung
-                  FROM bonus
-                 GROUP
-                    BY  mitarbeiterid
+                SELECT mitarbeiterid
+                , SUM(bonuszahlung) AS summebonuszahlung
+                FROM bonus
+                GROUP
+                BY mitarbeiterid
                 ;
             </code-block>
 
@@ -259,13 +259,13 @@
             </table>
         </chapter>
 
-        <chapter title="AVG()" id="aggregatfunktionen-count-avg">
+        <chapter id="aggregatfunktionen-count-avg" title="AVG()">
             <code-block lang="sql">
-                SELECT  mitarbeiterid
-                     ,  AVG(bonuszahlung) AS durchschnittbonuszahlung
-                  FROM bonus
-                 GROUP
-                    BY  mitarbeiterid
+                SELECT mitarbeiterid
+                , AVG(bonuszahlung) AS durchschnittbonuszahlung
+                FROM bonus
+                GROUP
+                BY mitarbeiterid
                 ;
             </code-block>
 
@@ -293,14 +293,14 @@
             </table>
         </chapter>
 
-        <chapter title="MIN() und MAX()" id="aggregatfunktionen-minmax">
+        <chapter id="aggregatfunktionen-minmax" title="MIN() und MAX()">
             <code-block lang="sql">
-                SELECT  mitarbeiterid
-                     ,  MIN(bonuszahlung) AS minbonuszahlung
-                     ,  MAX(bonuszahlung) AS maxbonuszahlung
-                  FROM bonus
-                 GROUP
-                    BY  mitarbeiterid
+                SELECT mitarbeiterid
+                , MIN(bonuszahlung) AS minbonuszahlung
+                , MAX(bonuszahlung) AS maxbonuszahlung
+                FROM bonus
+                GROUP
+                BY mitarbeiterid
                 ;
             </code-block>
 
@@ -334,8 +334,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="NULL-Werte berücksichtigen" id="null">
-        <chapter title="Fall 1: NULL-Werte in der zu gruppierenden Spalte" id="null-fall1">
+    <chapter id="null" title="NULL-Werte berücksichtigen">
+        <chapter id="null-fall1" title="Fall 1: NULL-Werte in der zu gruppierenden Spalte">
             <p>
                 Wenn nach den Spaltenwerten einer Spalte gruppiert wird und dort <code>NULL</code>-Werte enthalten sind,
                 so wird eine Gruppierung über diese Gruppe von Spaltenwerten gebildet. Es würde wenig Sinn machen diese
@@ -344,23 +344,23 @@
             </p>
 
             <code-block lang="sql">
-                SELECT  mitarbeiterid
-                     ,  SUM(bonuszahlung) AS summebonuszahlung
-                  FROM  bonus
-                 WHERE mitarbeiterid IS NOT NULL
-                 GROUP
-                    BY  mitarbeiterid
+                SELECT mitarbeiterid
+                , SUM(bonuszahlung) AS summebonuszahlung
+                FROM bonus
+                WHERE mitarbeiterid IS NOT NULL
+                GROUP
+                BY mitarbeiterid
                 ;
             </code-block>
         </chapter>
 
-        <chapter title="Fall 2: NULL-Werte in Spalte auf die eine Aggregatfunktion angewendet wird" id="null-fall2">
+        <chapter id="null-fall2" title="Fall 2: NULL-Werte in Spalte auf die eine Aggregatfunktion angewendet wird">
             <p>
                 In diesem Fall wird die Spalte von einer Aggregatfunktion wie <code>SUM</code> ignoriert. Grundsätzlich
                 ist es gut, dass die Aggregatfunktion die <code>NULL</code>-Werte ignoriert. Dennoch hier einige Details
                 zu diesem Verhalten:
             </p>
-            
+
             <list>
                 <li>
                     Die Funktion <code>COUNT</code> zählt nur die Werte der jeweiligen Spalte über die aggregiert werden
@@ -384,22 +384,22 @@
             </list>
 
             <code-block lang="sql">
-                SELECT  AVG( CASE
-                               WHEN bonuszahlung IS NULL
-                               THEN 0
-                               ELSE bonuszahlung
-                             END
-                            ) AS durchschnittbonuszahlung,
-                  FROM bonus
-                 WHERE  mitarbeiterid = 10
-                 GROUP
-                    BY  mitarbeiterid
+                SELECT AVG( CASE
+                WHEN bonuszahlung IS NULL
+                THEN 0
+                ELSE bonuszahlung
+                END
+                ) AS durchschnittbonuszahlung,
+                FROM bonus
+                WHERE mitarbeiterid = 10
+                GROUP
+                BY mitarbeiterid
                 ;
             </code-block>
         </chapter>
     </chapter>
 
-    <chapter title="HAVING: Nach aggregierten Werten einer Gruppierung filtern" id="having">
+    <chapter id="having" title="HAVING: Nach aggregierten Werten einer Gruppierung filtern">
         <p>
             SQL bietet mit der <code>HAVING</code>-Klausel in Bezug auf aggregierte Werte eine spezielle Filterfunktion
             an. Mit der <code>HAVING</code>-Klausel kann ein aggregierter Durchschnittswert mit einem Vergleichsoperator
@@ -407,12 +407,12 @@
         </p>
 
         <code-block lang="sql">
-            SELECT  bankleitzahl
-                 ,  COUNT(bankleitzahl) AS anzahlkreditinstitute
-              FROM kreditinstitut
-             GROUP
-                BY  bankleitzahl
-            HAVING  COUNT(bankleitzahl) = 1
+            SELECT bankleitzahl
+            , COUNT(bankleitzahl) AS anzahlkreditinstitute
+            FROM kreditinstitut
+            GROUP
+            BY bankleitzahl
+            HAVING COUNT(bankleitzahl) = 1
             ;
         </code-block>
 
@@ -441,25 +441,25 @@
         </p>
     </chapter>
 
-    <chapter title="Nach zwei oder mehr Spalten gruppieren" id="mehr-spalten-gruppieren">
+    <chapter id="mehr-spalten-gruppieren" title="Nach zwei oder mehr Spalten gruppieren">
         <p>
             Je nach Anforderung kann auch über zwei, drei oder mehr Spalten gruppiert werden. Die zu gruppierenden
             Spalten werden kommasepariert hinter der <code>GROUP BY</code>-Klausel angegeben.
         </p>
 
         <code-block lang="sql">
-            SELECT  ort
-                 ,  bezeichnung
-                 ,  COUNT(*) AS anzahlinstitute
-              FROM kreditinstitut
-             GROUP
-                BY  ort
-                 ,  bezeichnung
+            SELECT ort
+            , bezeichnung
+            , COUNT(*) AS anzahlinstitute
+            FROM kreditinstitut
+            GROUP
+            BY ort
+            , bezeichnung
             ;
         </code-block>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

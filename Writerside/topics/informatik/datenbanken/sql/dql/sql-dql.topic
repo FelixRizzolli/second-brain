@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="DQL (Data Query Language)" id="sql-dql">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-dql"
+       title="DQL (Data Query Language)"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
     <p>
         Für Beispiele wird hier eine <code>mitarbeiter</code>-Tabelle verwendet, welche folgende Spalten enthält:
@@ -13,7 +13,7 @@
         <code>hausnummer</code>, <code>ort</code>.
     </p>
 
-    <chapter title="Die Grundfunktion der Tabellenabfrage: SELECT" id="select">
+    <chapter id="select" title="Die Grundfunktion der Tabellenabfrage: SELECT">
         <p>
             Mit der SQL-Abfrage <code>SELECT name, vorname FROM mitarbeiter;</code> werden die Spalten <code>name</code>
             und <code>vorname</code> aus der Tabelle <code>mitarbeiter</code> ausgelesen. Eine Abfrage beginnt mit dem
@@ -39,7 +39,7 @@
         </p>
     </chapter>
 
-    <chapter title="Abfrage mit WHERE Filtern" id="where">
+    <chapter id="where" title="Abfrage mit WHERE Filtern">
         <p>
             Die <code>WHERE</code>-Klausel wird immer dann verwendet, wenn nur bestimmte Ergebniszeilen ausgegeben
             werden sollen, welche einem gewissen Filterkriterium entsprechen. Hierzu werden die Spaltenwerte einer
@@ -63,7 +63,7 @@
         </p>
     </chapter>
 
-    <chapter title="Inhaltsverzeichnis" id="inhaltsverzeichnis">
+    <chapter id="inhaltsverzeichnis" title="Inhaltsverzeichnis">
         <list>
             <li>
                 <a href="sql-dql-konstanten.topic">
@@ -129,7 +129,7 @@
         </list>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

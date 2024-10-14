@@ -1,58 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Philosophie" id="philosophie">
+<topic id="philosophie"
+       title="Philosophie"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <section-starting-page>
         <title>Philosophie</title>
         <description>...</description>
 
         <spotlight>
-            <a href="speedlearning.topic"
-               description="Speedlearning"
+            <a description="Speedlearning"
+               href="speedlearning.topic"
                summary="..."
-               type="library" />
-            <a href="finanzielle-intelligenz.topic"
-               description="FQ - Finanzielle Intelligenz"
+               type="library"/>
+            <a description="FQ - Finanzielle Intelligenz"
+               href="finanzielle-intelligenz.topic"
                summary="..."
-               type="start" />
+               type="start"/>
         </spotlight>
 
         <primary>
             <title>Kategorien</title>
-            <a href="stoizismus.topic"
-               description="Stoizismus"
+            <a description="Stoizismus"
+               href="stoizismus.topic"
                summary="..."
-               type="academy" />
-            <a href="produktivitaetssteigerung.topic"
-               description=""
+               type="academy"/>
+            <a description=""
+               href="produktivitaetssteigerung.topic"
                summary="..."
-               type="start" />
-            <a href="kommunikation.topic"
-               description="Komunikation"
+               type="start"/>
+            <a description="Komunikation"
+               href="kommunikation.topic"
                summary="..."
-               type="support" />
-            <a href="emotionale-intelligenz.topic"
-               description="EQ - Emotionale Intelligenz"
+               type="support"/>
+            <a description="EQ - Emotionale Intelligenz"
+               href="emotionale-intelligenz.topic"
                summary="..."
-               type="account" />
-            <a href="finanzielle-intelligenz.topic"
-               description="FQ - Finanzielle Intelligenz"
+               type="account"/>
+            <a description="FQ - Finanzielle Intelligenz"
+               href="finanzielle-intelligenz.topic"
                summary="..."
-               type="start" />
+               type="start"/>
         </primary>
 
         <secondary>
             <title>Meine Leidenschaft</title>
-            <a href="stoizismus.topic"
-               description="Stoizismus"
+            <a description="Stoizismus"
+               href="stoizismus.topic"
                summary="..."
-               type="academy" />
-            <a href="produktivitaetssteigerung.topic"
-               description=""
+               type="academy"/>
+            <a description=""
+               href="produktivitaetssteigerung.topic"
                summary="..."
-               type="start" />
+               type="start"/>
         </secondary>
     </section-starting-page>
 </topic>

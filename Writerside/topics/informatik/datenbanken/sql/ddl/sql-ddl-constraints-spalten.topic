@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="CONSTRAINTS auf Spaltenebene" id="sql-ddl-constraints-spalten">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-ddl-constraints-spalten"
+       title="CONSTRAINTS auf Spaltenebene"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlegendes" id="grundlegendes">
+    <chapter id="grundlegendes" title="Grundlegendes">
         <p>
             Einer Spalte können Einschränkungen zugeordnet werden, welche für die <code>INSERT</code> und die
             <code>UPDATE</code>-Anweisung gelten – werden diese nicht eingehalten, so wird die Anweisung nicht
@@ -16,7 +16,7 @@
         </p>
     </chapter>
 
-    <chapter title="AUTO_INCREMENT: Automatisch hochzählende numerische Spalten" id="auto-increment">
+    <chapter id="auto-increment" title="AUTO_INCREMENT: Automatisch hochzählende numerische Spalten">
         <p>
             Während der Tabellenerstellung kann mit einer <code>CREATE TABLE</code>-Anweisung festgelegt werden, ob
             automatisch ein ganzzahlig hochzählender Primärschlüssel eingefügt werden soll. Somit muss man auch nicht
@@ -53,18 +53,18 @@
 
         <code-block lang="sql">
             CREATE
-             TABLE designwagen
-                 ( designwagenid  TINYINT  AUTO_INCREMENT PRIMARY KEY
-                 , kennzeichen    CHAR(9)
-                 , erstzulassung  DATE
-                 )
+            TABLE designwagen
+            ( designwagenid TINYINT AUTO_INCREMENT PRIMARY KEY
+            , kennzeichen CHAR(9)
+            , erstzulassung DATE
+            )
             ;
 
             INSERT INTO dienstwagen (kennzeichen, erstzulassung) VALUES ('XX-XX-XX1', '2014-04-01');
         </code-block>
     </chapter>
 
-    <chapter title="NOT NULL: Spalten als Pflichtfelder definieren" id="not-null">
+    <chapter id="not-null" title="NOT NULL: Spalten als Pflichtfelder definieren">
         <p>
             Überall da, wo Spaltenwerte unbedingt erforderlich sind, kann bereits während der Tabellenerstellung mit
             einer <code>NOT NULL</code>-Einschränkung sichergestellt werden, dass für das jeweilige Datenfeld immer
@@ -74,17 +74,17 @@
 
         <code-block lang="sql">
             CREATE
-             TABLE dienstwagen
-                 ( dienstwagenid     TINYINT        PRIMARY KEY
-                 , kennzeichen       CHAR(9)        NOT NULL
-                 , erstzulassung     DATE           NOT NULL
-                 , mitarbeiter       VARCHAR(300)
-                 )
+            TABLE dienstwagen
+            ( dienstwagenid TINYINT PRIMARY KEY
+            , kennzeichen CHAR(9) NOT NULL
+            , erstzulassung DATE NOT NULL
+            , mitarbeiter VARCHAR(300)
+            )
             ;
         </code-block>
     </chapter>
 
-    <chapter title="UNIQUE: Spalten mit einer Eindeutigkeitseinschränkung versehen" id="unique">
+    <chapter id="unique" title="UNIQUE: Spalten mit einer Eindeutigkeitseinschränkung versehen">
         <p>
             Mit der <code>UNIQUE</code>-Einschränkung stellt man sicher, dass ähnlich wie bei einem Primärschlüssel, das
             Datenfeld nur einmal in der Spalte vorkommt. Die Eindeutigkeitseinschränkung <code>UNIQUE</code> wird immer
@@ -99,12 +99,12 @@
 
         <code-block lang="sql">
             CREATE
-             TABLE dienstwagen
-                 ( dienstwagenid   TINYINT        PRIMARY KEY
-                 , kennzeichen     CHAR(9)        NOT NULL
-                 , erstzulassung   DATE           NOT NULL
-                 , mitarbeiter     VARCHAR(300)   UNIQUE
-                 )
+            TABLE dienstwagen
+            ( dienstwagenid TINYINT PRIMARY KEY
+            , kennzeichen CHAR(9) NOT NULL
+            , erstzulassung DATE NOT NULL
+            , mitarbeiter VARCHAR(300) UNIQUE
+            )
             ;
         </code-block>
 
@@ -117,7 +117,7 @@
         </note>
     </chapter>
 
-    <chapter title="DEFAULT: Standardwerte für Spalten festlegen" id="default">
+    <chapter id="default" title="DEFAULT: Standardwerte für Spalten festlegen">
         <p>
             Mit dem Schlüsselwort <code>DEFAULT</code> kann für eine Spalte ein Standardwert definiert werden. Dieser
             Wert wird somit immer verwendet, falls bei einer <code>INSERT</code>-Anweisung der jeweiligen Spalte kein
@@ -128,18 +128,18 @@
 
         <code-block lang="sql">
             CREATE
-             TABLE dienstwagen
-                 ( dienstwagenid    TINYINT        PRIMARY KEY
-                 , kennzeichen      CHAR(9)        NOT NULL
-                 , erstzulassung    DATE           NOT NULL
-                 , kostenstelle     SMALLINT       NOT NULL     DEFAULT 0
-                 , mitarbeiter      VARCHAR(300)   UNIQUE
-                 )
+            TABLE dienstwagen
+            ( dienstwagenid TINYINT PRIMARY KEY
+            , kennzeichen CHAR(9) NOT NULL
+            , erstzulassung DATE NOT NULL
+            , kostenstelle SMALLINT NOT NULL DEFAULT 0
+            , mitarbeiter VARCHAR(300) UNIQUE
+            )
             ;
         </code-block>
     </chapter>
 
-    <chapter title="CHECK: Bedingungen für Spalten festlegen" id="check">
+    <chapter id="check" title="CHECK: Bedingungen für Spalten festlegen">
         <p>
             Mit der <code>CHECK</code>-Einschränkung kann einer Spalte eine Plausibilitätsprüfung zugeordnet werden,
             welche für <code>INSERT</code>- und <code>UPDATE</code>-Anweisung gilt. Die Datenbank überprüft somit, für
@@ -154,14 +154,14 @@
 
         <code-block lang="sql">
             CREATE
-             TABLE dienstwagen
-                 ( dienstwagenid    SMALLINT      PRIMARY KEY
-                 , kennzeichen      CHAR(9)       NOT NULL
-                 , erstzulassung    DATE          NOT NULL
-                 , modell           VARCHAR(200)  CHECK( motor = ‘Diesel‘
-                                                      OR motor = ‘Benzin‘
-                                                      OR motor = ‘Super‘ )
-                 , mitarbeiter      VARCHAR(300)  UNIQUE
+            TABLE dienstwagen
+            ( dienstwagenid SMALLINT PRIMARY KEY
+            , kennzeichen CHAR(9) NOT NULL
+            , erstzulassung DATE NOT NULL
+            , modell VARCHAR(200) CHECK( motor = ‘Diesel‘
+            OR motor = ‘Benzin‘
+            OR motor = ‘Super‘ )
+            , mitarbeiter VARCHAR(300) UNIQUE
             )
             ;
         </code-block>
@@ -179,7 +179,7 @@
         </note>
     </chapter>
 
-    <chapter title="PRIMARY KEY: Primärschlüssel für eine Spalte festlegen" id="primary-key">
+    <chapter id="primary-key" title="PRIMARY KEY: Primärschlüssel für eine Spalte festlegen">
         <p>
             Die <code>PRIMARY KEY</code>-Einschränkung identifiziert jeden Datensatz in einer Tabelle eindeutig. Ein
             Primärschlüssel ist eine Kombination aus der <code>UNIQUE</code>- und der
@@ -189,13 +189,13 @@
 
         <code-block lang="sql">
             CREATE
-             TABLE dienstwagen
-                 ( dienstwagenid    TINYINT        PRIMARY KEY
-                 , kennzeichen      CHAR(9)        NOT NULL
-                 , erstzulassung    DATE           NOT NULL
-                 , kostenstelle     SMALLINT       NOT NULL     DEFAULT 0
-                 , mitarbeiter      VARCHAR(300)   UNIQUE
-                 )
+            TABLE dienstwagen
+            ( dienstwagenid TINYINT PRIMARY KEY
+            , kennzeichen CHAR(9) NOT NULL
+            , erstzulassung DATE NOT NULL
+            , kostenstelle SMALLINT NOT NULL DEFAULT 0
+            , mitarbeiter VARCHAR(300) UNIQUE
+            )
             ;
         </code-block>
 
@@ -208,7 +208,7 @@
         </note>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

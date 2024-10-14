@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="SQL" id="sql">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql"
+       title="SQL"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Was ist SQL?" id="was-ist-sql">
+    <chapter id="was-ist-sql" title="Was ist SQL?">
         <p>
             SQL ist eine Datenbanksprache zur Definition von Datenstrukturen in relationalen Datenbanken sowie zum
             Bearbeiten (Einfügen, Verändern und Löschen) und Abfragen von darauf basierenden Datenbeständen.
         </p>
     </chapter>
 
-    <chapter title="Inhaltsverzeichnis" id="inhaltsverzeichnis">
+    <chapter id="inhaltsverzeichnis" title="Inhaltsverzeichnis">
         <list>
             <li>
                 <p><a href="sql-dql.topic"><b>DQL (Data Query Language)</b></a></p>
@@ -174,7 +174,7 @@
         </list>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

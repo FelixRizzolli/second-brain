@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Konstanten" id="sql-dql-konstanten">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-dql-konstanten"
+       title="Konstanten"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einleitung" id="einleitung">
+    <chapter id="einleitung" title="Einleitung">
         <p>
             Werte, welche sich nicht ändern werden in SQL sowie in anderen Programmiersprachen als Konstanten
             bezeichnet. Es gibt unterschiedliche Arten von Konstanten bzw. Werten, die in der Spaltenauswahlliste und an
@@ -31,8 +31,8 @@
             </li>
         </list>
     </chapter>
-    
-    <chapter title="Unterschiede zwischen: MySQL-Workbench, MS SQL-Server Editor und pgAdmin3" id="unterschiede">
+
+    <chapter id="unterschiede" title="Unterschiede zwischen: MySQL-Workbench, MS SQL-Server Editor und pgAdmin3">
         <p>
             Die Spaltenbezeichnung kann also je nach verwendetem Datenbanksystem unterschiedlich sein. Beispiel für die
             Unterschiede:
@@ -42,7 +42,7 @@
             SELECT name, vorname, ' hat am ', gebdatum, ' Geburtstag' FROM mitarbeiter;
         </code-block>
 
-        <chapter title="MySQL-Workbench" id="unterschiede-mysql">
+        <chapter id="unterschiede-mysql" title="MySQL-Workbench">
             <table style="header-row">
                 <tr>
                     <td>name</td>
@@ -68,14 +68,14 @@
             </table>
         </chapter>
 
-        <chapter title="Microsoft SQL-Server Editor" id="unterschiede-mssqlserver">
+        <chapter id="unterschiede-mssqlserver" title="Microsoft SQL-Server Editor">
             <table style="header-row">
                 <tr>
                     <td>name</td>
                     <td>vorname</td>
-                    <td> </td>
+                    <td></td>
                     <td>gebdatum</td>
-                    <td> </td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Rizzolli</td>
@@ -94,7 +94,7 @@
             </table>
         </chapter>
 
-        <chapter title="pgAdmin3" id="unterschiede-pgadmin3">
+        <chapter id="unterschiede-pgadmin3" title="pgAdmin3">
             <table style="header-row">
                 <tr>
                     <td>name</td>
@@ -121,7 +121,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

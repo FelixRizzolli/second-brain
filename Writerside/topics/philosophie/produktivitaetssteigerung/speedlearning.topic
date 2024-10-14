@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Lernen Lernen - Speedlearning" id="speedlearning">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="speedlearning"
+       title="Lernen Lernen - Speedlearning"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Erfolg-Verhinderer" id="erfolg-verhinderer">
+    <chapter id="erfolg-verhinderer" title="Erfolg-Verhinderer">
         <p>
             Folgende Hindernisse könnten uns auf unserem Weg zum Ziel begegnen:
         </p>
@@ -78,12 +79,12 @@
         </p>
     </chapter>
 
-    <chapter title="Wie unser Gehirn lernt" id="wie-unser-gehirn-lernt">
+    <chapter id="wie-unser-gehirn-lernt" title="Wie unser Gehirn lernt">
         <p>
             Der Mensch lernt am effektivsten, wenn er etwas aktiv anwendet oder selbst erarbeitet.
         </p>
 
-        <chapter title="Lerninhalte" id="lerninhalte">
+        <chapter id="lerninhalte" title="Lerninhalte">
             <p>
                 Unser Gehirn unterscheidet von sich aus nicht zwischen verschiedenen Lerninhalten.
             </p>
@@ -114,7 +115,7 @@
             </note>
         </chapter>
 
-        <chapter title="Spamfilter – 20 Sekunden; 20 Minuten; ..." id="spamfilter">
+        <chapter id="spamfilter" title="Spamfilter – 20 Sekunden; 20 Minuten; ...">
             <p>
                 Unser Gehirn entscheidet nach zwanzig Sekunden zum ersten Mal, ob eine Information für uns sinnvoll,
                 also merkwürdig ist. Merkwürdige Informationen sind Umweltimpulse oder Einflüsse, die entweder
@@ -150,7 +151,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Lernplan - Analyse" id="lernplan-analyse">
+    <chapter id="lernplan-analyse" title="Lernplan - Analyse">
         <p>
             Bevor wir uns daran machen, unser Lernthema innerhalb kürzester Zeit und auf eine sehr wirkungsvolle Art zu
             verinnerlichen, sollten wir uns erst einmal in die richtige mentale Stimmung versetzen. Das bedeutet, dass
@@ -229,7 +230,7 @@
         </list>
     </chapter>
 
-    <chapter title="Braintrust" id="braintrust">
+    <chapter id="braintrust" title="Braintrust">
         <p>
             Unter Braintrust versteht man eine Gruppe Gleichgesinnter, die untereinander und gegenseitig ihr
             Weiterkommen befördern mit dem Ziel, allen Beteiligten dabei zu helfen, das zu werden, was sie sein wollen.
@@ -307,14 +308,14 @@
         </list>
     </chapter>
 
-    <chapter title="Mnemotechnik" id="mnemotechnik">
+    <chapter id="mnemotechnik" title="Mnemotechnik">
         <p>
             Die Mnemotechniken sind ein gutes Gedächtnistraining, falls wir Sprachen, Vokabeln, Formeln oder sonstiges
             für Prüfungen im Alltag lernen möchten. Mnemotechniken sind Lernmethoden, mit denen wir leichter, nachhaltig
             und dauerhaft Informationen in unserem Gehirn abspeichern können.
         </p>
 
-        <chapter title="Definition" id="definition">
+        <chapter id="definition" title="Definition">
             <p>
                 Mnemotechniken sind Methoden, die dazu dienen, sich anhand von Merkhilfen Informationen im Gedächtnis
                 einzuprägen. Es kann sich bei Mnemotechniken um Sprüche für kleinere Informationen handeln, zum Beispiel
@@ -327,7 +328,7 @@
             </p>
         </chapter>
 
-        <chapter title="Psychologisch betrachtet" id="psychologisch-betrachtet">
+        <chapter id="psychologisch-betrachtet" title="Psychologisch betrachtet">
             <p>
                 Die Psychologie hinter Mnemotechniken sieht folgendermaßen aus: Informationen bleiben länger im Gehirn,
                 wenn sie bedeutungshaltige Interpretationen haben, also sinnvoll miteinander verbunden werden. Diese
@@ -336,8 +337,8 @@
             </p>
         </chapter>
 
-        <chapter title="Mnemotechniken" id="mnemotechniken">
-            <chapter title="Loci-Methode" id="loci-methode">
+        <chapter id="mnemotechniken" title="Mnemotechniken">
+            <chapter id="loci-methode" title="Loci-Methode">
                 <p>
                     Die Loci-Methode ist eine Mnemotechnik, mit der Informationen in einer fiktiven Struktur eingeordnet
                     und verknüpft werden. Genauer soll im Gedächtnistraining ein fiktiver Ort der Konzentration für uns
@@ -376,7 +377,7 @@
                 </tip>
             </chapter>
 
-            <chapter title="Gedächtnishilfen und Merksätze" id="gedaechtnishilfen-und-merksaetze">
+            <chapter id="gedaechtnishilfen-und-merksaetze" title="Gedächtnishilfen und Merksätze">
                 <p>
                     Zu den bekanntesten Gedächtnistrainings gehören <b>Gedächtnishilfen</b> (oder Eselsbrücken) und
                     <b>Merksprüche</b>. Um uns Informationen zu merken, können wir uns passende Geschichten, Sprüche
@@ -396,7 +397,7 @@
                 </tip>
             </chapter>
 
-            <chapter title="Geschichtentechnik" id="geschichtentechnik">
+            <chapter id="geschichtentechnik" title="Geschichtentechnik">
                 <p>
                     Bei der Geschichtentechnik geht es darum, unsere unverbundenen Inhalte und Begriffe in einer
                     Geschichte zusammenhängend zu <b>verknüpfen</b>. Durch Wiederholungen der Geschichte können wir uns
@@ -418,7 +419,7 @@
                 </tip>
             </chapter>
 
-            <chapter title="Körperliste" id="koerperliste">
+            <chapter id="koerperliste" title="Körperliste">
                 <p>
                     Die Körperliste ist eine Mnemotechnik, bei denen verschiedene <b>Körperteile</b> mit
                     <b>Lernbegriffen</b> assoziiert werden. Wir verbinden beispielsweise einen Begriff mit unseren
@@ -453,7 +454,7 @@
                 </tip>
             </chapter>
 
-            <chapter title="Zahl-Reim-System" id="">
+            <chapter id="" title="Zahl-Reim-System">
                 <p>
                     Gedächtnistraining mit dem Zahl-Reim-System ist möglich, indem wir zu den <b>Zahlen von 0 bis 9</b>
                     jeweils <b>ein Wort</b> zum Merken hinzufügen. Die Wörter reimen sich auf die Bezugszahlen, was bei
@@ -491,7 +492,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-386881720, Speedlearning, Steven Frank, Redline Verlag, 2020

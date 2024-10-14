@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Webbrowser" id="poweruser-webbrowser" help-id="app-webbrowser">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic help-id="app-webbrowser"
+       id="poweruser-webbrowser"
+       title="Webbrowser" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Shortcuts" id="shortcuts">
+    <chapter id="shortcuts" title="Shortcuts">
         <table style="header-row">
             <tr>
                 <td>Windows</td>
@@ -28,7 +28,7 @@
         </table>
     </chapter>
 
-    <chapter title="Seiten" id="pages">
+    <chapter id="pages" title="Seiten">
         <table style="header-row">
             <tr>
                 <td>Seite</td>
@@ -43,7 +43,7 @@
         </table>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(KURS)</b>
             JSINSTITUTE: JavaScript Essentials

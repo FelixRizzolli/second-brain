@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Funktionen und Methoden" id="swe-pk-grundlagen-funktionen">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-pk-grundlagen-funktionen"
+       title="Funktionen und Methoden"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einleitung" id="einleitung">
+    <chapter id="einleitung" title="Einleitung">
         <p>
             Je umfangreicher die Programme werden und je komplexer die Software ist, desto mehr Quelltext muss verwaltet
             werden. Dazu kommt, dass sich mit der Zeit gewisse Aufgaben wiederholen. Es ist daher nur sinnvoll, den
@@ -17,7 +17,7 @@
         </p>
     </chapter>
 
-    <chapter title="Funktionsparameter" id="funktionsparameter">
+    <chapter id="funktionsparameter" title="Funktionsparameter">
         <p>
             Mithilfe von Funktionsparametern können Informationen an eine Funktion übergeben werden, die dann innerhalb
             der Funktion zur Verfügung stehen. Um zu definieren, dass eine Funktion Parameter erwartet, werden die Namen
@@ -26,10 +26,10 @@
             Datentypen der einzelnen Parameter definieren.
         </p>
 
-        <code-block lang="javascript" collapsed-title="Funktionsdeklaration mit Parameter in JavaScript"
-                    collapsible="true">
+        <code-block collapsed-title="Funktionsdeklaration mit Parameter in JavaScript" collapsible="true"
+                    lang="javascript">
             function showMessage(message) {
-                condole.log(message);
+            condole.log(message);
             }
         </code-block>
 
@@ -43,8 +43,8 @@
             konkret der jeweiligen Funktion bzw. Methode beim Aufruf als Wert übergeben wird.
         </p>
 
-        <code-block lang="javascript" collapsed-title="Funktionsaufruf mit Argument in JavaScript"
-                    collapsible="true">
+        <code-block collapsed-title="Funktionsaufruf mit Argument in JavaScript" collapsible="true"
+                    lang="javascript">
             showMessage('Moriz: Hallo Max');
             showMessage('Max: Hallo Moriz');
         </code-block>
@@ -55,18 +55,18 @@
             entsprechenden Argumente kommasepariert hintereinander aufgeschrieben.
         </p>
 
-        <code-block lang="javascript" collapsed-title="Funktionsaufruf mit Argument in JavaScript"
-                    collapsible="true">
+        <code-block collapsed-title="Funktionsaufruf mit Argument in JavaScript" collapsible="true"
+                    lang="javascript">
             function printPersonInformation(firstName, lastName, age) {
-                console.log('Vorname: ' + firstName);
-                console.log('Nachname: ' + lastName);
-                console.log('Alter: ' + age);
+            console.log('Vorname: ' + firstName);
+            console.log('Nachname: ' + lastName);
+            console.log('Alter: ' + age);
             }
 
             printPersonInformation('Max', 'Mustermann', 44);
             printPersonInformation('Moritz', 'Mustermann', 55);
         </code-block>
-        <code-block lang="javascript" collapsed-title="Ausgabe" collapsible="true">
+        <code-block collapsed-title="Ausgabe" collapsible="true" lang="javascript">
             Vorname: Max
             Nachname: Mustermann
             Alter: 44
@@ -76,7 +76,7 @@
         </code-block>
     </chapter>
 
-    <chapter title="Rückgabewerte" id="rueckgabewerte">
+    <chapter id="rueckgabewerte" title="Rückgabewerte">
         <p>
             Genauso wie es möglich ist, über Argumente bzw. Parameter bestimmte Informationen an eine Funktion zu
             übergeben, ist es auch möglich, aus einer Funktion heraus Informationen an den aufgerufenen Code
@@ -86,8 +86,8 @@
         </p>
     </chapter>
 
-    <chapter title="Funktionen im Detail" id="detail">
-        <chapter title="Der Funktionsaufruf-Stack" id="detail-funktionsaufrufstack">
+    <chapter id="detail" title="Funktionen im Detail">
+        <chapter id="detail-funktionsaufrufstack" title="Der Funktionsaufruf-Stack">
             <p>
                 Innerhalb einer Anwendung werden alle Anweisungen der Reihe nach, also von oben nach unten, ausgeführt.
                 Trifft das Programm bei der Ausführung nun auf einen Funktionsaufruf, »springt« er in diese Funktion
@@ -105,18 +105,18 @@
                 entfernt.
             </p>
 
-            <img src="swe-pk-grundlagen-funktionen-funktionsaufrufstack.png" alt="Funktionsaufrufstack"/>
+            <img alt="Funktionsaufrufstack" src="swe-pk-grundlagen-funktionen-funktionsaufrufstack.png"/>
 
-            <code-block lang="javascript" collapsed-title="Funktionsaufruf mit Argument in JavaScript"
-                        collapsible="true">
+            <code-block collapsed-title="Funktionsaufruf mit Argument in JavaScript" collapsible="true"
+                        lang="javascript">
                 function doSomething() {
-                    doSomethingB();
+                doSomethingB();
                 }
                 function doSomethingB() {
-                    doSomethingC();
+                doSomethingC();
                 }
                 function doSomethingC() {
-                    doSomethingD();
+                doSomethingD();
                 }
                 function doSomethingD() {
 
@@ -124,13 +124,13 @@
             </code-block>
         </chapter>
 
-        <chapter title="Ausführungskontexte" id="detail-ausfuehrungskontext">
+        <chapter id="detail-ausfuehrungskontext" title="Ausführungskontexte">
             <p>
                 Immer wenn in eine neue Funktion hineingesprungen wird, wird damit auch ein neuer sogenannter
                 Ausführungskontext betreten. Dieser Ausführungskontext bestimmt u.a., welche Variablen und Funktionen
                 zur Verfügung stehen. Ein Ausführungskontext legt im Wesentlichen folgende drei Dinge fest:
             </p>
-            
+
             <list>
                 <li>
                     <b>Gültigkeitsbereich</b>: Welche Variablen, Funktionen und (im Falle eines Ausführungskontextes für
@@ -162,7 +162,7 @@
             </code-block>
         </chapter>
 
-        <chapter title="Gültigkeitsbereiche" id="detail-gueltigkeitsbereiche">
+        <chapter id="detail-gueltigkeitsbereiche" title="Gültigkeitsbereiche">
             <p>
                 Unter dem Gültigkeitsbereich bzw. auch Sichtbarkeitsberiech versteht man den Bereich in einem Programm,
                 in dem eine Variable oder Funktion gültig bzw. sichtbar ist und damit verwendet werden kann. Der
@@ -188,7 +188,7 @@
             </p>
         </chapter>
 
-        <chapter title="Kette von Gültigkeitsbereichen" id="detail-gueltigkeitsbereiche-kette">
+        <chapter id="detail-gueltigkeitsbereiche-kette" title="Kette von Gültigkeitsbereichen">
             <p>
                 Wenn innerhalb des Codes ein Bezeichner (also beispielsweise der Name einer Variablen, einer Funktion
                 oder eines Parameters) verwendet wird, es zu diesem Bezeichner aber keine Variable/Funktion/Paramerter
@@ -196,11 +196,11 @@
                 (Scope-Chain) in den vorhergehenden bzw. übergeordneten Ausführungskontexten gesucht.
             </p>
 
-            <img src="swe-pk-grundlagen-funktionen-gueltigkeitsbereichskette.png"
-                 alt="Kette von Gültigkeitsbereichen"/>
+            <img alt="Kette von Gültigkeitsbereichen"
+                 src="swe-pk-grundlagen-funktionen-gueltigkeitsbereichskette.png"/>
         </chapter>
 
-        <chapter title="Kontextobjekt" id="detail-kontextobjekt">
+        <chapter id="detail-kontextobjekt" title="Kontextobjekt">
             <p>
                 Über das Schlüsselwort <code>this</code> spricht man innerhalb einer Objektmethode (oder eines
                 Konstruktors) die jeweilige Objektinstanz an, das aktuelle Objekt, »dieses« Objekt. Genauer gesagt nenn
@@ -209,7 +209,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Rekursion" id="rekursion">
+    <chapter id="rekursion" title="Rekursion">
         <p>
             Ruft eine Funktion in ihrem Code-Block sich selbst auf, so nennt man dies Rekursion. Verwendet man die
             Rekursion, so spart man oft mehr Zeilen als es mitschleifen möglich ist. Die Rekursion eignet sich für
@@ -217,7 +217,7 @@
         </p>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836256971, "JavaScript - Das umfassende Handbuch", Philip Ackermann, 2018

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="JSON (JavaScript Object Notation)" id="json">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="json"
+       title="JSON (JavaScript Object Notation)"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Was ist JSON?" id="was-ist-json">
+    <chapter id="was-ist-json" title="Was ist JSON?">
         <p>
             JSON (JavaScript Object Notation) ist ein programmiersprachenunabhängiges kompaktes Datenformat in einer
             einfach lesbaren Textform für den Datenaustausch zwischen Anwendungen. Es gibt zahlreiche JSON-Parser und
@@ -17,14 +18,14 @@
         </p>
     </chapter>
 
-    <chapter title="Datenstrukturen und Formatdefinitionen" id="datenstrukturen-und-formatdefinitionen">
+    <chapter id="datenstrukturen-und-formatdefinitionen" title="Datenstrukturen und Formatdefinitionen">
         <p>
             Die Daten können beliebig verschachtelt werden, beispielsweise ist eine indizierte Liste (englisch "array")
             von Objekten möglich, welche wiederum arrays oder Objekte enthalten. Als Zeichenkodierung benutzt JSON
             standardmäßig UTF-8. Auch UTF-16 und UTF-32 sind möglich.
         </p>
 
-        <chapter title="JSON Datentypen" id="json-datentypen">
+        <chapter id="json-datentypen" title="JSON Datentypen">
             <p>
                 Eine JSON-Datei ist ein großes Objekt, welches aus Eigenschaften besteht. Eine Eigenschaft besteht aus
                 einem Schlüssel und einem Wert, getrennt durch einen Doppelpunkt (<code>Schlüssel : Wert</code>). Die
@@ -33,64 +34,72 @@
             </p>
 
             <list>
-                <li>der <b>Schlüssel</b> ist eine <emphasis>Zeichenkette</emphasis>.</li>
-                <li>der <b>Wert</b> ist ein beliebiges <emphasis>Element</emphasis>.</li>
+                <li>der <b>Schlüssel</b> ist eine
+                    <emphasis>Zeichenkette</emphasis>
+                    .
+                </li>
+                <li>der <b>Wert</b> ist ein beliebiges
+                    <emphasis>Element</emphasis>
+                    .
+                </li>
             </list>
 
             <table style="both">
-            <tr>
-                <td>Datentyp</td>
-                <td>Beschreibung</td>
-            </tr>
-            <tr>
-                <td>Nullwert</td>
-                <td>
-                    Der Nullwert wird durch das Schlüsselwort <code>null</code> dargestellt.
-                </td>
-            </tr>
-            <tr>
-                <td>Boolescher Wert</td>
-                <td>
-                    Ein boolescher Wert wird durch die Schlüsselwörter <code>true</code> und <code>false</code>
-                    dargestellt. Dies sind <b>keine</b> Zeichenketten. Sie werden daher, wie <code>null</code>,
-                    <b>nicht</b> in Anführungszeichen gesetzt.
-                </td>
-            </tr>
-            <tr>
-                <td>Zahl</td>
-                <td>
-                    Eine Zahl ist eine Folge der Ziffern <code>0</code>–<code>9</code>. Diese Folge kann durch ein
-                    negatives Vorzeichen <code>-</code> eingeleitet und durch einen Dezimalpunkt <code>.</code>
-                    unterbrochen sein. Die Zahl kann durch die Angabe eines Exponenten <code>e</code> oder
-                    <code>E</code> ergänzt werden, dem ein optionales Vorz eichen <code>+</code> oder <code>-</code> und
-                    eine Folge der Ziffern <code>0</code>–<code>9</code> folgt.
-                </td>
-            </tr>
-            <tr>
-                <td>Zeichenkette</td>
-                <td>
-                    beginnt und endet mit doppelten geraden Anführungszeichen (<code>"</code>). Sie kann Unicode-Zeichen
-                    und durch <code>\</code> eingeleitete Escape-Sequenzen enthalten.
-                </td>
-            </tr>
-            <tr>
-                <td>Array</td>
-                <td>
-                    beginnt mit <code>[</code> und endet mit <code>]</code>. Es enthält eine durch Kommata geteilte,
-                    indizierte Liste von Elementen gleichen oder verschiedenen Typs. Leere Arrays sind zulässig.
-                </td>
-            </tr>
-            <tr>
-                <td>Objekt</td>
-                <td>
-                    beginnt mit <code>{</code> und endet mit <code>}</code>. Es enthält eine durch Kommata geteilte,
-                    ungeordnete Liste von Eigenschaften. Objekte ohne Eigenschaften („leere Objekte“) sind zulässig.
-                </td>
-            </tr>
+                <tr>
+                    <td>Datentyp</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td>Nullwert</td>
+                    <td>
+                        Der Nullwert wird durch das Schlüsselwort <code>null</code> dargestellt.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Boolescher Wert</td>
+                    <td>
+                        Ein boolescher Wert wird durch die Schlüsselwörter <code>true</code> und <code>false</code>
+                        dargestellt. Dies sind <b>keine</b> Zeichenketten. Sie werden daher, wie <code>null</code>,
+                        <b>nicht</b> in Anführungszeichen gesetzt.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Zahl</td>
+                    <td>
+                        Eine Zahl ist eine Folge der Ziffern <code>0</code>–<code>9</code>. Diese Folge kann durch ein
+                        negatives Vorzeichen <code>-</code> eingeleitet und durch einen Dezimalpunkt <code>.</code>
+                        unterbrochen sein. Die Zahl kann durch die Angabe eines Exponenten <code>e</code> oder
+                        <code>E</code> ergänzt werden, dem ein optionales Vorz eichen <code>+</code> oder <code>-</code>
+                        und
+                        eine Folge der Ziffern <code>0</code>–<code>9</code> folgt.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Zeichenkette</td>
+                    <td>
+                        beginnt und endet mit doppelten geraden Anführungszeichen (<code>"</code>). Sie kann
+                        Unicode-Zeichen
+                        und durch <code>\</code> eingeleitete Escape-Sequenzen enthalten.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Array</td>
+                    <td>
+                        beginnt mit <code>[</code> und endet mit <code>]</code>. Es enthält eine durch Kommata geteilte,
+                        indizierte Liste von Elementen gleichen oder verschiedenen Typs. Leere Arrays sind zulässig.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Objekt</td>
+                    <td>
+                        beginnt mit <code>{</code> und endet mit <code>}</code>. Es enthält eine durch Kommata geteilte,
+                        ungeordnete Liste von Eigenschaften. Objekte ohne Eigenschaften („leere Objekte“) sind zulässig.
+                    </td>
+                </tr>
             </table>
         </chapter>
 
-        <chapter title="JSON validieren" id="json-validieren">
+        <chapter id="json-validieren" title="JSON validieren">
             <p>
                 Ist man sich nicht ganz sicher sind, ob das JSON, das erstellt wurde, gültig ist, bietet sich eines der
                 vielen Onlinetools an, um JSON auf Gültigkeit zu überprüfen, beispielsweise
@@ -99,7 +108,7 @@
             </p>
         </chapter>
 
-        <chapter title="Einschränkungen" id="einschraenkungen">
+        <chapter id="einschraenkungen" title="Einschränkungen">
             <p>
                 JSON unterstützt nicht alle von JavaScript unterstützten Datentypen. Bei nicht unterstützten Datentypen
                 wird folgendermaßen serialisiert:
@@ -120,27 +129,31 @@
         </chapter>
     </chapter>
 
-    <chapter title="Beispiel" id="beispiel">
+    <chapter id="beispiel" title="Beispiel">
         <code-block lang="json">
             {
-                "Herausgeber": "Xema",
-                "Nummer": "1234-5678-9012-3456",
-                "Deckung": 2e+6,
-                "Waehrung": "EURO",
-                "Inhaber": {
-                    "Name": "Mustermann",
-                    "Vorname": "Max",
-                    "maennlich": true,
-                    "Hobbys": ["Reiten", "Golfen", "Lesen"],
-                    "Alter": 42,
-                    "Kinder": [],
-                    "Partner": null
-                }
+            "Herausgeber": "Xema",
+            "Nummer": "1234-5678-9012-3456",
+            "Deckung": 2e+6,
+            "Waehrung": "EURO",
+            "Inhaber": {
+            "Name": "Mustermann",
+            "Vorname": "Max",
+            "maennlich": true,
+            "Hobbys": [
+            "Reiten",
+            "Golfen",
+            "Lesen"
+            ],
+            "Alter": 42,
+            "Kinder": [],
+            "Partner": null
+            }
             }
         </code-block>
     </chapter>
 
-    <chapter title="JSON Schema" id="json-schema">
+    <chapter id="json-schema" title="JSON Schema">
         <p>
             JSON Schema gibt ein JSON-basiertes Format an, um die Struktur von JSON-Daten für die Validierung,
             Dokumentation und Interaktionssteuerung zu definieren. Es enthält einen Vertrag für die JSON-Daten, die für
@@ -152,35 +165,58 @@
             Konformitätsstufen zur Verfügung.
         </p>
 
-        <chapter title="Beispiel" id="json-schema-beispiel">
+        <chapter id="json-schema-beispiel" title="Beispiel">
             <code-block lang="json">
                 {
-                    "$schema": "http://json-schema.org/draft/2019-09/schema",
-                    "title": "Politiker",
-                    "type": "object",
-                    "required": ["Vorname", "Nachname", "Geburtsdatum", "Nationalitaet"],
-                    "properties": {
-                        "Vorname": { "type": "string" },
-                        "Nachname": { "type": "string" },
-                        "Geburtsdatum": { "type": "date" },
-                        "Nationalitaet": { "type": "string" },
-                        "Partei": {
-                            "type": "object",
-                            "properties": {
-                                "Name": { "type": "string" },
-                            }
-                        },
-                        "Hauptsitz": { "type": "string" },
-                        "Gründungsdatum": { "type": "date" },
-                        "Gründungsort": { "type": "string" },
-                        "Amt": { "type": "string" }
-                    }
+                "$schema": "http://json-schema.org/draft/2019-09/schema",
+                "title": "Politiker",
+                "type": "object",
+                "required": [
+                "Vorname",
+                "Nachname",
+                "Geburtsdatum",
+                "Nationalitaet"
+                ],
+                "properties": {
+                "Vorname": {
+                "type": "string"
+                },
+                "Nachname": {
+                "type": "string"
+                },
+                "Geburtsdatum": {
+                "type": "date"
+                },
+                "Nationalitaet": {
+                "type": "string"
+                },
+                "Partei": {
+                "type": "object",
+                "properties": {
+                "Name": {
+                "type": "string"
+                },
+                }
+                },
+                "Hauptsitz": {
+                "type": "string"
+                },
+                "Gründungsdatum": {
+                "type": "date"
+                },
+                "Gründungsort": {
+                "type": "string"
+                },
+                "Amt": {
+                "type": "string"
+                }
+                }
                 }
             </code-block>
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-8362-5697-1, JavaScript, Philip Ackermann, Rheinwerk Verlag GmbH, 2019

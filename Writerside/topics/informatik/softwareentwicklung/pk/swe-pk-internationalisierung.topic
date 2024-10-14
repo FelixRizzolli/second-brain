@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Internationalisierung" id="swe-pk-internationalisierung">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-pk-internationalisierung"
+       title="Internationalisierung"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlegendes" id="grundlegendes">
+    <chapter id="grundlegendes" title="Grundlegendes">
         <p>
             Sobald eine Anwendung mehrsprachig sein soll, ist eine Internationalisierung (kurz i18n für das i und das
             letzte n sowie die dazwischen liegenden 18 Buchstaben in dem englischen Wort internationalization)
@@ -40,7 +40,7 @@
         </p>
     </chapter>
 
-    <chapter title="Begriffsdefinitionen" id="begriffsdefinitionen">
+    <chapter id="begriffsdefinitionen" title="Begriffsdefinitionen">
         <p>
             Das Festlegen von Sprache bzw. einer Region, in der eine bestimmte Sprache gesprochen wird, geschieht über
             sogenannte <b>Locales</b>. Laut Wikipedia handelt es sich dabei um einen »Einstellungssatz, der die
@@ -112,19 +112,29 @@
             Definition eines Extension Sub Tags vorangestellt wird, gefolgt von einem Schlüssel und einem Wert. Das
             Locale <code>de-DE-u-co-phonebk</code> beispielsweise definiert die Sprache Deutsch, gesprochen in
             Deutschland, wobei als Sortierreihenfolge (<code>co</code> für collation) die Sortierung wie im deutschen
-            Telefonbuch (<code>phonebk</code> als Abkürzung für <emphasis>phonebook</emphasis>) verwendet wird.
+            Telefonbuch (<code>phonebk</code> als Abkürzung für
+            <emphasis>phonebook</emphasis>
+            ) verwendet wird.
         </p>
         <p>
             Weitere Möglichkeiten, die sich über die »BCP 47 Extension U« ergeben, sind die Definition des zu
-            verwendenden Kalenders (über den Schlüssel <code>ca</code> für <emphasis>calender</emphasis>, also
+            verwendenden Kalenders (über den Schlüssel <code>ca</code> für
+            <emphasis>calender</emphasis>
+            , also
             beispielsweise <code>de-DE-u-ca-buddhist</code>), der zu verwendenden Währung (über den Schlüssel
-            <code>cu</code> für <emphasis>currency</emphasis>), des zu verwendenden Zahlensystems (über den Schlüssel
-            <code>nu</code> für <emphasis>numeric system</emphasis>) und der zu verwendenden Zeitzone (über den
-            Schlüssel <code>tz</code> für <emphasis>timezone</emphasis>).
+            <code>cu</code> für
+            <emphasis>currency</emphasis>
+            ), des zu verwendenden Zahlensystems (über den Schlüssel
+            <code>nu</code> für
+            <emphasis>numeric system</emphasis>
+            ) und der zu verwendenden Zeitzone (über den
+            Schlüssel <code>tz</code> für
+            <emphasis>timezone</emphasis>
+            ).
         </p>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836256971, "JavaScript - Das umfassende Handbuch", Philip Ackermann, 2018

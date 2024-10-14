@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Bitmap-Index" id="sql-ddl-index-bitmap">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-ddl-index-bitmap"
+       title="Bitmap-Index"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einleitung" id="einleitung">
+    <chapter id="einleitung" title="Einleitung">
         <p>
             Ein Bitmap-Index ist ein Datenbankindex, der dazu dient, mehrdimensionale Daten effizient zu indizieren.
             Aufgrund seiner Eigenschaften findet der Bitmap-Index vor allem bei Data Warehouses Einsatz. Die Bezeichnung
@@ -15,7 +15,7 @@
             von unterschiedlichen Werten).
         </p>
 
-        <chapter title="Beispiel" id="einleitung-beispiel">
+        <chapter id="einleitung-beispiel" title="Beispiel">
             <table>
                 <tr>
                     <td>name</td>
@@ -68,13 +68,17 @@
             </table>
 
             <p>
-                In einen Index einer Personendatenbank werden die Attribute <emphasis>Geschlecht</emphasis> (zwei
-                mögliche Werte, Kardinalität = 2) und <emphasis>Familienstand</emphasis> (Kardinalität = 3) eingetragen.
+                In einen Index einer Personendatenbank werden die Attribute
+                <emphasis>Geschlecht</emphasis>
+                (zwei
+                mögliche Werte, Kardinalität = 2) und
+                <emphasis>Familienstand</emphasis>
+                (Kardinalität = 3) eingetragen.
             </p>
         </chapter>
     </chapter>
 
-    <chapter title="Funktionsweise" id="funktionsweise">
+    <chapter id="funktionsweise" title="Funktionsweise">
         <p>
             Wie bei allen Datenbankindizes existiert von jedem dieser Einträge ein Verweis auf einen (externen)
             Datenbankeintrag.
@@ -92,7 +96,7 @@
         </p>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(WEBSEITE)</b>
             <a href="https://de.wikipedia.org/wiki/Bitmap-Index" ignore-vars="true">

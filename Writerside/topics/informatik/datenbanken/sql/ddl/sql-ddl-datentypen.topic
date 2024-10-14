@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Datentypen" id="sql-ddl-datentypen">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-ddl-datentypen"
+       title="Datentypen"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlagen" id="grundlagen">
+    <chapter id="grundlagen" title="Grundlagen">
         <p>
             Einer Spalte, die in einer Tabelle angelegt werden soll, muss immer ein Datentyp zugeordnet werden. Dieser
             Datentyp enthält Informationen darüber, welche Elemente die Spalte speichern kann.
@@ -21,7 +21,7 @@
         </p>
     </chapter>
 
-    <chapter title="Datentypen für ganze Zahlen" id="ganze-zahlen">
+    <chapter id="ganze-zahlen" title="Datentypen für ganze Zahlen">
         <table>
             <tr>
                 <td>Datentyp</td>
@@ -54,14 +54,14 @@
                 <td>von -9223372036854775808 bis 9223372036854775807 oder von 0 bis 18446744073709551615</td>
             </tr>
         </table>
-        
+
         <p>
             Den Datentypen für ganze Zahlen kann man noch das Schlüsselwort <code>UNSIGNED</code> oder
             <code>SIGNED</code> anhängen, dadurch wird bestimmt, ob die Zahl ein Vorzeichen haben kann
             (<code>SIGNED</code>) oder nicht (<code>UNSIGNED</code>). Ohne Schlüsselwort wird standardmäßig mit
             Vorzeichen (<code>SIGNED</code>) gewählt.
         </p>
-        
+
         <list>
             <li>
                 <code>TINYINT</code> = von -128 bis 127
@@ -73,12 +73,12 @@
                 <code>TINYINT UNSIGNED</code> = von 0 bis 255
             </li>
         </list>
-        
+
         <p>
             Nicht alle Datenbanksysteme verwendet gleich viele oder dieselben Namen für Datentypen. Hierbei muss in der
             jeweiligen Dokumentation nachgeschlagen werden welche Datentypen verwendet werden können.
         </p>
-        
+
         <list>
             <li>
                 MySQL verwendet <code>TINYINT</code>, <code>SMALLINT</code>, <code>MEDIUMINT</code>, <code>INT</code>
@@ -94,7 +94,7 @@
         </list>
     </chapter>
 
-    <chapter title="Datentypen für rationale Zahlen" id="rationale-zahlen">
+    <chapter id="rationale-zahlen" title="Datentypen für rationale Zahlen">
         <p>
             In SQL unterscheidet man grundsätzlich zwischen zwei Datentyparten von rationalen Zahlen: den
             Fließkomma-Datentypen und den Fixkomma-Datentypen. Fixkomma-Datentypen werden dann eingesetzt, wenn große
@@ -116,8 +116,17 @@
         </p>
         <p>
             Hinter der Datentypbezeichnung können in einfachen Klammern umschlossen zwei Argumente übergeben werden. Das
-            erste Argument <emphasis>p</emphasis> steht für <emphasis>precision</emphasis>, das zweite
-            <emphasis>s</emphasis> steht für <emphasis>scale</emphasis>. Mit <emphasis>p</emphasis> wird die
+            erste Argument
+            <emphasis>p</emphasis>
+            steht für
+            <emphasis>precision</emphasis>
+            , das zweite
+            <emphasis>s</emphasis>
+            steht für
+            <emphasis>scale</emphasis>
+            . Mit
+            <emphasis>p</emphasis>
+            wird die
             Gesamtanzahl der Ziffern des numerischen Wertes angegeben.
         </p>
         <p>
@@ -125,7 +134,7 @@
         </p>
     </chapter>
 
-    <chapter title="Datentypen für Datum und Zeit" id="datetime">
+    <chapter id="datetime" title="Datentypen für Datum und Zeit">
         <table>
             <tr>
                 <td>Datentyp</td>
@@ -179,7 +188,7 @@
         </list>
     </chapter>
 
-    <chapter title="Datentypen für Zeichenketten" id="zeichenketten">
+    <chapter id="zeichenketten" title="Datentypen für Zeichenketten">
         <p>
             Zeichenketten bestehen aus einer Aneinanderreihung von einzelnen Zeichen. Hierbei ist der Zeichensatz von
             großer Bedeutung. Der Zeichensatz UTF-8 ist einer der am weitesten verbreiteten Implementierungen von
@@ -188,10 +197,14 @@
             Zahlen) eine eindeutige Nummer fest. Die unterschiedlichen Codelisten enthalten für diese Vielzahl von
             Sprachen und Dialekten Zeichensätze, in denen die Zeichen einer Sprache hinterlegt sind. Zeichensätze
             stellen die Basis dar, um mit Zeichenketten arbeiten zu können. Für die deutsche Sprache sind
-            Zeichencodelisten wie <emphasis>Basic Latin</emphasis> und <emphasis>Latin 1 Supplement</emphasis> wichtig,
+            Zeichencodelisten wie
+            <emphasis>Basic Latin</emphasis>
+            und
+            <emphasis>Latin 1 Supplement</emphasis>
+            wichtig,
             da hier sämtliche Zeichen der deutschen Sprache hinterlegt sind.
         </p>
-        
+
         <table>
             <tr>
                 <td>DATENTYP</td>
@@ -227,7 +240,7 @@
         </p>
     </chapter>
 
-    <chapter title="Datentypen umwandeln" id="typkonvertierung">
+    <chapter id="typkonvertierung" title="Datentypen umwandeln">
         <p>
             Beim Arbeiten mit Spaltenwerten muss sichergestellt werden, dass sie zum jeweiligen Datentyp passen. Das
             kommt beispielsweise auch bei Berechnungen und Vergleichen vor. SQL bietet die
@@ -236,7 +249,7 @@
             werden können. Ein Datum lässt sich z.B. nicht in einer ganzen Zahl umwandeln oder umgekehrt. In folgenden
             Situationen kann es notwendig sein eine Typkonvertierung vorzunehmen:
         </p>
-        
+
         <list>
             <li>
                 bei der Verwendung von arithmetischen Operatoren (<code>+</code>, <code>-</code>, <code>*</code>,
@@ -264,7 +277,7 @@
             impliziter Typkonvertierung (implizit bedeutet so viel wie bereits enthalten sein).
         </p>
 
-        <chapter title="Implizite Typkonvertierung" id="typkonvertierung-implizit">
+        <chapter id="typkonvertierung-implizit" title="Implizite Typkonvertierung">
             <p>
                 Wenn die Datentypen innerhalb einer Operation oder eines Vergleichs in einer <code>WHERE</code>-Klausel
                 nicht kompatibel sind und keine Konvertierungsfunktion verwendet wird, versucht eine Datenbank
@@ -350,7 +363,7 @@
             </table>
         </chapter>
 
-        <chapter title="Explizite Typkonvertierung" id="typkonvertierung-explizit">
+        <chapter id="typkonvertierung-explizit" title="Explizite Typkonvertierung">
             <p>
                 Eine explizite Typkonvertierung wird mit der Skalarfunktion <code>CAST</code> realisiert. Hier wird ein
                 Spalten- oder Literalwert aus einem gegebenen Datentyp in einem Zieldatentyp konvertiert, der explizit
@@ -383,7 +396,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

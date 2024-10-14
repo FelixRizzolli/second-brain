@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="INDEX: Performance von Abfragen optimieren" id="sql-ddl-index">
-    <show-structure for="chapter,procedure" depth="2"/>
-    
-    <chapter title="INDEX" id="index">
+<topic id="sql-ddl-index"
+       title="INDEX: Performance von Abfragen optimieren"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
+
+    <chapter id="index" title="INDEX">
         <p>
             Abfragen auf Tabellen, die sehr viele Zeilen enthalten, nehmen schon mal etwas Zeit in Anspruch. Das
             betrifft insbesondere Abfragen mit einer <code>WHERE</code>-Klausel, mit der gezielt anhand eines Kriteriums
@@ -15,7 +15,7 @@
             großen Datenaufkommen performant zu arbeiten.
         </p>
 
-        <chapter title="Einführung" id="index-einfuehrung">
+        <chapter id="index-einfuehrung" title="Einführung">
             <p>
                 Das Arbeiten mit einem Index ähnelt dem mit einem Telefonbuch. Ein Telefonbuch ist in der Regel
                 alphabetisch sortiert. Hier hat man es mit einem Index zu tun, der es ermöglicht, sehr schnell gemäß dem
@@ -31,10 +31,10 @@
 
             <code-block lang="sql">
                 CREATE
-                 INDEX index_name
-                    ON table_name (  column1
-                     ,  column2
-                     ,  ... )
+                INDEX index_name
+                ON table_name ( column1
+                , column2
+                , ... )
                 ;
             </code-block>
 
@@ -46,10 +46,10 @@
             <code-block lang="sql">
                 CREATE
                 UNIQUE
-                 INDEX index_name
-                    ON table_name (  column1
-                     ,  column2
-                     ,  ... )
+                INDEX index_name
+                ON table_name ( column1
+                , column2
+                , ... )
                 ;
             </code-block>
 
@@ -62,8 +62,8 @@
             </code-block>
         </chapter>
     </chapter>
-    
-    <chapter title="Indextypen" id="indextypen">
+
+    <chapter id="indextypen" title="Indextypen">
         <p>
             Es gibt unterschiedliche Indextypen, die im Zusammenhang mit Datenbaken verwendet werden können:
         </p>
@@ -108,7 +108,7 @@
         </list>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

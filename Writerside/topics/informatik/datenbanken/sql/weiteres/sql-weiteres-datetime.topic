@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Datum und Uhrzeit" id="sql-weiteres-datetime">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-weiteres-datetime"
+       title="Datum und Uhrzeit"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
 
-    <chapter title="Grundlagen" id="grundlagen">
+    <chapter id="grundlagen" title="Grundlagen">
         <p>
-            SQL bietet einige Skalarfunktionen an, die es ermöglichen, Zeit- und Datumsangaben zu formatieren und zu 
-            extrahieren. Euch eine Addition oder Subtraktion mit Datums- bzw. Zeitangaben ist möglich. Die Umsetzung ist 
+            SQL bietet einige Skalarfunktionen an, die es ermöglichen, Zeit- und Datumsangaben zu formatieren und zu
+            extrahieren. Euch eine Addition oder Subtraktion mit Datums- bzw. Zeitangaben ist möglich. Die Umsetzung ist
             je nach verwendetem Datenbanksystem verschieden.
         </p>
 
-        <chapter title="Datumsformate" id="grundlagen-datumsformate">
+        <chapter id="grundlagen-datumsformate" title="Datumsformate">
             <p>
                 Leider hat man sich auf ein weltweit gültiges Datumsformat nicht geeinigt. Stadtessen gibt es eine Fülle
                 von gängigen Datumsformaten. Somit organisiert jede Datenbank ihre Datentypen etwas anders. Das gilt
@@ -24,7 +24,7 @@
             <p>
                 Beispiele:
             </p>
-            
+
             <list>
                 <li><code>20.08.1970</code>, in Deutschland und anderen Ländern gebräuchliches Format</li>
                 <li><code>1970-08-20</code>, Datumsformat gemäß ISO 8601</li>
@@ -33,7 +33,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Ermittlung von Zeit- und Datumswerten" id="ermittlung">
+    <chapter id="ermittlung" title="Ermittlung von Zeit- und Datumswerten">
         <p>
             Für die Arbeit mit Zeit- und Datumsangaben sieht der SQL-Standard folgende Skalarfunktionen vor:
         </p>
@@ -59,14 +59,14 @@
         </code-block>
     </chapter>
 
-    <chapter title="Formatierung von Zeit- und Datumsangaben" id="formatierung">
+    <chapter id="formatierung" title="Formatierung von Zeit- und Datumsangaben">
         <p>
             Manchmal ist es gewünscht, ein Datum in einem anderen Format als ISO 8901 darzustellen. Der SQL-Standard
             gibt hier leider keine Vorgaben. Die einzelnen Datenbanksysteme haben dafür meist sehr variierende
             Funktionsnamen und unterscheiden sich auch bei den sog. Pattern (englisch für Muster) die auf einem
             Datumswert angewendet werden.
         </p>
-        
+
         <list>
             <li>
                 <b>MySQL</b> verwendet bezeichnet die Funktion <code>DATE_FORMAT(datum, format)</code>
@@ -79,7 +79,7 @@
         </list>
     </chapter>
 
-    <chapter title="Extraktion von Zeit- und Datumsangaben" id="extraktion">
+    <chapter id="extraktion" title="Extraktion von Zeit- und Datumsangaben">
         <p>
             Mit der Skalarfunktion <code>EXTRACT(teileinesdatums FROM datum)</code> bietet der SQL-Standard eine
             Funktion mit der Teile eines Datums extrahiert werden können. Dies kann der Tag eines Monats, ein Monat
@@ -89,26 +89,26 @@
 
         <code-block lang="sql">
             /* Beispiel mit einer MySQL-Datenbank */
-            SELECT  vorname
-                 ,  nachname
-                 ,  EXTRACT(year FROM gebdatum) AS gebdatumjahr
-                 ,  EXTRACT(year FROM eintrittsdatum) AS eintrittsdatumjahr
+            SELECT vorname
+            , nachname
+            , EXTRACT(year FROM gebdatum) AS gebdatumjahr
+            , EXTRACT(year FROM eintrittsdatum) AS eintrittsdatumjahr
             FROM mitarbeiter
             ;
         </code-block>
 
         <code-block lang="sql">
             /* Beispiel mit Microsoft SQL Server */
-            SELECT  vorname
-                 ,  nachname
-                 ,  DATEPART(year, gebdatum) AS gebdatumjahr
-                 ,  DATEPART(year, eintrittsdatum) AS eintrittsdatumjahr
-              FROM mitarbeiter
+            SELECT vorname
+            , nachname
+            , DATEPART(year, gebdatum) AS gebdatumjahr
+            , DATEPART(year, eintrittsdatum) AS eintrittsdatumjahr
+            FROM mitarbeiter
             ;
         </code-block>
     </chapter>
 
-    <chapter title="Berechnungen mit Daten" id="berechnungen">
+    <chapter id="berechnungen" title="Berechnungen mit Daten">
         <p>
             Auch beim Rechnen mit Daten bieten die SQL-Dialekte der einzelnen Datenbanksysteme unterschiedliche Methoden
             an.
@@ -139,7 +139,7 @@
         </code-block>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

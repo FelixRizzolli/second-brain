@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Glukose" id="glukose" help-id="Glukose">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic help-id="Glukose"
+       id="glukose"
+       title="Glukose" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Was ist Glukose?" id="was-ist-glukose">
+    <chapter id="was-ist-glukose" title="Was ist Glukose?">
         <p>
             Pflanzen stellen mithilfe von Sonnenlicht, Kohlendioxid und Wasser organisches Material her. Der Name für
             diesen Prozess lautet Fotosynthese, und sein Endprodukt heißt Glukose. Glukose ist ein äußerst vielseitiger
@@ -29,15 +29,15 @@
         </p>
     </chapter>
 
-    <chapter title="Glukose und unsere Gesundheit" id="glukose-und-unsere-gesundheit">
-        <chapter title="Zellenergie" id="zellenergie">
+    <chapter id="glukose-und-unsere-gesundheit" title="Glukose und unsere Gesundheit">
+        <chapter id="zellenergie" title="Zellenergie">
             <p>
                 Die Mitochondrien sind überall in unserem Körper aktiv und wandeln Glukose und Sauerstoff in Zellenergie
                 um.
             </p>
         </chapter>
 
-        <chapter title="Glukosespitzen" id="glukosespitzen">
+        <chapter id="glukosespitzen" title="Glukosespitzen">
             <p>
                 Eine Glukosespitze ist, wenn der Blutzuckerspiegel nach dem Essen in kurzer Zeit sehr stark ansteigt -
                 kurzgesagt ein Blutzuckerhoch. Blutzucker wird in Milligramm pro Deziliter angegeben (mg/dl). Der
@@ -55,8 +55,8 @@
             </p>
         </chapter>
 
-        <chapter title="Fetteinlagerungen und Entzündungen im Körper"
-                 id="fetteinlagerungen-und-entzuendungen-im-koerper">
+        <chapter id="fetteinlagerungen-und-entzuendungen-im-koerper"
+                 title="Fetteinlagerungen und Entzündungen im Körper">
             <p>
                 Ständige Glukosespitzen führen zu Fetteinlagerungen und Entzündungen im Körper führen. Die Folgen
                 reichen von Fettleber bis hin zu Übergewicht und schlechtem Cholesterin im Blutkreislauf, was wiederum
@@ -65,8 +65,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Glukosespitzen vermeiden" id="glukosespitzen-vermeiden">
-        <chapter title="Die optimale Essreihenfolge" id="die-optimale-essreihenfolge">
+    <chapter id="glukosespitzen-vermeiden" title="Glukosespitzen vermeiden">
+        <chapter id="die-optimale-essreihenfolge" title="Die optimale Essreihenfolge">
             <p>
                 Wenn wir Stärke oder Zucker zu uns nehmen, zum Beispiel in Form von Nudeln oder Weißbrot, rutschen diese
                 fast ungehindert in den Darm, wo sie augenblicklich in Glukose umgewandelt werden und ins Blut strömen.
@@ -85,7 +85,7 @@
             </p>
         </chapter>
 
-        <chapter title="Mehr grünes Gemüse" id="mehr-gruenes-gemuese">
+        <chapter id="mehr-gruenes-gemuese" title="Mehr grünes Gemüse">
             <p>
                 In grünem Gemüse kommen sehr viele Ballaststoffe vor. Ballaststoffe unterstützen die guten Bakterien in
                 unserem Darm, reduzieren den Cholesterinwert und verlangsamen die Aufnahme von Glukose. Ballaststoffe
@@ -95,7 +95,7 @@
             </p>
         </chapter>
 
-        <chapter title="Der Morgen macht den Tag" id="der-morgen-macht-den-tag">
+        <chapter id="der-morgen-macht-den-tag" title="Der Morgen macht den Tag">
             <p>
                 Bei vielen Haushalten besteht das Frühstück traditionell aus einer gehörigen Portion Zucker. Im Jahr
                 2018 führten Forschende der Standford University eine Studie durch, bei der 20 gesunde Personen eine
@@ -115,7 +115,7 @@
 
         </chapter>
 
-        <chapter title="Es gibt keinen guten Zucker" id="es-gibt-keinen-guten-zucker">
+        <chapter id="es-gibt-keinen-guten-zucker" title="Es gibt keinen guten Zucker">
             <p>
                 Viele Menschen glauben, dass natürliche Zuckerprodukte wie Honig oder Säfte automatisch besser seien als
                 industrielle Zuckerarten. Es ist ein Irrglaube zu denken, es gäbe einen "guten" und "schlechten Zucker.
@@ -126,7 +126,7 @@
             </p>
         </chapter>
 
-        <chapter title="Obst ist besser als Süßigkeiten" id="obst-ist-besser-als-suessigkeiten">
+        <chapter id="obst-ist-besser-als-suessigkeiten" title="Obst ist besser als Süßigkeiten">
             <p>
                 Eine Banane ist besser als eine Handvoll Gummibärchen, da das Obst immerhin noch geringe Mengen an
                 Ballaststoffen enthält, die die Glukosespitze etwas abflachen können. Das gilt allerdings nur für Obst
@@ -136,7 +136,7 @@
             </p>
         </chapter>
 
-        <chapter title="Süßstoffe" id="suessstoffe">
+        <chapter id="suessstoffe" title="Süßstoffe">
             <p>
                 Einige Stoffe wie Aspartam, das zum Beispiel gern in zuckerfreien Energy-Drinks zugesetzt wird, stehen
                 unter Verdacht, die Insulinwerte in die Höhe zu treiben, was zu verstärkter Fetteinlagerung führt.
@@ -151,7 +151,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3453605992, Der Glukose-Trick, Jassie Ichauspe, Heyne Verlag, 2022-01-10

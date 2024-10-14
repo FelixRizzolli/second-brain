@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="FQ - Finanzielle Intelligenz" id="finanzielle-intelligenz">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="finanzielle-intelligenz"
+       title="FQ - Finanzielle Intelligenz"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einführung" id="einfuehrung">
-        <chapter title="Warum die Reichen immer reicher werden" id="warum-die-reichen-immer-reicher-werden">
+    <chapter id="einfuehrung" title="Einführung">
+        <chapter id="warum-die-reichen-immer-reicher-werden" title="Warum die Reichen immer reicher werden">
             <p>
                 Einer der Gründe warum die Reichen immer reicher, die Armen immer ärmer werden und die Angehörigen der
                 Mittelschicht sich mit Schulden herumschlagen, liegt darin, dass der Umgang mit Geld zu Hause und nicht
@@ -24,7 +25,7 @@
                 Schwierigkeiten kämpfen.
             </p>
         </chapter>
-        <chapter title="Wie kann ich mir das leisten?" id="wie-kann-ich-mir-das-leisten">
+        <chapter id="wie-kann-ich-mir-das-leisten" title="Wie kann ich mir das leisten?">
             <p>
                 Wenn wir uns gestehen »Das kann ich mir nicht leisten«, stellt das Gehirn die Arbeit ein. Die Frage »Wie
                 kann ich mir das leisten?« dagegen regt zum Nachdenken an. Damit ist nicht gemeint, dass man mit dieser
@@ -32,7 +33,7 @@
             </p>
         </chapter>
     </chapter>
-    <chapter title="Die Definition von Armut" id="die-definition-von-armut">
+    <chapter id="die-definition-von-armut" title="Die Definition von Armut">
         <tip>
             »Poverty is a state or condition in which one lacks the financial resources and essentials for a certain
             standard of living.«
@@ -41,7 +42,7 @@
             Armut ist, wenn wir nicht genug finanzielle Ressourcen und Mittel besitzen, um einen gewissen Lebensstandard
             aufrechtzuerhalten. Dabei gibt es zwei Lösungsansätze dieser Armut:
         </p>
-        <chapter title="Den Lebensstandard senken" id="den-lebensstandard-senken">
+        <chapter id="den-lebensstandard-senken" title="Den Lebensstandard senken">
             <p>
                 Wir senken den Lebensstandard. Den Lebensstandard, den wir versuchen, aufrechtzuerhalten definieren wir
                 und können ihn somit senken und auch heben.
@@ -64,7 +65,7 @@
                 wir tatsächlich unser Leben – uns desto unfreier sind wir.
             </p>
         </chapter>
-        <chapter title="Die finanziellen Ressourcen erhöhen" id="die-finanziellen-ressourcen-erhoehen">
+        <chapter id="die-finanziellen-ressourcen-erhoehen" title="Die finanziellen Ressourcen erhöhen">
             <tip>
                 <p>
                     »Es gibt drei Bereiche, in denen ein Mensch der gut und weise sein will, ausgebildet werden muss.
@@ -100,12 +101,12 @@
             </p>
         </chapter>
     </chapter>
-    <chapter title="Fachgebiete des finanziellen IQs" id="fachgebiete-des-finanziellen-iqs">
+    <chapter id="fachgebiete-des-finanziellen-iqs" title="Fachgebiete des finanziellen IQs">
         <p>
             Finanzieller IQ ist finanzielle Intelligenz als Ergebnis finanzieller Bildung. Leute mit hoher finanzieller
             Intelligenz können das Geld anderer nutzen, um reich zu werden.
         </p>
-        <list style="decimal" start="2">
+        <list start="2" style="decimal">
             <li>
                 <b>Buchhaltung</b> – Es ist eine lebenswichtige Fähigkeit, wenn man ein Imperium aufbauen möchte. Je
                 höher die Summe, für die man verantwortlich ist, desto mehr Genauigkeit ist erforderlich, sonst bricht
@@ -132,7 +133,8 @@
 
                 <list style="alpha-lower">
                     <li>
-                        <emphasis>Steuervorteile.</emphasis> Ein Unternehmen hat viele Möglichkeiten, die ein
+                        <emphasis>Steuervorteile.</emphasis>
+                        Ein Unternehmen hat viele Möglichkeiten, die ein
                         Angestellter nicht hat. So darf es zum Beispiel Kosten in den Vorsteuerabzug einbeziehen. Es
                         handelt sich um ein richtiges Fachgebiet, das zwar spannend ist, aber mit dem man sich nicht
                         unbedingt beschäftigen muss, sei denn, man hat ziemlich hohe Vermögenswerte oder ein großes
@@ -146,7 +148,8 @@
                         eines Wagens, die meisten Essen im Restaurant, ...
                     </li>
                     <li>
-                        <emphasis>Schutz vor Justizverfolgung.</emphasis> Heutzutage leben wir in einer prozesssüchtigen
+                        <emphasis>Schutz vor Justizverfolgung.</emphasis>
+                        Heutzutage leben wir in einer prozesssüchtigen
                         Gesellschaft. Jeder will ein Stück von dem, das man erschafft. Die Reichen verbergen viel von
                         ihrem Vermögen, indem sie die Möglichkeiten wie die Gründung eines Unternehmens oder
                         Treuhandgesellschaft nutzen, um die eigenen Vermögenswerte vor Gläubigern zu schützen. Wenn
@@ -166,7 +169,7 @@
             Freundes oder Beraters.
         </p>
     </chapter>
-    <chapter title="Vermögenswerte vs. Verbindlichkeiten" id="vermoegen-vs-verbindlichkeiten">
+    <chapter id="vermoegen-vs-verbindlichkeiten" title="Vermögenswerte vs. Verbindlichkeiten">
         <table>
             <tr>
                 <td>Arm</td>
@@ -175,13 +178,15 @@
             </tr>
             <tr>
                 <td>
-                    <img src="rich-dad-poor-dad-gewinn-und-verlustrechnung-arm.png" alt="" width="250" style="inline"/>
+                    <img alt="" src="rich-dad-poor-dad-gewinn-und-verlustrechnung-arm.png" style="inline" width="250"/>
                 </td>
                 <td>
-                    <img src="rich-dad-poor-dad-gewinn-und-verlustrechnung-mittelschicht.png" alt="" width="250" style="inline"/>
+                    <img alt="" src="rich-dad-poor-dad-gewinn-und-verlustrechnung-mittelschicht.png" style="inline"
+                         width="250"/>
                 </td>
                 <td>
-                    <img src="rich-dad-poor-dad-gewinn-und-verlustrechnung-reich.png" alt="" width="250" style="inline"/>
+                    <img alt="" src="rich-dad-poor-dad-gewinn-und-verlustrechnung-reich.png" style="inline"
+                         width="250"/>
                 </td>
             </tr>
             <tr>
@@ -237,7 +242,7 @@
             </li>
         </list>
 
-        <chapter title="Vermögenswerte (Beispiele)" id="vermoegenswerte-beispiele">
+        <chapter id="vermoegenswerte-beispiele" title="Vermögenswerte (Beispiele)">
             <list>
                 <li>
                     Firmen, die nicht die eigene Anwesenheit erfordern: Sie gehören einem, aber werden von anderen
@@ -263,7 +268,7 @@
                 </li>
             </list>
         </chapter>
-        <chapter title="Vermögen vs. Reichtum" id="vermoegen-vs-reichtum">
+        <chapter id="vermoegen-vs-reichtum" title="Vermögen vs. Reichtum">
             <p>
                 Es gibt einen Unterschied zwischen Reichtum und Vermögen. Der Begriff Vermögen wird folgendermaßen
                 definiert: »Die Anzahl der Tage, die man überleben kann, ohne selbst zu arbeiten (oder ohne dass ein
@@ -276,12 +281,12 @@
             </p>
         </chapter>
     </chapter>
-    <chapter title="Hindernisse überwinden" id="hindernisse-ueberwinden">
+    <chapter id="hindernisse-ueberwinden" title="Hindernisse überwinden">
         <p>
             Die fünf wichtigsten Gründe, weshalb finanziell gebildete Leute noch immer keinen reichlichen Cashflow
             generieren sind: Angst, Zynismus, Faulheit, schlechte Gewohnheiten und Arroganz.
         </p>
-        <chapter title="Angst überwinden" id="angst-ueberwinden">
+        <chapter id="angst-ueberwinden" title="Angst überwinden">
             <p>
                 Niemand verliert gern Geld. Die Einzigen, die beim Investieren noch nie Geld verloren haben, sind die,
                 die es noch nie gemacht haben. Jeder fürchtet sich davor, Geld zu verlieren; entscheidend ist, wie man
@@ -310,7 +315,7 @@
                 richtige Haltung gegenüber Fehlschlägen.
             </p>
         </chapter>
-        <chapter title="Zynismus überwinden" id="zynismus-ueberwinden">
+        <chapter id="zynismus-ueberwinden" title="Zynismus überwinden">
             <p>
                 Ob nun unsere eigenen Selbstzweifel oder die Zweifel der anderen, oft erlauben wir ihnen, uns am Handeln
                 zu hindern. Wir spielen auf Sicherheit und verpassen die guten Gelegenheiten. Es bedarf oft großen
@@ -323,7 +328,7 @@
                 selbst im Weg, weil sie sich diesem Investmenttool verschließen.
             </p>
         </chapter>
-        <chapter title="Faulheit überwinden" id="faulheit-ueberwinden">
+        <chapter id="faulheit-ueberwinden" title="Faulheit überwinden">
             <p>
                 Eine der banalsten Firmen der Faulheit ist es, beschäftigt zu sein. Zu beschäftigt, um sich um
                 Wohlstand, Gesundheit oder Beziehungen zu kümmern. Anstatt zu sagen »Ich kann mir das nicht leisten«,
@@ -332,7 +337,7 @@
                 Geist.
             </p>
         </chapter>
-        <chapter title="Schlechte Gewohnheiten überwinden" id="schlechte-gewohnheiten-ueberwinden">
+        <chapter id="schlechte-gewohnheiten-ueberwinden" title="Schlechte Gewohnheiten überwinden">
             <p>
                 Wenn wir Erfolg haben wollen, müssen wir schlechte Gewohnheiten ablegen und sie mit guten Gewohnheiten
                 ersetzen. Eine Möglichkeit wäre immer zuerst sich selbst zu bezahlen, selbst wenn das Geld knapp ist und
@@ -341,7 +346,7 @@
                 wie man zusätzlich Einkommen generiert, um die Gläubiger zu zahlen, macht einem finanziell stärker.
             </p>
         </chapter>
-        <chapter title="Arroganz überwinden" id="arroganz-ueberwinden">
+        <chapter id="arroganz-ueberwinden" title="Arroganz überwinden">
             <p>
                 Viele Leute verstecken hinter der Arroganz nur die eigene Dummheit. Solche Leute plustern sich in
                 Diskussionen aggressiv auf, um Recht zu behalten, und es wird klar, dass sie keine Ahnung haben, wovon
@@ -350,8 +355,8 @@
             </p>
         </chapter>
     </chapter>
-    <chapter title="Cashflow Quadrant" id="cashflow-quadrant">
-        <img src="rich-dad-poor-dad-cashflow-quadrant.png" alt="" width="250" style="inline"/>
+    <chapter id="cashflow-quadrant" title="Cashflow Quadrant">
+        <img alt="" src="rich-dad-poor-dad-cashflow-quadrant.png" style="inline" width="250"/>
         <table style="header-column">
             <tr>
                 <td><b>E</b>mployee</td>
@@ -406,8 +411,8 @@
             Probleme, mit denen wir beim Wechsel von Feldern zu kämpfen haben, wurzeln häufig in unserem Charakter.
             Diesen gilt es dann zu ändern.
         </p>
-        <chapter title="Employee – der Angestellte" id="employee">
-            <chapter title="Wesensmerkmale" id="employee-wesensmerkmale">
+        <chapter id="employee" title="Employee – der Angestellte">
+            <chapter id="employee-wesensmerkmale" title="Wesensmerkmale">
                 <p>
                     Das Wort »sicher« wird häufig als Reaktion auf das Gefühl der Angst verwendet. Jemand, der Angst
                     empfindet und sein Bedürfnis nach Sicherheit artikuliert, kommt meist aus Feld E. Wenn es um Geld
@@ -432,8 +437,8 @@
                 </p>
             </chapter>
         </chapter>
-        <chapter title="Self-Employed – der Selbstständige" id="selfemployed">
-            <chapter title="Wesensmerkmale" id="selfemployed-wesensmerkmale">
+        <chapter id="selfemployed" title="Self-Employed – der Selbstständige">
+            <chapter id="selfemployed-wesensmerkmale" title="Wesensmerkmale">
                 <p>
                     Dies sind Menschen, die ihr eigener Chef sein oder ihr »eigenes Ding aufziehen« wollen, die
                     »Do-it-yourself«-Menschen.
@@ -451,8 +456,8 @@
                 </p>
             </chapter>
         </chapter>
-        <chapter title="Business owner – der Geschäftsinhaber" id="businessowner">
-            <chapter title="Wesensmerkmale" id="businessowner-wesensmerkmale">
+        <chapter id="businessowner" title="Business owner – der Geschäftsinhaber">
+            <chapter id="businessowner-wesensmerkmale" title="Wesensmerkmale">
                 <p>
                     Diese Gruppe von Leuten könnte man fast als das Gegenteil der »S«-Gruppe bezeichnen. Ein wirklicher
                     »B« liebt es, sich mit cleveren Leuten aus allen vier Kategorien zu umgeben, E, S, B und I. Im
@@ -462,7 +467,7 @@
                     für mich erledigen und es besser ausführen kann?«
                 </p>
             </chapter>
-            <chapter title="Worte sind Instrumente" id="businessowner-worte-sind-instrumente">
+            <chapter id="businessowner-worte-sind-instrumente" title="Worte sind Instrumente">
                 <p>
                     Für einen brillanten Unternehmer ist eine notwendige Fähigkeit, ein Meister der Sprache zu sein – zu
                     wissen, welche Worte auf welche Menschentypen wirken. Ein Wort kann einen Menschen in Begeisterung
@@ -471,7 +476,7 @@
                     Menschen der Feld E zuzuordnen ist, große Angst hervorruft.
                 </p>
             </chapter>
-            <chapter title="Möglichkeiten um in den Business owner zu werden" id="businessowner-werden">
+            <chapter id="businessowner-werden" title="Möglichkeiten um in den Business owner zu werden">
                 <list style="decimal">
                     <li>
                         <b>Einen Mentor</b> (kein Berater) <b>suchen</b> – Ein Mentor ist jemand, der das bereits getan
@@ -503,8 +508,8 @@
                 </list>
             </chapter>
         </chapter>
-        <chapter title="Investor" id="investor">
-            <chapter title="Wesensmerkmale" id="investor-wesensmerkmale">
+        <chapter id="investor" title="Investor">
+            <chapter id="investor-wesensmerkmale" title="Wesensmerkmale">
                 <p>
                     Investoren machen Geld mit Geld. Sie müssen nicht arbeiten, weil ihr Geld für sie arbeitet.
                 </p>
@@ -518,7 +523,7 @@
                     riskieren, verändern die Welt.
                 </p>
             </chapter>
-            <chapter title="Warum sind nicht mehr Menschen Investoren?" id="investor-warum">
+            <chapter id="investor-warum" title="Warum sind nicht mehr Menschen Investoren?">
                 <p>
                     Vielen Leuten behagt die Vorstellung nicht, ihr schwer verdientes Geld aus der Hand zu geben und es
                     nicht zurückzubekommen. Viele Menschen haben so große Angst vor dem Verlieren, dass sie sich dafür
@@ -543,7 +548,7 @@
                     </li>
                 </list>
             </chapter>
-            <chapter title="Spieler vs. Kapitalanleger" id="investor-spieler-vs-kapitalanleger">
+            <chapter id="investor-spieler-vs-kapitalanleger" title="Spieler vs. Kapitalanleger">
                 <p>
                     Für einen Spieler ist das Investieren ein Glücksspiel. Für einen Kapitalanleger ist es ein
                     Geschicklichkeitsspiel. Für Menschen, die ihr Geld jemand anderem überlassen, der es für sie anlegt,
@@ -558,7 +563,7 @@
                     überlassen.« <b>~ Robert T. Kiyosaki</b>
                 </tip>
             </chapter>
-            <chapter title="Begriffe der Börsenanfänger" id="investor-begriffe-der-boersenanfaenger">
+            <chapter id="investor-begriffe-der-boersenanfaenger" title="Begriffe der Börsenanfänger">
                 <list>
                     <li>
                         <b>»Diversifikation«</b>, die Methode der Risikostreuung, ist eine Investitionsstrategie, bei
@@ -585,7 +590,7 @@
                     </li>
                 </list>
             </chapter>
-            <chapter title="Die fünf Level der Investoren" id="investor-5-level">
+            <chapter id="investor-5-level" title="Die fünf Level der Investoren">
                 <list style="decimal">
                     <li>
                         <b>Keine finanzielle Intelligenz</b> – Grob geschätzt befinden sich mehr als 50 % der
@@ -629,7 +634,7 @@
             </chapter>
         </chapter>
     </chapter>
-    <chapter title="Wie komme ich zu mehr Geld?" id="mehr-geld">
+    <chapter id="mehr-geld" title="Wie komme ich zu mehr Geld?">
         <list style="decimal">
             <li>
                 Eine Aufstellung der persönlichen finanziellen Verhältnisse anfertigen. Um dahin zu kommen, wo man hin
@@ -674,11 +679,11 @@
                 </list>
             </li>
         </list>
-        <chapter title="Income Statement - Vorlage" id="income-statement">
-            <img src="rich-dad-poor-dad-income-statement.png" alt="" width="700" style="inline"/>
+        <chapter id="income-statement" title="Income Statement - Vorlage">
+            <img alt="" src="rich-dad-poor-dad-income-statement.png" style="inline" width="700"/>
         </chapter>
     </chapter>
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3959720106, Rich Dad Poor Dad, Robert T. Kiyosaki, FinanzBuch Verlag, 2021

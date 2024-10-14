@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="XML - XLink und XPointer" id="xml-xlink-xpointer" help-id="XML-xlink-xpointer">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic help-id="XML-xlink-xpointer"
+       id="xml-xlink-xpointer"
+       title="XML - XLink und XPointer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="XLink und XPointer" id="grundlagen">
-        <img src="xml-tools-overview.png" alt="XML - Tools"/>
+    <chapter id="grundlagen" title="XLink und XPointer">
+        <img alt="XML - Tools" src="xml-tools-overview.png"/>
 
-        <chapter title="XLink" id="grundlagen-xlink">
+        <chapter id="grundlagen-xlink" title="XLink">
             <list>
                 <li>
                     XLink wird verwendet, um Hyperlinks in XML-Dokumenten zu erstellen
@@ -30,7 +31,7 @@
             </list>
         </chapter>
 
-        <chapter title="XPointer" id="grundlagen-xpointer">
+        <chapter id="grundlagen-xpointer" title="XPointer">
             <list>
                 <li>
                     XPointer ermöglicht Links, die auf bestimmte Teile eines XML-Dokuments verweisen
@@ -48,8 +49,8 @@
             </list>
         </chapter>
     </chapter>
-    <chapter title="XLink" id="xlink">
-        <chapter title="XLink Syntax" id="xlink-syntax">
+    <chapter id="xlink" title="XLink">
+        <chapter id="xlink-syntax" title="XLink Syntax">
             <p>
                 In HTML definiert das <code>&lt;a&gt;</code>-Element einen Hyperlink. In XML funktioniert dies jedoch
                 nicht. In XML-Dokumenten können beliebige Elementnamen verwendet werden - daher ist es für Browser
@@ -61,8 +62,8 @@
                 <?xml version="1.0" encoding="UTF-8"?>
 
                 <homepages xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <homepage xlink:type="simple" xlink:href="https://www.w3schools.com">Visit W3Schools</homepage>
-                  <homepage xlink:type="simple" xlink:href="http://www.w3.org">Visit W3C</homepage>
+                    <homepage xlink:type="simple" xlink:href="https://www.w3schools.com">Visit W3Schools</homepage>
+                    <homepage xlink:type="simple" xlink:href="http://www.w3.org">Visit W3C</homepage>
                 </homepages>
                 ]]>
             </code-block>
@@ -77,7 +78,7 @@
             </p>
         </chapter>
 
-        <chapter title="XLink Beispiel" id="xlink-beispiel">
+        <chapter id="xlink-beispiel" title="XLink Beispiel">
             <code-block lang="xml">
                 <![CDATA[
                 <?xml version="1.0" encoding="UTF-8"?>
@@ -109,15 +110,17 @@
                     Das Attribut <code>xlink:type="simple"</code> erzeugt einen einfachen "HTML-ähnlichen" Link
                 </li>
                 <li>
-                    Das Attribut <code>xlink:href</code> gibt die URL an, zu der verlinkt werden soll (in diesem Fall - ein Bild)
+                    Das Attribut <code>xlink:href</code> gibt die URL an, zu der verlinkt werden soll (in diesem Fall -
+                    ein Bild)
                 </li>
                 <li>
-                    Das Attribut <code>xlink:show="new"</code> legt fest, dass der Link in einem neuen Fenster geöffnet werden soll.
+                    Das Attribut <code>xlink:show="new"</code> legt fest, dass der Link in einem neuen Fenster geöffnet
+                    werden soll.
                 </li>
             </list>
         </chapter>
 
-        <chapter title="XLink Details" id="xlink-details">
+        <chapter id="xlink-details" title="XLink Details">
             <p>
                 Im obigen Beispiel wurden einfache XLinks demonstriert. XLink wird interessanter, wenn man auf entfernte
                 Orte als Ressourcen zugreift, anstatt auf eigenständige Seiten.
@@ -132,7 +135,7 @@
             </p>
         </chapter>
 
-        <chapter title="XLink Attribute" id="xlink-attribute">
+        <chapter id="xlink-attribute" title="XLink Attribute">
             <table>
                 <tr>
                     <td>Attribute</td>
@@ -166,7 +169,9 @@
                 </tr>
                 <tr>
                     <td><code>xlink:href</code></td>
-                    <td><emphasis>URL</emphasis></td>
+                    <td>
+                        <emphasis>URL</emphasis>
+                    </td>
                     <td>
                         Definiert den die URL auf die der Link referenziert.
                     </td>
@@ -207,28 +212,34 @@
         </chapter>
     </chapter>
 
-    <chapter title="XPointer" id="xpointer">
+    <chapter id="xpointer" title="XPointer">
         <p>
             In diesem Beispiel wird XPointer in Verbindung mit XLink verwendet, um auf einen bestimmten Teil eines
             anderen Dokuments zu verweisen.
         </p>
 
-        <code-block lang="xml" collapsible="true"
-                    collapsed-title="XML-Zieldokument (das Dokument auf das verweist werden soll)">
+        <code-block collapsed-title="XML-Zieldokument (das Dokument auf das verweist werden soll)" collapsible="true"
+                    lang="xml">
             <![CDATA[
             <?xml version="1.0" encoding="UTF-8"?>
 
             <dogbreeds>
                 <dog breed="Rottweiler" id="Rottweiler">
-                    <picture url="https://dog.com/rottweiler.gif" />
+                    <picture url="https://dog.com/rottweiler.gif"/>
                     <history>The Rottweiler's ancestors were probably Roman drover dogs....</history>
-                    <temperament>Confident, bold, alert and imposing, the Rottweiler is a popular choice for its ability to protect...</temperament>
+                    <temperament>Confident, bold, alert and imposing, the Rottweiler is a popular choice for its ability
+                        to protect...
+                    </temperament>
                 </dog>
 
                 <dog breed="FCRetriever" id="FCRetriever">
-                    <picture url="https://dog.com/fcretriever.gif" />
-                    <history>One of the earliest uses of retrieving dogs was to help fishermen retrieve fish from the water...</history>
-                    <temperament>The flat-coated retriever is a sweet, exuberant, lively dog that loves to play and retrieve...</temperament>
+                    <picture url="https://dog.com/fcretriever.gif"/>
+                    <history>One of the earliest uses of retrieving dogs was to help fishermen retrieve fish from the
+                        water...
+                    </history>
+                    <temperament>The flat-coated retriever is a sweet, exuberant, lively dog that loves to play and
+                        retrieve...
+                    </temperament>
                 </dog>
             </dogbreeds>
             ]]>
@@ -251,27 +262,31 @@
             Das folgende XML-Dokument enthält Links zu weiteren Informationen über die Hunderasse für jeden der Hunde:
         </p>
 
-        <code-block lang="xml" collapsible="true"
-                    collapsed-title="XML-Dokument mit Links">
+        <code-block collapsed-title="XML-Dokument mit Links" collapsible="true"
+                    lang="xml">
             <![CDATA[
             <?xml version="1.0" encoding="UTF-8"?>
 
             <mydogs xmlns:xlink="http://www.w3.org/1999/xlink">
                 <mydog>
                     <description>Anton is my favorite dog. He has won a lot of.....</description>
-                    <fact xlink:type="simple" xlink:href="https://dog.com/dogbreeds.xml#Rottweiler">Fact about Rottweiler</fact>
+                    <fact xlink:type="simple" xlink:href="https://dog.com/dogbreeds.xml#Rottweiler">Fact about
+                        Rottweiler
+                    </fact>
                 </mydog>
 
                 <mydog>
                     <description>Pluto is the sweetest dog on earth......</description>
-                    <fact xlink:type="simple" xlink:href="https://dog.com/dogbreeds.xml#FCRetriever">Fact about flat-coated Retriever</fact>
+                    <fact xlink:type="simple" xlink:href="https://dog.com/dogbreeds.xml#FCRetriever">Fact about
+                        flat-coated Retriever
+                    </fact>
                 </mydog>
             </mydogs>
             ]]>
         </code-block>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/xml_xlink.asp" ignore-vars="true">

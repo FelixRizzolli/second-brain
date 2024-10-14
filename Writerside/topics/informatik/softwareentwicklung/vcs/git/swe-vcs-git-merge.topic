@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Merge" id="swe-vcs-git-merge">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-vcs-git-merge"
+       title="Merge"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einführung" id="einfuehrung">
+    <chapter id="einfuehrung" title="Einführung">
         <p>
             Der Merge-Befehl wird verwendet, um Zweige zusammenzuführen. Oftmals findet Git selbständig Lösungen für das
             Zusammenführen der Dateien. Zum Beispiel, wenn die Änderungen in unterschiedlichen Teilen einer Codedatei,
@@ -21,7 +21,7 @@
         </p>
     </chapter>
 
-    <chapter title="Zweige/Branches zusammenführen" id="merge">
+    <chapter id="merge" title="Zweige/Branches zusammenführen">
         <p>
             Um die in enthaltenen Änderungen des newfeature Zweiges in master zu integrieren und den Zweig aufzulösen
             wird zuerst in den master-Zweig gewechselt und dort der Befehl <code>git merge</code> verwendet.
@@ -33,7 +33,7 @@
         <code-block lang="bash">
             git merge newfeature
         </code-block>
-        
+
         <p>
             Was danach passiert hängt stark von den Begleitumständen ab.
         </p>
@@ -61,7 +61,7 @@
                 ein Zweig nicht mehr benötigt wird, muss er explizit mit <code>git branch -d</code> gelöscht werden.
             </p>
         </note>
-        
+
         <table>
             <tr>
                 <td>Gewöhnlicher Merge</td>
@@ -93,14 +93,14 @@
         </table>
     </chapter>
 
-    <chapter title="Fast-forward-Merge" id="fastforward">
+    <chapter id="fastforward" title="Fast-forward-Merge">
         <p>
             Angenommen nach dem Commit B des master-Zweiges wurde ein neuer Zweig new_feature erstellt. Dort wurden die
             Commits C und D durchgeführt. Am ursprünglichen Zweig (hier master) mussten in der Zwischenzeit keine
             Änderungen durchgeführt werden.
         </p>
-        
-        <img src="swe-vcs-git-merge-fastforward.jpg" alt="Fast-forward-Merge"/>
+
+        <img alt="Fast-forward-Merge" src="swe-vcs-git-merge-fastforward.jpg"/>
 
         <p>
             Wenn nun in den Master-Zweig gewechselt und <code>git merge new_feature</code> ausgeführt wird, ist gar kein
@@ -119,7 +119,7 @@
         </p>
     </chapter>
 
-    <chapter title="Octopus-Merge" id="octopus">
+    <chapter id="octopus" title="Octopus-Merge">
         <p>
             Der <code>git merge</code> Befehl kann sogar mehrere Zweige als Parameter aufnehmen. Dabei wird der aktuelle
             Zweig mit allen übergebenen Zweigen zusammengeführt. Dieses Verfahren wird <b>Octopus-Merge</b> genannt. Der
@@ -138,8 +138,8 @@
         </note>
     </chapter>
 
-    <chapter title="Merge Konflikte lösen" id="konflikte">
-        <chapter title="Weniger Konflikte durch häufige Merge-Prozesse" id="konflikte-vermeiden">
+    <chapter id="konflikte" title="Merge Konflikte lösen">
+        <chapter id="konflikte-vermeiden" title="Weniger Konflikte durch häufige Merge-Prozesse">
             <p>
                 Beim Zusammenführen von Zweigen vergleicht Git immer nur den neusten Commit aus beiden Zweigen sowie die
                 gemeinsame Basis (also den ersten Parent-Commit beider Zweige). Sollten aber Konflikte auftreten, so
@@ -148,7 +148,7 @@
             </p>
         </chapter>
 
-        <chapter title="Kollisionen im Code" id="konflikte-codekollisionen">
+        <chapter id="konflikte-codekollisionen" title="Kollisionen im Code">
             <p>
                 Die häufigste Ursache von Merge-Konflikten sind in unterschiedlichen Branches oder von unterschiedlichen
                 Entwicklern durchgeführte Änderungen desselben Codes.
@@ -218,7 +218,7 @@
             </note>
         </chapter>
 
-        <chapter title="Merge-Tools" id="konflikte-tools">
+        <chapter id="konflikte-tools" title="Merge-Tools">
             <p>
                 Für Merge-Konflikte gibt es spezielle Tools, die die jeweiligen Textpassagen farblich Markieren und so
                 beim Lösen des Konflikts helfen. Mit dem befehl <code>git mergetool</code> wird ein externes Programm
@@ -233,8 +233,8 @@
             <code-block>
                 Merging: lib/printhelper.php
                 Normal merge conflict for 'lib/printhelper.php':
-                  {local}: modified file
-                  {remote}: modified file
+                {local}: modified file
+                {remote}: modified file
             </code-block>
             <code-block lang="bash">
                 git commit
@@ -246,7 +246,7 @@
             </p>
         </chapter>
 
-        <chapter title="Konflikte bei binären Dateien" id="konfilikte-binaere-dateien">
+        <chapter id="konfilikte-binaere-dateien" title="Konflikte bei binären Dateien">
             <p>
                 Bei binären Dateien (Bilder, Word-Dokumente, PDF- und ZIP-Dateien etc.) kann Git nicht die Änderungen
                 zwischen den zwei Versione der Datei erkennen. Wenn eine Binärdatei in zwei Zeigen einen
@@ -263,7 +263,7 @@
                 git commit -a
             </code-block>
 
-            <p> </p>
+            <p></p>
 
             <code-block lang="bash">
                 git checkout --theirs --image.png
@@ -285,7 +285,7 @@
             </note>
         </chapter>
 
-        <chapter title="Merge-Abbruch und Undo" id="konflikte-abbruch">
+        <chapter id="konflikte-abbruch" title="Merge-Abbruch und Undo">
             <p>
                 Mit dem Befehl <code>git merge --abort</code> lasst sich ein Merge-Prozess abbrechen. Das Projekt
                 befindet sich dann im gleichen Zustand wie vor dem Merge. Es soll unbedingt vermieden werden einen
@@ -307,14 +307,14 @@
             </code-block>
         </chapter>
 
-        <chapter title="Whitespace-Probleme" id="konflikte-whitespace">
+        <chapter id="konflikte-whitespace" title="Whitespace-Probleme">
             <p>
-                Standardmäßig berücksichtigt Git beim Vergleich von Codedateien auch den sogenannten Whitespace, also 
-                Leer- und Tabulatorzeichen. Wenn sich zwei Entwickler nicht darüber einig sind, wie der Code am 
-                schönsten eingerückt wird, kann es zu erheblichen Merge-Problemen führen. Hierfür gibt es zwei 
+                Standardmäßig berücksichtigt Git beim Vergleich von Codedateien auch den sogenannten Whitespace, also
+                Leer- und Tabulatorzeichen. Wenn sich zwei Entwickler nicht darüber einig sind, wie der Code am
+                schönsten eingerückt wird, kann es zu erheblichen Merge-Problemen führen. Hierfür gibt es zwei
                 Möglichkeiten:
             </p>
-            
+
             <list>
                 <li>
                     Klare Regeln festlegen: "Keiner ändert die Einrückung fremder Dateien!"
@@ -326,7 +326,7 @@
             </list>
         </chapter>
 
-        <chapter title="Inhaltliche Merge-Konflikte" id="konflikte-inhalt">
+        <chapter id="konflikte-inhalt" title="Inhaltliche Merge-Konflikte">
             <p>
                 Stellen Sie sich vor, Ben hat in der Datei B die Funktion <code>myfunc</code> programmiert und auch an
                 ein paar Stellen aufgerufen. Er stellt fest, dass das Design der Funktion nicht optimal ist, verändert
@@ -359,7 +359,7 @@
             </warning>
         </chapter>
 
-        <chapter title="MERGE-Dateien" id="konflikte-dateien">
+        <chapter id="konflikte-dateien" title="MERGE-Dateien">
             <p>
                 Bei einem aufgrund eines Konflikts gescheiterten Merge-Prozess enthält das Verzeichnis <path>.git</path>
                 eine ganze Reihe von Dateien mit Statusinformationen:
@@ -391,14 +391,14 @@
         </chapter>
     </chapter>
 
-    <chapter title="Merge für eine einzelne Datei" id="einzeldatei">
+    <chapter id="einzeldatei" title="Merge für eine einzelne Datei">
         <p>
             Ein gewöhnlicher Merge-Prozess betrifft immer alle Dateien der betreffenden Commits. Hin und wieder entsteht
             aber der Wunsch, nur eine einzige Datei zusammenzuführen. Dieser Prozess ist aber recht umständlich, wenn er
             korrekterweise mit <code>git merge-file</code> ausgeführt wird.
         </p>
 
-        <chapter title="Der Befehl git merge-file" id="einzeldatei-befehl">
+        <chapter id="einzeldatei-befehl" title="Der Befehl git merge-file">
             <p>
                 Zuerst muss die betroffene Datei aus dem anderen Zweig in das Projektverzeichnis kopieren. Zudem wird
                 auch die Version des letzten Merge-Prozesses zwischen den beiden Zweigen benötigt.
@@ -436,7 +436,8 @@
             </p>
 
             <note>
-                Werfen Sie einen Blick in diese Datei, bevor Sie die Änderungen mit <code>git commit -a</code> speichern!
+                Werfen Sie einen Blick in diese Datei, bevor Sie die Änderungen mit <code>git commit -a</code>
+                speichern!
             </note>
 
             <p>
@@ -446,7 +447,7 @@
             </p>
         </chapter>
 
-        <chapter title="Die einfachere Alternative" id="einzeldatei-alternative">
+        <chapter id="einzeldatei-alternative" title="Die einfachere Alternative">
             <p>
                 Eine alternative, viel einfachere Vorgehensweise bietet das Kommando
                 <code>git checkout --patch &lt;branch&gt; &lt;file&gt;</code>. Das Kommando überschreibt einfach die
@@ -470,7 +471,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Commit der letzten gemeinsamen Basis" id="merge-base">
+    <chapter id="merge-base" title="Commit der letzten gemeinsamen Basis">
         <p>
             Der Hashcode des Commits der letzten gemeinsamen Basis wird mit dem Befehl <code>git merge-base</code>
             ermittelt.
@@ -486,10 +487,11 @@
         </code-block>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
-            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler, 2020
+            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler,
+            2020
         </tip>
     </chapter>
 </topic>

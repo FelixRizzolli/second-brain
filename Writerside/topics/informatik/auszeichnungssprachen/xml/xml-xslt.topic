@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="XML - XSLT (eXtensible Stylesheet Language Transformations)" id="xml-xslt">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="xml-xslt"
+       title="XML - XSLT (eXtensible Stylesheet Language Transformations)"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlegendes zu XSL und XSLT" id="grundlagen">
+    <chapter id="grundlagen" title="Grundlegendes zu XSL und XSLT">
         <p>
             XML beschreibt einzig und allein die Struktur eines Dokumentes. Für das Layout sind separate
             Formatierungsangaben zuständig. XSL (eXtensible Stylesheet Language) ist mehr als nur eine
@@ -38,7 +39,7 @@
             ausgeblendet werden oder angezeigt werden sollen, und vieles mehr.
         </p>
 
-        <chapter title="XSLT" id="grundlagen-xslt">
+        <chapter id="grundlagen-xslt" title="XSLT">
             <p>
                 Ein XSLT-Dokument beschreibt, welche Elemente und Attribute eines XML-Eingabedokuments in welche
                 Bestandteile eines Ausgabedokuments umgesetzt werden. Um die einzelnen Komponenten des Eingabedokuments
@@ -51,7 +52,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="XSLT Transformation" id="transformation">
+    <chapter id="transformation" title="XSLT Transformation">
         <p>
             Das root-Element, welches das Dokument als XSL-Stylesheet deklariert, ist
             <code>&lt;xsl:stylesheet&gt;</code> oder <code>&lt;xsl:transform&gt;</code>. Diese beiden Elemente sind
@@ -73,43 +74,47 @@
             ]]>
         </code-block>
 
-        <chapter title="XML in XHTML umwandeln" id="transformation-xml-html">
+        <chapter id="transformation-xml-html" title="XML in XHTML umwandeln">
             <p>
                 In folgendem Beispiel können die Daten aus einem XML-Dokument durch die Informationen aus einem
                 XSL-Dokument in einem Browser in XHTML transformiert und angezeigt werden.
             </p>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="cdcatalog.xsl">
+            <code-block collapsed-title="cdcatalog.xsl" collapsible="true" lang="xml">
                 <![CDATA[
                 <?xml version="1.0" encoding="UTF-8"?>
 
                 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-                <xsl:template match="/">
-                    <html>
-                        <body>
-                            <h2>My CD Collection</h2>
-                            <table border="1">
-                                <tr bgcolor="#9acd32">
-                                    <th>Title</th>
-                                    <th>Artist</th>
-                                </tr>
-                                <xsl:for-each select="catalog/cd">
-                                    <tr>
-                                        <td><xsl:value-of select="title"/></td>
-                                        <td><xsl:value-of select="artist"/></td>
+                    <xsl:template match="/">
+                        <html>
+                            <body>
+                                <h2>My CD Collection</h2>
+                                <table border="1">
+                                    <tr bgcolor="#9acd32">
+                                        <th>Title</th>
+                                        <th>Artist</th>
                                     </tr>
-                                </xsl:for-each>
-                            </table>
-                        </body>
-                    </html>
-                </xsl:template>
+                                    <xsl:for-each select="catalog/cd">
+                                        <tr>
+                                            <td>
+                                                <xsl:value-of select="title"/>
+                                            </td>
+                                            <td>
+                                                <xsl:value-of select="artist"/>
+                                            </td>
+                                        </tr>
+                                    </xsl:for-each>
+                                </table>
+                            </body>
+                        </html>
+                    </xsl:template>
 
                 </xsl:stylesheet>
                 ]]>
             </code-block>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="cdcatalog.xml">
+            <code-block collapsed-title="cdcatalog.xml" collapsible="true" lang="xml">
                 <![CDATA[
                 <?xml version="1.0" encoding="UTF-8"?>
                 <?xml-stylesheet type="text/xsl" href="cdcatalog.xsl"?>
@@ -136,32 +141,36 @@
         </chapter>
     </chapter>
 
-    <chapter title="XSLT Elemente" id="elemente">
+    <chapter id="elemente" title="XSLT Elemente">
         <code-block lang="xml">
             <![CDATA[
             <?xml version="1.0" encoding="UTF-8"?>
             <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-            <xsl:template match="/">
-            <html>
-                <body>
-                    <h2>My CD Collection</h2>
-                    <table border="1">
-                        <tr bgcolor="#9acd32">
-                            <th>Title</th>
-                            <th>Artist</th>
-                        </tr>
-                        <xsl:for-each select="catalog/cd">
-                            <xsl:sort select="artist"/>
-                            <tr>
-                                <td><xsl:value-of select="title"/></td>
-                                <td><xsl:value-of select="artist"/></td>
-                            </tr>
-                        </xsl:for-each>
-                    </table>
-                </body>
-            </html>
-            </xsl:template>
+                <xsl:template match="/">
+                    <html>
+                        <body>
+                            <h2>My CD Collection</h2>
+                            <table border="1">
+                                <tr bgcolor="#9acd32">
+                                    <th>Title</th>
+                                    <th>Artist</th>
+                                </tr>
+                                <xsl:for-each select="catalog/cd">
+                                    <xsl:sort select="artist"/>
+                                    <tr>
+                                        <td>
+                                            <xsl:value-of select="title"/>
+                                        </td>
+                                        <td>
+                                            <xsl:value-of select="artist"/>
+                                        </td>
+                                    </tr>
+                                </xsl:for-each>
+                            </table>
+                        </body>
+                    </html>
+                </xsl:template>
 
             </xsl:stylesheet>
             ]]>
@@ -203,7 +212,7 @@
                 <td>
                     <code-block lang="xml">
                         <![CDATA[
-                        <xsl:value-of select="expression" />
+                        <xsl:value-of select="expression"/>
                         ]]>
                     </code-block>
                 </td>
@@ -296,33 +305,37 @@
                         <?xml version="1.0" encoding="UTF-8"?>
                         <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-                        <xsl:template match="/">
-                            <html>
-                                <body>
-                                    <h2>My CD Collection</h2>
-                                    <xsl:apply-templates/>
-                                </body>
-                            </html>
-                        </xsl:template>
+                            <xsl:template match="/">
+                                <html>
+                                    <body>
+                                        <h2>My CD Collection</h2>
+                                        <xsl:apply-templates/>
+                                    </body>
+                                </html>
+                            </xsl:template>
 
-                        <xsl:template match="cd">
-                            <p>
-                                <xsl:apply-templates select="title"/>
-                                <xsl:apply-templates select="artist"/>
-                            </p>
-                        </xsl:template>
+                            <xsl:template match="cd">
+                                <p>
+                                    <xsl:apply-templates select="title"/>
+                                    <xsl:apply-templates select="artist"/>
+                                </p>
+                            </xsl:template>
 
-                        <xsl:template match="title">
-                            Title: <span style="color:#ff0000">
-                            <xsl:value-of select="."/></span>
-                            <br />
-                        </xsl:template>
+                            <xsl:template match="title">
+                                Title:
+                                <span style="color:#ff0000">
+                                    <xsl:value-of select="."/>
+                                </span>
+                                <br/>
+                            </xsl:template>
 
-                        <xsl:template match="artist">
-                            Artist: <span style="color:#00ff00">
-                            <xsl:value-of select="."/></span>
-                            <br />
-                        </xsl:template>
+                            <xsl:template match="artist">
+                                Artist:
+                                <span style="color:#00ff00">
+                                    <xsl:value-of select="."/>
+                                </span>
+                                <br/>
+                            </xsl:template>
 
                         </xsl:stylesheet>
                         ]]>
@@ -332,7 +345,7 @@
         </table>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836254663, IT Handbuch für Fachinformatiker, Sascha Kersken, Rheinwerk Verlag GmbH, 2017

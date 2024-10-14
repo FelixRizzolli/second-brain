@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Verbundene Tabellenabfragen mittels JOIN" id="sql-dql-join">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-dql-join"
+       title="Verbundene Tabellenabfragen mittels JOIN"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlegendes" id="grundlegendes">
+    <chapter id="grundlegendes" title="Grundlegendes">
         <p>
             Mit folgenden <code>JOIN</code>-Typen können Tabellen verbunden abgefragt werden:
         </p>
@@ -48,8 +48,8 @@
         </p>
     </chapter>
 
-    <chapter title="Beispiele" id="beispiele">
-        <chapter title="adresse-Tabelle" id="beispiele-adresse">
+    <chapter id="beispiele" title="Beispiele">
+        <chapter id="beispiele-adresse" title="adresse-Tabelle">
             <table>
                 <tr>
                     <td>aid</td>
@@ -89,7 +89,7 @@
                     <td>11</td>
                     <td>50827</td>
                     <td>Köln</td>
-                    <td> </td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>5</td>
@@ -97,7 +97,7 @@
                     <td>9</td>
                     <td>50127</td>
                     <td>Bonn</td>
-                    <td> </td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>6</td>
@@ -105,12 +105,12 @@
                     <td>9</td>
                     <td>50129</td>
                     <td>Bonn</td>
-                    <td> </td>
+                    <td></td>
                 </tr>
             </table>
         </chapter>
 
-        <chapter title="auszubildender-Tabelle" id="beispiele-auszubildender">
+        <chapter id="beispiele-auszubildender" title="auszubildender-Tabelle">
             <table>
                 <tr>
                     <td>ausid</td>
@@ -157,7 +157,7 @@
             </table>
         </chapter>
 
-        <chapter title="mitarbeiterausbildungsbetrieb-Tabelle" id="beispiele-mitarbeiterausbildungsbetrieb">
+        <chapter id="beispiele-mitarbeiterausbildungsbetrieb" title="mitarbeiterausbildungsbetrieb-Tabelle">
             <table>
                 <tr>
                     <td>mitarbeiterid</td>
@@ -229,14 +229,14 @@
         </chapter>
     </chapter>
 
-    <chapter title="JOIN / INNER JOIN" id="join">
-        <img src="datenbanken-sql-innerjoin.gif" alt="INNER JOIN"/>
+    <chapter id="join" title="JOIN / INNER JOIN">
+        <img alt="INNER JOIN" src="datenbanken-sql-innerjoin.gif"/>
 
         <p>
             In manchen Datenbanken wird <code>INNER JOIN</code> statt <code>JOIN</code> verwendet.
         </p>
 
-        <chapter title="Beschreibung" id="join-beschreibung">
+        <chapter id="join-beschreibung" title="Beschreibung">
             <p>
                 Ein <code>INNER JOIN</code> verbindet Zeilen von Tabelle, indem auf Gleichheit von Primärschlüssel- und
                 Fremdschlüssel geprüft wird. Die Zeilen von Tabellen werden nur dann verbunden, wenn eine
@@ -250,7 +250,7 @@
                 <code>INNER</code> der <code>INNER JOIN</code>-Klausel ist optional.
             </p>
 
-            <chapter title="Mehrere Tabellen verbinden" id="join-beschreibung-verbinden">
+            <chapter id="join-beschreibung-verbinden" title="Mehrere Tabellen verbinden">
                 <p>
                     Es können natürlich auch mehrere Tabellen verbunden werden. Dabei muss immer lediglich hinter der
                     letzten <code>ON</code>-Klausel eine weitere <code>INNER JOIN</code>-Klausel mit der dazugehörigen
@@ -259,19 +259,19 @@
             </chapter>
         </chapter>
 
-        <chapter title="Beispiel" id="join-beispiel">
+        <chapter id="join-beispiel" title="Beispiel">
             <code-block lang="sql">
-                SELECT  name
-                     ,  vorname
-                     ,  plz
-                     ,  ort
-                  FROM auszubildender
-                  JOIN adresse
-                    ON  ausid = fk_ausid
+                SELECT name
+                , vorname
+                , plz
+                , ort
+                FROM auszubildender
+                JOIN adresse
+                ON ausid = fk_ausid
                 ;
             </code-block>
 
-            <chapter title="Ergebnistabelle" id="join-beispiel-ergebnistabelle">
+            <chapter id="join-beispiel-ergebnistabelle" title="Ergebnistabelle">
                 <table>
                     <tr>
                         <td>name</td>
@@ -302,14 +302,14 @@
         </chapter>
     </chapter>
 
-    <chapter title="LEFT JOIN / LEFT OUTER JOIN" id="leftjoin">
-        <img src="datenbanken-sql-leftjoin.gif" alt="LEFT JOIN"/>
+    <chapter id="leftjoin" title="LEFT JOIN / LEFT OUTER JOIN">
+        <img alt="LEFT JOIN" src="datenbanken-sql-leftjoin.gif"/>
 
         <p>
             In manchen Datenbanken wird <code>LEFT OUTER JOIN</code> statt <code>LEFT JOIN</code> verwendet.
         </p>
 
-        <chapter title="Beschreibung" id="leftjoin-beschreibung">
+        <chapter id="leftjoin-beschreibung" title="Beschreibung">
             <p>
                 Ein <code>LEFT OUTER JOIN</code> verknüpft Zeilen von Tabellen über eine Fremdschlüsselbeziehung.
                 Zunächst einmal verbindet ein <code>LEFT OUTER JOIN</code> alle Zeilen von zwei Tabellen über eine
@@ -324,20 +324,20 @@
             </p>
         </chapter>
 
-        <chapter title="Beispiel" id="leftjoin-beispiel">
+        <chapter id="leftjoin-beispiel" title="Beispiel">
             <code-block lang="sql">
-                SELECT  name
-                     ,  vorname
-                     ,  plz
-                     ,  ort
-                  FROM auszubildener
-                  LEFT OUTER
-                  JOIN adresse
-                    ON  ausid = fk_ausid
+                SELECT name
+                , vorname
+                , plz
+                , ort
+                FROM auszubildener
+                LEFT OUTER
+                JOIN adresse
+                ON ausid = fk_ausid
                 ;
             </code-block>
 
-            <chapter title="Ergebnistabelle" id="leftjoin-beispiel-ergebnistabelle">
+            <chapter id="leftjoin-beispiel-ergebnistabelle" title="Ergebnistabelle">
                 <table>
                     <tr>
                         <td>name</td>
@@ -386,14 +386,14 @@
         </chapter>
     </chapter>
 
-    <chapter title="RIGHT JOIN / RIGHT OUTER JOIN" id="rightjoin">
-        <img src="datenbanken-sql-rightjoin.gif" alt="RIGHT JOIN"/>
+    <chapter id="rightjoin" title="RIGHT JOIN / RIGHT OUTER JOIN">
+        <img alt="RIGHT JOIN" src="datenbanken-sql-rightjoin.gif"/>
 
         <p>
             In manchen Datenbanken wird <code>RIGHT OUTER JOIN</code> statt <code>RIGHT JOIN</code> verwendet.
         </p>
 
-        <chapter title="Beschreibung" id="rightjoin-beschreibung">
+        <chapter id="rightjoin-beschreibung" title="Beschreibung">
             <p>
                 Ein <code>RIGHT OUTER JOIN</code> verknüpft Zeilen von Tabellen über eine Fremdschlüsselbeziehung.
                 Zunächst einmal verbindet ein <code>RIGHT OUTER JOIN</code> alle Zeilen von zwei Tabellen über eine
@@ -408,20 +408,20 @@
             </p>
         </chapter>
 
-        <chapter title="Beispiel" id="rightjoin-beispiel">
+        <chapter id="rightjoin-beispiel" title="Beispiel">
             <code-block lang="sql">
-                SELECT  name
-                     ,  vorname
-                     ,  plz
-                     ,  ort
-                  FROM auszubildener
-                 RIGHT OUTER
-                  JOIN adresse
-                    ON  ausid=fk_ausid
+                SELECT name
+                , vorname
+                , plz
+                , ort
+                FROM auszubildener
+                RIGHT OUTER
+                JOIN adresse
+                ON ausid=fk_ausid
                 ;
             </code-block>
 
-            <chapter title="Ergebnistabelle" id="rightjoin-beispiel-ergebnistabelle">
+            <chapter id="rightjoin-beispiel-ergebnistabelle" title="Ergebnistabelle">
                 <table>
                     <tr>
                         <td>name</td>
@@ -470,14 +470,14 @@
         </chapter>
     </chapter>
 
-    <chapter title="FULL JOIN / FULL OUTER JOIN" id="fulljoin">
-        <img src="datenbanken-sql-fulljoin.gif" alt="FULL JOIN"/>
+    <chapter id="fulljoin" title="FULL JOIN / FULL OUTER JOIN">
+        <img alt="FULL JOIN" src="datenbanken-sql-fulljoin.gif"/>
 
         <p>
             In manchen Datenbanken wird <code>FULL OUTER JOIN</code> statt <code>FULL JOIN</code> verwendet.
         </p>
 
-        <chapter title="Beschreibung" id="fulljoin-beschreibung">
+        <chapter id="fulljoin-beschreibung" title="Beschreibung">
             <p>
                 Ein <code>FULL OUTER JOIN</code> verbindet die Zeilen aus zwei Tabellen, die übereinstimmende
                 Schlüsselwerte verfügen. Mit einem <code>FULL OUTER JOIN</code> werden auch die Zeilen ermittelt, die
@@ -490,20 +490,20 @@
             </p>
         </chapter>
 
-        <chapter title="Beispiel" id="fulljoin-beispiel">
+        <chapter id="fulljoin-beispiel" title="Beispiel">
             <code-block lang="sql">
-                SELECT  name
-                     ,  vorname
-                     ,  plz
-                     ,  ort
-                  FROM auszubildener
-                  FULL OUTER
-                  JOIN adresse
-                    ON  ausid = fk_ausid
+                SELECT name
+                , vorname
+                , plz
+                , ort
+                FROM auszubildener
+                FULL OUTER
+                JOIN adresse
+                ON ausid = fk_ausid
                 ;
             </code-block>
 
-            <chapter title="Ergebnistabelle" id="fulljoin-beispiel-ergebnistabelle">
+            <chapter id="fulljoin-beispiel-ergebnistabelle" title="Ergebnistabelle">
                 <table>
                     <tr>
                         <td>name</td>
@@ -570,10 +570,10 @@
         </chapter>
     </chapter>
 
-    <chapter title="CROSS JOIN" id="crossjoin">
-        <img src="datenbanken-sql-crossjoin.png" alt="CROSS JOIN"/>
+    <chapter id="crossjoin" title="CROSS JOIN">
+        <img alt="CROSS JOIN" src="datenbanken-sql-crossjoin.png"/>
 
-        <chapter title="Beschreibung" id="crossjoin-beschreibung">
+        <chapter id="crossjoin-beschreibung" title="Beschreibung">
             <p>
                 Ein <code>CROSS JOIN</code> verbindet völlig unabhängig von Schlüsselbeziehungen zwischen Eltern- und
                 Kindtabellen die Zeilen einer anderen Tabelle. Betrachtet man eine Zeile der linken Tabelle, so wird
@@ -591,23 +591,23 @@
             </p>
         </chapter>
 
-        <chapter title="Beispiel" id="crossjoin-beispiel">
+        <chapter id="crossjoin-beispiel" title="Beispiel">
             <code-block lang="sql">
-                SELECT  name
-                     ,  vorname
-                     ,  plz
-                     ,  ort
-                     ,  strasse
-                  FROM auszubildender
-                 CROSS
-                  JOIN  adresse
+                SELECT name
+                , vorname
+                , plz
+                , ort
+                , strasse
+                FROM auszubildender
+                CROSS
+                JOIN adresse
                 ;
             </code-block>
         </chapter>
     </chapter>
 
-    <chapter title="SELF JOIN" id="selfjoin">
-        <chapter title="Beschreibung" id="selfjoin-beschreibung">
+    <chapter id="selfjoin" title="SELF JOIN">
+        <chapter id="selfjoin-beschreibung" title="Beschreibung">
             <p>
                 Mit einem <code>SELF JOIN</code> können hierarchische Strukturen einer Tabelle abgebildet werden, die
                 über die entsprechenden Voraussetzungen verfügt. Um hierarchische Strukturen einer Tabelle abzubilden,
@@ -623,20 +623,20 @@
             </p>
         </chapter>
 
-        <chapter title="Beispiel" id="selfjoin-beispiel">
+        <chapter id="selfjoin-beispiel" title="Beispiel">
             <code-block lang="sql">
-                SELECT  ma1.mitarbeiterid  AS vorgesetzterid
-                     ,  ma1.name           AS vorgesetztername
-                     ,  ma2.name           AS mitarbeitername
-                     ,  ma2.mitarbeiterid  AS mitarbeiterid
-                  FROM mitarbeiterausbildungsbetrieb AS ma1
-                 INNER
-                  JOIN mitarbeiterausbildungsbetrieb AS ma2
-                    ON  ma1.mitarbeiterid = ma2.fk_mitarbeiterid
+                SELECT ma1.mitarbeiterid AS vorgesetzterid
+                , ma1.name AS vorgesetztername
+                , ma2.name AS mitarbeitername
+                , ma2.mitarbeiterid AS mitarbeiterid
+                FROM mitarbeiterausbildungsbetrieb AS ma1
+                INNER
+                JOIN mitarbeiterausbildungsbetrieb AS ma2
+                ON ma1.mitarbeiterid = ma2.fk_mitarbeiterid
                 ;
             </code-block>
 
-            <chapter title="Ergebnistabelle" id="selfjoin-beispiel-ergebnistabelle">
+            <chapter id="selfjoin-beispiel-ergebnistabelle" title="Ergebnistabelle">
                 <table>
                     <tr>
                         <td>vorgesetzterid</td>
@@ -697,7 +697,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

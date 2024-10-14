@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Änderungsoperationen mittels UPDATE" id="sql-dml-update">
-    <show-structure for="chapter,procedure" depth="2"/>
-    
-    <chapter title="Beispieltabelle" id="beispieltabelle">
+<topic id="sql-dml-update"
+       title="Änderungsoperationen mittels UPDATE"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
+
+    <chapter id="beispieltabelle" title="Beispieltabelle">
         <table>
             <tr>
                 <td>qid</td>
@@ -53,7 +53,7 @@
         </table>
     </chapter>
 
-    <chapter title="Das UPDATE-Statement" id="update">
+    <chapter id="update" title="Das UPDATE-Statement">
         <p>
             Datensätze einer Tabelle werden mit der <code>UPDATE</code>-Anweisung aktualisiert. Eingeleitet wird die
             Anweisung mit dem Schlüsselwort <code>UPDATE</code> worauf der Tabellenname folgt. Hinter der
@@ -65,7 +65,7 @@
 
         <code-block lang="sql">
             UPDATE qualifikationen
-               SET  kategorie = 'Office'
+            SET kategorie = 'Office'
             ;
         </code-block>
 
@@ -77,8 +77,8 @@
 
         <code-block lang="sql">
             UPDATE qualifikationen
-               SET  kuerzel = 'nicht definiert'
-             WHERE  kuerzel = NULL
+            SET kuerzel = 'nicht definiert'
+            WHERE kuerzel = NULL
             ;
         </code-block>
 
@@ -99,15 +99,15 @@
 
         <code-block lang="sql">
             UPDATE qualifikationen
-               SET  bezeichnung = 'PowerPoint'
-                 ,  kuerzel     = 'ppt'
-             WHERE  qid         = 4
+            SET bezeichnung = 'PowerPoint'
+            , kuerzel = 'ppt'
+            WHERE qid = 4
             ;
         </code-block>
 
     </chapter>
 
-    <chapter title="Ergebnistabelle" id="ergebnistabelle">
+    <chapter id="ergebnistabelle" title="Ergebnistabelle">
         <table>
             <tr>
                 <td>qid</td>
@@ -154,7 +154,7 @@
         </table>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

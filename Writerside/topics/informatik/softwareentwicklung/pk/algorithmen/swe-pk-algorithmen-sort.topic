@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Sortieralgorithmen" id="swe-pk-algorithmen-sort">
-    <show-structure for="chapter,procedure" depth="2"/>
-    
-    <chapter title="Einleitung" id="einleitung">
+<topic id="swe-pk-algorithmen-sort"
+       title="Sortieralgorithmen"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
+
+    <chapter id="einleitung" title="Einleitung">
         <p>
             Ein Sortierverfahren ist ein Algorithmus, der dazu dient, Elemente einer Liste zu sortieren. Voraussetzung
             ist, dass zwischen den Elementen eine Ordnung möglich ist. Es müssen also Vorgänger- und
             Nachfolgerbeziehungen bzw. Gleichheit zwischen zwei zu vergleichenden Elementen bezüglich des
-            Sortierkriteriums herstellbar sein. Diese Forderung wird als <emphasis><b>Trichotomie</b></emphasis>
+            Sortierkriteriums herstellbar sein. Diese Forderung wird als
+            <emphasis><b>Trichotomie</b></emphasis>
             bezeichnet und sagt, dass für alle Elemente einer Menge bezüglich der Schlüssel <code>a</code>,
             <code>b</code> gilt:
         </p>
@@ -31,7 +32,8 @@
         </p>
         <p>
             Eine weitere Voraussetzung dafür, dass man die Daten sortieren kann, ist
-            <emphasis><b>Transitivität</b></emphasis>. Ist sie gegeben, dann ist gewährleistet, dass die Sortierung
+            <emphasis><b>Transitivität</b></emphasis>
+            . Ist sie gegeben, dann ist gewährleistet, dass die Sortierung
             widerspruchsfrei durchgeführt werden kann. Es soll gelten: Gehört in der Liste Element <code>a</code> vor
             Element <code>b</code> und gehört Element <code>b</code> vor Element <code>c</code>, so folgt, dass Element
             <code>a</code> vor Element <code>c</code> anzuordnen ist.
@@ -61,9 +63,9 @@
         </p>
     </chapter>
 
-    <chapter title="Bubblesort" id="bubblesort">
-        <chapter title="Grundlagen" id="bubblesort-grundlagen">
-            <chapter title="Erklärung" id="bubblesort-grundlagen-erklaerung">
+    <chapter id="bubblesort" title="Bubblesort">
+        <chapter id="bubblesort-grundlagen" title="Grundlagen">
+            <chapter id="bubblesort-grundlagen-erklaerung" title="Erklärung">
                 <p>
                     Der Grundgedanke des Sortieralgorithmus kommt tatsächlich von Luftblasen. Ein Glas gefüllt mit
                     Mineralwasser: Darin steigen größere Luftblasen schneller auf als kleinere. Die sogenannten
@@ -78,7 +80,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Prinzip" id="bubblesort-grundlagen-prinzip">
+            <chapter id="bubblesort-grundlagen-prinzip" title="Prinzip">
                 <p>
                     Beim Bubblesort Algorithmus wird ein Array – also eine Eingabe-Liste – immer <b>paarweise von links
                     nach rechts in einer sogenannten Bubble-Phase durchlaufen</b>. Man startet also mit der ersten Zahl
@@ -90,19 +92,19 @@
             </chapter>
         </chapter>
 
-        <chapter title="Pseudocode" id="bubblesort-pseudocode">
+        <chapter id="bubblesort-pseudocode" title="Pseudocode">
             <code-block>
                 laenge = x.Anzahl;
                 for b = 1 to laenge
-                    for k = 0 to (laenge-b)
-                        if zahl[k] >  zahl[k+1]
-                            c = zahl [k]
-                            zahl[k] = zahl[k+1]
-                            zahl[k+1] = c
+                for k = 0 to (laenge-b)
+                if zahl[k] > zahl[k+1]
+                c = zahl [k]
+                zahl[k] = zahl[k+1]
+                zahl[k+1] = c
             </code-block>
         </chapter>
 
-        <chapter title="Bubblesort Laufzeit" id="bubblesort-laufzeit">
+        <chapter id="bubblesort-laufzeit" title="Bubblesort Laufzeit">
             <p>
                 In der Praxis wird der Sortieralgorithmus kaum verwendet. Grund hierfür ist seine sehr lange Laufzeit,
                 weswegen sich andere Sortierverfahren deutlich besser eignen. Beispielsweise der <b>Mergesort</b> oder
@@ -118,18 +120,18 @@
                 wenn der Array bereits von Beginn an nach dem Sortierkriterium sortiert ist.
             </p>
             <p>
-                Die Berechnung von der Anzahl benötigter Vergleiche einer Datenfolge von der Länge <code>n</code>, lässt 
+                Die Berechnung von der Anzahl benötigter Vergleiche einer Datenfolge von der Länge <code>n</code>, lässt
                 sich wie folgt darstellen:
             </p>
-            
+
             <code-block lang="tex">
                 n-1+n-2+...+1=\frac{(n(n-1)))}{2}\in O(n^{2})
             </code-block>
-            
+
             <p>
                 Bubblesort Laufzeit als Überblick:
             </p>
-            
+
             <list>
                 <li>Worst-Case: <code>O(n^2)</code></li>
                 <li>Average-Case: <code>O(n^2)</code></li>
@@ -138,8 +140,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Bucketsort" id="bucketsort">
-        <chapter title="Grundlagen" id="bucketsort-grundlagen">
+    <chapter id="bucketsort" title="Bucketsort">
+        <chapter id="bucketsort-grundlagen" title="Grundlagen">
             <p>
                 Der Bucketsort ist ein <b>nicht-vergleichsbasierter Sortieralgorithmus</b>. Er sortiert eine Liste von
                 gleichmäßig verteilten Elementen sehr schnell in linearer Zeit. Das Verfahren erfolgt dabei in drei
@@ -167,7 +169,7 @@
             </p>
         </chapter>
 
-        <chapter title="Algorithmus" id="bucketsort-algorithmus">
+        <chapter id="bucketsort-algorithmus" title="Algorithmus">
             <p>
                 Der <b>Bucketsort Algorithmus</b> lässt sich also folgendermaßen darstellen:
             </p>
@@ -187,23 +189,23 @@
                 </li>
             </list>
 
-            <chapter title="Pseudocode" id="bucketsort-algorithmus-pseudocode">
+            <chapter id="bucketsort-algorithmus-pseudocode" title="Pseudocode">
                 <code-block>
                     Bucketsort (liste, funktion)
-                        n = liste.size
-                        bucket = intervall(n)
-                            for (element in liste)
-                                bucket[floor (funktion(element) * n].add(element)
-                        ausgabearray []
-                        for (inhalt in buckets)
-                            x.insertionsort(inhalt)
-                            ausgabearray.append(x)
-                        return ausgabearray
+                    n = liste.size
+                    bucket = intervall(n)
+                    for (element in liste)
+                    bucket[floor (funktion(element) * n].add(element)
+                    ausgabearray []
+                    for (inhalt in buckets)
+                    x.insertionsort(inhalt)
+                    ausgabearray.append(x)
+                    return ausgabearray
                 </code-block>
             </chapter>
         </chapter>
 
-        <chapter title="Komplexität" id="bucketsort-komplexitaet">
+        <chapter id="bucketsort-komplexitaet" title="Komplexität">
             <p>
                 Die Komplexität hängt von mehreren Faktoren ab. Zum einen von der Verteilung der Funktionswerte. Dabei
                 beträgt die <code>O</code>-Notation
@@ -231,19 +233,19 @@
         </chapter>
     </chapter>
 
-    <chapter title="Counting Sort" id="countingsort">
-        <chapter title="Grundlagen" id="countingsort-grundlagen">
+    <chapter id="countingsort" title="Counting Sort">
+        <chapter id="countingsort-grundlagen" title="Grundlagen">
             <p>
                 Die Sortiertechnik basiert dabei auf Schlüssel zwischen einem bestimmten Bereich. Dabei wird die
                 <b>Anzahl der Elemente mit unterschiedlichen Schlüsselwerte gezählt</b>. Infolgedessen wird dann aus den
                 Ergebnissen eine <b>sortierte Liste aufgebaut</b>.
             </p>
 
-            <chapter title="Eigenschaften" id="countingsort-grundlagen-eigenschaften">
+            <chapter id="countingsort-grundlagen-eigenschaften" title="Eigenschaften">
                 <p>
                     Im Folgenden ein kurzer Überblick über die wichtigsten Eigenschaften eines Counting Sorts:
                 </p>
-                
+
                 <list>
                     <li>
                         Das Verfahren gehört zu den <b>stabilen Sortieralgorithmen</b>.
@@ -269,7 +271,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Funktionsweise" id="countingsort-funktionsweise">
+        <chapter id="countingsort-funktionsweise" title="Funktionsweise">
             <p>
                 Für den Algorithmus muss am Anfang eine zu sortierende <b>Eingabeliste</b> übergeben werden. Im ersten
                 Schritt muss ein <b>Maximum der Zahlen</b> berechnet werden. Sollte es der Fall sein, dass es etwas
@@ -284,7 +286,7 @@
                 entsprechende Position eingefügt werden, um dann als <b>sortierte Liste zurückgegeben</b> zu werden.
             </p>
 
-            <chapter title="Pseudocode" id="countingsort-funktionsweise-pseudocode">
+            <chapter id="countingsort-funktionsweise-pseudocode" title="Pseudocode">
                 <code-block>
                     <![CDATA[
                     countingsort int[] zahlen
@@ -306,7 +308,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Laufzeit" id="countingsort-laufzeit">
+        <chapter id="countingsort-laufzeit" title="Laufzeit">
             <p>
                 Die Counting Sort Laufzeit ist immer <b>abhängig von der Anzahl der Elemente einer Liste <code>n</code>
                 und der Größe des entsprechenden Zahlenintervalls <code>k</code></b>. Deshalb handelt es sich bei der
@@ -317,7 +319,7 @@
                 ist.
             </p>
 
-            <chapter title="Speicherkapazität" id="countingsort-laufzeit-speicherkapazitaet">
+            <chapter id="countingsort-laufzeit-speicherkapazitaet" title="Speicherkapazität">
                 Dadurch, dass der Counting Sort out-of-place arbeitet, braucht der Algorithmus eine temporäre Liste/ein
                 Hilfsarray zur Zwischenspeicherung unserer Zahlenwerte. Entsprechend beträgt der Speicherplatz
                 <code>k</code>-Elemente, wodurch die Speicherplatzkomplexität <code>O(n+k)</code> entspricht.
@@ -325,8 +327,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Heapsort" id="heapsort">
-        <chapter title="Grundlagen" id="heapsort-grundlagen">
+    <chapter id="heapsort" title="Heapsort">
+        <chapter id="heapsort-grundlagen" title="Grundlagen">
             <p>
                 Der Heapsort wurde von Robert W. Floyd und J. W. J Williams entwickelt. Er gehört zu den <b>instabilen
                 Sortieralgorithmen</b>, arbeitet dabei aber nach dem <b>in-place</b>-Prinzip. Die Funktionsweise basiert
@@ -341,7 +343,7 @@
             </p>
         </chapter>
 
-        <chapter title="Funktionsweise" id="heapsort-funktionsweise">
+        <chapter id="heapsort-funktionsweise" title="Funktionsweise">
             <p>
                 Als erstes benötigt es eine Liste, die nach dem Heap Sort geordnet werden soll, in diesem Fall nach dem
                 Max-Heap – also von klein nach groß. Im nächsten Schritt muss also aus dem Array ein max-Heap gebaut
@@ -353,7 +355,7 @@
                 besteht.
             </p>
 
-            <chapter title="Pseudocode" id="heapsort-funktionsweise-pseudocode">
+            <chapter id="heapsort-funktionsweise-pseudocode" title="Pseudocode">
                 <code-block>
                     <![CDATA[
                     Heapsort(arr) {
@@ -389,7 +391,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Komplexität" id="heapsort-komplexitaet">
+        <chapter id="heapsort-komplexitaet" title="Komplexität">
             <p>
                 Die Heapsort Komplexität beträgt im Allgemeinen <code>O(nlog(n))</code> Vergleiche. Damit ist er
                 bezüglich vergleichsbasierten-Sortieralgorithmen das schnellste asymptotische Sortierverfahren. Jedoch
@@ -407,14 +409,14 @@
             </p>
         </chapter>
 
-        <chapter title="Varianten" id="heapsort-varianten">
+        <chapter id="heapsort-varianten" title="Varianten">
             <p>
                 Für den Heapsort gibt es <b>verschiedene Varianten</b>. Neben dem Standard-Heapsort gibt es noch den
                 <b>Bottom-Up-Heapsort</b>, den <b>Smoothsort</b>, die <b>Ternären Heaps</b> und die <b>n-äre Heaps</b>,
                 welche die Komplexität in verschiedenen Bereichen potenziell steigern können.
             </p>
 
-            <chapter title="Bottom-Up-Heapsort" id="heapsort-varianten-bottomupheapsort">
+            <chapter id="heapsort-varianten-bottomupheapsort" title="Bottom-Up-Heapsort">
                 <p>
                     Die dabei populärste Variante ist der Bottom-Up-Heapsort, da er oft nur die Hälfte an
                     Vergleichsoperationen benötigt und kommt damit der Laufzeit des Quicksort sehr Nahe. Aber wie
@@ -428,7 +430,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Smoothsort" id="heapsort-varianten-smoothsort">
+            <chapter id="heapsort-varianten-smoothsort" title="Smoothsort">
                 <p>
                     Der Smoothsort ändert die Reihenfolge der Vorgehensweise. Während normalerweise vorsortierte Felder
                     keinen Vorteil erbringen, da immer das größte Element an die Wurzel wandern muss, um die Zahl
@@ -437,7 +439,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Ternäre Heaps" id="heapsort-varianten-ternaereheaps">
+            <chapter id="heapsort-varianten-ternaereheaps" title="Ternäre Heaps">
                 <p>
                     Wie man sich vielleicht schon denken kann, werden hier statt binären Heaps, ternäre Heaps benutzt.
                     Entsprechend läuft er nicht auf Basis eines Binärbaums, sondern ein vollständig besetzter Knoten hat
@@ -448,7 +450,7 @@
                 </p>
             </chapter>
 
-            <chapter title="n-äre Heaps" id="heapsort-varianten-naereheaps">
+            <chapter id="heapsort-varianten-naereheaps" title="n-äre Heaps">
                 <p>
                     Wie schon bei den Ternären Heaps, kann der Baum natürlich noch breiter, bzw. die Heaps noch flacher
                     gestaltet werden, durch das <b>Erweitern der Anzahl von Kindern eines Vaters</b>. Dadurch steigt die
@@ -460,8 +462,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Insertionsort" id="insertionsort">
-        <chapter title="Grundlagen" id="insertionsort-grundlagen">
+    <chapter id="insertionsort" title="Insertionsort">
+        <chapter id="insertionsort-grundlagen" title="Grundlagen">
             <p>
                 Der Insertion Sort gehört zu den stabilen <b>Sortieralgorithmen</b> und kann als <b>Sortieren durch
                 Einfügen</b> beschrieben werden, deswegen auch <b>Einfügesortierenmethode</b> genannt. Das Ganze lässt
@@ -473,7 +475,7 @@
                 Speicherplatzkomplexität spricht.
             </p>
 
-            <chapter title="Prinzip" id="insertionsort-grundlagen-prinzip">
+            <chapter id="insertionsort-grundlagen-prinzip" title="Prinzip">
                 <p>
                     Der <b>Grundgedanke</b> ist eigentlich ganz einfach, da es wahrscheinlich dem am nächsten kommt, wie
                     man die Zahlen selbst ordnen würde. Dabei stellt man sich ein Kartenspiel vor, welches der Größe
@@ -490,7 +492,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Algorithmus" id="insertionsort-algorithmus">
+        <chapter id="insertionsort-algorithmus" title="Algorithmus">
             <p>
                 Zuerst wird eine Liste übergeben. Gestartet wird immer mit dem ersten Element, also stellt dieser den
                 sortierten Bereich der Liste dar und der restliche Array gilt als unsortierter Bereich. Die Bedingung
@@ -499,7 +501,7 @@
                 man dann eine sortierte Liste.
             </p>
 
-            <chapter title="Pseudocode" id="insertionsort-algorithmus-pseudocode">
+            <chapter id="insertionsort-algorithmus-pseudocode" title="Pseudocode">
                 <p>
                     Gegeben sei also eine Liste l. Als nächstes wird der sortierte Bereich mit dem ersten Element
                     <code>a</code> definiert. Das erste Element im unsortierten Bereich wird als <code>b</code>
@@ -525,7 +527,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Laufzeit" id="insertionsort-laufzeit">
+        <chapter id="insertionsort-laufzeit" title="Laufzeit">
             <p>
                 Die Insertion Sort Laufzeit ist abhängig von der Anzahl von benötigten Verschiebungen, also auch
                 abhängig von der Anordnung von Elementen im unsortierten Bereich. Sowohl der durchschnittliche
@@ -578,7 +580,7 @@
                 \log(n!)\in O(n\log n-n\log e+\log n)=O(n\log n-0,4426n+\log n)
             </code-block>
 
-            <chapter title="Komplexität" id="insertionsort-laufzeit-komplexität">
+            <chapter id="insertionsort-laufzeit-komplexität" title="Komplexität">
                 <p>
                     Im Falle, dass der Array bereits "fast sortiert" ist, also jedes der Elemente fast am richtigen
                     Platz ist, kann die Laufzeit auch <code>O(n)</code> sein. In diesem Fall und auch im
@@ -595,8 +597,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Mergesort" id="mergesort">
-        <chapter title="Allgemeines" id="mergesort-allgemeines">
+    <chapter id="mergesort" title="Mergesort">
+        <chapter id="mergesort-allgemeines" title="Allgemeines">
             <p>
                 Der Mergesort gehört zu den stabilen <b>Sortieralgorithmen</b>. Er leitet sich im Allgemeinen vom
                 englischen "merge", also verschmelzen und "sort", dem sortieren ab. Der Sinn dahinter ist einfach nur,
@@ -604,16 +606,18 @@
                 Listen unterteilt. Man kann also sagen, er zerlegt ein Gesamtproblem in mehrere Teilprobleme und löst
                 diese dann Stück für Stück. Im Endeffekt setzt er sie dann zum Schluss zu einer Gesamtlösung zusammen.
                 Heißt also verallgemeinert, dass der Algorithmus nach dem Grundsatz teile- und herrsche arbeitet. Das
-                <b>Teile-und-herrsche-Verfahren</b> (eng. <emphasis>divide and conquer</emphasis>) stellt in der
+                <b>Teile-und-herrsche-Verfahren</b> (eng.
+                <emphasis>divide and conquer</emphasis>
+                ) stellt in der
                 Informatik ein Paradigma für den Entwurf eines effizienten Algorithmus dar.
             </p>
         </chapter>
 
-        <chapter title="Funktionsweise" id="mergesort-funktionsweise">
+        <chapter id="mergesort-funktionsweise" title="Funktionsweise">
             <p>
                 Die <b>Funktionsweise</b> lässt sich ganz einfach <b>in drei Schritten</b> erklären:
             </p>
-            
+
             <list>
                 <li>
                     Eine Liste wird in zwei Hälften zerlegt. Diese <b>Unterteilung</b> wird solange fortgesetzt, bis nur
@@ -628,7 +632,7 @@
             </list>
         </chapter>
 
-        <chapter title="Pseudocode" id="mergesort-pseudocode">
+        <chapter id="mergesort-pseudocode" title="Pseudocode">
             <p>
                 Der Algorithmus lässt sich in zwei Funktionen beschreiben, dafür wird zuerst einmal die Liste
                 <code>a</code> eingegeben und in eine linke und rechte Hälfte halbiert. Für beide Seiten soll dann
@@ -663,17 +667,19 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quicksort" id="quicksort">
-        <chapter title="Definition" id="quicksort-definition">
+    <chapter id="quicksort" title="Quicksort">
+        <chapter id="quicksort-definition" title="Definition">
             <p>
                 Das Sortierverfahren gehört zu den <b>rekursiven und nicht stabilen Sortieralgorithmen</b>. Er lässt
                 sich aus dem englischen quick = schnell und sort = sortieren ableiten und wurde in den sechziger Jahren
                 von C. Antony R. Hoare in seiner Grundform entwickelt. Der Quicksort Algorithmus arbeitet wie der
-                Mergesort nach dem <b>Teile-und-herrsche-Verfahren</b> (eng. <emphasis>divide and conquer</emphasis>)
+                Mergesort nach dem <b>Teile-und-herrsche-Verfahren</b> (eng.
+                <emphasis>divide and conquer</emphasis>
+                )
                 der Informatik.
             </p>
 
-            <chapter title="Pivotelement" id="quicksort-definition-pivotelement">
+            <chapter id="quicksort-definition-pivotelement" title="Pivotelement">
                 <p>
                     Das Pivotelement leitet sich vom französischem pivot = Dreh-/Angelpunkt ab. Es handelt sich dabei
                     immer um ein <b>Element einer Zahlenmenge</b>, welches als Erstes von einem Algorithmus <b>bestimmt
@@ -685,14 +691,14 @@
             </chapter>
         </chapter>
 
-        <chapter title="Erklärung" id="erklaerung">
+        <chapter id="erklaerung" title="Erklärung">
             <p>
                 Das genaue Prinzip hinter dem Quicksort kann man nicht unbedingt verallgemeinern. Es kann gewisse
                 Abweichungen durch die jeweils verwendete Programmiersprache geben, wodurch der Ablauf tatsächlich
                 unterschiedlich beeinflusst werden kann. Trotzdem gibt es ein gewisses Grundprinzip.
             </p>
 
-            <chapter title="Pivotelement bestimmen" id="quicksort-erklaerung-pivotelement">
+            <chapter id="quicksort-erklaerung-pivotelement" title="Pivotelement bestimmen">
                 <p>
                     Dafür kann man eigentlich alle Elemente verwenden. Heißt, dass sowohl das erste als auch das letzte
                     Element, einen Wert aus der Mitte oder sogar einen Zufallswert ausgewählt können. Für eine optimale
@@ -700,7 +706,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Teile und herrsche" id="quicksort-erklaerung-teileundherrsche">
+            <chapter id="quicksort-erklaerung-teileundherrsche" title="Teile und herrsche">
                 <p>
                     Das Pivot-Element wird dann <b>in die Mitte gesetzt und die restlichen Werte sortiert</b>. Einmal
                     nach <b>links</b>, wenn sie <b>kleiner</b> sind und einmal nach <b>rechts</b>, wenn sie
@@ -709,7 +715,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Rekursiver Quicksort-Aufruf" id="quicksort-erklaerung-rekursiver">
+            <chapter id="quicksort-erklaerung-rekursiver" title="Rekursiver Quicksort-Aufruf">
                 <p>
                     <b>Rekursiver Quicksort-Aufruf für beide Teile des Arrays (Vor und nach dem Pivot-Element):</b>
                 </p>
@@ -723,7 +729,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Pseudocode für das In-Place-Verfahren" id="quicksort-pseudocode">
+        <chapter id="quicksort-pseudocode" title="Pseudocode für das In-Place-Verfahren">
             <code-block>
                 <![CDATA[
                 funktion quicksort(li, re)
@@ -752,8 +758,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Radix Sort" id="radixsort">
-        <chapter title="Grundlagen" id="radixsort-grundlagen">
+    <chapter id="radixsort" title="Radix Sort">
+        <chapter id="radixsort-grundlagen" title="Grundlagen">
             <p>
                 Der Radixsort kann aus dem lateinischen radix = Wurzel; Basis abgeleitet werden. Er ist auch als
                 Distributionsort oder Fachverteilen bekannt. Dabei handelt es sich um ein lineares Sortierverfahren
@@ -772,7 +778,7 @@
             </p>
         </chapter>
 
-        <chapter title="Vorgehensweise" id="radixsort-vorgehensweise">
+        <chapter id="radixsort-vorgehensweise" title="Vorgehensweise">
             <p>
                 Als Prinzip heißt das, dass in jedem Durchlauf die einzelnen Elemente durchgegangen und dabei nur einen
                 bestimmten Teil davon begutachtet werden. Als Beispiel kann man sich ein Geburtsdatum vorstellen,
@@ -780,7 +786,7 @@
                 und arbeitet sich – Durchlauf für Durchlauf- zum ersten Element (z.B. Tag) in zwei Phasen vor.
             </p>
 
-            <chapter title="Partitionierungsphase" id="radixsort-vorgehensweise-partitionierungsphase">
+            <chapter id="radixsort-vorgehensweise-partitionierungsphase" title="Partitionierungsphase">
                 <p>
                     In der Partitionierungsphase werden die <b>Daten in das vorhandene Fach aufgeteilt</b>. Dabei gibt
                     es für <b>jedes einzelne Zeichen</b> des jeweiligen Alphabets ein <b>eigenes Fach</b>. Für
@@ -791,7 +797,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Sammelphase" id="radixsort-vorgehensweise-sammelphase">
+            <chapter id="radixsort-vorgehensweise-sammelphase" title="Sammelphase">
                 <p>
                     Die zweite Phase ist die Sammelphase. Dabei fügt man die <b>Inhalte der einzelnen Fächer wieder zu
                     einer neu sortierten Liste zusammen</b>, beginnend mit dem Fach mit der niedrigsten Wertigkeit.
@@ -804,7 +810,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Laufzeit" id="radixsort-vorgehensweise-laufzeit">
+            <chapter id="radixsort-vorgehensweise-laufzeit" title="Laufzeit">
                 <p>
                     <b>Die Laufzeit lässt sich in etwa mit <code>O(l*n)</code> abschätzen</b>. Das <b>l</b> ist dabei
                     die <b>Länge eines Schlüssels</b>. <b>n</b> stellt die <b>Anzahl der zu sortierenden Elemente</b>
@@ -815,7 +821,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Beispiel" id="radixsort-beispiel">
+        <chapter id="radixsort-beispiel" title="Beispiel">
             <code-block lang="java">
                 <![CDATA[
                 class Radix_Sortieralgorithmus {
@@ -870,7 +876,7 @@
                 ]]>
             </code-block>
 
-            <chapter title="Iterativ" id="iterativ">
+            <chapter id="iterativ" title="Iterativ">
                 <p>
                     Im Folgenden ist ein Radix Sort Java-Methode zum Sortieren einer Integer-Liste. Bei dem Code werden
                     potenzielle Vorzeichen nicht beachtet und sollte nur bei positiven Zahlen genutzt werden. Zusätzlich
@@ -899,9 +905,9 @@
             </chapter>
         </chapter>
     </chapter>
-    
-    <chapter title="Selectionsort" id="selectionsort">
-        <chapter title="Grundlagen" id="grundlagen">
+
+    <chapter id="selectionsort" title="Selectionsort">
+        <chapter id="grundlagen" title="Grundlagen">
             <p>
                 Das Sortierverfahren gehört in der Informatik zu den einfachen und <b>instabilen Sortieralgorithmen</b>.
                 Er kann dir auch durch die Begriffe Selectsort oder Exchange Sort bekannt sein.
@@ -912,7 +918,7 @@
                 (MaxSort). Das Vorgehen dabei bleibt immer gleich.
             </p>
 
-            <chapter title="Optimized Selection Sort Algorithm" id="selectionsort-grundlagen-ossa">
+            <chapter id="selectionsort-grundlagen-ossa" title="Optimized Selection Sort Algorithm">
                 <p>
                     Der <b>"Optimized Selection Sort Algorithm"</b> – kurz OSSA ist ein alternativer Ansatz des
                     Selectionsorts. Dabei werden beide Optionen der Sortierung gleichzeitig angewendet, heißt also, dass
@@ -923,7 +929,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Funktionsweise und Pseudocode" id="selectionsort-funktionsweise">
+        <chapter id="selectionsort-funktionsweise" title="Funktionsweise und Pseudocode">
             <p>
                 Zuerst braucht es eine Liste. Diese ist anfangs komplett unsortiert, weswegen der sortierte Bereich zu
                 Beginn als leer gilt. Die Bedingung ist dabei, dass solange der unsortierte Bereich noch ein Element
@@ -935,19 +941,19 @@
 
             <code-block>
                 Selectionsort (Liste l)
-                    For i = 0 to n-2
-                    Do
-                        Minimum = i
-                        For j = i + 1 to n-1
-                        Do
-                            If l[Minimum] > l[j] then Minimum = j
-                                tmp = l[i]
-                                l[i] = l[Minimum]
-                                l[Minimum] = tmp
+                For i = 0 to n-2
+                Do
+                Minimum = i
+                For j = i + 1 to n-1
+                Do
+                If l[Minimum] > l[j] then Minimum = j
+                tmp = l[i]
+                l[i] = l[Minimum]
+                l[Minimum] = tmp
             </code-block>
         </chapter>
 
-        <chapter title="Laufzeit" id="selectionsort-laufzeit">
+        <chapter id="selectionsort-laufzeit" title="Laufzeit">
             <p>
                 Der Sortieralgorithmus ist ein ziemlich besonderer Fall, denn es sind wie beim <b>Mergesort</b> keine
                 Unterschiede festzustellen. Die Laufzeit im <b>Selection Sort Worst Case entspricht genau der
@@ -959,8 +965,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Shellsort" id="shellsort">
-        <chapter title="Grundlagen" id="shellsort-grundlagen">
+    <chapter id="shellsort" title="Shellsort">
+        <chapter id="shellsort-grundlagen" title="Grundlagen">
             <p>
                 Der Shellsort, den Donald Shell ursprünglich entwickelte, ist Teil von den <b>instabilen
                 Sortieralgorithmen</b>. Der Das Sortierverfahren arbeitet <b>in-place</b>. Der Shellsort weist
@@ -975,14 +981,14 @@
             </p>
         </chapter>
 
-        <chapter title="Implementierung" id="shellsort-implementierung">
+        <chapter id="shellsort-implementierung" title="Implementierung">
             <p>
                 Aufgebaut auf dem eben verwendeten Beispiel, werden im Folgenden zwei mögliche Implementierungen
                 aufgelistet. Dabei wird ein <b>Shellsort Java-Quellcode</b> und eine <b>Python-Implementierung</b>
                 dargestellt.
             </p>
 
-            <code-block lang="java" collapsed-title="JAVA" collapsible="true">
+            <code-block collapsed-title="JAVA" collapsible="true" lang="java">
                 <![CDATA[
                 public class Shellsort{
                     public static void sort(int[] liste) {
@@ -1016,7 +1022,7 @@
                 ]]>
             </code-block>
 
-            <code-block lang="python" collapsed-title="PYTHON" collapsible="true">
+            <code-block collapsed-title="PYTHON" collapsible="true" lang="python">
                 <![CDATA[
                 def shellsort(liste):
                     h = len(liste)
@@ -1044,7 +1050,7 @@
             </code-block>
         </chapter>
 
-        <chapter title="Komplexität" id="shellsort-komplexitaet">
+        <chapter id="shellsort-komplexitaet" title="Komplexität">
             <p>
                 Warum sollte man den Shell Sort verwenden, wenn man doch gleich den Insertionsort implementieren könnte?
                 Der Grund liegt darin, dass man durch die Aufteilung in Untersequenzen für viel <b>kürzere Strecken beim
@@ -1092,7 +1098,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018

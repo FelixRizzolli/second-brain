@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Repository" id="swe-vcs-git-repository">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-vcs-git-repository"
+       title="Repository"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Repository in der Theorie" id="theorie">
+    <chapter id="theorie" title="Repository in der Theorie">
         <p>
             Ein Repository ist die Sammlung (das Depot, das Archiv aller Dateien eines Projektes inklusive ihrer
             Geschichte. Das Repository ist vergleichbar mit einem Datenbanksystem, das sämtliche Zustände des Projekts
@@ -32,7 +32,7 @@
             <b>Arbeitsverzeichnis</b> oder <b>Projektverzeichnis</b> üblich.
         </p>
 
-        <chapter title="Origin" id="theorie-origin">
+        <chapter id="theorie-origin" title="Origin">
             <p>
                 Das Repository <b>Origin</b> (wörtlich Ursprung) ist das Repository von dem das Projekt ursprünglich
                 geklont wurde, bzw. das explizit als externes Default-Repository konfiguriert wurde. Push- und
@@ -41,14 +41,14 @@
             </p>
         </chapter>
 
-        <chapter title="Hooks" id="theorie-hooks">
+        <chapter id="theorie-hooks" title="Hooks">
             <p>
                 Git kann beim Eintreten bestimmter Ereignisse automatisch ein Script ausführen. Die Konfiguration dieses
                 Features erfolgt über Hooks. Mehr zu Hooks <a href="swe-vcs-git-hooks.topic">»hier«</a>
             </p>
         </chapter>
 
-        <chapter title="Submodule" id="theorie-submodule">
+        <chapter id="theorie-submodule" title="Submodule">
             <p>
                 Manche Projekte greifen auf Subprojekte (Bibliotheken, Datenbanktreiber etc.) zurück. Damit parallel zum
                 Projekt auch am Code der Subprojekte Änderungen durchgeführt werden können, gleichzeitig aber das
@@ -57,7 +57,7 @@
                 Commits unabhängig voneinander.
             </p>
 
-            <chapter title="Subtrees" id="theorie-submodule-subtrees">
+            <chapter id="theorie-submodule-subtrees" title="Subtrees">
                 <p>
                     Subtrees sind eine Variante von Submodulen. Auch hier wird ein externes Repository in das eigene
                     integriert. Allerdings werden in diesem Fall ale Dateien in einer Git-Datenbank verwaltet. was den
@@ -67,7 +67,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Remote Repositorys" id="remote">
+    <chapter id="remote" title="Remote Repositorys">
         <p>
             Git wurde, im Gegensatz zu vielen anderen Verwaltungsprogrammen, mit der Vision einer dezentralen
             Organisation konzipiert. Beispiel: Drei Entwickler konfigurieren jeweils, auf ihren eigenen Rechner, ihren
@@ -81,11 +81,11 @@
             Weboberfläche zusammengestellt und entsprechende Dienste sowohl kostenlos als auch kommerziell angeboten.
         </p>
 
-        <chapter title="Initialisierungsarbeiten" id="remote-init">
+        <chapter id="remote-init" title="Initialisierungsarbeiten">
             <p>
                 Ein klokales Repository mit einem entfernten verbinden:
             </p>
-            
+
             <list>
                 <li>
                     Wenn das Remote Repository bereits existiert, so kann es geklont werden. Dafür wird der Befehl
@@ -96,7 +96,7 @@
                         Wurde das Projekt zuerst lokal gestartet und soll erst später in ein anfänglich leeres Remote
                         Repository übertragen werden sow werden folgende Schritte abgearbeitet:
                     </p>
-                    
+
                     <list>
                         <li>
                             Ordner des Repositorys erstellen und in das jeweilige Verzeichnis wechseln:
@@ -119,7 +119,7 @@
             </list>
         </chapter>
 
-        <chapter title="Push und Pull" id="remote-pushpull">
+        <chapter id="remote-pushpull" title="Push und Pull">
             <p>
                 Nachdem das Remote Repository geklont wurde, können die Entwickler mit dem Codieren beginnen. die
                 Änderungen werden durch den Befehl <code>git add</code>. in den Stash geladen und mittels
@@ -144,7 +144,7 @@
             </note>
         </chapter>
 
-        <chapter title="Einen eigenen Git-Server konfigurieren" id="remote-konfigurieren">
+        <chapter id="remote-konfigurieren" title="Einen eigenen Git-Server konfigurieren">
             <p>
                 Mit der folgenden Anleitung lasst sich ganz einfach ein eigener Git-Server konfigurieren:
                 <a href="https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols">
@@ -157,29 +157,33 @@
         </chapter>
     </chapter>
 
-    <chapter title="Fork" id="fork">
+    <chapter id="fork" title="Fork">
         <p>
             Um ein Open-Source-Projekt eines öffentlichen GitHub-Repositorys herunterzuladen, kann man den Befehl
             <code>git clone</code> ausführen. Ist man selbst kein Mitglied des Entwicklerteams, so können Änderungen mit
             <code>git push</code> nicht hochgeladen werden.
         </p>
 
-        <chapter title="Forks erstellen" id="fork-erstellen">
+        <chapter id="fork-erstellen" title="Forks erstellen">
             <p>
                 Um die Zusammenarbeit in Open-Source-Projekten zu erleichtern und nicht jeden x-Beliebigen Entwicklern
                 die Rechte zum Repository zu geben hat GitHub vor vielen Jahren das Erstellen von sog. Forks etabliert.
                 Um an einem fremden Projekt mitzuarbeiten, gibt es auf der jeweiligen GitHub-Seite den Button
-                <ui-path>Fork</ui-path>. Damit wird eine Kopie des fremden Repositorys auf dem eigenen GitHub-Account
+                <ui-path>Fork</ui-path>
+                . Damit wird eine Kopie des fremden Repositorys auf dem eigenen GitHub-Account
                 erstellt. Mit <code>git clone</code> kann nun der Fork ein lokales Repository auf dem Rechner erstellt
                 werden. Wird der Befehl <code>git push</code> ausgeführt so wirken sich die Änderungen nur auf dem Fork
                 aus.
             </p>
         </chapter>
 
-        <chapter title="Der Pull-Request" id="fork-pull">
+        <chapter id="fork-pull" title="Der Pull-Request">
             <p>
-                In der GitHub-Weboberfläche kann nun ein Pull-Request erstellt werden <ui-path>(Reiter) Pull requests →
-                (Button) New pull request</ui-path>. Damit wird man auf die Seite des ursprünglichen Projekts
+                In der GitHub-Weboberfläche kann nun ein Pull-Request erstellt werden
+                <ui-path>(Reiter) Pull requests →
+                    (Button) New pull request
+                </ui-path>
+                . Damit wird man auf die Seite des ursprünglichen Projekts
                 umgeleitet. GitHub zeigt dabei eine Zusammenfassung der durchgeführten Änderungen an. In einem weiteren
                 Schritt kann eine Nachricht an die Entwickler des externen Repositorys übermittelt werden. Üblicherweise
                 handelt es sich dabei um Informationen was geändert wurde und eventuell auch warum.
@@ -199,10 +203,11 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
-            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler, 2020
+            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler,
+            2020
         </tip>
     </chapter>
 </topic>

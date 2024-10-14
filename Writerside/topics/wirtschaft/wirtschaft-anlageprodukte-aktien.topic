@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Aktien" id="wirtschaft-anlageprodukte-aktien">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="wirtschaft-anlageprodukte-aktien"
+       title="Aktien"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Aktienkurse" id="aktienkurse">
+    <chapter id="aktienkurse" title="Aktienkurse">
         <p>
             Aktienkurse verändern sich je nach Angebot und Nachfrage. Warum Aktionäre verstärkt hinter einem bestimmten
             Papier herjagen, oder warum plötzlich viele Aktionäre ihr Papier verkaufen wollen, ist viel schwerer
@@ -25,7 +26,7 @@
         </p>
 
 
-        <chapter title="Faktor: Die Größe eines Unternehmens" id="aktienkurse-faktor-groesse">
+        <chapter id="aktienkurse-faktor-groesse" title="Faktor: Die Größe eines Unternehmens">
             <p>
                 Bei täglichen Kursbewegungen gilt die Faustregel, dass je kleiner und unbekannter das Unternehmen ist,
                 desto höher die können die Kursausschläge ausfallen. Je mehr Aktien eines Unternehmens gehandelt werden
@@ -37,7 +38,7 @@
             </p>
         </chapter>
 
-        <chapter title="Faktor: Indizes" id="aktienkurse-faktor-indizes">
+        <chapter id="aktienkurse-faktor-indizes" title="Faktor: Indizes">
             <p>
                 Konzerne werden in Indizes zusammengefasst und je nachdem, ob sich diese Indizes nach oben oder unten
                 bewegen, erleben die Börsen verschiedene Stimmungen, denn die Indizes fungieren als Stimmungsbarometer.
@@ -49,8 +50,8 @@
             </p>
         </chapter>
     </chapter>
-    
-    <chapter title="Vorbörslicher Aktienhandel" id="vorboerslicher-aktienhandel">
+
+    <chapter id="vorboerslicher-aktienhandel" title="Vorbörslicher Aktienhandel">
         <p>
 
             Beim vorbörslichen Handel mit Aktien werden Aktien noch vor dem eigentlichen Börsengang von den Anlegern
@@ -92,7 +93,7 @@
         </note>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3527717408, Börse für Dummies (Ausgabe 6), Christine Bortenläger &amp; Ulrich Kirstein, John Wiley &amp;

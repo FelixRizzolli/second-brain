@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Softwareentwicklungsprozesse" id="swe-prozesse">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-prozesse"
+       title="Softwareentwicklungsprozesse"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einleitung" id="einleitung">
+    <chapter id="einleitung" title="Einleitung">
         <p>
             Softwareprojekte werden heute professional geplant und durchgeführt. Im Laufe der Zeit hat sich die Art und
             Weise der Durchführung stetig weiterentwickelt. Ein iteratives und agiles Vorgehen ist heute alternativlos.
@@ -23,7 +23,7 @@
     </chapter>
 
 
-    <chapter title="Das Problem" id="problem">
+    <chapter id="problem" title="Das Problem">
         <p>
             Eine vollständige und korrekte Erhebung der Anforderungen zu Projektbeginn ist nahezu unmöglich. Dies hat
             mehrere Ursachen. Die wichtigsten sind:
@@ -31,7 +31,7 @@
 
         <list>
             <li>Unvollständigkeit der Anforderungen zu Beginn des Projektes,</li>
-            <li>Dynamische Änderungen in den Geschäftsmodellen während der Projektlaufzeit und </li>
+            <li>Dynamische Änderungen in den Geschäftsmodellen während der Projektlaufzeit und</li>
             <li>lange Projektlaufzeiten, teilweise von mehreren Jahren.</li>
         </list>
 
@@ -56,7 +56,7 @@
         </p>
     </chapter>
 
-    <chapter title="Entwicklung Softwareentwicklungsprozesse" id="entwicklung">
+    <chapter id="entwicklung" title="Entwicklung Softwareentwicklungsprozesse">
         <p>
             In den 1980er und frühen 1990er Jahren wurde ein großer Wert auf sorgfältige Projektplanung und
             formalisierte Qualitätssicherung gelegt. Die Entwicklung erfolgte oft in großen Teams. Im Ergebnis wurde oft
@@ -68,10 +68,10 @@
             Programmentwicklung kümmern und nicht mehr so viel Zeit für Entwurf und Dokumentation aufwenden.
         </p>
 
-        <img src="swe-prozesse-entwicklung.jpg" alt="Entwicklung Softwareentwicklungsprozesse"/>
+        <img alt="Entwicklung Softwareentwicklungsprozesse" src="swe-prozesse-entwicklung.jpg"/>
     </chapter>
 
-    <chapter title="Ziele der agilen Softwareentwicklung" id="ziele">
+    <chapter id="ziele" title="Ziele der agilen Softwareentwicklung">
         <note>
             »Agilität« steht für die Fähigkeit, mit Änderungen umzugehen, d. h. schnell und flexibel auf
             Kundenanforderungen zu reagieren. Änderungen werden nicht mehr als störend aufgefasst, sondern tragen dazu
@@ -97,7 +97,7 @@
         </list>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018

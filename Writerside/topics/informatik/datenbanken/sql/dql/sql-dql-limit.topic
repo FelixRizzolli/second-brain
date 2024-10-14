@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Ergebnisliste begrenzen (LIMIT, TOP, FETCH)" id="sql-dql-limit">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-dql-limit"
+       title="Ergebnisliste begrenzen (LIMIT, TOP, FETCH)"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Die FETCH-Klausel" id="fetch">
+    <chapter id="fetch" title="Die FETCH-Klausel">
         <p>
             Der SQL-Standard bietet mit der <code>FETCH</code>-Klausel die Möglichkeit, die Zeilen einer Ergebnisliste
             einer Abfrage zu begrenzen. Dies eignet sich besonders beim Arbeiten mit großen sehr Datenmengen, wenn man
@@ -17,13 +17,13 @@
         </p>
     </chapter>
 
-    <chapter title="Unterschiede zwischen den einzelnen DBMS" id="unterschiede">
+    <chapter id="unterschiede" title="Unterschiede zwischen den einzelnen DBMS">
         <p>
             Nicht alle Datenbanken realisieren die Funktion so, wie sie im SQL-Standard festgelegt wurde. Als Beispiel
             MySQL, MS-SQL-Server und PostgreSQL mit jeweils der Einschränkung von 2 Datensätzen:
         </p>
 
-        <chapter title="MySQL: LIMIT" id="unterschiede-mysql">
+        <chapter id="unterschiede-mysql" title="MySQL: LIMIT">
             <p>
                 Bei der MySQL-Datenbank wird die LIMIT-Klausel verwendet.
             </p>
@@ -33,7 +33,7 @@
             </code-block>
         </chapter>
 
-        <chapter title="MS-SQL-Server: TOP-Klausel" id="unterschiede-mssqlserver">
+        <chapter id="unterschiede-mssqlserver" title="MS-SQL-Server: TOP-Klausel">
             <p>
                 Bei der MS-SQL-Server-Datenbank wird die TOP-Klausel verwendet.
             </p>
@@ -43,7 +43,7 @@
             </code-block>
         </chapter>
 
-        <chapter title="PostgreSQL: FETCH-Klausel" id="unterschiede-postgresql">
+        <chapter id="unterschiede-postgresql" title="PostgreSQL: FETCH-Klausel">
             <p>
                 Bei der PostgreSQL-Datenbank wird Standardgemäß die FETCH-Klausel verwendet.
             </p>
@@ -54,7 +54,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Löschoperationen durch DELETE" id="sql-dml-delete">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-dml-delete"
+       title="Löschoperationen durch DELETE"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Beispieltabelle - qualifikationen" id="beispieltabelle">
+    <chapter id="beispieltabelle" title="Beispieltabelle - qualifikationen">
         <table>
             <tr>
                 <td>qid</td>
@@ -53,7 +53,7 @@
         </table>
     </chapter>
 
-    <chapter title="Das DELETE-Statement" id="delete">
+    <chapter id="delete" title="Das DELETE-Statement">
         <p>
             Die Anweisung beginnt mit dem Wort <code>DELETE</code>, das der Datenbank mitteilt, dass eine Löschoperation
             durchgeführt werden soll. Darauf folgt das Schlüsselwort <code>FROM</code> und der dazugehörige Tabellenname
@@ -71,28 +71,28 @@
         <code-block lang="sql">
             -- Löscht alle Datensätze; Nicht in der Ergebnistabelle miteinbezogen.
             DELETE
-              FROM qualifikationen
+            FROM qualifikationen
             ;
         </code-block>
 
         <code-block lang="sql">
             -- Löscht den Datensatz, welcher die Bezeichnung Word trägt.
             DELETE
-              FROM qualifikationen
-             WHERE  qid = 1
+            FROM qualifikationen
+            WHERE qid = 1
             ;
         </code-block>
 
         <code-block lang="sql">
             -- Löscht 2 Datensätze, welche die Bezeichnung Outlook und MS Project tragen. */
             DELETE
-              FROM qualifikationen
-             WHERE  kuerzel = 'nicht definiert'
+            FROM qualifikationen
+            WHERE kuerzel = 'nicht definiert'
             ;
         </code-block>
     </chapter>
 
-    <chapter title="Ergebnistabelle" id="ergebnistabelle">
+    <chapter id="ergebnistabelle" title="Ergebnistabelle">
         <table>
             <tr>
                 <td>qid</td>
@@ -121,7 +121,7 @@
         </table>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

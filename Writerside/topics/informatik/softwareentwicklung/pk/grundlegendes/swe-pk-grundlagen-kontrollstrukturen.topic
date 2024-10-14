@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Kontrollstrukturen" id="swe-pk-grundlagen-kontrollstrukturen">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-pk-grundlagen-kontrollstrukturen"
+       title="Kontrollstrukturen"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlegendes" id="grundlagen">
+    <chapter id="grundlagen" title="Grundlegendes">
         <p>
             Um den Programmfluss zu kontrollieren, benötigt man sogenannte Kontrollstrukturen. Damit kann man die
             Auswahl aus einer Anzahl von Möglichkeiten nach einem bestimmten Kriterium vornehmen (Auswahlstrukturen)
@@ -14,20 +14,20 @@
         </p>
     </chapter>
 
-    <chapter title="Auswahlstrukturen" id="auswahl">
+    <chapter id="auswahl" title="Auswahlstrukturen">
         <p>
             Bei den Auswahlstrukturen, auch bedingte Anweisungen und Verzweigungen genannt, geht es um die Auswahl
             zwischen verschiedenen Alternativen.
         </p>
 
-        <chapter title="if-elseif-else-Statement" id="auswahl-if">
+        <chapter id="auswahl-if" title="if-elseif-else-Statement">
             <code-block lang="javascript">
                 if (Bedingung1) {
-                    // ...Anweisungsblock 1
+                // ...Anweisungsblock 1
                 } else if (Bedingung2) {
-                    // ...Anweisungsblock 2
+                // ...Anweisungsblock 2
                 } else {
-                    // ...Anweisungsblock 3
+                // ...Anweisungsblock 3
                 }
             </code-block>
 
@@ -58,19 +58,19 @@
 
                 <code-block lang="javascript">
                     if (Bedingung) {
-                        // ...Anweisungsblock 1
+                    // ...Anweisungsblock 1
                     } else {
-                        if (Bedingung) {
-                            // ...Anweisungsblock 2
-                        } else {
-                            // ...Anweisungsblock 3
-                        }
+                    if (Bedingung) {
+                    // ...Anweisungsblock 2
+                    } else {
+                    // ...Anweisungsblock 3
+                    }
                     }
                 </code-block>
             </note>
         </chapter>
 
-        <chapter title="Bedingungsoperator bzw. Auswahloperator" id="auswahl-operator">
+        <chapter id="auswahl-operator" title="Bedingungsoperator bzw. Auswahloperator">
             <p>
                 Für weniger komplexe Situationen können <code>if else</code>-Verzweigungen mithilfe des
                 Bedingungsoperators <code>?:</code> ausgedrückt werden. Dieser erwartet drei Operanden: Eine Bedingung
@@ -95,13 +95,13 @@
 
             <code-block lang="javascript">
                 if (checkbox1.checked == true)
-                    label1.text = "Rot";
+                label1.text = "Rot";
                 else
-                    label1.text = "Grün";
+                label1.text = "Grün";
             </code-block>
         </chapter>
 
-        <chapter title="Fallunterscheidung: switch-Verzweigung" id="auswahl-switch">
+        <chapter id="auswahl-switch" title="Fallunterscheidung: switch-Verzweigung">
             <p>
                 Mithilfe der Fallunterscheidung, der sog. <code>switch</code>-Verzweigung oder auch Mehrfachverzweigung
                 genannt, kann ein Ausdruck, zum Beispiel eine Variable, mit mehreren möglichen Werten verglichen werden.
@@ -126,23 +126,23 @@
 
             <code-block lang="javascript">
                 switch (Prüfausdruck) {
-                    [case Wert1:]
-                        //Anweisungen für Fall 1
-                        break;
-                    [case Wert2:]
-                        //Anweisungen für Fall 2
-                        break;
-                    [case Wert3:]
-                    [case Wert4:]
-                    [case Wert5:]
-                        //Anweisungen für Fall 3, 4 und 5
-                        break;
-                    [...]
-                    [default:]
-                        // Anweisungen für diejenigen Fälle,
-                        // in denen keine der vorhergehenden
-                        // Konstellationen erfüllt ist.
-                        break;
+                [case Wert1:]
+                //Anweisungen für Fall 1
+                break;
+                [case Wert2:]
+                //Anweisungen für Fall 2
+                break;
+                [case Wert3:]
+                [case Wert4:]
+                [case Wert5:]
+                //Anweisungen für Fall 3, 4 und 5
+                break;
+                [...]
+                [default:]
+                // Anweisungen für diejenigen Fälle,
+                // in denen keine der vorhergehenden
+                // Konstellationen erfüllt ist.
+                break;
                 }
             </code-block>
 
@@ -160,23 +160,23 @@
                     let age = prompt('Für welches Alter suchen Sie Filmtipps?');
 
                     switch(true) {
-                        case (age >= 18):
-                            console.log('Filme mit FSK6, FSK12, FSK16 und FSK18 anzeigen.');
-                            break;
-                        case (age >= 16):
-                            console.log('Filme mit FSK6, FSK12 und FSK16 anzeigen.');
-                            break;
-                        case (age >= 12):
-                            console.log('Filme mit FSK6 und FSK12 anzeigen.');
-                            break;
-                        case (age >= 6):
-                            console.log('Filme mit FSK6 anzeigen.');
-                            break;
+                    case (age >= 18):
+                    console.log('Filme mit FSK6, FSK12, FSK16 und FSK18 anzeigen.');
+                    break;
+                    case (age >= 16):
+                    console.log('Filme mit FSK6, FSK12 und FSK16 anzeigen.');
+                    break;
+                    case (age >= 12):
+                    console.log('Filme mit FSK6 und FSK12 anzeigen.');
+                    break;
+                    case (age >= 6):
+                    console.log('Filme mit FSK6 anzeigen.');
+                    break;
                     }
                 </code-block>
             </note>
 
-            <chapter title="Beispiel" id="auswahl-switch-beispiel">
+            <chapter id="auswahl-switch-beispiel" title="Beispiel">
                 <p>
                     Der Vorteil der <code>switch</code>-Anweisung gegenüber der <code>if elseif else</code>-Verzweigung
                     kann anhand des folgenden Beispiels erläutert werden: Angenommen es wird eine Webanwendung
@@ -186,7 +186,7 @@
                     mit Namen <path>pass.png</path> usw. Das Testergebnis wird innerhalb der Anwendung über die Werte
                     <code>0</code> bis <code>3</code> codiert.
                 </p>
-                
+
                 <table>
                     <tr>
                         <td>Testergebnis</td>
@@ -240,22 +240,22 @@
 
                 <code-block lang="javascript">
                     let testResultElement = document.getElementById('testResult');
-                    let testResult = 0;              // Testergebnis, würde normalerweise berechnet
-                    let icon = null;                 // Variable, die den Bildnamen enthalten wird
+                    let testResult = 0; // Testergebnis, würde normalerweise berechnet
+                    let icon = null; // Variable, die den Bildnamen enthalten wird
 
-                    if(testResult === 0) {           // Prüfe das Testergebnis. Hat dieses den Wert 0,
-                        icon = 'pass.png';           // wird der Bildname "pass.png" verwendet.
-                    } else if(testResult === 1) {    // Hat das Testergebnis den Wert 1,
-                        icon = 'info.png';           // wird der Bildname "info.png" verwendet.
-                    } else if(testResult === 2) {    // Hat das Testergebnis den Wert 2,
-                        icon = 'warning.png';        // wird der Bildname "warning.png" verwendet.
-                    } else if(testResult === 3) {    // Hat das Testergebnis den Wert 3,
-                        icon = 'error.png';          // wird der Bildname "error.png" verwendet.
-                    } else {                         // Für alle anderen Werte
-                        icon = 'unknown.png';        // wird der Bildname "unknown.png" verwendet.
+                    if(testResult === 0) { // Prüfe das Testergebnis. Hat dieses den Wert 0,
+                    icon = 'pass.png'; // wird der Bildname "pass.png" verwendet.
+                    } else if(testResult === 1) { // Hat das Testergebnis den Wert 1,
+                    icon = 'info.png'; // wird der Bildname "info.png" verwendet.
+                    } else if(testResult === 2) { // Hat das Testergebnis den Wert 2,
+                    icon = 'warning.png'; // wird der Bildname "warning.png" verwendet.
+                    } else if(testResult === 3) { // Hat das Testergebnis den Wert 3,
+                    icon = 'error.png'; // wird der Bildname "error.png" verwendet.
+                    } else { // Für alle anderen Werte
+                    icon = 'unknown.png'; // wird der Bildname "unknown.png" verwendet.
                     }
 
-                    testResultElement.src = 'img/' + icon;  // Setzen des jeweiligen Bildes
+                    testResultElement.src = 'img/' + icon; // Setzen des jeweiligen Bildes
                 </code-block>
 
                 <p>
@@ -266,24 +266,24 @@
 
                 <code-block lang="javascript">
                     let testResultElement = document.getElementById('testResult');
-                    let testResult = 0;        // Testergebnis, würde normalerweise berechnet
-                    let icon = null;           // Variable, die den Bildnamen enthalten wird
+                    let testResult = 0; // Testergebnis, würde normalerweise berechnet
+                    let icon = null; // Variable, die den Bildnamen enthalten wird
 
-                    switch(testResult) {           // Prüfe das Testergebnis
-                        case 0:                    // Hat dieses den Wert 0,
-                            icon = 'pass.png';     // wird der Bildname "pass.png" verwendet.
-                            break;                 // Abbruch der switch-Anweisung
-                        case 1:                    // Hat das Testergebnis den Wert 1,
-                            icon = 'info.png';     // wird der Bildname "info.png" verwendet.
-                            break;                 // Abbruch der switch-Anweisung
-                        case 2:                    // Hat das Testergebnis den Wert 2,
-                            icon = 'warning.png';  // wird der Bildname "warning.png" verwendet.
-                            break;                 // Abbruch der switch-Anweisung
-                        case 3:                    // Hat das Testergebnis den Wert 3,
-                            icon = 'error.png';    // wird der Bildname "error.png" verwendet.
-                            break;                 // Abbruch der switch-Anweisung
-                        default:                   // Für alle anderen Werte
-                            icon = 'unknown.png';  // wird der Bildname "unknown.png" verwendet.
+                    switch(testResult) { // Prüfe das Testergebnis
+                    case 0: // Hat dieses den Wert 0,
+                    icon = 'pass.png'; // wird der Bildname "pass.png" verwendet.
+                    break; // Abbruch der switch-Anweisung
+                    case 1: // Hat das Testergebnis den Wert 1,
+                    icon = 'info.png'; // wird der Bildname "info.png" verwendet.
+                    break; // Abbruch der switch-Anweisung
+                    case 2: // Hat das Testergebnis den Wert 2,
+                    icon = 'warning.png'; // wird der Bildname "warning.png" verwendet.
+                    break; // Abbruch der switch-Anweisung
+                    case 3: // Hat das Testergebnis den Wert 3,
+                    icon = 'error.png'; // wird der Bildname "error.png" verwendet.
+                    break; // Abbruch der switch-Anweisung
+                    default: // Für alle anderen Werte
+                    icon = 'unknown.png'; // wird der Bildname "unknown.png" verwendet.
                     }
 
                     testResultElement.src = 'img/' + icon;
@@ -292,7 +292,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Schleifen" id="schleifen">
+    <chapter id="schleifen" title="Schleifen">
         <p>
             Bei der Anwendung von Schleifen in einem Programm geht es um die Wiederholung von bestimmten Vorgängen.
             Diese Vorgänge können identisch sein oder in Bestandteilen sich von Wiederholung zu Wiederholung nach einem
@@ -315,7 +315,7 @@
             </li>
         </list>
 
-        <chapter title="Zählschleifen – die for-Schleife" id="schleifen-for">
+        <chapter id="schleifen-for" title="Zählschleifen – die for-Schleife">
             <p>
                 Zählschleifen eignen sich immer dann, wenn von Vornhinein klar ist, wie häufig eine bestimmte Anweisung
                 wiederholt werden soll. Diese Schleifenform gibt es in nahezu allen Programmiersprachen. Eingeleitet
@@ -352,11 +352,11 @@
 
             <code-block lang="javascript">
                 for (
-                    Initialisierung;           // wird vor Ausführen der Schleife ausgeführt
-                    Bedingung;                 // wird vor Ausführen einer Iteration überprüft
-                    Inkrementierungsausdruck;  // wird am Ende einer Iteration ausgeführt
+                Initialisierung; // wird vor Ausführen der Schleife ausgeführt
+                Bedingung; // wird vor Ausführen einer Iteration überprüft
+                Inkrementierungsausdruck; // wird am Ende einer Iteration ausgeführt
                 ) {
-                    Schleifenkörper            // wird in jeder Iteration einmal ausgeführt
+                Schleifenkörper // wird in jeder Iteration einmal ausgeführt
                 }
             </code-block>
 
@@ -386,9 +386,9 @@
                 </li>
             </list>
 
-            <chapter title="Flussdiagramm" id="schleifen-for-flussdiagramm">
-                <img src="swe-pk-grundlagen-kontrollstrukturen-for-flussdiagramm.png"
-                     alt="Flussdiagramm der for-Schleife"/>
+            <chapter id="schleifen-for-flussdiagramm" title="Flussdiagramm">
+                <img alt="Flussdiagramm der for-Schleife"
+                     src="swe-pk-grundlagen-kontrollstrukturen-for-flussdiagramm.png"/>
 
                 <note>
                     <p><b>Der Variablenname <code>i</code></b></p>
@@ -406,7 +406,7 @@
                 </note>
             </chapter>
 
-            <chapter title="Arbeiten mit Arrays" id="schleifen-for-arrays">
+            <chapter id="schleifen-for-arrays" title="Arbeiten mit Arrays">
                 <p>
                     Greift man innerhalb einer <code>for</code>-Schleife über einen Index auf eine Liste, wie im
                     Beispiel auf ein Array, zu, so besteht die Gefahr, dass ein Zugriff auf die Datenstruktur außerhalb
@@ -419,7 +419,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Verschachtelung" id="schleifen-for-verschachtelung">
+            <chapter id="schleifen-for-verschachtelung" title="Verschachtelung">
                 <p>
                     Hinsichtlich der Anweisungen, die in einem Schleifenkörper vorkommen, gibt es keinerlei
                     Einschränkungen. So ist es beispielsweise auch möglich, andere Schleifen innerhalb eines
@@ -477,7 +477,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Kopfgesteuerte Schleifen – die while-Schleife" id="schleifen-while">
+        <chapter id="schleifen-while" title="Kopfgesteuerte Schleifen – die while-Schleife">
             <p>
                 Die <code>while</code>-Schleife ist eine kopfgesteuerte Schleife und gilt als Mutter der Schleifen.
                 Mutter deswegen, weil sie in den meisten Programmiersprachen vorkommt und aus ihr die anderen
@@ -494,21 +494,21 @@
                 Ausführung des Programms nach der Schleife fortgesetzt.
             </p>
 
-            <chapter title="Syntax" id="schleifen-while-syntax">
+            <chapter id="schleifen-while-syntax" title="Syntax">
                 <code-block lang="javascript">
                     while (Bedingung) {
-                        // Schleifenkörper
+                    // Schleifenkörper
                     }
                 </code-block>
             </chapter>
 
-            <chapter title="Flussdiagramm" id="schleifen-while-flussdiagramm">
-                <img src="swe-pk-grundlagen-kontrollstrukturen-while-flussdiagramm.png"
-                     alt="Flussdiagramm der while-Schleife"/>
+            <chapter id="schleifen-while-flussdiagramm" title="Flussdiagramm">
+                <img alt="Flussdiagramm der while-Schleife"
+                     src="swe-pk-grundlagen-kontrollstrukturen-while-flussdiagramm.png"/>
             </chapter>
         </chapter>
 
-        <chapter title="Fußgesteuerte Schleifen – die do-while-Schleife" id="schleifen-dowhile">
+        <chapter id="schleifen-dowhile" title="Fußgesteuerte Schleifen – die do-while-Schleife">
             <p>
                 Die fußgesteuerte Schleife funktioniert vom Prinzip her ähnlich wie die kopfgesteuerte Schleife,
                 allerdings genau entgegengesetzt. Mit anderen Worten: bevor die boolesche Bedingung überprüft wird, wird
@@ -521,20 +521,20 @@
                 <code>do while</code>-Schleife bezeichnet.
             </note>
 
-            <chapter title="Syntax" id="schleifen-dowhile-syntax">
+            <chapter id="schleifen-dowhile-syntax" title="Syntax">
                 <code-block lang="javascript">
                     do {
-                        // Schleifenkörper
+                    // Schleifenkörper
                     } while (Bedingung);
                 </code-block>
             </chapter>
 
-            <chapter title="Flussdiagramm" id="schleifen-dowhile-flussdiagramm">
-                <img src="swe-pk-grundlagen-kontrollstrukturen-dowhile-flussdiagramm.png"
-                     alt="Flussdiagramm der do-while-Schleife"/>
+            <chapter id="schleifen-dowhile-flussdiagramm" title="Flussdiagramm">
+                <img alt="Flussdiagramm der do-while-Schleife"
+                     src="swe-pk-grundlagen-kontrollstrukturen-dowhile-flussdiagramm.png"/>
             </chapter>
 
-            <chapter title="Kopfgesteuerte vs. fußgesteuerte Schleifen" id="schleifen-dowhile-unterschiede">
+            <chapter id="schleifen-dowhile-unterschiede" title="Kopfgesteuerte vs. fußgesteuerte Schleifen">
                 <p>
                     In der Praxis wird die <code>while</code>-Schleife öfter als die <code>do while</code>-Schleife
                     verwendet, da hierdurch sichergestellt ist, dass der Schleifenkörper nur dann ausgeführt wird, wenn
@@ -548,7 +548,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Die foreach-Schleife" id="schleifen-foreach">
+        <chapter id="schleifen-foreach" title="Die foreach-Schleife">
             <p>
                 Mit der <code>foreach</code>-Schleife kann nacheinander jedes Element einer Liste durchlaufen werden.
                 Natürlich ist es auch möglich, dies mit anderen Schleifenkonstruktionen nachzubilden, zum Beispiel
@@ -559,17 +559,17 @@
                 entnommen.
             </p>
 
-            <chapter title="Beispiel in C#" id="schleifen-foreach-beispiel">
+            <chapter id="schleifen-foreach-beispiel" title="Beispiel in C#">
                 <code-block lang="javascript">
                     string[] Laender = { "Deutschland", "Italien", "Spanien", "Portugal" };
                     foreach (string Land in Laender) {
-                        textBox.Text = Laender[i];
+                    textBox.Text = Laender[i];
                     }
                 </code-block>
             </chapter>
         </chapter>
 
-        <chapter title="Endlosschleifen" id="schleifen-endlosschleife">
+        <chapter id="schleifen-endlosschleife" title="Endlosschleifen">
             <p>
                 Eine Schleife wiederholt einen Vorgang. Das geschieht so lange, bis eine Bedingung für ein erneutes
                 Durchlaufen der Schleife nicht mehr erfüllt ist. Werden für die Prüfung der Abbruchbedingung numerische
@@ -583,7 +583,7 @@
             </p>
         </chapter>
 
-        <chapter title="Schleifen und Schleifeniterationen vorzeitig abbrechen" id="schleifen-abbrechen">
+        <chapter id="schleifen-abbrechen" title="Schleifen und Schleifeniterationen vorzeitig abbrechen">
             <p>
                 Viele Programmiersprachen bieten ein Schlüsselwort, mit dem eine Schleife vorzeitig abgebrochen werden
                 kann. In JavaScript wird das Schlüsselwort <code>break</code> für einen kompletten Schleifenabbruch
@@ -591,28 +591,28 @@
                 (und mit der nächsten Schleifeniteration fortzufahren.
             </p>
 
-            <chapter title="Flussdiagramm für das Abbrechen einer Zählschleife" id="schleifen-abbrechen-break">
-                <img src="swe-pk-grundlagen-kontrollstrukturen-break-flussdiagramm.png"
-                     alt="Flussdiagramm des break-Statements"/>
+            <chapter id="schleifen-abbrechen-break" title="Flussdiagramm für das Abbrechen einer Zählschleife">
+                <img alt="Flussdiagramm des break-Statements"
+                     src="swe-pk-grundlagen-kontrollstrukturen-break-flussdiagramm.png"/>
             </chapter>
 
-            <chapter title="Flussdiagramm für das Abbrechen einer Schleifeniteration in einer Zählschleife"
-                     id="schleifen-abbrechen-continue">
-                <img src="swe-pk-grundlagen-kontrollstrukturen-continue-flussdiagramm.png"
-                     alt="Flussdiagramm des continue-Statements"/>
+            <chapter id="schleifen-abbrechen-continue"
+                     title="Flussdiagramm für das Abbrechen einer Schleifeniteration in einer Zählschleife">
+                <img alt="Flussdiagramm des continue-Statements"
+                     src="swe-pk-grundlagen-kontrollstrukturen-continue-flussdiagramm.png"/>
             </chapter>
         </chapter>
     </chapter>
 
-    <chapter title="Komplexe Bedingungen" id="komplex">
+    <chapter id="komplex" title="Komplexe Bedingungen">
         <p>
-            Mit dem UND-, ODER- und Negationsoperator ist es möglich sehr komplexe Bedingungen zu formulieren. In der 
-            folgenden <code>if</code>-Anweisung wird als Bedingung der Ausdruck 
-            <code>userIsLoggedIn &amp;&amp; userIsAdmin</code> verwendet, was bewirkt, dass der entsprechende 
-            Programmzweig in den geschweiften Klammern nur ausgeführt wird, wenn die UND-Verknüpfung der beiden 
+            Mit dem UND-, ODER- und Negationsoperator ist es möglich sehr komplexe Bedingungen zu formulieren. In der
+            folgenden <code>if</code>-Anweisung wird als Bedingung der Ausdruck
+            <code>userIsLoggedIn &amp;&amp; userIsAdmin</code> verwendet, was bewirkt, dass der entsprechende
+            Programmzweig in den geschweiften Klammern nur ausgeführt wird, wenn die UND-Verknüpfung der beiden
             Variablen <code>userIsLoggedIn</code> und <code>userIsAdmin</code> ein <code>true</code> ergibt.
         </p>
-        
+
         <code-block lang="javascript">
             <![CDATA[
             let userIsLoggedIn = true;
@@ -630,7 +630,7 @@
         </p>
     </chapter>
 
-    <chapter title="Sprunganweisung: goto" id="goto">
+    <chapter id="goto" title="Sprunganweisung: goto">
         <p>
             Mit der <code>goto</code>-Anweisung werden Sprünge im Codeablauf ermöglicht. Dafür müssen Marken gesetzt
             werden, um einen Punkt zu kennzeichnen, zu dem gesprungen werden kann. In den Anfängen der Programmierung,
@@ -641,7 +641,7 @@
             Programmiersituationen lassen sich im Normalfall durch andere Sprachkonstruktionen ersetzen!
         </p>
 
-        <chapter title="Beispiel in PHP" id="goto-beispiel-php">
+        <chapter id="goto-beispiel-php" title="Beispiel in PHP">
             <code-block lang="php">
                 goto Marke;
                 echo('Ausgabe 1');
@@ -652,7 +652,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836240826, "PHP 7 und MySQL - Das umfassende Handbuch", Christian Wenz &amp; Tobias Hauser, 2016

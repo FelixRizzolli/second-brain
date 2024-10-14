@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Submodule und Subtrees" id="swe-vcs-git-sub">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-vcs-git-sub"
+       title="Submodule und Subtrees"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einleitung" id="einleitung">
+    <chapter id="einleitung" title="Einleitung">
         <p>
             Sowohl Submodules als auch Subtrees helfen bei der Integration fremder Git-Projekte ins eigene Projekt.
             Generell gibt es mehrere Möglichkeiten, fremden Code in das eigene Projekt einzubauen:
@@ -31,7 +31,7 @@
         </list>
     </chapter>
 
-    <chapter title="Submodule" id="submodule">
+    <chapter id="submodule" title="Submodule">
         <p>
             Ein Submodule ist ein Git-Repository in einem Git-Repository. Mit dem Befehl <code>git submodule add</code>
             kann Repository als Submodul ins eigene Repository hinzugefügt werden. Dabei klont Git das vollständige
@@ -71,7 +71,7 @@
             ein Fehler behoben, also ein Commit gepusht, so referenziert das Submodul immer noch auf den alten Commit.
         </p>
 
-        <chapter title="Submodule aktualisieren" id="submodule-aktualisieren">
+        <chapter id="submodule-aktualisieren" title="Submodule aktualisieren">
             <p>
                 Der Befehl <code>git pull</code> holt standardmäßig rekursiv die Änderungen der Submodule. Er
                 aktualisiert jedoch nicht die Submodule. Um ein Submodul zu aktualisieren, muss in das jeweilige
@@ -83,8 +83,8 @@
                 git submodule update --init --recursive
             </code-block>
         </chapter>
-        
-        <chapter title="Repository mit Submodules klonen" id="submodule-klonen">
+
+        <chapter id="submodule-klonen" title="Repository mit Submodules klonen">
             <p>
                 Möchte man eine Repository klonen die Submodules enthält, so muss der Parameter
                 <code>--recurse-submodules</code> hinzugefügt werden, da sonst nur der leere Ordner für das Modul
@@ -98,7 +98,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Subtrees" id="subtree">
+    <chapter id="subtree" title="Subtrees">
         <p>
             Der administrative Aufwand hat vermutlich dazu geführt, dass sie Git-Entwickler eine weitere Variante
             entwickelt haben, Module in einem Git-Repository zu verwalten: Subtrees. Subtrees bieten eine etwas
@@ -117,19 +117,19 @@
         </code-block>
     </chapter>
 
-    <chapter title="Mehr zu Submodules und Subtrees" id="mehr">
+    <chapter id="mehr" title="Mehr zu Submodules und Subtrees">
         <a href="https://training.github.com/downloads/submodule-vs-subtree-cheat-sheet/">
             https://training.github.com/downloads/submodule-vs-subtree-cheat-sheet/
         </a>
     </chapter>
 
-    <chapter title="Monorepos" id="monorepos">
+    <chapter id="monorepos" title="Monorepos">
         <p>
             Mono bezieht sich darauf, dass ein einziges Repository verwendet wird, um darin viele verschiedene Projekte
             zu verwalten.
         </p>
 
-        <chapter title="Vorteile" id="monorepos-vorteile">
+        <chapter id="monorepos-vorteile" title="Vorteile">
             <list>
                 <li>
                     Wenn jeder Entwickler über seine Arbeitskopie Zugriff auf den Quellcode aller Projekte hat, ist es
@@ -146,7 +146,7 @@
             </list>
         </chapter>
 
-        <chapter title="Nachteile" id="monorepos-nachteile">
+        <chapter id="monorepos-nachteile" title="Nachteile">
             <p>
                 Derartige Datenmengen sind mit Git ohne weitere Anpassungen nicht mehr zu verwalten. Google und Facebook
                 verwenden deswegen selbst entwickelte Erweiterungen zur Verwaltung dieser Repositorys. Beispielsweise
@@ -157,7 +157,7 @@
             </p>
         </chapter>
 
-        <chapter title="Googles Monorepository" id="monorepos-google">
+        <chapter id="monorepos-google" title="Googles Monorepository">
             <p>
                 Bei Monorepositorys handelt es sich um Repositorys die auch jene des Linux-Kernels (aktuell 4,1 GB) bei
                 weitem überschreiten. Hier Google als Beispiel genannt:
@@ -173,10 +173,11 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
-            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler, 2020
+            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler,
+            2020
         </tip>
         <tip>
             <b>(WEBSEITE)</b>

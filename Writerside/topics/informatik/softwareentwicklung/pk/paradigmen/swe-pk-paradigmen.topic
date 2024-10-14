@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Porgrammierparadigmen" id="swe-pk-paradigmen">
-    <show-structure for="chapter,procedure" depth="2"/>
-    
-    <chapter title="Was ist ein Programmierparadigma?" id="programmierparadigma">
+<topic id="swe-pk-paradigmen"
+       title="Porgrammierparadigmen"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
+
+    <chapter id="programmierparadigma" title="Was ist ein Programmierparadigma?">
         <p>
             Eine sehr wichtige Frage bei der Programmierung ist die Art und Weise, wie eine Aufgabe aus der realen Welt
             in Software abgebildet und damit bearbeitet wird. Je nach Problem existieren unterschiedliche Ansätze zum
@@ -53,38 +53,39 @@
             Programmiersprachen unterstützen meist auch nicht nur ein Paradigma, sondern mehrere Ansätze können
             miteinander kombiniert werden. Insgesamt kann man aus heutiger Perspektive sagen, dass sich die
             objektorientierte Programmierung seit Langem etabliert hat und heute als
-            <emphasis>State of the Art</emphasis> in vielen Bereichen der Softwareentwicklung gilt.
+            <emphasis>State of the Art</emphasis>
+            in vielen Bereichen der Softwareentwicklung gilt.
         </p>
     </chapter>
 
-    <chapter title="Übersicht" id="uebersicht">
+    <chapter id="uebersicht" title="Übersicht">
         <code-block lang="plantuml">
             @startmindmap
-                * Programmierparadigmen
-                    * Konkatenativ
-                    * Graphensetzung
-                    * Datenstromorientiert
-                    * Generativ
-                    * Aspektorientiert
-                    * Agentenorientiert
-                    * Objektorientiert
-                    * Deklarativ
-                        * Constraint
-                        * Funktional
-                        * Logisch
-                    * Imperativ
-                        * Strukturiert
-                        * Prozedural
-                        * Modular
-                        * Programmierung mit abstrakten Datentypen
-                    * Komponentenorientiert
-                    * Generisch
-                    * Multiparadigmisch
+            * Programmierparadigmen
+            * Konkatenativ
+            * Graphensetzung
+            * Datenstromorientiert
+            * Generativ
+            * Aspektorientiert
+            * Agentenorientiert
+            * Objektorientiert
+            * Deklarativ
+            * Constraint
+            * Funktional
+            * Logisch
+            * Imperativ
+            * Strukturiert
+            * Prozedural
+            * Modular
+            * Programmierung mit abstrakten Datentypen
+            * Komponentenorientiert
+            * Generisch
+            * Multiparadigmisch
             @endmindmap
         </code-block>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018

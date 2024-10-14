@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="XML (Extensible Markup Language)" id="xml">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="xml"
+       title="XML (Extensible Markup Language)"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Was ist XML?" id="xml">
+    <chapter id="xml" title="Was ist XML?">
         <p>
-            XML (Extensible Markup Language), ist eine Metasprache zur Definition beliebiger Auszeichnungssprachen. 
-            Diese Sprachen können Textdokumente, Vektorgrafiken, multimediale Präsentationen, Datenbanken oder andere 
-            Arten von strukturierten Daten Beschreiben. XML wurde vom W3C entworfen und standardisiert. Die 
-            XML-Spezifikation selbst enthält nur wenige formale Regeln für den Aufbau von Dokumenten. Hält man sich an 
-            diese Regeln, erzeugt man ein wohlgeformtes XML-Dokument. Dokumente die auf Formatdefinitionen wie DTD 
-            (= Document Type Definition), XLS (= XML Schema) oder RELAX NG basieren sind nicht nur wohlgeformt, sondern 
-            auch gültig (oder valide). Der überwiegende Einsatz von XML beruht auf dem Einsatz vorhandener XML-basierter 
-            Sprachen wie die Webseiten-Auszeichnungssprache XHTML, das Vektorgrafikformat SVG (= Scalable Vector 
-            Graphics) oder die beliebte Handbuch- und Dokumentationssprache DocBook. Auch Anwendungsprogramme wie 
-            LibreOffice/OpenOffice.org und neuere Versionen der Microsoft-Office-Programme verwenden XML-basierte 
-            Datenformate, hierbei ist die Office-Arbeitsdatei ein ZIP-Archiv, in dem sich verschiedene XML-Dokumente und 
-            eventuell weitere Ressourcen wie Bilddateien befinden. Gespeichert werden XML-Dokumente entweder als Datei 
-            mit der Endung .xml, wenn es sich um allgemeine XML-Dokumente handelt, oder mit einer speziellen 
-            Dateierweiterung, falls ein besonderes XML-Format verwendet wird (SVG <code>.svg</code>; XHTML 
+            XML (Extensible Markup Language), ist eine Metasprache zur Definition beliebiger Auszeichnungssprachen.
+            Diese Sprachen können Textdokumente, Vektorgrafiken, multimediale Präsentationen, Datenbanken oder andere
+            Arten von strukturierten Daten Beschreiben. XML wurde vom W3C entworfen und standardisiert. Die
+            XML-Spezifikation selbst enthält nur wenige formale Regeln für den Aufbau von Dokumenten. Hält man sich an
+            diese Regeln, erzeugt man ein wohlgeformtes XML-Dokument. Dokumente die auf Formatdefinitionen wie DTD
+            (= Document Type Definition), XLS (= XML Schema) oder RELAX NG basieren sind nicht nur wohlgeformt, sondern
+            auch gültig (oder valide). Der überwiegende Einsatz von XML beruht auf dem Einsatz vorhandener XML-basierter
+            Sprachen wie die Webseiten-Auszeichnungssprache XHTML, das Vektorgrafikformat SVG (= Scalable Vector
+            Graphics) oder die beliebte Handbuch- und Dokumentationssprache DocBook. Auch Anwendungsprogramme wie
+            LibreOffice/OpenOffice.org und neuere Versionen der Microsoft-Office-Programme verwenden XML-basierte
+            Datenformate, hierbei ist die Office-Arbeitsdatei ein ZIP-Archiv, in dem sich verschiedene XML-Dokumente und
+            eventuell weitere Ressourcen wie Bilddateien befinden. Gespeichert werden XML-Dokumente entweder als Datei
+            mit der Endung .xml, wenn es sich um allgemeine XML-Dokumente handelt, oder mit einer speziellen
+            Dateierweiterung, falls ein besonderes XML-Format verwendet wird (SVG <code>.svg</code>; XHTML
             <code>.html</code> oder <code>.htm</code>).
         </p>
 
-        <chapter title="Klartextbasierte Dokumentformate vs. Binärdateien" id="xml-format">
+        <chapter id="xml-format" title="Klartextbasierte Dokumentformate vs. Binärdateien">
             <list>
                 <li>
                     Sämtliche Konfigurations- und Strukturinformationen sind für Menschen lesbar und können notfalls
@@ -48,7 +49,7 @@
             </p>
         </chapter>
 
-        <chapter title="XML im Vergleich zu anderen Auszeichnungssprachen" id="xml-vergleich">
+        <chapter id="xml-vergleich" title="XML im Vergleich zu anderen Auszeichnungssprachen">
             <p>
                 Fast alle textbasierten Auszeichnungssprachen außer XML haben eine spezielle Aufgabe: Beispielsweise
                 dient LaTeX dem Erstellen von Vorlagen für den professionellen Satz; PostScript beschreibt dagegen
@@ -61,13 +62,13 @@
             </p>
         </chapter>
 
-        <chapter title="XML HttpRequest" id="xml-httprequest">
+        <chapter id="xml-httprequest" title="XML HttpRequest">
             <p>
-                Alle modernen Browser haben ein eingebautes XMLHttpRequest-Objekt, um Daten von einem Server 
-                anzufordern. Das XMLHttpRequest-Objekt kann verwendet werden, um Daten von einem Webserver anzufordern. 
+                Alle modernen Browser haben ein eingebautes XMLHttpRequest-Objekt, um Daten von einem Server
+                anzufordern. Das XMLHttpRequest-Objekt kann verwendet werden, um Daten von einem Webserver anzufordern.
                 Das XMLHttpRequest-Objekt ist ein Traum für Entwickler, denn kann man:
             </p>
-            
+
             <list>
                 <li>eine Webseite aktualisieren, ohne die Seite neu zu laden</li>
                 <li>Daten von einem Server anfordern - nachdem die Seite geladen wurde</li>
@@ -76,7 +77,7 @@
             </list>
         </chapter>
 
-        <chapter title="XML Parser" id="xml-parser">
+        <chapter id="xml-parser" title="XML Parser">
             <p>
                 Alle gängigen Browser verfügen über einen eingebauten XML-Parser für den Zugriff auf und die Bearbeitung
                 von XML. Das XML DOM (Document Object Model) definiert die Eigenschaften und Methoden für den Zugriff
@@ -85,11 +86,11 @@
             </p>
         </chapter>
 
-        <chapter title="XML AJAX" id="xml-ajax">
+        <chapter id="xml-ajax" title="XML AJAX">
         </chapter>
     </chapter>
 
-    <chapter title="Terminologie" id="terminologie">
+    <chapter id="terminologie" title="Terminologie">
         <code-block lang="xml">
             <![CDATA[
             <?xml version="1.0" encoding="UTF-8"?>
@@ -160,7 +161,7 @@
             </tr>
         </table>
 
-        <chapter title="Beziehungen von Knoten" id="terminologie-knoten">
+        <chapter id="terminologie-knoten" title="Beziehungen von Knoten">
             <table>
                 <tr>
                     <td>DE</td>
@@ -228,7 +229,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Der Aufbau von XML-Dokumenten" id="xml-aufbau">
+    <chapter id="xml-aufbau" title="Der Aufbau von XML-Dokumenten">
         <p>
             Jedes XML-Dokument besteht aus einer Hierarchie ineinander verschachtelter Steueranweisungen, sie als
             Elemente oder Tags bezeichnet werden, und kann zusätzlich einfachen Text enthalten. Die XML-Tags werden in
@@ -239,69 +240,69 @@
             <code>&lt;/codetest&gt;</code>).
         </p>
 
-        <chapter title="XML Beispiel" id="xml-aufbau-beispiel">
+        <chapter id="xml-aufbau-beispiel" title="XML Beispiel">
             <code-block lang="xml">
                 <![CDATA[
                 <?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;
                 <comics>
                     <comic language="en-US"&gt;
-                        <publisher>Marvel</publisher>
-                        <series>The Amazing Spider-Man</series>
-                        <format>Comic Book</format>
-                        <issue>663</issue>
-                        <title>The Return Of Anti-Venom</title>
-                        <subtitle>Part One: The Ghost of Jean DeWolff</subtitle>
-                        <authors>
-                            <author role="Writer">Dan Slott</author>
-                            <author role="Pencils">Giuseppe Camuncoli</author>
-                        </authors>
-                        <price currency="USD">3.99</price>
-                    </comic>
-                    <comic language="en-US">
-                        <publisher>Marvel</publisher>
-                        <series>Ultimate Spider-Man</series>
-                        <format>Trade Paperback</format>
-                        <issue original="1-13">1</issue>
-                        <title>Ultimate Spider-Man</title>
-                        <subtitle>Ultimate Collection</subtitle>
-                        <authors>
-                            <author role="Writer">Brian Michael Bendis</author>
-                            <author role="Pencils">Mark Bagley</author>
-                        </authors>
-                        <price currency="USD">24.99</price>
-                    </comic>
-                    <comic language="en-US">
-                        <publisher>DC Comics</publisher>
-                        <series>Action Comics</series>
-                        <format>Comic Book</format>
-                        <issue>901</issue>
-                        <title>Reign Of The Doomsdays</title>
-                        <subtitle>Part 1</subtitle>
-                        <authors>
-                            <author role="Writer">Paul Cornell</author>
-                            <author role="Artist">Kenneth Rocafort</author>
-                            <author role="Artist">Jesus Merino</author>
-                        </authors>
-                        <price currency="USD">2.99</price&gt;
-                    </comic>
-                    <comic language="en-US">
-                        <publisher>Bongo Comics</publisher>
-                        <series>Simpsons Comics</series>
-                        <format>Comic Book</format>
-                        <issue>178</issue>
-                        <title>The Thingama-Bob From Outer Space</title>
-                        <authors>
-                            <author role="Writer">Eric Rogers</author>
-                            <author role="Pencils">John Costanza</author>
-                        </authors>
-                        <price currency="USD">2.99</price>
-                    </comic>
-                </comics>
+                    <publisher>Marvel</publisher>
+                    <series>The Amazing Spider-Man</series>
+                    <format>Comic Book</format>
+                    <issue>663</issue>
+                    <title>The Return Of Anti-Venom</title>
+                    <subtitle>Part One: The Ghost of Jean DeWolff</subtitle>
+                    <authors>
+                        <author role="Writer">Dan Slott</author>
+                        <author role="Pencils">Giuseppe Camuncoli</author>
+                    </authors>
+                    <price currency="USD">3.99</price>
+                </comic>
+                <comic language="en-US">
+                <publisher>Marvel</publisher>
+                <series>Ultimate Spider-Man</series>
+                <format>Trade Paperback</format>
+                <issue original="1-13">1</issue>
+                <title>Ultimate Spider-Man</title>
+                <subtitle>Ultimate Collection</subtitle>
+                <authors>
+                    <author role="Writer">Brian Michael Bendis</author>
+                    <author role="Pencils">Mark Bagley</author>
+                </authors>
+                <price currency="USD">24.99</price>
+                </comic>
+                <comic language="en-US">
+                <publisher>DC Comics</publisher>
+                <series>Action Comics</series>
+                <format>Comic Book</format>
+                <issue>901</issue>
+                <title>Reign Of The Doomsdays</title>
+                <subtitle>Part 1</subtitle>
+                <authors>
+                    <author role="Writer">Paul Cornell</author>
+                    <author role="Artist">Kenneth Rocafort</author>
+                    <author role="Artist">Jesus Merino</author>
+                </authors>
+                <price currency="USD">2.99</price&gt;
+                </comic>
+                <comic language="en-US">
+                <publisher>Bongo Comics</publisher>
+                <series>Simpsons Comics</series>
+                <format>Comic Book</format>
+                <issue>178</issue>
+                <title>The Thingama-Bob From Outer Space</title>
+                <authors>
+                    <author role="Writer">Eric Rogers</author>
+                    <author role="Pencils">John Costanza</author>
+                </authors>
+                <price currency="USD">2.99</price>
+                </comic>
+                        </comics>
                 ]]>
             </code-block>
         </chapter>
 
-        <chapter title="Die XML-Steueranweisungen und XML-Deklatation" id="xml-aufbau-deklaration">
+        <chapter id="xml-aufbau-deklaration" title="Die XML-Steueranweisungen und XML-Deklatation">
             <p>
                 Eine XML-Steueranweisung (auch PI, Processing Instruction) kann in XML-Dokumenten an beliebiger Stelle
                 vorkommen. Es handelt sich um Anweisungen für interpretierende Geräte oder Programme, die mit dem
@@ -342,7 +343,7 @@
             </p>
         </chapter>
 
-        <chapter title="XML-Elemente" id="xml-aufbau-elemente">
+        <chapter id="xml-aufbau-elemente" title="XML-Elemente">
             <p>
                 XML Elemente können enthalten: Text, Attribute, andere Elemente oder einen Mix aus allem. Es ist
                 wichtig, dass genau ein Tag, das Wurzelelement, das gesamte Dokument umschließt. Innerhalb des
@@ -353,7 +354,7 @@
                 Blätter.
             </p>
 
-            <img src="xml-hierarchische-gliederung.png" alt="XML - Hierarchische Gliederung"/>
+            <img alt="XML - Hierarchische Gliederung" src="xml-hierarchische-gliederung.png"/>
 
             <p>
                 Die Namen von Tags und Attributen dürfen aus Buchstaben und Ziffern sowie aus den folgenden
@@ -382,7 +383,7 @@
 
             <code-block lang="xml">
                 <![CDATA[
-                <cover file="simpsons_178.png" type="image/png" />
+                <cover file="simpsons_178.png" type="image/png"/>
                 ]]>
             </code-block>
 
@@ -391,7 +392,7 @@
                 ist nach der eigentlichen XML-Syntax nicht erforderlich.
             </p>
 
-            <chapter title="Benennung der XML-Elemente" id="xml-aufbau-elemente-benennung">
+            <chapter id="xml-aufbau-elemente-benennung" title="Benennung der XML-Elemente">
                 <p>
                     Folgende <b>Regeln</b> gelten für die Namensgebung von XML-Elementen:
                 </p>
@@ -404,7 +405,8 @@
                         Elementnamen müssen mit einem Buchstaben oder Unterstrich beginnen.
                     </li>
                     <li>
-                        Es gibt keine reservierten Wörter bis auf XML, somit dürfen Elementnamen nicht mit XML wie "xml", "XML", "Xml" usw. beginnen.
+                        Es gibt keine reservierten Wörter bis auf XML, somit dürfen Elementnamen nicht mit XML wie
+                        "xml", "XML", "Xml" usw. beginnen.
                     </li>
                     <li>
                         Elementnamen können Buchstaben, Zahlen, Bindestriche, Unterstriche, und Punkte enthalten.
@@ -488,7 +490,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="XML Attribute" id="xml-aufbau-attribute">
+        <chapter id="xml-aufbau-attribute" title="XML Attribute">
             <p>
                 Attribute stehen nur beim öffnenden Tag und werden beim schließenden niemals wiederholt. Die Form ist
                 stets <code>attributname="attributwert"</code> oder <code>attributname='attributwert'</code>. Die
@@ -525,7 +527,7 @@
             </warning>
         </chapter>
 
-        <chapter title="Entity-Referenzen" id="xml-aufbau-entityreferenzen">
+        <chapter id="xml-aufbau-entityreferenzen" title="Entity-Referenzen">
             <p>
                 Einige Zeichen sind in XML-Dokumenten nicht zulässig und müssen durch spezielle Escape-Sequenzen ersetzt
                 werden, die als Entity-Referenzen bezeichnet werden. Eine Entity-Referenz beginnt mit einem
@@ -576,7 +578,7 @@
             </p>
         </chapter>
 
-        <chapter title="CDATA-Abschnitte" id="xml-aufbau-cdata">
+        <chapter id="xml-aufbau-cdata" title="CDATA-Abschnitte">
             <p>
                 Der normale Text in XML-Dokumenten besteht aus sogenannten PCDATA-Abschnitten. PCDATA steht für parsed
                 character data. Dies bedeutet, dass einige Sonderzeichen innerhalb des Textes gemäß ihrer speziellen
@@ -599,7 +601,7 @@
 
             <code-block lang="xml">
                 &lt;codeblock&gt;
-                    &lt;![CDATA[  &lt;cover file="simpsons_178.png"  type="image/png" /&gt;]]&gt;
+                &lt;![CDATA[ &lt;cover file="simpsons_178.png" type="image/png" /&gt;]]&gt;
                 &lt;/codeblock&gt;
             </code-block>
 
@@ -610,7 +612,7 @@
             </p>
         </chapter>
 
-        <chapter title="Kommentare" id="xml-aufbau-kommentare">
+        <chapter id="xml-aufbau-kommentare" title="Kommentare">
             <p>
                 XML-Dokumente können auch Kommentare enthalten. Diese werden naturgemäß ignoriert und dienen der
                 Übersicht im Dokument oder können zusätzliche Erläuterungen enthalten. Ein Kommentar wird durch die
@@ -638,7 +640,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Namespaces (Namensräume)" id="namespaces">
+    <chapter id="namespaces" title="Namespaces (Namensräume)">
         <p>
             Da in XML-Dokumenten mehrere Dokumenttypen vermischt werden können, wurden Namensräume (= Namespaces)
             eingeführt, die die Unterscheidung von Elementen aus verschiedenen DTDs zulassen. Der Standardnamensraum
@@ -671,9 +673,11 @@
                     <summary>
                         <html:p>
                             Der erste Band der Sammelausgabe von
-                            <html:i>Ultimate Spider-Man</html:i> beschreibt, wie
+                            <html:i>Ultimate Spider-Man</html:i>
+                            beschreibt, wie
                             der Schüler <html:b>Peter Parker</html:b> zum Superhelden
-                            <html:b>Spider-Man</html:b> wird und seine ersten Abenteuer
+                            <html:b>Spider-Man</html:b>
+                            wird und seine ersten Abenteuer
                             erlebt.
                         </html:p>
                     </summary>
@@ -684,13 +688,13 @@
         </code-block>
     </chapter>
 
-    <chapter title="Wohlgeformtheit" id="wohlgeformtheit">
+    <chapter id="wohlgeformtheit" title="Wohlgeformtheit">
         <p>
             Jedes XML-Dokument muss eine Reihe formaler Regeln erfüllen, um wohlgeformt zu sein. XML-Dateien, die diesen
             Regeln nicht genügen, werden von XML-Parsern in Anwendungen und Programmiersprachen nicht verarbeitet,
             sondern erzeugen Fehlermeldungen.
         </p>
-        
+
         <list>
             <li>
                 Ein XML-Dokument benötigt genau ein Wurzelelement: Ein bestimmtes Element muss alle anderen Elemente und
@@ -724,7 +728,7 @@
         </list>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836254663, IT Handbuch für Fachinformatiker, Sascha Kersken, Rheinwerk Verlag GmbH, 2017

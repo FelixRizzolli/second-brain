@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="RDBMS" id="rdbms">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="rdbms"
+       title="RDBMS"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einleitung" id="einleitung">
+    <chapter id="einleitung" title="Einleitung">
         <p>
             Datenbanken und SQL haben in der Informatik die Aufgabe, Daten auf eine einfache Art und Weise zu verwalten.
             Zentrale Elemente sind hier die Abfragesprache SQL, die Tabellen, in denen die Daten gespeichert werden und
@@ -19,7 +19,7 @@
         </p>
     </chapter>
 
-    <chapter title="Tabellen" id="tabellen">
+    <chapter id="tabellen" title="Tabellen">
         <p>
             Tabellen stehen im Zentrum von SQL. SQL ermöglicht es Daten in Tabellen einzufügen, zu löschen, zu
             aktualisieren und abzufragen. Eine Tabelle besteht aus einem Namen, der die Eigenschaften (Spalten), die in
@@ -33,7 +33,7 @@
         </p>
     </chapter>
 
-    <chapter title="Herkunft von Datenbanken" id="herkunft">
+    <chapter id="herkunft" title="Herkunft von Datenbanken">
         <p>
             Edgar F. Codd entwickelte in den siebziger Jahren ein mathematisches Modell auf Grundlage der Mengenlehre.
             Hierbei wird eine Menge betrachtet – die Tabelle – welche mit Elementen ausgestattet wird – die Spalten.
@@ -53,7 +53,7 @@
         </p>
     </chapter>
 
-    <chapter title="Datenbanksysteme" id="datenbanksysteme">
+    <chapter id="datenbanksysteme" title="Datenbanksysteme">
         <p>
             Es gibt zahlreiche Datenbanksysteme von den unterschiedlichsten Anbietern, die SQL unterstützen und Daten
             bzw. Informationen in Tabellen speichern. <b>Datenbanksysteme die Informationen in Tabellen speichern nennt
@@ -70,7 +70,7 @@
         </p>
     </chapter>
 
-    <chapter title="SQL-Dialekte" id="dialekte">
+    <chapter id="dialekte" title="SQL-Dialekte">
         <p>
             SQL ist ein Standard, der durch die ISO (International Standardization Organisation) vorgegeben wird.
             Dennoch gibt es im Sprachschatz jeweils unabhängig von der verwendeten Datenbank Abweichungen vom Standard.
@@ -78,7 +78,7 @@
         </p>
     </chapter>
 
-    <chapter title="Kommentare in SQL" id="kommentare">
+    <chapter id="kommentare" title="Kommentare in SQL">
         <p>
             Kommentare werden zu Dokumentationszwecken verwendet. Beispiele für Kommentare sind:
         </p>
@@ -100,7 +100,7 @@
         </p>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

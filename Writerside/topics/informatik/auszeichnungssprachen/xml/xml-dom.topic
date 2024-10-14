@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="XML - DOM (Document Object Model)" id="xml-dom">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="xml-dom"
+       title="XML - DOM (Document Object Model)"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlegendes zum XML DOM" id="grundlagen">
+    <chapter id="grundlagen" title="Grundlegendes zum XML DOM">
         <p>
             Das Document Object Model (DOM) definiert einen Standard für den Zugriff auf und die Bearbeitung von
             Dokumenten:
@@ -28,7 +29,7 @@
             durch eine Reihe von Standardeigenschaften und -methoden definiert.
         </p>
 
-        <chapter title="Beispiel" id="grundlagen-beispiel">
+        <chapter id="grundlagen-beispiel" title="Beispiel">
             <code-block lang="xml">
                 <![CDATA[
                 <?xml version="1.0" encoding="UTF-8"?>
@@ -66,7 +67,7 @@
             </code-block>
         </chapter>
 
-        <chapter title="Text wird immer in Textknoten gespeichert." id="grundlagen-text">
+        <chapter id="grundlagen-text" title="Text wird immer in Textknoten gespeichert.">
             <p>
                 Ein häufiger Fehler bei der DOM-Verarbeitung ist die Erwartung, dass ein Elementknoten Text enthält. Der
                 Text eines Elementknotens wird jedoch in einem Textknoten gespeichert. In diesem Beispiel:
@@ -76,19 +77,19 @@
             </p>
         </chapter>
 
-        <chapter title="XML DOM Knotenbaum (node tree)" id="grundlagen-knotenbaum">
+        <chapter id="grundlagen-knotenbaum" title="XML DOM Knotenbaum (node tree)">
             <p>
-                Das XML-DOM betrachtet ein XML-Dokument als Baumstruktur. Die Baumstruktur wird als Knotenbaum (eng. 
-                node tree) bezeichnet. Auf alle Knoten kann über den Baum zugegriffen werden. Ihr Inhalt kann geändert 
-                oder gelöscht werden, und es können neue Elemente erstellt werden. Der Knotenbaum zeigt die Menge der 
-                Knoten und die Verbindungen zwischen ihnen. Der Baum beginnt mit dem Wurzelknoten und verzweigt sich bis 
+                Das XML-DOM betrachtet ein XML-Dokument als Baumstruktur. Die Baumstruktur wird als Knotenbaum (eng.
+                node tree) bezeichnet. Auf alle Knoten kann über den Baum zugegriffen werden. Ihr Inhalt kann geändert
+                oder gelöscht werden, und es können neue Elemente erstellt werden. Der Knotenbaum zeigt die Menge der
+                Knoten und die Verbindungen zwischen ihnen. Der Baum beginnt mit dem Wurzelknoten und verzweigt sich bis
                 zu den Textknoten auf der untersten Ebene des Baums:
             </p>
-            
-            <img src="xml-knotenbaum.png" alt="XML - Knotenbaum"/>
+
+            <img alt="XML - Knotenbaum" src="xml-knotenbaum.png"/>
         </chapter>
 
-        <chapter title="Eltern, Kinder und Geschwister von Knoten" id="grundlagen-knoten">
+        <chapter id="grundlagen-knoten" title="Eltern, Kinder und Geschwister von Knoten">
             <p>
                 Die Knoten im Knotenbaum stehen in einer hierarchischen Beziehung zueinander. Die Begriffe Elternteil
                 (eng. parent), Kind (eng. child) und Geschwister (eng. sibling) werden verwendet, um die Beziehungen zu
@@ -108,14 +109,14 @@
                 Die folgende Abbildung veranschaulicht einen Teil des Knotenbaums und die Beziehung zwischen den Knoten:
             </p>
 
-            <img src="xml-knotenbaum-beziehungen.png" alt="XML - Knotenbaum (Beziehungen)"/>
+            <img alt="XML - Knotenbaum (Beziehungen)" src="xml-knotenbaum-beziehungen.png"/>
         </chapter>
 
-        <chapter title="Zugriff auf Knoten" id="grundlagen-zugriff">
+        <chapter id="grundlagen-zugriff" title="Zugriff auf Knoten">
             <p>
                 Es gibt folgende drei Möglichkeiten, um auf Knoten zuzugreifen:
             </p>
-            
+
             <list>
                 <li>
                     Die Verwendung der Methode <code>getElementsByTagName()</code>, welche alle Knoten mit einem
@@ -131,7 +132,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Eigenschaften (Properties)" id="eigenschaften">
+    <chapter id="eigenschaften" title="Eigenschaften (Properties)">
         <p>
             Eigenschaften werden oft als etwas bezeichnet, das ist (z. B. der Knotenname ist <code>"book"</code>).
             Typische Eigenschaften sind:
@@ -229,7 +230,7 @@
         </table>
     </chapter>
 
-    <chapter title="Methoden (Methods)" id="methoden">
+    <chapter id="methoden" title="Methoden (Methods)">
         <p>
             Methoden werden oft als etwas bezeichnet, das getan wird (z.B. den Knoten <code>"book"</code> löschen).
             Typische Methoden sind:
@@ -361,7 +362,7 @@
         </table>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/xml_dom.asp" ignore-vars="true">

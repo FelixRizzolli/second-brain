@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Fehler und Fehlerbehandlung (error handling)" id="swe-pk-errorhandling">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-pk-errorhandling"
+       title="Fehler und Fehlerbehandlung (error handling)"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Warum ist Software fehlerhaft?" id="warum_ist_software_fehlerhaft_">
+    <chapter id="warum_ist_software_fehlerhaft_" title="Warum ist Software fehlerhaft?">
         <p>
             Die Antwort ist einfach: Irren ist menschlich. Programme werden von Menschen geschrieben, und Menschen
             machen Fehler. Dies sind beispielsweise Denkfehler oder auch Flüchtigkeitsfehler. Software-Projekte sind oft
@@ -27,7 +27,7 @@
         </note>
     </chapter>
 
-    <chapter title="Bugs" id="bugs">
+    <chapter id="bugs" title="Bugs">
         <p>
             Der Begriff Bug wird in der Informatik oft als Synonym für »Fehler« verwendet. Meistens benutzt man ihn, um
             zu sagen, dass etwas um Programm schiefgeht, was funktionieren sollte. Für die Vermeidung und Behebung von
@@ -58,28 +58,28 @@
         </note>
     </chapter>
 
-    <chapter title="Verschiedene Fehlerarten" id="fehlerarten">
+    <chapter id="fehlerarten" title="Verschiedene Fehlerarten">
         <p>
             Fehler lassen sich meist mehreren Kategorien zuordnen. Diese Unterteilung nehmen wir vor, um die jeweiligen
             Fehler frühzeitig zu erkennen und unter Anwendung den richtigen Werkzeugen zu beheben oder sogar zu
             verhindern.
         </p>
 
-        <chapter title="Kompilierungsfehler bzw. Syntaxfehler" id="fehlerarten-syntax">
+        <chapter id="fehlerarten-syntax" title="Kompilierungsfehler bzw. Syntaxfehler">
             <p>
-                Der erste Zeitpunkt, bei dem Fehler auftreten können, ist, wenn der Computer das Programm kompiliert, 
-                das heißt aus der Programmiersprache in Maschinencode übersetzt. Versteht der Compiler, also das 
-                Programm, das den Code übersetzt, diesen nicht, so tritt ein Kompilierungsfehler auf. 
-                Kompilierungsfehler entstehen aus Verletzung der Notationsregeln der verwendeten Programmiersprache. 
-                Diese Verletzung kann zum Beispiel ein Syntaxfehler sein, gewissermaßen eine falsche Verwendung der 
-                Grammatik der Programmiersprache. Bei Sprachen, deren Notationsregeln sehr streng sind, wird beim 
-                Kompilieren unter anderem festgestellt, wenn unbekannte Befehle verwendet werden, quasi ein Vokal, die 
+                Der erste Zeitpunkt, bei dem Fehler auftreten können, ist, wenn der Computer das Programm kompiliert,
+                das heißt aus der Programmiersprache in Maschinencode übersetzt. Versteht der Compiler, also das
+                Programm, das den Code übersetzt, diesen nicht, so tritt ein Kompilierungsfehler auf.
+                Kompilierungsfehler entstehen aus Verletzung der Notationsregeln der verwendeten Programmiersprache.
+                Diese Verletzung kann zum Beispiel ein Syntaxfehler sein, gewissermaßen eine falsche Verwendung der
+                Grammatik der Programmiersprache. Bei Sprachen, deren Notationsregeln sehr streng sind, wird beim
+                Kompilieren unter anderem festgestellt, wenn unbekannte Befehle verwendet werden, quasi ein Vokal, die
                 der Computer noch nicht kennt.
             </p>
 
-            <chapter title="Beispiel mit Kompilierungsfehler" id="fehlerarten-syntax-beispiel" collapsible="true">
-                <chapter title="Berechnung der Fläche eines Kreises (mit Fehler)"
-                         id="fehlerarten-syntax-beispiel-mitfehler">
+            <chapter collapsible="true" id="fehlerarten-syntax-beispiel" title="Beispiel mit Kompilierungsfehler">
+                <chapter id="fehlerarten-syntax-beispiel-mitfehler"
+                         title="Berechnung der Fläche eines Kreises (mit Fehler)">
                     <code-block>
                         Eingabe: Der Wert kreisRadius
                         Ausgabe: Die Fläche des Kreises
@@ -95,8 +95,8 @@
                     </p>
                 </chapter>
 
-                <chapter title="Berechnung der Fläche eines Kreises (Korrektur)"
-                         id="fehlerarten-syntax-beispiel-ohnefehler">
+                <chapter id="fehlerarten-syntax-beispiel-ohnefehler"
+                         title="Berechnung der Fläche eines Kreises (Korrektur)">
                     <code-block>
                         Eingabe: Der Wert kreisRadius
                         Ausgabe: Die Fläche des Kreises
@@ -115,7 +115,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Laufzeitfehler" id="fehlerarten-laufzeit">
+        <chapter id="fehlerarten-laufzeit" title="Laufzeitfehler">
             <p>
                 Laufzeitfehler treten bei der Ausführung eines Programms auf und führen zum Absturz der Software. Sie
                 werden meist durch bestimmte, unerwartete Eingaben ausgelöst.
@@ -128,7 +128,7 @@
                 Ausführung zu einem beobachtbaren Fehlverhalten des Programms führt.
             </p>
 
-            <chapter title="Beispiel mit Laufzeitfehler" id="fehlerarten-laufzeit-beispiel" collapsible="true">
+            <chapter collapsible="true" id="fehlerarten-laufzeit-beispiel" title="Beispiel mit Laufzeitfehler">
                 <code-block>
                     Eingabe: Die Werte distanz und zeit
                     Ausgabe: Die Geschwindigkeit
@@ -145,7 +145,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Logische Fehler" id="fehlerarten-logik">
+        <chapter id="fehlerarten-logik" title="Logische Fehler">
             <p>
                 Logische Fehler (manchmal auch Denkfehler genannt) sind falsche Überlegungen in der konkreten
                 Problemlösung des Programmierers. Ist der Fehler gefunden, so ist er oftmals einfach zu beheben. Solche
@@ -154,9 +154,9 @@
                 getroffene Annahme falsch war.
             </p>
 
-            <chapter title="Beispiel mit Laufzeitfehler" id="fehlerarten-logik-beispiel" collapsible="true">
-                <chapter title="Berechnung der Fläche eines Kreises (mit Fehler)"
-                         id="fehlerarten-logik-beispiel-mitfehler">
+            <chapter collapsible="true" id="fehlerarten-logik-beispiel" title="Beispiel mit Laufzeitfehler">
+                <chapter id="fehlerarten-logik-beispiel-mitfehler"
+                         title="Berechnung der Fläche eines Kreises (mit Fehler)">
                     <code-block>
                         Eingabe: Die Anzahl Personen n
                         Ausgabe: Die Anzahl Handschläge zwischen allen Personen
@@ -175,8 +175,8 @@
                         <code>2</code> erhalten wir den korrekten Algorithmus:
                     </p>
                 </chapter>
-                <chapter title="Berechnung der Fläche eines Kreises (Korrektur)"
-                         id="fehlerarten-logik-beispiel-ohnefehler">
+                <chapter id="fehlerarten-logik-beispiel-ohnefehler"
+                         title="Berechnung der Fläche eines Kreises (Korrektur)">
                     <code-block>
                         Eingabe: Die Anzahl Personen n
                         Ausgabe: Die Anzahl Handschläge zwischen allen Personen
@@ -186,7 +186,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Designfehler" id="fehlerarten-design">
+        <chapter id="fehlerarten-design" title="Designfehler">
             <p>
                 Designfehler haben ihren Ursprung ähnlich wie logische Fehler in der Idee der Problemlösung, nicht in
                 einem Fehler der Umsetzung. Jedoch beziehen sich logische Fehler meist nur auf wenige Codezeilen oder
@@ -194,7 +194,7 @@
                 nicht oder nicht mehr geeignet ist.
             </p>
 
-            <chapter title="Beispiel mit Designfehler" id="fehlerarten-design-beispiel" collapsible="true">
+            <chapter collapsible="true" id="fehlerarten-design-beispiel" title="Beispiel mit Designfehler">
                 <code-block lang="plantuml">
                     @startuml
                     Alice -> Vidio: Anruf starten
@@ -203,10 +203,10 @@
                     Vidio -> Alice: weiterleiten
 
                     group wiederhole
-                        Alice -> Vidio: Audio + Video von Alice
-                        Vidio -> Bob: Audio + Video von Alice
-                        Bob -> Vidio: Audio + Video von Bob
-                        Vidio -> Alice: Audio + Video von Bob
+                    Alice -> Vidio: Audio + Video von Alice
+                    Vidio -> Bob: Audio + Video von Alice
+                    Bob -> Vidio: Audio + Video von Bob
+                    Vidio -> Alice: Audio + Video von Bob
                     end
                     @enduml
                 </code-block>
@@ -242,8 +242,8 @@
                     Vidio -> Alice: weiterleiten
 
                     group wiederhole
-                        Alice -> Bob: Audio + Video von Alice
-                        Bob -> Alice: Audio + Video von Bob
+                    Alice -> Bob: Audio + Video von Alice
+                    Bob -> Alice: Audio + Video von Bob
                     end
                     @enduml
                 </code-block>
@@ -264,7 +264,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Umgebungsfehler" id="fehlerarten-umgebung">
+        <chapter id="fehlerarten-umgebung" title="Umgebungsfehler">
             <p>
                 Auch wenn ein Programm für sich korrekt ist, kann es trotzdem zu Fehlern bei der Ausführung kommen. Dies
                 passiert, wenn die Umgebung des Programmes sich unerwartet verhält: Beispiele für solche Umgebungsfehler
@@ -287,7 +287,7 @@
             </p>
         </chapter>
 
-        <chapter title="Kommunikationsfehler" id="fehlerarten-kommunikation">
+        <chapter id="fehlerarten-kommunikation" title="Kommunikationsfehler">
             <p>
                 Programme werden in Softwareprojekten von Menschen für Menschen entwickelt. Jedoch kann es hier zu
                 verschiedenen Problemen kommen. Sind sich mehrere Entwickler, die am selben Projekt arbeiten, über die
@@ -312,13 +312,13 @@
         </chapter>
     </chapter>
 
-    <chapter title="Techniken zur Fehlervermeidung" id="techniken">
+    <chapter id="techniken" title="Techniken zur Fehlervermeidung">
         <p>
             Zur Vermeidung von Fehlern gibt es eine Vielzahl von Praktiken und Werkzeugen, deren korrekte Benutzung
             helfen kann, korrekte und zuverlässige Programme zu schreiben.
         </p>
 
-        <chapter title="Testen" id="techniken-testen">
+        <chapter id="techniken-testen" title="Testen">
             <p>
                 Testen im Rahmen von Software-Entwicklung ist vergleichbar mit dem Testen von Technik in der echten
                 Welt: Fahrstühle durchlaufen Belastungstests, Autos werden testweise gefahren. Das Ziel der Tests ist
@@ -330,7 +330,7 @@
                 insbesondere überprüfen wir Zustände und Ausgaben des Programms.
             </p>
 
-            <chapter title="Beispiel: Tachenrechner testen" id="techniken-testen-beispiel" collapsible="true">
+            <chapter collapsible="true" id="techniken-testen-beispiel" title="Beispiel: Tachenrechner testen">
                 <p>
                     Angenommen es soll ein Taschenrechner auf seine Korrektheit überprüft werden. Es ist klar, dass es
                     unmöglich sein wird, alle erlaubten Eingaben auszuprobieren. Aber wir können dennoch versuchen, den
@@ -377,7 +377,7 @@
             </p>
         </chapter>
 
-        <chapter title="A/B-Testing" id="techniken-abtesting">
+        <chapter id="techniken-abtesting" title="A/B-Testing">
             <p>
                 Ist ein Programm beriets ausgeliefert und gibt es Änderungen, die getestet werden müssen, so ist die
                 Praxis des A/B-Testens üblich. Dabei werden zwei oder mehr Versionen der Software (Version A und Version
@@ -395,7 +395,7 @@
             </p>
         </chapter>
 
-        <chapter title="Programmierstiel" id="techniken-programmierstiel">
+        <chapter id="techniken-programmierstiel" title="Programmierstiel">
             <p>
                 Durch Festlegen von Regeln (sogenannten <b>Coding Conventions</b>) kann der Programmierstil mehrerer
                 Personen vereinheitlicht werden. Diese Regeln betreffen unter anderem die Benennung von Variablen und
@@ -412,7 +412,7 @@
             </p>
         </chapter>
 
-        <chapter title="Pair Programming" id="techniken-pairprogramming">
+        <chapter id="techniken-pairprogramming" title="Pair Programming">
             <p>
                 Pair Programming bedeutet, zu zweit zu programmieren. Das Prinzip ist vergleichbar mit dem Autofahren:
                 Es gibt einen Fahrer, der die Geräte bedient, und einen unterstützenden Beifahrer, der den Überblick
@@ -427,7 +427,7 @@
             </p>
         </chapter>
 
-        <chapter title="Code Review" id="techniken-codereview">
+        <chapter id="techniken-codereview" title="Code Review">
             <p>
                 Code Review ist ein formaler Prozess, bei dem geschriebener Code von anderen Entwicklern überprüft wird,
                 bevor er in die Software aufgenommen wird. Ähnlich wie beim Pair Programming ist hier die Motivation,
@@ -439,8 +439,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Behandlung von Laufzeitfehlern" id="laufzeitfehler">
-        <chapter title="Fehler mit dem try-catch-finally-Statement abfangen" id="laufzeitfehler-trycatch">
+    <chapter id="laufzeitfehler" title="Behandlung von Laufzeitfehlern">
+        <chapter id="laufzeitfehler-trycatch" title="Fehler mit dem try-catch-finally-Statement abfangen">
             <p>
                 Über das Schlüsselwort <code>try</code> leitet man den Codeblock ein, der potenziell Fehler werfen
                 könnte. Folglich wird mit dem Schlüsselwort <code>catch</code> der Codeblock definiert, der ausgeführt
@@ -503,7 +503,7 @@
             </p>
         </chapter>
 
-        <chapter title="Fehler mit dem throw-Statement auslösen" id="laufzeitfehler-throw">
+        <chapter id="laufzeitfehler-throw" title="Fehler mit dem throw-Statement auslösen">
             <p>
                 Um einen Fehler zu fangen, muss dieser Fehler natürlich auch irgendwo ausgelöst und geworfen werden.
                 Standard-Methoden besitzen eine Implementierung, welche bei Fehler diese wirft. In den meisten
@@ -515,22 +515,22 @@
             </p>
 
             <code-block lang="javascript">
-                console.log(checkAge(22));                // true
-                console.log(checkAge("Max Mustermann"));  // TypeError: Alter muss eine Zahl sein
+                console.log(checkAge(22)); // true
+                console.log(checkAge("Max Mustermann")); // TypeError: Alter muss eine Zahl sein
 
                 function checkAge(age) {
-                    if(isNaN(parseFloat(age))) {
-                        throw new TypeError('Alter muss eine Zahl sein.');
-                    } else if (age &lt; 0) {
-                        throw new RangeError('Alter darf nicht negativ sein.');
-                    }
-                    return true;  // Im Fehlerfall wird diese Anweisung nicht mehr ausgeführt.
+                if(isNaN(parseFloat(age))) {
+                throw new TypeError('Alter muss eine Zahl sein.');
+                } else if (age &lt; 0) {
+                throw new RangeError('Alter darf nicht negativ sein.');
+                }
+                return true; // Im Fehlerfall wird diese Anweisung nicht mehr ausgeführt.
                 }
 
                 try {
-                    console.log(checkAge(-22)); // keine Ausgabe
+                console.log(checkAge(-22)); // keine Ausgabe
                 } catch(error) {
-                    console.log(error);         // RangeError: Alter darf nicht negativ sein
+                console.log(error); // RangeError: Alter darf nicht negativ sein
                 }
             </code-block>
 
@@ -568,7 +568,7 @@
             </note>
         </chapter>
 
-        <chapter title="Fehler und der Funktionsaufruf-Stack" id="laufzeitfehler-stack">
+        <chapter id="laufzeitfehler-stack" title="Fehler und der Funktionsaufruf-Stack">
             <p>
                 Wird innerhalb einer Funktion ein Fehler geworfen, so springt das Programm aus dieser Funktion heraus.
                 Wird der Fehler in der Funktion, zu der das Programm zurückspringt, nicht gefangen, so springt das
@@ -580,7 +580,7 @@
                 Hier ein Beispiel mit JavaScript:
             </p>
 
-            <img src="swe-pk-fehlerbehandlung-funktionsaufrufstack.png" alt="Funktionsaufruf-Stack"/>
+            <img alt="Funktionsaufruf-Stack" src="swe-pk-fehlerbehandlung-funktionsaufrufstack.png"/>
 
             <p>
                 Die Frage, wie und an welcher Stelle im Code man Fehler am besten behandelt, lässt sich pauschal nicht
@@ -591,7 +591,7 @@
             </p>
         </chapter>
 
-        <chapter title="Fehler an den Nutzer weiterleiten, oder nicht?" id="laufzeitfehler-weiterleiten">
+        <chapter id="laufzeitfehler-weiterleiten" title="Fehler an den Nutzer weiterleiten, oder nicht?">
             <p>
                 Fehler auf die der Nutzer reagieren bzw. die der Nutzer umgehen kann, sollten auch an den Nutzer
                 weitergeleitet werden. Fehler dagegen, mit denen der Nutzer ohnehin nichts anfangen kann, sollten
@@ -600,7 +600,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Den Code debuggen" id="debuggen">
+    <chapter id="debuggen" title="Den Code debuggen">
         <p>
             Mithilfe eines Debuggers ist es möglich ein Programm an einer bestimmten Stelle zu pausieren und dann ab
             dieser Stelle Schritt für Schritt die folgenden Anweisungen durchzugehen: sich jeweils die Variablenlegung
@@ -608,10 +608,11 @@
         </p>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
-            978-3-8362-4406-0, "Fit fürs Studium – Informatik", Philipp Fischbeck &amp; Arne Boockmeyer &amp; Stefan Neubert, 2019
+            978-3-8362-4406-0, "Fit fürs Studium – Informatik", Philipp Fischbeck &amp; Arne Boockmeyer &amp; Stefan
+            Neubert, 2019
         </tip>
         <tip>
             <b>(BUCH)</b>

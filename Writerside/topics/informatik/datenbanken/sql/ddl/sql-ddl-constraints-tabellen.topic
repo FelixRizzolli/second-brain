@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="CONSTRAINTS auf Tabellenebene" id="sql-ddl-constraints-tabellen">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-ddl-constraints-tabellen"
+       title="CONSTRAINTS auf Tabellenebene"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einleitung" id="einleitung">
+    <chapter id="einleitung" title="Einleitung">
         <p>
             Auf Tabellenebene können die Einschränkungen <code>PRIMARY KEY</code>, <code>UNIQUE</code> und
             <code>CHECK</code> festgelegt werden. Eine <code>DEFAULT</code>-Einschränkung, die den Standardwert festlegt
@@ -21,7 +21,7 @@
         </p>
     </chapter>
 
-    <chapter title="PRIMARY KEY: Primärschlüssel auf Tabellenebene" id="primary-key">
+    <chapter id="primary-key" title="PRIMARY KEY: Primärschlüssel auf Tabellenebene">
         <p>
             Hier gibt es einen sehr wichtigen Punkt zu beachten. Soll eine Tabelle mehrere Spalten mit Primärschlüssel
             enthalten, so müssen die Primärschlüssel auf Tabellenebene notiert werden, da auf Spaltenebene nur ein
@@ -30,12 +30,12 @@
 
         <code-block lang="sql">
             CREATE
-             TABLE zweigstellen
-                 ( land VARCHAR(200)
-                 , zweigstellenid TINYINT
-                 , namezweigstelle VARCHAR(200)
-                 , CONSTRAINT pk_land_zweigstellen PRIMARY KEY (land, zweigstellenid)
-                 )
+            TABLE zweigstellen
+            ( land VARCHAR(200)
+            , zweigstellenid TINYINT
+            , namezweigstelle VARCHAR(200)
+            , CONSTRAINT pk_land_zweigstellen PRIMARY KEY (land, zweigstellenid)
+            )
             ;
         </code-block>
 
@@ -53,7 +53,7 @@
         </code-block>
     </chapter>
 
-    <chapter title="FOREIGN KEY: Fremdschlüssel auf Tabellenebene" id="foreign-key">
+    <chapter id="foreign-key" title="FOREIGN KEY: Fremdschlüssel auf Tabellenebene">
         <p>
             Die <code>FOREIGN KEY</code>-Beschränkung wird verwendet, um Aktionen zu verhindern, die Verbindungen
             zwischen Tabellen zerstören würden. Ein <code>FOREIGN KEY</code> ist ein Feld (oder eine Sammlung von
@@ -64,18 +64,18 @@
 
         <code-block lang="sql">
             CREATE
-             TABLE Orders
-                 ( OrderID                INT     NOT NULL
-                 , OrderNumber            INT     NOT NULL
-                 , PersonID               INT
-                 , PRIMARY KEY (OrderID)
-                 , CONSTRAINT FK_PersonOrder      FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
-                 )
+            TABLE Orders
+            ( OrderID INT NOT NULL
+            , OrderNumber INT NOT NULL
+            , PersonID INT
+            , PRIMARY KEY (OrderID)
+            , CONSTRAINT FK_PersonOrder FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+            )
             ;
         </code-block>
     </chapter>
 
-    <chapter title="UNIQUE: Die Eindeutigkeitseinschränkung auf Tabellenebene" id="unique">
+    <chapter id="unique" title="UNIQUE: Die Eindeutigkeitseinschränkung auf Tabellenebene">
         <p>
             Mit der <code>UNIQUE</code>-Einschränkung auf Tabellenebene verhält es sich ähnlich wie mit dem
             Primärschlüssel. Auch hier kann man die Eindeutigkeit durch das Zusammensetzen mehrerer Spaltenwerte
@@ -84,13 +84,13 @@
 
         <code-block lang="sql">
             CREATE
-             TABLE zweigstellen
-                 ( globalid          TINYINT          PRIMARY KEY
-                 , land              VARCHAR(200)
-                 , zweigstellenid    TINYINT
-                 , namezweigstelle   VARCHAR(200)
-                 , CONSTRAINT uq_landzweigstelle UNIQUE (land, zweigstellenid)
-                 )
+            TABLE zweigstellen
+            ( globalid TINYINT PRIMARY KEY
+            , land VARCHAR(200)
+            , zweigstellenid TINYINT
+            , namezweigstelle VARCHAR(200)
+            , CONSTRAINT uq_landzweigstelle UNIQUE (land, zweigstellenid)
+            )
             ;
         </code-block>
         <code-block lang="sql">
@@ -101,7 +101,7 @@
         </code-block>
     </chapter>
 
-    <chapter title="CHECK: Plausibilitätsprüfungs-Einschränkungen auf Tabellenebene" id="check">
+    <chapter id="check" title="CHECK: Plausibilitätsprüfungs-Einschränkungen auf Tabellenebene">
         <p>
             Auch die Plausibilitätsprüfung ist für MySQL erst ab der Version 8.0.16 verfügbar. Wie gewohnt beginnt man
             die Einschränkung mit dem Schlüsselwort <code>CONSTRAINT</code> und dem Einschränkungsbezeichner. Darauf
@@ -110,20 +110,20 @@
 
         <code-block lang="sql">
             CREATE
-             TABLE zweigstellen
-                 ( globalid              TINYINT         PRIMARY KEY
-                 , land                  VARCHAR(200)
-                 , zweigstellenid        SMALLINT
-                 , namezweigstelle       VARCHAR(200)
-                 , mitarbeiterplanzahl   SMALLINT
-                 , mitarbeiteristzahl    SMALLINT
-                 , CONSTRAINT ch_mitarbeiterzahl CHECK ( mitarbeiterplanzahl >= mitarbeiteristzahl )
-                 )
+            TABLE zweigstellen
+            ( globalid TINYINT PRIMARY KEY
+            , land VARCHAR(200)
+            , zweigstellenid SMALLINT
+            , namezweigstelle VARCHAR(200)
+            , mitarbeiterplanzahl SMALLINT
+            , mitarbeiteristzahl SMALLINT
+            , CONSTRAINT ch_mitarbeiterzahl CHECK ( mitarbeiterplanzahl >= mitarbeiteristzahl )
+            )
             ;
         </code-block>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Verschwörungstheorien" id="verschwoerungstheorien">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="verschwoerungstheorien"
+       title="Verschwörungstheorien"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Test zur Verschwörungsmentalität" id="test">
+    <chapter id="test" title="Test zur Verschwörungsmentalität">
         <p>
             Mithilfe eines kurzen Tests kann herausgefunden werden, wie es um die eigene Verschwörungsmentalität
             bestellt ist.
         </p>
 
-        <chapter title="Fragen" id="test-fragen" collapsible="true">
+        <chapter collapsible="true" id="test-fragen" title="Fragen">
             <p>
-                <b>Aussage 1</b>: Die meisten Menschen erkennen nicht, in welchem Ausmaß unser Leben durch geheim 
+                <b>Aussage 1</b>: Die meisten Menschen erkennen nicht, in welchem Ausmaß unser Leben durch geheim
                 ausgeheckte Verschwörungen bestimmt wird.
             </p>
-            
+
             <list>
                 <li>Stimme überhaupt nicht zu (1 Punkt)</li>
                 <li>Stimme nicht zu (2 Punkte)</li>
@@ -89,14 +90,14 @@
             </list>
         </chapter>
 
-        <chapter title="Auswertung" id="test-auswertung" collapsible="true">
+        <chapter collapsible="true" id="test-auswertung" title="Auswertung">
             <note>
                 Der Test verdeutlicht eine wichtige Erkenntnis der Wissenschaft: So gut wie jeder Mensch bringt die
                 Veranlagung dafür mit, an Verschwörungserzählungen zu glauben. In einem gewissen Rahmen ist das absolut
                 normal. Wie so oft macht auch hier erst die Dosis das Gift.
             </note>
 
-            <chapter title="0-16 Punkte" id="test-auswertung-0016">
+            <chapter id="test-auswertung-0016" title="0-16 Punkte">
                 <p>
                     Sie gehören zu dem Teil der Bevölkerung, der Verschwörungserzählungen am wenigsten zustimmt. Sie
                     haben vermutlich ein hohes Vertrauen in den Staat und seine Institutionen, wählen wahrscheinlich
@@ -106,7 +107,7 @@
                 </p>
             </chapter>
 
-            <chapter title="16-23 Punkte" id="test-auswertung-1623">
+            <chapter id="test-auswertung-1623" title="16-23 Punkte">
                 <p>
                     Sie liegen in Bezug auf Ihre Verschwörungsmentalität genau in der Mitte der Bevölkerung. Vermutlich
                     sind Sie weder vollkommen vertrauensselig gegenüber den staatlichen Institutionen, noch lehnen Sie
@@ -116,7 +117,7 @@
                 </p>
             </chapter>
 
-            <chapter title="23-35 Punkte" id="test-auswertung-2335">
+            <chapter id="test-auswertung-2335" title="23-35 Punkte">
                 <p>
                     Sie gehören zu dem Teil der Bevölkerung mit der am stärksten ausgeprägten Verschwörungsmentalität.
                     Basierend auf Ihrem Testergebnis gehen wir davon aus, dass Sie dem Staat eher skeptisch
@@ -127,8 +128,8 @@
             </chapter>
         </chapter>
     </chapter>
-    
-    <chapter title="Definition" id="definition">
+
+    <chapter id="definition" title="Definition">
         <tip>
             Eine Verschwörungserzählung ist eine Annahme darüber, dass als mächtig wahrgenommene Einzelpersonen oder
             eine Gruppe von Menschen wichtige Ereignisse in der Welt beeinflussen und damit der Bevölkerung gezielt
@@ -176,7 +177,7 @@
             </p>
         </warning>
 
-        <chapter title="Weitere Begriffe" id="definition-begriffe">
+        <chapter id="definition-begriffe" title="Weitere Begriffe">
             <p>
                 Bei Debatten um Verschwörungserzählungen werden häufig verschiedene Begriffe durcheinandergeworfen:
                 Verschwörungserzählungen, Verschwörungsmythos, Verschwörungsglauben, Verschwörungsideologie oder die
@@ -275,7 +276,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Debunking" id="debunking">
+    <chapter id="debunking" title="Debunking">
         <p>
             Debunking, zu Deutsch »entlarven«, ist eine Methode, bei der falschen Informationen Fakten entgegengesetzt
             werden, um diese zu entkräften. Sie wird im Umgang mit Verschwörungsideologien relativ häufig eingesetzt.
@@ -284,8 +285,8 @@
         </p>
     </chapter>
 
-    <chapter title="Wissenschaftliche Erklärungen" id="wissenschaft">
-        <chapter title="Expertenbaias" id="wissenschaft-expertenbaias">
+    <chapter id="wissenschaft" title="Wissenschaftliche Erklärungen">
+        <chapter id="wissenschaft-expertenbaias" title="Expertenbaias">
             <p>
                 Unter normalen Umständen haben die meisten Menschen etwas, das sich Expertenbias nennt. Das bedeutet:
                 Wenn wir denken, dass ein Mensch Experte in einem bestimmten Thema ist, nehmen wir dessen Aussagen als
@@ -296,11 +297,12 @@
             </p>
         </chapter>
 
-        <chapter title="Need for Cognition" id="wissenschaft-needforcognition">
+        <chapter id="wissenschaft-needforcognition" title="Need for Cognition">
             <p>
                 Menschen unterscheiden sich stark darin, wie sie mit Informationen umgehen. In der
                 Persönlichkeitspsychologie bezeichnet man das als Erkenntnisbedürfnis (eng.
-                <emphasis>Need for Cognition</emphasis>). Menschen vom Typ »kognitive Vermeider« sind eher der Meinung,
+                <emphasis>Need for Cognition</emphasis>
+                ). Menschen vom Typ »kognitive Vermeider« sind eher der Meinung,
                 dass es ihnen genügt, einfache Antworten zu kennen, ohne die Gründe eines Problems zu verstehen. Auf der
                 anderen Seite stehen Menschen mit einem hohen Erkenntnisbedürfnis, denen es Freude bereitet, über
                 Probleme und Lösungswege nachzudenken. Im Rahmen von Studien konnte belegt werden, dass Menschen mit
@@ -315,7 +317,7 @@
             </p>
         </chapter>
 
-        <chapter title="Ankerheuristik" id="wissenschaft-ankerheuristik">
+        <chapter id="wissenschaft-ankerheuristik" title="Ankerheuristik">
             <p>
                 Als Ankerheuristik wird in der Psychologie ein Mechanismus bezeichnet, welcher oft bei der Beantwortung
                 von fragen bzw. der Entscheidungsfindung in Kraft tritt. Unser Gehirn macht sich bei Entscheidungen
@@ -333,9 +335,11 @@
             </p>
         </chapter>
 
-        <chapter title="Confirmation Baias" id="wissenschaft-confirmationbaias">
+        <chapter id="wissenschaft-confirmationbaias" title="Confirmation Baias">
             <p>
-                Der <emphasis>Confirmation Baias</emphasis> (zu Deutsch »Bestätigungsfehler«) dafür, dass wir
+                Der
+                <emphasis>Confirmation Baias</emphasis>
+                (zu Deutsch »Bestätigungsfehler«) dafür, dass wir
                 insbesondere jene Informationen als hochwertiger einstufen, die uns in unserer Meinung bestärken.
                 Gesprächspartner, die unsere Meinung vertreten, nehmen wir nicht selten als kompetenter wahr als
                 Menschen, die uns widersprechen. Das gilt vor allem für Themen, bei denen wir uns bereits eine starke
@@ -349,36 +353,44 @@
             </p>
         </chapter>
 
-        <chapter title="Optimismus Baias" id="wissenschaft-optimismusbaias">
+        <chapter id="wissenschaft-optimismusbaias" title="Optimismus Baias">
             <p>
                 Wir neigen in vielen Situationen dazu, unser eigenes Risiko systematisch geringer einzuschätzen als das
                 von Fremden. Das liegt vor allem daran, dass wir unsere eigene Fähigkeit, mit Risiken umzugehen, gerne
-                überschätzen. Der <emphasis>Optimismus Bias</emphasis> wirkt zudem stärker, wenn wir die
+                überschätzen. Der
+                <emphasis>Optimismus Bias</emphasis>
+                wirkt zudem stärker, wenn wir die
                 Vergleichsgruppe als »fremd« oder anders wahrnehmen. Wenn etwa Meldungen über die Folgen der
                 Erderwärmung häufig mit Bildern von Dürren in entfernten Regionen illustriert werden, fällt es leichter,
                 dies als für einen selbst irrelevant abzutun.
             </p>
         </chapter>
 
-        <chapter title="Zensur, Lügenpresse &amp; Meinungsfreiheit" id="meinungsfreiheit">
+        <chapter id="meinungsfreiheit" title="Zensur, Lügenpresse &amp; Meinungsfreiheit">
             <p>
                 Bei Anhängern von Verschwörungsmythen über die Medien lässt sich ein beängstigender Effekt beobachten.
                 Diejenigen, die klassisch ausgebildeten Journalisten unterstellen, sie würden Wahrheit zensieren und
                 Fakten verdrehen, schenken ihr Vertrauen als Reaktion darauf häufig plötzlich Medien, die alles andere
                 als neutral sind. Interessant ist hierbei, dass sich der russische Staatssender
-                <emphasis>Russia Today (RT)</emphasis> unter Medienskeptikern in Deutschland zunehmend großer
+                <emphasis>Russia Today (RT)</emphasis>
+                unter Medienskeptikern in Deutschland zunehmend großer
                 Beliebtheit erfreut. Vor allem auf YouTube und in sozialen Netzwerken erreichen die Sendungen ein großes
                 Publikum. Dabei handelt es sich bei RT tatsächlich um einen echten »Staatssender« im wahrsten Sinne des
                 Wortes. Von der Besetzung der Krim bis hin zum Syrien-Krieg ist die Berichterstattung stets auf einer
                 Linie mit der Position im Kreml. Prominente Stars der Verschwörungsszene wie
-                <emphasis>Compact</emphasis>-Chef Jürgen Elsässer sind hier gern gesehene Gäste. Kritische Nachfragen
-                muss er bei RT nicht fürchten. Mit TV-Formaten wie Der <emphasis>fehlende Part</emphasis> wird
+                <emphasis>Compact</emphasis>
+                -Chef Jürgen Elsässer sind hier gern gesehene Gäste. Kritische Nachfragen
+                muss er bei RT nicht fürchten. Mit TV-Formaten wie Der
+                <emphasis>fehlende Part</emphasis>
+                wird
                 systematisch die Botschaft vermittelt, andere Medien würden ihren Zuschauern essenzielle Informationen
                 über politische Ereignisse verschweigen. Wer die Nachrichten von RT verfolgt, kann schnell zu der
                 Überzeugung gelangen, Europa stehe kurz vor dem Bürgerkrieg, und die AfD sei die wichtigste Partei im
                 Deutschen Bundestag. Kritische Berichte über die russische Regierung sucht man hingegen vergeblich.
                 Lea Frings, ehemals Redakteurin bei RT Deutsch, zog nach ihrem Ausstieg beim Sender gegenüber dem
-                Medienmagazin <emphasis>ZAPP</emphasis> eine bezeichnende Bilanz: »Geschickte Propaganda wird immer sehr
+                Medienmagazin
+                <emphasis>ZAPP</emphasis>
+                eine bezeichnende Bilanz: »Geschickte Propaganda wird immer sehr
                 subtil gemacht. Man zeigt nicht das ganze Bild.« Beim Staatssender RT ist offensichtlich, dass für die
                 russische Regierung unliebsame Perspektiven systematisch ausgeblendet werden.
             </p>
@@ -389,7 +401,7 @@
             </p>
         </chapter>
 
-        <chapter title="Misstrauen" id="wissenschaft-misstrauen">
+        <chapter id="wissenschaft-misstrauen" title="Misstrauen">
             <p>
                 Widerspricht eine erdrückende Mehrheit der Wissenschaftsgemeinschaft einer Verschwörungstheorie, wie
                 beispielsweise "der vom Mensch gemachte Klimawandel sei nicht echt", dann wird dabei häufig - mal mehr,
@@ -430,10 +442,12 @@
             </p>
         </chapter>
 
-        <chapter title="Ausgewogenheit als Verzerrung - Die Wahrheit liegt in der Mitte"
-                 id="wissenschaft-balanceasbaias">
+        <chapter id="wissenschaft-balanceasbaias"
+                 title="Ausgewogenheit als Verzerrung - Die Wahrheit liegt in der Mitte">
             <p>
-                Eine Studie mit den Titel <emphasis>Balance as bias</emphasis> (zu Deutsch »Ausgewogenheit als
+                Eine Studie mit den Titel
+                <emphasis>Balance as bias</emphasis>
+                (zu Deutsch »Ausgewogenheit als
                 Verzerrung«) entlarvte eine folgenschwere Schieflage in der Berichterstattung. Die Linie vieler
                 Redaktionen, zum Thema Klimawandel »beide Seiten« zu Wort kommen zu lassen, um eine »ausgewogene
                 Debatte« zu ermöglichen, erzeugte als Ergebnis ein verzerrtes Bild der Wirklichkeit. »Die Wahrheit liegt
@@ -448,12 +462,14 @@
                 werde man statt »Klimawandel« lieber Begriffe wie »Klimakrise« nutzen, hieß es. Die Redaktion will so
                 sicherstellen, dass das Problem in Bezug auf seine Dringlichkeit angemessen beschrieben wird. Ebenso
                 werde man zukünftig von »Klimawissenschaftsleugnern« statt »Klimaskeptikern« schreiben. Noch im selben
-                Monat verkündete außerdem die britische Rundfunkanstalt <emphasis>BBC</emphasis>, man wolle in Zukunft
+                Monat verkündete außerdem die britische Rundfunkanstalt
+                <emphasis>BBC</emphasis>
+                , man wolle in Zukunft
                 nicht mehr aus »falscher Fairness« heraus Klimawandelleugner zu Wort kommen lassen.
             </p>
         </chapter>
 
-        <chapter title="Proportionality Bias" id="wissenschaft-proportionalitybias">
+        <chapter id="wissenschaft-proportionalitybias" title="Proportionality Bias">
             <p>
                 Wenn uns als mögliche Erklärung für ein dramatisches Ereignis zwei Alternativen präsentiert werden, von
                 denen eine trivial und die andere spektakulär ist, bevorzugen wir Letztere. Dieser psychologische
@@ -465,7 +481,7 @@
             </p>
         </chapter>
 
-        <chapter title="Gefühl der Mehrheit" id="wissenschaft-mehrheit">
+        <chapter id="wissenschaft-mehrheit" title="Gefühl der Mehrheit">
             <p>
                 Online ist es oft so, dass ein kleiner Teil von Accounts für einen Großteil der einschlägigen Posts
                 verantwortlich ist. Online können so selbst kleine Gruppen es schaffen, ein Gefühl zu erzeugen, als
@@ -473,13 +489,13 @@
             </p>
         </chapter>
 
-        <chapter title="Die Wissenschaft läuft hinterher" id="wissenschaft-langsam">
+        <chapter id="wissenschaft-langsam" title="Die Wissenschaft läuft hinterher">
             <p>
                 Für jede Falschnachricht, die identifiziert wird, tauchen wenig später mindestens zwei neue auf.
             </p>
         </chapter>
 
-        <chapter title="Zufall, Inkompetenz oder menschliches Versagen" id="wissenschaft-zufall">
+        <chapter id="wissenschaft-zufall" title="Zufall, Inkompetenz oder menschliches Versagen">
             <p>
                 Nicht wenige Entscheidungen oder Äußerungen von Politikern lassen sich bei genauerer Betrachtung ebenso
                 gut durch Zufall, Inkompetenz oder menschliches Versagen erklären. Selbst Spitzenpolitiker unterliegen
@@ -489,7 +505,7 @@
             </p>
         </chapter>
 
-        <chapter title="Pauschalurteile" id="wissenschaft-pauschalurteile">
+        <chapter id="wissenschaft-pauschalurteile" title="Pauschalurteile">
             <p>
                 Lassen sich komplexe Fragen wirklich auf ein Schwarz-Weiß-Schema herunterbrechen? Oder gibt es bei
                 vielen Fragen nicht auch einen großen Graubereich, bei dem es eben kompliziert ist? Beim Umgang mit
@@ -514,7 +530,7 @@
             </p>
         </chapter>
 
-        <chapter title="Allumfassendes Erklärungsmuster" id="wissenschaft-erklaerungsmuster">
+        <chapter id="wissenschaft-erklaerungsmuster" title="Allumfassendes Erklärungsmuster">
             <p>
                 Verschwörungsideologien, so absurd sie auch auf Außenstehende wirken mögen, bieten für ihre Anhänger ein
                 allumfassendes Erklärungsmuster, das Orientierung und Halt verspricht. Sie erläutern, warum die Welt so
@@ -535,8 +551,8 @@
             </p>
         </chapter>
 
-        <chapter title="Verborgene Interessen der Politik, Wissenschaft und Medien"
-                 id="wissenschaft-verborgeneinteressen">
+        <chapter id="wissenschaft-verborgeneinteressen"
+                 title="Verborgene Interessen der Politik, Wissenschaft und Medien">
             <p>
                 Viele Verschwörungsideologen behaupten, dass »die Politik«, »die Wissenschaft« oder »die Medien«
                 verborgene Interessen hätten und diese in Form von geheimen Absprachen durchzusetzen wüssten. Natürlich
@@ -553,7 +569,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Über Verschwörungsideologen" id="verschwoerungsideologen">
+    <chapter id="verschwoerungsideologen" title="Über Verschwörungsideologen">
         <p>
             Bei Verschwörungsideologen können folgende Eigenschaften zutreffen:
         </p>
@@ -739,7 +755,7 @@
             </list>
         </chapter>
 
-        <chapter title="Das Feindbild" id="verschwoerungsideologen-feindbild">
+        <chapter id="verschwoerungsideologen-feindbild" title="Das Feindbild">
             <p>
                 2008 wurde vor der US-Präsidentschaftswahl eine Umfrage gemacht. Hierbei wurden zwei Gruppen erstellt:
                 bei der ersten Gruppe versuchten die Forscher durch die Fragen das Kontrollgefühl nicht zu bedrohen,
@@ -755,11 +771,11 @@
             </p>
         </chapter>
 
-        <chapter title="Radikalisierungsbeschleuniger" id="verschwoerungsideologen-radikalisierungsbeschleuniger">
+        <chapter id="verschwoerungsideologen-radikalisierungsbeschleuniger" title="Radikalisierungsbeschleuniger">
 
         </chapter>
 
-        <chapter title="Leichtgläubigkeit" id="verschwoerungsideologen-leichtglaeubigkeit">
+        <chapter id="verschwoerungsideologen-leichtglaeubigkeit" title="Leichtgläubigkeit">
             <p>
                 Obwohl viele Verschwörungserzählungen kaum realistisch sind, halten viele Menschen trotzdem an ihnen
                 fest. Aus diesem Grund gingen auch viele Wissenschaftler lange davon aus, dass Verschwörungsideologen
@@ -781,7 +797,7 @@
             </p>
         </chapter>
 
-        <chapter title="Paranoia" id="verschwoerungsideologen-paranoia">
+        <chapter id="verschwoerungsideologen-paranoia" title="Paranoia">
             <p>
                 Verschwörungserzählungen sind kein reines Randphänomen. Es ist keineswegs so, dass nur eine kleine
                 Gruppe aus »wirren Internetspinnern« oder »verrückten US-Amerikanern« an sie glaubt. Aus diesem Grund
@@ -801,7 +817,7 @@
             </p>
         </chapter>
 
-        <chapter title="Das Bevorzugte Medium: Videos" id="verschwoerungsideologen-medium">
+        <chapter id="verschwoerungsideologen-medium" title="Das Bevorzugte Medium: Videos">
             <p>
                 YouTube als Verbreitungsweg eine zunehmend wichtige Rolle. Das ist wenig verwunderlich, schließlich tun
                 sich viele Menschen deutlich schwerer mit dem Lesen langer Texte als mit dem Konsumieren kurzweiliger
@@ -812,7 +828,7 @@
             </p>
         </chapter>
 
-        <chapter title="Kognitive Dissonanz" id="verschwoerungsideologen-kognitivedissonanz">
+        <chapter id="verschwoerungsideologen-kognitivedissonanz" title="Kognitive Dissonanz">
             <p>
                 Der Zustand, wenn Anspruch und Wirklichkeit im Widerspruch zueinander stehen, wird in der Psychologie
                 als kognitive Dissonanz bezeichnet. Dissonanz kommt aus dem Lateinischen und bedeutet Missklang oder
@@ -870,7 +886,7 @@
             </p>
         </chapter>
 
-        <chapter title="Das Problem der Ferndiagnose" id="verschwoerungsideologen-ferndiagnose">
+        <chapter id="verschwoerungsideologen-ferndiagnose" title="Das Problem der Ferndiagnose">
             <p>
                 Bei all den absonderlichen Forderungen, die Reichsbürger immer wieder an Ämter und staatliche
                 Institutionen herantragen, stellt sich schnell die Frage nach der psychischen Verfasstheit der Täter.
@@ -887,7 +903,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Entwicklung einer Verschwörungsideologie" id="entwicklung">
+    <chapter id="entwicklung" title="Entwicklung einer Verschwörungsideologie">
 
         <p><b>Noch einordnen:</b></p>
 
@@ -901,7 +917,7 @@
             offiziellen Regierungs-PR.
         </p>
 
-        <chapter title="Einfluss des Internets" id="entwicklung-internet">
+        <chapter id="entwicklung-internet" title="Einfluss des Internets">
             <p>
                 Die These, dass der Glaube an Verschwörungserzählungen in den vergangenen Jahren stets zugenommen habe,
                 etwa durch die Verbreitung neuer Medien, lässt sich also zumindest für Deutschland wissenschaftlich
@@ -930,34 +946,34 @@
         </chapter>
     </chapter>
 
-    <chapter title="Weiteres" id="weiteres">
-        <chapter title="Die Juden" id="weiteres-juden">
+    <chapter id="weiteres" title="Weiteres">
+        <chapter id="weiteres-juden" title="Die Juden">
 
         </chapter>
 
-        <chapter title="Impfung" id="impfung">
+        <chapter id="impfung" title="Impfung">
 
         </chapter>
 
-        <chapter title="Corona" id="corona">
+        <chapter id="corona" title="Corona">
 
         </chapter>
 
-        <chapter title="Esoterik" id="esoterik">
+        <chapter id="esoterik" title="Esoterik">
 
         </chapter>
     </chapter>
 
-    <chapter title="Wahre Verschwörungen" id="verschwoerungen">
+    <chapter id="verschwoerungen" title="Wahre Verschwörungen">
         <p>
             <b>Wer sagt denn, dass sich die eine oder andere Verschwörungserzählung nicht am Ende doch als vollkommen
-            richtig herausstellt?</b>
+                richtig herausstellt?</b>
         </p>
 
         <p>
             Es gibt auch wahre Verschwörungen:
         </p>
-        
+
         <list>
             <li>
                 Der Whistleblower Edward Snowden konnte nachweisen, dass der US-Geheimdienst NSA weite Teile der
@@ -1027,33 +1043,33 @@
         </p>
     </chapter>
 
-    <chapter title="Gegenargumente" id="gegenargumente">
-        <chapter title="Tipps zur Gesprächsführung" id="gegenargumente-gespraechsfuehrung">
-            <chapter title="Widersprechen und zugleich Gesprächsbereitschaft signalisieren"
-                     id="gegenargumente-gespraechsfuehrung-wiedersprechen">
+    <chapter id="gegenargumente" title="Gegenargumente">
+        <chapter id="gegenargumente-gespraechsfuehrung" title="Tipps zur Gesprächsführung">
+            <chapter id="gegenargumente-gespraechsfuehrung-wiedersprechen"
+                     title="Widersprechen und zugleich Gesprächsbereitschaft signalisieren">
                 <p>
                     »Jedem steht es frei zu glauben, was er will, aber mich überzeugt das einfach nicht. Trotzdem
                     interessiert mich, was du denkst.«
                 </p>
             </chapter>
-            <chapter title="Herausfinden, warum der andere das glaubt"
-                     id="gegenargumente-gespraechsfuehrung-analysieren">
+            <chapter id="gegenargumente-gespraechsfuehrung-analysieren"
+                     title="Herausfinden, warum der andere das glaubt">
                 <p>
                     »In der Hinsicht haben wir wahrscheinlich erst einmal unterschiedliche Haltungen. Aber du bist mir
                     wichtig, und ich finde es gut, dass wir uns trotzdem austauschen. Ich glaube, ich würde gern besser
                     verstehen, was dich an dieser Sache so begeistert.«
                 </p>
             </chapter>
-            <chapter title="Gespräche deeskalieren"
-                     id="gegenargumente-gespraechsfuehrung-deeskalieren">
+            <chapter id="gegenargumente-gespraechsfuehrung-deeskalieren"
+                     title="Gespräche deeskalieren">
                 <p>
                     »Ich merke gerade, dass wir beide lauter werden und uns gar nicht mehr richtig zuhören. Vielleicht
                     machen wir besser eine kleine Pause und unterhalten uns nachher weiter, denn eigentlich finde ich
                     unser Gespräch sehr spannend.«
                 </p>
             </chapter>
-            <chapter title="Abwertende Begriffe ansprechen"
-                     id="gegenargumente-gespraechsfuehrung-abwertende-begriffe">
+            <chapter id="gegenargumente-gespraechsfuehrung-abwertende-begriffe"
+                     title="Abwertende Begriffe ansprechen">
                 <p>
                     »Ich habe dich immer als Menschen erlebt, dem Respekt sehr wichtig ist. Der Begriff ›Schlafschaf‹
                     klingt aber sehr entwertend für mich und gibt mir das Gefühl, du würdest meine Meinung von
@@ -1061,8 +1077,8 @@
                     es dir nicht auch wichtig, dass wir auf Augenhöhe miteinander sprechen?«
                 </p>
             </chapter>
-            <chapter title="Quellen hinterfragen"
-                     id="gegenargumente-gespraechsfuehrung-quellen">
+            <chapter id="gegenargumente-gespraechsfuehrung-quellen"
+                     title="Quellen hinterfragen">
                 <p>
                     »Ich finde es ebenfalls wichtig, selbst zu denken, diese Eigenschaft schätze ich auch an dir. Jetzt
                     scheint mir das, was du mir gerade erzählt hast, aber aus einer Quelle übernommen zu sein. Hast du
@@ -1070,8 +1086,8 @@
                     dahinterstecken?«
                 </p>
             </chapter>
-            <chapter title="Bekehrungsversuche eindämmen"
-                     id="gegenargumente-gespraechsfuehrung-bekehrung">
+            <chapter id="gegenargumente-gespraechsfuehrung-bekehrung"
+                     title="Bekehrungsversuche eindämmen">
                 <p>
                     »Ich merke, dass dir das Thema sehr wichtig ist. Aber unsere Freundschaft ist mir auch sehr wichtig,
                     und ich fände es schade, wenn dieses Thema ständig zwischen uns steht. Ich merke, dass ich da auch
@@ -1079,16 +1095,16 @@
                     Vorschlag, wie wir damit in Zukunft umgehen können, ohne immer wieder da zu landen?«
                 </p>
             </chapter>
-            <chapter title="Rassistische oder antisemitische Äußerungen benennen"
-                     id="gegenargumente-gespraechsfuehrung-rassismus">
+            <chapter id="gegenargumente-gespraechsfuehrung-rassismus"
+                     title="Rassistische oder antisemitische Äußerungen benennen">
                 <p>
                     »Du weißt, dass ich deine Meinung achte – aber solche Verallgemeinerungen/Antisemitismus/Rassismus
                     sind nicht in Ordnung. Da habe ich echt eine Grenze, und ich möchte dich ehrlich bitten, diese zu
                     respektieren.«
                 </p>
             </chapter>
-            <chapter title="Den Fokus verschieben"
-                     id="gegenargumente-gespraechsfuehrung-fokus-verschieben">
+            <chapter id="gegenargumente-gespraechsfuehrung-fokus-verschieben"
+                     title="Den Fokus verschieben">
                 <p>
                     »Du bist mir wichtig, und ich achte dein Recht auf Meinungsfreiheit – ich würde dich nur bitten,
                     auch meine Meinung zu achten. Wir müssen einander nicht überzeugen, um uns zu mögen. Vielleicht
@@ -1096,15 +1112,15 @@
                     lieber [andere Tätigkeit, anderes Thema vorschlagen]?«
                 </p>
             </chapter>
-            <chapter title="Obsessive Beschäftigung thematisieren"
-                     id="gegenargumente-gespraechsfuehrung-obsessive-beschaeftigung">
+            <chapter id="gegenargumente-gespraechsfuehrung-obsessive-beschaeftigung"
+                     title="Obsessive Beschäftigung thematisieren">
                 <p>
                     »Ich habe das Gefühl, dir geht es nicht gut. Mir liegt sehr viel an dir. Hast du das Gefühl, es tut
                     dir gerade gut, dich damit zu beschäftigen?«
                 </p>
             </chapter>
-            <chapter title="Eine Kontaktpause wünschen"
-                     id="gegenargumente-gespraechsfuehrung-kontaktpause">
+            <chapter id="gegenargumente-gespraechsfuehrung-kontaktpause"
+                     title="Eine Kontaktpause wünschen">
                 <p>
                     »Du bist ein wichtiger Mensch in meinem Leben, und das wirst du auch immer sein. Ich habe aber das
                     Gefühl, dass deine Position mehr und mehr verhindert, einander wirklich zwischenmenschlich zu
@@ -1116,14 +1132,16 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
-            978-3732586516, "FAKE FACTS - Wie Verschwörungstheorien unser Denken bestimmen", Katharina Nocun &amp; Pia Lamberty, 2020
+            978-3732586516, "FAKE FACTS - Wie Verschwörungstheorien unser Denken bestimmen", Katharina Nocun &amp; Pia
+            Lamberty, 2020
         </tip>
         <tip>
             <b>(BUCH)</b>
-            978-3751715713, "TRUE FACTS - Was gegen Verschwörungserzählungen wirklich hilft", Katharina Nocun &amp; Pia Lamberty, 2021
+            978-3751715713, "TRUE FACTS - Was gegen Verschwörungserzählungen wirklich hilft", Katharina Nocun &amp; Pia
+            Lamberty, 2021
         </tip>
     </chapter>
 </topic>

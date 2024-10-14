@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Testen" id="swe-pk-testen">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-pk-testen"
+       title="Testen"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Das Prinzip von automatisierten Tests" id="automatisiert">
+    <chapter id="automatisiert" title="Das Prinzip von automatisierten Tests">
         <code-block lang="mermaid">
             <![CDATA[
             stateDiagram-v2
@@ -42,7 +42,7 @@
             Testfällen (auch <b>Test-Cases</b> genannt).
         </p>
 
-        <chapter title="Beispiel" id="automatisiert-beispiel">
+        <chapter id="automatisiert-beispiel" title="Beispiel">
             <code-block lang="mermaid">
                 <![CDATA[
                 stateDiagram-v2
@@ -67,7 +67,7 @@
                 unittest_testfall_check --> test_ko: Nein
                 ]]>
             </code-block>
-            
+
             <p>
                 Angenommen es wurde eine Funktion <code>add()</code> implementiert, welche zwei Zahlen addieren und das
                 Ergebnis zurückgeben soll. Ein Unit-Test würde dann, diese Funktion aufrufen (beispielsweise mit den
@@ -79,7 +79,7 @@
                 zusätzlichen Quelltext schreiben, der den anderen (den »richtigen«) Quelltext überprüft? Dafür gibt es
                 mehrere Gründe:
             </p>
-            
+
             <list>
                 <li>
                     Über Tests wird sichergestellt, dass nachträgliche Änderungen am Code keine ungewollten
@@ -95,7 +95,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Das Prinzip der testgetriebenen Entwicklung" id="tdd">
+    <chapter id="tdd" title="Das Prinzip der testgetriebenen Entwicklung">
         <p>
             Wenn man das Prinzip des automatisierten Testens in seinen Entwicklungsworkflow integriert, spricht man auch
             von testgetriebener Entwicklung (auch <b>Test-Driven Development</b>, kurz TDD). Die grundlegende Idee dabei
@@ -166,7 +166,7 @@
         </note>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836256971, "JavaScript - Das umfassende Handbuch", Philip Ackermann, 2018

@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="SVG (Scalable Vector Graphics)" id="svg">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="svg"
+       title="SVG (Scalable Vector Graphics)"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Was ist SVG?" id="was-ist-svg">
+    <chapter id="was-ist-svg" title="Was ist SVG?">
         Bei SVG handelt es sich um eine XML-basierte Auszeichnungssprache, um zweidimensionale Vektorgrafiken zu
         beschreiben. Dazu definiert die entsprechende Spezifikation
         (<a href="https://www.w3.org/TR/SVG2/">www.w3.org/TR/SVG2/</a>) verschiedene Elemente.
     </chapter>
 
-    <chapter title="SVG Elemente" id="svg-elemente">
+    <chapter id="svg-elemente" title="SVG Elemente">
         <table style="header-row">
             <tr>
                 <td>Element</td>
@@ -141,8 +142,8 @@
 
         <code-block lang="xml">
             &lt;svg xmlns="http://www.w3.org/2000/svg"&gt;
-                &lt;rect width="100%" height="100%" fill="#000000" /&gt;
-                &lt;circle id="circle" cx="100" cy="100" r="80" fill="#ffffff" /&gt;
+            &lt;rect width="100%" height="100%" fill="#000000"/&gt;
+            &lt;circle id="circle" cx="100" cy="100" r="80" fill="#ffffff"/&gt;
             &lt;/svg&gt;
         </code-block>
 
@@ -158,7 +159,7 @@
         </p>
     </chapter>
 
-    <chapter title="SVG in HTML einbinden" id="svg-html">
+    <chapter id="svg-html" title="SVG in HTML einbinden">
         <table style="both">
             <tr>
                 <td>Option</td>
@@ -182,7 +183,7 @@
                 <td>
                     <code-block lang="html">
                         &lt;body&gt;
-                            &lt;img src="example.svg" alt="SVG-Grafik" width="500" height="500" /&gt;
+                        &lt;img src="example.svg" alt="SVG-Grafik" width="500" height="500"/&gt;
                         &lt;/body&gt;
                     </code-block>
                 </td>
@@ -201,10 +202,10 @@
                 <td>
                     <code-block lang="html">
                         &lt;body&gt;
-                            &lt;iframe src="example.svg" width="500" height="500" scrolling="no"&gt;
-                                &lt;!-- Für ältere Browser, die SVG nicht unterstützen --&gt;
-                                &lt;img src="example.png" width="500" height="500" alt="Alternatives PNG-Bild" /&gt;
-                            &lt;/iframe&gt;
+                        &lt;iframe src="example.svg" width="500" height="500" scrolling="no"&gt;
+                        &lt;!-- Für ältere Browser, die SVG nicht unterstützen --&gt;
+                        &lt;img src="example.png" width="500" height="500" alt="Alternatives PNG-Bild"/&gt;
+                        &lt;/iframe&gt;
                         &lt;/body&gt;
                     </code-block>
                 </td>
@@ -227,10 +228,10 @@
                 <td>
                     <code-block lang="html">
                         &lt;body&gt;
-                            &lt;object data="example.svg" width="500" height="500"&gt;
-                                &lt;!-- Für ältere Browser, die SVG nicht unterstützen --&gt;
-                                &lt;img src="example.png" width="500" height="500" alt="Alternatives PNG-Bild" /&gt;
-                            &lt;/object&gt;
+                        &lt;object data="example.svg" width="500" height="500"&gt;
+                        &lt;!-- Für ältere Browser, die SVG nicht unterstützen --&gt;
+                        &lt;img src="example.png" width="500" height="500" alt="Alternatives PNG-Bild"/&gt;
+                        &lt;/object&gt;
                         &lt;/body&gt;
                     </code-block>
                 </td>
@@ -249,7 +250,7 @@
                 <td>
                     <code-block lang="html">
                         &lt;body&gt;
-                            &lt;div style="background: url(example.svg); width: 500px; height: 500px"&gt;&lt;/div&gt;
+                        &lt;div style="background: url(example.svg); width: 500px; height: 500px"&gt;&lt;/div&gt;
                         &lt;/body&gt;
                     </code-block>
                 </td>
@@ -266,11 +267,11 @@
                 <td>
                     <code-block lang="html">
                         &lt;body&gt;
-                            &lt;svg id="svg" version="1.1" baseProfile="full" width="500" height="500"
-                                    xmlns="http://www.w3.org/2000/svg"&gt;
-                                &lt;rect width="100%" height="100%" /&gt;
-                                &lt;circle id="circle" cx="100" cy="100" r="80" /&gt;
-                            &lt;/svg&gt;
+                        &lt;svg id="svg" version="1.1" baseProfile="full" width="500" height="500"
+                        xmlns="http://www.w3.org/2000/svg"&gt;
+                        &lt;rect width="100%" height="100%"/&gt;
+                        &lt;circle id="circle" cx="100" cy="100" r="80"/&gt;
+                        &lt;/svg&gt;
                         &lt;/body&gt;
                     </code-block>
                 </td>
@@ -278,14 +279,14 @@
         </table>
     </chapter>
 
-    <chapter title="Das Aussehen von SVG-Elementen mit CSS beeinflussen" id="svg-css">
+    <chapter id="svg-css" title="Das Aussehen von SVG-Elementen mit CSS beeinflussen">
         <p>
             Die einzelnen Elemente innerhalb eines SVG-Dokuments lassen sich über CSS stylen, wobei die Eigenschaften
             nicht denen entsprechen, die beim Stylen von HTML-Elementen verwendet werden. Eine Auswahl erlaubter
             Elemente ist in der folgenden Tabelle zu sehen, eine vollständige Auflistung in der SVG-Spezifikation unter
-            <a href="https://www.w3.org/TR/SVG2/styling.html">www.w3.org/TR/SVG2/styling.html</a>. 
+            <a href="https://www.w3.org/TR/SVG2/styling.html">www.w3.org/TR/SVG2/styling.html</a>.
         </p>
-        <chapter title="Eine Auswahl von CSS-Eigenschaften" id="svg-css-eigenschaftentabelle">
+        <chapter id="svg-css-eigenschaftentabelle" title="Eine Auswahl von CSS-Eigenschaften">
             <table style="header-row">
                 <tr>
                     <td>Eigenschaft</td>
@@ -329,38 +330,38 @@
                 </tr>
             </table>
         </chapter>
-        <chapter title="Beispiel" id="svg-css-beispiel">
+        <chapter id="svg-css-beispiel" title="Beispiel">
             <code-block lang="css">
                 rect {
-                    stroke-width: 4;
-                    fill: #FFFFFF;
-                    stroke: #3080D0;
+                stroke-width: 4;
+                fill: #FFFFFF;
+                stroke: #3080D0;
                 }
                 #circle:hover {
-                    cursor: pointer;
+                cursor: pointer;
                 }
                 #circle {
-                    fill-opacity: 0.5;
-                    stroke-width: 4;
-                    fill: #3080D0;
-                    stroke: #3080D0;
+                fill-opacity: 0.5;
+                stroke-width: 4;
+                fill: #3080D0;
+                stroke: #3080D0;
                 }
                 #circle.active {
-                    fill: #000000;
+                fill: #000000;
                 }
                 text {
-                    fill: #FFFFFF;
-                    font-family: sans-serif;
+                fill: #FFFFFF;
+                font-family: sans-serif;
                 }
             </code-block>
         </chapter>
     </chapter>
 
-    <chapter title="Das Verhalten von SVG-Elementen mit JavaScript beeinflussen" id="svg-js">
+    <chapter id="svg-js" title="Das Verhalten von SVG-Elementen mit JavaScript beeinflussen">
         Informationen dazu gibt es in der <a href="js-svg.topic">JavaScript-Dokumentation</a>.
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836256971, JavaScript, Philip Ackermann, Rheinwerk Verlag GmbH, 2019

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Variablen, Konstanten und Typisierung" id="swe-pk-grundlagen-variablen">
-    <show-structure for="chapter,procedure" depth="2"/>
-    
-    <chapter title="Variablen" id="variablen">
+<topic id="swe-pk-grundlagen-variablen"
+       title="Variablen, Konstanten und Typisierung"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
+
+    <chapter id="variablen" title="Variablen">
         <p>
             Um mit einem Algorithmus eine Problemstellung zu lösen, ist es in den meisten Fällen notwendig,
             vorübergehend bestimmte Informationen zwischenzuspeichern. Dies geschieht über sogenannte Variablen. Das
@@ -28,7 +28,7 @@
             </li>
         </list>
 
-        <chapter title="Reservierte Schlüsselwörter" id="variablen-reserviert">
+        <chapter id="variablen-reserviert" title="Reservierte Schlüsselwörter">
             <p>
                 Die meisten Programmiersprachen haben einige reservierte Schlüsselwörter, die Bestandteil der Sprache
                 sind und als Kennzeichner für den Compiler bzw. Interpreter dienen. Würden diese Schlüsselwörter als
@@ -39,7 +39,7 @@
             </p>
         </chapter>
 
-        <chapter title="Vergebene Variablennamen: Standardvariablen" id="variablen-standardvariablen">
+        <chapter id="variablen-standardvariablen" title="Vergebene Variablennamen: Standardvariablen">
             <p>
                 Während man Schlüsselwörter aus syntaktischen Gründen erst gar nicht als Variablennamen verwenden kann,
                 gibt es in einigen Programmiersprachen noch Namen, die zwar verwendet werden können, aber nicht
@@ -51,7 +51,7 @@
             </p>
         </chapter>
 
-        <chapter title="Erlaubte Zeichen" id="variablen-erlaubt">
+        <chapter id="variablen-erlaubt" title="Erlaubte Zeichen">
             <p>
                 Unabhängig von den Schlüsselwörtern und bereits vergebenen Variablennamen können innerhalb von
                 Variablennamen auch nur bestimmte Zeichen verwendet werden. Welche verwendet werden dürfen und welche
@@ -59,7 +59,7 @@
             </p>
         </chapter>
 
-        <chapter title="Namenskonventionen" id="variablen-amenskonventionen">
+        <chapter id="variablen-amenskonventionen" title="Namenskonventionen">
             <p>
                 Hier gibt es Informationen zu den Namenskonventionen:
                 <a href="swe-pk-richtlinien.topic#namingconventions">
@@ -69,7 +69,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Konstanten" id="konstanten">
+    <chapter id="konstanten" title="Konstanten">
         <p>
             Der Wert einer Variable kann zu beliebiger Zeit geändert bzw. überschrieben werden. Manchmal möchte man das
             aber verhindern, sprich, man braucht eigentlich so etwas wie eine »Variable«, deren Wert man nicht
@@ -83,7 +83,7 @@
         </p>
     </chapter>
 
-    <chapter title="Typisierung" id="typisierung">
+    <chapter id="typisierung" title="Typisierung">
         <p>
             Das Typsystem ist eine Komponente, die in Programmiersprachen zum Einsatz kommt, um den Wertebereich von
             Variablen einzuschränken. Programmiersprachen, die über ein Typsystem verfügen, nennt man typisiert. Durch
@@ -93,7 +93,7 @@
         <p>
             Ein Typsystem wird durch folgende Bestandteile gebildet:
         </p>
-        
+
         <list>
             <li>
                 Die Typen selbst, die entweder mittels Typdefinition erzeugt oder in der jeweiligen Sprache fest
@@ -115,17 +115,20 @@
                 Laufzeit.
             </li>
         </list>
-        
+
         <p>
             Typsysteme lassen sich entlang dreier Dimensionen klassifizieren
         </p>
-        
+
         <list>
             <li>
                 <p>
                     <b>
-                        starke Typisierung (eng. <emphasis>strong typing</emphasis>) und schwache Typisierung (eng.
-                        <emphasis>weak typing</emphasis>)
+                        starke Typisierung (eng.
+                        <emphasis>strong typing</emphasis>
+                        ) und schwache Typisierung (eng.
+                        <emphasis>weak typing</emphasis>
+                        )
                     </b>
                 </p>
                 <p>
@@ -137,8 +140,12 @@
             <li>
                 <p>
                     <b>
-                        dynamische Typisierung (eng. <emphasis>dynamic typing</emphasis>) und statische Typisierung
-                        (eng. <emphasis>static typing</emphasis>)
+                        dynamische Typisierung (eng.
+                        <emphasis>dynamic typing</emphasis>
+                        ) und statische Typisierung
+                        (eng.
+                        <emphasis>static typing</emphasis>
+                        )
                     </b>
                 </p>
                 <p>
@@ -152,8 +159,12 @@
             <li>
                 <p>
                     <b>
-                        explizite Typisierung (eng. <emphasis>explicit typing</emphasis>) und implizite Typisierung
-                        (eng. <emphasis>implicit typing</emphasis>)
+                        explizite Typisierung (eng.
+                        <emphasis>explicit typing</emphasis>
+                        ) und implizite Typisierung
+                        (eng.
+                        <emphasis>implicit typing</emphasis>
+                        )
                     </b>
                 </p>
                 <p>
@@ -163,7 +174,9 @@
             <li>
                 <p>
                     <b>
-                        optionale Typisierung (eng. <emphasis>optional typing</emphasis>)
+                        optionale Typisierung (eng.
+                        <emphasis>optional typing</emphasis>
+                        )
                     </b>
                 </p>
                 <p>
@@ -172,11 +185,11 @@
                 </p>
             </li>
         </list>
-        
+
         <p>
             Zu den Aufgaben eines Typsystems gehören:
         </p>
-        
+
         <list>
             <li>
                 Erkennung von Typverletzungen bei der Übersetzung und Ausführung. Die Typinformation kann dabei als eine
@@ -186,16 +199,27 @@
                 programmlogischen Gründen nicht sinnvoll ist.
             </li>
             <li>
-                Typumwandlung (eng. <emphasis>type conversion</emphasis>), also Umwandlung bzw. Beförderung und
-                Degradierung von Typen (eng. type <emphasis>promotion</emphasis>, <emphasis>type demotion</emphasis>).
+                Typumwandlung (eng.
+                <emphasis>type conversion</emphasis>
+                ), also Umwandlung bzw. Beförderung und
+                Degradierung von Typen (eng. type
+                <emphasis>promotion</emphasis>
+                ,
+                <emphasis>type demotion</emphasis>
+                ).
                 In vielen objektorientierten Sprachen stehen hierfür die drei Möglichkeiten
-                <emphasis>up cast</emphasis>, <emphasis>down cast</emphasis> und <emphasis>cross cast</emphasis> zur
+                <emphasis>up cast</emphasis>
+                ,
+                <emphasis>down cast</emphasis>
+                und
+                <emphasis>cross cast</emphasis>
+                zur
                 Verfügung.
             </li>
         </list>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836240826, "PHP 7 und MySQL - Das umfassende Handbuch", Christian Wenz &amp; Tobias Hauser, 2016

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Indizes" id="wirtschaft-anlageprodukte-indizes">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="wirtschaft-anlageprodukte-indizes"
+       title="Indizes"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
     <p>
         Der Deutsche Aktienindex oder kurz DAX umfasst die vierzig (seit September 2021 vorher dreißig) größten und
@@ -34,8 +35,8 @@
         gewirtschaftet haben. Oft reist ein Index als Leitwolf auch noch gleich die anderen mit, der amerikanische Dow
         Jones etwa den DAX.
     </p>
-    
-    <chapter title="Quellen" id="quellen">
+
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3527717408, Börse für Dummies (Ausgabe 6), Christine Bortenläger &amp; Ulrich Kirstein, John Wiley &amp;

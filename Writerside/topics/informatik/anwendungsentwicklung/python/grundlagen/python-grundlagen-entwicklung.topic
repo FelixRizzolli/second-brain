@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Grundlagen (Anwendung)" id="python-grundlagen-entwicklung">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="python-grundlagen-entwicklung"
+       title="Grundlagen (Anwendung)"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Erste Schritte" id="erste-schritte">
-        <chapter title="Interaktiver Modus" id="interaktiver-modus">
+    <chapter id="erste-schritte" title="Erste Schritte">
+        <chapter id="interaktiver-modus" title="Interaktiver Modus">
             <p>
                 Wird der Python-Interpreter ohne Argumente gestartet, dann gelangt man in den sogenannten interaktiven
                 Modus. Dieser Modus bietet die Möglichkeit, Kommandos direkt an den Interpreter zu senden, ohne zuvor
@@ -21,31 +22,31 @@
 
             <p>
                 Der interaktive Modus verfügt auch über eine History-funktion. Das heißt, dass über die
-                <img src="up_arrow_3d.png" alt="Oben" width="24" style="inline"/> und
-                <img src="down_arrow_3d.png" alt="Oben" width="24" style="inline"/> Pfeiltasten alte Eingaben wieder
+                <img alt="Oben" src="up_arrow_3d.png" style="inline" width="24"/> und
+                <img alt="Oben" src="down_arrow_3d.png" style="inline" width="24"/> Pfeiltasten alte Eingaben wieder
                 hervorgeholt werden können und nicht erneut eingegeben werden müssen.
             </p>
         </chapter>
 
-        <chapter title="Weg zum ersten Programm" id="weg-zum-ersten-programm">
+        <chapter id="weg-zum-ersten-programm" title="Weg zum ersten Programm">
 
         </chapter>
 
-        <chapter title="Informationsquellen zu Python" id="informationsquellen-zu-python">
+        <chapter id="informationsquellen-zu-python" title="Informationsquellen zu Python">
 
         </chapter>
     </chapter>
 
-    <chapter title="Debugging und Qualitätssicherung" id="debugging-und-qualitätssicherung">
-        <chapter title="Der Debugger" id="debugger">
+    <chapter id="debugging-und-qualitätssicherung" title="Debugging und Qualitätssicherung">
+        <chapter id="debugger" title="Der Debugger">
 
         </chapter>
 
-        <chapter title="Automatisiertes Testen" id="automatisiertes-testen">
+        <chapter id="automatisiertes-testen" title="Automatisiertes Testen">
 
         </chapter>
 
-        <chapter title="Analyse des Laufzeitverhaltens" id="analyse-des-laufzeitverhaltens">
+        <chapter id="analyse-des-laufzeitverhaltens" title="Analyse des Laufzeitverhaltens">
 
         </chapter>
     </chapter>

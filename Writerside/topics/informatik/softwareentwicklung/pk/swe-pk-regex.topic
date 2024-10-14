@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="RegEx - Reguläre Ausdrücke" id="swe-pk-regex">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-pk-regex"
+       title="RegEx - Reguläre Ausdrücke"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einleitung" id="einleitung">
+    <chapter id="einleitung" title="Einleitung">
         <p>
-            Reguläre Ausdrücke sind Muster, mit denen Bereiche oder ein ganzer String erkannt werden können (= string 
-            pattern matching). Diese Muster folgen bestimmten Regeln und verwenden Metazeichen, um bestimmte Muster 
+            Reguläre Ausdrücke sind Muster, mit denen Bereiche oder ein ganzer String erkannt werden können (= string
+            pattern matching). Diese Muster folgen bestimmten Regeln und verwenden Metazeichen, um bestimmte Muster
             darzustellen. RegEx kann in folgenden Tools/Bereichen eingesetzt werden:
         </p>
-        
+
         <list>
             <li>
                 In fast allen Programmiersprachen
@@ -34,11 +34,11 @@
         </list>
     </chapter>
 
-    <chapter title="RegEx Cheatsheet" id="cheatsheet">
-        <img src="swe-pk-regex-cheatsheet.png" alt="RegEx - Cheatsheet"/>
+    <chapter id="cheatsheet" title="RegEx Cheatsheet">
+        <img alt="RegEx - Cheatsheet" src="swe-pk-regex-cheatsheet.png"/>
     </chapter>
 
-    <chapter title="STEP1: Einführung" id="step1">
+    <chapter id="step1" title="STEP1: Einführung">
         <p>
             RegEx ist die Abkürzung für <b>Regular Expression</b>. RegEx hilft, Text zuzuordnen, zu finden oder zu
             verwalten. Im Beispiel wird nach <code>OK</code> gesucht.
@@ -52,7 +52,7 @@
             /OK/g
         </code-block>
 
-        <chapter title="Was sind reguläre Ausdrücke Regex?" id="step1-erklaerung">
+        <chapter id="step1-erklaerung" title="Was sind reguläre Ausdrücke Regex?">
             <p>
                 Reguläre Ausdrücke sind eine Zeichenkette, die ein Suchmuster ausdrückt. Oft als <b>RegEx</b> oder
                 <b>RegExp</b> abgekürzt. Sie werden besonders verwendet, um Wörter in Texten zu finden oder zu ersetzen.
@@ -64,7 +64,7 @@
                 Ausdrucks wird Step by Step erklärt.
             </p>
 
-            <chapter title="Beispiel" id="step1-erklaerung-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step1-erklaerung-beispiel" title="Beispiel">
                 <code-block>
                     readme.md
                     document.pdf
@@ -79,13 +79,13 @@
             </chapter>
         </chapter>
 
-        <chapter title="Basic Matcher" id="step1-basicmatcher">
+        <chapter id="step1-basicmatcher" title="Basic Matcher">
             <p>
                 Das zu findende Zeichen oder Wort wird direkt geschrieben. Es ähnelt einem normalen Suchvorgang. Um
                 beispielsweise das Wort <code>curious</code> im Text zu finden, wird dasselbe eingegeben.
             </p>
 
-            <chapter title="Beispiel" id="step1-basicmatcher-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step1-basicmatcher-beispiel" title="Beispiel">
                 <code-block>
                     "I have no special talents. I am only passionately curious."
 
@@ -98,13 +98,13 @@
             </chapter>
         </chapter>
 
-        <chapter title="Punkt .: Beliebiges Zeichen" id="step1-punkt">
+        <chapter id="step1-punkt" title="Punkt .: Beliebiges Zeichen">
             <p>
                 Der Punkt <code>.</code> ermöglicht die Auswahl eines beliebigen Zeichens, einschließlich Sonderzeichen
                 und Leerzeichen.
             </p>
 
-            <chapter title="Beispiel" id="step1-punkt-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step1-punkt-beispiel" title="Beispiel">
                 <code-block>
                     abcABC123 .:!?
                 </code-block>
@@ -115,7 +115,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Zeichensätze [abc]" id="step1-zeichensaetze">
+        <chapter id="step1-zeichensaetze" title="Zeichensätze [abc]">
             <p>
                 Wenn eines der Zeichen in einem Wort mehrere Zeichen sein können, werden die Zeichen in eckige Klammern
                 <code>[]</code> mit allen alternativen Zeichen geschrieben. Zum Beispiel, um einen Ausdruck zu
@@ -124,7 +124,7 @@
                 <code>[]</code> angegeben.
             </p>
 
-            <chapter title="Beispiel" id="step1-zeichensaetze-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step1-zeichensaetze-beispiel" title="Beispiel">
                 <code-block>
                     bar ber bir bor bur
                 </code-block>
@@ -135,14 +135,14 @@
             </chapter>
         </chapter>
 
-        <chapter title="Negierte Zeichensätze [^abc]" id="step1-negiertezeichensaetze">
+        <chapter id="step1-negiertezeichensaetze" title="Negierte Zeichensätze [^abc]">
             <p>
                 Um alle Wörter im folgenden Text außer <code>ber</code> und <code>bor</code> zu finden, wird
                 <code>e</code> und <code>o</code> nebeneinander nach dem Caret-Zeichen <code>^</code> in eckigen
                 Klammern <code>[]</code> angegeben.
             </p>
 
-            <chapter title="Beispiel" id="step1-negiertezeichensaetze-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step1-negiertezeichensaetze-beispiel" title="Beispiel">
                 <code-block>
                     bar ber bir bor bur
                 </code-block>
@@ -153,7 +153,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Buchstabenbereich [a-z]" id="step1-buchstabenbereich">
+        <chapter id="step1-buchstabenbereich" title="Buchstabenbereich [a-z]">
             <p>
                 Um die Buchstaben im angegebenen Bereich zu finden, werden der Anfangsbuchstabe und der Endbuchstabe in
                 eckige Klammern <code>[]</code> mit einem Bindestrich dazwischen <code>-</code> geschrieben. Es wird
@@ -161,7 +161,7 @@
                 <code>e</code> und <code>o</code> auswählt, einschließlich sich selbst.
             </p>
 
-            <chapter title="Beispiel" id="step1-buchstabenbereich-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step1-buchstabenbereich-beispiel" title="Beispiel">
                 <code-block>
                     abcdefghijklmnopqrstuvwxyz
                 </code-block>
@@ -172,7 +172,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Nummernbereich [0-9]" id="step1-nummerkreis">
+        <chapter id="step1-nummerkreis" title="Nummernbereich [0-9]">
             <p>
                 Um die Zahlen im angegebenen Bereich zu finden, werden die Startnummer und die Endnummer in eckige
                 Klammern <code>[]</code> mit einem Bindestrich <code>-</code> dazwischen geschrieben. Schreiben Sie
@@ -180,7 +180,7 @@
                 selbst.
             </p>
 
-            <chapter title="Beispiel" id="step1-nummerkreis-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step1-nummerkreis-beispiel" title="Beispiel">
                 <code-block>
                     0123456789
                 </code-block>
@@ -191,8 +191,8 @@
             </chapter>
         </chapter>
 
-        <chapter title="Übungen" id="step1-uebungen">
-            <chapter title="Übung: Basic Matcher" id="step1-uebungen-basicmatcher">
+        <chapter id="step1-uebungen" title="Übungen">
+            <chapter id="step1-uebungen-basicmatcher" title="Übung: Basic Matcher">
                 <p>
                     Schreiben Sie den Ausdruck, der die Wörter of im Text auswählt.
                 </p>
@@ -207,7 +207,7 @@
                 </code-block>
             </chapter>
 
-            <chapter title="Übung: Beliebiges Zeichen" id="step1-uebungen-zeichen">
+            <chapter id="step1-uebungen-zeichen" title="Übung: Beliebiges Zeichen">
                 <p>
                     Geben Sie den Ausdruck ein, um einzelne Buchstaben, Zahlen, Leerzeichen und Sonderzeichen im Text
                     auszuwählen. Der eingegebene Ausdruck muss mit jedem Zeichen übereinstimmen.
@@ -223,7 +223,7 @@
                 </code-block>
             </chapter>
 
-            <chapter title="Übung: Zeichensätze" id="step1-uebungen-zeichensaetze">
+            <chapter id="step1-uebungen-zeichensaetze" title="Übung: Zeichensätze">
                 <p>
                     Schreiben Sie die Phrase, die zu jedem Wort im Text passt. Die einzigen Zeichen, die sich ändern,
                     sind die Anfangsbuchstaben der Wörter.
@@ -238,7 +238,7 @@
                 </code-block>
             </chapter>
 
-            <chapter title="Übung: Negierte Zeichensätze" id="step1-uebungen-negiertezeichensaetze">
+            <chapter id="step1-uebungen-negiertezeichensaetze" title="Übung: Negierte Zeichensätze">
                 <p>
                     Schreiben Sie den Ausdruck auf, der mit etwas anderem als den Wörtern <code>beor</code> und
                     <code>beur</code> im Text übereinstimmt. Verwenden Sie dazu den negierten Zeichensatz.
@@ -253,7 +253,7 @@
                 </code-block>
             </chapter>
 
-            <chapter title="Übung: Buchstabenbereich" id="step1-uebungen-buchstabenbereich">
+            <chapter id="step1-uebungen-buchstabenbereich" title="Übung: Buchstabenbereich">
                 <p>
                     Schreiben Sie den Ausdruck, der die Buchstaben von <code>g</code> bis <code>k</code> im Text
                     auswählt. Die Buchstaben <code>g</code> und <code>k</code> sollten ebenfalls in diesem Bereich
@@ -269,7 +269,7 @@
                 </code-block>
             </chapter>
 
-            <chapter title="Übung: Nummernkreis" id="step1-uebungen-nummerkreis">
+            <chapter id="step1-uebungen-nummerkreis" title="Übung: Nummernkreis">
                 <p>
                     Geben Sie einen Ausdruck ein, um Zahlen von <code>2</code> bis <code>7</code> im Text auszuwählen.
                     <code>2</code> und <code>7</code> sollten auch in diesem Bereich enthalten sein.
@@ -286,21 +286,21 @@
         </chapter>
     </chapter>
 
-    <chapter title="STEP2: Wiederholungen" id="step2">
+    <chapter id="step2" title="STEP2: Wiederholungen">
         <p>
             Einige Sonderzeichen werden verwendet, um anzugeben, wie oft ein Zeichen im Text wiederholt wird. Diese
             Sonderzeichen sind das Plus <code>+</code>, das Sternchen <code>*</code> und das Fragezeichen
             <code>?</code>.
         </p>
 
-        <chapter title="Asterisk *" id="step2-asterisk">
+        <chapter id="step2-asterisk" title="Asterisk *">
             <p>
                 Wir setzen ein Sternchen <code>*</code> an das Ende, um anzuzeigen, dass ein Zeichen überhaupt nicht
                 oder mehrfach übereinstimmen kann. Geben Sie zum Beispiel an, dass der Buchstabe <code>e</code> niemals
                 in der vorkommen sollte Text, oder es kann einmal oder mehrmals nebeneinander vorkommen.
             </p>
 
-            <chapter title="Beispiel" id="step2-asterisk-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step2-asterisk-beispiel" title="Beispiel">
                 <code-block>
                     br ber beer
                 </code-block>
@@ -311,14 +311,14 @@
             </chapter>
         </chapter>
 
-        <chapter title="Pluszeichen +" id="step2-plus">
+        <chapter id="step2-plus" title="Pluszeichen +">
             <p>
                 Um anzuzeigen, dass ein Zeichen einmal oder mehrmals vorkommen kann, setzen wir ein Pluszeichen
                 <code>+</code> am Ende. Geben Sie beispielsweise an, dass der Buchstabe <code>e</code> einmal oder
                 mehrmals vorkommen kann der Text.
             </p>
 
-            <chapter title="Beispiel" id="step2-plus-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step2-plus-beispiel" title="Beispiel">
                 <code-block>
                     br ber beer
                 </code-block>
@@ -329,13 +329,13 @@
             </chapter>
         </chapter>
 
-        <chapter title="Fragezeichen ?" id="step2-fragezeichen">
+        <chapter id="step2-fragezeichen" title="Fragezeichen ?">
             <p>
                 Um anzuzeigen, dass ein Zeichen optional ist, setzen wir ein <code>?</code> Fragezeichen an das Ende.
                 Geben Sie beispielsweise an, dass der folgende Buchstabe <code>u</code> optional ist.
             </p>
 
-            <chapter title="Beispiel" id="step2-fragezeichen-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step2-fragezeichen-beispiel" title="Beispiel">
                 <code-block>
                     color, colour
                 </code-block>
@@ -346,14 +346,14 @@
             </chapter>
         </chapter>
 
-        <chapter title="Geschweifte Klammern – 1" id="step2-geschweifteklammern1">
+        <chapter id="step2-geschweifteklammern1" title="Geschweifte Klammern – 1">
             <p>
                 Um eine bestimmte Anzahl von Vorkommen eines Zeichens auszudrücken, schreiben wir geschweifte Klammern
                 <code>{n}</code> zusammen mit der Häufigkeit, mit der es am Ende vorkommen soll. Geben Sie zum Beispiel
                 Folgendes an Buchstabe <code>e</code> darf nur <code>2</code> mal vorkommen.
             </p>
 
-            <chapter title="Beispiel" id="step2-geschweifteklammern1-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step2-geschweifteklammern1-beispiel" title="Beispiel">
                 <code-block>
                     ber beer beeer beeeer
                 </code-block>
@@ -364,7 +364,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Geschweifte Klammern – 2" id="step2-geschweifteklammern2">
+        <chapter id="step2-geschweifteklammern2" title="Geschweifte Klammern – 2">
             <p>
                 Um mindestens eine bestimmte Anzahl von Vorkommen eines Zeichens auszudrücken, schreiben wir das Ende
                 des Zeichens mindestens wie oft es vorkommen soll, mit einem Komma <code>,</code> am Ende, und in
@@ -372,7 +372,7 @@
                 <code>e</code> mindestens <code>3</code> Mal vorkommen kann.
             </p>
 
-            <chapter title="Beispiel" id="step2-geschweifteklammern2-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step2-geschweifteklammern2-beispiel" title="Beispiel">
                 <code-block>
                     ber beer beeer beeeer
                 </code-block>
@@ -383,7 +383,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Geschweifte Klammern – 3" id="step2-geschweifteklammern3">
+        <chapter id="step2-geschweifteklammern3" title="Geschweifte Klammern – 3">
             <p>
                 Um das Vorkommen eines Zeichens in einem bestimmten Zahlenbereich auszudrücken, schreiben wir
                 geschweifte Klammern <code>{x,y}</code> mit dem Intervall, das wir bis zum Ende gehen möchten. Geben Sie
@@ -391,7 +391,7 @@
                 <code>3</code> vorkommen.
             </p>
 
-            <chapter title="Beispiel" id="step2-geschweifteklammern3-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step2-geschweifteklammern3-beispiel" title="Beispiel">
                 <code-block>
                     ber beer beeer beeeer
                 </code-block>
@@ -402,8 +402,8 @@
             </chapter>
         </chapter>
 
-        <chapter title="Übungen" id="step2-uebungen">
-            <chapter title="Übung: Asterisk *" id="step2-uebungen-asterisk">
+        <chapter id="step2-uebungen" title="Übungen">
+            <chapter id="step2-uebungen-asterisk" title="Übung: Asterisk *">
                 <p>
                     Verwenden Sie das Sternchen <code>*</code>, um den Ausdruck zu schreiben, der jedes Wort auswählt,
                     geeignet für das Fehlen des Buchstabens <code>e</code> im Text und das Vorhandensein von mehr als
@@ -419,7 +419,7 @@
                 </code-block>
             </chapter>
 
-            <chapter title="Übung: Pluszeichen +" id="step2-uebungen-plus">
+            <chapter id="step2-uebungen-plus" title="Übung: Pluszeichen +">
                 <p>
                     Schreiben Sie den Ausdruck mit dem Pluszeichen <code>+</code>, um Wörter auszuwählen, in denen der
                     Buchstabe <code>e</code> einmal oder mehrmals im Text vorkommt.
@@ -434,7 +434,7 @@
                 </code-block>
             </chapter>
 
-            <chapter title="Übung: Fragezeichen ?" id="step2-uebungen-fragezeichen">
+            <chapter id="step2-uebungen-fragezeichen" title="Übung: Fragezeichen ?">
                 <p>
                     Schreiben Sie den Ausdruck, der anzeigt, dass der Buchstabe <code>n</code> im Text optional ist,
                     indem Sie das Fragezeichen <code>?</code> verwenden. Somit können sowohl die Wörter <code>a</code>
@@ -450,7 +450,7 @@
                 </code-block>
             </chapter>
 
-            <chapter title="Übung: Geschweifte Klammern – 1" id="step2-uebungen-geschweifteklammern1">
+            <chapter id="step2-uebungen-geschweifteklammern1" title="Übung: Geschweifte Klammern – 1">
                 <p>
                     Schreiben Sie den Ausdruck mit geschweiften Klammern <code>{}</code>, der Texte findet, die
                     <code>4</code> Zahlen nebeneinander enthalten.
@@ -465,7 +465,7 @@
                 </code-block>
             </chapter>
 
-            <chapter title="Übung: Geschweifte Klammern – 2" id="step2-uebungen-geschweifteklammern2">
+            <chapter id="step2-uebungen-geschweifteklammern2" title="Übung: Geschweifte Klammern – 2">
                 <p>
                     Schreiben Sie den Ausdruck mit geschweiften Klammern <code>{}</code>, der Texte findet, die
                     mindestens <code>2</code> Zahlen nebeneinander enthalten.
@@ -480,7 +480,7 @@
                 </code-block>
             </chapter>
 
-            <chapter title="Übung: Geschweifte Klammern – 3" id="step2-uebungen-geschweifteklammern3">
+            <chapter id="step2-uebungen-geschweifteklammern3" title="Übung: Geschweifte Klammern – 3">
                 <p>
                     Schreiben Sie den Ausdruck mit geschweiften Klammern <code>{}</code>, der Texte findet, die
                     mindestens <code>1</code> und höchstens <code>4</code> Zahlen nebeneinander enthalten.
@@ -497,15 +497,15 @@
         </chapter>
     </chapter>
 
-    <chapter title="STEP3" id="step3">
-        <chapter title="Klammern (): Gruppierung" id="step3-klammern">
+    <chapter id="step3" title="STEP3">
+        <chapter id="step3-klammern" title="Klammern (): Gruppierung">
             <p>
                 Wir können einen Ausdruck gruppieren und diese Gruppen verwenden, um einige Regeln zu referenzieren oder
                 durchzusetzen. Um einen Ausdruck zu gruppieren, schließen wir <code>()</code> in Klammern ein. Fürs
                 Erste gruppieren Sie einfach <code>haa</code> unten.
             </p>
 
-            <chapter title="Beispiel" id="step3-klammern-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step3-klammern-beispiel" title="Beispiel">
                 <code-block>
                     ha-ha,haa-haa
                 </code-block>
@@ -516,7 +516,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Auf eine Gruppe verweisen" id="step3-verweisen">
+        <chapter id="step3-verweisen" title="Auf eine Gruppe verweisen">
             <p>
                 Die Wörter <code>ha</code> und <code>haa</code> sind unten gruppiert. Die erste Gruppe wird verwendet,
                 indem <code>\1</code> geschrieben wird, um ein erneutes Schreiben zu vermeiden. Hier gibt <code>1</code>
@@ -524,7 +524,7 @@
                 zweite Gruppe zu verweisen.
             </p>
 
-            <chapter title="Beispiel" id="step3-verweisen-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step3-verweisen-beispiel" title="Beispiel">
                 <code-block>
                     ha-ha,haa-haa
                 </code-block>
@@ -535,7 +535,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Klammern (?:): Gruppierung ohne Erfassung" id="step3-guppierungohneerfassung">
+        <chapter id="step3-guppierungohneerfassung" title="Klammern (?:): Gruppierung ohne Erfassung">
             <p>
                 Sie können einen Ausdruck gruppieren und sicherstellen, dass er nicht durch Referenzen erfasst wird.
                 Unten sehen Sie beispielsweise zwei Gruppen. Die erste Gruppenreferenz, die wir mit <code>\1</code>
@@ -543,7 +543,7 @@
                 ist.
             </p>
 
-            <chapter title="Beispiel" id="step3-guppierungohneerfassung-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step3-guppierungohneerfassung-beispiel" title="Beispiel">
                 <code-block>
                     ha-ha,haa-haa
                 </code-block>
@@ -554,7 +554,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Pipe-Zeichen |" id="step3-pipe">
+        <chapter id="step3-pipe" title="Pipe-Zeichen |">
             <p>
                 Damit kann festgelegt werden, dass ein Ausdruck in verschiedenen Ausdrücken enthalten sein kann. Daher
                 werden alle möglichen Anweisungen durch das Pipe-Zeichen <code>|</code> getrennt geschrieben. Dies
@@ -564,7 +564,7 @@
                 Pipe-Zeichen <code>|</code> hinzu und geben Sie dog ein, damit alle Wörter werden ausgewählt.
             </p>
 
-            <chapter title="Beispiel" id="step3-pipe-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step3-pipe-beispiel" title="Beispiel">
                 <code-block>
                     cat rat dog
                 </code-block>
@@ -575,7 +575,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Escape-Zeichen \" id="step3-escape">
+        <chapter id="step3-escape" title="Escape-Zeichen \">
             <p>
                 Es gibt Sonderzeichen, die wir beim Schreiben von Regex verwenden. <code>{ } [ ] / \ + * . $^ | ?</code>
                 Bevor wir diese Zeichen selbst auswählen können, müssen wir ein Escape verwenden Zeichen <code>\</code>.
@@ -583,7 +583,7 @@
                 fügen wir davor ein Escape-Zeichen <code>\</code> ein.
             </p>
 
-            <chapter title="Beispiel" id="step3-escape-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step3-escape-beispiel" title="Beispiel">
                 <code-block>
                     (*) Asterisk.
                 </code-block>
@@ -594,13 +594,13 @@
             </chapter>
         </chapter>
 
-        <chapter title="Caret-Zeichen ^: Auswahl nach Zeilenanfang" id="step3-caret">
+        <chapter id="step3-caret" title="Caret-Zeichen ^: Auswahl nach Zeilenanfang">
             <p>
                 Wir haben <code>[0-9]</code> verwendet, um Zahlen zu finden. Um nur Zahlen am Anfang einer Zeile zu
                 finden, stellen Sie diesem Ausdruck das <code>^</code>-Zeichen voran.
             </p>
 
-            <chapter title="Beispiel" id="step3-caret-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step3-caret-beispiel" title="Beispiel">
                 <code-block>
                     Basic Omellette Recipe
 
@@ -615,13 +615,13 @@
             </chapter>
         </chapter>
 
-        <chapter title="Dollarzeichen $: Auswahl nach Zeilenende" id="step3-dollar">
+        <chapter id="step3-dollar" title="Dollarzeichen $: Auswahl nach Zeilenende">
             <p>
                 Lassen Sie uns das <code>$</code>-Zeichen nach dem <code>html</code>-Wert verwenden, um die
                 <code>html</code>-Texte nur am Ende der Zeile zu finden.
             </p>
 
-            <chapter title="Beispiel" id="step3-dollar-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step3-dollar-beispiel" title="Beispiel">
                 <code-block>
                     https://domain.com/what-is-html.html
                     https://otherdomain.com/html-elements
@@ -634,13 +634,13 @@
             </chapter>
         </chapter>
 
-        <chapter title="Wortzeichen \w: Buchstabe, Zahl und Unterstrich" id="step3-wort">
+        <chapter id="step3-wort" title="Wortzeichen \w: Buchstabe, Zahl und Unterstrich">
             <p>
                 Der Ausdruck <code>\w</code> wird verwendet, um Buchstaben, Zahlen und Unterstriche zu finden. Lassen
                 Sie uns den Ausdruck <code>\w</code> verwenden, um Wortzeichen im Text zu finden.
             </p>
 
-            <chapter title="Beispiel" id="step3-wort-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step3-wort-beispiel" title="Beispiel">
                 <code-block>
                     abcABC123 _.:!?
                 </code-block>
@@ -651,13 +651,13 @@
             </chapter>
         </chapter>
 
-        <chapter title="Außer Wortzeichen \W" id="step3-ausserwort">
+        <chapter id="step3-ausserwort" title="Außer Wortzeichen \W">
             <p>
                 Der Ausdruck <code>\W</code> wird verwendet, um andere Zeichen als Buchstaben, Zahlen und Unterstriche
                 zu finden.
             </p>
 
-            <chapter title="Beispiel" id="step3-ausserwort-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step3-ausserwort-beispiel" title="Beispiel">
                 <code-block>
                     abcABC123 _.:!?
                 </code-block>
@@ -668,12 +668,12 @@
             </chapter>
         </chapter>
 
-        <chapter title="Zahlenzeichen \d" id="step3-zahlen">
+        <chapter id="step3-zahlen" title="Zahlenzeichen \d">
             <p>
                 <code>\d</code> wird verwendet, um nur Zahlenzeichen zu finden.
             </p>
 
-            <chapter title="Beispiel" id="step3-zahlen-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step3-zahlen-beispiel" title="Beispiel">
                 <code-block>
                     abcABC123 _.:!?
                 </code-block>
@@ -684,12 +684,12 @@
             </chapter>
         </chapter>
 
-        <chapter title="Außer Zahlenzeichen \D" id="step3-ausserzahlen">
+        <chapter id="step3-ausserzahlen" title="Außer Zahlenzeichen \D">
             <p>
                 <code>\D</code> wird verwendet, um nicht-numerische Zeichen zu finden.
             </p>
 
-            <chapter title="Beispiel" id="step3-ausserzahlen-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step3-ausserzahlen-beispiel" title="Beispiel">
                 <code-block>
                     abcABC123 _.:!?
                 </code-block>
@@ -700,12 +700,12 @@
             </chapter>
         </chapter>
 
-        <chapter title="Leerzeichen \s" id="step3-leer">
+        <chapter id="step3-leer" title="Leerzeichen \s">
             <p>
                 <code>\s</code> wird verwendet, um nur Leerzeichen zu finden.
             </p>
 
-            <chapter title="Beispiel" id="step3-leer-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step3-leer-beispiel" title="Beispiel">
                 <code-block>
                     abcABC123 _.:!?
                 </code-block>
@@ -716,12 +716,12 @@
             </chapter>
         </chapter>
 
-        <chapter title="Außer Leerzeichen \S" id="step3-ausserleer">
+        <chapter id="step3-ausserleer" title="Außer Leerzeichen \S">
             <p>
                 <code>\S</code> wird verwendet, um Nicht-Leerzeichen zu finden.
             </p>
 
-            <chapter title="Beispiel" id="step3-ausserleer-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step3-ausserleer-beispiel" title="Beispiel">
                 <code-block>
                     abcABC123 _.:!?
                 </code-block>
@@ -733,13 +733,13 @@
         </chapter>
     </chapter>
 
-    <chapter title="STEP4: Lookarounds" id="step4">
+    <chapter id="step4" title="STEP4: Lookarounds">
         <p>
             Wenn wir möchten, dass der Satz, den wir schreiben, vor oder nach einem anderen Satz steht, müssen wir "look
             around". Machen Sie den nächsten Schritt, um zu lernen, wie man "looks around".
         </p>
 
-        <chapter title="Positiver Lookahead: (?=)" id="step4-positiver-lookahead">
+        <chapter id="step4-positiver-lookahead" title="Positiver Lookahead: (?=)">
             <p>
                 Zum Beispiel möchten wir den Stundenwert im Text auswählen. Um daher nur die numerischen Werte
                 auszuwählen, denen <code>PM</code> folgt, müssen wir den positiven Look-Ahead-Ausdruck schreiben
@@ -747,7 +747,7 @@
                 Klammern ein.
             </p>
 
-            <chapter title="Beispiel" id="step4-positiver-lookahead-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step4-positiver-lookahead-beispiel" title="Beispiel">
                 <code-block>
                     Date: 4 Aug 3PM
                 </code-block>
@@ -758,7 +758,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Negativer Lookahead: (?!)" id="step4-negativer-lookahead">
+        <chapter id="step4-negativer-lookahead" title="Negativer Lookahead: (?!)">
             <p>
                 Zum Beispiel möchten wir andere Zahlen als den Stundenwert im Text auswählen. Daher müssen wir den
                 negativen Look-Ahead-Ausdruck <code>(?!)</code> nach unserem Ausdruck schreiben, um nur auszuwählen die
@@ -766,7 +766,7 @@
                 <code>!</code>-Zeichen in Klammern ein.
             </p>
 
-            <chapter title="Beispiel" id="step4-negativer-lookahead-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step4-negativer-lookahead-beispiel" title="Beispiel">
                 <code-block>
                     Date: 4 Aug 3PM
                 </code-block>
@@ -777,7 +777,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Positiver Lookbehind: (?&lt;=)" id="step4-positiver-lookbehind">
+        <chapter id="step4-positiver-lookbehind" title="Positiver Lookbehind: (?&lt;=)">
             <p>
                 Zum Beispiel möchten wir den Preiswert im Text auswählen. Daher müssen wir, um nur die Zahlenwerte
                 auszuwählen, denen <code>$</code> vorangestellt ist, den positiven Lookbehind-Ausdruck
@@ -789,7 +789,7 @@
                 Dieser Ausdruck wird von einigen Browsern nicht unterstützt.
             </warning>
 
-            <chapter title="Beispiel" id="step4-positiver-lookbehind-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step4-positiver-lookbehind-beispiel" title="Beispiel">
                 <code-block>
                     Product Code: 1064 Price: $5
                 </code-block>
@@ -800,7 +800,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Negativer Lookbehind: (?&lt;!)" id="step4-negativer-lookbehind">
+        <chapter id="step4-negativer-lookbehind" title="Negativer Lookbehind: (?&lt;!)">
             <p>
                 Zum Beispiel möchten wir im Text andere Zahlen als den Preiswert auswählen. Um daher nur numerische
                 Werte auszuwählen, denen kein <code>$</code> vorangestellt ist, müssen wir das negative Lookbehind
@@ -812,7 +812,7 @@
                 Dieser Ausdruck wird von einigen Browsern nicht unterstützt.
             </warning>
 
-            <chapter title="Beispiel" id="step4-negativer-lookbehind-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step4-negativer-lookbehind-beispiel" title="Beispiel">
                 <code-block>
                     Product Code: 1064 Price: $5
                 </code-block>
@@ -824,21 +824,21 @@
         </chapter>
     </chapter>
 
-    <chapter title="STEP5: Flaggen" id="step5">
+    <chapter id="step5" title="STEP5: Flaggen">
         <p>
             Flags ändern die Ausgabe des Ausdrucks. Aus diesem Grund werden Flags auch als <code>Modifikatoren</code>
             bezeichnet. Legt fest, ob der eingegebene Ausdruck Text als separate Zeilen behandelt, Groß-/Kleinschreibung
             beachtet oder alle Übereinstimmungen findet. Fahren Sie mit fort nächster Schritt, um die Flaggen zu lernen.
         </p>
 
-        <chapter title="Globale Flagge" id="step5-globale-flagge">
+        <chapter id="step5-globale-flagge" title="Globale Flagge">
             <p>
                 Das <code>global</code>-Flag bewirkt, dass der Ausdruck alle Übereinstimmungen auswählt. Wenn es nicht
                 verwendet wird, wird nur die erste Übereinstimmung ausgewählt. Aktivieren Sie jetzt das
                 <code>global</code>-Flag, um alle Übereinstimmungen auswählen zu können.
             </p>
 
-            <chapter title="Beispiel" id="step5-globale-flagge-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step5-globale-flagge-beispiel" title="Beispiel">
                 <code-block>
                     domain.com, test.com, site.com
                 </code-block>
@@ -849,7 +849,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Mehrzeiliges Flag" id="step5-mehrzeiliges-flag">
+        <chapter id="step5-mehrzeiliges-flag" title="Mehrzeiliges Flag">
             <p>
                 Regex sieht den gesamten Text als eine Zeile. Aber wir verwenden das <code>multiline-</code>Flag, um
                 jede Zeile separat zu behandeln. Auf diese Weise schreiben wir die Ausdrücke entsprechend dem Zeilenende
@@ -857,7 +857,7 @@
                 finden.
             </p>
 
-            <chapter title="Beispiel" id="step5-mehrzeiliges-flag-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step5-mehrzeiliges-flag-beispiel" title="Beispiel">
                 <code-block>
                     domain.com
                     test.com
@@ -870,13 +870,14 @@
             </chapter>
         </chapter>
 
-        <chapter title="Groß-/Kleinschreibung beachten" id="step5-grosskleinschreibung">
+        <chapter id="step5-grosskleinschreibung" title="Groß-/Kleinschreibung beachten">
             <p>
                 Um die Groß-/Kleinschreibung des von uns geschriebenen Ausdrucks zu entfernen, müssen wir das Flag
-                <emphasis>Groß-/Kleinschreibung ignorieren</emphasis> aktivieren.
+                <emphasis>Groß-/Kleinschreibung ignorieren</emphasis>
+                aktivieren.
             </p>
 
-            <chapter title="Beispiel" id="step5-grosskleinschreibung-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step5-grosskleinschreibung-beispiel" title="Beispiel">
                 <code-block>
                     DOMAIN.COM
                     TEST.COM
@@ -889,7 +890,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Gieriger Abgleich" id="step5-geringer-abgleich">
+        <chapter id="step5-geringer-abgleich" title="Gieriger Abgleich">
             <p>
                 RegEx führt standardmäßig einen Greedy-Match durch. Das bedeutet, dass das Matchmaking so lang wie
                 möglich sein wird. Sehen Sie sich das Beispiel unten an. Es bezieht sich auf alle Matches, die auf "r"
@@ -897,7 +898,7 @@
                 <code>r</code> auf.
             </p>
 
-            <chapter title="Beispiel" id="step5-geringer-abgleich-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step5-geringer-abgleich-beispiel" title="Beispiel">
                 <code-block>
                     ber beer beeer beeeer
                 </code-block>
@@ -908,7 +909,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Lazy Matching" id="step5-lazy-matching">
+        <chapter id="step5-lazy-matching" title="Lazy Matching">
             <p>
                 Lazy Matchmaking stoppt im Gegensatz zu Greedy Matching beim ersten Matching. Fügen Sie zum Beispiel im
                 Beispiel unten ein "?" nach "*" hinzu, um das erste Match zu finden, das mit dem Buchstaben "r" endet
@@ -916,7 +917,7 @@
                 Buchstaben <code>r</code> stoppt.
             </p>
 
-            <chapter title="Beispiel" id="step5-lazy-matching-beispiel" collapsible="true">
+            <chapter collapsible="true" id="step5-lazy-matching-beispiel" title="Beispiel">
                 <code-block>
                     ber beer beeer beeeer
                 </code-block>
@@ -928,7 +929,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836240826, "PHP 7 und MySQL - Das umfassende Handbuch", Christian Wenz &amp; Tobias Hauser, 2016

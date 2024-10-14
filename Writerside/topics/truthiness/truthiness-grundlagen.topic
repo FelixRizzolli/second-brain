@@ -1,36 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Grundlagen" id="truthiness-grundlagen">
-    <show-structure for="chapter,procedure" depth="2"/>
-    
-    <chapter title="&quot;Wer heilt hat recht!&quot;" id="recht">
+<topic id="truthiness-grundlagen"
+       title="Grundlagen"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
+
+    <chapter id="recht" title="&quot;Wer heilt hat recht!&quot;">
         <p>
-            Es erscheint doch so Logisch: Wir hatten Beschwerden, gingen zum Arzt/Heilpraktiker und dieser hat uns 
-            behandelt und danach ging es uns besser. Dann ist doch klar, dass der erste Gedanke ist: "Ich wurde dadurch 
-            geheilt". Es muss einen Zusammenhang geben, zwischen meiner Heilung einerseits und der Behandlung 
-            andererseits. Und den gibt es natürlich: Es gibt einen zeitlichen Zusammenhang - erst ist <b>A</b> 
-            <emphasis>wir sind zum Heilpraktiker gegangen</emphasis> passiert und dann ist <b>B</b> <emphasis>wir sind 
-            gesund geworden</emphasis> passiert. Wir Menschen neigen dazu, bei einem zeitlichen Zusammenhang einen 
-            ursächlichen Zusammenhang zu suchen. Also, dass <b>A für B verantwortlich</b> ist. Das sagt uns sozusagen 
-            unsere Erfahrung und ist eigentlich bei jeder Person immer der erste Impuls, und oft ist er auch richtig. 
+            Es erscheint doch so Logisch: Wir hatten Beschwerden, gingen zum Arzt/Heilpraktiker und dieser hat uns
+            behandelt und danach ging es uns besser. Dann ist doch klar, dass der erste Gedanke ist: "Ich wurde dadurch
+            geheilt". Es muss einen Zusammenhang geben, zwischen meiner Heilung einerseits und der Behandlung
+            andererseits. Und den gibt es natürlich: Es gibt einen zeitlichen Zusammenhang - erst ist <b>A</b>
+            <emphasis>wir sind zum Heilpraktiker gegangen</emphasis>
+            passiert und dann ist <b>B</b>
+            <emphasis>wir sind
+                gesund geworden
+            </emphasis>
+            passiert. Wir Menschen neigen dazu, bei einem zeitlichen Zusammenhang einen
+            ursächlichen Zusammenhang zu suchen. Also, dass <b>A für B verantwortlich</b> ist. Das sagt uns sozusagen
+            unsere Erfahrung und ist eigentlich bei jeder Person immer der erste Impuls, und oft ist er auch richtig.
             Manchmal allerdings auch <b>total Falsch</b>!
         </p>
 
         <note>
-            Wenn der Hahn kräht, geht zügig danach meist auch die Sonne auf, trotzdem löst der Hahn nicht den 
+            Wenn der Hahn kräht, geht zügig danach meist auch die Sonne auf, trotzdem löst der Hahn nicht den
             Sonnenaufgang aus!
         </note>
 
         <p>
-            Im fall der Behandlung, kann es schon sein, dass die <b>Behandlung tatsächlich gewirkt</b> hat. Das ist eine 
-            Möglichkeit. Aber eben nur <b>eine Möglichkeit von vielen</b> warum es einen besser gehen kann. Und viele 
-            haben eigentlich gar nichts mit der Behandlung selbst zu tun. Folgendes sind Beispiele für weitere 
+            Im fall der Behandlung, kann es schon sein, dass die <b>Behandlung tatsächlich gewirkt</b> hat. Das ist eine
+            Möglichkeit. Aber eben nur <b>eine Möglichkeit von vielen</b> warum es einen besser gehen kann. Und viele
+            haben eigentlich gar nichts mit der Behandlung selbst zu tun. Folgendes sind Beispiele für weitere
             Möglichkeiten:
         </p>
-        
+
         <list>
             <li>Der natürliche Krankheitsverlauf</li>
             <li>Die Regression zur Mitte</li>
@@ -62,7 +67,7 @@
             Wunderheilern gespielt wird.
         </warning>
 
-        <chapter title="Der natürliche Krankheitsverlauf" id="recht-natuerlicher-krankheitsverlauf">
+        <chapter id="recht-natuerlicher-krankheitsverlauf" title="Der natürliche Krankheitsverlauf">
             <p>
                 Die Zeit heilt bekanntlich alle Wunden. Vielleicht nicht alle Wunden, und auch nicht alle Krankheiten,
                 aber ziemlich viele. Viele Krankheiten und beschwerden verschwinden nach einiger Zeit einfach wieder,
@@ -74,8 +79,8 @@
             </p>
         </chapter>
 
-        <chapter title="Die Regression zur Mitte" id="recht-regression-zur-mitte">
-            <img src="truthiness-regression-zur-mitte.svg" alt="Regression zur Mitte"/>
+        <chapter id="recht-regression-zur-mitte" title="Die Regression zur Mitte">
+            <img alt="Regression zur Mitte" src="truthiness-regression-zur-mitte.svg"/>
 
             <p>
                 Die Regression zur Mitte gilt oft bei chronischen Erkrankungen. Die Beschwerden bei chronischen
@@ -87,7 +92,7 @@
             </p>
         </chapter>
 
-        <chapter title="Die Zuwendung" id="recht-zuwendung">
+        <chapter id="recht-zuwendung" title="Die Zuwendung">
             <p>
                 Wenn wir das Gefühl haben, dass sich jemand für uns Zeit nimmt, dann hat das einen positiven Einfluss
                 auf den Heilungsverlauf. Beispiel: Wenn die Mutter das Kind, welches gerade hingefallen ist, in den Arm
@@ -107,7 +112,7 @@
             </p>
         </chapter>
 
-        <chapter title="Der Placebo Effekt" id="recht-placebo">
+        <chapter id="recht-placebo" title="Der Placebo Effekt">
             <p>
                 Wir haben z.B. Kopfschmerzen. Folglich nehmen wir ein paar Tabletten oder Globuli zu uns und es geht uns
                 plötzlich besser. Obwohl die Tablette bzw. die Globuli gar keine Inhaltsstoffe hatten. Allein die
@@ -117,7 +122,7 @@
             </p>
         </chapter>
 
-        <chapter title="Placebo by Proxy" id="recht-placebobyproxy">
+        <chapter id="recht-placebobyproxy" title="Placebo by Proxy">
             <note>
                 Der Placebo-Effekt ist sehr mächtig und sollte nicht unterschätzt werden, aber vielleicht auch nicht
                 überschätzt, bevor man behauptet: <b>"Aber mein Baby oder mein Pferd, die glauben nicht an die
@@ -135,12 +140,13 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(VIDEO)</b>
             <a href="https://www.youtube.com/watch?v=ktjvqaldB5M" ignore-vars="true">
                 https://www.youtube.com/watch?v=ktjvqaldB5M
-            </a>, "Recht dank Heilung? Der DÜMMSTE Satz für deine Gesundheit | Science Cops Academy", Quarks Science Cops, 2023-07-29
+            </a>, "Recht dank Heilung? Der DÜMMSTE Satz für deine Gesundheit | Science Cops Academy", Quarks Science
+            Cops, 2023-07-29
         </tip>
     </chapter>
 </topic>

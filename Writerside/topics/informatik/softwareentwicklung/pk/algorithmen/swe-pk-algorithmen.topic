@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Algorithmen" id="swe-pk-algorithmen">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-pk-algorithmen"
+       title="Algorithmen"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einleitung" id="einleitung">
+    <chapter id="einleitung" title="Einleitung">
         <p>
             Das Grundprinzip der Computertechnik lautet EVA <path>Eingabe → Verarbeitung → Ausgabe</path>: eine Software
             dient stets der Verarbeitung von Daten. Dabei werden diese von einem Ausgangsformat in ein Zielformat
@@ -21,7 +21,7 @@
         </p>
     </chapter>
 
-    <chapter title="Algorithmen als Kernelemente des Programms" id="programm">
+    <chapter id="programm" title="Algorithmen als Kernelemente des Programms">
         <p>
             Ein Algorithmus ist ein präzise festgelegtes Verfahren zur Lösung von Problemen bzw. einer Klasse von
             Problemen. Das Verfahren besteht aus endlich vielen elementaren Lösungsschritten und produziert in endlicher
@@ -29,19 +29,25 @@
             anzuwenden.
         </p>
 
-        <chapter title="Bedingungen für Algorithmen" id="programm-bedingungen">
+        <chapter id="programm-bedingungen" title="Bedingungen für Algorithmen">
             <p>
                 Jeder Software-Algorithmus muss ein paar folgende Bedingungen erfüllen, damit er als zulässig gilt:
             </p>
 
             <list>
                 <li>
-                    <b>Spezifikation</b>: Es muss <emphasis>genau</emphasis> angegeben sein, welche Eingabedaten
+                    <b>Spezifikation</b>: Es muss
+                    <emphasis>genau</emphasis>
+                    angegeben sein, welche Eingabedaten
                     erforderlich sind und welche Ausgabedaten der Algorithmus generieren soll.
                 </li>
                 <li>
-                    <b>Durchführbarkeit</b>: Das Verfahren muss <emphasis>vollständig</emphasis> beschrieben sein, d.h.
-                    es muss <emphasis>tatsächlich ausführbar</emphasis> sein. Die Schrittfolge des Algorithmus muss
+                    <b>Durchführbarkeit</b>: Das Verfahren muss
+                    <emphasis>vollständig</emphasis>
+                    beschrieben sein, d.h.
+                    es muss
+                    <emphasis>tatsächlich ausführbar</emphasis>
+                    sein. Die Schrittfolge des Algorithmus muss
                     durchgängig sein und darf keine Lücken aufweisen.
                 </li>
                 <li>
@@ -63,7 +69,7 @@
             </list>
         </chapter>
 
-        <chapter title="Wichtige Klassen von Algorithmen" id="programm-klassen">
+        <chapter id="programm-klassen" title="Wichtige Klassen von Algorithmen">
             <list>
                 <li>
                     <b>Suchverfahren</b>: Sequentiell Suche, Binärsuche, paralleles Suchen...
@@ -94,7 +100,7 @@
             </list>
         </chapter>
 
-        <chapter title="Komplexität von Algorithmen" id="programm-komplexitaet">
+        <chapter id="programm-komplexitaet" title="Komplexität von Algorithmen">
             <p>
                 Deutlich schärfer sind Algorithmen im Hinblick auf ihre Komplexität voneinander abzugrenzen. Meist
                 besitzen die Verfahren einen Hauptparameter <code>N</code>, der die Laufzeit des Algorithmus am
@@ -215,7 +221,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Entwurf von Algorithmen" id="entwurf">
+    <chapter id="entwurf" title="Entwurf von Algorithmen">
         <p>
             Einfache Algorithmen kann man direkt niederschreiben, d.h. in der gewählten Programmiersprache codieren. Mit
             der Zeit entwickelt man auch so viel Erfahrung, dass ein vorheriger Entwurf bei vielen Algorithmen nicht
@@ -246,11 +252,12 @@
             seine bloße Verwendung - muss man diesen verstanden haben.
         </p>
 
-        <chapter title="Vorgehensweise" id="entwurf-vorgehensweise">
+        <chapter id="entwurf-vorgehensweise" title="Vorgehensweise">
             <list style="decimal">
                 <li>
                     <b>Spezifizierung der Problemstellung</b>: Die Problemstellung ist fachlich aufzuarbeiten. Der
-                    Softwareentwickler muss sich so weit mit dem angegebenen Problem beschäftigen, dass er es vollständig
+                    Softwareentwickler muss sich so weit mit dem angegebenen Problem beschäftigen, dass er es
+                    vollständig
                     verstanden hat. Je nachdem kann man sich auch bei Experten Hilfe holen.
                 </li>
                 <li>
@@ -281,7 +288,7 @@
                 </li>
             </list>
 
-            <chapter title="Visualisieren des Ablaufs von Algorithmen" id="entwurf-vorgehensweise-visualisierung">
+            <chapter id="entwurf-vorgehensweise-visualisierung" title="Visualisieren des Ablaufs von Algorithmen">
                 <p>
                     Algorithmen weisen oft einen komplizierten Ablauf auf, deren Verständnis durch eine visuelle
                     Darstellung deutlich verbessert werden kann. Dazu können beispielsweise Flussdiagramme,
@@ -291,7 +298,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018

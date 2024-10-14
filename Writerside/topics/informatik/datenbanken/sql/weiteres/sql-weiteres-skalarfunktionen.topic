@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Skalarfunktionen" id="sql-weiteres-skalarfunktionen">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-weiteres-skalarfunktionen"
+       title="Skalarfunktionen"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlagen" id="grundlagen">
+    <chapter id="grundlagen" title="Grundlagen">
         <p>
             Funktionen, die einen Wert als Ergebnis einer Verarbeitung zurückliefern, werden als Skalarfunktionen
             bezeichnet. Die Verarbeitung kann aus Berechnungen, Textoperationen oder Datums- und Zeitoperationen
@@ -20,11 +20,11 @@
             sollte immer die jeweilige Dokumentation als weiterführende Literatur verwendet werden.
         </p>
         <p>
-            Funktionen sind kleine Programme, die bestimmte Aufgaben erfüllen. Skalarfunktionen können überall 
-            angewendet werden, wo Spaltenwerte bzw. Ausdrücke stehen können. Es gibt zahlreiche Funktionen für folgende 
+            Funktionen sind kleine Programme, die bestimmte Aufgaben erfüllen. Skalarfunktionen können überall
+            angewendet werden, wo Spaltenwerte bzw. Ausdrücke stehen können. Es gibt zahlreiche Funktionen für folgende
             Anwendungsgebiete:
         </p>
-        
+
         <list>
             <li>numerische Skalarfunktionen</li>
             <li>Zeichenketten-Skalarfunktionen</li>
@@ -33,7 +33,7 @@
         </list>
     </chapter>
 
-    <chapter title="Funktionen für Textwerte" id="textwerte">
+    <chapter id="textwerte" title="Funktionen für Textwerte">
         <table>
             <tr>
                 <td>Skalarfunktion</td>
@@ -48,9 +48,9 @@
                 </td>
                 <td>
                     <code-block lang="sql">
-                        SELECT  name
-                             ,  LOWER(name) AS nameklein
-                          FROM mitarbeiter
+                        SELECT name
+                        , LOWER(name) AS nameklein
+                        FROM mitarbeiter
                         ;
                     </code-block>
                 </td>
@@ -63,9 +63,9 @@
                 </td>
                 <td>
                     <code-block lang="sql">
-                        SELECT  name
-                             ,  UPPER(name) AS namegross
-                          FROM mitarbeiter
+                        SELECT name
+                        , UPPER(name) AS namegross
+                        FROM mitarbeiter
                         ;
                     </code-block>
                 </td>
@@ -79,8 +79,8 @@
                 </td>
                 <td>
                     <code-block lang="sql">
-                        SELECT  TRIM(artikelbezeichnung) AS artikelbezeichnungohneleerzeichen
-                          FROM mitarbeiter
+                        SELECT TRIM(artikelbezeichnung) AS artikelbezeichnungohneleerzeichen
+                        FROM mitarbeiter
                         ;
                     </code-block>
                 </td>
@@ -95,10 +95,10 @@
                 </td>
                 <td>
                     <code-block lang="sql">
-                        SELECT  artikelbezeichnung
-                             ,  SUBSTRING(artikelbezeichnung FROM 1 FOR 8) AS extrakt1bis8
-                          FROM produkt
-                         WHERE  SUBSTRING(artikelbezeichnung FROM 1 FOR 8) = 'Schraube'
+                        SELECT artikelbezeichnung
+                        , SUBSTRING(artikelbezeichnung FROM 1 FOR 8) AS extrakt1bis8
+                        FROM produkt
+                        WHERE SUBSTRING(artikelbezeichnung FROM 1 FOR 8) = 'Schraube'
                         ;
                     </code-block>
                 </td>
@@ -124,10 +124,10 @@
                 </td>
                 <td>
                     <code-block lang="sql">
-                        SELECT  vorname
-                             ,  nachname
-                             ,  CONCAT(vorname, ' ', nachname) AS name
-                          FROM mitarbeiter
+                        SELECT vorname
+                        , nachname
+                        , CONCAT(vorname, ' ', nachname) AS name
+                        FROM mitarbeiter
                         ;
                     </code-block>
                 </td>
@@ -135,7 +135,7 @@
         </table>
     </chapter>
 
-    <chapter title="Funktionen für Zahlenwerte" id="zahlenwerte">
+    <chapter id="zahlenwerte" title="Funktionen für Zahlenwerte">
         <table>
             <tr>
                 <td>Skalarfunktion</td>
@@ -154,9 +154,9 @@
                 </td>
                 <td>
                     <code-block lang="sql">
-                        SELECT  legierung
-                             ,  CHAR_LENGTH(legierung) AS larngezeichenkette
-                          FROM produkt
+                        SELECT legierung
+                        , CHAR_LENGTH(legierung) AS larngezeichenkette
+                        FROM produkt
                         ;
                     </code-block>
                 </td>
@@ -175,9 +175,9 @@
                 </td>
                 <td>
                     <code-block lang="sql">
-                        SELECT  legierung
-                             ,  POSITION('Eisen' IN legierung) AS startpos
-                          FROM produkt
+                        SELECT legierung
+                        , POSITION('Eisen' IN legierung) AS startpos
+                        FROM produkt
                         ;
                     </code-block>
                 </td>
@@ -190,9 +190,9 @@
                 </td>
                 <td>
                     <code-block lang="sql">
-                        SELECT  artikelbezeichnung
-                             ,  POWER(100,3) AS potenz
-                          FROM produkt
+                        SELECT artikelbezeichnung
+                        , POWER(100,3) AS potenz
+                        FROM produkt
                         ;
                     </code-block>
                 </td>
@@ -205,9 +205,9 @@
                 </td>
                 <td>
                     <code-block lang="sql">
-                        SELECT  artikelbezeichnung
-                             ,  SQRT(9) AS wurzel
-                          FROM produkt
+                        SELECT artikelbezeichnung
+                        , SQRT(9) AS wurzel
+                        FROM produkt
                         ;
                     </code-block>
                 </td>
@@ -215,43 +215,43 @@
         </table>
     </chapter>
 
-    <chapter title="Verschachtelte Funktionsaufrufe" id="verschachtelt">
+    <chapter id="verschachtelt" title="Verschachtelte Funktionsaufrufe">
         <p>
             Funktionsaufrufe können auch verschachtelt werden. Dabei sind die verschachtelten Funktionen immer von innen
             nach außen zu betrachten und so bei der Formulierung von SQL-Anweisungen zu berücksichtigen.
         </p>
 
-        <chapter title="SQL-Standard" id="verschachtelt-standard">
+        <chapter id="verschachtelt-standard" title="SQL-Standard">
             <code-block lang="sql">
-                SELECT  artikelbezeichnung
-                     ,  legierung
-                     ,  SUBSTRING(legierung
-                            FROM
-                                POSITION('Eisen' IN legierung)
-                            FOR
-                                CHAR_LENGTH('Eisen')
-                        ) AS eisen
-                  FROM produkt
+                SELECT artikelbezeichnung
+                , legierung
+                , SUBSTRING(legierung
+                FROM
+                POSITION('Eisen' IN legierung)
+                FOR
+                CHAR_LENGTH('Eisen')
+                ) AS eisen
+                FROM produkt
                 ;
             </code-block>
         </chapter>
 
-        <chapter title="Microsoft SQL Server" id="verschachtelt-mssqlserver">
+        <chapter id="verschachtelt-mssqlserver" title="Microsoft SQL Server">
             <code-block lang="sql">
-                SELECT  artikelbezeichnung
-                     ,  legierung
-                     ,  SUBSTRING(
-                            legierung,
-                            PATINDEX('%Eisen%', legierung),
-                            LEN('Eisen')
-                        ) AS eisen
-                  FROM produkt
+                SELECT artikelbezeichnung
+                , legierung
+                , SUBSTRING(
+                legierung,
+                PATINDEX('%Eisen%', legierung),
+                LEN('Eisen')
+                ) AS eisen
+                FROM produkt
                 ;
             </code-block>
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

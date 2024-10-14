@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="XML - XSD (XML Schema Definition)" id="xml-xsd">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="xml-xsd"
+       title="XML - XSD (XML Schema Definition)"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlegendes zu XML Schema Definition" id="grundlagen">
+    <chapter id="grundlagen" title="Grundlegendes zu XML Schema Definition">
         <p>
             Ein XML Schema Definition ist eine alternative Möglichkeit zur Definition von Standards für XML-Dokumente
             und wird mit der Dateiendung <path>.xsd</path> gespeichert. Gegenüber DTDs besitzt dieses Format vor allem
@@ -49,7 +50,7 @@
             werden.
         </p>
 
-        <chapter title="Sichere Datenkommunikation" id="grundlagen-sicherheit">
+        <chapter id="grundlagen-sicherheit" title="Sichere Datenkommunikation">
             <p>
                 Bei der Übermittlung von Daten von einem Sender an einen Empfänger ist es wichtig, dass beide Teile die
                 gleichen "Erwartungen" an den Inhalt haben. Mit XML-Schemata kann der Sender die Daten in einer Weise
@@ -61,7 +62,7 @@
             </p>
         </chapter>
 
-        <chapter title="Wohlgeformt ist nicht genug!" id="grundlagen-wohlgeformt">
+        <chapter id="grundlagen-wohlgeformt" title="Wohlgeformt ist nicht genug!">
             <p>
                 Ein wohlgeformtes XML-Dokument ist ein Dokument, das den XML-Syntaxregeln entspricht, wie:
             </p>
@@ -86,7 +87,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Einfache Elemente" id="simple">
+    <chapter id="simple" title="Einfache Elemente">
         <p>
             Ein einfaches Element ist ein XML-Element, das nur Text enthalten kann. Es kann keine anderen Elemente oder
             Attribute enthalten. Die Einschränkung "nur Text" ist jedoch ziemlich irreführend. Der Text kann von vielen
@@ -96,7 +97,7 @@
             oder es kann verlangt werden, dass die Daten einem bestimmten Muster entsprechen.
         </p>
 
-        <chapter title="Elementattribute" id="simple-attribut">
+        <chapter id="simple-attribut" title="Elementattribute">
             <code-block lang="xml">
                 <![CDATA[
                 <xs:element name="color" type="xs:string" default="red"/>
@@ -141,7 +142,7 @@
             </table>
         </chapter>
 
-        <chapter title="Das schema-Element" id="simple-schema">
+        <chapter id="simple-schema" title="Das schema-Element">
             <p>
                 Das <code>schema</code>-Element ist das Wurzelelement jeder XSD. Es kann mehrere Attribute enthalten:
             </p>
@@ -190,7 +191,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Komplexe Elemente" id="komplex">
+    <chapter id="komplex" title="Komplexe Elemente">
         <p>
             Ein komplexes Element ist ein XML-Element, das andere Elemente und/oder Attribute enthält. Es gibt vier
             Arten von komplexen Elementen (wovon jedes der Elemente Attribute enthalten kann):
@@ -241,10 +242,10 @@
             <xs:element name="member" type="personinfo"/>
 
             <xs:complexType name="personinfo">
-                <xs:sequence>
-                    <xs:element name="firstname" type="xs:string"/>
-                    <xs:element name="lastname" type="xs:string"/>
-                </xs:sequence>
+            <xs:sequence>
+                <xs:element name="firstname" type="xs:string"/>
+                <xs:element name="lastname" type="xs:string"/>
+            </xs:sequence>
             </xs:complexType>
             ]]>
         </code-block>
@@ -259,36 +260,36 @@
             <xs:element name="employee" type="fullpersoninfo"/>
 
             <xs:complexType name="personinfo">
-                <xs:sequence>
-                    <xs:element name="firstname" type="xs:string"/>
-                    <xs:element name="lastname" type="xs:string"/>
-                </xs:sequence>
+            <xs:sequence>
+                <xs:element name="firstname" type="xs:string"/>
+                <xs:element name="lastname" type="xs:string"/>
+            </xs:sequence>
             </xs:complexType>
 
             <xs:complexType name="fullpersoninfo">
-                <xs:complexContent>
-                    <xs:extension base="personinfo">
-                        <xs:sequence>
-                            <xs:element name="address" type="xs:string"/>
-                            <xs:element name="city" type="xs:string"/>
-                            <xs:element name="country" type="xs:string"/>
-                        </xs:sequence>
-                    </xs:extension>
-                </xs:complexContent>
+            <xs:complexContent>
+                <xs:extension base="personinfo">
+                    <xs:sequence>
+                        <xs:element name="address" type="xs:string"/>
+                        <xs:element name="city" type="xs:string"/>
+                        <xs:element name="country" type="xs:string"/>
+                    </xs:sequence>
+                </xs:extension>
+            </xs:complexContent>
             </xs:complexType>
             ]]>
         </code-block>
 
-        <chapter title="Komplexe Elemente welche nur Attribute enthalten" id="komplex-attribut">
+        <chapter id="komplex-attribut" title="Komplexe Elemente welche nur Attribute enthalten">
 
 
             <code-block lang="xml">
                 <![CDATA[
-                <product prodid="1345" />
+                <product prodid="1345"/>
                 ]]>
             </code-block>
 
-            <chapter title="Beispiel (1)" id="komplex-attribut-beispiel1">
+            <chapter id="komplex-attribut-beispiel1" title="Beispiel (1)">
                 <code-block lang="xml">
                     <![CDATA[
                     <xs:element name="product">
@@ -304,7 +305,7 @@
                 </code-block>
             </chapter>
 
-            <chapter title="Beispiel (2)" id="komplex-attribut-beispiel2">
+            <chapter id="komplex-attribut-beispiel2" title="Beispiel (2)">
                 <code-block lang="xml">
                     <![CDATA[
                     <xs:element name="product">
@@ -324,13 +325,13 @@
                 </p>
             </chapter>
 
-            <chapter title="Beispiel (3)" id="komplex-attribut-beispiel3">
+            <chapter id="komplex-attribut-beispiel3" title="Beispiel (3)">
                 <code-block lang="xml">
                     <![CDATA[
                     <xs:element name="product" type="prodtype"/>
 
                     <xs:complexType name="prodtype">
-                        <xs:attribute name="prodid" type="xs:positiveInteger"/>
+                    <xs:attribute name="prodid" type="xs:positiveInteger"/>
                     </xs:complexType>
                     ]]>
                 </code-block>
@@ -343,7 +344,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Komplexe Elemente welche nur Elemente enthalten" id="komplex-element">
+        <chapter id="komplex-element" title="Komplexe Elemente welche nur Elemente enthalten">
             <code-block lang="xml">
                 <![CDATA[
                 <person>
@@ -358,7 +359,7 @@
                 XML-Dokument in der definierten Reihenfolge erscheinen müssen.
             </p>
 
-            <chapter title="Beispiel (1)" id="komplex-element-beispiel1">
+            <chapter id="komplex-element-beispiel1" title="Beispiel (1)">
                 <code-block lang="xml">
                     <![CDATA[
                     <xs:element name="person">
@@ -373,16 +374,16 @@
                 </code-block>
             </chapter>
 
-            <chapter title="Beispiel (2)" id="komplex-element-beispiel2">
+            <chapter id="komplex-element-beispiel2" title="Beispiel (2)">
                 <code-block lang="xml">
                     <![CDATA[
                     <xs:element name="person" type="persontype"/>
 
                     <xs:complexType name="persontype">
-                        <xs:sequence>
-                            <xs:element name="firstname" type="xs:string"/>
-                            <xs:element name="lastname" type="xs:string"/>
-                        </xs:sequence>
+                    <xs:sequence>
+                        <xs:element name="firstname" type="xs:string"/>
+                        <xs:element name="lastname" type="xs:string"/>
+                    </xs:sequence>
                     </xs:complexType>
                     ]]>
                 </code-block>
@@ -395,7 +396,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Komplexe Elemente welche nur Text enthalten" id="komplex-text">
+        <chapter id="komplex-text" title="Komplexe Elemente welche nur Text enthalten">
             <p>
                 Dieser Typ enthält nur einfachen Inhalt (Text und Attribute), daher wird ein
                 <code>simpleContent</code>-Element um den Inhalt herum hinzugefügt. Wird einfacher Inhalt verwendet,
@@ -403,7 +404,7 @@
                 <code>restriction</code>-Element definiert werden:
             </p>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="extension">
+            <code-block collapsed-title="extension" collapsible="true" lang="xml">
                 <![CDATA[
                 <xs:element name="somename">
                     <xs:complexType>
@@ -418,7 +419,7 @@
                 ]]>
             </code-block>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="restriction">
+            <code-block collapsed-title="restriction" collapsible="true" lang="xml">
                 <![CDATA[
                 <xs:element name="somename">
                     <xs:complexType>
@@ -439,14 +440,14 @@
                 ]]>
             </code-block>
 
-            <chapter title="Beispiel (1)" id="komplex-text-beispiel1">
+            <chapter id="komplex-text-beispiel1" title="Beispiel (1)">
                 <code-block lang="xml">
                     <![CDATA[
                     <xs:element name="shoesize">
                         <xs:complexType>
                             <xs:simpleContent>
                                 <xs:extension base="xs:integer">
-                                    <xs:attribute name="country" type="xs:string" />
+                                    <xs:attribute name="country" type="xs:string"/>
                                 </xs:extension>
                             </xs:simpleContent>
                         </xs:complexType>
@@ -455,17 +456,17 @@
                 </code-block>
             </chapter>
 
-            <chapter title="Beispiel (2)" id="komplex-text-beispiel2">
+            <chapter id="komplex-text-beispiel2" title="Beispiel (2)">
                 <code-block lang="xml">
                     <![CDATA[
                     <xs:element name="shoesize" type="shoetype"/>
 
                     <xs:complexType name="shoetype">
-                        <xs:simpleContent>
-                            <xs:extension base="xs:integer">
-                                <xs:attribute name="country" type="xs:string" />
-                            </xs:extension>
-                        </xs:simpleContent>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:integer">
+                            <xs:attribute name="country" type="xs:string"/>
+                        </xs:extension>
+                    </xs:simpleContent>
                     </xs:complexType>
                     ]]>
                 </code-block>
@@ -478,13 +479,14 @@
             </chapter>
         </chapter>
 
-        <chapter title="Komplexe Elemente mit verschiedenen Inhalt" id="komplex-verschieden">
+        <chapter id="komplex-verschieden" title="Komplexe Elemente mit verschiedenen Inhalt">
             <code-block lang="xml">
                 <![CDATA[
                 <letter>
-                  Dear Mr. <name>John Smith</name>.
-                  Your order <orderid>1032</orderid>
-                  will be shipped on <shipdate>2001-07-13</shipdate>.
+                    Dear Mr. <name>John Smith</name>.
+                    Your order
+                    <orderid>1032</orderid>
+                    will be shipped on <shipdate>2001-07-13</shipdate>.
                 </letter>
                 ]]>
             </code-block>
@@ -494,7 +496,7 @@
                 auf dem <code>complexType</code> das Attribut <code>mixed="true"</code> definiert werden.
             </p>
 
-            <chapter title="Beispiel (1)" id="komplex-verschieden-beispiel1">
+            <chapter id="komplex-verschieden-beispiel1" title="Beispiel (1)">
                 <code-block lang="xml">
                     <![CDATA[
                     <xs:element name="letter">
@@ -510,17 +512,17 @@
                 </code-block>
             </chapter>
 
-            <chapter title="Beispiel (2)" id="komplex-verschieden-beispiel2">
+            <chapter id="komplex-verschieden-beispiel2" title="Beispiel (2)">
                 <code-block lang="xml">
                     <![CDATA[
                     <xs:element name="letter" type="lettertype"/>
 
                     <xs:complexType name="lettertype" mixed="true">
-                        <xs:sequence>
-                            <xs:element name="name" type="xs:string"/>
-                            <xs:element name="orderid" type="xs:positiveInteger"/>
-                            <xs:element name="shipdate" type="xs:date"/>
-                        </xs:sequence>
+                    <xs:sequence>
+                        <xs:element name="name" type="xs:string"/>
+                        <xs:element name="orderid" type="xs:positiveInteger"/>
+                        <xs:element name="shipdate" type="xs:date"/>
+                    </xs:sequence>
                     </xs:complexType>
                     ]]>
                 </code-block>
@@ -533,13 +535,13 @@
             </chapter>
         </chapter>
 
-        <chapter title="Das any Element" id="komplex-any">
+        <chapter id="komplex-any" title="Das any Element">
             <p>
                 Das <code>any</code>-Element ermöglicht es, das XML-Dokument mit Elementen zu erweitern, die nicht durch
                 das Schema definiert werden.
             </p>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="Persons.xsd">
+            <code-block collapsed-title="Persons.xsd" collapsible="true" lang="xml">
                 <![CDATA[
                 <xs:element name="person">
                     <xs:complexType>
@@ -552,16 +554,16 @@
                 </xs:element>
 
                 <xs:element name="children">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="childname" type="xs:string" maxOccurs="unbounded"/>
-                        </xs:sequence>
-                    </xs:complexType>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="childname" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
                 </xs:element>
                 ]]>
             </code-block>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="Persons.xml">
+            <code-block collapsed-title="Persons.xml" collapsible="true" lang="xml">
                 <![CDATA[
                 <persons>
                     <person>
@@ -586,13 +588,13 @@
             </p>
         </chapter>
 
-        <chapter title="Das anyAttribute Element" id="komplex-anyattribute">
+        <chapter id="komplex-anyattribute" title="Das anyAttribute Element">
             <p>
                 Das <code>any</code>-Element ermöglicht es, das XML-Elemente mit Attributen zu erweitern, die nicht
                 durch das Schema definiert werden.
             </p>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="Persons.xsd">
+            <code-block collapsed-title="Persons.xsd" collapsible="true" lang="xml">
                 <![CDATA[
                 <xs:element name="person">
                     <xs:complexType>
@@ -605,16 +607,16 @@
                 </xs:element>
 
                 <xs:attribute name="eyecolor">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:pattern value="blue|brown|green|grey"/>
-                        </xs:restriction>
-                    </xs:simpleType>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="blue|brown|green|grey"/>
+                    </xs:restriction>
+                </xs:simpleType>
                 </xs:attribute>
                 ]]>
             </code-block>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="Persons.xml">
+            <code-block collapsed-title="Persons.xml" collapsible="true" lang="xml">
                 <![CDATA[
                 <persons>
                     <person eyecolor="green">
@@ -637,7 +639,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Elementsubstitution" id="elementsubstitution">
+    <chapter id="elementsubstitution" title="Elementsubstitution">
         <p>
             Mit XML-Schemas kann ein Element ein anderes ersetzen. Angenommen, wir haben Benutzer aus zwei verschiedenen
             Ländern: England und Norwegen. Wir möchten, dass der Benutzer wählen kann, ob er oder sie die norwegischen
@@ -652,9 +654,9 @@
             <xs:element name="navn" substitutionGroup="name"/>
 
             <xs:complexType name="custinfo">
-                <xs:sequence>
-                    <xs:element ref="name"/>
-                </xs:sequence>
+            <xs:sequence>
+                <xs:element ref="name"/>
+            </xs:sequence>
             </xs:complexType>
 
             <xs:element name="customer" type="custinfo"/>
@@ -682,7 +684,7 @@
             ]]>
         </code-block>
 
-        <chapter title="Elementsubstitution blockieren" id="elementsubstitution-blockieren">
+        <chapter id="elementsubstitution-blockieren" title="Elementsubstitution blockieren">
             <p>
                 Um Elementsubstitution zu blockieren, kann dem Element das Attribut <code>block="substitution"</code>
                 hinzugefügt werden.
@@ -695,7 +697,7 @@
             </code-block>
         </chapter>
 
-        <chapter title="substitutionGroup" id="elementsubstitution-substitutiongroup">
+        <chapter id="elementsubstitution-substitutiongroup" title="substitutionGroup">
             <p>
                 Der Typ der substituierbaren Elemente muss derselbe sein wie der Typ des Head-Elements oder davon
                 abgeleitet sein. Wenn der Typ des ersetzbaren Elements derselbe ist wie der Typ des Head-Elements, muss
@@ -708,12 +710,12 @@
         </chapter>
     </chapter>
 
-    <chapter title="Indikatoren" id="indikatoren">
+    <chapter id="indikatoren" title="Indikatoren">
         <p>
             Mit Indikatoren ist es möglich, zu steuern, wie Elemente in Dokumenten verwendet werden sollen.
         </p>
 
-        <chapter title="Sortierindikatoren" id="indikatoren-sort">
+        <chapter id="indikatoren-sort" title="Sortierindikatoren">
             <table>
                 <tr>
                     <td>Indikator</td>
@@ -793,7 +795,7 @@
             </table>
         </chapter>
 
-        <chapter title="Vorkommensindikatoren" id="indikatoren-vorkommen">
+        <chapter id="indikatoren-vorkommen" title="Vorkommensindikatoren">
             <table>
                 <tr>
                     <td>Indikator</td>
@@ -834,12 +836,12 @@
             </table>
         </chapter>
 
-        <chapter title="Gruppenindikatoren" id="indikatoren-gruppe">
+        <chapter id="indikatoren-gruppe" title="Gruppenindikatoren">
             <p>
                 Gruppenindikatoren werden verwendet, um zusammengehörige Elementen zu definieren.
             </p>
 
-            <chapter title="Elementgruppen" id="indikatoren-gruppe-element">
+            <chapter id="indikatoren-gruppe-element" title="Elementgruppen">
                 <code-block lang="xml">
                     <![CDATA[
                     <xs:group name="persongroup">
@@ -853,16 +855,16 @@
                     <xs:element name="person" type="personinfo"/>
 
                     <xs:complexType name="personinfo">
-                        <xs:sequence>
-                            <xs:group ref="persongroup"/>
-                            <xs:element name="country" type="xs:string"/>
-                        </xs:sequence>
+                    <xs:sequence>
+                        <xs:group ref="persongroup"/>
+                        <xs:element name="country" type="xs:string"/>
+                    </xs:sequence>
                     </xs:complexType>
                     ]]>
                 </code-block>
             </chapter>
 
-            <chapter title="Attributgruppen" id="indikatoren-gruppe-attribut">
+            <chapter id="indikatoren-gruppe-attribut" title="Attributgruppen">
                 <code-block lang="xml">
                     <![CDATA[
                     <xs:attributeGroup name="personattrgroup">
@@ -872,9 +874,9 @@
                     </xs:attributeGroup>
 
                     <xs:element name="person">
-                        <xs:complexType>
-                            <xs:attributeGroup ref="personattrgroup"/>
-                        </xs:complexType>
+                    <xs:complexType>
+                        <xs:attributeGroup ref="personattrgroup"/>
+                    </xs:complexType>
                     </xs:element>
                     ]]>
                 </code-block>
@@ -882,7 +884,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Einschränkungen (restrictions/facets)" id="restrictions">
+    <chapter id="restrictions" title="Einschränkungen (restrictions/facets)">
         <table>
             <tr>
                 <td>Einschränkung</td>
@@ -916,11 +918,11 @@
                         <xs:element name="car" type="carType"/>
 
                         <xs:simpleType name="carType">
-                            <xs:restriction base="xs:string">
-                                <xs:enumeration value="Audi"/>
-                                <xs:enumeration value="Golf"/>
-                                <xs:enumeration value="BMW"/>
-                            </xs:restriction>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="Audi"/>
+                            <xs:enumeration value="Golf"/>
+                            <xs:enumeration value="BMW"/>
+                        </xs:restriction>
                         </xs:simpleType>
                         ]]>
                     </code-block>
@@ -1107,7 +1109,7 @@
             </tr>
         </table>
 
-        <chapter title="(1) Patterns" id="restrictions-pattern" collapsible="true">
+        <chapter collapsible="true" id="restrictions-pattern" title="(1) Patterns">
             <table>
                 <tr>
                     <td>Beispiel</td>
@@ -1165,7 +1167,7 @@
                 </tr>
             </table>
         </chapter>
-        <chapter title="(1) Values" id="restrictions-value" collapsible="true">
+        <chapter collapsible="true" id="restrictions-value" title="(1) Values">
             <table>
                 <tr>
                     <td><code>value</code></td>
@@ -1195,13 +1197,13 @@
         </chapter>
     </chapter>
 
-    <chapter title="Attribute" id="attribute">
+    <chapter id="attribute" title="Attribute">
         <p>
             Einfache Elemente können keine Attribute haben. Wenn ein Element Attribute hat, wird es als komplexer Typ
             betrachtet. Das Attribut selbst wird jedoch immer als einfacher Typ deklariert.
         </p>
 
-        <chapter title="Attributattribute" id="attribute-attribute">
+        <chapter id="attribute-attribute" title="Attributattribute">
             <code-block lang="xml">
                 <![CDATA[
                 <xs:attribute name="lang" type="xs:string" fixed="EN"/>
@@ -1247,11 +1249,11 @@
         </chapter>
     </chapter>
 
-    <chapter title="Datentypen" id="datentypen">
+    <chapter id="datentypen" title="Datentypen">
         <p>
             Eine der größten Stärken von XML-Schemata ist die Unterstützung von Datentypen. Datentypen vereinfachen es:
         </p>
-        
+
         <list>
             <li>den zulässigen Inhalt von Dokumenten zu beschreiben.</li>
             <li>die Korrektheit von Daten zu validieren</li>
@@ -1260,7 +1262,7 @@
             <li>Daten zwischen verschiedenen Datentypen zu konvertieren.</li>
         </list>
 
-        <chapter title="XSD String Datentypen" id="datentypen-string">
+        <chapter id="datentypen-string" title="XSD String Datentypen">
             <table>
                 <tr>
                     <td>Datentyp</td>
@@ -1278,9 +1280,9 @@
                         <code-block lang="xml">
                             <![CDATA[
                             <!-- XSD -->
-                            <xs:element name="customer" type="xs:token" />
+                            <xs:element name="customer" type="xs:token"/>
 
-                            <!-- XML -->
+                                    <!-- XML -->
                             <customer>John Smith</customer>
                             ]]>
                         </code-block>
@@ -1298,9 +1300,9 @@
                         <code-block lang="xml">
                             <![CDATA[
                             <!-- XSD -->
-                            <xs:element name="customer" type="xs:token" />
+                            <xs:element name="customer" type="xs:token"/>
 
-                            <!-- XML -->
+                                    <!-- XML -->
                             <customer>John Smith</customer>
                             ]]>
                         </code-block>
@@ -1318,9 +1320,9 @@
                         <code-block lang="xml">
                             <![CDATA[
                             <!-- XSD -->
-                            <xs:element name="customer" type="xs:token" />
+                            <xs:element name="customer" type="xs:token"/>
 
-                            <!-- XML -->
+                                    <!-- XML -->
                             <customer>John Smith</customer>
                             ]]>
                         </code-block>
@@ -1368,7 +1370,7 @@
                 </tr>
             </table>
 
-            <chapter title="Einschränkungen" id="datentypen-string-restrictions">
+            <chapter id="datentypen-string-restrictions" title="Einschränkungen">
                 <p>
                     Einschränkungen, die mit String-Datentypen verwendet werden können:
                 </p>
@@ -1397,7 +1399,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="XSD Date/Time Datentypen" id="datentypen-datetime">
+        <chapter id="datentypen-datetime" title="XSD Date/Time Datentypen">
             <table>
                 <tr>
                     <td>Datentyp</td>
@@ -1407,10 +1409,10 @@
                     <td><code>date</code></td>
                     <td>
                         <p>
-                            Der Datentyp date wird zur Angabe eines Datums verwendet. Das Datum wird in der folgenden 
+                            Der Datentyp date wird zur Angabe eines Datums verwendet. Das Datum wird in der folgenden
                             Form angegeben: <code>"YYYY-MM-DD"</code>, wobei:
                         </p>
-                        
+
                         <list>
                             <li><code>YYYY</code> das Jahr angibt</li>
                             <li><code>MM</code> steht für den Monat</li>
@@ -1429,7 +1431,7 @@
                             <!-- XSD -->
                             <xs:element name="start" type="xs:date"/>
 
-                            <!-- XML -->
+                                    <!-- XML -->
                             <start>2002-09-24</start>
                             <start>2002-09-24Z</start>
                             <start>2002-09-24-06:00</start>
@@ -1464,7 +1466,7 @@
                             <!-- XSD -->
                             <xs:element name="start" type="xs:time"/>
 
-                            <!-- XML -->
+                                    <!-- XML -->
                             <start>09:00:00</start>
                             <start>09:30:10.5</start>
                             <start>09:30:10Z</start>
@@ -1505,7 +1507,7 @@
                             <!-- XSD -->
                             <xs:element name="startdate" type="xs:dateTime"/>
 
-                            <!-- XML -->
+                                    <!-- XML -->
                             <startdate>2002-05-30T09:00:00</startdate>
                             <startdate>2002-05-30T09:30:10.5</startdate>
                             <startdate>2002-05-30T09:30:10Z</startdate>
@@ -1556,7 +1558,7 @@
                             <!-- XSD -->
                             <xs:element name="period" type="xs:duration"/>
 
-                            <!-- XML -->
+                                    <!-- XML -->
                             <period>P5Y</period>
                             <period>P5Y2M10D</period>
                             <period>P5Y2M10DT15H</period>
@@ -1588,11 +1590,11 @@
                 </tr>
             </table>
 
-            <chapter title="Einschränkungen" id="datentypen-datetime-restrictions">
+            <chapter id="datentypen-datetime-restrictions" title="Einschränkungen">
                 <p>
                     Einschränkungen, die mit Datums-Datentypen verwendet werden können:
                 </p>
-                
+
                 <list>
                     <li><code>enumeration</code></li>
                     <li><code>maxExclusive</code></li>
@@ -1605,7 +1607,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="XSD numerische Datentypen" id="datentypen-numerisch">
+        <chapter id="datentypen-numerisch" title="XSD numerische Datentypen">
             <table>
                 <tr>
                     <td>Datentyp</td>
@@ -1629,7 +1631,7 @@
                             <!-- XSD -->
                             <xs:element name="price" type="xs:decimal"/>
 
-                            <!-- XML -->
+                                    <!-- XML -->
                             <price>999.50</price>
                             <price>+999.5450</price>
                             <price>-999.5230</price>
@@ -1656,7 +1658,7 @@
                             <!-- XSD -->
                             <xs:attribute name="disabled" type="xs:boolean"/>
 
-                            <!-- XML -->
+                                    <!-- XML -->
                             <price>999</price>
                             <price>+999</price>
                             <price>-999</price>
@@ -1729,7 +1731,7 @@
                 </tr>
             </table>
 
-            <chapter title="Einschränkungen" id="datentypen-numerisch-restrictions">
+            <chapter id="datentypen-numerisch-restrictions" title="Einschränkungen">
                 <p>
                     Einschränkungen, die mit numerischen Datentypen verwendet werden können:
                 </p>
@@ -1748,7 +1750,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="XSD verschiedene Datentypen" id="datentypen-verschieden">
+        <chapter id="datentypen-verschieden" title="XSD verschiedene Datentypen">
             <table>
                 <tr>
                     <td>Datentyp</td>
@@ -1767,7 +1769,7 @@
                             <!-- XSD -->
                             <xs:attribute name="disabled" type="xs:boolean"/>
 
-                            <!-- XML -->
+                                    <!-- XML -->
                             <price disabled="true">999</price>
                             ]]>
                         </code-block>
@@ -1786,8 +1788,8 @@
                             <!-- XSD -->
                             <xs:attribute name="src" type="xs:anyURI"/>
 
-                            <!-- XML -->
-                            <pic src="https://www.w3schools.com/images/smiley.gif" />
+                                    <!-- XML -->
+                            <pic src="https://www.w3schools.com/images/smiley.gif"/>
                             ]]>
                         </code-block>
                     </td>
@@ -1824,7 +1826,7 @@
                 </tr>
             </table>
 
-            <chapter title="Einschränkungen" id="datentypen-verschieden-restrictions">
+            <chapter id="datentypen-verschieden-restrictions" title="Einschränkungen">
                 <p>
                     Einschränkungen, die mit den anderen Datentypen verwendet werden können:
                 </p>
@@ -1841,7 +1843,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836254663, IT Handbuch für Fachinformatiker, Sascha Kersken, Rheinwerk Verlag GmbH, 2017

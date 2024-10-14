@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Extreme Programming" id="swe-prozesse-xp">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-prozesse-xp"
+       title="Extreme Programming"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einleitung" id="einleitung">
+    <chapter id="einleitung" title="Einleitung">
         <p>
             Extreme Programming, oder kurz XP wurde in den Jahren 1995–2000 von Kent Beck, Ward Cunningham und Ron
             Jeffries bei Chrysler entwickelt. Der Name wurde dadurch geprägt, dass die gut bekannten Praktiken, zum
@@ -19,8 +19,8 @@
         </p>
     </chapter>
 
-    <chapter title="Vorgehensweise" id="vorgehensweise">
-        <chapter title="User-Storys" id="vorgehensweise-userstorys">
+    <chapter id="vorgehensweise" title="Vorgehensweise">
+        <chapter id="vorgehensweise-userstorys" title="User-Storys">
             <p>
                 Die Anforderungen werden in Form von <b>User-Storys</b> zusammengefasst und anschließend als eine Folge
                 von Aufgaben implementiert. Welche User-Story als nächste in ein Release aufgenommen wird, bestimmt sich
@@ -28,7 +28,7 @@
             </p>
         </chapter>
 
-        <chapter title="Pair-Programming" id="vorgehensweise-pp">
+        <chapter id="vorgehensweise-pp" title="Pair-Programming">
             <p>
                 Großer Wert wird auf paarweise Zusammenarbeit gelegt. Sie arbeiten daher nicht mehr alleine an einem
                 Modul oder an einer neuen Funktion, sondern gemeinsam in Zweierteams. Für diese Arbeitsweise ist auch
@@ -36,7 +36,7 @@
             </p>
         </chapter>
 
-        <chapter title="Test-Driven Development" id="tdd">
+        <chapter id="tdd" title="Test-Driven Development">
             <p>
                 Statt erst Programmcode zu schreiben und dann umfangreich nach möglichen Fehlern zu suchen, werden Tests
                 für die einzelnen Aufgaben entwickelt. Diese sollen mit Erfolg abgeschlossen werden, bevor neuer Code in
@@ -45,7 +45,7 @@
             </p>
         </chapter>
 
-        <chapter title="Kunde vor Ort" id="vorgehensweise-kundevorort">
+        <chapter id="vorgehensweise-kundevorort" title="Kunde vor Ort">
             <p>
                 Ein <b>Kundenbevollmächtigter</b> ist am Entwicklungsprozess kontinuierlich beteiligt. Er soll dem
                 XP-Team ständig zur Verfügung stehen. Er ist dafür verantwortlich, dem Team die Systemanforderungen
@@ -55,7 +55,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Prinzipien" id="prinzipien">
+    <chapter id="prinzipien" title="Prinzipien">
         <list>
             <li>inkrementelle Planung</li>
             <li>einfacher Entwurf und keine Releases</li>
@@ -65,7 +65,7 @@
         </list>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018

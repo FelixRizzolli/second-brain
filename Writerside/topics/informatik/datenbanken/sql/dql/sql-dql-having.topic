@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="HAVING: WHERE mit Aggregatfunktionen" id="sql-dql-having">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-dql-having"
+       title="HAVING: WHERE mit Aggregatfunktionen"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlegendes" id="grundlegendes">
+    <chapter id="grundlegendes" title="Grundlegendes">
         <p>
             Die <code>HAVING</code>-Klausel wurde zu SQL hinzugefügt, weil das Schlüsselwort <code>WHERE</code> nicht
             mit Aggregatfunktionen verwendet werden kann.
         </p>
 
         <code-block lang="sql">
-            SELECT  column_name(s)
-              FROM table_name
-             WHERE  condition
-             GROUP
-                BY  column_name(s)
-            HAVING  condition
-             ORDER
-                BY  column_name(s)
+            SELECT column_name(s)
+            FROM table_name
+            WHERE condition
+            GROUP
+            BY column_name(s)
+            HAVING condition
+            ORDER
+            BY column_name(s)
             ;
         </code-block>
     </chapter>
 
-    <chapter title="Daten für Beispiele" id="daten">
-        <chapter title="Customers Tabelle" id="daten-customers">
+    <chapter id="daten" title="Daten für Beispiele">
+        <chapter id="daten-customers" title="Customers Tabelle">
             <table>
                 <tr>
                     <td>CustomerID</td>
@@ -85,7 +85,7 @@
             </table>
         </chapter>
 
-        <chapter title="Orders Tabelle" id="daten-orders">
+        <chapter id="daten-orders" title="Orders Tabelle">
             <table>
                 <tr>
                     <td>OrderID</td>
@@ -118,7 +118,7 @@
             </table>
         </chapter>
 
-        <chapter title="Employees Tabelle" id="daten-employees">
+        <chapter id="daten-employees" title="Employees Tabelle">
             <table>
                 <tr>
                     <td>EmployeeID</td>
@@ -156,19 +156,19 @@
         </chapter>
     </chapter>
 
-    <chapter title="Beispiele" id="beispiele">
+    <chapter id="beispiele" title="Beispiele">
         <p>
             Die folgende SQL-Anweisung listet die Anzahl der Kunden in jedem Land auf. Berücksichtigen Sie nur Länder
             mit mehr als 5 Kunden:
         </p>
 
         <code-block lang="sql">
-            SELECT  COUNT(CustomerID)
-                 ,  Country
-              FROM Customers
-             GROUP
-                BY  Country
-            HAVING  COUNT(CustomerID) > 5
+            SELECT COUNT(CustomerID)
+            , Country
+            FROM Customers
+            GROUP
+            BY Country
+            HAVING COUNT(CustomerID) > 5
             ;
         </code-block>
 
@@ -178,14 +178,14 @@
         </p>
 
         <code-block lang="sql">
-            SELECT  COUNT(CustomerID)
-                 ,  Country
-              FROM Customers
-             GROUP
-                BY  Country
-            HAVING  COUNT(CustomerID) > 5
-             ORDER
-                BY  COUNT(CustomerID) DESC
+            SELECT COUNT(CustomerID)
+            , Country
+            FROM Customers
+            GROUP
+            BY Country
+            HAVING COUNT(CustomerID) > 5
+            ORDER
+            BY COUNT(CustomerID) DESC
             ;
         </code-block>
 
@@ -194,15 +194,15 @@
         </p>
 
         <code-block lang="sql">
-            SELECT  Employees.LastName
-                 ,  COUNT(Orders.OrderID) AS NumberOfOrders
-              FROM Orders
-             INNER
-              JOIN Employees
-                ON  Orders.EmployeeID = Employees.EmployeeID
-             GROUP
-                BY  LastName
-            HAVING  COUNT(Orders.OrderID) > 10
+            SELECT Employees.LastName
+            , COUNT(Orders.OrderID) AS NumberOfOrders
+            FROM Orders
+            INNER
+            JOIN Employees
+            ON Orders.EmployeeID = Employees.EmployeeID
+            GROUP
+            BY LastName
+            HAVING COUNT(Orders.OrderID) > 10
             ;
         </code-block>
 
@@ -212,22 +212,22 @@
         </p>
 
         <code-block lang="sql">
-            SELECT  Employees.LastName
-                 ,  COUNT(Orders.OrderID) AS NumberOfOrders
-              FROM Orders
-             INNER
-              JOIN Employees
-                ON  Orders.EmployeeID = Employees.EmployeeID
-             WHERE  LastName = 'Davolio'
-                OR  LastName = 'Fuller'
-             GROUP
-                BY  LastName
-            HAVING  COUNT(Orders.OrderID) > 25
+            SELECT Employees.LastName
+            , COUNT(Orders.OrderID) AS NumberOfOrders
+            FROM Orders
+            INNER
+            JOIN Employees
+            ON Orders.EmployeeID = Employees.EmployeeID
+            WHERE LastName = 'Davolio'
+            OR LastName = 'Fuller'
+            GROUP
+            BY LastName
+            HAVING COUNT(Orders.OrderID) > 25
             ;
         </code-block>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

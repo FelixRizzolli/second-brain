@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Verschlüsselungsalgorithmen" id="swe-pk-algorithmen-verschluesselung"
-       help-id="swe-pk-algorithmen-verschluesselung">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic help-id="swe-pk-algorithmen-verschluesselung"
+       id="swe-pk-algorithmen-verschluesselung"
+       title="Verschlüsselungsalgorithmen" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="AES Verschlüsselung" id="aes">
-        <chapter title="Grundlagen" id="aes-grundlagen">
+    <chapter id="aes" title="AES Verschlüsselung">
+        <chapter id="aes-grundlagen" title="Grundlagen">
             <p>
                 Die AES (Advanced Encryption Standard) Verschlüsselung wurde von Vincent Rijmen und Joan Daemen
                 entwickelt. Es wird auch als Rijndael-Algorithmus bezeichnet. AES ist der Nachfolger des DES
@@ -28,7 +28,7 @@
                 AES-192 und AES-256 bezeichnet.
             </p>
 
-            <chapter title="AES Schlüssel: AES-128, AES-192 und AES-256" id="aes-grundlagen-schluessel">
+            <chapter id="aes-grundlagen-schluessel" title="AES Schlüssel: AES-128, AES-192 und AES-256">
                 <p>
                     Die Varianten der AES Verschlüsselung, AES-128, AES-192 und AES-256 beinhalten in ihrer Bezeichnung
                     die Länge des Schlüssels in Bit. Durch die größeren Schlüssellängen des AES von 128, 192 oder 256
@@ -39,7 +39,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Erklärung" id="aes-grundlagen-erklaerung">
+            <chapter id="aes-grundlagen-erklaerung" title="Erklärung">
                 <p>
                     Da es sich bei der AES Verschlüsselung um ein symmetrisches Verfahren handelt, wird ein- und
                     derselbe Schlüssel zum Verschlüsseln als auch zum Entschlüsseln verwendet. Das AES
@@ -56,7 +56,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Verfahren" id="verfahren">
+        <chapter id="verfahren" title="Verfahren">
             <p>
                 Als erstes erzeugt man unter Verwendung des Eingabeschlüssels die Rundenschlüssel. Für die erste Runde
                 verwendet man dabei den Eingabeschlüssel. Die anderen Schlüssel für die restlichen Runden erhält man
@@ -88,7 +88,7 @@
             </list>
         </chapter>
 
-        <chapter title="Beispiel" id="beispiel">
+        <chapter id="beispiel" title="Beispiel">
             <p>
                 Im letzten Abschnitt wurde ganz allgemein beschrieben, wie man mit dem AES Verfahren Daten verschlüsseln
                 kann. Nun wird ein allgemeines Beispiel vorgeführt, um die Vorgehensweise zu verdeutlichen.
@@ -100,9 +100,10 @@
             </p>
 
             <code-block lang="tex">
-                \underset{Spalten}{\underbrace{4}} * \underset{Spalten}{\underbrace{4}} * \underset{1Byte=8Bit}{\underbrace{8Bit}} = 128Bit
+                \underset{Spalten}{\underbrace{4}} * \underset{Spalten}{\underbrace{4}} *
+                \underset{1Byte=8Bit}{\underbrace{8Bit}} = 128Bit
             </code-block>
-            
+
             <p>
                 Als <b>Ausgangspunkt</b> gehen wir dabei von folgender <b>Tabelle</b> aus:
             </p>
@@ -178,8 +179,8 @@
             </p>
         </chapter>
 
-        <chapter title="Sicherheit, Verwendung und Alternativen" id="aes-weiteres">
-            <chapter title="AES Verschlüsslung knacken" id="aes-weiteres-knacken">
+        <chapter id="aes-weiteres" title="Sicherheit, Verwendung und Alternativen">
+            <chapter id="aes-weiteres-knacken" title="AES Verschlüsslung knacken">
                 <p>
                     Um nun die, mit dem AES Verfahren verschlüsselten, Daten wieder zu entschlüsseln, werden die Daten
                     zuerst wieder in eine Tabelle gelesen. Anschließend wendet man die gerade beschriebenen
@@ -188,7 +189,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Verwendung" id="aes-weiteres-verwendung">
+            <chapter id="aes-weiteres-verwendung" title="Verwendung">
                 <p>
                     Die AES Verschlüsselung findet in den verschiedensten Bereichen Anwendung, wie zum Beispiel bei
                     <b>WLAN</b> oder <b>WAP2</b>, sowie <b>SSH</b> und <b>IPsec</b>. Des Weiteren wird das AES Verfahren
@@ -197,7 +198,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Sicherheit" id="aes-weiteres-sicherheit">
+            <chapter id="aes-weiteres-sicherheit" title="Sicherheit">
                 <p>
                     Die Sicherheit der mit AES verschlüsselten Informationen wird heute als <b>relativ hoch</b>
                     eingestuft, da <b>kein Algorithmus</b> bekannt ist, der den AES <b>knacken</b> könnte. Auch in den
@@ -211,7 +212,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Alternativen" id="aes-weiteres-alternativen">
+            <chapter id="aes-weiteres-alternativen" title="Alternativen">
                 <p>
                     Angenommen, es wird in naher Zukunft doch eine Lücke in der AES Verschlüsslung gefunden, oder eine
                     mathematische Lösung entwickelt, die den AES Algorithmus löst, so gibt es auch heute schon
@@ -222,31 +223,31 @@
         </chapter>
     </chapter>
 
-    <chapter title="Asymmetrische Verschlüsselung" id="asymmetrisch">
+    <chapter id="asymmetrisch" title="Asymmetrische Verschlüsselung">
 
     </chapter>
 
-    <chapter title="Caesar Verschlüsselung" id="caesar">
+    <chapter id="caesar" title="Caesar Verschlüsselung">
 
     </chapter>
 
-    <chapter title="Chinesischer Restsatz (Verschlüsselungsalgorihtmus)" id="chinesischerrestsatz">
+    <chapter id="chinesischerrestsatz" title="Chinesischer Restsatz (Verschlüsselungsalgorihtmus)">
 
     </chapter>
 
-    <chapter title="RSA Verschlüsselung" id="rsa">
+    <chapter id="rsa" title="RSA Verschlüsselung">
 
     </chapter>
 
-    <chapter title="Symmetrische Verschlüsselung" id="symmetrisch">
+    <chapter id="symmetrisch" title="Symmetrische Verschlüsselung">
 
     </chapter>
 
-    <chapter title="Vigenere Verschlüsselung" id="vigenere">
+    <chapter id="vigenere" title="Vigenere Verschlüsselung">
 
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(WEBSEITE)</b>
             <a href="https://studyflix.de/informatik/aes-verschlusselung-1611" ignore-vars="true">

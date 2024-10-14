@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="GIT" id="swe-vcs-git">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-vcs-git"
+       title="GIT"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Was ist Git?" id="git">
+    <chapter id="git" title="Was ist Git?">
         <p>
             Git ist ein Versionsverwaltungssystem, das sich mittlerweile zum Standard entwickelt hat. Es ermöglicht
             allen Entwicklern den Zugriff auf das gesamte Projekt, sodass jeder Programmierer weiß, was die anderen
@@ -28,7 +28,7 @@
         </p>
     </chapter>
 
-    <chapter title="Die Geschichte" id="geschichte">
+    <chapter id="geschichte" title="Die Geschichte">
         <p>
             Linus Torvalds suchte ein neues Versionsverwaltungssystem für die Weiterentwicklung des
             <a href="linux.topic">Linux</a>-Kernels, um das damals genutzte BitKeeper abzulösen. Keines, der verfügbaren
@@ -44,8 +44,8 @@
         </p>
     </chapter>
 
-    <chapter title="Einführung" id="einfuehrung">
-        <chapter title="Was ist Git?" id="einfuehrung-git">
+    <chapter id="einfuehrung" title="Einführung">
+        <chapter id="einfuehrung-git" title="Was ist Git?">
             <p>
                 Git ist ein dezentrales Versionsverwaltungssystem. Bei Softwareprojekten hilft Git dabei, sich die von
                 unterschiedlichen Entwicklern durchgeführten Änderungen zu merken. Binärdateien wie Office-Dokumente,
@@ -53,7 +53,7 @@
                 nachvollziehen lassen.
             </p>
 
-            <chapter title="Das Kommando git" id="einfuehrung-git-kommando">
+            <chapter id="einfuehrung-git-kommando" title="Das Kommando git">
                 <p>
                     Alle Git-Befehle lassen sich mit Optionen und Parametern durch das git-Kommando im Terminal oder in
                     der PowerShell (sofern Git installiert ist) ausführen.
@@ -61,7 +61,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Git-Oberflächen" id="einfuehrung-ui">
+        <chapter id="einfuehrung-ui" title="Git-Oberflächen">
             <p>
                 Nahezu alle Entwicklungsumgebungen (Visual Studio, Xcode, IntelliJ, Android Studio usw.) sowie die
                 meisten größeren Editoren (Atom, Sublime, VSCode etc.) stellen Menükommandos zur Auswahl, mit denen
@@ -69,7 +69,7 @@
                 Weboberflächen wie GitHub oder GitLab.
             </p>
 
-            <chapter title="Git vs. GitHub vs. GitLab" id="einfuehrung-ui-vergleich">
+            <chapter id="einfuehrung-ui-vergleich" title="Git vs. GitHub vs. GitLab">
                 <p>
                     Git ist ein dezentrales Werkzeug. In der Praxis sind aber externe Git-Repositorys wie GitHub oder
                     GitLab allgegenwärtig. Sie vereinfachen den Datenaustausch, dienen als zusätzliches Backup und
@@ -83,7 +83,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Installation" id="installation">
+    <chapter id="installation" title="Installation">
         <note>
             <p><b>Git ohne Installation</b></p>
 
@@ -93,7 +93,7 @@
             </p>
         </note>
 
-        <chapter title="Linux" id="installation-linux">
+        <chapter id="installation-linux" title="Linux">
             <list>
                 <li>Debian, Raspbian, Ubuntu: <code>apt install git</code></li>
                 <li>CentOS/RHEL: <code>yum install git</code></li>
@@ -102,7 +102,7 @@
             </list>
         </chapter>
 
-        <chapter title="macOS (mit Homebrew)" id="installation-macos">
+        <chapter id="installation-macos" title="macOS (mit Homebrew)">
             <list>
                 <li>In Xcode ist git bereits fix integriert</li>
                 <li>Homebrew: <a href="https://brew.sh">https://brew.sh</a></li>
@@ -110,7 +110,7 @@
             </list>
         </chapter>
 
-        <chapter title="Windows" id="installation-windows">
+        <chapter id="installation-windows" title="Windows">
             <p>
                 Für Windows wird Git mit ein <a href="https://git-scm.com/downloads">Setup-Programm</a> installiert, was
                 auch gleich eine Terminal-Umgebung, die Git Bash mit den wichtigsten, aus der Linux-Welt bekannten
@@ -121,7 +121,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Arbeiten mit GIT" id="arbeiten">
+    <chapter id="arbeiten" title="Arbeiten mit GIT">
         <p>
             Bei Linux und macOS wird ein Terminalfenster geöffnet, um kommandoorientiert zu arbeiten. Bei Windows gibt
             es dagegen bis zu vier Varianten zur Wahl:
@@ -134,7 +134,7 @@
             <li>Windows Terminal</li>
         </list>
 
-        <chapter title="Die Eingabeaufforderung (cmd.exe)" id="arbeiten-cmd">
+        <chapter id="arbeiten-cmd" title="Die Eingabeaufforderung (cmd.exe)">
             <p>
                 Die Eingabeaufforderung von Windows ist noch ein Überbleibsel aus den DOS-Zeiten und reicht auch aus, um
                 elementare Kommandos wie <code>cd</code>, <code>mkdir</code> und auch <code>git</code> auszuführen. Sie
@@ -142,7 +142,7 @@
                 Problemen führt, web Zeichen außerhalb des ASCII-Zeichensatzes verwendet werden.
             </p>
 
-            <chapter title="PowerShell" id="arbeiten-cmd-powershell">
+            <chapter id="arbeiten-cmd-powershell" title="PowerShell">
                 <p>
                     Die PowerShell besteht aus einem Kommandozeileninterpreter sowie einer Skriptsprache. Sie kann weit
                     aus mehr als sie Eingabeaufforderung. Für eine effiziente Bedienung von Git durch die PowerShell
@@ -155,7 +155,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Windows Terminal" id="arbeiten-terminal">
+        <chapter id="arbeiten-terminal" title="Windows Terminal">
             <p>
                 2019 hat Microsoft ein neues Terminal veröffentlicht, welches die alte Eingabeaufforderung und die
                 PowerShell in einer vereint und zudem noch weitere Eigenschaften bietet. Wie in immer mehr
@@ -164,7 +164,7 @@
                 ist auch im Microsoft Store erhältlich.
             </p>
 
-            <chapter title="Git Bash" id="arbeiten-terminal-gitbash">
+            <chapter id="arbeiten-terminal-gitbash" title="Git Bash">
                 <p>
                     Git Bash wird bei der Installation von Git mitgeliefert und sieht der Eingabeaufforderung von
                     Windows sehr ähnlich. Mit ihr können alle elementaren Linux-Kommandos verwendet werden. Um
@@ -182,7 +182,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Git im WSL" id="arbeiten-wsl">
+        <chapter id="arbeiten-wsl" title="Git im WSL">
             <p>
                 Werden die Projekte, welche mit git heruntergeladen werden vorwiegend in einer Linux-Umgebung (und nicht
                 mit Windows-Programmen) bearbeitet, so besteht auch die Möglichkeit Git im WSL (Windows Subsystem for
@@ -191,10 +191,11 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
-            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler, 2020
+            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler,
+            2020
         </tip>
         <tip>
             <b>(WEBSEITE)</b>

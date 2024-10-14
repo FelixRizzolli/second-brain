@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Scrum" id="swe-prozesse-scrum">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-prozesse-scrum"
+       title="Scrum"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Was ist Scrum?" id="scrum">
+    <chapter id="scrum" title="Was ist Scrum?">
         <p>
             Scrum ist ein leichtgewichtiges Rahmenwerk, welches Menschen, Teams und Organisationen hilft, Wert durch
             adaptive Lösungen für komplexe Probleme zu generieren.
@@ -45,7 +45,7 @@
         </p>
     </chapter>
 
-    <chapter title="Scrum Guide" id="scrumguide">
+    <chapter id="scrumguide" title="Scrum Guide">
         <p>
             Scrum Guide beschreibt das Scrum-Framework. Scrum ist ein leichtgewichtiges Rahmenwerk, welches Menschen,
             Teams und Organisationen hilft Wert durch adaptive Lösungen für komplexe Probleme zu generieren. Das
@@ -58,14 +58,14 @@
         </p>
     </chapter>
 
-    <chapter title="Nexus Guide" id="nexusguide">
+    <chapter id="nexusguide" title="Nexus Guide">
         <p>
             Nexus Guide baut auf dem Scrum Guide für das Nexus-Skalierungsframework auf.
         </p>
     </chapter>
 
-    <chapter title="Verstehen der Kompetenzen" id="kompetenzen">
-        <chapter title="Das Scrum Framework verstehen und anwenden" id="kompetenzen-anwendung">
+    <chapter id="kompetenzen" title="Verstehen der Kompetenzen">
+        <chapter id="kompetenzen-anwendung" title="Das Scrum Framework verstehen und anwenden">
             <p>
                 Das Verständnis und die Anwendung des Scrum-Frameworks ermöglicht es Teams und Organisationen, iterativ
                 und inkrementell wertvolle Produkte in Form von fertiger (eng. "Done"), funktionstüchtiger und
@@ -90,7 +90,7 @@
             <p>Mehr zu diesem Thema: <a href="swe-prozesse-scrum-anwendung.topic">HIER</a></p>
         </chapter>
 
-        <chapter title="Personen und Teams entwickeln" id="kompetenzen-teams">
+        <chapter id="kompetenzen-teams" title="Personen und Teams entwickeln">
             <p>
                 Traditionelle Managementmodelle betrachten die Arbeit mit Menschen und die Teamentwicklung als Aufgabe
                 des Managers des Teams. Scrum überträgt dem Scrum Master die besondere Verantwortung, die Mitglieder des
@@ -104,7 +104,7 @@
                 behandelt werden, da sie spezifische Fähigkeiten verkörpern, die zur kontinuierlichen Selbst- und
                 Teamverbesserung eingesetzt werden:
             </p>
-            
+
             <list>
                 <li>Selbstmanagement von Teams</li>
                 <li>Führungsstile</li>
@@ -117,7 +117,7 @@
             <p>Mehr zu diesem Thema: <a href="swe-prozesse-scrum-teams.topic">HIER</a></p>
         </chapter>
 
-        <chapter title="Produkte mit Agilität managen" id="kompetenzen-managen">
+        <chapter id="kompetenzen-managen" title="Produkte mit Agilität managen">
             <p>
                 <b>Agiles Produktmanagement</b> führt zu Produkten, die wertvolle Geschäftsergebnisse liefern, zu mehr
                 Flexibilität bei der Reaktion auf Veränderungen und zu größerer Transparenz bei
@@ -155,7 +155,7 @@
             <p>Mehr zu diesem Thema: <a href="swe-prozesse-scrum-managen.topic">HIER</a></p>
         </chapter>
 
-        <chapter title="Produkte professionell entwickeln und ausliefern" id="kompetenzen-entwickeln">
+        <chapter id="kompetenzen-entwickeln" title="Produkte professionell entwickeln und ausliefern">
             <p>
                 Die <b>professionelle Entwicklung und Bereitstellung von Produkten</b> mit Scrum führt zu qualitativ
                 hochwertigen Softwareprodukten, die iterativ und inkrementell mit relativ hoher Frequenz bereitgestellt
@@ -198,7 +198,7 @@
             <p>Mehr zu diesem Thema: <a href="swe-prozesse-scrum-entwickeln.topic">HIER</a></p>
         </chapter>
 
-        <chapter title="Eine agile Organisation entwickeln" id="kompetenzen-organisation">
+        <chapter id="kompetenzen-organisation" title="Eine agile Organisation entwickeln">
             <p>
                 Unternehmen müssen schnell lernen und schnell auf die Marktbedingungen im digitalen Zeitalter reagieren.
                 <b>Eine agile Organisation zu entwickeln</b> beinhaltet Konzepte und Werkzeuge zur Messung und
@@ -240,7 +240,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Scrum Glossar" id="glossar">
+    <chapter id="glossar" title="Scrum Glossar">
         <table style="both">
             <tr>
                 <td>Begriff (EN)</td>
@@ -254,7 +254,9 @@
                     Achse dargestellt. Je weiter die Zeit fortschreitet und je mehr Aufgaben aus dem Backlog entnommen
                     und erledigt werden, desto weniger Arbeit ist noch zu erwarten. Die verbleibende Arbeit kann auf
                     verschiedene Arten bewertet werden, z. B. in Form von User-Story-Punkten oder Aufgabenstunden
-                    (eng. <emphasis>task hours</emphasis>). Die verbleibende Arbeit in Sprint Backlogs und Product
+                    (eng.
+                    <emphasis>task hours</emphasis>
+                    ). Die verbleibende Arbeit in Sprint Backlogs und Product
                     Backlogs kann mithilfe eines Burn-Down-Diagramms kommuniziert werden. Siehe auch: Burnup-Diagramm.
                 </td>
             </tr>
@@ -266,7 +268,9 @@
                     fortschreitet und je mehr Aufgaben aus dem Backlog entnommen und erledigt werden, desto mehr kann
                     man erwarten, dass die Linie, die die geleistete Arbeit anzeigt, ansteigt. Der Arbeitsaufwand kann
                     auf verschiedene Weise gemessen werden, z. B. in User-Story-Punkten oder Aufgabenstunden
-                    (eng. <emphasis>task hours</emphasis>). Der Arbeitsumfang, der als "in-scope" betrachtet wird, kann
+                    (eng.
+                    <emphasis>task hours</emphasis>
+                    ). Der Arbeitsumfang, der als "in-scope" betrachtet wird, kann
                     auch als Linie dargestellt werden; es ist zu erwarten, dass sich der Burn-up dieser Linie nähert,
                     wenn die Arbeit abgeschlossen ist.
                 </td>
@@ -302,7 +306,9 @@
             <tr>
                 <td>Developer</td>
                 <td>
-                    Als Entwickler (eng. <emphasis>Developer</emphasis>) bezeichnet sich jedes Mitglied eines
+                    Als Entwickler (eng.
+                    <emphasis>Developer</emphasis>
+                    ) bezeichnet sich jedes Mitglied eines
                     Scrum-Teams, das sich verpflichtet, in jedem Sprint einen beliebigen Aspekt eines nutzbaren
                     Inkrements zu erstellen, unabhängig von der technischen, funktionalen oder sonstigen
                     Spezialisierung.
@@ -319,19 +325,35 @@
             <tr>
                 <td>Empiricism</td>
                 <td>
-                    Als Empirismus (eng. <emphasis>empiricism</emphasis>) wir der Prozesssteuerungstyp bezeichnet, bei
+                    Als Empirismus (eng.
+                    <emphasis>empiricism</emphasis>
+                    ) wir der Prozesssteuerungstyp bezeichnet, bei
                     dem nur die Vergangenheit als sicher akzeptiert wird und bei der Entscheidungen auf Beobachtung
-                    (eng. <emphasis>observation</emphasis>), Erfahrung (eng. <emphasis>experience</emphasis>) und
-                    Experiment (eng. <emphasis>experimentation</emphasis>) beruhen. Der Empirismus beruht auf drei
-                    Säulen: Transparenz (eng. <emphasis>transparency</emphasis>), Kontrolle
-                    (eng. <emphasis>inspection</emphasis>) und Anpassung (eng. <emphasis>adaptation</emphasis>).
+                    (eng.
+                    <emphasis>observation</emphasis>
+                    ), Erfahrung (eng.
+                    <emphasis>experience</emphasis>
+                    ) und
+                    Experiment (eng.
+                    <emphasis>experimentation</emphasis>
+                    ) beruhen. Der Empirismus beruht auf drei
+                    Säulen: Transparenz (eng.
+                    <emphasis>transparency</emphasis>
+                    ), Kontrolle
+                    (eng.
+                    <emphasis>inspection</emphasis>
+                    ) und Anpassung (eng.
+                    <emphasis>adaptation</emphasis>
+                    ).
                 </td>
             </tr>
             <tr>
                 <td>Engineering standards</td>
                 <td>
                     Ein gemeinsames Set von Entwicklungs- und Technologiestandards, die von den Entwicklern angewendet
-                    werden, um veröffentlichungsfähige (eng. <emphasis>releasable</emphasis>) Software-Inkremente zu
+                    werden, um veröffentlichungsfähige (eng.
+                    <emphasis>releasable</emphasis>
+                    ) Software-Inkremente zu
                     erstellen.
                 </td>
             </tr>
@@ -389,7 +411,9 @@
             <tr>
                 <td>Refinement</td>
                 <td>
-                    siehe <emphasis>Product Backlog Refinement</emphasis>.
+                    siehe
+                    <emphasis>Product Backlog Refinement</emphasis>
+                    .
                 </td>
             </tr>
             <tr>
@@ -412,8 +436,16 @@
                 <td>
                     Die Definition von Scrum, verfasst und bereitgestellt von Ken Schwaber und Jeff Sutherland, den
                     Mitbegründern von Scrum. Diese Definition besteht aus den Verantwortlichkeiten
-                    (eng. <emphasis>accountabilities</emphasis>), Ereignissen (eng. <emphasis>events</emphasis>),
-                    Artefakten (eng. <emphasis>artifacts</emphasis>) und den Regeln (eng. <emphasis>rules</emphasis>),
+                    (eng.
+                    <emphasis>accountabilities</emphasis>
+                    ), Ereignissen (eng.
+                    <emphasis>events</emphasis>
+                    ),
+                    Artefakten (eng.
+                    <emphasis>artifacts</emphasis>
+                    ) und den Regeln (eng.
+                    <emphasis>rules</emphasis>
+                    ),
                     die Scrum miteinander verbindet.
                 </td>
             </tr>
@@ -435,9 +467,19 @@
                 <td>Scrum Values</td>
                 <td>
                     Eine Reihe grundlegender Werte und Qualitäten, die dem Scrum-Rahmen zugrunde liegen: Engagement
-                    (eng. <emphasis>commitment</emphasis>), Mut (eng. <emphasis>courage</emphasis>), Fokus
-                    (eng. <emphasis>focus</emphasis>), Offenheit (eng. <emphasis>openness</emphasis>), und Respekt
-                    (eng. <emphasis>respect</emphasis>).
+                    (eng.
+                    <emphasis>commitment</emphasis>
+                    ), Mut (eng.
+                    <emphasis>courage</emphasis>
+                    ), Fokus
+                    (eng.
+                    <emphasis>focus</emphasis>
+                    ), Offenheit (eng.
+                    <emphasis>openness</emphasis>
+                    ), und Respekt
+                    (eng.
+                    <emphasis>respect</emphasis>
+                    ).
                 </td>
             </tr>
             <tr>
@@ -520,22 +562,48 @@
                     </p>
 
                     <list>
-                        <li>Engagement (eng. <emphasis>commitment</emphasis>),</li>
-                        <li>Mut (eng. <emphasis>courage</emphasis>),</li>
-                        <li>Fokus (eng. <emphasis>focus</emphasis>),</li>
-                        <li>Offenheit (eng. <emphasis>openness</emphasis>),</li>
-                        <li>und Respekt (eng. <emphasis>respect</emphasis>)</li>
+                        <li>Engagement (eng.
+                            <emphasis>commitment</emphasis>
+                            ),
+                        </li>
+                        <li>Mut (eng.
+                            <emphasis>courage</emphasis>
+                            ),
+                        </li>
+                        <li>Fokus (eng.
+                            <emphasis>focus</emphasis>
+                            ),
+                        </li>
+                        <li>Offenheit (eng.
+                            <emphasis>openness</emphasis>
+                            ),
+                        </li>
+                        <li>und Respekt (eng.
+                            <emphasis>respect</emphasis>
+                            )
+                        </li>
                     </list>
 
                     <p>
                         vom Scrum-Team verkörpert und gelebt werden, werden die Scrum-Säulen
-                        (eng. <emphasis>Scrum pillars</emphasis>):
+                        (eng.
+                        <emphasis>Scrum pillars</emphasis>
+                        ):
                     </p>
 
                     <list>
-                        <li>Transparenz (eng. <emphasis>transparency</emphasis>),</li>
-                        <li>Kontrolle (eng. <emphasis>inspection</emphasis>),</li>
-                        <li>und Anpassung (eng. <emphasis>adaptation</emphasis>)</li>
+                        <li>Transparenz (eng.
+                            <emphasis>transparency</emphasis>
+                            ),
+                        </li>
+                        <li>Kontrolle (eng.
+                            <emphasis>inspection</emphasis>
+                            ),
+                        </li>
+                        <li>und Anpassung (eng.
+                            <emphasis>adaptation</emphasis>
+                            )
+                        </li>
                     </list>
 
                     <p>
@@ -544,9 +612,18 @@
                     </p>
 
                     <list>
-                        <li>Ereignissen (eng. <emphasis>events</emphasis>)</li>
-                        <li>Rollen (eng. <emphasis>roles</emphasis>)</li>
-                        <li>und Artefakten (eng. <emphasis>artifacts</emphasis>)</li>
+                        <li>Ereignissen (eng.
+                            <emphasis>events</emphasis>
+                            )
+                        </li>
+                        <li>Rollen (eng.
+                            <emphasis>roles</emphasis>
+                            )
+                        </li>
+                        <li>und Artefakten (eng.
+                            <emphasis>artifacts</emphasis>
+                            )
+                        </li>
                     </list>
 
                     <p>
@@ -565,7 +642,7 @@
         </table>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018

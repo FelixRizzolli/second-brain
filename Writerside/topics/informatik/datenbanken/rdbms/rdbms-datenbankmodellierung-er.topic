@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Das ER-Modell" id="rdbms-datenbankmodellierung-er">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="rdbms-datenbankmodellierung-er"
+       title="Das ER-Modell"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einleitung" id="einleitung">
+    <chapter id="einleitung" title="Einleitung">
         <p>
             Um dieses Thema besser zu erklären, benötigt es zuerst ein Beispiel: Beim Beispiel handelt es sich um eine
             Ausbildungsdatenbank. Diese soll Ausbildungsfächer, Auszubildende, Ausbilder und einiges mehr verwalten.
             Diese real existierenden Daten sollen nun datentechnisch abgebildet werden.
         </p>
 
-        <chapter title="Der Anforderungskatalog" id="einleitung-anforderungskatalog">
+        <chapter id="einleitung-anforderungskatalog" title="Der Anforderungskatalog">
             <p>
                 Ein Anforderungskatalog stellt die Grundlage für ein Datenmodell dar. Es muss zuerst klar sein, welche
                 Sachverhalte datentechnisch abgebildet werden sollen, bevor ein Datenmodell erstellt werden kann. Ein
@@ -35,7 +35,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Grundlagen" id="grundlagen">
+    <chapter id="grundlagen" title="Grundlagen">
         <p>
             Das ER-Modell (Entity-Relationship-Modell) wurde von Peter Chan Mitte der siebziger Jahre vorgestellt und
             dient bis heute noch als praktisches Modell um Informationsstrukturen modellhaft abzubilden. Das Wort
@@ -50,17 +50,17 @@
         </p>
     </chapter>
 
-    <chapter title="Entitäten" id="grundlagen-entitaeten">
+    <chapter id="grundlagen-entitaeten" title="Entitäten">
         <p>
             Entitäten (Objekte) werden in einem ER-Modell als Rechteck notiert. Im Rechteck wird die Bezeichnung oder
             der Name des abzubildenden Objekts angegeben. Für die Ausbildungsdatenbank werden somit Objekte wie
             auszubildender, ausbildungsberuf usw. als Entitäten in einem Rechteck gekennzeichnet.
         </p>
 
-        <img src="datenbanken-rdbms-er-entity.jpg" alt="ER - ENTITY"/>
+        <img alt="ER - ENTITY" src="datenbanken-rdbms-er-entity.jpg"/>
     </chapter>
 
-    <chapter title="Attribute" id="grundlagen-attribute">
+    <chapter id="grundlagen-attribute" title="Attribute">
         <p>
             Eine Entität wie auszubildender besitzt auch Informationen bzw. Eigenschaften, die zur Verwaltung des
             Auszubildenden erforderlich sind, dazu gehört beispielsweise der Name, der Vorname, das Geburtsdatum usw.
@@ -69,8 +69,8 @@
             jeweils zu einer Entität gehörenden Attribute.
         </p>
 
-        <img src="datenbanken-rdbms-er-attribute.jpg" alt="ER - ATTRIBUTE"/>
-        
+        <img alt="ER - ATTRIBUTE" src="datenbanken-rdbms-er-attribute.jpg"/>
+
         <table>
             <tr>
                 <td>name</td>
@@ -104,7 +104,7 @@
             </tr>
         </table>
 
-        <chapter title="Schlüsselattribute" id="grundlagen-attribute-key">
+        <chapter id="grundlagen-attribute-key" title="Schlüsselattribute">
             <p>
                 Das Schlüsselattribut ist jede Spalte, in der die Datenfelder gespeichert werden, welche einen Datensatz
                 eindeutig identifizierbar machen. Dieses Attribut wird beim Bezeichner am Anfang mit einer Raute
@@ -115,9 +115,9 @@
                 hierfür meist eine <code>ID</code> in Form einer eindeutigen Nummer verwendet. Ein derartiges
                 Schlüsselattribut wird auch als künstlicher Schlüssel oder Surrogatschlüssel bezeichnet.
             </p>
-            
-            <img src="datenbanken-rdbms-er-attribute-key.jpg" alt="ER - ATTRIBUT KEY"/>
-            
+
+            <img alt="ER - ATTRIBUT KEY" src="datenbanken-rdbms-er-attribute-key.jpg"/>
+
             <table>
                 <tr>
                     <td>ausid</td>
@@ -163,13 +163,13 @@
             </p>
         </chapter>
 
-        <chapter title="Wertebereiche für Attribute" id="grundlagen-attribute-wertebereiche">
+        <chapter id="grundlagen-attribute-wertebereiche" title="Wertebereiche für Attribute">
             <p>
                 Ein Wertebereich entspricht sämtlichen Werten, die einem Attribut zugeordnet werden können. Ein
                 Wertebereich wird auch als Domain bezeichnet. Es gibt unterschiedliche Wertebereiche, die jeweils einem
                 Attribut einer Entität zugeordnet werden können. Hierzu gehören:
             </p>
-            
+
             <list>
                 <li>
                     Zeichenketten einer definierten Länge
@@ -184,7 +184,7 @@
                     Datumsangaben, die von einem verwendeten Kalender abhängig sind
                 </li>
             </list>
-            
+
             <table>
                 <tr>
                     <td>Attribut</td>
@@ -214,7 +214,7 @@
             </table>
         </chapter>
 
-        <chapter title="Pflichtattribute oder optionale Attribute" id="grundlagen-attribute-pflicht-optional">
+        <chapter id="grundlagen-attribute-pflicht-optional" title="Pflichtattribute oder optionale Attribute">
             <p>
                 In der Modellierung unterscheiden sich optionale Attribute von Attributen, die verbindlich anzugeben
                 sind. Pflichtattribute sind ebenfalls im ER-Modell zu kennzeichnen, um sie unterscheidbar zu machen.
@@ -222,11 +222,11 @@
                 <code>(O)</code> in Klammern notiert werden.
             </p>
 
-            <img src="datenbanken-rdbms-er-attribute-pflicht.jpg" alt="ER - ATTRIBUTE PFLICHT/OPTIONAL" />
+            <img alt="ER - ATTRIBUTE PFLICHT/OPTIONAL" src="datenbanken-rdbms-er-attribute-pflicht.jpg"/>
         </chapter>
     </chapter>
 
-    <chapter title="Beziehungen" id="beziehungen">
+    <chapter id="beziehungen" title="Beziehungen">
         <p>
             Entitäten können in Beziehung zu anderen Entitäten stehen. Wenn eine Beziehung identifiziert wurde, wird
             diese Beziehung zwischen den Entitäten im Diagramm mit einer einfachen Verbindungslinie beschrieben.
@@ -254,7 +254,7 @@
                 Beziehungslinie mit der Krähenfußnotation gekennzeichnet.
             </li>
         </list>
-        
+
         <p>
             Die Beziehungstypen <code>1:1</code>, <code>1:n</code>, und <code>m:n</code> werden als Kardinalität
             bezeichnet. Für die Ermittlung von Kardinalitäten einer Beziehung wird folgende Frage zweimal angewandt: Wie
@@ -264,16 +264,16 @@
             Nun sehen folgende Entitäten zur Verfügung deren Beziehungen ermittelt werden sollen: auszubildender,
             ausbildungsvertrag, adresse, ausbildungsberuf und lehrfach.
         </p>
-        
-        <img src="datenbanken-rdbms-er-beziehungen-ohne.png" alt="ER - Modell ohne Beziehungen"/>
-        
+
+        <img alt="ER - Modell ohne Beziehungen" src="datenbanken-rdbms-er-beziehungen-ohne.png"/>
+
         <p>
             Die Beziehung dieser Entitäten sieht wie folgt aus:
         </p>
-        
-        <img src="datenbanken-rdbms-er-beziehungen-mit.png" alt="ER - Modell mit Beziehungen"/>
 
-        <chapter title="Starke und schwache Entitäten " id="beziehungen-staerke">
+        <img alt="ER - Modell mit Beziehungen" src="datenbanken-rdbms-er-beziehungen-mit.png"/>
+
+        <chapter id="beziehungen-staerke" title="Starke und schwache Entitäten ">
             <p>
                 Es gibt Entitäten, die eine Beziehung eingehen und dabei abhängig von der Existenz einer anderen Entität
                 sind. Die Beziehung zwischen einer schwachen und einer starken Entität hat sowohl Auswirkungen auf die
@@ -330,7 +330,7 @@
                 </li>
             </list>
 
-            <chapter title="Starke Entität: auszubildender" id="beziehungen-staerke-stark">
+            <chapter id="beziehungen-staerke-stark" title="Starke Entität: auszubildender">
                 <table>
                     <tr>
                         <td>ausid</td>
@@ -371,7 +371,7 @@
                 </table>
             </chapter>
 
-            <chapter title="Schwache Entität: adresse" id="beziehungen-staerke-schwach">
+            <chapter id="beziehungen-staerke-schwach" title="Schwache Entität: adresse">
                 <table>
                     <tr>
                         <td>aid</td>
@@ -426,7 +426,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

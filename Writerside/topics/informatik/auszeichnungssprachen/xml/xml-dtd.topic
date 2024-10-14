@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="XML - DTD (Document Type Definition)" id="xml-dtd" help-id="xml-dtds">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic help-id="xml-dtds"
+       id="xml-dtd"
+       title="XML - DTD (Document Type Definition)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlegendes zu DTD" id="grundlagen">
+    <chapter id="grundlagen" title="Grundlegendes zu DTD">
         <p>
             Document Type Definition ist die traditionelle Methode, um ein Standard für ein XML-Dokument zu definieren.
             Ein solcher Standard enthält Regeln, die bestimmen, welche Elemente und Attribute erforderlich oder zulässig
@@ -72,7 +73,8 @@
                 <td>
                     <code-block lang="xml">
                         <![CDATA[
-                        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+                        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
                         ]]>
                     </code-block>
                 </td>
@@ -83,19 +85,19 @@
             </tr>
         </table>
 
-        <chapter title="Die DTD" id="grundlagen-dtd">
-            <code-block lang="xml" collapsible="true" collapsed-title="note.xml">
+        <chapter id="grundlagen-dtd" title="Die DTD">
+            <code-block collapsed-title="note.xml" collapsible="true" lang="xml">
                 <![CDATA[
                 <?xml version="1.0"?>
 
                 <!DOCTYPE note
-                [
-                    <!ELEMENT note (to,from,heading,body)>
-                    <!ELEMENT to (#PCDATA)>
-                    <!ELEMENT from (#PCDATA)>
-                    <!ELEMENT heading (#PCDATA)>
-                    <!ELEMENT body (#PCDATA)>
-                ]>
+                        [
+                                <!ELEMENT note (to,from,heading,body)>
+                                <!ELEMENT to (#PCDATA)>
+                                <!ELEMENT from (#PCDATA)>
+                                <!ELEMENT heading (#PCDATA)>
+                                <!ELEMENT body (#PCDATA)>
+                                ]>
 
                 <note>
                     <to>Tove</to>
@@ -106,7 +108,7 @@
                 ]]>
             </code-block>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="note.dtd">
+            <code-block collapsed-title="note.dtd" collapsible="true" lang="xml">
                 <![CDATA[
                 <!ELEMENT note (to,from,heading,body)>
                 <!ELEMENT to (#PCDATA)>
@@ -116,7 +118,7 @@
                 ]]>
             </code-block>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="note.xml">
+            <code-block collapsed-title="note.xml" collapsible="true" lang="xml">
                 <![CDATA[
                 <?xml version="1.0"?>
                 <!DOCTYPE note SYSTEM "note.dtd">
@@ -184,7 +186,7 @@
             </table>
         </chapter>
 
-        <chapter title="Die Bausteine von XML Dokumenten " id="grundlagen-bausteine">
+        <chapter id="grundlagen-bausteine" title="Die Bausteine von XML Dokumenten ">
             <table style="header-row">
                 <tr>
                     <td>Baustein</td>
@@ -236,7 +238,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Elemente" id="elemente">
+    <chapter id="elemente" title="Elemente">
         <p>
             Ein Element wird mithilfe einer <code>&lt;!ELEMENT&gt;</code>-Deklaration angegeben. Der Elementinhalt kann
             aus einer Liste verschachtelter Elemente bestehen oder auf einfachen Textinhalten hinweisen. Enthält ein
@@ -244,7 +246,7 @@
             angegeben.
         </p>
 
-        <chapter title="Vorgegebene Reihenfolge " id="elemente-reihenfolge">
+        <chapter id="elemente-reihenfolge" title="Vorgegebene Reihenfolge ">
             <p>
                 Werden die Kind-Elemente in der DTD Kommasepariert angegeben, dann müssen sie in der vorgegebenen
                 Reihenfolge vorkommen.
@@ -257,7 +259,7 @@
             </code-block>
         </chapter>
 
-        <chapter title="Alternativen" id="elemente-alternativen">
+        <chapter id="elemente-alternativen" title="Alternativen">
             <p>
                 Mit der Pipe können Alternativen für Elemente definiert werden:
                 <code>&lt;!ELEMENT anschrift (postfach | strasse)&gt;</code> Alternativen können auch anstelle eines
@@ -270,25 +272,25 @@
                 <!-- DTD -->
                 <!ELEMENT anschrift (name, (#PCDATA | postfach | (strasse, hausnr)), plz, ort)>
 
-                <!-- XML -->
+                        <!-- XML -->
                 <anschrift>
-                  <name>Rheinwerk Verlag</name>
-                  <strasse>Rheinwerkallee</strasse>
-                  <hausnr>4</hausnr>
-                  <plz>53227</plz>
-                  <ort>Bonn</ort>
+                <name>Rheinwerk Verlag</name>
+                <strasse>Rheinwerkallee</strasse>
+                <hausnr>4</hausnr>
+                <plz>53227</plz>
+                <ort>Bonn</ort>
                 </anschrift>
                 <anschrift>
-                  <name>MICROGRAFX (Deutschland) GmbH</name>
-                  <postfach>14 18</postfach>
-                  <plz>85704</plz>
-                  <ort>Unterschleißheim</ort>
+                <name>MICROGRAFX (Deutschland) GmbH</name>
+                <postfach>14 18</postfach>
+                <plz>85704</plz>
+                <ort>Unterschleißheim</ort>
                 </anschrift>
                 ]]>
             </code-block>
         </chapter>
 
-        <chapter title="Häufigkeitsmodifikatoren" id="elemente-haeufigkeitsmodifikatoren">
+        <chapter id="elemente-haeufigkeitsmodifikatoren" title="Häufigkeitsmodifikatoren">
             <p>
 
             </p>
@@ -322,18 +324,18 @@
                 <!-- DTD -->
                 <!ELEMENT author (lastname, firstname+)>
 
-                <!-- XML -->
+                        <!-- XML -->
                 <author>
-                    <lastname>Bendis</lastname>
-                    <firstname>Brian</firstname>
-                    <firstname>Michael</firstname>
+                <lastname>Bendis</lastname>
+                <firstname>Brian</firstname>
+                <firstname>Michael</firstname>
                 </author>
                 ]]>
             </code-block>
         </chapter>
     </chapter>
 
-    <chapter title="Attribute" id="attribute">
+    <chapter id="attribute" title="Attribute">
         <p>
             Zulässige Attribute für ein Element werden in eine <code>&lt;!ATTLIST&gt;</code>-Angabe geschrieben. Es ist
             aber mit keiner Definitionsmethode möglich eine bestimmte Reihenfolge der Attribute eines Elements
@@ -345,15 +347,15 @@
             <!-- DTD SYNTAX -->
             <!ATTLIST element-name attribute-name attribute-type attribute-value>
 
-            <!-- DTD EXAMPLE -->
+                    <!-- DTD EXAMPLE -->
             <!ATTLIST payment type CDATA "check">
 
-            <!-- XML EXAMPLE -->
-            <payment type="check" />
+                    <!-- XML EXAMPLE -->
+            <payment type="check"/>
             ]]>
         </code-block>
 
-        <chapter title="Atribut-Type" id="attribute-typ">
+        <chapter id="attribute-typ" title="Atribut-Type">
             <table style="header-row">
                 <tr>
                     <td>Typ</td>
@@ -476,7 +478,7 @@
             </table>
         </chapter>
 
-        <chapter title="Attribut-Value" id="attribute-wert">
+        <chapter id="attribute-wert" title="Attribut-Value">
             <table style="header-row">
                 <tr>
                     <td>Wert</td>
@@ -513,7 +515,7 @@
             </table>
         </chapter>
 
-        <chapter title="Bemerkung" id="attribute-bemerkung">
+        <chapter id="attribute-bemerkung" title="Bemerkung">
             <p>
                 Trotz der vielen verschiedenen Attributtypen gibt es keine vernünftige Möglichkeit, die Intensität auf
                 eine ganze Zahl zwischen 0 und 255 einzuschränken – es sei denn, man hat Lust, anstelle von CDATA die
@@ -524,7 +526,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Entitys" id="entitys">
+    <chapter id="entitys" title="Entitys">
         <p>
             Entitys bieten vor allem die Möglichkeit, häufig vorkommende XML-Blöcke abzukürzen und Zeichen darzustellen,
             die im aktuellen Zeichensatz des XML-Dokuments nicht vorhanden sind. Im XML-Dokument werden die in der DTD
@@ -539,7 +541,7 @@
             <!-- SYNTAX -->
             <!ENTITY entity-name "entity-value">
 
-            <!-- BEISPIEL -->
+                    <!-- BEISPIEL -->
             <!ENTITY copymsg "Copyright 2023 by Felix Rizzolli">
             ]]>
         </code-block>
@@ -555,12 +557,12 @@
         <code-block lang="xml">
             <![CDATA[
             <!ENTITY anschrift '<anschrift>
-                                    <name>Rheinwerk Verlag</name>
-                                    <strasse>Rheinwerkallee</strasse>
-                                    <hausnr>4</hausnr>
-                                    <plz>53227</plz>
-                                    <ort>Bonn</ort>
-                                </anschrift>'>
+            <name>Rheinwerk Verlag</name>
+            <strasse>Rheinwerkallee</strasse>
+            <hausnr>4</hausnr>
+            <plz>53227</plz>
+            <ort>Bonn</ort>
+            </anschrift>'>
             ]]>
         </code-block>
 
@@ -575,13 +577,13 @@
             <!-- SYNTAX -->
             <!ENTITY entity-name SYSTEM "URI/URL">
 
-            <!-- BEISPIEL -->
+                    <!-- BEISPIEL -->
             <!ENTITY anschrift SYSTEM "anschrift.xml">
             ]]>
         </code-block>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836254663, IT Handbuch für Fachinformatiker, Sascha Kersken, Rheinwerk Verlag GmbH, 2017

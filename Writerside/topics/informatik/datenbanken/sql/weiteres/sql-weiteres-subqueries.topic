@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Subqueries" id="sql-weiteres-subqueries">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-weiteres-subqueries"
+       title="Subqueries"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlagen" id="grundlagen">
+    <chapter id="grundlagen" title="Grundlagen">
         <p>
             Unterabfragen, oder auch Subqueries genannt, bieten in SQL eine hohe Flexibilität bei der Lösungsfindung für
             komplexe Anforderungen. Unterabfragen sind <code>SELECT</code>-Abfragen, die innerhalb einer übergeordneten
@@ -18,13 +18,16 @@
         </p>
         <p>
             Unterabfragen werden in zwei Kategorien unterteilt. In die erste Kategorie fallen die Unterabfragen, die
-            nicht in Beziehung zur übergeordneten Abfrage stehen. Diese Unterabfragen werden als <emphasis>nicht
-            korrelierende Abfragen</emphasis> bezeichnet. Zur zweiten Kategorie von Unterabfragen zählen diejenigen, die
+            nicht in Beziehung zur übergeordneten Abfrage stehen. Diese Unterabfragen werden als
+            <emphasis>nicht
+                korrelierende Abfragen
+            </emphasis>
+            bezeichnet. Zur zweiten Kategorie von Unterabfragen zählen diejenigen, die
             in Beziehung zu einer übergeordneten Abfrage stehen können.
         </p>
     </chapter>
 
-    <chapter title="Korrelierende Unterabfragen" id="korrelierend">
+    <chapter id="korrelierend" title="Korrelierende Unterabfragen">
         <p>
             Unterabfragen stehen in Korrelation zu einer übergeordneten Abfrage, wenn Spaltenwerte einer Unterabfrage
             mit Spaltenwerte einer übergeordneten Abfrage verglichen werden, um eine Beziehung zwischen den Abfragen
@@ -37,33 +40,33 @@
 
         <code-block lang="sql">
             /* BEISPIELANWENDUNG (1) */
-            SELECT  m.mitarbeiterid
-                 ,  m.vorname
-                 ,  m.nachname
-                 ,  m.bonus
-              FROM mitarbeiter AS m
-             WHERE  m.bonus > ( SELECT  MAX(bonuszahlung)
-                                  FROM bonus AS b
-                                 WHERE m.mitarbeiterid = b. mitarbeiterid
-                                 GROUP
-                                    BY mitarbeiterid )
+            SELECT m.mitarbeiterid
+            , m.vorname
+            , m.nachname
+            , m.bonus
+            FROM mitarbeiter AS m
+            WHERE m.bonus > ( SELECT MAX(bonuszahlung)
+            FROM bonus AS b
+            WHERE m.mitarbeiterid = b. mitarbeiterid
+            GROUP
+            BY mitarbeiterid )
             ;
         </code-block>
 
         <code-block lang="sql">
             /* BEISPIELANWENDUNG (2) */
-            SELECT  ( SELECT  anrede
-                        FROM anrede AS a
-                       WHERE m.geschlecht = a.geschlecht
-                    ) AS anrede
-                 ,  vorname
-                 ,  nachname
-              FROM mitarbeiter AS m
+            SELECT ( SELECT anrede
+            FROM anrede AS a
+            WHERE m.geschlecht = a.geschlecht
+            ) AS anrede
+            , vorname
+            , nachname
+            FROM mitarbeiter AS m
             ;
         </code-block>
     </chapter>
 
-    <chapter title="Nicht korrelierende Unterabfragen" id="nicht-korellierend">
+    <chapter id="nicht-korellierend" title="Nicht korrelierende Unterabfragen">
         <p>
             Unterabfragen, die nicht in Beziehung zu einer übergeordneten Abfrage stehen werden als nicht korrelierende
             Unterabfragen bezeichnet. Diese Art von Unterabfragen wird sehr häufig verwendet, um in einer
@@ -76,7 +79,7 @@
         <p>
             Es wird zwischen folgenden Unterabfragen unterschieden:
         </p>
-        
+
         <list>
             <li>Abfragen, die einen Spaltenwert zurückliefern</li>
             <li>Abfragen, die mehrere Spaltenwerte einer Spalte zurückliefern</li>
@@ -100,36 +103,36 @@
 
         <code-block lang="sql">
             /* BEISPIELANWENDUNG MIT IN-Klausel */
-            SELECT  vorname
-                 ,  nachname
-              FROM mitarbeiter
-             WHERE  mitarbeiterid IN ( SELECT  mitarbeiterid
-                                         FROM bonus
-                                        GROUP
-                                           BY mitarbeiterid
-                                     )
+            SELECT vorname
+            , nachname
+            FROM mitarbeiter
+            WHERE mitarbeiterid IN ( SELECT mitarbeiterid
+            FROM bonus
+            GROUP
+            BY mitarbeiterid
+            )
             ;
         </code-block>
 
         <code-block lang="sql">
             /* BEISPIELANWENDUNG MIT JOIN */
-            SELECT  m.vorname
-                 ,  m.nachname
-                 ,  b.maxbonuszahlung
-              FROM mitarbeiter AS m
-             INNER
-              JOIN  ( SELECT  mitarbeiterid
-                           ,  MAX(bonuszahlung) AS maxbonuszahlung
-                        FROM bonus
-                       GROUP
-                          BY mitarbeiterid
-                    ) AS b
-                ON  m.mitarbeiterid = b.mitarbeiterid
+            SELECT m.vorname
+            , m.nachname
+            , b.maxbonuszahlung
+            FROM mitarbeiter AS m
+            INNER
+            JOIN ( SELECT mitarbeiterid
+            , MAX(bonuszahlung) AS maxbonuszahlung
+            FROM bonus
+            GROUP
+            BY mitarbeiterid
+            ) AS b
+            ON m.mitarbeiterid = b.mitarbeiterid
             ;
         </code-block>
     </chapter>
 
-    <chapter title="ANY, SOME und ALL: Vergleiche mit Ergebnistabellen aus Unterabfragen durchführen" id="vergleiche">
+    <chapter id="vergleiche" title="ANY, SOME und ALL: Vergleiche mit Ergebnistabellen aus Unterabfragen durchführen">
         <p>
             <code>ANY</code>, <code>SOME</code> und <code>ALL</code> werden verwendet, um Bedingungen zu formulieren,
             die auf Ergebnisse von Unterabfragen angewendet werden. <code>ANY</code> und <code>SOME</code> sind in ihrer
@@ -141,28 +144,28 @@
 
         <code-block lang="sql">
             /* BEISPIELANWENDUNG (1) */
-            SELECT  mitarbeiterid
-                 ,  bezahlung
-              FROM bonus
-             WHERE  bezahlung = SOME ( SELECT  umsatz
-                                         FROM umsatz
-                                     )
+            SELECT mitarbeiterid
+            , bezahlung
+            FROM bonus
+            WHERE bezahlung = SOME ( SELECT umsatz
+            FROM umsatz
+            )
             ;
         </code-block>
 
         <code-block lang="sql">
             /* BEISPIELANWENDUNG (2) */
-            SELECT  bonuszahlung
-                 ,  mitarbeiterid
-              FROM bonus
-             WHERE  bonuszahlung > ALL ( SELECT  umsatz
-                                           FROM umsatz
-                                       )
+            SELECT bonuszahlung
+            , mitarbeiterid
+            FROM bonus
+            WHERE bonuszahlung > ALL ( SELECT umsatz
+            FROM umsatz
+            )
             ;
         </code-block>
     </chapter>
 
-    <chapter title="EXISTS: Auf die Existenz von Zeilen Prüfen" id="exists">
+    <chapter id="exists" title="EXISTS: Auf die Existenz von Zeilen Prüfen">
         <p>
             Mit dem <code>EXISTS</code>-Vergleichsoperator wird in einer <code>WHERE</code>-Klausel einer übergeordneten
             Abfrage geprüft, ob einer Unterabfrage eine Zeile zurückgibt. Die Anzahl der Spalten sowie deren Inhalt, die
@@ -172,30 +175,30 @@
 
         <code-block lang="sql">
             /* BEISPIELANWENDUNG (1) */
-            SELECT  m.vorname
-                 ,  m.nachname
-              FROM mitarbeiter AS m
-             WHERE EXISTS( SELECT  b.mitarbeiterid
-                             FROM bonus AS b
-                            WHERE  b.mitarbeiterid = m.mitarbeiterid
-                         )
+            SELECT m.vorname
+            , m.nachname
+            FROM mitarbeiter AS m
+            WHERE EXISTS( SELECT b.mitarbeiterid
+            FROM bonus AS b
+            WHERE b.mitarbeiterid = m.mitarbeiterid
+            )
             ;
         </code-block>
 
         <code-block lang="sql">
             /* BEISPIELANWENDUNG (2) */
-            SELECT  m.vorname
-                 ,  m.nachname
-              FROM mitarbeiter AS m
-             WHERE NOT EXISTS( SELECT  b.mitarbeiterid
-                                 FROM bonus AS b
-                                WHERE  b.mitarbeiterid = m.mitarbeiterid
-                             )
+            SELECT m.vorname
+            , m.nachname
+            FROM mitarbeiter AS m
+            WHERE NOT EXISTS( SELECT b.mitarbeiterid
+            FROM bonus AS b
+            WHERE b.mitarbeiterid = m.mitarbeiterid
+            )
             ;
         </code-block>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

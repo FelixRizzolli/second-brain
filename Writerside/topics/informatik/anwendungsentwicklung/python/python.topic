@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Python" id="python">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="python"
+       title="Python"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Geschichte und Entstehung" id="geschichte-und-entstehung">
+    <chapter id="geschichte-und-entstehung" title="Geschichte und Entstehung">
         <p>
             Die Programmiersprache Python wurde Anfang der 1990er-Jahre von dem Niederländer Guido van Rossum am Centrum
             voor Wiskunde en Informatica (CWI) in Amsterdam entwickelt. Ursprünglich war sie als Skriptsprache für das
@@ -39,7 +40,7 @@
         </p>
     </chapter>
 
-    <chapter title="Grundlegende Konzepte" id="grundlegende-konzepte">
+    <chapter id="grundlegende-konzepte" title="Grundlegende Konzepte">
         <table>
             <tr>
                 <td>Konzept</td>
@@ -81,9 +82,15 @@
             <tr>
                 <td><b>Open-Source</b></td>
                 <td>
-                    Python steht unter der <b><tooltip term="LIZENZ-PSF">PSF</tooltip>-Lizenz</b>, die
-                    wesentlich weniger restriktiv ist als beispielsweise <tooltip term="LIZENZ-GNU">GNU</tooltip>. So
-                    erlaubt es die <tooltip term="LIZENZ-PSF">PSF</tooltip>-Lizenz, den Python-Interpreter
+                    Python steht unter der <b>
+                    <tooltip term="LIZENZ-PSF">PSF</tooltip>
+                    -Lizenz</b>, die
+                    wesentlich weniger restriktiv ist als beispielsweise
+                    <tooltip term="LIZENZ-GNU">GNU</tooltip>
+                    . So
+                    erlaubt es die
+                    <tooltip term="LIZENZ-PSF">PSF</tooltip>
+                    -Lizenz, den Python-Interpreter
                     lizenzkostenfrei in Anwendungen einzubetten und mit diesen auszuliefern, ohne dass der Code
                     offengelegt werden muss oder Lizenzkosten anfallen. Diese Politik macht Python auch für kommerzielle
                     Anwendungen attraktiv.
@@ -128,7 +135,7 @@
         </table>
     </chapter>
 
-    <chapter title="Einsatzbeispiele" id="einsatzbeispiele">
+    <chapter id="einsatzbeispiele" title="Einsatzbeispiele">
         <p>
             Python erfreut sich großer Bekanntheit und Verbreitung sowohl bei Softwarefirmen und unter Wissenschaftlern
             als auch in der Open-Source-Gemeinschaft. Die Palette der Produkte, die zumindest zum Teil in Python

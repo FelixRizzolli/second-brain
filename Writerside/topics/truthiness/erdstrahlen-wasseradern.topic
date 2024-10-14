@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Erdstrahlen &amp; Wasseradern" id="erdstrahlen-wasseradern">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="erdstrahlen-wasseradern"
+       title="Erdstrahlen &amp; Wasseradern"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Wird mein Schlaf und meine Gesundheit durch eine Wasserader gestört?"
-             id="wird-mein-schlaf-und-meine-gesundheit-durch-eine-wasserader-gestoert">
-        <chapter title="Annahme"
-                 id="wird-mein-schlaf-und-meine-gesundheit-durch-eine-wasserader-gestoert-annahme">
+    <chapter id="wird-mein-schlaf-und-meine-gesundheit-durch-eine-wasserader-gestoert"
+             title="Wird mein Schlaf und meine Gesundheit durch eine Wasserader gestört?">
+        <chapter id="wird-mein-schlaf-und-meine-gesundheit-durch-eine-wasserader-gestoert-annahme"
+                 title="Annahme">
             <p>
                 In der Vorstellung der Radiästheten wird die Erdstrahlung durch Wasseradern, Verwerfungen (= tektonische
                 Zerreiß- oder Bruchstelle im Gestein) sowie verschiedene Gitternetze ausgelöst werden, die nicht näher
@@ -21,8 +22,8 @@
             </p>
         </chapter>
 
-        <chapter title="Norwegen 2005 – randomisierte Doppel-Blindstudie"
-                 id="norwegen-2005–randomisierte-doppel-blindstudie">
+        <chapter id="norwegen-2005–randomisierte-doppel-blindstudie"
+                 title="Norwegen 2005 – randomisierte Doppel-Blindstudie">
             <p>
                 2005 wurde in Norwegen eine randomisierte Doppel-Blindstudie veröffentlicht, an der 80 Patienten (67
                 Frauen und 13 Männer) teilnahmen. Die Hälfte der Patienten bekam ein Gerät, das nach Herstellerangaben
@@ -36,7 +37,7 @@
             </p>
         </chapter>
 
-        <chapter title="Messbarkeit der Störungen" id="messbarkeit-der-stoerungen">
+        <chapter id="messbarkeit-der-stoerungen" title="Messbarkeit der Störungen">
             <p>
                 Eine Störung des Magnetfeldes über einem unterirdischen Wasserlauf konnte noch nie gemessen werden.
                 Obwohl es geophysikalische Messgeräte gibt, die jede kleinste Veränderung des Erdmagnetfelds
@@ -48,7 +49,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Bovis-Einheiten" id="bovis-einheiten">
+    <chapter id="bovis-einheiten" title="Bovis-Einheiten">
         <p>
             In der Radiästhesie wird die Bovis-Einheit als Maßeinheit der Stärke einer Lebens- oder feinstofflichen
             Energie verwendet. Die Bovis-Zahlen sind <b>intuitiv</b> und <b>nicht falsifizierbar</b>. Mitunter ist es
@@ -57,14 +58,14 @@
         </p>
     </chapter>
 
-    <chapter title="Warum schaffen es Radiästheten präzise die Position einer Wasserader zu ermitteln?"
-             id="warum-schaffen-es-raadiaestheten-praezise-die-position-einer-wasserader-zu-ermitteln">
-        <chapter title="Annahme"
-                 id="warum-schaffen-es-raadiaestheten-praezise-die-position-einer-wasserader-zu-ermitteln-annahme">
+    <chapter id="warum-schaffen-es-raadiaestheten-praezise-die-position-einer-wasserader-zu-ermitteln"
+             title="Warum schaffen es Radiästheten präzise die Position einer Wasserader zu ermitteln?">
+        <chapter id="warum-schaffen-es-raadiaestheten-praezise-die-position-einer-wasserader-zu-ermitteln-annahme"
+                 title="Annahme">
             <p>TODO</p>
         </chapter>
 
-        <chapter title="Carpenter-Effekt" id="carpenter-effekt">
+        <chapter id="carpenter-effekt" title="Carpenter-Effekt">
             <p>
                 Die Ausschläge einer Wünschelrute, durch die die Strahlenquellen gefunden werden sollen, können schon
                 seit dem 19. Jahrhundert durch unwillkürliche Muskelzuckungen des Rutengängers erklärt werden. Diese
@@ -76,7 +77,7 @@
             </p>
         </chapter>
 
-        <chapter title="Wissenschaftliche Tests ohne Erfolg" id="wissenschaftliche-tests-ohne-erfolg">
+        <chapter id="wissenschaftliche-tests-ohne-erfolg" title="Wissenschaftliche Tests ohne Erfolg">
             <p>
                 Vielleicht können aber doch nur besonders "Strahlenfühlige", also Radiästheten die Störzonen aufspüren.
                 Um das festzustellen, wurden immer wieder wissenschaftliche Tests mit Rutengängern durchgeführt. Das
@@ -86,7 +87,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(WEBSEITE)</b>
             <a href="https://de.wikipedia.org/wiki/Erdstrahlen" ignore-vars="true">
@@ -113,7 +114,8 @@
         </tip>
         <tip>
             <b>(WEBSEITE)</b>
-            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0965229905000506?via%3Dihub" ignore-vars="true">
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0965229905000506?via%3Dihub"
+               ignore-vars="true">
                 https://www.sciencedirect.com/science/article/abs/pii/S0965229905000506?via%3Dihub
             </a>, 2023-03-07 14:45
         </tip>

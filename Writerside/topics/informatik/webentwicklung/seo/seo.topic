@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="SEO (Search Engine Optimization)" id="seo">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="seo"
+       title="SEO (Search Engine Optimization)"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
     <warning>
         Diese Dokumentation wurde im Jahr <b>2019</b> verfasst und basiert auf den damaligen SEO-Trends und -Praktiken.
@@ -12,14 +12,14 @@
         sein. Ich empfehle deshalb, sich auf die neuesten SEO-Ressourcen zu beziehen, um die Website zu optimieren.
     </warning>
 
-    <chapter title="Was ist SEO?" id="was-ist-seo">
+    <chapter id="was-ist-seo" title="Was ist SEO?">
         SEM (Search Engine Marketing) umfasst die Teilgebiete SEA (Search Engine Advertising - Suchmaschinenwerbung) und
         SEO (Search Engine Optimization – Suchmaschinenoptimierung).
     </chapter>
 
-    <chapter title="Allgemeines" id="allgemeines">
+    <chapter id="allgemeines" title="Allgemeines">
 
-        <chapter title="Suchmaschinen" id="allgemeines-suchmaschinen">
+        <chapter id="allgemeines-suchmaschinen" title="Suchmaschinen">
             <p>
                 SEM (Search Engine Marketing) umfasst die Teilgebiete SEA (Search Engine Advertising -
                 Suchmaschinenwerbung) und SEO (Search Engine Optimization – Suchmaschinenoptimierung).
@@ -38,7 +38,7 @@
                 welcher den gesamten Text einer Webseite für den Aufbau des Suchindexes verwendete.
             </p>
 
-            <chapter title="Google" id="allgemeines-google">
+            <chapter id="allgemeines-google" title="Google">
                 <p>
                     Sergey Brin und Larry Page suchten eine Lösung für das Problem, dass die Qualität der Suchergebnisse
                     immer weiter abnahm. Webseitenbetreiber verwendeten verschiedene Tricks, um ihre Seite in den
@@ -52,7 +52,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Bing" id="allgemeines-bing">
+            <chapter id="allgemeines-bing" title="Bing">
                 <p>
                     Die Suchmaschine von Microsoft hieß in ihren Anfängen MSN-Search, welche Großteils auf
                     Suchergebnisse anderer Suchmaschinen Zugriff. Sie entwickelten in den folgejahren eine eigene
@@ -62,7 +62,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Yandex" id="allgemeines-yandex">
+            <chapter id="allgemeines-yandex" title="Yandex">
                 <p>
                     Yandex ist mit 60 % (Stand 2019) Marktanteil in Russland die am meisten verwendete Suchmaschine
                     und ist durch eine Kooperation mit Microsoft als die voreingestellte Suchmaschine in Windows 10 für
@@ -71,7 +71,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Baidu" id="allgemeines-baidu">
+            <chapter id="allgemeines-baidu" title="Baidu">
                 <p>
                     Baidu ist mit knapp 60 % (Stand 2019) die marktführende Suchmaschine in China. Die arbeitet eng.
                     mit den chinesischen Behörden zusammen und blockiert Inhalte, welche von der Regierung zensiert
@@ -81,7 +81,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Alternative Suchmaschinen" id="allgemeines-alternativen">
+            <chapter id="allgemeines-alternativen" title="Alternative Suchmaschinen">
                 <p>
                     Heute gewinnen auch immer mehr neuere Suchmaschinen wie DuckDuckGo, Qwant, Ixquick und Startpage an
                     Marktanteilen, welche damit werben keine persönlichen Informationen zu sammeln.
@@ -90,15 +90,15 @@
         </chapter>
     </chapter>
 
-    <chapter title="Aufbau und Funktionsweise" id="aufbau">
+    <chapter id="aufbau" title="Aufbau und Funktionsweise">
         <p>
             Heute (Stand 2019) nutzen mehr als 3,8 Milliarden Menschen das Internet (52 % der Weltbevölkerung). Wie
             viele Webseiten es insgesamt gibt, kann nicht gesagt werden. Analytiker schätzen den Google-Index bzw. das
             WWW heute auf 47 bis 50 Milliarden Webseiten.
         </p>
 
-        <chapter title="Systemkomponenten einer Suchmaschine" id="aufbau-systemkomponenten">
-            <chapter title="Das Webcrawler-System" id="aufbau-webcrawler">
+        <chapter id="aufbau-systemkomponenten" title="Systemkomponenten einer Suchmaschine">
+            <chapter id="aufbau-webcrawler" title="Das Webcrawler-System">
                 <p>
                     Das Webcrawler-System besteht aus Computerprogrammen, welche das WWW automatisch durchsuchen und
                     Webseiten herunterladen und analysieren können. Der Crawler startet auf einer beliebigen Webseite
@@ -117,7 +117,7 @@
                     </li>
                 </list>
             </chapter>
-            <chapter title="Der Scheduler" id="aufbau-scheduler">
+            <chapter id="aufbau-scheduler" title="Der Scheduler">
                 <p>
                     Der Scheduler sammelt und verwaltet die Adressen der Webseiten. Er bekommt von Crawlern ständig neue
                     URLs gemeldet, die diese in den besuchten Webseiten finden. Findet er in den Webseiten Verlinkungen
@@ -131,7 +131,7 @@
                     Crawler nicht erreichbar; diese Seiten gehören zum sog. DeepWeb.
                 </p>
             </chapter>
-            <chapter title="Der Index" id="aufbau-index">
+            <chapter id="aufbau-index" title="Der Index">
                 <p>
                     Der Index beinhaltet die Website in ihren Bestandteilen (Text, Bilder, Videos, HTML-Code) zerlegt
                     welche von den Crawlern heruntergeladen wurden. Bei der Suche durchsucht die Suchmaschine den Index
@@ -139,7 +139,7 @@
                     einem bestimmten Zeitpunkt.
                 </p>
             </chapter>
-            <chapter title="Das Suchinterface" id="aufbau-suchinterface">
+            <chapter id="aufbau-suchinterface" title="Das Suchinterface">
                 <p>
                     Das Suchinterface ist im Wesentlichen ein einzelnes Formularfeld, in das der Suchende Suchwärter
                     eingeben kann. Google bietet heute neben der normalen Suche auch eine „Erweiterte Suche“ wodurch der
@@ -149,14 +149,14 @@
         </chapter>
     </chapter>
 
-    <chapter title="Das Ranking" id="ranking">
+    <chapter id="ranking" title="Das Ranking">
         <p>
             Nach eigenen Aussagen berücksichtigt Google bei der Relevanzberechnung heute mehr als 200 Rankingfaktoren
             „Signale“. Sie gelten als Betriebsgeheimnis und die Rankingalgorythmen sowie Signale ändern sich ständig.
             Dabei kann ihre Bedeutung variieren, neue hinzukommen und ältere wegfallen.
         </p>
 
-        <chapter title="Die Relevanzberechnung" id="ranking-relevanzberechnung">
+        <chapter id="ranking-relevanzberechnung" title="Die Relevanzberechnung">
             <p>
                 Ein offensichtlicher Ansatz ist dabei, im Suchindex nachzuschauen, auf welchen Webseiten das Suchwort
                 überhaupt vorkommt. Folgende Punkte gelten für die Relevanzberechnung:
@@ -208,7 +208,7 @@
             </p>
         </chapter>
 
-        <chapter title="Das PageRank-Verfahren" id="ranking-pagerank">
+        <chapter id="ranking-pagerank" title="Das PageRank-Verfahren">
             <p>
                 Googles Hypothese war es: die Verlinkung der Webseiten im WWW für die Relevanzberechnung zu
                 berücksichtigen liefert bessere Resultate als herkömmliche Suchmaschinen. So sollen Webseiten, auf die
@@ -221,10 +221,10 @@
                 Publikation zitiert wurde als umso wichtiger galt sie.
             </p>
 
-            <chapter title="Der Zufallssurfer" id="ranking-pagerank-zufallssurfer">
+            <chapter id="ranking-pagerank-zufallssurfer" title="Der Zufallssurfer">
             </chapter>
 
-            <chapter title="PageRank Ermitteln" id="ranking-pagerank-ermitteln">
+            <chapter id="ranking-pagerank-ermitteln" title="PageRank Ermitteln">
                 <p>
                     In der Google-Toolbar wurde früher eine Form des PagRank-Wertes angezeigt. Er wurde Toolbar-PageRank
                     genannt. Er basiert auf einer logarithmischen Skala und zeigte werte von 0 bis 10 an. Diese Funktion
@@ -236,7 +236,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Weiterentwicklung des PageRank-Verfahrens" id="ranking-pagerank-weiterentwicklung">
+            <chapter id="ranking-pagerank-weiterentwicklung" title="Weiterentwicklung des PageRank-Verfahrens">
                 <p>
                     Das PageRank-Verfahren ist nicht zu 100 % robust gegen Manipulationen und es wurde viel Linkspam
                     betrieben, um einen besseren Platz auf der SERP zu erzielen. Es wurden Linkfarmen betrieben, deren
@@ -290,7 +290,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Trust und TrustRank" id="ranking-trust">
+        <chapter id="ranking-trust" title="Trust und TrustRank">
             <p>
                 Mit dem Trust-Wert hat Google einen neuen Wert in sein Rankingsystem eingeführt, welcher Auskunft
                 gibt wie vertrauenswürdig die Informationen auf einer Website sind. <b>TrustRank</b> ist ein an das
@@ -307,7 +307,7 @@
             </p>
         </chapter>
 
-        <chapter title="Das BadRank-Konzept" id="ranking-badrank">
+        <chapter id="ranking-badrank" title="Das BadRank-Konzept">
             <p>
                 Mit dem BadRank hat Google einen neuen Wert eingeführt mit den Sites, welche gegen die
                 Suchmaschinenrichtlinien verstoßen, indem sie Backlinks verkaufen oder Linkfarmen betreiben. Verweisen
@@ -316,7 +316,7 @@
             </p>
         </chapter>
 
-        <chapter title="Lösung für Webspam" id="ranking-webspam">
+        <chapter id="ranking-webspam" title="Lösung für Webspam">
             <p>
                 Mit einem selbst lernenden Algorithmus im sog. <b>Panda-Update</b> versuchte Google gezielt
                 minderwertige Seiten bzw. Domains zu identifizieren und in den Suchergebnissen herunterzustufen:
@@ -344,7 +344,7 @@
             </p>
         </chapter>
 
-        <chapter title="RankBrain" id="ranking-rankbrain">
+        <chapter id="ranking-rankbrain" title="RankBrain">
             <p>
                 15 % aller Sucheingaben sind für Google neu. Um Suchanfragen noch besser zu verstehen, die komplexer
                 oder nicht eindeutig sind oder sie Google noch nie gesehen hat, wurde RankBrain eingeführt. RankBrain
@@ -361,7 +361,7 @@
             </p>
         </chapter>
 
-        <chapter title="Die wichtigsten Punkte" id="ranking-wichtig">
+        <chapter id="ranking-wichtig" title="Die wichtigsten Punkte">
             <table>
                 <tr>
                     <td><b>Content</b></td>
@@ -379,11 +379,11 @@
         </chapter>
     </chapter>
 
-    <chapter title="Die wichtigsten Signale" id="wichtigste-signale">
+    <chapter id="wichtigste-signale" title="Die wichtigsten Signale">
         <p>
             Die Quellen für die Informationen von Rankingsignalen sind:
         </p>
-        
+
         <list>
             <li>
                 <b>Google selbst</b> – An vielen Kerntechnologien hält Google Patente, und Patentschriften sind
@@ -398,7 +398,7 @@
             </li>
         </list>
 
-        <chapter title="Webpage-Signale" id="signale-webpage">
+        <chapter id="signale-webpage" title="Webpage-Signale">
             <p>
                 Unter Webpage-Signale fällt die Qualität des HTML-Quellcodes, die Ladegeschwindigkeit, aber auch
                 PageRank und andere Backlinksignale
@@ -439,7 +439,7 @@
                         Backlinks unterschiedlicher Domains beschreibt die Domainpopularität einer Seite, welche auch
                         einen Einfluss auf das Ranking hat.
                     </p>
-                    
+
                     <list>
                         <li>
                             Die verlinkte Webseite wird relevanter für Keywords, die sich im Ankertext befinden.
@@ -472,7 +472,7 @@
             </list>
         </chapter>
 
-        <chapter title="Website-Signale" id="signale-website">
+        <chapter id="signale-website" title="Website-Signale">
             <p>
                 Zu den Website-Signalen gehören:
             </p>
@@ -497,7 +497,7 @@
             </list>
         </chapter>
 
-        <chapter title="Domain-Signale" id="signale-domain">
+        <chapter id="signale-domain" title="Domain-Signale">
             <p>
                 Google wertet aus, wann eine Domain zum ersten Mal registriert wurde, und wie sie sich im Laufe der
                 Jahre entwickelt. Kauft man eine bereits existierende Domain, so kann es schwierig sein, eine Domain mit
@@ -505,7 +505,7 @@
             </p>
         </chapter>
 
-        <chapter title="Server-Signale" id="signale-server">
+        <chapter id="signale-server" title="Server-Signale">
             <p>
                 Zu den Server-Signalen gehören gehört die Verfügbarkeit (längere oder öfter auftretende Down-Zeiten sind
                 schlecht), die Performance (durchschnittliche Ladezeiten), sowie auch die Verwendung eines
@@ -513,7 +513,7 @@
             </p>
         </chapter>
 
-        <chapter title="Nutzer-Signale" id="signale-nutzer">
+        <chapter id="signale-nutzer" title="Nutzer-Signale">
             <p>
                 Mit dem Google Chrome Webbrowser sammelt Google viele Daten wie die Durchklickrate, die SERP-Return-Rate
                 (wie schnell der Nutzer wieder von einer Seite zur Suche zurückkehrt), Time on Site (wie lange Suchende
@@ -523,14 +523,14 @@
             </p>
         </chapter>
 
-        <chapter title="Nutzer-Interaktion" id="signale-nutzerinteraktion">
+        <chapter id="signale-nutzerinteraktion" title="Nutzer-Interaktion">
             <p>
                 Zur Nutzer-Interaktion gehört beispielsweise das Hinterlassen eines Kommentars oder einer Bewertung oder
                 Aufrufen einer speziellen Funktion.
             </p>
         </chapter>
 
-        <chapter title="Markensignale" id="signale-marke">
+        <chapter id="signale-marke" title="Markensignale">
             <p>
                 Bekannte Marken kommen in den Top-Suchergebnissen immer häufiger vor, da sie Vertrauenswürdiger sind.
                 Eine vertrauenswürdige Marke macht aus:
@@ -552,12 +552,12 @@
             </p>
         </chapter>
 
-        <chapter title="Soziale Signale" id="signale-sozial">
+        <chapter id="signale-sozial" title="Soziale Signale">
         </chapter>
 
-        <chapter title="Negative Signale" id="signale-negativ">
+        <chapter id="signale-negativ" title="Negative Signale">
             <p>
-                Websites können aufgrund negativer Rankingsignale von Google bestraft (Google Penalty) oder auch 
+                Websites können aufgrund negativer Rankingsignale von Google bestraft (Google Penalty) oder auch
                 komplett aus dem Suchindex verbannt werden. Gründe dafür sind:
             </p>
 
@@ -595,14 +595,14 @@
                     <p>
                         Eine manuelle Bestrafung durch Google da sie gegen die Webmaster-Richtlinien verstoßen:
                     </p>
-                    
+
                     <list>
                         <li>Gehackte Website</li>
                         <li>Nutzergenerierter Spam</li>
                         <li>Kostenlose Spamhosts</li>
                         <li>Markup mit Spamstrukturen</li>
                         <li>Unnatürliche Links zur Website</li>
-                        <li>Inhalte von minderwertiger Qualität mit geringem oder gar keinem Mehrwert </li>
+                        <li>Inhalte von minderwertiger Qualität mit geringem oder gar keinem Mehrwert</li>
                         <li>Cloaking bzw. irreführende Weiterleitungen</li>
                         <li>Cloaking: Verstoß gegen die „Erste Klick gratis“-Richtlinie</li>
                         <li>Unnatürliche Links von Ihrer Website</li>
@@ -615,7 +615,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Der Prozess und die Ziele " id="prozess-ziele">
+    <chapter id="prozess-ziele" title="Der Prozess und die Ziele ">
         <p>
             Ein großer Fehler ist es, eine neue Website zuerst komplett zu erstellen und dann anschließend das Thema SEO
             anzugehen. Es gibt folgende Punkte, die den SEO-Prozess ausmachen:
@@ -637,7 +637,8 @@
                 wichtige Rolle.
             </li>
             <li>
-                <b>Site, Server &amp; Domain</b> – hierzu gehören: die Wahl des Domain-Namens, die Informationsarchitektur,
+                <b>Site, Server &amp; Domain</b> – hierzu gehören: die Wahl des Domain-Namens, die
+                Informationsarchitektur,
                 der Aufbau der URLs, die Performance und die Verfügbarkeit und Sicherheit.
             </li>
             <li>
@@ -663,7 +664,7 @@
             </li>
         </list>
 
-        <chapter title="Strategische SEO-Ziele" id="prozess-ziele-seostrategie">
+        <chapter id="prozess-ziele-seostrategie" title="Strategische SEO-Ziele">
             <list>
                 <li>
                     Unternehmen/Marke bekannter machen und häufigere in den Trefferlisten der Suchmaschine erscheinen
@@ -686,7 +687,7 @@
             </list>
         </chapter>
 
-        <chapter title="Faktoren für den Aufwand" id="prozess-ziele-faktoren">
+        <chapter id="prozess-ziele-faktoren" title="Faktoren für den Aufwand">
             <list>
                 <li>Anzahl der Konkurrenzseiten</li>
                 <li>Optimierungsgrad der top rankenden Webseiten</li>
@@ -695,11 +696,11 @@
         </chapter>
     </chapter>
 
-    <chapter title="Keywords" id="keywords">
+    <chapter id="keywords" title="Keywords">
         <p>
             Der Begriff Keywords:
         </p>
-        
+
         <list>
             <li>
                 Begriffe oder Begriffskombinationen, die einen Inhalt (meistens Text) in ihrer Summe möglichst eindeutig
@@ -717,7 +718,7 @@
             Suchvolumen haben, um einen möglichst hohen Traffic zu erzielen.
         </p>
 
-        <chapter title="Die Bedeutung der Suchintention" id="keywords-suchintention">
+        <chapter id="keywords-suchintention" title="Die Bedeutung der Suchintention">
             <p>
                 SEO muss das Ziel haben, dass die Zielgruppe der Website diese findet und sie ansteuert. Somit sollte
                 man sich mit der Intention (Absicht, Ziel) der Suchenden beschäftigen, um die passenden Keywords
@@ -750,8 +751,8 @@
                 eine Klassifikation nach Suchintention der Zielgruppe vorzunehmen.
             </p>
         </chapter>
-        
-        <chapter title="Keyword-Kandidate ermitteln" id="keywords-kandidaten">
+
+        <chapter id="keywords-kandidaten" title="Keyword-Kandidate ermitteln">
             <p>
                 Die relevanten Keywords sind die Begriffe, die die potenziellen Kunden in die Suchmaske der
                 Suchmaschinen eingeben und mit denen die Webseite gefunden werden soll. Diese Keywords sollten bereits
@@ -781,8 +782,8 @@
                 </li>
             </list>
         </chapter>
-        
-        <chapter title="KEI (Keyword Effectiveness Index)" id="keywords-key">
+
+        <chapter id="keywords-key" title="KEI (Keyword Effectiveness Index)">
             <p>
                 In den meisten Fällen ist es unmöglich, eine Website für alle gefundenen relevanten Keyword-Paare zu
                 optimieren. Mit der Formel des sog. KEI lässt sich die Relevanz eines Keywords berechnen, um eine
@@ -800,13 +801,14 @@
                     <code>P</code> ist die Popularität eines Keywords (= durchschnittliche Suchanfragen pro Monat)
                 </li>
                 <li>
-                    <code>C</code> steht für die Konkurrenz (= Zahl der Seiten, die eine Suchmaschine für das Keyword insgesamt findet
+                    <code>C</code> steht für die Konkurrenz (= Zahl der Seiten, die eine Suchmaschine für das Keyword
+                    insgesamt findet
                 </li>
                 <li>Die Multiplikation mit <code>1000</code> ist, um zu viele Kommastellen zu vermeiden</li>
             </list>
         </chapter>
-        
-        <chapter title="Das Suchvolumen" id="keywords-suchvolumen">
+
+        <chapter id="keywords-suchvolumen" title="Das Suchvolumen">
             <p>
                 Eine Webseite sollte niemals für bestimmte Keywords optimiert werden, ohne deren Suchvolumen zu kennen.
                 Denn der Optimierungsaufwand könnte sich auch nicht lohnen. Um das Suchvolumen zu ermitteln, muss
@@ -836,7 +838,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Content" id="content">
+    <chapter id="content" title="Content">
         <p>
             Seit dem Hummingbird-Update ist Google in der Lage, den Inhalt einer Website zu „verstehen“ und dessen
             Qualität zu bestimmen. Google selbst betont nun auch, dass die Content-Qualität ein wichtiges Rankingsignal
@@ -855,7 +857,7 @@
             offengelegten Search Quality Rating Guidelines und kann Seiten auch manuell herabstufen oder hochstufen.
         </p>
 
-        <chapter title="Der Content und die Suchintention" id="content-suchintention">
+        <chapter id="content-suchintention" title="Der Content und die Suchintention">
             <p>
                 Der Content muss optimal zur Suchintention passen:
             </p>
@@ -863,7 +865,7 @@
             <list>
                 <li>
                     <p><b>Know</b></p>
-                    
+
                     <list>
                         <li>Ausführliche Produktbeschreibung</li>
                         <li>Redaktionelle Beiträge</li>
@@ -874,7 +876,7 @@
                 </li>
                 <li>
                     <p><b>Know simple</b></p>
-                    
+
                     <list>
                         <li>Glossar</li>
                         <li>Wiki-Seiten</li>
@@ -883,7 +885,7 @@
                 </li>
                 <li>
                     <p><b>Do (non-commercial)</b></p>
-                    
+
                     <list>
                         <li>
                             Der passende Content ist abhängig von der Art der Aktion.
@@ -921,7 +923,7 @@
             </list>
         </chapter>
 
-        <chapter title="Textoptimierung mit WDF und IDF" id="content-textoptimierung">
+        <chapter id="content-textoptimierung" title="Textoptimierung mit WDF und IDF">
             <p>
                 Die Keyworddichte (KD) beschreibt wie häufig ein Term (Wort- oder Wortkombination) in einem Dokument
                 bezogen auf die Gesamtzahl aller Terme vorkommt.
@@ -929,7 +931,7 @@
 
             <code-block lang="tex">
                 \begin{equation}
-                    KD(i) = \frac{Freq(i, j)}{L} * 100
+                KD(i) = \frac{Freq(i, j)}{L} * 100
                 \end{equation}
             </code-block>
 
@@ -940,20 +942,20 @@
                 <li><code>Freq(i,j)</code> = Häufigkeit des Worts <code>i</code> im Dokument <code>j</code></li>
             </list>
 
-            <chapter title="Das Konzept Within Document Frequency WDF" id="content-wdf">
+            <chapter id="content-wdf" title="Das Konzept Within Document Frequency WDF">
             </chapter>
         </chapter>
     </chapter>
 
-    <chapter title="Webpage" id="webpage">
-        <chapter title="Struktur und Layout" id="webpage-struktur">
+    <chapter id="webpage" title="Webpage">
+        <chapter id="webpage-struktur" title="Struktur und Layout">
             <p>
                 Der Bereich einer Seite der anfangs, ohne zu scrollen sichtbar ist, wird als „above the fold“
                 bezeichnet. Dieser Bereich bietet besonders starke Rankingsignale.
             </p>
         </chapter>
 
-        <chapter title="HTML-Quellcode" id="webpage-quellcode">
+        <chapter id="webpage-quellcode" title="HTML-Quellcode">
             <p>
                 Google Robots sind nicht so gut wie unsere Browser, so können Seiten, bei denen der Sließtag vergessen
                 wurde nicht gut analysiert werden. Somit ist es wichtig validen HTML-Code zu haben. Dieser kann mit dem
@@ -971,7 +973,7 @@
             </p>
         </chapter>
 
-        <chapter title="Eingebundene Dateien" id="webpage-files">
+        <chapter id="webpage-files" title="Eingebundene Dateien">
             <list>
                 <li>
                     Bei Bildern die niedrigste sinnvolle Auflösung und das geeignetste Dateiformat verwenden, um beste
@@ -991,7 +993,7 @@
             </list>
         </chapter>
 
-        <chapter title="OnePager" id="webpage-onepager">
+        <chapter id="webpage-onepager" title="OnePager">
             <p>
                 Sogenannte OnePager sind relativ schwer für Suchmaschinen zu optimieren, daher ist von denen abzuraten.
                 Möchte man darauf trotzdem nicht verzichten so ist es am besten, wenn man auf der ganzen Seite sich auf
@@ -1000,7 +1002,7 @@
             </p>
         </chapter>
 
-        <chapter title="Optimierung für Mobile Geräte" id="webpage-mobile">
+        <chapter id="webpage-mobile" title="Optimierung für Mobile Geräte">
             <list>
                 <li>
                     Die Darstellungsgröße der Website muss sich so anpassen, dass der Benutzer nicht Zoomen oder
@@ -1021,7 +1023,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Site, Server &amp; Domain" id="site-server-domain">
+    <chapter id="site-server-domain" title="Site, Server &amp; Domain">
         <p>
             Es besteht die Möglichkeit verschiedene Domains zu die relevante Keywords enthalten. Doch Google erkennt
             Duplikate und HTTP-Redirects und indexiert immer nur eine Kopie. Wenn man sich trotzdem für mehrere Domains
@@ -1044,7 +1046,7 @@
             kann die URL umgeschrieben werden und somit suchmaschinenfräundlichere Links erstellen.
         </p>
 
-        <chapter title="Verlinkungsstruktur" id="site-server-domain-verlinkungsstruktur">
+        <chapter id="site-server-domain-verlinkungsstruktur" title="Verlinkungsstruktur">
             <p>
                 Die Verlinkungsstruktur einer Website hat großen Einfluss auf das Ranking bei Google. Seiten die nahe
                 bei der Startseite verlinkt sind (= ein bis zwei Klicks entfernt) werden höher gelistet, als jene bei
@@ -1056,7 +1058,7 @@
             </p>
         </chapter>
 
-        <chapter title="Duplicate Content" id="site-server-domain-duplicate-content">
+        <chapter id="site-server-domain-duplicate-content" title="Duplicate Content">
             <p>
                 Content der Doppelt vorkommt auch Duplicate Content oder Dubletten genannt ist nicht unbedingt schlimm.
                 Gefährlich wird es nur bei gezieltem Manipulationsversuch, z.B. wenn versucht wird, über duplizierten
@@ -1069,7 +1071,7 @@
             </p>
         </chapter>
 
-        <chapter title="Schnelligkeit und Verfügbarkeit einer Website " id="site-server-domain-schnelligkeit">
+        <chapter id="site-server-domain-schnelligkeit" title="Schnelligkeit und Verfügbarkeit einer Website ">
             <p>
                 Google misst die Performance, d.h. Ladezeiten und auch die Verfügbarkeit und Erreichbarkeit sehr genau
                 und führt darüber eine Statistik. Mit dem Tool Google Page Speed Analyzer können die Ladezeiten gemessen
@@ -1077,25 +1079,25 @@
             </p>
         </chapter>
 
-        <chapter title="HTTPS" id="site-server-domain-https">
+        <chapter id="site-server-domain-https" title="HTTPS">
             <p>
                 HTTPS verfügt gegenüber des HTTP-Protokolls eine hochkomplexe Verschlüsselungs- und
                 Authentifizierungstechnologie. Auch dies wertet Google als positives Rankingkriterium.
             </p>
         </chapter>
 
-        <chapter title="Die Steuerdatei robots.txt" id="site-server-domain-robots">
+        <chapter id="site-server-domain-robots" title="Die Steuerdatei robots.txt">
             Suchmaschinen öffnen beim Besuch einer Webseite zunächst die <code>robots.txt</code>-Datei und befolgen die
             dort angegebenen Anweisungen. Hierbei kann den Robots verboten werden bestimmte Verzeichnisse zu crawlen
             oder Dateien zu öffnen.
         </chapter>
     </chapter>
 
-    <chapter title="Backlinks" id="backlinks">
+    <chapter id="backlinks" title="Backlinks">
         <p>
             Links sind und bleiben der wichtigste Rankingfaktor. Zu erfolgreichem Backlink-Management gehört:
         </p>
-        
+
         <list>
             <li>
                 <b>Backlink-Analyse</b> – ein natürliches Linkprofiel zeichnet sich durch Vielfalt aus: eine dem
@@ -1104,7 +1106,7 @@
             </li>
             <li>
                 <p><b>Backlink-Aufbau</b></p>
-                
+
                 <list>
                     <li>
                         Quellen: Links von Authority Websites, Links von thematisch verwandten Websites, Links aus
@@ -1149,7 +1151,7 @@
         </list>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-1791642211, SEO Praxisbuch, Thorsten Schneider, Independently published, 2018-12-13

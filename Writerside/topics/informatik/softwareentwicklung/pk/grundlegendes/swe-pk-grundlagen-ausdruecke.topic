@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Ausdrücke, Operatoren und Operanden" id="swe-pk-grundlagen-ausdruecke">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-pk-grundlagen-ausdruecke"
+       title="Ausdrücke, Operatoren und Operanden"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einführung" id="einfuehrung">
+    <chapter id="einfuehrung" title="Einführung">
         <p>
-            Ein Ausdruck ist eine mathematische Formel, die aus Operanden und Operatoren. Im Unterschied zu Anweisungen 
-            haben Ausdrücke immer ein Ergebnis, das durch den Ausdruck zurückgeliefert wird. Ein Ausdruck kann auch teil 
-            einer Anweisung sein. Im Beispiel <code>5 * 17</code> wäre das Ergebnis <code>85</code>, Der Operator ist 
-            <code>*</code> und die Operanden sind <code>5</code> und <code>17</code>. In der Praxis können Ausdrücke 
-            durchaus komplexer sein, mehrere Operanden, verschiedene Operatoren, Funktionsaufrufe etc. enthalten. Als 
-            Operanden können sowohl Variablen als auch einfache Werte (sogenannte Literale) verwendet werden. Operatoren 
-            verknüpfen innerhalb eines Ausdrucks die einzelnen Operanden, wobei je nach Anzahl der Operanden zwischen 
+            Ein Ausdruck ist eine mathematische Formel, die aus Operanden und Operatoren. Im Unterschied zu Anweisungen
+            haben Ausdrücke immer ein Ergebnis, das durch den Ausdruck zurückgeliefert wird. Ein Ausdruck kann auch teil
+            einer Anweisung sein. Im Beispiel <code>5 * 17</code> wäre das Ergebnis <code>85</code>, Der Operator ist
+            <code>*</code> und die Operanden sind <code>5</code> und <code>17</code>. In der Praxis können Ausdrücke
+            durchaus komplexer sein, mehrere Operanden, verschiedene Operatoren, Funktionsaufrufe etc. enthalten. Als
+            Operanden können sowohl Variablen als auch einfache Werte (sogenannte Literale) verwendet werden. Operatoren
+            verknüpfen innerhalb eines Ausdrucks die einzelnen Operanden, wobei je nach Anzahl der Operanden zwischen
             folgenden Arten von Operatoren unterschieden wird:
         </p>
-        
+
         <list>
             <li>unärer Operator – ein Operator, der sich auf einen einzigen Operanden bezieht.</li>
             <li>binärer Operator – ein Operator, der sich auf zwei Operanden bezieht.</li>
@@ -28,10 +28,10 @@
             Beispielbeschreibung aus JavaScript:
         </p>
 
-        <img src="swe-pk-grundlagen-ausdruecke-anweisung.png" alt="Beispiel einer Anweisung in JavaScript"/>
+        <img alt="Beispiel einer Anweisung in JavaScript" src="swe-pk-grundlagen-ausdruecke-anweisung.png"/>
     </chapter>
 
-    <chapter title="Arithmetische Operatoren" id="arithmetisch">
+    <chapter id="arithmetisch" title="Arithmetische Operatoren">
         <p>
             Arithmetische Operatoren sind Operatoren fürs Arbeiten und Rechnen mit Zahlen, zu denen die Addition, die
             Subtraktion, die Multiplikation, die Division und der Rest-Operator (Modulo), sowie der Exponentialoperator
@@ -99,7 +99,7 @@
             </tr>
         </table>
 
-        <chapter title="Konkatenationsoperator" id="arithmetisch-konkatenation">
+        <chapter id="arithmetisch-konkatenation" title="Konkatenationsoperator">
             <p>
                 Als Konkatenation wird das Zusammenfügen von Zeichenketten bezeichnet. Viele Sprachen verwenden für die
                 Konkatenation den <code>+</code>-Operator.
@@ -107,26 +107,26 @@
 
             <code-block lang="javascript">
                 let salutation = 'Ihr persönlicher Newsletter,'; // => 'Ihr persönlicher Newsletter,'
-                let name = 'Max Mustermann';                     // => 'Max Mustermann'
-                let message = salutation + ' ' + name;           // => 'Ihr persönlicher Newsletter, Max Mustermann'
+                let name = 'Max Mustermann'; // => 'Max Mustermann'
+                let message = salutation + ' ' + name; // => 'Ihr persönlicher Newsletter, Max Mustermann'
             </code-block>
         </chapter>
 
-        <chapter title="Zuweisungsoperatoren" id="arithmetisch-zuweisung">
+        <chapter id="arithmetisch-zuweisung" title="Zuweisungsoperatoren">
         </chapter>
 
-        <chapter title="Vergleichsoperatoren" id="arithmetisch-vergleich">
+        <chapter id="arithmetisch-vergleich" title="Vergleichsoperatoren">
         </chapter>
     </chapter>
 
-    <chapter title="Logische Operatoren" id="logisch">
+    <chapter id="logisch" title="Logische Operatoren">
         <p>
             Logische Operatoren, werden Operatoren genannt, die für das Arbeiten mit booleschen Werten zur Verfügung
             stehen. Die bekanntesten Operatoren sind der UND-Operator, der ODER-Operator und der Negationsoperator. UND-
             und ODER-Operatoren sind binäre Operatoren. Der Negationsoperator dagegen ist ein unärer Operator.
         </p>
 
-        <chapter title="Der UND-Operator" id="logisch-und">
+        <chapter id="logisch-und" title="Der UND-Operator">
             <p>
                 Beim UND-Operator müssen beide der zu vergleichenden Werte <code>true</code> sein.
             </p>
@@ -160,7 +160,7 @@
             </table>
         </chapter>
 
-        <chapter title="Der ODER-Operator" id="logisch-oder">
+        <chapter id="logisch-oder" title="Der ODER-Operator">
             <p>
                 Beim ODER-Operator muss mindestens einer der zu vergleichenden Werte <code>true</code> sein.
             </p>
@@ -194,7 +194,7 @@
             </table>
         </chapter>
 
-        <chapter title="Der Negationsoperator" id="logisch-negation">
+        <chapter id="logisch-negation" title="Der Negationsoperator">
             <p>
                 In diesem Beispiel wird der Negationsoperator wie in JavaScript mit <code>!</code> verwendet.
             </p>
@@ -216,7 +216,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Zugriffsoperatoren" id="zugriff">
+    <chapter id="zugriff" title="Zugriffsoperatoren">
         <list>
             <li>
                 Zugriffsoperator (normalerweise <code>.</code>), um auf eine Eigenschaft oder Methode eines Objektes
@@ -225,7 +225,7 @@
         </list>
     </chapter>
 
-    <chapter title="Bereichsauflösungsoperatoren" id="bereichsaufloesung">
+    <chapter id="bereichsaufloesung" title="Bereichsauflösungsoperatoren">
         <list>
             <li>
                 Bereichsauflösungsoperator (häufig <code>::</code> oder <code>.</code>)
@@ -233,7 +233,7 @@
         </list>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836256971, "JavaScript - Das umfassende Handbuch", Philip Ackermann, 2018

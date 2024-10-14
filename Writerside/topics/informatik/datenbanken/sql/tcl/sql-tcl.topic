@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="TCL (Transaction Control Language)" id="sql-tcl">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-tcl"
+       title="TCL (Transaction Control Language)"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einleitung" id="einleitung">
+    <chapter id="einleitung" title="Einleitung">
         <p>
             Die Transaktionssicherheit, die relationale Datenbanksysteme gewährleisten, gehört zu den
             Kernfunktionalitäten und bieten die Sicherheit, dass eine oder mehrere datentechnische Operationen wie
             <code>INSERT</code>, <code>UPDATE</code> und <code>DELETE</code> durchgeführt werden.
         </p>
 
-        <chapter title="Warum müssen Datenbankoperationen verbindlich durchgeführt werden?"
-                 id="einleitung-verbindlichkeit">
+        <chapter id="einleitung-verbindlichkeit"
+                 title="Warum müssen Datenbankoperationen verbindlich durchgeführt werden?">
             <p>
                 Das erste Szenario betrifft schlicht und ergreifend Einflüsse, die wir nicht in der Hand haben.
                 Beispiel: Die Sicherung des Stromnetzes setzt abrupt den Datenbankserver außer Betrieb. Oder was wäre,
@@ -32,7 +32,7 @@
             </p>
         </chapter>
 
-        <chapter title="Forderungen an relationale Datenbanksysteme" id="einleitung-forderungen">
+        <chapter id="einleitung-forderungen" title="Forderungen an relationale Datenbanksysteme">
             <p>
                 Die Forderungen werden in Kurzform auch ACID-Prinzip bezeichnet; die Abkürzung resultiert aus den
                 englischen Begriffen atomacity, consistency, isolation und durability.
@@ -47,12 +47,15 @@
                     ursprüngliche Zustand wiederhergestellt werden. Es gilt also die Forderung, dass nicht ein Teil von
                     Operationen ausgeführt und anderer Teil aufgrund einer Störung nicht ausgeführt wird. In der
                     Gesamtheit der Durchführung ist eine Folge von Operationen also unteilbar
-                    (<emphasis>atomar</emphasis>) durchzuführen.
+                    (
+                    <emphasis>atomar</emphasis>
+                    ) durchzuführen.
                 </li>
                 <li>
                     <b>Der Datenbestand soll konsistent sein</b>: Wenn Operationen wie <code>INSERT</code>- oder
                     <code>UPDATE</code>-Anweisungen auf einer Datenbank durchgeführt werden, muss sichergestellt sein,
-                    dass der Datenbestand aus einem konsistenten Zustand in einem <emphasis>konsistenten</emphasis>
+                    dass der Datenbestand aus einem konsistenten Zustand in einem
+                    <emphasis>konsistenten</emphasis>
                     Zustand belassen wird. Das betrifft insbesondere Schlüsselbeziehungen zwischen Tabellen bzw. die
                     referentielle Integrität. Eine Störung darf also nicht dazu führen, dass Beziehungen zwischen Zeilen
                     in einem nicht definierten Zustand vorliegen. Es gilt also die Forderung, dass eine Datenbank stets
@@ -64,18 +67,21 @@
                     dass mehrere Nutzer gleichzeitig auf die gleichen Datensätze zugreifen und diese gegebenenfalls
                     ändern oder auch löschen können. Operationen, die gleichzeitig durch unterschiedliche Nutzer an
                     einem Datensatz ausgeführt werden, dürfen sich nicht gegenseitig beeinflussen. Hier gilt die
-                    Forderung, dass diese Operationen stets <emphasis>isoliert</emphasis> voneinander durchgeführt
+                    Forderung, dass diese Operationen stets
+                    <emphasis>isoliert</emphasis>
+                    voneinander durchgeführt
                     werden.
                 </li>
                 <li>
                     <b>Daten einer Datenbank sollen dauerhaft gespeichert werden</b>: Unabhängig von jeglichen
                     Störszenarien gilt für eine relationale Datenbank die Forderung, dass die zu verwaltenden Daten
-                    <emphasis>dauerhaft</emphasis> gespeichert werden.
+                    <emphasis>dauerhaft</emphasis>
+                    gespeichert werden.
                 </li>
             </list>
         </chapter>
 
-        <chapter title="Grundlegendes über Transaktionen" id="einleitung-grundlagen">
+        <chapter id="einleitung-grundlagen" title="Grundlegendes über Transaktionen">
             <p>
                 Transaktionen fassen einzelne Operationen zu einer gesamtheitlichen Operation zusammen, die entweder
                 ganz oder gar nicht ausgeführt wird. Transaktionen führen eine Datenbank bei der Durchführung der
@@ -101,7 +107,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Allgemeiner Aufbau einer Transaktion" id="aufbau">
+    <chapter id="aufbau" title="Allgemeiner Aufbau einer Transaktion">
         <p>
             Eine Transaktion hat einen Startpunkt und einen Endpunkt. Zwischen dem Startpunkt und dem Endpunkt können
             SQL-Anweisungen wie <code>INSERT</code>, <code>UPDATE</code>, <code>DELETE</code> oder auch
@@ -116,7 +122,7 @@
         </p>
     </chapter>
 
-    <chapter title="Einen atomaren Datenzustand mit Transaktionen sicherstellen" id="atomarer-datenzustand">
+    <chapter id="atomarer-datenzustand" title="Einen atomaren Datenzustand mit Transaktionen sicherstellen">
         <p>
             Ein Transaktionsblock, der eine oder mehrere SQL-Anweisungen enthalten kann, beginnt mit dem Schlüsselwort
             <code>BEGIN</code>. Hinter dem Schlüsselwort folgen die SQL-Anweisungen. Der Transaktionsblock wird mit dem
@@ -132,7 +138,7 @@
             COMMIT;
         </code-block>
 
-        <chapter title="Microsoft SQL Server Datenbank" id="atomarer-datenzustand-mssqlserver">
+        <chapter id="atomarer-datenzustand-mssqlserver" title="Microsoft SQL Server Datenbank">
             <p>
                 Eine MS-SQL-Server-Datenbank beginnt eine Transaktion mit <code>BEGIN TRANSACTION</code> anstelle des
                 Schlüsselwortes <code>BEGIN</code>.
@@ -140,7 +146,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Transaktion mit ROLLBACK rückgängig machen" id="rollback">
+    <chapter id="rollback" title="Transaktion mit ROLLBACK rückgängig machen">
         <p>
             Wurde eine Tranaktion noch nicht verbindlich mit <code>COMMIT</code> abgeschlossen, so besteht immer noch
             die Möglichkeit, alle Anweisungen vom Start des Transaktionsblocks bis hin zur zuletzt ausgeführten
@@ -154,7 +160,7 @@
         </code-block>
     </chapter>
 
-    <chapter title="Operationen mit Transaktionen isoliert ausführen" id="isolierte-operationen">
+    <chapter id="isolierte-operationen" title="Operationen mit Transaktionen isoliert ausführen">
         <p>
             Transaktionen werden isoliert voneinander durchgeführt. Im SQL-Standard werden vier Isolationsebenen
             unterschieden:
@@ -182,7 +188,7 @@
         </list>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

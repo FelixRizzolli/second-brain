@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Gespeicherte Prozeduren" id="sql-ddl-gespeicherte-prozeduren">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-ddl-gespeicherte-prozeduren"
+       title="Gespeicherte Prozeduren"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlagen" id="grundlagen">
+    <chapter id="grundlagen" title="Grundlagen">
         <p>
             Eine Stored Procedure ist ein vorbereiteter SQL-Code, der gespeichert werden kann, sodass der Code immer
             wieder verwendet werden kann. Gibt es im Anwendungsszenario eine SQL-Anweisung, die immer wieder ausgeführt
@@ -15,11 +15,11 @@
             Grundlage des/der übergebenen Parameterwertes/Parameter agieren kann.
         </p>
 
-        <chapter title="Syntax" id="grundlagen-syntax">
+        <chapter id="grundlagen-syntax" title="Syntax">
             <code-block lang="sql">
                 -- Deklaration
                 CREATE PROCEDURE procedure_name AS
-                    sql_statement
+                sql_statement
                 GO;
 
                 -- Aufruf
@@ -28,7 +28,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Beispiele" id="beispiele">
+    <chapter id="beispiele" title="Beispiele">
         <table>
             <tr>
                 <td>CustomerID</td>
@@ -86,8 +86,8 @@
             </tr>
         </table>
 
-        <chapter title="Beispiel einer einfachen gespeicherten Prozedur"
-                 id="beispiele-einfache-gespeicherte-prozedur">
+        <chapter id="beispiele-einfache-gespeicherte-prozedur"
+                 title="Beispiel einer einfachen gespeicherten Prozedur">
             <p>
                 Die folgende SQL-Anweisung erstellt eine gespeicherte Prozedur namens <code>SelectAllCustomers</code>,
                 die alle Datensätze aus der Tabelle <code>Customers</code> auswählt:
@@ -96,7 +96,7 @@
             <code-block lang="sql">
                 -- Deklaration
                 CREATE PROCEDURE SelectAllCustomers AS
-                    SELECT * FROM Customers
+                SELECT * FROM Customers
                 GO;
 
                 -- Aufruf
@@ -104,8 +104,8 @@
             </code-block>
         </chapter>
 
-        <chapter title="Beispiel einer gespeicherten Prozedur mit einem Parameter"
-                 id="beispiele-gespeicherte-prozedur-mit-parameter">
+        <chapter id="beispiele-gespeicherte-prozedur-mit-parameter"
+                 title="Beispiel einer gespeicherten Prozedur mit einem Parameter">
             <p>
                 Die folgende SQL-Anweisung erstellt eine gespeicherte Prozedur, die Kunden aus einer bestimmten Stadt
                 aus der Tabelle <code>Customers</code> auswählt:
@@ -114,9 +114,9 @@
             <code-block lang="sql">
                 -- Deklaration
                 CREATE PROCEDURE SelectAllCustomers
-                    @City nvarchar(30)
+                @City nvarchar(30)
                 AS
-                    SELECT * FROM Customers WHERE City = @City
+                SELECT * FROM Customers WHERE City = @City
                 GO;
 
                 -- Aufruf
@@ -124,8 +124,8 @@
             </code-block>
         </chapter>
 
-        <chapter title="Beispiel einer gespeicherten Prozedur mit mehreren Parametern"
-                 id="beispiele-gespeicherte-prozedur-mit-parametern">
+        <chapter id="beispiele-gespeicherte-prozedur-mit-parametern"
+                 title="Beispiel einer gespeicherten Prozedur mit mehreren Parametern">
             <p>
                 Das Einrichten mehrerer Parameter ist sehr einfach. Hierbei wird einfach jeder Parameter und dessen
                 Datentyp durch ein Komma getrennt gelistet. Die folgende SQL-Anweisung erstellt eine gespeicherte
@@ -136,9 +136,9 @@
             <code-block lang="sql">
                 -- Deklaration
                 CREATE PROCEDURE SelectAllCustomers
-                    @City nvarchar(30), @PostalCode nvarchar(10)
+                @City nvarchar(30), @PostalCode nvarchar(10)
                 AS
-                    SELECT * FROM Customers WHERE City = @City
+                SELECT * FROM Customers WHERE City = @City
                 GO;
 
                 -- Aufruf
@@ -147,7 +147,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/sql/sql_stored_procedures.asp" ignore-vars="true">

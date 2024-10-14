@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="OOP (Objektorientierte Programmierung)" id="swe-pk-paradigmen-oop">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-pk-paradigmen-oop"
+       title="OOP (Objektorientierte Programmierung)"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlegendes" id="grundlagen">
+    <chapter id="grundlagen" title="Grundlegendes">
         <p>
             Die objektorientierte Programmierung basiert darauf, Elemente der Software, in Anlehnung an die
             Gegebenheiten der realen Welt, als Objekte aufzufassen. Solche Objekte verfügen über Eigenschaften, die sie
@@ -20,9 +20,9 @@
             müssen. Das Grundverständnis von Klassen und ihren Objekten bleibt jedoch stets identisch.
         </p>
 
-        <img src="swe-pk-paradigmen-oop-meinauto.png" alt="OOP - Beispiel"/>
+        <img alt="OOP - Beispiel" src="swe-pk-paradigmen-oop-meinauto.png"/>
 
-        <chapter title="Objekte" id="grundlagen-objekte">
+        <chapter id="grundlagen-objekte" title="Objekte">
             <p>
                 Objekte sind also konkrete Ausprägungen, eine Instanz, einer Klasse. Instanz könnte man übersetzen mit
                 »gehört zur Klasse«: Entsprechend muss ein Objekt instanziiert werden. Dabei können von einer Klasse in
@@ -34,7 +34,7 @@
                 verwenden. Sie unterscheiden sich in den Eigenschaften.
             </p>
 
-            <chapter title="Eigenschaften" id="grundlagen-objekte-eigenschaften">
+            <chapter id="grundlagen-objekte-eigenschaften" title="Eigenschaften">
                 <p>
                     Die Eigenschaften repräsentieren die Daten des Objekts. Ein Automobil ist je nach Sichtweise ein
                     mehr oder weniger komplexes Objekt, das sich durch folgende <b>Attribute (Eigenschaften)</b>
@@ -56,7 +56,7 @@
                     schöne Fußmatte hat und ob im Handschuhfach eine Beleuchtung eingebaut ist.
                 </note>
 
-                <chapter title="Attribute" id="grundlagen-objekte-eigenschaften-attribute">
+                <chapter id="grundlagen-objekte-eigenschaften-attribute" title="Attribute">
                     <p>
                         Als <b>Attribute</b> werden Variablen bezeichnet, die grundsätzlich nur innerhalb der Klasse
                         verwendet werden können. Sie sind daher als <code>private</code> deklariert. Will man auf die
@@ -65,7 +65,7 @@
                     </p>
                 </chapter>
 
-                <chapter title="Properties" id="grundlagen-objekte-eigenschaften-properties">
+                <chapter id="grundlagen-objekte-eigenschaften-properties" title="Properties">
                     <p>
                         Moderne Programmiersprachen, wie C#, kennen auch das Konzept der <b>Properties</b>. Über eine
                         Property kann von außen auf das zugeordnete Attribut zugegriffen werden. Die Property ist damit
@@ -75,7 +75,7 @@
                 </chapter>
             </chapter>
 
-            <chapter title="Methoden" id="grundlagen-objekte-methoden">
+            <chapter id="grundlagen-objekte-methoden" title="Methoden">
                 <p>
                     Eine Methode enthält ähnlich wie eine Funktion, Funktionalität. Durch sie werden die Fähigkeiten
                     eines Objektes beschrieben, also welche Funktionen bzw. Aufgaben ein Objekt ausführen kann.
@@ -103,7 +103,7 @@
                     denn die Software ist ein stark vereinfachtes Modell der Wirklichkeit.
                 </note>
 
-                <chapter title="Getter und Setter" id="grundlagen-objekte-methoden-gettersetter">
+                <chapter id="grundlagen-objekte-methoden-gettersetter" title="Getter und Setter">
                     <p>
                         In welcher Form man die Werte von Attributen ändern kann, ist von Programmiersprache zu
                         Programmiersprache etwas unterschiedlich. Historisch und in Anlehnung an die Grundidee der
@@ -129,20 +129,20 @@
                     </p>
                 </chapter>
 
-                <chapter title="Konstruktor" id="grundlagen-objekte-methoden-konstruktor">
+                <chapter id="grundlagen-objekte-methoden-konstruktor" title="Konstruktor">
                     <p>
                         Der Konstruktor ist eine Methode, die ausgeführt wird, wenn ein Objekt einer Klasse erstellt
                         wird. Sie kann beliebige Parameter übernehmen, mit denen das Objekt instanziiert wird.
                     </p>
                 </chapter>
 
-                <chapter title="Destruktor" id="grundlagen-objekte-methoden-destruktor">
+                <chapter id="grundlagen-objekte-methoden-destruktor" title="Destruktor">
                     <p>
                         Die Destruktor-Methode kommt immer dann zum Einsatz, wenn ein Objekt aufgelöst wird.
                     </p>
                 </chapter>
 
-                <chapter title="Methoden Überladen" id="grundlagen-objekte-methoden-ueberladen">
+                <chapter id="grundlagen-objekte-methoden-ueberladen" title="Methoden Überladen">
                     <p>
                         Überladen bedeutet, eine Methode erhält mehr Parameter als vorgegeben oder Parameter mit
                         unterschiedlichen Datentypen. Zusammengefasst, es werden also Werte übergeben, die die Methode
@@ -153,7 +153,7 @@
                 </chapter>
             </chapter>
 
-            <chapter title="Garbage Collector" id="grundlagen-objekte-garbagecollector">
+            <chapter id="grundlagen-objekte-garbagecollector" title="Garbage Collector">
                 <p>
                     Nachdem ein Objekt einer Klasse durch einen Konstruktor erstellt wurde, wird es im Speicher
                     vorgehalten. Es sollte mindestens so lange existieren, wie es noch benötigt wird. Das ist der Fall,
@@ -170,7 +170,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Klassen" id="grundlagen-klassen">
+        <chapter id="grundlagen-klassen" title="Klassen">
             <p>
                 Ein konkretes Objekt gehört zu einer Klasse oder andersherum betrachtet, eine Klasse ist der Bauplan
                 bzw. die Struktur für die zugehörigen Objekte. Mit Struktur sind die Eigenschaften und Methoden des
@@ -207,7 +207,7 @@
             </p>
         </chapter>
 
-        <chapter title="Ereignisse" id="grundlagen-ereignisse">
+        <chapter id="grundlagen-ereignisse" title="Ereignisse">
             <p>
                 Ereignisse gehören streng betrachtet nicht zu den Grundpfeilern der objektorientierten Programmierung,
                 sondern zum Konzept der ereignisorientierten Entwicklung von Programmen. Es ist jedoch mit dem Konzept
@@ -241,12 +241,16 @@
                 B das mit und kann seinerseits ein bestimmtes Verhalten auslösen.
             </p>
 
-            <img src="swe-pk-paradigmen-oop-ereignisse.png" alt="Ereignisse"/>
+            <img alt="Ereignisse" src="swe-pk-paradigmen-oop-ereignisse.png"/>
 
             <p>
-                Auf der linken Seite haben wir die Quelle (eng. <emphasis>Source</emphasis>), in Form eines konkreten
+                Auf der linken Seite haben wir die Quelle (eng.
+                <emphasis>Source</emphasis>
+                ), in Form eines konkreten
                 Objekts einer Klasse. Diese Quelle feuert in einer bestimmten Situation ein Ereignis
-                (eng. <emphasis>Event</emphasis>) ab. Beispielsweise könnte die Quelle ein Button sein, der auf das
+                (eng.
+                <emphasis>Event</emphasis>
+                ) ab. Beispielsweise könnte die Quelle ein Button sein, der auf das
                 Klicken durch den Nutzer reagiert. Andere Objekte – auch als <b>Listener</b> bezeichnet – »lauschen«
                 darauf, dass das betreffende Ereignis ausgelöst wird. Ist dies der Fall, dann reagieren sie in
                 vorgesehener Art und Weise. Dabei können mehrere Listener parallel das Auslösen eines bestimmten
@@ -256,7 +260,7 @@
             </p>
         </chapter>
 
-        <chapter title="Modellierung von Klassen und Objekten" id="grundlagen-modellierung">
+        <chapter id="grundlagen-modellierung" title="Modellierung von Klassen und Objekten">
             <p>
                 Zur Modellierung einzelner Klassen bzw. zur Darstellung der Beziehung von Klassen untereinander
                 verwendet man in der Software-Entwicklung häufig sogenannte »Klassendiagramme« der Modellierungssprache
@@ -266,7 +270,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Unterschied zwischen primitiven Datentypen und Referenztypen" id="datentypen-unterschiede">
+    <chapter id="datentypen-unterschiede" title="Unterschied zwischen primitiven Datentypen und Referenztypen">
         <p>
             Der Unterschied zwischen primitiven Datentypen und Referenztypen ist die Art und Weise, wie die jeweiligen
             Werte gespeichert werden.
@@ -296,34 +300,43 @@
         </p>
     </chapter>
 
-    <chapter title="Wesentliche Konzepte der objektorientierten Programmierung" id="konzepte">
-        <img src="swe-pk-paradigmen-oop-konzepte.png" alt="Konzepte"/>
+    <chapter id="konzepte" title="Wesentliche Konzepte der objektorientierten Programmierung">
+        <img alt="Konzepte" src="swe-pk-paradigmen-oop-konzepte.png"/>
 
         <warning>
             Nicht jedes Prinzip wird in gleicher Art und Weise von jeder Programmiersprache umgesetzt. Hier gibt es
             Abweichungen und unterschiedliche Herangehensweisen.
         </warning>
 
-        <chapter title="Kapselung" id="konzepte-kapselung">
+        <chapter id="konzepte-kapselung" title="Kapselung">
             <p>
-                Unter dem Begriff Datenkapselung (bzw. im Englischen <emphasis>Encapsulation</emphasis> oder auch
-                <emphasis>Information Hiding</emphasis>) versteht man in der Objektorientierung das Zusammenfassen von
+                Unter dem Begriff Datenkapselung (bzw. im Englischen
+                <emphasis>Encapsulation</emphasis>
+                oder auch
+                <emphasis>Information Hiding</emphasis>
+                ) versteht man in der Objektorientierung das Zusammenfassen von
                 Eigenschaften und Methoden zu Klassen bzw. Prototypen, wobei die Details der Implementierung verborgen
                 bleiben: In der Regel stellt man die Eigenschaften nur über sogenannte Setter- und Getter-Methoden zur
-                Verfügung. Solche Zugriffsmethoden (eng.: <emphasis>Accessor Methods</emphasis> oder einfach
-                <emphasis>Accessors</emphasis>) können davor schützen, dass einer Eigenschaft ungültige Werte zugewiesen
+                Verfügung. Solche Zugriffsmethoden (eng.:
+                <emphasis>Accessor Methods</emphasis>
+                oder einfach
+                <emphasis>Accessors</emphasis>
+                ) können davor schützen, dass einer Eigenschaft ungültige Werte zugewiesen
                 werden. Erlaubt man dagegen einen direkten Zugriff auf die Eigenschaften (und erfüllt damit nicht das
-                Prinzip der Datenkapselung), ist dies nicht gewährleistet, da dann auch Werte zugewiesen werden können, die
+                Prinzip der Datenkapselung), ist dies nicht gewährleistet, da dann auch Werte zugewiesen werden können,
+                die
                 nicht gültig sind. Der Datenzugriff wird bei einigen Programmiersprachen auch über spezielle Felder
-                geregelt, die jedoch wiederum intern auf <code>get</code>- und <code>set</code>-Methoden zurückgreifen. In
+                geregelt, die jedoch wiederum intern auf <code>get</code>- und <code>set</code>-Methoden zurückgreifen.
+                In
                 Programmiersprachen wie Java kann man über spezielle Schlüsselwörter verhindern, dass die Werte von
-                Eigenschaften von außen (d. h. von außerhalb einer Objektinstanz) geändert werden können (und zwar, indem
+                Eigenschaften von außen (d. h. von außerhalb einer Objektinstanz) geändert werden können (und zwar,
+                indem
                 sie über das Schlüsselwort private als privat markiert werden).
             </p>
 
-            <img src="swe-pk-paradigmen-oop-kapselung.png" alt="Konzept: Kapselung"/>
+            <img alt="Konzept: Kapselung" src="swe-pk-paradigmen-oop-kapselung.png"/>
 
-            <chapter title="Dateneigenschaften und Zugriffseigenschaften" id="konzepte-kapselung-eigenschaften">
+            <chapter id="konzepte-kapselung-eigenschaften" title="Dateneigenschaften und Zugriffseigenschaften">
                 <p>
                     Dateneigenschaften bezeichnen solche Eigenschaften, auf die direkt zugegriffen wird, d.h. ohne
                     Getter- und Setter-Methoden. Zugriffseigenschaften definieren Funktionen, die beim Lesen und
@@ -332,7 +345,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Geheimnisprinzip / Sichtbarkeit" id="konzepte-sichtbarkeit">
+        <chapter id="konzepte-sichtbarkeit" title="Geheimnisprinzip / Sichtbarkeit">
             <p>
                 Das <b>Geheimnisprinzip</b> besagt, dass ein Objekt nach außen nur die Informationen und Methoden
                 bereitstellt, die zur Anwendung notwendig sind. Klassen sowie deren Attribute und Methoden können
@@ -340,7 +353,7 @@
                 jeweiligem Schlüsselwort, bestimmt.
             </p>
 
-            <chapter title="Das Geheimnisprinzip" id="konzepte-sichtbarkeit-geheimnisprinzip">
+            <chapter id="konzepte-sichtbarkeit-geheimnisprinzip" title="Das Geheimnisprinzip">
                 <p>
                     Ein Beispiel: Alle Objekte der Klasse Auto verfügen über die Methode
                     <code>FahrtenbuchAnalysieren</code>. Für einen Benutzer ist es nicht von Interesse, wie dies
@@ -348,7 +361,7 @@
                     gewünschten Ergebnis führt. Die Funktionsweise der Klasse wirkt nach außen wie eine Black Box.
                 </p>
 
-                <img src="swe-pk-paradigmen-oop-geheimnisprinzip.png" alt="Konzepte: Geheimnisprinzip"/>
+                <img alt="Konzepte: Geheimnisprinzip" src="swe-pk-paradigmen-oop-geheimnisprinzip.png"/>
 
                 <p>
                     Das Prinzip der Black Box hat hier mehrere Bedeutungen. Möchte man die Funktionalität einer Klasse
@@ -370,7 +383,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Die Sichtbarkeit" id="konzepte-sichtbarkeit-sichtbarkeit">
+            <chapter id="konzepte-sichtbarkeit-sichtbarkeit" title="Die Sichtbarkeit">
                 <p>
                     Die Sichtbarkeit bestimmt, welche Elemente eines Objekts für andere Objekte sichtbar sind. Die
                     beiden Extreme lauten:
@@ -394,15 +407,17 @@
             </chapter>
         </chapter>
 
-        <chapter title="Vererbung" id="konzepte-vererbung">
+        <chapter id="konzepte-vererbung" title="Vererbung">
             <p>
-                Mithilfe der <b>Vererbung</b> (eng.: <emphasis>Inheritance</emphasis>) können Attribute und Methoden
+                Mithilfe der <b>Vererbung</b> (eng.:
+                <emphasis>Inheritance</emphasis>
+                ) können Attribute und Methoden
                 einer übergeordneten Klasse auf nachgelagerte Klassen vererbt bzw. abgeleitet werden. Das bedeutet, es
                 können Hierarchien von Klassen erstellt werden, die untereinander in Beziehung stehen. Die erbende
                 Klasse bzw. ableitende Klasse nennt man dabei auch Unterklasse, die vererbende Klasse auch Oberklasse.
             </p>
 
-            <img src="swe-pk-paradigmen-oop-vererbung.png" alt="Konzepte: Vererbung"/>
+            <img alt="Konzepte: Vererbung" src="swe-pk-paradigmen-oop-vererbung.png"/>
 
             <p>
                 Die Klasse <code>Fahrzeug</code> enthält die Attribute <code>Fahrzeuglänge</code>,
@@ -423,24 +438,26 @@
             </warning>
         </chapter>
 
-        <chapter title="Abstraktion &amp; Generalisierung / Spezialisierung" id="konzepte-abstraktion">
+        <chapter id="konzepte-abstraktion" title="Abstraktion &amp; Generalisierung / Spezialisierung">
             <p>
                 Klassen oder Prototypen definieren in der objektorientierten Programmierung die Grundlage für mehrere
                 Objektinstanzen, die über einen ähnlichen Zustand und ein ähnliches Verhalten verfügen. Klassen und
-                Prototypen können demnach auch als Abstraktion (eng.: <emphasis>Abstraction</emphasis>) der (konkreten)
+                Prototypen können demnach auch als Abstraktion (eng.:
+                <emphasis>Abstraction</emphasis>
+                ) der (konkreten)
                 Objektinstanzen angesehen werden. In Klassen und Prototypen wird das abstrakte Verhalten definiert (das
                 allen Objektinstanzen gemeinsam ist) bzw. die Eigenschaften, die den Zustand repräsentieren (und
                 ebenfalls allen Objektinstanzen gemeinsam sind). In den Objektinstanzen werden dann die Eigenschaften
                 mit konkreten Werten belegt, und damit wird der konkrete Zustand definiert.
             </p>
 
-            <chapter title="Generalisierung / Spezialisierung" id="konzepte-abstraktion-generalisierung">
+            <chapter id="konzepte-abstraktion-generalisierung" title="Generalisierung / Spezialisierung">
                 <p>
                     Die Zuordnung von Attributen und Methoden zu Ober- und Unterklassen folgt dabei den Prinzipien von
                     Generalisierung und Spezialisierung.
                 </p>
 
-                <img src="swe-pk-paradigmen-oop-generalisierung.png" alt="Konzepte: Generalisierung"/>
+                <img alt="Konzepte: Generalisierung" src="swe-pk-paradigmen-oop-generalisierung.png"/>
 
                 <p>
                     Innerhalb einer Klassenhierarchie sollten Attribute und Methoden so weit wie möglich oben angeordnet
@@ -460,20 +477,20 @@
                     wenig Sinn und verwirrt bei der Programmentwicklung.
                 </p>
                 <warning>
-                    Die Klassenhierarchie sollte ein modellhaftes Abbild eines Realitätsausschnitts sein. Hier kommt ja 
+                    Die Klassenhierarchie sollte ein modellhaftes Abbild eines Realitätsausschnitts sein. Hier kommt ja
                     auch niemand auf die Idee, einen Hund und einen Tisch einer gemeinsamen Kategorie zuzuordnen.
                 </warning>
-                
-                <chapter title="Weiteres Beispiel" id="konzepte-abstraktion-generalisierung-beispiel" 
-                         collapsible="true">
-                    <img src="swe-pk-paradigmen-oop-generalisierung-beispiel.png" 
-                         alt="Konzepte: Generalisierung Beispiel"/>
-                    
+
+                <chapter collapsible="true" id="konzepte-abstraktion-generalisierung-beispiel"
+                         title="Weiteres Beispiel">
+                    <img alt="Konzepte: Generalisierung Beispiel"
+                         src="swe-pk-paradigmen-oop-generalisierung-beispiel.png"/>
+
                     <p>
                         Das Beispiel stammt aus einem vektorbasierten Grafikprogramm. Hier können wir einige
                         interessante Beobachtungen machen:
                     </p>
-                    
+
                     <list>
                         <li>
                             <b>Zweck</b>: Die Klassenhierarchie ordnet typische Zeichenobjekte der Ebene in eine
@@ -494,7 +511,7 @@
                 </chapter>
             </chapter>
 
-            <chapter title="Abstrakte Klassen" id="konzepte-abstraktion-abstrakteklassen">
+            <chapter id="konzepte-abstraktion-abstrakteklassen" title="Abstrakte Klassen">
                 <p>
                     Abstrakte Klassen sind Klassen, die als Oberklassen fungieren, jedoch können von solchen Klassen
                     selbst keine Objekte erstellt werden.
@@ -510,7 +527,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Polymorphismus" id="konzepte-polymorphismus">
+        <chapter id="konzepte-polymorphismus" title="Polymorphismus">
             <p>
                 Das Prinzip der Polymorphie ist einfach und genial zugleich. Objekte verschiedener Klassen müssen
                 gelegentlich gleiche Funktionen ausführen. Mithilfe der Polymorphie ist es möglich, in einer Oberklasse
@@ -543,8 +560,8 @@
                 Objektinstanzen einer Unterklasse können wie Objektinstanzen der jeweiligen Oberklasse behandelt werden.
             </note>
 
-            <chapter title="Beispiel" id="konzepte-polymorphismus-beispiel">
-                <img src="swe-pk-paradigmen-oop-polymorphismus.png" alt="Konzepte: Polymorphismus"/>
+            <chapter id="konzepte-polymorphismus-beispiel" title="Beispiel">
+                <img alt="Konzepte: Polymorphismus" src="swe-pk-paradigmen-oop-polymorphismus.png"/>
 
                 <p>
                     Im Beispiel ist eine Oberklasse <code>Buch</code> und zwei abgeleitete Klassen <code>Fachbuch</code>
@@ -586,7 +603,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Wiederverwendung" id="wiederverwendung">
+    <chapter id="wiederverwendung" title="Wiederverwendung">
         <p>
             Die objektorientierte Programmierung fördert insbesondere den Ansatz der Wiederverwendung. Quellcode zur
             Lösung allgemeiner Probleme kann und sollte für ähnliche Fragestellungen zur Verfügung gestellt werden. Dies
@@ -597,7 +614,7 @@
             Systemaufbau:
         </p>
 
-        <img src="swe-pk-paradigmen-oop-wiederverwendung.png" alt="Konzepte: Wiederverwendung"/>
+        <img alt="Konzepte: Wiederverwendung" src="swe-pk-paradigmen-oop-wiederverwendung.png"/>
 
         <p>
             Ausgangsbasis ist die jeweilige Programmiersprache, die die Prinzipien der objektorientierten Programmierung
@@ -624,7 +641,7 @@
             Projekt zusammengefasst.
         </p>
 
-        <chapter title="Verwaltung der Bibliotheken" id="wiederverwendung-bibliotheken">
+        <chapter id="wiederverwendung-bibliotheken" title="Verwaltung der Bibliotheken">
             <p>
                 Die Verwaltung der Bibliotheken und deren Abhängigkeiten untereinander muss man dabei üblicherweise
                 nicht per Hand vornehmen. Dabei helfen komfortable Programmierwerkzeuge in Form von integrierten
@@ -634,9 +651,9 @@
                 und auflösen. Bei Aktualisierungen wird man benachrichtigt.
             </p>
 
-            <chapter title="Beispiel (VisualStudio)" id="wiederverwendung-bibliotheken-beispiel">
-                <img src="swe-pk-paradigmen-oop-bibliotheken-beispiel-visualstudio.png"
-                     alt="Konzepte: Bibliotheken (Beispiel: VisualStudio)"/>
+            <chapter id="wiederverwendung-bibliotheken-beispiel" title="Beispiel (VisualStudio)">
+                <img alt="Konzepte: Bibliotheken (Beispiel: VisualStudio)"
+                     src="swe-pk-paradigmen-oop-bibliotheken-beispiel-visualstudio.png"/>
 
                 <p>
                     Wir sehen die Entwicklungsumgebung Visual Studio. Am rechten Rand ist der Projektmappen-Explorer
@@ -655,7 +672,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Softwarekomponenten" id="wiederverwendung-komponenten">
+        <chapter id="wiederverwendung-komponenten" title="Softwarekomponenten">
             <p>
                 Je nach Programmtyp und Vorgehensweise wird also bei der Erstellung eines neuen Projekts ein bestimmtes
                 Set an vorhandene Softwarekomponenten zur Nutzung direkt angebunden. Weitere Bibliotheken werden dann
@@ -667,7 +684,7 @@
                 an neue Software in Sachen Umfang und Komplexität zu bewältigen.
             </p>
 
-            <chapter title="Beispiel (.NET-Framework)" id="wiederverwendung-komponenten-beispiel-dotnet">
+            <chapter id="wiederverwendung-komponenten-beispiel-dotnet" title="Beispiel (.NET-Framework)">
                 <p>
                     Ein sehr gutes Beispiel ist das .Net-Framework, das eine sehr umfassende Klassenbibliothek mit
                     mehreren Tausend Klassen für ein sehr breites Anwendungsspektrum bereitstellt. Für nahezu alle
@@ -676,8 +693,8 @@
                 </p>
             </chapter>
 
-            <chapter title="Beispiel (Java)" id="wiederverwendung-komponenten-beispiel-java">
-                <img src="swe-pk-paradigmen-oop-komponenten-java.png" alt="Wiederverwendung: Java Komponenten"/>
+            <chapter id="wiederverwendung-komponenten-beispiel-java" title="Beispiel (Java)">
+                <img alt="Wiederverwendung: Java Komponenten" src="swe-pk-paradigmen-oop-komponenten-java.png"/>
 
                 <p>
                     Ein weiteres Beispiel ist die Umsetzung von grafischen Benutzeroberflächen für
@@ -697,7 +714,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018

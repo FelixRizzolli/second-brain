@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Sprachen Lernen" id="sprachen-lernen">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sprachen-lernen"
+       title="Sprachen Lernen"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Mythen über das Sprachenlernen" id="mythen-ueber-das-sprachenlernen">
+    <chapter id="mythen-ueber-das-sprachenlernen" title="Mythen über das Sprachenlernen">
         <p>
             Die meisten Mythen sind einfach nur Ausreden. Das Erlernen einer Sprache ist eine geistige Herausforderung.
             Wenn wir daher sicher sind, es nicht zu können, verlieren wir unsere Motivation, unsere Leidenschaft
@@ -14,7 +15,8 @@
             einzige Grund dafür ist, dass wir diesem vermeintlichen Grund nachgeben.
         </p>
 
-        <chapter title="Sind Erwachsene beim Sprachenlernen nicht im Nachteil?" id="sind-erwachsene-beim-sprachenlernen-nicht-im-nachteil">
+        <chapter id="sind-erwachsene-beim-sprachenlernen-nicht-im-nachteil"
+                 title="Sind Erwachsene beim Sprachenlernen nicht im Nachteil?">
             <p>
                 Einer der am häufigsten genannten Gründe, warum viele nicht versuchen, eine Sprache zu erlernen, lautet,
                 dass es ab einem bestimmten Alter sinnlos sei, eine neue Sprache zu erlernen: »Kinder sind besser im
@@ -52,7 +54,7 @@
             </p>
         </chapter>
 
-        <chapter title="Mir fehlt das Sprach-Gen" id="mir-fehlt-das-sprach-gen">
+        <chapter id="mir-fehlt-das-sprach-gen" title="Mir fehlt das Sprach-Gen">
             <p>
                 Die Behauptung "Mangelndes Talent" zu haben ist eine selbst erfüllende Prophezeiung, wenn es das
                 wirklich gibt. Jene die dies glauben, bemühen sich nicht wirklich die neue Sprache zu lernen, und da sie
@@ -64,7 +66,7 @@
             </p>
         </chapter>
 
-        <chapter title="Ich habe zu wenig Zeit dafür" id="ich-habe-zu-wenig-zeit-dafür">
+        <chapter id="ich-habe-zu-wenig-zeit-dafür" title="Ich habe zu wenig Zeit dafür">
             <p>
                 Wenn es überhaupt Menschen gibt, die sich in Vollzeit dem Lernen von Sprachen widmen, dann sind sie eine
                 Rarität. So gut wie alle erfolgreichen Sprachenlerner, haben dies neben einem Vollzeitjob, neben ihrem
@@ -80,7 +82,7 @@
             </p>
         </chapter>
 
-        <chapter title="Sprachlern-Programme sind teuer" id="sprachlern-programme-sind-teuer">
+        <chapter id="sprachlern-programme-sind-teuer" title="Sprachlern-Programme sind teuer">
             <p>
                 Es benötigt keine teuren Sprachlern-Kurse, Software, Immersionsprogramme, Flüge rund um die Welt, Bücher
                 und Privatlehrer. Billigere Alternativen oder kostenlose Informationsquellen wie Online-Tools, Blogs
@@ -90,7 +92,7 @@
             </p>
         </chapter>
 
-        <chapter title="Ich warte auf den perfekten Sprachkurs" id="ich-warte-auf-den-perfekten-sprachkurs">
+        <chapter id="ich-warte-auf-den-perfekten-sprachkurs" title="Ich warte auf den perfekten Sprachkurs">
             <p>
                 Selbst wenn es den perfekten Sprachkurs gibt, ist dieser nur so gut, wie die Bemühungen, die wir
                 aufwenden, um die Sprache auch regelmäßig anzuwenden. Kein Kurs wird jemals perfekt sein. Ein
@@ -102,16 +104,17 @@
             </p>
         </chapter>
 
-        <chapter title="Durch die falsche Lernmethode bin ich zum Scheitern verurteilt, bevor ich überhaupt angefangen habe"
-                 id="durch-die-falsche-lernmethode-bin-ich-zum-scheitern-verurteilt-bevor-ich-ueberhaupt-angefangen-habe">
+        <chapter
+                id="durch-die-falsche-lernmethode-bin-ich-zum-scheitern-verurteilt-bevor-ich-ueberhaupt-angefangen-habe"
+                title="Durch die falsche Lernmethode bin ich zum Scheitern verurteilt, bevor ich überhaupt angefangen habe">
             <p>
                 Es ist in Ordnung, einen holprigen Start zu haben. Der entscheidende Punkt ist, überhaupt anzufangen!
                 Ein falscher oder schlechter Kurs entscheidet nicht darüber, wie es beim nächsten Mal laufen wird.
             </p>
         </chapter>
 
-        <chapter title="Ich muss erst etwas lernen, bevor ich mich unterhalten kann"
-                 id="ich-muss-erst-etwas-lernen-bevor-ich-mich-unterhalten-kann">
+        <chapter id="ich-muss-erst-etwas-lernen-bevor-ich-mich-unterhalten-kann"
+                 title="Ich muss erst etwas lernen, bevor ich mich unterhalten kann">
             <p>
                 Eine neue Sprache sollte vom ersten Tag an gesprochen werden, auch wenn das gegen die Intention sein
                 mag. Viele von uns meinen, wir müssten erst etwas lernen – bis zu diesem glorreichen Tag, an dem wir
@@ -120,7 +123,7 @@
             </p>
         </chapter>
 
-        <chapter title="Manche Sprachen sind einfach zu schwierig" id="manche-sprachen-sind-einfach-zu-schwierig">
+        <chapter id="manche-sprachen-sind-einfach-zu-schwierig" title="Manche Sprachen sind einfach zu schwierig">
             <p>
                 Es gibt keine »schwierigste« Sprache. Das sind alles nur tendenziöse Meinungen von stolzen
                 Muttersprachlern, die keine Ahnung haben, wie es ist, ihre Sprache als Zweitsprache zu lernen, oder von
@@ -130,7 +133,7 @@
             </p>
         </chapter>
 
-        <chapter title="Stillstand ist unvermeidlich" id="stillstand-ist-unvermeidlich">
+        <chapter id="stillstand-ist-unvermeidlich" title="Stillstand ist unvermeidlich">
             <p>
                 Es ist eine Tatsache, dass wir einmal hängen bleiben. Wenn wir eine gute Methode zum Lernen einer
                 Sprache gefunden haben, dann kann es sein, dass diese ab einem gewissen Niveau nicht mehr so gut
@@ -139,8 +142,8 @@
             </p>
         </chapter>
 
-        <chapter title="Es ist unmöglich, eine Sprache perfekt zu beherrschen"
-                 id="es-ist-unmöglich-eine-sprache-perfekt-zu-beherrschen">
+        <chapter id="es-ist-unmöglich-eine-sprache-perfekt-zu-beherrschen"
+                 title="Es ist unmöglich, eine Sprache perfekt zu beherrschen">
             <p>
                 Fließendes Sprechen einer Zweitsprache ist für uns Normalsterbliche sehr wohl möglich, auch für
                 diejenigen, die in der Schule im Sprachunterricht schlecht abgeschnitten haben. Wir sollten zuerst
@@ -150,7 +153,7 @@
             </p>
         </chapter>
 
-        <chapter title="Sprachen sind langweilig" id="sprachen-sind-langweilig">
+        <chapter id="sprachen-sind-langweilig" title="Sprachen sind langweilig">
             <p>
                 Es gibt viele interessante Möglichkeiten, in einer Sprache Fortschritte zu machen, bei denen wir nichts
                 Stumpfsinniges tun müssen. Wir könnten uns mit einigen alternativen Inhalten in der Sprache aussetzen –
@@ -158,8 +161,8 @@
             </p>
         </chapter>
 
-        <chapter title="Muttersprachler werden mit mir nicht sprechen"
-                 id="muttersprachler-werden-mit-mir-nicht-sprechen">
+        <chapter id="muttersprachler-werden-mit-mir-nicht-sprechen"
+                 title="Muttersprachler werden mit mir nicht sprechen">
             <p>
                 Das Problem ist nur, dass wir uns nie bereit fühlen werden. Es wird immer noch mehr zu lernen geben,
                 sodass wir immer eine Ausrede finden: "Erst muss ich noch mehr Vokabeln lernen, bevor ich mit anderen
@@ -169,8 +172,8 @@
             </p>
         </chapter>
 
-        <chapter title="Meine Freunde und meine Familie werden mich nicht unterstützen"
-                 id="meine-freunde-und-meine-familie-werden-mich-nicht-unterstuetzen">
+        <chapter id="meine-freunde-und-meine-familie-werden-mich-nicht-unterstuetzen"
+                 title="Meine Freunde und meine Familie werden mich nicht unterstützen">
             <p>
                 Diese Schwierigkeiten werden viele von uns erleben. Unsere Freunde oder unsere Familie werden uns
                 vielleicht in keiner Weise bei dieser großen Herausforderung unterstützen – weder bezogen auf die
@@ -179,7 +182,7 @@
             </p>
         </chapter>
 
-        <chapter title="Jeder kann Englisch" id="jeder-kann-englisch">
+        <chapter id="jeder-kann-englisch" title="Jeder kann Englisch">
             <p>
                 Als Tourist kommt man eigentlich mit Englisch immer durch, ohne die Landessprache zu lernen. Teurere
                 Restaurants bieten eine englische Version der Speisekarten, überteuerte Reiseführer sprechen Englisch,
@@ -191,8 +194,8 @@
             </p>
         </chapter>
 
-        <chapter title="Ich kann mit den Fortschritten anderer nicht mithalten"
-                 id="ich-kann-mit-den-fortschritten-anderer-nicht-mithalten">
+        <chapter id="ich-kann-mit-den-fortschritten-anderer-nicht-mithalten"
+                 title="Ich kann mit den Fortschritten anderer nicht mithalten">
             <p>
                 Erfolgreiche Sprachlerner machen weiter trotz der Herausforderungen. Wenn wir einer Herausforderung
                 gegenüberstehen, sollten wir nicht denken: »Ich könnte ebenso gut aufgeben, denn dieser oder jener
@@ -201,7 +204,7 @@
             </p>
         </chapter>
 
-        <chapter title="Misserfolg erzeugt Misserfolg" id="misserfolg-erzeugt-misserfolg">
+        <chapter id="misserfolg-erzeugt-misserfolg" title="Misserfolg erzeugt Misserfolg">
             <p>
                 Viele die, die einmal erfolglos versucht haben, eine Sprache zu lernen, sind möglicherweise zu dem
                 Schluss gekommen, dass sie in Sprachen schlecht sind. Die sehr viel logischere Schlussfolgerung ist,
@@ -216,8 +219,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Grundlegendes über Sprachen" id="grundlegendes-ueber-sprachen">
-        <chapter title="Die Funktion einer Sprache" id="die-funktion-einer-sprache">
+    <chapter id="grundlegendes-ueber-sprachen" title="Grundlegendes über Sprachen">
+        <chapter id="die-funktion-einer-sprache" title="Die Funktion einer Sprache">
             <p>
                 Jede Sprache verfügt über vier Funktionen:
             </p>
@@ -245,7 +248,7 @@
             </list>
         </chapter>
 
-        <chapter title="Die Struktur einer Sprache – Grammatik" id="die-struktur-einer-sprache-grammatik">
+        <chapter id="die-struktur-einer-sprache-grammatik" title="Die Struktur einer Sprache – Grammatik">
             <p>
                 Jede Sprache folgt einer bestimmten Struktur. Diese Struktur wird in der jeweiligen Grammatik
                 beschrieben. Die Grammatik lässt sich in folgende Teilbereiche unterteilen:
@@ -276,7 +279,7 @@
             </list>
         </chapter>
 
-        <chapter title="Fließende Sprachbeherrschung" id="flissende-sprachbeherrschung">
+        <chapter id="flissende-sprachbeherrschung" title="Fließende Sprachbeherrschung">
             <p>
                 Die offizielle Definition aus dem Oxford English Dictionary:
             </p>
@@ -295,9 +298,11 @@
             </p>
         </chapter>
 
-        <chapter title="Das CEFRL-System" id="das-cefrl-system">
+        <chapter id="das-cefrl-system" title="Das CEFRL-System">
             <p>
-                Das <emphasis>Common European Framework of Reference for Languages</emphasis> (CEFRL) wurde vom
+                Das
+                <emphasis>Common European Framework of Reference for Languages</emphasis>
+                (CEFRL) wurde vom
                 Europarat in den 1990er Jahren erarbeitet und 2001 zum ersten Mal veröffentlicht. Es ist eine umfassende
                 Richtlinie zur Sprachbeurteilung. Das System arbeitet mit einer Standardterminologie, die in ganz Europa
                 für die jeweiligen Sprachniveaus akzeptiert wird. Es wird auch von vielen Institutionen für die
@@ -455,8 +460,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Effizient lernen" id="effizient-lernen">
-        <chapter title="Eine Fremdsprache in 10 Wochen lernen" id="eine-fremdsprache-in-10-wochen-lernen">
+    <chapter id="effizient-lernen" title="Effizient lernen">
+        <chapter id="eine-fremdsprache-in-10-wochen-lernen" title="Eine Fremdsprache in 10 Wochen lernen">
             <p>
                 Für dieses Ziel sind meistens Sprachkurse, die im gewöhnlichen Buchhandel erworben werden können,
                 optimal. Diese sollten jedoch folgende Kriterien erfüllen:
@@ -497,8 +502,8 @@
             </warning>
         </chapter>
 
-        <chapter title="Lernmethoden" id="lernmethoden">
-            <chapter title="Grundlegende Gesetze und Prinzipien" id="grundlegende-gesetze-und-prinzipien">
+        <chapter id="lernmethoden" title="Lernmethoden">
+            <chapter id="grundlegende-gesetze-und-prinzipien" title="Grundlegende Gesetze und Prinzipien">
                 <list style="bullet">
                     <li>
                         <b>In 20 Minuten zum Ziel</b> – Wir sollten nie länger als 20 Minuten für eine Lerneinheit
@@ -550,7 +555,7 @@
                 </list>
             </chapter>
 
-            <chapter title="Die wichtigsten Wörter" id="die-wichtigsten-woerter">
+            <chapter id="die-wichtigsten-woerter" title="Die wichtigsten Wörter">
                 <p>
                     Es gib Statistiken, wonach wir bis zu unserem siebzehnten Lebensjahr mit 60.000 Wörtern in Kontakt
                     gekommen sind, also Wörter oder Begriffe, die wir jemals gehört oder gelesen haben. Dazu zählen auch
@@ -562,7 +567,7 @@
                 </p>
             </chapter>
         </chapter>
-        <chapter title="Aktionsplan" id="aktionsplan">
+        <chapter id="aktionsplan" title="Aktionsplan">
             <p>
                 Die besten Ideen der Welt sind wertlos, wenn sie nicht umgesetzt werden. Daher brauchen wir unbedingt
                 einen Aktionsplan.
@@ -594,7 +599,7 @@
             </list>
         </chapter>
 
-        <chapter title="Immersion" id="immersion">
+        <chapter id="immersion" title="Immersion">
             <p>
                 Es ist nicht nötig im Ausland zu sein, um eine Sprache zu lernen. Das geht auch ganz bequem von zu Hause
                 aus oder über eine Community vor Ort. Es könnte sogar besser sein, die Sprache von zu Hause aus zu
@@ -627,7 +632,7 @@
                 </li>
             </list>
 
-            <chapter title="Reisen als Motivation" id="reisen-als-motivation">
+            <chapter id="reisen-als-motivation" title="Reisen als Motivation">
                 <p>
                     Der wirksamste Nutzen eines Flugtickets liegt darin, den bevorstehenden Abflug als Motivation für
                     besonders harte Arbeit vor der Reise zu betrachten, damit wir in der Lage sind, unsere Erlebnisse in
@@ -638,7 +643,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Hilfreiche Websites" id="hilfreiche-websites">
+            <chapter id="hilfreiche-websites" title="Hilfreiche Websites">
                 <p>
                     Die Website <a href="https://www.couchsurfing.com/" ignore-vars="true">couchsurfing.org</a> ist
                     unter Reisenden mit kleinem Budget bekannt. Sie bietet eine Möglichkeit, sich mit Leuten zu
@@ -671,7 +676,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Soziales Fallschirmspringen" id="soziales-fallschirmspringen">
+            <chapter id="soziales-fallschirmspringen" title="Soziales Fallschirmspringen">
                 <p>
                     Das Leben beginnt dort, wo unsere Komfortzone endet. Einfach auf jemanden zuzugehen, von dem wir
                     wissen, dass er die Zielsprache spricht und ein Gespräch zu beginnen, wäre eine Möglichkeit sich in
@@ -682,7 +687,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Sprechen" id="sprechen">
+        <chapter id="sprechen" title="Sprechen">
             <p>
                 Ewig lernen, bis zu einem vagen »Ich bin bereit«-Tag, ist nicht der richtige Weg. Die Sprache laut und
                 mit einem echten Menschen jeden Tag zu sprechen, ob nun persönlich oder online, ist die bei Weitem beste
@@ -694,7 +699,7 @@
                 perfekt klingt, sondern dass wir uns verständlich machen können.
             </p>
 
-            <chapter title="Vorbereitung für das erste Gespräch" id="vorbereitung-fuer-das-erste-gespraech">
+            <chapter id="vorbereitung-fuer-das-erste-gespraech" title="Vorbereitung für das erste Gespräch">
                 <p>
                     Sind wir am Anfang eine Sprache zu lernen, dann ist eine Vorbereitung von ein paar Stunden sehr
                     sinnvoll. Diese sollte folgendes Beinhalten:
@@ -729,7 +734,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Wenn uns die Worte fehlen" id="wenn-uns-die-worte-fehlen">
+            <chapter id="wenn-uns-die-worte-fehlen" title="Wenn uns die Worte fehlen">
                 <p>
                     Damit uns nicht die Worte fehlen können wir dem schon mal vorbeugen. Unserem Gegenüber ist bereits
                     klar, dass wir Sprachanfänger sind, deshalb wird er weder überrascht noch verärgert sein, wenn wir
@@ -768,7 +773,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Wenn wir die Antwort nicht verstehen" id="wenn-wir-die-antwort-nicht-verstehen">
+            <chapter id="wenn-wir-die-antwort-nicht-verstehen" title="Wenn wir die Antwort nicht verstehen">
                 <p>
                     Wir können nicht alles Wissen, erst recht am Anfang haben wir einen kleinen Wortschatz. Aber indem
                     wir spezielle Wörter oder Satzteile in der Rede einer Person verstehen, können wir daraus ableiten
@@ -782,8 +787,8 @@
             </chapter>
         </chapter>
 
-        <chapter title="Tipps" id="tipps">
-            <chapter title="Kognaten - Wörter gleicher Abstammung" id="kognaten-woerter-gleicher-abstammung">
+        <chapter id="tipps" title="Tipps">
+            <chapter id="kognaten-woerter-gleicher-abstammung" title="Kognaten - Wörter gleicher Abstammung">
                 <p>
                     Ein Kognat ist ein Wort, das nicht nur aussieht und klingt wie ein Wort, das wir bereits kennen,
                     sondern auch in unserer Muttersprache dasselbe bedeutet wie in unserer Zielsprache. Egal welche
@@ -807,7 +812,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Konjugationen" id="konjugationen">
+            <chapter id="konjugationen" title="Konjugationen">
                 <p>
                     Modalverben sind »Hilfs«-Verben (Hilfszeitwörter), die uns helfen, etwas auszudrücken, ohne dass wir
                     uns zu sehr um die Konjugation kümmern müssen. Bei der Konjugation verändern sich die Worte je
@@ -835,8 +840,8 @@
                 </p>
             </chapter>
 
-            <chapter title="Traditionelles lernen für inhaltliche Probleme"
-                     id="traditionelles-lernen-fuer-inhaltliche-probleme">
+            <chapter id="traditionelles-lernen-fuer-inhaltliche-probleme"
+                     title="Traditionelles lernen für inhaltliche Probleme">
                 <p>
                     Es ist sehr schwierig, einen genauen Plan dafür zu erstellen, worauf das Hauptaugenmerk liegen
                     sollte, weil jeder von uns wegen der unterschiedlichen Schwerpunkte, Lernstrategien, Leidenschaften,
@@ -854,7 +859,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Grammatik" id="grammatik">
+            <chapter id="grammatik" title="Grammatik">
                 <p>
                     Für viele Menschen ist die Grammatik der abschreckendste Aspekt am Erlernen einer Sprache. Das
                     Problem beim Grammatiklernen zu Beginn eines Sprachlern-Projekts oder wenn wir noch nicht daran
@@ -868,7 +873,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Input: Filme und Bücher" id="input-filme-und-buecher">
+            <chapter id="input-filme-und-buecher" title="Input: Filme und Bücher">
                 <p>
                     Eine TV-Show zu verstehen oder eine Zeitung lesen zu können, ist keine so wirksame Hilfe wie die
                     mündliche Übung beim Bereisen eines Landes oder bei geselligen Kontakten mit anderen Leuten. Als
@@ -890,7 +895,7 @@
                 </p>
             </chapter>
 
-            <chapter title="In der Zielsprache denken" id="in-der-zielsprache-denken">
+            <chapter id="in-der-zielsprache-denken" title="In der Zielsprache denken">
                 <p>
                     In einer anderen Sprache zu denken, bedeutet für die meisten Menschen, ihren inneren Dialog in der
                     Zielsprache zu führen und ich bemühe mich, dies von Anfang an zu tun. Ist uns beispielsweise die
@@ -905,9 +910,9 @@
             </chapter>
         </chapter>
 
-        <chapter title="Hilfsmittel" id="hilfsmittel">
-            <chapter title="Preiswerte allgemeine Kurse gegenüber teuren Kursen"
-                     id="preiswerte-allgemeine-kurse-gegenueber-teuren-kursen">
+        <chapter id="hilfsmittel" title="Hilfsmittel">
+            <chapter id="preiswerte-allgemeine-kurse-gegenueber-teuren-kursen"
+                     title="Preiswerte allgemeine Kurse gegenüber teuren Kursen">
                 <p>
                     Es besteht kein Zusammenhang zwischen dem Preis für einen Kurs und dessen Qualität, Nützlichkeit und
                     Ergebnissen. Eine Sache, die normalerweise wirksam ist, wenn wir viel Geld hingelegt haben, ist der
@@ -916,7 +921,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Der perfekte Lernansatz" id="der-perfekte-lernansatz">
+            <chapter id="der-perfekte-lernansatz" title="Der perfekte Lernansatz">
                 <p>
                     Kein Kurs, egal wie überzeugend die Werbung dafür auch sein mag, kann die allumfassende Lösung für
                     alle unsere Probleme beim Sprachenlernen bieten. Wir sollten uns auf das Sprechen konzentrieren und
@@ -927,8 +932,8 @@
                 </p>
             </chapter>
 
-            <chapter title="Das wichtigste für den Start" id="das-wichtigste-fuer-den-start">
-                <chapter title="Entschuldigen" id="entschuldigen">
+            <chapter id="das-wichtigste-fuer-den-start" title="Das wichtigste für den Start">
+                <chapter id="entschuldigen" title="Entschuldigen">
                     <table style="none">
                         <tr>
                             <td>Ärgern Sie sich nicht, aber ... / Ärger dich nicht, aber ...</td>
@@ -949,7 +954,7 @@
                     </table>
                 </chapter>
 
-                <chapter title="Zustimmen / Ablehnen" id="zustimmen-blehnen">
+                <chapter id="zustimmen-blehnen" title="Zustimmen / Ablehnen">
                     <table style="none">
                         <tr>
                             <td>Hundertprozentig.</td>
@@ -1014,7 +1019,7 @@
                     </table>
                 </chapter>
 
-                <chapter title="Schluss" id="schluss">
+                <chapter id="schluss" title="Schluss">
                     <table style="none">
                         <tr>
                             <td>Mehr kann ich dazu nicht sagen.</td>
@@ -1043,7 +1048,7 @@
                     </table>
                 </chapter>
 
-                <chapter title="Füllwörter" id="fuellwoerter">
+                <chapter id="fuellwoerter" title="Füllwörter">
                     <table style="none">
                         <tr>
                             <td>Verständlich.</td>
@@ -1124,7 +1129,7 @@
                     </table>
                 </chapter>
 
-                <chapter title="Erklären" id="erklaeren">
+                <chapter id="erklaeren" title="Erklären">
                     <table style="none">
                         <tr>
                             <td>Um genau zu sein .../Genauer gesagt ...</td>
@@ -1173,7 +1178,7 @@
                     </table>
                 </chapter>
 
-                <chapter title="Öffnen" id="oeffnen">
+                <chapter id="oeffnen" title="Öffnen">
                     <table style="none">
                         <tr>
                             <td>Vielen Dank.</td>
@@ -1194,7 +1199,7 @@
                     </table>
                 </chapter>
 
-                <chapter title="Im Vorbeigehen" id="im-vorbeigehen">
+                <chapter id="im-vorbeigehen" title="Im Vorbeigehen">
                     <table style="none">
                         <tr>
                             <td>Könnten Sie mir bitte sagen ...</td>
@@ -1211,7 +1216,7 @@
                     </table>
                 </chapter>
 
-                <chapter title="Qualifizieren" id="qualifizieren">
+                <chapter id="qualifizieren" title="Qualifizieren">
                     <table style="none">
                         <tr>
                             <td>Ehrlich gesagt ...</td>
@@ -1312,7 +1317,7 @@
                     </table>
                 </chapter>
 
-                <chapter title="Zitieren" id="zitieren">
+                <chapter id="zitieren" title="Zitieren">
                     <table style="none">
                         <tr>
                             <td>Sie sagte so was wie ...</td>
@@ -1333,7 +1338,7 @@
                     </table>
                 </chapter>
 
-                <chapter title="Thema wechseln" id="thema-wechseln">
+                <chapter id="thema-wechseln" title="Thema wechseln">
                     <table style="none">
                         <tr>
                             <td>Es scheint mir, dass ...</td>
@@ -1368,7 +1373,7 @@
             </chapter>
         </chapter>
     </chapter>
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-386882526, Fliessend in drei Monaten, Benny Lewis, mvgverlag, 2015

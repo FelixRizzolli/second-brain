@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="XML - XQuery" id="xml-xquery">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="xml-xquery"
+       title="XML - XQuery"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlegendes zu XQuery" id="grundlagen">
-        <img src="xml-tools-overview.png" alt="XML - Tools"/>
+    <chapter id="grundlagen" title="Grundlegendes zu XQuery">
+        <img alt="XML - Tools" src="xml-tools-overview.png"/>
 
         <p>
             XQuery ist DIE Sprache für Abfragen auf XML-Dokumenten und baut dabei auf
@@ -22,7 +23,7 @@
         </p>
     </chapter>
 
-    <chapter title="Beispiel" id="beispiel">
+    <chapter id="beispiel" title="Beispiel">
         <code-block lang="xml">
             <![CDATA[
             <?xml version="1.0" encoding="UTF-8"?>
@@ -64,7 +65,7 @@
         </code-block>
     </chapter>
 
-    <chapter title="Aufbau von XQuery" id="aufbau">
+    <chapter id="aufbau" title="Aufbau von XQuery">
         <table>
             <tr>
                 <td>Element</td>
@@ -73,7 +74,9 @@
             </tr>
             <tr>
                 <td>Funktion</td>
-                <td><code><format color="Red">doc("books.xml")</format></code></td>
+                <td><code>
+                    <format color="Red">doc("books.xml")</format>
+                </code></td>
                 <td>
                     XQuery verwendet Funktionen, um Daten aus einem XML-Dokument zu extrahieren. Die
                     <code>doc()</code>-Funktion wird verwendet, um Informationen aus einer XML-Datei zu extrahieren.
@@ -81,7 +84,9 @@
             </tr>
             <tr>
                 <td>Pfadausdruck</td>
-                <td><code>doc("books.xml")<format color="Red">/bookstore/book/title</format></code></td>
+                <td><code>doc("books.xml")
+                    <format color="Red">/bookstore/book/title</format>
+                </code></td>
                 <td>
                     <p>
                         XQuery verwendet Pfadausdrücke, um durch die Elemente in einem XML-Dokument zu navigieren. Das
@@ -100,7 +105,9 @@
             </tr>
             <tr>
                 <td>Prädikate</td>
-                <td><code>doc("books.xml")/bookstore/book<format color="Red">[price&lt;30]</format></code></td>
+                <td><code>doc("books.xml")/bookstore/book
+                    <format color="Red">[price&lt;30]</format>
+                </code></td>
                 <td>
                     <p>
                         XQuery verwendet Prädikate, um die aus XML-Dokumenten extrahierten Daten einzuschränken.
@@ -122,8 +129,8 @@
         </table>
     </chapter>
 
-    <chapter title="FLWOR Ausdrücke" id="flwor">
-        <chapter title="Grundlagen" id="flwor-grundlagen">
+    <chapter id="flwor" title="FLWOR Ausdrücke">
+        <chapter id="flwor-grundlagen" title="Grundlagen">
             <p>
                 FLWOR ist ein Akronym für "For, Let, Where, Order by, Return".
             </p>
@@ -147,7 +154,10 @@
                 </tr>
                 <tr>
                     <td><code>for</code></td>
-                    <td><emphasis>OPTIONAL</emphasis> wählt eine Folge von Knoten aus</td>
+                    <td>
+                        <emphasis>OPTIONAL</emphasis>
+                        wählt eine Folge von Knoten aus
+                    </td>
                     <td>
                         Die <code>for</code>-Klausel wählt alle Buchelemente unter dem Element <code>bookstore</code> in
                         einer Variablen namens <code>$x</code> aus.
@@ -155,14 +165,20 @@
                 </tr>
                 <tr>
                     <td><code>let</code></td>
-                    <td><emphasis>OPTIONAL</emphasis> bindet eine Sequenz an eine Variable</td>
+                    <td>
+                        <emphasis>OPTIONAL</emphasis>
+                        bindet eine Sequenz an eine Variable
+                    </td>
                     <td>
                         <emphasis>(im Beispiel nicht vorhanden)</emphasis>
                     </td>
                 </tr>
                 <tr>
                     <td><code>where</code></td>
-                    <td><emphasis>OPTIONAL</emphasis> filtert die Knotenpunkte</td>
+                    <td>
+                        <emphasis>OPTIONAL</emphasis>
+                        filtert die Knotenpunkte
+                    </td>
                     <td>
                         Die <code>where</code>-Klausel wählt nur <code>book</code>-Elemente aus, deren
                         <code>price</code>-Element einen Wert von mehr als <code>30</code> hat.
@@ -170,7 +186,10 @@
                 </tr>
                 <tr>
                     <td><code>order by</code></td>
-                    <td><emphasis>OPTIONAL</emphasis> sortiert die Knotenpunkte</td>
+                    <td>
+                        <emphasis>OPTIONAL</emphasis>
+                        sortiert die Knotenpunkte
+                    </td>
                     <td>
                         Die <code>order by</code>-Klausel definiert die Sortierreihenfolge. Es wird nach dem Element
                         <code>title</code> sortiert.
@@ -187,7 +206,7 @@
             </table>
         </chapter>
 
-        <chapter title="Die for Klausel" id="flwor-for">
+        <chapter id="flwor-for" title="Die for Klausel">
             <p>
                 Die <code>for</code>-Klausel bindet eine Variable an jedes Element, das durch den
                 <code>in</code>-Ausdruck zurückgegeben wird. Die <code>for</code>-Klausel führt zu einer Iteration. Es
@@ -199,14 +218,15 @@
                 Schlüsselwort <code>to</code> verwendet werden:
             </p>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="XQuery">
+            <code-block collapsed-title="XQuery" collapsible="true" lang="xml">
                 <![CDATA[
                 for $x in (1 to 5)
-                return <test>{$x}</test>
+                        return
+                <test>{$x}</test>
                 ]]>
             </code-block>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="Ergebnis">
+            <code-block collapsed-title="Ergebnis" collapsible="true" lang="xml">
                 <![CDATA[
                 <test>1</test>
                 <test>2</test>
@@ -220,14 +240,15 @@
                 Das Schlüsselwort <code>at</code> kann zum Zählen der Iterationen verwendet werden:
             </p>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="XQuery">
+            <code-block collapsed-title="XQuery" collapsible="true" lang="xml">
                 <![CDATA[
                 for $x at $i in doc("books.xml")/bookstore/book/title
-                return <book>{$i}. {data($x)}</book>
+                        return
+                <book>{$i}. {data($x)}</book>
                 ]]>
             </code-block>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="Ergebnis">
+            <code-block collapsed-title="Ergebnis" collapsible="true" lang="xml">
                 <![CDATA[
                 <book>1. Everyday Italian</book>
                 <book>2. Harry Potter</book>
@@ -241,14 +262,15 @@
                 <code>in</code>-Ausdrücke müssen Kommasepariert angegeben werden:
             </p>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="XQuery">
+            <code-block collapsed-title="XQuery" collapsible="true" lang="xml">
                 <![CDATA[
                 for $x in (10,20), $y in (100,200)
-                return <test>x={$x} and y={$y}</test>
+                        return
+                <test>x={$x} and y={$y}</test>
                 ]]>
             </code-block>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="Ergebnis">
+            <code-block collapsed-title="Ergebnis" collapsible="true" lang="xml">
                 <![CDATA[
                 <test>x=10 and y=100</test>
                 <test>x=10 and y=200</test>
@@ -259,53 +281,55 @@
 
         </chapter>
 
-        <chapter title="Die let Klausel" id="flwor-let">
+        <chapter id="flwor-let" title="Die let Klausel">
             <p>
                 Die <code>let</code>-Klausel ermöglicht die Zuweisung von Variablen, um die mehrfache Wiederholung
                 desselben Ausdrucks zu vermeiden. Die <code>let</code>-Klausel führt nicht zu einer Iteration.
             </p>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="XQuery">
+            <code-block collapsed-title="XQuery" collapsible="true" lang="xml">
                 <![CDATA[
                 let $x := (1 to 5)
-                return <test>{$x}</test>
+                        return
+                <test>{$x}</test>
                 ]]>
             </code-block>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="Ergebnis">
+            <code-block collapsed-title="Ergebnis" collapsible="true" lang="xml">
                 <![CDATA[
                 <test>1 2 3 4 5</test>
                 ]]>
             </code-block>
         </chapter>
 
-        <chapter title="Die where Klausel" id="flwor-where">
+        <chapter id="flwor-where" title="Die where Klausel">
             <p>
                 Die <code>where</code>-Klausel wird verwendet, um ein oder mehrere Kriterien für das Ergebnis anzugeben:
             </p>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="XQuery">
+            <code-block collapsed-title="XQuery" collapsible="true" lang="xml">
                 <![CDATA[
-                where $x/price>30 and $x/price<100
+                where $x/price>30 and $x/price
+                <100
                 ]]>
             </code-block>
         </chapter>
 
-        <chapter title="Die order by Klausel" id="flwor-order">
+        <chapter id="flwor-order" title="Die order by Klausel">
             <p>
                 Die <code>order by</code>-Klausel wird verwendet, um die Sortierreihenfolge des Ergebnisses anzugeben.
                 Im folgenden Beispiel wird das Ergebnis nach <code>category</code> und <code>title</code> sortieren:
             </p>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="XQuery">
+            <code-block collapsed-title="XQuery" collapsible="true" lang="xml">
                 <![CDATA[
                 for $x in doc("books.xml")/bookstore/book
-                order by $x/@category, $x/title
-                return $x/title
+                        order by $x/@category, $x/title
+                        return $x/title
                 ]]>
             </code-block>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="Ergebnis">
+            <code-block collapsed-title="Ergebnis" collapsible="true" lang="xml">
                 <![CDATA[
                 <title lang="en">Harry Potter</title>
                 <title lang="en">Everyday Italian</title>
@@ -315,19 +339,19 @@
             </code-block>
         </chapter>
 
-        <chapter title="Die return Klausel" id="flwor-return">
+        <chapter id="flwor-return" title="Die return Klausel">
             <p>
                 Die Rückgabeklausel gibt an, was zurückgegeben werden soll.
             </p>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="XQuery">
+            <code-block collapsed-title="XQuery" collapsible="true" lang="xml">
                 <![CDATA[
                 for $x in doc("books.xml")/bookstore/book
-                return $x/title
+                        return $x/title
                 ]]>
             </code-block>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="Ergebnis">
+            <code-block collapsed-title="Ergebnis" collapsible="true" lang="xml">
                 <![CDATA[
                 <title lang="en">Everyday Italian</title>
                 <title lang="en">Harry Potter</title>
@@ -337,7 +361,7 @@
             </code-block>
         </chapter>
 
-        <chapter title="Das Ergebnis in einer HTML-Liste ausgeben" id="flwor-ergebnis-html">
+        <chapter id="flwor-ergebnis-html" title="Das Ergebnis in einer HTML-Liste ausgeben">
             <code-block lang="xml">
                 <![CDATA[
                 <title lang="en">Everyday Italian</title>
@@ -382,8 +406,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Syntax" id="syntax">
-        <chapter title="Grundlegende Regeln" id="syntax-regeln">
+    <chapter id="syntax" title="Syntax">
+        <chapter id="syntax-regeln" title="Grundlegende Regeln">
             <list>
                 <li>
                     XQuery unterscheidet Groß- und Kleinschreibung
@@ -405,18 +429,19 @@
             </list>
         </chapter>
 
-        <chapter title="Bedingungen" id="syntax-bedingungen">
-            <code-block lang="xml" collapsible="true" collapsed-title="XQuery">
+        <chapter id="syntax-bedingungen" title="Bedingungen">
+            <code-block collapsed-title="XQuery" collapsible="true" lang="xml">
                 <![CDATA[
                 for $x in doc("books.xml")/bookstore/book
-                return
-                    if ($x/@category="children")
-                    then <child>{data($x/title)}</child>
-                    else <adult>{data($x/title)}</adult>
+                        return
+                        if ($x/@category="children")
+                        then
+                <child>{data($x/title)}</child>
+                        else <adult>{data($x/title)}</adult>
                 ]]>
             </code-block>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="Ergebnis">
+            <code-block collapsed-title="Ergebnis" collapsible="true" lang="xml">
                 <![CDATA[
                 <adult>Everyday Italian</adult>
                 <child>Harry Potter</child>
@@ -456,13 +481,13 @@
         </chapter>
     </chapter>
 
-    <chapter title="Benutzerdefinierte XQuery Funktionen" id="benutzerdefiniert">
+    <chapter id="benutzerdefiniert" title="Benutzerdefinierte XQuery Funktionen">
         <p>
             Findet man eine benötigte Funktion nicht unter der XQuery-Funktion, so kann eine eigene definiert werden.
             Benutzerdefinierte Funktionen können in der Abfrage oder in einer separaten Bibliothek definiert werden.
         </p>
 
-        <chapter title="Syntax" id="benutzerdefiniert-syntax">
+        <chapter id="benutzerdefiniert-syntax" title="Syntax">
             <code-block lang="xml">
                 declare function prefix:function_name($parameter as datatype)
                 as returnDatatype
@@ -472,7 +497,7 @@
             </code-block>
 
             <p>Hinweise zu benutzerdefinierten Funktionen:</p>
-            
+
             <list>
                 <li>Das Schlüsselwort <code>declare function</code> muss verwendet werden</li>
                 <li>Der Name der Funktion muss vorangestellt werden</li>
@@ -481,8 +506,8 @@
             </list>
         </chapter>
 
-        <chapter title="Beispiel" id="benutzerdefiniert-beispiel">
-            <code-block lang="xml" collapsible="true" collapsed-title="Funktionsdeklaration">
+        <chapter id="benutzerdefiniert-beispiel" title="Beispiel">
+            <code-block collapsed-title="Funktionsdeklaration" collapsible="true" lang="xml">
                 declare function local:minPrice($p as xs:decimal?,$d as xs:decimal?)
                 as xs:decimal?
                 {
@@ -491,7 +516,7 @@
                 };
             </code-block>
 
-            <code-block lang="xml" collapsible="true" collapsed-title="Anwendung der Funktion">
+            <code-block collapsed-title="Anwendung der Funktion" collapsible="true" lang="xml">
                 <![CDATA[
                 <minPrice>{local:minPrice($book/price,$book/discount)}</minPrice>
                 ]]>
@@ -499,7 +524,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/xml_xquery.asp" ignore-vars="true">

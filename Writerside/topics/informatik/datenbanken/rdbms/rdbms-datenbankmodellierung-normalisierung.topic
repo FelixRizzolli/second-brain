@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Die Normalisierung" id="rdbms-datenbankmodellierung-normalisierung">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="rdbms-datenbankmodellierung-normalisierung"
+       title="Die Normalisierung"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlagen" id="grundlagen">
+    <chapter id="grundlagen" title="Grundlagen">
         <p>
             Die Normalisierung ist eine Methode um die Qualität eines Datenbankmodells zu optimieren. Dazu durchläuft
             das Datenbankmodell die sogenannten Normalformen, deren Ziel es ist Redundanzen zu vermeiden.
         </p>
 
-        <chapter title="Redundanz" id="grundlagen-redundanz">
+        <chapter id="grundlagen-redundanz" title="Redundanz">
             <p>
-                Eine Redundanz ist dann gegeben, wenn die exakt gleiche Information mehrfach vorhanden und somit 
-                überflüssig ist. Durch Redundanz wird viel unnötiger Speicherplatz und Rechenleistung beansprucht, um 
-                die Daten zu bearbeiten. Das noch viel größere Problem bilden die sogenannten Einfüge-, Änderungs- und 
-                Löschanomalien, die dabei entstehen und die konsistente Verwaltung der Daten sehr erschweren oder sogar 
+                Eine Redundanz ist dann gegeben, wenn die exakt gleiche Information mehrfach vorhanden und somit
+                überflüssig ist. Durch Redundanz wird viel unnötiger Speicherplatz und Rechenleistung beansprucht, um
+                die Daten zu bearbeiten. Das noch viel größere Problem bilden die sogenannten Einfüge-, Änderungs- und
+                Löschanomalien, die dabei entstehen und die konsistente Verwaltung der Daten sehr erschweren oder sogar
                 unmöglich machen. Mehr dazu im Beispiel.
             </p>
 
-            <chapter title="Beispiel für Redundanz" id="grundlagen-redundanz-beispiel" collapsible="true">
+            <chapter collapsible="true" id="grundlagen-redundanz-beispiel" title="Beispiel für Redundanz">
                 <table>
                     <tr>
                         <td>id</td>
@@ -76,15 +76,19 @@
                 </table>
 
                 <p>
-                    Zweck der Tabelle ist, eine Zuordnung von Ausbildungsberufen und Lehrfächern datentechnisch abzubilden.
+                    Zweck der Tabelle ist, eine Zuordnung von Ausbildungsberufen und Lehrfächern datentechnisch
+                    abzubilden.
                     Das Problem: sie ist voll von redundanten Informationen. Die Werte der Spalte
-                    <emphasis>berufsbezeichnung</emphasis> sind jeweils in drei Zeilen enthalten. Die Spalte
-                    <emphasis>lehrfach</emphasis> enthält ebenfalls einige redundant vorkommende Werte. Zudem:
+                    <emphasis>berufsbezeichnung</emphasis>
+                    sind jeweils in drei Zeilen enthalten. Die Spalte
+                    <emphasis>lehrfach</emphasis>
+                    enthält ebenfalls einige redundant vorkommende Werte. Zudem:
                 </p>
 
                 <list>
                     <li>
-                        Soll hier eine Berufsbezeichnung geändert werden, so muss dies auf allen Datensätzen geschehen, in
+                        Soll hier eine Berufsbezeichnung geändert werden, so muss dies auf allen Datensätzen geschehen,
+                        in
                         der diese vorkommt.
                     </li>
                     <li>
@@ -98,7 +102,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Normalisierung" id="grundlagen-normalisierung">
+        <chapter id="grundlagen-normalisierung" title="Normalisierung">
             <p>
                 Unter Normalisierung versteht man die schrittweise Entfernung von Redundanzen in einem Datenmodell. Es
                 werden dazu mehrfach vorkommende Daten in einer oder mehreren Tabellen bearbeitet. Bei den drei
@@ -108,7 +112,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Die 1. Normalform" id="erste-normalform">
+    <chapter id="erste-normalform" title="Die 1. Normalform">
         <p>
             Eine Tabelle ist in der 1. Normalform, wenn die Attribute einer Entität atomar sind und keine mehrfach
             vorkommenden Werte enthalten. Attribute sind atomar, wenn sie nicht mehr teilbar sind. Ein Attribut Person
@@ -116,7 +120,7 @@
             Einwertigkeit der Attribute. Einwertigkeit bedeutet, dass ein Attribut jeweils nur ein Wert zulässig ist.
         </p>
 
-        <chapter title="Beispiel einer nicht atomaren Tabelle" id="erste-normalform-nichtatomar">
+        <chapter id="erste-normalform-nichtatomar" title="Beispiel einer nicht atomaren Tabelle">
             <table>
                 <tr>
                     <td>ausid</td>
@@ -156,7 +160,7 @@
             </table>
         </chapter>
 
-        <chapter title="Beispiel einer atomaren Tabelle" id="erste-normalform-atomar">
+        <chapter id="erste-normalform-atomar" title="Beispiel einer atomaren Tabelle">
             <table>
                 <tr>
                     <td>ausid</td>
@@ -225,7 +229,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Die 2. Normalform" id="zweite-normalform">
+    <chapter id="zweite-normalform" title="Die 2. Normalform">
         <p>
             Die 2. Normalform ist dann erfüllt, wenn alle Nicht-Schlüsselattribute von einem ganzheitlichen Schlüssel
             und nicht von einem Teil eines Schlüssels abhängig sind und außerdem die 1. Normalform erfüllt ist. Ein
@@ -242,7 +246,7 @@
             abhängig von einem gesamtheitlichen Schlüsselattribut sind.
         </p>
 
-        <chapter title="Beispiel in der 2. Normalform" id="zweite-normalform-beispiel">
+        <chapter id="zweite-normalform-beispiel" title="Beispiel in der 2. Normalform">
             <table>
                 <tr>
                     <td>ausid</td>
@@ -331,7 +335,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Die 3. Normalform" id="dritte-normalform">
+    <chapter id="dritte-normalform" title="Die 3. Normalform">
         <p>
             Die 3. Normalform ist erfüllt, wenn die ersten beiden Normalformen erfüllt sind und alle Attribute
             ausschließlich vom Gesamtschlüssel (der aus einem oder mehreren Attributen bestehen kann) abhängig sind.
@@ -340,7 +344,7 @@
             von einem Nicht-Schlüsselattribut abhängig ist, das wiederum vom Gesamtschlüssel abhängig ist.
         </p>
 
-        <chapter title="Die 3. Normalform" id="dritte-normalform-beispiel">
+        <chapter id="dritte-normalform-beispiel" title="Die 3. Normalform">
             <table>
                 <tr>
                     <td>ausid</td>
@@ -436,7 +440,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Die Denormalisierung" id="denormalisierung">
+    <chapter id="denormalisierung" title="Die Denormalisierung">
         <p>
             Das Auflösen von Normalformen wird als Denormalisierung verstanden. Eine Denormalisierung sollte nur nach
             einer intensiven Prüfung der fachlichen Anforderungen durchgeführt werden. Entitäten, die sich in der 1.
@@ -449,7 +453,7 @@
             erhöhen.
         </p>
 
-        <chapter title="Denormalisierung in der 1. Normalform" id="denormalisierung-erste-normalform">
+        <chapter id="denormalisierung-erste-normalform" title="Denormalisierung in der 1. Normalform">
             <p>
                 Die 1. Normalform fordert, dass eine Entität atomar aufgebaut ist. Attribute einer Entität dürfen also
                 nicht mehr teilbar sein. Auch wird in der ersten Normalform gefordert, dass keine Mehrwertigkeit
@@ -459,7 +463,7 @@
             </p>
         </chapter>
 
-        <chapter title="Denormalisierung in der 2. Normalform" id="denormalisierung-zweite-normalform">
+        <chapter id="denormalisierung-zweite-normalform" title="Denormalisierung in der 2. Normalform">
             <p>
                 Die 2. Normalform fordert, dass ein Attribut ausschließlich von einem Gesamtschlüssel und nicht bloß von
                 einem Teil eines Gesamtschlüssels abhängig ist. Die Auswirkungen der Rückführung der 2. Normalform sind
@@ -474,7 +478,7 @@
             </p>
         </chapter>
 
-        <chapter title="Denormalisierung in der 3. Normalform" id="denormalisierung-dritte-normalform">
+        <chapter id="denormalisierung-dritte-normalform" title="Denormalisierung in der 3. Normalform">
             <p>
                 Die 3. Normalform fordert, dass kein Attribut transitiv von einem Schlüssel abhängig sein darf, uns
                 stellt so ebenfalls sicher, dass Redundanzen vermieden werden. Die Sicherstellung der 3. Normalform ist
@@ -490,7 +494,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

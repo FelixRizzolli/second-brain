@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Commits" id="swe-vcs-git-commits">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-vcs-git-commits"
+       title="Commits"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlagen" id="grundlagen">
-        <chapter title="Der aktuelle Zustandsspeicher: Staging Area" id="grundlagen-stage">
+    <chapter id="grundlagen" title="Grundlagen">
+        <chapter id="grundlagen-stage" title="Der aktuelle Zustandsspeicher: Staging Area">
             <p>
                 Bevor Änderungen dauerhaft ins Repository gespeichert werden, muss ausgewählt werden welche Änderungen
                 berücksichtigt werden.
@@ -33,7 +33,7 @@
             </p>
         </chapter>
 
-        <chapter title="Der letzte Commit: HEAD" id="grundlagen-letzter-commit">
+        <chapter id="grundlagen-letzter-commit" title="Der letzte Commit: HEAD">
             <p>
                 Mit jedem Commit werden die im Stage-Bereich vorgemerkten Änderungen dauerhaft in der
                 Repository-Datenbank gespeichert. Der letzte (aktuellste) Commit im aktuellen Zweig wird
@@ -47,34 +47,34 @@
             </note>
         </chapter>
 
-        <chapter title="Sauber einen Zweig wechseln: Checkout" id="grundlagen-checkout">
+        <chapter id="grundlagen-checkout" title="Sauber einen Zweig wechseln: Checkout">
             <p>
                 Mit einem <b>Checkout</b> werden die aktuellen Dateien des Projektverzeichnisses durch die des Zweiges
                 ersetzt. Dabei können neue Dateien hinzukommen, vorhandene Dateien sich ändern und andere können
                 verschwinden. Normalerweise wird vor dem Wechsel eines Zweiges ein Commit ausgeführt. Sind die
                 Änderungen aber noch nicht committauglich, so wird eine Möglichkeit benötigt die Änderungen
-                vorübergehend zu speichern. Genau dazu dient der Stash, eine Art Stauraum für noch nicht 
+                vorübergehend zu speichern. Genau dazu dient der Stash, eine Art Stauraum für noch nicht
                 committauglichen Code.
             </p>
         </chapter>
 
-        <chapter title="Commit Intern" id="grundlagen-intern">
+        <chapter id="grundlagen-intern" title="Commit Intern">
             <p>
                 Der Befehl <code>git add</code> verschiebt die Änderungen vom Projektverzeichnis (Workspace) im
                 Stage-Bereich. Durch einen Commit werden die Änderungen dauerhaft ins Repository aufgenommen. Aus sicht
                 von Commit kann eine Datei also gleichzeitig drei Zustände habe:
             </p>
-            
+
             <list>
                 <li>den aktuellen Zustand im Projektverzeichnis</li>
                 <li>den Zustand im Stage-Bereich (staged)</li>
                 <li>den Zustand im Repository (committed)</li>
             </list>
-            
+
             <p>
                 Bei einem Commit entstehen in der Git-Datenbank mehrere Objekte:
             </p>
-            
+
             <list>
                 <li>
                     Das Commit-Objekt fasst die Metadaten zusammen. (Wer? Wann?) Es enthält die Commit-Message, einen
@@ -92,14 +92,16 @@
                 </li>
             </list>
 
-            <img src="swe-vcs-git-commit-intern.jpg" alt="Commit"/>
+            <img alt="Commit" src="swe-vcs-git-commit-intern.jpg"/>
         </chapter>
     </chapter>
 
-    <chapter title="Referenzen auf Commits" id="referenzen">
+    <chapter id="referenzen" title="Referenzen auf Commits">
         <p>
             Bei einigen <code>git</code>-Kommandos verweist ein Parameter auf einen Commit oder ein anderes Objekt im
-            Git-Repository. Die Git-Nomenklatur spricht in diesem Zusammenhang von <emphasis>Revisionen</emphasis>, also
+            Git-Repository. Die Git-Nomenklatur spricht in diesem Zusammenhang von
+            <emphasis>Revisionen</emphasis>
+            , also
             von Zuständen oder Versionen eines Objekts im Git-Repository.
         </p>
         <p>
@@ -143,7 +145,7 @@
             zu lesen, folglich werden die wichtigsten gelistet und genauer beschrieben.
         </p>
 
-        <chapter title="Referenznamen (Refernames)" id="referenzen-refnames">
+        <chapter id="referenzen-refnames" title="Referenznamen (Refernames)">
             <p>
                 Refnames sind Namen, die in <path>.git/refs</path> verwendet werden, also Namen lokaler bzw. entfernter
                 Zweige wie master oder <path>refs/remote/origin/develop</path>. Erlaubt ist außerdem <code>HEAD</code>
@@ -153,7 +155,7 @@
                 Kurzschreibweise für <code>HEAD</code>.
             </p>
 
-            <chapter title="Beispiele" id="referenzen-refnames-beispiele">
+            <chapter id="referenzen-refnames-beispiele" title="Beispiele">
                 <code-block lang="bash">
                     git show @
                 </code-block>
@@ -172,7 +174,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="refname@{date}" id="referenzen-datum">
+        <chapter id="referenzen-datum" title="refname@{date}">
             <p>
                 Mit <code>refname@{date}</code> können Refnames um eine Zeitangabe ergänzt werden. Damit wird das erste
                 Objekt vor der Zeitangabe im betreffenden Zweig ausgewählt. Wenn verfügbare Objekt und zeigt eine
@@ -198,7 +200,7 @@
             </code-block>
         </chapter>
 
-        <chapter title="refname@{n}" id="referenzen-n">
+        <chapter id="referenzen-n" title="refname@{n}">
             <p>
                 Die Schreibweise <code>refname@{n}</code> bezeichnet den Zustand des Objekts <code>n</code> Aktionen
                 früher. Dabei werden nicht nur Commits, sondern auch Aktionen wie <code>git checkout</code> oder
@@ -215,8 +217,8 @@
             </note>
         </chapter>
 
-        <chapter title="Zugriff auf Vorgängerversionen" id="referenzen-last">
-            <chapter title="Die Tildensyntax" id="referenzen-last-tilde">
+        <chapter id="referenzen-last" title="Zugriff auf Vorgängerversionen">
+            <chapter id="referenzen-last-tilde" title="Die Tildensyntax">
                 <p>
                     Mit der Tildensyntax wird jeweils der erste Elternteil angesprochen werden:
                 </p>
@@ -237,7 +239,7 @@
                 </list>
             </chapter>
 
-            <chapter title="Die Zirkumflexsyntax" id="referenzen-last-zirkumflex">
+            <chapter id="referenzen-last-zirkumflex" title="Die Zirkumflexsyntax">
                 <p>
                     Das Zeichen <code>^</code> wird Zirkumflex genannt. Es ist dann relevant, wenn ein Commit mehrere
                     Vorgänger (Parents) hat. Das ist z.B. nach einem Merge-Prozess der Fall.
@@ -281,7 +283,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Beispiele" id="referenzen-beispiele">
+        <chapter id="referenzen-beispiele" title="Beispiele">
             <code-block lang="bash">
                 git show HEAD
             </code-block>
@@ -360,11 +362,11 @@
             <code-block>
                 a91d855 git-filter-repo tool
             </code-block>
-            
-            <img src="swe-vcs-git-commit-referenzen.jpg" alt="Referenzen"/>
+
+            <img alt="Referenzen" src="swe-vcs-git-commit-referenzen.jpg"/>
         </chapter>
 
-        <chapter title="Referenzen auf Dateien" id="referenzen-dateien">
+        <chapter id="referenzen-dateien" title="Referenzen auf Dateien">
             <p>
                 Sofern eine Referenz auf einen Commit oder auf ein Tree-Objekt verweist, können alle bisher
                 beschriebenen Syntaxformen um <code>:&lt;file&gt;</code> ergänzt werden. Beispielsweise zeigt
@@ -378,7 +380,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Alte Version einer Datei anzeigen (git show)" id="gitshow">
+    <chapter id="gitshow" title="Alte Version einer Datei anzeigen (git show)">
         <p>
             Mit dem Befehl <code>git show</code> kann man den früheren Zeitpunkt einer Datei ansehen. Dabei wird
             entweder der Hashcode des Commits, ein <a href="swe-vcs-git-tags.topic">Tag</a>, der Name eines Zweigs oder
@@ -386,29 +388,29 @@
         </p>
 
         <code-block lang="bash">
-            git show HEAD~3:&lt;file&gt;                //Drittletzter Commit
+            git show HEAD~3:&lt;file&gt; //Drittletzter Commit
         </code-block>
         <code-block lang="bash">
-            git show v1.0.0                       //Objekt auf dem der Tag zeigt
+            git show v1.0.0 //Objekt auf dem der Tag zeigt
         </code-block>
     </chapter>
 
-    <chapter title="Änderungen vergleichen (git diff)" id="gitdiff">
+    <chapter id="gitdiff" title="Änderungen vergleichen (git diff)">
         <p>
             Mit dem Befehl <code>git diff</code> können, statt nur den alten Zustand einer Datei, auch die Änderungen
             zwischen der Versionen angezeigt werden.
         </p>
 
         <code-block lang="bash">
-            git diff HEAD~ &lt;file&gt;           //Unterschied zwischen vorherigem Commit und aktuellen Commit
+            git diff HEAD~ &lt;file&gt; //Unterschied zwischen vorherigem Commit und aktuellen Commit
         </code-block>
         <code-block lang="bash">
-            git diff HEAD~3 HEAD &lt;file&gt;     //unterschied zwischen letzten Commit und drittletzten Commit
+            git diff HEAD~3 HEAD &lt;file&gt; //unterschied zwischen letzten Commit und drittletzten Commit
         </code-block>
     </chapter>
 
-    <chapter title="Änderungen rückgängig machen (git reset, restore)" id="rueckgaengig">
-        <chapter title="Datei aus dem Stage-Bereich entfernen (git reset)" id="rueckgaengig-gitreset">
+    <chapter id="rueckgaengig" title="Änderungen rückgängig machen (git reset, restore)">
+        <chapter id="rueckgaengig-gitreset" title="Datei aus dem Stage-Bereich entfernen (git reset)">
             <p>
                 Der Befehl <code>git reset &lt;file&gt;</code> entfernt die Datei aus dem Stage-Bereich ohne die Datei
                 im Projektverzeichnis zu ändern. Wenn alle Dateien im Projektverzeichnis vom Commit ausgeschlossen
@@ -423,7 +425,7 @@
             </code-block>
         </chapter>
 
-        <chapter title="Den zuletzt durchgeführten Commit widerrufen (git restore)" id="rueckgaengig-gitrestore">
+        <chapter id="rueckgaengig-gitrestore" title="Den zuletzt durchgeführten Commit widerrufen (git restore)">
             <p>
                 Der Befehl <code>git restore &lt;file&gt;</code> kann die jeweilige Datei in den Zustand bringen, in dem
                 sie beim letzten Commit war. Das Kommando überschreibt die seither durchgeführten Änderungen ohne
@@ -448,8 +450,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Die letzten Commits widerrufen (git revert)" id="gitrevert">
-        <chapter title="Einen Commit widerrufen" id="gitrevert-commit">
+    <chapter id="gitrevert" title="Die letzten Commits widerrufen (git revert)">
+        <chapter id="gitrevert-commit" title="Einen Commit widerrufen">
             <p>
                 Mit dem Befehl <code>git revert HEAD</code> wird der letzte Commit widerrufen. Hierbei werden mittels
                 Commit, die Änderungen im zuletzt durchgeführten Commit invers auf die aktuellen Änderungen angewendet,
@@ -461,7 +463,7 @@
                 git revert HEAD
             </code-block>
             <code-block lang="bash">
-                git revert HEAD~2                //Widerruft nur die Änderungen vom drittletzten Commit
+                git revert HEAD~2 //Widerruft nur die Änderungen vom drittletzten Commit
             </code-block>
 
             <note>
@@ -478,7 +480,7 @@
             </note>
         </chapter>
 
-        <chapter title="Mehrere Commits widerrufen" id="gitrevert-commits">
+        <chapter id="gitrevert-commits" title="Mehrere Commits widerrufen">
             <p>
                 Möchte man mehrere Commits widerrufen, so kann man diese nacheinander angeben. Das Widerrufen der
                 Commits wird zwar mit einem Befehl aber nacheinander ausgeführt, somit müssen auch mehrere
@@ -494,11 +496,11 @@
             </p>
 
             <code-block lang="bash">
-                git revert HEAD~3^..HEAD          //Widerruft HEAD~3, HEAD~2, HEAD~1 und HEAD
+                git revert HEAD~3^..HEAD //Widerruft HEAD~3, HEAD~2, HEAD~1 und HEAD
             </code-block>
         </chapter>
 
-        <chapter title="Commit-Message für Revert-Vorgänge zusammenfassen" id="gitrevert-zusammenfassen">
+        <chapter id="gitrevert-zusammenfassen" title="Commit-Message für Revert-Vorgänge zusammenfassen">
             <p>
                 Werden mehrere Revert-Vorgänge zu einem Befehl zusammengefasst so muss trotzdem pro Schritt immer
                 jeweils eine Commit-Message angegeben werden. Um dies zu umgehen, gibt es den Parameter
@@ -515,7 +517,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Die letzten Commits aus dem Repository löschen (git reset)" id="gitreset">
+    <chapter id="gitreset" title="Die letzten Commits aus dem Repository löschen (git reset)">
         <p>
             Mit dem Befehl <code>git reset</code> kann auch zu einem früheren Commit zurückgekehrt werden. Dabei werden
             alle Commits bis dahin aus dem Repository wieder gelöscht.
@@ -529,25 +531,27 @@
 
         <p>
             Die Vorgehensweise ist sehr komfortabel, aber weniger transparent als git revert. Denn hierbei wird die
-            Geschichte umgeschrieben und so ein <emphasis>History Rewrite</emphasis> hat nicht nur auf politischer Ebene
+            Geschichte umgeschrieben und so ein
+            <emphasis>History Rewrite</emphasis>
+            hat nicht nur auf politischer Ebene
             einen schalen Beigeschmack, sondern gilt auch in Git-Kreisen als problematisch.
         </p>
     </chapter>
 
-    <chapter title="Vorübergehend zu einem älteren Commit wechseln (git checkout)" id="gitckeckout">
+    <chapter id="gitckeckout" title="Vorübergehend zu einem älteren Commit wechseln (git checkout)">
         <p>
-            Die Befehle <code>git reset</code> und <code>git revert</code> haben beide das Ziel, dauerhaft zu einem 
+            Die Befehle <code>git reset</code> und <code>git revert</code> haben beide das Ziel, dauerhaft zu einem
             früheren Commit zurückzukehren. Der Befehl git checkout bietet die Möglichkeit, dies vorübergehend zu tun.
         </p>
 
         <code-block lang="bash">
             git checkout 4d37367
         </code-block>
-        
+
         <p>
             Möchte man mit hier weiterarbeiten so gibt es zwei Möglichkeiten:
         </p>
-        
+
         <list>
             <li>
                 Es können ausgehend vom aktuellen Zustand Änderungen und weitere Commits durchgeführt werden. Damit
@@ -562,8 +566,8 @@
         </list>
     </chapter>
 
-    <chapter title="Commit-Message ändern" id="commit-message-aendern">
-        <chapter title="Commit-Massage des letzten Commits ändern" id="commit-message-aendern-letzter">
+    <chapter id="commit-message-aendern" title="Commit-Message ändern">
+        <chapter id="commit-message-aendern-letzter" title="Commit-Massage des letzten Commits ändern">
             <p>
                 Sofern es den letzten Commit betrifft und die Änderungen noch nicht mit anderen Repositorys
                 synchronisiert sind, lässt sich die Message ganz einfach mit <code>git commit --amend</code> ändern.
@@ -581,8 +585,8 @@
             </note>
         </chapter>
 
-        <chapter title="Commit-Message des letzten Commits in einem externen Repository ändern"
-                 id="commit-message-aendern-extern">
+        <chapter id="commit-message-aendern-extern"
+                 title="Commit-Message des letzten Commits in einem externen Repository ändern">
             <p>
                 Der Befehl ist derselbe: <code>git commit --amend</code>. Doch um die veränderte Commit-History
                 hochzuladen reicht ein simpler <code>git push</code> Befehl nicht aus, sondern muss vom Parameter
@@ -601,10 +605,11 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
-            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler, 2020
+            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler,
+            2020
         </tip>
         <tip>
             <b>(WEBSEITE)</b>

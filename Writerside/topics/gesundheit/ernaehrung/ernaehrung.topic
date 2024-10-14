@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Ernährung" id="ernaehrung" help-id="Ernährung">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic help-id="Ernährung"
+       id="ernaehrung"
+       title="Ernährung" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Wir essen, um zu leben" id="einleitung">
+    <chapter id="einleitung" title="Wir essen, um zu leben">
         <p>
             Warum wir eine gesunde Ernährung pflegen sollten:
         </p>
@@ -34,7 +34,7 @@
         </p>
     </chapter>
 
-    <chapter title="Eine Kurzfassung" id="kurzfassung">
+    <chapter id="kurzfassung" title="Eine Kurzfassung">
         <p>
             Hier eine Kursfassung zum Thema gesunde Ernährung. Wir sollten:
         </p>
@@ -72,14 +72,21 @@
         </p>
     </chapter>
 
-    <chapter title="Der gesunde Teller" id="gesunder-teller">
-        <img src="ernaehrung-gesunder-teller.png" alt="Der gesunde Teller"/>
+    <chapter id="gesunder-teller" title="Der gesunde Teller">
+        <img alt="Der gesunde Teller" src="ernaehrung-gesunder-teller.png"/>
 
         <p>
-            Der Harvards sogenannte <emphasis>Healthy Eating Plate</emphasis> (= Der Gesunde Teller) ist eine visueller
+            Der Harvards sogenannte
+            <emphasis>Healthy Eating Plate</emphasis>
+            (= Der Gesunde Teller) ist eine visueller
             und wissenschaftlich begründeter Leitfaden, der es einem leichter macht, die gesündesten Optionen zu wählen.
-            Sowohl <emphasis>Der Gesunde Teller</emphasis> als auch seine ältere Schwester, die <emphasis>Healthy Eating
-            Pyramid</emphasis>, verbreiten die Botschaft, dass es vor allem um die Qualität der Ernährung geht.
+            Sowohl
+            <emphasis>Der Gesunde Teller</emphasis>
+            als auch seine ältere Schwester, die
+            <emphasis>Healthy Eating
+                Pyramid
+            </emphasis>
+            , verbreiten die Botschaft, dass es vor allem um die Qualität der Ernährung geht.
         </p>
 
         <list>
@@ -116,7 +123,7 @@
         </list>
     </chapter>
 
-    <chapter title="Ernährungsempfehlungen" id="ernaehrungsempfehlungen">
+    <chapter id="ernaehrungsempfehlungen" title="Ernährungsempfehlungen">
         <p>
             Über große Teile der Menschheitsgeschichte hinweg war die Lebensspanne unserer Spezies relativ kurz (im
             Römischen Reich lag die durchschnittliche Lebenserwartung bei der Geburt bei unter 30 Jahren). Deshalb
@@ -135,7 +142,7 @@
             Lebensmittelwerbungen und Ernährungsratschläge allgegenwärtig sind.
         </p>
 
-        <chapter title="Eine Flut von Ratschlägen" id="ernaehrungsempfehlungen-flut">
+        <chapter id="ernaehrungsempfehlungen-flut" title="Eine Flut von Ratschlägen">
             <p>
                 Im Grunde fehlte es zu keiner Zeit an guten Ratschlägen für eine gesunde Ernährung. Vor mehr als 2000
                 Jahren machte der griechische Arzt und Philosoph Hippokrates die Ernährung (und Bewegung) zum Herzstück
@@ -147,8 +154,11 @@
             </p>
             <p>
                 1500 Jahre später, und die Lebensspanne des Menschen war im Begriff zu wachsen. Nicht lange nach der
-                Erfindung der Druckerpresse Mitte des 15. Jahrhunderts wurde das Buch <emphasis>De honesta voluptate et
-                valetudine</emphasis> (Von der eerlichen zimlichen auch erlaubten Wolust des Leibs) von Bartholomaeus
+                Erfindung der Druckerpresse Mitte des 15. Jahrhunderts wurde das Buch
+                <emphasis>De honesta voluptate et
+                    valetudine
+                </emphasis>
+                (Von der eerlichen zimlichen auch erlaubten Wolust des Leibs) von Bartholomaeus
                 Platina in ganz Europa zum Bestseller. Es zielte darauf, die Gesundheit mit den Freuden des Essens zu
                 kombinieren, und verschmolz dazu medizinische Ratschläge mit Rezepten aus anderen veröffentlichten
                 Werken. In den 1860er-Jahren feierte eine von dem Londoner Bestatter William Banting erdachte
@@ -164,14 +174,17 @@
                 Es gibt einige, die behaupten, dass sich Ernährungswissenschaftler auf rein gar nichts einigen können.
                 Die Annäherung zwischen dem alternativen Harvard-Index und dem USDA-Index legt jedoch nahe, dass über
                 die grundlegenden Bestandteile einer gesunden Ernährung mittlerweile ein breiter Konsens herrscht. Die
-                <emphasis>Healthy Eating Pyramid</emphasis> und <emphasis>Der Gesunde Teller</emphasis> von Harvard sind
+                <emphasis>Healthy Eating Pyramid</emphasis>
+                und
+                <emphasis>Der Gesunde Teller</emphasis>
+                von Harvard sind
                 nicht in Stein gemeißelt, und die Wahrscheinlichkeit ist groß, dass mit weiterer Forschung zusätzliche
                 Feinheiten ans Licht kommen werden. Trotzdem können wir zuversichtlich sein, dass das heutige Gesamtbild
                 einer gesunden Ernährung auch in Zukunft Bestand haben wird.
             </p>
         </chapter>
 
-        <chapter title="10 Regeln der DGE" id="ernaehrungsempfehlungen-dge">
+        <chapter id="ernaehrungsempfehlungen-dge" title="10 Regeln der DGE">
             <list style="decimal">
                 <li>
                     <b>Lebensmittelvielfalt genießen</b>: Nutzen Sie die Lebensmittelvielfalt und essen Sie
@@ -240,7 +253,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Ernährungswissenschaft" id="ernaehrungswissenschaft">
+    <chapter id="ernaehrungswissenschaft" title="Ernährungswissenschaft">
         <p>
             Die Erkenntnisse der Forschung über Ernährungsweisen und Ernährung scheinen sich mit nervtötender
             Regelmäßigkeit selbst zu widersprechen. Wir hören auf, Butter zu verwenden, und streichen von da an
@@ -251,7 +264,8 @@
         <tip>
             »Wie es scheint, gibt es heutzutage eie Art geplanter Obsoleszenz bei medizinischen Neuigkeiten. Das
             Heilmittel von heute ist die Giftpille von morgen. Die neuste Forschung hat ein Verfallsdatum, das kürzer
-            ist als das auf der Müslischachtel.« - <emphasis>Ellen Googman, Boston Globe</emphasis>
+            ist als das auf der Müslischachtel.« -
+            <emphasis>Ellen Googman, Boston Globe</emphasis>
         </tip>
 
         <p>
@@ -268,8 +282,8 @@
             betonen.
         </p>
 
-        <chapter title="Wissenschaftliche Ergkenntnisse statt begründete Vermutungen"
-                 id="ernaehrungswissenschaft-ergkenntnisse">
+        <chapter id="ernaehrungswissenschaft-ergkenntnisse"
+                 title="Wissenschaftliche Ergkenntnisse statt begründete Vermutungen">
             <p>
                 Frühe Empfehlungen in Sachen Ernährung fußten oft auf spärlichen Beweisen. Der Hintergrundgedanke dieser
                 anfänglichen Empfehlungen lautete, dass es besser war, Empfehlungen auf der Grundlage begründeter
@@ -279,9 +293,9 @@
                 Vermutungen werden nicht selten tausendfach wiederholt, bis sie den Anschein von Tatsachen haben.
             </p>
 
-            <chapter title="Beispiel: Butter &amp; Margerine"
+            <chapter collapsible="true"
                      id="ernaehrungswissenschaft-ergkenntnisse-beispiel"
-                     collapsible="true">
+                     title="Beispiel: Butter &amp; Margerine">
                 <p>
                     Als Wissenschaftler langsam mehr über die möglichen Gefahren gesättigter Fettsäuren herausfanden,
                     empfahlen viele von ihnen den Leuten, von Butter (die reich an gesättigten Fettsäuren ist) auf
@@ -312,7 +326,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3432114507, "Gesunde Ernährung", Walter C. Willett &amp; Patrick J. Skerrett, 2022

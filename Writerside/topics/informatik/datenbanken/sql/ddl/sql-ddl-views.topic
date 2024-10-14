@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Views" id="sql-ddl-views">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-ddl-views"
+       title="Views"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlegendes über Views" id="grundlagen">
+    <chapter id="grundlagen" title="Grundlegendes über Views">
         <p>
             Mittels einer View (Sichten) bietet SQL die Möglichkeit <code>SELECT</code>-Abfragen unter einem Namen
             dauerhaft in einer Datenbank zu hinterlegen. Die gespeicherte View kann wie eine gewöhnliche Tabelle mit
@@ -31,7 +31,7 @@
             </li>
         </list>
 
-        <chapter title="INSERT, UPDATE und DELETE auf Views anwenden" id="grundlagen-cud">
+        <chapter id="grundlagen-cud" title="INSERT, UPDATE und DELETE auf Views anwenden">
             <p>
                 Eine <code>INSERT</code>-Anweisung kann ohne weiteres auf Views verwendet werden, die nur eine Tabelle
                 abfragen. Hierbei muss darauf geachtet werden, dass in der zugrundeliegenden
@@ -66,7 +66,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="CREATE VIEW: Views anlegen" id="create">
+    <chapter id="create" title="CREATE VIEW: Views anlegen">
         <p>
             Views werden mit der <code>CREATE VIEW</code>-Anweisung angelegt. Die Namen der zu erstellenden Views dürfen
             nicht identisch mit bestehenden Tabellennamen sein. Es ist daher ratsam, Views mit einem Präfix wie
@@ -77,34 +77,34 @@
 
         <code-block lang="sql">
             CREATE VIEW v_mitarbeiter AS
-                 SELECT  mitarbeiterid
-                      ,  vorname
-                      ,  nachname
-                   FROM mitarbeiter
+            SELECT mitarbeiterid
+            , vorname
+            , nachname
+            FROM mitarbeiter
             ;
-            SELECT  *
-              FROM v_mitarbeiter
+            SELECT *
+            FROM v_mitarbeiter
             ;
         </code-block>
         <code-block lang="sql">
             CREATE VIEW v_mitarbeiterkontakt AS
-                 SELECT  m.mitarbeiterid
-                      ,  m.vorname
-                      ,  m.nachname
-                      ,  k.festnetz
-                      ,  k.mobilnetz
-                   FROM mitarbeiter AS m
-                  INNER
-                   JOIN kontakt AS k
-                     ON  m.mitarbeiterid = k.mitarbeiterid
+            SELECT m.mitarbeiterid
+            , m.vorname
+            , m.nachname
+            , k.festnetz
+            , k.mobilnetz
+            FROM mitarbeiter AS m
+            INNER
+            JOIN kontakt AS k
+            ON m.mitarbeiterid = k.mitarbeiterid
             ;
-            SELECT  *
-              FROM v_mitarbeiterkontakt
+            SELECT *
+            FROM v_mitarbeiterkontakt
             ;
         </code-block>
     </chapter>
 
-    <chapter title="Views und ORDER BY" id="orderby">
+    <chapter id="orderby" title="Views und ORDER BY">
         <p>
             Die einer View zugrundeliegende <code>SELECT</code>-Anweisung kann eine <code>ORDER BY</code>-Klausel
             enthalten. Wenn die View mithilfe einer <code>SELECT</code>-Anweisung abgefragt wird, werden die Zeilen in
@@ -116,20 +116,20 @@
 
         <code-block lang="sql">
             CREATE VIEW v.mitarbeiterbonus AS
-                 SELECT  m.vorname
-                      ,  m.nachname
-                      ,  m.bonuszahlung
-                   FROM mitarbeiter AS m
-                  INNER
-                   JOIN bonus AS b
-                     ON  m.mitarbeiterid = b.mitarbeiterid
-                  ORDER
-                     BY  b.bonuszahlung
+            SELECT m.vorname
+            , m.nachname
+            , m.bonuszahlung
+            FROM mitarbeiter AS m
+            INNER
+            JOIN bonus AS b
+            ON m.mitarbeiterid = b.mitarbeiterid
+            ORDER
+            BY b.bonuszahlung
             ;
         </code-block>
     </chapter>
 
-    <chapter title="DROP VIEW: Views ersetzen" id="drop">
+    <chapter id="drop" title="DROP VIEW: Views ersetzen">
         <p>
             Mit der <code>DROP VIEW</code>-Anweisung wird eine View gelöscht. Die Anweisung kann für die MySQL-,
             PostgreSQL- und MS-SQL-Server-Datenbank verwendet werden.
@@ -140,7 +140,7 @@
         </code-block>
     </chapter>
 
-    <chapter title="CREATE OR REPLACE VIEW: Views ersetzen" id="create-replace">
+    <chapter id="create-replace" title="CREATE OR REPLACE VIEW: Views ersetzen">
         <p>
             Mit der <code>CREATE OR REPLACE VIEW</code>-Anweisung kann eine bestehende View ersetzt werden. Diese
             Anweisung kann für die MySQL- und PostgreSQL-Datenbank genutzt werden.
@@ -150,21 +150,21 @@
             DROP VIEW v_mitarbeiterkontakt;
 
             CREATE OR REPLACE VIEW v_mitarbeiterkontakt AS
-                            SELECT  m.mitarbeiterid
-                                 ,  m.vorname
-                                 ,  m.nachname
-                                 ,  k.festnetz
-                                 ,  k.mobilnetz
-                                 ,  k.email
-                              FROM mitarbeiter AS m
-                             INNER
-                              JOIN kontakt AS k
-                                ON  m.mitarbeiterid = k.mitarbeiterid
+            SELECT m.mitarbeiterid
+            , m.vorname
+            , m.nachname
+            , k.festnetz
+            , k.mobilnetz
+            , k.email
+            FROM mitarbeiter AS m
+            INNER
+            JOIN kontakt AS k
+            ON m.mitarbeiterid = k.mitarbeiterid
             ;
         </code-block>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

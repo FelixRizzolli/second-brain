@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Iterative Softwareentwicklungsprozesse" id="swe-prozesse-iterativ">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-prozesse-iterativ"
+       title="Iterative Softwareentwicklungsprozesse"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
     <p>
         Statt zu versuchen, die ganze Anwendung wie beim Wasserfallmodell »in einem Rutsch« zu erstellen, werden ihre
@@ -29,9 +29,9 @@
         anderen Gründen Programmanpassungen notwendig, so wird einen vollständig neuer Entwicklungszyklus gestartet.
     </p>
 
-    <img src="swe-prozesse-iterativ.jpg" alt="Iteratives Modell"/>
+    <img alt="Iteratives Modell" src="swe-prozesse-iterativ.jpg"/>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018

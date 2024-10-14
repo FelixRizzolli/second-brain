@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Das V-Modell" id="swe-prozesse-vmodell">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-prozesse-vmodell"
+       title="Das V-Modell"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
     <p>
         Das V‐Modell erweitert den Betrachtungsrahmen über den eigentlichen Entwicklungszyklus hinaus und umfasst
@@ -21,15 +21,17 @@
         Entwicklungsprozesse aller Bundesbehörden in Deutschland vorgeschrieben.
     </p>
 
-    <img src="swe-prozesse-vmodell.jpg" alt="Das V-Modell"/>
+    <img alt="Das V-Modell" src="swe-prozesse-vmodell.jpg"/>
 
     <note>
         Auch dieses Modell wurde im Laufe der Zeit an geänderte Erfordernisse angepasst. Eingeführt wurden insbesondere
         neue Methoden und Technologien zur Skalierung auf unterschiedliche Projektgrößen. Die neue Version erhielt den
-        Namen <emphasis>V-Modell XT</emphasis>.
+        Namen
+        <emphasis>V-Modell XT</emphasis>
+        .
     </note>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Datenanalyse im Repoitory" id="swe-vcs-git-datenanalyse">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-vcs-git-datenanalyse"
+       title="Datenanalyse im Repoitory"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einführung" id="einfuehrung">
+    <chapter id="einfuehrung" title="Einführung">
         <p>
             Git bietet vielerlei Kommandos zum Durchsuchen des Repositorys. Neben den Kommandos gibt es auch
             Entwicklungsumgebungen, Editoren, Weboberflächen von Git-Plattformen oder spezielle Programme wie GitKraken
@@ -19,8 +19,8 @@
         </p>
     </chapter>
 
-    <chapter title="Commits durchsuchen" id="commit">
-        <chapter title="Das Kommando git log" id="commit-gitlog">
+    <chapter id="commit" title="Commits durchsuchen">
+        <chapter id="commit-gitlog" title="Das Kommando git log">
             <p>
                 Das Kommando <code>git log</code> zeigt, ausgehend vom aktuellen Commit, die vorangegangenen Commits an.
                 Das ist möglich, weil zusammen mit jedem Commit auch eine Referenz auf den Parent-Commit gespeichert
@@ -39,7 +39,7 @@
                 <a href="https://github.com/torvalds/linux.git">https://github.com/torvalds/linux.git</a>
             </note>
 
-            <chapter title="Die wichtigsten Parameter für ein übersichtlicheres Logging" id="commit-gitlog-param">
+            <chapter id="commit-gitlog-param" title="Die wichtigsten Parameter für ein übersichtlicheres Logging">
                 <table>
                     <tr>
                         <td>Befehl</td>
@@ -107,9 +107,21 @@
                             </p>
 
                             <list>
-                                <li><emphasis>m</emphasis> für <emphasis>modified</emphasis></li>
-                                <li><emphasis>d</emphasis> für <emphasis>deleted</emphasis></li>
-                                <li><emphasis>a</emphasis> für <emphasis>added</emphasis></li>
+                                <li>
+                                    <emphasis>m</emphasis>
+                                    für
+                                    <emphasis>modified</emphasis>
+                                </li>
+                                <li>
+                                    <emphasis>d</emphasis>
+                                    für
+                                    <emphasis>deleted</emphasis>
+                                </li>
+                                <li>
+                                    <emphasis>a</emphasis>
+                                    für
+                                    <emphasis>added</emphasis>
+                                </li>
                             </list>
                         </td>
                     </tr>
@@ -117,15 +129,16 @@
                         <td>
                             <code-block lang="bash">
                                 git log --pretty=online
-                                                =short
-                                                =medium
-                                                =full
-                                                =fuller
-                                                =...
+                                =short
+                                =medium
+                                =full
+                                =fuller
+                                =...
                             </code-block>
                         </td>
                         <td>
-                            Mit diesem Parameter definiert man das Ausgabeformat für die Metadaten und die Commit-Message.
+                            Mit diesem Parameter definiert man das Ausgabeformat für die Metadaten und die
+                            Commit-Message.
                         </td>
                     </tr>
                     <tr>
@@ -145,7 +158,8 @@
                             </code-block>
                         </td>
                         <td>
-                            Mit diesem Parameter wird der Umfang der Änderungen pro Datei als Balkendiagramm aufgelistet.
+                            Mit diesem Parameter wird der Umfang der Änderungen pro Datei als Balkendiagramm
+                            aufgelistet.
                         </td>
                     </tr>
                     <tr>
@@ -158,7 +172,8 @@
                             </code-block>
                         </td>
                         <td>
-                            Mit diesem Parameter können speziell nur die Commits gesucht werden die vom jeweiligen Autor stammen.
+                            Mit diesem Parameter können speziell nur die Commits gesucht werden die vom jeweiligen Autor
+                            stammen.
                         </td>
                     </tr>
                     <tr>
@@ -170,7 +185,7 @@
                                 git log feature
                             </code-block>
 
-                            <p> </p>
+                            <p></p>
 
                             <code-block lang="bash">
                                 git log &lt;branch&gt;..&lt;branch&gt;
@@ -179,7 +194,7 @@
                                 git log master..feature
                             </code-block>
 
-                            <p> </p>
+                            <p></p>
 
                             <code-block lang="bash">
                                 git log &lt;branch&gt;...&lt;branch&gt;
@@ -250,7 +265,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Markierte Commits (git tag)" id="commit-gittag">
+        <chapter id="commit-gittag" title="Markierte Commits (git tag)">
             <p>
                 Der Befehl <code>git tag</code> liefert eine Liste aller Tags.
             </p>
@@ -268,7 +283,7 @@
                 git tag list &lt;pattern&gt;
             </code-block>
             <code-block lang="bash">
-                git tag list 'v-*'          //Zeigt alle Tags die mit 'v-' anfangen
+                git tag list 'v-*' //Zeigt alle Tags die mit 'v-' anfangen
             </code-block>
 
             <p>
@@ -289,7 +304,7 @@
             </code-block>
         </chapter>
 
-        <chapter title="Referenzlog (git reflog)" id="commit-gitreflog">
+        <chapter id="commit-gitreflog" title="Referenzlog (git reflog)">
             <p>
                 Der Referenzlog enthält alle durchgeführten Kommandos, die den globalen HEAD oder den Head eines Zweiges
                 verändert haben. Mit dem Befehl <code>git reflog</code> werden diese Aktionen samt den Hashcodes der
@@ -312,19 +327,19 @@
         </chapter>
     </chapter>
 
-    <chapter title="Dateien durchsuchen" id="file">
+    <chapter id="file" title="Dateien durchsuchen">
         <p>
             Mit den Kommandos git show, git diff und git blame bietet Git alle Fragen rund um Dateien zu Beantworten.
             Darunter:
         </p>
-        
+
         <list>
             <li>Welchen Inhalt hatte eine Datei zu einem früheren Zeitpunkt?</li>
             <li>Was hat sich seither geändert?</li>
             <li>Und wer ist dafür verantwortlich?</li>
         </list>
 
-        <chapter title="Alte Versionen einer Datei ansehen (git show)" id="file-gitshow">
+        <chapter id="file-gitshow" title="Alte Versionen einer Datei ansehen (git show)">
             <p>
                 Das Kommando <code>git show &lt;revision&gt;:&lt;file&gt;</code> gibt die Datei
                 <code>&lt;file&gt;</code> in dem Zustand aus, den sie hatte, als er Commit <code>&lt;revison&gt;</code>
@@ -335,11 +350,11 @@
                 git show &lt;revision&gt;:&lt;file&gt;
             </code-block>
             <code-block lang="bash">
-                git show v2.0:index.php      //Zeigt die Datei des Commits der mit dem Tag v2.0 gekennzeichnet wurde
+                git show v2.0:index.php //Zeigt die Datei des Commits der mit dem Tag v2.0 gekennzeichnet wurde
             </code-block>
         </chapter>
 
-        <chapter title="Unterschiede zwischen Dateien ansehen (git diff)" id="file-gitdiff">
+        <chapter id="file-gitdiff" title="Unterschiede zwischen Dateien ansehen (git diff)">
             <p>
                 Mit dem Befehl <code>git diff</code> können die Änderungen zwischen der aktuellen Version und einer
                 älteren Version sowie auch zwischen zwei älteren Versionen angezeigt werden. Die Ausgabe besteht aus
@@ -356,7 +371,7 @@
                 git diff v2.0 index.php
             </code-block>
 
-            <p> </p>
+            <p></p>
 
             <code-block lang="bash">
                 git diff &lt;revision&gt;..&lt;revision&gt; &lt;file&gt;
@@ -383,7 +398,7 @@
                 </p>
             </note>
 
-            <chapter title="Unterschiede zwischen Commits ansehen" id="file-gitdiff-unterschiede">
+            <chapter id="file-gitdiff-unterschiede" title="Unterschiede zwischen Commits ansehen">
                 <p>
                     Wird die Datei nicht angegeben, so zeigt der Befehl <code>git diff &lt;revision&gt;</code> alle
                     geänderten Dateien seit der angegebenen Version bzw. zwischen zwei Versionen/Commits an. Bei
@@ -399,24 +414,24 @@
                 </code-block>
 
                 <code-block>
-                      css/autocompleteList.css
+                    css/autocompleteList.css
                     | 225 +-
-                      css/editproject.css (new)
+                    css/editproject.css (new)
                     | 13 +
-                      css/edituser.css
+                    css/edituser.css
                     | 99 +-
-                      css/iprot.css
+                    css/iprot.css
                     | 648 ++++-
-                      css/iprot/jquery-ui-1.8.13.custom.css
+                    css/iprot/jquery-ui-1.8.13.custom.css
                     | 2 +-
-                      css/mobile.css (new)
+                    css/mobile.css (new)
                     | 17 +
-                      ...
-                      269 files changed, 22819 insertions(+), 12792 deletions(-)
+                    ...
+                    269 files changed, 22819 insertions(+), 12792 deletions(-)
                 </code-block>
             </chapter>
 
-            <chapter title="Ergebnis gezielt einschränken" id="file-gitdiff-einschraenken">
+            <chapter id="file-gitdiff-einschraenken" title="Ergebnis gezielt einschränken">
                 <list>
                     <li>
                         Mit den Parametern <code>-G &lt;pattern&gt;</code> werden Suchmuster (mit
@@ -432,7 +447,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Dateien durchsuchen (git grep)" id="file-gitgrep">
+        <chapter id="file-gitgrep" title="Dateien durchsuchen (git grep)">
             <p>
                 Mit dem Befehl <code>git grep &lt;pattern&gt;</code> können Dateien auf einem bestimmten Suchbegriff,
                 der exakt dem Übergebenen regulären Ausdruck entspricht, durchsucht werden. Standardmäßig berücksichtigt
@@ -496,7 +511,7 @@
             </code-block>
         </chapter>
 
-        <chapter title="Urheberschaft von Code herausfinden (git blame)" id="file-gitblame">
+        <chapter id="file-gitblame" title="Urheberschaft von Code herausfinden (git blame)">
             <p>
                 Mit dem Befehl <code>git blame &lt;file&gt;</code> wird die Datei <code>&lt;file&gt;</code> zeilenweise
                 mit dem jeweiligen verantwortlichen des jeweiligen Commits angezeigt. Folgende Parameter können eine
@@ -515,16 +530,17 @@
         </chapter>
     </chapter>
 
-    <chapter title="Fehler suchen" id="fehlersuche">
+    <chapter id="fehlersuche" title="Fehler suchen">
     </chapter>
 
-    <chapter title="Statistik und Visualisierung" id="statistik">
+    <chapter id="statistik" title="Statistik und Visualisierung">
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
-            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler, 2020
+            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler,
+            2020
         </tip>
         <tip>
             <b>(WEBSEITE)</b>

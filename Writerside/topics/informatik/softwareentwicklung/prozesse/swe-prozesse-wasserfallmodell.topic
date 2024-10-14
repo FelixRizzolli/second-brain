@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Wasserfallmodell" id="swe-prozesse-wasserfallmodell">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-prozesse-wasserfallmodell"
+       title="Wasserfallmodell"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einleitung" id="einleitung">
+    <chapter id="einleitung" title="Einleitung">
         <p>
-            Das Wasserfallmodell war das erste veröffentlichte sequentielle Vorgehensmodell für Softwareentwicklung. Anfangs wurde direkt nach der Kenntnis eines Problems mit der Programmierung begonnen. Nun bemühte man sich dem Entwicklungsprozess eine Struktur zu geben. Klar definierte Entwicklungsphasen wurden nacheinander abgearbeitet und jeweils vollständig abgeschlossen, bevor ihre Dokumente bzw. Ergebnisse an die nächste Phase übergeben werden.
+            Das Wasserfallmodell war das erste veröffentlichte sequentielle Vorgehensmodell für Softwareentwicklung.
+            Anfangs wurde direkt nach der Kenntnis eines Problems mit der Programmierung begonnen. Nun bemühte man sich
+            dem Entwicklungsprozess eine Struktur zu geben. Klar definierte Entwicklungsphasen wurden nacheinander
+            abgearbeitet und jeweils vollständig abgeschlossen, bevor ihre Dokumente bzw. Ergebnisse an die nächste
+            Phase übergeben werden.
         </p>
         <p>
             Die Phasen des Wasserfallmodells sind:
@@ -40,14 +44,15 @@
         <p>
             Das Strikte Nacheinander im Wasserfallmodell ist reine Theorie, das Modell wird in der beschriebenen Form
             nur selten in der Praxis angewendet. Der Nachfolger ist das
-            <emphasis>Wasserfallmodell mit Rückkopplung</emphasis>.
+            <emphasis>Wasserfallmodell mit Rückkopplung</emphasis>
+            .
         </p>
 
-        <img src="swe-prozesse-wasserfallmodell.jpg" alt="Wasserfallmodell"/>
+        <img alt="Wasserfallmodell" src="swe-prozesse-wasserfallmodell.jpg"/>
     </chapter>
 
-    <chapter title="Das Modell" id="modell">
-        <chapter title="1. Analyse" id="modell-analyse">
+    <chapter id="modell" title="Das Modell">
+        <chapter id="modell-analyse" title="1. Analyse">
             <p>
                 In der Analysephase werden die Anforderungen an das künftige Softwaresystem ermittelt und dabei folgende
                 Fragen beantwortet:
@@ -79,7 +84,7 @@
             <p>Mehr dazu: <a href="swe-spp-analyse.topic">HIER</a></p>
         </chapter>
 
-        <chapter title="2. Entwurf" id="modell-entwurf">
+        <chapter id="modell-entwurf" title="2. Entwurf">
             <p>
                 In der Entwurfsphase wird die grundlegende Architektur des Programmsystems bestimmt. Besteht eine
                 Software aus mehreren Komponenten, werden deren Beziehungen untereinander festgelegt. Eine typische
@@ -91,7 +96,7 @@
             <p>Mehr dazu: <a href="swe-spp-entwurf.topic">HIER</a></p>
         </chapter>
 
-        <chapter title="3. Implementierung" id="modell-implementierung">
+        <chapter id="modell-implementierung" title="3. Implementierung">
             <p>
                 Das Ziel der Implementierung ist es, den Entwurf des Softwaresystems in ein lauffähiges Programm zu
                 verwandeln. Eng verbunden mit dem Schreiben des Programmcodes sind bestimmte Arten von Softwaretests.
@@ -129,7 +134,7 @@
             <p>Mehr dazu: <a href="swe-spp-implementierung.topic">HIER</a></p>
         </chapter>
 
-        <chapter title="4. Test" id="modell-test">
+        <chapter id="modell-test" title="4. Test">
             <p>
                 Nach Umsetzung der Systemanforderungen mithilfe der gewählten Programmiersprache liegt ein lauffähiges
                 Programm vor. Ziel der Testphase ist eine Überprüfung des Systems als Ganzes. Die einzelnen Einheiten
@@ -144,7 +149,7 @@
             <p>Mehr dazu: <a href="swe-spp-testen.topic">HIER</a></p>
         </chapter>
 
-        <chapter title="5. Betrieb und Wartung" id="modell-distribution">
+        <chapter id="modell-distribution" title="5. Betrieb und Wartung">
             <p>
                 Je nach Komplexität, Umfang und Art des Anwendungssystems gestaltet sich der Prozess der
                 <b>Inbetriebnahme</b> unterschiedlich aufwendig. So können klassische Client-Server-Applikationen
@@ -164,7 +169,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018

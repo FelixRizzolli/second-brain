@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Funktionen: MIN, MAX, COUNT, AVG, SUM" id="sql-dql-funktionen">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-dql-funktionen"
+       title="Funktionen: MIN, MAX, COUNT, AVG, SUM"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Beispieltabelle" id="beispieltabelle">
+    <chapter id="beispieltabelle" title="Beispieltabelle">
         <p>
             Diese Tabelle wird für die folgenden Beispiele verwendet:
         </p>
@@ -63,83 +63,83 @@
         </table>
     </chapter>
 
-    <chapter title="Die MIN()-Funktion" id="min">
+    <chapter id="min" title="Die MIN()-Funktion">
         <p>
             Die <code>MIN()</code>-Funktion gibt den kleinsten Wert der ausgewählten Spalte zurück.
         </p>
 
         <code-block lang="sql">
-            SELECT  MIN(Price)
-              FROM Products
-             WHERE  SupplierID = 1
+            SELECT MIN(Price)
+            FROM Products
+            WHERE SupplierID = 1
             ;
 
             -- Ergebnis = 10
         </code-block>
     </chapter>
 
-    <chapter title="Die MAX()-Funktion" id="max">
+    <chapter id="max" title="Die MAX()-Funktion">
         <p>
             Die <code>MAX()</code>-Funktion gibt den größten Wert der ausgewählten Spalte zurück.
         </p>
 
         <code-block lang="sql">
-            SELECT  MAX(Price)
-              FROM Products
-             WHERE  SupplierID = 1
+            SELECT MAX(Price)
+            FROM Products
+            WHERE SupplierID = 1
             ;
 
             -- Ergebnis = 19
         </code-block>
     </chapter>
 
-    <chapter title="Die COUNT()-Funktion" id="count">
+    <chapter id="count" title="Die COUNT()-Funktion">
         <p>
             Die <code>COUNT()</code>-Funktion gibt die Anzahl der Zeilen zurück, die einem bestimmten Kriterium
             entsprechen.
         </p>
 
         <code-block lang="sql">
-            SELECT  COUNT(*)
-              FROM Products
-             WHERE  SupplierID = 1
+            SELECT COUNT(*)
+            FROM Products
+            WHERE SupplierID = 1
             ;
 
             -- Ergebnis = 3
         </code-block>
     </chapter>
 
-    <chapter title="Die AVG()-Funktion" id="avg">
+    <chapter id="avg" title="Die AVG()-Funktion">
         <p>
             Die <code>AVG()</code>-Funktion gibt den Durchschnittswert einer numerischen Spalte zurück.
         </p>
 
         <code-block lang="sql">
-            SELECT  AVG(Price)
-              FROM Products
-             WHERE  SupplierID = 1
+            SELECT AVG(Price)
+            FROM Products
+            WHERE SupplierID = 1
             ;
 
             -- Ergebnis = 15.666666666666666
         </code-block>
     </chapter>
 
-    <chapter title="Die SUM()-Funktion" id="sum">
+    <chapter id="sum" title="Die SUM()-Funktion">
         <p>
             Die <code>SUM()</code>-Funktion gibt die Gesamtsumme einer numerischen Spalte zurück.
         </p>
 
         <code-block lang="sql">
-            SELECT  SUM(Price)
-              FROM Products
-             WHERE  SupplierID = 1
+            SELECT SUM(Price)
+            FROM Products
+            WHERE SupplierID = 1
             ;
 
             -- Ergebnis = 47
         </code-block>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/sql/sql_min_max.asp" ignore-vars="true">

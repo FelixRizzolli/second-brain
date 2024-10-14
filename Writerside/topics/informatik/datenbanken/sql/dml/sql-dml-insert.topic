@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Einfügeoperationen mittels INSERT, SELECT INTO" id="sql-dml-insert">
-    <show-structure for="chapter,procedure" depth="2"/>
-    
-    <chapter title="Einleitung" id="einleitung">
+<topic id="sql-dml-insert"
+       title="Einfügeoperationen mittels INSERT, SELECT INTO"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
+
+    <chapter id="einleitung" title="Einleitung">
         <p>
             Um eine Zeile einer Tabelle hinzuzufügen wird bei der Anweisung mit dem Schlüsselwort <code>INSERT</code>
             begonnen. So wird er Datenbank mitgeteilt, dass es sich bei diesem Befehl um das Einfügen einer neuen Zeile
@@ -30,7 +30,7 @@
         </table>
     </chapter>
 
-    <chapter title="INSERT mit expliziter Spaltenangabe" id="mit-spaltenausgabe">
+    <chapter id="mit-spaltenausgabe" title="INSERT mit expliziter Spaltenangabe">
         <p>
             Nach der Angabe der Tabelle, in die die neue Zeile eingefügt werden soll, folgen die Spalten welche
             kommasepariert aufgelistet werden. Diese werden mit einem einfachen Klammern Paar <code>( )</code>
@@ -50,7 +50,7 @@
         </code-block>
     </chapter>
 
-    <chapter title="INSERT ohne Spaltenangabe" id="ohne-spaltenausgabe">
+    <chapter id="ohne-spaltenausgabe" title="INSERT ohne Spaltenangabe">
         <p>
             Für alle Spalten einer Tabelle soll ein Spaltenwert eingefügt werden. Hier ist keine kommaseparierte Liste
             von Spaltenangaben erforderlich. Die Spaltenwerte werden hinter der <code>VALUES</code>-Klausel in einer
@@ -64,8 +64,8 @@
             INSERT INTO qualifikationen VALUES (6, 'SAP Basis Know How','SAP','Office');
         </code-block>
     </chapter>
-    
-    <chapter title="Ergebnistabelle für die Beispiele" id="ergebnistabelle">
+
+    <chapter id="ergebnistabelle" title="Ergebnistabelle für die Beispiele">
         <table>
             <tr>
                 <td>qid</td>
@@ -111,17 +111,17 @@
             </tr>
         </table>
     </chapter>
-    
-    <chapter title="SELECT INTO: Tabellen auf Basis von bestehenden Daten erstellen" id="select-into">
+
+    <chapter id="select-into" title="SELECT INTO: Tabellen auf Basis von bestehenden Daten erstellen">
         <p>
             Das <code>SELECT INTO</code>-Statement kopiert Daten aus einer Tabelle in eine neue Tabelle.
         </p>
 
         <code-block lang="sql">
-            SELECT  *
-              INTO newtable [IN externaldb]
-              FROM oldtable
-             WHERE  condition
+            SELECT *
+            INTO newtable [IN externaldb]
+            FROM oldtable
+            WHERE condition
             ;
         </code-block>
 
@@ -130,18 +130,18 @@
         </p>
 
         <code-block lang="sql">
-            SELECT  Customers.CustomerName
-                 ,  Orders.OrderID
-              INTO CustomersOrderBackup2017
-              FROM Customers
-              LEFT
-              JOIN Orders
-                ON  Customers.CustomerID = Orders.CustomerID
+            SELECT Customers.CustomerName
+            , Orders.OrderID
+            INTO CustomersOrderBackup2017
+            FROM Customers
+            LEFT
+            JOIN Orders
+            ON Customers.CustomerID = Orders.CustomerID
             ;
         </code-block>
     </chapter>
-    
-    <chapter title="INSERT INTO SELECT: Daten von anderen Tabellen kopieren" id="insert-into-select">
+
+    <chapter id="insert-into-select" title="INSERT INTO SELECT: Daten von anderen Tabellen kopieren">
         <p>
             Die <code>INSERT INTO SELECT</code>-Anweisung kopiert Daten aus einer Tabelle und fügt sie in eine andere
             Tabelle ein. Die <code>INSERT INTO SELECT</code>-Anweisung setzt voraus, dass die Datentypen in Quell- und
@@ -150,36 +150,36 @@
 
         <code-block lang="sql">
             INSERT
-              INTO table2
-                 (  column1
-                 ,  column2
-                 ,  column3
-                 ,  ... )
-            SELECT  column1
-                 ,  column2
-                 ,  column3
-                 ,  ...
-              FROM table1
-             WHERE  condition
+            INTO table2
+            ( column1
+            , column2
+            , column3
+            , ... )
+            SELECT column1
+            , column2
+            , column3
+            , ...
+            FROM table1
+            WHERE condition
             ;
         </code-block>
 
         <code-block lang="sql">
             INSERT
-              INTO Customers
-                 (  CustomerName
-                 ,  City
-                 ,  Country )
-            SELECT  SupplierName
-                 ,  City
-                 ,  Country
-              FROM Suppliers
-             WHERE  Country = 'Germany'
+            INTO Customers
+            ( CustomerName
+            , City
+            , Country )
+            SELECT SupplierName
+            , City
+            , Country
+            FROM Suppliers
+            WHERE Country = 'Germany'
             ;
         </code-block>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

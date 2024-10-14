@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Betriebssysteme" id="betriebssysteme">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="betriebssysteme"
+       title="Betriebssysteme"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Was ist ein Betriebssystem?" id="was-ist-ein-betriebssystem">
+    <chapter id="was-ist-ein-betriebssystem" title="Was ist ein Betriebssystem?">
         <p>
             Damit Anwendungsprogramme auf Computern laufen können, ist ein Betriebssystem erforderlich. Im Einzelnen
             erfüllen Betriebssysteme vor allem die folgenden Aufgaben:
@@ -60,7 +60,7 @@
         </list>
     </chapter>
 
-    <chapter title="Entwicklung der Betriebssysteme" id="entwicklung-der-betriebssysteme">
+    <chapter id="entwicklung-der-betriebssysteme" title="Entwicklung der Betriebssysteme">
         <p>
             Die allerersten Computersysteme der 40er- und 50er-Jahre des letzten Jahrhunderts wurden über Schalter und
             Steckverbindungen programmiert. Dem einzigen Programm, das zu einer bestimmten Zeit auf dem Computer lief,
@@ -131,7 +131,7 @@
             als es kaum noch jemanden interessierte.
         </p>
 
-        <chapter title="Die Geschichte von Unix" id="die-geschichte-von-unix">
+        <chapter id="die-geschichte-von-unix" title="Die Geschichte von Unix">
             <p>
                 Einige Ideen von MULTICS inspirierten jedoch Ken Thompson von den Bell Labs dazu, mit der Arbeit an
                 einem eigenen Betriebssystem zu beginnen. Anfangs war es als Einzelplatzsystem geplant und wurde auf
@@ -202,7 +202,7 @@
             </p>
         </chapter>
 
-        <chapter title="PC-Betriebssysteme" id="pc-betriebssysteme">
+        <chapter id="pc-betriebssysteme" title="PC-Betriebssysteme">
             <p>
                 Eine völlig andere Entwicklungslinie im Bereich der Betriebssysteme begann mit der Entwicklung der
                 Personal Computer ab Mitte der 70er-Jahre. Auf das Timesharing und den Mehrbenutzerbetrieb wurde bei den
@@ -230,7 +230,7 @@
                 konnte über verschiedene Konsolenbefehle gesteuert werden.
             </p>
 
-            <chapter title="DOS und Windows" id="dos-und-windows">
+            <chapter id="dos-und-windows" title="DOS und Windows">
                 <p>
                     1981 kam dann der IBM-PC auf den Markt, der bald zum erfolgreichsten Personal Computer wurde. IBM
                     wollte ein CP/M-ähnliches Betriebssystem für diesen Rechner haben. Gary Kildall war jedoch nicht
@@ -321,7 +321,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Linux" id="linux">
+            <chapter id="linux" title="Linux">
                 <p>
                     Der 386er-PC brachte nicht nur der Windows-Familie den Durchbruch, sondern war auch der Anlass für
                     Linus Torvalds, das Betriebssystem Linux zu entwickeln. Er war ein wenig enttäuscht von den
@@ -407,9 +407,9 @@
         </chapter>
     </chapter>
 
-    <chapter title="Aufgaben und Konzepte" id="aufgaben-und-konzepte">
-        <chapter title="Zusammengefasst: allgemeiner Aufbau von Betriebssystemen"
-                 id="zusammengefasst-allgemeiner-aufbau-von-betriebssystemen">
+    <chapter id="aufgaben-und-konzepte" title="Aufgaben und Konzepte">
+        <chapter id="zusammengefasst-allgemeiner-aufbau-von-betriebssystemen"
+                 title="Zusammengefasst: allgemeiner Aufbau von Betriebssystemen">
             <p>
                 Jedes Betriebssystem besitzt gewisse Grundbestandteile, denn alle Systeme müssen Computer verwalten, die
                 bestimmte Gemeinsamkeiten aufweisen. Beinahe jedes neuere Betriebssystem besteht aus dem Kernel, den
@@ -417,7 +417,7 @@
                 Anwendungsprogramme und einer Benutzeroberfläche.
             </p>
 
-            <chapter title="Der Kernel" id="der-kernel">
+            <chapter id="der-kernel" title="Der Kernel">
                 <p>
                     Der Kernel (das englische Wort für Kern, beispielsweise ein Obstkern) ist das grundlegende
                     Computerprogramm, das unmittelbar auf dem Prozessor des Rechners ausgeführt wird. Er läuft bis zum
@@ -535,7 +535,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Gerätetreiber" id="geraetetreiber">
+            <chapter id="geraetetreiber" title="Gerätetreiber">
                 <p>
                     Die Gerätetreiber (Device Drivers) sind spezielle kleine Programme, die sich um die Steuerung
                     einzelner Hardwarekomponenten kümmern. In manchen Betriebssystemen sind Treiber ein fester
@@ -567,7 +567,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Systemprogramme" id="systemprogramme">
+            <chapter id="systemprogramme" title="Systemprogramme">
                 <p>
                     Diejenigen Bestandteile des Betriebssystems, die nicht zum Kernel gehören, liegen in der Regel als
                     unabhängige Programme vor, die willkürlich geladen, ausgeführt und wieder beendet werden können. Bei
@@ -606,7 +606,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Die Schnittstelle für Anwendungsprogramme" id="die-schnittstelle-fuer-anwendungsprogramme">
+            <chapter id="die-schnittstelle-fuer-anwendungsprogramme" title="Die Schnittstelle für Anwendungsprogramme">
                 <p>
                     Jedes Betriebssystem bietet Anwendungsprogrammen die Möglichkeit, seine Dienstleistungen in Anspruch
                     zu nehmen. Dies ermöglicht es Programmierern, bestimmte aufwendige und hardwareabhängige Aufgaben an
@@ -656,7 +656,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Die Benutzeroberfläche" id="die-benutzeroberflaeche">
+            <chapter id="die-benutzeroberflaeche" title="Die Benutzeroberfläche">
                 <p>
                     Es gibt zwei grundlegende Arten von Benutzeroberflächen: die Konsole oder Kommandozeile und die
                     grafische Oberfläche. Beide dienen dazu, mit dem Betriebssystem zu kommunizieren, und stellen ihre
@@ -721,7 +721,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Prozessverwaltung" id="prozessverwaltung">
+        <chapter id="prozessverwaltung" title="Prozessverwaltung">
             <p>
                 Jedes moderne Betriebssystem ist in der Lage, scheinbar mehrere Aufgaben gleichzeitig auszuführen. Diese
                 Fähigkeit wird allgemein als Multitasking bezeichnet. Es geht dabei nicht nur um den bequemen
@@ -744,7 +744,7 @@
                 Problem und ruft den Prozess anschließend wieder auf.
             </p>
 
-            <chapter title="Das Unix-Prozessmodell" id="das-unix-prozessmodell">
+            <chapter id="das-unix-prozessmodell" title="Das Unix-Prozessmodell">
                 <p>
                     Besonders gut verständlich ist das Prozessverwaltungssystem von Unix. Für Unix-Prozesse gelten die
                     folgenden Aussagen:
@@ -868,7 +868,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Deadlocks" id="deadlocks">
+            <chapter id="deadlocks" title="Deadlocks">
                 <p>
                     Eines der Probleme, die bei der Verwendung mehrerer Prozesse auftreten können, ist eine Situation,
                     in der mehrere Prozesse im Wartezustand gefangen bleiben, weil sie aufeinander oder auf dieselben
@@ -911,7 +911,7 @@
                 </list>
             </chapter>
 
-            <chapter title="Threads" id="threads">
+            <chapter id="threads" title="Threads">
                 <p>
                     Einige Prozesse müssen gemeinsam dasselbe Problem bearbeiten und ununterbrochen miteinander
                     kommunizieren. Dies gilt insbesondere für Prozesse, die nebeneinander im gleichen Anwendungsprogramm
@@ -940,7 +940,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Speicherverwaltung" id="speicherverwaltung">
+        <chapter id="speicherverwaltung" title="Speicherverwaltung">
             <p>
                 Eine der wichtigsten Aufgaben eines Betriebssystems besteht in der Verwaltung des fast immer zu kleinen
                 Arbeitsspeichers. So gut wie alle aktuellen Betriebssysteme verwenden eine echte virtuelle
@@ -1000,7 +1000,7 @@
                 </li>
             </list>
 
-            <img src="hardware-speichermanagement.png" alt="Hardware Speichermanagement" width="600"/>
+            <img alt="Hardware Speichermanagement" src="hardware-speichermanagement.png" width="600"/>
 
             <p>
                 Auf diese Struktur der Hardware baut die Speicherverwaltung des Betriebssystems auf. Jedes Programm kann
@@ -1023,7 +1023,7 @@
             </p>
         </chapter>
 
-        <chapter title="Dateisysteme" id="dateisysteme">
+        <chapter id="dateisysteme" title="Dateisysteme">
             <p>
                 Eine der wichtigsten Aufgaben eines Betriebssystems ist die Verwaltung von Dateien. Eine Datei ist eine
                 benannte Einheit, die auf einem Datenträger gespeichert wird. Die meisten Betriebssysteme sprechen nicht
@@ -1071,7 +1071,7 @@
                 </p>
             </note>
 
-            <chapter title="Das virtuelle Unix-Dateisystem" id="das-virtuelle-unix-dateisystem">
+            <chapter id="das-virtuelle-unix-dateisystem" title="Das virtuelle Unix-Dateisystem">
                 <p>
                     Die in diesem Buch näher besprochenen Unix-Systeme Linux und macOS haben mit allen anderen
                     Unix-Systemen dasselbe virtuelle Dateisystem gemeinsam. Konkrete Dateisysteme gibt es unter Unix
@@ -1268,7 +1268,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Das virtuelle Windows-Dateisystem" id="das-virtuelle-windows-dateisystem">
+            <chapter id="das-virtuelle-windows-dateisystem" title="Das virtuelle Windows-Dateisystem">
                 <p>
                     Windows-Dateisysteme unterscheiden sich durch mehrere Merkmale von Unix-Dateisystemen. Insbesondere
                     ist auffallend, dass es keine gemeinsame Wurzel für alle Dateisysteme gibt, sondern dass jeder
@@ -1409,7 +1409,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836254663, IT-Handbuch für Fachinformatiker, Sascha Kersken, Rheinwerk Verlag GmbH, 2017

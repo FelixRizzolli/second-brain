@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Allgemeines über die Programmierung" id="swe-pk-grundlagen-allgemeines">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-pk-grundlagen-allgemeines"
+       title="Allgemeines über die Programmierung"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Geschichte zur Programmierung" id="geschichte">
+    <chapter id="geschichte" title="Geschichte zur Programmierung">
         <p>
             Erste Ideen, die mit dem heutigen Ansatz der Programmierung im weitestgehenden Sinne vergleichbar sind,
             stammen bereits aus dem 17. Jh. Als erste mechanische Rechenmaschine (1635) wird die sog. Rechenuhr des
@@ -53,7 +53,7 @@
             </p>
         </note>
 
-        <chapter title="Tabelle bekannter und zugleich historischer Programmiersprachen" id="geschichte-tabelle">
+        <chapter id="geschichte-tabelle" title="Tabelle bekannter und zugleich historischer Programmiersprachen">
             <table style="both">
                 <tr>
                     <td>Name der Sprache</td>
@@ -276,8 +276,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Generationen der Programmiersprachen" id="generationen">
-        <chapter title="Grundlegendes" id="generationen-grundlegendes">
+    <chapter id="generationen" title="Generationen der Programmiersprachen">
+        <chapter id="generationen-grundlegendes" title="Grundlegendes">
             <p>
                 Programmiersprachen lassen sich nicht nur nach ihrem Verwendungszweck (kaufmännisch, technisch,
                 mathematisch) und ihrer Sprachkategorie (objektorientiert, funktional) einteilen, sondern auch nach
@@ -285,12 +285,12 @@
                 Generation. Heute kommen primär Programmiersprachen der dritten und vierten Generation zum Einsatz, das
                 heißt aber nicht, dass man eine Sprache einer früheren Generation nicht mehr verwendet.
             </p>
-            
-            <img src="swe-pk-grundlagen-allgemeines-abstraktionsgrad.png"
-                 alt="Abstraktionsgrad einer Programmiersprache" />
+
+            <img alt="Abstraktionsgrad einer Programmiersprache"
+                 src="swe-pk-grundlagen-allgemeines-abstraktionsgrad.png"/>
         </chapter>
 
-        <chapter title="Sprachen der ersten Generation: Maschinensprachen" id="generationen-gen1">
+        <chapter id="generationen-gen1" title="Sprachen der ersten Generation: Maschinensprachen">
             <p>
                 Computer waren zu Beginn ausschließlich in Maschinensprache, d. h. als Folge von Nullen und Einsen zu
                 programmieren. Befehle und zu bearbeitende Daten wurden dabei in Kombination an den Prozessor gesandt.
@@ -313,7 +313,7 @@
             </p>
         </chapter>
 
-        <chapter title="Sprachen der zweiten Generation: Assemblersprachen" id="generationen-gen2">
+        <chapter id="generationen-gen2" title="Sprachen der zweiten Generation: Assemblersprachen">
             <p>
                 Programmiersprachen der zweiten Generation werden sogenannte Assemblersprachen bezeichnet. Auch diese
                 Sprachen sind auf den Befehlssatz des Prozessors ausgerichtet, aber die Anweisungen erfolgen durch im
@@ -358,7 +358,7 @@
             </p>
         </chapter>
 
-        <chapter title="Sprachen der dritten Generation: Höhere Programmiersprachen" id="generationen-gen3">
+        <chapter id="generationen-gen3" title="Sprachen der dritten Generation: Höhere Programmiersprachen">
             <p>
                 Ziel der Programmiersprachen der dritten Generation war es, eine neue Ebene der Abstraktion zu erreichen
                 und weitestgehende unabhängig von der verwendeten Hardware zu programmieren. Diese Art von
@@ -435,7 +435,7 @@
             </p>
         </chapter>
 
-        <chapter title="Sprachen der vierten und höheren Generation" id="generationen-gen4">
+        <chapter id="generationen-gen4" title="Sprachen der vierten und höheren Generation">
             <p>
                 Programmiersprachen der vierten und höheren Generation unterliegen keinem speziellen Paradigma. Es
                 handelt sich um Sprachen mit einem höheren Abstraktionsniveau, die auf spezielle Anwendungsbereiche
@@ -448,7 +448,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Compiler &amp; Interpreter" id="compiler">
+    <chapter id="compiler" title="Compiler &amp; Interpreter">
         <p>
             Als Entwickler speichert man das, was man mit einer Programmiersprache programmiert in ganz gewöhnlichen
             Textdateien, die auch als Quelldateien (eng. Source Files) bezeichnet werden. Der Inhalt einer solchen Datei
@@ -474,7 +474,7 @@
             PC --> MC: versteht
         </code-block>
 
-        <chapter title="Kompilierte Programmiersprachen" id="compiler-kompiliert">
+        <chapter id="compiler-kompiliert" title="Kompilierte Programmiersprachen">
             <p>
                 Bei kompilierten Programmiersprachen ist es so, dass der Quelltext durch einen Compiler in Maschinencode
                 bzw. in eine ausführbare Maschinencodedatei umgewandelt wird. Dabei werden die im Quelltext formulierten
@@ -544,7 +544,7 @@
             </note>
         </chapter>
 
-        <chapter title="Interpretierte Programmiersprachen" id="compiler-interpretiert">
+        <chapter id="compiler-interpretiert" title="Interpretierte Programmiersprachen">
             <p>
                 Bei interpretierten Programmiersprachen ist es nicht notwendig, den Quelltext zu kompilieren. Der
                 Quelltext wird hier nicht durch einen Compiler übersetzt, sondern durch einen Interpreter ausgewertet.
@@ -634,7 +634,7 @@
             </code-block>
         </chapter>
 
-        <chapter title="Vor- und Nachteile" id="compiler-procontra">
+        <chapter id="compiler-procontra" title="Vor- und Nachteile">
             <table>
                 <tr>
                     <td>Compiler</td>
@@ -671,7 +671,7 @@
             </table>
         </chapter>
 
-        <chapter title="Zwischensprachen" id="compiler-zwischensprachen">
+        <chapter id="compiler-zwischensprachen" title="Zwischensprachen">
             <p>
                 Es gibt einige Programmiersprachen, die sich nicht eindeutig einer der beiden genannten Kategorien
                 (kompiliert und interpretiert) zuordnen lassen, da bei ihnen sowohl Compiler als auch Interpreter zum
@@ -726,7 +726,7 @@
             </code-block>
         </chapter>
 
-        <chapter title="Übersicht über verschiedene Programmiersprachen" id="compiler-uebersicht">
+        <chapter id="compiler-uebersicht" title="Übersicht über verschiedene Programmiersprachen">
             <table>
                 <tr>
                     <td>Programmiersprache</td>
@@ -796,14 +796,14 @@
         </chapter>
     </chapter>
 
-    <chapter title="Programmierparadigmen" id="programmierparadigmen">
+    <chapter id="programmierparadigmen" title="Programmierparadigmen">
         <p>
-            Eine sehr wichtige Frage bei der Programmierung ist die Art und Weise, wie eine Aufgabe aus der realen Welt 
-            in Software abgebildet und damit bearbeitet wird. Je nach Problem existieren unterschiedliche Ansätze zum 
-            Aufbau des Programms. Diese Ansätze werden als Programmierparadigmen bezeichnet. Dabei wird zwischen 
+            Eine sehr wichtige Frage bei der Programmierung ist die Art und Weise, wie eine Aufgabe aus der realen Welt
+            in Software abgebildet und damit bearbeitet wird. Je nach Problem existieren unterschiedliche Ansätze zum
+            Aufbau des Programms. Diese Ansätze werden als Programmierparadigmen bezeichnet. Dabei wird zwischen
             folgenden grundsätzlichen Paradigmen unterschieden:
         </p>
-        
+
         <list>
             <li>
                 <b>Imperativ</b>: Das Programm besteht aus einer Folge von Anweisungen, die streng sequentiell
@@ -847,12 +847,15 @@
             »falsch« oder »richtig« gibt es dabei nicht, sondern eine ehr oder weniger gute Eignung. Viele
             Programmiersprachen unterstützen meist auch nicht nur ein Paradigma, sondern mehrere Ansätze können
             miteinander kombiniert werden. Insgesamt kann man aus heutiger Perspektive sagen, dass sich die
-            objektorientierte Programmierung seit Langem etabliert hat und heute als <emphasis>State of the
-            Art</emphasis> in vielen Bereichen der Softwareentwicklung gilt.
+            objektorientierte Programmierung seit Langem etabliert hat und heute als
+            <emphasis>State of the
+                Art
+            </emphasis>
+            in vielen Bereichen der Softwareentwicklung gilt.
         </p>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018

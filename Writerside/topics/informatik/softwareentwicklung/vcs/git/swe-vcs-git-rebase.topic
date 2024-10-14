@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Rebase" id="swe-vcs-git-rebase">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-vcs-git-rebase"
+       title="Rebase"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einführung" id="einfuehrung">
+    <chapter id="einfuehrung" title="Einführung">
         <p>
             Der Befehl <code>git rebase</code> kann anstelle von <code>git merge</code> verwendet werden oder in der
             Form <code>git pull --rebase</code>. In diesem Fall wird anstelle des im Rahmen des Pull-Prozesses
@@ -26,7 +26,7 @@
         </warning>
     </chapter>
 
-    <chapter title="Beispiel" id="beispiel">
+    <chapter id="beispiel" title="Beispiel">
         <p>
             Es gibt zwei Zeige. Einen develop-Zweig und einen feature-Zweig. Auf dem Feature-Zweig werden zwei Commits,
             F1 und F2, gepostet. Auf dem develop-Zweig in der Zwischenzeit D1 und D2. Das neue Feature soll in ferner
@@ -75,17 +75,18 @@
             </tr>
         </table>
 
-        <img src="swe-vcs-git-rebase.jpg" alt="git rebase"/>
+        <img alt="git rebase" src="swe-vcs-git-rebase.jpg"/>
     </chapter>
 
-    <chapter title="Konzept" id="konzept">
+    <chapter id="konzept" title="Konzept">
         <p>
             Beim Rebasing werden auf der Basis vorhanener Commits neue Commits (mit neuen Hashcodes) erzeugt und die
-            Referenzen zu den alten gelöscht. Diese werden dann mit der Zeit vom <emphasis>Garbage Collector</emphasis>
+            Referenzen zu den alten gelöscht. Diese werden dann mit der Zeit vom
+            <emphasis>Garbage Collector</emphasis>
             entfernt.
         </p>
-        
-        <chapter title="Zurück zum Beispiel" id="beipsiel">
+
+        <chapter id="beipsiel" title="Zurück zum Beispiel">
             <p>
                 git übernimmt die Commits D1 und D2 und tut so, als wären diese Teile des Feature-Zweigs. Das ist
                 technisch kein Problem, an den Commits ändert sich ja nichts. Im Feature-Zweig werden F1 und F2 nun
@@ -100,7 +101,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Merge-Konflikte beim Rebasing" id="konflikte">
+    <chapter id="konflikte" title="Merge-Konflikte beim Rebasing">
         <p>
             Falls Git bei den Umbauarbeiten Konflikte bemerkt, müssen diese manuell behoben, in einem Commit gespeichert
             und den Rebasing-Vorgang dann mit <code>git rebase --continue</code> fortgesetzt werden.
@@ -113,12 +114,12 @@
         </warning>
     </chapter>
 
-    <chapter title="Nebenwirkungen" id="nebenwirkungen">
+    <chapter id="nebenwirkungen" title="Nebenwirkungen">
         <p>
             Das Ergebnis von <code>git log --graph</code> sieht nach einem Rebasing natürlich wesentlich aufgeräumter
             aus. Es gibt aber auch zwei Nebenwirkungen:
         </p>
-        
+
         <list>
             <li>
                 Die Commits F1' und F2' hat es in dieser Form nie gegeben. Der Befehl git rebase hat künstliche Commits
@@ -126,15 +127,19 @@
                 kommt, den es in F1 noch nicht gegeben hat.
             </li>
             <li>
-                Zusammen mit jedem Commit werden zwei Zeitangaben gespeichert, das <emphasis>Author Date</emphasis> und
-                das <emphasis>Commit Date</emphasis>. Normalerweise stimmen beide Zeitangaben überein. Beim Rebasing
+                Zusammen mit jedem Commit werden zwei Zeitangaben gespeichert, das
+                <emphasis>Author Date</emphasis>
+                und
+                das
+                <emphasis>Commit Date</emphasis>
+                . Normalerweise stimmen beide Zeitangaben überein. Beim Rebasing
                 wird das Commit Date des neu erzeugten Commits mit dem gerade aktuellen Datum aktualisiert. Das Author
                 Date bleibt dagegen unverändert.
             </li>
         </list>
     </chapter>
 
-    <chapter title="Rebasing-Sonderfälle und Rebasing-Undo" id="sonderfaelle">
+    <chapter id="sonderfaelle" title="Rebasing-Sonderfälle und Rebasing-Undo">
         <p>
             Wird dem Befehl git rebase die Option -i angehängt, so gelangt man in einen Editor, der die durchzuführenden
             Aktionen zusammenfasst. Hier können nun die Kommandos geändert und so beispielsweise neue Commits festgelegt
@@ -179,7 +184,7 @@
         </p>
     </chapter>
 
-    <chapter title="Squashing" id="squashing">
+    <chapter id="squashing" title="Squashing">
         <p>
             Mit dem Befehl <code>git merge --squash &lt;other&gt;</code> und folglich git commit kann der Zweig other zu
             einem großen Commit zusammengefasst werden. Dieser Commit gilt als »gewöhnlicher« Commit. Als einziger
@@ -189,8 +194,8 @@
             sauberere History.
         </p>
 
-        <chapter title="Beispiel" id="squashing-beispiel">
-            <img src="swe-vcs-git-rebase-squashing.jpg" alt="Beispiel: Squashing"/>
+        <chapter id="squashing-beispiel" title="Beispiel">
+            <img alt="Beispiel: Squashing" src="swe-vcs-git-rebase-squashing.jpg"/>
 
             <p>
                 Der Nachteil des Squashings besteht darin, dass in der History des Hauptzweigs die Commit-Details des
@@ -200,10 +205,11 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
-            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler, 2020
+            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler,
+            2020
         </tip>
     </chapter>
 </topic>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Tabellenoperationen (CREATE, DROP, ALTER)" id="sql-ddl-tabellenoperationen">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-ddl-tabellenoperationen"
+       title="Tabellenoperationen (CREATE, DROP, ALTER)"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="CREATE TABLE: Tabellen erstellen" id="create">
+    <chapter id="create" title="CREATE TABLE: Tabellen erstellen">
         <p>
             Mit der <code>CREATE TABLE</code>-Anweisung werden Tabellen einer Datenbank erstellt. Dabei müssen auch die
             einzelnen Spalten, welche die Tabelle enthalten soll, notiert werden. Bei den einzelnen Spalten kann es sich
@@ -22,27 +22,30 @@
 
         <code-block lang="sql">
             CREATE TABLE dienstwagen(
-                dienstwagenid       TINYINT         PRIMARY KEY,
-                kennzeichen         CHAR(9),
-                erstzulassung       DATE,
-                kostenstelle        TINYINT,
-                hersteller          VARCHAR(200),
-                modell              VARCHAR(200),
-                mitarbeiter         VARCHAR(300)
+            dienstwagenid TINYINT PRIMARY KEY,
+            kennzeichen CHAR(9),
+            erstzulassung DATE,
+            kostenstelle TINYINT,
+            hersteller VARCHAR(200),
+            modell VARCHAR(200),
+            mitarbeiter VARCHAR(300)
             );
         </code-block>
 
-        <chapter title="Reservierte Schlüsselwörter" id="create-schluesselwoerter">
+        <chapter id="create-schluesselwoerter" title="Reservierte Schlüsselwörter">
             <p>
                 Jede Datenbank legt fest, welche Wörter nicht als Bezeichner für Datenbankobjekte verwendet werden
                 dürfen. In der Regel handelt es sich dabei um Wörter, die dem SQL-Sprachsatz entstammen. Somit ist es
-                wirklich keine gute Idee eine Tabelle oder Spalte <emphasis>select</emphasis> oder
-                <emphasis>create</emphasis> zu nennen. Die Liste der reservierten Schlüsselwörter ist in der
+                wirklich keine gute Idee eine Tabelle oder Spalte
+                <emphasis>select</emphasis>
+                oder
+                <emphasis>create</emphasis>
+                zu nennen. Die Liste der reservierten Schlüsselwörter ist in der
                 Dokumentation der jeweiligen Datenbank zu finden.
             </p>
         </chapter>
 
-        <chapter title="CONSTRAINTS" id="create-constraints">
+        <chapter id="create-constraints" title="CONSTRAINTS">
             <p>
                 Einer Spalte können Einschränkungen zugeordnet werden, welche für die <code>INSERT</code> und die
                 <code>UPDATE</code>-Anweisung gelten – werden diese nicht eingehalten, so wird die Anweisung nicht
@@ -61,7 +64,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="DROP TABLE: Tabellen löschen" id="drop">
+    <chapter id="drop" title="DROP TABLE: Tabellen löschen">
         <p>
             Mit der SQL-Anweisung <code>DROP TABLE</code> lässt sich eine Tabelle löschen. Die Anweisung ist einfach:
             Sie beginnt mit den Schlüsselwörtern <code>DROP TABLE</code> und darauf folgt der Tabellenbezeichner der zu
@@ -73,7 +76,7 @@
         </code-block>
     </chapter>
 
-    <chapter title="ALTER TABLE: Tabellen ändern" id="alter">
+    <chapter id="alter" title="ALTER TABLE: Tabellen ändern">
         <p>
             Das <code>ALTER TABLE</code>-Statement wird verwendet, um Spalten in einer bestehenden Tabelle hinzuzufügen,
             zu löschen oder zu ändern. Es wird auch verwendet, um verschiedene Beschränkungen
@@ -91,7 +94,7 @@
         </code-block>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Datenstrukturen" id="swe-pk-datenstrukturen">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-pk-datenstrukturen"
+       title="Datenstrukturen"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Allgemeines über Datenstrukturen" id="allgemeines">
+    <chapter id="allgemeines" title="Allgemeines über Datenstrukturen">
         <p>
             Datenstruktur dient der Speicherung und Organisation von Daten. Dabei handelt sich um eine Struktur, denn
             die Daten werden in einer bestimmten Art und Weise angeordnet. Ziel ist es, die Daten in einem
@@ -21,24 +21,24 @@
         </p>
     </chapter>
 
-    <chapter title="Datenobjekte" id="datenobjekte">
-        <chapter title="Einleitung" id="datenobjekte-einleitung">
+    <chapter id="datenobjekte" title="Datenobjekte">
+        <chapter id="datenobjekte-einleitung" title="Einleitung">
             <p>
                 Ein Datenobjekt dient der Speicherung einer Information in einer bestimmten Struktur. Es zeichnet sich
                 durch folgende Eigenschaften aus:
             </p>
-            
-            <img src="swe-pk-datenstrukturen-datenobjekte-uebersicht.jpg" alt="Datenobjekte - Übersicht"/>
+
+            <img alt="Datenobjekte - Übersicht" src="swe-pk-datenstrukturen-datenobjekte-uebersicht.jpg"/>
         </chapter>
 
-        <chapter title="Datentyp" id="datenobjekte-datentyp">
+        <chapter id="datenobjekte-datentyp" title="Datentyp">
             <p>
                 Der Datentyp legt fest, welche Arten von Daten (z.B. Zahlen, Texte) darin gespeichert werden können und
                 welche Operationen mit dem Datenobjekt erlaubt sind.
             </p>
         </chapter>
 
-        <chapter title="Wert" id="datenobjekte-wert">
+        <chapter id="datenobjekte-wert" title="Wert">
             <p>
                 In vielen Programmiersprachen muss zunächst das Datenobjekt deklariert werden, damit dafür Speicherplatz
                 reserviert wird. Die folglich erstmalige Zuweisung eines Wertes wird Definition genannt. Deklaration und
@@ -53,7 +53,7 @@
             </p>
         </chapter>
 
-        <chapter title="Adresse" id="datenobjekte-adresse">
+        <chapter id="datenobjekte-adresse" title="Adresse">
             <p>
                 Jedes Datenobjekt hat eine Adresse. Diese Adresse gibt genau an, an welcher Stelle im Speicher
                 (Hauptspeicher des Computers) sich das Datenobjekt befindet. Manipulationen auf Speicherebene sind
@@ -62,7 +62,7 @@
             </p>
         </chapter>
 
-        <chapter title="Bezeichner" id="datenobjekte-bezeichner">
+        <chapter id="datenobjekte-bezeichner" title="Bezeichner">
             <p>
                 Der Bezeichner eines Datenobjekts gibt an, mit welchem Namen das Datenobjekt angesprochen wird. Dabei
                 muss beachtet werden, dass der Name grundsätzlich eindeutig sein muss, damit Verwechslungen zwischen
@@ -72,7 +72,7 @@
             </p>
         </chapter>
 
-        <chapter title="Lebensdauer" id="datenobjekte-lebensdauer">
+        <chapter id="datenobjekte-lebensdauer" title="Lebensdauer">
             <p>
                 Die Lebensdauer eines Datenobjekts meint die Zeitspann von dessen Erzeugung bis zum Löschen. Bei vielen
                 Programmiersprachen sorgt das System selbst für ein automatisiertes Löschen des Datenobjekts, wenn es
@@ -80,7 +80,7 @@
             </p>
         </chapter>
 
-        <chapter title="Bindungszeitpunkt" id="datenobjekte-bindungszeitpunkt">
+        <chapter id="datenobjekte-bindungszeitpunkt" title="Bindungszeitpunkt">
             <p>
                 Mit Bindungszeitpunkt ist jener Zeitpunkt gemeint, wann das Datenobjekt wirklich erzeugt wird, d.h.,
                 wann der Speicherbereich dem Namen zugeordnet (gebunden) wird.
@@ -88,11 +88,15 @@
 
             <list>
                 <li>
-                    Bei sog. <emphasis>stark typisierten Sprachen</emphasis> erfolgt die Bindung zur Entwurfszeit. Der
+                    Bei sog.
+                    <emphasis>stark typisierten Sprachen</emphasis>
+                    erfolgt die Bindung zur Entwurfszeit. Der
                     Programmierer muss üblicherweise den Datentyp für ein Datenobjekt angeben.
                 </li>
                 <li>
-                    Bei nicht <emphasis>stark typisierten Sprachen</emphasis> passiert die Bindung erst zur Laufzeit.
+                    Bei nicht
+                    <emphasis>stark typisierten Sprachen</emphasis>
+                    passiert die Bindung erst zur Laufzeit.
                     Erst dann versucht das Programm, einen sinnvollen Datentyp auszuwählen und darin die Informationen
                     zu speichern.
                 </li>
@@ -104,14 +108,14 @@
             </p>
         </chapter>
 
-        <chapter title="Speicherklasse" id="datenobjekte-speicherklasse">
+        <chapter id="datenobjekte-speicherklasse" title="Speicherklasse">
             <p>
                 Diese Eigenschaft bestimmt, in welchem Teil des Hauptspeichers das Datenobjekt angelegt wird.
                 Üblicherweise wird das durch das System festgelegt.
             </p>
         </chapter>
 
-        <chapter title="Eigentümer" id="datenobjekte-eigentuemer">
+        <chapter id="datenobjekte-eigentuemer" title="Eigentümer">
             <p>
                 Dabei ist gemeint welcher Systemteil des Programms welche »Rechte« über das Datenobjekt hat. Mit Rechten
                 sind das Erzeugen, das Lesen, das Schreiben und das Löschen eines Datenobjekts gemeint.
@@ -119,16 +123,16 @@
         </chapter>
     </chapter>
 
-    <chapter title="Systematik" id="systematik">
+    <chapter id="systematik" title="Systematik">
 
     </chapter>
 
-    <chapter title="Datentypen" id="datentypen">
+    <chapter id="datentypen" title="Datentypen">
         <p>
             Man unterscheidet zwischen Grunddatentypen und anwendungsorientierten Datentypen.
         </p>
 
-        <img src="swe-pk-datenstrukturen-datentypen-uebersicht.jpg" alt="Datentypen - Übersicht"/>
+        <img alt="Datentypen - Übersicht" src="swe-pk-datenstrukturen-datentypen-uebersicht.jpg"/>
 
         <list>
             <li>
@@ -147,64 +151,200 @@
             </li>
         </list>
 
-        <chapter title="Grunddatentypen" id="datentypen-grund">
-            <chapter title="Bit und Byte" id="datentypen-grund-bitbyte">
+        <chapter id="datentypen-grund" title="Grunddatentypen">
+            <chapter id="datentypen-grund-bitbyte" title="Bit und Byte">
                 <p>
-                    Die Grundlage jeder Speicherung von Informationen in einem Rechner ist das Bit. Hier wird nur 
-                    zwischen den beiden Zuständen 0 und 1 unterschieden. Die kleinste adressierbare Einheit ist das 
-                    Byte. Es umfasst jeweils 8 Bit. Da jedes Bit die besagten zwei Werte annehmen kann, ergibt das 
-                    insgesamt 256 Kombinationen, denn 28 = 256. Neben der Darstellung in Binärform spielen noch 
+                    Die Grundlage jeder Speicherung von Informationen in einem Rechner ist das Bit. Hier wird nur
+                    zwischen den beiden Zuständen 0 und 1 unterschieden. Die kleinste adressierbare Einheit ist das
+                    Byte. Es umfasst jeweils 8 Bit. Da jedes Bit die besagten zwei Werte annehmen kann, ergibt das
+                    insgesamt 256 Kombinationen, denn 28 = 256. Neben der Darstellung in Binärform spielen noch
                     sedezimale (hexadezimale) und dezimale Darstellung eine wichtige Rolle.
                 </p>
 
-                <chapter title="Tabelle (Binär, Hexadezimal, Dezimal)"
+                <chapter collapsible="true"
                          id="datentypen-grund-bitbyte-tabelle"
-                         collapsible="true">
+                         title="Tabelle (Binär, Hexadezimal, Dezimal)">
                     <table style="header-row">
                         <tr>
                             <td>Binärdarstellung (Basis 2)</td>
                             <td>Sedezimaldarstellung (Basis 16)</td>
                             <td>Dezimaldarstellung (Basis 10)</td>
                         </tr>
-                        <tr><td><code>0000 0000</code></td><td><code>00</code></td><td><code>0</code></td></tr>
-                        <tr><td><code>0000 0001</code></td><td><code>01</code></td><td><code>1</code></td></tr>
-                        <tr><td><code>0000 0010</code></td><td><code>02</code></td><td><code>2</code></td></tr>
-                        <tr><td><code>0000 0011</code></td><td><code>03</code></td><td><code>3</code></td></tr>
-                        <tr><td><code>0000 0100</code></td><td><code>04</code></td><td><code>4</code></td></tr>
-                        <tr><td><code>0000 0101</code></td><td><code>05</code></td><td><code>5</code></td></tr>
-                        <tr><td><code>0000 0110</code></td><td><code>06</code></td><td><code>6</code></td></tr>
-                        <tr><td><code>0000 0111</code></td><td><code>07</code></td><td><code>7</code></td></tr>
-                        <tr><td><code>0000 1000</code></td><td><code>08</code></td><td><code>8</code></td></tr>
-                        <tr><td><code>0000 1001</code></td><td><code>09</code></td><td><code>9</code></td></tr>
-                        <tr><td><code>0000 1010</code></td><td><code>0A</code></td><td><code>10</code></td></tr>
-                        <tr><td><code>0000 1011</code></td><td><code>0B</code></td><td><code>11</code></td></tr>
-                        <tr><td><code>0000 1100</code></td><td><code>0C</code></td><td><code>12</code></td></tr>
-                        <tr><td><code>0000 1101</code></td><td><code>0D</code></td><td><code>13</code></td></tr>
-                        <tr><td><code>0000 1110</code></td><td><code>0E</code></td><td><code>14</code></td></tr>
-                        <tr><td><code>0000 1111</code></td><td><code>0F</code></td><td><code>15</code></td></tr>
-                        <tr><td><code>0001 0000</code></td><td><code>10</code></td><td><code>16</code></td></tr>
-                        <tr><td><code>0001 0001</code></td><td><code>11</code></td><td><code>17</code></td></tr>
-                        <tr><td>...</td><td>...</td><td>...</td></tr>
-                        <tr><td><code>0001 1111</code></td><td><code>1F</code></td><td><code>31</code></td></tr>
-                        <tr><td><code>0010 0000</code></td><td><code>20</code></td><td><code>32</code></td></tr>
-                        <tr><td><code>0010 0001</code></td><td><code>21</code></td><td><code>33</code></td></tr>
-                        <tr><td>...</td><td>...</td><td>...</td></tr>
-                        <tr><td><code>0010 1111</code></td><td><code>2F</code></td><td><code>47</code></td></tr>
-                        <tr><td><code>0011 0000</code></td><td><code>30</code></td><td><code>48</code></td></tr>
-                        <tr><td><code>0011 0001</code></td><td><code>31</code></td><td><code>49</code></td></tr>
-                        <tr><td>...</td><td>...</td><td>...</td></tr>
-                        <tr><td><code>0011 1111</code></td><td><code>3F</code></td><td><code>63</code></td></tr>
-                        <tr><td>...</td><td>...</td><td>...</td></tr>
-                        <tr><td><code>1111 0000</code></td><td><code>F0</code></td><td><code>240</code></td></tr>
-                        <tr><td><code>1111 0001</code></td><td><code>F1</code></td><td><code>241</code></td></tr>
-                        <tr><td>...</td><td>...</td><td>...</td></tr>
-                        <tr><td><code>1111 1110</code></td><td><code>FE</code></td><td><code>254</code></td></tr>
-                        <tr><td><code>1111 1111</code></td><td><code>FF</code></td><td><code>255</code></td></tr>
+                        <tr>
+                            <td><code>0000 0000</code></td>
+                            <td><code>00</code></td>
+                            <td><code>0</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0000 0001</code></td>
+                            <td><code>01</code></td>
+                            <td><code>1</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0000 0010</code></td>
+                            <td><code>02</code></td>
+                            <td><code>2</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0000 0011</code></td>
+                            <td><code>03</code></td>
+                            <td><code>3</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0000 0100</code></td>
+                            <td><code>04</code></td>
+                            <td><code>4</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0000 0101</code></td>
+                            <td><code>05</code></td>
+                            <td><code>5</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0000 0110</code></td>
+                            <td><code>06</code></td>
+                            <td><code>6</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0000 0111</code></td>
+                            <td><code>07</code></td>
+                            <td><code>7</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0000 1000</code></td>
+                            <td><code>08</code></td>
+                            <td><code>8</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0000 1001</code></td>
+                            <td><code>09</code></td>
+                            <td><code>9</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0000 1010</code></td>
+                            <td><code>0A</code></td>
+                            <td><code>10</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0000 1011</code></td>
+                            <td><code>0B</code></td>
+                            <td><code>11</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0000 1100</code></td>
+                            <td><code>0C</code></td>
+                            <td><code>12</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0000 1101</code></td>
+                            <td><code>0D</code></td>
+                            <td><code>13</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0000 1110</code></td>
+                            <td><code>0E</code></td>
+                            <td><code>14</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0000 1111</code></td>
+                            <td><code>0F</code></td>
+                            <td><code>15</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0001 0000</code></td>
+                            <td><code>10</code></td>
+                            <td><code>16</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0001 0001</code></td>
+                            <td><code>11</code></td>
+                            <td><code>17</code></td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td><code>0001 1111</code></td>
+                            <td><code>1F</code></td>
+                            <td><code>31</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0010 0000</code></td>
+                            <td><code>20</code></td>
+                            <td><code>32</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0010 0001</code></td>
+                            <td><code>21</code></td>
+                            <td><code>33</code></td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td><code>0010 1111</code></td>
+                            <td><code>2F</code></td>
+                            <td><code>47</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0011 0000</code></td>
+                            <td><code>30</code></td>
+                            <td><code>48</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>0011 0001</code></td>
+                            <td><code>31</code></td>
+                            <td><code>49</code></td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td><code>0011 1111</code></td>
+                            <td><code>3F</code></td>
+                            <td><code>63</code></td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td><code>1111 0000</code></td>
+                            <td><code>F0</code></td>
+                            <td><code>240</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>1111 0001</code></td>
+                            <td><code>F1</code></td>
+                            <td><code>241</code></td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td><code>1111 1110</code></td>
+                            <td><code>FE</code></td>
+                            <td><code>254</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>1111 1111</code></td>
+                            <td><code>FF</code></td>
+                            <td><code>255</code></td>
+                        </tr>
                     </table>
                 </chapter>
             </chapter>
 
-            <chapter title="Datentyp Binärwert" id="datentypen-grund-binaerwert">
+            <chapter id="datentypen-grund-binaerwert" title="Datentyp Binärwert">
                 <p>
                     Beim Binärwert handelt es sich üblicherweise um den einfachsten Datentyp, den eine
                     Programmiersprache zu bieten hat. Man unterscheidet lediglich die Zustände true und false. Die
@@ -213,7 +353,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Datentyp Zahl" id="datentypen-grund-zahl">
+            <chapter id="datentypen-grund-zahl" title="Datentyp Zahl">
                 <p>
                     Mit einem Datenobjekt vom Typ Zahl kann gerechnet werden. Die Programmiersprachen unterscheiden
                     meist mehrere Zahlentypen, zum Beispiel ganze Zahlen, Festkommazahlen oder Gleitkommazahlen. Bei der
@@ -262,7 +402,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Datentyp Zeichenkette" id="datentypen-grund-zeichenkette">
+            <chapter id="datentypen-grund-zeichenkette" title="Datentyp Zeichenkette">
                 <p>
                     Der Datentyp Zeichenkette, üblicherweise String genannt, umfasst eine Aneinanderreihung von mehreren
                     Bytes beliebigen Inhalts. Ein Bytewert entspricht dabei einem bestimmten druckbaren Zeichen. Zur
@@ -273,7 +413,7 @@
                     doppelte ("…") oder einfache ('…') Anführungszeichen eingeschlossen.
                 </p>
 
-                <chapter title="ASCII Tabelle" id="datentypen-grund-zeichenkette-ascii" collapsible="true">
+                <chapter collapsible="true" id="datentypen-grund-zeichenkette-ascii" title="ASCII Tabelle">
                     <table>
                         <tr>
                             <td><code>0</code></td>
@@ -477,565 +617,565 @@
                             <td><code>33</code></td>
                             <td><code>21</code></td>
                             <td><code>!</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>34</code></td>
                             <td><code>22</code></td>
                             <td><code>"</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>35</code></td>
                             <td><code>23</code></td>
                             <td><code>#</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>36</code></td>
                             <td><code>24</code></td>
                             <td><code>$</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>37</code></td>
                             <td><code>25</code></td>
                             <td><code>%</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>38</code></td>
                             <td><code>26</code></td>
                             <td><code>&amp;</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>39</code></td>
                             <td><code>27</code></td>
                             <td><code>'</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>40</code></td>
                             <td><code>28</code></td>
                             <td><code>(</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>41</code></td>
                             <td><code>29</code></td>
                             <td><code>)</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>42</code></td>
                             <td><code>2A</code></td>
                             <td><code>*</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>43</code></td>
                             <td><code>2B</code></td>
                             <td><code>+</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>44</code></td>
                             <td><code>2C</code></td>
                             <td><code>,</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>45</code></td>
                             <td><code>2D</code></td>
                             <td><code>-</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>46</code></td>
                             <td><code>2E</code></td>
                             <td><code>.</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>47</code></td>
                             <td><code>2F</code></td>
                             <td><code>/</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>48</code></td>
                             <td><code>30</code></td>
                             <td><code>0</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>49</code></td>
                             <td><code>31</code></td>
                             <td><code>1</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>50</code></td>
                             <td><code>32</code></td>
                             <td><code>2</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>51</code></td>
                             <td><code>33</code></td>
                             <td><code>3</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>52</code></td>
                             <td><code>34</code></td>
                             <td><code>4</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>53</code></td>
                             <td><code>35</code></td>
                             <td><code>5</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>54</code></td>
                             <td><code>36</code></td>
                             <td><code>6</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>55</code></td>
                             <td><code>37</code></td>
                             <td><code>7</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>56</code></td>
                             <td><code>38</code></td>
                             <td><code>8</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>57</code></td>
                             <td><code>39</code></td>
                             <td><code>9</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>58</code></td>
                             <td><code>3A</code></td>
                             <td><code>:</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>59</code></td>
                             <td><code>3B</code></td>
                             <td><code>;</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>60</code></td>
                             <td><code>3C</code></td>
                             <td><code>&lt;</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>61</code></td>
                             <td><code>3D</code></td>
                             <td><code>=</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>62</code></td>
                             <td><code>3E</code></td>
                             <td><code>&gt;</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>63</code></td>
                             <td><code>3F</code></td>
                             <td><code>?</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>64</code></td>
                             <td><code>40</code></td>
                             <td><code>@</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>65</code></td>
                             <td><code>41</code></td>
                             <td><code>A</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>66</code></td>
                             <td><code>42</code></td>
                             <td><code>B</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>67</code></td>
                             <td><code>43</code></td>
                             <td><code>C</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>68</code></td>
                             <td><code>44</code></td>
                             <td><code>D</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>69</code></td>
                             <td><code>45</code></td>
                             <td><code>E</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>70</code></td>
                             <td><code>46</code></td>
                             <td><code>F</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>71</code></td>
                             <td><code>47</code></td>
                             <td><code>H</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>72</code></td>
                             <td><code>48</code></td>
                             <td><code>H</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>73</code></td>
                             <td><code>49</code></td>
                             <td><code>I</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>74</code></td>
                             <td><code>4A</code></td>
                             <td><code>J</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>75</code></td>
                             <td><code>4B</code></td>
                             <td><code>K</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>76</code></td>
                             <td><code>4C</code></td>
                             <td><code>L</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>77</code></td>
                             <td><code>4D</code></td>
                             <td><code>M</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>78</code></td>
                             <td><code>4E</code></td>
                             <td><code>N</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>79</code></td>
                             <td><code>4F</code></td>
                             <td><code>O</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>80</code></td>
                             <td><code>50</code></td>
                             <td><code>P</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>81</code></td>
                             <td><code>51</code></td>
                             <td><code>Q</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>82</code></td>
                             <td><code>52</code></td>
                             <td><code>R</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>83</code></td>
                             <td><code>53</code></td>
                             <td><code>S</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>84</code></td>
                             <td><code>54</code></td>
                             <td><code>T</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>85</code></td>
                             <td><code>55</code></td>
                             <td><code>U</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>86</code></td>
                             <td><code>56</code></td>
                             <td><code>V</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>87</code></td>
                             <td><code>57</code></td>
                             <td><code>W</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>88</code></td>
                             <td><code>58</code></td>
                             <td><code>X</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>89</code></td>
                             <td><code>59</code></td>
                             <td><code>Y</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>90</code></td>
                             <td><code>5A</code></td>
                             <td><code>Z</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>91</code></td>
                             <td><code>5B</code></td>
                             <td><code>[</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>92</code></td>
                             <td><code>5C</code></td>
                             <td><code>\</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>93</code></td>
                             <td><code>5D</code></td>
                             <td><code>]</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>94</code></td>
                             <td><code>5E</code></td>
                             <td><code>^</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>95</code></td>
                             <td><code>5F</code></td>
                             <td><code>_</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>96</code></td>
                             <td><code>60</code></td>
                             <td><code>`</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>97</code></td>
                             <td><code>61</code></td>
                             <td><code>a</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>98</code></td>
                             <td><code>62</code></td>
                             <td><code>b</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>99</code></td>
                             <td><code>63</code></td>
                             <td><code>c</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>100</code></td>
                             <td><code>64</code></td>
                             <td><code>d</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>101</code></td>
                             <td><code>65</code></td>
                             <td><code>e</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>102</code></td>
                             <td><code>66</code></td>
                             <td><code>f</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>103</code></td>
                             <td><code>67</code></td>
                             <td><code>g</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>104</code></td>
                             <td><code>68</code></td>
                             <td><code>h</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>105</code></td>
                             <td><code>69</code></td>
                             <td><code>i</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>106</code></td>
                             <td><code>6A</code></td>
                             <td><code>j</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>107</code></td>
                             <td><code>6B</code></td>
                             <td><code>k</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>108</code></td>
                             <td><code>6C</code></td>
                             <td><code>l</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>109</code></td>
                             <td><code>6D</code></td>
                             <td><code>m</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>110</code></td>
                             <td><code>6E</code></td>
                             <td><code>n</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>111</code></td>
                             <td><code>6F</code></td>
                             <td><code>o</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>112</code></td>
                             <td><code>70</code></td>
                             <td><code>p</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>113</code></td>
                             <td><code>71</code></td>
                             <td><code>q</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>114</code></td>
                             <td><code>72</code></td>
                             <td><code>r</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>115</code></td>
                             <td><code>73</code></td>
                             <td><code>s</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>116</code></td>
                             <td><code>74</code></td>
                             <td><code>t</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>117</code></td>
                             <td><code>75</code></td>
                             <td><code>u</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>118</code></td>
                             <td><code>76</code></td>
                             <td><code>v</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>119</code></td>
                             <td><code>77</code></td>
                             <td><code>w</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>120</code></td>
                             <td><code>78</code></td>
                             <td><code>x</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>121</code></td>
                             <td><code>79</code></td>
                             <td><code>y</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>122</code></td>
                             <td><code>7A</code></td>
                             <td><code>z</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>123</code></td>
                             <td><code>7B</code></td>
                             <td><code>{</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>124</code></td>
                             <td><code>7C</code></td>
                             <td><code>|</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>125</code></td>
                             <td><code>7D</code></td>
                             <td><code>}</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>126</code></td>
                             <td><code>7E</code></td>
                             <td><code>~</code></td>
-                            <td> </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>127</code></td>
@@ -1047,7 +1187,7 @@
                 </chapter>
             </chapter>
 
-            <chapter title="Datentyp Adresse" id="datentypen-grund-adresse">
+            <chapter id="datentypen-grund-adresse" title="Datentyp Adresse">
                 <p>
                     Der Datentyp Adresse dient der Darstellung bzw. Speicherung von Adressen von Datenobjekten. Die
                     genaue Konstruktion dieses Datentyps ist von mehreren Faktoren abhängig, unter anderem von der Art
@@ -1089,11 +1229,11 @@
                     muss die Freigabe stets per Hand erfolgen.
                 </p>
 
-                <img src="swe-pk-datenstrukturen-datentyp-adresse.png" alt="Datentyp Adresse"/>
+                <img alt="Datentyp Adresse" src="swe-pk-datenstrukturen-datentyp-adresse.png"/>
             </chapter>
         </chapter>
 
-        <chapter title="Spezifische Datentypen" id="datentypen-spezifisch">
+        <chapter id="datentypen-spezifisch" title="Spezifische Datentypen">
             <p>
                 Die Basis für diese Datentypen bilden die zuvor beschriebenen Grunddatentypen, d. h. die Datentypen für
                 Zahlen, Zeichenketten usw. Typische Varianten dieser Datentypen sind Felder, Listen oder Aufzählungen in
@@ -1113,7 +1253,7 @@
                 Konstruktionsvarianten dieses Datentyps, das Prinzip bleibt jedoch immer gleich.
             </p>
 
-            <chapter title="Arrays" id="datentypen-spezifisch-arrays">
+            <chapter id="datentypen-spezifisch-arrays" title="Arrays">
                 <p>
                     Bei einem Array handelt sich um die strukturierte Ablage von mehreren Daten gleichen Typs im
                     Speicher des Rechners, wobei der Zugriff auf die einzelnen Daten über einen Index möglich sein soll.
@@ -1125,12 +1265,12 @@
                     höheren Anzahl von Dimensionen wird es etwas schwieriger mit der Vorstellungskraft.
                 </p>
 
-                <img src="swe-pk-datenstrukturen-datentyp-array.png" alt="Datentyp - Array"/>
+                <img alt="Datentyp - Array" src="swe-pk-datenstrukturen-datentyp-array.png"/>
             </chapter>
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018

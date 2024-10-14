@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Informatik" id="informatik">
+<topic id="informatik"
+       title="Informatik"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
 
     <section-starting-page>
         <title>Informatik</title>
         <description>...</description>
 
         <spotlight>
-            <a href="python.topic" type="computer" description="Python" summary="..." />
-            <a href="javascript.topic" type="world" description="JavaScript" summary="..." />
+            <a description="Python" href="python.topic" summary="..." type="computer"/>
+            <a description="JavaScript" href="javascript.topic" summary="..." type="world"/>
         </spotlight>
 
         <primary>
             <title>Kategorien</title>
-            <a href="swe.topic"
-               description="Softwareentwicklung"
+            <a description="Softwareentwicklung"
+               href="swe.topic"
                summary="..."
-               type="navigation" />
-            <a href="anwendungsentwicklung.topic"
-               description="Anwendungsentwicklung"
+               type="navigation"/>
+            <a description="Anwendungsentwicklung"
+               href="anwendungsentwicklung.topic"
                summary="..."
-               type="computer" />
-            <a href="webentwicklung.topic"
-               description="Webentwicklung"
+               type="computer"/>
+            <a description="Webentwicklung"
+               href="webentwicklung.topic"
                summary="..."
-               type="world" />
-            <a href="auszeichnungssprachen.topic"
-               description="Auszeichnungssprachen"
+               type="world"/>
+            <a description="Auszeichnungssprachen"
+               href="auszeichnungssprachen.topic"
                summary="..."
-               type="development" />
-            <a href="datenbanken.topic"
-               description="Datenbanken"
+               type="development"/>
+            <a description="Datenbanken"
+               href="datenbanken.topic"
                summary="..."
                type="data"/>
-            <a href="betriebssysteme.topic"
-               description="Betriebssysteme"
+            <a description="Betriebssysteme"
+               href="betriebssysteme.topic"
                summary="..."
-               type="cross-platform" />
-            <a href="netzwerktechnik.topic"
-               description="Netzwerktechnik"
+               type="cross-platform"/>
+            <a description="Netzwerktechnik"
+               href="netzwerktechnik.topic"
                summary="..."
                type="network"/>
-            <a href="design.topic"
-               description="Design"
+            <a description="Design"
+               href="design.topic"
                summary="..."
                type="creative"/>
-            <a href="mainframe.topic"
-               description="Mainframe"
+            <a description="Mainframe"
+               href="mainframe.topic"
                summary="..."
                type="server"/>
         </primary>
 
         <secondary>
             <title>Meine Leidenschaft</title>
-            <a href="javascript.topic"
-               description="JavaScript"
+            <a description="JavaScript"
+               href="javascript.topic"
                summary="..."
-               type="world" />
+               type="world"/>
         </secondary>
     </section-starting-page>
 </topic>

@@ -1,64 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="MySecondBrain" id="mysecondbrain" help-id="MySecondBrain">
+<topic help-id="MySecondBrain"
+       id="mysecondbrain"
+       title="MySecondBrain" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <section-starting-page>
         <title>My SecondBrain</title>
         <description>...</description>
 
         <spotlight>
-            <a href="informatik.topic" type="development" description="Informatik" summary="..." />
-            <a href="philosophie.topic" type="learn" description="Philosophie" summary="..." />
+            <a description="Informatik" href="informatik.topic" summary="..." type="development"/>
+            <a description="Philosophie" href="philosophie.topic" summary="..." type="learn"/>
         </spotlight>
 
         <primary>
             <title>Kategorien</title>
-            <a href="informatik.topic"
-               description="Informatik"
+            <a description="Informatik"
+               href="informatik.topic"
                summary="..."
-               type="development" />
-            <a href="philosophie.topic"
-               description="Philosophie"
+               type="development"/>
+            <a description="Philosophie"
+               href="philosophie.topic"
                summary="..."
-               type="learn" />
-            <a href="wirtschaft.topic"
-               description="Wirtschaft"
+               type="learn"/>
+            <a description="Wirtschaft"
+               href="wirtschaft.topic"
                summary="..."
-               type="academy" />
-            <a href="truthiness.topic"
-               description="Truthiness"
+               type="academy"/>
+            <a description="Truthiness"
+               href="truthiness.topic"
                summary="..."
-               type="bug" />
-            <a href="sprachen.topic"
-               description="Sprachen"
+               type="bug"/>
+            <a description="Sprachen"
+               href="sprachen.topic"
                summary="..."
                type="data"/>
-            <a href="mathematik.topic"
-               description="Mathematik"
+            <a description="Mathematik"
+               href="mathematik.topic"
                summary="..."
-               type="documents" />
-            <a href="gesundheit.topic"
-               description="Gesundheit"
+               type="documents"/>
+            <a description="Gesundheit"
+               href="gesundheit.topic"
                summary="..."
                type="navigation"/>
         </primary>
 
         <secondary>
             <title>Meine Leidenschaft</title>
-            <a href="javascript.topic"
-               description="JavaScript"
+            <a description="JavaScript"
+               href="javascript.topic"
                summary="..."
-               type="development" />
-            <a href="stoizismus.topic"
-               description="Stoizismus"
+               type="development"/>
+            <a description="Stoizismus"
+               href="stoizismus.topic"
                summary="..."
-               type="academy" />
-            <a href="produktivitaetssteigerung.topic"
-               description="Produktivitätssteigerung"
+               type="academy"/>
+            <a description="Produktivitätssteigerung"
+               href="produktivitaetssteigerung.topic"
                summary="..."
-               type="academy" />
+               type="academy"/>
         </secondary>
     </section-starting-page>
 </topic>

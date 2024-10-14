@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Workflows" id="swe-vcs-git-workflows" help-id="vcs-git-workflows">
-    <show-structure for="chapter,procedure" depth="2"/>
-    
-    <chapter title="Grundlegendes" id="grundlagen">
-        <chapter title="Anweisungen für das Team" id="grundlagen-team">
+<topic help-id="vcs-git-workflows"
+       id="swe-vcs-git-workflows"
+       title="Workflows" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
+
+    <chapter id="grundlagen" title="Grundlegendes">
+        <chapter id="grundlagen-team" title="Anweisungen für das Team">
             <p>
                 Um alleine oder vor allem in einem Team, erfolgreich und produktiv mit Git zu arbeiten gibt es gewisse
                 Abläufe: sog. Workflows. Welche dieser Abläufe für das eigene Team der richtige ist, hängt neben dem
@@ -24,7 +24,7 @@
             </p>
         </chapter>
 
-        <chapter title="Welcher Workflow ist der Richtige?" id="grundlagen-vergleich">
+        <chapter id="grundlagen-vergleich" title="Welcher Workflow ist der Richtige?">
             <p>
                 Für die Entscheidung welcher Workflow der Richtige ist, sind folgende Faktoren wichtig:
             </p>
@@ -59,7 +59,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Das Ein-Mann-Team und die Solo-Entwicklung" id="solo">
+    <chapter id="solo" title="Das Ein-Mann-Team und die Solo-Entwicklung">
         <p>
             Sobald ein Projekt den Hello-World-Status verlässt ist es schon sinnvoll, dass eine Versionsverwaltung
             eingesetzt wird. Die Software dazu ist gratis und der Mehraufwand bei den Arbeitsabläufen ist minimal.
@@ -76,7 +76,7 @@
             einer anderen Form verwendet werden.
         </p>
 
-        <chapter title="Fazit" id="solo-fazit">
+        <chapter id="solo-fazit" title="Fazit">
             <p><b>Vorteile</b></p>
 
             <list>
@@ -94,8 +94,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Feature-Branches für Teams" id="featurebranching">
-        <chapter title="Neues Feature, neuer Branch" id="featurebranching-neu">
+    <chapter id="featurebranching" title="Feature-Branches für Teams">
+        <chapter id="featurebranching-neu" title="Neues Feature, neuer Branch">
             <p>
                 Mit Feature-Branches kann das Konfliktpotential reduziert werden, indem Arbeitspakete auf Personen
                 aufgeteilt werden und die Entwicklung jeweils in einem eigenen Branch, dem Feature-Branch, stattfindet.
@@ -105,7 +105,7 @@
                 fertig sind, einen Merge/Pull-Request an die berechtigte Person.
             </p>
 
-            <chapter title="Code-Review" id="featurebranching-neu-codereview">
+            <chapter id="featurebranching-neu-codereview" title="Code-Review">
                 <p>
                     Code-Reviews sind in agilen Softwareentwicklungsprozessen oft ein integrierter Bestandteil. Mit
                     Feature-Branches ist es sehr einfach die Änderungen zu begutachten. Treten im Code-Review noch
@@ -114,7 +114,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Merge" id="featurebranching-neu-merge">
+            <chapter id="featurebranching-neu-merge" title="Merge">
                 <p>
                     Da die Merge-Vorgänge auf dem Master-Branch immer Fast-forward-Merges sind, erscheint der
                     eigentliche Merge nicht mehr in der Git-History. Wird Wert darauf gelegt, dass die Merges nicht
@@ -124,7 +124,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Rebase" id="featurebranching-neu-rebase">
+            <chapter id="featurebranching-neu-rebase" title="Rebase">
                 <p>
                     Die Grundregel für Rebasing lautet, dass Rebases nie auf einen schon hochgeladenen öffentlichen
                     Branch angewendet werden darf. Daher sollte das Rebasing nur angewendet werden, wenn der
@@ -134,7 +134,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="best practice" id="featurebranching-bestpractice">
+        <chapter id="featurebranching-bestpractice" title="best practice">
             <p>
                 Mit vielen kleinen, sog. Mini-Feature-Branches, funktioniert der Workflow ganz unkompliziert. Während
                 der Entwicklung kann der Feature-Branch mit dem Master-Branch auch immer wieder gemergt oder gerebaset
@@ -148,7 +148,7 @@
             </warning>
         </chapter>
 
-        <chapter title="Fazit" id="featurebranching-fazit">
+        <chapter id="featurebranching-fazit" title="Fazit">
             <p><b>Vorteile</b></p>
 
             <list>
@@ -167,8 +167,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Merge/Pull-Requests" id="mergepull">
-        <chapter title="Das Feature-Branch-Modell der Remotes" id="mergepull-featurebranch">
+    <chapter id="mergepull" title="Merge/Pull-Requests">
+        <chapter id="mergepull-featurebranch" title="Das Feature-Branch-Modell der Remotes">
             <p>
                 Aufbauend auf das Feature-Branch-Modell haben die großen Git-Plattformen den Arbeitsablauf erweitert und
                 fügten Merge/Pull-Requests als festen Bestandteil ein. Die wesentliche Erweiterung im Vergleich zum
@@ -178,7 +178,7 @@
             </p>
         </chapter>
 
-        <chapter title="Forks" id="mergepull-forks">
+        <chapter id="mergepull-forks" title="Forks">
             <p>
                 In Kombination mit Merge/Pull-Requests kann auch einen Workflow eingeführt werden, bei dem alle
                 Entwickler eigene Repositorys verwalten, auf die nur sie selbst Schreibzugriff haben. Diese Technik
@@ -192,7 +192,7 @@
             </p>
         </chapter>
 
-        <chapter title="Fazit" id="mergepull-fazit">
+        <chapter id="mergepull-fazit" title="Fazit">
             <p><b>Vorteile</b></p>
 
             <list>
@@ -209,8 +209,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Gitflow (Long-Running Branches)" id="gitflow">
-        <chapter title="Der Gitflow-Workflow" id="gitflow-workflow">
+    <chapter id="gitflow" title="Gitflow (Long-Running Branches)">
+        <chapter id="gitflow-workflow" title="Der Gitflow-Workflow">
             <p>
                 In diesem Workflow laufen zwei Branchs parallel und stehen über die gesamte Projektlaufzeit zur
                 Verfügung. Neben dem Master-Branch gibt es also (mindestens) einen weiteren Branch, der oft develop oder
@@ -219,14 +219,14 @@
                 fertige Versionen gemergt, normale Commits werden hier nicht gemacht.
             </p>
 
-            <chapter title="Master, Develop, Feature" id="gitflow-workflow-branches">
+            <chapter id="gitflow-workflow-branches" title="Master, Develop, Feature">
                 <p>
                     Mit den Feature-Branches wird wie im Workflow Feature-Branches für Teams umgegangen, damit der
                     Develop-Branch seine stabilität beibehält. Dass dieser Workflow komplexer ist, ist offensichtlich
                     und zeigt auch folgender Graph:
                 </p>
 
-                <img src="swe-vcs-git-workflows-gitflow.jpg" alt="Komplexer Git Workflow"/>
+                <img alt="Komplexer Git Workflow" src="swe-vcs-git-workflows-gitflow.jpg"/>
 
                 <p>
                     Große Feature-Updates sowie Finale Versionen werden mit Versionsnummern getaggt (z.B. v1.0, v1.1,
@@ -234,7 +234,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Hot Bugfix" id="gitflow-workflow-hotfix">
+            <chapter id="gitflow-workflow-hotfix" title="Hot Bugfix">
                 <p>
                     Im Betrieb der Software taucht nun ein schwerwiegendes Problem auf, das sofort behoben werden muss.
                     Dazu wird ein neuer Branch direkt vom Master-Branch als Basis erzeugt. Der Fehler wird in einem
@@ -244,7 +244,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Bugfix im Develop-Branch" id="gitflow-workflow-bugfix">
+            <chapter id="gitflow-workflow-bugfix" title="Bugfix im Develop-Branch">
                 <p>
                     Handet es sich nicht um kritische Fehler, so wird keine neue Softwareversion veröffentlicht, sondern
                     diese Änderungen werden in die nächste Version einfließen. Die Bugfixes werden aber sofort auf den
@@ -252,7 +252,7 @@
                 </p>
             </chapter>
 
-            <chapter title="Release-Branches" id="gitflow-workflow-release">
+            <chapter id="gitflow-workflow-release" title="Release-Branches">
                 <p>
                     Mit der Fertigstellung einer neuen Major-Version wird ein neuer Release-Branch angelegt (zum
                     Beispiel release-v2). Solche Release-Branches laufen wie develop parallel zum master aber nur so
@@ -261,7 +261,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Fazit" id="gitflow-fazit">
+        <chapter id="gitflow-fazit" title="Fazit">
             <p><b>Vorteile</b></p>
 
             <list>
@@ -282,15 +282,15 @@
         </chapter>
     </chapter>
 
-    <chapter title="Trunk-based Development" id="tbd">
-        <chapter title="Master-based Development" id="tbd-master">
+    <chapter id="tbd" title="Trunk-based Development">
+        <chapter id="tbd-master" title="Master-based Development">
             <p>
                 Mit Trunk-based Development wird eine Arbeitstechnik bezeichnet, in der alle Änderungen möglichst
                 schnell am Hauptzweig der Entwicklung eingecheckt werden. Um in der Git-Nomenklatur zu bleiben, kann
                 Trunk auch mit Master ersetzt werden.
             </p>
 
-            <chapter title="Grundregeln" id="tbd-master-grundregeln">
+            <chapter id="tbd-master-grundregeln" title="Grundregeln">
                 <list>
                     <li>keine langfristigen Branches neben master</li>
                     <li>
@@ -299,7 +299,7 @@
                         <list>
                             <li>ein Entwickler pro Feature-Branch</li>
                             <li>
-                                maximale Dauer von ein bis zwei Tagen, <img src="warning_3d.png" alt="WARN" width="20"/>
+                                maximale Dauer von ein bis zwei Tagen, <img alt="WARN" src="warning_3d.png" width="20"/>
                                 besser wenige Stunden
                             </li>
                         </list>
@@ -307,7 +307,7 @@
                 </list>
             </chapter>
 
-            <chapter title="Konzept" id="tbd-master-konzept">
+            <chapter id="tbd-master-konzept" title="Konzept">
                 <p>
                     Beim Trunk-based Development müssen die Aufgabenstellungen sehr klein sein, da nur ein Mitarbeiter
                     das Problem bearbeiten darf und dazu auch nur ein bis zwei Tage Zeit hat. Außerdem sind
@@ -317,7 +317,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Continuous Integration" id="tbd-ci">
+        <chapter id="tbd-ci" title="Continuous Integration">
             <p>
                 Voraussetzung für ein erfolgreiches Arbeiten mit dieser Technik ist eine funktionierende
                 Continuous-Integration-Pipeline, die mit ausreichend Tests die Funktionalität der Software sicherstellt.
@@ -330,7 +330,7 @@
                 den Server gut getestet, was der Qualität des gesamten Quellcodes zugutekommt.
             </p>
 
-            <chapter title="Release-ready" id="tbd-ci-release">
+            <chapter id="tbd-ci-release" title="Release-ready">
                 <p>
                     Der letzte Stand der Entwicklung sollte immer release-ready sein, da ja keine Fehler auf die
                     Repostory landen sollten. Die Pipeline entwickelt sich während der Projektlaufzeit ständig mit und
@@ -339,7 +339,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Continuous Development" id="tbd-cd">
+        <chapter id="tbd-cd" title="Continuous Development">
             <p>
                 Mit Continuous Deployment spielt man in der ersten Liga der Softwareautomatisierung. Auf das Kommando
                 <code>git push</code> eines Entwicklers kommt dann, sofern die Pipeline erfolgreich ist, sofort eine
@@ -347,7 +347,7 @@
                 Development.
             </p>
 
-            <chapter title="Feature-Flags / Featured-Toggles" id="tbd-cd-featureflags">
+            <chapter id="tbd-cd-featureflags" title="Feature-Flags / Featured-Toggles">
                 <p>
                     Werden komplexe Funktionen entwickelt, die nicht in ein bis zwei Tagen fertig sind so werden, sog.
                     Featured-Flags oder Featured-Toggles implementiert. Dabei werden im Code Abfragen eingebaut, die
@@ -360,8 +360,8 @@
 
                 <code-block lang="java">
                     if (Features.fancyEffect == true) {
-                        FancyEffect fe = new FancyEffekt();
-                        fe.show();
+                    FancyEffect fe = new FancyEffekt();
+                    fe.show();
                     }
                 </code-block>
 
@@ -372,7 +372,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Achtung!" id="tbd-achtung">
+        <chapter id="tbd-achtung" title="Achtung!">
             <p>
                 Die Anforderungen an die Entwickler sind höher als beim Feature-Branch-Workflow, wo der Neuling im Team
                 beim Pull-Request wertvolle Tipps bekommt, bevor ein Fehler in den Master-Branch gelangt. Beim
@@ -385,7 +385,7 @@
             </note>
         </chapter>
 
-        <chapter title="Fazit" id="tbd-fazit">
+        <chapter id="tbd-fazit" title="Fazit">
             <p><b>Vorteile</b></p>
 
             <list>
@@ -402,10 +402,11 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
-            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler, 2020
+            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler,
+            2020
         </tip>
     </chapter>
 </topic>

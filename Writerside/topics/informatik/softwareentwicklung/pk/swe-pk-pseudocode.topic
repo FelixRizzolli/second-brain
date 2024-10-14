@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Pseudocode" id="swe-pk-pseudocode">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-pk-pseudocode"
+       title="Pseudocode"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Definition" id="definition">
+    <chapter id="definition" title="Definition">
         <p>
             Bei Pseudocode handelt sich um eine Mischung aus natürlicher Sprache und einer höheren Programmiersprache.
             Die Beschreibung des Algorithmus gelingt exakter als bei ausschließlicher Verwendung einer natürlichen
@@ -37,28 +37,28 @@
         </p>
     </chapter>
 
-    <chapter title="Beispiel" id="beispiel">
+    <chapter id="beispiel" title="Beispiel">
         <code-block>
             programmstart Login
-                lies Nutzername und Passwort
-                wenn Nutzerdaten gültig dann
-                    erzeuge Nutzersession
-                    zeige Willkommensseite
-                ansonsten
-                    wenn maximale Anzahl an Login-Versuchen erreicht dann
-                        unterprogrammaufruf Nutzer sperren
-                        unterprogrammaufruf E-Mail an Administrator senden
-                        zeige Fehlermeldung
-                        beende Programm
-                    ansonsten
-                        zeige Fehlermeldung
-                        leite weiter zur Eingabe
-                        gehe zu Nutzerdateneingabe
+            lies Nutzername und Passwort
+            wenn Nutzerdaten gültig dann
+            erzeuge Nutzersession
+            zeige Willkommensseite
+            ansonsten
+            wenn maximale Anzahl an Login-Versuchen erreicht dann
+            unterprogrammaufruf Nutzer sperren
+            unterprogrammaufruf E-Mail an Administrator senden
+            zeige Fehlermeldung
+            beende Programm
+            ansonsten
+            zeige Fehlermeldung
+            leite weiter zur Eingabe
+            gehe zu Nutzerdateneingabe
             programmende Login
         </code-block>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836244763, "Handbuch für Softwareentwickler", Veikko Krypczyk &amp; Elena Bochkor, 2018

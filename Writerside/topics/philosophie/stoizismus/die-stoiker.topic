@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Die Stoiker" id="die-stoiker">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="die-stoiker"
+       title="Die Stoiker"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einführung" id="Einfuehrung">
+    <chapter id="Einfuehrung" title="Einführung">
         <p>
             Der einzige Grund, sich mit Philosophie auseinanderzusetzen, ist der, ein besserer Mensch zu werden. Alles
             andere ist, wie Nietzsche einmal sagte, lediglich eine »Kritik der Worte über Worte«.
@@ -125,8 +126,8 @@
         </p>
     </chapter>
 
-    <chapter title="Übersicht" id="ubersicht">
-        <chapter title="Zenon der Prophet" id="zenon-der-prophet">
+    <chapter id="ubersicht" title="Übersicht">
+        <chapter id="zenon-der-prophet" title="Zenon der Prophet">
             <tip>
                 334 v. Chr. – 262 v. Chr.
             </tip>
@@ -208,7 +209,7 @@
             </p>
         </chapter>
 
-        <chapter title="Kleanthes der Apostel" id="kleanthes-der-apostel">
+        <chapter id="kleanthes-der-apostel" title="Kleanthes der Apostel">
             <tip>
                 ...
             </tip>
@@ -217,7 +218,7 @@
             </p>
         </chapter>
 
-        <chapter title="Ariston der Herausforderer" id="ariston-der-herausforderer">
+        <chapter id="ariston-der-herausforderer" title="Ariston der Herausforderer">
             <tip>
                 ...
             </tip>
@@ -226,7 +227,7 @@
             </p>
         </chapter>
 
-        <chapter title="Chrysipp der Kämpfer" id="chrysipp-der-kaempfer">
+        <chapter id="chrysipp-der-kaempfer" title="Chrysipp der Kämpfer">
             <tip>
                 ...
             </tip>
@@ -235,7 +236,7 @@
             </p>
         </chapter>
 
-        <chapter title="Zenon der Erhalter" id="zenon-der-erhalter">
+        <chapter id="zenon-der-erhalter" title="Zenon der Erhalter">
             <tip>
                 ...
             </tip>
@@ -244,7 +245,7 @@
             </p>
         </chapter>
 
-        <chapter title="Diogenes der Diplomat" id="diogenes-der-diplomat">
+        <chapter id="diogenes-der-diplomat" title="Diogenes der Diplomat">
             <tip>
                 ...
             </tip>
@@ -253,7 +254,7 @@
             </p>
         </chapter>
 
-        <chapter title="Antipatros der Ethiker" id="antipatros-der-ethiker">
+        <chapter id="antipatros-der-ethiker" title="Antipatros der Ethiker">
             <tip>
                 ...
             </tip>
@@ -262,7 +263,7 @@
             </p>
         </chapter>
 
-        <chapter title="Panaitios der Verbindungsmann" id="panaitios-der-verbindungsmann">
+        <chapter id="panaitios-der-verbindungsmann" title="Panaitios der Verbindungsmann">
             <tip>
                 ...
             </tip>
@@ -271,8 +272,8 @@
             </p>
         </chapter>
 
-        <chapter title="Publius Rutilius Rufus, der letzte ehrliche Mann"
-                 id="publius-rutilius-rufus-der-letzte-ehrliche-mann">
+        <chapter id="publius-rutilius-rufus-der-letzte-ehrliche-mann"
+                 title="Publius Rutilius Rufus, der letzte ehrliche Mann">
             <tip>
                 ...
             </tip>
@@ -281,7 +282,7 @@
             </p>
         </chapter>
 
-        <chapter title="Poseidonios das Genie" id="poseidonios-das-genie">
+        <chapter id="poseidonios-das-genie" title="Poseidonios das Genie">
             <tip>
                 ...
             </tip>
@@ -290,7 +291,7 @@
             </p>
         </chapter>
 
-        <chapter title="Diotimos der Böse" id="diotimos-der-boese">
+        <chapter id="diotimos-der-boese" title="Diotimos der Böse">
             <tip>
                 ...
             </tip>
@@ -299,7 +300,7 @@
             </p>
         </chapter>
 
-        <chapter title="Ciercio der Mitläufer" id="ciercio-der-mitlaeufer">
+        <chapter id="ciercio-der-mitlaeufer" title="Ciercio der Mitläufer">
             <tip>
                 ...
             </tip>
@@ -308,7 +309,7 @@
             </p>
         </chapter>
 
-        <chapter title="Cato der Jüngere, Roms eiserner Mann" id="cato-der-juengere-roms-eiserner-mann">
+        <chapter id="cato-der-juengere-roms-eiserner-mann" title="Cato der Jüngere, Roms eiserner Mann">
             <tip>
                 ...
             </tip>
@@ -317,7 +318,7 @@
             </p>
         </chapter>
 
-        <chapter title="Porcia Catonis, die eiserne Frau" id="porcia-catonis-die-eiserne-frau">
+        <chapter id="porcia-catonis-die-eiserne-frau" title="Porcia Catonis, die eiserne Frau">
             <tip>
                 ...
             </tip>
@@ -326,7 +327,7 @@
             </p>
         </chapter>
 
-        <chapter title="Athenodoros Kananites der Königsmacher" id="athenodoros-kananites-der-koenigsmacher">
+        <chapter id="athenodoros-kananites-der-koenigsmacher" title="Athenodoros Kananites der Königsmacher">
             <tip>
                 ...
             </tip>
@@ -335,7 +336,7 @@
             </p>
         </chapter>
 
-        <chapter title="Areios Didymos der Königmacher II" id="areios-didymos-der-koenigmacher-ii">
+        <chapter id="areios-didymos-der-koenigmacher-ii" title="Areios Didymos der Königmacher II">
             <tip>
                 ...
             </tip>
@@ -344,7 +345,7 @@
             </p>
         </chapter>
 
-        <chapter title="Agrippinus der Andere" id="agrippinus-der-andere">
+        <chapter id="agrippinus-der-andere" title="Agrippinus der Andere">
             <tip>
                 ...
             </tip>
@@ -353,7 +354,7 @@
             </p>
         </chapter>
 
-        <chapter title="Seneca der Fleißige" id="seneca-der-fleissige">
+        <chapter id="seneca-der-fleissige" title="Seneca der Fleißige">
             <tip>
                 ...
             </tip>
@@ -362,7 +363,7 @@
             </p>
         </chapter>
 
-        <chapter title="Cornutus der Gewöhnliche" id="cornutus-der-gewoehnliche">
+        <chapter id="cornutus-der-gewoehnliche" title="Cornutus der Gewöhnliche">
             <tip>
                 ...
             </tip>
@@ -371,8 +372,8 @@
             </p>
         </chapter>
 
-        <chapter title="Rubellius Plautus, der Mann der kein Herrscher sein wollte"
-                 id="rubellius-plautus-der-mann-der-kein-herrscher-sein-wollte">
+        <chapter id="rubellius-plautus-der-mann-der-kein-herrscher-sein-wollte"
+                 title="Rubellius Plautus, der Mann der kein Herrscher sein wollte">
             <tip>
                 ...
             </tip>
@@ -381,7 +382,7 @@
             </p>
         </chapter>
 
-        <chapter title="Thrasea der Furchtlose" id="thrasea-der-furchtlose">
+        <chapter id="thrasea-der-furchtlose" title="Thrasea der Furchtlose">
             <tip>
                 ...
             </tip>
@@ -390,7 +391,7 @@
             </p>
         </chapter>
 
-        <chapter title="Helvidius Priscus der Senator" id="helvidius-priscus-der-senator">
+        <chapter id="helvidius-priscus-der-senator" title="Helvidius Priscus der Senator">
             <tip>
                 ...
             </tip>
@@ -399,7 +400,7 @@
             </p>
         </chapter>
 
-        <chapter title="Musonius Rufus der Unzerstörbare" id="musonius-rufus-der-unzerstoerbare">
+        <chapter id="musonius-rufus-der-unzerstoerbare" title="Musonius Rufus der Unzerstörbare">
             <tip>
                 ...
             </tip>
@@ -408,7 +409,7 @@
             </p>
         </chapter>
 
-        <chapter title="Epiktet der Freie" id="epiktet-der-freie">
+        <chapter id="epiktet-der-freie" title="Epiktet der Freie">
             <tip>
                 ...
             </tip>
@@ -417,7 +418,7 @@
             </p>
         </chapter>
 
-        <chapter title="Junius Rusticus der Pflichtbewusste" id="junius-rusticus-der-pflichtbewusste">
+        <chapter id="junius-rusticus-der-pflichtbewusste" title="Junius Rusticus der Pflichtbewusste">
             <tip>
                 ...
             </tip>
@@ -426,7 +427,7 @@
             </p>
         </chapter>
 
-        <chapter title="Marcus Aurelius der Philosophenkönig" id="marcus-aurelius-der-philosophenkoenig">
+        <chapter id="marcus-aurelius-der-philosophenkoenig" title="Marcus Aurelius der Philosophenkönig">
             <tip>
                 ...
             </tip>
@@ -436,7 +437,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3959723770, Das Leben der Stoiker, Ryan Holiday, Stephen Hanselman, Finanzbuch Verlag, 2020-10-13

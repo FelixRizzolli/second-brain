@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Datensätze sortiert abfragen (ORDER BY)" id="sql-dql-orderby">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-dql-orderby"
+       title="Datensätze sortiert abfragen (ORDER BY)"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
     <p>
         Um die Datensätze der Ergebnistabelle sortiert zurückzubekommen, bietet SQL die <code>ORDER BY</code>-Klausel
@@ -25,29 +25,29 @@
     </p>
 
 
-    <chapter title="Beispiele" id="beispiele">
+    <chapter id="beispiele" title="Beispiele">
         <code-block lang="sql">
-            SELECT  name
-                 ,  vorname
-              FROM mitarbeiter
-             WHERE  name=’Lang’
-             ORDER
-                BY  name
+            SELECT name
+            , vorname
+            FROM mitarbeiter
+            WHERE name=’Lang’
+            ORDER
+            BY name
             ;
         </code-block>
 
         <code-block lang="sql">
-            SELECT  name
-                 ,  vorname
-              FROM mitarbeiter
-             ORDER
-                BY  name
-                 , vorname DESC
+            SELECT name
+            , vorname
+            FROM mitarbeiter
+            ORDER
+            BY name
+            , vorname DESC
             ;
         </code-block>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3-836245630, Einstieg in SQL, Michael Laube, Rheinwerk Verlag GmbH, Bonn, 2018

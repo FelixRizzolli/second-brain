@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Stashing" id="swe-vcs-git-stashing">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-vcs-git-stashing"
+       title="Stashing"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Einführung" id="einfuehrung">
+    <chapter id="einfuehrung" title="Einführung">
         <p>
             Mit <code>git stash</code> können aktuelle Änderungen im Arbeitsverzeichnis gespeichert werden, ohne dabei
-            einen Commit durchzuführen. <emphasis>Stashing</emphasis> (von <emphasis>to stash</emphasis>, verstauen,
+            einen Commit durchzuführen.
+            <emphasis>Stashing</emphasis>
+            (von
+            <emphasis>to stash</emphasis>
+            , verstauen,
             aufbewahren) ist dann praktisch, wenn die aktuelle Arbeit unterbrochen werden muss, um z. B. vorübergehend
             in einen anderen Zweig zu wechseln, um dort rasch einen Bugfix durchzuführen. Das erst halbfertig neue
             Feature soll aber noch nicht per Commit in das Repository aufgenommen werden, z.B. weil die Änderungen bei
@@ -17,7 +21,7 @@
         </p>
     </chapter>
 
-    <chapter title="Änderungen zwischenspeichern und wiederherstellen" id="stashing">
+    <chapter id="stashing" title="Änderungen zwischenspeichern und wiederherstellen">
         <p>
             Der Befehl <code>git stash</code> stellt den Zustand beim letzten Commit wieder her und speichert alle
             Änderungen im Stash-Bereich.
@@ -38,11 +42,13 @@
         </code-block>
     </chapter>
 
-    <chapter title="Mehrere Änderungen verwalten" id="verwalten">
+    <chapter id="verwalten" title="Mehrere Änderungen verwalten">
         <p>
             Der Befehl <code>git stash</code> kann mehrfach ausgeführt werden und so mehrere Änderung-Sets speichern.
             Der Befehl <code>git stash pop</code> verarbeitet die Änderungen in umgekehrter Reihenfolge wieder ab: Die
-            zuletzt gespeicherten Änderungen werden zuerst angewendet, also <emphasis>first in, last out</emphasis>. Um
+            zuletzt gespeicherten Änderungen werden zuerst angewendet, also
+            <emphasis>first in, last out</emphasis>
+            . Um
             dabei noch die Übersicht bewahren zu können gibt es den Befehl <code>git stash list</code>. Dieser zeigt
             eine Liste aller zwischengespeicherten Stashes an, jeweils mit der Information, welcher Commit gerade gültig
             war, als <code>git stash</code> ausgeführt wurde.
@@ -69,10 +75,11 @@
         </code-block>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
-            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler, 2020
+            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler,
+            2020
         </tip>
     </chapter>
 </topic>

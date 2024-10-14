@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Windows" id="poweruser-windows">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="poweruser-windows"
+       title="Windows"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Zwischenablageverlauf" id="zwischenablageverlauf">
-        <img src="poweruser-windows-zwischenablageverlauf.png" alt="Windows - Zwischenablageverlauf"/>
+    <chapter id="zwischenablageverlauf" title="Zwischenablageverlauf">
+        <img alt="Windows - Zwischenablageverlauf" src="poweruser-windows-zwischenablageverlauf.png"/>
 
         <table style="none">
             <tr>
@@ -38,8 +38,8 @@
         </p>
     </chapter>
 
-    <chapter title="Emoji Picker" id="emoji-picker">
-        <img src="poweruser-windows-emojipicker.png" alt="Windows - Emoji Picker"/>
+    <chapter id="emoji-picker" title="Emoji Picker">
+        <img alt="Windows - Emoji Picker" src="poweruser-windows-emojipicker.png"/>
 
         <table style="none">
             <tr>
@@ -52,8 +52,8 @@
             Im Emoji Picker können Emojis, Kaomoji und Symbole ausgewählt werden.
         </p>
     </chapter>
-    
-    <chapter title="Windows RUN" id="windows-run">
+
+    <chapter id="windows-run" title="Windows RUN">
         <p>
             Mit der Tastenkombination <code>(WIN)</code>+<code>R</code> öffnet man Windows Run Command. Folgende Befehle
             können hilfreich sein:
@@ -130,7 +130,7 @@
         </table>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(WEBSEITE)</b>
             <a href="https://support.microsoft.com/de-de/windows/hilfe-zur-zwischenablage-30375039-ce71-9fe4-5b30-21b7aab6b13f"

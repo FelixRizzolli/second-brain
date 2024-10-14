@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="XML - XPath" id="xml-xpath">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="xml-xpath"
+       title="XML - XPath"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlegendes zu XPath" id="grundlagen">
-        <img src="xml-tools-overview.png" alt="XML - Tools"/>
+    <chapter id="grundlagen" title="Grundlegendes zu XPath">
+        <img alt="XML - Tools" src="xml-tools-overview.png"/>
 
         <p>
-            XPath ist ein wichtiges Element des XSLT-Standards. XPath kann verwendet werden, um durch Elemente und 
+            XPath ist ein wichtiges Element des XSLT-Standards. XPath kann verwendet werden, um durch Elemente und
             Attribute in einem XML-Dokument zu navigieren.
         </p>
-        
+
         <list>
             <li>XPath ist eine Syntax zur Definition von Teilen eines XML-Dokuments</li>
             <li>XPath verwendet Pfadausdrücke, um in XML-Dokumenten zu navigieren.</li>
@@ -30,7 +31,7 @@
         </p>
     </chapter>
 
-    <chapter title="Beispieldokument" id="beispiel">
+    <chapter id="beispiel" title="Beispieldokument">
         <code-block lang="xml">
             <![CDATA[
             <?xml version="1.0" encoding="UTF-8"?>
@@ -50,8 +51,8 @@
         </code-block>
     </chapter>
 
-    <chapter title="Syntax" id="syntax">
-        <chapter title="Knoten auswählen" id="syntax-knoten-auswaehlen">
+    <chapter id="syntax" title="Syntax">
+        <chapter id="syntax-knoten-auswaehlen" title="Knoten auswählen">
             <table>
                 <tr>
                     <td>Ausdruck</td>
@@ -90,7 +91,7 @@
                 </tr>
             </table>
 
-            <chapter title="Beispiele" id="syntax-knoten-auswaehlen-beispiele">
+            <chapter id="syntax-knoten-auswaehlen-beispiele" title="Beispiele">
                 <table>
                     <tr>
                         <td>Pfad Ausdruck</td>
@@ -143,7 +144,7 @@
             </chapter>
         </chapter>
 
-        <chapter title="Prädikate" id="syntax-praedikate">
+        <chapter id="syntax-praedikate" title="Prädikate">
             <p>
                 Prädikate werden verwendet, um einen bestimmten Knoten oder einen Knoten, der einen bestimmten Wert
                 enthält, zu finden. Prädikate sind immer in eckige Klammern eingebettet.
@@ -214,7 +215,7 @@
             </table>
         </chapter>
 
-        <chapter title="Unbekannte Knoten auswählen" id="syntax-unbekannte-knoten">
+        <chapter id="syntax-unbekannte-knoten" title="Unbekannte Knoten auswählen">
             <p>XPath Wildcards können verwendet werden, um unbekannte XML-Knoten auszuwählen.</p>
 
             <table>
@@ -258,7 +259,7 @@
             </table>
         </chapter>
 
-        <chapter title="Mehrere Pfade auswählen" id="syntax-mehrere-pfade-auswaehlen">
+        <chapter id="syntax-mehrere-pfade-auswaehlen" title="Mehrere Pfade auswählen">
 
             <table>
                 <tr>
@@ -289,7 +290,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Achsen (Axes)" id="achsen">
+    <chapter id="achsen" title="Achsen (Axes)">
         <p>
             Eine Achse stellt eine Beziehung zum (aktuellen) Kontextknoten dar und wird verwendet, um Knoten relativ zu
             diesem Knoten in der Baumstruktur zu lokalisieren.
@@ -383,7 +384,7 @@
             </tr>
         </table>
 
-        <chapter title="Location Path Expression" id="achsen-lpe">
+        <chapter id="achsen-lpe" title="Location Path Expression">
             <p>
                 Ein Location-Path kann absolut oder relativ sein. Ein absoluter Location-Path startet mit einem Slash,
                 ein relativer Location-Path nicht. In beiden Fällen besteht ein Location-Path aus einen oder mehreren
@@ -399,10 +400,10 @@
             </p>
 
             <p>
-                Jeder Schritt (step) wird anhand der Knoten im aktuellen Knotensatz ausgewertet. Ein Schritt besteht 
+                Jeder Schritt (step) wird anhand der Knoten im aktuellen Knotensatz ausgewertet. Ein Schritt besteht
                 aus:
             </p>
-            
+
             <list>
                 <li>
                     eine Achse (definiert die Baumbeziehung zwischen den ausgewählten Knoten und dem aktuellen Knoten)
@@ -420,7 +421,7 @@
             </p>
         </chapter>
 
-        <chapter title="Beispiele" id="achsen-beispiele">
+        <chapter id="achsen-beispiele" title="Beispiele">
             <table>
                 <tr>
                     <td>Beispiel</td>
@@ -491,7 +492,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Operatoren" id="operatoren">
+    <chapter id="operatoren" title="Operatoren">
         <p>
             Ein XPath-Ausdruck gibt entweder ein node-set, einen String, ein Boolean oder eine Nummer zurück.
         </p>
@@ -504,7 +505,7 @@
             </tr>
             <tr>
                 <td><code>|</code></td>
-                <td>Verarbeitet zwei node-sets	</td>
+                <td>Verarbeitet zwei node-sets</td>
                 <td><code>//book | //cd</code></td>
             </tr>
             <tr>
@@ -575,7 +576,7 @@
         </table>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(WEBSEITE)</b>
             <a href="https://www.w3schools.com/xml/xml_xpath.asp" ignore-vars="true">

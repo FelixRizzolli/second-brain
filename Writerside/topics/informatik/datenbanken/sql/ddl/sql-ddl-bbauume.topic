@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Die B-Bäume" id="sql-ddl-bbauume">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="sql-ddl-bbauume"
+       title="Die B-Bäume"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlagen" id="grundlagen">
+    <chapter id="grundlagen" title="Grundlagen">
         <p>
             Ein B-Baum ist eine Datenstruktur in der Informatik, die sich vor allem für Datenbanken und Dateisysteme
             eignet. Dabei handelt es sich um <b>keinen Binärbaum</b>, sondern um einen <b>vollständig balancierten
             Baum</b>, welcher in einem Knoten mehrere Elemente sortiert speichern kann.
         </p>
 
-        <chapter title="Geschichte" id="grundlagen-geschichte">
+        <chapter id="grundlagen-geschichte" title="Geschichte">
             <p>
                 1972 wurden die B-Bäume (Englisch B-tree) von Rudolf Bayer und Edward M. McCreight entwickelt. In
                 Kombination mit dem relationalen Datenbankmodell wurde die erste Basis für SQL-Datenbanksysteme bei IBM
@@ -22,7 +22,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Funktionsweise" id="funktionsweise">
+    <chapter id="funktionsweise" title="Funktionsweise">
         <p>
             B-Bäume gehören zu den balancierten Bäumen, die Daten sortiert speichern. Im Gegensatz zu den meisten
             anderen Bäumen werden Elemente hier zunächst in den Blättern eingefügt. B-Bäume wachsen damit nach oben von
@@ -50,7 +50,7 @@
             als Ordnung auch die maximale Anzahl an Elementen pro Knoten definiert.
         </warning>
 
-        <chapter title="Maximale Höhe" id="funktionsweise-maximale-hoehe">
+        <chapter id="funktionsweise-maximale-hoehe" title="Maximale Höhe">
             <p>
                 B-Baum der Ordnung <code>m</code> mit <code>n</code> Schlüsseln:
             </p>
@@ -84,7 +84,7 @@
             </code-block>
         </chapter>
 
-        <chapter title="Suchen" id="funktionsweise-suchen">
+        <chapter id="funktionsweise-suchen" title="Suchen">
             <list style="decimal">
                 <li>
                     Startpunkt der Suche ist der <b>Wurzelknoten</b> mit der Überprüfung auf den gesuchten Wert.
@@ -100,7 +100,7 @@
             </list>
         </chapter>
 
-        <chapter title="Komplexität" id="funktionsweise-komplexitaet">
+        <chapter id="funktionsweise-komplexitaet" title="Komplexität">
             <list>
                 <li>
                     <p>
@@ -133,8 +133,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Mit einem B-Baum arbeiten" id="bbaum-arbeiten">
-        <chapter title="B-Baum Einfügen" id="bbaum-einfuegen">
+    <chapter id="bbaum-arbeiten" title="Mit einem B-Baum arbeiten">
+        <chapter id="bbaum-einfuegen" title="B-Baum Einfügen">
             <p>
                 Wenn man in einen B-Baum einfügen möchte, wird erstmal das entsprechende Blatt gesucht, in dem das neue
                 Element eingefügt werden soll.
@@ -146,24 +146,28 @@
             <list style="decimal">
                 <li>
                     <b>Die Anzahl der Einträge des Knotens ist nach dem Einfügen noch kleiner</b> <code>m</code>: Das
-                    bedeutet, dass der Knoten seine maximale Anzahl an Elementen nach dem Einfügen nicht überschritten hat.
-                    Deshalb kann der neue Wert ohne Probleme an seine richtige Position eingefügt werden und die Operation
+                    bedeutet, dass der Knoten seine maximale Anzahl an Elementen nach dem Einfügen nicht überschritten
+                    hat.
+                    Deshalb kann der neue Wert ohne Probleme an seine richtige Position eingefügt werden und die
+                    Operation
                     ist damit beendet.
                 </li>
                 <li>
                     <b>Die Anzahl der Einträge des Knotens ist nach dem Einfügen größer gleich</b> <code>m</code>: Die
-                    Anzahl der maximalen Elemente wurde überstiegen. Deshalb muss er im weiteren Verlauf aufteilt werden, um
-                    ihn in den darüber liegenden Knoten einzufügen. Deshalb sagt man auch, dass ein B-Baum nach oben wächst!
+                    Anzahl der maximalen Elemente wurde überstiegen. Deshalb muss er im weiteren Verlauf aufteilt
+                    werden, um
+                    ihn in den darüber liegenden Knoten einzufügen. Deshalb sagt man auch, dass ein B-Baum nach oben
+                    wächst!
                 </li>
             </list>
         </chapter>
 
-        <chapter title="B-Baum Löschen" id="bbaum-loeschen">
+        <chapter id="bbaum-loeschen" title="B-Baum Löschen">
             <p>
                 Das B-Baum Löschen stellt sich deutlich komplexer dar. Die allgemeine Unterscheidung der Durchführung
                 einer Lösch-Operation lässt sich in drei Fällen beschreiben:
             </p>
-            
+
             <list>
                 <li>
                     Die Anzahl der Elemente bzw. Einträge eines Knotens, aus dem der gewünschte Wert gelöscht werden
@@ -179,7 +183,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Weitere Varianten" id="varianten">
+    <chapter id="varianten" title="Weitere Varianten">
         <p>
             B-Bäume können in weiteren Varianten und Spezialfällen auftreten:
         </p>
@@ -193,7 +197,7 @@
             <li>R-Baum</li>
         </list>
 
-        <chapter title="B+ Baum" id="varianten-bplus">
+        <chapter id="varianten-bplus" title="B+ Baum">
             <p>
                 Der B+ Baum stellt eine Variante des B-Baums dar. Dabei enthalten die inneren Knoten nur Schlüssel und
                 die eigentlichen Daten werden nur in Blattknoten gespeichert. Linke Kindknoten sind hier echt kleiner
@@ -202,7 +206,7 @@
             </p>
         </chapter>
 
-        <chapter title="B* Baum" id="varianten-basterisk">
+        <chapter id="varianten-basterisk" title="B* Baum">
             <p>
                 Der B* Baum stellt eine weitere Erweiterung des B-Baums mit einem Mindestfüllgrad von 2/3 durch eine
                 veränderte Split-Strategie. Dabei werden 2 volle Knoten auf 3 Knoten mit einer 2/3-Füllung aufgeteilt,
@@ -211,7 +215,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(WEBSEITE)</b>
             <a href="https://de.wikipedia.org/wiki/B-Baum" ignore-vars="true">

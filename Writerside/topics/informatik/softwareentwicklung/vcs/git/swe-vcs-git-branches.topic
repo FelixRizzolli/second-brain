@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Branches" id="swe-vcs-git-branches">
-    <show-structure for="chapter,procedure" depth="2"/>
+<topic id="swe-vcs-git-branches"
+       title="Branches"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <show-structure depth="2" for="chapter,procedure"/>
 
-    <chapter title="Grundlegendes" id="grundlagen">
+    <chapter id="grundlagen" title="Grundlegendes">
         <p>
             Repository-Zweige kommen ins spiel, wenn an mehreren Versionen gleichzeitig gearbeitet werden soll.
         </p>
 
-        <chapter title="Der Vorteil von mehreren Zweigen (Beispiel)" id="grundlagen-vorteile">
+        <chapter id="grundlagen-vorteile" title="Der Vorteil von mehreren Zweigen (Beispiel)">
             <p>
                 Stellen Sie sich vor, das bis hierher entwickelte Programm läuft nun stabil und geht in den
                 Produktionseinsatz. Jetzt wollen Sie das Programm weiterentwickeln, ohne die Stabilität der
@@ -31,7 +31,7 @@
             </list>
         </chapter>
 
-        <chapter title="Arbeiten mit Zweigen (Workflows)" id="grundlagen-workflows">
+        <chapter id="grundlagen-workflows" title="Arbeiten mit Zweigen (Workflows)">
             <list>
                 <li>
                     <a href="swe-vcs-git-workflows.topic#solo">
@@ -67,8 +67,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Zweig/Branch wechseln und erstellen (git checkout)" id="ckeckout">
-        <chapter title="Einen neuen Branch erstellen" id="ckeckout-neu">
+    <chapter id="ckeckout" title="Zweig/Branch wechseln und erstellen (git checkout)">
+        <chapter id="ckeckout-neu" title="Einen neuen Branch erstellen">
             <p>
                 Ein neuer Branch wird mit dem Befehl <code>git branch</code> erstellt.
             </p>
@@ -78,7 +78,7 @@
             </code-block>
         </chapter>
 
-        <chapter title="Branch wechseln" id="ckeckout-wechseln">
+        <chapter id="ckeckout-wechseln" title="Branch wechseln">
             <p>
                 Mit dem Befehl <code>git checkout &lt;name&gt;</code> in einen Zweig. Die benutzerfreundlichere und
                 neuere Alternative ist git switch, was im Grunde genommen dasselbe bewirkt.
@@ -98,7 +98,7 @@
             </note>
         </chapter>
 
-        <chapter title="Branch erstellen und wechseln in einem Schritt" id="ckeckout-beides">
+        <chapter id="ckeckout-beides" title="Branch erstellen und wechseln in einem Schritt">
             <p>
                 Um einen neuen Branch zu erzeugen und zeitgleich zu aktivieren, wird die Option <code>-b</code> dem
                 Befehl angehängt.
@@ -115,8 +115,8 @@
         </chapter>
     </chapter>
 
-    <chapter title="Einzelne Commits importieren (git cherry-pick)" id="cherrypick">
-        <chapter title="Beispiel" id="cherrypick-beispiel">
+    <chapter id="cherrypick" title="Einzelne Commits importieren (git cherry-pick)">
+        <chapter id="cherrypick-beispiel" title="Beispiel">
             <p>
                 Das letzte Release v1.0 im master-Branch ist Fehlerhaft und es wird bereits an einem neuen Feature im
                 develop-Branch gearbeitet. Um das neue Feature fertig zu stellen ist noch viel Arbeit geplant und der
@@ -132,8 +132,8 @@
             </list>
         </chapter>
 
-        <chapter title="Commit importieren" id="cherrypick-importieren">
-            <img src="swe-vcs-git-branches-cherrypick.jpg" alt="git cherry-pick"/>
+        <chapter id="cherrypick-importieren" title="Commit importieren">
+            <img alt="git cherry-pick" src="swe-vcs-git-branches-cherrypick.jpg"/>
 
             <p>
                 Betrifft der Bug auch den new_feature-Branch so muss dieser hier ebenfalls sofort behoben werden. Mit
@@ -149,7 +149,7 @@
         </chapter>
     </chapter>
 
-    <chapter title="Branches in der Git-Datenbank" id="gitdatenbank">
+    <chapter id="gitdatenbank" title="Branches in der Git-Datenbank">
         <p>
             Zweige in Git sind einfach nur Zeiger (Pointer) auf einen Commit. Wird ein neuer Zweig erstellt, so
             landet in <path>.git/refs/heads</path> eine neue Datei, deren Namen dem Branch-Namen entspricht. Die
@@ -163,12 +163,12 @@
         </p>
     </chapter>
 
-    <chapter title="Branches visualisieren" id="visualisieren">
+    <chapter id="visualisieren" title="Branches visualisieren">
         <p>
             Git fehlen Tools ein Projekt mit vielen Branches, die parallel laufen (auch <b>Lanes</b> genannt) zu
             visualisieren. Dazu gibt es kommerzielle Zusatztools wie:
         </p>
-        
+
         <list>
             <li>Git Flow Chart <a href="https://gfc.io">https://gfc.io</a></li>
             <li>Git Kraken <a href="https://www.gitkraken.com/git-client">https://www.gitkraken.com/git-client</a></li>
@@ -192,10 +192,11 @@
         </code-block>
     </chapter>
 
-    <chapter title="Quellen" id="quellen">
+    <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
-            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler, 2020
+            978-3836271868, "Git - Projektverwaltung für Entwickler und DevOps-Teams", Bernd Öggl &amp; Michael Kofler,
+            2020
         </tip>
     </chapter>
 </topic>
