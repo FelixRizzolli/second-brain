@@ -3,9 +3,11 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="swe-pk-kommentare"
        title="Kommentare"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <!-- TODO -->
     <chapter id="grundlegendes" title="Grundlegendes">
         <p>
             Auch wenn Puristen behaupten, dass guter Quelltext selbsterklärend ist, so sollten insbesondere bei

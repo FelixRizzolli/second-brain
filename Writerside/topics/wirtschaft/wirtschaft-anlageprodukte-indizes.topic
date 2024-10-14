@@ -7,6 +7,7 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <!-- TODO -->
     <p>
         Der Deutsche Aktienindex oder kurz DAX umfasst die vierzig (seit September 2021 vorher dreißig) größten und
         wichtigsten Aktiengesellschaften in Deutschland, also etwa die Deutsche Bank, Daimler, Linde, SAP, Simens und

@@ -7,6 +7,7 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <!-- TODO -->
     <chapter id="boerse" title="Die Börse">
         <p>
             Wo und wann auch immer Menschen sich trafen, miteinander palaverten und dem einen gefiel, was der andere
