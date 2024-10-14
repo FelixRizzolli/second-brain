@@ -10,9 +10,9 @@ permissions:
   pages: write
 
 env:
-  INSTANCE: Writerside/secondbrain
-  ARTIFACT: webHelpSECONDBRAIN2-all.zip
-  DOCKER_VERSION: 242.21870
+  INSTANCE: 'Writerside/secondbrain'
+  ARTIFACT: 'webHelpSECONDBRAIN2-all.zip'
+  DOCKER_VERSION: '242.21870'
 
 jobs:
   build:
