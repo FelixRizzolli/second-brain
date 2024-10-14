@@ -103,8 +103,8 @@
             <p>
                 Ist man sich nicht ganz sicher sind, ob das JSON, das erstellt wurde, gültig ist, bietet sich eines der
                 vielen Onlinetools an, um JSON auf Gültigkeit zu überprüfen, beispielsweise
-                <a href="http://jsonlint.com">http://jsonlint.com</a>. Nur für den Fall, dass die Entwicklungsumgebung
-                oder der Editor keine solche Funktionalität anbietet.
+                <a href="http://jsonlint.com"/>. Nur für den Fall, dass die Entwicklungsumgebung oder der Editor keine
+                solche Funktionalität anbietet.
             </p>
         </chapter>
 
@@ -132,23 +132,23 @@
     <chapter id="beispiel" title="Beispiel">
         <code-block lang="json">
             {
-            "Herausgeber": "Xema",
-            "Nummer": "1234-5678-9012-3456",
-            "Deckung": 2e+6,
-            "Waehrung": "EURO",
-            "Inhaber": {
-            "Name": "Mustermann",
-            "Vorname": "Max",
-            "maennlich": true,
-            "Hobbys": [
-            "Reiten",
-            "Golfen",
-            "Lesen"
-            ],
-            "Alter": 42,
-            "Kinder": [],
-            "Partner": null
-            }
+                "Herausgeber": "Xema",
+                "Nummer": "1234-5678-9012-3456",
+                "Deckung": 2e+6,
+                "Waehrung": "EURO",
+                "Inhaber": {
+                    "Name": "Mustermann",
+                    "Vorname": "Max",
+                    "maennlich": true,
+                    "Hobbys": [
+                        "Reiten",
+                        "Golfen",
+                        "Lesen"
+                    ],
+                    "Alter": 42,
+                    "Kinder": [],
+                    "Partner": null
+                }
             }
         </code-block>
     </chapter>
@@ -168,49 +168,49 @@
         <chapter id="json-schema-beispiel" title="Beispiel">
             <code-block lang="json">
                 {
-                "$schema": "http://json-schema.org/draft/2019-09/schema",
-                "title": "Politiker",
-                "type": "object",
-                "required": [
-                "Vorname",
-                "Nachname",
-                "Geburtsdatum",
-                "Nationalitaet"
-                ],
-                "properties": {
-                "Vorname": {
-                "type": "string"
-                },
-                "Nachname": {
-                "type": "string"
-                },
-                "Geburtsdatum": {
-                "type": "date"
-                },
-                "Nationalitaet": {
-                "type": "string"
-                },
-                "Partei": {
-                "type": "object",
-                "properties": {
-                "Name": {
-                "type": "string"
-                },
-                }
-                },
-                "Hauptsitz": {
-                "type": "string"
-                },
-                "Gründungsdatum": {
-                "type": "date"
-                },
-                "Gründungsort": {
-                "type": "string"
-                },
-                "Amt": {
-                "type": "string"
-                }
-                }
+                    "$schema": "http://json-schema.org/draft/2019-09/schema",
+                    "title": "Politiker",
+                    "type": "object",
+                    "required": [
+                        "Vorname",
+                        "Nachname",
+                        "Geburtsdatum",
+                        "Nationalitaet"
+                    ],
+                    "properties": {
+                        "Vorname": {
+                            "type": "string"
+                        },
+                        "Nachname": {
+                            "type": "string"
+                        },
+                        "Geburtsdatum": {
+                            "type": "date"
+                        },
+                        "Nationalitaet": {
+                            "type": "string"
+                        },
+                        "Partei": {
+                            "type": "object",
+                            "properties": {
+                                "Name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "Hauptsitz": {
+                            "type": "string"
+                        },
+                        "Gründungsdatum": {
+                            "type": "date"
+                        },
+                        "Gründungsort": {
+                            "type": "string"
+                        },
+                        "Amt": {
+                            "type": "string"
+                        }
+                    }
                 }
             </code-block>
         </chapter>

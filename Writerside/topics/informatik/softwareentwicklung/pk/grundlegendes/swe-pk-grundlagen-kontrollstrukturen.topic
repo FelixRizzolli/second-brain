@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="swe-pk-grundlagen-kontrollstrukturen"
        title="Kontrollstrukturen"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="grundlagen" title="Grundlegendes">
@@ -235,7 +236,7 @@
                     <code>if elseif else</code>-Verzweigung testen nach dem Motto »Wenn das Testergebnis den Wert
                     <code>0</code> hat, lade das Bild <path>pass.png</path>, wenn das Testergebnis den Wert
                     <code>1</code> hat, lade Bild <path>info.png</path> usw.«. Der entsprechende Code (in
-                    <a href="javascript.topic">JavaScript</a>) würde dann wie folgt aussehen:
+                    <a href="javascript.topic"/>) würde dann wie folgt aussehen:
                 </p>
 
                 <code-block lang="javascript">
@@ -260,8 +261,7 @@
 
                 <p>
                     Ein Programm, das das Gleiche macht, aber statt einer <code>if elseif else</code>-Verzweigung eine
-                    <code>switch</code>-Verzeigung verwendet würde (in <a href="javascript.topic">JavaScript</a>) wie
-                    folgt aussehen:
+                    <code>switch</code>-Verzeigung verwendet würde (in <a href="javascript.topic"/>) wie folgt aussehen:
                 </p>
 
                 <code-block lang="javascript">
@@ -364,7 +364,7 @@
                 Bezüglich der Reihenfolge geschieht also folgendes:
             </p>
 
-            <list style="decimal">
+            <list type="decimal">
                 <li>
                     Zu Beginn der Schleife wird einmal die Initialisierungsanweidung ausgeführt.
                 </li>

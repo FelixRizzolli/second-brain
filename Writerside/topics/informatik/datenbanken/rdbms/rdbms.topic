@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="rdbms"
        title="RDBMS"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="einleitung" title="Einleitung">
@@ -63,10 +64,9 @@
         <p>
             Sehr stark verbreitet ist MySQL. Das liegt unter anderem auch daran, dass die MySQL-Datenbank kostenlos
             angeboten und oft im Verbund mit der Web-Programmiersprache <a href="php.topic">PHP</a> verwendet wird.
-            Zudem hat MySQL eine umfangreiche Dokumentation online unter
-            <a href="http://dev.mysql.com/doc">http://dev.mysql.com/doc</a>. MariaDB ist ein recht neues Datenbanksystem
-            und auch ein sogenanntes Fork von MySQL, also eine Abspaltung von MySQL. Die unterschiede zu MySQL sind
-            wirklich mit der Lupe zu suchen und betreffen hauptsächlich Lizenzfragen.
+            Zudem hat MySQL eine umfangreiche Dokumentation online unter <a href="http://dev.mysql.com/doc"/>. MariaDB
+            ist ein recht neues Datenbanksystem und auch ein sogenanntes Fork von MySQL, also eine Abspaltung von MySQL.
+            Die unterschiede zu MySQL sind wirklich mit der Lupe zu suchen und betreffen hauptsächlich Lizenzfragen.
         </p>
     </chapter>
 

@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic help-id="app-vscode"
        id="poweruser-vscode"
-       title="VSCode" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       title="VSCode" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="basics" title="Grundlegendes">
@@ -62,8 +63,7 @@
                 </list>
 
                 <p>
-                    Auf dieser Website werden mehrere Themes gegenübergestellt:
-                    <a href="https://vscodethemes.com/">https://vscodethemes.com/</a>
+                    Auf dieser Website werden mehrere Themes gegenübergestellt: <a href="https://vscodethemes.com/"/>
                 </p>
             </chapter>
 
@@ -139,7 +139,7 @@
                 </p>
                 <p>Im August 2021 wurde diese Eigenschaft in VSCode nativ implementiert.</p>
 
-                <list style="decimal">
+                <list type="decimal">
                     <li>
                         <code>File Menu</code>
                         <img alt="right arrow" src="right_arrow_3d.png" width="24"/>
@@ -344,147 +344,168 @@
                 <tr>
                     <td>
                         <img alt="VSCode Icon - Method"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Method_16x.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Method_16x.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Methoden und Funktionen</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - Variable"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Variable_16x.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Variable_16x.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Variablen</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - Field"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Field_16x.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Field_16x.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Felder</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - Symbol Parameter"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-parameter.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-parameter.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Type Parameter</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - Symbol Constant"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-constant.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-constant.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Konstanten</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - Class"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Class_16x.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Class_16x.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Klassen</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - Interface"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Interface_16x.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Interface_16x.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Schnittstellen (Interfaces)</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - Symbol Structure"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-structure.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-structure.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Strukturen</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - Event"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-event.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-event.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Events</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - Symbol Operator"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-operator.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-operator.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Operatoren</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - Namespace"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Namespace_16x.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Namespace_16x.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Module / Namespaces</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - Property"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Property_16x.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Property_16x.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Properties und Attribute</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - EnumItem"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/EnumItem_16x.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/EnumItem_16x.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Werte und Enumerationen</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - Reference"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Reference_16x.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Reference_16x.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Referenzen</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - Keyword"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Keyword_16x.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Keyword_16x.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Keywords</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - Symbol File"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-file.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/symbol-file.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Dateien</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - Folder"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/folder.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/folder.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Ordner</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - ColorPalette"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/ColorPalette_16x.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/ColorPalette_16x.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Farben</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - Ruler"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Ruler_16x.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Ruler_16x.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Units</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - Snippet"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Snippet_16x.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/Snippet_16x.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Snippet prefixes</td>
                 </tr>
                 <tr>
                     <td>
                         <img alt="VSCode Icon - String"
-                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/String_16x.svg" style="block" width="200"/>
+                             src="https://code.visualstudio.com/assets/docs/editor/intellisense/String_16x.svg"
+                             style="block" width="200"/>
                     </td>
                     <td>Wörter</td>
                 </tr>
@@ -733,7 +754,7 @@
 
         <chapter id="emmet-cheat-sheet" title="Emmet Cheat Sheet">
             <p>
-                Mehr Beispiele hier: <a href="https://docs.emmet.io/cheat-sheet">https://docs.emmet.io/cheat-sheet</a>
+                Mehr Beispiele hier: <a href="https://docs.emmet.io/cheat-sheet"/>
             </p>
         </chapter>
 
@@ -815,7 +836,7 @@
             </warning>
 
             <chapter id="ide-terminal-tasks-erstellen" title="Task erstellen">
-                <list style="decimal">
+                <list type="decimal">
                     <li>
                         <code>CTRL</code>+<code>SHIFT</code>+<code>P</code> oder <code>F1</code> als Shortcut um die
                         Command Palette auszuführen
@@ -844,7 +865,7 @@
             </chapter>
 
             <chapter id="ide-terminal-tasks-ausführen" title="Task ausführen">
-                <list style="decimal">
+                <list type="decimal">
                     <li>
                         <code>CTRL</code>+<code>SHIFT</code>+<code>P</code> oder <code>F1</code> als Shortcut um die
                         Command Palette auszuführen

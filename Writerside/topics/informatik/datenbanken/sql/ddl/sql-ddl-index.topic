@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="sql-ddl-index"
        title="INDEX: Performance von Abfragen optimieren"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="index" title="INDEX">
@@ -77,10 +78,9 @@
                 und daher von großer praktischer Relevanz.
             </li>
             <li>
-                <b>Der Bitmap-Index</b> - Der <a href="sql-ddl-index-bitmap.topic">Bitmap-Index</a> basiert aus der
-                Speicherung der Spaltenwerte in Form von Bitketten. Dieser Indextyp findet aus datenbanktechnischen
-                Gründen Verwendung bei geringer Selektivität und niedriger Aktualisierungserwartung der zu indizierenden
-                Spalte(n).
+                <b>Der Bitmap-Index</b> - Der <a href="sql-ddl-index-bitmap.topic"/> basiert aus der Speicherung der
+                Spaltenwerte in Form von Bitketten. Dieser Indextyp findet aus datenbanktechnischen Gründen Verwendung
+                bei geringer Selektivität und niedriger Aktualisierungserwartung der zu indizierenden Spalte(n).
             </li>
             <li>
                 <b>Der Cluster Index</b> - Bei einem Cluster Index legt das DBMS nicht nur eine Liste von Zeigern auf

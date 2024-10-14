@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="sql-dql-operatoren"
        title="Operatoren"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="arithmetisch" title="Arithmetische Operatoren">
@@ -580,7 +581,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <code>WHERE CustomerName LIKE '%or%'</code>
+                                <code ignore-vars="true">WHERE CustomerName LIKE '%or%'</code>
                             </td>
                             <td>
                                 Findet alle Werte, die an irgendeiner Stelle "or" enthalten

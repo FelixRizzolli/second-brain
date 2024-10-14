@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="swe-prozesse-scrum"
        title="Scrum"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="scrum" title="Was ist Scrum?">
@@ -82,9 +83,9 @@
                 Im Falle der Skalierung und der skalierten Implementierungen von Scrum sind die Minimierung
                 teamübergreifender Abhängigkeiten und die Lösung von Integrationsproblemen einzigartige und kritische
                 Herausforderungen, wenn mehrere Scrum-Teams zusammenarbeiten, um ein Produkt zu liefern. Der
-                <a href="swe-prozesse-scrum-scrumguide.topic">Scrum Guide</a> ist das Wissensfundament für das
-                Scrum-Framework und der <a href="swe-prozesse-scrum-nexusguide.topic">Nexus Guide</a> baut auf diesem
-                Fundament auf und beschreibt ein Framework welches die Zusammenarbeit mehrerer Scrum Teams vereinfacht.
+                <a href="swe-prozesse-scrum-scrumguide.topic"/> ist das Wissensfundament für das Scrum-Framework und der
+                <a href="swe-prozesse-scrum-nexusguide.topic"/> baut auf diesem Fundament auf und beschreibt ein
+                Framework welches die Zusammenarbeit mehrerer Scrum Teams vereinfacht.
             </p>
 
             <p>Mehr zu diesem Thema: <a href="swe-prozesse-scrum-anwendung.topic">HIER</a></p>

@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="sql-ddl-tabellenoperationen"
        title="Tabellenoperationen (CREATE, DROP, ALTER)"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="create" title="CREATE TABLE: Tabellen erstellen">
@@ -11,7 +12,7 @@
             Mit der <code>CREATE TABLE</code>-Anweisung werden Tabellen einer Datenbank erstellt. Dabei müssen auch die
             einzelnen Spalten, welche die Tabelle enthalten soll, notiert werden. Bei den einzelnen Spalten kann es sich
             um unterschiedliche Informationsarten handeln: ganze Zahlen, rationale Zahlen, Text oder Datumsangaben.
-            Hierfür werden <a href="sql-ddl-datentypen.topic">Datentypen</a> für die jeweiligen Spalten definiert.
+            Hierfür werden <a href="sql-ddl-datentypen.topic"/> für die jeweiligen Spalten definiert.
         </p>
         <p>
             Die SQL-Anweisung um eine Tabelle zu erstellen beginnt mit den Schlüsselwörtern <code>CREATE TABLE</code>.

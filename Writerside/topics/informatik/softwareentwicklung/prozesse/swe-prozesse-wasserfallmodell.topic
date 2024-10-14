@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="swe-prozesse-wasserfallmodell"
        title="Wasserfallmodell"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="einleitung" title="Einleitung">
@@ -90,7 +91,7 @@
                 Software aus mehreren Komponenten, werden deren Beziehungen untereinander festgelegt. Eine typische
                 Aufgabe im Entwurf ist das grundsätzliche Klassendesign der Anwendung zu erarbeiten, sofern die
                 objektorientierte Programmentwicklung verwendet wird. Dabei kann eine Beschreibungssprache wie
-                <a href="swe-uml.topic">UML (Unified Modeling Language)</a> weiterhelfen.
+                <a href="swe-uml.topic"/> weiterhelfen.
             </p>
 
             <p>Mehr dazu: <a href="swe-spp-entwurf.topic">HIER</a></p>

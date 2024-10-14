@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="sql-ddl-views"
        title="Views"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="grundlagen" title="Grundlegendes über Views">
@@ -17,7 +18,7 @@
             Es gibt zwei Gründe, Views zu verwenden:
         </p>
 
-        <list style="decimal">
+        <list type="decimal">
             <li>
                 Mit Views besteht die Möglichkeit, komplexe SQL-Anweisungen dauerhaft in der Datenbank zu speichern und
                 auf die Views wie auf eine Tabelle mit einer <code>SELECT</code>-Anweisung zuzugreifen. Das erleichtert

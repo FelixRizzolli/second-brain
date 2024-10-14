@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="swe-pk-algorithmen-sort"
        title="Sortieralgorithmen"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="einleitung" title="Einleitung">
@@ -148,7 +149,7 @@
                 Schritten:
             </p>
 
-            <list style="decimal">
+            <list type="decimal">
                 <li>
                     Zuerst erstellen wir sogenannte <b>Buckets</b>, in die wir dann die <b>Elemente</b> der unsortierten
                     Liste <b>verteilen und ablegen</b>.
@@ -174,7 +175,7 @@
                 Der <b>Bucketsort Algorithmus</b> lässt sich also folgendermaßen darstellen:
             </p>
 
-            <list style="bullet">
+            <list type="bullet">
                 <li>
                     Für den Sortiervorgang wird einerseits eine zu sortierende Liste benötigt, zusätzlich aber auch eine
                     Funktion, die jedes Element des Arrays einem Wert in dem Intervall <code>[0,n]</code> zuordnen kann.

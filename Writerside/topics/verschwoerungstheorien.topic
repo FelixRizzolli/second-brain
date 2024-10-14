@@ -661,7 +661,7 @@
             Es gibt zwei Hauptgründe gibt, warum Menschen an Verschwörungserzählungen glauben
         </p>
 
-        <list style="decimal">
+        <list type="decimal">
             <li>
                 Sie kompensieren so einen erlebten Kontrollverlust, beispielsweise, wenn sie den Job verlieren oder das
                 Gefühl haben, politisch unsichere Zeiten zu erleben.
@@ -719,7 +719,8 @@
             auch nicht sagen.
         </p>
 
-        <chapter title="Checkliste für religiösen Gemeinschaften und Sekten">
+        <chapter id="checkliste-fuer-religioesen-gemeinschaften und sekten"
+                 title="Checkliste für religiösen Gemeinschaften und Sekten">
             <p>
                 Checkliste, die bei religiösen Gemeinschaften und Sekten zeigt, bei welchen Anzeichen man hellhörig
                 werden sollte. Sie ist aber beim Thema Verschwörungsglaube hilfreich. Je mehr Punkte man in Bezug auf

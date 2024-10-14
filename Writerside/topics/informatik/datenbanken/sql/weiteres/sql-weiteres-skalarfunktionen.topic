@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="sql-weiteres-skalarfunktionen"
        title="Skalarfunktionen"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="grundlagen" title="Grundlagen">
@@ -237,7 +238,7 @@
         </chapter>
 
         <chapter id="verschachtelt-mssqlserver" title="Microsoft SQL Server">
-            <code-block lang="sql">
+            <code-block ignore-vars="true" lang="sql">
                 SELECT artikelbezeichnung
                 , legierung
                 , SUBSTRING(

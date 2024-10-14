@@ -26,7 +26,7 @@
                 oder eine zweite Sprache zu lernen. Erwachsene können viele Lernprozesse überspringen:
             </p>
 
-            <list style="bullet">
+            <list type="bullet">
                 <li>
                     Es kommt oft vor, dass einige Wörter der Zweitsprache gleich oder ähnlich wie die der Erstsprache
                     sind.
@@ -225,7 +225,7 @@
                 Jede Sprache verfügt über vier Funktionen:
             </p>
 
-            <list style="bullet">
+            <list type="bullet">
                 <li>
                     <b>Kontaktaufnahme</b> – Wenn wir eine aktiv anwenden wollen, müssen wir mit Menschen in Kontakt
                     treten. Je besser unser Selbstvertrauen entwickelt ist, desto mehr positive Stimmung und dem
@@ -254,7 +254,7 @@
                 beschrieben. Die Grammatik lässt sich in folgende Teilbereiche unterteilen:
             </p>
 
-            <list style="bullet">
+            <list type="bullet">
                 <li>
                     <b>Morphologie</b> – die Formenlehre von Wörtern. Sie behandelt, vom Wort ausgehend, die Analyse der
                     Flexionsformen und der Wortarten. Daneben beinhaltet sie außerdem auch die Wortbildung, deren
@@ -310,7 +310,7 @@
                 werden die Kompetenzniveaus wie folgt unterteilt:
             </p>
 
-            <list style="bullet">
+            <list type="bullet">
                 <li>Kompetenzniveau A beschreibt eine elementare Sprachverwendung.</li>
                 <li>Kompetenzniveau B beschreibt eine selbständige Sprachverwendung.</li>
                 <li>Kompetenzniveau C beschreibt eine kompetente Sprachverwendung.</li>
@@ -467,7 +467,7 @@
                 optimal. Diese sollten jedoch folgende Kriterien erfüllen:
             </p>
 
-            <list style="bullet">
+            <list type="bullet">
                 <li>
                     <b>Texte</b>, die für den Sprachkurs verwendet werden, müssen sowohl in Deutsch als auch in der zu
                     erlernenden Zielsprache abgedruckt sind. Es reicht nicht aus, nur die ersten sieben oder acht
@@ -478,8 +478,8 @@
                     gezielt nachgeschlagen werden kann.
                 </li>
                 <li>
-                    Und schließlich müssen alle Textdialoge des Kurses zusätzlich als <b>Audioformat</b>vorliegen, damit
-                    die Aussprache und das Hörverständnis trainiert werden kann.
+                    Und schließlich müssen alle Textdialoge des Kurses zusätzlich als <b>Audioformat</b> vorliegen,
+                    damit die Aussprache und das Hörverständnis trainiert werden kann.
                 </li>
                 <li>
                     Außerdem sind <b>Bildwörterbücher</b> unterstützend empfehlenswert. Diese sind wunderbar geeignet,
@@ -504,7 +504,7 @@
 
         <chapter id="lernmethoden" title="Lernmethoden">
             <chapter id="grundlegende-gesetze-und-prinzipien" title="Grundlegende Gesetze und Prinzipien">
-                <list style="bullet">
+                <list type="bullet">
                     <li>
                         <b>In 20 Minuten zum Ziel</b> – Wir sollten nie länger als 20 Minuten für eine Lerneinheit
                         aufwenden. Bereits nach 20 Minuten beginnt unser Gehirn damit, Gelerntes zu überschreiben.
@@ -573,7 +573,7 @@
                 einen Aktionsplan.
             </p>
 
-            <list style="bullet">
+            <list type="bullet">
                 <li>
                     Wir müssen genau entscheiden, was wir anstreben. Dazu hilft und das CEFRL-System. Wir müssen
                     entscheiden, welches Ziel etwas höher gesteckt ist als ein sicher erreichbares Ziel, sodass wir uns
@@ -616,7 +616,7 @@
                 Großartige Möglichkeiten von zu Hause aus sind:
             </p>
 
-            <list style="bullet">
+            <list type="bullet">
                 <li>
                     <b>mit anderen Nicht-Muttersprachlern lernen</b>: andere Lernende eignen sich ebenfalls bestens als
                     Übungspartner. Da beide lernen, entsteht weniger Verlegenheit, wenn jemand Fehler macht, und man
@@ -705,7 +705,7 @@
                     sinnvoll. Diese sollte folgendes Beinhalten:
                 </p>
 
-                <list style="bullet">
+                <list type="bullet">
                     <li>
                         Sprachführer beinhalten eine recht gute Sammlung vorgefertigter Redewendungen. Diese Bücher
                         enthalten auch einen Ausspracheführer, sodass wir uns über die Lautschrift der Sprache noch

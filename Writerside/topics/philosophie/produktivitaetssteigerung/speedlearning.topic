@@ -12,10 +12,10 @@
             Folgende Hindernisse könnten uns auf unserem Weg zum Ziel begegnen:
         </p>
 
-        <list style="decimal">
+        <list type="decimal">
             <li>
                 <p><b>Freunde, Familienmitglieder oder Bekannte beziehungsweise Arbeitskollegen</b></p>
-                <list style="bullet">
+                <list type="bullet">
                     <li>
                         Die Frau, welche sich spontan dazu entschieden hat, Freunde zum Grillen einzuladen; der Chef,
                         der uns noch etwas zur Bearbeitung mit nach Hause gibt; das Kind, welches zum Arzt muss ...
@@ -160,7 +160,7 @@
             Folgende Fragen sollten wir uns stellen, bevor wir uns einem Lernthema widmen:
         </p>
 
-        <list style="bullet">
+        <list type="bullet">
             <li>
                 Was weiß ich bereits über dieses Thema?
             </li>
@@ -243,7 +243,7 @@
             Unterstützung, Anregung oder einfach nur kreative Gedanken an.
         </p>
 
-        <list style="bullet">
+        <list type="bullet">
             <li>
                 Im <b>Power-Braintrust</b> pflegen die Braintrust-Partner intensiven und vertrauensvollen Kontakt. Sie
                 treffen sich mindestens einmal pro Woche für 60 bis 90 Minuten, um über ihre Lernprojekte und Erfolge zu
@@ -356,7 +356,7 @@
                         Sagen wir, wir möchten uns drei Eigenschaften von <b>Mephisto</b> aus Goethes Faust merken
                         (<b>böse</b>, <b>charmant</b>, <b>magisch</b>):
                     </p>
-                    <list style="decimal">
+                    <list type="decimal">
                         <li>
                             Wir wählen unser <b>Klassenzimmer</b> als Raum aus.
                         </li>
@@ -368,7 +368,7 @@
                             Wir verknüpfen die Punkte nun: Wir betreten das Klassenzimmer und merken, dass die
                             Eingangstür auf <b>magische</b> Weise beginnt, zu schweben. Jetzt gehen wir zur Tafel und
                             sehen, dass Mephisto vorne steht und auf <b>charmante</b> Weise zur Klasse redet. Dann
-                            öffnen wir den Schrank, aus dem plötzlich ganz viele<b>böse</b> Hunde rausspringen.
+                            öffnen wir den Schrank, aus dem plötzlich ganz viele <b>böse</b> Hunde rausspringen.
                         </li>
                         <li>
                             Jetzt wiederholen wir die Route.
@@ -434,7 +434,7 @@
                         deinem Körper:
                     </p>
 
-                    <list style="decimal">
+                    <list type="decimal">
                         <li>
                             Unser <b>linker Fuß ist Romeo</b>, unser <b>rechter Julia</b>. Sie sind immer nahe
                             beieinander, was ihre Liebe widerspiegelt.
@@ -454,7 +454,7 @@
                 </tip>
             </chapter>
 
-            <chapter id="" title="Zahl-Reim-System">
+            <chapter id="zahl-reim-system" title="Zahl-Reim-System">
                 <p>
                     Gedächtnistraining mit dem Zahl-Reim-System ist möglich, indem wir zu den <b>Zahlen von 0 bis 9</b>
                     jeweils <b>ein Wort</b> zum Merken hinzufügen. Die Wörter reimen sich auf die Bezugszahlen, was bei
@@ -466,7 +466,7 @@
                         Wir möchten uns beim Gedächtnistraining die ersten Zahlen von <b>Pi (3,1415)</b> merken. Wir
                         beginnen damit, unsere Wörter zum Merken (passend zu den Zahlen) festzulegen:
                     </p>
-                    <list style="bullet">
+                    <list type="bullet">
                         <li>0 – Nacktmull</li>
                         <li>1 – Keins</li>
                         <li>2 – Frei</li>

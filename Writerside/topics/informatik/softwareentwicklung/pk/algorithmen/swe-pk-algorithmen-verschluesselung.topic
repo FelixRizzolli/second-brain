@@ -64,7 +64,7 @@
                 Schritten, auf die wir nun genauer eingehen werden:
             </p>
 
-            <list style="decimal">
+            <list type="decimal">
                 <li>
                     <b>Substitution</b>: In diesem Schritt wird jedes Byte mit einer Substitutionsbox (S-Box)
                     verschlüsselt. Die S-Box gibt dabei eine Regel an, wie ein Byte eines Blockes durch einen anderen

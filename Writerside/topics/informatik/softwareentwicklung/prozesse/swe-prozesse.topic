@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="swe-prozesse"
        title="Softwareentwicklungsprozesse"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="einleitung" title="Einleitung">
@@ -17,8 +18,7 @@
             Projektbeginn meist nicht vollständig erfassbar. Änderungswünsche an den Anforderungen während einer
             Projektdurchführung bilden nicht die Ausnahme, sondern vielmehr den Regelfall. Um diesem Anspruch
             näherzukommen, haben sich die Vorgehensweisen bei professioneller Softwareentwicklung stetig verändert und
-            weiterentwickelt. Dabei begann alles mit dem
-            <a href="swe-prozesse-wasserfallmodell.topic">Wasserfallmodell</a>.
+            weiterentwickelt. Dabei begann alles mit dem <a href="swe-prozesse-wasserfallmodell.topic"/>.
         </p>
     </chapter>
 
@@ -90,10 +90,10 @@
         </p>
 
         <list>
-            <li><a href="swe-prozesse-xp.topic">Extreme Programming</a></li>
-            <li><a href="swe-prozesse-kanban.topic">Kanban</a></li>
-            <li><a href="swe-prozesse-bdd.topic">Behavior-Driven Development</a></li>
-            <li><a href="swe-prozesse-scrum.topic">Scrum</a></li>
+            <li><a href="swe-prozesse-xp.topic"/></li>
+            <li><a href="swe-prozesse-kanban.topic"/></li>
+            <li><a href="swe-prozesse-bdd.topic"/></li>
+            <li><a href="swe-prozesse-scrum.topic"/></li>
         </list>
     </chapter>
 

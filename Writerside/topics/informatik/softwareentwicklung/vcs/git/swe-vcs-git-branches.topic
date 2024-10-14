@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="swe-vcs-git-branches"
        title="Branches"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="grundlagen" title="Grundlegendes">
@@ -170,8 +171,8 @@
         </p>
 
         <list>
-            <li>Git Flow Chart <a href="https://gfc.io">https://gfc.io</a></li>
-            <li>Git Kraken <a href="https://www.gitkraken.com/git-client">https://www.gitkraken.com/git-client</a></li>
+            <li>Git Flow Chart <a href="https://gfc.io"/></li>
+            <li>Git Kraken <a href="https://www.gitkraken.com/git-client"/></li>
         </list>
 
         <p>

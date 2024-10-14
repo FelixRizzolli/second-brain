@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="swe-vcs-git"
        title="GIT"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="git" title="Was ist Git?">
@@ -18,9 +19,9 @@
         </p>
 
         <list>
-            <li><a href="swe-vcs-cvs.topic">Concurrent Versions System (CVS)</a></li>
-            <li><a href="swe-vcs-svn.topic">Subversion (SVN)</a></li>
-            <li><a href="swe-vcs-vss.topic">Visual SourceSafe</a></li>
+            <li><a href="swe-vcs-cvs.topic"/></li>
+            <li><a href="swe-vcs-svn.topic"/></li>
+            <li><a href="swe-vcs-vss.topic"/></li>
         </list>
 
         <p>
@@ -31,7 +32,7 @@
     <chapter id="geschichte" title="Die Geschichte">
         <p>
             Linus Torvalds suchte ein neues Versionsverwaltungssystem für die Weiterentwicklung des
-            <a href="linux.topic">Linux</a>-Kernels, um das damals genutzte BitKeeper abzulösen. Keines, der verfügbaren
+            <a href="linux.topic"/>-Kernels, um das damals genutzte BitKeeper abzulösen. Keines, der verfügbaren
             Open-Source-Programmen, genügte seinen hohen Ansprüchen. So stoppte der Linux-Chefentwickler seine
             Hauptarbeit und schuf in nur zwei Wochen das Grundgerüst von Git. Der Name Git steht sinngemäß für Blödmann
             oder Depp, und auch die Hilfeseite man git bezeichnet das Programm als the stupid content tracker.
@@ -105,7 +106,7 @@
         <chapter id="installation-macos" title="macOS (mit Homebrew)">
             <list>
                 <li>In Xcode ist git bereits fix integriert</li>
-                <li>Homebrew: <a href="https://brew.sh">https://brew.sh</a></li>
+                <li>Homebrew: <a href="https://brew.sh"/></li>
                 <li>Command: <code>brew install git</code></li>
             </list>
         </chapter>
@@ -160,8 +161,7 @@
                 2019 hat Microsoft ein neues Terminal veröffentlicht, welches die alte Eingabeaufforderung und die
                 PowerShell in einer vereint und zudem noch weitere Eigenschaften bietet. Wie in immer mehr
                 Microsoft-Projekten ist der Quellcode öffentlich und befindet sich in einem GitHub-Repository:
-                <a href="https://github.com/microsoft/terminal">https://github.com/microsoft/terminal</a>. Der Download
-                ist auch im Microsoft Store erhältlich.
+                <a href="https://github.com/microsoft/terminal"/>. Der Download ist auch im Microsoft Store erhältlich.
             </p>
 
             <chapter id="arbeiten-terminal-gitbash" title="Git Bash">

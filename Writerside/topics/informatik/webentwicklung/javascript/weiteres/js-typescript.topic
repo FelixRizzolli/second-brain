@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="js-typescript"
        title="TypeScript"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="was-ist-typescript" title="Was ist TypeScript?">
@@ -104,7 +105,7 @@
             In TypeScript kann bei der Variablendeklaration ein optionaler Typ angegeben werden
             <b>(= explizite Typzuweisung)</b>. Wird die Variable mit einem Wert initialisiert, kann die Typzuweisung
             weggelassen werden, da TypeScript automatisch den Typ des zugewiesenen Wertes übernimmt <b>(= implizite
-            Typzuweisung)</b>. Für die Deklaration stehen die Schlüsselworte <code>var</code>,<code>let</code> und
+            Typzuweisung)</b>. Für die Deklaration stehen die Schlüsselworte <code>var</code>, <code>let</code> und
             <code>const</code> zur Verfügung, wobei möglichst nur <code>let</code> und <code>const</code> verwendet
             werden sollen. Es sollte auch so oft wie möglich const verwendet werden, um eine versehentliche Neuzuweisung
             zu vermeiden. Erst wenn ein Wert neu zugewiesen werden muss oder man dies bereits von vornherein weiß,

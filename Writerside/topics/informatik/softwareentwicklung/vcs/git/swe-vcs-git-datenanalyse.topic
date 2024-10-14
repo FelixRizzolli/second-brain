@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="swe-vcs-git-datenanalyse"
        title="Datenanalyse im Repoitory"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="einfuehrung" title="Einführung">
@@ -35,8 +36,8 @@
 
             <note>
                 Um das Kommando zu testen, bietet das Repository des Linux-Kernel eine wunderbare Spielwiese. Dabei ist
-                zu beachten, dass das Repository mehr als 4 GB an Speicherplatz benötigt. Link:
-                <a href="https://github.com/torvalds/linux.git">https://github.com/torvalds/linux.git</a>
+                zu beachten, dass das Repository mehr als 4 GB an Speicherplatz benötigt. Link: <a
+                    href="https://github.com/torvalds/linux.git"/>
             </note>
 
             <chapter id="commit-gitlog-param" title="Die wichtigsten Parameter für ein übersichtlicheres Logging">

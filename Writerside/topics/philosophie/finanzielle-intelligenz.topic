@@ -106,7 +106,7 @@
             Finanzieller IQ ist finanzielle Intelligenz als Ergebnis finanzieller Bildung. Leute mit hoher finanzieller
             Intelligenz können das Geld anderer nutzen, um reich zu werden.
         </p>
-        <list start="2" style="decimal">
+        <list start="2" type="decimal">
             <li>
                 <b>Buchhaltung</b> – Es ist eine lebenswichtige Fähigkeit, wenn man ein Imperium aufbauen möchte. Je
                 höher die Summe, für die man verantwortlich ist, desto mehr Genauigkeit ist erforderlich, sonst bricht
@@ -131,7 +131,7 @@
                     kleinen Geschäfts ist.
                 </p>
 
-                <list style="alpha-lower">
+                <list type="alpha-lower">
                     <li>
                         <emphasis>Steuervorteile.</emphasis>
                         Ein Unternehmen hat viele Möglichkeiten, die ein
@@ -178,14 +178,19 @@
             </tr>
             <tr>
                 <td>
-                    <img alt="" src="rich-dad-poor-dad-gewinn-und-verlustrechnung-arm.png" style="inline" width="250"/>
-                </td>
-                <td>
-                    <img alt="" src="rich-dad-poor-dad-gewinn-und-verlustrechnung-mittelschicht.png" style="inline"
+                    <img alt="Rich Dad Poor Dad - Gewinn und Verlustrechnung - Arm"
+                         src="rich-dad-poor-dad-gewinn-und-verlustrechnung-arm.png"
+                         style="inline"
                          width="250"/>
                 </td>
                 <td>
-                    <img alt="" src="rich-dad-poor-dad-gewinn-und-verlustrechnung-reich.png" style="inline"
+                    <img alt="Rich Dad Poor Dad - Gewinn und Verlustrechnung - Mittelschicht"
+                         src="rich-dad-poor-dad-gewinn-und-verlustrechnung-mittelschicht.png" style="inline"
+                         width="250"/>
+                </td>
+                <td>
+                    <img alt="Rich Dad Poor Dad - Gewinn und Verlustrechnung - Reich"
+                         src="rich-dad-poor-dad-gewinn-und-verlustrechnung-reich.png" style="inline"
                          width="250"/>
                 </td>
             </tr>
@@ -356,7 +361,8 @@
         </chapter>
     </chapter>
     <chapter id="cashflow-quadrant" title="Cashflow Quadrant">
-        <img alt="" src="rich-dad-poor-dad-cashflow-quadrant.png" style="inline" width="250"/>
+        <img alt="Rich Dad Poor Dad - Cashflow Quadrant" src="rich-dad-poor-dad-cashflow-quadrant.png" style="inline"
+             width="250"/>
         <table style="header-column">
             <tr>
                 <td><b>E</b>mployee</td>
@@ -477,7 +483,7 @@
                 </p>
             </chapter>
             <chapter id="businessowner-werden" title="Möglichkeiten um in den Business owner zu werden">
-                <list style="decimal">
+                <list type="decimal">
                     <li>
                         <b>Einen Mentor</b> (kein Berater) <b>suchen</b> – Ein Mentor ist jemand, der das bereits getan
                         hat, und der damit erfolgreich ist. Ein Berater ist hingegen jemand, der einem sagt, wie man tun
@@ -531,7 +537,7 @@
                     Geld sie damit machen könnten. Diese Angst vor dem Geldverlust unterteilt die Investoren
                     offensichtlich in vier Hauptkategorien:
                 </p>
-                <list style="decimal">
+                <list type="decimal">
                     <li>
                         Risikoscheue Leute, die nur auf Nummer sicher gehen und ihr Geld ausschließlich auf der Bank
                         anlegen.
@@ -591,7 +597,7 @@
                 </list>
             </chapter>
             <chapter id="investor-5-level" title="Die fünf Level der Investoren">
-                <list style="decimal">
+                <list type="decimal">
                     <li>
                         <b>Keine finanzielle Intelligenz</b> – Grob geschätzt befinden sich mehr als 50 % der
                         Bevölkerung auf diesem Level, auch in Reichen Ländern. In diese Kategorie fallen viele Menschen,
@@ -635,7 +641,7 @@
         </chapter>
     </chapter>
     <chapter id="mehr-geld" title="Wie komme ich zu mehr Geld?">
-        <list style="decimal">
+        <list type="decimal">
             <li>
                 Eine Aufstellung der persönlichen finanziellen Verhältnisse anfertigen. Um dahin zu kommen, wo man hin
                 will, muss man den Ausgangspunkt kennen. Dies ist der erste Schritt um das eigene Leben unter Kontrolle
@@ -644,7 +650,7 @@
             <li>
                 <p><b>Finanzielle Ziele setzen</b></p>
 
-                <list style="alpha-lower">
+                <list type="alpha-lower">
                     <li>
                         <p><b>Langfristiges Ziel</b>: innerhalb der nächsten 5 Jahre:</p>
 
@@ -680,7 +686,9 @@
             </li>
         </list>
         <chapter id="income-statement" title="Income Statement - Vorlage">
-            <img alt="" src="rich-dad-poor-dad-income-statement.png" style="inline" width="700"/>
+            <img alt="Rich Dad Poor Dad - Income Statement (Vorlage)" src="rich-dad-poor-dad-income-statement.png"
+                 style="inline"
+                 width="700"/>
         </chapter>
     </chapter>
     <chapter id="quellen" title="Quellen">

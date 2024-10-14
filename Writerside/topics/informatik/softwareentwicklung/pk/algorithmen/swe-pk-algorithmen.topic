@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="swe-pk-algorithmen"
        title="Algorithmen"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="einleitung" title="Einleitung">
@@ -253,7 +254,7 @@
         </p>
 
         <chapter id="entwurf-vorgehensweise" title="Vorgehensweise">
-            <list style="decimal">
+            <list type="decimal">
                 <li>
                     <b>Spezifizierung der Problemstellung</b>: Die Problemstellung ist fachlich aufzuarbeiten. Der
                     Softwareentwickler muss sich so weit mit dem angegebenen Problem beschäftigen, dass er es
@@ -265,7 +266,7 @@
                     nicht direkt in die Zielsprache übersetzt, sondern man bedient sich auf dem Weg dorthin
                     unterschiedlicher Hilfsmittel. Grafisch kann man den Ablauf eines Algorithmus auf unterschiedliche
                     Weise visualisieren. Eine gebräuchliche Vorstufe der Codierung in einer Programmiersprache ist die
-                    Darstellung mithilfe von <a href="swe-pk-pseudocode.topic">Pseudocode</a>.
+                    Darstellung mithilfe von <a href="swe-pk-pseudocode.topic"/>.
                 </li>
                 <li>
                     <b>Analyse des Fehlverhaltens</b>: Insbesondere bei Berechnungen kann es zu Fehlern kommen. Diese

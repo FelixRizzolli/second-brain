@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="swe-pk-regex"
        title="RegEx - Reguläre Ausdrücke"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="einleitung" title="Einleitung">
@@ -851,7 +852,7 @@
 
         <chapter id="step5-mehrzeiliges-flag" title="Mehrzeiliges Flag">
             <p>
-                Regex sieht den gesamten Text als eine Zeile. Aber wir verwenden das <code>multiline-</code>Flag, um
+                Regex sieht den gesamten Text als eine Zeile. Aber wir verwenden das <code>multiline</code>-Flag, um
                 jede Zeile separat zu behandeln. Auf diese Weise schreiben wir die Ausdrücke entsprechend dem Zeilenende
                 für jede Zeile separat. Aktivieren Sie nun das <code>multiline</code>-Flag, um alle Übereinstimmungen zu
                 finden.

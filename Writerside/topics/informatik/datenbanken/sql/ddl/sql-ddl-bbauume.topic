@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="sql-ddl-bbauume"
        title="Die B-Bäume"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="grundlagen" title="Grundlagen">
@@ -85,7 +86,7 @@
         </chapter>
 
         <chapter id="funktionsweise-suchen" title="Suchen">
-            <list style="decimal">
+            <list type="decimal">
                 <li>
                     Startpunkt der Suche ist der <b>Wurzelknoten</b> mit der Überprüfung auf den gesuchten Wert.
                 </li>
@@ -143,7 +144,7 @@
                 Nun muss zwischen zwei Fällen unterschieden werden:
             </p>
 
-            <list style="decimal">
+            <list type="decimal">
                 <li>
                     <b>Die Anzahl der Einträge des Knotens ist nach dem Einfügen noch kleiner</b> <code>m</code>: Das
                     bedeutet, dass der Knoten seine maximale Anzahl an Elementen nach dem Einfügen nicht überschritten

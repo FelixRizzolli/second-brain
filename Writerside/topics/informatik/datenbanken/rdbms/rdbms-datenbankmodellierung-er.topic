@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="rdbms-datenbankmodellierung-er"
        title="Das ER-Modell"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="einleitung" title="Einleitung">
@@ -280,7 +281,7 @@
                 starke wie auf die schwache Entität. Folgende Fälle lassen sich beschreiben:
             </p>
 
-            <list style="decimal">
+            <list type="decimal">
                 <li>
                     In einer Tabelle, die eine starke Entität repräsentiert, existiert eine Zeile autonom. Einfüge-,
                     Aktualisierung- und Löschoperationen können hier völlig autonom betrachtet werden. Es gibt keine
@@ -293,7 +294,7 @@
                         unmittelbar Auswirkungen auf Einfüge-, Aktualisierungs- und Löschoperationen.
                     </p>
 
-                    <list style="alpha-lower">
+                    <list type="alpha-lower">
                         <li>
                             Eine Zeile einer Tabelle, die eine starke Entität repräsentiert, kann nicht gelöscht werden,
                             solange eine Beziehung aus einer Zeile einer Tabelle gegeben ist, die eine schwache Entität

@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="betriebssysteme"
        title="Betriebssysteme"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="was-ist-ein-betriebssystem" title="Was ist ein Betriebssystem?">
@@ -344,22 +345,21 @@
                     benötigt (alle aktuellen Linux-Distributionen bieten beides). Ein weiterer wichtiger Bestandteil
                     eines Unix-Systems sind die zahlreichen Systemprogramme. Die Linux-Versionen dieser Programme sind
                     kompatibel mit den entsprechenden Befehlen kommerzieller Unix-Versionen, entstammen aber
-                    größtenteils dem GNU-Projekt (<a href="http://www.gnu.org">http://www.gnu.org</a>). Diese Abkürzung
-                    steht für GNU’s Not Unix; es handelt sich um ein rekursives Akronym, in dem der erste Buchstabe
-                    immer wieder für den Namen des Ganzen steht – eine beliebte Form der Unterhaltung in der Unix- und
-                    Open-Source-Szene. Aus diesem Grund müsste ein vollständiges Linux-System aus Kernel und
-                    Dienstprogrammen korrekterweise als GNU/Linux bezeichnet werden, aber daran hält sich nur die
-                    Distribution Debian.
+                    größtenteils dem GNU-Projekt (<a href="http://www.gnu.org"/>). Diese Abkürzung steht für GNU’s Not
+                    Unix; es handelt sich um ein rekursives Akronym, in dem der erste Buchstabe immer wieder für den
+                    Namen des Ganzen steht – eine beliebte Form der Unterhaltung in der Unix- und Open-Source-Szene. Aus
+                    diesem Grund müsste ein vollständiges Linux-System aus Kernel und Dienstprogrammen korrekterweise
+                    als GNU/Linux bezeichnet werden, aber daran hält sich nur die Distribution Debian.
                 </p>
                 <p>
                     Das GNU-Projekt wurde 1984 von Richard Stallman ins Leben gerufen und setzte sich zum Ziel, freie
                     Versionen sämtlicher Unix-Systemprogramme zu entwickeln. Deshalb gründete Stallman gleichzeitig die
-                    Free Software Foundation (FSF,<a href="http://www.fsf.org">http://www.fsf.org</a>). Als Linus
-                    Torvalds mit der Arbeit an Linux begann, existierte bereits ein C-Compiler (der GNU C Compiler oder
-                    GCC); auch die meisten Standardbefehle waren bereits verfügbar. Die meisten GNU-Varianten der
-                    Unix-Programme sind inzwischen sogar leistungsfähiger als die ursprünglichen Versionen. Lediglich
-                    der lange geplante GNU-Kernel Hurd ist bis heute nicht als finale Version erschienen, zumal er durch
-                    die Entwicklung von Linux im Grunde überflüssig wurde.
+                    Free Software Foundation (FSF, <a href="http://www.fsf.org"/>). Als Linus Torvalds mit der Arbeit an
+                    Linux begann, existierte bereits ein C-Compiler (der GNU C Compiler oder GCC); auch die meisten
+                    Standardbefehle waren bereits verfügbar. Die meisten GNU-Varianten der Unix-Programme sind
+                    inzwischen sogar leistungsfähiger als die ursprünglichen Versionen. Lediglich der lange geplante
+                    GNU-Kernel Hurd ist bis heute nicht als finale Version erschienen, zumal er durch die Entwicklung
+                    von Linux im Grunde überflüssig wurde.
                 </p>
                 <p>
                     Freie Software hat nicht nur etwas damit zu tun, dass die Programme kostenlos erhältlich sind,
@@ -620,8 +620,8 @@
                 <p>
                     Unix-Systeme bieten nur verhältnismäßig wenige, dafür aber sehr mächtige Systemaufrufe an. Einige
                     von ihnen sind auf Dateien und andere Ein- und Ausgabekanäle bezogen, beispielsweise
-                    <code>create()</code> zum Erzeugen einer neuen Datei,<code>open()</code> zum Öffnen,
-                    <code>read()</code> zum Lesen, <code>write()</code> zum Schreiben oder<code>close()</code> zum
+                    <code>create()</code> zum Erzeugen einer neuen Datei, <code>open()</code> zum Öffnen,
+                    <code>read()</code> zum Lesen, <code>write()</code> zum Schreiben oder <code>close()</code> zum
                     Schließen. Andere Systemaufrufe beschäftigen sich mit der Prozessverwaltung; zum Beispiel erzeugt
                     <code>fork()</code> einen neuen Prozess als Kopie des bestehenden, <code>kill()</code> sendet
                     Signale an Prozesse, und <code>shmget()</code> fordert das Shared Memory (gemeinsame
@@ -641,7 +641,7 @@
                     zu geben: Fast alle Betriebssysteme speichern Datum und Uhrzeit als die Anzahl der Sekunden seit
                     dem <code>01. Januar 1970, 00:00 Uhr UTC</code>. Dieses Datum wird als <code>EPOCH</code>
                     bezeichnet, weil es als der »epochemachende« Erfindungszeitpunkt von Unix gilt. Diese Art der
-                    Speicherung von Datum und Uhrzeit ist in der C-Bibliotheksdatei<code>time.h</code> definiert.
+                    Speicherung von Datum und Uhrzeit ist in der C-Bibliotheksdatei <code>time.h</code> definiert.
                 </p>
                 <p>
                     Unter Windows gibt es eine äußerst umfangreiche Betriebssystemschnittstelle, die Win32 API. Sie
@@ -713,10 +713,8 @@
                     Für macOS ist auch ein X-Server verfügbar, sodass der reichhaltige Bestand X-basierter Software, der
                     für andere Unix-Versionen vorhanden ist, bei Bedarf auch unter macOS zur Verfügung steht. Bis Mac
                     OS X 10.5 wurde die Software offiziell von Apple selbst angeboten und danach als Community Edition
-                    weitergeführt. Unter
-                    <a href="http://xquartz.macosforge.org/landing/">http://xquartz.macosforge.org/landing/</a> kann die
-                    Software heruntergeladen werden. Auch für Windows gibt es übrigens verschiedene X-Server von
-                    Drittanbietern.
+                    weitergeführt. Unter <a href="http://xquartz.macosforge.org/landing/"/> kann die Software
+                    heruntergeladen werden. Auch für Windows gibt es übrigens verschiedene X-Server von Drittanbietern.
                 </p>
             </chapter>
         </chapter>
@@ -774,14 +772,14 @@
                     <li>
                         Jeder Prozess besitzt einen Parent-Prozess. Dabei handelt es sich um denjenigen Prozess, der ihn
                         aufgerufen hat. Wenn der Parent-Prozess vor dem Child-Prozess beendet wird, wird das Child dem
-                        Ur-Prozess <code>init</code>zugewiesen. Auf diese Weise wird sichergestellt, dass Prozesse auch
+                        Ur-Prozess <code>init</code> zugewiesen. Auf diese Weise wird sichergestellt, dass Prozesse auch
                         weiterhin einen Parent-Prozess besitzen.
                     </li>
                     <li>
                         Wird ein Child-Prozess dagegen beendet, wird er nicht komplett aus dem Speicher und aus der
                         Prozesstabelle entfernt, sondern bleibt mit dem speziellen Status <code>defunct</code> (außer
                         Betrieb) als sogenannter Zombie-Prozess bestehen. In diesem Zustand bleiben die Zombies, bis der
-                        Parent-Prozess den Systemaufruf<code>waitpid()</code> durchführt; dies wird als Reaping (Ernte)
+                        Parent-Prozess den Systemaufruf <code>waitpid()</code> durchführt; dies wird als Reaping (Ernte)
                         bezeichnet. Auf diese Weise kann der Parent den Exit-Status seiner Child-Prozesse untersuchen.
                     </li>
                     <li>
@@ -829,7 +827,7 @@
                 </p>
                 <p>
                     Windows verwendet ein etwas komplexeres Prozessmodell. Vor allem wird ein neuer Prozess durch einen
-                    Systemaufruf namens<code>CreateProcess()</code> erzeugt, der keine exakte Kopie des aufrufenden
+                    Systemaufruf namens <code>CreateProcess()</code> erzeugt, der keine exakte Kopie des aufrufenden
                     Prozesses erzeugt, sondern einen »leeren« Prozess, dem anschließend eine Aufgabe zugewiesen werden
                     muss. Außerdem ist jeder Prozess im Benutzermodus mit einer numerischen Priorität ausgestattet.
                     Diese entscheidet im Zweifelsfall, welcher Prozess Vorrang hat. Die Liste der laufenden Prozesse
@@ -1180,8 +1178,8 @@
                     <code>info.txt</code> in <code>/home/felixrizzolli</code> zugreifen. Der Pfad dieser Datei kann
                     entweder absolut als <code>/home/felixrizzolli/info.txt</code> oder relativ (von
                     <code>/home/user</code> aus) als <code>../felixrizzolli/info.txt</code> angegeben werden. Die Angabe
-                    <code>..</code>spricht jeweils das übergeordnete Verzeichnis an; untergeordnete Verzeichnisse werden
-                    einfach mit ihrem Namen angegeben.
+                    <code>..</code> spricht jeweils das übergeordnete Verzeichnis an; untergeordnete Verzeichnisse
+                    werden einfach mit ihrem Namen angegeben.
                 </p>
                 <p>
                     »Geschwister«-Verzeichnisse, also nebengeordnete – in diesem Fall <code>user</code> und
@@ -1312,7 +1310,7 @@
 
                 <p>
                     Windows-Versionen ab Vista bezeichnen dagegen automatisch die Partition, auf der sich das
-                    Betriebssystem befindet, als<code>C:</code>. Auch andere Abweichungen von der genannten Reihenfolge
+                    Betriebssystem befindet, als <code>C:</code>. Auch andere Abweichungen von der genannten Reihenfolge
                     sind möglich, beispielsweise dann, wenn nachträglich die Partitionierung geändert oder ein
                     zusätzliches Laufwerk eingebaut wird. Unter Windows 10 und früheren Systemen der Windows-NT-Familie
                     können Sie die Zuordnung ohnehin mithilfe der Datenträgerverwaltung (Verwaltung • Computerverwaltung
@@ -1375,7 +1373,7 @@
                     Dateinamen können unter Windows bis zu <code>255</code> Zeichen lang sein; zwischen Groß- und
                     Kleinschreibung wird nicht unterschieden. Allerdings werden die Dateien genau mit der Groß- und
                     Kleinbuchstabenkombination gespeichert, die angegeben wurden. Eine Reihe von Zeichen ist in
-                    Dateinamen nicht zulässig, vor allem <code>:</code>, <code>\</code>,<code>/</code>, <code>?</code>,
+                    Dateinamen nicht zulässig, vor allem <code>:</code>, <code>\</code>, <code>/</code>, <code>?</code>,
                     <code>*</code>, <code>&lt;</code>, <code>&gt;</code> und <code>|</code>. Alle diese Zeichen besitzen
                     in Pfadangaben oder auf der Windows-Konsole besondere Bedeutungen.
                 </p>

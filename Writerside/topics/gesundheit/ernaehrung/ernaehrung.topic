@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic help-id="Ernährung"
        id="ernaehrung"
-       title="Ernährung" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       title="Ernährung" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="einleitung" title="Wir essen, um zu leben">
@@ -185,7 +186,7 @@
         </chapter>
 
         <chapter id="ernaehrungsempfehlungen-dge" title="10 Regeln der DGE">
-            <list style="decimal">
+            <list type="decimal">
                 <li>
                     <b>Lebensmittelvielfalt genießen</b>: Nutzen Sie die Lebensmittelvielfalt und essen Sie
                     abwechslungsreich. Wählen Sie überwiegend pflanzliche Lebensmittel.

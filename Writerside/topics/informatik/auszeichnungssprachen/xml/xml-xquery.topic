@@ -457,7 +457,7 @@
                 Werte zu vergleichen:
             </p>
 
-            <list style="decimal">
+            <list type="decimal">
                 <li>
                     Allgemeine Vergleiche: <code>=</code>, <code>!=</code>, <code>&lt;</code>, <code>&lt;=</code>,
                     <code>&gt;</code>, <code>&gt;=</code>
@@ -490,10 +490,10 @@
         <chapter id="benutzerdefiniert-syntax" title="Syntax">
             <code-block lang="xml">
                 declare function prefix:function_name($parameter as datatype)
-                as returnDatatype
-                {
-                ...function code here...
-                };
+                        as returnDatatype
+                        {
+                        ...function code here...
+                        };
             </code-block>
 
             <p>Hinweise zu benutzerdefinierten Funktionen:</p>
@@ -509,11 +509,11 @@
         <chapter id="benutzerdefiniert-beispiel" title="Beispiel">
             <code-block collapsed-title="Funktionsdeklaration" collapsible="true" lang="xml">
                 declare function local:minPrice($p as xs:decimal?,$d as xs:decimal?)
-                as xs:decimal?
-                {
-                let $disc := ($p * $d) div 100
-                return ($p - $disc)
-                };
+                        as xs:decimal?
+                        {
+                        let $disc := ($p * $d) div 100
+                        return ($p - $disc)
+                        };
             </code-block>
 
             <code-block collapsed-title="Anwendung der Funktion" collapsible="true" lang="xml">

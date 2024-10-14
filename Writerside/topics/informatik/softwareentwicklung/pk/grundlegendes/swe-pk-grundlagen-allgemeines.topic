@@ -3,7 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="swe-pk-grundlagen-allgemeines"
        title="Allgemeines über die Programmierung"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="geschichte" title="Geschichte zur Programmierung">
@@ -78,7 +79,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><a href="cobol.topic">COBOL</a></td>
+                    <td><a href="cobol.topic"/></td>
                     <td>1959</td>
                     <td>prozedural, objektorientiert</td>
                     <td>
@@ -160,7 +161,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><a href="sql.topic">SQL</a></td>
+                    <td><a href="sql.topic"/></td>
                     <td>1970</td>
                     <td>deklarativ</td>
                     <td>
@@ -200,7 +201,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><a href="java.topic">Java</a></td>
+                    <td><a href="java.topic"/></td>
                     <td>1990</td>
                     <td>objektorientiert</td>
                     <td>
@@ -216,7 +217,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><a href="python.topic">Python</a></td>
+                    <td><a href="python.topic"/></td>
                     <td>1991</td>
                     <td>multiparadigmatisch</td>
                     <td>
@@ -232,7 +233,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><a href="javascript.topic">JavaScript</a></td>
+                    <td><a href="javascript.topic"/></td>
                     <td>1995</td>
                     <td>objektorientiert, prozedural, funktional</td>
                     <td>
@@ -240,7 +241,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><a href="csharp.topic">C#</a></td>
+                    <td><a href="csharp.topic"/></td>
                     <td>2002</td>
                     <td>objektorientiert</td>
                     <td>
@@ -265,7 +266,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><a href="swift.topic">Swift</a></td>
+                    <td><a href="swift.topic"/></td>
                     <td>2014</td>
                     <td>multiparadigmatisch</td>
                     <td>
@@ -412,11 +413,11 @@
                 Bereich der hardwarenahen Entwicklung wie zum Beispiel Treiber, Betriebssysteme und Software für
                 eingebettete Systeme. C++ und Objective-C sind zwei objektorientierte Erweiterungen von C. C++ war sehr
                 lange die dominierende Sprache bei der Entwicklung von professionellen Anwendungen. Eine neuere
-                Sprachentwicklung ist <a href="java.topic">Java</a>. Java verzichtet gegenüber C++ auf das
-                fehleranfällige Zeigerkonzept. Die Plattformunabhängigkeit ermöglicht es, erstellte Anwendungen ohne
-                größere Änderungen in verschiedenen Systemumgebungen zu starten. Voraussetzung dafür ist, dass eine
-                Laufzeitumgebung auf dem Zielsystem vorhanden ist. Java wird auf Rechnern unterschiedlichster Kategorien
-                und Leistungsklassen angewendet.
+                Sprachentwicklung ist <a href="java.topic"/>. Java verzichtet gegenüber C++ auf das fehleranfällige
+                Zeigerkonzept. Die Plattformunabhängigkeit ermöglicht es, erstellte Anwendungen ohne größere Änderungen
+                in verschiedenen Systemumgebungen zu starten. Voraussetzung dafür ist, dass eine Laufzeitumgebung auf
+                dem Zielsystem vorhanden ist. Java wird auf Rechnern unterschiedlichster Kategorien und Leistungsklassen
+                angewendet.
             </p>
             <p>
                 Gehen wir noch einen Schritt in Richtung Zukunft: Weitere, neuere Sprachentwicklungen sind C# und F#,
@@ -425,13 +426,12 @@
                 Quasi-Standard für die Entwicklung von Anwendungen mit .Net dar. F# ist eine noch relativ junge
                 Programmiersprache, die das funktionale Paradigma in den Fokus rückt. Eine weitere wichtige
                 Programmiersprache – primär für die Entwicklung von dynamischen Web-Anwendungen – ist die Sprache
-                <a href="php.topic">PHP (PHP: Hypertext Preprocessor)</a>, die auch kontinuierlich weiterentwickelt
-                wird.
+                <a href="php.topic"/>, die auch kontinuierlich weiterentwickelt wird.
             </p>
             <p>
                 Die Entwicklung der Programmiersprachen hat auch in der jüngeren Zeit nicht aufgehört. Neue Sprachen
-                sind beispielsweise <a href="swift.topic">Swift</a> von Apple (2014), Go von Google (2009) und Rust von
-                Mozilla (2010).
+                sind beispielsweise <a href="swift.topic"/> von Apple (2014), Go von Google (2009) und Rust von Mozilla
+                (2010).
             </p>
         </chapter>
 
@@ -440,7 +440,7 @@
                 Programmiersprachen der vierten und höheren Generation unterliegen keinem speziellen Paradigma. Es
                 handelt sich um Sprachen mit einem höheren Abstraktionsniveau, die auf spezielle Anwendungsbereiche
                 ausgerichtet sind. In diese Kategorie fallen zum einen Skriptsprachen wie z.B.
-                <a href="sql.topic">SQL</a> (Datenbankabfragesprache) oder TeX bzw. <a href="latex.topic">LaTeX</a>
+                <a href="sql.topic"/> (Datenbankabfragesprache) oder TeX bzw. <a href="latex.topic"/>
                 (Seitenlayoutsprache). Zum anderen gehören deskriptive Sprachen dazu. Diese Sprachen dienen der
                 Beschreibung von Inhalten, weisen jedoch keine Programmlogik auf. Beispiele sind
                 <a href="xml.topic">XML</a> oder <a href="html.topic">HTML</a>.
