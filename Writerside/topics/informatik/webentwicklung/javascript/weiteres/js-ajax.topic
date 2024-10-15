@@ -979,7 +979,46 @@
         </chapter>
 
         <chapter id="abfragen-formulare-schicken" title="Formulare per Ajax abschicken">
+            <p>
+                Mit dem <code>FormData</code>-Objekt bietet JavaScript eine einfache Möglichkeit Formulardaten per Ajax
+                an einen Server zu schicken. Dem <code>FormData</code>-Object können mit der Methode
+                <code>append()</code> Eigenschaften und deren Werte hinzugefügt werden, oder es kann auch direkt bei der
+                Instanziierung ein Formular erhalten. Bevor es das <code>FormData</code>-Objekt gab, musste man manuell
+                die Werte aus dem entsprechenden Formular auslesen, daraus ein eigenes JavaScript-Objekt erstellen und
+                dieses dem Ajax-Aufruf übergeben.
+            </p>
 
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+                <![CDATA[
+                    'use strict';
+                    function init() {
+                      let formData = new FormData();
+                      formData.append('username', 'max.mustermann');
+                      formData.append('email', 'max.mustermann@javascripthandbuch.de');
+                      let request = new XMLHttpRequest();
+                      request.open('POST', 'register', true);
+                      request.send(formData);
+                    }
+                    document.addEventListener('DOMContentLoaded', init);
+                ]]>
+            </code-block>
+
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+                <![CDATA[
+                    'use strict';
+                    function init() {
+                      let form = document.getElementById('register');
+                      form.addEventListener('submit', (e) => {
+                        e.preventDefault();
+                        let formData = new FormData(form);
+                        let request = new XMLHttpRequest();
+                        request.open('POST', 'register', true);
+                        request.send(formData);
+                      });
+                    }
+                    document.addEventListener('DOMContentLoaded', init);
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="abfragen-daten-von-anderen-domains-laden" title="Daten von anderen Domains laden">
