@@ -832,7 +832,36 @@
         </chapter>
 
         <chapter id="abfragen-html" title="HTML-Daten per Ajax laden">
+            <tip>
+                <a href="html.topic"/>
+            </tip>
 
+            <p>
+                Nach erfolgreicher Anfrage (und erfolgreicher Antwort) kann innerhalb des entsprechenden Event-Handlers
+                bzw. Event-Listeners für das <code>load</code>-Event die Eigenschaft <code>responseText</code> des
+                Anfrageobjekts auszulesen. Diese enthält den »Körper« der vom Server zurückgesendeten Antwort als
+                Zeichenkette (sprich die übertragenen Daten ohne Kopfdaten wie Header etc.). Außerdem sollten der Header
+                Accept auf <code>text/html</code>gesetzt werden, damit nur Antworten vom Server akzeptiert werden, die
+                auch HTML enthalten. Indem für die Eigenschaft <code>responseType</code> der Wert
+                <code>'document'</code> gesetzt wird, wird die Antwort direkt in ein Objekt vom Typ<code>Document</code>
+                geparst.
+            </p>
+
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+                <![CDATA[
+                    'use strict';
+                    let request = new XMLHttpRequest();
+                    request.onload = (e) => {
+                      if(request.status === 200) {
+                        let html = request.responseText;
+                      }
+                    };
+                    request.open('GET', 'content/snippet.html');
+                    request.responseType = 'document';
+                    request.setRequestHeader('Accept', 'text/html');
+                    request.send();
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="abfragen-xml" title="XML-Daten per Ajax laden">
