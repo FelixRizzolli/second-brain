@@ -3,7 +3,51 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="js-apis-canvas"
        title="Die Canvas API"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <!-- TODO: migrate from Confluence -->
+    <chapter id="zeichenflaeche" title="Die Zeichenfläche">
+
+    </chapter>
+
+    <chapter id="rendering-kontext" title="Der Rendering-Kontext">
+
+    </chapter>
+
+    <chapter id="rechtecke" title="Rechtecke zeichnen">
+
+    </chapter>
+
+    <chapter id="pfade" title="Pfade verwenden">
+
+    </chapter>
+
+    <chapter id="texte" title="Texte zeichnen">
+
+    </chapter>
+
+    <chapter id="farbverlaeufe" title="Farbverläufe zeichnen">
+
+    </chapter>
+
+    <chapter id="speichern-und-wiederherstellen" title="Speichern und Wiederherstellen des Canvas-Zustands">
+
+    </chapter>
+
+    <chapter id="transformation" title="Transformationen anwenden">
+
+    </chapter>
+
+    <chapter id="animation" title="Animationen erstellen">
+
+    </chapter>
+
+    <chapter id="quellen" title="Quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript", Philip Ackermann, 2019
+        </tip>
+    </chapter>
 </topic>
