@@ -3,7 +3,70 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="js-jquery"
        title="jQuery"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <chapter id="einfuehrung" title="Einführung">
+
+        <chapter id="einfuehrung-jquery-einbinden" title="jQuery einbinden">
+
+        </chapter>
+
+        <chapter id="einfuehrung-grundlegendes" title="Grundlegendes">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="dom" title="Mit dem DOM arbeiten">
+
+        <chapter id="dom-selektion-von-elementen" title="Selektion von Elementen">
+
+        </chapter>
+
+        <chapter id="dom-zugriff-auf-inhalte" title="Zugriff auf Inhalte und Verändern von Inhalten">
+
+        </chapter>
+
+        <chapter id="dom-filtern-von-selektierten-elementen" title="Filtern von selektierten Elementen">
+
+        </chapter>
+
+        <chapter id="dom-zugriff-auf-attribute" title="Zugriff auf Attribute">
+
+        </chapter>
+
+        <chapter id="dom-zugriff-auf-css-eigenschaften" title="Zugriff auf CSS-Eigenschaften">
+
+        </chapter>
+
+        <chapter id="dom-navigieren-zwischen-elementen" title="Navigieren zwischen Elementen">
+
+        </chapter>
+
+        <chapter id="dom-verwenden-von-elementen" title="Verwenden von Effekten">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="auf-ergebnisse-reagieren" title="Auf Ereignisse reagieren">
+
+    </chapter>
+
+    <chapter id="ajax-anfragen" title="Ajax-Anfragen erstellen">
+        <tip>
+            <a href="js-ajax.topic"/>
+        </tip>
+
+        <chapter id="ajax-anfragen-erstellen" title="Ajax-Anfragen erstellen">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="quellen" title="Quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript", Philip Ackermann, 2019
+        </tip>
+    </chapter>
 </topic>
