@@ -1022,7 +1022,100 @@
         </chapter>
 
         <chapter id="abfragen-daten-von-anderen-domains-laden" title="Daten von anderen Domains laden">
+            <img alt="Daten von anderen Domains laden" src="js-ajax-abfragen-daten-laden-domains.png"/>
 
+            <p>
+                Aus Sicherheitsgründen ist es nicht möglich, Daten per Ajax von einer anderen Domain zu laden als von
+                der, von der auch der JavaScript-Code geladen wurde, d.h., sogenannte Cross-Origin-Requests sind nicht
+                erlaubt. Der Grund dafür ist vor allem, zu verhindern, dass auf diese Weise bösartiger Code von anderen
+                Domains geladen wird. Es gibt aber drei verschiedene Techniken, die es dennoch ermöglichen, Daten von
+                anderen Domains zu laden:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    Daten von anderen Servern per Proxy laden
+                </li>
+                <li>
+                    Daten von anderen Servern per CORS laden
+                </li>
+                <li>
+                    Daten von anderen Servern per JSONP laden
+                </li>
+            </list>
+
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Daten von anderen Servern per Proxy laden
+                    </td>
+                    <td>
+                        Daten von anderen Servern per CORS laden
+                    </td>
+                    <td>
+                        Daten von anderen Servern per JSONP laden
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img alt="Daten von anderen Servern per Proxy laden"
+                             src="js-ajax-abfragen-daten-laden-proxy.png"/>
+                    </td>
+                    <td>
+                        <img alt="Daten von anderen Servern per CORS laden"
+                             src="js-ajax-abfragen-daten-laden-cors.png"/>
+                    </td>
+                    <td>
+                        <img alt="Daten von anderen Servern per JSONP laden"
+                             src="js-ajax-abfragen-daten-laden-jsonp.png"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Bei einem Proxy handelt es sich um eine Komponente auf einem Server innerhalb der (eigenen)
+                            Domain, von der auch der JavaScript-Code geladen wurde und die, die Verbindung zu der
+                            (fremden) Domain herstellt, von der die anderen Daten geladen werden sollen.
+                        </p>
+                        <p>
+                            Statt jetzt die Daten per Ajax direkt von der anderen Domain zu laden, stellt man die
+                            Anfragen an den Proxy. Dieser wiederum stellt basierend auf dieser Anfrage eine eigene
+                            Anfrage an die andere Domain (serverseitig gibt es bezüglich des Zugriffs auf andere Domains
+                            in der Regel nämlich keine Einschränkungen). Die Antwort dieser Anfrage verarbeitet der
+                            Proxy dann und leitet sie als Antwort auf die ursprüngliche Anfrage vom Client an diesen
+                            weiter.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Beim CORS-Prinzip (Cross-Origin-Resource-Sharing) wird zunächst durch den Client eine
+                            sogenannte Voranfrage (Preflight-Request) an die fremde Domain gestellt, wobei implizit
+                            durch den Browser ein (nicht veränderbarer) zusätzlicher Header Origin mitgeschickt wird,
+                            welcher angibt, von welcher Domain der JavaScript-Code, der die Anfrage stellt, geladen
+                            wurde. Zusätzlich wird dabei der Header Access-Control-Request-Method auf den Wert
+                            <code>OPTION</code> gesetzt.
+                        </p>
+                        <p>
+                            Der Server auf der fremden Domain teilt dann in einer sogenannten Vorantwort
+                            (Preflight-Response) mit, ob die Daten von dort geladen werden dürfen. Konkret sendet der
+                            Server dabei den Header Access-Control-Allow-Origin. Nur wenn die Domain, von der aus per
+                            JavaScript die Anfrage gestellt werden soll, als Wert in diesem Header auftaucht, wird
+                            anschließend die eigentliche Anfrage gestellt und die eigentliche Antwort gesendet.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Bei JSONP (JSON with Padding) macht man sich die Tatsache zunutze, dass über das
+                            <code>&lt;script&gt;</code>-Element JavaScript-Code von beliebigen anderen Domains geladen
+                            werden kann. Im Wesentlichen lädt man über das <code>&lt;script&gt;</code>-Element zwei
+                            JavaScript-Dateien. Die Datei, die von der eigenen Domain geladen wird, definiert eine
+                            Funktion, die bestimmte Daten erwartet. Die Datei wiederum, die von der fremden Domain
+                            geladen wird, ruft diese Funktion mit entsprechenden Daten auf. Innerhalb der Funktion hat
+                            man dann wie gewohnt Zugriff auf die Daten.
+                        </p>
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter id="abfragen-fetch-api" title="Die neuere Alternative zu »XMLHttpRequest«: die Fetch API">
