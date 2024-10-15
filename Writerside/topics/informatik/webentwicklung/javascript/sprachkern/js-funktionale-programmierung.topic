@@ -3,7 +3,129 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="js-funktionale-programmierung"
        title="Funktionale Programmierung"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+
+    <!-- TODO: migrate from Confluence -->
+    <chapter id="grundlagen" title="Grundlegendes – ein kurzer Überblick">
+
+    </chapter>
+
+    <chapter id="besonderheiten" title="Die Besonderheiten von Funktionen in JavaScript">
+
+        <chapter id="besonderheiten-first-class-objekte" title="Funktionen als First-Class-Objekte">
+
+        </chapter>
+
+        <chapter id="besonderheiten-kontext" title="Funktionen haben einen Kontext">
+
+        </chapter>
+
+        <chapter id="besonderheiten-sichtbarkeitsbereich" title="Funktionen definieren einen Sichtbarkeitsbereich">
+
+            <chapter id="besonderheiten-sichtbarkeitsbereich-hoisting" title="Hoisting">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="besonderheiten-alternativen-zu-ueberladen-von-methoden"
+                 title="Alternativen zum Überladen von Methoden">
+
+        </chapter>
+
+        <chapter id="besonderheiten-konstruktorfunktionen" title="Funktionen als Konstruktorfunktionen">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="standardmethoden" title="Standardmethoden jeder Funktion">
+
+    </chapter>
+
+    <chapter id="funktional" title="Einführung in die funktionale Programmierung">
+
+        <chapter id="funktional-eigenschaften" title="Eigenschaften funktionaler Programmierung">
+
+        </chapter>
+
+        <chapter id="funktional-unterschied-zu-oop" title="Unterschied zur objektorientierten Programmierung">
+
+        </chapter>
+
+        <chapter id="funktional-unterschied-zu-imperativ" title="Unterschied zur imperativen Programmierung">
+
+        </chapter>
+
+        <chapter id="funktional-programmiersprachen-und-javascript"
+                 title="Funktionale Programmiersprachen und JavaScript">
+
+        </chapter>
+    </chapter>
+
+    <!-- fum - frequently used methods -->
+    <chapter id="fum" title="Häufig verwendete funktionale Methoden">
+
+        <chapter id="fum-foreach" title="Beispiel forEach()">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="techniken" title="Funktionale Techniken">
+
+        <chapter id="techniken-komposition" title="Komposition">
+
+        </chapter>
+
+        <chapter id="techniken-rekursion" title="Rekursion">
+
+        </chapter>
+
+        <chapter id="techniken-closures" title="Closures">
+
+        </chapter>
+
+        <chapter id="techniken-partielle-auswertung" title="Partielle Auswertung">
+
+        </chapter>
+
+        <chapter id="techniken-currying" title="Currying">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="design-patterns" title="Funktionale Entwurfsmuster">
+
+        <chapter id="design-patterns-iife" title="Das IIFE-Entwurfsmuster">
+
+        </chapter>
+
+        <chapter id="design-patterns-callback" title="Das Callback-Entwurfsmuster">
+
+        </chapter>
+
+        <chapter id="design-patterns-self-defining-functions" title="Self-defining Functions">
+
+            <chapter id="design-patterns-self-defining-functions-lazy-instantiation"
+                     title="Selbstüberschreibende Funktionen zur Emulation von Lazy Instantiation">
+
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter id="reaktiv" title="Funktionale reaktive Programmierung">
+
+        <chapter id="reaktiv-reactivex-und-rxjs" title="ReactiveX und RxJS">
+
+        </chapter>
+    </chapter>
+
+
+    <chapter id="quellen" title="Quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript", Philip Ackermann, 2019
+        </tip>
+    </chapter>
 </topic>
