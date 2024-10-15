@@ -3,7 +3,104 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="js-apis"
        title="Moderne Web-APIs"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <!-- TODO: migrate from Confluence -->
+    <chapter id="overview" title="Übersicht">
+
+    </chapter>
+
+    <chapter id="w3c-vs-whatwg" title="W3C vs. WHATWG">
+
+    </chapter>
+
+    <chapter id="kommunikation" title="Über JavaScript kommunizieren">
+
+        <chapter id="kommunikation-unidirektional" title="Unidirektionale Kommunikation mit dem Server">
+
+        </chapter>
+
+        <chapter id="kommunikation-bidirektional" title="Bidirektionale Kommunikation mit einem Server">
+
+        </chapter>
+
+        <chapter id="kommunikation-vom-server-ausgehend" title="Vom Server ausgehende Kommunikation">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="cookies" title="Cookies – Nutzer wiedererkennen">
+
+    </chapter>
+
+    <chapter id="web-storage-api" title="Den Browserspeicher nutzen">
+
+    </chapter>
+
+    <chapter id="indexed-database-api" title="Die Browserdatenbank nutzen">
+
+    </chapter>
+
+    <chapter id="file-api" title="Auf das Dateisystem zugreifen">
+
+        <chapter id="file-api-lesen" title="Lesen von Dateien">
+
+        </chapter>
+
+        <chapter id="file-api-lesefortschritt-ueberwachen" title="Den Lesefortschritt überwachen">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="drag-and-drop-api" title="Komponenten einer Webseite verschieben">
+
+    </chapter>
+
+    <chapter id="parallelisieren" title="Aufgaben parallelisieren">
+
+        <chapter id="parallelisieren-web-worker-prinzip" title="Das Prinzip von Web Workern">
+
+        </chapter>
+
+        <chapter id="parallelisieren-web-worker-verwenden" title="Web Worker verwenden">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="geolocation-api" title="Den Standort von Nutzern ermitteln">
+
+    </chapter>
+
+    <chapter id="battery-status-api" title="Den Batteriestand eines Endgeräts auslesen">
+
+    </chapter>
+
+    <chapter id="web-speech-api" title="Sprache ausgeben und Sprache erkennen">
+
+    </chapter>
+
+    <chapter id="web-animation-api" title="Animationen erstellen">
+
+    </chapter>
+
+    <chapter id="internationalization-api" title="Mehrsprachige Anwendungen entwickeln">
+
+    </chapter>
+
+    <chapter id="quellen" title="Quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript", Philip Ackermann, 2019
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.w3schools.com/js/js_cookies.asp"/>, 2023-08-10 16:00
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie"/>, 2023-08-10 16:30
+        </tip>
+    </chapter>
 </topic>
