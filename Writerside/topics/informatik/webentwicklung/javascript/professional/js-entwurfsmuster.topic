@@ -3,7 +3,67 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="js-entwurfsmuster"
        title="Entwurfsmuster"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <!-- TODO: migrate from Confluence -->
+
+    <chapter id="object-factory" title="Object Factory">
+
+    </chapter>
+
+    <chapter id="deep-clone" title="Deep Clone">
+
+    </chapter>
+
+    <chapter id="namespaces-modules" title="Namespaces &amp; Modules">
+
+        <chapter id="namespaces-namenskonflikte" title="Namenskonflikte">
+
+            <chapter id="namespaces-namenskonflikte-design-pattern" title="Das Namespace-Entwurfsmuster">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="modules" title="Module definieren und verwenden">
+
+            <chapter id="modules-design-pattern" title="Das Module-Entwurfsmuster">
+
+                <chapter id="modules-design-pattern-revealing-module" title="Das Revealing-Module-Entwurfsmuster">
+
+                </chapter>
+
+                <chapter id="modules-design-pattern-module-augmentation" title="Module Augmentation">
+
+                </chapter>
+            </chapter>
+
+            <chapter id="modules-amd" title="AMD">
+
+            </chapter>
+
+            <chapter id="modules-commonjs" title="CommonJS">
+
+            </chapter>
+
+            <chapter id="modules-native" title="Native Module">
+
+                <chapter id="modules-native-definieren" title="Module definieren">
+
+                </chapter>
+
+                <chapter id="modules-native-importieren" title="Module importieren">
+
+                </chapter>
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter id="quellen" title="Quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript", Philip Ackermann, 2019
+        </tip>
+    </chapter>
 </topic>
