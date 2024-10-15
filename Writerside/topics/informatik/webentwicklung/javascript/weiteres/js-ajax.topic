@@ -908,7 +908,50 @@
         </chapter>
 
         <chapter id="abfragen-json" title="JSON-Daten per Ajax laden">
+            <tip>
+                <a href="json.topic"/>
+            </tip>
 
+            <p>
+                Das Format JSON eignet sich, sehr gut für die direkte Verwendung in JavaScript-Anwendungen.
+            </p>
+
+            <p>
+                Beim Verarbeiten der Antwort vom Server innerhalb des <code>onload</code>-Event-Handlers sollte man, um
+                an ein JSON-Objekt zu gelangen, dann die Eigenschaft <code>responseType</code> auslesen. Enthält diese
+                den Wert <code>json</code>, kann direkt über die Eigenschaft <code>response</code> des Anfrageobjekts
+                auf die Antwort bzw. das JSON-Objekt zugegriffen werden. Ist der Wert der Eigenschaft dagegen nicht
+                <code>json</code> (d.h., der Browser unterstützt diesen Wert nicht), muss man einen kleinen Umweg gehen
+                und den Inhalt der Eigenschaft <code>responseText</code> über die Methode <code>parse()</code> manuell
+                in ein JSON-Objekt umwandeln.
+            </p>
+
+            <p>
+                Als Wert für den <code>Accept</code>-Header sollte beim Abfragen von JSON-Daten
+                <code>application/json</code> verwendet werden, um nur solche Daten vom Server zu akzeptieren, die auch
+                wirklich vom Typ JSON sind.
+            </p>
+
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+                <![CDATA[
+                    'use strict';
+                    let request = new XMLHttpRequest();
+                    request.onload = () => {
+                      if(request.status === 200) {
+                        let json;
+                        if (request.responseType === 'json') {
+                          json = request.response;
+                        } else {
+                          json = JSON.parse(request.responseText);
+                        }
+                      }
+                    };
+                    request.open('GET', 'data/content.json', true);
+                    request.responseType = 'json';
+                    request.setRequestHeader('Accept', 'application/json');
+                    request.send();
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="abfragen-daten-schicken" title="Daten per Ajax an den Server schicken">
