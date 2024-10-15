@@ -955,7 +955,27 @@
         </chapter>
 
         <chapter id="abfragen-daten-schicken" title="Daten per Ajax an den Server schicken">
+            <p>
+                Über die HTTP-Methode POST anstatt GET können Daten an den Server gesendet werden. Auch hierbei kann das
+                Format frei gewählt werden. In der Regel wird das JSON-Format gewählt, da es sich sehr leicht mit
+                JavaScript erzeugen lässt.
+            </p>
 
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+                <![CDATA[
+                    'use strict';
+                    let newArtist = { "name": "Deltron 3030", "albums": [ /* */ ] };
+                    let request = new XMLHttpRequest();
+                    request.onload = () => {
+                      if(request.status === 200) {
+                        console.log('Daten erfolgreich versendet.');
+                      }
+                    };
+                    request.open('POST', 'artists/create');
+                    request.setRequestHeader('Content-Type', 'application/json');
+                    request.send(newArtist);
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="abfragen-formulare-schicken" title="Formulare per Ajax abschicken">
