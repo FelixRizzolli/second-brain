@@ -865,7 +865,46 @@
         </chapter>
 
         <chapter id="abfragen-xml" title="XML-Daten per Ajax laden">
+            <tip>
+                <a href="xml.topic"/>
+            </tip>
 
+            <p>
+                Oft ist es sinnvoller, Daten nicht im HTML-Format vom Server zu laden, sondern das Erzeugen des
+                HTML-Codes auf Clientseite zu übernehmen. Möchte man beispielsweise verschiedene Datensätze aus einer
+                Datenbank auslesen und in einer HTML-Tabelle darstellen, ist es wenig sinnvoll, die HTML-Tabelle erst
+                serverseitig zu generieren und dann an den Client zurückzusenden. Besser ist es, nur die einzelnen
+                Datensätze vom Server zu holen – beispielsweise in Form eines XML-Dokuments – und die Generierung der
+                HTML-Tabelle auf Clientseite durchzuführen. Dies gewährleistet eine saubere Trennung zwischen den Daten
+                und dem HTML-Code.
+            </p>
+
+            <p>
+                Prinzipiell erkennt der Browser anhand des vom Server in der HTTP-Antwort zurückgesendeten MIME-Typs,
+                dass es sich bei dem zurückgesendeten Inhalt um Daten im XML-Format handelt. Der automatischen Erkennung
+                kann aber ein wenig nachgeholfen werden, indem der Eigenschaft <code>repsonseType</code> der Wert
+                <code>document</code> zugewiesen wird. Innerhalb des Event-Handlers/Event-Listeners steht dann das
+                geparste XML über die Eigenschaft <code>responseXML</code> in Form eines Objekts vom Typ
+                <code>Document</code> zur Verfügung. Außerdem sollte der Header Accept auf den Wert
+                <code>text/xml</code> oder <code>application/xml</code>gesetzt werden, um nur Daten im XML-Format zu
+                akzeptieren.
+            </p>
+
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+                <![CDATA[
+                    'use strict';
+                    let request = new XMLHttpRequest();
+                    request.onload = (e) => {
+                      if(request.status === 200) {
+                        let xml = request.responseXML;
+                      }
+                    };
+                    request.open('GET', 'content/data.xml');
+                    request.responseType = 'document';
+                    request.setRequestHeader('Accept', 'text/xml');
+                    request.send(null);
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="abfragen-json" title="JSON-Daten per Ajax laden">
