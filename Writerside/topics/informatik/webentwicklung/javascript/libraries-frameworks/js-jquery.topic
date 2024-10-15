@@ -517,7 +517,106 @@
     </chapter>
 
     <chapter id="auf-ergebnisse-reagieren" title="Auf Ereignisse reagieren">
+        <p>
+            Für das Abfangen von Events gibt es verschiedene Möglichkeiten gibt: Zum einen stehen in der Regel
+            Event-Handler für das entsprechende Event zur Verfügung, zum anderen gibt es die Möglichkeit, über die
+            Methode <code>addEventListener()</code> für ein Event gleich mehrere Event-Listener zu registrieren, und
+            darüber hinaus verwenden ältere Versionen des Internet Explorers die Methode <code>attachEvent()</code>, die
+            Ähnliches leistet. Die Bibliothek jQuery bietet browserunabhängige Lösungen an. Insgesamt lassen sich die
+            Event-Methoden wie folgt einteilen:
+        </p>
 
+        <table style="header-row">
+            <tr>
+                <td>
+                    Kategorie
+                </td>
+                <td>
+                    Link
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    allgemeine Event-Methoden
+                </td>
+                <td>
+                    <a href="https://api.jquery.com/category/events/event-handler-attachment/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Event-Methoden für das Behandeln von allgemeinen Events
+                </td>
+                <td>
+                    <a href="https://api.jquery.com/category/events/browser-events/"/>
+                    <br/>
+                    <a href="https://api.jquery.com/category/events/document-loading/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Event-Methoden für das Behandeln von Maus-Events
+                </td>
+                <td>
+                    <a href="https://api.jquery.com/category/events/mouse-events/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Event-Methoden für das Behandeln von Tastatur-Events
+                </td>
+                <td>
+                    <a href="https://api.jquery.com/category/events/keyboard-events/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Event-Methoden für das Behandeln von Formular-Events
+                </td>
+                <td>
+                    <a href="https://api.jquery.com/category/events/form-events/"/>
+                </td>
+            </tr>
+        </table>
+
+        <code-block collapsed-title="Beispiel für Tastatur-Events" collapsible="true" lang="javascript">
+            <![CDATA[
+                $('input#username')
+                  .keypress((event) => {
+                    console.log('Taste zur Eingabe des Nutzernamens gedrückt.');
+                  })
+                  .keydown((event) => {
+                    console.log('Taste wird gedrückt.');
+                  })
+                  .keyup((event) => {
+                    console.log('Taste zur Eingabe des Nutzernamens losgelassen.');
+                  });
+            ]]>
+        </code-block>
+
+        <p>
+            Das Event-Objekt, welches innerhalb jedes Event-Listeners als Parameter zur Verfügung steht, enthält
+            verschiedene Informationen und stellt verschiedene Methoden zur Verfügung. Im Prinzip sind dies die
+            Informationen, die auch im Standard-Event-Objekt sind, ergänzt durch ein paar weitere Angaben. Aber auch
+            hier gilt: jQuery verbirgt die browserspezifischen Details und ermöglicht so einen browserunabhängigen
+            Einsatz. Mehr dazu: <a href="https://api.jquery.com/category/events/event-object/"/>
+        </p>
+
+        <code-block collapsed-title="Beispiel für Maus-Events" collapsible="true" lang="javascript">
+            <![CDATA[
+                $('input').on(
+                  'change,
+                  { value : 4711  },                   // Datenobjekt
+                  (event) => {
+                    console.log(event.currentTarget);  // aktuelles Element
+                    console.log(event.data);           // Datenobjekt
+                    console.log(event.data.value);     // Eigenschaft des Datenobjekts
+                    console.log(event.pageX);          // x-Position Maus
+                    console.log(event.pageY);          // y-Position Maus
+                  }
+                );
+            ]]>
+        </code-block>
     </chapter>
 
     <chapter id="ajax-anfragen" title="Ajax-Anfragen erstellen">
