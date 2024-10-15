@@ -350,9 +350,485 @@
     </chapter>
 
     <chapter id="abfragen" title="Anfragen per Ajax stellen">
-
         <chapter id="abfragen-xmlhttprequest" title="Das »XMLHttpRequest«-Objekt">
+            <p>
+                Die Basis für alle Arten von Ajax-Anfragen bildet das Objekt XMLHttpRequest, welches ursprünglich von
+                Microsoft entwickelt und im Laufe der Zeit von den anderen Browserherstellern übernommen wurde.
+                Mittlerweile arbeitet man sogar beim W3C an einer Standardisierung dieses Objekts (siehe
+                <a href="https://www.w3.org/TR/XMLHttpRequest/"/>).
+            </p>
 
+            <p>
+                Der Ablauf bei der Formulierung einer Ajax-Anfrage ist unter Verwendung des XMLHttpRequest-Objekts immer
+                ähnlich und besteht aus den folgenden Schritten:
+            </p>
+
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Methode
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            abort()
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Bricht eine Anfrage ab.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            getAllResponseHeaders()
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Gibt alle Header der HTTP-Antwort als Zeichenkette zurück.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            getResponseHeader(header)
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Gibt für den Namen eines Headers den entsprechenden Wert zurück.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            open(method, url, async, user, password)
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Startet eine Anfrage. Übergeben werden dabei die zu verwendende HTTP-Methode (z. B. GET oder
+                            POST), die URL, an welche die Anfrage gesendet werden soll, ein boolescher Wert, der angibt,
+                            ob die Anfrage synchron (false) oder asynchron (true) stattfinden soll, und eventuell
+                            Nutzernamen und Passwort für zugriffsgeschützte URLs.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            overrideMimeType(mime)
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Überschreibt den vom Server zurückgegebenen MIME-Typ.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            send()
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Sendet eine Anfrage.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            send(data)
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Sendet eine Anfrage und sendet die übergebenen Daten, beispielsweise Formulardaten.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            setRequestHeader(header, value)
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Setzt den Wert für den angegebenen Header.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Eigenschaft
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            onabort
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Event-Handler, der aufgerufen wird, wenn eine Anfrage über die Methode <code>abort()</code>
+                            abgebrochen wurde
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            onerror
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Event-Handler, der aufgerufen wird, wenn ein Fehler aufgetreten ist
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            onload
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Event-Handler, der aufgerufen wird, wenn die Anfrage erfolgreich ausgeführt wurde und die
+                            Antwort bereitsteht
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            onloadend
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Event-Handler, der aufgerufen wird, nachdem die Anfrage erfolgreich ausgeführt wurde
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            onloadstart
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Event-Handler, der aufgerufen wird, nachdem die Anfrage gestartet wurde
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            onprogress
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Event-Handler, der bei Fortschritt der Anfrage aufgerufen wird
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            onreadystatechange
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Event-Handler, der bei Zustandsänderungen der Anfrage aufgerufen wird
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            ontimeout
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Event-Handler, der aufgerufen wird, falls die Anfrage aufgrund eines Timeouts abgebrochen
+                            wurde
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            readyState
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Enthält den aktuellen Zustand der Anfrage codiert als Zahlenwert.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            response
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Enthält den »Körper« der Antwort, entweder vom Typ <code>ArrayBuffer</code>,
+                            <code>Blob</code> oder <code>Document</code>, ein JSON-Objekt, eine Zeichenkette oder null
+                            für den Fall, dass die Anfrage noch nicht abgeschlossen ist oder nicht erfolgreich war.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            responseText
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Enthält die Antwort als Zeichenkette oder den Wert null, falls die Anfrage noch nicht
+                            abgeschlossen ist oder nicht erfolgreich war.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            responseType
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Über diese Eigenschaft kann bestimmt werden, welchen Datentyp die Antwort haben soll. Kann
+                            einen von folgenden Werten haben (in Klammern steht dabei jeweils der Typ der Antwort).
+                        </p>
+                        <list type="bullet">
+                            <li>
+                                leere Zeichenkette (<code>String</code>)
+                            </li>
+                            <li>
+                                <code>arraybuffer</code> (<code>ArrayBuffer</code>)
+                            </li>
+                            <li>
+                                <code>blob</code> (<code>Blob</code>)
+                            </li>
+                            <li>
+                                <code>document</code> (<code>Document</code>)
+                            </li>
+                            <li>
+                                <code>json</code> (JavaScript-Objekt, welches aus der Antwort geparst wurde)
+                            </li>
+                            <li>
+                                <code>text</code> (<code>String</code>)
+                            </li>
+                        </list>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            responseXML
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Enthält die Antwort als Objekt vom Typ <code>Document</code>.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            status
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Enthält den HTTP-Statuscode der Anfrage (z.B. <code>200</code>).
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            statusText
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Enthält neben dem HTTP-Statuscode auch die Statusmeldung (z.B. <code>200 OK</code>).
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            timeout
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Über diese Eigenschaft kann die Anzahl an Millisekunden definiert werden, die eine Anfrage
+                            dauern darf, bevor sie durch einen Timeout abgebrochen wird.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            upload
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Event-Handler, über den beim Hochladen von Daten der Status mitverfolgt werden kann.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            withCredentials
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Über diese Eigenschaft lässt sich definieren, ob Anfragen mit Credentials wie beispielsweise
+                            Cookies oder Autorisierungs-Headern durchgeführt werden sollen.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Event-Listener
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            loadstart
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Anfrage gestartet
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            progress
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Fortschritt
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            abort
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Anfrage abgebrochen
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            error
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Fehler bei der Anfrage
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            load
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Antwort geladen
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            timeout
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Anfrage wegen Timeout abgebrochen
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            loadend
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Anfrage beendet
+                        </p>
+                    </td>
+                </tr>
+            </table>
+
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+                <![CDATA[
+                request.addEventListener('loadstart', (event) => { /* ... */ });
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="abfragen-html" title="HTML-Daten per Ajax laden">
