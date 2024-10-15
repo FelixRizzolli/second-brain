@@ -1119,7 +1119,69 @@
         </chapter>
 
         <chapter id="abfragen-fetch-api" title="Die neuere Alternative zu »XMLHttpRequest«: die Fetch API">
+            <p>
+                Eine neuere Alternative zum <code>XMLHttpRequest</code>-Objekt ist die Fetch API
+                (<a href="https://fetch.spec.whatwg.org"/>). Ausgangspunkt ist die globale (bzw. auf dem
+                <code>window</code>-Objekt definierte) Funktion <code>fetch()</code>, die alle Arten asynchroner
+                Anfragen (<code>GET</code>, <code>POST</code> etc.) abstrahiert und ein sogenanntes
+                <code>Promise</code>-Objekt zurückgibt (mehr Promises hier: <a href="js-ecmascript.topic"/>). Auf diesem
+                Objekt lassen sich anschließend die Methoden <code>then()</code> und <code>catch()</code> aufrufen, um
+                Callbacks für Ergebnisbehandlung und Fehlerbehandlung zu definieren, sprich für die Fälle, wenn die
+                Antwort erfolgreich vom Server geladen wurde <code>then()</code> oder wenn ein Fehler aufgetreten
+                ist<code>catch()</code>.
+            </p>
 
+            <p>
+                Der Aufruf von <code>response.json()</code> innerhalb des Callbacks für die Methode <code>then()</code>
+                erzeugt dabei im Beispiel einen sogenannten Stream, über den sich der Inhalt der HTTP-Antwort als JSON
+                auslesen lässt. Neben JSON-Streams stehen weitere Streams für Array-Buffer (über die Methode
+                <code>arrayBuffer()</code>), Binary Large Objects (kurz Blobs, über die Methode <code>blob()</code>),
+                Formulardaten (über die Methode<code>formData()</code>) und reinen Text (über die Methode
+                <code>text()</code>) zur Verfügung.
+            </p>
+
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+                <![CDATA[
+                    'use strict';
+                    function init() {  // 1.) Abfrage der Datei artists.json
+                      fetch('artists.json')
+                        .then(function(response) {
+                          // 2.) Umwandeln der Antwort in ein JavaScript-Objekt
+                          return response.json();
+                        })
+                        .then(function(result) {
+                          // 3.) Auswerten des umgewandelten JavaScript-Objekts
+                          let artists = result.artists;
+                          /* ... */
+                        })
+                        .catch(function(error) {
+                          console.error(error);
+                        });
+                    }
+                ]]>
+            </code-block>
+
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+                <![CDATA[
+                    'use strict';
+                    fetch('register',
+                      {
+                        method: 'post',
+                        headers: {
+                          'Accept': 'application/json',
+                          'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({})
+                      })
+                      .then(function (response) {
+                        console.log(response);
+                      })
+                      .catch(function (error) {
+                        console.error(error);
+                      }
+                    );
+                ]]>
+            </code-block>
         </chapter>
     </chapter>
 
