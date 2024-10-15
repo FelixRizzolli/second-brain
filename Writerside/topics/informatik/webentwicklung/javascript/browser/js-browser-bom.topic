@@ -3,7 +3,80 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="js-browser-bom"
        title="Browser und BOM (Browser Object Model)"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <!-- TODO: migrate from Confluence -->
+    <chapter id="bom" title="Das BOM (Browser Object Model)">
+
+    </chapter>
+
+    <chapter id="browserinformationen" title="Browserfensterinformationen">
+
+        <chapter id="browserinformationen-gruesse-und-position-eines-browserfensters"
+                 title="Größe und Position eines Browserfensters">
+
+        </chapter>
+
+        <chapter id="browserinformationen-anzeigeinformationen-der-browserleisten"
+                 title="Anzeigeinformationen der Browserleisten">
+
+        </chapter>
+
+        <chapter id="browserinformationen-allgemein" title="Allgemeine Eigenschaften">
+
+        </chapter>
+
+        <chapter id="browserinformationen-browserfenster-oeffnen-und-schliessen"
+                 title="Browserfenster öffnen &amp; schließen">
+
+        </chapter>
+
+        <chapter id="browserinformationen-dialoge" title="Dialoge">
+
+        </chapter>
+
+        <chapter id="browserinformationen-funktionen-zeitgesteuert-ausfuehren"
+                 title="Funktionen zeitgesteuert ausführen">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="navigationsinformationen" title="Navigationsinformationen der aktuellen Webseite">
+
+    </chapter>
+
+    <chapter id="browserverlauf" title="Der Browserverlauf">
+
+        <chapter id="browserverlauf-single-page-applications" title="Single Page Applications">
+
+        </chapter>
+
+        <chapter id="history-api" title="Die History API">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="browser-erkennen-und-browserfeatures-bestimmen" title="Browser erkennen und Browserfeatures bestimmen">
+
+        <chapter id="browser-detection" title="Browser Detection">
+
+        </chapter>
+
+        <chapter id="feature-detection" title="Feature Detection">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="informationen-des-bildschirms" title="Auf Informationen des Bildschirms zugreifen">
+
+    </chapter>
+
+    <chapter id="quellen" title="Quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript", Philip Ackermann, 2019
+        </tip>
+    </chapter>
 </topic>
