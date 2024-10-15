@@ -3,7 +3,202 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="js-ajax"
        title="AJAX (Asynchonous JavaScript and XML)"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
+
+    <chapter id="prinzip" title="Das Prinzip von Ajax">
+        <p>
+            AJAX (Asynchronous JavaScript and XML) ermöglicht es nämlich, statt eine Webseite komplett neu zu laden, nur
+            einzelne Teile einer Webseite dynamisch mit Inhalten vom Server zu aktualisieren. Der Begriff Asynchronous
+            JavaScript and XML ist eigentlich irreführend, weil nicht nur XML als Austauschformat verwendet werden kann.
+        </p>
+
+        <chapter id="prinzip-synchrone-kommunikation" title="Synchrone Kommunikation">
+            <p>
+                Bei der klassischen Kommunikation zwischen Client und Server schickt der Client (in der Regel der
+                Browser) eine Anfrage (HTTP-Anfrage bzw. HTTP-Request) an den Server, der diese dann auswertet und eine
+                entsprechende Antwort (HTTP-Antwort bzw. HTTP-Response) an den Client zurücksendet.
+            </p>
+            <p>
+                In Bezug auf das Laden von Webseiten bedeutet dies, dass jedes Mal, wenn der Nutzer beispielsweise auf
+                einen Link klickt oder ein Formular ausfüllt, eine entsprechende HTTP-Anfrage an den Server gesendet
+                wird, welcher dann den Inhalt der neuen Webseite generiert und an den Client zurücksendet
+            </p>
+
+            <img alt="Beispiel Client/Server Kommunikation Abfrage/Antwort bei synchroner Kommunikation"
+                 src="js-ajax-prinzip-synchron-a.png"/>
+
+            <p>
+                Weniger schön bei diesem Ablauf ist allerdings, dass der Client bzw. der Browser warten muss, während
+                der Server die Anfrage auswertet und die Antwort vorbereitet. Als Nutzer merkt man dies insoweit, als
+                man in dieser Zeit keine Möglichkeit mehr hat, mit der Webseite zu interagieren, sprich, es können
+                während der Wartezeit keine weiteren Anfragen getätigt werden. Aus diesem Grund nennt man diese Art der
+                Kommunikation, sprich das geordnete Wechselspiel zwischen Starten einer Anfrage und Warten auf die
+                Antwort, auch synchrone Kommunikation.
+            </p>
+
+            <img alt="Beispiel Client/Server Kommunikation Suchanfrage/Suchergebnisse bei synchroner Kommunikation"
+                 src="js-ajax-prinzip-synchron-b.png"/>
+
+            <p>
+                Beispiel einer Suchfunktion innerhalb einer Webseite: Über ein Suchformular gibt man dabei die Kriterien
+                für die Suche an und schickt anschließend das Formular ab. Der Server wertet die Suchanfrage aus, führt
+                in der Regel eine oder mehrere Datenbankanfragen aus und erstellt die Webseite, welche die Ergebnisse
+                der Suche enthält. Während der Server dies tut, kann man als Nutzer nichts anderes machen, als auf die
+                Ergebnisse zu warten. Erst wenn alle Suchergebnisse ermittelt wurden und die Antwort vom Server geladen
+                wurde, kann der Nutzer weiter interagieren, beispielsweise um die Suchergebnisse in der Übersicht
+                durchzugehen oder jeweils im Detail anzuschauen.
+            </p>
+        </chapter>
+
+        <chapter id="prinzip-asynchrone-kommunikation" title="Asynchrone Kommunikation">
+            <p>
+                Mittels AJAX läuft die Kommunikation asynchron ab: zu Beginn wird auch hier wie bei der synchronen
+                Kommunikation eine vollständige Webseite vom Server geladen bzw. stellt der Client eine Anfrage an den
+                Server, der diese bearbeitet und eine entsprechende Antwort liefert. Im Unterschied zur synchronen
+                Kommunikation ist es bei der asynchronen Kommunikation aber auch möglich, neue Anfragen an den Server zu
+                senden, während man noch auf die Antwort bereits abgeschickter Anfragen wartet.
+            </p>
+
+            <img alt="Beispiel Client/Server Kommunikation Suchanfrage/Suchergebnisse bei asynchroner Kommunikation"
+                 src="js-ajax-prinzip-asynchron-a.png"/>
+
+            <p>
+                Bezogen auf das Beispiel mit der Suche, würde nach Absenden des Suchformulars beispielsweise das
+                Formular ausgeblendet, ein Fortschrittsbalken angezeigt und würden – nach abgeschlossener Suche – die
+                Suchergebnisse dargestellt werden. Die anderen (fixen) Bestandteile der Webseite wie Kopfbereich,
+                Navigation und Fußbereich werden nicht neu geladen.
+            </p>
+            <p>
+                Das hat gleich mehrere Vorteile: Zum einen werden die Daten für die fixen Bestandteile nicht neu vom
+                Server übertragen, was sich insgesamt positiv auf die Übertragungszeit auswirkt. Zum anderen hat man als
+                Nutzer die Möglichkeit, weiterhin mit anderen Komponenten auf der Webseite zu interagieren.
+                Beispielsweise könnten die Suchergebnisse Stück für Stück vom Server abgefragt werden anstatt auf einen
+                Schlag. Der Nutzer könnte bereits einen Teil der Suchergebnisse anschauen, Detailansichten zu den
+                Ergebnissen aufrufen etc., während nach und nach vom Server weitere Suchergebnisse abgefragt werden.
+            </p>
+            <p>
+                Technisch gesehen, werden natürlich auch bei der asynchronen Kommunikation weiterhin HTTP-Anfragen
+                versendet. Nur werden diese nicht direkt durch den Browser angestoßen, sondern über JavaScript-Aufrufe
+                gesteuert. Während ohne Ajax (linke Seite im Diagramm) die HTTP-Anfragen direkt durch den Browser
+                ausgeführt werden, geschieht dies bei Verwendung von Ajax (rechte Seite im Diagramm) durch
+                entsprechenden JavaScript-Code. Auch das Verarbeiten der Antwort vom Server übernimmt der
+                JavaScript-Code, beispielsweise um auf deren Basis die Benutzeroberfläche zu aktualisieren.
+            </p>
+
+            <img alt="Beispiel Client/Server Kommunikation HTTP-Anfrage/-Antwort bei asynchroner Kommunikation"
+                 src="js-ajax-prinzip-asynchron-b.png"/>
+        </chapter>
+
+        <chapter id="prinzip-anwendungsfälle" title="Typische Anwendungsfälle für die Verwendung von Ajax">
+            <table style="both">
+                <tr>
+                    <td>
+                        Anwendungsfall
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Automatische Vervollständigung von Eingabefeldern
+                    </td>
+                    <td>
+                        <p>
+                            Die Idee dabei ist, dem Nutzer Eingabevorschläge in Form einer Auswahlliste anzuzeigen,
+                            während dieser Text in das entsprechende Eingabefeld eingibt, und somit eine Vorselektion
+                            möglicher Auswahlwerte vorzunehmen. Technisch gesehen, registriert man einen Event-Listener
+                            für das change-Event des entsprechenden Eingabefeldes, sendet mithilfe von Ajax eine Anfrage
+                            an den Server, die die aktuelle Eingabe enthält, und zeigt die vom Server zurückgegebenen
+                            Werte, die auf diese Eingabe passen, innerhalb der Auswahlliste an.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Paginierung von großen Datensätzen
+                    </td>
+                    <td>
+                        <p>
+                            Ein anderes Beispiel ist die Paginierung (also das Aufteilen in einzelne Seiten) von
+                            Datensätzen. Gibt es nämlich viele verschiedene Datensätze (beispielsweise eine Tabelle von
+                            Nutzern), ist es sinnvoll, nicht alle Datensätze in einer langen Tabelle anzuzeigen, sondern
+                            jeweils nur einen Teil der Daten mit der Option, zwischen einzelnen Teilen hin- und
+                            herzuwechseln.
+                        </p>
+                        <p>
+                            Umsetzen lässt sich das Beispiel, indem zunächst per Ajax nur ein Teil der Datensätze vom
+                            Server geladen wird (sozusagen die »erste Seite«, ähnlich wie bei den Suchergebnissen eben).
+                            Klickt der Nutzer nun auf den Link zu einer anderen Seite, werden entsprechend die
+                            Datensätze für diese selektierte Seite vom Server geladen.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Newsticker
+                    </td>
+                    <td>
+                        <p>
+                            Newsticker, wie in Nachrichtenseiten oder Sportseiten, verwenden Ajax, um regelmäßig
+                            Anfragen an den Server zu stellen und gegebenenfalls neue Meldungen anzuzeigen. Dazu
+                            verwendet man auf Clientseite die Methode setInterval(), um in bestimmten Zeitabständen per
+                            Ajax Anfragen an den Server zu stellen. Liefern die Anfragen dabei neue Meldungen, werden
+                            diese entsprechend im Newsticker eingebaut.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Editierbare UI-Komponenten
+                    </td>
+                    <td>
+                        <p>
+                            Das Konzept von Ajax hat stark die Verbreitung der Webanwendungen vorangetrieben, also
+                            solcher Webseiten, die sich wie klassische Desktopanwendungen »anfühlen«, dabei aber im
+                            Browser ausgeführt werden. Eine der zahlreichen GUI-Komponenten, die in solchen Anwendungen
+                            zum Einsatz kommen, sind Tabellen, bei denen sich einzelne Datensätze editieren lassen. In
+                            der Regel kann man dabei per Doppelklick auf eine Tabellenzelle den Editiermodus starten und
+                            den Wert in der Zelle anpassen. Im Hintergrund wird der entsprechende Datensatz dann per
+                            Ajax mit der Datenbank auf dem Server abgeglichen.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                Darüber hinaus gibt es natürlich noch eine Menge weiterer Anwendungsfälle, in denen Ajax zum Einsatz
+                kommt. Generell bietet sich Ajax immer dann an, wenn Sie dynamisch Daten vom Server laden oder dorthin
+                senden möchten, ohne dabei die Webseite neu zu laden.
+            </p>
+        </chapter>
+
+        <chapter id="prinzip-datenformate" title="Verwendete Datenformate">
+            <p>
+                Prinzipiell können beliebige Formate verwendet, folgende drei werden aber besonders häufig verwendet:
+            </p>
+
+            <list>
+                <li>
+                    <b>HTML</b>: Dieses Format bietet sich an, wenn Sie fertige GUI-Komponenten (auch: Widgets genannt,
+                    beispielsweise Kalenderkomponenten oder Ähnliches) direkt vom Server nachladen und in die Webseite
+                    einbauen möchten.
+                </li>
+                <li>
+                    <b>XML (Extensible Markup Language)</b>: Dieses Format eignet sich, wenn Sie strukturiert
+                    vorliegende Daten vom Server laden (beispielsweise einzelne Datensätze für eine Tabelle) und auf
+                    Basis dieser Daten Inhalte auf der Webseite generieren möchten.
+                </li>
+                <li>
+                    <b>JSON (JavaScript Object Notation)</b>: Dieses Format eignet sich wie das XML-Format immer dann,
+                    wenn Sie Daten vom Server laden möchten, um anhand dieser Daten Inhalte auf der Webseite zu
+                    generieren, ist aber um einiges schlanker als XML und lässt sich vergleichsweise einfach in
+                    JavaScript-Anwendungen verarbeiten.
+                </li>
+            </list>
+        </chapter>
+    </chapter>
 
 </topic>

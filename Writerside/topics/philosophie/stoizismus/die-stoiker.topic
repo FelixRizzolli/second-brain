@@ -8,7 +8,7 @@
     <show-structure depth="2" for="chapter,procedure"/>
 
     <!-- TODO -->
-    <chapter id="Einfuehrung" title="Einführung">
+    <chapter id="einfuehrung" title="Einführung">
         <p>
             Der einzige Grund, sich mit Philosophie auseinanderzusetzen, ist der, ein besserer Mensch zu werden. Alles
             andere ist, wie Nietzsche einmal sagte, lediglich eine »Kritik der Worte über Worte«.
