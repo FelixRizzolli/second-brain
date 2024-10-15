@@ -624,8 +624,89 @@
             <a href="js-ajax.topic"/>
         </tip>
 
-        <chapter id="ajax-anfragen-erstellen" title="Ajax-Anfragen erstellen">
+        <p>
+            Auch das Erstellen von Ajax-Anfragen gestaltet sich durch eine Reihe von Helfermethoden in jQuery einfacher,
+            u.a.:
+        </p>
 
+        <list type="bullet">
+            <li>
+                eine Methode, um beliebige Ajax-Anfragen zu erstellen
+            </li>
+            <li>
+                eine Methode, um GET-Anfragen zu erstellen
+            </li>
+            <li>
+                eine Methode, um POST-Anfragen zu erstellen
+            </li>
+            <li>
+                eine Methode, um HTML-Inhalt per Ajax direkt in ein Element zu laden
+            </li>
+            <li>
+                eine Methode, um JavaScript-Dateien zu laden
+            </li>
+            <li>
+                eine Methode, um JSON-Dateien zu laden
+            </li>
+        </list>
+
+        <p>
+            Die meisten Helfermethoden lassen sich dabei zu verschiedenen Zwecken einsetzen, beispielsweise können über
+            die Methode <code>attr()</code> HTML-Attribute sowohl gelesen als auch geschrieben, über die Methode <code>css()</code>
+            CSS-Eigenschaften gelesen und geschrieben und über die Event-Methoden Event-Listener registriert oder wieder
+            entfernt werden.
+        </p>
+
+        <p>
+            Details gibt es hier: <a href="https://api.jquery.com/category/ajax/"/>
+        </p>
+
+        <chapter id="ajax-anfragen-erstellen" title="Ajax-Anfragen erstellen">
+            <table>
+                <tr>
+                    <td>
+                        ajax()-Methode
+                    </td>
+                    <td>
+                        Fluent API
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                'use strict';
+                                $(document).ready(() => {
+                                  $.ajax({
+                                    url: 'artists.json',
+                                    dataType: 'json',
+                                    type: 'GET',
+                                    success: (data) => { /* */ },
+                                    error: (jqXHR, errorMessage, error) => {    }
+                                  });
+                                });
+                            ]]>
+                        </code-block>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                'use strict';
+                                $(document).ready(() => {
+                                  $.ajax({
+                                      url: 'artists.json',
+                                      dataType: 'json',
+                                      type: 'GET'
+                                    })
+                                    .done((data) => { /* */ })
+                                    .fail((jqXHR, errorMessage, error) => {  }
+                                  );
+                                });
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+            </table>
         </chapter>
     </chapter>
 
