@@ -201,4 +201,59 @@
         </chapter>
     </chapter>
 
+    <chapter id="xml" title="Das XML-Format">
+        <tip>
+            <a href="xml.topic"/>
+        </tip>
+
+        <p>
+            Wenn XML-Daten per Ajax an einen Server geschickt werden oder umgekehrt, XML-Daten per Ajax von einem Server
+            abgerufen werden, findet im Hintergrund jeweils eine Umwandlung der Daten statt. Werden dabei XML-Objekte
+            (vom Typ Document) in Zeichenketten umgewandelt, spricht man vom <b>Serialisieren</b> der Daten. Das
+            Umwandeln von Zeichenketten in XML-Objekte bezeichnet man dagegen als <b>Parsen</b>.
+        </p>
+
+        <p>
+            Um XML-Objekte auf Basis einer Zeichenkette zu erstellen, die Daten im XML-Format enthält, kann das Objekt
+            DOMParser verwendet werden. Dessen Methode<code>parseFormString()</code> kann man als erstes Argument die
+            entsprechende Zeichenkette übergeben, als zweites Argument den MIME-Typ (in der Regel <code>text/xml</code>).
+            Schon erhält man – vorausgesetzt, die übergebene Zeichenkette enthält gültiges XML – ein Objekt vom Typ
+            Document, welches das geparste XML enthält.
+        </p>
+
+        <code-block collapsed-title="Parsen einer Zeichenkette in ein XML-Dokument" collapsible="true"
+                    lang="javascript">
+            let xmlString = ( '&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;'
+            + '&lt;artists&gt;'
+            + '&lt;artist name="Kyuss"&gt;'
+            + '&lt;albums&gt;'
+            + '&lt;album&gt;'
+            + '&lt;title&gt;Wretchv/title&gt;'
+            + '&lt;year>1991&lt;/year&gt;'
+            + '&lt;/album&gt;'
+            + '&lt;/albums&gt;'
+            + '&lt;/artist&gt;'
+            + '&lt;/artists&gt;' );
+
+            let domParser = new DOMParser();
+            let xmlDOM = domParser.parseFromString(xmlString, 'text/xml');
+            let firstArtist = xmlDOM.querySelector('artist');
+
+            console.log(firstArtist.getAttribute('name')); // "Kyuss"
+            console.log(firstArtist.querySelector('title').textContent); // "Wretch"
+            console.log(firstArtist.querySelector('year').textContent); // 1991
+        </code-block>
+
+        <p>
+            Fürs Serialisieren von XML-Daten bietet JavaScript das Helferobjekt XMLSerializer. Dieses Objekt stellt
+            die Methode <code>serializeToString()</code> zur Verfügung, welcher, als Argument das XML-Objekt übergeben
+            wurde. Als Rückgabewert erhält man das serialisierte XML-Objekt in Form einer Zeichenkette.
+        </p>
+
+        <code-block collapsed-title="Serialisieren eines XML-Dokuments in eine Zeichenkette" collapsible="true"
+                    lang="javascript">
+            let xmlSerializer = new XMLSerializer();
+            let xmlStringSerialized = xmlSerializer.serializeToString(xmlDOM);
+        </code-block>
+    </chapter>
 </topic>
