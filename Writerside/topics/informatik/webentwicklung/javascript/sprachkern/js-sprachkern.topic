@@ -3,7 +3,311 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="js-sprachkern"
        title="Sprachkern"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+
+    <!-- TODO: migrate from Confluence -->
+    <chapter id="webseite" title="JavaScript auf einer Webseite verwenden">
+
+    </chapter>
+
+    <chapter id="kommentare" title="Kommentare">
+
+        <chapter id="kommentare-notation" title="Notation (fat arrow)">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="variablen" title="Variablen, Konstanten und Typisierung">
+
+        <chapter id="variablen-v" title="Variablen">
+
+            <chapter id="variablen-namensgebung" title="Namensgebung für Variablen">
+
+            </chapter>
+
+            <chapter id="variablen-let-vs-var" title="let vs. var">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="variablen-konstanten" title="Konstanten">
+
+            <chapter id="variablen-konstanten-namensgebung" title="Namensgebung für Konstante">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="variablen-typisierung" title="Typisierung">
+
+            <chapter id="variablen-typisierung-impliziert" title="Implizierte Typkonvertierung">
+
+            </chapter>
+
+            <chapter id="variablen-typisierung-explizit" title="Explizite Typkonvertierung">
+
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter id="datentypen" title="Datentypen">
+
+        <chapter id="datentypen-konstruktor-methoden" title="Konstruktor-Methoden">
+
+        </chapter>
+
+        <chapter id="datentypen-autoboxing" title="Autoboxing">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="operatoren" title="Operatoren">
+
+        <chapter id="operatoren-prio" title="Prioritätsliste">
+
+        </chapter>
+
+        <chapter id="operatoren-unaer" title="Unäre Operatoren + und -">
+
+        </chapter>
+
+        <chapter id="operatoren-logische-zuweisung" title="Logische Zuweisungsoperatoren &amp;&amp;= und ||=">
+
+        </chapter>
+
+        <chapter id="operatoren-logisch" title="Logische Operatoren und nicht boolsche Werte">
+
+        </chapter>
+
+        <chapter id="operatoren-typof" title="Typbestimmung – Der typeof- und der instanceof-Operator">
+
+        </chapter>
+
+        <chapter id="operatoren-nach-kategorie" title="Operatoren nach Kategorie">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="kontrollstrukturen" title="Krontrollstrukturen">
+
+        <chapter id="kontrollstrukturen-auswahlstrukturen" title="Auswahlstrukturen">
+
+            <chapter id="kontrollstrukturen-auswahlstrukturen-if" title="if-elseif-else-Statement">
+
+                <chapter id="kontrollstrukturen-auswahlstrukturen-if-syntax" title="Syntax">
+
+                </chapter>
+
+                <chapter id="kontrollstrukturen-auswahlstrukturen-if-beispiel" title="Beispiel">
+
+                </chapter>
+
+                <chapter id="kontrollstrukturen-auswahlstrukturen-if-kurzschreibweise" title="Kurzschreibweise">
+
+                </chapter>
+            </chapter>
+
+            <chapter id="kontrollstrukturen-auswahlstrukturen-tertiaerer-operator" title="Der tertiäre Operator">
+
+            </chapter>
+
+            <chapter id="kontrollstrukturen-auswahlstrukturen-switch" title="Mehrfachverzweigungen: switch-Statement">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="kontrollstrukturen-schleifen" title="Schleifen">
+
+            <chapter id="kontrollstrukturen-schleifen-for" title="Zählschleife – die for-Schleife">
+
+            </chapter>
+
+            <chapter id="kontrollstrukturen-schleifen-for-of-in" title="Die for-of-Schleife und for-in-Schleife">
+
+            </chapter>
+
+            <chapter id="kontrollstrukturen-schleifen-while" title="Kopfgesteuerte Schleife – die while-Schleife">
+
+            </chapter>
+
+            <chapter id="kontrollstrukturen-schleifen-do-while" title="Fußgesteuerte Schleife – die do-while-Schleife">
+
+            </chapter>
+
+            <chapter id="kontrollstrukturen-schleifen-abbrechen" title="Schleifen vorzeitig abbrechen">
+
+                <chapter id="kontrollstrukturen-schleifen-break" title="Die break-Anweisung">
+
+                </chapter>
+
+                <chapter id="kontrollstrukturen-schleifen-continue" title="Die continue-Anweisung">
+
+                </chapter>
+            </chapter>
+
+            <chapter id="kontrollstrukturen-schleifen-goto" title="Sprungmarken">
+
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter id="funktionen" title="Funktionen">
+
+        <chapter id="funktionen-basis" title="Basis Funktionsdeklaration und Funktionsausdruck">
+
+        </chapter>
+
+        <chapter id="funktionen-parameter" title="Parameter">
+
+            <chapter id="funktionen-parameter-weniger-argumente-als-parameter"
+                     title="Funktionen mit weniger Argumenten als angegebenen Parametern aufrufen">
+
+            </chapter>
+
+            <chapter id="funktionen-parameter-mehr-arugmente-als-parameter"
+                     title="Funktionen mit mehr Argumenten als angegebenen Parametern aufrufen">
+
+            </chapter>
+
+            <chapter id="funktionen-parameter-variable-anzahl-an-argumenten"
+                     title="Funktionen mit einer variablen Anzahl an Argumenten – variadische Funktionen">
+
+            </chapter>
+
+            <chapter id="funktionen-parameter-spread-operator"
+                     title="Der Spread-Operator – Elemente aus einem Array als Argumente verwenden">
+
+            </chapter>
+
+            <chapter id="funktionen-parameter-standardwerte" title="Standardwerte für Parameter">
+
+            </chapter>
+
+            <chapter id="funktionen-parameter-funktionen" title="Funktion als Parameter">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="funktionen-return" title="Rückgabewerte">
+
+        </chapter>
+
+        <chapter id="funktionen-arrow-functions" title="Arrow Functions bzw. Fat Arrow Functions">
+
+            <chapter id="funktionen-arrow-functions-return" title="Objekt als Rückgabewert">
+
+            </chapter>
+
+            <chapter id="funktionen-arrow-functions-eigenschaften" title="Weitere Eigenschaften von Arrow Functions">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="funktionen-ausfuehrungskontext" title="Ausführungskontexte">
+
+            <chapter id="funktionen-gueltigkeitsbereich" title="Gültigkeitsbereiche">
+
+            </chapter>
+
+            <chapter id="funktionen-kontextobjekt" title="Kontextobjekt">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="funktionen-funktionsaufruf-durch-nutzerinteraktion"
+                 title="Funktionsaufruf durch Nutzerinteraktion">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="vordefiniert" title="Vordefinierte Funktionen und Objekte">
+
+        <chapter id="vordefiniert-console" title="Konsolenausgabe">
+
+        </chapter>
+
+        <chapter id="vordefiniert-warnungsfenster" title="Warnungsfenster">
+
+        </chapter>
+
+        <chapter id="vordefiniert-eingabefenster" title="Eingabefenster">
+
+        </chapter>
+
+        <chapter id="vordefiniert-use-strict" title="Der &quot;use strict&quot; Modus">
+
+        </chapter>
+
+        <chapter id="vordefiniert-konstante" title="Konstante">
+
+        </chapter>
+
+        <chapter id="vordefiniert-parameter" title="Parameter">
+
+        </chapter>
+
+        <chapter id="vordefiniert-globale-variablen" title="Globale Variablen">
+
+        </chapter>
+
+        <chapter id="vordefiniert-abgeschottete-bloecke" title="Abgeschottete Blöcke">
+
+        </chapter>
+
+        <chapter id="vordefiniert-strikter-modus-in-funktionen" title="Strikter Modus in Funktionen">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="sichtbarkeit" title="Sichtbarkeit">
+
+        <chapter id="sichtbarkeit-funktionen-in-funktionen"
+                 title="Funktionen innerhalb von Funktionen definieren">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="fehlerbehandlung" title="Fehlerbehandlung">
+
+        <chapter id="fehlerbehandlung-fehlerarten" title="Fehlerarten">
+
+        </chapter>
+
+        <chapter id="fehlerbehandlung-laufzeitfehler" title="Fehlerbehandlung von Laufzeitfehlern in JavaScript">
+
+        </chapter>
+
+        <chapter id="fehlerbehandlung-try-catch-finally" title="Fehler mit try-catch-finally fangen">
+
+            <chapter id="fehlerbehandlung-error" title="Das Fehlerobjekt error">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="fehlerbehandlung-throw" title="Fehler mit throw auslösen">
+
+        </chapter>
+
+        <chapter id="fehlerbehandlung-fehlertypen" title="Fehlertypen">
+
+        </chapter>
+    </chapter>
+
+
+    <chapter id="quellen" title="Quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript", Philip Ackermann, 2019
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.w3schools.com/js/js_whereto.asp"/>, 2023-11-06 08:00
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://edube.org/learn/jse1-1-0-1/precedence-continued-1"/>, 2023-11-07 07:00
+        </tip>
+    </chapter>
 </topic>
