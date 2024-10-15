@@ -8,13 +8,146 @@
     <show-structure depth="2" for="chapter,procedure"/>
 
     <chapter id="einfuehrung" title="Einführung">
+        <p>
+            jQuery <a href="https://jquery.com"/> ist eine der wohl bekanntesten JavaScript-Bibliotheken, die das
+            Arbeiten mit JavaScript teilweise stark vereinfacht. Auch wenn mittlerweile viele Dinge auch mit
+            Standardmethoden der DOM API möglich sind, ist jQuery nach wie vor eine ernst zu nehmende Bibliothek. Die
+            Bibliothek jQuery abstrahiert browserspezifische Details und bietet eine einheitliche Schnittstelle. Im
+            Wesentlichen hat jQuery also folgende Vorteile:
+        </p>
+
+        <list>
+            <li>
+                es <b>vereinfacht den Zugriff auf Elemente des DOM-Baumes</b>, indem es verschiedene Helfermethoden
+                bereitstellt.
+            </li>
+            <li>
+                es <b>vereinfacht das Arbeiten mit Events</b> und bietet hierzu entsprechende Helfermethoden an
+            </li>
+            <li>
+                es <b>vereinfacht das Formulieren von Ajax-Anfragen</b>, indem auch hier browserspezifische Details
+                verborgen werden.
+            </li>
+        </list>
+
+        <p>
+            jQuery kann sicherlich in vielen Fällen eine Unterstützung sein, oftmals ist die Verwendung der
+            Bibliothek aber auch gar nicht notwendig, weil man entsprechende Aufgaben bereits mit reinem
+            JavaScript-Code oder aber anderen, schlankeren Bibliotheken lösen kann. Websites wie You might not need
+            jQuery <a href="http://youmightnotneedjquery.com"/> demonstrieren dies anhand verschiedener Beispiele.
+        </p>
 
         <chapter id="einfuehrung-jquery-einbinden" title="jQuery einbinden">
+            <p>
+                Die Bibliothek jQuery kann auf verschiedene Weisen eingebunden werden. Unter
+                <a href="https://jquery.com/download/"/> kann die jeweils aktuelle Version der Bibliothek
+                heruntergeladen werden, wobei sowohl die »normale« Version zum Download bereitsteht als auch eine
+                minifizierte (sprich komprimierte) Version, welche bezüglich der Dateigröße möglichst klein ist.
+                Alternativ dazu besteht auch die Möglichkeit, jQuery über ein CDN einzubinden. Bei einem Content
+                Delivery Network (auch Content Distribution Network, kurz: CDN) handelt es sich um ein Netzwerk von
+                Servern, die über das Internet verbunden sind und die Anfragen so verteilen, dass sie möglichst schnell
+                beantwortet werden können. In der Regel spielt dabei der geografische Ort einer Anfrage eine große
+                Rolle: Greift beispielsweise ein Nutzer aus Deutschland auf Ihre Webseite zu und Sie haben dort jQuery
+                über eine CDN-URL <a href="https://code.jquery.com"/> eingebunden, wird der entsprechende Code von
+                einem Server aus Deutschland an den Nutzer gesendet. Ein Nutzer, der aus den USA auf Ihre Webseite
+                zugreift, wird dagegen von einem dort ansässigen Server beliefert.
+            </p>
 
+            <table style="header-row">
+                <tr>
+                    <td>
+                        scripts/min.js
+                    </td>
+                    <td>
+                        CDN
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code-block lang="html">
+                            <![CDATA[
+                                <script src="scripts/jquery-3.7.1.min.js"></script>
+                            ]]>
+                        </code-block>
+                    </td>
+                    <td>
+                        <code-block lang="html">
+                            <![CDATA[
+                                <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter id="einfuehrung-grundlegendes" title="Grundlegendes">
+            <p>
+                Das Kernstück von jQuery bildet die Funktion <code>jQuery()</code> bzw. die gleichbedeutende
+                Shortcut-Funktion<code>$()</code> (im Folgenden jQuery-Methode genannt). Diese Funktion kann mit
+                verschiedenen Argumenten aufgerufen werden (Details siehe unter
+                <a href="http://api.jquery.com/jQuery/"/>), von denen drei Formen besonders häufig verwendet werden:
+            </p>
 
+            <list type="bullet">
+                <li>
+                    <p>
+                        <b>Aufruf mit CSS-Selektor:</b> Hierbei wird der <code>jQuery</code>-Methode einen Selektor
+                        übergeben und als Rückgabewert erhält man ein Objekt, welches die Elemente der Webseite enthält,
+                        die auf den Selektor zutreffen. Das von der Methode zurückgegebene Objekt stellt dabei ein
+                        sogenanntes Wrapperobjekt (im Folgenden <code>jQuery</code>-Objekt genannt) für die
+                        entsprechenden Elemente dar und stellt für diese Elemente verschiedene Methoden zur Verfügung.
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let selectedElements = jQuery('body > div > span');
+                            let selectedElements = $('body > div > span');
+                        ]]>
+                    </code-block>
+                </li>
+                <li>
+                    <p>
+                        <b>Aufruf mit Knoten aus dem DOM-Baum:</b> Alternativ zu dem Aufruf mit einem Selektor kann die
+                        <code>jQuery</code>-Methode auch mit einem Knoten des DOM-Baumes aufgerufen werden bzw. mit dem
+                        entsprechenden den jeweiligen Knoten repräsentierenden JavaScript-Objekt. Auch in diesem Fall
+                        stellt das <code>jQuery</code>-Objekt ein Wrapperobjekt um den übergebenen Knoten dar und bietet
+                        zusätzliche Methoden an. Die Methode <code>ready()</code> beispielsweise gibt es für das
+                        <code>document</code>-Objekt bekanntermaßen nicht, sondern wird erst durch das
+                        <code>jQuery</code>-Objekt indirekt zur Verfügung gestellt. Damit kann ein Event-Listener
+                        definiert werden, der aufgerufen wird, wenn z.B. das <code>document</code>-Objekt vollständig
+                        geladen wurde.
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            $(document).ready(() => {
+                              console.log('Webseite geladen');
+                            });
+                        ]]>
+                    </code-block>
+                </li>
+                <li>
+                    <p>
+                        <b>Aufruf mit HTML-String:</b> Die <code>jQuery</code>-Methode kann auch dazu verwendet werden,
+                        um neue Elemente zu erzeugen. Dazu wird der Methode einfach der entsprechende HTML-Code, für das
+                        zu erstellende Element, als Zeichenkette übergeben.
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let newElement = $('<div>Neues Element</div>');
+                        ]]>
+                    </code-block>
+                </li>
+            </list>
+
+            <p>
+                Rückgabewert der <code>jQuery</code>-Methode ist in allen gezeigten Fällen ein Objekt, welches den
+                entsprechenden Elementen zusätzliche Funktionalität hinzufügt, das sogenannte <code>jQuery</code>-Objekt.
+                Dieses Objekt enthält Referenzen auf einen oder mehrere Knoten des DOM-Baumes, im Folgenden als
+                ausgewählte Knoten bzw. ausgewählte Elemente bezeichnet.
+            </p>
         </chapter>
     </chapter>
 
