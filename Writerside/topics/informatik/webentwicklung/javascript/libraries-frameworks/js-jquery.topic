@@ -152,33 +152,367 @@
     </chapter>
 
     <chapter id="dom" title="Mit dem DOM arbeiten">
+        <p>
+            Das Arbeiten mit dem DOM war nicht immer so komfortabel, wie es mittlerweile auch dank Methoden wie
+            <code>querySelector()</code> und <code>querySelectorAll()</code> möglich ist. Lange Zeit war jQuery das
+            Mittel der Wahl, wenn es darum ging, relativ einfach das DOM zu verarbeiten, beispielsweise um Elemente zu
+            selektieren, zu verändern oder hinzuzufügen. So bietet jQuery auch heutzutage noch u. a. bei den folgenden
+            Aufgaben Unterstützung:
+        </p>
+
+        <list type="bullet">
+            <li>
+                Selektion von Elementen
+            </li>
+            <li>
+                Zugriff auf Inhalte und Verändern von Inhalten
+            </li>
+            <li>
+                Filtern von selektierten Elementen
+            </li>
+            <li>
+                Zugriff auf Attribute
+            </li>
+            <li>
+                Zugriff auf CSS-Eigenschaften
+            </li>
+            <li>
+                Navigieren zwischen Elementen
+            </li>
+            <li>
+                Verwenden von Effekten
+            </li>
+        </list>
 
         <chapter id="dom-selektion-von-elementen" title="Selektion von Elementen">
 
+            <table style="both">
+                <tr>
+                    <td>
+                        Gruppe
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                    <td>
+                        Link
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Basisselektoren
+                    </td>
+                    <td>
+                        Hierbei handelt es sich um grundlegende Selektoren, wie Sie sie schon aus CSS kennen
+                    </td>
+                    <td>
+                        <a href="https://api.jquery.com/category/selectors/basic-css-selectors/"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Hierarchieselektoren
+                    </td>
+                    <td>
+                        Selektoren, welche die Hierarchie von Elementen einbeziehen
+                    </td>
+                    <td>
+                        <a href="https://api.jquery.com/category/selectors/hierarchy-selectors/"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Basisfilterselektoren
+                    </td>
+                    <td>
+                        Selektoren, mit denen Sie einzelne Elemente gezielter herausfiltern können und die es in CSS
+                        nicht alle gibt
+                    </td>
+                    <td>
+                        <a href="https://api.jquery.com/category/selectors/basic-filter-selectors/"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Inhaltsfilterselektoren
+                    </td>
+                    <td>
+                        Selektoren, die den Inhalt von Elementen mit einbeziehen
+                    </td>
+                    <td>
+                        <a href="https://api.jquery.com/category/selectors/content-filter-selector/"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Sichtbarkeitsfilterselektoren
+                    </td>
+                    <td>
+                        Selektoren bezüglich der Sichtbarkeit von Elementen
+                    </td>
+                    <td>
+                        <a href="https://api.jquery.com/category/selectors/visibility-filter-selectors/"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Attributfilterselektoren
+                    </td>
+                    <td>
+                        Selektoren, welche die Attribute von Elementen mit einbeziehen
+                    </td>
+                    <td>
+                        <a href="https://api.jquery.com/category/selectors/attribute-selectors/"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Formularfilterselektoren
+                    </td>
+                    <td>
+                        Selektoren, die gezielt für die Selektion von Formularelementen nützlich sind
+                    </td>
+                    <td>
+                        <a href="https://api.jquery.com/category/selectors/form-selectors/"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Kindfilterselektoren
+                    </td>
+                    <td>
+                        Selektoren für das Selektieren von Kindelementen
+                    </td>
+                    <td>
+                        <a href="https://api.jquery.com/category/selectors/child-filter-selectors/"/>
+                    </td>
+                </tr>
+            </table>
+
+            <code-block collapsed-title="Beispiele" collapsible="true" lang="javascript">
+                <![CDATA[
+                    $(document).ready(() => {
+                      let inputElements = $('input');         // alle <input>-Elemente
+                      let max = $('#max');                    // Element mit ID "max"
+                      let oddElements = $('.odd');            // Elemente mit Klasse "odd"
+                      let elements = $('td, th');             // alle <td>- und <th>-Elemente
+                      let inputMax = $('input[name="max"]');  // <input>-Elemente, deren name-Attribut den Wert "max" hat
+                      let oddRows = $('tr:odd'));             // alle "ungeraden" <tr>-Elemente
+                      let evenRows = $('tr:even'));           // alle "geraden" <tr>-Elemente
+                      let listItemsAtIndex = $('li:eq(2)'));  // alle <li>-Elemente an Index 2
+                      let allOthers = $(':not(li)'));         // alle Nicht-<li>-Elemente
+                      let notExample = $(':not(.example)'));  // alle Elemente ohne CSS-Klasse "example"
+                    });
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="dom-zugriff-auf-inhalte" title="Zugriff auf Inhalte und Verändern von Inhalten">
+            <p>
+                Nachdem über die jQuery-Methode unter Verwendung von Selektoren Elemente ausgewählt wurden, stehen
+                einem über das <code>jQuery</code>-Objekt für diese ausgewählten Elemente verschiedene Methoden zur
+                Verfügung, mit denen auf den Inhalt zugegriffen und dieser verändert werden kann. Dies umfasst u.a.
+                Folgendes:
+            </p>
 
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Methodengruppe
+                    </td>
+                    <td>
+                        Link
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Zugriff auf und Ändern von HTML- und Textinhalten
+                    </td>
+                    <td>
+                        <a href="https://api.jquery.com/category/manipulation/dom-insertion-inside/"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Hinzufügen von Inhalten innerhalb eines Elements
+                    </td>
+                    <td>
+                        <a href="https://api.jquery.com/category/manipulation/dom-insertion-inside/"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Hinzufügen von Inhalten außerhalb eines Elements
+                    </td>
+                    <td>
+                        <a href="https://api.jquery.com/category/manipulation/dom-insertion-outside/"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Hinzufügen von Inhalten um ein Element herum
+                    </td>
+                    <td>
+                        <a href="https://api.jquery.com/category/manipulation/dom-insertion-around/"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ersetzen von Inhalten
+                    </td>
+                    <td>
+                        <a href="https://api.jquery.com/category/manipulation/dom-replacement/"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Entfernen von Inhalten
+                    </td>
+                    <td>
+                        <a href="https://api.jquery.com/category/manipulation/dom-removal/"/>
+                    </td>
+                </tr>
+            </table>
+
+            <code-block collapsed-title="Beispiele" collapsible="true" lang="javascript">
+                <![CDATA[
+                    // Hinzufügen von neuem HTML-Inhalt
+                    $('#main').html('<div>Neuer Inhalt</div>');
+                    // Zugriff auf den HTML-Inhalt
+                    let htmlContent = $('#main').html();
+
+                    // Hinzufügen von neuem Textinhalt
+                    $('#main').text('Neuer Textinhalt');
+                    // Zugriff auf den Textinhalt
+                    let textContent = $('#main').text();
+
+                    // Hinzufügen von neuem Inhalt hinter den bestehenden Inhalt jedes <div>-Elements mit der CSS-Klasse "example"
+                    $('div.example').append('<p>Beispiel</p>');
+
+                    // Hinzufügen von neuem Inhalt vor den bestehenden Inhalt jedes <div>-Elements mit der CSS-Klasse "example"
+                    $('div.example').prepend('<p>Beispiel</p>');
+
+                    // Hinzufügen von neuem Inhalt hinter jedes <div>-Element mit der CSS-Klasse "example"
+                    $('div.example').after('<p>Beispiel</p>');
+
+                    // Hinzufügen von neuem Inhalt vor jedes <div>-Element mit der CSS-Klasse "example"
+                    $('div.example').before('<p>Beispiel</p>');
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="dom-filtern-von-selektierten-elementen" title="Filtern von selektierten Elementen">
+            <p>
+                Das <code>jQuery</code>-Objekt stellt für die ausgewählten Elemente ebenfalls verschiedene Methoden
+                bereit, mithilfe derer die aktuell ausgewählten Elemente weiter eingegrenzt werden können. Liste der
+                Methoden: <a href="https://api.jquery.com/category/traversing/filtering/"/>
+            </p>
 
+            <code-block collapsed-title="Beispiele" collapsible="true" lang="javascript">
+                <![CDATA[
+                    $('li').eq(2); // Auswahl des dritten <li>-Elements
+                    $('li').first(); // Auswahl des ersten <li>-Elements
+                    $('li').filter('.selected'); // Auswahl der <li>-Elemente, welche die CSS-Klasse ".selected" haben
+                    $('li').has('ul'); // Auswahl aller <li>-Elemente, die ein <ul>-Element enthalten
+                    $('li').has('.selected'); // Auswahl aller Elemente, welche die CSS-Klasse ".selected" haben
+                    $('li').last(); // Auswahl des letzten <li>-Elements
+                    $('li').map(() => { this.className }); // Auswahl aller class-Attribute der <li>-Elemente
+                    $('li').not('.selected'); // Auswahl aller <li>-Elemente, welche nicht die CSS-Klasse ".selected" haben
+                    $('li').slice(0, 2); // Auswahl der ersten zwei <li>-Elemente
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="dom-zugriff-auf-attribute" title="Zugriff auf Attribute">
+            <p>
+                Das <code>jQuery</code>-Objekt bietet zudem einige Methoden an, um auf HTML-Attribute zugreifen zu
+                können. Liste der Methoden: <a href="https://api.jquery.com/category/attributes/"/>
+            </p>
 
+            <code-block collapsed-title="Beispiele" collapsible="true" lang="javascript">
+                <![CDATA[
+                    let element = $('a#main');
+
+                    let href = element.attr('href'); // lesender Zugriff auf das Attribut "href" des Elements
+                    element.attr('href', 'index.html'); // schreibender Zugriff auf das Attribut "href" des Elements
+                    element.attr({ href: 'index.html', target: '_blank' }); // alternativer schreibender Zugriff über Konfigurationsobjekt
+                    element.removeAttr('href'); // Enfernen des Attributs "href" aus dem Element
+                    element.addClass('highlighted'); // Hinzufügen einer CSS-Klasse
+                    element.removeClass('highlighted'); // Entfernen einer CSS-Klasse
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="dom-zugriff-auf-css-eigenschaften" title="Zugriff auf CSS-Eigenschaften">
+            <p>
+                Liste der Methoden: <a href="https://api.jquery.com/category/css/"/>
+            </p>
 
+            <code-block collapsed-title="Beispiele" collapsible="true" lang="javascript">
+                <![CDATA[
+                    let backgroundColor = $('body').css('background-color'); // Auslesen der Hintergrundfarbe des <body>-Elements
+                    let properties = $('body').css(['color', 'background-color']); // Auslesen der Vordergrundfarbe und der Hintergrundfarbe des <body>-Elements
+                    $('body').css('background-color', 'blue'); // Setzen der Hintergrundfarbe des <body>-Elements
+                    $('body').css({ 'color': 'white', 'background-color': 'blue'}); // Setzen der Vordergrundfarbe und der Hintergrundfarbe des <body>-Elements
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="dom-navigieren-zwischen-elementen" title="Navigieren zwischen Elementen">
+            <p>
+                Ausgehend von einer in einem <code>jQuery</code>-Objekt gespeicherten Auswahl von Elementen können
+                solche Elemente gefunden werden, die in einer bestimmten Beziehung zu diesen Elementen stehen, wie
+                beispielsweise Elternelemente, Geschwisterelemente und Kindelemente. Liste der Methoden:
+                <a href="https://api.jquery.com/category/traversing/tree-traversal/"/>
+            </p>
 
+            <code-block collapsed-title="Beispiele" collapsible="true" lang="javascript">
+                <![CDATA[
+                    /* -----> Kindelemente <----- */
+                    let listItems = $('ul').children(); // Auswahl aller Kindelemente von <ul>
+                    let closestLink = $('ul').closest('a'); // Auswahl des nächsten Links innerhalb <ul>
+
+                    /* -----> Geschwisterelemente <----- */
+                    let nextSibling = $('ul').next(); // Auswahl des nächsten Geschwisterelements
+                    let nextSiblingLink = $('ul').next('a'); // Auswahl des nächsten Linkelements
+                    let nextSiblings = $('ul').nextAll(); // Auswahl aller nächsten Geschwisterelemente
+                    let nextSiblingLinks = $('div').nextAll('a'); // Auswahl aller nächsten Linkelemente
+                    let nextSiblingsUntil = $('div').nextUntil('a'); // Auswahl aller nächsten Geschwisterelemente bis zu bestimmtem Element
+                    let previousSibling = $('ul').prev(); // Auswahl des vorigen Geschwisterelements
+                    let previousSiblings = $('ul').prevAll(); // Auswahl aller vorigen Geschwisterelemente
+                    let previousSiblingsUntil = $('div').prevUntil('a'); // Auswahl aller vorigen Geschwisterelemente bis zu bestimmtem Element
+                    let siblings = $('div').siblings(); // Auswahl aller Geschwisterelemente
+
+                    /* -----> Elternelemente <----- */
+                    let parent = $('ul').parent(); // Auswahl des Elternelements
+                    let parents = $('ul').parents(); // Auswahl aller Vorfahrenelemente
+                    let parentsUntil = $('ul').parentsUntil('div'); // Auswahl aller Vorfahrenelemente bis zu bestimmtem Element
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="dom-verwenden-von-elementen" title="Verwenden von Effekten">
+            <p>
+                Effekte wie das Einblenden oder Ausblenden von Elementen einer Webseite waren nicht immer so einfach
+                umzusetzen wie mittlerweile durch CSS3-Animationen möglich. Deshalb bietet jQuery mehrere Methoden:
+                <a href="https://api.jquery.com/category/effects/"/>
+            </p>
 
+            <code-block collapsed-title="Beispiele" collapsible="true" lang="javascript">
+                <![CDATA[
+                    'use strict';
+                    $(document).ready(() => {
+                      $('main').animate(
+                        { opacity: 0.75 }, // Eigenschaften
+                        'fast',            // Geschwindigkeit
+                        'swing',           // Easing
+                         () => {
+                          // Animation abgeschlossen.
+                         }
+                      );
+                    });
+                ]]>
+            </code-block>
         </chapter>
     </chapter>
 
