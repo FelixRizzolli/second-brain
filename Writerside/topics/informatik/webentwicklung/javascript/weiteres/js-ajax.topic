@@ -223,17 +223,18 @@
 
         <code-block collapsed-title="Parsen einer Zeichenkette in ein XML-Dokument" collapsible="true"
                     lang="javascript">
-            let xmlString = ( '&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;'
-            + '&lt;artists&gt;'
-            + '&lt;artist name="Kyuss"&gt;'
-            + '&lt;albums&gt;'
-            + '&lt;album&gt;'
-            + '&lt;title&gt;Wretchv/title&gt;'
-            + '&lt;year>1991&lt;/year&gt;'
-            + '&lt;/album&gt;'
-            + '&lt;/albums&gt;'
-            + '&lt;/artist&gt;'
-            + '&lt;/artists&gt;' );
+            <![CDATA[
+            let xmlString = ( '<?xml version="1.0" encoding="ISO-8859-1"?>'
+                + '<artists>'
+                + '<artist name="Kyuss">'
+                + '<albums>'
+                + '<album>'
+                + '<title>Wretchv/title>'
+                + '<year>1991</year>'
+                + '</album>'
+                + '</albums>'
+                + '</artist>'
+                + '</artists>' );
 
             let domParser = new DOMParser();
             let xmlDOM = domParser.parseFromString(xmlString, 'text/xml');
@@ -242,6 +243,7 @@
             console.log(firstArtist.getAttribute('name')); // "Kyuss"
             console.log(firstArtist.querySelector('title').textContent); // "Wretch"
             console.log(firstArtist.querySelector('year').textContent); // 1991
+            ]]>
         </code-block>
 
         <p>
@@ -255,5 +257,134 @@
             let xmlSerializer = new XMLSerializer();
             let xmlStringSerialized = xmlSerializer.serializeToString(xmlDOM);
         </code-block>
+    </chapter>
+
+    <chapter id="json" title="Das JSON-Format">
+        <tip>
+            <a href="json.topic"/>
+        </tip>
+
+        <p>
+            JSON (JavaScript Object Notation) ist ein – im Verhältnis zu XML – relativ junges Format, welches ebenfalls
+            für den Austausch von Daten zwischen Anwendungen oder eben zwischen Client und Server zum Einsatz kommt. Es
+            ist dabei vor allem deswegen sehr beliebt, weil es im Vergleich zu XML sehr leichtgewichtig ist, nicht so
+            viel Overhead mitbringt und in JavaScript nativ unterstützt wird.
+        </p>
+
+        <table style="header-row">
+            <tr>
+                <td>
+                    <code>
+                        JSON.stringify()
+                    </code>
+                </td>
+                <td>
+                    <p>
+                        Mithilfe der Methode <code>stringify()</code> des JSON-Objekts kann JavaScript-Objekte in eine
+                        Zeichenkette im JSON-Format umgewandelt werden. Die Methode erwartet als erstes Argument ein
+                        JavaScript-Objekt und liefert als Ergebnis die entsprechende Zeichenkette, welche das Objekt im
+                        JSON-Format enthält.
+                    </p>
+                    <p>
+                        Als zweites Argument kann man optional eine Funktion übergeben, über die sich gewisse Aspekte
+                        beim Umwandeln steuern lassen: Diese Funktion wird während des Umwandelns für jede Eigenschaft
+                        des JavaScript-Objekts aufgerufen. Ihr Rückgabewert bestimmt dann den Zielwert, sprich den Wert,
+                        der für die jeweilige Eigenschaft in das umgewandelte JSON übernommen werden soll. Möchte man
+                        die Werte nicht umwandeln, sondern so übernehmen, wie sie sind, kann man statt einer Funktion
+                        auch einfach den Wert null übergeben.
+                    </p>
+                    <p>
+                        Über das dritte Argument lässt sich zudem die Einrückung der geschweiften Klammern beeinflussen.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        JSON.parse()
+                    </code>
+                </td>
+                <td>
+                    <p>
+                        Die Methode <code>parse()</code> kann für das Umwandeln einer Zeichenkette im JSON-Format in
+                        ein JavaScript-Objekt verwendet werden. Als erstes Argument erwartet die Methode die
+                        entsprechende Zeichenkette. Über die optional als zweites Argument übergebene Funktion lässt
+                        sich steuern, welcher Wert während des Umwandelns für das Zielobjekt verwendet werden soll.
+                        Aufgerufen wird diese Funktion für jede Eigenschaft.
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+        <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+            <![CDATA[
+            let object = {
+                "artists": [
+                    { "name": "Kyuss", "albums": [ { /* ... */ } ] }
+                    /* ... */
+                ]
+            }
+
+            let string = JSON.stringify(
+                object, // JavaScript-Objekt
+                (key, value) => {    // Ersetzungsfunktion
+                    return value;    // Rückgabewert bestimmt Zielwert
+                },
+                2                    // Einrückung
+            );
+            console.log(string);
+
+            let objectParsed = JSON.parse(
+                string,                       // JSON
+                (key, value) => {             // Ersetzungsfunktion
+                    return value;             // Rückgabewert bestimmt Zielwert
+                }
+            );
+
+            console.log(objectParsed.artists);           // [Object, Object]
+            console.log(objectParsed.artists.length);    // 2
+            console.log(objectParsed.artists[0].name);   // "Kyuss"
+            console.log(objectParsed.artists[1].name);   // "Ben Harper"
+            ]]>
+        </code-block>
+    </chapter>
+
+    <chapter id="abfragen" title="Anfragen per Ajax stellen">
+
+        <chapter id="abfragen-xmlhttprequest" title="Das »XMLHttpRequest«-Objekt">
+
+        </chapter>
+
+        <chapter id="abfragen-html" title="HTML-Daten per Ajax laden">
+
+        </chapter>
+
+        <chapter id="abfragen-xml" title="XML-Daten per Ajax laden">
+
+        </chapter>
+
+        <chapter id="abfragen-json" title="JSON-Daten per Ajax laden">
+
+        </chapter>
+
+        <chapter id="abfragen-daten-schicken" title="Daten per Ajax an den Server schicken">
+
+        </chapter>
+
+        <chapter id="abfragen-formulare-schicken" title="Formulare per Ajax abschicken">
+
+        </chapter>
+
+        <chapter id="abfragen-daten-von-anderen-domains-laden" title="Daten von anderen Domains laden">
+
+        </chapter>
+
+        <chapter id="abfragen-fetch-api" title="Die neuere Alternative zu »XMLHttpRequest«: die Fetch API">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="quellen" title="Quellen">
+
     </chapter>
 </topic>
