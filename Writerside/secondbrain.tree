@@ -119,7 +119,17 @@
                     <toc-element topic="vuejs.topic"/>
                     <toc-element topic="nodejs.topic"/>
                     <toc-element topic="js-jquery.topic"/>
-                    <toc-element topic="reactjs.topic"/>
+                    <toc-element topic="reactjs.topic">
+                        <toc-element topic="reactjs-redux.topic"/>
+                        <toc-element topic="reactjs-tests.topic"/>
+                        <toc-element topic="reactjs-sprachkern.topic"/>
+                        <toc-element topic="reactjs-typescript.topic"/>
+                        <toc-element topic="reactjs-class-components.topic"/>
+                        <toc-element topic="reactjs-i18n.topic"/>
+                        <toc-element topic="reactjs-design-pattern.topic"/>
+                        <toc-element topic="reactjs-hooks-api.topic"/>
+                        <toc-element topic="reactjs-router.topic"/>
+                    </toc-element>
                     <toc-element topic="nextjs.topic"/>
                 </toc-element>
                 <toc-element topic="js-weiters.topic">
