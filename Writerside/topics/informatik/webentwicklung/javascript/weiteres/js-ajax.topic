@@ -1186,6 +1186,9 @@
     </chapter>
 
     <chapter id="quellen" title="Quellen">
-
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript", Philip Ackermann, 2019
+        </tip>
     </chapter>
 </topic>
