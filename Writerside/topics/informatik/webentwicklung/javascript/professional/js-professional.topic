@@ -3,7 +3,72 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="js-professional"
        title="Professioneller Entwicklungsprozess"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <!-- TODO: migrate from Confluence -->
+    <chapter id="introduction" title="Einführung">
+
+    </chapter>
+
+    <chapter id="automatisierung" title="Aufgaben automatisieren">
+
+        <chapter id="automatisierung-grunt" title="Grunt">
+
+        </chapter>
+
+        <chapter id="automatisierung-gulp" title="Gulp">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="testautomation" title="Quelltext automatisiert testen">
+
+        <chapter id="testautomation-qunit" title="QUnit">
+
+        </chapter>
+
+        <chapter id="testautomation-mocha" title="mocha">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="versionsverwaltung" title="Versionsverwaltung des Quelltextes">
+
+    </chapter>
+
+    <chapter id="debugging" title="Den Code debuggen">
+
+        <chapter id="debugging-console" title="Das »console«-Objekt">
+
+        </chapter>
+
+        <chapter id="debugging-breakpoints" title="Haltepunkte">
+
+        </chapter>
+
+        <chapter id="debugging-commandline" title="Mit der Kommandozeile arbeiten">
+
+        </chapter>
+
+        <chapter id="debugging-documentation" title="Dokumentationen fürs Debugging">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="quellen" title="Quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript", Philip Ackermann, 2019
+        </tip>
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256872, "Professionell entwickeln mit JavaScrip", Philip Ackermann, 2018
+        </tip>
+        <tip>
+            <b>(YOUTUBE)</b>
+            <a href="https://www.youtube.com/watch?v=gTVpBbFWry8"/>, 2023-08-11 07:30
+        </tip>
+    </chapter>
 </topic>
