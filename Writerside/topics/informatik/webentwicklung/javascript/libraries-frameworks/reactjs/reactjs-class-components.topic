@@ -3,11 +3,100 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="reactjs-class-components"
        title="Klassenkomponenten"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
 
     <!-- TODO: migrate from Confluence -->
-    <chapter id="" title="">
+    <chapter id="einleitung" title="Klassenkomponenten in React">
 
+    </chapter>
+
+    <chapter id="props" title="Props in einer Klassenkomponente">
+
+        <chapter id="props-strukturen" title="Prop-Strukturen mit PropTypes definieren">
+
+        </chapter>
+
+        <chapter id="props-standardwerte" title="Standardwerte für Props">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="state" title="State – der Zustand der Klassenkomponente">
+
+        <chapter id="state-eigenschaft" title="Den State über die state-Eigenschaft der Klasse initialisieren">
+
+        </chapter>
+
+        <chapter id="state-konstruktor" title="Den State im Konstruktor initialisieren">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="lifecycle" title="Der Komponenten-Lifecycle">
+
+        <chapter id="lifecycle-constructor" title="Constructor">
+
+        </chapter>
+
+        <chapter id="lifecycle-getderivedstatefromprops" title="»getDerivedStateFromProps«">
+
+        </chapter>
+
+        <chapter id="lifecycle-render" title="»render«">
+
+        </chapter>
+
+        <chapter id="lifecycle-componentdidmount" title="»componentDidMount«">
+
+        </chapter>
+
+        <chapter id="lifecycle-shouldcomponentupdate" title="»shouldComponentUpdate«">
+
+        </chapter>
+
+        <chapter id="lifecycle-getsnapshotbeforeupdate" title="»getSnapshotBeforeUpdate«">
+
+        </chapter>
+
+        <chapter id="lifecycle-componentdidupdate" title="»componentDidUpdate«">
+
+        </chapter>
+
+        <chapter id="lifecycle-componentwillunmount" title="»componentWillUnmount«">
+
+        </chapter>
+
+        <chapter id="lifecycle-unsafe-hooks" title="Unsafe Hooks">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="error-boundaries" title="Error Boundaries">
+
+        <chapter id="error-boundaries-componentdidcatch" title="Mit componentDidCatch Fehler loggen">
+
+        </chapter>
+
+        <chapter id="error-boundaries-getderivedstatefromerror"
+                 title="Alternative Darstellung im Fehlerfall mit getDerivedStateFromError">
+
+        </chapter>
+    </chapter>
+    
+    <chapter id="context-api" title="Die Context-API in einer Klassenkomponente verwenden">
+
+    </chapter>
+
+    <chapter id="unterschiede-zu-funktionskomponenten" title="Unterschiede zwischen Funktions- und Klassenkomponenten">
+
+        <chapter id="unterschiede-zu-funktionskomponenten-state" title="State">
+
+        </chapter>
+
+        <chapter id="unterschiede-zu-funktionskomponenten-lifecycle" title="Lifecycle">
+
+        </chapter>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
