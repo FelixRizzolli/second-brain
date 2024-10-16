@@ -7,4 +7,68 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <!-- TODO: migrate from Confluence -->
+    <chapter id="aufbau" title="Aufbau einer Webseite">
+
+        <chapter id="aufbau-dokumentknoten" title="Der Dokumentknoten">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="elemente-selektieren" title="Elemente selektieren">
+
+        <chapter id="elemente-selektieren-auf-null-ueberpruefen" title="Auf null überprüfen">
+
+        </chapter>
+
+        <chapter id="elemente-selektieren-performance" title="Performance von Selektionsmethoden">
+
+        </chapter>
+
+        <chapter id="elemente-selektieren-css-veraendern" title="Das CSS eines Elements verändern">
+
+        </chapter>
+
+        <chapter id="elemente-selektieren-method-borrowing" title="Method Borrowing">
+
+        </chapter>
+
+        <chapter id="elemente-selektieren-aktive-vs-statische-knotenlisten"
+                 title="Aktive Knotenlisten vs. statische Knotenlisten">
+
+        </chapter>
+
+        <chapter id="elemente-selektieren-weissraumknoten" title="Weißraumknoten">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="text" title="Mit Textknoten arbeiten">
+
+        <chapter id="text-textcontent-vs-innertext" title="»textContent« vs. »innerText«">
+
+        </chapter>
+
+        <chapter id="text-methoden-von-dokumentknoten" title="Methoden von Dokumentknoten">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="elemente" title="Mit Elementen arbeiten">
+
+        <chapter id="elemente-htmlelement" title="Der Obertyp »HTMLElement«">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="attribute" title="Mit Attributen arbeiten">
+
+    </chapter>
+
+    <chapter id="quellen" title="Quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript", Philip Ackermann, 2019
+        </tip>
+    </chapter>
 </topic>
