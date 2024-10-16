@@ -3,7 +3,253 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="js-oop"
        title="Objektorientierte Programmierung"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <!-- TODO: migrate from Confluence -->
+    <chapter id="grundlagen" title="Grundlagen">
+
+        <chapter id="grundlagen-instanceof" title="Der instanceof-Operator">
+
+        </chapter>
+
+        <chapter id="grundlagen-this" title="Das Schlüsselwort this">
+
+        </chapter>
+
+        <chapter id="grundlagen-objekte-erstellen" title="Objekte erstellen">
+
+            <chapter id="grundlagen-objekte-erstellen-literal-schreibweise" title="Die Objekt-Literal-Schreibweise">
+
+            </chapter>
+
+            <chapter id="grundlagen-objekte-erstellen-konstruktorfunktion" title="Konstruktorfunktion">
+
+            </chapter>
+
+            <chapter id="grundlagen-objekte-erstellen-prototypen" title="Prototypen">
+
+            </chapter>
+
+            <chapter id="grundlagen-objekte-erstellen-klassensyntax" title="Klassensyntax aus ES6">
+
+            </chapter>
+
+            <chapter id="grundlagen-objekte-erstellen-object-create" title="Object.create() aus ES5">
+
+            </chapter>
+
+            <chapter id="grundlagen-objekte-erstellen-eigenschaftsattribute" title="Eigenschaftsattribute">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="grundlagen-eigenschaften-methoden" title="Eigenschaften und Methoden">
+
+            <chapter id="grundlagen-eigenschaften-methoden-zugriff" title="Zugriff">
+
+            </chapter>
+
+            <chapter id="grundlagen-eigenschaften-methoden-datenkapselung" title="Datenkapselung">
+
+            </chapter>
+
+            <chapter id="grundlagen-eigenschaften-methoden-manipulieren"
+                     title="Objekteigenschaften und Objektmethoden hinzufügen, ändern, überprüfen und löschen">
+
+            </chapter>
+
+            <chapter id="grundlagen-eigenschaften-methoden-ausgeben"
+                     title="Objekteigenschaften und Objektmethoden ausgeben">
+
+                <chapter id="grundlagen-eigenschaften-methoden-ausgeben-for-in" title="Die for-in-Schleife">
+
+                </chapter>
+
+                <chapter id="grundlagen-eigenschaften-methoden-ausgeben-helfermethoden" title="Helfermethoden">
+
+                </chapter>
+            </chapter>
+        </chapter>
+
+        <chapter id="grundlagen-aenderung-verhindern" title="Änderung an Objekten verhindern">
+
+            <chapter id="grundlagen-aenderung-verhindern-prevent-extensions" title="Erweiterung an Objekten verhindern">
+
+            </chapter>
+
+            <chapter id="grundlagen-aenderung-verhindern-seal" title="Objekte versiegeln">
+
+            </chapter>
+
+            <chapter id="grundlagen-aenderung-verhindern-freeze" title="Objekte einfrieren">
+
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter id="prinzipien" title="Prinzipien der Objektorientierung">
+
+        <chapter id="prinzipien-prototypen" title="Prototypische Objektorientierung">
+
+            <chapter id="prinzipien-prototypen-kette" title="Die Prototypkette">
+
+            </chapter>
+
+            <chapter id="prinzipien-prototypen-methoden" title="Methoden eines Prototypen aufrufen">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="prinzipien-pseudoklassisch" title="Pseudoklassische Objektorientierung">
+
+        </chapter>
+
+        <chapter id="prinzipien-klassensyntax" title="Objektorientierung mit Klassensyntax">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="globale-objekte" title="Globale Objekte - »built-in objects«">
+
+        <chapter id="globale-objekte-primitiver-datentypen" title="Objekte primitiver Datentypen">
+
+            <chapter id="globale-objekte-boolean" title="Boolean">
+
+            </chapter>
+
+            <chapter id="globale-objekte-number" title="Number">
+
+            </chapter>
+
+            <chapter id="globale-objekte-string" title="String">
+
+                <chapter id="globale-objekte-string-verkettung" title="Verkettung von Strings">
+
+                </chapter>
+
+                <chapter id="globale-objekte-string-template" title="Template Strings">
+
+                </chapter>
+
+                <chapter id="globale-objekte-string-backslash-und-zeilenumbrueche" title="Backslash und Zeilenumbrüche">
+
+                </chapter>
+
+                <chapter id="globale-objekte-string-methoden" title="Methoden für Strings">
+
+                </chapter>
+            </chapter>
+
+            <chapter id="globale-objekte-primitiver-datentypen-pad-start-und-end"
+                     title="Die Methoden padStart() und padEnd()">
+
+            </chapter>
+
+            <chapter id="globale-objekte-date" title="Date - mit Datum und Zeit arbeiten">
+
+            </chapter>
+
+            <chapter id="globale-objekte-primitiver-datentypen-wrapperobjekte"
+                     title="Wrapperobjekte für primitive Datentypen">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="globale-objekte-array" title="Arrays">
+
+            <chapter id="globale-objekte-array-erzeugen" title="Arrays erzeugen und initialisieren">
+
+                <chapter id="globale-objekte-array-erzeugen-konstruktorfunktion" title="Die Konstruktorfunktion">
+
+                </chapter>
+
+                <chapter id="globale-objekte-array-erzeugen-literal-schreibweise"
+                         title="Die Array-Literal-Schreibweise">
+
+                </chapter>
+
+                <chapter id="globale-objekte-array-erzeugen-typen" title="Unterschiedliche Typen in Arrays">
+
+                </chapter>
+            </chapter>
+
+            <chapter id="globale-objekte-array-elemente" title="Auf Elemente eines Arrays zugreifen">
+
+            </chapter>
+
+            <chapter id="globale-objekte-array-funktionen" title="Funktionen für Arrays">
+
+                <chapter id="globale-objekte-array-funktionen-liste" title="Liste der Funktionen">
+
+                </chapter>
+            </chapter>
+
+            <chapter id="globale-objekte-array-higher-order-funktionen" title="Higher-Order-Funktionen">
+
+            </chapter>
+
+            <chapter id="globale-objekte-array-mehrdimensional"
+                     title="Mehrdimensionale Arrays: 2D-, 3D-, ... nD-Arrays">
+
+            </chapter>
+
+            <chapter id="globale-objekte-array-als-stack" title="Arrays als Stack verwenden">
+
+            </chapter>
+
+            <chapter id="globale-objekte-array-als-queue" title="Arrays als Queue verwenden">
+
+            </chapter>
+
+            <chapter id="globale-objekte-array-in-zeichenketten-umwandeln" title="Arrays in Zeichenketten umwandeln">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="globale-objekte-math" title="Math – komplexe Berechnungen durchführen">
+
+        </chapter>
+
+        <chapter id="globale-objekte-regexp" title="RegExp – reguläre Ausdrücke">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="funktionen-als-referenztypen" title="Funktionen als Referenztypen">
+
+        <chapter id="funktionen-als-referenztypen-argumente" title="Funktionen als Argumente verwenden">
+
+        </chapter>
+
+        <chapter id="funktionen-als-referenztypen-return" title="Funktionen als Rückgabewerte verwenden">
+
+        </chapter>
+
+        <chapter id="funktionen-als-referenztypen-standardmethoden" title="Standardmethoden jeder Funktion">
+
+            <chapter id="funktionen-als-referenztypen-standardmethoden-bind"
+                     title="Objekte binden mit der Methode bind()">
+
+            </chapter>
+
+            <chapter id="funktionen-als-referenztypen-standardmethoden-call"
+                     title="Funktionen aufrufen über die Methode call()">
+
+            </chapter>
+
+            <chapter id="funktionen-als-referenztypen-standardmethoden-apply"
+                     title="Funktionen aufrufen über die Methode apply()">
+
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter id="quellen" title="Quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript", Philip Ackermann, 2019
+        </tip>
+    </chapter>
 </topic>
