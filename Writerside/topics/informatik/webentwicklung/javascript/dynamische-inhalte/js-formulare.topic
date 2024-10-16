@@ -3,7 +3,50 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="js-formulare"
        title="Formulare"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <!-- TODO: migrate from Confluence -->
+    <chapter id="einleitung" title="Einleitung">
+
+    </chapter>
+
+    <chapter id="zugriff" title="Auf Formulare und Formularfelder zugreifen">
+
+    </chapter>
+
+    <chapter id="abschicken-und-zurücksetzen" title="Formulare programmatisch abschicken und zurücksetzen">
+
+    </chapter>
+
+    <chapter id="validieren" title="Formulareingaben validieren">
+
+        <chapter id="validieren-css-pseudoklassen" title="CSS-Pseudoklassen für Formulare">
+
+        </chapter>
+
+        <chapter id="constraint-validation-api-eigenschaften" title="Eigenschaften der Constraint Validation API">
+
+        </chapter>
+
+        <chapter id="constraint-validation-api-methoden" title="Methoden der Constraint Validation API">
+
+        </chapter>
+
+        <chapter id="validierung-methoden" title="Nativ Validierung nach Drücken der Submit-Schaltfläche">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="quellen" title="Quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript", Philip Ackermann, 2019
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement"/>, 2023-08-01 18:30
+        </tip>
+    </chapter>
 </topic>
