@@ -3,11 +3,119 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="reactjs-redux"
        title="Redux: Zentrales State-Management"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
 
     <!-- TODO: migrate from Confluence -->
-    <chapter id="" title="">
+    <chapter id="einfuehrung" title="Einführung">
 
+    </chapter>
+
+    <chapter id="flux" title="Die Flux-Architektur">
+
+        <chapter id="flux-store" title="Store – der zentrale Datenspeicher">
+
+        </chapter>
+
+        <chapter id="flux-views" title="Views – die Anzeige der der Daten">
+
+        </chapter>
+
+        <chapter id="flux-actions" title="Actions – die Beschreibung von Änderungen">
+
+            <chapter id="flux-actions-standard" title="Die Flux Standard Action">
+
+                <chapter id="flux-actions-standard-muss" title="Die Muss-Kriterien">
+
+                </chapter>
+
+                <chapter id="flux-actions-standard-kann" title="Die Kann-Kriterien">
+
+                </chapter>
+            </chapter>
+        </chapter>
+
+        <chapter id="dispatcher" title="Dispatcher – die Schnittstelle zwischen Actions und dem Store">
+
+            <chapter id="dispatcher-redux-reducer" title="Der Redux-Reducer">
+
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter id="installation" title="Installation von Redux">
+
+    </chapter>
+
+    <chapter id="konfiguration" title="Konfiguration">
+
+    </chapter>
+
+    <chapter id="reducer" title="Reducer – Umgang mit Änderungen am Store">
+
+        <chapter id="reducer-seiteneffekte" title="Seiteneffekte in Redux">
+
+        </chapter>
+
+        <chapter id="reducer-slice" title="Der Slice">
+
+        </chapter>
+
+        <chapter id="reducer-einbindung-slices" title="Einbindung des Slices">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="selektoren" title="Selektoren – Komponenten und den Store verknüpfen">
+
+        <chapter id="selektoren-redundanzen" title="Redundanzen im Store mit Selektoren reduzieren">
+
+        </chapter>
+
+        <chapter id="selektoren-higher-order" title="Higher-Order-Selektoren">
+
+        </chapter>
+
+        <chapter id="selektoren-reselect" title="Selektoren mit Reselect umsetzen">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="actions" title="Actions – Änderungen beschreiben">
+
+    </chapter>
+
+    <chapter id="records-erstellen-und-bearbeiten" title="Datensätze erstellen und bearbeiten">
+
+    </chapter>
+
+    <chapter id="async" title="Umgang mit Asynchronität und Seiteneffekten in Redux">
+
+        <chapter id="async-middleware" title="Middleware in Redux">
+
+            <chapter id="async-middleware-implementieren" title="Eine eigene Middleware implementieren">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="async-redux-thunk" title="Redux Thunk">
+
+        </chapter>
+
+        <chapter id="async-redux-saga" title="Redux Saga">
+
+        </chapter>
+
+        <chapter id="async-redux-observable" title="Redux Observable">
+
+            <chapter id="async-redux-observable-rxjs" title="RxJS">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="async-jwt" title="JWT zur Authentifizierung">
+
+        </chapter>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
