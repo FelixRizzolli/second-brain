@@ -3,7 +3,95 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="js-ereignisse"
        title="Ereignisse"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <!-- TODO: migrate from Confluence -->
+    <chapter id="grundlagen" title="Grundlagen">
+
+    </chapter>
+
+    <chapter id="ereignisse" title="Ereignisse verarbeiten und auslösen">
+
+        <chapter id="ereignisse-reagieren" title="Auf Ereignisse reagieren">
+
+            <chapter id="ereignisse-html-event-handler" title="HTML-Event-Handler (DEPRECATED)">
+
+            </chapter>
+
+            <chapter id="ereignisse-dom-event-handler" title="DOM-Event-Handler">
+
+            </chapter>
+
+            <chapter id="ereignisse-dom-event-listener" title="DOM-Event-Listener">
+
+                <chapter id="ereignisse-dom-event-listener-mehrere" title="Mehrere Event-Listener">
+
+                </chapter>
+
+                <chapter id="ereignisse-dom-event-listener-entfernen" title="Event-Listener entfernen">
+
+                </chapter>
+
+                <chapter id="ereignisse-dom-event-listener-informationen-eines-ereignisses"
+                         title="Auf Informationen eines Ereignisses zugreifen">
+
+                </chapter>
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter id="typen" title="Die verschiedenen Typen von Ereignissen">
+
+        <chapter id="typen-maus" title="Ereignisse bei Interaktion mit der Maus">
+
+        </chapter>
+
+        <chapter id="typen-tastatur" title="Ereignisse bei Interaktion mit Tastatur oder Textfeldern">
+
+        </chapter>
+
+        <chapter id="typen-formulare" title="Ereignisse beim Arbeiten mit Formularen">
+
+        </chapter>
+
+        <chapter id="typen-fokus" title="Ereignisse beim Fokussieren von Elementen">
+
+        </chapter>
+
+        <chapter id="typen-nutzerschnittstelle" title="Ereignisse bezüglich der Nutzerschnittstelle">
+
+        </chapter>
+
+        <chapter id="typen-mobile" title="Ereignisse bei mobilen Endgeräten">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="ereignisfluss" title="Den Ereignisfluss verstehen und beeinflussen">
+
+        <chapter id="ereignisfluss-capturing-bubbling" title="Die Capturing- &amp; Bubbling-Phase">
+
+        </chapter>
+
+        <chapter id="ereignisfluss-w3c-standard" title="Der W3C-Standard: Capturing-, Target- und Bubbling-Phase">
+
+        </chapter>
+
+        <chapter id="ereignisfluss-unterbrechen" title="Den Ereignisfluss unterbrechen">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="ereignisse-programmatisch-auslösen" title="Ereignisse programmatisch auslösen">
+
+    </chapter>
+
+    <chapter id="quellen" title="Quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript", Philip Ackermann, 2019
+        </tip>
+    </chapter>
 </topic>
