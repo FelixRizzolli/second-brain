@@ -80,33 +80,208 @@
     </chapter>
 
     <chapter id="variablen" title="Variablen, Konstanten und Typisierung">
+        <tip>
+            Grundlegendes zo Variablen: <a href="swe-pk-grundlagen-variablen.topic"/>
+        </tip>
 
         <chapter id="variablen-v" title="Variablen">
+            <img alt="Variablendeklaration in JavaScript" src="js-sprachkern-variable-declaration.jpg"/>
+
+            <p>
+                Mit dem Schlüsselwort <code>let</code> erstellt man eine Variable. Je nachdem welcher Wert ihr
+                zugewiesen
+                wird, wird der Datentyp bestimmt. Noch wichtig zu wissen ist, dass jeder Wert - egal ob String oder
+                Zahl - der direkt im Code steht, als Literal bezeichnet wird. Sie haben immer einen festen Wert.
+                Literale haben auch einen <b>Datentyp</b> (= <code>string</code> oder <code>number</code>) welcher
+                mit dem Operator <code>typeof</code> ermittelt werden kann. Bei numerischen Werten mit Kommas wird die
+                amerikanische Schreibweise verwendet (Punkt statt Komma).
+            </p>
+
+            <p>
+                Syntax (<b>Lass</b> <i>(früher var)</i> die Variable username Rizz sein)
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    let username = "Rizz";
+                    console.log(typeof variable); //=> string
+                ]]>
+            </code-block>
+
+            <p>
+                Die Wertzuweisung einer Variable erfolgt von rechts nach links, das bedeutet der Wert rechts vom
+                Zuweisungsoperator wird der Variable links zugewiesen und nicht umgekehrt. In eine Variable lässt sich
+                ein Wert einspeichern, aber in einen Wert keine Variable.
+            </p>
+
+            <p>
+                Der Datentyp <code>string</code>, englischer Begriff für Zeichenkette, kann mit zwei Möglichkeiten
+                definiert werden (einfache und doppelte Anführungszeichen):
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    let neueVariable = "be"; //=> be
+                    let neueVariable = 'be'; //=> be
+                ]]>
+            </code-block>
+
+            <p>
+                Die Variable des Datentyps <code>String</code> ist ein Objekt. Von dieser Variablen kann die Eigenschaft
+                <code>length</code> Abgefragt (Länge) werden. Diese Eigenschaft gibt die Anzahl der Zeichen der
+                Zeichenkette zurück. Beispiel: <code>console.log(&quot;Hallo Welt!&quot;.length); //=&gt; 11</code>
+            </p>
 
             <chapter id="variablen-namensgebung" title="Namensgebung für Variablen">
-
+                <list type="bullet">
+                    <li>
+                        Aussagekräftige Bezeichner (<code>alter</code> statt <code>x</code>, <code>vorname</code> statt
+                        <code>z</code>, <code>preis</code> statt <code>p</code>)
+                    </li>
+                    <li>
+                        Keine Sonderzeichen
+                    </li>
+                    <li>
+                        <a href="swe-pk-richtlinien.topic">lowerCamelCasing</a> (Neues Wort beginnt mit einem
+                        Großbuchstaben)
+                    </li>
+                </list>
             </chapter>
 
             <chapter id="variablen-let-vs-var" title="let vs. var">
-
+                <table style="header-column">
+                    <tr>
+                        <td>
+                            Deklatation
+                        </td>
+                        <td>
+                            <p>
+                                Die Deklaration einer Variable mit <code>let</code> hindert uns daran, eine Variable ein
+                                zweites Mal mit demselben Namen zu deklarieren. Hierbei wird ein
+                                <code>SyntaxError</code> geworfen. Bei <code>var</code> ist dies hingegen ohne Fehler
+                                möglich.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Scope
+                        </td>
+                        <td>
+                            <p>
+                                Variablen, welche mit <code>let</code> deklariert wurden, sind "block-scoped", das
+                                bedeutet, ihr Sichtbarkeitsbereich liegt innerhalb eines Blocks. Variablen, welche mit
+                                <code>var</code> deklariert wurden, sind "function-scoped", das bedeutet ihr
+                                Sichtbarkeitsbereich liegt innerhalb einer Funktion. Wird eine variable mit
+                                <code>var</code> innerhalb eines Blocks (kein Funktionsblock) deklariert, so ist diese
+                                auch außerhalb davon, also innerhalb der ganzen Funktion bzw. global, sichtbar.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Hoisting
+                        </td>
+                        <td>
+                            <p>
+                                Hoisting wird die Technik genannt, welche alle Variablendeklarationen zum Anfang
+                                verschiebt. Bei <code>let</code> werden die Deklarationen zum Anfang des Blocks
+                                verschoben, und bei <code>var</code> zum Anfang der Funktion.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Shadowing
+                        </td>
+                        <td>
+                            <p>
+                                Wenn wir einer globalen und einer lokalen Variable denselben Namen geben, dann wird
+                                dies als Variable Shadowing bezeichnet. Denn die globale Variable wird nicht von der
+                                lokalen überschrieben, sondern die globale wird unsichtbar und eine neue Variable mit
+                                demselben Bezeichner wird lokal erstellt. Für var bedeutet lokal <code>=</code>
+                                innerhalb einer Funktion; für <code>let</code> bedeutet lokal <code>=</code> innerhalb
+                                eines Blocks.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
             </chapter>
         </chapter>
 
         <chapter id="variablen-konstanten" title="Konstanten">
+            <tip>
+                Grundlegendes zu Konstanten: <a href="swe-pk-grundlagen-variablen.topic#konstanten"/>
+            </tip>
+
+            <p>
+                Konstanten werden in JavaScript immer mit dem Schlüsselwort <code>const</code> (für eng. constant)
+                deklariert. Das Beste ist, wenn man immer versucht mit Konstanten auszukommen, anstatt eine Variable zu
+                verwenden. Somit vermeidet man, dass sich der wert (natürlich durch eigenes Verschulden) ungewollt
+                ändert. Zudem kann für <code>const</code> die JS Engine den Code optimieren, was Auswirkungen auf die
+                Performance haben kann.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    const TAX_RATE = 1.22; //Multiplikator für Mehrwertsteuer
+                ]]>
+            </code-block>
+
+            <p>
+                Versucht man, eine Konstante zu überschreiben, ignorieren die meisten Laufzeitumgebungen die
+                entsprechende Anweisung stillschweigend (also ohne einen Fehler zu produzieren).
+            </p>
 
             <chapter id="variablen-konstanten-namensgebung" title="Namensgebung für Konstante">
-
+                <list type="bullet">
+                    <li>
+                        Aussagekräftige Bezeichner
+                    </li>
+                    <li>
+                        Keine Sonderzeichen
+                    </li>
+                    <li>
+                        <a href="swe-pk-richtlinien.topic">SCREAMING_SNAKE</a> (Nur Großbuchstaben; Worttrennung durch
+                        Unterstrich)
+                    </li>
+                </list>
             </chapter>
         </chapter>
 
         <chapter id="variablen-typisierung" title="Typisierung">
-
             <chapter id="variablen-typisierung-impliziert" title="Implizierte Typkonvertierung">
-
+                <p>
+                    Was ergibt <code>&quot;5&quot; * &quot;4&quot;</code>? Die Antwort ist <code>"20"</code> mit dem
+                    Datentyp <code>number</code>. Das liegt daran, dass der Multiplikator als Operanden zwei Zahlen
+                    erwartet. Ist ein Operand vom Datentyp <code>string</code> so wird von JS eine sogenannte
+                    implizierte Typkonvertierung durchgeführt. Der Fachausdruck dafür lautet <b>coercion</b>. Auch die
+                    Operanden <code>/</code> und <code>–</code> verwenden coercion.
+                </p>
             </chapter>
 
             <chapter id="variablen-typisierung-explizit" title="Explizite Typkonvertierung">
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let number1 = prompt(„Gib eine Nummer ein!“);   //Eingabe 1
+                        let number2 = prompt(„Gib eine Nummer ein!“);   //Eingabe 2
+                        console.log(„Summe:“ + (number1 + number2));    //=> Summe: 12
+                    ]]>
+                </code-block>
 
+                <p>
+                    Das Problem hier ist, dass die Funktion <code>prompt()</code> immer einen Wert des Datentyps
+                    <code>string</code> zurückgibt. Um das zu lösen, muss man den Datentyp mit der Funktion
+                    <code>Number()</code> konvertieren <code>=</code> explizite Typkonvertierung. Handelt es sich
+                    jedoch bei dem übergebenen an die Funktion <code>Number()</code> um keine Zahl oder eine Mischung
+                    aus Zahl und Text, so lautet der Rückgabewert <code>NaN</code> (Not a Number).
+                </p>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        typeof(NaN); //=> number
+                    ]]>
+                </code-block>
             </chapter>
         </chapter>
     </chapter>
