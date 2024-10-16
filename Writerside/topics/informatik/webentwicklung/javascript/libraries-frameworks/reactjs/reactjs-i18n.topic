@@ -3,10 +3,49 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="reactjs-i18n"
        title="Internationalisierung"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
 
     <!-- TODO: migrate from Confluence -->
-    <chapter id="" title="">
+    <chapter id="einleitung" title="Einleitung">
+
+    </chapter>
+
+    <chapter id="react-i18next" title="react-i18next">
+
+        <chapter id="react-i18next-konfiguration" title="Konfiguration">
+
+        </chapter>
+
+        <chapter id="react-i18next-anwendung" title="Anwendung">
+
+        </chapter>
+
+        <chapter id="react-i18next-sprachumschaltung" title="Sprachumschaltung">
+
+        </chapter>
+
+        <chapter id="react-i18next-weitere-moeglichkeiten" title="Weitere Möglichkeiten">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="platzhalter" title="Platzhalter verwenden">
+
+    </chapter>
+
+    <chapter id="werte-formatieren" title="Werte formatieren">
+
+        <chapter id="werte-formatieren-zahlenwerte" title="Zahlenwerte">
+
+        </chapter>
+
+        <chapter id="werte-formatieren-datumswerte" title="Datumswerte">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="singular-und-plural" title="Singular und Plural">
 
     </chapter>
 
