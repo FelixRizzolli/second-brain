@@ -46,9 +46,36 @@
     </chapter>
 
     <chapter id="kommentare" title="Kommentare">
+        <tip>
+            Grundlegendes zu Kommentare: <a href="swe-pk-kommentare.topic"/>
+        </tip>
+
+        <p>
+            In JavaScript gibt es wie in den meisten Programmiersprachen zwei Arten von Kommentaren. Das einzeilige und
+            der mehrzeilige Kommentar.
+        </p>
+
+        <code-block collapsed-title="Beispeiel" collapsible="true" lang="javascript">
+            <![CDATA[
+                //Ein Einzeiliges Kommentar.
+
+                /*
+                Ein Mehrzeiliges Kommentar.
+                */
+            ]]>
+        </code-block>
 
         <chapter id="kommentare-notation" title="Notation (fat arrow)">
+            <p>
 
+                Möchte man ein Kommentar erstellen, welches darüber Aufschluss gibt wie das Ergebnis lauten könnte,
+                verwendet man einen sogenannten <b>fat arrow <code>=&gt;</code></b>.
+            </p>
+            <code-block lang="javascript">
+                <![CDATA[
+                    console.log(3 + 4 * 2); //=> 11
+                ]]>
+            </code-block>
         </chapter>
     </chapter>
 
