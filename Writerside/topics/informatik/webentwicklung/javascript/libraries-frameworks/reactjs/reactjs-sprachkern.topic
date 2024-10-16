@@ -3,10 +3,224 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="reactjs-sprachkern"
        title="Sprachkern"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
 
     <!-- TODO: migrate from Confluence -->
-    <chapter id="" title="">
+    <chapter id="grundlagen" title="Die Grundlagen von React">
+
+        <chapter id="grundlagen-index" title="Index.jsx – das Rendering der Applikation">
+
+            <chapter id="grundlagen-index-strict-mode" title="StrictMode">
+
+            </chapter>
+
+            <chapter id="grundlagen-index-reportwebvitals" title="reportWebVitals">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="grundlagen-app" title="App.jsx – die Wurzelkomponente">
+
+        </chapter>
+
+        <chapter id="grundlagen-funktionskomponenten" title="Funktionskomponenten">
+
+            <chapter id="grundlagen-funktionskomponenten-eine-komponente-pro-datei" title="Eine Komponente pro Datei">
+
+            </chapter>
+
+            <chapter id="grundlagen-funktionskomponenten-import-export" title="Import und Export">
+
+            </chapter>
+
+            <chapter id="grundlagen-funktionskomponenten-beispiel" title="Beispiel">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="grundlagen-jsx" title="JSX – Strukturen in React definieren">
+
+            <chapter id="grundlagen-jsx-react" title="React-Elemente">
+
+            </chapter>
+
+            <chapter id="grundlagen-jsx-kommentare" title="Kommentare in JSX">
+
+            </chapter>
+
+            <chapter id="grundlagen-jsx-xss" title="XSS-Protection">
+
+            </chapter>
+
+            <chapter id="grundlagen-jsx-schleifen" title="Schleifen">
+
+            </chapter>
+
+            <chapter id="grundlagen-jsx-bedingungen" title="Bedingungen">
+
+                <chapter id="grundlagen-jsx-bedingungen-rendering" title="Bedingtes Rendering">
+
+                </chapter>
+
+                <chapter id="grundlagen-jsx-bedingungen-and" title="Logischer AND-Operator">
+
+                </chapter>
+
+                <chapter id="grundlagen-jsx-bedingungen-ternaeroperator" title="Ternäroperator">
+
+                </chapter>
+            </chapter>
+        </chapter>
+
+        <chapter id="grundlagen-props" title="Props – Informationsfluss in einer Applikation">
+
+            <chapter id="grundlagen-props-proptypes" title="Typsicherheit mit PropTypes">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="grundlagen-lokaler-state" title="Lokaler State">
+
+        </chapter>
+
+        <chapter id="grundlagen-event-binding" title="Event-Binding – Reaktion auf Benutzerinteraktionen">
+
+            <chapter id="grundlagen-event-binding-auf-events-reagieren" title="Auf Events reagieren">
+
+            </chapter>
+
+            <chapter id="grundlagen-event-binding-arbeiten-mit-eventobjekten" title="Arbeiten mit Event-Objekten">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="grundlagen-immutability" title="Immutability">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="weiteres" title="Weiterführende Themen">
+
+        <chapter id="weiteres-lifecycle" title="Der Lebenszyklus einer Komponente">
+
+            <chapter id="weiteres-lifecycle-useeffect" title="Grundlegendes zum Effect-Hook useEffect">
+
+            </chapter>
+
+            <chapter id="weiteres-lifecycle-mount" title="Mount – das Einhängen einer Komponente">
+
+            </chapter>
+
+            <chapter id="weiteres-lifecycle-update" title="Update – Aktualisieren der Komponente">
+
+                <chapter id="weiteres-lifecycle-update-selektiv" title="Selektive Updates">
+
+                </chapter>
+            </chapter>
+
+            <chapter id="weiteres-lifecycle-unmount" title="Unmount – Aufräumen am Ende des Lebenszyklus">
+
+                <chapter id="weiteres-lifecycle-unmount-cleanup" title="Cleanup">
+
+                </chapter>
+            </chapter>
+        </chapter>
+
+        <chapter id="weiteres-serverkommunikation" title="Serverkommunikation">
+
+            <chapter id="weiteres-serverkommunikation-fetch-api" title="Die Fetch API">
+
+                <chapter id="weiteres-serverkommunikation-fetch-api-fehlerbehandlung" title="Fehlerbehandlung">
+
+                </chapter>
+
+                <chapter id="weiteres-serverkommunikation-fetch-api-async-await" title="Arbeiten mit async/await">
+
+                </chapter>
+            </chapter>
+
+            <chapter id="weiteres-serverkommunikation-proxy" title="Proxy">
+
+            </chapter>
+
+            <chapter id="weiteres-serverkommunikation-umgebungsvariablen" title="Umgebungsvariablen">
+
+            </chapter>
+
+            <chapter id="weiteres-serverkommunikation-axios" title="Axios">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="weiteres-kontext" title="Kontext">
+
+            <chapter id="weiteres-kontext-grundlegendes" title="Grundlegendes">
+
+            </chapter>
+
+            <chapter id="weiteres-kontext-context-objekt" title="Ein Context-Objekt erzeugen">
+
+            </chapter>
+
+            <chapter id="weiteres-kontext-einbinden" title="Einbindung des Kontexts">
+
+            </chapter>
+
+            <chapter id="weiteres-kontext-zugriff" title="Lesender Zugriff auf den Kontext">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="weiteres-fragments" title="Fragments">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="formulare" title="Formulare in React">
+
+        <chapter id="formulare-css-import" title="CSS-Import">
+
+            <chapter id="formulare-css-import-vorteile" title="Vorteile">
+
+            </chapter>
+
+            <chapter id="formulare-css-import-nachteile" title="Nachteile">
+
+            </chapter>
+
+            <chapter id="formulare-css-import-umgeng" title="Umgang mit Klassennamen">
+
+            </chapter>
+
+            <chapter id="formulare-css-import-classnames-bibliothek"
+                     title="Verbesserte Behandlung von Klassennamen mit der classnames-Bibliothek">
+
+            </chapter>
+
+            <chapter id="formulare-css-import-sass" title="Verwendung von Sass als CSS-Präprozessor">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="formulare-inline-styling" title="Inline-Styling">
+
+        </chapter>
+
+        <chapter id="formulare-css-module" title="CSS-Module">
+
+        </chapter>
+
+        <chapter id="formulare-css-in-javascript" title="CSS in JavaScript mit Emotion">
+
+        </chapter>
+
+        <chapter id="formulare-tailwind" title="Tailwind">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="" title="Styling von React-Kompoenten">
 
     </chapter>
 
