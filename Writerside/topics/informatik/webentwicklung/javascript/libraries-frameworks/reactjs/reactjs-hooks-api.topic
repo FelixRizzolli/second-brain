@@ -3,10 +3,60 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="reactjs-hooks-api"
        title="Die Hooks-API"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
 
     <!-- TODO: migrate from Confluence -->
-    <chapter id="" title="">
+    <chapter id="grundlegendes" title="Grundlegendes">
+
+    </chapter>
+
+    <chapter id="builtin" title="Built-in React Hooks">
+
+        <chapter id="builtin-state-hooks" title="State Hooks">
+
+        </chapter>
+
+        <chapter id="builtin-kontext-hooks" title="Kontext Hooks">
+
+        </chapter>
+
+        <chapter id="builtin-ref-hooks" title="Ref Hooks">
+
+        </chapter>
+
+        <chapter id="builtin-effect-hooks" title="Effect Hooks">
+
+        </chapter>
+
+        <chapter id="builtin-performance-hooks" title="Performance Hooks">
+
+            <chapter id="builtin-performance-hooks-memorisierung" title="Memorisierung">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="builtin-andere-hooks" title="Andere Hooks">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="custom-hooks" title="Custom Hooks">
+
+    </chapter>
+
+    <chapter id="rules" title="Rules of Hooks">
+
+        <chapter id="rules-1" title="Regel #1: Hooks nur auf oberster Ebene ausführen">
+
+        </chapter>
+
+        <chapter id="rules-2" title="Regel #2: Hooks dürfen nur in Funktionskomponenten oder Hooks verwendet werden">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="umstieg-auf-hooks" title="Umstieg auf Hooks">
 
     </chapter>
 
