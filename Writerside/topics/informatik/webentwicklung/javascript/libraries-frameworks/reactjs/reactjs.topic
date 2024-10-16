@@ -69,5 +69,9 @@
             <b>(BUCH)</b>
             978-3836292543, "React – Das umfassende Handbuch", Sebastian Springer, 2023
         </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://react.dev/learn/thinking-in-react"/>, 2023-04-14 18:30
+        </tip>
     </chapter>
 </topic>
