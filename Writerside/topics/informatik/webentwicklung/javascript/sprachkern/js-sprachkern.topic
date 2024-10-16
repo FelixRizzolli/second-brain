@@ -10,7 +10,39 @@
 
     <!-- TODO: migrate from Confluence -->
     <chapter id="webseite" title="JavaScript auf einer Webseite verwenden">
+        <p>
+            JavaScript-Code wird auf einer Website mit den <code>&lt;script&gt;&gt;/script&gt;</code>-Tags angegeben.
+            Dabei kann der Code direkt innerhalb der Tags geschrieben werden oder auf ein externes File ausgelagert und
+            mit dem <code>src</code>-Attribut darauf verlinkt werden. Für den <code>script</code>-Tag gibt es noch
+            weitere Attribute, die dessen ladeverhalten bestimmen:
+        </p>
 
+        <table style="header-column">
+            <tr>
+                <td>
+                    <code>defer</code>
+                </td>
+                <td>
+                    <p>
+                        Das Script soll geladen werden, nachdem die HTML-Seite geladen wurde.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>async</code>
+                </td>
+                <td>
+                    <p>
+                        Das Script soll direkt parallel zum Parsen der restlichen Seite geladen werden.
+                    </p>
+                    <p>
+                        Greift das Script direkt auf HTML-Elemente zu, die noch nicht geladen wurde, kann es zu Fehlern
+                        kommen.
+                    </p>
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter id="kommentare" title="Kommentare">
