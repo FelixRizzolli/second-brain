@@ -3,10 +3,49 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="reactjs-typescript"
        title="Typsicherheit mit TypeScript"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
 
     <!-- TODO: migrate from Confluence -->
-    <chapter id="" title="">
+    <chapter id="grundlagen" title="Grundlagen">
+
+        <chapter id="grundlagen-wichtigste-features" title="Die wichtigsten Features von React">
+
+        </chapter>
+
+        <chapter id="grundlagen-basisfeatures" title="Basisfeatures">
+
+        </chapter>
+
+        <chapter id="grundlagen-typescript-einbinden" title="TypeScript in einer React-Applikation einbinden">
+
+        </chapter>
+
+        <chapter id="grundlagen-typescript-nachruesten" title="TypeScript zu einer bestehenden Applikation hinzufügen">
+
+        </chapter>
+
+        <chapter id="grundlagen-konfiguration" title="Konfiguration von TypeScript">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="typdefinitionen" title="Typdefinitionen – Informationen über Drittanbieter-Software">
+
+    </chapter>
+
+    <chapter id="funktionskomponenten" title="Funktionskomponenten">
+
+        <chapter id="funktionskomponenten-state-hook" title="Der State-Hook">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="context" title="Context">
+
+    </chapter>
+
+    <chapter id="klassenkomponenten" title="Klassenkomponenten">
 
     </chapter>
 
