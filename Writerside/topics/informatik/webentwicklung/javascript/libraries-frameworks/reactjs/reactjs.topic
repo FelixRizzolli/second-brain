@@ -3,7 +3,71 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="reactjs"
        title="ReactJS"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <!-- TODO: migrate from Confluence -->
+    <chapter id="was-ist-react" title="Was ist React?">
+
+    </chapter>
+
+    <chapter id="begriffe-und-konzepte" title="Die wichtigsten Begriffe und Konzepte der React-Welt">
+
+        <chapter id="begriffe-und-konzepte-komponenten-und-elemente" title="Komponenten und Elemente">
+
+            <chapter id="begriffe-und-konzepte-klassenkomponenten" title="Klassenkomponenten">
+
+            </chapter>
+
+            <chapter id="begriffe-und-konzepte-funktionskomponenten" title="Funktionskomponenten">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="begriffe-und-konzepte-datenfluss" title="Der Datenfluss">
+
+        </chapter>
+
+        <chapter id="begriffe-und-konzepte-renderer" title="Der Renderer">
+
+        </chapter>
+
+        <chapter id="begriffe-und-konzepte-reconciler" title="Der Reconciler">
+
+            <chapter id="begriffe-und-konzepte-reconciler-key-prop" title="Mehrere Kindelemente und die key-Prop">
+
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter id="react-universum" title="Das React-Universum (preview)">
+
+        <chapter id="react-universum-state-management" title="Das State-Management">
+
+        </chapter>
+
+        <chapter id="react-universum-router" title="Der Router">
+
+        </chapter>
+
+        <chapter id="react-universum-jest" title="Jest">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="thinking-in-react" title="Thinking in React">
+
+    </chapter>
+
+    <chapter id="first-steps" title="Erste Schritte">
+
+    </chapter>
+
+    <chapter id="quellen" title="Quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836292543, "React – Das umfassende Handbuch", Sebastian Springer, 2023
+        </tip>
+    </chapter>
 </topic>
