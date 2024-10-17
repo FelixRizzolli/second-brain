@@ -2406,39 +2406,178 @@
     <chapter id="vordefiniert" title="Vordefinierte Funktionen und Objekte">
 
         <chapter id="vordefiniert-console" title="Konsolenausgabe">
+            <code-block lang="javascript">
+                <![CDATA[
+                    console.log(“Hallo”);
+                ]]>
+            </code-block>
 
+            <p>
+                Die Funktion <code>log</code> des Objektesconsolegibt in der Browserkonsole die übergebenenParameter
+                aus. Im Beispeil: <code>Hallo</code>.
+            </p>
         </chapter>
 
         <chapter id="vordefiniert-warnungsfenster" title="Warnungsfenster">
+            <code-block lang="javascript">
+                <![CDATA[
+                    window.alert("Hallo");
+                ]]>
+            </code-block>
 
+            <p>
+                Bei Funktionen des vordefinierten Objektes window kann auch das <code>window</code> weggelassen und
+                direkt die Funktion bsp. <code>alert</code> angegeben werden. Die wahrscheinlich von allem am meisten
+                gehasste Funktion des Browsers. Die <code>alert</code>-Funktion. Bei der <code>alert</code>-Funktion
+                wird im Browser ein Warnungsfenster geöffnet und die Interaktion mit der Seite gesperrt. Dadurch, da sie
+                von nervtötenden Werbewebseiten größtenteils missbraucht wird, hasst sie jeder.
+            </p>
         </chapter>
 
         <chapter id="vordefiniert-eingabefenster" title="Eingabefenster">
+            <code-block lang="javascript">
+                <![CDATA[
+                    let username = window.prompt("Gib deinen Namen ein");
+                ]]>
+            </code-block>
 
+            <p>
+                Mit dieser Codezeile öffnet sich ein Fenster mit der Meldung <code>Gib deinen Namen ein</code> worunter
+                sich eine Eingabezeile befindet. Die Eingabe des Benutzers wird bei <code>bestätigen</code> mit
+                <code>Ok</code> in die Variable <code>username</code> gespeichert.
+            </p>
         </chapter>
 
         <chapter id="vordefiniert-use-strict" title="Der &quot;use strict&quot; Modus">
+            <p>
+                Ein <b>Scope</b> ist ein Bereich, innerhalb dessen eine Variable Gültigkeit besitzt. Typischerweise
+                werden Variablen mit <code>let</code> definiert. Dadurch besitzt eine Variable <i>local scope</i> – d.h.
+                sie ist in genau dem lokalen Bereich gültig, indem sie definiert ist. Ein Bereich ist dabei ein
+                Code-Block, der durch die geschweiften Klammern abgegrenzt ist. Außerdem ist die Variable erst ab ihrer
+                Deklaration gültig und nicht vorher.
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    if (true) {
+                      let a = 1;
+                      console.log(a);   //=> 1
+                    }
+                    console.log(a);     //=> Reference Error: a is not defined
+
+                    let x = () => {
+                      console.log(a);   //=> Reference Error:  can’t access lexical declaration “a” before initialization
+                      let a = 1;
+                    }
+                ]]>
+            </code-block>
+
+            <tip>
+                <p>
+                    <b>
+                        Altes JavaScript
+                    </b>
+                </p>
+
+                <p>
+                    Das ältere Schlüsselwort <code>var</code> hingegen zieht Variablendeklarationen immer an den Anfang
+                    einer Funktion (sogenanntes <i>Hosting</i>) und macht die Variable in der kompletten Funktion
+                    verfügbar - <i>function scope</i>.
+                </p>
+            </tip>
         </chapter>
 
         <chapter id="vordefiniert-konstante" title="Konstante">
-
+            <p>
+                Konstante <code>const</code> verwenden dasselbe Prinzip wie <code>let</code>, mit dem einzigen
+                Unterschied, dass Konstante konstant sind.
+            </p>
         </chapter>
 
         <chapter id="vordefiniert-parameter" title="Parameter">
-
+            <p>
+                Funktionsparameter verhalten sich wie Variablen. Sie werden zu Beginn der Funktion deklariert und stehen
+                somit innerhalb des ganzen Funktionscode-Blocks zur Verfügung.
+            </p>
         </chapter>
 
         <chapter id="vordefiniert-globale-variablen" title="Globale Variablen">
+            <p>
+                Globale Variablen sind Variablen die außerhalb von Funktionen, auf oberster (globaler) Ebene definiert
+                werden. Sie sind überall gültig. Globale Variablen sollten man vermeiden, da sie oft der Grund für
+                Fehler sind. Es kann auch passieren, dass man eine globale Variable aus Versehen anlegt, indem man das
+                let vergisst.
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    let x = () => {
+                      a = 3;
+                    }
+                    let y = () => {
+                      console.log(a); //=> 3
+                    }
+                    x();
+                    y();
+                    console.log(a); //=> 3
+                ]]>
+            </code-block>
+
+            <p>
+                Netscape legte anfangs großen Wert darauf, dass JS einsteigfreundlich ist. Das führte leider zu einigen
+                sehr fragwürdigen Designentscheidungen. JS akzeptiert viele Fehler und Probleme, was es Anfängern
+                erleichtert erst einmal den Code zum Laufen zu bringen. Das Problem davon ist, dass es dazu führen kann,
+                dass man Stunden oder Tage damit verbringt einen Fehler zu suchen, dessen Ursache sich an einer ganz
+                anderen Stelle im Code befindet. Seit der JS-Sprachversion ES5.1 gibt es ein Gegenmittel: den strict
+                mode. Im strict mode erkennt JS viele potenzielle Probleme und kennzeichnet sie als Fehler. Es ermahnt
+                einen den Code sozusagen „sauber“ zu schreiben. Der Befehl <code>„use strict“;</code> wird von älteren
+                Browsern als nur ein String-Literal gelesen, welches nicht mal einer Variablen zugewiesen wird. Neuere
+                Browser hingegen verstehen diesen Befehl und schalten den Modus um.
+            </p>
+
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    "use strict";
+                    price = 10;    //=> ReferenceError: assignment to undeclared variable price
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="vordefiniert-abgeschottete-bloecke" title="Abgeschottete Blöcke">
+            <p>
+                Erstellt man in einer JS-Datei eine Variable außerhalb jeder Funktion, so ist diese auch in den anderen
+                JS-Dateien sichtbar, da sie global erstellt wurde. Dies kann zu Konflikten im Code führen. Um dem
+                entgegenzuwirken, erstellt man immer einen Block mit <code>{ }</code> Klammern.
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    {
+                      let a = 10;
+                      console.log(a);
+                    }
+                    console.log(a); // => Variable a existiert nicht!
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="vordefiniert-strikter-modus-in-funktionen" title="Strikter Modus in Funktionen">
+            <p>
+                Es besteht auch die Möglichkeit, den strikten Modus gezielt für einzelne Funktionen zu verwenden. Um
+                dies zu tun, muss die Anweisung <code>'use strict';</code> als erste Anweisung an den Anfang der
+                Funktion hinzugefügt werden.
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    function showMessage() {
+                      'use strict';
+                      let message = 'Herzlich willkommen';
+                      console.log(message);
+                    }
+                ]]>
+            </code-block>
         </chapter>
     </chapter>
 
