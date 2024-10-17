@@ -7,8 +7,6 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
-
-    <!-- TODO: migrate from Confluence -->
     <chapter id="webseite" title="JavaScript auf einer Webseite verwenden">
         <p>
             JavaScript-Code wird auf einer Website mit den <code>&lt;script&gt;&gt;/script&gt;</code>-Tags angegeben.
@@ -1390,64 +1388,304 @@
     </chapter>
 
     <chapter id="kontrollstrukturen" title="Krontrollstrukturen">
+        <tip>
+            Grundlegendes zu Kontrollstrukturen: <a href="swe-pk-grundlagen-kontrollstrukturen.topic"/>
+        </tip>
 
         <chapter id="kontrollstrukturen-auswahlstrukturen" title="Auswahlstrukturen">
 
             <chapter id="kontrollstrukturen-auswahlstrukturen-if" title="if-elseif-else-Statement">
 
                 <chapter id="kontrollstrukturen-auswahlstrukturen-if-syntax" title="Syntax">
-
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            if (Bedingung) {
+                              Anweisung1;
+                            } if else (Bedingung) {
+                              Anweisung2;
+                            } else {
+                              Anweisung3;
+                            }
+                        ]]>
+                    </code-block>
                 </chapter>
 
                 <chapter id="kontrollstrukturen-auswahlstrukturen-if-beispiel" title="Beispiel">
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            const SOLUTION = 42;
+                            let answer = Number(prompt("6 * 7"));
 
+                            if (answer === SOLUTION){
+                              console.log("Congratulation, u’re genius!");
+                            }
+                            if else (answer === 36){
+                              console.log("This is the answer of 6 * 6!");
+                            }
+                            else {
+                              console.log("Wrong answer!");
+                            }
+                        ]]>
+                    </code-block>
                 </chapter>
 
                 <chapter id="kontrollstrukturen-auswahlstrukturen-if-kurzschreibweise" title="Kurzschreibweise">
+                    <p>
+                        Ist für die Abfrage nur eine Anweisung vorgesehen, so kann man die Kurzschreibweise verwenden:
+                    </p>
 
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            if (answer === SOLUTION) console.log("Congratulation, u’re genius!");
+                        ]]>
+                    </code-block>
                 </chapter>
             </chapter>
 
             <chapter id="kontrollstrukturen-auswahlstrukturen-tertiaerer-operator" title="Der tertiäre Operator">
+                <p>
+                    Eine weitere Möglichkeit den Code zu kürzen und übersichtlicher zu gestalten ist der tertiäre
+                    Operator. Der tertiäre Operator hat drei Operanden (deswegen tertiär) und trennt diese mit den
+                    Zeichen <code>?</code> und <code>:</code>. Beispiel:
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        if (productCategory === "books"){
+                          taxRate = 1.07;
+                        } else {
+                          taxRate = 1.19;
+                        }
+
+                        taxRate = (productCategory === "books") ? 1.07 : 1.19;
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="kontrollstrukturen-auswahlstrukturen-switch" title="Mehrfachverzweigungen: switch-Statement">
-
+                <code-block lang="javascript">
+                    <![CDATA[
+                        switch (expression) {
+                          case value1:
+                            // Anweisung
+                            break;
+                          case value2:
+                            // Anweisung
+                            break;
+                          default:
+                            // Anweisung
+                            break;
+                        }
+                    ]]>
+                </code-block>
             </chapter>
         </chapter>
 
         <chapter id="kontrollstrukturen-schleifen" title="Schleifen">
-
             <chapter id="kontrollstrukturen-schleifen-for" title="Zählschleife – die for-Schleife">
+                <p>
+                    Mit folgendem Beispiel werden alle Zahlen von 0 bis 9 ausgegeben:
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        for (let i = 0; i < 10; i+=1) {
+                          console.log(i);
+                        }
+                    ]]>
+                </code-block>
+
+                <p>
+                    Enthält der auszuführende Codeblock nur eine Anweisung, so ist in JavaScript auch folgende Kurzform
+                    möglich:
+                </p>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        for (let i = 0; i < 10; i+=1) console.log(i);
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="kontrollstrukturen-schleifen-for-of-in" title="Die for-of-Schleife und for-in-Schleife">
-
+                <table>
+                    <tr>
+                        <td>
+                            <code>
+                                for-of
+                            </code>
+                        </td>
+                        <td>
+                            Zum Iterieren von Objekten wie Array, Maps und Sets
+                        </td>
+                        <td>
+                            <a href="js-ecmascript.topic#iteratoren-for-of"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                for-in
+                            </code>
+                        </td>
+                        <td>
+                            Zum iterieren von Keys von Objekten
+                        </td>
+                        <td>
+                            <a href="js-oop.topic#grundlagen-eigenschaften-methoden-ausgeben-for-in"/>
+                        </td>
+                    </tr>
+                </table>
             </chapter>
 
             <chapter id="kontrollstrukturen-schleifen-while" title="Kopfgesteuerte Schleife – die while-Schleife">
+                <p>
+                    Eine einfache <code>while</code>-Schleife, die die Zahlen von 1 bis 10 ausgibt:
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let i = 1;
+                        while (i < 11) {
+                          console.log(i);
+                          i++;
+                        }
+                    ]]>
+                </code-block>
+
+                <p>
+                    Auch die <code>while</code>-Schleife bietet eine Kurzform, falls der auszuführende Codeblock aus nur
+                    einer Anweisung besteht.
+                </p>
             </chapter>
 
             <chapter id="kontrollstrukturen-schleifen-do-while" title="Fußgesteuerte Schleife – die do-while-Schleife">
+                <p>
+                    Eine einfache <code>do</code>-<code>while</code>-Schleife, die die Zahlen von 1 bis 10 ausgibt:
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let i = 1;
+                        do {
+                          console.log(i);
+                          i++;
+                        } while (i < 11)
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="kontrollstrukturen-schleifen-abbrechen" title="Schleifen vorzeitig abbrechen">
-
                 <chapter id="kontrollstrukturen-schleifen-break" title="Die break-Anweisung">
+                    <p>
+                        Die <code>break</code>-Anweisung wird verwendet um eine Schleife oder eine
+                        <code>switch</code>-Anweisung zu terminieren. Es springt zum Ende der Schleife bzw. der
+                        <code>switch</code>-Anweisung.
+                    </p>
 
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let numbers = [2, 4, 56, 22, 65, 2, 54, 88, 29];
+                            console.log('Vor der Schleife.');
+                            for (let i = 0; i < numbers.length; i++) {  // Iteriere über ...
+                              let number = numbers[i];                  // ...  das Zahlenarray.
+                              if (number % 2 === 1) {                   // Wenn eine Zahl ungerade ist ...
+                                console.log('Ungerade Zahl gefunden.'); // ... gib Meldung aus ...
+                                break;                                  // ... und brich die Schleife ab.
+                              }                                         // Ansonsten ...
+                              console.log(number);                      // ... gib die Zahl aus.
+                            }
+                            console.log('Nach der Schleife.');
+                        ]]>
+                    </code-block>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            Vor der Schleife.
+                            2
+                            4
+                            56
+                            22
+                            Ungerade Zahl gefunden.
+                            Nach der Schleife.
+                        ]]>
+                    </code-block>
                 </chapter>
 
                 <chapter id="kontrollstrukturen-schleifen-continue" title="Die continue-Anweisung">
+                    <p>
+                        Die <code>continue</code>-Anweisung bricht nur die aktuelle Schleifeniteration ab.
+                    </p>
 
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let numbers = [2, 4, 56, 22, 65, 2, 54, 88, 29];
+                            console.log('Vor der Schleife.');
+                            for (let i = 0; i < numbers.length; i++) {  // Iteriere über ...
+                              let number = numbers[i];                  // ...  das Zahlenarray.
+                              if (number % 2 === 1) {                   // Wenn eine Zahl ungerade ist ...
+                                console.log('Ungerade Zahl gefunden.'); // ... gib Meldung aus ...
+                                continue;                               // ... und brich die Schleifeniteration ab.
+                              }                                         // Ansonsten ...
+                              console.log(number);                      // ... gib die Zahl aus.
+                            }
+                            console.log('Nach der Schleife.');
+                        ]]>
+                    </code-block>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            Vor der Schleife.
+                            2
+                            4
+                            56
+                            22
+                            Ungerade Zahl gefunden.
+                            2
+                            54
+                            88
+                            Ungerade Zahl gefunden.
+                            Nach der Schleife.
+                        ]]>
+                    </code-block>
                 </chapter>
             </chapter>
 
-            <chapter id="kontrollstrukturen-schleifen-goto" title="Sprungmarken">
+            <chapter id="kontrollstrukturen-schleifen-sprungmarken" title="Sprungmarken">
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let numbers = [2, 4, 56, 22, 65, 2, 54, 88, 29];
+                        outerLoop:
+                          for (let i = 0; i < numbers.length; i++) {
+                            let number = numbers[i];
+                            innerLoop:
+                              for (let j = i + 1; j < numbers.length; j++) {
+                                let number2 = numbers[j];
+                                console.log('Vergleiche ' + number + ' mit ' + number2);
+                                if (number === number2) {
+                                  console.log('Gleiche Zahlen gefunden');
+                                  continue outerLoop;
+                                }
+                              }
+                          }
+                    ]]>
+                </code-block>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        Vergleiche 2 mit 4
+                        Vergleiche 2 mit 56
+                        Vergleiche 2 mit 22
+                        Vergleiche 2 mit 65
+                        Vergleiche 2 mit 2
+                        Gleiche Zahlen gefunden
+                        Vergleiche 4 mit 56
+                        Vergleiche 4 mit 22
+                        Vergleiche 4 mit 65
+                        Vergleiche 4 mit 2
+                        Vergleiche 4 mit 54...
+                    ]]>
+                </code-block>
             </chapter>
         </chapter>
     </chapter>
