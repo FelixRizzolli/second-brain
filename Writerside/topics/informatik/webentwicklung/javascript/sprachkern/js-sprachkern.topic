@@ -1508,7 +1508,7 @@
             </chapter>
 
             <chapter id="kontrollstrukturen-schleifen-for-of-in" title="Die for-of-Schleife und for-in-Schleife">
-                <table>
+                <table style="none">
                     <tr>
                         <td>
                             <code>
@@ -1691,71 +1691,715 @@
     </chapter>
 
     <chapter id="funktionen" title="Funktionen">
+        <tip>
+            Grundlegendes zu Funktionen: <a href="swe-pk-grundlagen-funktionen.topic"/>
+        </tip>
 
         <chapter id="funktionen-basis" title="Basis Funktionsdeklaration und Funktionsausdruck">
+            <code-block collapsed-title="Funktionsdeklaration" collapsible="true" lang="javascript">
+                <![CDATA[
+                    function showMessage() {
+                      console.log('Herzlich willkommen');
+                    }
+                ]]>
+            </code-block>
 
+            <code-block collapsed-title="Funktionsausdruck" collapsible="true" lang="javascript">
+                <![CDATA[
+                    let showMessage = function() {
+                      console.log('Herzlich willkommen');
+                    }
+                ]]>
+            </code-block>
+
+            <p>
+                Funktionen können in JavaScript nicht nur über Funktionsdeklarationen, sondern auch über sogenannte
+                Funktionsausdrücke (bzw. Function Expressions) erstellt werden. Solche Funktionsausdrücke können überall
+                dort verwendet werden, wo auch normale Ausdrücke verwendet werden dürfen, sprich der Interpreter einen
+                Ausdruck erwartet. Üblicherweise verzichtet man dabei auf die Angabe eines Funktionsnamens, was die
+                Funktion zu einer sogenannten anonymen Funktion macht.
+            </p>
+
+            <p>
+                Funktionsdeklaration und Funktionsausdruck unterscheiden sich dabei in folgenden Punkten voneinander:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    <p>
+                        Bei Funktionsdeklarationen muss der Funktion ein Name gegeben werden, bei Funktionsausdrücken
+                        ist der Name optional. Lässt man ihn weg, handelt es sich bei der Funktion um eine anonyme
+                        Funktion.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Bei Funktionsdeklarationen werden Funktionen über Funktionsnamen aufgerufen, bei
+                        Funktionsausdrücken über die Variable, der die Funktion zugewiesen wurde.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Funktionsausdrücke werden vom Interpreter erst dann verarbeitet, wenn dieser auf die
+                        entsprechende Anweisung trifft. Das wiederum heißt aber auch, dass solche Funktionen erst in den
+                        Anweisungen danach verwendet werden können. Bei Funktionsdeklarationen dagegen sorgt der
+                        Interpreter dafür, dass die entsprechenden Funktionen auch vor der Deklaration zur Verfügung
+                        stehen und somit auch in Anweisungen davor aufgerufen werden können.
+                    </p>
+
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+                        <![CDATA[
+                            // Funktionen, die per Funktionsausdruck erzeugt werden, können nicht vor diesem Ausdruck
+                            // verwendet werden.
+                            showMessage();  // Aufruf nicht möglich, diese Anweisung produziert einen Fehler
+                            let  showMessage = function() {
+                              console.log('Herzlich willkommen');
+                            }
+
+                            // Funktionen, die per Funktionsdeklaration erzeugt werden, können vor dieser Deklaration
+                            // bereits verwendet werden.
+                            showMessage();  // Aufruf möglich
+                            function showMessage() {
+                              console.log('Herzlich willkommen');
+                            }
+                        ]]>
+                    </code-block>
+                </li>
+            </list>
         </chapter>
 
         <chapter id="funktionen-parameter" title="Parameter">
+            <code-block collapsed-title="Funktionsaufruf mit Argument in JavaScript" collapsible="true"
+                        lang="javascript">
+                <![CDATA[
+                    function printPersonInformation(firstName, lastName, age) {
+                      console.log('Vorname: ' + firstName);
+                      console.log('Nachname: ' + lastName);
+                      console.log('Alter: ' + age);
+                    }
+
+                    printPersonInformation('Max', 'Mustermann', 44);
+                    printPersonInformation('Moritz', 'Mustermann', 55);
+                ]]>
+            </code-block>
+
+            <code-block collapsed-title="Ausgabe" collapsible="true" lang="javascript">
+                <![CDATA[
+                    Vorname: Max
+                    Nachname: Mustermann
+                    Alter: 44
+                    Vorname: Moritz
+                    Nachname: Mustermann
+                    Alter: 55
+                ]]>
+            </code-block>
+
+            <p>
+                JavaScript ist eine schwach typisierte Programme. In JavaScript müssen für die Parameter keine
+                Datentypen angegeben werden.
+            </p>
 
             <chapter id="funktionen-parameter-weniger-argumente-als-parameter"
                      title="Funktionen mit weniger Argumenten als angegebenen Parametern aufrufen">
+                <p>
+                    Eine weitere Besonderheit bei der Verwendung von Funktionen, die JavaScript von anderen Sprachen wie
+                    beispielsweise Java unterscheidet, ist, dass eine Funktion auch mit weniger Argumenten aufgerufen
+                    werden kann, als Parameter in der Funktionsdeklaration definiert sind. Die Parameter, zu denen beim
+                    Funktionsaufruf keine Argumente übergeben werden, verhalten sich innerhalb der Funktion wie
+                    Variablen, die nicht initialisiert worden sind. Mit anderen Worten: Sie haben den Wert
+                    <code>undefined</code>. Innerhalb der Funktion kann man nun prüfen, ob für den jeweiligen Parameter
+                    ein Argument übergeben wurde, indem man testet, ob dieser den Wert <code>undefined</code> enthält:
+                </p>
 
+                <code-block collapsed-title="Funktionsaufruf mit Argument in JavaScript" collapsible="true"
+                            lang="javascript">
+                    <![CDATA[
+                        function printPersonInformation(firstName, lastName, age) {
+                          if(firstName !== undefined) console.log('Vorname: ' + firstName);
+                          if(lastName !== undefined) console.log('Nachname: ' + lastName);
+                          if(age !== undefined) console.log('Alter: ' + age);
+                        }
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="funktionen-parameter-mehr-arugmente-als-parameter"
                      title="Funktionen mit mehr Argumenten als angegebenen Parametern aufrufen">
+                <p>
+                    Umgekehrt ist es auch möglich eine Funktion mit mehr Argumenten als angegebenen Parametern
+                    aufzurufen. In einem solchen fall stehen den zu viel übergebenen Werten nicht direkte Parameter zur
+                    Verfügung. Es gibt allerdings dennoch einen Weg, innerhalb einer Funktion auf alle übergebenen
+                    Argumente zuzugreifen, und zwar dank der Variable <code>arguments</code>, welche implizit innerhalb
+                    einer Funktion zur Verfügung steht. Dabei handelt es sich um ein Objekt, welches alle übergebenen
+                    Argumente enthält und diese, wie bei einem Array, über Indizes bereitstellt. Über
+                    <code>arguments[0]</code> gelangt man an das erste Argument, über <code>arguments[1]</code> an das
+                    zweite usw. Über die Eigenschaft length kann zudem ermittelt werden, wie viele Argumente insgesamt
+                    übergeben wurden.
+                </p>
 
+                <p>
+                    Beim <code>arguments</code>-Objekt handelt es sich um kein Array, sondern um ein sogenanntes
+                    <code>array</code>-ähnliches Objekt. Zwar funktioniert der Zugriff auf die einzelnen Elemente im
+                    <code>arguments</code>-Objekt wie bei einem Array über den entsprechenden Index, und auch eine
+                    Eigenschaft length steht zur Verfügung, über die sich die Anzahl der Elemente ermitteln lässt.
+                    Allerdings verfügt das <code>arguments</code>-Objekt nicht über die Methoden, über die echte Arrays
+                    verfügen.
+                </p>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        function printPersonInformation(firstName, lastName, age) {
+                          console.log('Vorname: ' + firstName);
+                          console.log('Nachname: ' + lastName);
+                          console.log('Alter: ' + age);
+                          if(arguments.length > 3) console.log('Größe: ' + arguments[3]);
+                          if(arguments.length > 4) console.log('Gewicht: ' + arguments[4]);
+                        }
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="funktionen-parameter-variable-anzahl-an-argumenten"
                      title="Funktionen mit einer variablen Anzahl an Argumenten – variadische Funktionen">
+                <p>
+                    Seit ES2015 gibt es eine Alternative, wenn nicht sogar einen wirklichen Ersatz für das
+                    <code>arguments</code>-Objekt, der dessen Verwendung quasi überflüssig macht. die Rede ist von
+                    sogenannten Rest-Parametern. Rest-Parameter fassen all die Argumente bei einem Funktionsaufruf
+                    zusammen, für die kein Parameter in der Funktionsdeklaration vorgesehen ist. Rest-Parameter werden
+                    über drei aufeinanderfolgende Punkte und einen unmittelbar darauf folgenden beliebigen
+                    Parameternamen definiert. Bei dem Rest-Parametern-Objekt handelt es sich um ein echtes Array. Es
+                    beinhaltet aber nicht wie das <code>arguments</code>-Objekt alle Argumente des Funktionsaufrufs,
+                    sondern nur die Argumente, zu denen es keinen passenden Parameter gibt. Besonders sinnvoll sind
+                    Rest-Parameter bei solchen Funktionen, die eine variable Anzahl von Argumenten erlauben, sogenannte
+                    variadischen Funktionen.
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        function printPersonInformation(firstName, lastName, age) {
+                          console.log('Vorname: ' + firstName);
+                          console.log('Nachname: ' + lastName);
+                          console.log('Alter: ' + age);
+                          if(arguments.length > 3) console.log('Größe: ' + arguments[3]);
+                          if(arguments.length > 4) console.log('Gewicht: ' + arguments[4]);
+                        }
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="funktionen-parameter-spread-operator"
                      title="Der Spread-Operator – Elemente aus einem Array als Argumente verwenden">
+                <p>
+                    In ES2015 wurde der Spread-Operator eingeführt. Dieser ermöglicht es, die Elemente eines Arrays auf
+                    die Parameter einer Funktion zu verteilen (daher der Name <i>spread</i>) und somit die Elemente
+                    direkt als Argumente zu verwenden. Um den Spread-Operator für ein Array zu verwenden, schreibt man
+                    einfach drei Punkte vor den Namen des entsprechenden Arrays.
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let userData1 = ['Max Mustermann', 'max.mustermann@example.com', 'secret'];
+                        let userData2 = ['Moritz Mustermann', 'moritz.mustermann@example.com', 'password'];
+                        let max = createUser(
+                          ...userData1
+                        );
+                        let moritz = createUser(
+                          ...userData2
+                        );
+
+                        function createUser(username, email, password = 'StAnDaRdPaSsWoRt') {
+                          let user = {
+                            username: username,
+                            email: email,
+                            password: password
+                          }
+                          return user;
+                        }
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="funktionen-parameter-standardwerte" title="Standardwerte für Parameter">
+                <p>
+                    Seit ES2015 gibt es mit den sogenannten Default Parameters eine einfache Schreibweise um einen
+                    Standardwert eines Parameters zu definieren. Ein definierter Standardwert, wird immer dann von der
+                    jeweiligen Funktion verendet, wenn beim Funktionsaufruf in der Argumentenliste für den jeweiligen
+                    Parameter kein Wert übergeben wurde. Eine Alternative, welche bereits vor ES2015 unterstützt wird,
+                    wäre innerhalb der Funktion den jeweiligen Parameter auf <code>undefined</code> zu checken und falls
+                    dies zutrifft einen Standardwert setzen:
+                    <code>password = (password !== undefined) ? password : 'StAnDaRdPaSsWoRt';</code>
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        function createUser(username, email, password = 'StAnDaRdPaSsWoRt') {
+                          let user = {
+                            username: username,
+                            email: email,
+                            password: password
+                          }
+                          return user;
+                        }
+
+                        let max = createUser('Max Mustermann', 'max.mustermann@example.com', 'secret');
+                        console.log(max.username);     // Max Mustermann
+                        console.log(max.email);        // max.mustermann@example.com
+                        console.log(max.password);     // secret
+
+                        let moritz = createUser('Moritz Mustermann', 'moritz.mustermann@example.com');
+                        console.log(moritz.username);  // Moritz Mustermann
+                        console.log(moritz.email);     // moritz.mustermann@example.com
+                        console.log(moritz.password);  // StAnDaRdPaSsWoRt
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="funktionen-parameter-funktionen" title="Funktion als Parameter">
+                <p>
+                    Von funktionalen Vorbildern (z.B. der Programmiersprache Scheme) hat JS die Besonderheit geerbt,
+                    dass Funktionen einfache Werte sind. Genauso, wie eine Zahl einer Variable zugeordnet wird, kann
+                    auch eine Funktion einer Variable zugeordnet werden.
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let price = 3;
+                        let add = (a, b) => a + b;
+
+                        typeOf(price);     // => number
+                        typeOf(add);       // => function
+                    ]]>
+                </code-block>
+
+                <p>
+                    Die funktionale Programmierung spricht von sogenannten <b>first-class citizens</b> (Bürger erster
+                    Klasse) oder <b>first class functions</b>. Damit ist gemeint, dass die Sprache Funktionen genauso
+                    behandelt wie andere Werte. Funktionen können mit Variablen referenziert werden und sogar als
+                    Argumente übergeben werden.
+                </p>
+
+                <p>
+                    Als Beispiel die <code>sort()</code>-Funktion für Arrays. Möchte man ein Zahlen-Array mit dieser
+                    Funktion Sortieren, so kommt womöglich nicht das gewünschte Ergebnis, da diese Funktion
+                    standardmäßig eine sogenannte lexikographische Sortierung durchführt. Das bedeutet, die 10 kommt
+                    nach der 1 aber die 2 kommt nach der 10.
+                </p>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        [ 16, 10, 2, 12, 1].sort();                 //=> [1, 10, 12, 16, 2]
+                    ]]>
+                </code-block>
+
+                <p>
+                    Das Verhalten der Funktion <code>sort()</code> lässt sich beeinflussen, somit kann der Funktion
+                    mitgeteilt werden welche Werte sie als kleiner und welche als größer erachten soll. Dazu wird eine
+                    Funktion benötigt, welche zwei Parameter entgegennimmt und diese miteinander vergleicht.
+                </p>
+
+                <p>
+                    <code>sort()</code> erwartet von der Vergleichsfunktion, dass sie:
+                </p>
+
+                <list type="none">
+                    <li>
+                        0 zurückgibt, falls a und b gleich sind
+                    </li>
+                    <li>
+                        eine positive Zahl zurückgibt, falls a größer als b ist
+                    </li>
+                    <li>
+                        eine negative Zahl zurückgibt, falls a kleiner als b ist
+                    </li>
+                </list>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let compareNumerical = (a, b) => a – b;
+                        [ 16, 10, 2, 12, 1].sort(compareNumerical);  // => [1, 2, 10, 12, 16]
+                        [ 16, 10, 2, 12, 1].sort((a, b) => a – b);   // => [1, 2, 10, 12, 16]
+                    ]]>
+                </code-block>
+
+                <p>
+                    Funktionen wie <code>sort()</code>, deren Parameter selbst wider Funktionen sind (oder sein können),
+                    heißen <b>Higher-Order-Funktionen</b> – Funktionen höherer Ordnung
+                </p>
             </chapter>
         </chapter>
 
         <chapter id="funktionen-return" title="Rückgabewerte">
+            <p>
+                In JavaScript wird der Rückgabewert innerhalb der Funktion nach dem Schlüsselwort <code>return</code>
+                angegeben. Rückgabewerte können Zahlenwerte, Zeichenketten, boolesche Werte, Objekte, Arrays und sogar
+                Funktionen selbst sein. Es ist aber immer nur möglich einen Rückgabewert anzugeben. Um dennoch aus einer
+                Funktion mehrere Ergebnisse zurückzugeben, bedient man sich in der Praxis oft des Tricks, diese
+                Ergebnisse in ein Array oder ein Objekt zusammenzufassen und dieses Array bzw. Objekt zurückzugeben.
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    function cubeVolume(length, width, height) {
+                      let volume = Math.PI * radius * height;
+                      return volume;
+                    }
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="funktionen-arrow-functions" title="Arrow Functions bzw. Fat Arrow Functions">
+            <p>
+                Mit ES2015 wurde eine Kurzschreibweise für eine Funktionsdefinition eingeführt. Genauer gesagt, handelt
+                es sich dabei um eine alternative Schreibweise für Funktionsausdrücke. Diese Funktionen nennt man
+                aufgrund der verwendeten Syntax auch Arrow Functions oder Fat Arrow Functions. Arrow Functions werden
+                seit ES2015 in der Praxis vor allem dann gerne verwendet, wenn es darum geht, Funktionen als Argumente
+                anderer Funktionen zu verwenden.
+            </p>
+
+            <p>
+                <code>
+                    (Parameter) => {Funktionskörper}
+                </code>
+            </p>
+
+            <p>
+                Die Syntax für die Parameter und für den Funktionskörper unterscheidet sich bei Arrow Functions je
+                nachdem, wie viele Parameter die Funktion erwartet und was man durch sie ausdrücken möchte. In der Regel
+                werden Parameter wie bei »normalen« Funktionen in runde Klammern geschrieben, der Funktionskörper analog
+                in geschweifte Klammern. Hier die verschiedenen Schreibweisen für Arrow-Funktionen:
+            </p>
+
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Schreibweise
+                    </td>
+                    <td>
+                        Bedeutung
+                    </td>
+                    <td>
+                        Beispiel
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            () =&gt; { &lt;Funktionskörper&gt; }
+                        </code>
+                    </td>
+                    <td>
+                        Funktion ohne Parameter
+                    </td>
+                    <td>
+                        <code>
+                            () =&gt; console.log('Hallo Welt')
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            x =&gt; { &lt;Funktionskörper&gt; }
+                        </code>
+                    </td>
+                    <td>
+                        Funktion mit einem Parameter
+                    </td>
+                    <td>
+                        <code>
+                            message =&gt; console.log(message)
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            (x, y) =&gt; { &lt;Funktionskörper&gt; }
+                        </code>
+                    </td>
+                    <td>
+                        Funktion mit mehreren Parametern
+                    </td>
+                    <td>
+                        <code>
+                            (x, y) =&gt; {return x + y;}
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            &lt;Funktionsparameter&gt; =&gt; { return x*x }
+                        </code>
+                    </td>
+                    <td>
+                        Funktionskörper als Block
+                    </td>
+                    <td>
+                        <code>
+                            (x, y) =&gt; {return x + y;}
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            &lt;Funktionsparameter&gt; =&gt; x*x
+                        </code>
+                    </td>
+                    <td>
+                        Funktionskörper als Anweisung
+                    </td>
+                    <td>
+                        <code>
+                            (x, y) =&gt; return x + y
+                        </code>
+                    </td>
+                </tr>
+            </table>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    let sum = (x, y) => {return x + y;}
+                    // ... ist das Gleiche wie ...
+                    let sum = function (x, y) {
+                      return x + y;
+                    }
+                ]]>
+            </code-block>
 
             <chapter id="funktionen-arrow-functions-return" title="Objekt als Rückgabewert">
+                <p>
+                    Möchte man bei einer Arrow Function auf die Angabe der geschweiften Klammern verzichten, aber ein
+                    Objekt zurückgeben, muss das Objekt in runde Klammern geschrieben werden, um zu verhindern, dass die
+                    geschweiften Klammern des Objekts fälschlicherweise als Funktionskörper interpretiert werden.
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let createUser => (username, email, password) =>  ({ username: username, email: email, password: password });
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="funktionen-arrow-functions-eigenschaften" title="Weitere Eigenschaften von Arrow Functions">
+                <p>
+                    Zusätzlich zu der syntaktischen Vereinfachung gegenüber Funktionen, die über das Schlüsselwort
+                    <code>function</code> definiert werden, bieten Arrow Functions noch einige weitere Eigenschaften,
+                    die vieles in der JavaScript-Entwicklung vereinfachen. Um diese jedoch zu verstehen, sind tiefere
+                    Kenntnisse in JavaScript vonnöten:
+                </p>
 
+                <list type="bullet">
+                    <li>
+                        Der Wert, der durch <code>this</code> referenziert wird, ergibt sich aus dem Kontext, in dem die
+                        Funktion definiert wird, nicht aus dem Kontext, in dem sie ausgeführt wird.
+                    </li>
+                    <li>
+                        Arrow-Funktionen können nicht mit einem <code>new</code> aufgerufen werden, können also nicht
+                        als Konstruktorfunktionen herhalten.
+                    </li>
+                    <li>
+                        Die Variable <code>this</code> kann nicht geändert werden.
+                    </li>
+                </list>
             </chapter>
         </chapter>
 
         <chapter id="funktionen-ausfuehrungskontext" title="Ausführungskontexte">
+            <p>
+                Insgesamt gibt es in JavaScript folgende drei verschiedene Arten von Ausführungskontexten:
+            </p>
+
+            <list>
+                <li>
+                    <p>
+                        <b>Ausführungskontext des globalen Codes:</b> Code, der sich nicht innerhalb einer Funktion
+                        befindet, wird auch als globaler Code (sprich von überall erreichbarer Code) bezeichnet. Der
+                        Kontext, in dem dieser Code ausgeführt wird, wird folglich auch als globaler Ausführungskontext
+                        bezeichnet. Innerhalb eines Programms kann es nur einen einzigen globalen Ausfürhungskontext
+                        geben.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>Ausführungskontext eines Funktionsaufrufs:</b> Code innerhalb einer Funktion nennt man auch
+                        Funktionscode. Dieser Code ist nur innerhalb der jeweiligen Funktion erreichbar. Der
+                        Ausführungskontext von Funktionen bestimmt, welche Variablen, welche anderen Funktionen
+                        (innerhalb der Funktion), welche Parameter (laut Funktionssignatur) und welche konkreten
+                        Argumente zur Verfügung stehen. Folglich wird für jeden Funktionsaufruf ein eigener, neuer
+                        Ausführungskontext erstellt.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>Ausführungskontext eines Aufrufs der Funktion <code>eval()</code>:</b> Die Methode
+                        <code>eval()</code> dient dazu, Quelltext, der in Form einer Zeichenkette übergeben wird, zu
+                        interpretieren und auszuführen. Wird die Funktion aufgerufen, wird für den (als Zeichenkette)
+                        übergebenen Code eine eigene Form von Ausführungskontext erstellt. Da die Methode
+                        <code>eval()</code> aber mit Vorsicht zu genießen ist und die Verwendung dieser Methode eher als
+                        Bad Practice angesehen wird sollte diese vermieden werden.
+                    </p>
+                </li>
+            </list>
 
             <chapter id="funktionen-gueltigkeitsbereich" title="Gültigkeitsbereiche">
-
+                <p>
+                    In JavaScript werden die Gültigkeitsbereiche lexikalisch ermittelt, das bedeutet, dass sich der
+                    Gültigkeitsbereich aus dem umgebenen Quelltext ergibt. Globale Variablen und Funktionen sind überall
+                    in einem Programm sichtbar. Variablen und Funktionen, die innerhalb einer Funktion definiert wurden,
+                    sind nur in dieser Funktion und in allen anderen Funktionen, die innerhalb dieser Funktion definiert
+                    wurden, sichtbar.
+                </p>
             </chapter>
 
             <chapter id="funktionen-kontextobjekt" title="Kontextobjekt">
+                <p>
+                    Das Kontextobjekt <code>this</code> hat je nachdem ob eine Funktion als globale Funktion oder als
+                    Methode eines Objekts aufgerufen wird, einen anderen Wert.
+                </p>
 
+                <p>
+                    <code>this</code> im Kontext eines Objekts bezieht sich auf das Objekt.
+                </p>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let person = {
+                          name: 'Max',               // Objekteigenschaft
+                          getName: function() {
+                            return this.name;
+                          }
+                        }
+
+                        console.log(person.getName()); // Ausgabe: Max
+                    ]]>
+                </code-block>
+
+                <p>
+                    Eine einfache globale Funktion, in der <code>this</code> verwendet wird
+                </p>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        function getNameGlobal() {
+                          return this.name;
+                        }
+
+                        console.log(getNameGlobal()); // undefined
+                    ]]>
+                </code-block>
+
+                <p>
+                    <code>this</code> im globalen Kontext bezieht sich auf das globale Objekt.
+                </p>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let name = "globaler Name";
+                        function getNameGlobal() {
+                          return this.name;
+                        }
+
+                        console.log(getNameGlobal()); // Ausgabe: globaler Name
+                    ]]>
+                </code-block>
+
+                <p>
+                    <code>this</code> bezieht sich auf den Kontext der Funktion.
+                </p>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let person = {
+                          name : 'Moritz',
+                          getName : getNameGlobal
+                        }
+                        let artist = {
+                          name : 'Kyuss',
+                          getName : getNameGlobal
+                        }
+
+                        console.log(person.getName()); // Ausgabe: Moritz
+                        console.log(artist.getName()); // Ausgabe: Kyuss
+                    ]]>
+                </code-block>
             </chapter>
         </chapter>
 
         <chapter id="funktionen-funktionsaufruf-durch-nutzerinteraktion"
                  title="Funktionsaufruf durch Nutzerinteraktion">
+            <p>
+                In JavaScript lassen sich durch sogenannte Event-Listener bei Auftreten eines Ereignisses bestimmte
+                Funktionen aufrufen. Um nun auf das Bestätigen einer Schaltfläche zu reagieren und eine Funktion
+                aufzurufen fügt man einfach einen Event-Listener für das <code>click</code>-Event an die entsprechende
+                Schaltfläche hinzu.
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    <!DOCTYPE html>
+                    <html>
+                    <head lang="en">
+                      <meta charset="UTF-8">
+                      <title>Beispiel</title>
+                      <link rel="stylesheet" href="styles/main.css" type="text/css">
+                    </head>
+                    <body>
+                      <div class="container">
+                        <div class="row">
+                          <label for="field1">X</label>
+                          <input id="field1" type="text" value="5">
+                        </div>
+                        <div class="row">
+                          <label for="field2">Y</label>
+                          <input id="field2" type="text" value="5">
+                        </div>
+                        <div class="row">
+                          <label for="result">Ergebnis: </label>
+                          <input id="result" type="text">
+                          <button id="button-calculate-sum">Summe berechnen</button>
+                        </div>
+                      </div>
+                      <script src="scripts/main.js"></script>
+                    </body>
+                    </html>
+                ]]>
+            </code-block>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    document.addEventListener('DOMContentLoaded', function() {
+                      let button = document.getElementById('button-calculate-sum');
+                      button.addEventListener('click', calculateSum);
+                    });
+
+                    function calculateSum() {
+                      let x = parseInt(document.getElementById('field1').value);
+                      let y = parseInt(document.getElementById('field2').value);
+                      let result = x + y;  showResult(result);
+                    }
+                    function showResult(result) {
+                      let resultField = document.getElementById('result');
+                      resultField.value = result;
+                    }
+                ]]>
+            </code-block>
+
+            <p>
+                In dem JavaScript-Code wird zunächst über die <code>addEventListener()</code>-Methode ein Event-Listener
+                für das Event <code>DOMContentLoaded</code> registriert. Die anonyme Funktion, die hierbei als
+                Event-Listener übergeben wird, wird erst ausgeführt, wenn alle Elemente auf der Webseite geladen sind.
+                Damit wird sichergestellt, dass die Eingabefelder und die Schaltfläche vorhanden sind, wenn im Folgenden
+                darauf zugegriffen wird.
+            </p>
+
+            <p>
+                Innerhalb dieses Event-Listeners wird ein weiterer Event-Listener registriert, der ausgeführt wird, wenn
+                das <code>click</code>-Event ausgelöst wird: die Funktion <code>calculateSum()</code>. Diese wiederum
+                greift auf die beiden Eingabefelder zu, liest deren Werte aus, addiert diese und zeigt das Ergebnis
+                mithilfe der Funktion <code>showResult()</code> in dem dritten Eingabefeld an.
+            </p>
         </chapter>
     </chapter>
 
