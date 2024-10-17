@@ -3,7 +3,173 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="js-ecmascript"
        title="EcmaScript"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <!-- TODO: migrate from Confluence -->
+    <chapter id="was-ist-ecmascript" title="Was ist EcmaScript?">
+
+    </chapter>
+
+    <chapter id="ueberblick" title="Überblick">
+
+    </chapter>
+
+    <chapter id="maps" title="ES2015 – Maps">
+
+        <chapter id="maps-methoden-und-eigenschaften" title="Methoden und Eigenschaften">
+
+        </chapter>
+
+        <chapter id="maps-weak" title="Weak Maps">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="sets" title="ES2015 – Sets">
+
+        <chapter id="sets-methoden-und-eigenschaften" title="Methoden und Eigenschaften">
+
+        </chapter>
+
+        <chapter id="sets-weak" title="Weak Sets">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="iteratoren" title="ES2015 – Iteratoren">
+
+        <chapter id="iteratoren-erstellen" title="Einen Iterator erstellen">
+
+        </chapter>
+
+        <chapter id="iteratoren-objekt" title="Ein iterierbares Objekt erstellen">
+
+        </chapter>
+
+        <chapter id="iteratoren-for-of" title="Über iterierbaren Objekten iterieren: »for-of«-Schleifen">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="generatoren" title="ES2015 – Generatoren: Funktionen anhalten und fortsetzen">
+
+    </chapter>
+
+    <chapter id="proxies" title="ES2015 – Proxies: Zugriff auf Objekte abfangen">
+
+    </chapter>
+
+    <chapter id="async" title="Asynchrone Programmierung: Promises und Async Functions">
+
+        <chapter id="asynchone-programmierung" title="Asynchrone Programmierung">
+
+            <chapter id="callback-design-pattern" title="Das Callback-Entwurfsmuster">
+
+            </chapter>
+
+            <chapter id="async-return" title="Rückgabewerte von asynchronen Funktionen">
+
+            </chapter>
+
+            <chapter id="async-fehler-werfen" title="Fehler werfen in asynchronen Funktionen">
+
+            </chapter>
+
+            <chapter id="callback-ergebnisse-und-fehler-uebergeben" title="Ergebnisse und Fehler an Callback übergeben">
+
+            </chapter>
+
+            <chapter id="callback-probleme" title="Das Problem asynchroner Programmierung mit Callbacks">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="promises" title="ES2015 – Promises">
+
+            <chapter id="promises-aufrufe-verketten" title="Promise-Aufrufe verketten">
+
+            </chapter>
+
+            <chapter id="promises-zustaende" title="Die Zustände von Promises">
+
+            </chapter>
+        </chapter>
+
+        <chapter id="es2016-async" title="ES2016 – Async Functions">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="template-string" title="ES2015 – Vorlagen für Zeichenketten">
+
+    </chapter>
+
+    <chapter id="symbol" title="ES2015 – Symbole">
+
+        <chapter id="symbol-registry" title="Die Symbol-Registry">
+
+        </chapter>
+
+        <chapter id="symbol-objekteigenschaften"
+                 title="Symbole zur Definition eindeutiger Objekteigenschaften verwenden">
+
+        </chapter>
+
+        <chapter id="symbol-konstanten" title="Symbole zur Definition von Konstanten verwenden">
+
+        </chapter>
+    </chapter>
+
+
+    <chapter id="destructing" title="Destructuring – Werte aus Arrays und Objekten extrahieren">
+
+        <chapter id="destructing-array" title="Array-Destructuring">
+
+        </chapter>
+
+        <chapter id="destructing-object" title="Objekt-Destructuring">
+
+        </chapter>
+
+        <chapter id="rest-spread-properties" title="ES2018 – Rest- und Spread-Properties">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="optional-chaining-operator" title="ES2020 – Optional Chaining Operator">
+
+    </chapter>
+
+    <chapter id="nullish-coalescing-operator" title="ES2020 – Nullish Coalescing Operator">
+
+    </chapter>
+
+    <chapter id="es2020-zuweisungsoperatoren" title="ES2020 – Neue Zuweisungsoperatoren: &amp;&amp;=, ||= und ??=">
+
+    </chapter>
+
+    <chapter id="numeric-seperators" title="ES2021 – Numeric Seperators">
+
+    </chapter>
+
+    <chapter id="quellen" title="Quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836256971, "JavaScript", Philip Ackermann, 2019
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://en.wikipedia.org/wiki/ECMAScript"/>, 2023-08-17, 18:30
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.w3schools.com/js/js_2020.asp"/>, 2023-08-20, 08:00
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://www.w3schools.com/js/js_2021.asp"/>, 2023-08-20, 08:30
+        </tip>
+    </chapter>
 </topic>
