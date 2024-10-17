@@ -287,13 +287,275 @@
     </chapter>
 
     <chapter id="datentypen" title="Datentypen">
+        <p>
+            Insgesamt wird in JavaScript zwischen sechs verschiedenen Datentypen unterschieden: Zum einen gibt es die
+            drei sogenannten primitiven Datentypen für die Repräsentation von Zahlen, Zeichenketten und booleschen
+            Wahrheitswerten, zum anderen die speziellen Datentypen <code>null</code> und <code>undefined</code> (auch
+            eine Form von primitiven Datentypen) sowie den Typ <code>object</code>, welcher als Basis für das Erstellen
+            einiger (komplexer) Objekte dient. Arrays gelten in JavaScript streng genommen nicht als eigener Datentyp.
+        </p>
+
+        <p>
+            In JavaScript wird bei der Variablendeklaration der Datentyp nicht explizit festgelegt, deshalb spricht man
+            hierbei auch von dem sogenannten <a href="swe-pk-grundlagen-variablen.topic#typisierung">Weak Typing</a>.
+        </p>
+
+        <table style="both">
+            <tr>
+                <td>
+                    Datentyp
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Zahlen
+                </td>
+                <td>
+                    <list type="bullet">
+                        <li>
+                            Ein numerischer Wert repräsentiert eine Zahl: Der Wert <code>4711</code> steht für
+                            Viertausendsiebenhundertelf
+                        </li>
+                        <li>
+                            Kommas werden mit einem Punkt notiert: <code>0.5</code>
+                        </li>
+                        <li>
+                            Für negative Werte wird der Zahl ein Minuszeichen vorangestellt: <code>-5</code> oder
+                            <code>-0.9</code>
+                        </li>
+                        <li>
+                            Für Binärzahlen wird das Präfix <code>0b</code> verwendet: <code>0b01010101</code> steht für
+                            den Dezimalwert <code>85</code>
+                        </li>
+                        <li>
+                            Für Oktalzahlen wird das Präfix <code>0</code> oder <code>0o</code> verwendet:
+                            <code>050</code> steht für den Dezimalwert <code>40</code>
+                        </li>
+                        <li>
+                            Für Hexadezimalzahlen wird das Präfix <code>0x</code> verwendet: <code>0xF</code> steht für
+                            den Dezimalwert <code>15</code>
+                        </li>
+                        <li>
+                            Der Wertebereich liegt zwischen <code>Number.MIN_VALUE</code> (= <code>5e-324</code>) und
+                            <code>Number.MAX_VALUE</code> (= <code>1.7976931348623157e+308</code>)
+                        </li>
+                        <li>
+                            Werte außerhalb des Wertebereiches werden mit <code>-Infinity</code> und
+                            <code>Infinity</code> dargestellt.
+                        </li>
+                        <li>
+                            Berechnungen, die keinen gültigen Zahlenwert ergeben liefern den Wert <code>NaN</code> (eng.
+                            <i>not a number</i>)
+                        </li>
+                        <li>
+                            Exponentialzahlen können mit <code>e</code> dargestellt werden: <code>9e3 = 9000</code>,
+                            <code>123e-5 = 0,00123</code>.
+                        </li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    BigInt
+                </td>
+                <td>
+                    <list type="bullet">
+                        <li>
+                            Größere Integer werden als BigInt erstellt. Die Literal Schreibweise, ist am Ende ein
+                            <code>n</code> hinzuzufügen: <code>100n</code>.
+                        </li>
+                        <li>
+                            typeof <code>10n</code> ergibt <code>'bigint'</code>
+                        </li>
+                        <li>
+                            Zwischen <code>BigInt</code> und <code>Number</code> werten können keine Berechnungen
+                            stattfinden: <code>1000n + 20</code> schmeißt einen <code>TypeError</code>
+                        </li>
+                        <li>
+                            <code>BigInt</code> hat keinen eigenen äquivalent für Infinity: <code>1000n / 0n</code>
+                            schmeißt einen <code>RangeError</code>
+                        </li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Zeichenketten
+                </td>
+                <td>
+                    <list type="bullet">
+                        <li>
+                            Zeichenketten bzw. Strings repräsentieren eine Folge von Zeichen, also beispielsweise
+                            Buchstaben, Ziffern, Sonderzeichen und Steuerzeichen.
+                        </li>
+                        <li>
+                            Anfang und Ende einer Zeichenkette wird mittels Anführungszeichen definiert. Dabei können
+                            einfache als auch doppelte Anführungszeichen verwendet werden. Eine Mischform ist nicht
+                            erlaubt.
+                        </li>
+                        <li>
+                            Mit dem Backslash-Zeichen (eng. <i>escape character</i>) kann maskiert (eng.
+                            <i>escaping</i>) werden, sodass Anführungszeichen oder Steuerzeichen auch innerhalb eines
+                            Strings verwendet werden können.
+                        </li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Boolesche Wahrheitswerte
+                </td>
+                <td>
+                    <list type="bullet">
+                        <li>
+                            Können nur die Werte <code>true</code> (für wahr) und <code>false</code> (für falsch)
+                            annehmen.
+                        </li>
+                        <li>
+                            Spielen eine zentrale Rolle, wenn es darum geht, innerhalb eines Programms Verzweigungen zu
+                            definieren.
+                        </li>
+                        <li>
+                            folgende Werte werden von JS als <code>false</code> interpretiert: <code>false</code>,
+                            <code>-0</code>, <code>0</code>, <code>0n</code>, <code>-0n</code>, <code>NaN</code> (=
+                            <i>Not a Number</i>), <code>undefined</code>, <code>""</code> (= <i>empty string</i>),
+                            <code>null</code>. Alle anderen werte gelten als <code>true</code>.
+                        </li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Objekte
+                </td>
+                <td>
+                    <list type="bullet">
+                        <li>
+                            Zusammengehörige Variablen (= Eigenschaften bzw. Objekteigenschaften oder Attribute) und
+                            Funktionen (= Methoden bzw. Objektmethoden) werden in Objekten zusammengefasst.
+                        </li>
+                        <li>
+                            Bei der Objekt-Literal-Schreibweise werden Objekte über geschweifte Klammern definiert und
+                            innerhalb derer die Objekteigenschaften und Objektmethoden kommasepariert aufgelistet werden
+                            können.
+                        </li>
+                        <li>
+                            Objekte sind in JavaScript eigentlich nichts anderes als Schlüssel-Wert-Paare. Schlüssel und
+                            Wert werden jeweils durch einen Doppelpunkt getrennt.
+                        </li>
+                        <li>
+                            Über dem Schlüsselwort <code>this</code> wird das aktuelle Objekt angesprochen.
+                        </li>
+                        <li>
+                            Es gibt noch die Konstruktorfunktion, die <code>Object.create()</code>-Methode und die
+                            Instanziierung einer ES2015-Klasse um in JavaScript Objekte zu erzeugen.
+                        </li>
+                    </list>
+
+                    <p>
+                        <b>Arrays</b>
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            Ein Array gehört strenggenommen zum Datentyp Objekt und sind nichts anderes als Listen. Sie
+                            können nicht nur einen, sondern mehrere Werte enthalten.
+                        </li>
+                        <li>
+                            Die gängigste, weil einfachste Möglichkeit, in JavaScript ein Array zu erzeugen ist die
+                            Array-Literal-Schreibweise. Dabei werden eckige Klammern (<code>[]</code>) verwendet, um den
+                            Anfang und das Ende des Arrays zu definieren. Die einzelnen Einträge (bzw. Werte bzw.
+                            Elemente), die in dem Array enthalten sein sollen, schreibt man kommasepariert zwischen den
+                            Klammern.
+                        </li>
+                        <li>
+                            Arrays können – im Unterschied zu anderen Programmiersprachen wie beispielsweise Java – auch
+                            Einträge unterschiedlichen Typs enthalten. Mit anderen Worten: Ein einzelnes Array kann
+                            beispielsweise Zahlen sowie Zeichenketten oder boolesche Werte, Objekte oder sogar andere
+                            Arrays enthalten.
+                        </li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>undefined</code>
+                </td>
+                <td>
+                    <list type="bullet">
+                        <li>
+                            Wird eine Variable deklariert, aber kein Wert zugewiesen, so hat sie den Wert
+                            <code>undefined</code>.
+                        </li>
+                        <li>
+                            Der Wert <code>undefined</code> ist nicht dazu gedacht, dass man ihn manuell einer Variable
+                            zuweist.
+                        </li>
+                        <li>
+                            Der Wert <code>undefined</code> drückt aus, dass eine Variable noch nicht initialisiert
+                            wurde.
+                        </li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>null</code>
+                </td>
+                <td>
+                    <list type="bullet">
+                        <li>
+                            Der Datentyp <code>null</code> definiert ein leeres Objekt.
+                        </li>
+                        <li>
+                            Der Wert <code>null</code> kann auch einer Variable zugewiesen werden.
+                        </li>
+                        <li>
+                            Der Wert <code>null</code> repräsentiert einen leeren Objektzeiger.
+                        </li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Symbol
+                </td>
+                <td>
+                    <list type="bullet">
+                        <li>
+                            Symbol ist ein neuer primitiver Datentyp in JavaScript, der mit ES2015 eingeführt wurde.
+                        </li>
+                    </list>
+                </td>
+            </tr>
+        </table>
 
         <chapter id="datentypen-konstruktor-methoden" title="Konstruktor-Methoden">
+            <code-block lang="javascript">
+                <![CDATA[
+                    const str = new String();     // =>
+                    const num = new Number();     // => 0
+                    const bool = new Boolean();   // => false
+                    const bigInt = new BigInt();  // => TypeError
+                ]]>
+            </code-block>
 
+            <p>
+                Da hierbei Objekte des jeweiligen Typs in die Variablen gespeichert werden, sollte man lieber immer
+                literale anstatt die Konstruktor-Methoden verwenden.
+            </p>
         </chapter>
 
         <chapter id="datentypen-autoboxing" title="Autoboxing">
-
+            <p>
+                Wird nach einem Literal eines primitiven Datentyps ein punkt verwendet oder nach einer Variable, welche
+                einen primitiven Datentyp enthält, dann konvertiert der JS Interpreter den Wert in das Objekt des
+                jeweiligen Datentyps und wir können auf dessen Methoden und Eigenschaften zugreifen. Diese Technik wird
+                Autoboxing genannt.
+            </p>
         </chapter>
     </chapter>
 
