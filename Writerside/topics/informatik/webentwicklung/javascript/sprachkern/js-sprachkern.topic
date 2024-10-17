@@ -560,29 +560,832 @@
     </chapter>
 
     <chapter id="operatoren" title="Operatoren">
+        <tip>
+            Grundlegendes zu Operatoren: <a href="swe-pk-grundlagen-ausdruecke.topic"/>
+        </tip>
 
         <chapter id="operatoren-prio" title="Prioritätsliste">
+            <table style="both">
+                <tr>
+                    <td>
+                        Priorität
+                    </td>
+                    <td>
+                        Gruppe
+                    </td>
+                    <td>
+                        Assoziativität
+                    </td>
+                    <td>
+                        Symbol
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        14
+                    </td>
+                    <td>
+                        Gruppierung
+                    </td>
+                    <td></td>
+                    <td>
+                        <code>(</code> &#8230; <code>)</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        13
+                    </td>
+                    <td>
+                        Feldzugriff
+                    </td>
+                    <td>
+                        &#8594;
+                    </td>
+                    <td>
+                        &#8230; <code>.</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        12
+                    </td>
+                    <td>
+                        Funktionsaufruf
+                    </td>
+                    <td>
+                        &#8594;
+                    </td>
+                    <td>
+                        &#8230; <code>(</code> &#8230; <code>)</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        11
+                    </td>
+                    <td>
+                        Postifx inkrementieren
+                    </td>
+                    <td></td>
+                    <td>
+                        &#8230; <code>++</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        11
+                    </td>
+                    <td>
+                        Postfix dekrementieren
+                    </td>
+                    <td></td>
+                    <td>
+                        &#8230; <code>--</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        10
+                    </td>
+                    <td>
+                        Logisches NOT
+                    </td>
+                    <td>
+                        &#8592;
+                    </td>
+                    <td>
+                        <code>!</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        10
+                    </td>
+                    <td>
+                        Unäres Plus
+                    </td>
+                    <td>
+                        &#8592;
+                    </td>
+                    <td>
+                        <code>+</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        10
+                    </td>
+                    <td>
+                        Unäre negation
+                    </td>
+                    <td>
+                        &#8592;
+                    </td>
+                    <td>
+                        <code>-</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        10
+                    </td>
+                    <td>
+                        Prefix inkrementierung
+                    </td>
+                    <td>
+                        &#8592;
+                    </td>
+                    <td>
+                        <code>++</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        10
+                    </td>
+                    <td>
+                        Prefix dekrementierung
+                    </td>
+                    <td>
+                        &#8592;
+                    </td>
+                    <td>
+                        <code>--</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        10
+                    </td>
+                    <td>
+                        typeof
+                    </td>
+                    <td>
+                        &#8592;
+                    </td>
+                    <td>
+                        <code>typeof</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        10
+                    </td>
+                    <td>
+                        delete
+                    </td>
+                    <td>
+                        &#8592;
+                    </td>
+                    <td>
+                        <code>delete</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        09
+                    </td>
+                    <td>
+                        Exponentialoperator
+                    </td>
+                    <td>
+                        &#8592;
+                    </td>
+                    <td>
+                        &#8230; <code>**</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        08
+                    </td>
+                    <td>
+                        Multiplikation
+                    </td>
+                    <td>
+                        &#8594;
+                    </td>
+                    <td>
+                        &#8230; <code>*</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        08
+                    </td>
+                    <td>
+                        Division
+                    </td>
+                    <td>
+                        &#8594;
+                    </td>
+                    <td>
+                        &#8230; <code>/</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        08
+                    </td>
+                    <td>
+                        Modulo
+                    </td>
+                    <td>
+                        &#8594;
+                    </td>
+                    <td>
+                        &#8230; <code>%</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        07
+                    </td>
+                    <td>
+                        Addition
+                    </td>
+                    <td>
+                        &#8594;
+                    </td>
+                    <td>
+                        &#8230; <code>+</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        07
+                    </td>
+                    <td>
+                        Subtraktion
+                    </td>
+                    <td>
+                        &#8594;
+                    </td>
+                    <td>
+                        &#8230; <code>-</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        06
+                    </td>
+                    <td>
+                        Kleiner als
+                    </td>
+                    <td>
+                        &#8594;
+                    </td>
+                    <td>
+                        &#8230; <code>&lt;</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        06
+                    </td>
+                    <td>
+                        Kleiner gleich als
+                    </td>
+                    <td>
+                        &#8594;
+                    </td>
+                    <td>
+                        &#8230; <code>&lt;=</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        06
+                    </td>
+                    <td>
+                        Größer als
+                    </td>
+                    <td>
+                        &#8594;
+                    </td>
+                    <td>
+                        &#8230; <code>&gt;</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        06
+                    </td>
+                    <td>
+                        Größer gleich als
+                    </td>
+                    <td>
+                        &#8594;
+                    </td>
+                    <td>
+                        &#8230; <code>&gt;=</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        06
+                    </td>
+                    <td>
+                        instanceof
+                    </td>
+                    <td>
+                        &#8594;
+                    </td>
+                    <td>
+                        &#8230; <code>instanceof</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        05
+                    </td>
+                    <td>
+                        Gleichheit
+                    </td>
+                    <td>
+                        &#8594;
+                    </td>
+                    <td>
+                        &#8230; <code>==</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        05
+                    </td>
+                    <td>
+                        Ungleichheit
+                    </td>
+                    <td>
+                        &#8594;
+                    </td>
+                    <td>
+                        &#8230; <code>!=</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        05
+                    </td>
+                    <td>
+                        Strikte Gleichheit
+                    </td>
+                    <td>
+                        &#8594;
+                    </td>
+                    <td>
+                        &#8230; <code>===</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        05
+                    </td>
+                    <td>
+                        Strikte Ungleichheit
+                    </td>
+                    <td>
+                        &#8594;
+                    </td>
+                    <td>
+                        &#8230; <code>!==</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        04
+                    </td>
+                    <td>
+                        Logisches UND
+                    </td>
+                    <td>
+                        &#8594;
+                    </td>
+                    <td>
+                        &#8230; <code>&amp;&amp;</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        03
+                    </td>
+                    <td>
+                        Logisches ODER
+                    </td>
+                    <td>
+                        &#8594;
+                    </td>
+                    <td>
+                        &#8230; <code>||</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        02
+                    </td>
+                    <td>
+                        Ternärer Auswahloperator
+                    </td>
+                    <td>
+                        &#8592;
+                    </td>
+                    <td>
+                        &#8230; <code>?</code> &#8230; <code>:</code> &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        01
+                    </td>
+                    <td>
+                        Zuweisungsoperaoren
+                    </td>
+                    <td>
+                        &#8592;
+                    </td>
+                    <td>
+                        <p>&#8230; <code>=</code> &#8230;</p>
+                        <p>&#8230; <code>+=</code> &#8230;</p>
+                        <p>&#8230; <code>*=</code> &#8230;</p>
+                        <p>&#8230; und andere Zuweisungsoperatoren</p>
+                    </td>
+                </tr>
+            </table>
 
+            <p>
+                Wie bei in der Mathematik gilt Punkt vor Strich. Oben in der Tabelle ist die Rangliste der Priorität der
+                einzelnen Operatoren aufgelistet. Um den Code übersichtlicher zu gestalten, sollte man auch bei
+                Einhalten der Regeln Runde Klammern zu setzen, solange es noch übersichtlich aussieht.
+            </p>
         </chapter>
 
         <chapter id="operatoren-unaer" title="Unäre Operatoren + und -">
+            <p>
+                Diese Operatoren werden für die Nummer Konvertierung verwendet.
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    let str = "123";     // => "123"   (string)
+                    let n1 = +str;       // => 123     (number)
+                    let n2 = -str;       // => -123    (number)
+                    let n3 = -n2;        // => 123     (number)
+                    let n4 = +"abc";     // => NaN     (number)
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="operatoren-logische-zuweisung" title="Logische Zuweisungsoperatoren &amp;&amp;= und ||=">
-
+            <code-block lang="javascript">
+                <![CDATA[
+                    a &&= false;     // => wie a = (a && false)
+                    b ||= true;      // => wie b = (b || true)
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="operatoren-logisch" title="Logische Operatoren und nicht boolsche Werte">
+            <code-block lang="javascript">
+                <![CDATA[
+                    console.log(true && 1991);       // => 1991
+                    console.log(false && 1991);      // => false
+                    console.log(2 && 5);             // => 5
+                    console.log(0 && 5);             // => 0
+                    console.log("Alice" && "Bob");   // => "Bob"
+                    console.log("" && "Bob");        // => ""
+                ]]>
+            </code-block>
 
+            <p>
+                Beim Und-Operator müssen alle Operanden <code>true</code> sein. Wenn nicht, wird der erste Operand
+                ausgegeben der <code>false</code> ist, sonst der letzte der true ist.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    console.log(true || 1991);       // => true
+                    console.log(false || 1991);      // => 1991
+                    console.log(2 || 5);             // => 2
+                    console.log(0 || 5);             // => 5
+                    console.log("Alice" || "Bob");   // => "Alice"
+                    console.log("" || "Bob");        // => "Bob"
+                ]]>
+            </code-block>
+
+            <p>
+                Beim Oder-Operator muss nur ein Operand <code>true</code> sein. Hier wird der erste Operand ausgegeben,
+                der <code>true</code> ist, sonst der letzte der <code>false</code> ist.
+            </p>
         </chapter>
 
         <chapter id="operatoren-typof" title="Typbestimmung – Der typeof- und der instanceof-Operator">
+            <p>
+                Bei dem <code>typeof</code>-Operator handelt es sich um einen unären Operator, welcher als Operanden
+                einen Wert bzw. eine Variable erwartet, für die der Typ ermittelt werden soll. Der Operator liefert
+                dabei als Rückgabewert eine Zeichenkette.
+            </p>
 
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Rückgabewert des <code>typeof</code>-Operators
+                    </td>
+                    <td>
+                        Wird zurückgegeben für &#8230;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>boolean</code>
+                    </td>
+                    <td>
+                        boolesche Werte
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>number</code>
+                    </td>
+                    <td>
+                        Zahlenwerte
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>string</code>
+                    </td>
+                    <td>
+                        Zeichenketten
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>symbol</code>
+                    </td>
+                    <td>
+                        Symbole, ein in ES6 neu eingeführter Datentyp
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>function</code>
+                    </td>
+                    <td>
+                        Funktionen (die in JavaScript übrigens selbst Objekte sind)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>object</code>
+                    </td>
+                    <td>
+                        alle (anderen) Arten von Objekten sowie den Wert <code>null</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>undefined</code>
+                    </td>
+                    <td>
+                        nicht definierte Variablen
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                Der <code>typeof</code>-Operator kann verwendet werden, um:
+            </p>
+            <list>
+                <li>
+                    primitive Datentypen von Referenztypen zu unterscheiden
+                </li>
+                <li>
+                    die einzelnen primitiven Datentypen untereinander zu unterscheiden
+                </li>
+                <li>
+                    herauszufinden, ob es sich bei einem Wert um eine Funktion handelt
+                </li>
+            </list>
+
+            <p>
+                Neben dem <code>typeof</code>-Operator gibt es noch einen weiteren Operator, der etwas mit der
+                Typbestimmung von Variablen zu tun hat, und zwar den Operator <code>instanceof</code>. Vereinfacht
+                gesagt, bestimmt dieser Operator, ob eine Variable von einem bestimmten Referenztyp ist. Als
+                Rückgabewert liefert der Operator dabei einen booleschen Wert. <code>Object</code> ist der Typ, von dem
+                alle anderen Referenztypen ableiten. Der <code>instanceof</code>-Operator liefert daher für alle
+                Variablen beliebigen Referenztyps den Wert <code>true</code> zurück. Im Gegensatz zum
+                <code>typeof</code>-Operator funktioniert der <code>instanceof</code>-Operator nur für Werte, die einen
+                Referenztyp enthalten. Für Werte primitiven Datentyps dagegen liefert der Operator immer
+                <code>false</code> zurück. Mehr zum <code>instanceof</code>-Operator hier:
+                <a href="js-oop.topic#grundlagen-instanceof"/>
+            </p>
         </chapter>
 
         <chapter id="operatoren-nach-kategorie" title="Operatoren nach Kategorie">
+            <table style="both">
+                <tr>
+                    <td>
+                        Kategorie
+                    </td>
+                    <td>
+                        Beschreiubung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Zuweisungsoperatoren
+                    </td>
+                    <td>
+                        <p>
+                            Der Operator <code>+=</code> gehört zur Gruppe der zusammengesetzten Zuweisungsoperatoren.
+                            Der Trick des Zusammensetzens funktioniert auch mit allen übrigen arithmetischen Operatoren
+                            wie <code>+</code>, <code>-</code>, <code>/</code>und <code>%</code>. Auf der linken Seite
+                            einer Zuweisung muss immer einer Variablen stehen. Preis um <code>10%</code> erhöhen:
+                            <code>price *= 1.10; //=&gt; price = price * 1.10</code>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Relationale Operatoren
+                    </td>
+                    <td>
+                        <p>
+                            Relationale Operatoren sind <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>,
+                            <code>&gt;=</code>, <code>==</code>, <code>!=</code>, <code>===</code>, <code>!===</code>
+                            und ermöglichen den Vergleich zweier Werte. Das Ergebnis eines solchen Vergleiches ist
+                            entweder <code>true</code> oder <code>false</code>. Die Wahrheitswerte <code>true</code> und
+                            <code>false</code> haben einen eigenen Datentyp: boolean. Somit ergibt
+                            <code>typeof(3 &lt; 7)</code> -&gt; <code>boolean</code>. Die Operatoren <code>==</code>,
+                            <code>!=</code> und <code>===</code>, <code>!==</code> unterscheiden sich darin, dass
+                            <code>===</code> und <code>!==</code> zusätzlich auch den Datentyp Vergleichen. Somit ist
+                            <code>(&quot;5&quot; === 5)</code> gleich <code>false</code> und
+                            <code>(&quot;5&quot; == 5)</code> gleich <code>true</code>.
+                        </p>
 
+                        <p>
+                            Mit der Funktion <code>isNaN()</code> kann abgefragt werden, ob es sich beim übergebenen
+                            Argument um einen Wert des Datentyps number handelt oder nicht. Der Rückgabewert ist ein
+                            <code>boolean</code>.
+                        </p>
+
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                isNaN(3);       //=> false
+                                isNaN(NaN);     //=> true
+                                isNaN("3");     //=> false Es enthält explizite Typkonvertierung
+                                isNaN("drei");  //=> true
+                            ]]>
+                        </code-block>
+
+                        <p>
+                            Rationale Operatoren wie kleiner, kleiner-gleich oder größer, größer-gleich können auch
+                            an Strings angewendet werden. Hierbei führt JS einen <b>lexikographischen</b> (eng.
+                            <b>lexicographic</b>) Vergleich durch. Somit ergibt der Vergleich
+                            <code>&quot;Hallo&quot; > &quot;Hello&quot;</code> den Wert <code>false</code> zurück, da
+                            der Buchstabe <code>a</code> vor dem Buchstaben <code>e</code> im Alphabet vorkommt.
+                        </p>
+
+                        <tip>
+                            In JavaScript sollte man stets für den Vergleich zweier Variablen stets die strikten
+                            Vergleichsoperatoren verwenden. Damit wird vermieden, dass die automatische Typkonvertierung
+                            in Kraft tritt, was oft auch zu schwer zu finden Fehlern im Programm führen kann.
+                        </tip>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Logische Operatoren
+                    </td>
+                    <td>
+                        <p>
+                            In JavaScript wird <code>&amp;&amp;</code> als Und-Operator und <code>||</code> als
+                            Oder-Operator verwendet. Für logische Operatoren gibt es in JavaScript folgende
+                            Besonderheiten:
+                        </p>
+
+                        <!-- TODO: missing content!! -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Bitweise Operationen
+                    </td>
+                    <td>
+                        <list type="bullet">
+                            <li>
+                                <code>&amp;</code> bitweises UND
+                            </li>
+                            <li>
+                                <code>|</code> bitweises ODER
+                            </li>
+                            <li>
+                                <code>^</code> bitweises exklusives ODER
+                            </li>
+                            <li>
+                                <code>~</code> bitweises NICHT, wobei das Ergebnis für eine Zahl <code>x</code> dann
+                                <code>-(x+1)</code> lautet, also für die Zahl <code>65</code> bitweise das Ergebnis
+                                <code>-66</code>.
+                            </li>
+                            <li>
+                                <code>&lt;&lt;</code> bitweise Linksverschiebung
+                            </li>
+                            <li>
+                                <code>&gt;&gt;</code> bitweise Rechtsverschiebung
+                            </li>
+                            <li>
+                                <code>&gt;&gt;&gt;</code> bitweise vorzeichenignorierende Rechtsverschiebung
+                            </li>
+                        </list>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Konditionaler Operator
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                <Bedingung> ? <Wert1> : <Wert2>
+                            ]]>
+                        </code-block>
+
+                        <p>
+                            Der konditionale Operator ist ein tenärer Operator, der abhängig von einer Bedingung (erster
+                            Operand) einen von zwei Werten zurückgibt (welche durch den zweiten und dritten Operanden
+                            definiert werden).
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Löschung von Objekteigenschaften oder Elementen innerhalb eines Arrays
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                delete
+                            ]]>
+                        </code-block>
+
+                        <p>
+                            Erlaubt es, Elemente aus Arrays zu löschen sowie Objekteigenschaften aus Objekten.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Existenz einer Eigenschaft in einem Objekt
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                <Eigenschaft> in <Objekt>
+                            ]]>
+                        </code-block>
+
+                        <p>
+                            Überprüft, ob ein Objekt über eine Eigenschaft verfügt.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Typüberprüfung
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                <Objekt> instanceof <Typ>
+                            ]]>
+                        </code-block>
+
+                        <p>
+                            Hierbei handelt es sich um einen binären Operator, der überprüft, ob ein Objekt von einem
+                            Typ ist.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Typbestimmung
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                typeof <Operand>
+                            ]]>
+                        </code-block>
+
+                        <p>
+                            Ermittelt den Datentyp des Operanden. Der Operand kann dabei ein Objekt, ein String, eine
+                            Variable oder ein Schlüsselwort wie <code>true</code> oder <code>false</code> sein. Optional
+                            kann der Operand in Klammern angegeben werden.
+                        </p>
+                    </td>
+                </tr>
+            </table>
         </chapter>
     </chapter>
 
