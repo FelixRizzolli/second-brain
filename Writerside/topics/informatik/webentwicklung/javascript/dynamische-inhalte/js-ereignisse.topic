@@ -260,7 +260,7 @@
                     bereitgestellt werden, sind in folgenden Tabelle aufgelistet.
                 </p>
 
-                <table>
+                <table style="header-row">
                     <tr>
                         <td>
                             Eigenschaft
@@ -412,29 +412,996 @@
     </chapter>
 
     <chapter id="typen" title="Die verschiedenen Typen von Ereignissen">
+        <p>
+            Innerhalb einer Webanwendung können verschiedene Arten von Ereignissen auftreten. Im Wesentlichen lassen
+            sich dabei u.a. folgende Arten unterscheiden:
+        </p>
+
+        <list type="bullet">
+            <li>
+                Ereignisse bei Interaktion mit der Maus
+            </li>
+            <li>
+                Ereignisse bei Interaktion mit Tastatur oder Textfeldern
+            </li>
+            <li>
+                Ereignisse beim Arbeiten mit Formularen
+            </li>
+            <li>
+                Ereignisse beim Fokussieren von Elementen
+            </li>
+            <li>
+                Ereignisse bezüglich der Nutzerschnittstelle
+            </li>
+            <li>
+                Ereignisse bei mobilen Endgeräten
+            </li>
+        </list>
 
         <chapter id="typen-maus" title="Ereignisse bei Interaktion mit der Maus">
+            <p>
 
+            </p>
+
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Ereignis
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                    <td>
+                        Event
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            click
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn über einem Element die Maustaste gedrückt und wieder losgelassen wurde.
+                    </td>
+                    <td>
+                        <code>
+                            MouseEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            dblclick
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn über einem Element die Maustaste zweimal gedrückt und wieder losgelassen
+                        wurde.
+                    </td>
+                    <td>
+                        <code>
+                            MouseEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            contextMenu
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn ein Kontextmenü (in der Regel über den rechten Mausknopf) geöffnet wurde.
+                    </td>
+                    <td>
+                        <code>
+                            MouseEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            mousedown
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn über einem Element die Maustaste gedrückt wurde.
+                    </td>
+                    <td>
+                        <code>
+                            MouseEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            mouseup
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn über einem Element die Maustaste losgelassen wurde.
+                    </td>
+                    <td>
+                        <code>
+                            MouseEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            mousemove
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn die Maus verschoben wurde.
+                    </td>
+                    <td>
+                        <code>
+                            MouseEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            mouseover
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn die Maus über ein Element bewegt wird (siehe auch Hinweiskasten).
+                    </td>
+                    <td>
+                        <code>
+                            MouseEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            mouseout
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn die Maus von einem Element fortbewegt wird (siehe auch Hinweiskasten).
+                    </td>
+                    <td>
+                        <code>
+                            MouseEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            mouseenter
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn die Maus über ein Element bewegt wird (siehe auch Hinweiskasten).
+                    </td>
+                    <td>
+                        <code>
+                            MouseEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            mouseleave
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn die Maus von einem Element fortbewegt wird (siehe auch Hinweiskasten).
+                    </td>
+                    <td>
+                        <code>
+                            MouseEvent
+                        </code>
+                    </td>
+                </tr>
+            </table>
+
+            <note>
+                <p>
+                    <b>
+                        »mouseenter/mouseleave« vs. »mouseover/mouseout«
+                    </b>
+                </p>
+
+                <p>
+                    Die Ereignisse <code>mouseenter</code> und <code>mouseover</code> sowie <code>mouseout</code> und
+                    <code>mouseleave</code> sind auf den ersten Blick recht ähnlich. Erstere beiden werden ausgelöst,
+                    wenn die Maus über ein Element bewegt wird, Letztere beiden, wenn die Maus von einem Element
+                    fortbewegt wird. Die Events <code>mouseenter</code> und <code>mouseleave</code> werden nur
+                    ausgelöst, wenn der äußere Rand des jeweiligen Elements überschritten wird, <code>mouseover</code>
+                    und <code>mouseout</code> dagegen zusätzlich auch, wenn innerhalb des jeweiligen Elements ein
+                    anderes Element liegt und die Maus darüber bewegt (also von dem äußeren Element wegbewegt) oder von
+                    dem inneren Element wegbewegt (und über das äußere Element bewegt) wird.
+                </p>
+            </note>
+
+            <img alt="Mausereignisse" src="js-dynamische-inhalte-ereignisse-mouse-events.png"/>
+
+            <p>
+                Alle Mausereignisse sind vom Objekttyp <code>MouseEvent</code>. Dieser Typ stellt (neben den
+                Eigenschaften, die durch den (»Ober«-)Typ Event vorgegeben sind) folgende Eigenschaften zur Verfügung:
+            </p>
+
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Eigenschaft
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            altKey
+                        </code>
+                    </td>
+                    <td>
+                        Enthält boolesche Angabe darüber, ob die (Alt)-Taste beim Auslösen des Ereignisses gedrückt war.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            button
+                        </code>
+                    </td>
+                    <td>
+                        Enthält die Nummer der Maustaste, die bei Auslösen des Ereignisses gedrückt war.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            buttons
+                        </code>
+                    </td>
+                    <td>
+                        Enthält eine Zahl, welche die gedrückten Maustasten repräsentiert, die bei Auslösen des
+                        Ereignisses gedrückt waren. Hierbei repräsentiert die Zahl 1 die linke Maustaste, die Zahl 2 die
+                        rechte Maustaste, die Zahl 4 das Mausrad bzw. die mittlere Maustaste, die Zahl 8 die vierte
+                        Maustaste und die Zahl 16 die fünfte Maustaste. Wurden beim Auslösen des Ereignisses mehrere
+                        Tasten gedrückt, enthält buttons die Summe der jeweiligen Zahlen.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            clientX
+                        </code>
+                    </td>
+                    <td>
+                        die <code>x</code>-Koordinate (bezogen auf den DOM-Inhalt), an der sich der Mauszeiger beim
+                        Auslösen des Ereignisses befindet
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            clientY
+                        </code>
+                    </td>
+                    <td>
+                        die <code>y</code>-Koordinate (bezogen auf den DOM-Inhalt), an der sich der Mauszeiger beim
+                        Auslösen des Ereignisses befindet
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            ctrlKey
+                        </code>
+                    </td>
+                    <td>
+                        Enthält boolesche Angabe darüber, ob die (Ctrl)-Taste beim Auslösen des Ereignisses gedrückt
+                        war.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            metaKey
+                        </code>
+                    </td>
+                    <td>
+                        Enthält boolesche Angabe darüber, ob die (Meta)-Taste beim Auslösen des Ereignisses gedrückt war
+                        (unter macOS die (cmd)-Taste, unter Windows die (WIN)-Taste).
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            movementX
+                        </code>
+                    </td>
+                    <td>
+                        die <code>x</code>-Koordinate relativ zu der vorherigen <code>x</code>-Koordinate, die bei
+                        Auslösen des letzten <code>mousemove</code>-Ereignisses auftrat
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            movementY
+                        </code>
+                    </td>
+                    <td>
+                        die <code>y</code>-Koordinate relativ zu der vorherigen <code>y</code>-Koordinate, die bei
+                        Auslösen des letzten <code>mousemove</code>-Ereignisses auftrat
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            region
+                        </code>
+                    </td>
+                    <td>
+                        Enthält die ID der Region (bzw. des Elements), auf die sich das Ereignis bezieht.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            relatedTarget
+                        </code>
+                    </td>
+                    <td>
+                        Enthält das »verwandte« Zielelement, welches thematisch mit dem aktuellen Zielelement durch das
+                        Ereignis »verbunden« ist. Wenn der Mauszeiger beispielsweise von einem Element weg- und auf ein
+                        anderes Element »gezogen« wird, wird für Letzteres ein <code>mouseenter</code>-Ereignis
+                        ausgelöst. Die Eigenschaft relatedTarget bezieht sich dann auf das Element, von dem der
+                        Mauszeiger »weggezogen« wurde.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            screenX
+                        </code>
+                    </td>
+                    <td>
+                        die <code>x</code>-Koordinate (bezogen auf den Bildschirm), an der sich der Mauszeiger beim
+                        Auslösen des Ereignisses befindet
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            screenY
+                        </code>
+                    </td>
+                    <td>
+                        die <code>y</code>-Koordinate (bezogen auf den Bildschirm), an der sich der Mauszeiger beim
+                        Auslösen des Ereignisses befindet
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            shiftKey
+                        </code>
+                    </td>
+                    <td>
+                        Enthält boolesche Angabe darüber, ob die (Shift)-Taste beim Auslösen des Ereignisses gedrückt
+                        war.
+                    </td>
+                </tr>
+            </table>
+
+            <tip>
+                Mehr Details zu Eigenschaften und Ereignisse von Events:
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event"/>.
+            </tip>
         </chapter>
 
         <chapter id="typen-tastatur" title="Ereignisse bei Interaktion mit Tastatur oder Textfeldern">
+            <p>
+                Auch bei der Verwendung der Tastatur werden Ereignisse ausgelöst. Die Ereignisse, die bei Interaktion
+                mit der Tastatur ausgelöst werden, sind dabei vom Typ <code>KeyboardEvent</code>.
+            </p>
 
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Ereignis
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                    <td>
+                        Event
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            keydown
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn eine Taste gedrückt wurde. Wird eine Taste längere Zeit gedrückt, wird das
+                        Ereignis mehrmals ausgelöst.
+                    </td>
+                    <td>
+                        <code>
+                            KeyboardEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            keyup
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn eine Taste losgelassen wurde.
+                    </td>
+                    <td>
+                        <code>
+                            KeyboardEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            keypress
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn per Tastatur ein Zeichen eingefügt wird. Auch hier gilt: Wird eine Taste
+                        längere Zeit gedrückt, wird das Ereignis mehrmals ausgelöst.
+                    </td>
+                    <td>
+                        <code>
+                            KeyboardEvent
+                        </code>
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter id="typen-formulare" title="Ereignisse beim Arbeiten mit Formularen">
-
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Ereignis
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                    <td>
+                        Event
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            input
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn der Wert eines <code>&lt;input&gt;</code>-, eines
+                        <code>&lt;textarea&gt;</code>-Elements oder eines Elements mit
+                        <code>contenteditable</code>-Attribut geändert wurde.
+                    </td>
+                    <td>
+                        <code>
+                            Event
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            change
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn der ausgewählte Wert einer Auswahlliste, einer Checkbox oder einer Gruppe
+                        von Radiobuttons geändert wurde.
+                    </td>
+                    <td>
+                        <code>
+                            Event
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            submit
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn ein Formular abgeschickt wurde.
+                    </td>
+                    <td>
+                        <code>
+                            Event
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            reset
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn ein Formular zurückgesetzt wurde (über eine Zurücksetzen-Schaltfläche).
+                    </td>
+                    <td>
+                        <code>
+                            Event
+                        </code>
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter id="typen-fokus" title="Ereignisse beim Fokussieren von Elementen">
+            <p>
+                Auch jedes Mal, wenn ein Element auf einer Webseite den Fokus bekommt (beispielsweise indem man über die
+                (TAB)-Taste zu dem Element navigiert) oder wenn es den Fokus verliert, wird ein Event ausgelöst.
+            </p>
 
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Ereignis
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                    <td>
+                        Event
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            focus
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn ein Element den Fokus bekommt.
+                    </td>
+                    <td>
+                        <code>
+                            FocusEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            blur
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn ein Element den Fokus verliert.
+                    </td>
+                    <td>
+                        <code>
+                            FocusEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            focusin
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn ein Element den Fokus bekommt. Im Gegensatz zum Ereignis focus steigt
+                        dieses Ereignis auf.
+                    </td>
+                    <td>
+                        <code>
+                            FocusEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            focusout
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn ein Element den Fokus verliert. Im Gegensatz zum Ereignis blur steigt
+                        dieses Ereignis auf.
+                    </td>
+                    <td>
+                        <code>
+                            FocusEvent
+                        </code>
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter id="typen-nutzerschnittstelle" title="Ereignisse bezüglich der Nutzerschnittstelle">
+            <p>
+                Neben den vorhin vorgestellten Ereignissen, gibt es noch eine Reihe weiterer, die sich grob in die
+                Kategorie »Ereignisse der Nutzerschnittstelle« einordnen lassen (wobei die meisten, aber nicht alle
+                dieser Ereignisse durch den Typ UIEvent repräsentiert werden).
+            </p>
 
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Ereignis
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                    <td>
+                        Event
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            load
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn das Laden der Webseite abgeschlossen ist.
+                    </td>
+                    <td>
+                        <code>
+                            UIEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            unload
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn eine Webseite »weggeladen« wird, sprich, in der Regel dann, wenn eine neue
+                        Webseite in dem entsprechenden Browserfenster angefordert wurde.
+                    </td>
+                    <td>
+                        <code>
+                            UIEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            abort
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn das Laden einer Ressource abgebrochen wird.
+                    </td>
+                    <td>
+                        <code>
+                            UIEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            error
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn es ein Problem beim Laden der Webseite gibt, beispielsweise einen
+                        JavaScript-Fehler.
+                    </td>
+                    <td>
+                        <code>
+                            UIEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            select
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn Text auf einer Webseite ausgewählt wurde.
+                    </td>
+                    <td>
+                        <code>
+                            UIEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            resize
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn die Größe des Browserfensters verändert wurde.
+                    </td>
+                    <td>
+                        <code>
+                            UIEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            scroll
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn nach oben oder nach unten gescrollt wurde.
+                    </td>
+                    <td>
+                        <code>
+                            UIEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            beforeunload
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, kurz bevor eine Webseite »weggeladen« wird, sprich, in der Regel dann, wenn eine
+                        neue Webseite in dem entsprechenden Browserfenster angefordert wurde.
+                    </td>
+                    <td>
+                        <code>
+                            BeforeUnloadEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            DOMContentLoaded
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn der DOM-Baum vollständig geladen wurde.
+                    </td>
+                    <td>
+                        <code>
+                            Event
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            cut
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn Inhalte aus einem Formularfeld ausgeschnitten wurden (beispielsweise über
+                        das Tastaturkürzel (cmd) + (x)).
+                    </td>
+                    <td>
+                        <code>
+                            ClipboardEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            copy
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn Inhalte aus einem Formularfeld kopiert wurden (beispielsweise über das
+                        Tastaturkürzel (cmd) + (c)).
+                    </td>
+                    <td>
+                        <code>
+                            ClipboardEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            paste
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn Inhalte in ein Formularfeld eingefügt wurden (beispielsweise über das
+                        Tastaturkürzel (cmd) + (v)).
+                    </td>
+                    <td>
+                        <code>
+                            ClipboardEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            select
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn in einem Formularfeld Text markiert wurde.
+                    </td>
+                    <td>
+                        <code>
+                            ClipboardEvent
+                        </code>
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter id="typen-mobile" title="Ereignisse bei mobilen Endgeräten">
+            <p>
+                Bei der Verwendung von mobilen Endgeräten (Smartphones, Tablets etc.) werden eine Reihe weiterer
+                Ereignisse ausgelöst. Hintergrund ist vor allem die Tatsache, dass sich solche Endgeräte ganz anders
+                bedienen lassen als herkömmliche Laptops oder Desktopcomputer: Statt Maus und Tastatur verwendet man
+                hier ja in der Regel die Finger oder spezielle Eingabestifte, um mit der entsprechenden Webseite zu
+                interagieren.
+            </p>
 
+            <p>
+                Ausgehend von diesen – sehr auf die Berührung des Displays ausgelegten – Interaktionsformen gibt es
+                demnach entsprechende Ereignisse, um Berührungen auf dem Display des Endgeräts festzustellen und darauf
+                reagieren zu können.
+            </p>
+
+            <p>
+                Darüber hinaus spielen bei mobilen Endgeräten auch andere Dinge eine Rolle, wie beispielsweise die
+                Neigung bzw. die Ausrichtung des Geräts, sprich, ist es seitlich gekippt oder nach vorne oder hinten
+                geneigt? Auch auf die Bewegung eines mobilen Endgeräts lässt sich über Ereignisse reagieren.
+            </p>
+
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Ereignis
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                    <td>
+                        Event
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            orientationchange
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn sich die Orientierung des Eingabegeräts ändert.
+                    </td>
+                    <td>
+                        <code>
+                            Event
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            deviceorientation
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn neue Daten bezüglich der Orientierung des Endgeräts zur Verfügung stehen.
+                    </td>
+                    <td>
+                        <code>
+                            DeviceOrientationEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            devicemotion
+                        </code>
+                    </td>
+                    <td>
+                        Wird in regelmäßigen Abständen ausgelöst und gibt dann die Beschleunigungskraft an, die auf das
+                        Endgerät wirkt.
+                    </td>
+                    <td>
+                        <code>
+                            DeviceMotionEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            touchstart
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn das Eingabegerät (in der Regel ein Finger) das Display berührt.
+                    </td>
+                    <td>
+                        <code>
+                            TouchEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            touchend
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn das Eingabegerät die Berührung beendet, mit anderen Worten: wenn der Finger
+                        vom Display genommen wurde.
+                    </td>
+                    <td>
+                        <code>
+                            TouchEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            touchmove
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn das Eingabegerät über das Display bewegt wurde.
+                    </td>
+                    <td>
+                        <code>
+                            TouchEvent
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            touchcancel
+                        </code>
+                    </td>
+                    <td>
+                        Wird ausgelöst, wenn das Tracking der Berührung unterbrochen wurde.
+                    </td>
+                    <td>
+                        <code>
+                            TouchEvent
+                        </code>
+                    </td>
+                </tr>
+            </table>
         </chapter>
     </chapter>
 
