@@ -9,9 +9,153 @@
 
     <!-- TODO: migrate from Confluence -->
     <chapter id="aufbau" title="Aufbau einer Webseite">
+        <p>
+            Beim Aufruf einer Website wird vom Browser das DOM (Document Object Model) gebaut und in den Arbeitsspeicher
+            geladen. Das DOM stellt die Komponenten einer Website hierarchisch in einer Baumdarstellung dar, welche auch
+            als DOM-Baum bezeichnet wird. Ein DOM-Baum wiederum setzt sich aus sogenannten Knoten (engl.: <i>nodes</i>)
+            zusammen, welche durch ihre hierarchische Anordnung den Aufbau einer Webseite widerspiegeln.
+        </p>
+
+        <p>
+            Das DOM dient in erster Linie dazu, per JavaScript auf Inhalte der Webseite zugreifen zu können,
+            beispielsweise um bestehende Inhalte zu verändern oder neue Inhalte hinzuzufügen.
+        </p>
+
+        <p>
+            Insgesamt gibt es zwölf Typen von Knoten. Die vier wesentlichsten sind:
+        </p>
+
+        <list type="bullet">
+            <li>
+                <b>Der Dokumentknoten</b> steht für die gesamte Webseite und bildet die Wurzel des DOM-Baumes. Er wird
+                durch das globale Objekt document repräsentiert. Dieses Objekt ist gleichzeitig das Einstiegsobjekt für
+                jegliche Arbeiten mit dem DOM. Der Dokumentknoten wird auch als Wurzelknoten bezeichnet.
+            </li>
+            <li>
+                <b>Die Elementknoten</b> repräsentieren einzelne HTML-Elemente einer Webseite.
+            </li>
+            <li>
+                <b>Die Attributknoten</b> stehen für Attribute von HTML-Elementen.
+            </li>
+            <li>
+                Der Text innerhalb von HTML-Elementen wird durch einen eigenen Knotentyp repräsentiert, die
+                sogenannten <b>Textknoten</b>. Textknoten können selbst keine Kindknoten haben und sind damit
+                zwangsweise Blätter in dem DOM-Baum.
+            </li>
+        </list>
+
+        <p>
+            Das DOM einer beliebigen Webseite kann wie folgt im Browser angezeigt werden:
+        </p>
+
+        <list type="bullet">
+            <li>
+                Google Chrome: <a href="https://developer.chrome.com/docs/devtools/dom/"/>
+            </li>
+            <li>
+                Microsoft Edge:
+                <a href="https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/dom/"/>
+            </li>
+            <li>
+                Mozilla Firefox:
+                <a href="https://firefox-source-docs.mozilla.org/devtools-user/dom_property_viewer/index.html"/>
+            </li>
+        </list>
 
         <chapter id="aufbau-dokumentknoten" title="Der Dokumentknoten">
+            <p>
+                Der Dokumentknoten stellt, wie bereits erwähnt, den Einstiegspunkt für das DOM dar und wird über das
+                globale Objekt <code>document</code> repräsentiert, welches über verschiedene Eigenschaften und Methoden
+                verfügt.
+            </p>
 
+            <table>
+                <tr>
+                    <td>
+                        Eigenschaft
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>document.title</code>
+                    </td>
+                    <td>
+                        Enthält den Titel des aktuellen Dokuments.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>document.lastModified</code>
+                    </td>
+                    <td>
+                        Enthält das Datum, an dem das Dokument zuletzt geändert wurde.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>document.URL</code>
+                    </td>
+                    <td>
+                        Enthält eine URL des aktuellen Dokuments.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>document.domain</code>
+                    </td>
+                    <td>
+                        Enthält die Domäne des aktuellen Dokuments.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>document.cookie</code>
+                    </td>
+                    <td>
+                        Enthält eine Liste aller Cookies für das Dokument.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>document.forms</code>
+                    </td>
+                    <td>
+                        Enthält eine Liste aller Formulare des Dokuments.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>document.images</code>
+                    </td>
+                    <td>
+                        Enthält eine Liste aller Bilder des Dokuments.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>document.links</code>
+                    </td>
+                    <td>
+                        Enthält eine Liste aller Links des Dokuments.
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                Der Aufbau des Document Object Models, sprich, welche Eigenschaften und Methoden zur Verfügung stehen,
+                welche Knotentypen es gibt etc., ist in der sogenannten DOM API, einer Spezifikation des W3C (World Wide
+                Web Consortium) festgehalten. Diese API (Application Programming Interface) ist
+                programmiersprachenunabhängig gehalten, d.h., es gibt nicht nur Implementierungen für JavaScript,
+                sondern auch für andere Programmiersprachen wie Java oder C++.
+            </p>
+
+            <p>
+                In NodeJS gibt es die globale Variable <code>document</code> nicht, da Node.js in der Regel nicht dazu
+                verwendet wird, Webseiten zu rendern.
+            </p>
         </chapter>
     </chapter>
 
