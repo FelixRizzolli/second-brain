@@ -2582,36 +2582,270 @@
     </chapter>
 
     <chapter id="sichtbarkeit" title="Sichtbarkeit">
-
         <chapter id="sichtbarkeit-funktionen-in-funktionen"
                  title="Funktionen innerhalb von Funktionen definieren">
-
+            <p>
+                In JavaScript ist es (im Gegensatz zu anderen Sprachen wie beispielsweise Java) möglich, Funktionen
+                innerhalb von anderen Funktionen zu definieren. Solche Funktionen sind dann nur innerhalb der Funktion
+                sichtbar bzw. gültig, in der sie definiert wurden.
+            </p>
         </chapter>
     </chapter>
 
     <chapter id="fehlerbehandlung" title="Fehlerbehandlung">
+        <tip>
+            Grundlegendes zur Fehlerbehandlung: <a href="swe-pk-errorhandling.topic"/>
+        </tip>
 
-        <chapter id="fehlerbehandlung-fehlerarten" title="Fehlerarten">
-
+        <chapter id="errorhandling-fehlerarten" title="Fehlerarten">
+            <list type="bullet">
+                <li>
+                    <p>
+                        <b>Syntaxfehler</b> - wie werden in JavaScript erst zur Laufzeit erkannt, weil es sich ja um
+                        eine interpretierte und keine kompilierte Programmiersprache handelt.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>Laufzeitfehler</b> - sind eigentlich Fehler die selbst bei kompilierten Programmen erst zur
+                        Laufzeit auftreten würden. Syntaxfehler treten immer auf, wenn das fehlerhafte Stück Code
+                        interpretiert wird, Laufzeitfehler dagegen treten nur auf, wenn das fehlerhafte Stück Code auch
+                        ausgeführt wird. Beispielsweise, wenn innerhalb des Programms auf Variablen zugegriffen wird,
+                        die nicht deklariert wurden.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>Logische Fehler</b> - werden durch falsche Logik des Programms verursacht.
+                    </p>
+                </li>
+            </list>
         </chapter>
 
-        <chapter id="fehlerbehandlung-laufzeitfehler" title="Fehlerbehandlung von Laufzeitfehlern in JavaScript">
+        <chapter id="errorhandling-laufzeitfehler" title="Fehlerbehandlung von Laufzeitfehlern in JavaScript">
+            <p>
+                Auf Laufzeitfehler kann man mit sogenannter Fehlerbehandlung reagieren. Tritt ein Laufzeitfehler auf
+                (man sagt auch: »wird ein Fehler geworfen«), gibt es in JavaScript (zumindest innerhalb von Browsern)
+                zwei Möglichkeiten, auf den jeweiligen Fehler zu reagieren (bzw. »den Fehler zu fangen«) und diesen zu
+                behandeln.
+            </p>
 
+            <p>
+                Zunächst hat man über sogenannte <code>try</code>-<code>catch</code>-Codeblöcke die Möglichkeit, Fehler
+                abzufangen. Wird der Fehler nicht von einem solchen <code>try</code>-<code>catch</code>-Codeblock
+                abfangen, hat man zusätzlich die Möglichkeit, über den Event-Handler <code>window.onerror</code> auf den
+                Fehler zu reagieren. Dies kann man allerdings nur innerhalb von Browsern machen, da nur hier das
+                <code>window</code>-Objekt zur Verfügung steht. Wird auch hier nicht auf den Fehler reagiert, landet
+                dieser schließlich beim Nutzer, was in der Regel bedeutet, dass der Fehler auf der Konsole ausgegeben
+                wird.
+            </p>
+
+            <tip>
+                Fehler tritt auf → Fehlerbehandlung über <code>try</code>-<code>catch</code> → Fehlerbehandlung über
+                <code>window.onerror</code> (nur Browser) → Fehler landet beim Nutzer
+            </tip>
         </chapter>
 
-        <chapter id="fehlerbehandlung-try-catch-finally" title="Fehler mit try-catch-finally fangen">
+        <chapter id="errorhandling-try-catch-finally" title="Fehler mit try-catch-finally fangen">
+            <code-block lang="javascript">
+                <![CDATA[
+                    try {
+                      // Code ausführen, der potenziell Fehler produziert
+                    } catch (error) {
+                      // Behandeln des Fehlers
+                      if (error instanceof RangeError) { // -> conditional exception handling
+                        // Spezielle Behandlung eines Fehlers des Typs RangeError.
+                      } else if (error instanceof TypeError) {
+                        // Spezielle Behandlung eines Fehlers des Typs TypeError.
+                      }
+                    } finally {
+                      // Alles, was hier steht, wird immer ausgeführt, unabhängig davon,
+                      // ob ein Fehler aufgetreten ist oder nicht.
+                    }
+                ]]>
+            </code-block>
 
-            <chapter id="fehlerbehandlung-error" title="Das Fehlerobjekt error">
+            <chapter id="errorhandling-error" title="Das Fehlerobjekt error">
+                <p>
+                    Das Fehlerobjekt, welches innerhalb des <code>catch</code>-Blocks über die in der Regel
+                    <code>error</code> benannte Variable zur Verfügung steht, stellt in JavaScript zwei Eigenschaften
+                    zur Verfügung, über die man an genauere Informationen über den Grund des Fehlers gelangt:
+                </p>
 
+                <table style="header-row">
+                    <tr>
+                        <td>
+                            Eigenschaft
+                        </td>
+                        <td>
+                            Beschreibung
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                name
+                            </code>
+                        </td>
+                        <td>
+                            Typ des Fehlers
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                message
+                            </code>
+                        </td>
+                        <td>
+                            Beschreibung, was fehlgeschlagen ist.
+                        </td>
+                    </tr>
+                </table>
+
+                <p>
+                    Je nach Laufzeitumgebung verfügt das Fehlerobjekt noch über weitere Eigenschaften, wie
+                    beispielsweise in Firefox die Eigenschaft <code>fileName</code>, <code>lineNumber</code> und
+                    <code>columnName</code>. Da diese Eigenschaften aber nicht standardisiert sind, sollten sie nicht
+                    (bzw. zumindest nicht in Produktivsystemen) verwendet werden.
+                </p>
             </chapter>
         </chapter>
 
-        <chapter id="fehlerbehandlung-throw" title="Fehler mit throw auslösen">
+        <chapter id="errorhandling-throw" title="Fehler mit throw auslösen">
+            <p>
+                Mit dem Schlüsselwort <code>throw</code> kann ein Fehler ausgelöst werden. Für den Fehler wird mit dem
+                <code>new</code>-Schlüsselwort ein neues Fehlerobjekt instanziiert. Dieses Fehlerobjekt kann ein
+                Standardfehlerobjekt oder ein eigenes Fehlerobjekt sein.
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    function accessDatabase() {
+                      openDatabaseConnection();    // 'Datenbankverbindung geöffnet'
+
+                      try {
+                        getUsersByName(22);
+                      } catch(error) {
+                        console.log(error);        // TypeError: Zeichenkette erwartet
+                        throw new DBError('Fehler bei der Kommunikation mit der Datenbank');
+                      } finally {
+                        closeDatabaseConnection(); // 'Datenbankverbindung geschlossen'
+                      }
+                    }
+
+                    function showUsers() {
+                      try {
+                        accessDatabase();
+                      } catch(error) {
+                        document.getElementById('message').textContent = error.message;
+                      }
+                    }
+
+                    function getUsersByName(name) {
+                      if(typeof name !== 'string') {
+                        throw new TypeError('Zeichenkette erwartet');
+                      }
+                      /* ... */
+                    }
+                ]]>
+            </code-block>
+
+            <img alt="Darstellung Fehlerbehandlung und Fehler schmeißen mit throw"
+                 src="js-sprachkern-errorhandling-throw.png"/>
         </chapter>
 
-        <chapter id="fehlerbehandlung-fehlertypen" title="Fehlertypen">
+        <chapter id="errorhandling-fehlertypen" title="Fehlertypen">
+            <p>
+                In JavaScript gibt es verschiedene Typen von Fehlern, die jeweils durch ein anderen Objekttyp
+                repräsentiert werden. Darüber hinaus gibt es auch die Möglichkeit, eigene Fehlertypen zu erstellen.
+            </p>
 
+            <table>
+                <tr>
+                    <td>
+                        Fehlertyp
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            Error
+                        </code>
+                    </td>
+                    <td>
+                        Basistyp, von dem andere Fehlertypen ableiten
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            EvalEroor
+                        </code>
+                    </td>
+                    <td>
+                        Kann bei falscher Verwendung der <code>eval()</code>-Funktion auftreten.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            RangeError
+                        </code>
+                    </td>
+                    <td>
+                        Tritt auf, wenn eine Zahl außerhalb eines Wertebereichs liegt, beispielsweise wenn man versucht,
+                        ein Array mit negativer Länge zu erstellen: <code>new Array(-5)</code>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            ReferenceError
+                        </code>
+                    </td>
+                    <td>
+                        Tritt auf, wenn an einer Stelle ein Objekt (eben ein Referenztyp) erwartet wird. Typischerweise
+                        tritt dieser Fehlertyp auf, wenn man versucht, auf eine nicht existente Variable zuzugreifen.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            SyntaxError
+                        </code>
+                    </td>
+                    <td>
+                        Tritt auf, wenn beim Parsen des Quelltextes mit der Funktion <code>eval()</code> ein Fehler in
+                        der Syntax gefunden wird.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            TypeError
+                        </code>
+                    </td>
+                    <td>
+                        Tritt auf, wenn eine Variable oder ein Parameter mit einem ungültigen Typ aufgerufen wird.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            URIError
+                        </code>
+                    </td>
+                    <td>
+                        Tritt auf, wenn im Zusammenhang mit einer URI ein Fehler aufgetreten ist, beispielsweise wenn
+                        den Funktionen <code>encodeURI()</code> oder <code>decodeURI()</code> falsche Argumente
+                        übergeben werden.
+                    </td>
+                </tr>
+            </table>
         </chapter>
     </chapter>
 
