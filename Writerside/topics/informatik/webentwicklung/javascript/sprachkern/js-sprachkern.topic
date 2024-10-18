@@ -1245,11 +1245,11 @@
                             der Buchstabe <code>a</code> vor dem Buchstaben <code>e</code> im Alphabet vorkommt.
                         </p>
 
-                        <tip>
+                        <note>
                             In JavaScript sollte man stets für den Vergleich zweier Variablen stets die strikten
                             Vergleichsoperatoren verwenden. Damit wird vermieden, dass die automatische Typkonvertierung
                             in Kraft tritt, was oft auch zu schwer zu finden Fehlern im Programm führen kann.
-                        </tip>
+                        </note>
                     </td>
                 </tr>
                 <tr>
@@ -2472,7 +2472,7 @@
                 ]]>
             </code-block>
 
-            <tip>
+            <note>
                 <p>
                     <b>
                         Altes JavaScript
@@ -2484,7 +2484,7 @@
                     einer Funktion (sogenanntes <i>Hosting</i>) und macht die Variable in der kompletten Funktion
                     verfügbar - <i>function scope</i>.
                 </p>
-            </tip>
+            </note>
         </chapter>
 
         <chapter id="vordefiniert-konstante" title="Konstante">
@@ -2640,10 +2640,10 @@
                 wird.
             </p>
 
-            <tip>
+            <note>
                 Fehler tritt auf → Fehlerbehandlung über <code>try</code>-<code>catch</code> → Fehlerbehandlung über
                 <code>window.onerror</code> (nur Browser) → Fehler landet beim Nutzer
-            </tip>
+            </note>
         </chapter>
 
         <chapter id="errorhandling-try-catch-finally" title="Fehler mit try-catch-finally fangen">
