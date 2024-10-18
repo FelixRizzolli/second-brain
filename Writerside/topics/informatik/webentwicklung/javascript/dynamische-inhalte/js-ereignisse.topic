@@ -1406,17 +1406,133 @@
     </chapter>
 
     <chapter id="ereignisfluss" title="Den Ereignisfluss verstehen und beeinflussen">
+        <p>
+            Immer wenn ein Ereignis ausgelöst wird, durchläuft es mehrere sogenannte Event-Phasen. Grundlegend
+            unterscheidet man bezüglich des Ereignisflusses zunächst einmal folgende drei Phasen:
+        </p>
+
+        <list type="decimal">
+            <li>
+                <b>Capturing-Phase:</b> In dieser Phase »steigt« das Ereignis ausgehend vom obersten Knoten im DOM-Baum
+                (dem Dokumentknoten) hinab bis zu dem Element, für welches das Ereignis ausgelöst wurde, dem
+                Zielelement.
+            </li>
+            <li>
+                <b>Target-Phase:</b> In dieser Phase wird das Ereignis am Zielelement ausgelöst.
+            </li>
+            <li>
+                <b>Bubbling-Phase:</b> In dieser Phase »steigt« das Ereignis vom Zielelement im DOM-Baum wieder hinauf
+                zum Dokumentknoten.
+            </li>
+        </list>
 
         <chapter id="ereignisfluss-capturing-bubbling" title="Die Capturing- &amp; Bubbling-Phase">
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Capturing-Phase
+                    </td>
+                    <td>
+                        Bubbling-Phase
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img alt="Eventfluss - Capturing-Phase"
+                             src="js-dynamische-inhalte-ereignisse-ereignisfluss-capturing-phase.png"/>
+                    </td>
+                    <td>
+                        <img alt="Eventfluss - Bubbling-Phase"
+                             src="js-dynamische-inhalte-ereignisse-ereignisfluss-bubbling-phase.png"/>
+                    </td>
+                </tr>
+            </table>
 
+            <p>
+                Während der Capturing-Phase und der Bubbling-Phase löst das Ereignis dabei die Event-Handler bzw.
+                Event-Listener der Reihe nach aus, die am jeweiligen Element, an dem sich das Ereignis gerade befindet,
+                für dieses Ereignis registriert wurden.
+            </p>
+
+            <p>
+                Die Capturing-Phase und die Bubbling-Phase gehen auf unterschiedliche Meinungen der unterschiedlichen
+                Browserhersteller zurück, die mittlerweile schon sehr lange zurückliegen. Während der damalige
+                Browserhersteller Netscape der Meinung war, dass ein Ereignis immer zuerst die
+                Event-Handler/Event-Listener am Element aufrufen sollte, welches weiter oben im DOM-Baum liegt, und man
+                daher dort nach dem sogenannten Event-Capturing vorging, welches nur aus der Capturing-Phase (und der
+                Target-Phase) bestand, war Microsoft anderer Meinung: Im Internet Explorer löste ein Ereignis zuerst die
+                Event-Handler/Event-Listener aus, die am Zielelement definiert waren, d.h., hier folgte man dem
+                Event-Bubbling, welches wiederum nur aus der Bubbling-Phase (und der Target-Phase) bestand.
+            </p>
         </chapter>
 
         <chapter id="ereignisfluss-w3c-standard" title="Der W3C-Standard: Capturing-, Target- und Bubbling-Phase">
+            <img alt="Ereignisfluss - Der W3C-Standard"
+                 src="js-dynamische-inhalte-ereignisse-ereignisfluss-w3c-standard.png"/>
 
+            <p>
+                Mittlerweile ist der Ereignisfluss jedoch schon seit einiger Zeit vom W3C standardisiert (siehe
+                <a href="https://www.w3.org/TR/DOM-Level-3-Events/#event-flow"/>), wobei darauf geachtet wurde, beide
+                Phasen zu einem Ereignisflussmodell zusammenzufassen. Mit anderen Worten: Wird ein Ereignis ausgelöst,
+                durchläuft es zunächst die Capturing-Phase, führt alle Event-Handler/Event-Listener aus, die für diese
+                Phase registriert wurden, geht dann in die Target-Phase, in welcher die Event-Handler/Event-Listener
+                ausgeführt werden, die am Zielelement registriert wurden, und durchläuft anschließend die
+                Bubbling-Phase, in der nun alle Event-Handler/Event-Listener ausgeführt werden, die für diese Phase
+                registriert wurden.
+            </p>
         </chapter>
 
         <chapter id="ereignisfluss-unterbrechen" title="Den Ereignisfluss unterbrechen">
+            <p>
+                Wird ein Event ausgelöst, können Aktionen, die normalerweise als Folge des Events eintreten, verhindert
+                werden:
+            </p>
 
+            <list type="bullet">
+                <li>
+                    Über die Methode <code>stopPropagation()</code> kann verhindert werden, dass das entsprechende Event
+                    im DOM-Baum weiter zum nächsten Element gereicht wird und dabei Aktionen (bzw. entsprechende
+                    Event-Handler und Event-Listener) auf anderen Elementen auslöst.
+                </li>
+                <li>
+                    Über die Methode <code>preventDefault()</code> kann dagegen verhindert werden, dass bei Eintreten
+                    eines Events die Standardaktionen des Browsers ausgeführt werden. Zum Beispiel kann verhindert
+                    werden, dass der Browser bei Klick auf einen Link diesen öffnet oder bei Klick auf einen
+                    Submit-Button ein Formular abschickt. Bei Event-Handlern (im Gegensatz zu Event-Listenern) der
+                    Aufruf dieser Methode nicht möglich ist. Stattdessen bestimmt sich dies über den Rückgabewert der
+                    als Event-Handler definierten Funktion: Ist dieser <code>false</code>, werden die Standardaktionen
+                    verhindert, ist er dagegen <code>true</code> oder wird kein Rückgabewert angegeben, werden die
+                    Standardfunktionen ausgeführt.
+                </li>
+                <li>
+                    Über die Methode <code>stopImmediatePropagation()</code> kann das Weiterleiten eines Ereignisses
+                    auch für die an einem einzelnen Element registrierten Event-Listener verhindert werden. Die Methode
+                    <code>stopPropagation()</code> verhindert nicht das Weiterleiten des Ereignisses zwischen
+                    Event-Listenern, die für das entsprechende Ereignis an ein und demselben Element registriert sind.
+                    Sie verhindert nur das Weiterleiten an solche Event-Listener, die an anderen Elementen für das
+                    Ereignis registriert wurden.
+                </li>
+            </list>
+
+            <note>
+                <p>
+                    <b>
+                        Rückgabewert bei Event-Handlern
+                    </b>
+                </p>
+
+                <p>
+                    Der Rückgabewert <code>false</code> in einer als Event-Handler definierten Funktion verhindert nicht
+                    nur die Standardaktionen des Browsers, die für das jeweilige Ereignis normalerweise ausgeführt
+                    werden, sondern auch das Weiterleiten des Ereignisses. Der Rückgabewert <code>false</code> kommt
+                    quasi einem Aufruf von <code>preventDefault()</code> und <code>stopPropagation()</code> bei
+                    Event-Listenern gleich.
+                </p>
+            </note>
+
+            <tip>
+                <a href="https://www.youtube.com/embed/F1anRyL37lE?wmode=opaque"/>
+            </tip>
         </chapter>
     </chapter>
 
