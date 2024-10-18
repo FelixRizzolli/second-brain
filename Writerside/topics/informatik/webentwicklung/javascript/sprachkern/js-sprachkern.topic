@@ -9,7 +9,7 @@
 
     <chapter id="webseite" title="JavaScript auf einer Webseite verwenden">
         <p>
-            JavaScript-Code wird auf einer Website mit den <code>&lt;script&gt;&gt;/script&gt;</code>-Tags angegeben.
+            JavaScript-Code wird auf einer Website mit den <code>&lt;script&gt;&lt;/script&gt;</code>-Tags angegeben.
             Dabei kann der Code direkt innerhalb der Tags geschrieben werden oder auf ein externes File ausgelagert und
             mit dem <code>src</code>-Attribut darauf verlinkt werden. Für den <code>script</code>-Tag gibt es noch
             weitere Attribute, die dessen ladeverhalten bestimmen:
