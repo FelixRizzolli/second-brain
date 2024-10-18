@@ -69,7 +69,7 @@
                 verfügt.
             </p>
 
-            <table>
+            <table style="header-row">
                 <tr>
                     <td>
                         Eigenschaft
@@ -165,7 +165,7 @@
             für andere Knoten.
         </p>
 
-        <table>
+        <table style="header-row">
             <tr>
                 <td>
                     Eigenschaft/Methode
@@ -494,7 +494,7 @@
     </chapter>
 
     <chapter id="text" title="Mit Textknoten arbeiten">
-        <table>
+        <table style="header-row">
             <tr>
                 <td>
                     Eigenschaft/Methode
@@ -605,7 +605,7 @@
     </chapter>
 
     <chapter id="elemente" title="Mit Elementen arbeiten">
-        <table>
+        <table style="header-row">
             <tr>
                 <td>
                     Eigenschaft/Methode
@@ -677,7 +677,56 @@
     </chapter>
 
     <chapter id="attribute" title="Mit Attributen arbeiten">
-
+        <table style="header-row">
+            <tr>
+                <td>
+                    Eigenschaft/Methode
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        getAttribute()
+                    </code>
+                </td>
+                <td>
+                    Kann auf Attribute eines Elementes zugreifen.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        setAttribute()
+                    </code>
+                </td>
+                <td>
+                    Kann den Wert eines Attributs ändern oder ein Attribut hinzufügen.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        createAttribute()
+                    </code>
+                </td>
+                <td>
+                    Kann Attributknoten erstellen welche über <code>setAttributeNode()</code> hinzugefügt werden können.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        removeAttribute()
+                    </code>
+                </td>
+                <td>
+                    Kann Attribute entfernen.
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
