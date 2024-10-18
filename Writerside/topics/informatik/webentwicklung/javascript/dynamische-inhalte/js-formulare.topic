@@ -7,35 +7,680 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
-    <!-- TODO: migrate from Confluence -->
-    <chapter id="einleitung" title="Einleitung">
-
-    </chapter>
-
     <chapter id="zugriff" title="Auf Formulare und Formularfelder zugreifen">
+        <p>
+            Um auf Formulare einer Webseite zuzugreifen, gibt es verschiedene Möglichkeiten:
+        </p>
 
+        <list type="bullet">
+            <li>
+                über die Methoden zur Selektion von Elementen, zum Beispiel <code>getElementById()</code>,
+                <code>getElementsByClassName()</code>, <code>getElementsByTagName()</code>,
+                <code>getElementsByName()</code>, <code>querySelector()</code> und <code>querySelectorAll()</code>
+            </li>
+            <li>
+                über die Eigenschaft forms des <code>document</code>-Objekts. Diese ist vom Typ
+                <code>HTMLCollection</code>, also eine Liste, und enthält alle Formulare, die sich auf der jeweiligen
+                Webseite befinden. Über den Index kann auf die Formulare der Liste zugegriffen werden. Dabei sind die
+                Formulare innerhalb der Liste in der Reihenfolge sortiert, in der sie auch auf der Webseite vorkommen:
+                an Position <code>0</code> steht das erste Formular, an Position <code>1</code> das zweite usw. Diese
+                Zugriffsmethode hat aber folgenden Nachteil: Für den Fall, dass es auf einer Webseite mehrere Formulare
+                gibt, muss man genau wissen, an welcher Position das gewünschte Formular auf der Webseite steht. Ändert
+                sich zudem die Reihenfolge der Formulare oder wird ein (vorausgehendes) Formular von der Webseite
+                entfernt oder ein neues (vorausgehendes) Formular hinzugefügt, muss auch der Index beim Zugriff
+                angepasst werden.
+            </li>
+            <li>
+                über eine Eigenschaft des <code>document</code>-Objekts, die dem Namen des entsprechenden Formulars
+                entspricht. Für jedes Formular, welches über einen Namen verfügt (d.h., welches über ein
+                <code>name</code>-Attribut verfügt), wird implizit eine gleichnamige Eigenschaft am
+                <code>document</code>-Objekt zur Verfügung gestellt, über die man auf das jeweilige Formular zugreifen
+                kann. Hierbei muss darauf geachtet werden, dass kein Name für das <code>name</code>-Attribut des
+                Formulars gewählt wird, der durch eine bereits vorhandene Eigenschaft oder Methode (des
+                <code>document</code>-Objekts) belegt ist.
+            </li>
+        </list>
+
+        <code-block lang="javascript">
+            <![CDATA[
+                // <!-- HTML -->
+                //    <form id="login" name="login" method="post" action="login.html">
+                //    </form>
+                // <!-- HTML -->
+
+                // 1.) Zugriff über DOM-Selektionsmethoden
+                let formById = document.getElementById('login');
+                let formByName = document.getElementsByName('login')[0];
+                let formBySelector = document.querySelector('form');
+
+                // 2.) Zugriff über forms-Eigenschaft
+                let formByFormsField = document.forms[0];
+
+                // 3.) Zugriff über den Namen des Formulares
+                let formByNameField = document.login;
+            ]]>
+        </code-block>
+
+        <p>
+            Formulare stellen verschiedene Eigenschaften zur Verfügung, beispielsweise die Eigenschaft
+            <code>elements</code>, über die Sie auf die einzelnen im Formular enthaltenen Formularelemente zugreifen
+            können (Details dazu in wenigen Momenten im nächsten Abschnitt), die Eigenschaft name, welche den Namen des
+            Formulars enthält, die Eigenschaften <code>action</code> und <code>method</code>, die Informationen darüber
+            enthalten, welche Aktion mit dem Formular ausgelöst (bzw. an welche URL die Formulardaten gesendet werden
+            sollen) und welche <code>HTTP</code>-Methode dabei verwendet werden soll (<code>POST</code> oder
+            <code>GET</code>).
+        </p>
+
+        <p>
+            Auf Formularelemente kann über die Selektor-Methoden oder über die Eigenschaft <code>elements</code> des
+            jeweiligen <code>form</code>-Objekts zugegriffen werden. Auf beim Zugriff über die
+            <code>elements</code>-Eigenschaft gilt derselbe Nachteil: Für den Fall, dass es im jeweiligen Formular
+            mehrere Elemente gibt, muss man genau wissen an welcher Position das gewünschte Element im Formular steht.
+            Ändert sich zudem die Reihenfolge der Elemente oder wird ein (vorausgehendes) Element im Formular entfernt
+            oder ein neues (vorausgehendes) Element hinzugefügt, muss auch der Index beim Zugriff angepasst werden.
+        </p>
+
+        <p>
+            Jedes Formularelement wird durch einen speziellen Objekttyp repräsentiert:
+        </p>
+
+        <table style="header-row">
+            <tr>
+                <td>
+                    Objekttyp
+                </td>
+                <td>
+                    Formularelement
+                </td>
+                <td>
+                    Zugriff
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Passwortfeld
+                </td>
+                <td>
+                    <code>
+                        HTMLInputElement
+                    </code>
+                </td>
+                <td>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let inputUsername = document.getElementById('username');
+                            let inputPassword = document.getElementById('password');
+                            inputUsername.addEventListener('change', function(e) {
+                              console.log(this.value);              // eingegebener Wert
+                            });
+                            inputPassword.addEventListener('change', function(e) {
+                              console.log(this.value);              // eingegebener Wert
+                            });
+                        ]]>
+                    </code-block>
+
+                    <p>
+                        Um auf den Wert eines Textfeldes zuzugreifen, kann die Eigenschaft <code>value</code> des
+                        entsprechenden Elements verwendet werden. Im Beispiel wird im Event-Listener über das
+                        Schlüsselwort <code>this</code> auf das jeweilige Element zugegriffen, an welchem der
+                        Event-Listener ausgelöst wurde. Der Ausdruck <code>inputUsername.value</code> bzw.
+                        <code>inputPassword.value</code> wäre auch möglich gewesen.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Textfeld
+                </td>
+                <td>
+                    <code>
+                        HTMLInputElement
+                    </code>
+                </td>
+                <td>
+                    <i>
+                        vorheriges Beispiel
+                    </i>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Checkbox
+                </td>
+                <td>
+                    <code>
+                        HTMLInputElement
+                    </code>
+                </td>
+                <td>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let checkbox = document.getElementById('remember');
+                            checkbox.addEventListener('change', (e) => {
+                              console.log(checkbox.value);    // Standardmäßig der Wert "on"
+                              console.log(checkbox.checked);  // true oder false
+                            });
+                        ]]>
+                    </code-block>
+
+                    <p>
+                        Checkboxen haben die Eigenschaft <code>value</code> über die auf den Wert zugegriffen werden
+                        kann (standardmäßig hat diese Eigenschaft den Wert <code>on</code>). Um zu überprüfen, ob die
+                        Checkbox markiert wurde (sprich »angekreuzt« wurde oder nicht), kann dagegen die Eigenschaft
+                        <code>checked</code> verwendet werden, welche einen entsprechenden booleschen Wert liefert.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Radiobutton
+                </td>
+                <td>
+                    <code>
+                        HTMLInputElement
+                    </code>
+                </td>
+                <td>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            // <form id="orderform" name="orderform">
+                            //   <input type="radio" id="P001" name="order" value="P001">Pizza Salami</input>
+                            //   <input type="radio" id="P002" name="order" value="P002">Pizza Margherita</input>
+                            //   <input type="radio" id="P003" name="order" value="P003">Pizza Tonno</input>
+                            // </form>
+
+                            let messageContainer = document.getElementById('selection'); // Container für Meldungen
+                            let orderForm = document.getElementById('orderform');        // Formular
+                            let radioButtons = orderForm.order;
+
+                            for(let i = 0; i < radioButtons.length; i++) {
+                              radioButtons[i].addEventListener('change', (e) => {
+                                console.log(e.target.value);                  // z. B. "P002"
+                              });
+                            }
+                        ]]>
+                    </code-block>
+
+                    <p>
+                        Radiobuttons kommen innerhalb einer Webseite in der Regel immer als Gruppe vor. Innerhalb einer
+                        Gruppe von Radiobuttons kann zu einem Zeitpunkt immer nur ein einziger Radiobutton ausgewählt
+                        sein. Die Gruppenzugehörigkeit eines Radiobuttons ergibt sich dabei aus dem Wert des
+                        <code>name</code>-Attributs.
+                    </p>
+
+                    <p>
+                        Am einfachsten ist dabei der Zugriff über die Eigenschaft des Formulars, die den gleichen Namen
+                        wie die Radiobutton-Gruppe trägt (in diesem Fall die Eigenschaft <code>order</code>). In dieser
+                        Eigenschaft sind alle Radiobuttons der Gruppe als Liste hinterlegt. Im Beispiel wird über diese
+                        Liste iteriert und jedem Radiobutton ein Event-Listener registriert. Letzterer wiederum sorgt
+                        dafür, dass bei Auswahl eines Radiobuttons (wodurch ein <code>change</code>-Event ausgelöst
+                        wird) der Wert des ausgewählten Radiobuttons in die Konsole ausgibt.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Auswahlliste
+                </td>
+                <td>
+                    <code>
+                        HTMLSelectElement
+                    </code>
+                </td>
+                <td>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            // <form id="orderform" name="orderform">
+                            //   <select id="order" name="order">
+                            //     <option selected value="P001">Pizza Salami</option>
+                            //     <option value="P002">Pizza Margherita</option>
+                            //     <option value="P003">Pizza Tonno</option>
+                            //   </select>
+                            // </form>
+
+                            function init() {
+                              let order = document.getElementById('order');     // <select>-Element
+                              order.addEventListener('change', updateOrder);    // Listener registrieren
+
+                              function updateOrder(event) {                     // this ist vom Typ HTMLSelectElement
+                                let value = this.value;                         // der aktuell selektierte Wert
+                                let index = this.selectedIndex;                 // Index der ausgewählten Option
+                                let option = this.item(index);                  // ausgewähltes <option>-Element
+                                let text = this.item(index).text;               // Text des <option>-Elements
+                                // value = this.item(index).value               // enthält auch den Wert
+                                console.log(text + ' (' + value + ')');         // Meldung ausgeben
+                              }
+                            }
+                        ]]>
+                    </code-block>
+
+                    <p>
+                        Auch für Auswahllisten ist es möglich, über das <code>change</code>-Event auf Änderungen zu
+                        reagieren. Dieses Ereignis wird immer dann ausgelöst, wenn ein Wert in der Auswahlliste
+                        ausgewählt wird. Über die Eigenschaft value gelangt man auch hierbei an den jeweils ausgewählten
+                        Wert.
+                    </p>
+
+                    <p>
+                        Auswahllisten verfügen u.a. über die Eigenschaft <code>selectedIndex</code>, welche den Index
+                        der ausgewählten Option enthält. Über die Methode <code>item()</code> kann mithilfe dieses
+                        Index auf das entsprechende Auswahlelement (vom Typ <code>HTMLOptionElement</code>)
+                        zugegriffen werden. Jedes Auswahlelement verfügt dabei über zwei Eigenschaften, mithilfe
+                        derer der Wert des zugrunde liegenden <code>&lt;option&gt;</code>-Elements (<code>value</code>)
+                        sowie dessen Text (<code>text</code>) ausgelesen werden kann (Letzterer ist übrigens zusätzlich
+                        auch in der Eigenschaft value der Auswahlliste enthalten).
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            <select id="order" name="order" class="form-control" multiple>
+                        ]]>
+                    </code-block>
+
+                    <p>
+                        Über das Attribut <code>multiple</code> können in HTML bekanntermaßen Auswahllisten definiert
+                        werden, bei denen mehrere Werte selektiert werden können, sogenannte Mehrfachauswahllisten. In
+                        diesem Fall kommt man jedoch mit der eben verwendeten Eigenschaft <code>selectedIndex</code>
+                        nicht weit. Stattdessen muss man auf die Eigenschaft <code>selectedOptions</code> zurückgreifen,
+                        welche eine Liste der ausgewählten Werte enthält (genauer gesagt, ein Objekt vom Typ
+                        <code>HTMLCollection</code>, welches wiederum Objekte vom Typ <code>HTMLOptionElement</code>
+                        enthält).
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Option in Auswahlliste
+                </td>
+                <td>
+                    <code>
+                        HTMLOptionElement
+                    </code>
+                </td>
+                <td>
+                    <i>
+                        vorheriges Beispiel
+                    </i>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Textbereich
+                </td>
+                <td>
+                    <code>
+                        HTMLTextAreaElement
+                    </code>
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement"/>
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter id="abschicken-und-zurücksetzen" title="Formulare programmatisch abschicken und zurücksetzen">
+        <p>
+            Per JavaScript besteht die Möglichkeit, Formulare programmatisch abzuschicken. Dazu steht für
+            Formularobjekte die Methode <code>submit()</code> zur Verfügung. Darüber hinaus können über die Methode
+            <code>reset()</code> die in ein Formular eingegebenen Werte wieder zurückgesetzt werden.
+        </p>
 
+        <note>
+            <b>
+                Vorsicht bei der Namenswahl von Formularelementen
+            </b>
+
+            <p>
+                Das Absenden eines Formulars über die Methode <code>submit()</code> funktioniert nicht, wenn es im
+                Formular ein Element mit dem Namen <code>submit</code> gibt. Verwendet man den Wert <code>submit</code>
+                für ein Formularelement, wird die Methode <code>submit()</code> des Formulars überschrieben (das Gleiche
+                gilt übrigens auch für die Methode <code>reset()</code>).
+            </p>
+        </note>
     </chapter>
 
     <chapter id="validieren" title="Formulareingaben validieren">
+        <p>
+            Seit HTML5 werden bereits einige native Validierungsmöglichkeiten bereits angeboten. Das bedeutet, dass sie
+            bereits in der Sprache enthalten sind und nicht durch JavaScript implementiert werden müssen. Felder zur
+            Eingabe von Nutzername und E-Mail-Adresse können über das Attribut <code>required</code> als Pflichtfelder
+            gekennzeichnet werden und Letztere durch das <code>type</code>-Attribut (mit Wert <code>email</code>)
+            zusätzlich als Feld, in das nur E-Mail-Adressen eingegeben werden können. Ein Feld zur Eingabe der Website
+            erlaubt über den Wert des <code>type</code>-Attributs nur die Eingabe von (gültigen) URLs und ein Feld zur
+            Eingabe des Alters nur die Eingabe von Zahlenwerten (über den Wert <code>number</code> des
+            <code>type</code>-Attributs) in einem bestimmten Wertebereich (der durch die beiden Attribute
+            <code>min</code> und <code>max</code> definiert werden kann).
+        </p>
+
+        <p>
+            Ohne eine einzige Zeile JavaScript gibt es für solche Standardfälle bereits eine funktionierende
+            Validierung. Lässt man nun beispielsweise das Feld zur Eingabe der E-Mail-Adresse leer und versucht, das
+            Formular abzuschicken, erzeugt der Browser eine entsprechende (allerdings sehr allgemein gehaltene)
+            Fehlermeldung und wendet die CSS-Regeln an, die für die CSS-Pseudoklasse <code>:invalid</code> definiert
+            wurden.
+        </p>
 
         <chapter id="validieren-css-pseudoklassen" title="CSS-Pseudoklassen für Formulare">
+            <p>
+                Über die CSS-Pseudoklassen <code>:required</code>, <code>:invalid</code> und <code>:valid</code>
+                lassen sich CSS-Regeln definieren, mit denen sich das Aussehen der Formularelemente beeinflussen lässt.
+                Die Pseudoklasse <code>:required</code> bezeichnet solche Formularelemente, die als Pflichtfelder
+                markiert wurden, die Pseudoklasse <code>:invalid</code> solche Formularelemente, die ungültige Werte
+                enthalten, und die Pseudoklasse <code>:valid</code> solche Formularelemente, die gültige Werte
+                enthalten.
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    input:required:invalid, input:focus:invalid {
+                        border: thick solid red;
+                    }
+                    input:required:valid {
+                        border: thick solid lightgreen;
+                    }
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="constraint-validation-api-eigenschaften" title="Eigenschaften der Constraint Validation API">
+            <p>
+                Dank der sogenannten Constraint Validation API
+                <a href="https://html.spec.whatwg.org/multipage/forms.html#the-constraint-validation-api"/> lässt
+                sich die native Validierung von HTML5 auch per JavaScript steuern bzw. auf Validierungsinformationen
+                zugreifen und dabei deutlich flexibler validieren. Dazu definiert die Constraint Validation API
+                verschiedene Eigenschaften und Methoden, die für Formulare und Formularelemente zur Verfügung stehen.
+            </p>
 
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Eigenschaft
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            willValidate
+                        </code>
+                    </td>
+                    <td>
+                        Liefert Angabe darüber, ob die Validierung für ein Formularelement aktiviert ist oder nicht.
+                        Standardmäßig auf <code>true</code> gesetzt. Wird dagegen ein Formularelement über das
+                        <code>disabled</code>-Attribut deaktiviert, enthält diese Eigenschaft den Wert
+                        <code>false</code>. Für andere Elemente wie beispielsweise <code>&lt;div&gt;</code>-Elemente
+                        liefert die Eigenschaft den Wert <code>undefined</code>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            validity
+                        </code>
+                    </td>
+                    <td>
+                        Enthält ein Objekt vom Typ <code>ValidityState</code>, welches wiederum detaillierte
+                        Informationen über die Gültigkeit der in das entsprechende Formularelement eingegebenen Daten
+                        enthält.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            validationMessage
+                        </code>
+                    </td>
+                    <td>
+                        Enthält die Validierungsmeldung, die der Browser anzeigt für den Fall, dass die eingegebenen
+                        Daten ungültig sind. Je nach Browser unterscheidet sich diese Meldung.
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                Die Eigenschaft <code>validity</code> hat mehrere eigene Eigenschaften:
+            </p>
+
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Eigenschaft
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            valid
+                        </code>
+                    </td>
+                    <td>
+                        Liefert Angabe darüber, ob ein Eingabefeld einen Fehler enthält oder nicht.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            valueMissing
+                        </code>
+                    </td>
+                    <td>
+                        Liefert Angabe darüber, ob ein Eingabefeld ein Pflichtfeld ist, aber kein Wert enthalten ist.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            typeMismatch
+                        </code>
+                    </td>
+                    <td>
+                        Liefert Angabe darüber, ob der geforderte Typ eines Eingabefeldes (z. B. eine E-Mail-Adresse)
+                        von dem eingegebenen Wert nicht erfüllt wird.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            patternMismatch
+                        </code>
+                    </td>
+                    <td>
+                        Liefert Angabe darüber, ob der eingegebene Wert dem definierten Muster entspricht oder nicht.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            tooLong
+                        </code>
+                    </td>
+                    <td>
+                        Liefert Angabe darüber, ob der eingegebene Wert zu lang ist.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            tooShort
+                        </code>
+                    </td>
+                    <td>
+                        Liefert Angabe darüber, ob der eingegebene Wert zu kurz ist.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            rangeUnderflow
+                        </code>
+                    </td>
+                    <td>
+                        Liefert Angabe darüber, ob der eingegebene Wert unterhalb des definierten Wertebereichs liegt.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            rangeOverflow
+                        </code>
+                    </td>
+                    <td>
+                        Liefert Angabe darüber, ob der eingegebene Wert oberhalb des definierten Wertebereichs liegt.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            stepMismatch
+                        </code>
+                    </td>
+                    <td>
+                        Liefert Angabe darüber, ob der eingegebene Wert der Definition des step-Attributs entspricht.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            badInput
+                        </code>
+                    </td>
+                    <td>
+                        Liefert Angabe darüber, ob der eingegebene Wert ungültig ist.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            customError
+                        </code>
+                    </td>
+                    <td>
+                        Liefert Angabe darüber, ob der eingegebene Wert einen benutzerdefinierten Fehler auslöst.
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                Beispiel für E-Mail Validierung:
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    // <form id="register" name="register" method="post" action="register.html">
+                    //   <input type="email" id="email" name="email" required>
+                    // </form>
+
+                    function init() {
+                      let emailElement = document.getElementById('email');
+                      emailElement.addEventListener('change', validateEmail);
+                    }
+
+                    function validateEmail(e) {
+                      let event = (e ? e : window.event);               // Event
+                      let emailElement = (event.target                  // Zielelement
+                        ? event.target
+                        : event.srcElement
+                      );
+                      console.log(emailElement.willValidate);           // true
+                      console.log(emailElement.validity);               // ValidityState: ...
+                      console.log(emailElement.validity.valueMissing);  // ... Wert vorhanden?
+                      console.log(emailElement.validity.valid);         // ... Wert gültig?
+                      console.log(emailElement.validationMessage);      // Validierungsmeldung
+                    }
+
+                    document.addEventListener('DOMContentLoaded', init);
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="constraint-validation-api-methoden" title="Methoden der Constraint Validation API">
+            <p>
+                Formularelemente verfügen dank der Constraint Validation API auch über einige Methoden bezüglich der
+                Validierung.
+            </p>
 
+            <table>
+                <tr>
+                    <td>
+                        Methode
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            checkValidity()
+                        </code>
+                    </td>
+                    <td>
+                        Diese Methode kann auf einzelnen Formularelementen oder auf Formularen aufgerufen werden. In
+                        erstem Fall wird überprüft, ob das jeweilige Formularelement einen gültigen Wert enthält, in
+                        letzterem Fall wird überprüft, ob alle Formularelemente des jeweiligen Formulars gültige Werte
+                        enthalten. In beiden Fällen ist das Ergebnis ein boolescher Wert.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            reportValidity()
+                        </code>
+                    </td>
+                    <td>
+                        Auch diese Methode kann wie die Methode <code>checkValidity()</code> auf einzelnen
+                        Formularelementen oder auf Formularen aufgerufen werden. Gegenüber <code>checkValidity()</code>
+                        wird aber nicht nur auf Gültigkeit der Formularelemente/des Formulars geprüft, sondern es werden
+                        auch eventuelle Validierungsmeldungen (in ihrem Standardaussehen) im Browser angezeigt.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            setCustomValidity()
+                        </code>
+                    </td>
+                    <td>
+                        Über diese Methode ist es möglich, eine angepasste Validierungsmeldung zu verfassen.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter id="validierung-methoden" title="Nativ Validierung nach Drücken der Submit-Schaltfläche">
+            <p>
+                Möchte man die native Validierung mit JavaScript dagegen erst anstoßen, wenn ein Formular abgeschickt
+                wird bzw. die entsprechende Submit-Schaltfläche gedrückt wurde, muss man die Eigenschaft
+                <code>noValidate</code> auf <code>true</code> setzen. Standardmäßig wird die native Validierung
+                nämlich durchgeführt, bevor das Submit-Event ausgelöst wird. Das bedeutet, dass erst die
+                Standardausgaben des Browsers (inklusive der Standardvalidierungsmeldungen) angezeigt werden, bevor man
+                per JavaScript die Möglichkeit hat, eigene Validierungen durchzuführen und angepasste Ausgaben zu
+                erzeugen. Setzt man die Eigenschaft <code>noValidate</code>dagegen wie im Beispiel auf
+                <code>true</code>, deaktiviert man die Standardausgaben des Browsers (der restliche Code im Beispiel
+                sorgt übrigens dafür, dass alle Formularelemente des Formulars auf Gültigkeit überprüft werden).
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    // <form id="register" name="register" method="post" action="register.html">
+                    //   <input type="email" id="email" name="email" required>
+                    // </form>
+
+                    function init() {
+                      let registerForm = document.getElementById('register');
+                      registerForm.noValidate = true;
+                      registerForm.addEventListener('submit', validateForm);
+                    }
+
+                    document.addEventListener('DOMContentLoaded', init);
+                ]]>
+            </code-block>
         </chapter>
     </chapter>
 
