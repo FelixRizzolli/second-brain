@@ -9,7 +9,36 @@
 
     <!-- TODO: migrate from Confluence -->
     <chapter id="grundlagen" title="Grundlagen">
+        <p>
+            Das Konzept der ereignisgesteuerten Programmierung funktioniert im Wesentlichen wie folgt: Auf der einen
+            Seite hat man sogenannte Auslöser von Ereignissen (auch Event-Emitter genannt). Das können im Falle von
+            grafischen Benutzeroberflächen (User Interfaces, kurz UI) beispielsweise Schaltflächen sein oder Textfelder
+            oder irgendwelche anderen UI-Komponenten. Wird auf eine Schaltfläche geklickt oder Text in ein Textfeld
+            eingegeben, wird im Hintergrund von der jeweiligen Komponente (der Schaltfläche oder dem Textfeld) ein
+            Ereignis (Event) ausgelöst.
+        </p>
 
+        <p>
+            Nachdem ein Ereignis ausgelöst wurde, wird es in eine sogenannte Event-Queue eingereiht, welche dafür sorgt,
+            dass Events, die zuerst ausgelöst wurden, auch als Erstes behandelt werden. Über die sogenannte Event-Loop
+            wird fortlaufend überprüft, ob es in der Event-Queue ein neues Ereignis gibt, und – falls dies der Fall ist
+            – das entsprechende Event an sogenannte Event-Handler weitergeleitet.
+        </p>
+
+        <p>
+            In JavaScript sind Event-Handler einfache Funktionen, über die auf ein ausgelöstes Event reagiert werden
+            kann. So kann beispielsweise auf eine Schaltfläche geklickt werden und es wird eine definierte Funktion
+            aufgerufen.
+        </p>
+
+        <img alt="Ereignisse in JavaScript" src="js-dynamische-inhalte-ereignisse.png"/>
+
+        <p>
+            Das Prinzip der ereignisgesteuerten Programmierung ist dabei jedoch nicht auf Interaktionen mit einer
+            Benutzeroberfläche beschränkt. Es gibt in der JavaScript-Entwicklung auch Ereignisse, die ausgelöst werden,
+            ohne dass man als Nutzer mit der Benutzeroberfläche interagiert, sprich Ereignisse, die nicht durch den
+            Nutzer, sondern programmatisch ausgelöst werden.
+        </p>
     </chapter>
 
     <chapter id="ereignisse" title="Ereignisse verarbeiten und auslösen">
