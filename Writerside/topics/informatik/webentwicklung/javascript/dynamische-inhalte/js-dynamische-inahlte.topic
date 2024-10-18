@@ -160,30 +160,336 @@
     </chapter>
 
     <chapter id="elemente-selektieren" title="Elemente selektieren">
+        <p>
+            Die Selektionsmethoden und Eigenschaften stehen nicht nur für den Dokumentknoten zur Verfügung, sondern auch
+            für andere Knoten.
+        </p>
+
+        <table>
+            <tr>
+                <td>
+                    Eigenschaft/Methode
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+                <td>
+                    Rückgabewert
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        getElementById()
+                    </code>
+                </td>
+                <td>
+                    Wählt ein Element anhand einer ID aus.
+                </td>
+                <td>
+                    einzelnes Element
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        getElementsByClassName()
+                    </code>
+                </td>
+                <td>
+                    Wählt Elemente anhand eines Klassennamens aus.
+                </td>
+                <td>
+                    Liste von Elementen
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        getElementsByTagName()
+                    </code>
+                </td>
+                <td>
+                    Wählt alle Elemente mit dem angegebenen Elementnamen aus.
+                </td>
+                <td>
+                    Liste von Elementen
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        getElementsByName()
+                    </code>
+                </td>
+                <td>
+                    Wählt Elemente anhand ihres Namens aus.
+                </td>
+                <td>
+                    Liste von Elementen
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        querySelector()
+                    </code>
+                </td>
+                <td>
+                    Gibt das erste Element zurück, das auf einen gegebenen CSS-Selektor passt.
+                </td>
+                <td>
+                    einzelnes Element
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        querySelectorAll()
+                    </code>
+                </td>
+                <td>
+                    Gibt alle Elemente zurück, die auf einen gegebenen CSS-Selektor passen.
+                </td>
+                <td>
+                    Liste von Elementen
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        parentElement
+                    </code>
+                </td>
+                <td>
+                    Gibt für einen Knoten das Elternelement zurück.
+                </td>
+                <td>
+                    einzelnes Element
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        parentNode
+                    </code>
+                </td>
+                <td>
+                    Gibt für einen Knoten den Elternknoten zurück.
+                </td>
+                <td>
+                    einzelner Knoten
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        previousElementSibling
+                    </code>
+                </td>
+                <td>
+                    Gibt für einen Knoten das vorhergehende Geschwisterelement zurück.
+                </td>
+                <td>
+                    einzelnes Element
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        previousSibling
+                    </code>
+                </td>
+                <td>
+                    Gibt für einen Knoten den vorhergehenden Geschwisterknoten zurück.
+                </td>
+                <td>
+                    einzelner Knoten
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        nextElementSibling
+                    </code>
+                </td>
+                <td>
+                    Gibt für einen Knoten das nachfolgende Geschwisterelement zurück.
+                </td>
+                <td>
+                    einzelnes Element
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        nextSibling
+                    </code>
+                </td>
+                <td>
+                    Gibt für einen Knoten den nachfolgenden Geschwisterknoten zurück.
+                </td>
+                <td>
+                    einzelner Knoten
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        firstElementChild
+                    </code>
+                </td>
+                <td>
+                    Gibt für einen Knoten das erste Kindelement zurück
+                </td>
+                <td>
+                    einzelnes Element
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        firstChild
+                    </code>
+                </td>
+                <td>
+                    Gibt für einen Knoten den ersten Kindknoten zurück.
+                </td>
+                <td>
+                    einzelner Knoten
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        lastElementChild
+                    </code>
+                </td>
+                <td>
+                    Gibt für einen Knoten das letzte Kindelement zurück.
+                </td>
+                <td>
+                    einzelnes Element
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        lastChild
+                    </code>
+                </td>
+                <td>
+                    Gibt für einen Knoten den letzten Kindknoten zurück.
+                </td>
+                <td>
+                    einzelner Knoten
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        childNodes
+                    </code>
+                </td>
+                <td>
+                    Gibt für einen Knoten alle Kindknoten zurück.
+                </td>
+                <td>
+                    Liste von Knoten
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        children
+                    </code>
+                </td>
+                <td>
+                    Gibt für einen Knoten alle Kindelemente zurück.
+                </td>
+                <td>
+                    Liste von Elementen
+                </td>
+            </tr>
+        </table>
 
         <chapter id="elemente-selektieren-auf-null-ueberpruefen" title="Auf null überprüfen">
+            <p>
+                Wird über eine Selektionsmethode ein Objekt gesucht gibt diese den Wert null zurück, falls kein
+                Objekt gefunden wird. Deshalb sollte immer auf <code>null</code> oder undefined geprüft werden, damit es
+                zu keinem Laufzeitfehler kommt, falls ein Zugriff auf ein nicht existierendes Objekt versucht wird.
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    let mainElement = document.getElementById('main'); // Wähle Element mit ID aus.
+                    if(mainElement !== null) {                         // Falls Element nicht leer ist,
+                      mainElement.className = 'border';                // weise neue CSS-Klasse zu.
+                    }
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="elemente-selektieren-performance" title="Performance von Selektionsmethoden">
-
+            <p>
+                Die Auswahl eines Elements per ID, der Selektionsmethode <code>getElementById()</code>, ist hinsichtlich
+                der Performance im Vergleich zu anderen Selektionsmethoden recht schnell, da es auf einer Webseite nicht
+                erlaubt ist, mehrere Elemente mit einer ID zu haben, und somit die Suche sehr schnell das entsprechende
+                Element für eine ID finden kann. Andere Selektionsmethoden wie beispielsweise die Methode
+                <code>getElementsByClassName()</code> sind im Vergleich deutlich langsamer, weil hierbei jedes
+                Element auf der Webseite überprüft werden muss. Auch wenn der Geschwindigkeitsunterschied in der Regel
+                kaum bemerkbar ist, sollte man diesen Unterschied doch im Hinterkopf haben.
+            </p>
         </chapter>
 
         <chapter id="elemente-selektieren-css-veraendern" title="Das CSS eines Elements verändern">
-
+            <p>
+                Über die Eigenschaft <code>style</code> eines Elements können Sie an die CSS-Eigenschaften eines
+                Elements gelangen bzw. diese auch verändern. Das dieser Eigenschaft hinterlegte Objekt enthält alle
+                CSS-Eigenschaften als Objekteigenschaften (also beispielsweise <code>style.color</code>,
+                <code>style.border</code> usw.). Für CSS-Eigenschaften wie beispielsweise <code>background-color</code>,
+                die einen Bindestrich enthalten, sind die entsprechenden Objekteigenschaften in CamelCase-Schreibweise
+                definiert (beispielsweise <code>style.backgroundColor</code> oder <code>style.fontFamily</code>).
+            </p>
         </chapter>
 
         <chapter id="elemente-selektieren-method-borrowing" title="Method Borrowing">
+            <p>
+                Da es sich bei Knotenlisten um keine echten Arrays (sondern um Objekte vom Typ <code>NodeList</code>),
+                wohl aber um <code>array</code>-ähnliche Objekte handelt (wie das <code>arguments</code>-Objekt),
+                verwendet man in der Praxis häufig auch die Technik des Method Borrowings, um dennoch Methoden von Array
+                verwenden zu können.
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    Array.prototype.forEach.call(tableRowsEven, (tableRow) => {
+                      tableRow.style.backgroundColor = '#CCCCCC';
+                    });
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="elemente-selektieren-aktive-vs-statische-knotenlisten"
                  title="Aktive Knotenlisten vs. statische Knotenlisten">
-
+            <p>
+                Man unterscheidet bei Knotenlisten zwischen sogenannten aktiven und statischen Knotenlisten. Erstere
+                bezeichnen Knotenlisten, bei denen Änderungen, die an einzelnen Knoten in der Liste vorgenommen werden,
+                direkte Auswirkungen auf die Webseite haben, d.h., dass die Änderungen direkt in der Webseite
+                widergespiegelt werden. Bei Letzteren dagegen haben Änderungen an Knoten innerhalb der Knotenliste keine
+                direkten Auswirkungen auf die Webseite, werden also nicht direkt in der Webseite widergespiegelt. Die
+                Methoden <code>getElementsByClassName()</code>, <code>getElementsByTagName()</code> und
+                <code>getElementsByName()</code> geben aktive Knotenlisten zurück, die Methode
+                <code>querySelectorAll()</code> dagegen eine statische Knotenliste.
+            </p>
         </chapter>
 
         <chapter id="elemente-selektieren-weissraumknoten" title="Weißraumknoten">
-
+            <p>
+                Leerraum innerhalb des HTML-Codes, der beispielsweise durch Leerzeichen, Tabulatoren oder auch
+                Zeilenumbrüche erzeugt wird, führt dazu, dass im DOM dafür jedes Mal Textknoten ohne Text erzeugt
+                werden. In solchen Fällen spricht man von Weißraumknoten.
+            </p>
         </chapter>
     </chapter>
 
