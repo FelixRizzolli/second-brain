@@ -605,9 +605,74 @@
     </chapter>
 
     <chapter id="elemente" title="Mit Elementen arbeiten">
+        <table>
+            <tr>
+                <td>
+                    Eigenschaft/Methode
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        insertBefore()
+                    </code>
+                </td>
+                <td>
+                    Kann das übergebene Element als Kindelement vor ein anderes Element/einen anderen Knoten hinzufügen,
+                    sprich als voriges Geschwisterelement definieren.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        appendChild()
+                    </code>
+                </td>
+                <td>
+                    Kann das übergebene Element als letztes Kindelement eines Elternelements hinzufügen.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        replaceChild()
+                    </code>
+                </td>
+                <td>
+                    Kann ein bestehendes Kindelement (bzw. ein bestehender Kindknoten) durch ein neues Kindelement
+                    ersetzen. Die Methode wird dabei auf dem Elternelement aufgerufen und erwartet als ersten Parameter
+                    den neuen Kindknoten sowie als zweiten Parameter den zu ersetzenden Kindknoten.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        removeChild()
+                    </code>
+                </td>
+                <td>
+                    Diese Methode erwartet das zu entfernende Element (bzw. den zu entfernenden Knoten) und gibt dieses
+                    auch als Rückgabewert zurück.
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            Jedes HTML-Element wird innerhalb eines DOM-Baumes durch einen bestimmten Objekttyp repräsentiert. Welche
+            dies sind, ist in einer Erweiterung der DOM API, der sogenannten DOM-HTML-Spezifikation, festgehalten.
+            Beispielsweise werden Verlinkungen (<code>&lt;a&gt;</code>-Elemente) durch den Typ
+            <code>HTMLAnchorElement</code> repräsentiert, Tabellen (&lt;table&gt;-Elemente) durch den Typ
+            <code>HTMLTableElement</code> usw.
+        </p>
 
         <chapter id="elemente-htmlelement" title="Der Obertyp »HTMLElement«">
-
+            <p>
+                Alle Objekttypen haben dabei den gleichen »Obertyp«, den Typ <code>HTMLElement</code>, Elemente, die
+                keinen speziellen Typ haben, sind »direkt« vom Typ <code>HTMLElement</code>.
+            </p>
         </chapter>
     </chapter>
 
