@@ -440,7 +440,8 @@
 
         <chapter id="typen-maus" title="Ereignisse bei Interaktion mit der Maus">
             <p>
-
+                Die klassische Interaktionsform mit Webseiten ist die Maus. Immer wenn ein Nutzer die Maus bewegt oder
+                die Maustasten betätigt, wird im Hintergrund ein Ereignis ausgelöst.
             </p>
 
             <table style="header-row">
@@ -1537,7 +1538,95 @@
     </chapter>
 
     <chapter id="ereignisse-programmatisch-auslösen" title="Ereignisse programmatisch auslösen">
+        <p>
+            Ereignisse können in JavaScript (und in der ereignisgesteuerten Programmierung im Allgemeinen) nicht nur
+            durch unmittelbare Nutzeraktionen ausgelöst werden, sondern auch programmatisch, sprich durch
+            JavaScript-Code.
+        </p>
 
+        <p>
+            Um ein Ereignis programmatisch auszulösen, wird einfach eine Objektinstanz von Event erstellt. Diese wird
+            als Argument für die Methode <code>dispatchEvent()</code> verwendet, die jedem Element im DOM-Baum zur
+            Verfügung steht. Dem Konstruktor von Event übergibt man als erstes Argument eine Zeichenkette, die den Typ
+            des Ereignisses definiert. Optional kann über ein Konfigurationsobjekt, welches dann als zweites Argument
+            übergeben wird, bestimmt werden, ob das Ereignis die Bubbling-Phase durchlaufen soll oder nicht (über die
+            Eigenschaft <code>bubbles</code>) und ob es erlaubt ist, die Standardaktionen des Browsers zu unterbinden
+            (über die Eigenschaft <code>cancelable</code>). Die über den Konstruktor erzeugte Objektinstanz kann dann
+            der Methode <code>dispatchEvent()</code> übergeben werden, was intern dafür sorgt, dass dieses Ereignis auf
+            dem Element, auf dem man die Methode aufruft, ausgelöst wird.
+        </p>
+
+        <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+            <![CDATA[
+                function init() {
+                  let element = document.getElementById('example')
+                  let event = new Event(
+                    'beispiel',            // Typ des Events
+                    {
+                      bubbles: true,       // Bubbling erlauben
+                      cancelable: false    // Standardaktionen können nicht verhindert werden.
+                    }
+                  );
+                  element.addEventListener(
+                    'beispiel',                           // Typ des Events
+                    (event) => {
+                      console.log('Ereignis ausgelöst');
+                      console.log(event.type);            // "beispiel"
+                    },
+                    false
+                  );
+                  element.dispatchEvent(event);
+                }
+
+                document.addEventListener('DOMContentLoaded', init);
+            ]]>
+        </code-block>
+
+        <p>
+            Möchte man dem ausgelösten Ereignis bzw. dem entsprechenden <code>Event</code>-Objekt bestimmte
+            Informationen mitgeben, auf die dann innerhalb der definierten Event-Handler und registrierten
+            Event-Listener zugegriffen werden kann, wird statt dem Objekttyp <code>Event</code> der Objekttyp
+            <code>CustomEvent</code> verwendet. Dem Konstruktor von <code>CustomEvent</code> können innerhalb des
+            Konfigurationsobjekts (welches man auch hier als zweites Argument übergeben kann) über die Eigenschaft
+            <code>detail</code> entsprechende Daten übergeben werden.
+        </p>
+
+        <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+            <![CDATA[
+                ...
+                  let event = new CustomEvent(
+                    'beispiel',
+                    {
+                      detail: {
+                        firstName: 'Max',
+                        lastName: 'Mustermann',
+                        id: 4711
+                      }
+                    }
+                  );
+                ...
+            ]]>
+        </code-block>
+
+        <p>
+            Darüber hinaus besteht auch die Möglichkeit, beliebige andere Ereignisse (beispielsweise Mausereignisse oder
+            Tastaturereignisse) programmatisch auszulösen und auf diese Weise quasi Nutzerinteraktionen zu simulieren.
+        </p>
+
+        <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+            <![CDATA[
+                ...
+                  let event = new MouseEvent(
+                    'click',
+                    {
+                      'view': window,
+                      'bubbles': true,
+                      'cancelable': true
+                    }
+                  );
+                ...
+            ]]>
+        </code-block>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
