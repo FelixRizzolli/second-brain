@@ -7,7 +7,6 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
-    <!-- TODO: migrate from Confluence -->
     <chapter id="grundlagen" title="Grundlagen">
         <p>
             Das Konzept der ereignisgesteuerten Programmierung funktioniert im Wesentlichen wie folgt: Auf der einen
@@ -41,32 +40,373 @@
         </p>
     </chapter>
 
-    <chapter id="ereignisse" title="Ereignisse verarbeiten und auslösen">
+    <chapter id="ereignisse-reagieren" title="Auf Ereignisse reagieren">
+        <p>
+            Um bei Benutzerinteraktionen innerhalb einer Webseite eine Funktion auslösen zu können, sind drei Schritte
+            notwendig:
+        </p>
 
-        <chapter id="ereignisse-reagieren" title="Auf Ereignisse reagieren">
+        <list type="decimal">
+            <li>
+                Auswahl des Elements auf der Webseite, welches auf die Benutzerinteraktion reagieren soll: z.B. Button.
+            </li>
+            <li>
+                Angabe des Events, welches abgefangen werden soll: z.B. Mausklicks, Tastatureingaben, Mausbewegungen...
+            </li>
+            <li>
+                Angabe der Funktion, die aufgerufen werden soll.
+            </li>
+        </list>
 
-            <chapter id="ereignisse-html-event-handler" title="HTML-Event-Handler (DEPRECATED)">
+        <img alt="Ereignisfluss" src="js-dynamische-inhalte-ereignisse-ereignissfluss.png"/>
 
+        <p>
+            Dieses Beispiel zeigt den wesentlichen Ablauf beim Eintreten eines Ereignisses:
+        </p>
+
+        <list type="bullet">
+            <li>
+                Zunächst wird geprüft, ob ein Event-Handler bzw. Event-Listener für das Ereignis definiert ist.
+            </li>
+            <li>
+                Ist dies der Fall, wird der entsprechende Code ausgeführt. Sind dagegen keine
+                Event-Handler/Event-Listener definiert, werden direkt die Standardaktionen des Browsers ausgelöst, die
+                mit dem jeweiligen Ereignis verknüpft sind.
+            </li>
+            <li>
+                Innerhalb eines Event-Handlers/Event-Listeners hat man darüber hinaus die Möglichkeit, diese
+                Standardaktionen des Browsers für ein Ereignis zu unterbinden.
+            </li>
+            <li>
+                Es gibt bei der Webentwicklung auch Events, die abgefragt werden können, ohne zuvor ein Element
+                selektiert zu haben. Beispielsweise Events, die ausgelöst werden, wenn eine Webseite vollständig geladen
+                wurde, und viele andere mehr.
+            </li>
+            <li>
+                Es gibt drei Möglichkeiten Events abzufangen bzw. an Elemente binden zu können HTML-Event-Handler,
+                DOM-Event-Handler und DOM-Event-Listener.
+            </li>
+        </list>
+
+        <chapter id="ereignisse-html-event-handler" title="HTML-Event-Handler (DEPRECATED)">
+            <p>
+                Dabei wird über spezielle HTML-Attribute definiert, welche Funktion bei welchem Ereignis aufgerufen
+                werden soll. Der Grund, warum man keine HTML-Event-Handler mehr verwenden sollte, ist, dass auf diese
+                Weise HTML-Code und JavaScript-Code vermischt werden, was bekanntermaßen kein guter Stil hinsichtlich
+                Wartbarkeit etc. ist.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    <input type="submit" value="Alter prüfen" onclick="checkAgeNotNegative()"/>
+                ]]>
+            </code-block>
+
+            <p>
+                Wird auf die Schaltfläche "Alter prüfen" geklickt, so wird die im JavaScript-Code definierte Funktion
+                <code>checkAgeNotNegative()</code> ausgeführt.
+            </p>
+        </chapter>
+
+        <chapter id="ereignisse-dom-event-handler" title="DOM-Event-Handler">
+            <p>
+                Diese haben ihren Namen daher, weil sie Teil der DOM-Spezifikation sind und per JavaScript definiert
+                werden. Hierbei ist anders als bei HTML-Event-Handlern die Logik der Anwendung (das Reagieren auf
+                Ereignissen) getrennt von der Struktur der Anwendung (dem HTML). Der Nachteil: Über sie ist es nur
+                möglich, für ein Ereignis eine einzelne Funktion anzugeben, die aufgerufen werden soll.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    function init() {
+                      let element = document.getElementById('age');
+                      element.onblur = checkAgeNotNegative; // (1)
+                      element.onblur = checkAgeIsNumber;    // (2) Hier wird der Event-Handler überschrieben.
+                      element.onblur = () => {              // (3)
+                        checkAgeNotNegative();
+                        checkAgeIsNumber();
+                      }
+                    }
+                    window.onload = init;
+                ]]>
+            </code-block>
+
+            <p>
+                Anders als bei den HTML-Event-Handlern steht hier kein Funktionsaufruf, sondern wirklich nur der Name
+                der Funktion (d.h. ohne Klammernpaar). Würden <code>element.onblur = checkAgeNotNegative()</code>
+                anstatt <code>element.onblur = checkAgeNotNegative</code> geschrieben werden, würde der Rückgabewert des
+                Funktionsaufrufs <code>checkAgeNotNegative()</code> als Event-Handler definiert werden.
+            </p>
+
+            <p>
+                Im Beispiel wird auch noch über die Eigenschaft <code>onload</code> des <code>window</code>-Objekts ein
+                Event-Handler definiert, der aufgerufen wird, wenn die Webseite geladen wurde. Ohne diesen Event-Handler
+                würde die Funktion <code>init()</code> nicht aufgerufen und damit auch kein Event-Handler an dem
+                Formularelement registriert.
+            </p>
+
+            <p>
+                Das Beispiel (3) zeigt, dass es mit einer anonymen Funktion, welche hier als Kapsel dient, möglich ist,
+                auf ein Event mit mehreren Funktionen zu reagieren. Auch wenn dieses Vorgehe für das vorliegende
+                Beispiel funktioniert, sollte.
+            </p>
+
+            <p>
+                Auch wenn es, wie im Beispiel (3) gezeigt, möglich ist mittels einer anonymen Funktion welche die
+                gewünschten Funktionen aufruft, mehrere Funktionen aufzurufen, um auf ein Event zu reagieren, sollte
+                lieber ein Event-Listener definiert werden.
+            </p>
+        </chapter>
+
+        <chapter id="ereignisse-dom-event-listener" title="DOM-Event-Listener">
+            <p>
+                Diese wurden im Jahr 2000 als Teil der zweiten Version der DOM-Spezifikation eingeführt
+                <a href="https://www.w3.org/TR/DOM-Level-2-Events/Overview.html"/> und sind seitdem der Standardweg
+                für die Ereignisbehandlung und der empfohlene Weg, auf Ereignisse zu reagieren. Der Grund: Sie werden
+                wie DOM-Event-Handler innerhalb des JavaScript-Codes definiert, ermöglichen es aber zusätzlich, mehrere
+                Funktionen für ein einzelnes Ereignis zu definieren.
+            </p>
+
+            <p>
+                Oft werden die Begriffe Event-Handler und Event-Listener in der Literatur synonym verwendet. Im Falle
+                von JavaScript wird jedoch, wie oben beschrieben, zwischen den beiden Begriffen unterschieden. Das
+                heißt, eine Funktion, die als HTML-Event-Handler oder als DOM-Event-Handler definiert wurde, nenne ich
+                im Folgenden auch Event-Handler, eine Funktion, die als Event-Listener definiert wurde, dementsprechend
+                Event-Listener.
+            </p>
+
+            <note>
+                <p>
+                    <b>
+                        Die Methode »attachEvent()«
+                    </b>
+                </p>
+
+                <p>
+                    Die Methode <code>addEventListener()</code> wird in älteren Versionen des Internet Explorers nicht
+                    unterstützt. Sollte man innerhalb von fremdem Code einmal über die Methode
+                    <code>attachEvent()</code> stoßen, muss man sich nicht wundern, denn: Dabei handelt es sich um eine
+                    proprietäre Methode des Internet Explorers, die aber kein Bestandteil irgendeines Standards ist und
+                    somit in der Regel nicht verwendet werden sollte.
+                </p>
+            </note>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    function init() {
+                      let element = document.getElementById('age');      // Element holen
+                      element.addEventListener(                          // Event-Listener registrieren
+                        'blur',                                          // Name des Events
+                        checkAgeNotNegative,                             // Name des Event-Listeners
+                        false                                            // Ereignisfluss
+                      );
+                    }
+                ]]>
+            </code-block>
+
+            <chapter id="ereignisse-dom-event-listener-mehrere" title="Mehrere Event-Listener">
+                <p>
+                    Die Verwendung von Event-Listenern bzw. der Methode <code>addEventListener()</code> ist gegenüber
+                    Event-Handlern deutlich flexibler, da nicht nur eine einzelne Funktion angegeben werden kann,
+                    sondern beliebig viele Funktionen.
+                </p>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        function init() {
+                          let element = document.getElementById('age');   // Element holen
+                          element.addEventListener(                       // Event-Listener registrieren
+                            'blur',                                       // Name des Events
+                            clearMessage                                  // Name des Event-Listeners
+                          );
+                          element.addEventListener(                       // Event-Listener registrieren
+                            'blur',                                       // Name des Events
+                            checkAgeNotNegative                           // Name des Event-Listeners
+                          );
+                          element.addEventListener(                       // Event-Listener registrieren
+                            'blur',                                       // Name des Events
+                            checkAgeIsNumber                              // Name des Event-Listeners
+                          );
+                        }
+                    ]]>
+                </code-block>
             </chapter>
 
-            <chapter id="ereignisse-dom-event-handler" title="DOM-Event-Handler">
+            <chapter id="ereignisse-dom-event-listener-entfernen" title="Event-Listener entfernen">
+                <p>
+                    Event-Listener, die für ein Ereignis einem Element hinzugefügt wurden, können über die Methode
+                    <code>removeEventListener()</code> auch wieder entfernt werden. Als Parameter wird dabei der Name
+                    des Events und der Event-Listener übergeben, der entfernt werden soll.
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        element.removeEventListener('blur', checkAgeNotNegative);
+                        element.removeEventListener('blur', checkAgeIsNumber);
+                    ]]>
+                </code-block>
             </chapter>
 
-            <chapter id="ereignisse-dom-event-listener" title="DOM-Event-Listener">
+            <chapter id="ereignisse-dom-event-listener-informationen-eines-ereignisses"
+                     title="Auf Informationen eines Ereignisses zugreifen">
+                <p>
+                    Innerhalb einer Funktion, die als Event-Handler oder als Event-Listener registriert wurde, hat man
+                    die Möglichkeit, auf bestimmte Informationen des ausgelösten Ereignisses zuzugreifen, und zwar über
+                    einen Parameter, welcher beim Aufruf der entsprechenden Funktion übergeben wird. Jedes Ereignis wird
+                    dabei durch einen bestimmten Objekttyp repräsentiert, beispielsweise Mausereignisse durch den
+                    Objekttyp <code>MouseEvent</code> oder Tastaturereignisse durch den Objekttyp
+                    <code>KeyboardEvent</code>. Alle diese Objekttypen haben einen gemeinsamen (»Ober«-) Typ, von dem
+                    sie ableiten, und zwar den Typ <code>Event</code>. Die Eigenschaften, die durch diesen Typ
+                    bereitgestellt werden, sind in folgenden Tabelle aufgelistet.
+                </p>
 
-                <chapter id="ereignisse-dom-event-listener-mehrere" title="Mehrere Event-Listener">
+                <table>
+                    <tr>
+                        <td>
+                            Eigenschaft
+                        </td>
+                        <td>
+                            Beschreibung
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                bubbles
+                            </code>
+                        </td>
+                        <td>
+                            Enthält Angabe darüber, ob ein Event im DOM-Baum hochsteigt oder nicht.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                cancelable
+                            </code>
+                        </td>
+                        <td>
+                            Enthält Angabe darüber, ob ein Event abgebrochen werden kann oder nicht.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                currentTarget
+                            </code>
+                        </td>
+                        <td>
+                            Enthält eine Referenz auf das aktuelle Ziel des Events.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                defaultPrevented
+                            </code>
+                        </td>
+                        <td>
+                            Enthält Angabe darüber, ob auf dem Event die Methode <code>preventDefault()</code>
+                            aufgerufen wurde oder nicht.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                eventPhase
+                            </code>
+                        </td>
+                        <td>
+                            <p>
+                                Enthält einen Zahlenwert, der die derzeitige Phase repräsentiert, in der sich das Event
+                                momentan befindet. Mögliche Werte sind:
+                            </p>
 
-                </chapter>
+                            <list>
+                                <li>
+                                    <code>0</code> (bzw. <code>Event.NONE</code>)
+                                </li>
+                                <li>
+                                    <code>1</code> (bzw. <code>Event.CAPTURING_PHASE</code>)
+                                </li>
+                                <li>
+                                    <code>2</code> (bzw. <code>Event.AT_TARGET</code>)
+                                </li>
+                                <li>
+                                    <code>3</code> (bzw. <code>Event.BUBBLING_PHASE</code>)
+                                </li>
+                            </list>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                target
+                            </code>
+                        </td>
+                        <td>
+                            Enthält eine Referenz auf das ursprüngliche Ziel des Events.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                timeStamp
+                            </code>
+                        </td>
+                        <td>
+                            Enthält den Zeitpunkt, an dem das Event ausgelöst wurde.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                type
+                            </code>
+                        </td>
+                        <td>
+                            Enthält den Namen des Events.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                isTrusted
+                            </code>
+                        </td>
+                        <td>
+                            Gibt an, ob das Event durch den Browser (beispielsweise durch den Klick auf einen Button)
+                            oder durch JavaScript-Code ausgelöst wurde.
+                        </td>
+                    </tr>
+                </table>
 
-                <chapter id="ereignisse-dom-event-listener-entfernen" title="Event-Listener entfernen">
+                <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+                    <![CDATA[
+                        function buttonClicked(event) {
+                          console.log(event.bubbles);           // true
+                          console.log(event.cancelable);        // true
+                          console.log(event.currentTarget);     // <input>
+                          console.log(event.defaultPrevented);  // false
+                          console.log(event.eventPhase);        // 2
+                          console.log(event.target);            // <input>
+                          console.log(event.timeStamp);         // z. B. 1453232649902
+                          console.log(event.type);              // "click"
+                          console.log(event.isTrusted);         // true
+                        }
 
-                </chapter>
+                        function init() {
+                          let element = document.getElementById('button');   // Button holen
+                          element.addEventListener(                          // Event-Listener registrieren
+                            'click',                                         // Name des Events
+                            buttonClicked,                                   // Name des Event-Listeners
+                            false                                            // Ereignisfluss
+                          );
+                        }
 
-                <chapter id="ereignisse-dom-event-listener-informationen-eines-ereignisses"
-                         title="Auf Informationen eines Ereignisses zugreifen">
-
-                </chapter>
+                        document.addEventListener('DOMContentLoaded', init);
+                    ]]>
+                </code-block>
             </chapter>
         </chapter>
     </chapter>
