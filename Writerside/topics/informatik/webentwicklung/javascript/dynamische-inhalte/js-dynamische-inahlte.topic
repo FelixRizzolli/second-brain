@@ -494,13 +494,113 @@
     </chapter>
 
     <chapter id="text" title="Mit Textknoten arbeiten">
+        <table>
+            <tr>
+                <td>
+                    Eigenschaft/Methode
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        textContent
+                    </code>
+                </td>
+                <td>
+                    Über diese Eigenschaft können Sie auf den Textinhalt eines Knotens zugreifen.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        nodeValue
+                    </code>
+                </td>
+                <td>
+                    Über diese Eigenschaft können Sie auf den Inhalt eines Knotens zugreifen.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        innerHTML
+                    </code>
+                </td>
+                <td>
+                    Über diese Eigenschaft können Sie auf den HTML-Inhalt eines Knotens zugreifen.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        createTextNode()
+                    </code>
+                </td>
+                <td>
+                    Mit dieser Methode können Sie Textknoten erstellen.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        createElement()
+                    </code>
+                </td>
+                <td>
+                    Mit dieser Methode können Sie Elemente erstellen.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        createAttribute()
+                    </code>
+                </td>
+                <td>
+                    Mit dieser Methode können Sie Attributknoten erstellen.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        appendChild()
+                    </code>
+                </td>
+                <td>
+                    Mit dieser Methode können Sie dem DOM-Baum Knoten hinzufügen.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        removeChild()
+                    </code>
+                </td>
+                <td>
+                    Mit dieser Methode können Sie Knoten aus dem DOM-Baum entfernen.
+                </td>
+            </tr>
+        </table>
 
         <chapter id="text-textcontent-vs-innertext" title="»textContent« vs. »innerText«">
-
+            <p>
+                In einigen Browsern steht noch die Eigenschaft innerText zur Verfügung, die so ähnlich arbeitet wie
+                <code>textContent</code>, sich im Detail allerdings etwas unterscheidet und zudem nicht in der DOM API
+                enthalten ist und daher beispielsweise auch nicht von Firefox unterstützt wird. Daher ist es ratsam, auf
+                <code>innerText</code> zu verzichten und stattdessen wie gezeigt <code>textContent</code> zu verwenden.
+            </p>
         </chapter>
 
         <chapter id="text-methoden-von-dokumentknoten" title="Methoden von Dokumentknoten">
-
+            <p>
+                Die Methoden <code>createTextNode()</code>, <code>createElement()</code> und
+                <code>createAttribute()</code> stehen nur auf dem Dokumentknoten (sprich dem Objekt
+                <code>document</code>) zur Verfügung. Diese Methoden können nicht auf anderen Knoten (und damit auch
+                nicht auf Elementen) aufgerufen werden.
+            </p>
         </chapter>
     </chapter>
 
