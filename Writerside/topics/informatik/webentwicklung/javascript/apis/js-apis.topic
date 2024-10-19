@@ -479,17 +479,114 @@
     </chapter>
 
     <chapter id="kommunikation" title="Über JavaScript kommunizieren">
-
         <chapter id="kommunikation-unidirektional" title="Unidirektionale Kommunikation mit dem Server">
+            <p>
+                Bei der Kommunikation über HTTP geschieht die Kommunikation vom Client aus, unabhängig davon, ob es sich
+                um eine klassische Website handelt oder um eine moderne Webanwendung, die auf Ajax basiert. In allen
+                Fällen ist es der Client, der die (HTTP-)Anfragen an den Server formuliert, auf die dieser dann mit
+                (HTTP-)Antworten reagiert. Der Server kann über HTTP keine Daten von sich aus an einen Client schicken.
+            </p>
 
+            <p>
+                Die Kommunikation von Client und Server geschieht unidirektional, in eine Richtung vom Client zum
+                Server. Auch die Tatsache, dass der Server mit Antworten reagiert und man somit schon in zwei Richtungen
+                kommuniziert, ändert nichts daran, dass die aktive Kommunikation nur in eine Richtung geht.
+            </p>
+
+            <p>
+                Angenommen es wird eine Anwendung entwickelt, bei der in unregelmäßigen Abständen Nachrichten auf einem
+                Server abgelegt und diese relativ zeitnah in einer Webanwendung angezeigt werden sollen. Schön wäre es
+                doch, wenn der Server den Client über neue Nachrichten benachrichtigen würde. Hierfür haben sich
+                verschiedene Techniken herausgebildet, die solche Anforderungen durch Hacks realisieren.
+            </p>
+
+            <img alt="Unidirektionale Kommunikation mit dem Server (1)"
+                 src="js-api-kommunikation-unidirektional-1.png"/>
+
+            <img alt="Unidirektionale Kommunikation mit dem Server (2)"
+                 src="js-api-kommunikation-unidirektional-2.png"/>
+
+            <p>
+                Bei <b>Polling</b> (Bild 1) fragt der Client im Hintergrund (durch Ajax-Anfragen) beim Server nach
+                neuen Daten an, die der Server dann entsprechend beantwortet.
+            </p>
+
+            <p>
+                Beim <b>Long-Polling</b> (Bild 2) sendet der Client ebenfalls im Hintergrund Anfragen an den Server
+                sendet. Liegen neue Daten auf dem Server bereit, liefert der Server umgehend eine Antwort. Liegen
+                dagegen keine neuen Daten vor, hält der Server die HTTP-Verbindung so lange offen, bis entweder neue
+                Daten auf dem Server vorliegen oder ein zuvor festgelegter Timeout überschritten wurde.
+            </p>
+
+            <p>
+                In beiden Fällen gilt: Sobald der Client die entsprechende Antwort vom Server erhält, sendet er erneut
+                eine Anfrage, wobei der Server die Verbindung wieder offen hält usw.
+            </p>
+
+            <p>
+                Mittlerweile gibt es jedoch auch Technologien, bei denen der Server wirklich Daten an den Client sendet,
+                sodass man auf oben beschriebene Techniken verzichten kann. Eine von diesen Technologien ist die
+                sogenannte Web Socket API.
+            </p>
         </chapter>
 
         <chapter id="kommunikation-bidirektional" title="Bidirektionale Kommunikation mit einem Server">
+            <p>
+                Über die Web Socket API (<a href="https://www.w3.org/TR/websockets/"/> bzw.
+                <a href="https://html.spec.whatwg.org/multipage/comms.html#network"/>) können Socket-Verbindungen
+                zwischen Client und Server hergestellt werden, über die es dann möglich ist, dass sowohl der Client
+                Daten an den Server schickt, als auch, dass der Server Daten an den Client schickt. Sprich, es besteht
+                eine dauerhafte Verbindung zwischen Client und Server, und beide können jederzeit Daten an den jeweils
+                anderen senden.
+            </p>
 
+            <img alt="Bidirektionale Kommunikation mit einem Server" src="js-api-kommunikation-bidirektional.png"/>
+
+            <p>
+                Die Spezifikation umfasst dabei lediglich einen Typ (bzw. ein Interface), und zwar WebSocket. Um eine
+                Web-Socket-Verbindung herzustellen, verwendet man die entsprechende Konstruktorfunktion.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    let connection = new WebSocket('ws://example.com/test');
+                ]]>
+            </code-block>
+
+            <p>
+                Bezüglich des Verbindungsaufbaus stellt WebSocket drei Event-Handler zur Verfügung: der Event-Handler
+                <code>onopen</code> wird aufgerufen, wenn die Web-Socket-Verbindung geöffnet wurde, der Event-Handler
+                <code>onerror</code>, wenn beim Verbindungsaufbau ein Fehler aufgetreten ist, und schließlich der
+                Event-Handler <code>onclose</code>, wenn die Verbindung wieder geschlossen wurde. Um Daten an den Server
+                zu senden, wird die Methode <code>send()</code> verwendet, welche verständlicherweise nur innerhalb des
+                <code>onopen</code>-Event-Handlers Sinn macht.
+            </p>
         </chapter>
 
         <chapter id="kommunikation-vom-server-ausgehend" title="Vom Server ausgehende Kommunikation">
+            <img alt="Vom Server ausgehende Kommunikation" src="js-api-kommunikation-server.png"/>
 
+            <p>
+                Mithilfe von Server-Sent Events (<a href="https://www.w3.org/TR/eventsource/"/> bzw. im Living Standard
+                unter <a href="https://html.spec.whatwg.org/multipage/comms.html#server-sent-events"/>) ist es
+                möglich, dass Server von sich aus Nachrichten an einen Client senden.
+            </p>
+
+            <p>
+                <b>Clientseite</b>: Die API definiert das EventSource-Interface, welches eine serverseitige Quelle
+                repräsentiert, die Events generiert bzw. Nachrichten verschickt. Um eine solche Eventquelle zu
+                definieren, übergibt man der entsprechenden Konstruktorfunktion die URL und definiert einen
+                Event-Handler, um auf die Nachrichten vom Server reagieren zu können.
+            </p>
+
+            <p>
+                Die <b>Serverseite</b> kann in verschiedensten Sprachen implementiert werden PHP, NodeJS, ...
+            </p>
+
+            <tip>
+                Ein Beispiel ist hier zu finden:
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events"/>
+            </tip>
         </chapter>
     </chapter>
 
