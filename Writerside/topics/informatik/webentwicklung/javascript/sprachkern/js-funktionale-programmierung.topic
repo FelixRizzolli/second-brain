@@ -1257,20 +1257,166 @@
     </chapter>
 
     <chapter id="design-patterns" title="Funktionale Entwurfsmuster">
-
         <chapter id="design-patterns-iife" title="Das IIFE-Entwurfsmuster">
+            <p>
+                IIFE (Immediately Invoked Function Expression) ist eine (in der Regel anonyme) Funktion, die direkt
+                aufgerufen wird, sobald sie deklariert ist.
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    (function() {
+                      console.log('Diese Funktion wird deklariert und sofort aufgerufen.')
+                    })();
+                ]]>
+            </code-block>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    const aFunction = (function() {
+                      console.log('Diese Funktion wird deklariert und sofort aufgerufen.')
+                    });
+                    aFunction();
+                ]]>
+            </code-block>
+
+            <p>
+                Der Unterschied zwischen dem Code links (einer IIFE) und jenem rechts ist, dass sie auch wirklich nur
+                ein einziges Mal aufgerufen wird. IIFEs ermöglichen das Emulieren von Block-Scope (bzw. eigentlich sogar
+                das Definieren beliebiger Scopes, das heißt auch solcher, die nicht durch einen Codeblock begrenzt
+                sind).
+            </p>
+
+            <code-block collapsed-title="Übertriebenes Emulieren von Block-Scope mit IIFEs"
+                        collapsible="true"
+                        lang="javascript">
+                <![CDATA[
+                    (function() {
+                      const x = 11;
+                      if(x<20) {
+                        (function() {
+                          const x = 4;
+                          console.log(x); // Ausgabe: 4
+                        })();
+                      }
+                      if(x>2) {
+                        (function() {
+                          const x = 7;
+                          console.log(x); // Ausgabe: 7
+                        })();
+                      }  console.log(x);     // Ausgabe: 11
+                    })();
+                ]]>
+            </code-block>
+
+            <p>
+                IIFEs können außerdem zum Einsatz kommen, wenn der eigene (initial auszuführende) Code in einem Kontext
+                ausgeführt wird, in dem man eventuell durch die eigenen Variablendeklarationen bereits existierende
+                Variablen überschreiben würde, beispielsweise im globalen Scope. Darüber hinaus spielen IIFEs eine
+                entscheidende Rolle bei einem der wichtigsten JavaScript-Entwurfsmuster, dem Emulieren von Modulen.
+            </p>
         </chapter>
 
         <chapter id="design-patterns-callback" title="Das Callback-Entwurfsmuster">
+            <p>
+                Das klassische Anwendungsbeispiel, bei dem einer Funktion eine andere Funktion als Parameter übergeben
+                wird, sind sogenannte Callback-Funktionen. Dabei wird die übergebene Funktion im Laufe der Ausführung
+                der aufgerufenen Funktion von dieser aufgerufen (bzw. zurückgerufen, daher der Name Callback). Liefert
+                die Funktion ein Ergebnis, wird dieses als Parameter der Callback-Funktion übergeben. Diese
+                Vorgehensweise, also Übergabe einer Funktion und anschließender Aufruf, wird als Callback-Entwurfsmuster
+                bezeichnet. Insbesondere bei asynchronen Funktionsaufrufen sind Callbacks ein oft genutztes Mittel, um
+                den aufrufenden Code über Ergebnisse einer aufgerufenen Funktion zu informieren.
+            </p>
 
+            <tip>
+                Mehr zum Callback-Entwurfsmuster in der Asynchronen Programmierung:
+                <a href="js-ecmascript.topic#callback-design-pattern"/>
+            </tip>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    function aFunction(callback) {
+                      if(typeof callback === 'function') {
+                        console.log('Vor Callback');
+                        callback();
+                        console.log('Nach Callback');
+                      } else {
+                        // Fehlerbehandlung
+                      }
+                    }
+                    function anotherFunction() { console.log('Callback'); }
+                    aFunction(anotherFunction);
+                ]]>
+            </code-block>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    Vor Callback
+                    Callback
+                    Nach Callback
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="design-patterns-self-defining-functions" title="Self-defining Functions">
+            <p>
+                Beim Entwurfsmuster Self-defining Functions bzw. der Self-overwriting Functions wird die Funtion beim
+                Aufruf selbst neu definiert.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    function firstPrintOneThenPrintTwo() {
+                      console.log(1);
+                      firstPrintOneThenPrintTwo = function() {
+                        console.log(2);
+                      }
+                    }
+                    const functionReference = firstPrintOneThenPrintTwo;
+                    firstPrintOneThenPrintTwo(); // => 1
+                    firstPrintOneThenPrintTwo(); // => 2
+                    functionReference(); // => 1
+                    functionReference(); // => 1
+                ]]>
+            </code-block>
+
+            <p>
+                Dadurch, dass eine Funktion sich selbst überschreibt, werden andere Variablen, die auf das gleiche
+                Funktionsobjekt zeigen, nicht überschrieben. Diese behalten die Referenz auf die ursprüngliche Funktion.
+            </p>
 
             <chapter id="design-patterns-self-defining-functions-lazy-instantiation"
                      title="Selbstüberschreibende Funktionen zur Emulation von Lazy Instantiation">
+                <p>
+                    Grundsätzlich bedeutet Lazy Instantiation, dass eine Variable nicht sofort initialisiert wird,
+                    sondern erst auf Anfrage. Lazy Instantiation bietet sich vor allem dann an, wenn die Berechnung des
+                    entsprechenden Ergebniswertes oder die Initialisierung der Variablen relativ aufwendig ist
+                    (beispielsweise das Parsen eines Dokuments oder das Lesen einer Datei). Erst wenn der Wert benötigt
+                    wird, wird er berechnet. Insbesondere bei der Webentwicklung wird das Entwurfsmuster oft dazu
+                    verwendet, Werte einmalig vom Server zu laden und ab dann auf Clientseite zu cachen.
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        function calculate() {
+                          console.log('calculate()');
+                          return 'Ergebnis';
+                        }
+
+                        function getResult() {
+                          const result = calculate(); // Hier die einmalige Berechnung
+                          getResult = function() {
+                            return result;            // ab zweitem Aufruf
+                          }
+                          return result;              // erster Aufruf
+                        }
+
+                        console.log(getResult());     // => "calculate()", dann "Ergebnis"
+                        console.log(getResult());     // => "Ergebnis"
+                        console.log(getResult());     // => "Ergebnis"
+                        console.log(getResult());     // => "Ergebnis"
+                    ]]>
+                </code-block>
             </chapter>
         </chapter>
     </chapter>
