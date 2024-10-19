@@ -997,9 +997,103 @@
     </chapter>
 
     <chapter id="techniken" title="Funktionale Techniken">
-
         <chapter id="techniken-komposition" title="Komposition">
+            <p>
+                In der Mathematik bezeichnet Komposition das Hintereinanderschalten bzw. Verketten von Funktionen. Die
+                Komposition zweier Funktionen <code>f</code> und <code>g</code> schreibt man dabei in der Regel mit dem
+                Verkettungszeichen: <code>f ○ g</code> beschreibt die Funktion, die für ein gegebenes <code>x</code>
+                Folgendes liefert: <code>f(g(x))</code>. Demnach gilt:
+            </p>
 
+            <p>
+                Die Komposition der Funktionen <code>g</code> und <code>f</code> liefert also für ein <code>x</code> das
+                gleiche Ergebnis, als wenn man zuerst die Funktion <code>g</code> mit <code>x</code> als Parameter
+                aufruft und anschließend mit deren Ergebnis die Funktion <code>f</code>. In der funktionalen
+                Programmierung ist Komposition ein mächtiges Werkzeug, über das es möglich ist, aus bestehenden
+                Funktionen neue Funktionen zu generieren.
+            </p>
+
+            <table>
+                <tr>
+                    <td>
+                        Native Implementierung
+                    </td>
+                    <td>
+                        Unter Berücksichtigung des Ausführungskontexts
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                const compositionSimple = function(f, g) {
+                                  return function(x) {
+                                    return f(g(x));
+                                  };
+                                };
+                            ]]>
+                        </code-block>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                const compositionWithContext = function(f, g) {
+                                  return function() {
+                                    return f.call(this, g.apply(this, arguments));
+                                  };
+                                };
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                Mithilfe der generischen Funktion lassen sich nun Funktionen miteinander kombinieren:
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    function addFour(x) { return x + 4;}
+                    function multiplyWithSeven(x) { return x * 7;}
+
+                    const addFourThenMultiplyWithSeven = compositionWithContext(
+                      multiplyWithSeven, addFour
+                    );
+                    const multiplyWithSevenThenAddFour = compositionWithContext(
+                      addFour, multiplyWithSeven
+                    );
+
+                    console.log(addFourThenMultiplyWithSeven(2));    // 42
+                    console.log(multiplyWithSeven(addFour(2)));      // 42
+                    console.log(multiplyWithSevenThenAddFour(2));    // 18
+                    console.log(addFour(multiplyWithSeven(2)));      // 18
+                ]]>
+            </code-block>
+
+            <p>
+                Zu beachten sind zwei Dinge:
+            </p>
+
+            <list>
+                <li>
+                    Die übergebenen Funktionen werden von rechts nach links ausgeführt, das heißt, zuerst die zweite
+                    übergebene Funktion, danach mit deren Rückgabewert die erste Funktion.
+                </li>
+                <li>
+                    Das Ganze funktioniert nur, wenn der Rückgabewert der zweiten Funktion als Parameter von der ersten
+                    Funktion verarbeitet werden kann. Im Beispiel erwarten sowohl <code>addFour()</code> als auch
+                    <code>multiplyWithSeven()</code> eine Zahl und liefern eine Zahl als Rückgabewert. Insofern
+                    funktioniert die Komposition beider Funktionen in beide Richtungen.
+                </li>
+            </list>
+
+            <p>
+                Die obige Implementierung der Komposition hat eine Einschränkung: Sie funktioniert nur für zwei
+                Funktionen. Mit ein bisschen JavaScript-Zauberei ist es aber möglich, die Implementierung unter
+                Verwendung einer <b>Closure</b> so weit anzupassen, dass sie für eine beliebige Anzahl an übergebenen
+                Funktionen ein entsprechendes Ergebnis liefert.
+            </p>
         </chapter>
 
         <chapter id="techniken-rekursion" title="Rekursion">
