@@ -209,13 +209,45 @@
     </chapter>
 
     <chapter id="testautomation" title="Quelltext automatisiert testen">
+        <p>
+            Je mehr Quelltext erstellt wird bzw. je komplexer der Quelltext ist, desto schwieriger und aufwendiger ist
+            es, zu überprüfen, ob der Quelltext das macht, was er auch machen soll. Automatisierte Tests, insbesondere
+            sogenannte Unit-Tests, können einem dabei helfen, Quelltext automatisch auszuführen und bestimmte Kriterien
+            zu formulieren, die der getestete Quelltext erfüllen soll.
+        </p>
+
+        <tip>
+            Das Prinzip von automatisierten Tests: <a href="swe-pk-testen.topic#automatisiert"/>
+        </tip>
+
+        <tip>
+            Das Prinzip der testgetriebenen Entwicklung: <a href="swe-pk-testen.topic#tdd"/>
+        </tip>
 
         <chapter id="testautomation-qunit" title="QUnit">
+            <p>
+                QUnit <a href="http://qunitjs.com"/> wurde ursprünglich von John Resig als Teil der jQuery-Bibliothek
+                entwickelt und hatte hauptsächlich das Ziel, den internen Code von jQuery zu testen. Im Jahre 2008 wurde
+                es dann ein eigenständiges Projekt – immer noch stark an jQuery gekoppelt, aber zumindest war es fortan
+                möglich, eigenen, auf der jQuery-Bibliothek basierenden Code testen zu können. Ein Jahr später, im Jahre
+                2009, wurden die Abhängigkeiten zu jQuery vollständig aufgelöst, sodass QUnit heute für das Testen
+                beliebigen JavaScript-Codes einsetzbar ist.
+            </p>
 
+            <tip>
+                Hier zur Installationsanleitung: <a href="https://qunitjs.com/intro/"/>
+            </tip>
         </chapter>
 
         <chapter id="testautomation-mocha" title="mocha">
+            <p>
+                Bei mocha <a href="http://mochajs.org"/> handelt es sich um ein Testframework, welches sich unabhängig
+                von der verwendeten Laufzeitumgebung einsetzen lässt.
+            </p>
 
+            <tip>
+                Hier zur Installationsanleitung: <a href="https://mochajs.org/#installation"/>
+            </tip>
         </chapter>
     </chapter>
 
