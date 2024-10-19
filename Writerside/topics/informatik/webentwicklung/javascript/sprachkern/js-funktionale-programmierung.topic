@@ -1097,7 +1097,62 @@
         </chapter>
 
         <chapter id="techniken-rekursion" title="Rekursion">
+            <p>
+                Bei der Rekursion handelt es sich um eine funktionale Technik: Eine rekursive Funktion ist eine
+                Funktion, die sich, um das Ergebnis zu berechnen, selbst aufruft. Ein klassisches Beispiel dafür ist die
+                Berechnung der Fibonacci-Zahlen:
+            </p>
 
+            <table>
+                <tr>
+                    <td>
+                        Funktional
+                    </td>
+                    <td>
+                        Imperativ
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                const fibonacciRecursive = function(n) {
+                                  return (
+                                    (n < 2)
+                                      ? n
+                                      : fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2)
+                                  );
+                                };
+                                console.log(fibonacciRecursive(11)); // 89
+                            ]]>
+                        </code-block>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                function fibonacciImperative(n){
+                                  const fibonacciNumbers = new Array();
+                                  fibonacciNumbers.push(0);
+                                  fibonacciNumbers.push(1);
+                                  for(let i=0; i<n; i++){
+                                    fibonacciNumbers.push(fibonacciNumbers[0] + fibonacciNumbers[1]);
+                                    fibonacciNumbers.shift();
+                                  }
+                                  return fibonacciNumbers[0];
+                                }
+                                console.log(fibonacciImperative(11)); // 89
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                Obwohl die rekursive Variante recht schlank ist, sind iterative Programme in der Regel effizienter als
+                ihre rekursiven Äquivalente: Für jeden (rekursiven) Aufruf einer Funktion wird immerhin der Kontext der
+                Funktion auf dem Funktionsaufruf-Stack gespeichert, was bei einer großen Anzahl an Funktionsaufrufen
+                Auswirkungen auf die Performance haben kann.
+            </p>
         </chapter>
 
         <chapter id="techniken-closures" title="Closures">
