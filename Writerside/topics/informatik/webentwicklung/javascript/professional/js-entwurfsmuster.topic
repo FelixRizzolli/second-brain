@@ -7,10 +7,28 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
-    <!-- TODO: migrate from Confluence -->
-
     <chapter id="object-factory" title="Object Factory">
+        <p>
+            Factory ist ein objektorientiertes Entwurfsmuster. Die Idee selbst ist einfach: Wir schreiben eine Funktion,
+            welche bei jedem Aufruf ein neues Objekt zurückgibt, dessen Typ wir definieren. Dieser Funktion können auch
+            Argumente übergeben werden, um es zu initiieren.
+        </p>
 
+        <code-block lang="javascript">
+            <![CDATA[
+                let createPoint = (x, y) => ({ x, y });
+                // oder auch
+                let createColoredPoint = function(x, y, color) {
+                  let _color = color;
+                  return {
+                    x,
+                    y,
+                    getColor() {
+                      return _color;
+                  };
+                };
+            ]]>
+        </code-block>
     </chapter>
 
     <chapter id="deep-clone" title="Deep Clone">
