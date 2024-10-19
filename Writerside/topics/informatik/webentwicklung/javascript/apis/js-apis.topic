@@ -906,13 +906,284 @@
     </chapter>
 
     <chapter id="file-api" title="Auf das Dateisystem zugreifen">
+        <p>
+            Über die File API ist es möglich, per JavaScript auf lokale Dateien des Nutzers zuzugreifen, sofern dieser
+            die jeweiligen Dateien zuvor in einem entsprechenden Dialog ausgewählt hat. Die Spezifikation unter
+            <a href="https://www.w3.org/TR/FileAPI/"/> definiert für das Arbeiten mit Dateien folgende Interfaces:
+        </p>
+
+        <list type="bullet">
+            <li>
+                Das Interface <code>File</code> repräsentiert eine einzelne Datei und enthält Informationen wie den
+                Namen der Datei oder das letzte Änderungsdatum.
+            </li>
+            <li>
+                Das Interface <code>FileList</code> repräsentiert eine Liste von <code>File</code>-Objekten, die vom
+                Nutzer ausgewählt wurde.
+            </li>
+            <li>
+                Das Interface <code>Blob</code> repräsentiert binäre Daten.
+            </li>
+            <li>
+                Das Interface <code>FileReader</code> stellt Methoden zur Verfügung, um Objekte vom Typ
+                <code>File</code> oder <code>Blob</code> zu lesen.
+            </li>
+        </list>
+
+        <p>
+            Für das Auswählen von Dateien gibt es prinzipiell zwei Möglichkeiten: zum einen den schon erwähnten
+            Dateidialog. Zum anderen besteht aber auch die Möglichkeit, Dateien per Drag &amp; Drop in einen bestimmten
+            Bereich einer Webseite zu "ziehen" und darüber an die Inhalte der jeweiligen Datei zu kommen.
+        </p>
+
+        <table style="header-row">
+            <tr>
+                <td>
+                    Dateidialog
+                </td>
+                <td>
+                    Drag &amp; Drop
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            <input type="file" id="files" name="files[]" multiple />
+                        ]]>
+                    </code-block>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            document.getElementById('files').addEventListener(
+                              'change',
+                              (event) => {
+                                 let files = event.target.files;
+                                 /* ... */
+                              },
+                              false
+                            );
+                        ]]>
+                    </code-block>
+                </td>
+                <td>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            <div id="target"></div>
+                        ]]>
+                    </code-block>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            function handleFileSelected(event) {
+                              event.stopPropagation();
+                              event.preventDefault();
+                              let files = event.dataTransfer.files;
+                              /* ... */
+                            }
+                            function handleDragOver(event) {
+                              event.stopPropagation();
+                              event.preventDefault();
+                              event.dataTransfer.dropEffect = 'copy';
+                            }
+                            let dropTarget = document.getElementById('target');
+                            dropTarget.addEventListener('dragover', handleDragOver, false);
+                            dropTarget.addEventListener('drop', handleFileSelected, false);
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+        </table>
 
         <chapter id="file-api-lesen" title="Lesen von Dateien">
+            <p>
+                Um den Inhalt von Dateien zu lesen, muss man nämlich zunächst eine Instanz von <code>FileReader</code>
+                erzeugen. Dieser Typ stellt verschiedene Methoden für das Lesen von Dateien zur Verfügung:
+            </p>
 
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Methode
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            readAsBinaryString()
+                        </code>
+                    </td>
+                    <td>
+                        Liest die Daten als binäre Zeichenfolge ein.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            readAsText()
+                        </code>
+                    </td>
+                    <td>
+                        Liest die Daten als Text ein.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            readAsDataURL()
+                        </code>
+                    </td>
+                    <td>
+                        Liest die Daten als Daten-URL ein (siehe Kasten).
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            readAsArrayBuffer()
+                        </code>
+                    </td>
+                    <td>
+                        Liest die Daten als Array-Buffer ein.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            abort()
+                        </code>
+                    </td>
+                    <td>
+                        Bricht den Lesevorgang ab.
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                Ruft man eine dieser Methoden auf, wird man nach erfolgreichem Einlesen der Datei über das
+                <code>load</code>-Event benachrichtigt, ein entsprechend zuvor definierter Event-Handler oder
+                registrierter Event-Listener vorausgesetzt. Wurde das <code>load</code>-Event ausgelöst, steht zudem der
+                Inhalt der Datei über die Eigenschaft <code>result</code> (ebenfalls an der entsprechenden
+                <code>FileReader</code>-Instanz) zur Verfügung. Zusätzlich zm <code>load</code>-Event bzw. dem
+                entsprechenden <code>onload</code>-Event-Handler stehen weitere Event-Handler (bzw. entsprechende
+                Events) zur Verfügung:
+            </p>
+
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Event
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            onabort
+                        </code>
+                    </td>
+                    <td>
+                        Handler für das <code>abort</code>-Ereignis, welches ausgelöst wird, wenn der Lesevorgang
+                        abgebrochen wurde.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            onerror
+                        </code>
+                    </td>
+                    <td>
+                        Handler für das <code>error</code>-Ereignis, welches ausgelöst wird, wenn ein Fehler beim
+                        Lesevorgang aufgetreten ist.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            onload
+                        </code>
+                    </td>
+                    <td>
+                        Handler für das <code>load</code>-Ereignis, welches ausgelöst wird, wenn der Lesevorgang
+                        erfolgreich abgeschlossen wurde.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            onloadstart
+                        </code>
+                    </td>
+                    <td>
+                        Handler für das <code>loadstart</code>-Ereignis, welches ausgelöst wird, wenn der Lesevorgang
+                        gestartet wurde.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            onloadend
+                        </code>
+                    </td>
+                    <td>
+                        Handler für das <code>loadend</code>-Ereignis, welches ausgelöst wird, wenn der Lesevorgang
+                        abgeschlossen wurde.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            onprogress
+                        </code>
+                    </td>
+                    <td>
+                        Handler für das <code>progress</code>-Ereignis, welches während des Lesevorgangs ausgelöst wird,
+                        um über den Fortschritt zu informieren.
+                    </td>
+                </tr>
+            </table>
+
+            <code-block collapsed-title="Beispiel: Laden von Bildern" collapsible="true" lang="javascript">
+                <![CDATA[
+                    function handleFileSelected(event) {
+                      let files = event.target.files;
+                      for (let i = 0; i < files.length; i++) {
+                        let file = files[i];
+                        let reader = new FileReader();
+                        if(file.type.match('image.*')) {
+                          reader.onload = (event) => {
+                            let span = document.createElement('span');
+                            span.innerHTML = '<img class="thumbnail" src="' + reader.result + '"/>';
+                            document.getElementById('list').insertBefore(span, null);
+                          };
+                          reader.readAsDataURL(file);
+                        }
+                      }
+                    }
+                    document.getElementById('files').addEventListener('change', handleFileSelected, false);
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="file-api-lesefortschritt-ueberwachen" title="Den Lesefortschritt überwachen">
+            <p>
+                Besonders wenn große Dateien über die File API gelesen werden sollen, ist es hilfreich, Nutzern den
+                Fortschritt des Lesens mitzuteilen. Dazu bietet die File API bzw. der Typ <code>FileReader</code>,
+                den Event-Handler <code>onprogress</code> an. Das entsprechende <code>Event</code>-Objekt, welches
+                hierbei versendet wird, ist vom Typ <code>ProgressEvent</code> (siehe
+                <a href="https://www.w3.org/TR/progress-events/"/>) und enthält u. a. die beiden Eigenschaften
+                <code>loaded</code> und <code>total</code>, welche die geladene Anzahl an Bytes und die komplette Anzahl
+                an Bytes für die jeweilige Datei enthalten.
+            </p>
 
+            <tip>
+                Mehr zu diesem Thema hier:
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/FileReader/progress_event"/>
+            </tip>
         </chapter>
     </chapter>
 
