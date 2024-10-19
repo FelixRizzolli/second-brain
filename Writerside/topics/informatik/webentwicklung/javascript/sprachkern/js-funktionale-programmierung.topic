@@ -1422,9 +1422,251 @@
     </chapter>
 
     <chapter id="reaktiv" title="Funktionale reaktive Programmierung">
+        <p>
+            Bei der funktionalen Programmierung liegt zum einen der Fokus auf Funktionen und ihrer Wiederverwendung
+            (beispielsweise durch Komposition, partielle Auswertung oder Currying), zum anderen arbeiten Funktionen im
+            besten Fall ohne Nebenwirkungen auf Datenstrukturen und liefern als Ergebnis neue Datenstrukturen zurück.
+            Zum Einsatz kommen dabei beispielsweise Methoden wie <code>map()</code>, <code>filter()</code> oder
+            <code>reduce()</code>.
+        </p>
+
+        <p>
+            Bei der reaktiven Programmierung handelt es sich um ein Programmierparadigma, bei dem Zustandsänderungen
+            innerhalb eines Softwaresystems über Datenflüsse bzw. Datenströme an andere Komponenten des Systems
+            propagiert werden. Dabei kommen in der Regel Entwurfsmuster wie das <b>Observer-Pattern</b> oder das
+            <b>Publish-Subscribe-Pattern</b> zum Einsatz. Einzelne Komponenten registrieren sich als Observer an den
+            Datenströmen (die übrigens auch als Observable bezeichnet werden), um über neue Daten informiert zu werden.
+        </p>
+
+        <img alt="Funktionale reaktive Programmierung" src="js-sprachkern-funktionale-reaktive-programmierung.png"/>
+
+        <p>
+            Die funktionale reaktive Programmierung kombiniert die funktionale und die reaktive Programmierung, indem
+            sich auf den Datenströmen funktionale Operationen wie die Methoden <code>map()</code>, <code>filter()</code>
+            und <code>reduce()</code> anwenden lassen.
+        </p>
+
+        <p>
+            Im Zusammenhang mit der reaktiven Programmierung wird häufig auch der Begriff der reaktiven Systeme
+            genannt. Diese haben laut dem 2013 verfassten reaktiven Manifest
+            <a href="http://www.reactivemanifesto.org/"/> folgende vier wesentliche Eigenschaften:
+        </p>
+
+        <list>
+            <li>
+                Reaktive Systeme sind <b>antwortbereit</b> (englisch responsive), sprich, Antworten werden innerhalb
+                einer akzeptablen Zeit gegeben, und eventuelle Fehler werden schnell erkannt.
+            </li>
+            <li>
+                Reaktive Systeme sind <b>widerstandsfähig</b> (englisch resilient), sprich, sie bleiben im Falle eines
+                Fehlers weiterhin antwortbereit.
+            </li>
+            <li>
+                Reaktive Systeme sind <b>elastisch</b> (englisch elastic), sprich, sie skalieren gut und bleiben auch
+                bei unterschiedlichen Lastbedingungen antwortbereit.
+            </li>
+            <li>
+                Reaktive Systeme sind <b>nachrichtenorientiert</b> (englisch message-driven), sprich, sie entkoppeln
+                einzelne Komponenten durch asynchrone Nachrichtenübermittlung.
+            </li>
+        </list>
+
+        <p>
+            Auch wenn im »Reaktiven Manifest« nicht explizit die Rede vom reaktiven Programmierparadigma ist,
+            erleichtert dieses Paradigma die Entwicklung reaktiver Systeme.
+        </p>
 
         <chapter id="reaktiv-reactivex-und-rxjs" title="ReactiveX und RxJS">
+            <p>
+                Eine API für die Programmierung mit Datenströmen existiert in Form von ReactiveX
+                <a href="http://reactivex.io/"/>). Implementierungen dieser API stehen für verschiedene
+                Programmiersprachen wie Java, C#, Scala, Clojure, C++, Ruby, Python, Groovy, Swift und PHP zur
+                Verfügung (siehe <a href="http://reactivex.io/languages.html/"/>).
+            </p>
 
+            <p>
+                Für JavaScript ist die Bibliothek RxJS (<a href="https://github.com/ReactiveX/RxJS"/>) eine der
+                bekannteren Implementierungen von ReactiveX, die sowohl unter Node.js als auch im Browser verwendet
+                werden kann.
+            </p>
+
+            <img alt="ReactiveX und RxJS" src="js-sprachkern-rxjs.png"/>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    const Rx = require('rxjs');
+                    const array = [ '1', 'Max', '2', '3', '4', '5', 'IoT', '6', '7', '8','9' ];
+                    const stream = Rx.Observable.from(array);
+
+                    stream
+                      .map(x => parseInt(x))
+                      .filter(x => !isNaN(x))
+                      .reduce((x, y) => x + y)
+                      .subscribe(
+                        x => console.log(x),
+                         error => console.error(error),
+                         () => console.log('Fertig')
+                      );
+                ]]>
+            </code-block>
+
+            <p>
+                Auf den Datenströmen, die durch die <code>Observable</code>-Objekte repräsentiert werden, können dann
+                verschiedene Operationen bzw. Methoden aufgerufen werden:
+            </p>
+
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Methode
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            concat()
+                        </code>
+                    </td>
+                    <td>
+                        Konkateniert eine Reihe von Datenströmen.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            count()
+                        </code>
+                    </td>
+                    <td>
+                        Zählt die Elemente in einem Datenstrom, die ein bestimmtes Kriterium erfüllen.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            delay()
+                        </code>
+                    </td>
+                    <td>
+                        Verzögert einen Datenstrom um eine bestimmte Zeit.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            every()
+                        </code>
+                    </td>
+                    <td>
+                        Prüft, ob alle Elemente in einem Datenstrom ein bestimmtes Kriterium erfüllen.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            filter()
+                        </code>
+                    </td>
+                    <td>
+                        Filtert die Elemente in einem Datenstrom anhand eines bestimmten Kriteriums.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            find()
+                        </code>
+                    </td>
+                    <td>
+                        Sucht nach dem ersten Vorkommen eines Elements, das ein bestimmtes Kriterium erfüllt.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            first()
+                        </code>
+                    </td>
+                    <td>
+                        Sucht nach dem ersten Vorkommen eines Elements, das ein bestimmtes Kriterium erfüllt.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            mergeMap()
+                        </code>
+                    </td>
+                    <td>
+                        Mappt jedes Element eines Datenstroms in einen neuen Datenstrom und fügt die resultierenden
+                        Datenströme zusammen.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            last()
+                        </code>
+                    </td>
+                    <td>
+                        Sucht nach dem letzten Vorkommen eines Elements, das ein bestimmtes Kriterium erfüllt.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            map()
+                        </code>
+                    </td>
+                    <td>
+                        Mappt jedes Element in einem Datenstrom auf ein neues Element.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            reduce()
+                        </code>
+                    </td>
+                    <td>
+                        Akkumuliert die Elemente in einem Datenstrom zu einem einzelnen Wert.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            skip()
+                        </code>
+                    </td>
+                    <td>
+                        Überspringt eine bestimmte Anzahl an Elementen in einem Datenstrom.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            takeUntil()
+                        </code>
+                    </td>
+                    <td>
+                        Liefert die Elemente eines Datenstroms so lange, bis der übergebene Datenstrom ein Element
+                        erzeugt.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            takeWhile()
+                        </code>
+                    </td>
+                    <td>
+                        Liefert die Elemente eines Datenstroms so lange, wie ein bestimmtes Kriterium erfüllt ist.
+                    </td>
+                </tr>
+            </table>
         </chapter>
     </chapter>
 
