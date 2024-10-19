@@ -9,7 +9,20 @@
 
     <!-- TODO: migrate from Confluence -->
     <chapter id="zeichenflaeche" title="Die Zeichenfläche">
+        <p>
+            Die Basis für das Zeichnen von Grafiken bildet das <code>&lt;canvas&gt;</code>-Element. Dieses Element
+            stellt sozusagen die Zeichenfläche dar, auf die man dann innerhalb des JavaScript-Codes zugreifen kann und
+            auf die sich mithilfe der Canvas API zeichnen lässt. Über die Attribute <code>width</code> und
+            <code>height</code> lassen sich die Breite und die Höhe definieren, die diese Zeichenfläche auf dem
+            Bildschirm einnehmen soll. Lässt man die Attribute weg, hat die Fläche standardmäßig eine Breite von
+            <code>300</code> Pixeln und eine Höhe von <code>150</code> Pixeln.
+        </p>
 
+        <code-block collapsed-title="Beispiel JavaScript" collapsible="true" lang="javascript">
+            <![CDATA[
+                <canvas id="canvas" width="500" height="300"></canvas>
+            ]]>
+        </code-block>
     </chapter>
 
     <chapter id="rendering-kontext" title="Der Rendering-Kontext">
