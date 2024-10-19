@@ -579,7 +579,107 @@
     </chapter>
 
     <chapter id="transformation" title="Transformationen anwenden">
+        <p>
+            Für das Transformieren von Grafikelementen innerhalb der Zeichenfläche stehen drei Operationen zur
+            Verfügung.
+        </p>
 
+        <table style="header-row">
+            <tr>
+                <td>
+                    Operation
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+                <td>
+                    Beispiel (Code)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img alt="Transformationen - Skalierung" src="js-api-canvas-transformation-skalierung.png"/>
+                </td>
+                <td>
+                    <p>
+                        Um ein Grafikelement zu skalieren, wird die Methode <code>scale()</code> verwendet. Sie erwartet
+                        als ersten Parameter den horizontalen Skalierungsfaktor und als zweiten Parameter den vertikalen
+                        Skalierungsfaktor.
+                    </p>
+
+                    <note>
+                        <p>
+                            <b>
+                                Änderung der Transformationsmatrix
+                            </b>
+                        </p>
+
+                        <p>
+                            Genau gesagt, wird durch den Aufruf von <code>scale()</code> nicht ein einzelnes
+                            Grafikelement skaliert, sondern die aktuelle Transformationsmatrix verändert. Das heißt, die
+                            Skalierungseinstellungen betreffen erst einmal alle Grafikelemente, die nach dem Aufruf der
+                            Methode auf die Zeichenfläche gezeichnet werden. Möchte man dagegen nur einzelne
+                            Grafikelemente skalieren, muss man, immer vor dem Zeichnen des jeweils nächsten Elements die
+                            Transformationsmatrix über die Aufrufe von <code>restore()</code> und <code>save()</code>
+                            wieder zurücksetzen.
+                        </p>
+                    </note>
+                </td>
+                <td>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let canvas = document.getElementById('canvas');
+                            let context = canvas.getContext('2d');
+                            context.scale(7,7);
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img alt="Transformationen - Rotation" src="js-api-canvas-transformation-rotation.png"/>
+                </td>
+                <td>
+                    <p>
+                        Für die Rotation von Grafikelementen steht die Methode <code>rotate()</code> zur Verfügung. Als
+                        Parameter erwartet diese Methode den Winkel, um den rotiert werden soll. Wie bei
+                        <code>scale()</code> hat auch die Anwendung von <code>rotate()</code> Auswirkungen auf die der
+                        Zeichenfläche zugrunde liegende Transformationsmatrix, sodass man diese gegebenenfalls wieder
+                        (wie schon bei <code>scale()</code> über Aufrufe von <code>restore()</code> und
+                        <code>save()</code>) zurücksetzen muss.
+                    </p>
+                </td>
+                <td>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let canvas = document.getElementById('canvas');
+                            let context = canvas.getContext('2d');
+                            context.rotate(7);
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img alt="Transformationen - Translation" src="js-api-canvas-transformation-translation.png"/>
+                </td>
+                <td>
+                    <p>
+                        Für die Translation steht die Methode <code>translate()</code> zur Verfügung, welche als
+                        Parameter Werte für die horizontale und die vertikale Verschiebung erwartet.
+                    </p>
+                </td>
+                <td>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let canvas = document.getElementById('canvas');
+                            let context = canvas.getContext('2d');
+                            context.translate(40, 40);
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter id="animation" title="Animationen erstellen">
