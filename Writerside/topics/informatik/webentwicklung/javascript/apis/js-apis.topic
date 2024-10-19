@@ -1556,7 +1556,59 @@
     </chapter>
 
     <chapter id="web-speech-api" title="Sprache ausgeben und Sprache erkennen">
+        <p>
+            Die Web Speech API <a href="https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html"/> bietet
+            Webentwicklern die Möglichkeit, innerhalb einer Webseite programmatisch Sprache auszugeben und Sprache zu
+            erkennen. Analog dazu definiert die API zwei Interfaces, nämlich:
+        </p>
 
+        <list>
+            <li>
+                <code>SpeechRecognition</code> für die <b>Spracherkennung</b>
+                <a href="https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html#speechreco-section"/>
+            </li>
+            <li>
+                <code>SpeechSynthesis</code> für die <b>Sprachausgabe</b>
+                <a href="https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html#tts-section"/>
+            </li>
+        </list>
+
+        <p>
+            Die API wurde von der Speech API Community Group veröffentlicht, ist allerdings weder offizieller
+            W3C-Standard noch auf dem W3C-Standard-Track (Working Draft, Candidate Recommendation, Proposed
+            Recommendation, W3C Recommendation). Das <code>SpeechRecognition</code>-Interface wird derzeit
+            ausschließlich von Chrome, Chrome Android und Opera unterstützt, das <code>SpeechSynthesis</code>-Interface
+            immerhin von Chrome, Chrome Android, Opera, Safari und iOS Safari. Der Internet Explorer, Edge und Firefox
+            dagegen unterstützen keine der beiden APIs.
+        </p>
+
+        <p>
+            Prüfen, ob Feature unterstützt wird
+        </p>
+
+        <code-block collapsed-title="worker.js" collapsible="true" lang="javascript">
+            <![CDATA[
+                if(window.speechSynthesis) {
+                  /* Sprachausgabe unterstützt */
+                } else {
+                  /* Sprachausgabe nicht unterstützt */ 
+                }
+
+                if(window.webkitSpeechRecognition) {
+                  /* Spracherkennung unterstützt */
+                } else {
+                  /* Spracherkennung nicht unterstützt */
+                }
+            ]]>
+        </code-block>
+
+        <tip>
+            Mehr zur Spracherkennung: <a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition"/>
+        </tip>
+
+        <tip>
+            Mehr zur Sprachausgabe: <a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis"/>
+        </tip>
     </chapter>
 
     <chapter id="web-animation-api" title="Animationen erstellen">
