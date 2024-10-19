@@ -9,11 +9,61 @@
 
     <!-- TODO: migrate from Confluence -->
     <chapter id="bom" title="Das BOM (Browser Object Model)">
+        <p>
+            Neben dem DOM steht in Browserlaufzeitumgebungen das sogenannte Browser Object Model (BOM oder BOM API) zur
+            Verfügung. Über dieses Objektmodell ist es möglich, bestimmte Aspekte des Browsers zu steuern
+            (beispielsweise das Vor- und Zurückgehen im Browserverlauf) und bestimmte Informationen des Browsers
+            auszulesen (wie beispielsweise Informationen zu Größe und Position des aktuellen Browserfensters).
+        </p>
 
+        <img alt="Das window-Object" src="js-browser-bom-window-object.png"/>
+
+        <p>
+            Das <code>window</code>-Objekt repräsentiert ein einzelnes Browserfenster (bzw. genauer: ein einzelnes
+            Browsertab, denn jedes Browsertab enthält eine eigene Objektinstanz). Das <code>window</code>-Objekt enthält
+            zudem auch das <code>document</code>-Objekt als Eigenschaft welches aber durch die Browser implizit auch als
+            globales Objekt bereitgestellt wird (somit wäre mit <code>window.document</code> auch der Zugriff auf das
+            <code>document</code>-Objekt möglich).
+        </p>
+
+        <p>
+            Auch die Standard-JavaScript-Objekte wie <code>Object</code>, <code>Array</code> und <code>Function</code>
+            sind Eigenschaften des <code>window</code>-Objekts, stehen aber zusätzlich als globale Variablen zur
+            Verfügung.
+        </p>
+
+        <p>
+            Darüber hinaus bildet das <code>window</code>-Objekt auch den Einstiegspunkt in verschiedene HTML5-Web-APIs,
+            beispielsweise die Application Cache API, die Storage API und viele mehr.
+        </p>
+
+        <p>
+            In der BOM API spielen vor allem folgende Objekte eine Rolle:
+        </p>
+
+        <list>
+            <li>
+                Die Eigenschaft <code>location</code> enthält Informationen zur aktuellen URL des Browserfensters. Über
+                diese Eigenschaft können Sie auf die verschiedenen Bestandteile der jeweils aktuellen URL zugreifen.
+            </li>
+            <li>
+                Die Eigenschaft <code>history</code> enthält eine Referenz auf ein Objekt vom Typ History. Hierüber
+                können Sie auf den Browserverlauf zugreifen und diesen auch verändern.
+            </li>
+            <li>
+                Die Eigenschaft <code>navigator</code> enthält eine Referenz auf ein Objekt vom Typ Navigator. Dieses
+                Objekt stellt verschiedene allgemeine Informationen des Browsers zur Verfügung, beispielsweise dessen
+                Namen, Angaben zum Hersteller etc.
+            </li>
+            <li>
+                Die Eigenschaft <code>screen</code> enthält eine Referenz auf ein Objekt vom Typ Screen, über das
+                verschiedene Informationen des Bildschirms ermittelt werden können, beispielsweise dessen Höhe und
+                Breite, die Farbtiefe, die Pixeltiefe etc.
+            </li>
+        </list>
     </chapter>
 
     <chapter id="browserinformationen" title="Browserfensterinformationen">
-
         <chapter id="browserinformationen-gruesse-und-position-eines-browserfensters"
                  title="Größe und Position eines Browserfensters">
 
