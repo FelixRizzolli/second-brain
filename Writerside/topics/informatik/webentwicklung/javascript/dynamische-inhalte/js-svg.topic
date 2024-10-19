@@ -19,7 +19,38 @@
     </chapter>
 
     <chapter id="event-listener" title="Event-Listener für SVG-Elemente registrieren">
+        <code-block lang="javascript">
+            <![CDATA[
+                'use strict';
+                function init() {
+                  let svgDocument = document.getElementById('svg');
+                  let circle = svg.getElementById('circle');
+                  circle.addEventListener('click', (e) => {
+                    console.log('Hallo Welt');
+                  });
+                  circle.addEventListener('mouseover', (e) => {
+                    circle.classList.toggle('active');
+                  });
+                  circle.addEventListener('mouseout', (e) => {
+                    circle.classList.toggle('active');
+                  });
+                }
+                window.addEventListener('DOMContentLoaded', init);
+            ]]>
+        </code-block>
 
+        <p>
+            Hierbei handelt es sich um ein Beispiel für das Registrieren von Event-Listenern an SVG-Elementen. Es
+            wird zunächst über die Methode <code>getElementById()</code> auf das eingebettete
+            <code>&lt;svg&gt;</code>-Element zugegriffen und anschließend über einen erneuten Aufruf dieser Methode
+            (diesmal auf dem gefundenen <code>&lt;svg&gt;</code>-Element) das <code>&lt;circle&gt;</code>-Element
+            ermittelt. Anschließend werden über die Methode <code>addEventListener()</code> drei verschiedene
+            Event-Listener registriert: der Event-Listener für das <code>click</code>-Event wird aufgerufen, wenn auf
+            das <code>&lt;circle&gt;</code>-Element geklickt wird, die Event-Listener für das <code>mouseover</code>-
+            und das <code>mouseout</code>-Event immer dann, wenn der Mauszeiger über dieses Element bewegt bzw. wieder
+            davon wegbewegt wird. In beiden Fällen wird jeweils die CSS-Klasse <code>active</code> hin- und
+            hergeschaltet und damit die Füllfarbe verändert.
+        </p>
     </chapter>
 
     <chapter id="svg-dynamisch-veraendern" title="SVG-Elemente dynamisch verändern">
