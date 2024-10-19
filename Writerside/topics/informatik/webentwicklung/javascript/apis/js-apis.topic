@@ -722,7 +722,157 @@
     </chapter>
 
     <chapter id="web-storage-api" title="Den Browserspeicher nutzen">
+        <p>
+            Die Web Storage API (<a href="https://www.w3.org/TR/webstorage/"/> bzw.
+            <a href="https://html.spec.whatwg.org/multipage/webstorage.html"/>) definiert eine Schnittstelle für den
+            Zugriff auf einen internen Browserspeicher. Prinzipiell gibt es dabei zwei verschiedene Arten von
+            Browserspeichern:
+        </p>
 
+        <list type="bullet">
+            <li>
+                den lokalen <b>Browserspeicher</b>, der von allen Fenstern und Tabs innerhalb des jeweiligen Browsers
+                zugänglich ist (auf den lokalen Speicher eines anderen Browsers kann man natürlich nicht zugreifen).
+            </li>
+            <li>
+                sowie den <b>Sessionspeicher</b>, der für jedes Fenster bzw. jeden Tab verschieden ist. Ein Zugriff auf
+                einen Sessionspeicher eines Fensters bzw. Tabs aus einem anderen Fenster oder Tab ist daher nicht
+                möglich.
+            </li>
+        </list>
+
+        <p>
+            Auf Ersteren, d. h. auf den lokalen Speicher, kann über das globale Objekt <code>localStorage</code> (bzw.
+            <code>window.localStorage</code>) zugegriffen werden, auf Letzteren, den Sessionspeicher, über das ebenfalls
+            globale Objekt <code>sessionStorage</code> (bzw. <code>window.sessionStorage</code>). Bezüglich der API sind
+            beide Browserspeicher identisch, d.h., beide verfügen über die gleichen Methoden und Eigenschaften (die
+            entsprechenden die Browserspeicher repräsentierenden Objekte sind beide vom Typ <code>Storage</code>).
+        </p>
+
+        <table style="header-row">
+            <tr>
+                <td>
+                    Eigenschaft/Methode
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        length
+                    </code>
+                </td>
+                <td>
+                    <p>
+                        Enthält die Anzahl der Elemente in dem Storage.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        clear()
+                    </code>
+                </td>
+                <td>
+                    <p>
+                        Entfernt alle Schlüssel-Wert-Paare aus dem Storage.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        getItem(key)
+                    </code>
+                </td>
+                <td>
+                    <p>
+                        Liefert für einen Schlüssel den entsprechenden Wert aus dem Storage.
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let firstname = localStorage.getItem('username');
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        key(index)
+                    </code>
+                </td>
+                <td>
+                    <p>
+                        Liefert den Namen des Schlüssels an Position index aus dem Storage.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        removeItem(key)
+                    </code>
+                </td>
+                <td>
+                    <p>
+                        Entfernt – falls vorhanden – das Schlüssel-Wert-Paar für den übergebenen Schlüssel aus dem
+                        Storage.
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            localStorage.removeItem('username');
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        setItem(key, value)
+                    </code>
+                </td>
+                <td>
+                    <p>
+                        Fügt für den entsprechenden Schlüssel einen Wert in den Storage oder – für den Fall, dass
+                        bereits ein gleichnamiger Schlüssel existiert – überschreibt den mit dem Schlüssel assoziierten
+                        Wert. Bei dem zu speichernden Wert darf es sich ausschließlich um eine Zeichenkette handeln, das
+                        bedeutet, Objekte sollten per <code>JSON.stringify()</code> in eine solche umgewandelt werden,
+                        bevor diese gespeichert werden können.
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            localStorage.setItem('username', 'Max Mustermann');
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            Um auf Änderungen im Browserspeicher zu reagieren, kann über die Methode <code>addEventListener()</code> des
+            <code>window</code>-Objekts einen Event-Listener für das <code>storage</code>-Event registriert werden.
+            Dieses Event wird immer dann ausgelöst, wenn sich der Browserspeicher (entweder im <code>localStorage</code>
+            oder im <code>sessionStorage</code>) ändert.
+        </p>
+
+        <code-block lang="javascript">
+            <![CDATA[
+                window.addEventListener('storage', (e) => {
+                  console.log(e.key);             // Schlüssel des aktualisierten Eintrags
+                  console.log(e.oldValue);        // alter Wert
+                  console.log(e.newValue);        // neuer Wert
+                  console.log(e.url)              // die URL des Dokuments, für das ein Eintrag geändert wurde
+                  console.log(e.storageArea);     // das Storage-Objekt, welches geändert wurde
+                });
+            ]]>
+        </code-block>
     </chapter>
 
     <chapter id="indexed-database-api" title="Die Browserdatenbank nutzen">
