@@ -1168,13 +1168,263 @@
     </chapter>
 
     <chapter id="browser-erkennen-und-browserfeatures-bestimmen" title="Browser erkennen und Browserfeatures bestimmen">
+        <p>
+            Für allgemeine Informationen des Browsers (wie beispielsweise Browsername, Browserhersteller etc.) steht die
+            Eigenschaft <code>navigator</code> des <code>window</code>-Objekts zur verfügung.
+        </p>
+
+        <table style="header-row">
+            <tr>
+                <td>
+                    Eigenschaft
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        appCodeName
+                    </code>
+                </td>
+                <td>
+                    Enthält den internen Codenamen des aktuellen Browsers (nicht zuverlässig, da in jedem Browser der
+                    Wert Mozilla zurückgegeben wird).
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        appName
+                    </code>
+                </td>
+                <td>
+                    Enthält den offiziellen Namen des aktuellen Browsers (nicht zuverlässig, da in jedem Browser der
+                    Wert Netscape ausgegeben wird).
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        appVersion
+                    </code>
+                </td>
+                <td>
+                    Enthält die Versionsnummer des aktuellen Browsers (nicht zuverlässig).
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        battery
+                    </code>
+                </td>
+                <td>
+                    Enthält eine Referenz auf ein Objekt vom Typ <code>BatteryManager</code>, welches den Einstiegspunkt
+                    in die Battery Status API bietet.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        cookieEnabled
+                    </code>
+                </td>
+                <td>
+                    Enthält eine Angabe darüber, ob Cookies aktiviert sind oder nicht.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        geolocation
+                    </code>
+                </td>
+                <td>
+                    Enthält eine Referenz auf ein Objekt vom Typ <code>Geolocation</code>, welches den Einstiegspunkt in
+                    die Geolocation API bietet.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        language
+                    </code>
+                </td>
+                <td>
+                    Enthält eine Zeichenkette, welche die bevorzugte Sprache des Nutzers angibt. In der Regel ist dies
+                    die Sprache, welche auch innerhalb der Oberfläche des jeweiligen Browsers verwendet wird. Falls
+                    keine bevorzugte Sprache ermittelt werden konnte, enthält diese Eigenschaft den Wert
+                    <code>null</code>.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        languages
+                    </code>
+                </td>
+                <td>
+                    Enthält eine Liste von Zeichenketten, welche die bevorzugten Sprachen des Nutzers angeben, wobei die
+                    am meisten bevorzugte Sprache an erster Position steht (und der Sprache entspricht, die auch in der
+                    Eigenschaft language enthalten ist).
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        mimeTypes
+                    </code>
+                </td>
+                <td>
+                    Enthält eine Liste von Informationen zu MIME-Typen, die vom Browser unterstützt werden.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        onLine
+                    </code>
+                </td>
+                <td>
+                    boolesche Angabe darüber, ob der Browser mit dem Internet verbunden ist oder nicht.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        platform
+                    </code>
+                </td>
+                <td>
+                    Enthält Angaben zum verwendeten Betriebssystem (nicht zuverlässig).
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        plugins
+                    </code>
+                </td>
+                <td>
+                    Enthält eine Liste von Informationen zu Plugins, die vom Browser unterstützt werden.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        product
+                    </code>
+                </td>
+                <td>
+                    Enthält den Produktnamen des aktuellen Browsers. Allerdings wird aus Gründen der
+                    Abwärtskompatibilität in jedem Browser der Wert Gecko zurückgegeben.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        productSub
+                    </code>
+                </td>
+                <td>
+                    Enthält die Unterbezeichnung des aktuellen Browsers (einen der beiden Werte <code>20030107</code>
+                    und <code>20100101</code>).
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        serviceWorker
+                    </code>
+                </td>
+                <td>
+                    Enthält eine Referenz auf ein Objekt vom Typ <code>ServiceWorkerContainer</code>, welches den
+                    Einstiegspunkt in die Service Worker API bietet.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        userAgent
+                    </code>
+                </td>
+                <td>
+                    Enthält eine Zeichenkette, die den verwendeten Browser identifiziert. Mittlerweile jedoch mit
+                    Vorsicht zu genießen (siehe Hinweiskasten).
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        vendor
+                    </code>
+                </td>
+                <td>
+                    Enthält Angaben zum Browserhersteller (einen der Werte Apple Computer, Inc. und Google Inc. oder
+                    eine leere Zeichenkette).
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        vendorSub
+                    </code>
+                </td>
+                <td>
+                    eigentlich für weitere Angaben zum Browserhersteller vorgesehen, enthält aber immer eine leere
+                    Zeichenkette.
+                </td>
+            </tr>
+        </table>
 
         <chapter id="browser-detection" title="Browser Detection">
+            <p>
+                Das <code>navigator</code>-Objekt wurde vor einiger Zeit noch häufig dazu genutzt, um über die
+                Eigenschaft <code>userAgent</code> Rückschlüsse auf den verwendeten Browser zu ziehen, um dadurch zu
+                bestimmen, welche Features der entsprechende Browser unterstützt, und abhängig davon bestimmten
+                JavaScript-Code auszuführen. Diese Technik nennt man <b>Browser Detection</b> oder auch
+                <b>Browser Sniffing</b>.
+            </p>
 
+            <p>
+                Mittlerweile verwenden die Browser aber keine eindeutigen Werte mehr für diese Eigenschaft, sodass
+                man keine Rückschlüsse mehr auf den verwendeten Browser ziehen kann. Beispielsweise liefert die
+                Eigenschaft in Chrome den Wert <code> Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5)
+                AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36</code>, was alles andere
+                als eindeutig ist, weil hier direkt verschiedene Browsernamen auftauchen.
+            </p>
+
+            <p>
+                Dies ist auch der Grund, warum man heutzutage nicht mehr die Browser-Detection-Technik verwendet, um
+                Rückschlüsse darauf zu ziehen, welche Features der Browser unterstützt.
+            </p>
         </chapter>
 
         <chapter id="feature-detection" title="Feature Detection">
+            <p>
+                Feature Detection, bei der direkt nach dem Feature gesucht wird. Oder anders gesagt: Es ist für einen
+                Webentwickler in der Regel gar nicht interessant, welchen konkreten Browser ein Nutzer verwendet,
+                sondern viel interessanter, welche Features dieser Browser unterstützt.
+            </p>
 
+            <p>
+                Beispielsweise kann davon ausgegangen werden, dass ein Browser die neue History API unterstützt, wenn
+                das <code>history</code>-Objekt über eine Methode <code>pushState()</code> verfügt. Bei der Feature
+                Detection wird also direkt getestet, ob bestimmte JavaScript-Objekte über bestimmte Eigenschaften oder
+                Methoden verfügen, die bezeichnend für das entsprechende Feature sind.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    if(window.history.pushState) {
+                      // History API unterstützt
+                    } else {
+                      // History API nicht unterstützt
+                    }
+                ]]>
+            </code-block>
         </chapter>
     </chapter>
 
