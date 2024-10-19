@@ -275,21 +275,465 @@
     </chapter>
 
     <chapter id="debugging" title="Den Code debuggen">
+        <tip>
+            Grundlegendes zu Debugging: <a href="swe-pk-errorhandling.topic#debuggen"/>
+        </tip>
+
+        <p>
+            So wie nahezu jeder Browserhersteller eine eigene JavaScript-Laufzeitumgebung verwendet, gibt es auch für
+            jeden Browser ein eigenes Debugging-Tool. Bei serverseitiger Anwendungsentwicklung mit JavaScript gibt es
+            Node.js den integrierten Node.js Inspector. Alternativ dazu bieten auch viele der Entwicklungsumgebungen und
+            Editoren Debugging-Tools an. Ein anderer Weg zu debuggen ist simple Ausgaben auf die Konsole zu schreiben.
+            Dies ist in den meisten Fällen zwar nicht die beste Art zu debuggen, aber trotzdem oft sehr hilfreich.
+        </p>
 
         <chapter id="debugging-console" title="Das »console«-Objekt">
+            <p>
+                Beim <code>console</code>-Objekt handelt es sich um ein Objekt, das erstmals durch das Firefox-Plugin
+                Firebug eingeführt wurde und mit dem es möglich ist, auf die Standardausgabe zu schreiben. Mittlerweile
+                steht das <code>console</code>-Objekt (obwohl immer noch nicht im Standard enthalten) in nahezu jeder
+                JavaScript-Laufzeitumgebung zur Verfügung.
+            </p>
 
+            <p>
+                Die einzelnen Methoden, die das Objekt zur Verfügung stellt, unterscheiden sich jedoch von
+                Laufzeitumgebung zu Laufzeitumgebung. Um dem entgegenzuwirken, gibt es daher bereits Bestrebungen, die
+                API zu standardisieren. Von jeder Laufzeitumgebung werden folgende Methoden des
+                <code>console</code>-Objekts unterstützt:
+            </p>
+
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Methode
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            clear()
+                        </code>
+                    </td>
+                    <td>
+                        Leert die Konsole.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            debug()
+                        </code>
+                    </td>
+                    <td>
+                        Erwartet ein oder mehrere Objekte und gibt diese auf der Konsole aus.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            error()
+                        </code>
+                    </td>
+                    <td>
+                        Erwartet wie <code>debug()</code> ein oder mehrere Objekte und gibt diese als Fehler auf der
+                        Konsole aus. In Browsern wird innerhalb der Konsole oft ein Fehler-Icon neben der ausgegebenen
+                        Meldung dargestellt sowie der Fehler-Stack ausgegeben.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            info()
+                        </code>
+                    </td>
+                    <td>
+                        Hiermit werden die übergebenen Objekte als Info-Meldung auf die Konsole ausgegeben. Chrome
+                        beispielsweise gibt zusätzlich ein Info-Icon mit aus.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            log()
+                        </code>
+                    </td>
+                    <td>
+                        Die wohl am häufigsten verwendete Methode von <code>console</code>. Loggt die übergebenen
+                        Objekte auf die Konsole.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            trace()
+                        </code>
+                    </td>
+                    <td>
+                        Gibt den Stack-Trace, also den Methodenaufruf-Stack, auf die Konsole aus.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            warn()
+                        </code>
+                    </td>
+                    <td>
+                        Gibt die übergebenen Objekte als Warnung auf die Konsole aus. Auch hier wird in den meisten
+                        Browsern ein entsprechendes Icon neben der Meldung ausgegeben.
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                Aber wie gesagt: Nicht alle Laufzeitumgebungen bieten alle Methoden an. Eine Übersicht, welche Methoden
+                zur Verfügung stehen, ist auf den Dokumentationsseiten der jeweiligen Laufzeitumgebung zu finden:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    Chrome <a href="https://developer.chrome.com/docs/devtools/console/"/>
+                </li>
+                <li>
+                    Firefox <a href="https://developer.mozilla.org/en-US/docs/Web/API/console"/>
+                </li>
+                <li>
+                    Node.js <a href="https://nodejs.org/api/console.html"/>
+                </li>
+            </list>
         </chapter>
 
         <chapter id="debugging-breakpoints" title="Haltepunkte">
+            <p>
+                Haltepunkte (auch Breakpoints genannt) sind Punkte an denen die Ausführung des jeweiligen Programms
+                angehalten werden soll. Haltepunkte geben dem Entwickler die Möglichkeit, zu einem bestimmten Zeitpunkt
+                in ein Programm »hineinzuspringen« und ab dem entsprechenden Haltepunkt die folgenden Anweisungen
+                Schritt für Schritt auszuführen. Wurde das Programm angehalten, hat man die Möglichkeit, die jeweiligen
+                Variablenbelegungen, sprich die aktuellen Werte von Variablen, einzusehen. Es ist auch möglich innerhalb
+                eines Programms mehrere Haltepunkte zu definieren. Haltepunkte sind dabei nicht auf eine einzige
+                Quelltextdatei beschränkt, sondern können beliebig innerhalb eines Programms verwendet werden, auch wenn
+                das Programm aus mehreren Quelltextdateien besteht.
+            </p>
 
+            <p>
+                Neben »normalen« Haltepunkten, an denen ein Programm immer anhält, wenn die entsprechende Codezeile
+                erreicht wird, gibt es noch verschiedene Typen von Haltepunkten:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    <b>Bedingte Haltepunkte</b> erlauben es, die Ausführung an der entsprechenden Codezeile nur dann
+                    anzuhalten, wenn die mit dem Haltepunkt assoziierte Bedingung erfüllt ist.
+                </li>
+                <li>
+                    <b>DOM-Haltepunkte</b> erlauben es, die Ausführung anzuhalten, wenn der Inhalt einer Webseite
+                    dynamisch verändert wurde.
+                </li>
+                <li>
+                    <b>Event-Listener-Haltepunkte</b> erlauben es, die Ausführung dann anzuhalten, wenn ein bestimmtes
+                    Ereignis innerhalb einer Webseite ausgelöst wurde.
+                </li>
+                <li>
+                    <b>XHR-Haltepunkte</b> erlauben es, die Ausführung dann anzuhalten, wenn ein sogenannter Ajax-Aufruf
+                    ausgeführt wird.
+                </li>
+            </list>
         </chapter>
 
         <chapter id="debugging-commandline" title="Mit der Kommandozeile arbeiten">
+            <p>
+                Browsertools wie die Chrome Developer Tools, Firebug oder die Entwicklertools von Safari gehören zu den
+                Standardwerkzeugen eines jeden Webentwicklers. Sei es, um den DOM-Baum einer Webseite zu inspizieren,
+                Ausgaben auf der Konsole zu erzeugen, Ausdrücke und Funktionsaufrufe auszuwerten oder um Breakpoints für
+                das Debuggen zu definieren, den JavaScript-Code einer Webanwendung Schritt für Schritt durchzugehen, die
+                Anwendung zu profilen und den Netzwerkverkehr zu beobachten.
+            </p>
 
+            <p>
+                Dass diese Tools verschiedene Funktionalitäten auch per JavaScript zur Verfügung stellen, wissen
+                allerdings nur die wenigsten Entwickler. Gute Gelegenheit also, im Folgenden einmal einen kurzen
+                Überblick über die relativ unbekannte Command Line API zu geben, die beispielsweise von.
+            </p>
+
+            <list type="bullet">
+                <li>
+                    Chrome <a href="https://developer.chrome.com/devtools/docs/commandline-api"/>
+                </li>
+                <li>
+                    Safari <a
+                        href="https://developer.apple.com/library/mac/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Console/Console.html"/>
+                </li>
+                <li>
+                    Firefox <a href="https://developer.mozilla.org/en-US/docs/Tools/Web_Console"/> in den jeweiligen
+                    Entwicklertools unterstützt wird.
+                </li>
+            </list>
+
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Methode/Eigenschaft
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            $(selector)
+                        </code>
+                    </td>
+                    <td>
+                        Alias für <code>document.querySelector()</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            $$(selector)
+                        </code>
+                    </td>
+                    <td>
+                        Alias für <code>document.querySelectorAll()</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            $x(xpath)
+                        </code>
+                    </td>
+                    <td>
+                        Liefert die Elemente, die auf den übergebenen XPath zutreffen.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            $0
+                        </code>
+                    </td>
+                    <td>
+                        Enthält den aktuell in der DOM-Baum-Ansicht selektierten Knoten.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            $1..4
+                        </code>
+                    </td>
+                    <td>
+                        Enthält die zuletzt in der DOM-Baum-Ansicht selektierten Knoten.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            $_
+                        </code>
+                    </td>
+                    <td>
+                        Enthält das Ergebnis des zuletzt ausgewerteten Ausdrucks.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            clear()
+                        </code>
+                    </td>
+                    <td>
+                        Leert die Konsole.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            copy(object)
+                        </code>
+                    </td>
+                    <td>
+                        Kopiert die String-Repräsentation eines Objekts in die Zwischenablage.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            debug(function)
+                        </code>
+                    </td>
+                    <td>
+                        Veranlasst den Debugger, bei Aufruf der übergebenen Funktion anzuhalten.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            dir(object)
+                        </code>
+                    </td>
+                    <td>
+                        Gibt alle Eigenschaften des übergebenen Objekts aus (Alias für <code>console.dir()</code>).
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            dirxml(object)
+                        </code>
+                    </td>
+                    <td>
+                        Gibt die XML-Repräsentation des übergebenen Objekts aus (Alias für
+                        <code>console.dirxml()</code>).
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            getEventListeners(object)
+                        </code>
+                    </td>
+                    <td>
+                        Liefert die für ein Objekt registrierten Event-Listener zurück.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            inspect(object/function)
+                        </code>
+                    </td>
+                    <td>
+                        Öffnet die DOM-Baum-Ansicht und selektiert dort das jeweilige Element, welches übergeben wurde
+                        oder welches von der übergebenen Funktion zurückgegeben wird.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            keys(object)
+                        </code>
+                    </td>
+                    <td>
+                        Liefert ein Array zurück, das die Namen der Eigenschaften eines Objekts enthält.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            monitor(function)
+                        </code>
+                    </td>
+                    <td>
+                        Sorgt dafür, dass bei Aufruf der übergebenen Funktion eine entsprechende Konsolenausgabe
+                        inklusive der jeweils übergebenen Argumente erzeugt wird.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            monitorEvents(object[, events])
+                        </code>
+                    </td>
+                    <td>
+                        Startet das Monitoring von Events, die von einem Objekt ausgelöst werden.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            profile([title])
+                        </code>
+                    </td>
+                    <td>
+                        Start den JavaScript-Profiler. Optional kann dabei ein Titel übergeben werden, der an
+                        entsprechender Stelle im Profiling-Report erscheinen soll.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            profileEnd()
+                        </code>
+                    </td>
+                    <td>
+                        Stoppt den JavaScript-Profiler und erstellt einen entsprechenden Report.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            table(data [, columns])
+                        </code>
+                    </td>
+                    <td>
+                        Gibt das übergebene Objekt in Tabellenform aus.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            undebug(function)
+                        </code>
+                    </td>
+                    <td>
+                        Stoppt das Debuggen einer Funktion.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            unmonitor(function)
+                        </code>
+                    </td>
+                    <td>
+                        Stoppt das Monitoring einer Funktion.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            unmonitorEvents(object[, types])
+                        </code>
+                    </td>
+                    <td>
+                        Stoppt das Monitoring für die übergebenen Events am übergebenen Objekt.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            values(object)
+                        </code>
+                    </td>
+                    <td>
+                        Liefert die Werte aller Eigenschaften eines Objekts als Array zurück.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter id="debugging-documentation" title="Dokumentationen fürs Debugging">
-
+            <list type="bullet">
+                <li>
+                    VSCode: <a href="https://code.visualstudio.com/docs/nodejs/debugging-recipes"/>
+                </li>
+                <li>
+                    Chrome: <a href="https://developer.chrome.com/docs/devtools/javascript/"/>
+                </li>
+                <li>
+                    Edge (Chromium):
+                    <a href="https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/javascript/"/>
+                </li>
+                <li>
+                    Mozilla Firefox: <a href="https://firefox-source-docs.mozilla.org/devtools-user/debugger/"/>
+                </li>
+            </list>
         </chapter>
     </chapter>
 
