@@ -1188,7 +1188,98 @@
     </chapter>
 
     <chapter id="drag-and-drop-api" title="Komponenten einer Webseite verschieben">
+        <p>
+            Unter dem Begriff Drag &amp; Drop versteht man das »Ziehen« und »Ablegen« von Bildschirmelementen, bezogen
+            auf Webseiten also das Ziehen und Ablegen von Elementen einer Webseite. Um eine Drag-and-Drop-Operation
+            auszuführen, klickt man auf das jeweilige Element, hält dann die Maustaste gedrückt, zieht das Element an
+            die gewünschte Position und lässt die Maustaste wieder los, um das Element an der Zielposition abzulegen.
+        </p>
 
+        <img alt="" src=""/>
+
+        <p>
+            Während einer Drag-and-Drop-Operation wird eine Reihe verschiedener Ereignisse ausgelöst. Zu Beginn einer
+            Drag-and-Drop-Operation wird das <code>dragstart</code>-Event ausgelöst und kurz danach das
+            <code>dragenter</code>-Event, beide auf dem Element, welches verschoben werden soll (auch Drag Source
+            genannt). Wird das Element dann über andere Elemente der Webseite hinweggezogen, werden hierbei folgende
+            Ereignisse ausgelöst: <code>dragenter</code> beim »Betreten« des jeweils anderen Elements,
+            <code>dragover</code>, während sich das gezogene Element über dem anderen Element befindet, und
+            <code>dragleave</code> beim »Verlassen« des anderen Elements. Wird das gezogene Element auf dem
+            Zielelement (Drop Target) losgelassen, löst dies auf diesem Element das <code>drop</code>-Event aus und auf
+            dem gezogenen Element das <code>dragend</code>-Event.
+        </p>
+
+        <table style="header-row">
+            <tr>
+                <td>
+                    Event
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        dragstart
+                    </code>
+                </td>
+                <td>
+                    Wird ausgelöst, wenn begonnen wird, ein Element zu ziehen.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        drag
+                    </code>
+                </td>
+                <td>
+                    Wird kontinuierlich ausgelöst, während ein Element gezogen wird.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        dragend
+                    </code>
+                </td>
+                <td>
+                    Wird ausgelöst, wenn ein gezogenes Element wieder losgelassen wird.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        dragenter
+                    </code>
+                </td>
+                <td>
+                    Wird für ein Element ausgelöst, wenn dieses während des Ziehens »betreten« wird.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        dragover
+                    </code>
+                </td>
+                <td>
+                    Wird kontinuierlich für ein Element ausgelöst, wenn man sich während des Ziehens innerhalb des
+                    Elements befindet.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        dragleave
+                    </code>
+                </td>
+                <td>
+                    Wird für ein Element ausgelöst, wenn während des Ziehens das Element »verlassen« wird.
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter id="parallelisieren" title="Aufgaben parallelisieren">
