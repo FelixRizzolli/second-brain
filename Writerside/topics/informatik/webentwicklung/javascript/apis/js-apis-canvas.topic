@@ -101,7 +101,67 @@
     </chapter>
 
     <chapter id="rechtecke" title="Rechtecke zeichnen">
+        <p>
+            Rechtecke sind die einzige geometrische Grundform, für welche die Canvas API spezielle Methoden definiert,
+            alle anderen geometrischen Formen wie Kreise, Dreiecke etc. müssen über sogenannte Pfade selbst gezeichnet
+            werden.
+        </p>
 
+        <img alt="Rechteck" src="js-apis-canvas-rechtecke.png"/>
+
+        <table style="header-row">
+            <tr>
+                <td>
+                    Methode
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        fillRect(x, y, width, height)
+                    </code>
+                </td>
+                <td>
+                    Zeichnet ein Rechteck der Breite <code>width</code> und der Höhe <code>height</code> am Punkt, der
+                    durch die Koordinaten <code>x</code> und <code>y</code> beschrieben wird, und füllt dieses mit einer
+                    zuvor definierten Hintergrundfarbe.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        strokeRect(x, y, width, height)
+                    </code>
+                </td>
+                <td>
+                    Zeichnet den Umriss eines Rechtecks der Breite <code>width</code> und der Höhe <code>height</code>
+                    am Punkt, der durch die Koordinaten <code>x</code> und <code>y</code> beschrieben wird, und
+                    verwendet dabei eine zuvor definierte Rahmenfarbe.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        clearRect(x, y, width, height)
+                    </code>
+                </td>
+                <td>
+                    Löscht alles von der Zeichenfläche, was sich innerhalb des definierten Rechtecks befindet.
+                </td>
+            </tr>
+        </table>
+
+        <code-block lang="javascript">
+            <![CDATA[
+                let canvas = document.getElementById('canvas');
+                let context = canvas.getContext('2d');
+                context.fillStyle = 'rgb(200,0,0)';            // Festlegen der Hintergrundfarbe (rot)
+                context.fillRect (10, 10, 80, 80);             // Zeichnen des Rechtecks
+            ]]>
+        </code-block>
     </chapter>
 
     <chapter id="pfade" title="Pfade verwenden">
