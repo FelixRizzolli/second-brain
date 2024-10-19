@@ -591,7 +591,134 @@
     </chapter>
 
     <chapter id="cookies" title="Cookies – Nutzer wiedererkennen">
+        <p>
+            Bei Cookies handelt es sich eigentlich um keine reine HTML5-Technologie, sondern eher um eine, die schon
+            einige Jahre auf dem Buckel hat. Cookies werden also hauptsächlich für zwei Dinge verwendet: zum einen, um
+            Nutzer wiederzuerkennen (in diesem Fall speichert man entsprechende Nutzer-IDs in den Cookies), zum anderen,
+            um auf Clientseite (kleine Mengen von) Daten zu speichern.
+        </p>
 
+        <p>
+            Das HTTP-Protokoll ist ein sogenanntes zustandsloses Protokoll. Das bedeutet, dass jede HTTP-Anfrage vom
+            Client an einen Server von diesem unabhängig von anderen Anfragen behandelt wird, unabhängig auch von
+            solchen, die der gleiche Client vielleicht schon vorher gestellt hat. Häufig hat man aber gerade
+            Anwendungsfälle, bei denen man genau wissen möchte, welcher Client eine Webseite aufruft.
+        </p>
+
+        <p>
+            Cookies bieten eine Möglichkeit, kleinere Mengen von Informationen auf dem Clientrechner zu speichern und
+            diese – wenn der Nutzer die Webseite erneut besucht – auf Serverseite (oder durch JavaScript) wieder
+            auszulesen. Cookies sind prinzipiell nichts anderes als kleinere Textdateien, die der Browser auf dem
+            Rechner des Nutzers speichert (sofern dieser es zulässt und nicht entsprechende Vorkehrungen in den
+            Browsereinstellungen getroffen hat) und die dann bei jedem Aufruf der zugehörigen Webseite mit der
+            HTTP-Anfrage zusammen übermittelt werden. Solche Cookie-Dateien enthalten im Wesentlichen folgende
+            Informationen:
+        </p>
+
+        <list type="bullet">
+            <li>
+                Den <b>Namen</b> und den <b>Wert</b> des Cookies. Bei dem Namen wird nicht zwischen Groß- und
+                Kleinschreibung unterschieden. Als Werte sind lediglich Zeichenketten erlaubt. Name und Wert sind die
+                einzigen Informationen, die zwangsweise angegeben werden müssen. Die Angabe folgender Informationen ist
+                optional (werden diese nicht angegeben, werden Standardwerte verwendet).
+            </li>
+            <li>
+                Die <b>Domäne</b> des Servers und den <b>Pfad</b> auf dem Server, an den das Cookie geschickt werden
+                soll. Beispielsweise wird ein Cookie mit der Domäne <code>www.javascripthandbuch.de</code> auch nur mit
+                Anfragen an diese Domäne mitgesendet. Ein Cookie mit der Domäne <code>www.javascripthandbuch.de</code>
+                und dem Pfad <code>/probekapitel</code> wird nur mit Anfragen an
+                <code>www.javascripthandbuch.de/probekapitel</code> mitgesendet, nicht aber an
+                <code>www.javascripthandbuch.de</code>.
+            </li>
+            <li>
+                Ein <b>Ablaufdatum</b>, bis zu dem das Cookie gültig ist. Nach Ablauf des hier angegebenen Datums
+                verfällt das Cookie, wird gelöscht und nicht weiter an den Server gesendet. Wird beim Erstellen eines
+                Cookies kein Ablaufdatum angegeben, wird es standardmäßig beim Beenden der Browsersession gelöscht.
+            </li>
+            <li>
+                Ein <b>Sicherheitsflag</b>, über das optional angegeben werden kann, ob ein Cookie nur bei Verbindungen
+                mitgesendet werden soll, die <b>SSL (Secure Sockets Layer)</b> verwenden, um beispielsweise das
+                Mitsenden an <code>https://www.javascripthandbuch.de</code> zu erlauben, aber das Mitsenden an
+                <code>http://www.javascripthandbuch.de</code> zu unterbinden.
+            </li>
+        </list>
+
+        <note>
+            <p>
+                <b>
+                    Alternative Möglichkeiten, um Nutzer zu erkennen
+                </b>
+            </p>
+
+            <p>
+                Neben Cookies gibt es noch andere Möglichkeiten, um Nutzer zu erkennen, beispielsweise das sogenannte
+                <b>URL Rewriting</b>, bei dem Links innerhalb einer Webseite umgeschrieben und um einen den Nutzer
+                identifizierenden Parameter ergänzt werden. Klickt der Nutzer dann auf einen Link, kann auf Serverseite
+                anhand des URL-Parameters erkannt werden, um welchen Nutzer es sich handelt.
+            </p>
+        </note>
+
+        <p>
+            Alle Cookies für eine entsprechende Domäne und den entsprechenden Pfad werden mit jeder Anfrage mitgesendet,
+            was sich auf das Datenvolumen auswirkt. Zudem werden Cookies, die über das HTTP-Protokoll gesendet werden
+            (und nicht über das sichere HTTPS-Protokoll), unverschlüsselt übersendet, was je nach der Art der
+            übermittelten Informationen ein Sicherheitsrisiko darstellt. Eine weitere Einschränkung von Cookies ist die
+            erlaubte Speichergröße von 4 KB.
+        </p>
+
+        <table style="header-column">
+            <tr>
+                <td>
+                    Lesen
+                </td>
+                <td>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let x = document.cookie; // => "cookie1=value; cookie2=value; cookie3=value;"
+                        ]]>
+                    </code-block>
+
+                    <p>
+                        Die Eigenschaft <code>cookie</code> des Objekts document gibt die Cookies in einem String
+                        zurück.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Schreiben
+                </td>
+                <td>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            document.cookie = "username=John Smith; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+                        ]]>
+                    </code-block>
+
+                    <p>
+                        Im Hintergrund wird hierbei ein Setter aufgerufen, womit die bestehenden Cookies nicht
+                        überschrieben werden, sondern das neue Cookie dem Cookie-String hinzugefügt wird.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Löschen
+                </td>
+                <td>
+                    <p>
+                        Ein Cookie kann ganz einfach gelöscht werden, indem das Verfallsdatum auf einem Zeitstempel in
+                        der Vergangenheit gesetzt wird.
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter id="web-storage-api" title="Den Browserspeicher nutzen">
