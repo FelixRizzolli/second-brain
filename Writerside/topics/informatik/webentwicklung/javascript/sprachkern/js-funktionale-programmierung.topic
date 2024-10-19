@@ -7,36 +7,643 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
-
-    <!-- TODO: migrate from Confluence -->
     <chapter id="grundlagen" title="Grundlegendes – ein kurzer Überblick">
+        <tip>
+            Grundlagen zur funktionalen Programmierung: <a href="swe-pk-paradigmen-funktional.topic"/>
+        </tip>
 
+        <p>
+            Neben der objektorientierten Programmierung ist die sogenannte funktionale Programmierung ein weiteres
+            wichtiges Programmierparadigma, welches in JavaScript eine zentrale Rolle spielt. Die funktionale
+            Programmierung folgt wie andere Programmierparadigmen auch verschiedenen Prinzipien bzw. weist besondere
+            Merkmale auf. Dies sind im Wesentlichen folgende:
+        </p>
+
+        <list>
+            <li>
+                <b>Funktionen sind Objekte erster Klasse</b> - Funktionen sind Objekte erster Klasse (sogenannte First
+                Class Objects oder auch First Class Citizens). Was das bedeutet: Funktionen können wie andere Objekte
+                und primitive Werte ebenfalls Variablen zugewiesen werden, sie können als Argumente anderer Funktionen
+                verwendet werden oder als deren Rückgabewert. In nicht funktionalen Programmiersprachen dagegen werden
+                Funktionen nicht als Objekte repräsentiert und können folglich auch nicht wie solche behandelt werden.
+            </li>
+            <li>
+                <b>Funktionen arbeiten mit unveränderlichen Datenstrukturen</b> - Die Datenstrukturen bei der
+                funktionalen Programmierung sind in der Regel unveränderlich bzw. werden nicht verändert. Vielmehr
+                erzeugen Operationen, die auf Datenstrukturen durchgeführt werden, falls nötig neue Datenstrukturen und
+                liefern diese als Ergebnis zurück. In rein funktionalen Programmiersprachen können beispielsweise Listen
+                oder andere Datenstrukturen, die einmal angelegt worden sind, nachträglich nicht mehr geändert werden
+                (bzw. nur über Umwege). JavaScript übrigens ist keine <b>rein</b> funktionale Programmiersprache,
+                weswegen hier Arrays jederzeit verändert werden können.
+            </li>
+            <li>
+                <b>Funktionen haben keine Nebeneffekte</b> - Bei der funktionalen Programmierung haben die Funktionen in
+                der Regel überhaupt keine Nebeneffekte und verhalten sich eher wie mathematische Funktionen. Das heißt,
+                Funktionen liefern in der funktionalen Programmierung bei gleichen Eingaben immer das gleiche Ergebnis,
+                lösen dabei aber keine Nebeneffekte aus. In rein funktionalen Sprachen werden Nebeneffekte bereits durch
+                die Sprache selbst verhindert. JavaScript als nicht rein funktionale Programmiersprache erlaubt es
+                durchaus, dass Funktionen bei gleichen Eingaben unterschiedliche Ergebnisse liefern.
+            </li>
+            <li>
+                <b>Funktionale Programme sind deklarativ</b> - Bei der imperativen Programmierung handelt es sich um ein
+                Programmierparadigma, bei dem man dem Computer sehr genau einzelne Anweisungen gibt, <b>wie</b> eine
+                Problemstellung gelöst werden soll. Funktionale Programme dagegen sind deklarativ, d. h., Sie
+                formulieren als Entwickler Ihr Programm eher so, dass Sie sagen, <b>was</b> gemacht werden soll. Dadurch
+                sind funktionale Programme gegenüber dem äquivalenten imperativen Code in der Regel lesbarer,
+                sprechender und kompakter.
+            </li>
+        </list>
+
+        <p>
+            Im Unterschied zur objektorientierten Programmierung liegt der Fokus bei der funktionalen Programmierung auf
+            Funktionen, nicht auf Objekten. JavaScript vereint beide Programmierparadigmen. Beispielsweise können Sie
+            Ihr Programm objektorientiert strukturieren, d.h. mit Objekten arbeiten und innerhalb von Objektmethoden
+            wiederum funktional programmieren.
+        </p>
     </chapter>
 
     <chapter id="besonderheiten" title="Die Besonderheiten von Funktionen in JavaScript">
-
         <chapter id="besonderheiten-first-class-objekte" title="Funktionen als First-Class-Objekte">
+            <p>
+                In JavaScript werden Funktionen durch Objekte repräsentiert, genauer gesagt als Instanzen des
+                <code>Function</code>-Typs. Jedes Funktionsobjekt verfügt dabei standardmäßig über drei Eigenschaften:
+                <code>name</code> enthält den Namen der Funktion, <code>length</code> die Anzahl an (in der Deklaration
+                definierten) Funktionsparametern und <code>prototype</code> den sogenannten Prototyp der Funktion –
+                welcher kurz gesagt das Objekt bezeichnet, auf dem das jeweilige Funktionsobjekt basiert. Neben diesen
+                Eigenschaften hat jede Funktion ihrerseits eigene Funktionen bzw. Methoden: <code>bind()</code>,
+                <code>apply()</code> und <code>call()</code>.
+            </p>
 
+            <p>
+                Da Funktionen Objekte sind, können sie an allen Stellen verwendet werden, an denen auch »normale«
+                Objekte verwendet werden können. Funktionen können somit:
+            </p>
+
+            <list>
+                <li>
+                    <p>
+                        <b>Variablen zugewiesen werden.</b> Die Variable zeigt anschließend aufs Funktionsobjekt. Die
+                        Funktion kann dann über die Variable aufgerufen werden, die Eigenschaften der Ursprungsfunktion
+                        bleiben aber erhalten.
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            function add(x, y) { return x + y; }
+                            const operation = add;
+                            console.log(operation(2, 2);  // => 4
+                            console.log(operation.name);  // => "add"
+                        ]]>
+                    </code-block>
+                </li>
+                <li>
+                    <p>
+                        <b>in Arrays verwendet werden.</b>
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            function add(x, y) { return x + y; }
+                            function subtract(x,y) { return x - y; }
+                            function multiply(x,y) { return x * y; }
+                            function divide(x,y) { return x / y; }
+                            const operations = [ add, subtract, multiply, divide ];
+                            let operation;
+                            for(let i=0; i<operations.length; i++) {
+                              operation = operations[i];
+                              const x = (i+1)*2;
+                              const y = (i+1)*4;
+                              const result = operation(x,y);
+                              console.log(result);
+                            }
+                        ]]>
+                    </code-block>
+                </li>
+                <li>
+                    <p>
+                        <b>als Funktionsparameter verwendet werden.</b> In der Praxis werden Funktionen als Parameter
+                        recht häufig verwendet. Das wohl bekannteste Beispiel dazu ist das sogenannte
+                        <a href="#design-patterns-callback">Callback-Entwurfsmuster</a>.
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            function asyncFunction(callback) {
+                              let result = 0;
+                              /* Hier die Berechnung des Ergebnisses */
+                              callback(result);
+                            }
+                        ]]>
+                    </code-block>
+                </li>
+                <li>
+                    <p>
+                        <b>als Rückgabewert verwendet werden.</b> Beispiel: Eine Funktion soll aufgrund des Parameters
+                        eine Funktion für jede der vier Grundrechenarten liefern. Ein praktischer Aspekt bei JavaScript
+                        dabei ist, dass die Funktionen anonym direkt innerhalb eines Ausdrucks definiert werden können,
+                        ohne überhaupt einer Variablen zugewiesen worden zu sein. So werden im Beispiel die einzelnen
+                        Funktionen, die zurückgegeben werden, direkt »on the fly« hinter dem return definiert.
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            function operationFactory(name) {
+                              switch(name) {
+                                case 'add': return function(x, y) { return x + y; }
+                                case 'subtract': return function(x, y) { return x - y; }
+                                case 'multiply': return function(x, y) { return x * y; }
+                                case 'divide': return function(x, y) { return x / y; }
+                                default: return function() { return NaN; }
+                              }
+                            }
+                            const divide = operationFactory('divide');
+                            console.log(divide(2, 2));                      // Ausgabe: 1
+                        ]]>
+                    </code-block>
+
+                    <p>
+                        Die zurückgegebenen Funktionen können auch direkt aufgerufen werden, ohne zuvor einer Variablen
+                        zugewiesen worden zu sein:
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            console.log(operationFactory('add')(2,2));       // Ausgabe: 4
+                        ]]>
+                    </code-block>
+
+                    <p>
+                        Auf diese Weise kann der Quelltext schön knapp und ausdrucksstark gehalten werden. Prinzipiell
+                        lässt sich das beliebig fortführen: Zurückgegebene Funktionen könnten ihrerseits ebenfalls eine
+                        Funktion als Rückgabewert liefern und diese wiederum usw. Dies macht sich auch die
+                        <a href="#techniken-currying">Currying-Technik</a> zunutze. Noch schlanker wird es mit den in
+                        ES2015 eingeführten Arrow-Functions:
+                    </p>
+
+                    <code-block collapsed-title="operationFactory mit Arrow-Functions"
+                                collapsible="true"
+                                lang="javascript">
+                        <![CDATA[
+                            function operationFactory(name) {
+                              switch(name) {
+                                case 'add': return (x, y) => x + y;
+                                case 'subtract': return (x, y)  => x - y;
+                                case 'multiply': return (x, y) => x * y;
+                                case 'divide': return (x, y) => x / y;
+                                default: return () => NaN;
+                              }
+                            }
+                        ]]>
+                    </code-block>
+                </li>
+                <li>
+                    <p>
+                        <b>innerhalb von Funktionen definiert werden.</b> Gemeint ist hiermit nicht das Definieren einer
+                        Funktion als Methode der anderen Funktion (auch das wäre möglich), sondern die Deklaration einer
+                        Funktion lokal <b>innerhalb des Funktionskörpers</b> der anderen Funktion.
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            function operationsContainer(x, y) {
+                              const add = function(x, y) { return x + y; }
+                              const subtract = function(x, y) { return x - y; }
+                              const multiply = function(x, y) { return x * y; }
+                              const divide = function(x, y) { return x / y; }
+                              console.log(add(x, y));
+                              console.log(subtract(x, y));
+                              console.log(multiply(x, y));
+                              console.log(divide(x, y));
+                            }
+                            operationsContainer(2,2);
+                        ]]>
+                    </code-block>
+
+                    <p>
+                        Die Funktionen sind allerdings von außerhalb der Funktion <code>operationsContainer()</code>
+                        nicht sichtbar, können als von dort nicht direkt aufgerufen werden. Alles, was innerhalb einer
+                        Funktion definiert wird, ist nur innerhalb der Funktion sichtbar, es sei denn, etwas wird als
+                        global definiert.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>als Objektmethoden definiert werden.</b> Wenn Sie eine Funktion innerhalb eines Objekts
+                        definieren, spricht man wie erwähnt von einer Methode, einer Objektmethode. Aufgerufen wird
+                        diese Methode dann über die Objektreferenz.
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            const operations = {
+                              add: function(x, y) { return x + y; },
+                              subtract: function(x, y) { return x - y; },
+                              multiply: function(x, y) { return x * y; },
+                              divide: function(x, y) { return x / y; }
+                            };
+                            console.log(operations.add(2,2));
+                        ]]>
+                    </code-block>
+
+                    <p>
+                        Mit ES2015 wurde eine ähnliche Syntax in JavaScript eingeführt, mit der Objektmethoden
+                        alternativ definiert werden können:
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            const operations = {
+                              add(x, y) { return x + y; },
+                              subtract(x, y) { return x - y; },
+                              multiply(x, y) { return x * y; },
+                              divide(x, y) { return x / y; }
+                            };
+                        ]]>
+                    </code-block>
+                </li>
+            </list>
+
+            <note>
+                <p>
+                    <b>
+                        Definition von Funktionen erster Klasse
+                    </b>
+                </p>
+
+                <p>
+                    Aufgrund ihrer Repräsentation durch Objekte sowie der Verwendungsmöglichkeiten von Funktionen im
+                    Code spricht man in diesem Zusammenhang auch von Funktionen erster Klasse (First-Class Functions).
+                    Funktionen haben den gleichen Stellenwert wie Objekte oder primitive Datentypen, sie sind »first
+                    class«. Funktionen, die andere Funktionen als Parameter erwarten oder als Rückgabewert liefern,
+                    nennt man zusätzlich Funktionen höherer Ordnung (Higher-Order Functions).
+                </p>
+            </note>
         </chapter>
 
         <chapter id="besonderheiten-kontext" title="Funktionen haben einen Kontext">
+            <p>
+                In JavaScript sorgt das Schlüsselwort <code>this</code> etwas für Verwirrung, insbesondere bei
+                Entwicklern, die bereits Erfahrung in Sprachen wie <a href="java.topic"/> und <a href="csharp.topic"/>
+                haben. Über dieses Schlüsselwort spricht man innerhalb einer Objektmethode (oder eines Konstruktors) die
+                jeweilige Objektinstanz an, das aktuelle Objekt, eben »dieses« Objekt, das genau jenes ist, für das die
+                Methode definiert wurde (bzw. das eine Instanz der Klasse ist, für die sie definiert wurde). Der
+                Unterschied zu anderen Sprachen ist, dass in JavaScript Funktionen selbst Objekte sind und nicht zu
+                einem Objekt oder zu einer Klasse »gehören«. Die Dynamik von JavaScript erlaubt es, Funktionen, die an
+                einer Stelle im Code definiert sind, an ganz anderer Stelle wiederzuverwenden, beispielsweise eine
+                global definierte Funktion als Objektmethode oder umgekehrt eine Objektmethode als globale Funktion.
+            </p>
 
+            <p>
+                Dies führt dazu, dass sich <code>this</code> innerhalb einer Funktion nicht auf das Objekt bezieht, in
+                dem die Funktion <b>definiert</b> wurde, sondern auf das Objekt, auf dem die Funktion <b>ausgeführt</b>
+                wird (Ausführungskontext). Man kann sich <code>this</code> ein bisschen wie eine Eigenschaft der
+                Funktion vorstellen, die bei deren Aufruf mit dem Wert des Objekts belegt wird, auf dem sie aufgerufen
+                wird (genauer gesagt ist <code>this</code> wie schon zuvor <code>arguments</code> sogar ein impliziter
+                Parameter, der bei jedem Funktionsaufruf innerhalb der Funktion zur Verfügung steht).
+            </p>
+
+            <note>
+                <p>
+                    <b>
+                        Das globale Objekt
+                    </b>
+                </p>
+
+                <p>
+                    Das globale Objekt ist von Laufzeitumgebung zu Laufzeitumgebung verschieden. In Browsern ist das
+                    globale Objekt das <code>window</code>-Objekt, in Node.js ist es ein anderes. Sobald eine Funktion
+                    im globalen Scope aufgerufen wird, bezieht sich <code>this</code> auf das globale Objekt (außer im
+                    strikten Modus: Hier hat this innerhalb einer globalen Funktion den Wert <code>undefined</code>).
+                </p>
+
+                <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+                    <![CDATA[
+                        firstName = 'globaler Name';
+                        function getFirstNameGlobal() {
+                            return this.firstName;
+                        }
+                        console.log(getFirstNameGlobal());
+                        // Ausgabe: globaler Name
+                    ]]>
+                </code-block>
+
+                <code-block collapsed-title="Beispiel im strikten Modus" collapsible="true" lang="javascript">
+                    <![CDATA[
+                        "use strict";
+                        const firstName = 'globaler Name';
+                        function getFirstNameGlobal() {
+                          return this.firstName;
+                        }
+                        console.log(getFirstNameGlobal());
+                        // Fehler: this ist nicht definiert
+                    ]]>
+                </code-block>
+            </note>
+
+            <p>
+                Die Variable <code>this</code> hat also abhängig vom Kontext, in dem die Funktion aufgerufen wird, einen
+                anderen Wert. Zusammenfassend gelten folgende Regeln:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    <p>
+                        Bei Aufruf einer globalen Funktion bezieht sich <code>this</code> auf das globale Objekt bzw.
+                        ist im strikten Modus nicht definiert.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Wird eine Funktion als Objektmethode aufgerufen, bezieht sich <code>this</code> auf das Objekt.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Wird eine Funktion als Konstruktorfunktion aufgerufen, bezieht sich <code>this</code> auf das
+                        Objekt, das durch den Funktionsaufruf erzeugt wird.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Unachtsam programmiert, sorgen insbesondere folgende vier Fälle in der Praxis recht häufig für
+                        Laufzeitfehler (der Einfachheit halber werden hier Funktionen, die auf <code>this</code>
+                        zugreifen, <code>this</code>-Funktion genannt):
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            wenn eine <code>this</code>-Funktion einer Variablen zugewiesen wird
+                        </li>
+                        <li>
+                            wenn eine <code>this</code>-Funktion als Callback einer anderen Funktion verwendet wird
+                        </li>
+                        <li>
+                            wenn sich ein Objekt eine <code>this</code>-Funktion eines anderen Objekts »leiht« (Function
+                            Borrowing bzw. Method Borrowing)
+                        </li>
+                        <li>
+                            wenn <code>this</code> innerhalb einer inneren Funktion vorkommt
+                        </li>
+                    </list>
+                </li>
+            </list>
         </chapter>
 
         <chapter id="besonderheiten-sichtbarkeitsbereich" title="Funktionen definieren einen Sichtbarkeitsbereich">
+            <p>
+                Im Gegensatz zu vielen anderen Programmiersprachen kennt JavaScript keinen <b>Block-Scope</b> für
+                Variablen, mit anderen Worten: <code>{</code> und <code>}</code> spannen keinen Gültigkeitsbereich bzw.
+                Sichtbarkeitsbereich für Variablen auf. Stattdessen wird der Gültigkeitsbereich von solchen Variablen
+                durch die umgebende Funktion begrenzt. Man spricht daher auch von <b>Function-Level-Scope</b>:
+                Variablen, die innerhalb einer Funktion definiert werden, sind innerhalb der gesamten Funktion sichtbar
+                sowie innerhalb anderer (innerer) Funktionen, die in der (äußeren) Funktion definiert sind.
+            </p>
+
+            <p>
+                Dieses Verhalten gilt zumindest für Variablen, die über das Schlüsselwort <code>var</code> angelegt
+                werden. Bei <code>let</code> sieht das etwas anders aus.
+            </p>
+
+            <code-block
+                    collapsed-title="Zugriff auf Variablen, die deklariert, aber nicht initialisiert sind, ergibt den Wert undefined"
+                    collapsible="true" lang="javascript">
+                <![CDATA[
+                    function example() {
+                      var y;
+                      console.log(y);
+                    }
+                    example(); // => undefined
+                ]]>
+            </code-block>
+
+            <code-block
+                    collapsed-title="Zugriff auf Variablen, die nicht deklariert sind, führt zu einem ReferenceError"
+                    collapsible="true" lang="javascript">
+                <![CDATA[
+                    function example() {
+                     console.log(y);
+                    }
+                    example(); // ReferenceError
+                ]]>
+            </code-block>
+
+            <code-block
+                    collapsed-title="Zugriff auf Variablen, die deklariert und initialisiert sind, ergibt (nicht anders zu erwarten und nur der Vollständigkeit halber aufgeführt) den Wert der Variablen"
+                    collapsible="true" lang="javascript">
+                <![CDATA[
+                    function example() {
+                      var y = 4711;
+                      console.log(y);
+                    }
+                    example(); // => 4711
+                ]]>
+            </code-block>
 
             <chapter id="besonderheiten-sichtbarkeitsbereich-hoisting" title="Hoisting">
+                <p>
+                    Alle Deklarationen innerhalb eines Sichtbarkeitsbereichs werden vom JavaScript-Interpreter bereits
+                    am Anfang des jeweiligen Bereichs ausgeführt, unabhängig davon, an welcher Stelle die Deklaration
+                    eigentlich steht. Dieses Verhalten wird <b>Hoisting</b> oder Variablen-Hoisting genannt: Die
+                    Variablendeklarationen werden an den Beginn der jeweiligen Funktion »gehoben« (von engl. to hoist –
+                    heben). Um sich dieses Hoistings bewusst zu sein (bzw. es gar nicht erst dazu kommen zu lassen), hat
+                    es sich etabliert, alle Variablen einer Funktion bereits zu Beginn der Funktion in einer einzigen
+                    Anweisung zu deklarieren. Dies gilt als guter Stil, sorgt dafür, dass es keine Verwirrung bezüglich
+                    des Variablen-Hoistings gibt, und verhindert zudem, dass man versehentlich zwei Variablen mit
+                    gleichem Namen anlegt. Beispielsweise wird durchs Hoisting aus dem Code (links) der Code (rechts)
+                    generiert.
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        function example(x) {
+                          console.log(y);
+                          console.log(i);
+                          if(x) { var y = 4711; }
+                          for(var i=0; i<4711; i++) {
+                            /* Irgendwas machen */
+                          }
+                        }
+                        example(true); // Ausgabe: undefined
+                    ]]>
+                </code-block>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        function example(x) {
+                          var y, i;
+                          console.log(y);
+                          console.log(i);
+                          if(x) { var y = 4711; }
+                          for(var i=0; i<4711; i++) {
+                            /* Irgendwas machen */
+                          }
+                        }
+                        example(true); // Ausgabe: undefined
+                    ]]>
+                </code-block>
+
+                <note>
+                    <p>
+                        <b>
+                            Implizite globale Variablen
+                        </b>
+                    </p>
+
+                    <p>
+                        Wird bei einer Variablendeklaration weder var noch <code>let</code> noch <code>const</code>
+                        angegeben, wird die Variable automatisch als globale Variable angelegt. Dies gilt es zu
+                        verhindern, denn dadurch wird der Code relativ unübersichtlich, und es kann zu Namenskonflikten
+                        und ungewollten Seiteneffekte kommen, beispielsweise wenn eine bereits existierende (globale)
+                        Variable, die eigentlich für einen anderen Zweck vorgesehen ist, dadurch überschrieben wird.
+                    </p>
+                </note>
             </chapter>
         </chapter>
 
         <chapter id="besonderheiten-alternativen-zu-ueberladen-von-methoden"
                  title="Alternativen zum Überladen von Methoden">
+            <p>
+                Das Erzeugen mehrerer Methoden, mit denselben Methodennamen innerhalb einer Klasse wird als <b>Überladen
+                von Methoden</b> bezeichnet. Die Signatur einer Methode muss innerhalb einer Klasse eindeutig sein,
+                nicht der Name. Anhand der Anzahl der Parameter und der Typen der Parameter wird dann ermittelt, welche
+                Methode aufgerufen wird. Das Überladen von Methoden kommt in der Regel dann zum Einsatz, wenn man die
+                implementierte Funktionalität für verschiedene Typen von Parametern oder eine variierende Anzahl von
+                Parametern zur Verfügung stellen möchte. Der Vorteil ist dabei, dass man sich nicht für jede
+                Konstellation von Parametern einen neuen Methodennamen überlegen muss. Sprachen die das Überladen von
+                Methoden unterstützen währen z.B. Java und C#.
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    public Person createPerson(String firstName, String lastName) {
+                      ... // weiterer Code
+                    }
+                    public Person createPerson(String firstName, String lastName, int age) {
+                      ... // weiterer Code
+                    }
+                ]]>
+            </code-block>
+
+            <p>
+                In JavaScript ist das Überladen von Methoden bzw. Funktionen aus drei Gründen nicht so ohne weiteres
+                möglich:
+            </p>
+
+            <list type="decimal">
+                <li>
+                    JavaScript kennt keine Typangaben innerhalb der Funktionsdeklaration, anhand der, entschieden werden
+                    könnte, welche Methode aufgerufen wird.
+                </li>
+                <li>
+                    Funktionen können in JavaScript mit einer beliebigen Anzahl an Parametern aufgerufen werden, auch
+                    wenn diese nicht explizit in der Funktionsdeklaration angegeben werden.
+                </li>
+                <li>
+                    Objektmethoden sind letztendlich nichts anderes als Objekteigenschaften mit dahinterliegender
+                    Funktion, und es kann keine Objekte mit zwei gleichbenannten Eigenschaften geben. Werden mehrere
+                    Funktionen mit gleichem Namen in einem Kontext (beispielsweise in einem Objekt) definiert,
+                    überschreibt die zuletzt definierte Funktion alle vorhergehenden gleichnamigen Funktionen.
+                </li>
+            </list>
+
+            <p>
+                Um in JavaScript überladene Methoden bzw. Funktionen nachzubilden, muss die Funktionalität, die im Fall
+                von C# und Java auf mehrere Methoden verteilt ist, innerhalb einer Funktion zu implementiert werden, die
+                dynamisch die Anzahl und die Typen der beim Funktionsaufruf übergebenen Parameter ermittelt und abhängig
+                davon die jeweilige Funktionalität durchführt. Dafür gibt es folgende Möglichkeiten:
+            </p>
+
+            <list>
+                <li>
+                    <p>
+                        <b>Explizite Angabe aller Parameter</b> – Die Pflichtparameter werden dabei zuerst und die
+                        optionalen Parameter zuletzt angegeben. Allerdings hat diese Vorgehensweise auch Nachteile: wenn
+                        es mehrere optionale Parameter gibt, aber nur einer der »hinteren« optionalen Parameter beim
+                        Funktionsaufruf angegeben werden soll, dann müssen auch für alle vorangehenden Parameter
+                        entsprechende Werte übergeben werden.
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            function add(x, y, log) {
+                              const result = x + y;
+                              if(log) console.log(result);
+                              return result;
+                            }
+                            add(2,2);       // Aufruf ohne Logging
+                            add(2,2,true);  // Aufruf mit Logging
+                        ]]>
+                    </code-block>
+                </li>
+                <li>
+                    <p>
+                        <b>Weglassen der optionalen Parameter</b> – innerhalb einer Funktion kann über das
+                        <code>arguments</code>-Objekt auf alle Parameter zugegriffen werden, die beim Funktionsaufruf
+                        übergeben werden. Der Nachteil ist aber auch hier wie in der ersten Lösung der gleiche:
+                        Optionale Parameter, die nicht benötigt werden, müssen trotzdem im Funktionsaufruf übergeben
+                        werden.
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            function add(x, y) {
+                              const result = x + y;
+                              if(arguments[2]) console.log(result);
+                              return result;
+                            }
+                            add(2,2);       // Aufruf ohne Logging
+                            add(2,2,true);  // Aufruf mit Logging
+                        ]]>
+                    </code-block>
+
+                    <note>
+                        Seit ES2015 steht mit sogenannten Rest-Parametern eine einfachere Möglichkeit zur Verfügung, auf
+                        optionale Parameter zuzugreifen.
+                    </note>
+                </li>
+                <li>
+                    <p>
+                        <b>Optionale Parameter als Konfigurationsobjekt</b> – statt einzelner optionaler Parameter
+                        werden Parameter in einem Objekt zusammengefasst, das als Parameter der entsprechenden Funktion
+                        übergeben wird. Anstatt innerhalb der Funktion auf die Parameter zuzugreifen, wird dann auf die
+                        äquivalenten Eigenschaften des <b>Konfigurationsobjekts</b> zugegriffen.
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            function add(x, y, config) {
+                              const result = x + y;
+                              if(config && config.log) console.log(result);
+                              return result;
+                            }
+                            add(2,2);       // Aufruf ohne Logging
+                            add(2,2,true);  // Aufruf mit Logging
+                        ]]>
+                    </code-block>
+                </li>
+            </list>
         </chapter>
 
         <chapter id="besonderheiten-konstruktorfunktionen" title="Funktionen als Konstruktorfunktionen">
+            <p>
+                In JavaScript gibt es keine Konstruktoren im dem Sinne, wie es sie in C# oder Java gibt. Um neue
+                Objektinstanzen erzeugen zu können, ist es aber möglich, eine Funktion als Konstruktorfunktion
+                aufzurufen. Dabei wird dem Funktionsaufruf das Schlüsselwort new vorangestellt. Nach Konvention werden
+                Funktionen, die als Konstruktorfunktion aufgerufen werden können, großgeschrieben. Über die
+                Objekteigenschaft <code>constructor</code> des auf diese Weise erstellten Objekts lässt sich die
+                Konstruktorfunktion ermitteln, mit der das Objekt erzeugt wurde.
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    function Album(title) {
+                      this.title = title;
+                    }
+                    const album = new Album('Sky Valley');
+                    console.log(album.title);       // => "Sky Valley"
+                    console.log(album.constructor); // [Function: Album]
+                ]]>
+            </code-block>
         </chapter>
     </chapter>
 
