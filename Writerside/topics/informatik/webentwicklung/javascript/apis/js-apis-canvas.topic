@@ -165,7 +165,210 @@
     </chapter>
 
     <chapter id="pfade" title="Pfade verwenden">
+        <p>
+            Unter einem Pfad versteht man im Zusammenhang mit der Canvas API eine Aneinanderreihung von Koordinaten, die
+            durch Linien miteinander verbunden sind. Eine Linie zwischen zwei Punkten kann dabei gerade oder gebogen
+            sein. Vom Prinzip her folgt das Erstellen von Pfaden mithilfe der Canvas API immer vier Schritten: Beginn
+            des Pfades, Zeichnen des Pfades, optionales Schließen des Pfades und optionales Einfärben von Hintergrund
+            bzw. Rahmen.
+        </p>
 
+        <table style="header-row">
+            <tr>
+                <td>
+                    Beschreibung
+                </td>
+                <td>
+                    Beispiel (Bild)
+                </td>
+                <td>
+                    Beispiel (Code)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <b>Gerade Linien:</b> Die Methode <code>beginPath()</code>, aufgerufen auf dem Kontextobjekt,
+                        beginnt mit der Erstellung des Pfades. Über <code>moveTo()</code> wird anschließend der
+                        imaginäre Zeichenstift zu dem Punkt bewegt, der durch die übergebenen <code>x</code>- und
+                        <code>y</code>-Koordinaten definiert wird. Mit <code>lineTo()</code> wiederum wird ausgehend von
+                        diesem Punkt eine gerade Linie zu einem zweiten Punkt gezogen, dessen Koordinaten man durch
+                        entsprechende Argumente dieser Methode übergibt. Die Methode stroke() schlussendlich sorgt
+                        dafür, dass der gezeichnete Pfad auch eine Farbe erhält. Wurde die Eigenschaft strokeStyle nicht
+                        gesetzt, so wird die Standardfarbe Schwarz verwendet.
+                    </p>
+                </td>
+                <td>
+                    <img alt="Pfad - Gerade Linien" src="js-api-canvas-pfade-gerade-linien.png"/>
+                </td>
+                <td>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let context = canvas.getContext('2d');
+                            context.beginPath();        // Beginn des Pfades
+                            context.moveTo(50, 200);    // Startpunkt festlegen
+                            context.lineTo(400, 50);    // gerade Linie zu angegebenem Punkt
+                            context.lineTo(400, 200);   // gerade Linie zu angegebenem Punkt
+                            context.stroke();           // Rahmen einfärben
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <b>Pfade schließen:</b> Soll ein Pfad geschlossen werden, d. h. automatisch eine Linie von
+                        dem aktuellen Punkt zu dem Anfangspunkt gezogen werden, kann der Einfachheit halber die Methode
+                        <code>closePath()</code> verwendet werden, statt manuell eine Linie zum Ausgangspunkt des Pfades
+                        zu ziehen.
+                    </p>
+                </td>
+                <td>
+                    <img alt="Pfad - Pfade schließen" src="js-api-canvas-pfade-pfade-schliessen.png"/>
+                </td>
+                <td>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let context = canvas.getContext('2d');
+                            context.beginPath();        // Beginn des Pfades
+                            context.moveTo(50, 200);    // Startpunkt festlegen
+                            context.lineTo(400, 50);    // gerade Linie zu angegebenem Punkt
+                            context.lineTo(400, 200);   // gerade Linie zu angegebenem Punkt
+                            context.closePath();        // Schließen des Pfades
+                            context.stroke();           // Rahmen einfärben
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <b>Das »Path2D«-Objekt</b> steht alternativ zur Verfügung. Dieses Objekt bietet bezüglich der
+                        Pfaderstellung analoge Methoden wie das Kontextobjekt und eignet sich insbesondere für das
+                        Arbeiten mit vielen Pfaden, um immer die Übersicht über die verschiedenen Pfade zu behalten.
+                    </p>
+                </td>
+                <td>
+                    <img alt="Pfad - Path2D" src="js-api-canvas-pfade-path2d.png"/>
+                </td>
+                <td>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let context = canvas.getContext('2d');
+                            let path = new Path2D();
+                            path.moveTo(50, 200);    // Zeichnen des Pfades
+                            path.lineTo(400, 50);    // Zeichnen des Pfades
+                            path.lineTo(400, 200);   // Zeichnen des Pfades
+                            path.closePath();        // Schließen des Pfades
+                            context.stroke(path);    // Rahmen einfärben
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <b>Quadratische Kurven</b> können mit der Methode <code>quadraticCurveTo()</code> gezeichnet
+                        werden. Vier Parameter werden dabei erwartet: Die ersten beiden Parameter bilden die
+                        <code>x</code>- bzw. <code>y</code>-Koordinate des sogenannten Kontrollpunkts, welcher im
+                        Wesentlichen das Ausmaß der Kurve beeinflusst. Parameter drei und vier dagegen stehen für die
+                        <code>x</code>- und <code>y</code>-Koordinaten des Punkts, zu dem die Kurve gezeichnet werden
+                        soll (Zielpunkt).
+                    </p>
+                </td>
+                <td>
+                    <img alt="Pfad - quadratische Kurven" src="js-api-canvas-pfade-quadratische-kurven.png"/>
+                </td>
+                <td>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let context = canvas.getContext('2d');
+                            let path = new Path2D();
+                            path.moveTo(25,100);
+                            path.quadraticCurveTo(25, 25, 100, 25);
+                            context.stroke(path);
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <b>Bézierkurven</b> sind bezüglich des Aussehens bzw. der Parametrisierung flexibler als
+                        quadratische Kurven, da sie nicht nur einen, sondern zwei Kontrollpunkte haben. Die
+                        entsprechende Methode trägt den Namen <code>bezierCurveTo()</code> und erwartet insgesamt sechs
+                        Parameter. Die ersten beiden Parameter definieren die Koordinaten des ersten Kontrollpunkts, die
+                        nachfolgenden beiden Parameter die Koordinaten des zweiten Kontrollpunkts und die letzten beiden
+                        Parameter die Koordinaten des Zielpunkts, sprich des Punkts, zu dem die Kurve gezogen werden
+                        soll.
+                    </p>
+                </td>
+                <td>
+                    <img alt="Pfad - Bézierkurven" src="js-api-canvas-pfade-bezierkurven.png"/>
+                </td>
+                <td>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let context = canvas.getContext('2d');
+                            let path = new Path2D();
+                            path.moveTo(25,100);
+                            path.bezierCurveTo(100, 100, 25, 25, 100, 25);
+                            context.stroke(path);
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <b>Bogen und Kreise</b> können mit zwei Methoden gezeichnet werden: <code>arcTo()</code> und
+                        <code>arc()</code>.
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            Die Methode <code>arcTo()</code> erwartet fünf Parameter: <code>x</code>- und
+                            <code>y</code>-Koordinaten des ersten Kontrollpunkts, <code>x</code>- und
+                            <code>y</code>-Koordinaten des zweiten Kontrollpunkts sowie den Radius des zu zeichnenden
+                            Bogens.
+                        </li>
+                        <li>
+                            Die Methode <code>arc()</code> erwartet sechs Parameter: <code>x</code>- und
+                            <code>y</code>-Koordinaten des Bogenzentrums, den Radius des Bogens, Start- und Endwinkel
+                            sowie eine boolesche Angabe darüber, ob der Bogen im Uhrzeigersinn oder entgegen dem
+                            Uhrzeigersinn gezeichnet werden soll.
+                        </li>
+                    </list>
+                </td>
+                <td>
+                    <img alt="Pfad - Bogen und Kreise 1" src="js-api-canvas-pfade-bogen-und-kreise-1.png"/>
+                    <br/>
+                    <img alt="Pfad - Bogen und Kreise 2" src="js-api-canvas-pfade-bogen-und-kreise-2.png"/>
+                </td>
+                <td>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let context = canvas.getContext('2d');
+                            path.moveTo(25,200);
+                            path.arcTo(25, 25, 200, 25, 90);
+                            path.lineTo(200, 25);
+                            context.stroke(path);
+                        ]]>
+                    </code-block>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let context = canvas.getContext('2d');
+                            let path = new Path2D();
+                            path.moveTo(25,200);
+                            path.arc(100, 100, 50, 25, 25, false);
+                            path.lineTo(200, 25);
+                            context.stroke(path);
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter id="texte" title="Texte zeichnen">
