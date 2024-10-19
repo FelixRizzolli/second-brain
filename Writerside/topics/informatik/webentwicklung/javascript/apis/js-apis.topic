@@ -1416,7 +1416,7 @@
             <code>clearWatch()</code> übergeben lässt.
         </p>
 
-        <code-block collapsed-title="worker.js" collapsible="true" lang="javascript">
+        <code-block lang="javascript">
             <![CDATA[
                 if(navigator.geolocation) {
                   let watchID = navigator.geolocation.watchPosition(
@@ -1542,7 +1542,7 @@
             </tr>
         </table>
 
-        <code-block collapsed-title="worker.js" collapsible="true" lang="javascript">
+        <code-block lang="javascript">
             <![CDATA[
                 navigator.getBattery().then(function (battery){
                   console.log(battery.level);
@@ -1586,7 +1586,7 @@
             Prüfen, ob Feature unterstützt wird
         </p>
 
-        <code-block collapsed-title="worker.js" collapsible="true" lang="javascript">
+        <code-block lang="javascript">
             <![CDATA[
                 if(window.speechSynthesis) {
                   /* Sprachausgabe unterstützt */
@@ -1703,7 +1703,7 @@
             </tr>
         </table>
 
-        <code-block collapsed-title="worker.js" collapsible="true" lang="javascript">
+        <code-block lang="javascript">
             <![CDATA[
                 function init() {
                   let animation = document.getElementById('circle').animate([
@@ -1757,7 +1757,7 @@
             programmatisch.
         </p>
 
-        <code-block collapsed-title="worker.js" collapsible="true" lang="javascript">
+        <code-block lang="javascript">
             <![CDATA[
                 let buttonPause = document.getElementById('button-pause');
                 buttonPause.addEventListener('click', () => {
@@ -1837,7 +1837,7 @@
             übergeben wird:
         </p>
 
-        <code-block collapsed-title="worker.js" collapsible="true" lang="javascript">
+        <code-block lang="javascript">
             <![CDATA[
                 const locales = [  'zh-Hant', 'en-US', 'de-DE' ];
                 const dateTimeFormatGermany = new Intl.DateTimeFormat(locales);
@@ -1878,7 +1878,7 @@
             </li>
             <li>
                 <code>
-                    String.prototype.<b>toLocaleUpperCase
+                    String.prototype.toLocaleUpperCase
                 </code>
             </li>
             <li>
