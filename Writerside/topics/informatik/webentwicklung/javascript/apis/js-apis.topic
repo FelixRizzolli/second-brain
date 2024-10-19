@@ -1195,7 +1195,7 @@
             die gewünschte Position und lässt die Maustaste wieder los, um das Element an der Zielposition abzulegen.
         </p>
 
-        <img alt="" src=""/>
+        <img alt="Drag &amp; Drop" src="js-api-drag-and-drop.png"/>
 
         <p>
             Während einer Drag-and-Drop-Operation wird eine Reihe verschiedener Ereignisse ausgelöst. Zu Beginn einer
@@ -1283,13 +1283,105 @@
     </chapter>
 
     <chapter id="parallelisieren" title="Aufgaben parallelisieren">
+        <p>
+            Bei JavaScript handelt es sich um eine Sprache, die <b>single-threaded</b> ausgeführt wird, sprich, es
+            können nicht mehrere Skripts gleichzeitig ausgeführt werden. Skripts werden nacheinander Zeile für Zeile
+            interpretiert und ausgeführt. Auch das Auslösen von Events und das damit verbundene Ausführen von
+            Event-Listenern geschehen nicht parallel: Der Code, der ein Event auslöst, pausiert so lange, bis die
+            entsprechenden Event-Listener ausgeführt wurden.
+        </p>
+
+        <p>
+            Das Gleiche gilt für Callback-Funktionen: Stellt man beispielsweise eine Ajax-Anfrage an einen Server, wird
+            das Skript, welches die Anfrage stellt, zwar so lange weiter ausgeführt, bis der Server die Antwort
+            vorbereitet und an den Client geschickt hat, sobald aber die Callback-Funktion aufgerufen wird, welche die
+            Antwort vom Server auswertet, pausiert der umgebende Code.
+        </p>
+
+        <note>
+            <p>
+                <b>
+                    Begriffsdefinition: Thread
+                </b>
+            </p>
+
+            <p>
+                Unter einem Thread versteht man in der Software-Entwicklung einen Ausführungsstrang innerhalb eines
+                Programms. Programme, die single-threaded sind, verwenden nur einen einzelnen Thread. Demgegenüber
+                stehen Programme, die multi-threaded ausgeführt werden: Hier wird nicht nur ein Thread verwendet,
+                sondern mehrere Threads, wobei einer die Rolle des Hauptthreads einnimmt.
+            </p>
+        </note>
+
+        <img alt="Single Threaded Applikation" src="js-api-parallelisieren-single-thread.png"/>
 
         <chapter id="parallelisieren-web-worker-prinzip" title="Das Prinzip von Web Workern">
+            <p>
+                Dieser Einschränkung der seriellen Abarbeitung von Skripts wirkt die sogenannte Web Worker API
+                <a href="https://www.w3.org/TR/workers/"/> entgegen, und zwar, indem es eine API für das Ausführen von
+                Hintergrund-Skripts innerhalb von Webanwendungen definiert. Mit den in dieser API definierten Web
+                Workern ist es dann beispielsweise möglich, rechenintensive Skripts, die andernfalls die Performance
+                einer Webanwendung negativ beeinflussen würden, im Hintergrund auszuführen, sprich parallel zum
+                Hauptthread.
+            </p>
 
+            <p>
+                Web Worker werden dabei in separaten Threads ausgeführt. Daher ist es notwendig, den entsprechenden Code
+                auch in separaten Dateien vorzuhalten. Aus dem Hauptthread ist es dann möglich, Nachrichten an einzelne
+                Web Worker zu versenden oder von diesen zu empfangen.
+            </p>
+
+            <p>
+                Standardmäßig können Aufgaben in JavaScript zwar asynchron, aber nicht parallel ausgeführt werden. Erst
+                Web Worker ermöglichen das parallele Ausführen.
+            </p>
+
+            <img alt="Web Worker" src="js-api-parallelisieren-webworker-1.png"/>
         </chapter>
 
         <chapter id="parallelisieren-web-worker-verwenden" title="Web Worker verwenden">
+            <p>
+                Um einen Web Worker zu erstellen, wird die Konstruktorfunktion <code>Worker</code> verwendet, welcher
+                man als Parameter den Namen bzw. den Pfad zu dem Skript, welches von dem Web Worker ausgeführt werden
+                soll. Um vom Hauptthread Nachrichten an einen Web Worker zu versenden, verwendet man die Methode
+                <code>postMessage()</code>, wobei als Parameter ein beliebiges JavaScript-Objekt als Nachricht übergeben
+                werden kann. Um eine Nachricht aufseiten eines Web Workers zu empfangen, muss man einen entsprechenden
+                Event-Listener für das <code>message</code>-Event registrieren oder alternativ den
+                <code>onmessage</code>-Event-Handler definieren. Dazu greift man über die Variable self auf das globale
+                Objekt des entsprechenden Web Workers zu. Das Versenden und Empfangen von Nachrichten in die andere
+                Richtung funktioniert genauso: Innerhalb des Web Workers ruft man die Methode <code>postMessage()</code>
+                auf, um eine Nachricht an den Hauptthread zu versenden. Innerhalb des Hauptthreads kann man innerhalb
+                eines Event-Listeners für das <code>message</code>-Event bzw. des <code>onmessage</code>-Event-Handlers
+                auf die Nachricht zugreifen.
+            </p>
 
+            <code-block collapsed-title="main.js" collapsible="true" lang="javascript">
+                <![CDATA[
+                    let worker = new Worker("scripts/worker.js");
+                    let message = 'Hallo Worker';
+                    console.log('Hauptthread: Sende Nachricht: ' + message);
+                    worker.postMessage(message);
+                    worker.addEventListener('message', (event) => {
+                      console.log('Hauptthread: Antwort von Worker erhalten: ' + event.data);
+                    });
+                    worker.addEventListener('error', (event) => {
+                      console.log('Fehler aufgetreten');
+                    });
+                ]]>
+            </code-block>
+
+            <code-block collapsed-title="worker.js" collapsible="true" lang="javascript">
+                <![CDATA[
+                    self.addEventListener('message', (event) => {
+                      console.log('Worker: Nachricht erhalten: ' + event.data);
+                      let workerResult = 'Hallo Hauptthread';
+                      console.log('Worker: Sende Antwort zurück: ' + workerResult);
+                      self.postMessage(workerResult);
+                    });
+                ]]>
+            </code-block>
+
+            <img alt="Web Worker" src="js-api-parallelisieren-webworker-2.png"/>
         </chapter>
     </chapter>
 
