@@ -1439,7 +1439,120 @@
     </chapter>
 
     <chapter id="battery-status-api" title="Den Batteriestand eines Endgeräts auslesen">
+        <p>
+            Über die Battery Status API <a href="https://www.w3.org/TR/battery-status/"/> hat man die Möglichkeit,
+            auf Batterie- bzw. Akkuinformationen des jeweiligen Endgeräts zuzugreifen und somit beispielsweise abhängig
+            vom Ladestatus des Akkus eine Webseite entsprechend anzupassen. Die API definiert dazu das Interface
+            <code>BatteryManager</code>, über welches der Zugriff auf verschiedene Akkuinformationen möglich ist.
+            Zugriff auf eine Objektinstanz vom Typ <code>BatteryManager</code> erhält man über die Methode
+            <code>getBattery()</code> des <code>navigator</code>-Objekts. Diese Methode gibt, aber nicht direkt das
+            <code>BatteryManager</code>-Objekt, sondern ein <code>Promise</code>-Objekt, zurück. Ruft man auf diesem
+            wiederum die Methode <code>then()</code> auf, gelangt man in der übergebenen Callback-Funktion an das
+            <code>BatteryManager</code>-Objekt.
+        </p>
 
+        <table>
+            <tr>
+                <td>
+                    Eigenschaft
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+                <td>
+                    Event
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        charging
+                    </code>
+                </td>
+                <td>
+                    Gibt an, ob die Batterie geladen wird oder nicht.
+                </td>
+                <td>
+                    <code>
+                        chargingchange
+                    </code>
+                </td>
+                <td>
+                    Wird ausgelöst, wenn das Endgerät seinen Ladestatus ändert, d.h., von ladend zu nicht ladend oder
+                    von nicht ladend zu ladend.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        chargingTime
+                    </code>
+                </td>
+                <td>
+                    Gibt die Zeit an, die es braucht, bis die Batterie vollständig geladen ist.
+                </td>
+                <td>
+                    <code>
+                        chargingtimechange
+                    </code>
+                </td>
+                <td>
+                    Wird ausgelöst, wenn sich die Zeit ändert, die es braucht, bis die Batterie den vollen Ladestatus
+                    erreicht hat.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        dischargingTime
+                    </code>
+                </td>
+                <td>
+                    Gibt die Zeit an, die es braucht, bis die Batterie vollständig entladen ist.
+                </td>
+                <td>
+                    <code>
+                        dischargingtimechange
+                    </code>
+                </td>
+                <td>
+                    Wird ausgelöst, wenn sich die Zeit ändert, die es braucht, bis die Batterie leer ist.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        level
+                    </code>
+                </td>
+                <td>
+                    Gibt den Batteriestand als Fließkommazahl zwischen 0 (nicht geladen) und 1 (vollständig geladen) an.
+                </td>
+                <td>
+                    <code>
+                        levelchange
+                    </code>
+                </td>
+                <td>
+                    Wird ausgelöst, wenn sich der Batteriestand ändert.
+                </td>
+            </tr>
+        </table>
+
+        <code-block collapsed-title="worker.js" collapsible="true" lang="javascript">
+            <![CDATA[
+                navigator.getBattery().then(function (battery){
+                  console.log(battery.level);
+                  battery.addEventListener('chargingchange', console.log('chargingchange'));
+                  battery.addEventListener('chargingtimechange', console.log('chargingtimechange'));
+                  battery.addEventListener('dischargingtimechange', console.log('dischargingtimechange'));
+                  battery.addEventListener('levelchange', console.log('levelchange'));  });
+                });
+            ]]>
+        </code-block>
     </chapter>
 
     <chapter id="web-speech-api" title="Sprache ausgeben und Sprache erkennen">
