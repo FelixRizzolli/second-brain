@@ -66,30 +66,682 @@
     <chapter id="browserinformationen" title="Browserfensterinformationen">
         <chapter id="browserinformationen-gruesse-und-position-eines-browserfensters"
                  title="Größe und Position eines Browserfensters">
+            <img alt="Größe und Position eines Browserfensters" src="js-browser-bom-browser-fenster.png"/>
 
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Eigenschaft
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            innerHeight
+                        </code>
+                    </td>
+                    <td>
+                        Enthält die Höhe des Fensterinhalts inklusive (falls dargestellt) der horizontalen Scrollbar,
+                        aber ohne sonstige Browserleisten.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            innerWidth
+                        </code>
+                    </td>
+                    <td>
+                        Enthält die Breite des Fensterinhalts inklusive (falls dargestellt) der vertikalen Scrollbar,
+                        aber ohne sonstige Browserleisten.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            outerHeight
+                        </code>
+                    </td>
+                    <td>
+                        Enthält die Höhe des Browserfensters inklusive aller Browserleisten.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            outerWidth
+                        </code>
+                    </td>
+                    <td>
+                        Enthält die Breite des Browserfensters inklusive aller Browserleisten.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            pageXOffset
+                        </code>
+                    </td>
+                    <td>
+                        ein Alias für <code>window.scrollX</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            pageYOffset
+                        </code>
+                    </td>
+                    <td>
+                        ein Alias für <code>window.scrollY</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            screenX
+                        </code>
+                    </td>
+                    <td>
+                        Enthält die Position des Browserfensters auf der x-Achse, mit anderen Worten: den Abstand des
+                        Browserfensters zum linken Bildschirmrand.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            screenY
+                        </code>
+                    </td>
+                    <td>
+                        Enthält die Position des Browserfensters auf der y-Achse, mit anderen Worten: den Abstand des
+                        Browserfensters zum oberen Bildschirmrand.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            scrollX
+                        </code>
+                    </td>
+                    <td>
+                        Enthält die Anzahl an Pixeln, die die Webseite bereits horizontal gescrollt wurde.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            scrollY
+                        </code>
+                    </td>
+                    <td>
+                        Enthält die Anzahl an Pixeln, die die Webseite bereits vertikal gescrollt wurde.
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                Zum Verändern der Browserinformationen bietet das <code>window</code>-Objekt folgende Methoden:
+            </p>
+
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Methode
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            moveBy()
+                        </code>
+                    </td>
+                    <td>
+                        Verschiebt das aktuelle Browserfenster horizontal und vertikal um eine bestimmte Pixelanzahl.
+                        Der erste Parameter bestimmt dabei die horizontale Verschiebung in Pixeln, der zweite Parameter
+                        die vertikale Verschiebung.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            moveTo()
+                        </code>
+                    </td>
+                    <td>
+                        Verschiebt das aktuelle Browserfenster horizontal und vertikal zu einer bestimmten Position. Der
+                        erste Parameter bestimmt dabei die horizontale Position in Pixeln, der zweite Parameter die
+                        vertikale Position.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            resizeBy()
+                        </code>
+                    </td>
+                    <td>
+                        Skaliert das aktuelle Browserfenster horizontal und vertikal um eine bestimmte Anzahl an Pixeln.
+                        Der erste Parameter bestimmt dabei den horizontalen Skalierungswert, der zweite Parameter den
+                        vertikalen Skalierungswert.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            resizeTo()
+                        </code>
+                    </td>
+                    <td>
+                        Skaliert das aktuelle Browserfenster horizontal und vertikal zu einer bestimmten Größe. Der
+                        erste Parameter bestimmt dabei die Breite, der zweite Parameter die Höhe.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            scroll()
+                        </code>
+                    </td>
+                    <td>
+                        Scrollt den Fensterinhalt zu einer bestimmten Position. Der erste Parameter gibt dabei die
+                        horizontale Position an, der zweite Parameter die vertikale Position.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            scrollBy()
+                        </code>
+                    </td>
+                    <td>
+                        Scrollt den Fensterinhalt um einen bestimmten Faktor. Der erste Parameter gibt den horizontalen
+                        Scrollfaktor an, der zweite Parameter den vertikalen Scrollfaktor.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            scrollTo()
+                        </code>
+                    </td>
+                    <td>
+                        Scrollt den Fensterinhalt zu einer bestimmten Position. Der erste Parameter gibt dabei die
+                        horizontale Position an, der zweite Parameter die vertikale Position.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter id="browserinformationen-anzeigeinformationen-der-browserleisten"
                  title="Anzeigeinformationen der Browserleisten">
+            <img alt="Anzeigeinformationen der Browserleisten" src="js-browser-bom-browserleisten.png"/>
 
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Eigenschaft
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            locationbar
+                        </code>
+                    </td>
+                    <td>
+                        Enthält eine Referenz auf ein Objekt, welches Informationen darüber gibt, ob die Adressleiste
+                        eingeblendet ist oder nicht.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            menubar
+                        </code>
+                    </td>
+                    <td>
+                        Enthält eine Referenz auf ein Objekt, welches Informationen darüber gibt, ob die Menüleiste
+                        eingeblendet ist oder nicht.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            personalbar
+                        </code>
+                    </td>
+                    <td>
+                        Enthält eine Referenz auf ein Objekt, welches Informationen darüber gibt, ob die »persönliche«
+                        Leiste (z. B. die Bookmark-Leiste) eingeblendet ist oder nicht.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            scrollbars
+                        </code>
+                    </td>
+                    <td>
+                        Enthält eine Referenz auf ein Objekt, welches Informationen darüber gibt, ob die Scrollleisten
+                        eingeblendet sind oder nicht.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            statusbar
+                        </code>
+                    </td>
+                    <td>
+                        Enthält eine Referenz auf ein Objekt, welches Informationen darüber gibt, ob die Statusleiste
+                        eingeblendet ist oder nicht.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            toolbar
+                        </code>
+                    </td>
+                    <td>
+                        Enthält eine Referenz auf ein Objekt, welches Informationen darüber gibt, ob die Werkzeugleiste
+                        eingeblendet ist oder nicht.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter id="browserinformationen-allgemein" title="Allgemeine Eigenschaften">
 
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Eigenschaft
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            name
+                        </code>
+                    </td>
+                    <td>
+                        Enthält den Namen des Fensters.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            opener
+                        </code>
+                    </td>
+                    <td>
+                        Öffnet man per JavaScript aus einem Browserfenster heraus ein anderes Browserfenster, enthält
+                        diese Eigenschaft eine Referenz auf das Ursprungsfenster.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            self
+                        </code>
+                    </td>
+                    <td>
+                        Enthält eine Referenz auf ein Objekt (<code>window</code>-Objekt), welches das aktuelle
+                        Browserfenster repräsentiert. Dies ist vor allem dann interessant, um Konflikte mit dem
+                        <code>this</code>-Schlüsselwort zu vermeiden, wenn man innerhalb von Event-Listenern auf das
+                        aktuelle <code>window</code>-Objekt zugreifen möchte.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter id="browserinformationen-browserfenster-oeffnen-und-schliessen"
                  title="Browserfenster öffnen &amp; schließen">
+            <code-block lang="javascript">
+                <![CDATA[
+                    window.open(
+                      url,                  // zu öffnende URL
+                      'Fenstertitel',       // Name des Fensters
+                      ( 'width=500,' +      // Breite des Fensters
+                        'height=500,' +     // Höhe des Fensters
+                        'resizable=yes,' +  // Größenänderungen möglich
+                        'scrollbars=1,' +   // Scrollbar aktiviert
+                        'status' )          // Statusbar aktiviert
+                    );
+                ]]>
+            </code-block>
 
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Eigenschaft
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            height
+                        </code>
+                    </td>
+                    <td>
+                        die Höhe des neuen Browserfensters in Pixeln
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            innerHeight
+                        </code>
+                    </td>
+                    <td>
+                        die Höhe des Anzeigebereichs des neuen Browserfensters in Pixeln
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            innerWidth
+                        </code>
+                    </td>
+                    <td>
+                        die Breite des Anzeigebereichs des neuen Browserfensters in Pixeln
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            left
+                        </code>
+                    </td>
+                    <td>
+                        Abstand der linken oberen Ecke des neuen Browserfensters zum linken Bildschirmrand in Pixeln
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            location
+                        </code>
+                    </td>
+                    <td>
+                        Angabe darüber, ob das neue Browserfenster über eine Adresszeile verfügen soll oder nicht
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            menubar
+                        </code>
+                    </td>
+                    <td>
+                        Angabe darüber, ob das neue Browserfenster über eine Menüleiste verfügen soll oder nicht
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            resizable
+                        </code>
+                    </td>
+                    <td>
+                        Angabe darüber, ob das neue Browserfenster größenveränderbar ist oder nicht
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            screenX
+                        </code>
+                    </td>
+                    <td>
+                        Abstand der linken oberen Ecke des neuen Browserfensters zum linken Bildschirmrand in Pixeln
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            screenY
+                        </code>
+                    </td>
+                    <td>
+                        Abstand der linken oberen Ecke des neuen Browserfensters zum oberen Bildschirmrand in Pixeln
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            scrollbars
+                        </code>
+                    </td>
+                    <td>
+                        Angabe darüber, ob das neue Browserfenster über eine Scrollbar verfügen soll oder nicht
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            status
+                        </code>
+                    </td>
+                    <td>
+                        Angabe darüber, ob das neue Browserfenster über eine Statusleiste verfügen soll oder nicht
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            toolbar
+                        </code>
+                    </td>
+                    <td>
+                        Angabe darüber, ob das neue Browserfenster über eine Toolbar (sprich Werkzeugleiste) verfügen
+                        soll oder nicht
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            top
+                        </code>
+                    </td>
+                    <td>
+                        Abstand der linken oberen Ecke des neuen Browserfensters zum oberen Bildschirmrand in Pixeln
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            width
+                        </code>
+                    </td>
+                    <td>
+                        die Breite des neuen Browserfensters in Pixeln
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                Mit der <code>close()</code>-Methode kann das Browserfenster geschlossen werden.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    window.close();
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="browserinformationen-dialoge" title="Dialoge">
-
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Methode
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            alert()
+                        </code>
+                    </td>
+                    <td>
+                        Öffnet einen Dialog mit einer Meldung.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            close()
+                        </code>
+                    </td>
+                    <td>
+                        Schließt das Browserfenster.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            confirm()
+                        </code>
+                    </td>
+                    <td>
+                        Öffnet einen Dialog mit einer Meldung.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            find()
+                        </code>
+                    </td>
+                    <td>
+                        Sucht nach einer Zeichenkette im Browserfenster.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            open()
+                        </code>
+                    </td>
+                    <td>
+                        Erzeugt ein neues Browserfenster.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            print()
+                        </code>
+                    </td>
+                    <td>
+                        Öffnet einen Dialog zum Drucken des Fensterinhalts.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            prompt()
+                        </code>
+                    </td>
+                    <td>
+                        Öffnet einen Dialog, über den Nutzer Text eingeben können.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter id="browserinformationen-funktionen-zeitgesteuert-ausfuehren"
                  title="Funktionen zeitgesteuert ausführen">
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Methode
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            setInterval()
+                        </code>
+                    </td>
+                    <td>
+                        Führt eine Funktion in bestimmten Zeitabständen aus. Gibt eine <code>ID</code> zurück, die der
+                        Methode <code>clearInterval()</code> als Parameter übergeben werden kann, um so das Ausführen
+                        der Funktion abzubrechen.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            clearInterval()
+                        </code>
+                    </td>
+                    <td>
+                        Bricht das Ausführen der Funktion ab, die über <code>setInterval()</code> angestoßen wurde.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            setTimeout()
+                        </code>
+                    </td>
+                    <td>
+                        Führt eine Funktion nach einem bestimmten Zeitraum aus. Gibt eine <code>ID</code> zurück, die
+                        der Methode <code>clearTimeout()</code> als Parameter übergeben werden kann, um so das Ausführen
+                        der Funktion zu verhindern.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            clearTimeout()
+                        </code>
+                    </td>
+                    <td>
+                        Bricht das Ausführen der Funktion ab, die über <code>setTimeout()</code> angestoßen wurde.
+                    </td>
+                </tr>
+            </table>
 
+            <p>
+                Über die Methode <code>setTimeout()</code> lässt sich definieren, nach welchem Zeitraum eine bestimmte
+                Funktion ausgeführt werden soll. Als Argument übergibt man eine anonyme Funktion oder den Namen der
+                entsprechenden Funktion sowie als zweites Argument den Zeitraum in Millisekunden, nach dem die Funktion
+                ausgeführt werden soll.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    window.setTimeout(() => {
+                      console.log('Hallo Welt');
+                    }, 5000);
+                ]]>
+            </code-block>
         </chapter>
     </chapter>
 
