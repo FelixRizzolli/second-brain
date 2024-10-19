@@ -26,7 +26,78 @@
     </chapter>
 
     <chapter id="rendering-kontext" title="Der Rendering-Kontext">
+        <p>
+            Das <code>&lt;canvas&gt;</code>-Element stellt einen oder mehrere sogenannte Rendering-Kontexte (im
+            Englischen Rendering Context) zur Verfügung, über die sich die Zeichenfläche bzw. deren Inhalt manipulieren
+            lässt. Über die Methode <code>getContext()</code> des <code>&lt;canvas&gt;</code>-Elements lässt sich auf
+            den entsprechenden Kontext zugreifen. Als Parameter erwartet diese Methode den Bezeichner des Kontextes.
+        </p>
 
+        <table style="header-row">
+            <tr>
+                <td>
+                    Bezeichner
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        2d
+                    </code>
+                </td>
+                <td>
+                    Kontext für das Rendern von 2D-Grafiken. Übergibt man diesen Bezeichner, liefert die Methode
+                    <code>getContext()</code> ein Objekt vom Typ <code>CanvasRenderingContext2D</code> zurück.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        webgl
+                    </code>
+                </td>
+                <td>
+                    Kontext für das Rendern von 3D-Grafiken in Browsern, die WebGL in Version 1 implementieren. Übergibt
+                    man diesen Bezeichner, liefert die Methode <code>getContext()</code> ein Objekt vom Typ
+                    <code>WebGLRenderingContext</code> zurück.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        webgl2
+                    </code>
+                </td>
+                <td>
+                    Kontext für das Rendern von 3D-Grafiken in Browsern, die WebGL in Version 2 implementieren. Übergibt
+                    man diesen Bezeichner, liefert die Methode <code>getContext()</code> ein Objekt vom Typ
+                    <code>WebGL2RenderingContext</code> zurück.
+                </td>
+            </tr>
+        </table>
+
+        <img alt="Rendering" src="js-apis-canvas-rendering.png"/>
+
+        <code-block lang="javascript">
+            <![CDATA[
+                let canvas = document.getElementById('canvas');
+                let context = canvas.getContext('2d');
+            ]]>
+        </code-block>
+
+        <p>
+            Dem 2D-Kontext liegt ein zweidimensionales Koordinatensystem zugrunde, auf dem man anhand von x- und
+            y-Koordinaten (und unter Verwendung verschiedener Helferfunktionen) pixelgenau zeichnen kann.
+        </p>
+
+        <p>
+            Den Ursprung dieses Koordinatensystems bildet die Koordinate (0,0) links oben an der Zeichenfläche.
+            Grafikelemente wie Rechtecke, Kreise, Kurven etc. werden relativ zu dieser Ursprungskoordinate auf die
+            Zeichenfläche gezeichnet.
+        </p>
     </chapter>
 
     <chapter id="rechtecke" title="Rechtecke zeichnen">
