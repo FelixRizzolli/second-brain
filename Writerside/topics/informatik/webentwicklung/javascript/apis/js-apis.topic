@@ -1591,7 +1591,7 @@
                 if(window.speechSynthesis) {
                   /* Sprachausgabe unterstützt */
                 } else {
-                  /* Sprachausgabe nicht unterstützt */ 
+                  /* Sprachausgabe nicht unterstützt */
                 }
 
                 if(window.webkitSpeechRecognition) {
@@ -1612,7 +1612,183 @@
     </chapter>
 
     <chapter id="web-animation-api" title="Animationen erstellen">
+        <p>
+            Die Web Animation API <a href="http://www.w3.org/TR/web-animations/"/> bietet Webentwicklern die
+            Möglichkeit, innerhalb einer Webseite per JavaScript Animationen zu definieren und zu steuern. Welche
+            Browser aktuell die API unterstützen sind hier gelistet:
+            <a href="http://caniuse.com/#search=web%20animations%20api" ignore-vars="true"/>). In Browsern, die bislang
+            noch keine Unterstützung anbieten, kann man auf Polyfills wie das unter
+            <a href="https://github.com/web-animations/web-animations-js"/> zu findende zurückgreifen.
+        </p>
 
+        <p>
+            Kern der Web Animation API bildet die Methode <code>animate()</code>, die durch die API für DOM-Elemente neu
+            bereitgestellt wird. Über diese Methode lassen sich einzelne Animationen erstellen, die jeweils durch ein
+            Objekt vom (ebenfalls neuen) Typ <code>Animation</code> repräsentiert werden.
+        </p>
+
+        <table>
+            <tr>
+                <td>
+                    Interface
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        Animation
+                    </code>
+                </td>
+                <td>
+                    Repräsentiert eine Animation.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        Animatable
+                    </code>
+                </td>
+                <td>
+                    Repräsentiert ein animierbares Element auf einer Webseite. Wird von dem Element-Interface und dem
+                    <code>PseudoElement</code>-Interface implementiert, wodurch alle DOM-Elemente einer Webseite die
+                    Methode <code>animate()</code> erhalten.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        AnimationTimeline
+                    </code>
+                </td>
+                <td>
+                    Fasst die Animationen auf einer Zeitachse zusammen.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        AnimationEffectTiming
+                    </code>
+                </td>
+                <td>
+                    Repräsentiert die Effekte einer Animation (der zweite Parameter, welcher der Methode
+                    <code>animate()</code> übergeben wird).
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        DocumentTimeline
+                    </code>
+                </td>
+                <td>
+                    Fasst die Animationen einer Webseite in einer Zeitachse zusammen. Leitet von
+                    <code>AnimationTimeline</code> ab.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        KeyframeEffect
+                    </code>
+                </td>
+                <td>
+                    Repräsentiert die Effekte eines einzelnen Keyframes einer Animation. Typ der Objekte, die als
+                    <code>Array</code>-Parameter der Funktion <code>animate()</code> übergeben werden.
+                </td>
+            </tr>
+        </table>
+
+        <code-block collapsed-title="worker.js" collapsible="true" lang="javascript">
+            <![CDATA[
+                function init() {
+                  let animation = document.getElementById('circle').animate([
+                      { transform: 'scale(2)', opacity: 1, offset: 0 },
+                      { transform: 'scale(3)', opacity: 0.8, offset: 0.3 },
+                      { transform: 'scale(4)', opacity: 0.6, offset: 0.6 },
+                      { transform: 'scale(5)', opacity: 0.7, offset: 1 }
+                    ],
+                    {
+                      duration: 500,          // Dauer in Millisekunden
+                      easing: 'ease-in-out',  // Animationsverhalten
+                      delay: 10,              // Verzögerung in Millisekunden
+                      iterations: Infinity,   // Anzahl Wiederholungen
+                      direction: 'alternate', // Animationsrichtung
+                      fill: 'both'            // Füllverhalten der Animation
+                  });
+                }
+
+                document.addEventListener('DOMContentLoaded', init);
+            ]]>
+        </code-block>
+
+        <p>
+            Der Methode <code>animate()</code> übergibt man als ersten Parameter ein Array von Keyframe-Beschreibungen,
+            als zweiten Parameter ein Konfigurationsobjekt, über das sich weitere Eigenschaften der Animation definieren
+            lassen.
+        </p>
+
+        <p>
+            In etwa entsprechen die Einstellungen, die man über diese beiden Parameter vornehmen kann, den
+            Einstellungen, die man auch von der Arbeit mit CSS-Animationen kennt. Die Keyframe-Beschreibungen lassen
+            sich somit auf die <code>@keyframes</code>-Regel, das Konfigurationsobjekt auf die
+            (CSS-)Shorthand-Eigenschaft animation (bzw. die einzelnen animation-*-Eigenschaften) abbilden.
+        </p>
+
+        <p>
+            Über die (Objekt-)Eigenschaft <code>offset</code> jedes <code>Keyframe</code>-Objekts lässt sich definieren,
+            zu welchem Zeitpunkt der jeweilige Keyframe innerhalb der Animation gezeigt werden soll. Lässt man diese
+            Eigenschaft weg, werden die einzelnen Keyframes gleichmäßig auf die definierte Zeitdauer verteilt.
+        </p>
+
+        <p>
+            Darüber hinaus lassen sich für jeden Keyframe (animierbare) CSS-Eigenschaften wie <code>transform</code>
+            oder <code>opacity</code> und ihre Werte angeben, die das animierte Element zum jeweiligen Zeitpunkt der
+            Animation annehmen soll. Die Werte zwischen zwei Keyframes werden dann automatisch interpoliert.
+        </p>
+
+        <p>
+            Kurz gesagt: Wenn man bereits mit CSS-Animationen zu tun hatte, hat man auch schnell die Grundlagen der Web
+            Animation API verstanden. Vom Prinzip her funktioniert das alles ähnlich, nur eben nicht deklarativ, sondern
+            programmatisch.
+        </p>
+
+        <code-block collapsed-title="worker.js" collapsible="true" lang="javascript">
+            <![CDATA[
+                let buttonPause = document.getElementById('button-pause');
+                buttonPause.addEventListener('click', () => {
+                  animation.pause();
+                });
+
+                let buttonPlay = document.getElementById('button-play');
+                buttonPlay.addEventListener('click', () => {
+                  animation.play();
+                });
+
+                let buttonFaster = document.getElementById('button-faster');
+                buttonFaster.addEventListener('click', () => {
+                  animation.playbackRate *= 2;
+                });
+            ]]>
+        </code-block>
+
+        <p>
+            Über das <code>Animation</code>-Objekt, welches man von der Methode <code>animate()</code> erhält, lässt
+            sich das Abspielverhalten der Animation steuern. Über die Methode <code>pause()</code> lässt sich die
+            Animation pausieren, über <code>play()</code> wieder starten. Die Methoden <code>cancel()</code> und
+            <code>finish()</code> erlauben zudem, eine Animation abzubrechen oder zu beenden.
+        </p>
+
+        <p>
+            Im Beispiel aus Listing werden hier verschiedene Schaltflächen hinzugefügt, die über
+            <code>click</code>-Listener die entsprechenden Funktionen am <code>Animation</code>-Objekt aufrufen.
+            Ebenfalls zu sehen: über die Eigenschaft <code>playbackRate</code> lässt sich die Geschwindigkeit der
+            Animation beeinflussen.
+        </p>
     </chapter>
 
     <chapter id="internationalization-api" title="Mehrsprachige Anwendungen entwickeln">
