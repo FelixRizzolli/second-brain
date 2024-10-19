@@ -55,43 +55,422 @@
     </chapter>
 
     <chapter id="namespaces-modules" title="Namespaces &amp; Modules">
+        <p>
+            Je größer ein Software-Projekt wird, desto wichtiger ist es, den Quelltext richtig zu strukturieren. Zum
+            einen, um die Übersicht zu behalten und Daten und Methoden angemessen zu kapseln, zum anderen, um
+            Namenskonflikte zwischen Variablen, Objekten und Funktionen zu vermeiden, sowohl innerhalb des eigenen
+            Quelltextes als auch bei Verwendung von Fremdbibliotheken. Von Haus aus bietet JavaScript erst seit
+            ECMAScript 6 (bzw. ES2015) die Möglichkeit, Module zu definieren. Alternativ dazu haben sich in der
+            Vergangenheit verschiedene Entwurfsmuster und Vorgehensweisen herausgebildet, mit denen sich solche
+            Anforderung trotzdem umsetzen lassen.
+        </p>
 
         <chapter id="namespaces-namenskonflikte" title="Namenskonflikte">
+            <p>
+                Sobald umfangreichere JavaScript-Anwendungen entwickelt werden, in denen die Logik auf mehrere
+                JavaScript-Dateien verteilt ist oder Fremdbibliotheken verwendet werden. Sollte man sich darüber
+                Gedanken machen, wie Quelltextkomponenten (Variablen, Funktionen, Objekte etc.) gruppiert werden.
+                Schnell kann es nämlich passieren, dass es zu Namenskonflikten kommt, wenn man alles auf globaler Ebene
+                definiert.
+            </p>
+
+            <img alt="Namenskonflikte in JavaScript" src="js-professional-namespace-namenskonflikte.png"/>
+
+            <p>
+                Die beiden JavaScript-Dateien <code>script1.js</code> und <code>script2.js</code> definieren jeweils
+                eine Variable mit gleichem Namen <code>MAX</code> und eine Funktion mit gleichem Namen
+                <code>add()</code>. Solange beide Skripts getrennt voneinander verwendet werden (<code>script1.js</code>
+                von <code>index1.html</code> und <code>script2.js</code> von <code>index2.html</code>), kommt es zu
+                keinen Konflikten. Sobald aber beide Skripts gleichzeitig zum Einsatz kommen <code>index3.html</code>,
+                bestimmt dann die Reihenfolge des Ladens darüber, welchen Wert die Variable <code>MAX</code> bekommt und
+                welche der beiden Funktionen unter <code>add()</code> bereitsteht.
+            </p>
 
             <chapter id="namespaces-namenskonflikte-design-pattern" title="Das Namespace-Entwurfsmuster">
+                <img alt="Das Namespace-Entwurfsmuster" src="js-professional-namespace-design-pattern.png"/>
 
+                <p>
+                    Die Idee beim Namespace Entwurfsmuster ist es zusammengehörige Variablen etc. jeweils in einem
+                    eigenen Objekt zusammenzufassen, welches innerhalb einer Anwendung nur einmal existiert und als
+                    einfacher Container dient. Dadurch hat man zumindest etwas Struktur in den Quelltext gebracht und
+                    vermeiden es, Variablen im globalen Gültigkeitsbereich zu definieren. Solange solche
+                    Container-Objekte einen global eindeutigen Namen haben, führt dieses Vorgehen zu keinen
+                    Namenskonflikten.
+                </p>
+
+                <p>
+                    Das Namespace-Entwurfsmuster verhindert nicht, dass Variablen, Funktionen etc. des entsprechenden
+                    Container-Objekts von außerhalb neu gesetzt (»überschrieben«) werden können.
+                </p>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        var MathUtilities = MathUtilities || {};
+                        var MoreMathUtilities = MoreMathUtilities || {};
+                    ]]>
+                </code-block>
+
+                <note>
+                    <p>
+                        <b>
+                            Das Nestet-Namespace-Entwurfsmuster
+                        </b>
+                    </p>
+
+                    <p>
+                        Jetzt kann es natürlich vorkommen, dass bei der Vergabe des Namens für ein Container-Objekt ein
+                        Name gewählt wird, für den es bereits eine gleichnamige Variable gibt (beispielsweise in einer
+                        eingebundenen JavaScript-Bibliothek). Um dies zu umgehen, kann man in der Praxis, Namensräume
+                        auch schachteln (Nested Namespacing), umgekehrt geschriebene Domainnamen abhängig vom jeweiligen
+                        Projekt zu verwenden.
+                    </p>
+                </note>
+
+                <p>
+                    Der Vorteil dabei, umgekehrt geschriebene Domainnamen als Basis für eine Namespace-Struktur zu
+                    verwenden, ist der, dass Domains weltweit eindeutig sind. Auf diese Weise ist sichergestellt, dass
+                    weltweit kein anderer Entwickler den gleichen Namespace verwendet (vorausgesetzt, jeder hält sich an
+                    diese Konvention).
+                </p>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        var de = de || {};
+                        de.felixrizzolli = de.felixrizzolli || {};
+                        de.felixrizzolli.javascript = de.felixrizzolli.javascript || {};
+                    ]]>
+                </code-block>
+
+                <p>
+                    Mit dem Namespace-Entwurfsmuster sind zwar die Probleme der Namenskonflikte gelöst, nicht aber, die
+                    der Sichtbarkeit von Variablen und Funktionen. Getreu dem Konzept des <b>Information Hiding</b>
+                    (auch als <b>Datenkapselung</b> bekannt) ist es jedoch sinnvoll, bei der Modellierung von Objekten
+                    nur so viel an Information nach außen hin zur Verfügung zu stellen wie unbedingt notwendig.
+                </p>
             </chapter>
         </chapter>
 
         <chapter id="modules" title="Module definieren und verwenden">
+            <p>
+                Erst mit Version ES2015 sind Module ein Bestandteil des Standards und damit der Sprache JavaScript
+                geworden. Da dies aber relativ lange nicht der Fall war, haben sich im Laufe der Zeit verschiedene
+                Entwurfsmuster und Techniken herausgebildet, um Quelltext modular aufzubauen und in wiederverwendbare
+                Module zusammenzufassen. Im Zuge dessen haben sich darüber hinaus ebenfalls zwei Quasistandards
+                entwickelt, welche die Modularisierung des Quelltextes als Ziel haben; zum einen das sogenannte
+                CommonJS, welches in erster Linie die Verwendung von Modulen auf Serverseite adressiert, beispielsweise
+                für die Verwendung unter Node.js; zum anderen das sogenannte AMD (für Asynchronous Module Definition),
+                welches dem Verwenden von Modulen auf Clientseite dient, sprich, von eben solchen Modulen, die im
+                Browser verwendet werden.
+            </p>
 
             <chapter id="modules-design-pattern" title="Das Module-Entwurfsmuster">
+                <img alt="Das Module-Entwurfsmuster" src="js-professional-module-design-pattern.png"/>
+
+                <p>
+                    Das Module-Entwurfsmuster basiert auf der Verwendung des eben vorgestellten
+                    Namespace-Entwurfsmusters sowie der Kapselung von Daten über sogenannte Closures und IIFEs. Mithilfe
+                    einer IIFE wird ein eigener Gültigkeitsbereich geschaffen, der dafür sorgt, dass alle Eigenschaften
+                    und Funktionen des Moduls von außen nicht zugänglich sind. Die IIFE gibt zudem ein Objekt zurück,
+                    welches die Methoden und Eigenschaften enthält, die durch das Modul bereitgestellt werden
+                    (Exportobjekt, sozusagen die öffentliche API). Methoden dieses Exportobjekts haben dabei Zugriff auf
+                    alle Eigenschaften und Funktionen, die innerhalb des Moduls definiert wurden (Stichwort Closure).
+                </p>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        var Module = Module || (function () {
+                          let x = 5;      // private Variable
+                          let y = 4711;   // private Variable
+                          return {        // öffentliche API
+                            getX: function() { return x; }, // öffentliche Funktion
+                            getY: function() { return y; }  // öffentliche Funktion
+                          }
+                        })();
+                    ]]>
+                </code-block>
+
+                <note>
+                    <p>
+                        <b>
+                            Closures
+                        </b>
+                    </p>
+
+                    <p>
+                        Unter einer Closure (auch Funktionsabschluss genannt) versteht man eine Funktion, die von einer
+                        anderen Funktion zurückgegeben wird und dabei die Werte von Variablen und Parametern dieser
+                        Funktion »einschließt« und sich quasi merkt.
+                    </p>
+                </note>
+
+                <note>
+                    <p>
+                        <b>
+                            IIFE (Immediately-Invoked Function Expression)
+                        </b>
+                    </p>
+
+                    <p>
+                        Unter einer IIFE (Immediately-Invoked Function Expression) versteht man eine Funktion, die bei
+                        Definition direkt aufgerufen wird. Die Funktion wird mit zwei runden Klammern umgeben bevor sie
+                        aufgerufen wird. Dadurch wertet der Interpreter die Funktion nicht als Deklaration (was in
+                        diesem Fall einen Syntaxfehler hervorrufen würde), sondern als Ausdruck.
+                    </p>
+                </note>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        (function() {
+                          console.log('Diese Funktion wird deklariert und sofort aufgerufen.');
+                        })();
+                    ]]>
+                </code-block>
 
                 <chapter id="modules-design-pattern-revealing-module" title="Das Revealing-Module-Entwurfsmuster">
+                    <p>
+                        Möchte man innerhalb eines Moduls eine Methode des gleichen Moduls aufrufen, so muss dem
+                        Methodenaufruf immer der Name des Moduls vorangestellt werden. Um diese Unbequemlichkeit zu
+                        umgehen, bedient man sich gerne einer Technik, welche im Allgemeinen als Revealing Module bzw.
+                        Revealing Module Pattern bekannt ist. Die Idee dabei ist, dass eine Methode, die exportiert
+                        werden soll, nicht innerhalb des Exportobjekts selbst definiert wird, sondern außerhalb davon.
+                        Innerhalb des Exportobjekts referenziert man lediglich diese Methode.
+                    </p>
 
+                    <table style="header-row">
+                        <tr>
+                            <td>
+                                Vorher
+                            </td>
+                            <td>
+                                Nachher
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code-block lang="javascript">
+                                    <![CDATA[
+                                        var Module = Module || (function () {
+                                          let x = 5;
+                                          let y = 4711;
+                                          return {
+                                            getX: function() { return x; },
+                                            getY: function() { return y; },
+                                            print: function() {
+                                              console.log(Module.getX() + ' ' + Module.getY());
+                                            }
+                                          }
+                                        })();
+                                    ]]>
+                                </code-block>
+                            </td>
+                            <td>
+                                <code-block lang="javascript">
+                                    <![CDATA[
+                                        var Module = Module || (function () {
+                                          let x = 5;
+                                          let y = 4711;
+                                          function getX() { return x; };
+                                          function getY() { return y; };
+                                          function print() {
+                                            console.log(getX() + ' ' + getY());
+                                          }
+                                          return {
+                                            getX: getX,
+                                            getY: getY,
+                                            print: print
+                                          }
+                                        })();
+                                    ]]>
+                                </code-block>
+                            </td>
+                        </tr>
+                    </table>
                 </chapter>
 
                 <chapter id="modules-design-pattern-module-augmentation" title="Module Augmentation">
+                    <p>
+                        Um ein Modul innerhalb eines anderen Moduls zu importieren, übergibt man das zu importierende
+                        Modul dem anderen einfach als Argument der IIFE. Module Augmentation gibt es in zwei Varianten:
+                        Loose Augmentation sowie Tight Augmentation. Bei der Loose Augmentation wird – für den Fall,
+                        dass das Modul noch gar nicht erzeugt wurde, sprich quasi die erste Quelltextdatei geladen wurde
+                        – ein leeres Objekt als Argument übergeben. Bei der Tight Augmentation dagegen wird davon
+                        ausgegangen, dass es das Modul bereits gibt (sprich, mindestens eine andere Quelltextdatei
+                        bereits geladen wurde). Vorteil der Loose Augmentation ist, dass sich Skripts, die zum Modul
+                        beitragen, asynchron laden lassen. Es spielt keine Rolle, welches Skript als Erstes geladen
+                        wird, da im Zweifelsfall das Modul neu erstellt wird. Bei der Tight Augmentation ist das nicht
+                        der Fall, hier setzt die Anwendung eine bestimmte Reihenfolge beim Laden der Skripts voraus.
+                        Vorteil dabei ist, dass man sich innerhalb einer Datei darauf verlassen kann, dass andere
+                        Dateien bereits geladen wurden und entsprechend dort zum Modul hinzugefügte Eigenschaften und
+                        Methoden existieren. Unabhängig davon, welche Art der Module Augmentation man verwendet, besteht
+                        ein gemeinsamer Nachteil: Funktionen, die in einer Quelltextdatei für ein Modul definiert
+                        werden, haben keinen Zugriff auf private Variablen, die in einer anderen Quelltextdatei für das
+                        gleiche Modul definiert wurden.
+                    </p>
 
+                    <table style="header-row">
+                        <tr>
+                            <td>
+                                Loose Argumentation
+                            </td>
+                            <td>
+                                Tight Augmentation
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code-block lang="javascript">
+                                    <![CDATA[
+                                        var ModuleA = ModuleA || (function () { /* ... */ })();
+                                        var ModuleB = ModuleB || (function (moduleA) {
+                                          function print() { return moduleA.printHelloWorld(); }
+                                        })(ModuleA || {});
+                                    ]]>
+                                </code-block>
+                            </td>
+                            <td>
+                                <code-block lang="javascript">
+                                    <![CDATA[
+                                        var ModuleA = ModuleA || (function () { /* ... */ })();
+                                        var ModuleB = ModuleB || (function (moduleA) {
+                                          function print() { return moduleA.printHelloWorld(); }
+                                        })(ModuleA);
+                                    ]]>
+                                </code-block>
+                            </td>
+                        </tr>
+                    </table>
                 </chapter>
             </chapter>
 
             <chapter id="modules-amd" title="AMD">
-
+                <p>
+                    Bei AMD (Asynchronous Module Definition) handelt es sich um eine Technik zur Definition von
+                    Modulen, die das asynchrone Laden ermöglicht und damit Anwendungen adressiert, die im Browser
+                    laufen. AMD wird beispielsweise von <code>require.js</code> <a href="http://requirejs.org"/>
+                    implementiert.
+                </p>
             </chapter>
 
             <chapter id="modules-commonjs" title="CommonJS">
+                <p>
+                    Im Gegensatz zu AMD richtet sich CommonJS (genauer gesagt: dessen Modulspezifikation, siehe
+                    <a href="http://wiki.commonjs.org/wiki/Modules/1.1"/>) an die Verwendung von Modulen auf Serverseite
+                    und kommt beispielsweise bei <a href="nodejs.topic"/> zum Einsatz. Laut CommonJS ist jede
+                    Quelltextdatei per se als ein eigenes Modul mit eigenem Gültigkeitsbereich zu betrachten. Innerhalb
+                    eines solchen Gültigkeitsbereichs stehen im Wesentlichen drei verschiedene Komponenten zur
+                    Verfügung:
+                </p>
 
+                <list>
+                    <li>
+                        Über die Methode <code>require()</code> ist es möglich, ein Modul zu laden. Übergeben wird der
+                        Methode der Name des jeweiligen Moduls bzw. dessen Pfad.
+                    </li>
+                    <li>
+                        Das Objekt <code>exports</code> stellt das Exportobjekt dar, also die öffentliche API. Diesem
+                        Objekt fügt man die Komponenten hinzu, die das Modul nach außen hin bereitstellen soll.
+                    </li>
+                    <li>
+                        Das Objekt <code>module</code> stellt zusätzliche Metainformationen für das aktuelle Modul zur
+                        Verfügung, beispielsweise die Modul-ID oder die URL, unter der ein Modul gefunden werden kann.
+                    </li>
+                </list>
             </chapter>
 
             <chapter id="modules-native" title="Native Module">
+                <p>
+                    Seit ECMAScript 6 stellt der Standard ein natives Modulsystem für JavaScript bereit. Bei der
+                    Spezifikation der entsprechenden Modulkomponente des Standards wurde dabei ein Kompromiss zwischen
+                    AMD und CommonJS eingegangen. So ist zum einen die Schreibweise ähnlich kompakt wie bei CommonJS
+                    (wenn nicht noch kompakter). Zum anderen gibt es die Möglichkeit, Module sowohl synchron (wie bei
+                    CommonJS) als auch asynchron (wie bei AMD) zu laden. Folglich können ES6-Module sowohl auf
+                    Serverseite als auch auf Clientseite zum Einsatz kommen.
+                </p>
 
                 <chapter id="modules-native-definieren" title="Module definieren">
+                    <p>
+                        Das Prinzip von ES6-Modulen ist ähnlich wie auch bei CommonJS: Ein Modul ist nichts anderes als
+                        eine gewöhnliche Skriptdatei, in die Objekte und Funktionen, die das Modul nach außen hin
+                        bereitstellen soll, »exportiert« werden. Dieser Export von Komponenten kann auf verschiedene
+                        Arten geschehen: Entweder gibt man die zu exportierenden Komponenten explizit an (dann spricht
+                        man von einem benannten Export), oder man gibt eine einzelne Default-Komponente an, die quasi
+                        den Hauptteil des Moduls repräsentiert
+                    </p>
 
+                    <code-block collapsed-title="logger.js" collapsible="true" lang="javascript">
+                        <![CDATA[
+                            export function info(message) {
+                              console.log(message);
+                            }
+                            export function error(message) {
+                              console.warn(meldung);
+                            }
+                        ]]>
+                    </code-block>
+
+                    <code-block collapsed-title="logger.js" collapsible="true" lang="javascript">
+                        <![CDATA[
+                            export default class Album {
+                              constructor(interpret, titel, jahr) {
+                                this.interpret = interpret;
+                                this.titel = titel;
+                                this.jahr = jahr;
+                              }
+                            }
+                        ]]>
+                    </code-block>
+
+                    <p>
+                        Der Vorteil von Default-Exporten ist, dass wenn das entsprechende Module in ein anderes Modul
+                        importieren werden soll, man nicht mehr wissen muss, wie die exportierte Komponente innerhalb
+                        des Moduls heißt.
+                    </p>
                 </chapter>
 
                 <chapter id="modules-native-importieren" title="Module importieren">
+                    <p>
+                        Für den Import stehen einem generell verschiedene Möglichkeiten zur Verfügung.
+                    </p>
 
+                    <list>
+                        <li>
+                            <p>
+                                Import unter Angabe des jeweiligen Komponentennamens
+                            </p>
+
+                            <code-block collapsed-title="logger.js" collapsible="true" lang="javascript">
+                                <![CDATA[
+                                    import { info, error } from 'logger';
+                                ]]>
+                            </code-block>
+                        </li>
+                        <li>
+                            <p>
+                                Import unter anderem Namen importieren
+                            </p>
+
+                            <code-block collapsed-title="logger.js" collapsible="true" lang="javascript">
+                                <![CDATA[
+                                    import {
+                                      info as i,
+                                      error as e
+                                    } from 'logger';
+                                    import 'logger' as l;
+                                ]]>
+                            </code-block>
+                        </li>
+                        <li>
+                            <p>
+                                Import der Default-Komponente
+                            </p>
+
+                            <code-block collapsed-title="logger.js" collapsible="true" lang="javascript">
+                                <![CDATA[
+                                    import { info, error } from 'logger';
+                                ]]>
+                            </code-block>
+                        </li>
+                    </list>
                 </chapter>
             </chapter>
         </chapter>
