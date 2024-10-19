@@ -32,7 +32,26 @@
     </chapter>
 
     <chapter id="deep-clone" title="Deep Clone">
+        <p>
+            Beim <b>deep cloning</b> werden die Werte aller Felder kopiert, unabhängig von ihrer Verschachtelung, und
+            gegebenenfalls neue Objekte erstellt, die Eigenschaften des übergeordneten Objekts sind. JS verfügt nicht
+            über einen eingebauten Mechanismus für diese Art des Klonens, sodass wir es selbst tun müssen oder eine
+            Bibliothek mit dieser Funktionalität einbinden müssen.
+        </p>
 
+        <code-block lang="javascript">
+            <![CDATA[
+                let deepClone = function(obj) {
+                  let newObj = {...obj};
+                  for (property in newObj) {
+                    if (typeof newObj[property] === "object") {
+                      newObject[property] = deepClone(newObj[property]);
+                    }
+                  }
+                  return newObj;
+                }
+            ]]>
+        </code-block>
     </chapter>
 
     <chapter id="namespaces-modules" title="Namespaces &amp; Modules">
