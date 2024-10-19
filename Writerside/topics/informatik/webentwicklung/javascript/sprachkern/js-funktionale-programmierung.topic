@@ -742,22 +742,89 @@
     </chapter>
 
     <chapter id="funktional" title="Einführung in die funktionale Programmierung">
-
         <chapter id="funktional-eigenschaften" title="Eigenschaften funktionaler Programmierung">
+            <p>
+                Die besonderen Merkmale bei der funktionalen Programmierung sind folgende:
+            </p>
 
+            <list>
+                <li>
+                    Funktionen sind erstklassige Objekte: Funktionen können Variablen zugewiesen werden, können als
+                    Parameter anderer Funktionen verwendet werden oder als deren Rückgabewert.
+                </li>
+                <li>
+                    Die Datenstrukturen bei der funktionalen Programmierung sind in der Regel unveränderlich bzw. werden
+                    nicht verändert. Operationen, die auf Datenstrukturen durchgeführt werden, erzeugen, falls nötig
+                    neue
+                    Datenstrukturen. In rein funktionalen Programmiersprachen können beispielsweise Listen oder andere
+                    Datenstrukturen, die einmal angelegt worden sind, nachträglich nicht mehr geändert werden. Das
+                    heißt, es können weder Elemente aus der Liste gelöscht noch ihr hinzugefügt werden.
+                </li>
+                <li>
+                    Bei der funktionalen Programmierung haben die Funktionen in der Regel überhaupt keine Nebeneffekte
+                    und verhalten sich eher wie mathematische Funktionen. Das heißt außerdem, dass sie für gleiche
+                    Eingaben immer das gleiche Ergebnis liefern.
+                </li>
+                <li>
+                    Funktionale Programme sind deklarativ: Man sagt, was das Programm macht, nicht wie es etwas macht.
+                </li>
+                <li>
+                    Funktionale Programme sind in der Regel schlanker als die äquivalente Variante in der
+                    objektorientierten oder imperativen Programmierung.
+                </li>
+            </list>
         </chapter>
 
         <chapter id="funktional-unterschied-zu-oop" title="Unterschied zur objektorientierten Programmierung">
+            <p>
+                Bei der objektorientierten Programmierung sind die Daten und die Operationen, die man auf den Daten
+                anwendet, eng aneinander gebunden. Die Objekte, die die Daten enthalten, definieren in der Regel auch
+                die Methoden (bzw. Operationen), die diese Daten verwenden. Bei der funktionalen Programmierung sind die
+                Daten dagegen nur lose an die Funktionen gekoppelt. Sprich: Es können durchaus Funktionen implementiert
+                werden, die auf verschiedenen Datenstrukturen arbeiten, oder Datenstrukturen, auf denen verschiedene
+                Funktionen ausgeführt werden können.
+            </p>
 
+            <p>
+                Der Begriff Komposition in der objektorientierten Programmierung bezieht sich auf die Komposition von
+                Objekten: Neue Objekte erzeugt man, indem man von bestehenden Objekten (bzw. deren zugehörigen Klassen)
+                ableitet und diesen neues (oder zusätzliches) Verhalten in Form von Methoden hinzufügt. Komposition in
+                der funktionalen Programmierung bedeutet die Komposition von (einfachen) Funktionen hin zu neuen
+                (komplexeren) Funktionen.
+            </p>
         </chapter>
 
         <chapter id="funktional-unterschied-zu-imperativ" title="Unterschied zur imperativen Programmierung">
-
+            <p>
+                Während man bei der <b>funktionalen Programmierung</b> beschreibt, <b>was gemacht werden soll</b>,
+                beschreibt man bei der <b>imperativen Programmierung, wie etwas gemacht werden soll</b>. Imperative
+                Programme verwenden dazu explizite Schleifenanweisungen (<code>while</code>-Schleifen,
+                <code>for</code>-Schleifen etc.), bedingte Anweisungen <code>if else</code> und Sequenzen davon. Bei der
+                objektorientierten Programmierung beispielsweise wird häufig innerhalb von Methoden zu großen Teilen
+                imperativ programmiert, weil objektorientierte Sprachen häufig keine funktionalen Konzepte kennen. In
+                JavaScript kann beides miteinander kombiniert werden.
+            </p>
         </chapter>
 
         <chapter id="funktional-programmiersprachen-und-javascript"
                  title="Funktionale Programmiersprachen und JavaScript">
+            <p>
+                Beispiele für (nahezu) reine funktionale Programmiersprachen sind Haskell, Lisp und Miranda. JavaScript
+                ist keine rein funktionale Programmiersprache. So können beispielsweise Datenstrukturen wie Arrays auch
+                nach ihrer Definition noch verändert werden, in Haskell hingegen ist dies nicht erlaubt.
+            </p>
 
+            <p>
+                Außerdem können Funktionen in JavaScript durchaus für gleiche Eingaben unterschiedliche Ergebnisse
+                liefern. In rein funktionalen Sprachen ist dies nicht ohne weiteres möglich. Zudem bietet JavaScript
+                neben funktionalen Aspekten auch prototypische und objektorientierte Aspekte, beides ebenfalls in rein
+                funktionalen Sprachen nicht vorhanden.
+            </p>
+
+            <p>
+                Hinzu kommt, dass nicht alle funktionalen Konzepte in JavaScript zur Verfügung stehen, beispielsweise
+                Homoikonizität, Lazy Evaluation und Pattern Matching.
+            </p>
         </chapter>
     </chapter>
 
