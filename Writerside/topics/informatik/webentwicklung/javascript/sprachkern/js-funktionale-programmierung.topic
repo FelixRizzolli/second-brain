@@ -1156,7 +1156,53 @@
         </chapter>
 
         <chapter id="techniken-closures" title="Closures">
+            <p>
+                Closures kommen zustande bei einer besonderen Art von Funktionen höherer Ordnung: wenn eine äußere
+                Funktion aufgerufen wird und eine innere Funktion zurückliefert, die wiederum auf die Variablen bzw.
+                Parameter der äußeren Funktion zugreift.
+            </p>
 
+            <p>
+                Was sie dabei so besonders macht, ist die Tatsache, dass die Variablen (der ursprünglich äußeren
+                Funktion) auch noch zur Verfügung stehen, wenn die äußere Funktion beendet wurde. Berücksichtigt wird
+                hierbei jeweils die aktuelle Belegung der Variablen. Die zurückgegebene Funktion schließt die Variablen
+                sozusagen ein – daher der Name Closure. Das bedeutet, dass sich eine äußere Funktion durchaus mehrmals
+                aufrufen lässt und verschiedene Closures ausgehend von der aktuellen Umgebung mit unterschiedlichen
+                Variablenbelegungen zurückliefert.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    function counter(name) {
+                      let i=0;
+                      return function() {
+                        i++;
+                        console.log(name + ': ' + i);
+                      }
+                    }
+
+                    const counter1 = counter('Zähler 1');
+                    counter1(); // Zähler 1: 1
+                    counter1(); // Zähler 1: 2
+
+                    const counter2 = counter('Zähler 2');
+                    counter2(); // Zähler 2: 1
+                    counter2(); // Zähler 2: 2
+                ]]>
+            </code-block>
+
+            <p>
+                Hier kommen zwei dieser Konstrukte zum Einsatz: <code>counter1</code> und <code>counter2</code>. Jede
+                der Funktionen hat nur Zugriff auf die Umgebung, in der sie erstellt wurde. Ein Aufruf von
+                <code>counter1()</code> bzw. <code>counter2()</code> verändert nicht die Zählervariable
+                <code>i</code> des jeweils anderen Zählers.
+            </p>
+
+            <p>
+                Von außen lässt sich die Variable <code>i</code> nicht ändern. Eine wichtige Grundlage für die
+                Datenkapselung, weswegen Closures einen hohen Wert in der fortgeschrittenen JavaScript-Entwicklung haben
+                und in vielen Entwurfsmustern Anwendung finden.
+            </p>
         </chapter>
 
         <chapter id="techniken-partielle-auswertung" title="Partielle Auswertung">
