@@ -7,7 +7,6 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
-    <!-- TODO: migrate from Confluence -->
     <chapter id="introduction" title="Einführung">
         <p>
             Zu der professionellen Software-Entwicklung gehört auch ein professioneller Entwicklungsprozess. Aspekte

@@ -7,7 +7,6 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
-    <!-- TODO: migrate from Confluence -->
     <chapter id="aufbau" title="Aufbau einer Webseite">
         <p>
             Beim Aufruf einer Website wird vom Browser das DOM (Document Object Model) gebaut und in den Arbeitsspeicher

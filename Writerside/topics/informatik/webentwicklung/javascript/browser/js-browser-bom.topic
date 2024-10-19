@@ -7,7 +7,6 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
-    <!-- TODO: migrate from Confluence -->
     <chapter id="bom" title="Das BOM (Browser Object Model)">
         <p>
             Neben dem DOM steht in Browserlaufzeitumgebungen das sogenannte Browser Object Model (BOM oder BOM API) zur

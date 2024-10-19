@@ -9,7 +9,443 @@
 
     <!-- TODO: migrate from Confluence -->
     <chapter id="overview" title="Übersicht">
+        <note>
+            Einen guten Überblick darüber, in welchem Arbeitszustand sich eine API befindet, gibt die Webseite
+            <a href="https://github.com/dret/HTML5-overview"/>.
+        </note>
 
+        <table style="header-row">
+            <tr>
+                <td>
+                    Web-API
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+                <td>
+                    Dokumentation
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="js-apis-canvas.topic">Canvas API</a>
+                </td>
+                <td>
+                    Ermöglicht das Zeichnen per JavaScript.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/2dcontext/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Constraint Validation API</a>
+                </td>
+                <td>
+                    Ermöglicht das validieren von Formulardaten mittels JavaScript.
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Web Socket API</a>
+                </td>
+                <td>
+                    Ermöglicht die bidirektionale Kommunikation zwischen Client und Server.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/websockets"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Server-Sent Events</a>
+                </td>
+                <td>
+                    Ermöglicht es, vom Server aus aktiven Nachrichten an den Client zu schicken.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/eventsource"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Web Storage API</a>
+                </td>
+                <td>
+                    Ermöglicht den Zugriff auf einen Browserspeicher.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/webstorage"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Indexed Database API</a>
+                </td>
+                <td>
+                    Ermöglicht den Zugriff auf eine Browserdatenbank.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/IndexedDB"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">File API</a>
+                </td>
+                <td>
+                    Ermöglicht den Zugriff auf das Dateisystem.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/FileAPI/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Drag and Drop API</a>
+                </td>
+                <td>
+                    Ermöglicht es, Komponenten innerhalb einer Webseite zu verschieben.
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Web Worker API</a>
+                </td>
+                <td>
+                    Ermöglicht es, JavaScript-Programme parallel auszuführen.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/workers"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Geolocation API</a>
+                </td>
+                <td>
+                    Ermöglicht es, auf Standortinformationen des Nutzers zuzugreifen.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/geolocation-API/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Battery Status API</a>
+                </td>
+                <td>
+                    Ermöglicht es, den Batteriestand eines Endgeräts auszulesen.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/battery-status/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Web Speech API</a>
+                </td>
+                <td>
+                    Ermöglicht es, Sprache zu erkennen und Sprach auszugeben.
+                </td>
+                <td>
+                    <a href="https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Web Animation API</a>
+                </td>
+                <td>
+                    Ermöglicht es, Animationen zu erstellen.
+                </td>
+                <td>
+                    <a href="https://w3c.github.io/web-animations/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Command Line API</a>
+                </td>
+                <td>
+                    Ermöglicht es, mit der Kommandozeile zu arbeiten.
+                </td>
+                <td>
+                    <p>
+                        Browserspezifisch:
+                    </p>
+
+                    <list>
+                        <li>
+                            Chrome:
+                            <a href="https://developer.chrome.com/docs/devtools/"/>
+                        </li>
+                        <li>
+                            Safari:
+                            <a href="https://developer.apple.com/library/archive/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Console/Console.html"/>
+                        </li>
+                        <li>
+                            Firefox:
+                            <a href="https://firefox-source-docs.mozilla.org/devtools-user/web_console/index.html"/>
+                        </li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Internationalization API</a>
+                </td>
+                <td>
+                    Ermöglicht es, mehrsprachige Anwendungen zu erstellen.
+                </td>
+                <td>
+                    <a href="https://www.ecma-international.org/ecma-402/1.0/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Ambient Light API</a>
+                </td>
+                <td>
+                    Beschreibt eine Sensorschnittstelle, um auf Informationen bezüglich des Umgebungslichts zugreifen zu
+                    können.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/ambient-light/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Device Orientation API</a>
+                </td>
+                <td>
+                    Ermöglicht das Auslesen von Informationen bezüglich der Orientierung von Endgeräten.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/orientation-event/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Fullscreen API</a>
+                </td>
+                <td>
+                    Ermöglicht das Darstellen einer Webseite im Vollbildmodus.
+                </td>
+                <td>
+                    <a href="https://fullscreen.spec.whatwg.org/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">High Resolution Time API</a>
+                </td>
+                <td>
+                    Ermöglicht den Zugriff auf den aktuellen Zeitpunkt in einer höheren Auflösung als beispielsweise
+                    die, die für die Systemzeit verwendet wird.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/hr-time/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Media Capture and Streams</a>
+                </td>
+                <td>
+                    Definiert eine Schnittstelle für den Zugriff auf Mediendaten wie Audio- und Videodaten.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/mediacapture-streams/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Navigation Timing API</a>
+                </td>
+                <td>
+                    Ermöglicht den Zugriff auf verschiedene zeitliche Informationen bei der Interaktion von Nutzern mit
+                    einer Webseite.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/navigation-timing/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Network Information API</a>
+                </td>
+                <td>
+                    Ermöglicht den Zugriff auf Verbindungsinformationen eines Endgeräts.
+                </td>
+                <td>
+                    <a href="http://w3c.github.io/netinfo/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Notifications API</a>
+                </td>
+                <td>
+                    Ermöglicht es, Hinweismeldungen an den Nutzer zu schicken.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/notifications/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Page Visibility API</a>
+                </td>
+                <td>
+                    Ermöglicht es, festzustellen, ob eine Webseite aktuell sichtbar ist oder nicht (beispielsweise wenn
+                    sie in einem verdeckten Tab geöffnet ist).
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/page-visibility/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Performance Timeline</a>
+                </td>
+                <td>
+                    Ermöglicht den Zugriff auf Informationen, um die Performance innerhalb einer Webseite zu messen.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/performance-timeline"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Presentation API</a>
+                </td>
+                <td>
+                    Definiert eine Schnittstelle für den Zugriff auf externe Präsentationsdisplays wie Beamer oder
+                    Fernseher.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/presentation-api/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Pointer Events</a>
+                </td>
+                <td>
+                    Definiert eine einheitliche Schnittstelle für Eingabegeräte wie Maus, Stift und Touchscreen.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/pointerevents/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Progress Events</a>
+                </td>
+                <td>
+                    Definiert eine Schnittstelle, um auf den Fortschritt von bestimmten Prozessen zugreifen zu können.
+                    Wurde in diesem Kapitel beispielsweise verwendet, um den Fortschritt beim Lesen einer Datei zu
+                    ermitteln.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/progress-events"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Proximity API</a>
+                </td>
+                <td>
+                    Ermöglicht den Zugriff auf Angaben zu der Lage von physischen Objekten wie Endgeräten oder Nutzern.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/proximity/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Resource Timing API</a>
+                </td>
+                <td>
+                    Ermöglicht den Zugriff auf zeitliche Informationen bezüglich der in einer Webseite eingebundenen
+                    Ressourcen, um beispielsweise zu protokollieren, wie lange das Laden einer Ressource dauert.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/resource-timing/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Screen Orientation API</a>
+                </td>
+                <td>
+                    Ermöglicht den Zugriff auf Orientierungsinformationen von Endgeräten.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/screen-orientation/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Touch Events</a>
+                </td>
+                <td>
+                    Definiert eine Schnittstelle für den Zugriff auf Touch-Oberflächen.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/touch-events"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">User Timing API</a>
+                </td>
+                <td>
+                    Ermöglicht den Zugriff auf verschiedene zeitliche Informationen bei der Interaktion von Nutzern mit
+                    einer Webseite unter Verwendung von hochauflösenden Zeitinformationen.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/user-timing/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Vibration API</a>
+                </td>
+                <td>
+                    Ermöglicht es, die Vibrationsfunktion von Endgeräten zu nutzen.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/vibration/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Web Messaging API</a>
+                </td>
+                <td>
+                    Definiert eine Schnittstelle für den Nachrichtenaustausch. Wird beispielsweise bei Server-Sent
+                    Events oder Web Sockets verwendet.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/webmessaging/"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Web Notification API</a>
+                </td>
+                <td>
+                    Definiert eine Schnittstelle für Benachrichtigungen an Nutzer.
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/notifications/"/>
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter id="w3c-vs-whatwg" title="W3C vs. WHATWG">
