@@ -372,7 +372,81 @@
     </chapter>
 
     <chapter id="texte" title="Texte zeichnen">
+        <p>
+            Für das Zeichnen von Texten stehen zwei Methoden zur Verfügung: die Methode <code>fillText()</code> und die
+            Methode <code>strokeText()</code>. Erstere zeichnet einen Text, der mit einer (zuvor definierten)
+            Hintergrundfarbe gefüllt ist, während Letztere einen Text zeichnet, der mit einer (zuvor definierten)
+            Rahmenfarbe umrandet ist. Beide Methoden erwarten mindestens drei Parameter sowie optional einen vierten:
+            den Text an sich, <code>x</code>-Position und <code>y</code>-Position sowie (optional) die maximale Breite,
+            die der Text auf der Zeichenfläche einnehmen darf. Zusätzlich lässt sich über verschiedene Eigenschaften am
+            Kontextobjekt Einfluss auf das Aussehen des Textes nehmen.
+        </p>
 
+        <code-block lang="javascript">
+            <![CDATA[
+                let context = canvas.getContext('2d');
+                context.font = '48px serif';               // Schrifteigenschaften
+                context.fillText('Hallo Welt', 10, 50);    // Zeichnen des Textes
+                context.strokeText('Hallo Welt', 10, 100); // Zeichnen des Textes
+            ]]>
+        </code-block>
+
+        <table style="header-row">
+            <tr>
+                <td>
+                    Eigenschaft
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        font
+                    </code>
+                </td>
+                <td>
+                    Enthält als Zeichenkette Informationen über das Aussehen des Textes, wie beispielsweise
+                    Schriftgröße, Schriftfarbe etc. Die Syntax ist dabei genau die für die <code>font</code>-Eigenschaft
+                    aus CSS.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        textAlign
+                    </code>
+                </td>
+                <td>
+                    Enthält Angaben zur horizontalen Ausrichtung des Textes. Mögliche Werte sind <code>start</code>,
+                    <code>end</code>, <code>left</code>, <code>right</code> und <code>center</code>.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        textBaseline
+                    </code>
+                </td>
+                <td>
+                    Enthält Angaben zur vertikalen Position des Textes. Mögliche Werte sind: <code>top</code>,
+                    <code>hanging</code>, <code>middle</code>, <code>alphabetic</code>, <code>ideographic</code> und
+                    <code>bottom</code>.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        direction
+                    </code>
+                </td>
+                <td>
+                    Enthält Angaben zur Textrichtung. Mögliche Werte sind <code>ltr</code> (links nach rechts),
+                    <code>rtl</code> (rechts nach links) und <code>inherit</code>.
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter id="farbverlaeufe" title="Farbverläufe zeichnen">
