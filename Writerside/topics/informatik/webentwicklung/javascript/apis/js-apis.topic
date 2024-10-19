@@ -1382,11 +1382,60 @@
             </code-block>
 
             <img alt="Web Worker" src="js-api-parallelisieren-webworker-2.png"/>
+
+            <p>
+                Web Worker unterliegen verschiedenen Einschränkungen: Zum einen können sie nicht auf DOM zugreifen, zum
+                anderen ist auch kein Zugriff auf das <code>window</code>-Objekt möglich. Der Grund: Web Worker werden
+                nicht im Browserfenster ausgeführt, sondern im Hintergrund.
+            </p>
         </chapter>
     </chapter>
 
     <chapter id="geolocation-api" title="Den Standort von Nutzern ermitteln">
+        <p>
+            Dank der Geolocation API <a href="https://www.w3.org/TR/geolocation-API/"/> ist es möglich, den Standort
+            bzw. die Position des Nutzers zu ermitteln. Den Einstiegspunkt für die Geolocation API bildet die
+            <code>geolocation</code>-Eigenschaft des <code>navigator</code>-Objekts. Um die aktuelle Position des
+            Nutzers zu ermitteln, stellt das <code>geolocation</code>-Objekt (übrigens vom Typ Geolocation) die Methode
+            <code>getCurrentPosition()</code> zur Verfügung.
+        </p>
 
+        <p>
+            Damit der Standort des Nutzers ermittelt werden kann, muss dieser dazu seine Zustimmung geben. Sobald daher
+            innerhalb einer Webseite die Geolocation API verwendet wird, um den Standort zu ermitteln, wird ein
+            entsprechender Bestätigungsdialog angezeigt.
+        </p>
+
+        <p>
+            Soll der Standort nicht nur einmalig, sondern kontinuierlich ermittelt werden, bietet sich die Methode
+            <code>watchPosition()</code> an. Diese Methode funktioniert vom Prinzip her wie
+            <code>getCurrentPosition()</code>, wird aber kontinuierlich aufgerufen bzw. immer dann, wenn sich die
+            Standortinformationen ändern. Zugriff auf die Standortinformationen erfolgt dann wieder über eine
+            entsprechende Callback-Funktion. Als Rückgabewert liefert die Methode zudem eine ID, die sich zu einem
+            späteren Zeitpunkt – wenn das Ermitteln der Standortinformationen abgebrochen werden soll – der Methode
+            <code>clearWatch()</code> übergeben lässt.
+        </p>
+
+        <code-block collapsed-title="worker.js" collapsible="true" lang="javascript">
+            <![CDATA[
+                if(navigator.geolocation) {
+                  let watchID = navigator.geolocation.watchPosition(
+                    (position) => {
+                      /* Code bei erfolgreichem Aufruf */
+                    },
+                    (error) => {
+                      /* Code bei Fehler: z.B. Benutzer hat Berechtigung nicht zugelassen */
+                    }
+                  );
+                  navigator.geolocation.clearWatch(watchID);
+                }
+            ]]>
+        </code-block>
+
+        <p>
+            Über die Google Maps API lassen sich auch Standorte auf Karten anzeigen:
+            <a href="https://developers.google.com/maps/?hl=de"/>.
+        </p>
     </chapter>
 
     <chapter id="battery-status-api" title="Den Batteriestand eines Endgeräts auslesen">
