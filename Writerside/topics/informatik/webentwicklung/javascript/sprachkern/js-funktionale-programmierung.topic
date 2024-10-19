@@ -648,7 +648,97 @@
     </chapter>
 
     <chapter id="standardmethoden" title="Standardmethoden jeder Funktion">
+        <table style="header-row">
+            <tr>
+                <td>
+                    Methode
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        bind()
+                    </code>
+                </td>
+                <td>
+                    <p>
+                        Über die Funktion <code>bind()</code> lässt sich <code>this</code> für eine Funktion an ein
+                        bestimmtes Objekt (den Ausführungskontext) binden. <code>bind()</code> wird dabei auf der
+                        entsprechenden Funktion aufgerufen, als Parameter kann optional das Objekt übergeben werden,
+                        dass den Ausführungskontext darstellt. Hat die Funktion ihrerseits Parameter, werden diese
+                        einfach hinten angehängt. Als Ergebnis liefert <code>bind()</code> ein neues Funktionsobjekt,
+                        das identisch mit der Ursprungsfunktion ist, den Ausführungskontext aber an das übergebene
+                        Objekt gebunden hat.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        call()
+                    </code>
+                </td>
+                <td>
+                    <p>
+                        Mit der Methode <code>call()</code> ist es ebenfalls möglich, den Ausführungskontext einer
+                        Funktion zu definieren. Allerdings wird bei <code>call()</code> nicht wie im Fall von
+                        <code>bind()</code> ein neues Funktionsobjekt erstellt, sondern die entsprechende Funktion
+                        direkt aufgerufen. Der Ausführungskontext wird dabei als erster Parameter übergeben, optional
+                        können über weitere Parameter die Funktionsparameter der aufzurufenden Funktion definiert
+                        werden.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        apply()
+                    </code>
+                </td>
+                <td>
+                    <p>
+                        Die Methode <code>apply()</code> funktioniert vom Prinzip her ähnlich wie die Methode <code>call()</code>,
+                        mit dem Unterschied, dass die Parameter der aufgerufenen Funktion nicht als einzelne Parameter
+                        übergeben werden, sondern gesammelt als Array.
+                    </p>
 
+                    <p>
+                        Ein bekannter Anwendungsfall für die Methode <code>apply()</code> ist der Aufruf sogenannter
+                        variadischer Funktionen, also solcher Funktionen, die mit einer variablen Anzahl an Parametern
+                        aufgerufen werden können. Stehen die Parameter als Array zur Verfügung, ist ein Aufruf solcher
+                        Funktionen über <code>apply()</code> bequemer, als manuell die einzelnen Array-Einträge auf die
+                        Funktionsparameter zu verteilen.
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            const numbers = [24, 14, 44, 88];
+                            console.log(Math.max(
+                              numbers[0],
+                              numbers[1],
+                              numbers[2],
+                              numbers[3]
+                            ));
+                        ]]>
+                    </code-block>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            const numbers = [24, 14, 44, 88];
+                            console.log(Math.max.apply(null, numbers));
+                        ]]>
+                    </code-block>
+
+                    <p>
+                        Wenn der Ausführungskontext keine Rolle spielt, ist es Best Practice, stattdessen wie im
+                        Beispiel den Wert <code>null</code> zu übergeben.
+                    </p>
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter id="funktional" title="Einführung in die funktionale Programmierung">
