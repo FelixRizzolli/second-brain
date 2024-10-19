@@ -252,7 +252,26 @@
     </chapter>
 
     <chapter id="versionsverwaltung" title="Versionsverwaltung des Quelltextes">
+        <p>
+            Früher oder später muss man sich Gedanken darüber machen, wie der Quelltext in einer Form gespeichert wird,
+            dass zum einen ein Backup vorhanden ist, und – wenn mit mehreren Entwicklern an einem Projekt gearbeitet
+            wird – wie der Quelltext zwischen den Entwicklern auf einem aktuellen Stand gehalten und Änderungen des
+            einen Entwicklers für die anderen sichtbar und zugreifbar gemacht werden. Kurz: Man muss sich Gedanken um
+            die Versionsverwaltung machen. Allerdings muss man hier nicht das Rad neu erfinden: Es stehen verschiedene
+            sogenannte Versionsverwaltungssysteme zur Verfügung, die genau die eben genannten Anforderungen erfüllen.
+        </p>
 
+        <p>
+            Eines der bekanntesten Versionsverwaltungssysteme ist GIT.
+        </p>
+
+        <tip>
+            Mehr zu Versionsverwaltungssysteme: <a href="swe-vcs.topic"/>
+        </tip>
+
+        <tip>
+            Mehr zu GIT: <a href="swe-vcs-git.topic"/>
+        </tip>
     </chapter>
 
     <chapter id="debugging" title="Den Code debuggen">
