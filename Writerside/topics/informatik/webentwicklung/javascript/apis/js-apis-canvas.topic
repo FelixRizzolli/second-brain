@@ -450,7 +450,89 @@
     </chapter>
 
     <chapter id="farbverlaeufe" title="Farbverläufe zeichnen">
+        <p>
+            Statt mit einer einzelnen Farbe können Flächen und Rahmen auch mit einem Farbverlauf gefüllt werden. Zur
+            Verfügung stehen dabei lineare Farbverläufe und radiale Farbverläufe.
+        </p>
 
+        <table style="header-row">
+            <tr>
+                <td>
+                    Beschreibung
+                </td>
+                <td>
+                    Beispiel (Bild)
+                </td>
+                <td>
+                    Beispiel (Code)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <b>Lineare Farbverläufe</b> werden mithilfe der Methode <code>createLinearGradient()</code>
+                        gezeichnet. Dieser Methode übergibt man in Form von vier Parametern die <code>x</code>- und
+                        <code>y</code>-Koordinaten des Startpunkts (die ersten beiden Parameter) sowie die
+                        <code>x</code>- und <code>y</code>-Koordinaten des Endpunkts (die letzten beiden Parameter).
+                    </p>
+                    <p>
+                        Die Methode liefert dabei ein Objekt vom Typ <code>CanvasGradient</code> zurück, auf dem sich
+                        über die Methode <code>addColorStop()</code> die einzelnen Farben des Farbverlaufs bestimmen
+                        lassen. Als ersten Parameter übergibt man der Methode dabei die relative Position (in Form eines
+                        Wertes zwischen <code>0.0</code> und <code>1.0</code>) sowie den entsprechenden Farbwert.
+                    </p>
+                </td>
+                <td>
+                    <img alt="Farbverlauf - Linear" src="js-api-canvas-gradient-linear.png"/>
+                </td>
+                <td>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let context = canvas.getContext('2d');
+                            let gradient = context.createLinearGradient(0, 0, 0, 150);
+                            gradient.addColorStop(0, '#FF0000');
+                            gradient.addColorStop(0.5, '#00FF00');
+                            gradient.addColorStop(1, '#0000FF');
+                            context.fillStyle = gradient;
+                            context.fillRect(20, 20, 460, 240);
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <b>Radiale Farbverläufe</b> verlaufen im Gegensatz zu linearen Farbverläufen, bei denen die
+                        Farben in eine Richtung (eben linear) verlaufen, strahlenförmig, d. h. von einem Punkt ausgehend
+                        in alle Richtungen. Ein radialer Farbverlauf definiert sich dabei über zwei Kreise: Ein Kreis
+                        definiert den Mittelpunkt des Farbverlaufs, der andere den Umfang des Farbverlaufs.
+                    </p>
+                    <p>
+                        Die entsprechende Methode in der Canvas API trägt den Namen <code>createRadialGradient()</code>
+                        und erwartet sechs Parameter, wobei die ersten drei Parameter die <code>x</code>- und
+                        <code>y</code>-Koordinaten sowie den Radius des Kreises, der den Mittelpunkt definiert,
+                        repräsentieren und die letzten drei Parameter gleiches für den Kreis, der den Umfang definiert,
+                        tun.
+                    </p>
+                </td>
+                <td>
+                    <img alt="Farbverlauf - Radial" src="js-api-canvas-gradient-radial.png"/>
+                </td>
+                <td>
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let context = canvas.getContext('2d');
+                            let gradient = context.createRadialGradient(50, 100, 20, 100, 100, 80 );
+                            gradient.addColorStop(0, '#FF0000');
+                            gradient.addColorStop(0.5, '#00FF00');
+                            gradient.addColorStop(1, 'rgba(0,0,255,0)');
+                            context.fillStyle = gradient;
+                            context.fillRect(10,10,200,200);
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter id="speichern-und-wiederherstellen" title="Speichern und Wiederherstellen des Canvas-Zustands">
