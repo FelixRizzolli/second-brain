@@ -536,7 +536,46 @@
     </chapter>
 
     <chapter id="speichern-und-wiederherstellen" title="Speichern und Wiederherstellen des Canvas-Zustands">
+        <table style="header-row">
+            <tr>
+                <td>
+                    Methode
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        save()
+                    </code>
+                </td>
+                <td>
+                    Mit dieser Methode können aktuelle Einstellungen des Kontextobjektes auf einem Stack abgelegt und
+                    gespeichert werden.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        restore()
+                    </code>
+                </td>
+                <td>
+                    Mit dieser Methode können die gespeicherten Einstellungen wiederhergestellt werden. Dies eignet sich
+                    besonders dann, wenn bestimmte Einstellungen mehrfach, aber zu verschiedenen Zeitpunkten
+                    wiederverwendet werden sollten. Wird die Methode ein zweites Mal aufgerufen, stellt sie den Zustand
+                    vor dem letzten save wieder her.
+                </td>
+            </tr>
+        </table>
 
+        <p>
+            Die Zustände, die auf dem Stack gespeichert werden, enthalten auch Informationen über die aktuelle
+            sogenannte Transformationsmatrix, weswegen das Verwenden von <code>save()</code> und <code>restore()</code>
+            auch im Zusammenhang mit Transformationen eine Rolle spielt.
+        </p>
     </chapter>
 
     <chapter id="transformation" title="Transformationen anwenden">
