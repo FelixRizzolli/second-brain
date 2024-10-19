@@ -830,9 +830,169 @@
 
     <!-- fum - frequently used methods -->
     <chapter id="fum" title="Häufig verwendete funktionale Methoden">
+        <table style="header-row">
+            <tr>
+                <td>
+                    Methode
+                </td>
+                <td>
+                    Wird verwendet für ...
+                </td>
+                <td>
+                    MDN
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        forEach()
+                    </code>
+                </td>
+                <td>
+                    ... die Iteration über Arrays.
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        map()
+                    </code>
+                </td>
+                <td>
+                    ... das Abbilden von Elementen eines Arrays auf neue Elemente in einem anderen Array
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        filter()
+                    </code>
+                </td>
+                <td>
+                    ... das Filtern von Elementen in einem Array
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        reduce()
+                    </code>
+                </td>
+                <td>
+                    ... das Reduzieren der Elemente eines Arrays auf einen einzelnen Wert
+                </td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce"/>
+                </td>
+            </tr>
+        </table>
 
         <chapter id="fum-foreach" title="Beispiel forEach()">
+            <p>
+                Mithilfe der funktionalen Programmierung lasst sich die Iteration über ein Array mittels der
+                <code>forEach()</code>-Funktion häufig viel lesbarer formulieren. Als Argument übergibt man dieser eine
+                Funktion (Callback-Funktion), welche dann ihrerseits für jedes Element im Array mit drei Argumenten
+                aufgerufen wird: dem jeweiligen Element, dem Index des Elements und dem Array selbst.
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    let artists = [
+                      { name: 'Kyuss', albums: [ /* ... */ ]  },
+                      { name: 'Ben Harper', albums: [ /* ... */ ]  },
+                      /* ... */
+                    ];
+                ]]>
+            </code-block>
+
+            <table>
+                <tr>
+                    <td>
+                        Imperativ
+                    </td>
+                    <td>
+                        Funktional
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                for(let i=0; i<artists.length; i++) {
+                                  console.log(artists[i].name);
+                                }
+                            ]]>
+                        </code-block>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                artists.forEach((artist, index, artists) => {
+                                  console.log(artist.name);
+                                });
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                Und auch wenn der Code bezogen auf die Anzahl der Zeilen nicht unbedingt kürzer wird, ist er doch schon
+                um einiges lesbarer. Im Gegensatz zur imperativen Variante liegt jetzt der Fokus nämlich auf der Logik
+                des Programms (dem <b>»Was«</b>), nicht auf der Schleife an sich (dem <b>»Wie«</b>).
+            </p>
+
+            <p>
+                Übergibt man statt einer anonymen Funktion eine benannte Funktion, lässt sich das Programm fast wie
+                natürliche Sprache lesen (»artists for each print name«).
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    function printName(artist, index, artists) {
+                      console.log(artist.name);
+                    }
+
+                    artists.forEach(printName);
+                ]]>
+            </code-block>
+
+            <p>
+                Folgendes Beispiel zeigt das Potenzial wie lesbar der Code werden kann, wenn es mehrere funktionale
+                Methoden benötigt. Das imperative Äquivalent würde um einiges umfangreicher sein und diverse
+                <code>if</code>-Abfragen und geschachtelte <code>for</code>-Schleifen enthalten.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    function after2000(album) {
+                      return album.year > 2000;
+                    }
+                    function hasAlbumAfter2000(artist) {
+                      return artist.albums.filter(after2000).length > 0;
+                    };
+                    function getArtistName(artist) {
+                      return artist.name;
+                    };
+                    function printName(name) {
+                      console.log(name);
+                    }
+
+                    artists
+                      .filter(hasAlbumAfter2000)
+                      .map(getArtistName)
+                      .forEach(printName);
+                ]]>
+            </code-block>
         </chapter>
     </chapter>
 
