@@ -683,7 +683,96 @@
     </chapter>
 
     <chapter id="animation" title="Animationen erstellen">
+        <p>
+            Über die Canvas API ist es auch möglich Animationen zu erstellen. Allerdings muss dabei jedes einzelne Bild
+            einer Animation (auch Frame genannt) selbst gezeichnet werden. Vom Prinzip her läuft das nach folgenden
+            Schritten ab, wobei die letzten drei Schritte mehrfach ausgeführt werden können:
+        </p>
 
+        <list type="bullet">
+            <li>
+                Leeren der Zeichenfläche
+            </li>
+            <li>
+                optionales Speichern des Zustands
+            </li>
+            <li>
+                Zeichnen
+            </li>
+            <li>
+                optionales Laden des Zustands
+            </li>
+        </list>
+
+        <p>
+            Diese vier Schritte kapselt man normalerweise innerhalb einer Funktion, die dann in regelmäßigen
+            Zeitabständen aufgerufen wird (für jedes Frame in der Animation). Auch wenn dieses zeitgesteuerte
+            wiederholte Aufrufen über die Funktion <code>setInterval()</code> erreicht werden kann, ist es anzuraten,
+            stattdessen die Methode <code>requestAnimationFrame()</code> zu verwenden. Diese Methode ist speziell für
+            die Arbeit mit Animationen innerhalb einer Webseite gedacht und stellt den effizientesten Weg dar, eine
+            entsprechende Funktion wiederholt und in gleichbleibenden Zeitabständen aufzurufen.
+        </p>
+
+        <p>
+            Das folgende Beispiel zeigt eine Animation, in der drei farbige Rechtecke um einen bestimmten Punkt rotiert
+            werden. Die Funktion <code>redraw()</code> enthält dabei den Code, der für das Zeichnen der Rechtecke
+            verantwortlich ist. Aufgerufen wird diese Funktion, sobald sie der Methode
+            <code>requestAnimationFrame()</code> als Argument übergeben wurde. Der Aufruf von
+            <code>requestAnimationFrame()</code> ist dabei an zwei Stellen notwendig: zum einen zu Beginn innerhalb
+            der Funktion <code>draw()</code>, zum anderen am Ende der Funktion <code>redraw()</code>. Ersterer Aufruf
+            sorgt dafür, dass <code>redraw()</code>initial aufgerufen wird und den ersten Frame in der Animation
+            zeichnet (die Animation quasi gestartet wird), letzterer Aufruf sorgt dafür, dass <code>redraw()</code>
+            kontinuierlich sich selbst aufruft, um so jeweils einen neuen Frame in der Animation zu zeichnen (und die
+            Animation quasi unendlich fortzusetzen).
+        </p>
+
+        <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+            <![CDATA[
+                function draw() {
+                  let canvas = document.getElementById('canvas');
+                  if (canvas.getContext){
+                    window.requestAnimationFrame(redraw);
+                  }
+                }
+
+                function redraw() {
+                  let context = document.getElementById('canvas').getContext('2d');
+                  context.clearRect(0,0,500,300);   // (1) Leeren der Zeichenfläche
+                  let time = new Date();
+                  let angle = ((2*Math.PI)/6)*time.getSeconds() + ((2*Math.PI)/6000)*time.getMilliseconds();
+
+                                                    // Rotes Rechteck:
+                  context.fillStyle = '#FF0000';    //
+                  context.save();                   // (2) Zustand speichern
+                  context.translate(150,150);       // (3) Zeichnen
+                  context.rotate(angle);            //
+                  context.translate(0,25);          //
+                  context.fillRect(5,5,20,20);      //
+                  context.restore();                // (4) Zustand laden
+
+                                                    // Grünes Rechteck:
+                  context.fillStyle = '#00FF00';    //
+                  context.save();                   // (2) Zustand speichern
+                  context.translate(150,150);       // (3) Zeichnen
+                  context.rotate(angle);            //
+                  context.translate(0,50);          //
+                  context.fillRect(5,5,20,20);      //
+                  context.restore();                // (4) Zustand laden
+
+                                                    // Blaues Rechteck:
+                  context.fillStyle = '#0000FF';    //
+                  context.save();                   // (2) Zustand speichern
+                  context.translate(150,150);       // (3) Zeichnen
+                  context.rotate(angle);            //
+                  context.translate(0,75);          //
+                  context.fillRect(5,5,20,20);      //
+                  context.restore();                // (4) Zustand laden
+                  window.requestAnimationFrame(redraw);
+                }
+
+                window.addEventListener('DOMContentLoaded', draw);
+            ]]>
+        </code-block>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
