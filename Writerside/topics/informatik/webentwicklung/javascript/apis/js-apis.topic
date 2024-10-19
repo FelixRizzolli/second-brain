@@ -876,7 +876,33 @@
     </chapter>
 
     <chapter id="indexed-database-api" title="Die Browserdatenbank nutzen">
+        <p>
+            Bei der <b>Indexed Database API</b> <a href="https://www.w3.org/TR/IndexedDB/"/> handelt es sich um eine
+            Datenbank, die sich im Browser befindet bzw. von diesem implementiert und zur Verfügung gestellt wird. Vom
+            Prinzip her funktioniert diese (clientseitige) Datenbank genauso wie eine serverseitige Datenbank, d. h.,
+            man kann in ihr Datensätze erstellen, Datensätze auslesen, aktualisieren oder wieder löschen. Bei der
+            IndexedDB handelt es sich um eine sogenannte nicht relationale Datenbank, auch <b>NoSQL-Datenbank</b>
+            genannt.
+        </p>
 
+        <tip>
+            Grundlagen zu Datenbanken: <a href="datenbanken.topic"/>
+        </tip>
+
+        <p>
+            Die Grundidee bei der IndexedDB ist es, (JavaScript-)Objekte unter bestimmten Schlüsseln abzuspeichern,
+            d.h., bei der IndexedDB handelt es sich um einen sogenannten Key-Value-Store. Vom Prinzip her ist das wie
+            bei der Datenstruktur Map, das bedeutet, die einzelnen Objekte in einer solchen Datenbank werden als Werte
+            unter bestimmten Schlüsseln abgelegt. Den Kern einer IndexedDB bilden die sogenannten Object Stores bzw.
+            Objektspeicher. Diese sind – wenn man denn so will – in etwa vergleichbar mit Tabellen bei relationalen
+            Datenbanken und enthalten die verschiedenen Schlüssel-Wert-Paare. Zugriff auf die IndexedDB erlangt man über
+            das <code>window</code>-Objekt. Hinter seiner Eigenschaft <code>indexedDB</code> verbirgt sich ein Objekt
+            vom Typ <code>IDBFactory</code>.
+        </p>
+
+        <tip>
+            Mehr zum Arbeiten mit der Browserdatenbank unter: <a href="https://web.dev/indexeddb/"/>
+        </tip>
     </chapter>
 
     <chapter id="file-api" title="Auf das Dateisystem zugreifen">
