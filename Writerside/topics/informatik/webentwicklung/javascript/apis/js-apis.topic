@@ -449,7 +449,33 @@
     </chapter>
 
     <chapter id="w3c-vs-whatwg" title="W3C vs. WHATWG">
+        <p>
+            <b>W3C (World Wide Web Consortium)</b> ist das Standardisierungsgremium rund um die Technologien des
+            World Wide Web, u.a. HTML, CSS und eben verschiedener Web-APIs.
+        </p>
 
+        <p>
+            <b>WHATWG (Web Hypertext Application Technology Working Group)</b> eine Arbeitsgruppe, deren Entstehung im
+            Jahre 2004 vor allem der Tatsache geschuldet war, dass die damalige Entwicklung verschiedener Web Standards
+            beim W3C relativ träge voranschritt. Das W3C hat nämlich zum Ziel, immer endgültige Versionen von Web
+            Standards zu verabschieden, was dementsprechend hin und wieder etwas dauern kann. Die WHATWG verfolgt
+            dagegen eine andere Strategie: Hier werden sogenannte Living Standards gepflegt: Spezifikationen, die
+            kontinuierlich und in enger Zusammenarbeit mit den verschiedenen Browserherstellern (die übrigens auch Teil
+            der Arbeitsgruppe sind) weiterentwickelt werden.
+        </p>
+
+        <p>
+            Bezogen auf die Web-APIs bedeutet dies also, dass man es häufig mit zwei Varianten zu tun hat:
+        </p>
+
+        <list type="bullet">
+            <li>
+                einer vom W3C abgesegneten »endgültigen« Variante
+            </li>
+            <li>
+                und einer, die von der WHATWG weiterentwickelt wird.
+            </li>
+        </list>
     </chapter>
 
     <chapter id="kommunikation" title="Über JavaScript kommunizieren">
