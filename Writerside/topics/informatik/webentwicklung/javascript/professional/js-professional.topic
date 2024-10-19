@@ -69,13 +69,142 @@
     </chapter>
 
     <chapter id="automatisierung" title="Aufgaben automatisieren">
+        <p>
+            Im JavaScript Umfeld sind Zwei Tools für die Automatisierung von Aufgaben sehr Stark verbreitet: Grunt und
+            Gulp.
+        </p>
 
         <chapter id="automatisierung-grunt" title="Grunt">
+            <p>
+                Bei Grunt <a href="http://gruntjs.com"/> handelt es sich um ein auf JavaScript basierendes Build-Tool,
+                welches dem Entwickler Aufgaben abnimmt und automatisch ausführt. Die Aufgaben, die durch Grunt
+                automatisiert erledigt werden sollen (auch Tasks genannt), werden pro Projekt in einer
+                Konfigurationsdatei mit dem Namen <code>Gruntfile.js</code> definiert, welche in der Regel im
+                Wurzelverzeichnis des jeweiligen Projekts liegt.
+            </p>
 
+            <tip>
+                Hier zur Installationsanleitung: <a href="https://gruntjs.com/getting-started"/>
+            </tip>
+
+            <p>
+                Grunt bietet eine wahre Fülle an vorhandenen Plugins, die unter <a href="http://gruntjs.com/plugins"/>
+                eingesehen werden können. Es gibt Plugins für das Überprüfen von Codequalität, für das Minifizieren von
+                JavaScript- oder CSS-Dateien, für das Generieren von Dokumentation und das Ausführen von automatisierten
+                Tests und, für vieles, vieles mehr.
+            </p>
+
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Plugin
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            grunt-contrib-jshint
+                        </code>
+                    </td>
+                    <td>
+                        Validierung von JavaScript-Code mithilfe von JSHint <a href="http://jshint.com"/>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            grunt-contrib-uglify
+                        </code>
+                    </td>
+                    <td>
+                        Minifizierung von JavaScript-Code unter Verwendung von UglifyJS
+                        (<a href="https://github.com/mishoo/UglifyJS"/> bzw.
+                        <a href="https://github.com/mishoo/UglifyJS2"/>).
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            grunt-contrib-concat
+                        </code>
+                    </td>
+                    <td>
+                        Zusammenfügen von mehreren JavaScript-Dateien zu einer einzelnen JavaScript-Datei.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            grunt-contrib-cssmin
+                        </code>
+                    </td>
+                    <td>
+                        Minifizierung von CSS-Dateien.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            grunt-contrib-watch
+                        </code>
+                    </td>
+                    <td>
+                        Führt bestimmte Grunt-Tasks aus, sobald sich beobachtete Dateien ändern.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            grunt-contrib-qunit
+                        </code>
+                    </td>
+                    <td>
+                        Ausführen von auf QUnit <a href="https://qunitjs.com/"/> basierenden Unit-Tests
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            grunt-contrib-yuidoc
+                        </code>
+                    </td>
+                    <td>
+                        Generierung von Dokumentation unter Verwendung von YUIDoc
+                        <a href="http://yui.github.io/yuidoc/"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            grunt-mocha-test
+                        </code>
+                    </td>
+                    <td>
+                        Ausführen von auf mocha <a href="https://mochajs.org/"/> basierenden serverseitigen Unit-Tests.
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                Je größer ein Projekt wird, desto größer wird mit der Zeit auch die Konfigurationsdatei für Grunt,
+                weswegen kritische Stimmen Grunt daher auch als zu konfigurationslastig ansehen.
+            </p>
         </chapter>
 
         <chapter id="automatisierung-gulp" title="Gulp">
+            <p>
+                Die etwas jüngere Alternative zu Grunt heißt Gulp <a href="http://gulpjs.com"/>. Konfiguriert wird Gulp
+                wie Grunt über eine JavaScript-Konfigurationsdatei, allerdings mit dem Namen <code>gulpfile.js</code>.
+                Gulp ist im Vergleich zu Grunt deutlich weniger konfigurationslastig und verfolgt insgesamt einen
+                programmatischen Ansatz.
+            </p>
 
+            <tip>
+                Hier zur Installationsanleitung: <a href="https://gulpjs.com/docs/en/getting-started/quick-start"/>
+            </tip>
         </chapter>
     </chapter>
 
