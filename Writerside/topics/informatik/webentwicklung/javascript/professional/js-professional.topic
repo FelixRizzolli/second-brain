@@ -9,7 +9,63 @@
 
     <!-- TODO: migrate from Confluence -->
     <chapter id="introduction" title="Einführung">
+        <p>
+            Zu der professionellen Software-Entwicklung gehört auch ein professioneller Entwicklungsprozess. Aspekte
+            eines professionellen Entwicklungsprozesses wären:
+        </p>
 
+        <list type="bullet">
+            <li>
+                Automatisieren von sich wiederholenden Aufgaben
+            </li>
+            <li>
+                Automatisches Testen von Quelltext
+            </li>
+            <li>
+                Quelltextverwaltung mit einem Versionsverwaltungssystem
+            </li>
+            <li>
+                die Minifizierung von Quelltext
+            </li>
+            <li>
+                das Ermitteln der Codequalität
+            </li>
+            <li>
+                das sogenannte Scaffolding (sprich das automatische Generieren von Projektgerüsten)
+            </li>
+            <li>
+                das automatische Generieren von Dokumentation
+            </li>
+            <li>
+                das Ermitteln der Testabdeckung (also wie viel Quelltext durch die automatisierten Tests abgedeckt wird)
+            </li>
+            <li>
+                <p>
+                    und weiterführende Konzepte des Testens wie:
+                </p>
+
+                <list type="bullet">
+                    <li>
+                        Mock-Objekte
+                    </li>
+                    <li>
+                        Stubs
+                    </li>
+                    <li>
+                        Spies
+                    </li>
+                    <li>
+                        DOM-Tests
+                    </li>
+                    <li>
+                        Funktionstests
+                    </li>
+                    <li>
+                        und vieles mehr
+                    </li>
+                </list>
+            </li>
+        </list>
     </chapter>
 
     <chapter id="automatisierung" title="Aufgaben automatisieren">
