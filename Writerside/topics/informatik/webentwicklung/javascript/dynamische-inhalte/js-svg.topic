@@ -54,7 +54,60 @@
     </chapter>
 
     <chapter id="svg-dynamisch-veraendern" title="SVG-Elemente dynamisch verändern">
+        <code-block collapsed-title="Beispiel HTML" collapsible="true" lang="javascript">
+            <![CDATA[
+                <!DOCTYPE html>
+                <html>
+                <head lang="en">
+                    <meta charset="UTF-8">
+                    <title>SVG-Beispiel</title>
+                    <link rel="stylesheet" href="styles/styles.css">
+                </head>
+                <body>
+                  <script src="scripts/main.js"></script>
+                  <svg id="svg" version="1.1" baseProfile="full" width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" />
+                    <circle id="circle" cx="100" cy="100" r="80" />
+                  </svg>
+                  <div>X: <input id="sliderX" type="range" min="1" max="500" value="100" /></div>
+                  <div>Y: <input id="sliderY" type="range" min="1" max="500" value="100" /></div>
+                </body>
+                </html>
+            ]]>
+        </code-block>
 
+        <code-block collapsed-title="Beispiel JavaScript" collapsible="true" lang="javascript">
+            <![CDATA[
+                'use strict';
+                function init() {
+                  let sliderX = document.getElementById('sliderX');
+                  let sliderY = document.getElementById('sliderY');
+                  sliderX.addEventListener('change', (e) => {
+                    moveCircle(e.target.value, 'x');
+                  });
+                  sliderY.addEventListener('change', (e) => {
+                    moveCircle(e.target.value, 'y');
+                  });
+                }
+                function moveCircle(value, direction) {
+                  let svgDocument = document.getElementById('svg');
+                  let circle = svgDocument.getElementById('circle');
+                  circle.setAttribute('c' + direction, value);
+                }
+                window.addEventListener('DOMContentLoaded', init);
+            ]]>
+        </code-block>
+
+        <p>
+            SVG-Elemente lassen sich natürlich auch dynamisch per JavaScript verändern, beispielsweise die Position des
+            <code>&lt;circle&gt;</code>-Elements. Dazu wird zunächst das bereits bekannte HTML/SVG um zwei Schieberegler
+            erweitert. Jedem Schieberegler wird anschließend ein Event-Listener für das <code>change</code>-Event
+            hinzugefügt, innerhalb dessen die Funktion <code>moveCircle()</code> aufgerufen wird. Diese erwartet als
+            Parameter zum einen eine Positionsangabe, zum anderen eine Angabe über die Richtung (horizontal oder
+            vertikal bzw. x oder y). Ausgehend davon wird entweder das Attribut <code>cx</code> (x-Koordinate des
+            Kreismittelpunkts) oder das Attribut <code>cy</code> (y-Koordinate des Kreismittelpunkts) entsprechend
+            aktualisiert. Schon wird der Kreis an die entsprechende Position auf der Zeichenfläche verschoben.
+        </p>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
