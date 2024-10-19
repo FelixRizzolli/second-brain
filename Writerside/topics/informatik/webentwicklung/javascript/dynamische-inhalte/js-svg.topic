@@ -7,9 +7,15 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
-    <!-- TODO: migrate from Confluence -->
     <chapter id="grundlagen" title="grundlagen">
+        <p>
+            JavaScript bietet auch die Möglichkeit Vektorgrafiken wie SVG zu erzeugen, darauf zuzugreifen, diese zu
+            verändern, neue Elemente hinzuzufügen und prinzipiell alle andere DOM-Operationen durchführen.
+        </p>
 
+        <tip>
+            Mehr zu SVG: <a href="svg.topic"/>
+        </tip>
     </chapter>
 
     <chapter id="event-listener" title="Event-Listener für SVG-Elemente registrieren">
