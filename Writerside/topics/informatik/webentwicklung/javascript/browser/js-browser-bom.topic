@@ -1429,7 +1429,121 @@
     </chapter>
 
     <chapter id="informationen-des-bildschirms" title="Auf Informationen des Bildschirms zugreifen">
+        <p>
+            Das der Eigenschaft <code>screen</code> hinterlegte Objekt (vom Typ <code>Screen</code>) enthält
+            Informationen bezüglich des Bildschirms.
+        </p>
 
+        <img alt="Informationen des Bildschirms" src="js-browser-bom-screen.png"/>
+
+        <table style="header-row">
+            <tr>
+                <td>
+                    Eigenschaft
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        availTop
+                    </code>
+                </td>
+                <td>
+                    Enthält einen Pixelwert, der angibt, wie viel Platz von oben durch feste Bildschirmkomponenten wie
+                    Taskleisten etc. eingenommen wird, bzw. enthält genau das Pixel von oben gesehen, ab dem Platz für
+                    das Browserfenster zur Verfügung steht.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        availLeft
+                    </code>
+                </td>
+                <td>
+                    Enthält einen Pixelwert, der angibt, wie viel Platz von links durch feste Bildschirmkomponenten wie
+                    Taskleisten etc. eingenommen wird, bzw. enthält genau das Pixel von links gesehen, ab dem Platz für
+                    das Browserfenster zur Verfügung steht.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        availHeight
+                    </code>
+                </td>
+                <td>
+                    Enthält die maximal verfügbare Bildschirmhöhe in Pixeln minus der Höhe von Komponenten wie immer
+                    eingeblendeten Taskleisten etc.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        availWidth
+                    </code>
+                </td>
+                <td>
+                    Enthält die maximal verfügbare Bildschirmbreite in Pixeln minus der Breite von Komponenten wie immer
+                    eingeblendeten Taskleisten etc.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        colorDepth
+                    </code>
+                </td>
+                <td>
+                    Enthält die Farbtiefe des Bildschirms.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        height
+                    </code>
+                </td>
+                <td>
+                    Enthält die Höhe des Bildschirms in Pixeln.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        orientation
+                    </code>
+                </td>
+                <td>
+                    Enthält eine Referenz auf ein Objekt vom Typ <code>ScreenOrientation</code>, welches Informationen
+                    zur Ausrichtung des Bildschirms bereitstellt und ein Bestandteil der Screen Orientation API
+                    <a href="http://www.w3.org/TR/screen-orientation/"/> ist.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        pixelDepth
+                    </code>
+                </td>
+                <td>
+                    Enthält die Pixeltiefe des Bildschirms.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        width
+                    </code>
+                </td>
+                <td>
+                    Enthält die Breite des Bildschirms in Pixeln.
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
