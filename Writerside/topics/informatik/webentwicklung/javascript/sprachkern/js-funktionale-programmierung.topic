@@ -1215,7 +1215,44 @@
         </chapter>
 
         <chapter id="techniken-currying" title="Currying">
+            <p>
+                Unter dem Begriff Currying versteht man in der funktionalen Programmierung eine Technik, bei der eine
+                Funktion mit mehreren Parametern in mehrere Funktionen mit jeweils einem Parameter umgewandelt wird. Der
+                verkettete Aufruf dieser einparametrigen Funktionen führt dann zu dem gleichen Ergebnis wie der Aufruf
+                der einzelnen mehrparametrigen Funktion.
+            </p>
 
+            <p>
+                Sowohl Currying als auch Partial Application ermöglichen es, den JavaScript-Code schlanker zu machen.
+                Beide Techniken sind dabei von der Zielsetzung her recht ähnlich, unterscheiden sich aber in der
+                Umsetzung. Bei der partiellen Auswertung erhält man das finale Ergebnis der Ursprungsfunktion in zwei
+                Schritten: Im ersten Schritt wird eine Funktion mit gebundenen Parametern erzeugt, im zweiten Schritt
+                die Ursprungsfunktion mit allen Parametern aufgerufen. Beim Currying dagegen hängt die Anzahl der
+                notwendigen Funktionsaufrufe, um das finale Ergebnis zu ermitteln, von der Anzahl der Parameter der
+                Ursprungsfunktion ab. Welche der beiden Techniken verwendet wird und welche für den jeweiligen
+                Anwendungsfall besser geeignet ist, muss im Einzelfall entschieden werden.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    function volume(x, y, z) { return x * y * z; }
+
+                    function volumeCurry(x) {
+                      return function(y) {
+                        return function(z) {
+                          return x * y * z;
+                        }
+                      }
+                    }
+
+                    console.log(volumeCurry(5)(5)(5));
+                ]]>
+            </code-block>
+
+            <p>
+                Der Aufruf von <code>volumeCurry(5)(5)(5)</code> führt also zu dem gleichen Ergebnis wie der Aufruf von
+                <code>volume(5,5,5)</code>.
+            </p>
         </chapter>
     </chapter>
 
