@@ -746,7 +746,250 @@
     </chapter>
 
     <chapter id="navigationsinformationen" title="Navigationsinformationen der aktuellen Webseite">
+        <p>
+            Über das Objekt, welches der Eigenschaft <code>location</code> hinterlegt ist (und welches vom Typ
+            <code>Location</code> ist), kann auf Informationen bezüglich der URL der aktuell im Browserfenster bzw.
+            Browsertab geladenen Webseite zugegriffen werden.
+        </p>
 
+        <img alt="Navigationsinformationen der aktuellen Webseite" src="js-browser-bom-navigationsinformationen.png"/>
+
+        <table style="header-row">
+            <tr>
+                <td>
+                    Eigenschaft
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        href
+                    </code>
+                </td>
+                <td>
+                    Enthält die gesamte URL.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        protocol
+                    </code>
+                </td>
+                <td>
+                    Enthält das Protokoll der URL inklusive des Doppelpunkts, also beispielsweise <code>https:</code>.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        host
+                    </code>
+                </td>
+                <td>
+                    Enthält den Hostnamen einer URL, beispielsweise javascripthandbuch.de. Ist eine Portangabe
+                    vorhanden, wird diese ebenfalls mit aufgeführt, also beispielsweise
+                    <code>philipackermann.de:8080</code>.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        hostname
+                    </code>
+                </td>
+                <td>
+                    Enthält die Domain einer URL, beispielsweise <code>javascripthandbuch.de</code>. Im Gegensatz zu der
+                    Eigenschaft <code>host</code> ist bei <code>hostname</code> keine Portangabe enthalten.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        port
+                    </code>
+                </td>
+                <td>
+                    Enthält den Port einer URL, beispielsweise <code>8080</code>.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        pathname
+                    </code>
+                </td>
+                <td>
+                    Enthält den Pfad einer URL, beginnend mit einem <code>/</code>.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        search
+                    </code>
+                </td>
+                <td>
+                    <p>
+                        Enthält die Parameter einer URL, mit anderen Worten den Querystring (auch: Suchstring) inklusive
+                        eines vorangestellten Fragezeichens, also beispielsweise <code>?firstName=Max</code>. Mehrere
+                        Parameter-Wert-Paare werden durch ein kaufmännisches Und-Symbol getrennt, also beispielsweise
+                        <code>?firstName=Max&amp;lastName=Mustermann</code>.
+                    </p>
+
+                    <code-block collapsed-title="Helferfunktion für das Extrahieren einzelner Querystring-Parameter"
+                                collapsible="true"
+                                lang="javascript">
+                        <![CDATA[
+                            function getParameterByName(name) {
+                              name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+                              let regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+                              let results = regex.exec(location.search);
+                              return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+                            }
+                            console.log(getParameterByName('tests'));
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        hash
+                    </code>
+                </td>
+                <td>
+                    Enthält den sogenannten Fragment Identifier inklusive eines vorangestellten <code>#</code>, im Falle
+                    der URL <code>http://www.javascripthandbuch.de#services</code> beispielsweise <code>#services</code>.
+                    Ruft man eine URL mit Fragment Identifier auf und gibt es auf der dazugehörigen Webseite ein Element
+                    mit entsprechender ID, wird der Anzeigebereich zu diesem Element gescrollt.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        username
+                    </code>
+                </td>
+                <td>
+                    Enthält den in der URL angegebenen Nutzernamen, also beispielsweise für die URL
+                    <code>https://max:secret@javascripthandbuch.de</code> den Wert <code>max</code>. Wird nicht von
+                    allen Browsern unterstützt.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        password
+                    </code>
+                </td>
+                <td>
+                    Enthält das in der URL angegebene Passwort, also beispielsweise für die URL
+                    <code>https://max:secret@javascripthandbuch.de</code> den Wert <code>secret</code>. Wird nicht von
+                    allen Browsern unterstützt.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        origin
+                    </code>
+                </td>
+                <td>
+                    Enthält die kanonische Form der URL, bestehend aus Protokoll, gefolgt von <code>://</code> und der
+                    Domain sowie – falls die URL eine Portangabe enthält – weiterhin einem Doppelpunkt und der
+                    Portangabe.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+
+                    </code>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+        </table>
+
+        <table style="header-row">
+            <tr>
+                <td>
+                    Methode
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        assign()
+                    </code>
+                </td>
+                <td>
+                    <p>
+                        Die Methode <code>assign()</code> erwartet als Argument eine URL und öffnet die entsprechende
+                        Webseite. Dabei wird gleichzeitig auch ein neuer Eintrag im Browserverlauf erzeugt.
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let url = document.getElementById('url').value;
+                            window.location.assign(url);
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        replace()
+                    </code>
+                </td>
+                <td>
+                    <p>
+                        Die Methode <code>replace()</code> erwartet als Argument eine URL und öffnet die entsprechende
+                        Webseite. Anders als bei der Methode <code>assign()</code> erzeugt sie keinen Eintrag im
+                        Browserverlauf. Somit kann man in diesem Fall auch nicht mehr zu der vorher besuchten Webseite
+                        zurücknavigieren.
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let url = document.getElementById('url').value;
+                            window.location.replace(url);
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        reload()
+                    </code>
+                </td>
+                <td>
+                    <p>
+                        Mit der Methode <code>reload()</code> kann die Seite neu geladen werden. Optional kann der
+                        Methode ein boolescher Wert übergeben werden, über den sich bestimmen lässt, ob die Webseite vom
+                        Server neu geladen werden soll (in diesem Fall übergibt man den Wert <code>true</code>) oder ob
+                        der Browser die Webseite auch von seinem internen Cache neu laden kann (in diesem Fall übergibt
+                        man den Wert <code>false</code>).
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            window.location.reload(true);
+                        ]]>
+                    </code-block>
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter id="browserverlauf" title="Der Browserverlauf">
