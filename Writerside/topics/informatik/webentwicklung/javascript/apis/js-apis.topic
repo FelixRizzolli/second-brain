@@ -1792,7 +1792,116 @@
     </chapter>
 
     <chapter id="internationalization-api" title="Mehrsprachige Anwendungen entwickeln">
+        <p>
+            Sobald eine Webseite oder Webanwendung mehrsprachig sein soll, ist eine Internationalisierung ebensolcher
+            unumgänglich. Die Idee dabei ist, eine Anwendung so zu strukturieren, dass sie ohne großen Aufwand an
+            verschiedene Sprachen (oder noch allgemeiner: an verschiedene Regionen) angepasst werden kann.
+        </p>
 
+        <tip>
+            Grundlagen zur Internationalisierung: <a href="swe-pk-internationalisierung.topic"/>
+        </tip>
+
+        <p>
+            Die ECMAScript 2017 Internationalization API <a href="https://tc39.github.io/ecma402/"/> ermöglicht die
+            sprachabhängige Formatierung von Zahlenwerten, Datums- und Zeitangaben sowie den sprachabhängigen Vergleich
+            von Zeichenketten. Die API orientiert sich dabei an bestehenden Internationalization APIs wie die des .NET
+            Frameworks oder der Java Internationalization API. Die erste Version der API wurde von ECMA TC39 bereits
+            2010 ins Leben gerufen.
+        </p>
+
+        <p>
+            Alle Objekte rund um die Internationalization API werden über das zentrale Objekt <code>Intl</code>
+            bereitgestellt. Dieses Objekt stellt analog zu den eingangs genannten Anforderungen drei Typen zur
+            Verfügung:
+        </p>
+
+        <list>
+            <li>
+                <code>Intl.Collator</code>: Ermöglicht den Vergleich von Zeichenketten unter Berücksichtigung von
+                Internationalisierungsinformationen.
+            </li>
+            <li>
+                <code>Intl.DateTimeFormat</code>: Ermöglicht die Formatierung von Datums- und Zeitangaben unter
+                Berücksichtigung von Internationalisierungsinformationen.
+            </li>
+            <li>
+                <code>Intl.NumberFormat</code>: Ermöglicht die Formatierung von Zahlenwerten unter Berücksichtigung von
+                Internationalisierungsinformationen.
+            </li>
+        </list>
+
+        <p>
+            Konkrete Instanzen dieser Typen können über die entsprechenden Konstruktorfunktionen erzeugt werden, wobei
+            in allen Fällen das jeweilige <code>Locale</code> als Zeichenkette oder <code>Array</code> von Zeichenketten
+            übergeben wird:
+        </p>
+
+        <code-block collapsed-title="worker.js" collapsible="true" lang="javascript">
+            <![CDATA[
+                const locales = [  'zh-Hant', 'en-US', 'de-DE' ];
+                const dateTimeFormatGermany = new Intl.DateTimeFormat(locales);
+                const numberFormatGermany = new Intl.NumberFormat(locales);
+                const collactorGermany = new Intl.Collator(locales);
+            ]]>
+        </code-block>
+
+        <p>
+            In diesem Fall wird das erste Locale im Array verwendet, welches vom System des Nutzers unterstützt wird.
+            Dabei werden für den Fall, dass ein Locale, welches nicht unterstützt wird und aus mehreren Sub Tags
+            besteht, die Sub Tags sukzessive aus dem Locale entfernt und mit dem jeweils entstandenen Locale erneut
+            geprüft. Werden alle im Array enthaltenen Locales nicht unterstützt, wird das Standard-Locale verwendet.
+        </p>
+
+        <p>
+            Neben den konkret in der Internationalization API definierten Typen und ihren Methoden gibt es an den
+            Standardobjekten <code>Array</code>, <code>String</code>, <code>Number</code> und <code>Date</code> folgende
+            Methoden, die zwar nicht Teil dieser API sind, jedoch ebenfalls entsprechende
+            <code>Locale</code>-Informationen berücksichtigen:
+        </p>
+
+        <list>
+            <li>
+                <code>
+                    Array.prototype.toLocaleString
+                </code>
+            </li>
+            <li>
+                <code>
+                    String.prototype.localeCompare
+                </code>
+            </li>
+            <li>
+                <code>
+                    String.prototype.toLocaleLowerCase
+                </code>
+            </li>
+            <li>
+                <code>
+                    String.prototype.<b>toLocaleUpperCase
+                </code>
+            </li>
+            <li>
+                <code>
+                    Number.prototype.toLocaleString
+                </code>
+            </li>
+            <li>
+                <code>
+                    Date.prototype.toLocaleString
+                </code>
+            </li>
+            <li>
+                <code>
+                    Date.prototype.toLocaleDateString
+                </code>
+            </li>
+            <li>
+                <code>
+                    Date.prototype.toLocaleTimeString
+                </code>
+            </li>
+        </list>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
