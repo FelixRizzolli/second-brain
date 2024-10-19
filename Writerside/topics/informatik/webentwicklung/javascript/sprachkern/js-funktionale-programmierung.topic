@@ -1206,7 +1206,12 @@
         </chapter>
 
         <chapter id="techniken-partielle-auswertung" title="Partielle Auswertung">
-
+            <p>
+                Die Idee der sogenannten partiellen Auswertung (oder Partial Application) ist, eine Funktion zunächst
+                mit den gleichbleibenden Parametern auszuwerten (die Parameter werden dabei gebunden) und eine neue
+                Funktion zu erstellen, die nur noch die variablen Parameter (das heißt die ungebundenen Parameter)
+                erwartet.
+            </p>
         </chapter>
 
         <chapter id="techniken-currying" title="Currying">
