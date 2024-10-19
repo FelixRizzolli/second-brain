@@ -993,13 +993,177 @@
     </chapter>
 
     <chapter id="browserverlauf" title="Der Browserverlauf">
+        <p>
+            Die Eigenschaft <code>history</code> des <code>window</code>-Obrjekts repräsentiert den Browserverlauf.
+            Jedes Mal, wenn der Browser eine neue Webseite lädt oder auch, wenn innerhalb einer Webseite zu einer
+            Sprungmarke (einem Anker) gesprungen wird, erzeugt der Browser standardmäßig einen neuen Eintrag im
+            Browserverlauf (Ausnahme bildet hier die <code>replace()</code>-Methode).
+        </p>
+
+        <table style="header-row">
+            <tr>
+                <td>
+                    Eigenschaft/Methode
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        length
+                    </code>
+                </td>
+                <td>
+                    Enthält die Anzahl an Einträgen in der Historie inklusive der aktuell geladenen Webseite.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        back()
+                    </code>
+                </td>
+                <td>
+                    Geht zu der vorherigen Webseite in der Historie. Bewirkt das Gleiche, wie wenn der Nutzer die
+                    Zurück-Schaltfläche des Browsers betätigt.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        forward()
+                    </code>
+                </td>
+                <td>
+                    Geht zu der nachfolgenden Webseite in der Historie. Bewirkt das Gleiche, wie wenn der Nutzer die
+                    Weiter-Schaltfläche des Browsers betätigt.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        go()
+                    </code>
+                </td>
+                <td>
+                    Geht zu einer bestimmten Webseite in der Historie. Übergeben wird der Methode die Schrittweite
+                    ausgehend von der aktuellen Webseite. Beispielsweise sorgt der Wert -1 dafür, dass zu der vorherigen
+                    Webseite gegangen wird, und der Wert 1, dass zu der nachfolgenden Webseite gegangen wird. Wird ein
+                    Wert übergeben, für den es keine entsprechende Webseite in der Historie gibt, macht diese Methode
+                    nichts. Wird die Methode dagegen ohne Wert oder mit dem Wert 0 aufgerufen, wird die aktuelle
+                    Webseite erneut geladen.
+                </td>
+            </tr>
+        </table>
 
         <chapter id="browserverlauf-single-page-applications" title="Single Page Applications">
+            <p>
+                Mit dem Erfolg von Single Page Applications, in denen nur Teile einer Webseite/Anwendung neu geladen
+                werden, musste jedoch eine neue bzw. zusätzliche Funktionalität her, um einzelne Einträge im
+                Browserverlauf zu beschreiben. Der Grund: Werden nur Teile einer Webseite neu geladen, ändert sich
+                standardmäßig dadurch erst mal nicht die URL, wodurch es folglich auch keinen neuen Eintrag im
+                Browserverlauf gibt. Auch das Setzen von Lesezeichen ist dann nicht möglich, weil verschiedene
+                »Webseiten« (genauer: Zustände der Webseite) keine eigene URL haben.
+            </p>
 
+            <p>
+                Zu Hilfe nahm man sich daher lange Zeit den Fragment Identifier der URL. Wurden Teile einer Webseite neu
+                geladen, änderte man einfach diesen Fragment Identifier und sorgte somit dafür, dass ein neuer Eintrag
+                im Browserverlauf erzeugt wurde.
+            </p>
+
+            <p>
+                Dazu ein kurzes Beispiel: Angenommen, man befindet sich auf einer Webseite mit URL in
+                <code>www.javascripthandbuch.de</code>, welche fünf verschiedene Navigationseinträge hat: Startseite,
+                Services, Skills, Über Uns und Kontakt. Dann würden die einzelnen URLs
+                <code>www.javascripthandbuch.de#home</code>, <code>www.javascripthandbuch.de#services</code>,
+                <code>www.javascripthandbuch.de#skills</code>, <code>www.javascripthandbuch.de#aboutus</code> und
+                <code>www.javascripthandbuch.de#contact</code> lauten. Solche URLs nennt man wegen des enthaltenen
+                <code>#</code>-Zeichens auch Hash-Bang-URLs.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    <li><a href="/home">Startseite</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/skills">Skills</a></li>
+                    <li><a href="/aboutus">Über Uns</a></li>
+                    <li><a href="/contact">Kontakt</a></li>
+                ]]>
+            </code-block>
+
+            <p>
+                Doch diese Technik ist mehr schlecht als recht, hat sie doch einige Einschränkungen, beispielsweise
+                steht der Fragment Identifier nur auf Clientseite zur Verfügung und wird nicht an den Server
+                mitgeschickt.
+            </p>
         </chapter>
 
         <chapter id="history-api" title="Die History API">
+            <img alt="Die History API" src="js-browser-bom-history-api.png"/>
 
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Eigenschaft/Methode
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            state
+                        </code>
+                    </td>
+                    <td>
+                        Enthält den aktuellen Eintrag im Browserverlauf.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            pushState()
+                        </code>
+                    </td>
+                    <td>
+                        Fügt der Historie einen Eintrag hinzu. Übergeben werden ein beliebiges JavaScript-Objekt (das
+                        sogenannte Zustandsobjekt), der Titel und optional eine URL.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            replaceState()
+                        </code>
+                    </td>
+                    <td>
+                        Ersetzt den aktuellen Eintrag in der Historie durch einen neuen Eintrag. Übergeben werden ein
+                        Zustandsobjekt, der Titel und optional eine URL.
+                    </td>
+                </tr>
+            </table>
+
+            <note>
+                <p>
+                    <b>
+                        History.js
+                    </b>
+                </p>
+
+                <p>
+                    Die Browser verhalten sich bezüglich der History API leider nicht 100 % gleich, beispielsweise
+                    wenn es um den Zeitpunkt geht, zu dem das <code>popstate</code>-Event ausgelöst wird. Eine
+                    interessante Alternative ist die Verwendung der Bibliothek <code>history.js</code>
+                    <a href="https://github.com/browserstate/history.js/"/>. Die API der Bibliothek ist dabei mehr oder
+                    weniger gleich wie die History API, es werden aber Browserunregelmäßigkeiten glattgebügelt. Außerdem
+                    nett: Für ältere Browser, die die neuen Methoden der History API überhaupt nicht unterstützen, wird
+                    auf Hash-Bang-URLs ausgewichen.
+                </p>
+            </note>
         </chapter>
     </chapter>
 
