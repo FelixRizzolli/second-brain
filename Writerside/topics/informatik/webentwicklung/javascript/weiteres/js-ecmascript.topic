@@ -880,7 +880,56 @@
     </chapter>
 
     <chapter id="proxies" title="ES2015 – Proxies: Zugriff auf Objekte abfangen">
+        <img alt="ES2015 – Proxies: Zugriff auf Objekte abfangen" src="js-professional-proxies.png"/>
 
+        <p>
+            Unter einem Proxy versteht man in der Software-Entwicklung ein Objekt, welches einem anderen Objekt
+            vorgelagert ist und stellvertretend für das Objekt aufgerufen wird. Das Proxy-Objekt erlaubt es, Zugriffe
+            auf das Ursprungsobjekt abzufangen, zu verarbeiten und an selbiges weiterzuleiten und auch die Rückgabewerte
+            von abgefangenen Methoden ihrerseits abzufangen und zu beeinflussen.
+        </p>
+
+        <p>
+            Ein <code>Proxy</code>-Objekt wird über den Aufruf <code>Proxy(targetObject, handler);</code> erzeugt. Dabei
+            erwartet die Funktion <code>Proxy()</code> zwei Argumente: <code>targetObject</code> stellt das
+            Ursprungsobjekt dar, dessen Zugriffe abgefangen werden sollen, <code>handler</code> bezeichnet das Objekt,
+            welches auf die Zugriffe auf das Ursprungsobjekt reagieren soll. Im weiteren Code spricht man dann statt des
+            Ursprungsobjekts das <code>Proxy</code>-Objekt an.
+        </p>
+
+        <p>
+            Proxies bilden also den Rahmen für das Abfangen von Methodenaufrufen. Welche Methodenaufrufe abgefangen
+            werden sollen und wie darauf reagiert werden soll, definiert man dabei in <code>Handler</code>-Objekten. Und
+            zwar gibt es eine Reihe vordefinierter Methoden (sogenannte Traps), die man an einem
+            <code>Handler</code>-Objekt implementieren kann und die dann abhängig von der Operation, die auf dem
+            <code>Proxy</code>-Objekt ausgeführt wird, aufgerufen werden.
+        </p>
+
+        <code-block lang="javascript">
+            <![CDATA[
+                let targetObject = {};
+                let handler = {
+                  set: function(targetObject, property, value) {
+                    console.log('setze ' + value + ' für Eigenschaft ' + property);
+                    targetObject[property] = value;
+                  },
+                  get: function(targetObject, property) {
+                    console.log('liefere ' + targetObject[property] + ' von Eigenschaft ' + property);
+                    return targetObject[property];
+                  }
+                }
+                let proxy = new Proxy(targetObject, handler);
+                proxy.firstName = 'Max';               // Aufruf set() von handler
+                proxy.lastName = 'Mustermann';         // Aufruf set() von handler
+                console.log(proxy.firstName);          // Aufruf get() von handler
+                console.log(proxy.lastName);           // Aufruf get() von handler
+            ]]>
+        </code-block>
+
+        <tip>
+            Mehr zu Proxys:
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy"/>
+        </tip>
     </chapter>
 
     <chapter id="async" title="Asynchrone Programmierung: Promises und Async Functions">
