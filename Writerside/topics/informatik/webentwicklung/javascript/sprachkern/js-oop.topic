@@ -1784,30 +1784,238 @@
     </chapter>
 
     <chapter id="funktionen-als-referenztypen" title="Funktionen als Referenztypen">
+        <p>
+            Funktionen sind in JavaScript ebenfalls Objekte. Dies ist nicht selbstverständlich und nicht in allen
+            Programmiersprachen so (in Java beispielsweise nicht). Dies hat wiederum zur Folge, dass Funktionen wie
+            »normale« Variablen als Argumente oder als Rückgabewerte anderer Funktionen verwendet werden können.
+            Auch verfügen Funktionen ihrerseits wia andere Objekte auch über Methoden, die auf entsprechenden
+            Funktionsobjekten aufgerufen werden können.
+        </p>
 
         <chapter id="funktionen-als-referenztypen-argumente" title="Funktionen als Argumente verwenden">
+            <p>
+                Funktionen können in JavaScript als Argument einer anderen Funktion verwendet werden. Zum einen können
+                Funktionen über die entsprechende Variable übergeben werden, die diese Funktion referenziert. Zum
+                anderen können Funktionen auch direkt an der Stelle definiert werden, an der das Argument erwartet wird,
+                sprich in der Argumentliste der Funktion, die aufgerufen wird. Zum anderen kann die Funktion auch direkt
+                an der Stelle definieren, an der das Argument erwartet wird, sprich in der Argumentliste der Funktion,
+                die aufgerufen wird. Typischerweise verwendet man in diesem Fall anonyme Funktionen.
+            </p>
 
+            <code-block collapsed-title="Code" collapsible="true" lang="javascript">
+                <![CDATA[
+                    let numbers = [2,3,4,5];
+                    function every(array, f) {
+                      for(let i=0; i<array.length; i++) {
+                        f(array[i]);
+                      }
+                    }
+                    function print(item) {
+                      console.log('Item: ' + item);
+                    }
+                    function printModulo(item) {
+                      console.log(item + ' % 2 = ' + item % 2);
+                    }
+                    every(numbers, print);
+                    every(numbers, printModulo);
+                ]]>
+            </code-block>
+
+            <code-block collapsed-title="Ausgabe" collapsible="true" lang="javascript">
+                <![CDATA[
+                    Item: 2
+                    Item: 3
+                    Item: 4
+                    Item: 5
+                    2 % 2 = 0
+                    3 % 2 = 1
+                    4 % 2 = 0
+                    5 % 2 = 1
+                ]]>
+            </code-block>
+
+            <p>
+                Die Funktion <code>every()</code> welche in diesem Beispiel selbst implementiert wurde, steht den Arrays
+                in JavaScript bereits von Haus aus zur Verfügung, und zwar in Form der Array-Methode
+                <code>forEach()</code>. Diese Methode führt eine ihr übergeordnete Funktion für jedes Element im Array
+                aus bzw. ruft sie mit dem jeweiligen Element als Argument auf.
+            </p>
         </chapter>
 
         <chapter id="funktionen-als-referenztypen-return" title="Funktionen als Rückgabewerte verwenden">
+            <p>
+                Funktionen können in JavaScript auch als Rückgabewert einer anderen Funktion verwendet werden. Wenn eine
+                Funktion eine andere Funktion als Rückgabewert liefert, kann man die zurückgegebene Funktion auch direkt
+                aufrufen, ohne sie erst einer Variable zuzuweisen.
+            </p>
 
+            <code-block collapsed-title="Code" collapsible="true" lang="javascript">
+                <![CDATA[
+                    function sayHello() {
+                      console.log('Hallo');
+                      return function() {
+                        console.log('Welt');
+                        return function() {
+                          console.log('Mein Name ist Max Mustermann.');
+                        }
+                      }
+                    }
+                    sayHello();      // Aufruf der »äußeren« Funktion
+                    sayHello()();    // Aufruf der »äußeren« und der »mittleren« Funktion
+                    sayHello()()();  // Aufruf aller Funktionen
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="funktionen-als-referenztypen-standardmethoden" title="Standardmethoden jeder Funktion">
+            <p>
+                Funktionen sind Objekte, was wiederum bedeutet, dass sie ihrerseits Methoden enthalten können.
+                Standardmäßig stellt jede Funktion bereits drei Methoden zur Verfügung:
+            </p>
 
             <chapter id="funktionen-als-referenztypen-standardmethoden-bind"
                      title="Objekte binden mit der Methode bind()">
+                <p>
+                    Das Schlüsselwort <code>this</code> bezieht sich auf den Kontext, in welchem die Funktion aufgerufen
+                    wird, nicht auf den, in welchem sie definiert wurde. Dieses Verhalten ist jedoch nicht immer das,
+                    was man möchte. Angenommen man möchte eine Objektmethode, die auf <code>this</code> zugreift, als
+                    Argument einer Funktion übergeben, beispielsweise Callback-Handler (also eine Funktion, die von der
+                    Funktion, der sie übergeben wird, aufgerufen wird). Dann kann dies zu einem Laufzeitfehler führen.
+                </p>
 
+                <p>
+                    Über die Funktion <code>bind()</code> lässt sich this für eine Funktion an ein bestimmtes Objekt
+                    binden. Die Methode <code>bind()</code> wird dabei auf der entsprechenden Funktion aufgerufen, wobei
+                    man als Argument das Objekt übergibt, welches den Ausführungskontext darstellt. Hat die Funktion
+                    ihrerseits Parameter, werden diese einfach hinten angehängt. Als Ergebnis liefert
+                    <code>bind()</code> ein neues Funktionsobjekt, welches identisch mit der Ursprungsfunktion ist, den
+                    Ausführungskontext aber an das übergebene Objekt gebunden hat.
+                </p>
+
+                <code-block collapsed-title="Code" collapsible="true" lang="javascript">
+                    <![CDATA[
+                        let button = {
+                          handler : null,  // Funktion, die einen Callback-Handler erwartet
+                          onClick : function(handler) {
+                            this.handler = handler;
+                          },
+                          click : function() {
+                            this.handler();
+                          }
+                        };
+
+                        let handler = {
+                          log : function() {
+                            console.log("Button geklickt.");
+                          },  // Objektmethode, die weiter unten als Callback-Handler registriert wird
+                          handle: function() {
+                            this.log();
+                          }
+                        }
+
+                        // Registrieren des Callback-Handlers mit Fehler
+                        button.onClick(handler.handle); // TypeError: Object #<Object> has no method 'log'
+
+                        // Registrieren des Callback-Handlers ohne Fehler
+                        button.onClick(handler.handle.bind(handler));
+
+
+                        // Implizites Aktivieren des Callback-Handlers
+                        button.click();
+                    ]]>
+                </code-block>
+
+                <p>
+                    Die Methode <code>bind()</code> gibt es erst seit ES5. Für Browser mit älteren Versionen gibt es
+                    die Möglichkeit selbst zu implementieren.
+                </p>
             </chapter>
 
             <chapter id="funktionen-als-referenztypen-standardmethoden-call"
                      title="Funktionen aufrufen über die Methode call()">
+                <p>
+                    Mit der Methode <code>call()</code> ist es ebenfalls möglich, den Ausführungskontext einer Funktion
+                    zu definieren. Allerdings wird bei <code>call()</code> nicht wie im Falle von <code>bind()</code>
+                    ein neues Funktionsobjekt erstellt, sondern die entsprechende Funktion direkt aufgerufen. Der
+                    Ausführungskontext wird dabei als erstes Argument übergeben, optional können weitere Argumente für
+                    die aufzurufende Funktion definiert werden.
+                </p>
 
+                <p>
+                    Ein besonders häufig anzutreffender Anwendungsfall für die Verwendung von <code>call()</code> ist
+                    die Iteration über das <code>arguments</code>-Objekt unter Verwendung der
+                    <code>forEach()</code>-Methode. Diese Methode steht eigentlich nur echten Arrays zur Verfügung,
+                    arguments ist kein echtes Array und stellt diese Methode daher nicht zur Verfügung.
+                </p>
+
+                <code-block collapsed-title="Code" collapsible="true" lang="javascript">
+                    <![CDATA[
+                        function logNames() {
+                          console.log(arguments); // Ausgabe: { '0': 'Max', '1': 'Moritz' }
+                          /* Fehler: arguments ist kein Array
+                          arguments.forEach(function(argument) {
+                            console.log(argument);
+                          });  */
+                        }
+
+                        logNames('Max', 'Moritz');
+                    ]]>
+                </code-block>
+
+                <p>
+                    Die Funktionalität der <code>forEach()</code>-Methode lässt sich allerdings auch für
+                    <code>array</code>-ähnliche Objekte wie arguments verwenden. Der Fachbegriff für diese Technik
+                    lautet Function Borrowing bzw. Method Borrowing, was so viel wie das Ausleihen von Funktionen oder
+                    Methoden bedeutet.
+                </p>
+
+                <p>
+                    Die einfachste Möglichkeit, über ein <code>array</code>-ähnliches Objekt zu iterieren:
+                </p>
+
+                <code-block collapsed-title="Code" collapsible="true" lang="javascript">
+                    <![CDATA[
+                        function logNames() {
+                          Array.prototype.forEach.call(arguments, function(argument) {
+                            console.log(argument);
+                          });
+                        }
+
+                        logNames('Max', 'Moritz');
+                    ]]>
+                </code-block>
+
+                <p>
+                    Hier wird über <code>Array.prototype</code> auf das globale Array-Objekt bzw. dessen Prototyp
+                    zugegriffen. In diesem Prototyp sind alle Methoden enthalten, die den Array-Instanzen im Rahmen der
+                    prototypischen Vererbung zur Verfügung stehen. Die Methode <code>forEach()</code> ist eine davon,
+                    wobei man über <code>Array.prototype.forEach</code> auf diese Methode zugreifen kann, ohne sie
+                    aufzurufen. Der eigentliche Aufruf geschieht erst durch den Aufruf der Methode <code>call()</code>.
+                    Das erste Argument von <code>call()</code> definiert dabei den Ausführungskontext, welcher im
+                    Beispiel das Objekt <code>arguments</code> sein muss. Das zweite Argument ist dasjenige, welches an
+                    die Methode <code>forEach()</code> weitergereicht wird: eine Callback-Funktion, die für jedes
+                    Element im Array bzw. hier im <code>arguments</code>-Objekt aufgerufen wird.
+                </p>
             </chapter>
 
             <chapter id="funktionen-als-referenztypen-standardmethoden-apply"
                      title="Funktionen aufrufen über die Methode apply()">
+                <p>
+                    Vom Prinzip her funktioniert <code>apply()</code> ähnlich wie die Methode <code>call()</code>. Der
+                    einzige Unterschied ist, dass die Argumente der aufgerufenen Funktion nicht als einzelne Argumente
+                    übergeben werden, sondern gesammelt als Array.
+                </p>
 
+                <code-block collapsed-title="Code" collapsible="true" lang="javascript">
+                    <![CDATA[
+                        function logNames() {
+                          Array.prototype.forEach.apply(arguments, [function(argument) {
+                            console.log(argument);
+                          }]);
+                        }
+                        logNames('Max', 'Moritz');
+                    ]]>
+                </code-block>
             </chapter>
         </chapter>
     </chapter>
