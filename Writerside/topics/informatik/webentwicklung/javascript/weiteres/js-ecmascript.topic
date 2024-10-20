@@ -1495,17 +1495,193 @@
 
 
     <chapter id="destructing" title="Destructuring – Werte aus Arrays und Objekten extrahieren">
+        <p>
+            Das Prinzip des Destructurings (der sogenannten destrukturierenden Anweisungen) ermöglicht es, Werte, die in
+            Objekteigenschaften oder Arrays hinterlegt sind, relativ einfach verschiedenen Variablen zuzuweisen, quasi
+            aus dem Objekt bzw. dem Array zu extrahieren. Dabei unterscheidet man zwischen Array-Destructuring und
+            Objekt-Destructuring.
+        </p>
 
         <chapter id="destructing-array" title="Array-Destructuring">
+            <code-block lang="javascript">
+                <![CDATA[
+                    let bestOfStonerrock = [ 'Kyuss', 'Spiritual Beggars', 'Spice and the RJ Band', 'Band of Spice' ];
+                    let one = bestOfStonerrock[0];
+                    let two = bestOfStonerrock[1];
+                    let three = bestOfStonerrock[2];
+                    let four = bestOfStonerrock[3];
+                ]]>
+            </code-block>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    let bestOfStonerrock = [ 'Kyuss', 'Spiritual Beggars', 'Spice and the RJ Band', 'Band of Spice' ];
+                    let [ one, two, three, four, five, six = 'Kyuss' ] = bestOfStonerrock;
+                    [ one, two, three, four, five, six = 'Kyuss' ] = bestOfStonerrock;
+                ]]>
+            </code-block>
+
+            <p>
+                Mit der Destructuring-Anweisung (rechts) geht die Zuweisung viel einfacher und übersichtlicher. Die
+                Werte, die man mit den Werten aus dem entsprechenden Array belegen möchte, schreibt man dabei
+                kommasepariert in eckige Klammern hinter das let-Schlüsselwort. Und zwar in der Reihenfolge, in der
+                Werte aus dem Array extrahiert werden sollen. Das heißt, die erste Variable erhält den Wert von Index 0,
+                die zweite Variable den Wert von Index 1 und so weiter.
+            </p>
+
+            <p>
+                Für den Fall, dass die Variablen, denen die Werte zugeordnet werden sollen, bereits existieren und nicht
+                erst deklariert werden müssen, kann das <code>let</code> (oder, je nachdem, <code>var</code> oder
+                <code>const</code>) auch weggelassen werden.
+            </p>
+
+            <p>
+                Für den Fall, dass das Array weniger Elemente enthält als Variablen angegeben, erhält die entsprechende
+                Variable den Wert <code>undefined</code>. Im Beispiel die Variable <code>five</code>.
+            </p>
+
+            <p>
+                Alternativ hat man beim Array-Destructuring wie bei Funktionsparametern die Möglichkeit, Standardwerte
+                für Variablen anzugeben. Statt undefined bekommt die entsprechende Variable dann den Standardwert
+                zugewiesen, falls im Array kein entsprechender Eintrag existiert. Im Beispiel die Variable
+                <code>six</code>.
+            </p>
+
+            <p>
+                Sollen nur bestimmte Werte aus dem Array abgebildet werden, so ist dies auch Möglich, indem an
+                entsprechender Stelle keine Variable vorsehen wird. Im folgenden Beispiel werden <code>three</code> und
+                <code>four</code> nicht definiert.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    let [ one, two, , , five, six = 'Kyuss' ] = bestOfStonerrock;
+                ]]>
+            </code-block>
+
+            <p>
+                Genauso wie mit eindimensionalen Arrays funktioniert Destructing auch mit mehrdimensionalen Arrays.
+            </p>
         </chapter>
 
         <chapter id="destructing-object" title="Objekt-Destructuring">
+            <p>
+                Das Destructuring von Objekten funktioniert prinzipiell analog zum Array-Destructuring. Die Schreibweise
+                ist auch hier wieder umgekehrt zur Konstruktion, in diesem Fall der Konstruktion von Objekten. Im
+                folgenden Beispiel werden die Werte der beiden Eigenschaften <code>firstName</code> und
+                <code>lastName</code> in die neuen Variablen <code>firstNameExtracted</code> und
+                <code>lastNameExtracted</code> extrahiert.
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    let person = { firstName: 'Max', lastName: 'Mustermann' };
+                    let {
+                      firstName : firstNameExtracted,
+                      lastName : lastNameExtracted
+                    } = person;
+                ]]>
+            </code-block>
+
+            <p>
+                Falls Variablen und Objekteigenschaften gleich lauten sollen, geht das Extrahieren sogar noch einfacher.
+                Implizit wird dann eine entsprechende Zuweisung von Eigenschaftswert zu Variablen vorgenommen.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    let person = { firstName: 'Max', lastName: 'Mustermann' };
+                    let { firstName, lastName } = person;
+                ]]>
+            </code-block>
+
+            <p>
+                Auch geschachtelte Objekte stellen für das Destructuring kein Problem dar.
+            </p>
+
+            <p>
+                Anders als beim Array-Destructuring, bei dem man var, let und const auch weglassen kann, führt dies beim
+                Objekt-Destructuring allerdings erst mal zu einem Fehler, auch wenn die Variable(n) bereits deklariert
+                ist/sind. Folgende Schreibweise ist demnach nicht erlaubt:
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    {firstName} = person;
+                ]]>
+            </code-block>
+
+            <p>
+                Der Grund: <code>{firstName}</code> wird nicht als Destructuring-Anweisung interpretiert, sondern als
+                Codeblock. Dieser Konflikt kann allerdings umgangen werden, indem entweder <code>{firstName}</code> oder
+                der gesamte Ausdruck eingeklammert wird.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    ({firstName}) = person;
+                    ({firstName} = person);
+                ]]>
+            </code-block>
+
+            <p>
+                Die runden Klammern sorgen dann dafür, dass die geschweiften Klammern vom JavaScript-Interpreter nicht
+                mehr als Codeblock interpretiert werden.
+            </p>
+
+            <p>
+                Ein weiteres praktisches Feature des Destructurings ist, dass man es sogar innerhalb einer
+                <code>for-of</code>-Schleife, oder für Funktionsparameter verwenden kann.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    for (let { firstName, lastName } of persons) { /* ... */ }
+                    function printPerson({ firstName, lastName }) {
+                      /* ... */
+                    }
+                ]]>
+            </code-block>
         </chapter>
 
         <chapter id="rest-spread-properties" title="ES2018 – Rest- und Spread-Properties">
+            <p>
+                Mit Version ES2018 wurden analog zu den Rest-Parametern, sogenannte <b>Rest-Properties</b> eingeführt,
+                die etwas Ähnliches für Objekteigenschaften ermöglichen. Die Definition der Rest-Properties erfolgt
+                ebenfalls über drei vorangestellte Punkte:
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    const person = { firstName: 'Max', lastName: 'Mustermann', age: 33, hairColor: 'brown', height: 1.8 };
+                    const { firstName, lastName, ...properties } = person;
+                    console.log(firstName);    // Max
+                    console.log(lastName);     // Mustermann
+                    console.log(properties);   // { age: 33, hairColor: 'brown', height: 1.8 }
+                ]]>
+            </code-block>
+
+            <p>
+                Diese Anweisung sorgt dafür, dass alle Eigenschaften des Objekts <code>person</code>, die als
+                »enumerable« definiert und nicht über die Destructuring-Regel einer anderen Variablen zugewiesen sind
+                (im Beispiel <code>firstName</code> und <code>lastName</code>), in das Objekt <code>properties</code>
+                kopiert werden.
+            </p>
+
+            <p>
+                <b>Spread-Properties</b> sind in gewisser Weise das Gegenstück zu Rest-Properties und verhalten sich
+                ähnlich wie der Spread-Operator.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    const firstName = 'Max';
+                    const lastName = 'Mustermann';
+                    const properties = { age: 33, hairColor: 'brown', height: 1.8 };
+                    const person = { firstName, lastName, ...properties };
+                    console.log(person); // { firstName: 'Max', lastName: 'Mustermann', age: 33, hairColor: 'brown', height: 1.8 }
+                ]]>
+            </code-block>
         </chapter>
     </chapter>
 
