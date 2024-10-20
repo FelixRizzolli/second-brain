@@ -215,7 +215,7 @@
 
         <p>
             Um XML-Objekte auf Basis einer Zeichenkette zu erstellen, die Daten im XML-Format enthält, kann das Objekt
-            DOMParser verwendet werden. Dessen Methode<code>parseFormString()</code> kann man als erstes Argument die
+            DOMParser verwendet werden. Dessen Methode <code>parseFormString()</code> kann man als erstes Argument die
             entsprechende Zeichenkette übergeben, als zweites Argument den MIME-Typ (in der Regel <code>text/xml</code>).
             Schon erhält man – vorausgesetzt, die übergebene Zeichenkette enthält gültiges XML – ein Objekt vom Typ
             Document, welches das geparste XML enthält.
@@ -841,10 +841,10 @@
                 bzw. Event-Listeners für das <code>load</code>-Event die Eigenschaft <code>responseText</code> des
                 Anfrageobjekts auszulesen. Diese enthält den »Körper« der vom Server zurückgesendeten Antwort als
                 Zeichenkette (sprich die übertragenen Daten ohne Kopfdaten wie Header etc.). Außerdem sollten der Header
-                Accept auf <code>text/html</code>gesetzt werden, damit nur Antworten vom Server akzeptiert werden, die
+                Accept auf <code>text/html</code> gesetzt werden, damit nur Antworten vom Server akzeptiert werden, die
                 auch HTML enthalten. Indem für die Eigenschaft <code>responseType</code> der Wert
-                <code>'document'</code> gesetzt wird, wird die Antwort direkt in ein Objekt vom Typ<code>Document</code>
-                geparst.
+                <code>'document'</code> gesetzt wird, wird die Antwort direkt in ein Objekt vom Typ
+                <code>Document</code> geparst.
             </p>
 
             <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
@@ -886,7 +886,7 @@
                 <code>document</code> zugewiesen wird. Innerhalb des Event-Handlers/Event-Listeners steht dann das
                 geparste XML über die Eigenschaft <code>responseXML</code> in Form eines Objekts vom Typ
                 <code>Document</code> zur Verfügung. Außerdem sollte der Header Accept auf den Wert
-                <code>text/xml</code> oder <code>application/xml</code>gesetzt werden, um nur Daten im XML-Format zu
+                <code>text/xml</code> oder <code>application/xml</code> gesetzt werden, um nur Daten im XML-Format zu
                 akzeptieren.
             </p>
 
@@ -1128,7 +1128,7 @@
                 Objekt lassen sich anschließend die Methoden <code>then()</code> und <code>catch()</code> aufrufen, um
                 Callbacks für Ergebnisbehandlung und Fehlerbehandlung zu definieren, sprich für die Fälle, wenn die
                 Antwort erfolgreich vom Server geladen wurde <code>then()</code> oder wenn ein Fehler aufgetreten
-                ist<code>catch()</code>.
+                ist <code>catch()</code>.
             </p>
 
             <p>
@@ -1136,7 +1136,7 @@
                 erzeugt dabei im Beispiel einen sogenannten Stream, über den sich der Inhalt der HTTP-Antwort als JSON
                 auslesen lässt. Neben JSON-Streams stehen weitere Streams für Array-Buffer (über die Methode
                 <code>arrayBuffer()</code>), Binary Large Objects (kurz Blobs, über die Methode <code>blob()</code>),
-                Formulardaten (über die Methode<code>formData()</code>) und reinen Text (über die Methode
+                Formulardaten (über die Methode <code>formData()</code>) und reinen Text (über die Methode
                 <code>text()</code>) zur Verfügung.
             </p>
 

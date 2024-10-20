@@ -84,7 +84,7 @@
         <chapter id="einfuehrung-grundlegendes" title="Grundlegendes">
             <p>
                 Das Kernstück von jQuery bildet die Funktion <code>jQuery()</code> bzw. die gleichbedeutende
-                Shortcut-Funktion<code>$()</code> (im Folgenden jQuery-Methode genannt). Diese Funktion kann mit
+                Shortcut-Funktion <code>$()</code> (im Folgenden jQuery-Methode genannt). Diese Funktion kann mit
                 verschiedenen Argumenten aufgerufen werden (Details siehe unter
                 <a href="http://api.jquery.com/jQuery/"/>), von denen drei Formen besonders häufig verwendet werden:
             </p>

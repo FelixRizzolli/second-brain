@@ -719,7 +719,7 @@
             <code>requestAnimationFrame()</code> als Argument übergeben wurde. Der Aufruf von
             <code>requestAnimationFrame()</code> ist dabei an zwei Stellen notwendig: zum einen zu Beginn innerhalb
             der Funktion <code>draw()</code>, zum anderen am Ende der Funktion <code>redraw()</code>. Ersterer Aufruf
-            sorgt dafür, dass <code>redraw()</code>initial aufgerufen wird und den ersten Frame in der Animation
+            sorgt dafür, dass <code>redraw()</code> initial aufgerufen wird und den ersten Frame in der Animation
             zeichnet (die Animation quasi gestartet wird), letzterer Aufruf sorgt dafür, dass <code>redraw()</code>
             kontinuierlich sich selbst aufruft, um so jeweils einen neuen Frame in der Animation zu zeichnen (und die
             Animation quasi unendlich fortzusetzen).

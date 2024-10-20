@@ -1198,7 +1198,7 @@
                         <p>
                             Der Operator <code>+=</code> gehört zur Gruppe der zusammengesetzten Zuweisungsoperatoren.
                             Der Trick des Zusammensetzens funktioniert auch mit allen übrigen arithmetischen Operatoren
-                            wie <code>+</code>, <code>-</code>, <code>/</code>und <code>%</code>. Auf der linken Seite
+                            wie <code>+</code>, <code>-</code>, <code>/</code> und <code>%</code>. Auf der linken Seite
                             einer Zuweisung muss immer einer Variablen stehen. Preis um <code>10%</code> erhöhen:
                             <code>price *= 1.10; //=&gt; price = price * 1.10</code>
                         </p>

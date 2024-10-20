@@ -661,7 +661,7 @@
                 nämlich durchgeführt, bevor das Submit-Event ausgelöst wird. Das bedeutet, dass erst die
                 Standardausgaben des Browsers (inklusive der Standardvalidierungsmeldungen) angezeigt werden, bevor man
                 per JavaScript die Möglichkeit hat, eigene Validierungen durchzuführen und angepasste Ausgaben zu
-                erzeugen. Setzt man die Eigenschaft <code>noValidate</code>dagegen wie im Beispiel auf
+                erzeugen. Setzt man die Eigenschaft <code>noValidate</code> dagegen wie im Beispiel auf
                 <code>true</code>, deaktiviert man die Standardausgaben des Browsers (der restliche Code im Beispiel
                 sorgt übrigens dafür, dass alle Formularelemente des Formulars auf Gültigkeit überprüft werden).
             </p>
