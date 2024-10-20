@@ -16,7 +16,7 @@
     </chapter>
 
     <chapter id="ueberblick" title="Überblick">
-        <table>
+        <table style="header-row">
             <tr>
                 <td>
                     Feature
@@ -347,7 +347,7 @@
         </code-block>
 
         <chapter id="maps-methoden-und-eigenschaften" title="Methoden und Eigenschaften">
-            <table>
+            <table style="header-row">
                 <tr>
                     <td>
                         Methode/Eigenschaft
@@ -493,13 +493,135 @@
     </chapter>
 
     <chapter id="sets" title="ES2015 – Sets">
+        <p>
+            Unter einem Set (im Deutschen Menge) versteht man in der Programmierung eine Datenstruktur ähnlich einer
+            Liste, in der Werte jedoch nur einmal vorkommen dürfen, sprich doppelte Werte nicht erlaubt sind. Um ein Set
+            zu erstellen, verwendet man einfach die Konstruktorfunktion <code>Set</code>. Als Wert kann dabei wie schon
+            bei Maps ein Array übergeben werden (bzw. ein iterierbares Objekt), welches die initialen Werte enthält, die
+            dem Set hinzugefügt werden sollen.
+        </p>
+
+        <code-block lang="javascript">
+            <![CDATA[
+                let mySet = new Set([ 1, 1, 2 ]); // => Set(2) {1, 2}
+            ]]>
+        </code-block>
 
         <chapter id="sets-methoden-und-eigenschaften" title="Methoden und Eigenschaften">
-
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Methode/Eigenschaft
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            add()
+                        </code>
+                    </td>
+                    <td>
+                        Fügt ein Element dem Set hinzu.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            clear()
+                        </code>
+                    </td>
+                    <td>
+                        Löscht alle Elemente aus dem Set.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            delete()
+                        </code>
+                    </td>
+                    <td>
+                        Löscht das übergebene Element aus dem Set.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            has()
+                        </code>
+                    </td>
+                    <td>
+                        Überprüft, ob das übergebene Element im Set enthalten ist.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            entries()
+                        </code>
+                    </td>
+                    <td>
+                        Gibt einen Iterator zurück, der die Wert-Wert-Paare des Sets enthält. Die Reihenfolge der Paare
+                        entspricht dabei der, in der sie dem Set hinzugefügt wurden. Der Grund, warum Wert-Wert-Paare
+                        zurückgegeben werden, ist, damit Sets über die gleiche API wie die Methode
+                        <code>entries()</code> von Map verfügen (bei der ja bekanntermaßen eben Schlüssel-Wert-Paare
+                        zurückgegeben werden).
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            keys()
+                        </code>
+                    </td>
+                    <td>
+                        Gibt einen Iterator zurück, der die Werte des Sets enthält. Die Reihenfolge der Werte entspricht
+                        dabei der, in der sie dem Set hinzugefügt wurden.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            values()
+                        </code>
+                    </td>
+                    <td>
+                        Gibt wie <code>keys()</code> einen Iterator zurück, der die Werte des Sets enthält. Die
+                        Reihenfolge der Werte entspricht auch hier der, in der sie dem Set hinzugefügt wurden.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            size
+                        </code>
+                    </td>
+                    <td>
+                        Eigenschaft, welche die Anzahl an Elementen im Set repräsentiert
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter id="sets-weak" title="Weak Sets">
+            <p>
+                Analog zu den Weak Maps für Maps gibt es für Sets die Weak Sets-Alternative, die durch den Typ WeakSet
+                repräsentiert wird. Hierbei werden im Rahmen der Garbage Collection regelmäßig die Objekte aus dem Set
+                gelöscht, die nicht mehr anderweitig referenziert werden. Auch für Weak Sets gilt wie schon für Weak
+                Maps, dass sie nicht die Methoden <code>keys()</code>, <code>values()</code> und <code>entries()</code>
+                bereitstellen, keine Eigenschaft <code>size</code> haben und in der aktuellen Arbeitsversion des
+                ECMAScript-Standards auch nicht – wie ursprünglich vorgesehen – über die Methode <code>clear()</code>
+                verfügen. Zudem gilt auch hier, dass keine primitiven Datentypen als Werte eines Weak Sets hinzugefügt
+                werden können.
+            </p>
 
+            <tip>
+                Mehr zu Weak Sets:
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet"/>
+            </tip>
         </chapter>
     </chapter>
 
