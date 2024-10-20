@@ -7,13 +7,315 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
-    <!-- TODO: migrate from Confluence -->
     <chapter id="was-ist-ecmascript" title="Was ist EcmaScript?">
-
+        <p>
+            EcmaScript ist bekannt als Standard für JavaScript, der die Interoperabilität von Webseiten zwischen
+            verschiedenen Webbrowsern gewährleisten soll. Der ECMAScript-Standard hat seit Version ES2015 eine Reihe von
+            Neuerungen gebracht, die die Programmierung mit JavaScript an vielen Stellen erheblich erleichtern.
+        </p>
     </chapter>
 
     <chapter id="ueberblick" title="Überblick">
-
+        <table>
+            <tr>
+                <td>
+                    Feature
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+                <td>
+                    Mehr
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Schlüsselwort <code>let</code>
+                </td>
+                <td>
+                    Deklaration von Variablen im Gültigkeitsbereich des jeweils lokalen Blocks.
+                </td>
+                <td>
+                    <a href="js-sprachkern.topic#variablen">
+                        Variablen, Konstanten und Typisierung
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Schlüsselwort <code>const</code>
+                </td>
+                <td>
+                    Deklaration von Konstanten
+                </td>
+                <td>
+                    <a href="js-sprachkern.topic#variablen">
+                        Variablen, Konstanten und Typisierung
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Standardwerte für Parameter
+                </td>
+                <td>
+                    Angabe von Standardwerten für Parameter
+                </td>
+                <td>
+                    <a href="js-sprachkern.topic#funktionen-parameter-standardwerte">
+                        Standardwerte für Parameter
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Rest-Parameter
+                </td>
+                <td>
+                    Zusammenfassen der optionalen Parameter einer Funktion
+                </td>
+                <td>
+                    <a href="js-sprachkern.topic#funktionen-parameter-variable-anzahl-an-argumenten">
+                        Funktionen mit einer variablen Anzahl an Argumenten: variadische Funktionen
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Spread-Operator
+                </td>
+                <td>
+                    Verteilen der Werte eines Arrays auf die Parameter einer Funktion
+                </td>
+                <td>
+                    <a href="js-sprachkern.topic#funktionen-parameter-spread-operator">
+                        Der Spread-Operator: Elemente aus einem Array als Argumente verwenden
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Klassensyntax
+                </td>
+                <td>
+                    Definition von »Klassen« zur Vereinfachung der pseudoklassischen Objektorientierung
+                </td>
+                <td>
+                    <a href="js-oop.topic#grundlagen-objekte-erstellen-klassensyntax">
+                        Objektorientierung mit Klassensyntax
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Destructuring
+                </td>
+                <td>
+                    Mehrfachzuweisungen von Objekteigenschaften zu Variablen oder von Arrays zu Variablen
+                </td>
+                <td>
+                    <a href="#destructing">
+                        Destructuring
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>for-of</code>-Schleife
+                </td>
+                <td>
+                    Iteration über iterierbare Objekte
+                </td>
+                <td>
+                    <a href="#iteratoren-for-of">
+                        Über Maps iterieren: for-of-Schleifen
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Arrow Functions
+                </td>
+                <td>
+                    Deklaration von Funktionen, die sich im Gegensatz zu »normal« definierten Funktionen auf den Kontext
+                    beziehen, in dem sie definiert wurden, nicht zwangsweise auf den Kontext, in dem sie ausgeführt
+                    werden
+                </td>
+                <td>
+                    <a href="js-sprachkern.topic#funktionen-arrow-functions">
+                        Arrow Functions
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Datenstrukturen <code>Set</code> und <code>WeakSet</code>
+                </td>
+                <td>
+                    Datenstruktur, in der Elemente nur einmal vorkommen dürfen
+                </td>
+                <td>
+                    <a href="#sets">
+                        ES2015 Sets
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Datenstrukturen <code>Map</code> und <code>WeakMap</code>
+                </td>
+                <td>
+                    Datenstruktur, um Schlüssel-Wert-Paare zu speichern
+                </td>
+                <td>
+                    <a href="#maps">
+                        ES2015 Maps
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Typisierte Arrays
+                </td>
+                <td>
+                    array-ähnliche Objekte, die den Zugriff auf binäre Rohdaten abstrahieren
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    Iteratoren
+                </td>
+                <td>
+                    Vereinfacht das Iterieren über Datenstrukturen wie Arrays, Sets und Maps.
+                </td>
+                <td>
+                    <a href="#iteratoren">
+                        ES2015 Iteratoren
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Generatoren
+                </td>
+                <td>
+                    Ermöglichen es, Funktionen an bestimmten Stellen anzuhalten und zu einem späteren Zeitpunkt wieder
+                    fortzuführen.
+                </td>
+                <td>
+                    <a href="#generatoren">
+                        ES2015 Generatoren: Funktionen anhalten und fortsetzen
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Proxies
+                </td>
+                <td>
+                    Erlauben es, Zugriffe auf Objekte abzufangen.
+                </td>
+                <td>
+                    <a href="#proxies">
+                        ES2015 Proxies: Zugriff auf Objekte abfangen
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Symbole
+                </td>
+                <td>
+                    neuer primitiver Datentyp, der hauptsächlich als eindeutige Kennzeichnung von Objekteigenschaften
+                    zum Einsatz kommt
+                </td>
+                <td>
+                    <a href="#symbol">
+                        ES2015 Symbole
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Template-Strings
+                </td>
+                <td>
+                    Erlauben u.a. eingebettete Ausdrücke innerhalb von Zeichenketten.
+                </td>
+                <td>
+                    <a href="#template-string">
+                        ES2015 Vorlagen für Zeichenketten
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Module
+                </td>
+                <td>
+                    Definition von Modulen
+                </td>
+                <td>
+                    <a href="js-entwurfsmuster.topic#modules-native">
+                        Entwurfsmuster: Native Module
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Erweiterungen der API
+                </td>
+                <td>
+                    Neue Methoden in <code>Array</code>, <code>Date</code>, <code>Math</code>, <code>Number</code>,
+                    <code>Object</code>, <code>RegExp</code>, <code>String</code>
+                </td>
+                <td>
+                    <a href="js-oop.topic#globale-objekte">
+                        Globale Objekte
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Exponentialoperator
+                </td>
+                <td>
+                    Operator, über den sich Potenzen berechnen lassen
+                </td>
+                <td>
+                    <a href="js-sprachkern.topic#operatoren">
+                        Operatoren
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    String Padding
+                </td>
+                <td>
+                    Auffüllen von Zeichenketten
+                </td>
+                <td>
+                    <a href="js-oop.topic#globale-objekte-primitiver-datentypen-pad-start-und-end">
+                        Die Methoden padStart() und padEnd()
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Async Functions
+                </td>
+                <td>
+                    Vereinfachung asynchroner Programmierung
+                </td>
+                <td>
+                    <a href="#async">
+                        ES2016 Async Functions
+                    </a>
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter id="maps" title="ES2015 – Maps">
