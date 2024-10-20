@@ -1095,13 +1095,125 @@
         </chapter>
 
         <chapter id="promises" title="ES2015 – Promises">
+            <p>
+                Die mit ES2015 eingeführten Promises verhindern <b>Pyramid of Doom</b>, erlauben es aber trotzdem,
+                asynchron zu programmieren bzw. asynchrone Programme so zu formulieren, dass sie wie synchrone Programme
+                aussehen. Promises selbst sind nichts anderes als Objekte (vom Typ <code>Promise</code>), die sozusagen
+                als Platzhalter für das Ergebnis einer asynchronen Funktion dienen. Statt dass die jeweilige asynchrone
+                Funktion selbst die Callback-Handler übergeben bekommt, liefert sie ein <code>Promise</code>-Objekt
+                zurück, welches Zugriff auf zwei gekapselte Callback-Funktionen hat: eine, um über den Ergebniswert zu
+                informieren, und eine, um über Fehler zu informieren (in der Regel benennt man diese Callback-Funktionen
+                <code>resolve()</code> und <code>reject()</code>, um ihre Intention zu verdeutlichen). Durch diesen
+                simplen, aber effektiven Trick kann der synchrone Code mit dem <code>Promise</code>-Objekt
+                weiterarbeiten.
+            </p>
+
+            <p>
+                Aus Sicht des aufrufenden Codes wird der asynchronen Funktion kein Callback-Parameter übergeben.
+                Stattdessen übergibt man diese Parameter nun dem <code>Promise</code>-Objekt, welches man von der
+                asynchronen Funktion als Rückgabewert erhält. Das <code>Promise</code>-Objekt bietet zu diesem Zweck die
+                Methode <code>then()</code> an. Ihr kann jeweils ein Callback-Handler für die Behandlung des Ergebnisses
+                und ein Callback-Handler für die Behandlung von Fehlern übergeben werden. Alternativ zur Angabe einer
+                Callback-Funktion als zweiten Parameter von <code>then()</code> kann diese auch der Methode
+                <code>catch()</code> übergeben werden. Seit ES2018 steht zudem die Methode <code>finally()</code> zur
+                Verfügung, über die Callback-Funktionen angegeben werden können, die immer ausgeführt werden, unabhängig
+                davon, ob ein Fehler auftritt oder nicht.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    function asyncFunction() {
+                      let promise = new Promise(
+                        function(resolve, reject) {
+                          setTimeout(() => {
+                            let result = Math.floor(Math.random() * 100) + 1;
+                            if(result >= 50) {
+                              resolve(result);                     // Ergebnis
+                            } else {
+                              reject('Zahl ' + result + ' < 50.'); // Fehler
+                            }
+                          }, 2000);
+                        }
+                      );
+                      return promise;
+                    }
+                ]]>
+            </code-block>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    asyncFunction().then(
+                      (result) => {
+                        console.log(result);
+                      },
+                      (error) => {
+                        console.error(error);
+                      },
+                    );
+                ]]>
+            </code-block>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    asyncFunction()
+                      .then((result) => {
+                        console.log(result);
+                      })
+                      .catch((error) => {
+                        console.error(error);
+                      })
+                      .finally(() => {         // seit ES2018
+                        console.log('Wird immer ausgeführt.');
+                      });
+                ]]>
+            </code-block>
 
             <chapter id="promises-aufrufe-verketten" title="Promise-Aufrufe verketten">
+                <p>
+                    Dank ihrer Fluent API können Aufrufe von <code>then()</code> relativ bequem hintereinander gereiht
+                    werden, weil <code>then()</code> immer auch selbst ein <code>Promise</code>-Objekt zurückgibt.
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        asyncFunction()
+                          .then((result) => {
+                            return result * 2;
+                          })
+                          .then((result) => {
+                            return result * 4;
+                          })
+                          .then((result) => {
+                            // Hier enthält result das mit zwei multiplizierte Ergebnis von oben.
+                            console.log(result); // => result * 2 * 4
+                          });
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="promises-zustaende" title="Die Zustände von Promises">
+                <img alt="Die Zustände von Promises" src="js-professional-promises-zustaende.png"/>
 
+                <p>
+                    Intern nimmt ein Promise-Objekt einen von drei Zuständen ein:
+                </p>
+
+                <list type="decimal">
+                    <li>
+                        <b>pending (wartend)</b> bedeutet, die asynchrone Funktion ist noch nicht abgeschlossen.
+                    </li>
+                    <li>
+                        <b>fulfilled (erfüllt)</b> bedeutet, die asynchrone Funktion wurde erfolgreich abgeschlossen
+                        (und das <code>Promise</code>-Objekt enthält einen Ergebniswert). Dieser Zustand wird erreicht,
+                        wenn die Methode <code>resolve()</code> aufgerufen wurde.
+                    </li>
+                    <li>
+                        <b>rejected (abgelehnt)</b> bedeutet, die asynchrone Funktion wurde nicht erfolgreich
+                        abgeschlossen bzw. führte zu einem Fehler (und das <code>Promise</code>-Objekt enthält den Grund
+                        für den Fehler). Dieser Zustand wird erreicht, wenn die Methode <code>reject()</code> aufgerufen
+                        wurde.
+                    </li>
+                </list>
             </chapter>
         </chapter>
 
