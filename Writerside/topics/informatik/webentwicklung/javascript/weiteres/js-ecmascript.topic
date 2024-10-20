@@ -933,27 +933,164 @@
     </chapter>
 
     <chapter id="async" title="Asynchrone Programmierung: Promises und Async Functions">
-
         <chapter id="asynchone-programmierung" title="Asynchrone Programmierung">
+            <p>
+                Eines der grundlegenden Prinzipien bei der Entwicklung in JavaScript ist die asynchrone Programmierung.
+                Sei es bei der Formulierung einer Ajax-Anfrage oder dem Lesen von Dateien unter NodeJS: In vielen Fällen
+                ruft man Funktionen auf und übergibt dabei seinerseits Funktionen, die dann irgendwann aufgerufen
+                werden, wenn das Ergebnis feststeht, beispielsweise die Daten vom Server oder der Inhalt der Datei. Der
+                Ablauf des Programms ist dann nicht synchron, sondern asynchron.
+            </p>
 
             <chapter id="callback-design-pattern" title="Das Callback-Entwurfsmuster">
+                <p>
+                    Das Übergeben einer Funktion als Parameter einer anderen Funktion, wobei diese die übergebene
+                    Funktion zu einem späteren Zeitpunkt aufruft, wird auch als Callback-Entwurfsmuster bezeichnet, die
+                    übergebene Funktion als Callback-Funktion, Callback-Handler oder kurz Callback.
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        function asyncFunction(callbackFunction) {
+                          console.log('Vor Callback');
+                          callbackFunction();
+                          console.log('Nach Calback');
+                        }
+                        function callbackFunction() {
+                          console.log('Aufruf Callback');
+                        }
+                        asyncFunction(callbackFunction);
+                    ]]>
+                </code-block>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        -> "Vor Callback"
+                        -> "Aufruf Callback"
+                        -> "Nach Callback"
+                    ]]>
+                </code-block>
+
+                <p>
+                    Ein häufig gemachter Flüchtigkeitsfehler ist, dass die beim Übergeben der Funktion, die Funktion
+                    direkt aufgerufen wird und somit der resultierende Wert und nicht die Funktion übergeben wird:
+                </p>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        asyncFunction(callbackFunction());
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="async-return" title="Rückgabewerte von asynchronen Funktionen">
+                <p>
+                    Asynchrone Funktionen liefern das Ergebnis der asynchronen Berechnung nicht über das
+                    <code>return</code>-Schlüsselwort, sondern übergeben es als Parameter der Callback-Funktion. Wird
+                    diese asynchrone Funktion aufgerufen, als wäre sie eine synchrone Funktion, führt dies schnell zu
+                    einem ungewollten Programmverhalten. Das Programm läuft bereits weiter, ohne auf das Ergebnis der
+                    asynchronen Funktion zu warten, das vermeintliche Ergebnis in der Variablen <code>result</code> ist
+                    demnach <code>undefined</code>.
+                </p>
 
+                <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+                    <![CDATA[
+                        function asyncFunction(callbackFunction) {
+                          let result;
+                          setTimeout(() => {      // Das hier passiert erst nach zwei Sekunden.
+                            result = Math.floor(Math.random() * 100) + 1;  // Zufallszahl
+                          }, 2000);
+                          return result;
+                        }
+                        console.log(asyncFunction()); // undefined
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="async-fehler-werfen" title="Fehler werfen in asynchronen Funktionen">
+                <p>
+                    Genauso unmöglich ist es, einen Fehler, der in einer asynchronen Funktion auftritt, abzufangen. Zu
+                    dem Zeitpunkt, zu dem der Fehler geworfen wird, ist der aufrufende Code bereits weitergelaufen, und
+                    es ist »niemand mehr da, um den Fehler zu fangen« (eine Ausnahme bilden die in ES2018 eingeführten
+                    Async Functions).
+                </p>
 
+                <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+                    <![CDATA[
+                        function asyncFunction(callbackFunction) {
+                          let result;
+                          setTimeout(() => {      // Das hier passiert erst nach zwei Sekunden.
+                            result = Math.floor(Math.random() * 100) + 1;  // Zufallszahl
+                            if(result < 50) throw new Error('Zufallszahl ' + result + ' kleiner als 50.');
+                          }, 2000);
+                          return result;
+                        }
+                        try {
+                          let result = asyncFunction();
+                        } catch(error) {
+                          console.error('Fehler: ' + error); // Das wird nicht aufgerufen.
+                        }
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="callback-ergebnisse-und-fehler-uebergeben" title="Ergebnisse und Fehler an Callback übergeben">
+                <p>
+                    Callback-Funktionen stellen sozusagen das Bindeglied zwischen asynchroner Funktion und aufrufendem
+                    synchronem Code dar: Der aufrufende Code übergibt die Callback-Funktion, die asynchrone Funktion
+                    ruft diese Callback-Funktion mit dem Ergebniswert (dem Rückgabewert) oder im Fehlerfall mit dem
+                    Fehlerobjekt als Parameter auf. Der aufrufende Code kann dann innerhalb der Callback-Funktion auf
+                    beides reagieren.
+                </p>
 
+                <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+                    <![CDATA[
+                        function asyncFunction(callbackFunction) {
+                          setTimeout(() => {      // Das hier passiert erst nach zwei Sekunden.
+                            let result = Math.floor(Math.random() * 100) + 1;  // Zufallszahl
+                            if(result >= 50) {
+                              callbackFunction(null, result);
+                            } else {
+                              callbackFunction(new Error('Zufallszahl ' + result + ' kleiner als 50.'), undefined);
+                            }
+                          }, 2000);
+                        }
+                        asyncFunction((error, result) => {
+                          if(error) {
+                            console.error(error);  // Fehlerbehandlung im Callback
+                          } else {
+                            console.log(result);   // Ergebnisbehandlung im Callback
+                          }
+                        });
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="callback-probleme" title="Das Problem asynchroner Programmierung mit Callbacks">
+                <p>
+                    Die Verwendung von Callback-Funktionen ist ein wesentliches Merkmal der
+                    JavaScript-Programmierung. Allerdings kann der übermäßige Gebrauch von Callback-Funktionen zu
+                    einem Codegebilde führen, das unter JavaScript-Entwicklern unter dem Begriff <b>Pyramid of Doom</b>
+                    bekannt ist. Dieses Codegebilde tritt auf, wenn asynchrone Funktionsaufrufe übertrieben oft
+                    geschachtelt werden, also im Callback einer asynchronen Funktion eine weitere asynchrone Funktion
+                    aufgerufen wird, in deren Callback wieder und so weiter.
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        asyncFunction((error, result) => {
+                          asyncFunction2((error2, result2) => {
+                            asyncFunction3((error3, result3) => {
+                              asyncFunction4((error4, result4) => {
+                                asyncFunction5((error5, result5) => {
+                                   /* ... */
+                                });
+                              });
+                            });
+                          });
+                        });
+                    ]]>
+                </code-block>
             </chapter>
         </chapter>
 
