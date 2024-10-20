@@ -5,10 +5,12 @@
        title="Informatik"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <link-summary rel="description"/>
 
     <section-starting-page>
         <title>Informatik</title>
-        <description>
+
+        <description id="description">
             Dieser Bereich bietet umfassende Informationen und Ressourcen zu verschiedenen Themen der Informatik. Von
             Anwendungsentwicklung über Betriebssysteme bis hin zu Netzwerktechnik und Webentwicklung – hier gibt es
             einen Überblick sowie Links zu detaillierten Unterseiten, die tiefer in jedes Thema eintauchen. Ziel ist es,
@@ -22,7 +24,7 @@
         </spotlight>
 
         <primary>
-            <title>Kategorien</title>
+            <title>Alle Kategorien</title>
             <a href="swe.topic" type="navigation"/>
             <a href="anwendungsentwicklung.topic" type="computer"/>
             <a href="webentwicklung.topic" type="world"/>
@@ -35,7 +37,8 @@
         </primary>
 
         <secondary>
-            <title>Meine Leidenschaft</title>
+            <title>Aktuell interessiere ich mich am meisten für ...</title>
+
             <a href="javascript.topic" type="world"/>
         </secondary>
     </section-starting-page>

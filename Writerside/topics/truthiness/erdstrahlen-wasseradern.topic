@@ -8,6 +8,10 @@
     <show-structure depth="2" for="chapter,procedure"/>
 
     <!-- TODO -->
+    <link-summary>
+        ...
+    </link-summary>
+    
     <chapter id="wird-mein-schlaf-und-meine-gesundheit-durch-eine-wasserader-gestoert"
              title="Wird mein Schlaf und meine Gesundheit durch eine Wasserader gestört?">
         <chapter id="wird-mein-schlaf-und-meine-gesundheit-durch-eine-wasserader-gestoert-annahme"

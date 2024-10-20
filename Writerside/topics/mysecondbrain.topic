@@ -7,58 +7,48 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <section-starting-page>
         <title>My SecondBrain</title>
-        <description>...</description>
+
+        <description>
+            SecondBrain ist ein Konzept das den Wunsch entstammt, einen Teil der eigenen Gedächtnisleistung auslagern zu
+            können. Das betrifft: Dinge, an die man sich später erinnern will; Aufgaben, die noch zu erledigen sind;
+            Interessante oder nützliche Informationen, denen man begegnet und die man “für später” abspeichern möchte;
+            Ergebnisse aus Recherchearbeit.
+        </description>
 
         <spotlight>
-            <a description="Informatik" href="informatik.topic" summary="..." type="development"/>
-            <a description="Philosophie" href="philosophie.topic" summary="..." type="learn"/>
+            <a href="informatik.topic"
+               type="development"/>
+            <a href="philosophie.topic"
+               type="learn"/>
         </spotlight>
 
         <primary>
-            <title>Kategorien</title>
-            <a description="Informatik"
-               href="informatik.topic"
-               summary="..."
+            <title>Alle Kategorien</title>
+
+            <a href="informatik.topic"
                type="development"/>
-            <a description="Philosophie"
-               href="philosophie.topic"
-               summary="..."
+            <a href="philosophie.topic"
                type="learn"/>
-            <a description="Wirtschaft"
-               href="wirtschaft.topic"
-               summary="..."
+            <a href="wirtschaft.topic"
                type="academy"/>
-            <a description="Truthiness"
-               href="truthiness.topic"
-               summary="..."
+            <a href="truthiness.topic"
                type="bug"/>
-            <a description="Sprachen"
-               href="sprachen.topic"
-               summary="..."
+            <a href="sprachen.topic"
                type="data"/>
-            <a description="Mathematik"
-               href="mathematik.topic"
-               summary="..."
+            <a href="mathematik.topic"
                type="documents"/>
-            <a description="Gesundheit"
-               href="gesundheit.topic"
-               summary="..."
+            <a href="gesundheit.topic"
                type="navigation"/>
         </primary>
 
         <secondary>
-            <title>Meine Leidenschaft</title>
-            <a description="JavaScript"
-               href="javascript.topic"
-               summary="..."
+            <title>Aktuell interessiere ich mich am meisten für ...</title>
+
+            <a href="javascript.topic"
                type="development"/>
-            <a description="Stoizismus"
-               href="stoizismus.topic"
-               summary="..."
+            <a href="stoizismus.topic"
                type="academy"/>
-            <a description="Produktivitätssteigerung"
-               href="produktivitaetssteigerung.topic"
-               summary="..."
+            <a href="produktivitaetssteigerung.topic"
                type="academy"/>
         </secondary>
     </section-starting-page>

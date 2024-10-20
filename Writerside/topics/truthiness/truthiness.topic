@@ -5,58 +5,49 @@
        title="Truthiness"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <link-summary rel="description"/>
+
     <section-starting-page>
         <title>Truthiness</title>
-        <description>...</description>
+
+        <description id="description">
+            In der Kategorie "Truthiness" werden verschiedene Pseudowissenschaften und Verschwörungstheorien
+            wissenschaftlich beleuchtet. Themen wie Homöopathie, Astrologie und Erdstrahlen werden kritisch analysiert
+            und fundierte Methoden aufgezeigt, um Falschinformationen zu erkennen und zu entkräften. Ziel ist es, durch
+            wissenschaftliche Fakten und rationale Argumente Klarheit zu schaffen und den kritischen Denkansatz zu
+            fördern.
+        </description>
 
         <spotlight>
-            <a description="Grundlagen"
-               href="truthiness-grundlagen.topic"
-               summary="Wer heilt hat Recht; Qualität von Studien; ..."
+            <a href="truthiness-grundlagen.topic"
                type="library"/>
-            <a description="Erdstrahlen &amp; Wasseradern"
-               href="erdstrahlen-wasseradern.topic"
-               summary="..."
+            <a href="erdstrahlen-wasseradern.topic"
                type="bug"/>
         </spotlight>
 
         <primary>
-            <title>Kategorien</title>
-            <a description="Grundlagen"
-               href="truthiness-grundlagen.topic"
-               summary="Wer heilt hat Recht; Qualität von Studien; ..."
+            <title>Alle Kategorien</title>
+
+            <a href="truthiness-grundlagen.topic"
                type="library"/>
-            <a description="Erdstrahlen &amp; Wasseradern"
-               href="erdstrahlen-wasseradern.topic"
-               summary="..."
+            <a href="erdstrahlen-wasseradern.topic"
                type="bug"/>
-            <a description="Belebtes Wasser"
-               href="belebtes-wasser.topic"
-               summary="..."
+            <a href="belebtes-wasser.topic"
                type="bug"/>
-            <a description="Elektrosmog"
-               href="elektrosmog.topic"
-               summary="..."
+            <a href="elektrosmog.topic"
                type="bug"/>
-            <a description="Homöopathie"
-               href="homoeopathie.topic"
-               summary="..."
+            <a href="homoeopathie.topic"
                type="bug"/>
-            <a description="Astrologie"
-               href="astrologie.topic"
-               summary="..."
+            <a href="astrologie.topic"
                type="bug"/>
         </primary>
 
         <secondary>
-            <title>...</title>
-            <a description="Grundlagen"
-               href="truthiness-grundlagen.topic"
-               summary="Wer heilt hat Recht; Qualität von Studien; ..."
+            <title>Aktuell interessiere ich mich am meisten für ...</title>
+
+            <a href="truthiness-grundlagen.topic"
                type="library"/>
-            <a description="Erdstrahlen &amp; Wasseradern"
-               href="erdstrahlen-wasseradern.topic"
-               summary="..."
+            <a href="erdstrahlen-wasseradern.topic"
                type="bug"/>
         </secondary>
     </section-starting-page>

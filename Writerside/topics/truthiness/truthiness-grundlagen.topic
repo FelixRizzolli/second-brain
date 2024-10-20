@@ -8,6 +8,10 @@
     <show-structure depth="2" for="chapter,procedure"/>
 
     <!-- TODO -->
+    <link-summary>
+        ...
+    </link-summary>
+    
     <chapter id="recht" title="&quot;Wer heilt hat recht!&quot;">
         <p>
             Es erscheint doch so Logisch: Wir hatten Beschwerden, gingen zum Arzt/Heilpraktiker und dieser hat uns

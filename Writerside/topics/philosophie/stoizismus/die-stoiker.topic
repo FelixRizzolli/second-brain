@@ -8,6 +8,10 @@
     <show-structure depth="2" for="chapter,procedure"/>
 
     <!-- TODO -->
+    <link-summary>
+        ...
+    </link-summary>
+    
     <chapter id="einfuehrung" title="Einführung">
         <p>
             Der einzige Grund, sich mit Philosophie auseinanderzusetzen, ist der, ein besserer Mensch zu werden. Alles

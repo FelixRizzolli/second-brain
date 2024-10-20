@@ -7,5 +7,11 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <link-summary>
+        Italienisch ist eine romanische Sprache, die in Italien und anderen Teilen der Welt gesprochen wird. Sie ist
+        eine der offiziellen Sprachen der Europäischen Union und wird von mehr als 85 Millionen Menschen als
+        Muttersprache gesprochen. Italienisch ist bekannt für seine melodische Aussprache und seine reiche Kultur, die
+        von der Renaissance bis zur Moderne reicht.
+    </link-summary>
     <!-- TODO -->
 </topic>

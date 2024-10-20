@@ -7,5 +7,11 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <link-summary>
+        Englisch ist eine germanische Sprache, die in Großbritannien, den USA, Kanada, Australien und anderen Teilen der
+        Welt gesprochen wird. Es ist die meistgesprochene Fremdsprache der Welt und wird von mehr als 1,5 Milliarden
+        Menschen gesprochen. Englisch ist die Sprache der internationalen Kommunikation und wird in Wissenschaft,
+        Wirtschaft, Politik und Kultur verwendet.
+    </link-summary>
     <!-- TODO -->
 </topic>

@@ -3,51 +3,45 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="sprachen"
        title="Sprachen"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <link-summary rel="description"/>
+
     <section-starting-page>
         <title>Sprachen</title>
-        <description>...</description>
+
+        <description id="description">
+            Diese Kategorie umfasst Themen wie Grammatik, Rechtschreibung und Sprachstruktur in Deutsch, Italienisch und
+            Englisch. Hier finden Sie Ressourcen und Anleitungen, die Ihnen helfen, die Feinheiten dieser Sprachen zu
+            verstehen und zu meistern.
+        </description>
 
         <spotlight>
-            <a description="Italienisch"
-               href="italienisch.topic"
-               summary="..."
+            <a href="italienisch.topic"
                type="support"/>
-            <a description="Englisch"
-               href="englisch.topic"
-               summary="..."
+            <a href="englisch.topic"
                type="support"/>
         </spotlight>
 
         <primary>
-            <title>Kategorien</title>
-            <a description="Italienisch"
-               href="italienisch.topic"
-               summary="..."
+            <title>Alle Kategorien</title>
+
+            <a href="italienisch.topic"
                type="support"/>
-            <a description="Englisch"
-               href="englisch.topic"
-               summary="..."
+            <a href="englisch.topic"
                type="support"/>
-            <a description="Deutsch"
-               href="deutsch.topic"
-               summary="..."
+            <a href="deutsch.topic"
                type="support"/>
         </primary>
 
         <secondary>
-            <title>...</title>
-            <a description="Italienisch"
-               href="italienisch.topic"
-               summary="..."
+            <title>Aktuell interessiere ich mich am meisten für ...</title>
+
+            <a href="italienisch.topic"
                type="support"/>
-            <a description="Englisch"
-               href="englisch.topic"
-               summary="..."
+            <a href="englisch.topic"
                type="support"/>
-            <a description="Deutsch"
-               href="deutsch.topic"
-               summary="..."
+            <a href="deutsch.topic"
                type="support"/>
         </secondary>
     </section-starting-page>

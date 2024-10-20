@@ -8,4 +8,7 @@
     <show-structure depth="2" for="chapter,procedure"/>
 
     <!-- TODO -->
+    <link-summary>
+        ...
+    </link-summary>
 </topic>

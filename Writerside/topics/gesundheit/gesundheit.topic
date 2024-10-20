@@ -6,6 +6,42 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
+    <link-summary rel="description"/>
 
-    <!-- TODO -->
+    <section-starting-page>
+        <title>Gesundheit</title>
+        <description id="description">
+            Gesundheit umfasst verschiedene Bereiche wie Ernährung, Sport und das Immunsystem. Eine ausgewogene
+            Ernährung liefert wichtige Nährstoffe, Sport fördert die körperliche Fitness und stärkt das
+            Herz-Kreislauf-System, während ein starkes Immunsystem den Körper vor Krankheiten schützt. Gemeinsam tragen
+            diese Aspekte zu einem gesunden und ausgeglichenen Lebensstil bei.
+        </description>
+
+        <spotlight>
+            <a href="ernaehrung.topic"
+               type="start"/>
+            <a href="sport.topic"
+               type="start"/>
+        </spotlight>
+
+        <primary>
+            <title>Alle Kategorien</title>
+
+            <a href="ernaehrung.topic"
+               type="start"/>
+            <a href="sport.topic"
+               type="start"/>
+            <a href="immunsystem.topic"
+               type="start"/>
+        </primary>
+
+        <secondary>
+            <title>Aktuell interessiere ich mich am meisten für ...</title>
+
+            <a href="ernaehrung.topic"
+               type="start"/>
+            <a href="immunsystem.topic"
+               type="start"/>
+        </secondary>
+    </section-starting-page>
 </topic>

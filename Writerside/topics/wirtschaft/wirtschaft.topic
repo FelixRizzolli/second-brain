@@ -5,34 +5,35 @@
        title="Wirtschaft"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <link-summary rel="description"/>
+    
     <section-starting-page>
         <title>Philosophie</title>
-        <description>...</description>
+        <description id="description">
+            Wirtschaft befasst sich mit der Produktion, Verteilung und dem Konsum von Gütern und Dienstleistungen. Sie
+            umfasst verschiedene Bereiche wie Mikro- und Makroökonomie, Finanzwesen, Handel und Unternehmensführung. Die
+            Wirtschaft analysiert und erklärt, wie Ressourcen effizient genutzt werden und wie wirtschaftliche
+            Entscheidungen getroffen werden, um Wohlstand und Wachstum zu fördern.
+        </description>
 
         <spotlight>
-            <a description="FQ - Finanzielle Intelligenz"
-               href="finanzielle-intelligenz.topic"
-               summary="..."
+            <a href="finanzielle-intelligenz.topic"
                type="start"/>
-            <a description="FQ - Finanzielle Intelligenz"
-               href="finanzielle-intelligenz.topic"
-               summary="..."
+            <a href="finanzielle-intelligenz.topic"
                type="start"/>
         </spotlight>
 
         <primary>
-            <title>Kategorien</title>
-            <a description="FQ - Finanzielle Intelligenz"
-               href="finanzielle-intelligenz.topic"
-               summary="..."
+            <title>Alle Kategorien</title>
+
+            <a href="finanzielle-intelligenz.topic"
                type="start"/>
         </primary>
 
         <secondary>
-            <title>...</title>
-            <a description="FQ - Finanzielle Intelligenz"
-               href="finanzielle-intelligenz.topic"
-               summary="..."
+            <title>Aktuell interessiere ich mich am meisten für ...</title>
+
+            <a href="finanzielle-intelligenz.topic"
                type="start"/>
         </secondary>
     </section-starting-page>

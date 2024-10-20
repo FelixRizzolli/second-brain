@@ -7,6 +7,11 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <!-- TODO -->
+    <link-summary>
+        ...
+    </link-summary>
+    
     <chapter id="mythen-ueber-das-sprachenlernen" title="Mythen über das Sprachenlernen">
         <p>
             Die meisten Mythen sind einfach nur Ausreden. Das Erlernen einer Sprache ist eine geistige Herausforderung.

@@ -5,54 +5,46 @@
        title="Philosophie"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <link-summary rel="description"/>
+
     <section-starting-page>
         <title>Philosophie</title>
-        <description>...</description>
+
+        <description id="description">
+            Philosophie ist die Disziplin, die sich mit grundlegenden Fragen des Seins, der Erkenntnis, der Moral und
+            der menschlichen Existenz beschäftigt. Sie umfasst verschiedene Strömungen und Denkschulen, die über
+            Jahrtausende hinweg entwickelt wurden. Philosophie zielt darauf ab, durch kritisches Denken und logische
+            Argumentation ein tieferes Verständnis der Welt und unserer Rolle darin zu erlangen.
+        </description>
 
         <spotlight>
-            <a description="Speedlearning"
-               href="speedlearning.topic"
-               summary="..."
+            <a href="speedlearning.topic"
                type="library"/>
-            <a description="FQ - Finanzielle Intelligenz"
-               href="finanzielle-intelligenz.topic"
-               summary="..."
+            <a href="finanzielle-intelligenz.topic"
                type="start"/>
         </spotlight>
 
         <primary>
-            <title>Kategorien</title>
-            <a description="Stoizismus"
-               href="stoizismus.topic"
-               summary="..."
+            <title>Alle Kategorien</title>
+
+            <a href="stoizismus.topic"
                type="academy"/>
-            <a description=""
-               href="produktivitaetssteigerung.topic"
-               summary="..."
+            <a href="produktivitaetssteigerung.topic"
                type="start"/>
-            <a description="Komunikation"
-               href="kommunikation.topic"
-               summary="..."
+            <a href="kommunikation.topic"
                type="support"/>
-            <a description="EQ - Emotionale Intelligenz"
-               href="emotionale-intelligenz.topic"
-               summary="..."
+            <a href="emotionale-intelligenz.topic"
                type="account"/>
-            <a description="FQ - Finanzielle Intelligenz"
-               href="finanzielle-intelligenz.topic"
-               summary="..."
+            <a href="finanzielle-intelligenz.topic"
                type="start"/>
         </primary>
 
         <secondary>
-            <title>Meine Leidenschaft</title>
-            <a description="Stoizismus"
-               href="stoizismus.topic"
-               summary="..."
+            <title>Aktuell interessiere ich mich am meisten für ...</title>
+
+            <a href="stoizismus.topic"
                type="academy"/>
-            <a description=""
-               href="produktivitaetssteigerung.topic"
-               summary="..."
+            <a href="produktivitaetssteigerung.topic"
                type="start"/>
         </secondary>
     </section-starting-page>

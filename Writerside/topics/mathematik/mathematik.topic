@@ -6,6 +6,40 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
+    <link-summary rel="description"/>
 
-    <!-- TODO -->
+    <section-starting-page>
+        <title>Mathematik</title>
+        <description id="description">
+            Mathematik ist die Wissenschaft von Zahlen, Formen und Mustern. Sie umfasst Bereiche wie Arithmetik,
+            Algebra, Geometrie und Analysis. Mathematik bildet die Grundlage für viele wissenschaftliche Disziplinen und
+            ist in unserem täglichen Leben allgegenwärtig, von einfachen Berechnungen bis hin zu komplexen Algorithmen
+            in Technologie und Wissenschaft.
+        </description>
+
+        <spotlight>
+            <a href="statistik.topic"
+               type="start"/>
+            <a href="analysis.topic"
+               type="start"/>
+        </spotlight>
+
+        <primary>
+            <title>Alle Kategorien</title>
+
+            <a href="statistik.topic"
+               type="start"/>
+            <a href="analysis.topic"
+               type="start"/>
+        </primary>
+
+        <secondary>
+            <title>Aktuell interessiere ich mich am meisten für ...</title>
+
+            <a href="statistik.topic"
+               type="start"/>
+            <a href="analysis.topic"
+               type="start"/>
+        </secondary>
+    </section-starting-page>
 </topic>

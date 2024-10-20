@@ -7,6 +7,11 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <!-- TODO -->
+    <link-summary>
+        ...
+    </link-summary>
+    
     <chapter id="erfolg-verhinderer" title="Erfolg-Verhinderer">
         <p>
             Folgende Hindernisse könnten uns auf unserem Weg zum Ziel begegnen:

@@ -8,6 +8,10 @@
     <show-structure depth="2" for="chapter,procedure"/>
 
     <!-- TODO -->
+    <link-summary>
+        ...
+    </link-summary>
+    
     <chapter id="aktienkurse" title="Aktienkurse">
         <p>
             Aktienkurse verändern sich je nach Angebot und Nachfrage. Warum Aktionäre verstärkt hinter einem bestimmten

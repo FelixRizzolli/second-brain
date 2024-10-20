@@ -7,5 +7,12 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <link-summary>
+        Produktivitätssteigerung bedeutet, durch verschiedene Strategien und Methoden die Effizienz und Effektivität bei
+        der Arbeit zu erhöhen. Dies kann durch bessere Zeitmanagement-Techniken, Automatisierung von Aufgaben,
+        optimierte Arbeitsprozesse und die Nutzung von Technologie erreicht werden. Ziel ist es, mehr Ergebnisse mit
+        weniger Aufwand und in kürzerer Zeit zu erzielen. Dabei spielt auch die Motivation und das Wohlbefinden der
+        Mitarbeitenden eine wichtige Rolle, um nachhaltige Produktivität sicherzustellen.
+    </link-summary>
     <!-- TODO -->
 </topic>

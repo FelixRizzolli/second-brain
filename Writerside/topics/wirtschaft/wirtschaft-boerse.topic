@@ -8,6 +8,10 @@
     <show-structure depth="2" for="chapter,procedure"/>
 
     <!-- TODO -->
+    <link-summary>
+        ...
+    </link-summary>
+    
     <chapter id="boerse" title="Die Börse">
         <p>
             Wo und wann auch immer Menschen sich trafen, miteinander palaverten und dem einen gefiel, was der andere

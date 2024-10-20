@@ -7,5 +7,11 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <link-summary>
+        Deutsch ist eine germanische Sprache, die in Deutschland, Österreich, der Schweiz und anderen Teilen der Welt
+        gesprochen wird. Es ist die meistgesprochene Muttersprache in der Europäischen Union und wird von mehr als 100
+        Millionen Menschen als Muttersprache gesprochen. Deutsch ist bekannt für seine komplexen Grammatikregeln und
+        seine reiche Literaturtradition, die von Goethe und Schiller bis zu Kafka und Grass reicht.
+    </link-summary>
     <!-- TODO -->
 </topic>

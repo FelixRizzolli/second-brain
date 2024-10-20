@@ -7,6 +7,11 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
 
+    <!-- TODO -->
+    <link-summary>
+        ...
+    </link-summary>
+
     <chapter id="einfuehrung" title="Einführung">
         <chapter id="warum-die-reichen-immer-reicher-werden" title="Warum die Reichen immer reicher werden">
             <p>

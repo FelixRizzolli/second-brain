@@ -8,4 +8,10 @@
     <show-structure depth="2" for="chapter,procedure"/>
 
     <!-- TODO -->
+    <link-summary>
+        Stoizismus ist eine philosophische Lehre aus dem alten Griechenland. Sie betont die Entwicklung von Tugenden wie
+        Weisheit, Mut und Selbstbeherrschung, um ein tugendhaftes und glückliches Leben zu führen. Stoiker fokussieren
+        sich auf das, was sie kontrollieren können, und akzeptieren das, was sie nicht ändern können, um ein friedliches
+        und erfülltes Leben zu führen.
+    </link-summary>
 </topic>
