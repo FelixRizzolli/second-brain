@@ -1686,19 +1686,110 @@
     </chapter>
 
     <chapter id="optional-chaining-operator" title="ES2020 – Optional Chaining Operator">
+        <p>
+            Der optionale Verkettungsoperator (= Optional Chaining Operator) gibt undefined zurück, wenn ein Objekt
+            <code>undefined</code> oder <code>null</code> ist (anstatt einen Fehler zu werfe).
+        </p>
 
+        <code-block lang="javascript">
+            <![CDATA[
+                const car = {type:"Fiat", model:"500", color:"white"};
+                let name = car?.name;
+            ]]>
+        </code-block>
+
+        <tip>
+            Mehr dazu hier: <a href="https://github.com/tc39/proposal-optional-chaining"/>
+        </tip>
     </chapter>
 
     <chapter id="nullish-coalescing-operator" title="ES2020 – Nullish Coalescing Operator">
+        <p>
+            Der Operator <code>??</code> gibt das erste Argument zurück, wenn es nicht nullish (<code>null</code> oder
+            <code>undefined</code>) ist.
+        </p>
 
+        <code-block lang="javascript">
+            <![CDATA[
+                let name = null;
+                let text = "missing";
+                let result = name ?? text;
+            ]]>
+        </code-block>
+
+        <tip>
+            Mehr dazu hier: <a href="https://github.com/tc39/proposal-nullish-coalescing"/>
+        </tip>
     </chapter>
 
     <chapter id="es2020-zuweisungsoperatoren" title="ES2020 – Neue Zuweisungsoperatoren: &amp;&amp;=, ||= und ??=">
-
+        <table style="header-row">
+            <tr>
+                <td>
+                    Operator
+                </td>
+                <td>
+                    Name
+                </td>
+                <td>
+                    Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        &amp;&amp;=
+                    </code>
+                </td>
+                <td>
+                    Logisches Und Zuweisungsoperator
+                </td>
+                <td>
+                    Wenn der erste Wert <code>true</code> ist, wird der zweite Wert zugewiesen.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        ||=
+                    </code>
+                </td>
+                <td>
+                    Logisches Oder Zuweisungsoperator
+                </td>
+                <td>
+                    Wenn der erste Wert <code>false</code> ist, wird der zweite Wert zugewiesen.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code>
+                        ??=
+                    </code>
+                </td>
+                <td>
+                    Nullish Coalescing Zuweisungsoperator
+                </td>
+                <td>
+                    Wenn der erste Wert <code>undefined</code> oder <code>null</code> ist, wird der zweite Wert
+                    zugewiesen.
+                </td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter id="numeric-seperators" title="ES2021 – Numeric Seperators">
+        <p>
+            ES2021 hat das numerische Trennzeichen <code>_</code> eingeführt, um Zahlen besser lesbar zu machen. Das
+            numerische Trennzeichen kann überall in einer Nummer eingefügt werden.
+        </p>
 
+        <code-block lang="javascript">
+            <![CDATA[
+                const num = 1_000_000_000;
+                const num1 = 1_2_3_4_5;
+            ]]>
+        </code-block>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
