@@ -319,13 +319,176 @@
     </chapter>
 
     <chapter id="maps" title="ES2015 – Maps">
+        <p>
+            Maps bezeichnen in der Programmierung eine Datenstruktur, in der Schlüssel-Wert-Paare gespeichert werden
+            können (auch Key/Value-Pairs genannt). Oder anders gesagt: Innerhalb einer Map können zu Schlüsseln einzelne
+            Werte abgelegt werden, die dann über die Schlüssel abgerufen werden können. Die Schlüssel innerhalb einer
+            Map müssen dabei eindeutig sein, Werte hingegen können mehrfach vorkommen. Die Konstruktorfunktion der
+            Klasse Map erwartet ein Objekt als Argument, welches iterierbar ist. Unter einem iterierbaren Objekt
+            versteht man ein Objekt, welches sein eigenes Iterationsverhalten definiert, sodass es sich beispielsweise
+            direkt in einer Schleife als Eingabe verwenden lässt. Einige der Standardobjekte wie <code>String</code>,
+            <code>Array</code>, <code>Map</code> und <code>Set</code> sind bereits standardmäßig iterierbar.
+        </p>
+
+        <img alt="ES2015 – Maps" src="js-professional-maps.png"/>
+
+        <code-block lang="javascript">
+            <![CDATA[
+                'use strict';
+                let numbersOfAlbums = new Map([
+                  ['Kyuss', 4],
+                  ['Tool', 6],
+                  ['Monster Magnet', 8],
+                  ['Ben Harper', 9],
+                  ['Queens of the Stone Age', 6]
+                ]);
+                console.log(numbersOfAlbums.size);
+            ]]>
+        </code-block>
 
         <chapter id="maps-methoden-und-eigenschaften" title="Methoden und Eigenschaften">
-
+            <table>
+                <tr>
+                    <td>
+                        Methode/Eigenschaft
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            clear()
+                        </code>
+                    </td>
+                    <td>
+                        Löscht alle Schlüssel-Wert-Paare aus der Map.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            delete()
+                        </code>
+                    </td>
+                    <td>
+                        Löscht zu einem übergebenen Schlüssel den Wert aus der Map. Bei erfolgreichem Löschen gibt die
+                        Methode <code>true</code> zurück, andernfalls <code>false</code>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            get()
+                        </code>
+                    </td>
+                    <td>
+                        Liefert zu einem Schlüssel den assoziierten Wert. Gibt es den Schlüssel in der Map nicht, gibt
+                        die Methode ein <code>undefined</code> zurück.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            has()
+                        </code>
+                    </td>
+                    <td>
+                        Prüft, ob es zu einem Schlüssel einen Wert in der Map gibt. Wenn ja, gibt die Methode ein
+                        <code>true</code> zurück, ansonsten ein <code>false</code>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            set()
+                        </code>
+                    </td>
+                    <td>
+                        Setzt zu einem Schlüssel den entsprechenden Wert. Ist der Schlüssel bereits in der Map
+                        vorhanden, wird der damit assoziierte Wert überschrieben.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            size
+                        </code>
+                    </td>
+                    <td>
+                        Enthält die Anzahl an Schlüssel-Wert-Paaren in der Map.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            entries()
+                        </code>
+                    </td>
+                    <td>
+                        Liefert einen Iterator zurück, mithilfe dessen man über die Schlüssel-Wert-Paare der Map
+                        iterieren kann.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            keys()
+                        </code>
+                    </td>
+                    <td>
+                        Analog zu <code>entries()</code> gibt diese Methode einen Iterator für die Schlüssel der Map
+                        zurück.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            values()
+                        </code>
+                    </td>
+                    <td>
+                        Analog zu <code>entries()</code> gibt diese Methode einen Iterator für die Werte der Map zurück.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter id="maps-weak" title="Weak Maps">
+            <p>
+                Die durch diesen Typ repräsentierten Weak Maps sind prinzipiell ähnlich den normalen Maps, unterscheiden
+                sich jedoch grundsätzlich in einem wesentlichen Punkt: Objekte, die als Schlüssel verwendet werden,
+                können im Rahmen der Garbage Collection gelöscht werden, sofern diese Objekte (außerhalb der Weak Map)
+                nicht mehr referenziert werden. Die Objekte in einer Weak Map werden sozusagen »schwach« (weak)
+                referenziert (daher der Name Weak Map).
+            </p>
 
+            <p>
+                Diese Eigenschaft von Weak Maps hat direkte Auswirkungen auf die API: Zum einen können als Schlüssel bei
+                Weak Maps nur Objekte verwendet werden und nicht – wie es bei normalen Maps möglich ist – primitive
+                Datentypen. Das heißt, auch Zeichenketten sind beispielsweise als Schlüssel in einer Weak Map nicht
+                erlaubt.
+            </p>
+
+            <p>
+                Zum anderen stehen die Methoden <code>keys()</code>, <code>values()</code> und <code>entries()</code>
+                bei Weak Maps nicht zur Verfügung. Der Grund ist folgender: All diese Methoden würden Iteratoren
+                zurückgeben, für die nicht garantiert wäre, dass der interne Zustand nach einer Garbage Collection noch
+                stimmt. Objekte könnten bereits durch die Garbage Collection gelöscht worden sein, aber trotzdem noch in
+                der internen Zählung des Iterators vorkommen.
+            </p>
+
+            <p>
+                Aus ähnlichem Grund steht in Weak Maps ebenfalls nicht die Eigenschaft <code>size</code> zur Verfügung.
+                Die restliche API unterscheidet sich aber nicht von den normalen Maps. Bis auf eine weitere Ausnahme:
+                Die Methode <code>clear()</code> wurde zwischenzeitlich für Weak Maps wieder aus dem Standard entfernt.
+            </p>
+
+            <tip>
+                Mehr zu Weak Maps:
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap"/>
+            </tip>
         </chapter>
     </chapter>
 
