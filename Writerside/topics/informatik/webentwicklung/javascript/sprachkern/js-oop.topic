@@ -9,82 +9,923 @@
 
     <!-- TODO: migrate from Confluence -->
     <chapter id="grundlagen" title="Grundlagen">
+        <tip>
+            Grundlegende Konzepte der objektorientierten Programmierung: <a href="swe-pk-paradigmen-oop.topic"/>
+        </tip>
+
+        <p>
+            JavaScript ist eine Programmiersprache die das objektorientierte Programmierparadigma unterstützt.
+        </p>
 
         <chapter id="grundlagen-instanceof" title="Der instanceof-Operator">
+            <p>
+                Der <code>instanceof</code>-Operator bestimmt, ob eine Variable von einem bestimmten Referenztyp ist.
+                Als Rückgabewert liefert der Operator dabei einen booleschen Wert. <code>Object</code> ist der Typ, von
+                dem alle anderen Referenztypen ableiten. Der <code>instanceof</code>-Operator liefert daher für alle
+                Variablen beliebigen Referenztyps den Wert <code>true</code> zurück. Im Gegensatz zum
+                <code>typeof</code>-Operator funktioniert der <code>instanceof</code>-Operator nur für Werte, die einen
+                Referenztyp enthalten. Für Werte primitiven Datentyps dagegen liefert der Operator immer
+                <code>false</code> zurück.
+            </p>
 
+            <p>
+                Beispiele für Referenztypen wären:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    der Referenztyp <code>Object</code>, der alle Arten von Objekten repräsentiert
+                </li>
+                <li>
+                    der Referenztyp <code>Array</code>, der Arrays repräsentiert
+                </li>
+                <li>
+                    der Referenztyp <code>RegExp</code>, der sogenannte reguläre Ausdrücke repräsentiert, mit denen man
+                    innerhalb von Zeichenketten nach bestimmten Mustern suchen kann
+                </li>
+                <li>
+                    der Referenztyp <code>Date</code>, der Datums- und Zeitangaben repräsentiert
+                </li>
+                <li>
+                    der Referenztyp <code>Math</code>, mit dem sich komplexere Berechnungen durchführen lassen.
+                </li>
+            </list>
+
+            <p>
+                Darüber hinaus gibt es verschiedene sogenannte <b>Wrapperobjekte</b>, die den primitiven Datentypen
+                zusätzliche Funktionalitäten bereitstellen.
+            </p>
         </chapter>
 
         <chapter id="grundlagen-this" title="Das Schlüsselwort this">
-
+            <p>
+                Das Schlüsselwort <code>this</code> repräsentiert das Objekt, in dem es verwendet wird.
+            </p>
         </chapter>
 
         <chapter id="grundlagen-objekte-erstellen" title="Objekte erstellen">
+            <p>
+                In JavaScript gibt es zwei Möglichkeiten Objekte zu erstellen: Das Erzeugen eines Objekts über die
+                Konstruktorfunktion oder ober die Literal-Schreibweise. Aber welche Methode sollte verwendet werden?
+            </p>
+
+            <list type="bullet">
+                <li>
+                    Für einfache Objekte, die on-the-fly erstellt werden sollten, von denen nicht mehrere Instanzen
+                    benötigt werden, ist die Objekt-Literal-Schreibweise gut geeignet.
+                </li>
+                <li>
+                    Werden mehrere Objektinstanzen von einem Objekttyp erstellt, so ist die Klassensyntax die bessere
+                    Wahl. Die Konstruktorfunktion wird mittlerweile nur noch in Ausnahmefällen verwendet.
+                </li>
+                <li>
+                    Die Methode <code>Object.create()</code> kann verwendet werden, wenn die Klassensyntax nicht zur
+                    Verfügung steht – wenn die Laufzeitumgebung noch keine ES6-Features unterstützt.
+                </li>
+            </list>
 
             <chapter id="grundlagen-objekte-erstellen-literal-schreibweise" title="Die Objekt-Literal-Schreibweise">
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let item = {
+                          name: 'Professionell entwickeln mit JavaScript',
+                          price: 49.90,
+                          author: 'Philip Ackermann',
+                          isbn: '978-3-8362-5687-2',
+                          printDescription: function() {
+                            console.log(this.author + ': ' + this.name);
+                          }
+                        }
 
+                        console.log(item.name);    // "Professionell entwickeln mit JavaScript"
+                        console.log(item.price);   // 49.90
+                        console.log(item.author);  // "Philip Ackermann"
+                        console.log(item.isbn);    // "978-3-8362-5687-2"
+                        item.printDescription();   // "Philip Ackermann: Professionell entwickeln mit JavaScript"
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="grundlagen-objekte-erstellen-konstruktorfunktion" title="Konstruktorfunktion">
+                <p>
+                    Eine Funktion wird erst dadurch zu einer Konstruktorfunktion, dass man sie über das Schüsselwort
+                    <code>new</code> aufruft. Ruft man eine Funktion als Konstrktorfunktion auf, ist innerhalb der
+                    Funktion keine <code>return</code>-Anweisung notwendig. Stattdessen wird eine neue Objektinstanz
+                    zurückgegeben. Eine Konstruktorfunktion kann mehrfach verwendet werden, um verschiedene
+                    Objektinstanzen zu erzeugen. Bei der Literal-Schreibweise dagegen trifft dies nicht zu, hier werden
+                    immer einzelne Objekte erstellt.
+                </p>
 
+                <note>
+                    Prinzipiell ist es auch möglich, eine als Konstruktorfunktion gedachte Funktion als »normale«
+                    Funktion, sprich ohne vorangestelltes <code>new</code>, aufzurufen. Umgekehrt können Sie »normalen«
+                    Funktionen auch ein <code>new</code> voranstellen und sie somit als Konstruktorfunktion aufrufen.
+                    Allerdings macht beides in der Regel keinen Sinn.
+                </note>
+
+                <p>
+                    Der Konvention folgend, beginnen Funktionen, die als Konstruktorfunktionen aufgerufen werden können,
+                    mit einem Großbuchstaben bzw., genauer gesagt: Sie folgen der Upper-CamelCase-Schreibweise, bei der
+                    ja – wenn ein Funktionsname aus mehreren Wörtern besteht – jedes Wort mit einem Großbuchstaben
+                    beginnt.
+                </p>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        function Item(name, price, author, isbn) {
+                          this.name = name;
+                          this.price = price;
+                          this.author = author;
+                          this.isbn = isbn;
+                          this.printDescription = function() {
+                            console.log(this.author + ': ' + this.name);
+                          }
+                        }
+
+                        let item = new Item(
+                          'Professionell entwickeln mit JavaScript',
+                          49.90,
+                          'Philip Ackermann',
+                          '978-3-8362-5687-2'
+                        );
+
+                        console.log(item.name);    // "Professionell entwickeln mit JavaScript"
+                        console.log(item.price);   // 49.90
+                        console.log(item.author);  // "Philip Ackermann"
+                        console.log(item.isbn);    // "978-3-8362-5687-2"
+                        item.printDescription();   // "Philip Ackermann: Professionell entwickeln mit JavaScript"
+                    ]]>
+                </code-block>
+
+                <img alt="Konstruktorfunktion" src="js-sprachkern-oop-konstruktorfunktion.png"/>
+
+                <p>
+                    Konstrukterfunktionen werden auch beispielsweise verwendet, wenn ein neues Array mit
+                    <code>new Array()</code> erstellt wird oder ein Fehlerobjekt mit <code>new Error()</code>.
+                </p>
             </chapter>
 
             <chapter id="grundlagen-objekte-erstellen-prototypen" title="Prototypen">
+                <p>
+                    Jede Konstruktorfunktion verwaltet intern einen sogenannten Prototyp, sprich ein Objekt, welches als
+                    Basis für die Konstruktorfunktion zu erzeugenden Objekte dient. Dieser Prototyp ist der Funktion in
+                    der Eigenschaft <code>prototype</code> hinterlegt. Wird nun ein Objekt mit einer solchen
+                    Konstruktorfunktion erzeugt, basiert das Objekt also auf dem dort hinterlegten Prototyp.
+                </p>
 
+                <p>
+                    Nach dem Erzeugen des Objekts kann der Prototyp entweder über die Eigenschaft <code>__proto__</code>
+                    des Objekts über die Methode <code>Object.getPrototypeOf()</code> ermittelt werden. Über die
+                    Eigenschaft <code>constructor</code> kann eine Objektinstanz außerdem bestimmt werden, mit welcher
+                    Konstruktorfunktion es erzeugt wurde.
+                </p>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        console.log(Item.prototype);               // Item {}
+                        console.log(item.__proto__);               // Item {}
+                        console.log(Object.getPrototypeOf(item));  // Item {}
+                        console.log(item.constructor);             // function Item(...)
+                    ]]>
+                </code-block>
+
+                <img alt="Prototypen" src="js-sprachkern-oop-prototypen.png"/>
+
+                <p>
+                    Mit dem <code>instanceof</code>-Operator lässt sich überprüfen, ob ein Objekt mit einer
+                    bestimmten Konstruktorfunktion erzeugt wurde. Wurde beispielsweise das Objekt <code>item</code> mit
+                    der Konstruktorfunktion <code>Item()</code> erzeugt, liefert der Ausdruck item <code>instanceof
+                    Item</code> den Wert <code>true</code>. Im Detail ist der Sachverhalt bei der Verwendung einer
+                    Konstruktorfunktion und der Anwendung des <code>instanceof</code>-Operators etwas komplizierter:
+                    Prototypen können nämlich auch ihrerseits Prototypen haben, was dann zu einer ganzen Kette von
+                    Prototypen, der sogenannten Prototypenkette, führt. Der <code>instanceof</code>-Operator prüft
+                    daher, genauer gesagt, ob das jeweilige Objekt auf einem der Prototypen in der prototypenkette
+                    basiert.
+                </p>
             </chapter>
 
             <chapter id="grundlagen-objekte-erstellen-klassensyntax" title="Klassensyntax aus ES6">
+                <p>
+                    Klassen wurden in JavaScript mit ECMAScript 6 eingeführt. Klassen werden in JavaScript über das
+                    Schlüsselwort <code>class</code> definiert. Hinter diesem Schlüsselwort notiert man den Namen der
+                    Klasse (in Upper-CamelCase-Schreibweise) sowie Klassenkörper (den Inhalt der Klasse) in geschweiften
+                    Klammern. Innerhalb des Klassenkörpers definiert man die Methoden, die für Objektinstanzen der
+                    Klasse zur Verfügung stehen sollen. Die Methode mit dem Namen constructor() nimmt dabei eine
+                    besondere Rolle ein: Sie wird implizit aufgerufen, wenn man eine neue Objektinstanz der
+                    entsprechenden Klasse erzeugt.
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        class Item {
+                          constructor(name, price, author, isbn) {
+                            this.name = name;
+                            this.price = price;
+                            this.author = author;
+                            this.isbn = isbn;
+                          }
+                          printDescription() {
+                            console.log(this.author + ': ' + this.name);
+                          }
+                        }
+                    ]]>
+                </code-block>
+
+                <img alt="Klassensyntax (1)" src="js-sprachkern-oop-klassensyntax-es6-1.png"/>
+
+                <p>
+                    Die neue ES6-Klassensyntax ist letztendlich lediglich eine syntaktische Alternative zu der
+                    Verwendung von Konstruktorfunktionen. Wie auch Konstruktorfunktionen haben Klassen ebenfalls eine
+                    Eigenschaft <code>prototype</code>, welche das Basisobjekt, also den Prototyp enthält, auf Basis
+                    dessen Instanz der Klasse erzeugt werden. Instanzen der Klasse wiederum verfügen ebenfalls über die
+                    zwei Eigenschaften <code>__proto__</code> und <code>constructor</code>: Erstere referenziert den
+                    Prototyp der Instanz, Letztere die Klasse, über die die Instanz erzeugt wurde.
+                </p>
+
+                <img alt="Klassensyntax (2)" src="js-sprachkern-oop-klassensyntax-es6-2.png"/>
             </chapter>
 
             <chapter id="grundlagen-objekte-erstellen-object-create" title="Object.create() aus ES5">
+                <p>
+                    Die <code>Object.create()</code>-Methode, als Helfermethode Objekte zu erzeugen, wurde in
+                    ECMAScript 5 eingeführt. Sie erwartet als ersten Parameter den Prototyp des zu erzeugenden
+                    Objekts und als zweiten optionalen Parameter ein Konfigurationsobjekt, über das man die
+                    Eigenschaften und Methoden des Objekts konfigurieren kann. Die Eigenschaften stellen dabei die
+                    Namen der Eigenschaften des zu erstellenden Objekts dar. Als wert ist dabei jeweils wiederum ein
+                    Objekt hinterlegt, über welches neben dem Wert auch sogenannte Eigenschaftsattribute definieren
+                    lassen. Mit <code>Object.create(null)</code> kann ein Objekt ohne Prototyp erstellt werden, dies
+                    sollten wir aber nicht verwenden, wenn wir uns nicht zu 100&nbsp;% sicher sind, warum wir das
+                    wollen.
+                </p>
 
+                <code-block collapsed-title="Beispiel" collapsible="true" lang="javascript">
+                    <![CDATA[
+                    let item = Object.create(Object.prototype, {
+                      name: {
+                        value: 'Schrödinger programmiert Java',
+                        writable: false,
+                        configurable: true,
+                        enumerable: true
+                      },
+                      price: {
+                        value: 44.90,
+                        writable: true,
+                        configurable: true,
+                        enumerable: true
+                      },
+                      author: {
+                        value: 'Philip Ackermann',
+                        writable: false,
+                        configurable: true,
+                        enumerable: true
+                      },
+                      isbn: {
+                        value: '978-3-8362-4583-8',
+                        writable: false,
+                        configurable: true,
+                        enumerable: false     // Die Eigenschaft "isbn" wird bei Iteration nicht ausgegeben.
+                      },
+                      printDescription: {
+                        value: function() {
+                          console.log(this.author + ': ' + this.name);
+                        }
+                      }
+                    });
+
+                    for(let property in item) {
+                      console.log(property);    // Ausgabe: "name", "price", "author"
+                    }
+
+                    item.name = 'Cooles neues Java-Buch';
+                    console.log(item.name);     // "Schrödinger programmiert Java", da die
+                                                // Eigenschaft "name" nicht "writeable" ist.
+
+                    item.price = 54.95;
+                    console.log(item.price);    // "54.95", da für die Eigenschaft "price"
+                                                // das Attribut "writable" den Wert "true" hat.
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="grundlagen-objekte-erstellen-eigenschaftsattribute" title="Eigenschaftsattribute">
+                <p>
+                    Über diese Eigenschaftsattribute können einzelne Objekteigenschaften konfiguriert werden.
+                </p>
 
+                <table style="header-row">
+                    <tr>
+                        <td>
+                            Eigenschaftsattribut
+                        </td>
+                        <td>
+                            Beschreibung
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                value
+                            </code>
+                        </td>
+                        <td>
+                            Definiert den Wert der Eigenschaft.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                writable
+                            </code>
+                        </td>
+                        <td>
+                            Dieses Eigenschaftsattribut gibt (über einen booleschen Wert) an, ob die jeweilige
+                            Eigenschaft überschrieben werden kann, sprich nach Initialisierung mit einem neuen Wert
+                            belegt werden darf. Standardmäßig hat dieses Attribut den Wert <code>false</code>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                enumerable
+                            </code>
+                        </td>
+                        <td>
+                            Dieses Eigenschaftsattribut gibt (über einen booleschen Wert) an, ob die jeweilige
+                            Eigenschaft aufzählbar ist, sprich, ob – wenn über die Eigenschaften des entsprechenden
+                            Objekts iteriert wird – diese Eigenschaft dazugezählt wird, Standardmäßig hat dieses
+                            Attribut den Wert <code>false</code>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                configurable
+                            </code>
+                        </td>
+                        <td>
+                            Dieses Eigenschaftsattribut gibt (über einen booleschen Wert) an, ob das
+                            Eigenschaftsattribut an sich für die jeweilige Eigenschaft verändert werden kann, sprich, ob
+                            die Eigenschaft über die Attribute im Nachhinein konfiguriert werden kann. Auch für dieses
+                            Attribut ist der Standardwert <code>false</code>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                set
+                            </code>
+                        </td>
+                        <td>
+                            Dieses Eigenschaftsattribut gibt an, welche Funktion aufgerufen wird, wenn schreibend auf
+                            die Eigenschaft zugegriffen wird (nur für sogenannte Zugriffseigenschaften verwendbar).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                get
+                            </code>
+                        </td>
+                        <td>
+                            Dieses Eigenschaftsattribut gibt an, welche Funktion aufgerufen wird, wenn lesend auf die
+                            Eigenschaft zugegriffen wird (nur für sogenannte Zugriffseigenschaften verwendbar).
+                        </td>
+                    </tr>
+                </table>
+
+                <p>
+                    Um auf die Eigenschaftsattribute einer Eigenschaft bzw. Methode zuzugreifen, steht einem die Methode
+                    <code>Object.getOwnPropertyDescriptor()</code> zur Verfügung. Diese Methode erwartet als ersten
+                    Parameter das jeweilige Objekt, sowie als zweiten Parameter den Namen der Eigenschaft/Methode, für
+                    welche die Attribute ermittelt werden sollen. Zurück liefert die Methode ein Objekt mit den
+                    bekannten Eigenschaften: <code>value</code>, <code>writable</code>, <code>enumerable</code>,
+                    <code>configurable</code> sowie <code>set</code> und <code>get</code>.
+                </p>
             </chapter>
         </chapter>
 
         <chapter id="grundlagen-eigenschaften-methoden" title="Eigenschaften und Methoden">
-
             <chapter id="grundlagen-eigenschaften-methoden-zugriff" title="Zugriff">
+                <p>
+                    Um auf Objekteigenschaften und Objektmethoden zuzugreifen gibt es in JavaScript zwei Möglichkeiten:
+                </p>
 
+                <list type="bullet">
+                    <li>
+                        <p>
+                            Die <b>Punktschreibweise</b> über den Punkt, dem sogenannten <b>Memberoperator</b>, da
+                            Eigenschaften und Methoden eines Objektes auch als Member bezeichnet werden.
+                        </p>
+
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                let itemName = item.name;
+                                item.printDescription();
+                            ]]>
+                        </code-block>
+                    </li>
+                    <li>
+                        <p>
+                            Die <b>Klammerschreibweise</b> bei der, der Name der Eigenschaft bzw. Methode in eckigen
+                            Klammern hinter den Namen des Objekts geschrieben wird. Ob beim Zugriff über die
+                            Klammerschreibweise einfache oder doppelte Anführungszeichen verwendet werden, spielt keine
+                            Rolle. Es sollte nur einheitlich programmiert werden.
+                        </p>
+
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                let itemName = item['name'];
+                                item['printDescription']();
+                            ]]>
+                        </code-block>
+                    </li>
+                </list>
+
+                <p>
+                    In einigen Fällen ist ausschließlich die Klammerschreibweise möglich, und zwar immer dann, wenn der
+                    Name der jeweiligen Eigenschaft oder Methode das Minuszeichen enthält.
+                </p>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let person = {
+                          'first-name': 'Max',
+                          'last-name': 'Mustermann'
+                        }
+
+                        console.log(person.first-name);     // Syntaxfehler
+                        console.log(person.last-name);      // Syntaxfehler
+                        console.log(person['first-name']);  // "Max"
+                        console.log(person['last-name']);   // "Mustermann"
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="grundlagen-eigenschaften-methoden-datenkapselung" title="Datenkapselung">
+                <p>
+                    In JavaScript gibt es zwei spezielle Schüsselwörter, um Setter- und Getter Methoden als solche
+                    auszuzeichnen: <code>set</code> für Setter-Methoden und <code>get</code> für Getter-Methoden. Diese
+                    Schlüsselwörter können in Kombination mit der Objekt-Literal-Schreibweise, mit
+                    Kunstruktorfunktionen, mit Klassen und in Kombination mit der Methode <code>Object.create()</code>
+                    verwendet werden. Mehr zur Theorie hier:
+                    <a href="swe-pk-paradigmen-oop.topic#konzepte-kapselung">OOP - Kapselung</a>
+                </p>
 
+                <p>
+                    Um Namenskonflikte zwischen Eigenschaften und den Methoden zu vermeiden, lässt man Erstere häufig
+                    mit einem Unterstrich beginnen. Im Codebeispiel sind die Eigenschaften, um die es
+                    geht(<code>_name</code>, <code>_price</code>, <code>_author</code> und <code>_isbn</code>), zwar
+                    auch ohne Verwendung der Setter und Getter zugänglich und somit nicht vor direktem Zugriff
+                    geschützt.
+                </p>
+
+                <code-block collapsed-title="Getter und Setter bei der Verwendung von der Objekt-Literal-Schreibweise"
+                            collapsible="true"
+                            lang="javascript">
+                    <![CDATA[
+                        let item = {
+                          _name: 'Schrödinger programmiert Java',
+                           _price: 44.90,
+                          _author: 'Philip Ackermann',
+                           _isbn: '978-3-8362-4583-8',
+                           set name(newName) {
+                            if(typeof newName === 'string') {
+                              console.log('Neuen Namen setzen');
+                              this._name = newName;
+                            } else {
+                              throw new TypeError('Name muss eine Zeichenkette sein.')
+                            }
+                          },
+                          get name() {
+                            console.log('Namen zurückgeben');
+                            return this._name;
+                          }  /* Analog für die anderen Eigenschaften. */
+                        }
+
+                        console.log(item.name);    // "Namen zurückgeben"
+                                                   // "Schrödinger programmiert Java"
+                        item.name = 'Schrödinger programmiert Java - Das etwas andere Fachbuch';
+                                                   // "Neuen Namen setzen"
+                    ]]>
+                </code-block>
+
+                <code-block collapsed-title="Getter und Setter bei der Verwendung von Konstruktorfunktionen"
+                            collapsible="true"
+                            lang="javascript">
+                    <![CDATA[
+                        function Item(name, price, author, isbn) {
+                          this._name = name;
+                          this._price = price;
+                          this._author = author;
+                          this._isbn = isbn;
+                        }
+
+                        Item.prototype = {
+                          set name(newName) {
+                            if(typeof newName === 'string') {
+                              console.log('Neuen Namen setzen');
+                              this._name = newName;
+                            } else {
+                              throw new TypeError('Name muss eine Zeichenkette sein.')
+                            }
+                          },
+                          get name() {
+                            console.log('Namen zurückgeben');
+                            return this._name;
+                          }  /* Analog für die anderen Eigenschaften. */
+                        };
+
+                        let item = new Item(
+                          'Schrödinger programmiert Java',
+                          44.90,
+                          'Philip Ackermann',
+                          '978-3-8362-4583-8'
+                        );
+
+                        console.log(item.name);    // "Namen zurückgeben"
+                                                   // "Schrödinger programmiert Java"
+                        item.name = 'Schrödinger programmiert Java - Das etwas andere Fachbuch';
+                                                   // "Neuen Namen setzen"
+                    ]]>
+                </code-block>
+
+                <code-block collapsed-title="Getter und Setter bei der Verwendung von Klassen"
+                            collapsible="true"
+                            lang="javascript">
+                    <![CDATA[
+                        class Item {
+                          constructor(name, price, author, isbn) {
+                            this._name = name;
+                            this._price = price;
+                            this._author = author;
+                            this._isbn = isbn;
+                          }
+                          set name(newName) {
+                            if(typeof newName === 'string') {
+                              console.log('Neuen Namen setzen');
+                              this._name = newName;
+                            } else {
+                              throw new TypeError('Name muss eine Zeichenkette sein.')
+                            }
+                          }
+                          get name() {
+                            console.log('Namen zurückgeben');
+                            return this._name;
+                          }  /* Analog für die anderen Eigenschaften. */
+                        }
+
+                        let item = new Item(
+                          'Schrödinger programmiert Java',
+                          44.90,
+                          'Philip Ackermann',
+                          '978-3-8362-4583-8'
+                        );
+
+                        console.log(item.name);    // "Namen zurückgeben"
+                                                   // "Schrödinger programmiert Java"
+                        item.name = 'Schrödinger programmiert Java - Das etwas andere Fachbuch';
+                                                   // "Neuen Namen setzen"
+                    ]]>
+                </code-block>
+
+                <code-block collapsed-title="Getter und Setter bei der Verwendung von »Object.create()«"
+                            collapsible="true"
+                            lang="javascript">
+                    <![CDATA[
+                        let item = Object.create(Object.prototype, {
+                          name: {
+                            set: function(newName) {
+                              if (typeof newName === 'string') {
+                                console.log('Neuen Namen setzen');
+                                this._name = newName;
+                              } else {
+                                throw new TypeError('Name muss eine Zeichenkette sein.')
+                              }
+                            }
+                          },
+                          get: function() {
+                            console.log('Namen zurückgeben');
+                            return this._name;
+                          }    /* Analog für die anderen Eigenschaften. */
+                        });
+
+                        item.name = "Schrödinger programmiert Java - Das etwas andere Fachbuch";
+                        // Ausgabe: 'Neuen Namen setzen'
+                        console.log(item.name);
+                        // Ausgabe: 'Namen zurückgeben'
+                        //          'Schrödinger programmiert Java - Das etwas andere Fachbuch'
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="grundlagen-eigenschaften-methoden-manipulieren"
                      title="Objekteigenschaften und Objektmethoden hinzufügen, ändern, überprüfen und löschen">
+                <p>
+                    In JavaScript können Objekteigenschaften und Objektmethoden jederzeit hinzugefügt, gelöscht und
+                    verändert werden. Das ist in vielen anderen Sprachen nicht möglich. Fürs Hinzufügen von
+                    Objekteigenschaften und Objektmethoden gibt es in JavaScript folgende Möglichkeiten:
+                </p>
 
+                <table style="header-row">
+                    <tr>
+                        <td>
+                            Typ
+                        </td>
+                        <td>
+                            Beispiel
+                        </td>
+                        <td>
+                            Beschreibung
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Hinzufügen/Verändern
+                        </td>
+                        <td>
+                            <code-block lang="javascript">
+                                <![CDATA[
+                                    item.publisher = 'Galileo Press';
+                                ]]>
+                            </code-block>
+                        </td>
+                        <td>
+                            <p>
+                                Mit dem Memberoperator bzw. über die Punktschreibweise lassen sich neue
+                                Objekteigenschaften und Objektmethoden hinzufügen, falls sie im jeweiligen Objekt noch
+                                nicht existieren. Existieren sie bereits so werden sie mit dieser Methode überschrieben.
+                            </p>
+
+                            <p>
+                                Prinzipiell ist es egal, ob direkt beim Anlegen eines Objekts über die
+                                Literal-Schreibweise alle Eigenschaften und Methoden direkt angegeben oder über die
+                                Punktschreibweise einzeln hinzugefügt werden.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Hinzufügen/Verändern
+                        </td>
+                        <td>
+                            <code-block lang="javascript">
+                                <![CDATA[
+                                    item['publisher'] = 'Galileo Press';
+                                ]]>
+                            </code-block>
+                        </td>
+                        <td>
+                            <p>
+                                Wie bei der Punktschreibweise können über die Klammerschreibweise Objekteigenschaften
+                                und Objektmethoden hinzugefügt oder überschrieben werden.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Hinzufügen
+                        </td>
+                        <td>
+                            <code-block lang="javascript">
+                                <![CDATA[
+                                    let item = {};
+                                    Object.defineProperty(item,
+                                      'name', {
+                                       value: 'Schrödinger programmiert Java'
+                                      }
+                                    );
+                                ]]>
+                            </code-block>
+
+                            <code-block lang="javascript">
+                                <![CDATA[
+                                    let item = {};
+                                    Object.defineProperties(item, {
+                                      name: {
+                                        value: 'Schrödinger programmiert Java'
+                                      },
+                                      // ...
+                                    });
+                                ]]>
+                            </code-block>
+                        </td>
+                        <td>
+                            <p>
+                                Seit ECMAScript 5 stellt JavaScript für das Definieren von Objekteigenschafen und
+                                Objektmethoden zwei Helfermethoden zur Verfügung: über die
+                                <code>Object.defineProperty()</code> lässt sich eine einzelne neue Eigenschaft (bzw.
+                                Methode) definieren, über <code>Object.defineProperties()</code> direkt mehrere auf
+                                einen Schlag.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Überprüfen
+                        </td>
+                        <td>
+                            <code-block lang="javascript">
+                                <![CDATA[
+                                    'price' in item;
+                                ]]>
+                            </code-block>
+                        </td>
+                        <td>
+                            <p>
+                                Mit dem <code>in</code>-Operator kann überprüft werden, ob ein Objekt über eine gewisse
+                                Eigenschaft oder Methode verfügt. Er gibt <code>true</code> zurück, falls die
+                                Eigenschaft, die als erster Operand übergeben wird, in dem als zweiten Operanden
+                                übergebenen Objekt existiert.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Löschen
+                        </td>
+                        <td>
+                            <code-block lang="javascript">
+                                <![CDATA[
+                                    delete item.price;
+                                ]]>
+                            </code-block>
+                        </td>
+                        <td>
+                            <p>
+                                Objekteigenschaften und Objektmethoden werden mit dem <code>delete</code>-Operator, dem
+                                als Operanden die zu entfernende Objekteigenschaft übergeben wird, gelöscht. Das
+                                Verwenden des <code>delete</code>-Operators ist übrigens nicht gleichzusetzen mit dem
+                                Zuweisen des <code>null</code>-Wertes oder des <code>undefined</code>-Wertes einer
+                                Objekteigenschaft. Letzteres sorgt lediglich dafür, dass die Eigenschaft den Wert
+                                <code>null</code> oder <code>undefined</code> erhält, nicht aber die Eigenschaft aus
+                                dem Objekt entfernt wird.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
             </chapter>
 
             <chapter id="grundlagen-eigenschaften-methoden-ausgeben"
                      title="Objekteigenschaften und Objektmethoden ausgeben">
+                <p>
+                    Werden die Eigenschaftsnamen und Methodennamen eines Objekts oder deren Werte als Array benötigt
+                    sollte man zu den Helfermethoden <code>Object.keys()</code>, <code>Object.values()</code> oder
+                    <code>Object.entries()</code> greifen. Soll hingegen einmalig über die Namen iteriert werden, ist es
+                    besser die <code>for-in</code>-Schleife zu verwenden.
+                </p>
+
+                <p>
+                    Erwähnenswert ist, dass die <code>for-in</code>-Schleife auch über(aufzählbare) Eigenschaften und
+                    Methoden der Prototypen eines Objekts iteriert, während die Methode <code>Object.keys()</code> nur
+                    die Namen der (aufzählbaren) Eigenschaften und Methoden zurückgibt, die an der jeweiligen
+                    Objektinstanz selbst definiert wurden.
+                </p>
 
                 <chapter id="grundlagen-eigenschaften-methoden-ausgeben-for-in" title="Die for-in-Schleife">
+                    <p>
+                        Mithilfe der <code>for-in</code>-Schleife lässt sich über all aufzählbaren Eigenschaften und
+                        Methoden eines Objekts iterieren (also über solche, deren Eigenschaftsattribut
+                        <code>enumerable</code> den Wert <code>true</code> hat). In jeder Iteration der
+                        <code>for-in</code>-Schleife wird hier der Variablen <code>property</code> jeweils der
+                        entsprechende Namen der Eigenschaft bzw. Methode des Objekts item zugewiesen. Über die
+                        Klammerschreibweise ist es dann beispielsweise möglich, auf die jeweiligen Werte der
+                        Eigenschaften zuzugreifen (über die Punktschreibweise wäre dies beispielweise nicht möglich.
+                    </p>
 
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let item = {
+                              name: 'Schrödinger programmiert Java',
+                              price: 44.90,
+                              author: 'Philip Ackermann',
+                              isbn: '978-3-8362-4583-8',
+                              printDescription: function() {
+                                console.log(this.author + ': ' + this.name);
+                              }
+                            }
+
+                            for(let property in item) {
+                              console.log('Name: ' + property);
+                              console.log('Wert: ' + item[property]);
+                            }
+                        ]]>
+                    </code-block>
                 </chapter>
 
                 <chapter id="grundlagen-eigenschaften-methoden-ausgeben-helfermethoden" title="Helfermethoden">
+                    <p>
+                        Seit ECMAScript 5 gibt es die Methode <code>Object.keys()</code>, die für ein Objekt die Namen
+                        aller (aufzählbaren) Eigenschaften und Methoden als Array zurückgibt.
+                    </p>
 
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let properties = Object.keys(item);
+                            for(let i=0; i<properties.length; i++) {
+                              let property = properties[i];
+                              console.log('Name: ' + property);
+                              console.log('Wert: ' + item[property]);
+                            }
+
+                            printArray(properties);
+                            function printArray(array) {
+                              for(let i=0; i<array.length; i++) {
+                                console.log(array[i]);
+                              }
+                            }
+                        ]]>
+                    </code-block>
+
+                    <p>
+                        Seit ES2017 gibt es die Methoden <code>Object.values()</code> und <code>Object.entries()</code>.
+                        Erstere gibt die Werte aller (aufzählbaren) Eigenschaften und Methoden als Array zurück,
+                        Letztere Name-Wert-Paare aller (aufzählbaren Eigenschaften und Methoden.
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let keys = Object.keys(item);
+                            console.log(keys);
+                            // => [ 'name', 'price', 'author', 'isbn', 'printDescription' ]
+
+                            let values = Object.values(item);
+                            console.log(values);
+                            // => [ 'Schrödinger programmiert Java', 44.9, 'Philip Ackermann', '978-3-8362-4583-8', [Function: printDescription] ]
+
+                            let entries = Object.entries(item);
+                            console.log(entries);
+                            // [
+                            //   [ 'name', 'Schrödinger programmiert Java' ],
+                            //   [ 'price', 44.9 ],
+                            //   [ 'author', 'Philip Ackermann' ],
+                            //   [ 'isbn', '978-3-8362-4583-8' ],
+                            //   [ 'printDescription', [Function: printDescription] ]
+                            // ]
+                        ]]>
+                    </code-block>
                 </chapter>
             </chapter>
         </chapter>
 
         <chapter id="grundlagen-aenderung-verhindern" title="Änderung an Objekten verhindern">
+            <p>
+                In einigen Fällen kann es sinnvoll sein, Objekte vor Änderungen zu schützen, sprich zu verhindern, dass
+                einem Objekt neue Eigenschaften oder Methoden hinzugefügt werden. JavaScript bietet dazu drei
+                verschiedene Möglichkeiten an.
+            </p>
+
+            <img alt="Änderung an Objekten verhindern" src="js-sprachkern-oop-aenderung-an-objekten-verhindern.png"/>
 
             <chapter id="grundlagen-aenderung-verhindern-prevent-extensions" title="Erweiterung an Objekten verhindern">
+                <p>
+                    Übergibt man der Methode <code>Object.preventExtensions()</code> ein Objekt, so kann man
+                    anschließend keine Erweiterungen am jeweiligen Objekt vornehmen. Versucht man dies dennoch, kommt es
+                    zu einem Fehler. Immer noch erlaubt bleibt jedoch das Ändern der Eigenschaftswerte und
+                    Eigenschaftsattribute.
+                </p>
 
+                <p>
+                    Mit der Methode <code>Object.isExtenible()</code> kann man überprüfen, ob das übergebene Objekt
+                    erweiterbar ist.
+                </p>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let max = {
+                          firstName: 'Max',
+                          lastName: 'Mustermann'
+                        }
+
+                        console.log(Object.isExtensible(max));    // => true
+                        Object.preventExtensions(max);
+                        console.log(Object.isExtensible(max));    // => false
+                        max.weight = 88; // => TypeError: Can't add property weight, object is not extensible
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="grundlagen-aenderung-verhindern-seal" title="Objekte versiegeln">
-
+                <p>
+                    Mit der Methode <code>Object.seal()</code> lässt sich das übergebene Objekt versiegeln. Versigelte
+                    Objekte sind nicht erweiterbar, zusätzlich aber auch ihre bestehenden Eigenschaften nicht
+                    konfigurierbar – nur die Werte der Eigenschaften lassen sich ändern. Ob ein Objekt versigelt ist
+                    lässt sich mit <code>Object.isSealed()</code> überprüfen. Da versiegelte Objekte zugleich nicht
+                    erweiterbar sind, liefert die Methode <code>Object.isExtensible()</code> bei einem versigelten
+                    Objekt den Wert <code>false</code> zurück.
+                </p>
             </chapter>
 
             <chapter id="grundlagen-aenderung-verhindern-freeze" title="Objekte einfrieren">
-
+                <p>
+                    Mit der Methode <code>Object.freeze()</code> lässt sich das übergebene Objekt einfrieren. Bei
+                    eingefrorenen Objekten lassen sich nur mehr die Objekteigenschaften und Objektmethoden abrufen. Es
+                    können keine neuen Eigenschaften und Methoden hinzugefügt werden, die Eigenschaftsattribute sowie
+                    die Eigenschaftswerte können auch nicht verändert werden. Über die Methode
+                    <code>Object.isFrozen()</code> lässt sich ermitteln, ob ein Objekt eingefroren ist. Der Aufruf von
+                    <code>Object.isExtensible()</code> gibt für das eingefrorene Objekt den Wert <code>false</code>
+                    zurück, der Aufruf von <code>Object.isSealed()</code> den Wert <code>true</code>, weil eingefrorene
+                    Objekte immer auch versiegelt sind und nicht erweiterbar.
+                </p>
             </chapter>
         </chapter>
     </chapter>
