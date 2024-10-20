@@ -1359,18 +1359,137 @@
     </chapter>
 
     <chapter id="symbol" title="ES2015 – Symbole">
+        <p>
+            Symbole sind eine neue Art von primitivem Datentyp und können z.B. dazu verwendet werden, eindeutige Namen
+            für Objekteigenschaften zu definieren. Objekteigenschaften, die per Symbol definiert werden, können
+            anschließend nur über Angabe dieses Symbols ausgelesen werden. Gegenüber der Definition von
+            Objekteigenschaften per Zeichenkette sind somit Kollisionen aufgrund von gleichen Namen ausgeschlossen.
+            Symbole werden über die Funktion <code>Symbol()</code> erstellt. Optional erwartet diese Funktion eine
+            Beschreibung des Symbols in Form einer Zeichenkette. Unabhängig davon, ob ein Symbol mit oder ohne
+            Beschreibung erzeugt wurde, und unabhängig davon, ob die Beschreibung zweier Symbole gleich ist, sind zwei
+            Symbole immer verschieden.
+        </p>
+
+        <p>
+            Ein Symbol kann übrigens nicht mit dem <code>new</code>-Operator, sprich nicht als Konstruktorfunktion,
+            aufgerufen werden.
+        </p>
+
+        <code-block lang="javascript">
+            <![CDATA[
+                let symbol1 = Symbol('exampleDescription');
+                let symbol2 = Symbol('exampleDescription');
+                console.log(symbol1 === symbol2);   // Ausgabe: false
+                console.log(typeof symbol1);        // Ausgabe: symbol
+            ]]>
+        </code-block>
 
         <chapter id="symbol-registry" title="Die Symbol-Registry">
+            <p>
+                JavaScript arbeitet intern mit sogenannten Realms
+                <a href="https://www.ecma-international.org/ecma-262/6.0/#sec-code-realms"/>. Ein Realm stellt quasi
+                einen Container für das globale Objekt dar (im Browser beispielsweise das Objekt <code>windows</code>)
+                sowie für Standardobjekte wie <code>Array</code>, <code>Function</code> und <code>Object</code>. Jedes
+                Browsertab und sogar Iframe, in dem JavaScript ausgeführt wird, hat demnach seinen eigenen Realm. Um nun
+                sicherzustellen, dass Symbole auch realm-übergreifend verwendet werden können, stellt JavaScript eine
+                sogenannte Symbol-Registry zur Verfügung. Die Symbol-Registry kann man sich wie eine Art Verzeichnis
+                (nicht im Sinne von Ordnern, sondern im Sinne von Ablage) vorstellen, wo zu bestimmten Schlüsseln
+                Symbole abgelegt werden können und über die Schlüssel wieder auf die Symbole zugegriffen werden kann.
+                Insofern könnte auch die Datenstruktur Map als Analogie herhalten. Für den Zugriff auf die
+                Symbol-Registry stehen zwei Methoden zur Verfügung:
+            </p>
 
+            <list type="bullet">
+                <li>
+                    Die Methode <code>Symbol.for()</code> prüft, ob es für den ihr als Parameter übergebenen Schlüssel
+                    ein Symbol in der Registry gibt und liefert dieses – falls eines gefunden wurde – zurück. Wurde kein
+                    Symbol gefunden, wird ein neues Symbol unter dem angegebenen Schlüssel in der Registry erstellt und
+                    zurückgegeben.
+                </li>
+                <li>
+                    Die Methode <code>Symbol.keyFor()</code> liefert dagegen für ein Symbol – falls dieses in der
+                    Registry vorhanden ist – den entsprechenden Schlüssel zurück. Für Variablen, die auf das gleiche
+                    Symbol innerhalb der Registry zeigen, liefert der direkte Vergleich über den strikten
+                    Gleichheitsoperator natürlich <code>true</code> zurück.
+                </li>
+            </list>
+
+            <img alt="Die Symbol-Registry" src="js-professional-symbol-registry.png"/>
         </chapter>
 
         <chapter id="symbol-objekteigenschaften"
                  title="Symbole zur Definition eindeutiger Objekteigenschaften verwenden">
+            <p>
+                Folgendes Beispiel zeigt die Anwendung von Symbolen, um eindeutige Objekteigenschaften zu definieren.
+                Das Symbol name wird hier als Eigenschaft für das Objekt person verwendet. Anschließend kann nur unter
+                Verwendung dieses Symbols auf den Wert der Eigenschaft zugegriffen werden, sowohl der Zugriff über den
+                Index als auch der Zugriff über die Eigenschaftsnamen selbst schlagen fehl. Bei der Verwendung von
+                Zeichenketten als Eigenschaftsnamen kann – wenn auch nicht über den Index – doch über den Namen der
+                Eigenschaft zugegriffen werden.
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    let name = Symbol('name');
+                    let person = {};
+                    person[name] = 'Max';
+                    console.log(person[name]);    // "Max Mustermann"
+                    console.log(person[0]);       // undefined
+                    console.log(person.name);     // undefined
+                    console.log(person['name']);  // undefined
+                ]]>
+            </code-block>
+
+            <note>
+                <p>
+                    <b>
+                        »Symbol.iterator«
+                    </b>
+                </p>
+
+                <p>
+                    Ein Beispiel für die Verwendung von Symbolen zur Definition von Objekteigenschaften ist das in
+                    diesem Kapitel schon gezeigte Symbol <code>Symbol.iterator</code>, welches innerhalb von
+                    iterierbaren Objekten die Methode definiert, die den Iterator für das Objekt zurückgibt.
+                </p>
+            </note>
         </chapter>
 
         <chapter id="symbol-konstanten" title="Symbole zur Definition von Konstanten verwenden">
+            <p>
+                Ein weiterer Anwendungsfall für die Verwendung von Symbolen ist die Definition von eindeutigen
+                Konstanten. Der Vorteil gegenüber der Verwendung von Zeichenketten als Werten von Konstanten ist auch
+                hier die durch die Symbole gegebene Eindeutigkeit.
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    const FORMAT_LP = Symbol('Musik auf LP');
+                    const FORMAT_EP = Symbol('Musik auf EP');
+                    const FORMAT_CD = Symbol('Musik auf CD');
+                    const FORMAT_FILE = Symbol('Musik als Datei');
+
+                    function setFormat(format) {
+                      switch(format) {
+                        case FORMAT_FILE:
+                          console.log('Buuuuh');
+                          break;
+                        case FORMAT_CD:
+                          console.log('Schon besser.');
+                          break;
+                        case FORMAT_EP:
+                        case FORMAT_LP:
+                          console.log('Viel besser!!!!!');
+                          break;
+                      }
+                    }
+
+                    setFormat(FORMAT_FILE);      // "Buuuuh"
+                    setFormat(FORMAT_CD);        // "Schon besser."
+                    setFormat(FORMAT_EP);        // "Viel besser!!!!!"
+                    setFormat(FORMAT_LP);        // "Viel besser!!!!!"
+                ]]>
+            </code-block>
         </chapter>
     </chapter>
 
