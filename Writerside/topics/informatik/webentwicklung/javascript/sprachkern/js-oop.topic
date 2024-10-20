@@ -931,24 +931,749 @@
     </chapter>
 
     <chapter id="prinzipien" title="Prinzipien der Objektorientierung">
+        <p>
+            Die Tatsache allein allerdings, dass man mit Objekten arbeitet, bedeutet nicht zwangsläufig, dass man auch
+            objektorientiert arbeitet. Vielmehr liegen der objektorientierten Programmierung vier wesentliche Prinzipien
+            zugrunde:
+        </p>
+
+        <list>
+            <li>
+                <b>Abstraktion:</b> Abstraktes Verhalten von Objekten wird in Klassen oder Prototypen zusammengefasst.
+                Mehr dazu unter
+                <a href="swe-pk-paradigmen-oop.topic#konzepte-abstraktion-generalisierung">
+                    Abstraktion &amp; Generalisierung / Spezialisierung
+                </a>.
+            </li>
+            <li>
+                <b>Datenkapselung:</b> Eigenschaften und Methoden werden in Form von Klassen oder Prototypen gekapselt
+                und vor dem Zugriff von außen verborgen. Mehr dazu unter <a href="">Kapselung</a> und
+                <a href="swe-pk-paradigmen-oop.topic#konzepte-sichtbarkeit">Geheimprinzip / Sichtbarkeit</a>
+            </li>
+            <li>
+                <b>Vererbung:</b> Eigenschaften und Methoden können von einer Klasse an eine andere Klasse oder von
+                einem Objekt (dem Prototyp) an ein anderes Objekt vererbt werden. Mehr dazu unter
+                <a href="swe-pk-paradigmen-oop.topic#konzepte-vererbung">Vererbung</a>
+            </li>
+            <li>
+                <b>Polymorphie:</b> Objekte können abhängig von ihrer Verwendung unterschiedliche Typen annehmen. Mehr
+                dazu unter
+                <a href="swe-pk-paradigmen-oop.topic#konzepte-polymorphismus">Polymorphismus</a>
+            </li>
+        </list>
+
+        <p>
+            JavaScript verhält sich bezüglich der objektorientierten Programmierung nicht so eindeutig wie andere
+            Sprachen (beispielsweise Java). Vielmehr gibt es in JavaScript verschiedene Techniken, um objektorientiert
+            zu programmieren. Prinzipiell unterscheidet man dabei zwischen folgenden Techniken:
+        </p>
+
+        <list>
+            <li>
+                <b>Prototypische Objektorientierung</b> – dies ist die Art der Objektorientierung, die der Sprache
+                JavaScript am natürlichsten ist, weil hierbei lediglich Objekte zum Einsatz kommen.
+            </li>
+            <li>
+                <b>Pseudoklassische Objektorientierung</b> – hierbei handelt es sich um eine Art der Objektorientierung,
+                bei der man so tut, als wäre JavaScript eine klassenbasierte Programmiersprache. Zum Einsatz kommen
+                hierbei Konstruktorfunktionen.
+            </li>
+            <li>
+                <b>Objektorientierung mit Klassensyntax</b> – diese Art der Objektorientierung stellt eine syntaktische
+                Vereinfachung der pseudoklassischen Objektorientierung dar.
+            </li>
+        </list>
+
+        <p>
+            Die Art der Objektorientierung hat je nach Art der Programmiersprache ebenfalls unterschiedliche
+            Bezeichnungen: In der klassenbasierten Programmierung spricht man von klassenbasierter Objektorientierung,
+            in der objektbasierten bzw. prototypenbasierten Programmierung spricht man von prototypischer
+            Objektorientierung. Ein Beispiel für eine klassenbasierte Programmiersprache ist die Programmiersprache
+            Java. JavaScript dagegen ist, wohlgemerkt, <b>keine klassenbasierte Programmiersprache</b>, auch wenn es
+            seit ES6/ES2015 eine Klassensyntax gibt. JavaScript ist vielmehr eine <b>objektbasierte
+            Programmiersprache</b>: Objektinstanzen werden hier nicht auf Basis von Klassen, sondern auf Basis von
+            anderen Objekten erstellt. Diese anderen Objekte stellen dann den sogenannten Prototyp dar.
+        </p>
 
         <chapter id="prinzipien-prototypen" title="Prototypische Objektorientierung">
+            <p>
+                JavaScript ist eine prototypenbasierte Sprache, kennt also keine Klassen, zumindest keine echten. Alles
+                in JavaScript basiert dagegen auf Objekten. Jedes Objekt in JavaScript basiert auf einem Prototyp.
+                Zumindest fast jedes Objekt, denn einige Objekte wie beispielsweise die Mutter aller Objekte
+                <code>Object</code> oder Objekte, deren Prototyp explizit auf <code>null</code> gesetzt wurde, haben
+                keinen Prototyp. Jedes Objekt kann zudem selbst als Vorlage, also als Prototyp für ein anderes Objekt
+                herhalten. In diesem Fall erbt das neue Objekt die Eigenschaften und Methoden vom Prototyp. Übersetzt in
+                die klassenbasierte Programmierung entspricht das also in etwa dem Erstellen einer Unterklasse.
+            </p>
+
+            <p>
+                Bei der prototypischen Vererbung erben nicht Klassen von Klassen, sondern Objekte von Objekten.
+            </p>
+
+            <p>
+                Der Prototyp eines Objekts ist in der Eigenschaft <code>__proto__</code> hinterlegt. Erstmals
+                implementiert wurde diese Eigenschaft im Firefox-Browser als Alias zu der internen Eigenschaft
+                <code>[[Prototype]]</code> und seitdem von fast allen Browsern bzw. Laufzeitumgebungen übernommen.
+                Fest in den ECMAScript-Standard übernommen wurde die Eigenschaft aber erst mit der Version 6. Statt
+                jedoch direkt auf die Eigenschaft zuzugreifen, ist es üblich und empfehlenswert, den Prototyp eines
+                Objekts über die Methode <code>Object.getPrototypeOf()</code> zu ermitteln. Außerdem ist es möglich, mit
+                <code>Object.isPrototypeOf()</code> zu überprüfen, ob ein Objekt der Prototyp eines anderen Objekts ist.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    let animal = {
+                      name: '',  color: 'Braun',  age: 0,
+                      eat: function(food) { /* ... */ },
+                      drink: function(drink) { /* ... */ }
+                    }
+                    let cat = Object.create(animal);
+                    let dog = Object.create(animal);
+                ]]>
+            </code-block>
+
+            <p>
+                Um ein Objekt auf Basis eines Prototyps zu definieren, wird die Methode <code>Object.create()</code>
+                verwendet. Zur Erinnerung: Beim Erstellen eines Objekts über die Objekt-Literal-Schreibweise kann kein
+                Prototyp angegeben werden. Die Objekte erben die Eigenschaften und Methoden des Prototyps. Das bedeutet,
+                dass die Objekte <code>cat</code> und <code>dog</code> im Beispiel beide den Wert <code>'Braun'</code>
+                für die Eigenschaft <code>color</code> haben.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    cat.meow = function() { /* ... */ }
+                ]]>
+            </code-block>
+
+            <p>
+                Es ist selbstverständlich auch möglich, dass an Objekten, die von einem Prototyp erben, zusätzliche
+                Eigenschaften und Methoden definiert werden können. Jene Methoden und Eigenschaften stehen dann
+                natürlich nur auf den jeweiligen Objekten zur Verfügung. Die Methode <code>meow()</code> aus dem
+                Beispiel kann beispielsweise nicht vom Objekt dog aufgerufen werden.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    cat.eat = function() { /* ... */ }
+                ]]>
+            </code-block>
+
+            <p>
+                Klassen bzw. im Fall der prototypischen Objektorientierung Objekte, die in der Vererbungshierarchie
+                weiter unten stehen, sind spezieller als solche, die in der Vererbungshierarchie weiter oben stehen.
+                Oder umgekehrt formuliert: Klassen/Objekte, die in der Hierarchie weiter oben stehen, sind abstrakter
+                als solche weiter unten. Spezielleres Verhalten kann dabei zum einen dadurch entstehen, dass Klassen
+                bzw. Objekten neue Methoden hinzugefügt werden, zum anderen aber auch, dass <b>geerbte Methoden
+                überschrieben</b> werden. Das bedeutet, dass dem Objekt <code>cat</code> eine Methode
+                <code>eat()</code> hinzugefügt werden kann, obwohl es diese bereits vom Prototyp <code>animal</code>
+                geerbt hat.
+            </p>
 
             <chapter id="prinzipien-prototypen-kette" title="Die Prototypkette">
+                <p>
+                    Objekte erben Eigenschaften und Methoden von ihrem Prototyp bzw. allen vorangegangenen Prototypen
+                    über die sogenannte Prototypenkette. Vom Ablauf her funktioniert das wie folgt: Wird auf eine
+                    Eigenschaft bzw. Methode eines Objekts zugegriffen, prüft der JavaScript-Interpreter zunächst, ob
+                    das entsprechende Objekt über die jeweilige Eigenschaft/Methode verfügt. Ist dies der Fall, wird die
+                    Eigenschaft/Methode verwendet, ist dies dagegen nicht der Fall, wird auf den Prototyp des Objekts
+                    (welcher ja u. a. in der <code>__proto__</code>-Eigenschaft hinterlegt ist) zugegriffen. Ist die
+                    Eigenschaft/Methode auch dort nicht vorhanden, wird im Prototyp des Prototyps geschaut usw., bis
+                    irgendwann das Basisobjekt Object erreicht wird.
+                </p>
 
+                <p>
+                    Die Prototypenkette bezeichnet also eine Kette von Objekten, die jeweils als Prototyp für die
+                    nachfolgenden Objekte in dieser Kette dienen.
+                </p>
             </chapter>
 
             <chapter id="prinzipien-prototypen-methoden" title="Methoden eines Prototypen aufrufen">
+                <p>
+                    Um eine Methode des Prototyps eines Objekts aufzurufen, muss man zunächst an den Prototyp des
+                    Objekts gelangen. Dazu hat man prinzipiell zwei Möglichkeiten: Zum einen ist der Prototyp eines
+                    Objekts ja, wie gesagt, in dessen Eigenschaft <code>__proto__</code> hinterlegt, zum anderen kann
+                    man über die Methode <code>Object.getPrototypeOf()</code> den Prototyp eines Objekts ermitteln.
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        cat.eat = function(food) {
+                          this.__proto__.eat.call(this, food);              // Methode (1)
+                          Object.getPrototypeOf(this).eat.call(this, food); // Methode (2)
+                        }
+                    ]]>
+                </code-block>
+
+                <p>
+                    In beiden Fällen wird zunächst über genannte Wege auf den Prototyp des aktuellen Objekts
+                    zugegriffen, dann auf die Methode <code>eat()</code> und auf dieser wiederum die Methode
+                    <code>call()</code> aufgerufen. Diese Methode, die standardmäßig für alle Funktionen bzw.
+                    Methoden zur Verfügung steht, macht nichts anderes, als die jeweilige Funktion/Methode in einem
+                    bestimmten Kontext auszuführen. Diesen Ausführungskontext übergibt man ihr dabei als ersten
+                    Parameter, optional können, wie im Beispiel gezeigt, weitere Parameter übergeben werden, mit denen
+                    die ursprüngliche Funktion/Methode aufgerufen werden soll.
+                </p>
             </chapter>
         </chapter>
 
         <chapter id="prinzipien-pseudoklassisch" title="Pseudoklassische Objektorientierung">
+            <p>
+                Im Gegensatz zur prototypischen Objektorientierung basiert die pseudoklassische Objektorientierung auf
+                dem Einsatz von Konstruktorfunktionen. Die Idee dabei ist, dass sich die objektorientierte
+                Programmierung mit JavaScript so anfühlt, als würde man klassenbasiert programmieren.
+            </p>
 
+            <table style="none">
+                <tr>
+                    <td>
+                        <p>
+                            <b>
+                                Konstruktor Funktion definieren
+                            </b>
+                        </p>
+
+                        <p>
+                            Innerhalb einer Konstruktorfunktion bezieht sich dann das Schlüsselwort <code>this</code>
+                            auf das Objekt, welches durch den Aufruf der Konstruktorfunktion erzeugt wird.
+                        </p>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                function Animal(name, color, age) {
+                                  this.name = name;
+                                  this.color = color;
+                                  this.age = age;
+                                };
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <b>
+                                Objektinstanzen erzeugen
+                            </b>
+                        </p>
+
+                        <p>
+                            Um unter Verwendung einer Konstruktorfunktion eine neue Objektinstanz zu erzeugen, ruft man
+                            die Konstruktorfunktion mit dem Schlüsselwort <code>new</code> auf.
+                        </p>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                let fish = new Animal('Fischi', 'Grün', 2);
+                                console.log(fish.name); // => "Fischi"
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <b>
+                                Methoden definieren
+                            </b>
+                        </p>
+
+                        <p>
+                            Um Methoden zu erstellen, die allen Objektinstanzen, die mithilfe einer Konstruktorfunktion
+                            erstellt werden, gemeinsam sind, definiert man diese an dem Objekt, welches den durch die
+                            Konstruktorfunktion erzeugten Objektinstanzen als Prototyp dient. Dieses Objekt ist in der
+                            Eigenschaft <code>prototype</code> der entsprechenden Konstruktorfunktion hinterlegt.
+                        </p>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                Animal.prototype.eat = function(food) {
+                                  console.log('Mmpf mmpf, ' + food + '!');
+                                }
+                                Animal.prototype.drink = function(drink) {
+                                  console.log('Mmmmmmh, ' + drink + '!');
+                                }
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <b>
+                                Von Objekten ableiten
+                            </b>
+                        </p>
+
+                        <img alt="Von Objekten ableiten" src="js-sprachkern-oop-von-objekten-ableiten.png"/>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                function Dog(name, color, age, type) {
+                                  Animal.call(this, name, color, age);
+                                  this.type = type;
+                                };
+                                Dog.prototype = new Animal();
+                                Dog.prototype.constructor = Dog;
+                                Dog.prototype.bark = function() {
+                                  console.log('Wuff wuff');
+                                }
+                                let bello = new Dog('Bello', 'Weiß', 2, 'Malteser');
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <b>
+                                Konstruktor der »Oberklasse« aufrufen
+                            </b>
+                        </p>
+
+                        <p>
+                            Um den Konstruktor einer »Oberklasse« aufzurufen, muss lediglich die entsprechende
+                            Konstruktorfunktion über die Methode <code>call()</code> aufgerufen und dabei
+                            <code>this</code> als Ausführungskontext sowie optional weitere Parameter übergeben werden.
+                        </p>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                function Dog(name, color, age, type) {
+                                  Animal.call(this, name, color, age);  this.type = type;
+                                };
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <b>
+                                Methoden überschreiben
+                            </b>
+                        </p>
+
+                        <p>
+                            Um eine Methode in einer »Unterklasse« zu überschreiben, definieren Sie die entsprechende
+                            Methode einfach am Prototyp, die der entsprechenden Konstruktorfunktion der »Unterklasse«
+                            zugrunde liegt.
+                        </p>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                function VegetarianDog(name, color, age, type) {
+                                  Dog.call(this, name, color, age, type);
+                                };
+                                VegetarianDog.prototype.eat = function(food) {
+                                  /* ... */
+                                }
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <b>
+                                Methoden der »Oberklasse« aufrufen
+                            </b>
+                        </p>
+
+                        <p>
+                            Der Aufruf einer Methode der »Oberklasse« funktioniert wie schon der Aufruf von
+                            Konstruktoren unter Verwendung der Methode <code>call()</code>.
+                        </p>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                VegetarianDog.prototype.eat = function(food) {
+                                  Dog.prototype.eat.call(this, food);
+                                }
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter id="prinzipien-klassensyntax" title="Objektorientierung mit Klassensyntax">
+            <p>
+                Seit ES6/ES2015 hat auch eine neue Klassensyntax in den ECMAScript-Standard Einzug gehalten. Diese
+                Klassensyntax ermöglicht zwar keine echte klassenbasierte Programmierung, fühlt sich aber u.a. aufgrund
+                der verwendeten Schlüsselwörter und Syntax relativ ähnlich an. Eigentlich wird durch die Klassensyntax
+                aber lediglich etwas von der Komplexität der pseudoklassischen Objektorientierung genommen, weil im
+                Hintergrund nach wie vor Objekte und Prototypen werkeln.
+            </p>
 
+            <table>
+                <tr>
+                    <td>
+                        <p>
+                            <b>
+                                Klassen definieren
+                            </b>
+                        </p>
+
+                        <p>
+                            Um in JavaScript eine »Klasse« zu definieren, wird das Schlüsselwort class verwendet. Hinter
+                            dieses Schlüsselwort wird der Namen der Klasse, gefolgt von einem Paar geschweifter
+                            Klammern, die den Körper der Klasse (den Klassenkörper) definieren geschrieben. Innerhalb
+                            dieses Klassenkörpers können anschließend die Methoden der Klasse definiert werden
+                            (Eigenschaften dagegen können an dieser Stelle nicht angegeben werden).
+                        </p>
+
+                        <p>
+                            Die Methode mit dem Namen <code>constructor()</code> entspricht dem Konstruktor der
+                            jeweiligen Klasse und wird immer dann aufgerufen, wenn ein Objekt der Klasse mit dem
+                            Schlüsselwort <code>new</code> instanziiert wird. Zurückgeliefert wird von
+                            <code>constructor()</code> nämlich implizit eine neue Objektinstanz. Innerhalb der
+                            Methode <code>constructor()</code> kann über das Schlüsselwort <code>this</code> auf
+                            diese Objektinstanz zugegriffen werden. Das ist wiederum dann auch die Stelle, an der
+                            Eigenschaften definiert werden können.
+                        </p>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                class Animal {
+                                  constructor(name, color, age) {
+                                    this.name = name;
+                                    this.color = color;
+                                    this.age = age;
+                                  }
+                                  eat(food) { /* ... */  }
+                                  drink(drink) { /* ... */ }
+                                  toString() { /* ... */ }
+                                }
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <b>
+                                Objektinstanzen erzeugen
+                            </b>
+                        </p>
+
+                        <p>
+                            Um eine Objektinstanz einer »Klasse« zu erzeugen, wird das Schlüsselwort <code>new</code>
+                            verwendet.
+                        </p>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                let fish = new Animal('Fischi', 'Grün', 2);
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <b>
+                                Getter und Setter definieren
+                            </b>
+                        </p>
+
+                        <p>
+                            Über die Schlüsselwörter <code>get</code> und <code>set</code> können Getter- und
+                            Setter-Methoden an Objekten definiert werden. Die gleichen Schlüsselwörter können auch in
+                            Kombination mit »Klassen« verwendet werden, um dort Getter und Setter zu definieren.
+                        </p>
+
+                        <list>
+                            <li>
+                                Getter-Methoden können keine Argumente annehmen!
+                            </li>
+                            <li>
+                                Setter-Methoden können nur ein Argument annehmen!
+                            </li>
+                            <li>
+                                Getter- und Setter-Methoden werden nicht wie normale Funktionen aufgerufen, sondern wie
+                                eine Wertzuweisung einer Eigenschaft einer Variable (setter) oder als Variable (getter).
+                            </li>
+                        </list>
+
+                        <p>
+                            Zu beachten ist außerdem, dass der Name der jeweiligen Getter- bzw. Setter-Methode nicht
+                            gleich der entsprechenden Eigenschaft ist, um eine Endlosrekursion, einen damit verbundenen
+                            Stacküberlauf und damit den Absturz des jeweiligen Programms zu verhindern.
+                        </p>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                class Animal {
+                                  constructor(name, color, age) {
+                                    this.name = name;
+                                    this.color = color;
+                                    this.age = age;
+                                  }
+                                  eat(food) { /* ... */  }
+                                  drink(drink) { /* ... */ }
+                                  toString() { /* ... */ }
+                                  get name() { return this._name; }
+                                  set name(name) { this._name = name; }
+                                  /* ... */
+                                }
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <b>
+                                Von »Klassen« ableiten
+                            </b>
+                        </p>
+
+                        <p>
+                            Über das Schlüsselwort <code>extends</code> ist es möglich, dass eine »Klasse« von einer
+                            anderen »Klasse« erbt bzw. ableitet. Das Schlüsselwort schreibt man dabei einfach hinter die
+                            (neue) »Klasse«, die erben soll, dem Schlüsselwort folgt dann der Name der »Klasse«, von der
+                            geerbt werden soll. Die Klasse von der geerbt werden soll, muss nicht zwingend mit der
+                            Klassensyntax geschrieben worden sein es muss sich nur um ein Objekt handeln.
+                        </p>
+
+                        <p>
+                            Innerhalb des Konstruktors der ableitenden »Klasse« kann per <code>super()</code> der
+                            Konstruktor der »Oberklasse« (der Elternkonstruktor) aufgerufen werden. Es ist übrigens sehr
+                            wichtig, dies zu tun, bevor innerhalb des Konstruktors auf <code>this</code> zugegriffen
+                            wird. Ansonsten kommt es zu einem Fehler. Das Gleiche gilt, wenn man innerhalb eines
+                            Konstruktors den Aufruf des Elternkonstruktors ganz weglässt. Es ist allerdings möglich, den
+                            Konstruktor einer »Klasse«, sprich die <code>constructor()</code>-Methode, ganz wegzulassen.
+                            In diesem Fall wird intern implizit ein Konstruktor verwendet, der alle Parameter an den
+                            Elternkonstruktor weiterleitet.
+                        </p>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                class Dog extends Animal {
+                                  constructor(name, color, age, type) {
+                                    super(name, color, age);
+                                    this.type = type;
+                                  }
+                                  get type() { return this._type; }
+                                  set type(type) { this._type = type; }
+                                  bark() { /* ... */ }
+                                }
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <b>
+                                Methoden überschreiben
+                            </b>
+                        </p>
+
+                        <p>
+                            Um eine Methode in einer »Unterklasse« zu überschreiben, definiert man einfach eine
+                            entsprechende Methode mit gleichem Namen wie die zu überschreibende Methode.
+                        </p>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                class Dog extends Animal {
+                                  constructor(name, color, age, type) {
+                                    super(name, color, age);
+                                    this.type = type;
+                                  }
+                                  get type() { return this._type; }
+                                  set type(type) { this._type = type; }
+                                  eat(food) { /* ... */ }
+                                  bark() { /* ... */ }
+                                }
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <b>
+                                Methoden der »Oberklasse« aufrufen
+                            </b>
+                        </p>
+
+                        <p>
+                            Möchte man innerhalb einer Methode eine andere Methode der gleichen »Klasse« aufrufen, kann
+                            man dies über die Verwendung des Schlüsselwortes <code>this</code> erreichen. Soll dagegen
+                            innerhalb einer Methode gezielt eine Methode der »Oberklasse« aufgerufen werden, kann das
+                            Schlüsselwort super verwendet werden, welches sozusagen eine Referenz auf die »Oberklasse«
+                            darstellt.
+                        </p>
+
+                        <p>
+                            Es zwar auch per <code>this</code> auf Methoden der »Oberklasse« zugegriffen werden, aber
+                            nur, wenn es die jeweilige Methode nicht in der »Unterklasse« gibt. Ist dies dagegen nicht
+                            der Fall, wird bei Zugriff per <code>this</code> die Methode der »Unterklasse« verwendet.
+                        </p>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                class Dog extends Animal {
+                                  constructor(name, color, age, type) {
+                                    super(name, color, age);
+                                    this.type = type;
+                                  }
+                                  get type() { return this._type; }
+                                  set type(type) { this._type = type; }
+                                  eat(food) { return super.eat(food); }
+                                  bark() { /* ... */ }
+                                }
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <b>
+                                Statische Methoden definieren
+                            </b>
+                        </p>
+
+                        <p>
+                            Statische Methoden bezeichnen in der objektorientierten Programmierung solche Methoden, die
+                            man direkt auf der Klasse aufruft und nicht auf einer Objektinstanz. Statische Methoden
+                            eignen sich immer dann, wenn damit Funktionalität bereitgestellt werden soll, die thematisch
+                            zu der jeweiligen Klasse gehört, aber nicht zwangsweise eine Objektinstanz voraussetzt. In
+                            der Klassensyntax wird in JavaScript eine Methode als statisch definiert, indem ihr das
+                            Schlüsselwort <code>static</code> vorangestellt wird. Anschließend kann die Methode direkt
+                            über die »Klasse« aufgerufen werden.
+                        </p>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                class Animal {
+                                  /* ... */
+                                  static getAnimalColors() {
+                                    return {
+                                      WHITE: 'Weiß',
+                                      BLACK: 'Schwarz',
+                                      BROWN: 'Braun',
+                                      GREEN: 'Grün',
+                                      YELLOW: 'Gelb',
+                                      ORANGE: 'Orange'
+                                    }
+                                  }
+                                  /* ... */
+                                }
+                                let bird = new Animal('Birdie', Animal.getAnimalColors().BLACK, 5);
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <b>
+                                Statische Eigenschaften definieren
+                            </b>
+                        </p>
+
+                        <p>
+                            Neben statischen Methoden gibt es in der Objektorientierung auch das Konzept der statischen
+                            Eigenschaften. Analog zu statischen Methoden werden statische Eigenschaften direkt auf einer
+                            Klasse definiert, und man benötigt keine Objektinstanz, um auf diese Eigenschaften
+                            zuzugreifen.
+                        </p>
+
+                        <p>
+                            In der Klassensyntax in JavaScript war es bis ES2022 nicht möglich, statische Eigenschaften
+                            explizit innerhalb des Klassenkörpers zu definieren (es war auch noch nicht mal möglich,
+                            überhaupt Eigenschaften auf die gleiche Weise wie Methoden direkt innerhalb des
+                            Klassenkörpers zu definieren). Stattdessen wurden statische Eigenschaften als Eigenschaften
+                            der »Klasse« definiert. Eine gebräuchliche Konvention ist es hierbei, die Namen der
+                            statischen Eigenschaften in Großbuchstaben zu schreiben.
+                        </p>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                Animal.ANIMAL_COLORS = {
+                                  WHITE: 'Weiß',
+                                  BLACK: 'Schwarz',
+                                  BROWN: 'Braun',
+                                  GREEN: 'Grün',
+                                  YELLOW: 'Gelb',
+                                  ORANGE: 'Orange'
+                                }
+                                let bird = new Animal('Birdie', Animal.ANIMAL_COLORS.BLACK, 5);
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <b>
+                                Eigenschaften im Klassenkörper
+                            </b>
+                        </p>
+
+                        <p>
+                            Seit einer neueren Version des EcmaScript-Standards (= EcmaScript 2022) wurde die
+                            Deklaration von Eigenschaften innerhalb des Klassenkörpers eingeführt. Diese können als
+                            <b>public</b> und <b>privat</b> deklariert werden. Eigenschaften in private werden mit
+                            dem Prefix <code>#</code> angegeben.
+                        </p>
+                    </td>
+                    <td>
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                class Vehicle {
+                                  status = "unavailable";
+                                  #longitude;
+                                  #latitude;
+                                  constructor(/*...*/) {/*...*/}
+                                  set position(/*...*/) {/*...*/}
+                                  get position() {
+                                    return {
+                                      latitude: this.#latitude;
+                                      longitude: this.#longitude;
+                                    };
+                                  };
+                                };
+                            ]]>
+                        </code-block>
+                    </td>
+                </tr>
+            </table>
+
+            <note>
+                <p>
+                    <b>
+                        Statische Methoden sind Methoden am Funktionsobjekt
+                    </b>
+                </p>
+
+                <p>
+                    Da die Klassensyntax inklusive des Schlüsselwortes <code>static</code> ja letztendlich nur eine
+                    syntaktische Verfeinerung der pseudoklassischen Objektorientierung darstellt, sind auch statische
+                    Methoden eigentlich Methoden, die an dem jeweiligen Funktionsobjekt definiert werden, und statische
+                    Eigenschaften eigentlich Eigenschaften des Funktionsobjekts.
+                </p>
+            </note>
         </chapter>
     </chapter>
 
