@@ -626,17 +626,195 @@
     </chapter>
 
     <chapter id="iteratoren" title="ES2015 – Iteratoren">
+        <img alt="ES2015 – Iteratoren" src="js-professional-iteratoren.png"/>
+
+        <p>
+            Datentypen wie <code>Map</code> und <code>Set</code> (und im übrigen auch <code>Array</code>) geben über die
+            Methoden <code>keys()</code>, <code>values()</code> und <code>entries()</code> sogenannte Iteratoren zurück,
+            die dann direkt in <code>for-of</code>-Schleifen als Eingabe verwendet werden können. Verallgemeinert
+            gesagt, abstrahieren Iteratoren die Iteration über Datenstrukturen. Vereinfacht gesagt, handelt es sich
+            dabei um Objekte, die eine Art Zeiger auf eine unterliegende Datenstruktur enthalten, der über Aufrufe der
+            Methode <code>next()</code> am Iterator verschoben werden kann. Das jeweilige Element, auf das dann der
+            Zeiger zeigt, wird dabei von <code>next()</code> zurückgegeben.
+        </p>
+
+        <code-block collapsed-title="Beispiel anhand eines Arrays" collapsible="true" lang="javascript">
+            <![CDATA[
+                'use strict';
+                let artists = [ 'Deep Purple', 'Jimi Hendrix', 'The Doors', 'King Crimson' ];
+                let iterator = artists.values();  // Erzeugen des Iterators
+                let artist = iterator.next();     // erster Wert im Iterator
+                console.log(artist);              // Ausgabe: {value: 'Deep Purple', done: false}
+                artist = iterator.next();         // weiter im Iterator
+                console.log(artist);              // Ausgabe: {value: 'Jimi Hendrix', done: false}
+                artist = iterator.next();         // weiter im Iterator
+                console.log(artist);              // Ausgabe: {value: 'The Doors', done: false}
+                artist = iterator.next();         // weiter im Iterator
+                console.log(artist);              // Ausgabe: {value: 'King Crimson', done: false}
+                artist = iterator.next();         // weiter im Iterator
+                console.log(artist);              // Ausgabe: {value: undefined, done: true}
+            ]]>
+        </code-block>
 
         <chapter id="iteratoren-erstellen" title="Einen Iterator erstellen">
+            <code-block lang="javascript">
+                <![CDATA[
+                    let artists = [ 'Deep Purple', 'Jimi Hendrix', 'The Doors', 'King Crimson' ];
+                    function createIterator(array) {
+                      let counter = array.length-1;
+                      return {
+                        next: function() {
+                          if (counter < 0) {
+                            return { value: undefined, done: true };
+                          } else {
+                            return { value: array[counter--], done: false };
+                          }
+                        }
+                      }
+                    };
+                    let iterator = createIterator(artists);
+                    let artist = iterator.next(); // erster Wert im Iterator
+                    console.log(artist);          // Ausgabe: {value: 'King Crimson', done: false}
+                ]]>
+            </code-block>
 
+            <p>
+                JavaScript bietet einem auch die Möglichkeit, eigene Iteratoren zu erstellen. Das Beispiel zeigt die
+                Implementierung eines Iterators innerhalb der Funktion <code>createIterator()</code>, der die Elemente
+                eines Arrays in umgekehrter Reihenfolge ausgibt. Die Funktion gibt das <code>Iterator</code>-Objekt
+                zurück. Dessen Methode <code>next()</code> implementiert das Iterationsverhalten: Wenn die
+                Zählervariable (bzw. Zeigervariable) <code>counter</code> größer oder gleich <code>0</code> ist, gibt
+                <code>next()</code> ein Objekt zurück, dessen <code>done</code>-Eigenschaft den Wert <code>false</code>
+                hat (weil der Iterator noch nicht am Ende bzw. in diesem Fall am Anfang des Arrays angekommen ist) und
+                dessen <code>value</code>-Eigenschaft das entsprechende Element aus dem Array enthält, auf das die
+                Zählervariable zeigt. Über den Dekrement-Operator <code>--</code> wird nach Ermitteln des jeweiligen
+                Elements dann die Zählervariable direkt um eins heruntergezählt. Hat die Zählervariable den Wert
+                <code>0</code> erreicht (d.h., der Iterator ist am Ende angekommen), gibt <code>next()</code> ein Objekt
+                zurück, dessen <code>done</code>-Eigenschaft den Wert <code>true</code> und dessen
+                <code>value</code>-Eigenschaft den Wert <code>undefined</code> hat.
+            </p>
         </chapter>
 
         <chapter id="iteratoren-objekt" title="Ein iterierbares Objekt erstellen">
+            <code-block lang="javascript">
+                <![CDATA[
+                    let artists = [ 'Deep Purple', 'Jimi Hendrix', 'The Doors', 'King Crimson'];
+                    let arrayWrapper = { array: artists };
 
+                    arrayWrapper[Symbol.iterator] = function() {
+                      let array = this.array;
+                      let counter = this.array.length-1;
+
+                      return {
+                        next: function(){
+                          if (counter < 0) {
+                            return { done: true };
+                          } else {
+                            return { value: array[counter--], done: false };
+                          }
+                        }
+                      }
+                    };
+                ]]>
+            </code-block>
+
+            <p>
+                Zunächst wird ein Objekt, welches als Container für das Array dient und das Objekt ist, welches gleich
+                iterierbar gemacht wird, erstellt. Das Einzige, was anschließend noch gemacht werden muss, ist, am
+                <code>Container</code>-Objekt die Eigenschaft <code>Symbol.iterator</code> zu definieren und als Wert
+                dabei eine Funktion anzugeben, die einen Iterator zurückgibt. Der einzige Unterschied zum Iterator ist
+                der, dass der Funktion (bzw. Methode) <code>Symbol.iterator</code> kein Parameter übergeben wird,
+                sondern innerhalb der Funktion auf das im <code>Container</code>-Objekt gespeicherte Array zugegriffen
+                wird.
+            </p>
+
+            <p>
+                In JavaScript ist ein Objekt iterierbar (engl.: <i>iterable</i>), wenn es über eine interne Methode
+                <code>Symbol.iterator</code> verfügt, die einen Iterator zurückgibt.
+            </p>
+
+            <img alt="Iterierbares Objekt" src="js-professional-iterierbares-objekt.png"/>
         </chapter>
 
         <chapter id="iteratoren-for-of" title="Über iterierbaren Objekten iterieren: »for-of«-Schleifen">
+            <p>
+                Die <code>for-of</code>-Schleife unterscheidet sich von der bereits länger zum Standard gehörenden
+                <code>for-in</code>-Schleife darin, dass sie nicht über die Namen der Objekteigenschaften iteriert,
+                sondern über die mit diesen Eigenschaften assoziierten Werte. Mit der <code>for-of</code>-Schleife kann
+                über iterierbare Objekte iteriert werden. Beispiele sind: Arrays, Maps, Sets.
+            </p>
 
+            <code-block lang="javascript">
+                <![CDATA[
+                    let numbers = [ 18, 22, 26, 30, 34 ];
+                    numbers.name = "Zahlenarray";
+
+                    for (let i in numbers) {
+                       console.log(i); // => 0, 1, 2, 3, 4, name
+                    }
+                    for (let i of numbers) {
+                       console.log(i); // => 18, 22, 26, 30, 34
+                    }
+                ]]>
+            </code-block>
+
+            <p>
+                Beispiele mit Maps:
+            </p>
+
+            <table style="header-row">
+                <tr>
+                    <td>
+                        Schleife
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            for(let i of map.keys())
+                        </code>
+                    </td>
+                    <td>
+                        Iteriert über die in der Map enthaltenen Schlüssel.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            for(let i of map.values())
+                        </code>
+                    </td>
+                    <td>
+                        Iteriert über die in der Map enthaltenen Werte.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            for(let i of map.entries())
+                        </code>
+                    </td>
+                    <td>
+                        Iteriert über die in der Map enthaltenen Einträge, wobei <code>i[0]</code> den Schlüssel und
+                        <code>i[1]</code> den Wert des Eintrages erhält.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            for(let i of map)
+                        </code>
+                    </td>
+                    <td>
+                        Da der Iterator, der von <code>entries()</code> zurückgegeben wird, auch der Iterator ist, der
+                        standardmäßig dem (iterierbaren) Objekt <code>Map</code> hinterlegt ist kann der Methodenaufruf
+                        <code>entries()</code> weggelassen werden.
+                    </td>
+                </tr>
+            </table>
         </chapter>
     </chapter>
 
