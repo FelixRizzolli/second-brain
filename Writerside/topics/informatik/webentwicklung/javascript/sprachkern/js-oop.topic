@@ -947,7 +947,8 @@
             </li>
             <li>
                 <b>Datenkapselung:</b> Eigenschaften und Methoden werden in Form von Klassen oder Prototypen gekapselt
-                und vor dem Zugriff von außen verborgen. Mehr dazu unter <a href="">Kapselung</a> und
+                und vor dem Zugriff von außen verborgen. Mehr dazu unter
+                <a href="swe-pk-paradigmen-oop.topic#konzepte-kapselung">Kapselung</a> und
                 <a href="swe-pk-paradigmen-oop.topic#konzepte-sichtbarkeit">Geheimprinzip / Sichtbarkeit</a>
             </li>
             <li>
@@ -1678,108 +1679,2172 @@
     </chapter>
 
     <chapter id="globale-objekte" title="Globale Objekte - »built-in objects«">
+        <p>
+            Der Begriff »built-in objekts« ist ein allgemein akzeptierter Begriff, der z.B. im ECMA-Script-Standard oder
+            in den MDN (Mozilla Developer Network) Web Docs verwendet wird, die wahrscheinlich die umfassendste Hilfe
+            für Webentwickler darstellen. Viele dieser Objekte, wie <code>Math</code> und <code>JSON</code>, sind
+            eigentlich ganz normale Objekte. Wir verwenden sie, indem wir den Namen des Objekts und die Methode oder
+            Eigenschaft angeben, die für dieses Objekt spezifisch sind, zum Beispiel: <code>JSON.stringify()</code>.
+        </p>
+
+        <p>
+            Allerdings sind nicht alle »built-in objekts« gewöhnliche Objekte. Es handelt sich lediglich um einen
+            Oberbegriff, unter dem sich in vielen Fällen auch eingebaute Klassen oder Funktionen wie <code>Object</code>
+            oder <code>Date</code> verbergen. In JavaScript ist alles außer Primitiven ein Objekt, einschließlich
+            Klassen und Funktionen. Daher wurde eine einheitliche Namenskonvention für alle in die Sprache eingebauten
+            Elemente (Objekte, Klassen, Funktionen, Konstruktoren) eingeführt.
+        </p>
+
+        <p>
+            Die Unterscheidung zwischen statischen und prototypischen Feldern ist für uns wichtig, da die meisten der
+            von uns behandelten eingebauten Objekte beide verwenden werden. Wenn wir diesen Unterschied nicht verstehen,
+            werden wir sowohl mit der Dokumentation, die die ausgewählten Objekte beschreibt, als auch mit deren
+            korrekter Verwendung Probleme haben.
+        </p>
+
+        <p>
+            Bei den globalen Objekten unterscheidet man zwischen Objekte primitiver Datentypen (<code>Boolean</code>,
+            <code>Number</code>, <code>String</code>, <code>Date</code>, ...); Objekte komplexer Datentypen (=
+            <code>Array</code>,<code>Set</code>, <code>Map</code>, <code>Object</code>, ...) und Objekte welche keinen
+            eigener Datentyp sind (= <code>JSON</code>, <code>Math</code>, <code>RegExp</code>, ...).
+        </p>
 
         <chapter id="globale-objekte-primitiver-datentypen" title="Objekte primitiver Datentypen">
+            <p>
+                Es gibt insgesamt sieben primitive Datentypen, von denen die wichtigsten <code>boolean</code>,
+                <code>number</code> und <code>string</code> sind. Da es sich nicht um Objekte handelt, haben sie
+                keine Methoden oder Eigenschaften. Die Daten jedes dieser Typen, die in Variablen gespeichert werden,
+                sind reine Werte, die in dem entsprechenden Format im Speicher abgelegt werden. Für jeden der primitiven
+                Datentypen gibt es in JS jedoch einen speziellen Konstruktor (den man wie eine Klasse behandeln kann):
+                <code>Boolean</code>, <code>Number</code> und <code>String</code>.
+            </p>
+
+            <p>
+                Wenn wir eine Instanz eines Strings in einer Variablen speichern, belegen sie inkomparabel mehr Speicher
+                als der primitive Wert. Wenn wir die Punktnotation für ein Primitiv verwenden, geben wir an, dass wir
+                eine Methode oder eine Eigenschaft eines primitiven Wertes (das weder eine Eigenschaft noch eine
+                Eigenschaft seiner Methoden hat) verwenden wollen, dann wandelt es die Engine direkt in das
+                entsprechende Objekt um. Das temporäre Objekt wird nur so lange im Speicher gehalten, bis der Vorgang
+                abgeschlossen ist; danach wird es von der JavaScript-Engine freigegeben. Eine solche Operation hat
+                natürlich Auswirkungen auf die Leistung der Engine, aber der auf diese Weise eingesparte Speicher ist es
+                wert. Dieses Verhalten der JavaScript-Engine wird als <b>Autoboxing</b> bezeichnet.
+            </p>
 
             <chapter id="globale-objekte-boolean" title="Boolean">
+                <p>
+                    Ein <code>Boolean</code>-Objekt hat keine statischen Eigenschaften. Es hat nur folgende Methoden:
+                </p>
 
+                <table style="header-row">
+                    <tr>
+                        <td>
+                            Methode
+                        </td>
+                        <td>
+                            Beschreibung
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                toString()
+                            </code>
+                        </td>
+                        <td>
+                            Gibt den logischen Wert des Boolean-Objekts in Form eines strings zurück.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                valueOf()
+                            </code>
+                        </td>
+                        <td>
+                            Gibt den Wert des <code>Boolean</code>-Objekts in Form eines primitiven Datentyps zurück.
+                        </td>
+                    </tr>
+                </table>
             </chapter>
 
             <chapter id="globale-objekte-number" title="Number">
+                <p>
+                    Der kleinste Wert ist <code>-(2^53-1)</code> und der größte <code>(2^53-1)</code>. Es ist zwar
+                    möglich Werte außerhalb dies Bereichs einer Variable als Datentyp <code>number</code> zuzuweisen,
+                    aber Berechnungen, welche damit erfolgen könnten, unpräzise oder gar nicht durchgeführt werden.
+                    Dafür
+                    verwendet man <code>BigInt</code>.
+                </p>
 
+                <!-- TODO: Beschreibung ergänzen -->
+                <table style="header-row">
+                    <tr>
+                        <td>
+                            Methode
+                        </td>
+                        <td>
+                            Beschreibung
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                toString()
+                            </code>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                valueOf()
+                            </code>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                toExponential(fractionDigits)
+                            </code>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                toFixed(digits)
+                            </code>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                toLocaleString(locales [, options])
+                            </code>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                </table>
             </chapter>
 
             <chapter id="globale-objekte-string" title="String">
+                <p>
+                    Zeichenketten, sogenannte Strings, sind vergleichbar mit Arrays, wobei jedes Zeichen innerhalb der
+                    Zeichenkette quasi ein Element dieses imaginären Arrays einnimmt. Das erste Zeichen steht also an
+                    Position (bzw. Index) <code>0</code>, das zweite Zeichen an Position (bzw. Index) <code>1</code>
+                    usw. Beispiel einer Zeichenkette <code>"Max Mustermann"</code>:
+                </p>
+
+                <table style="header-column">
+                    <tr>
+                        <td>
+                            Index
+                        </td>
+                        <td>
+                            <code>
+                                0
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                1
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                2
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                3
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                4
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                5
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                6
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                7
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                8
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                9
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                10
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                11
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                12
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                13
+                            </code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Wert
+                        </td>
+                        <td>
+                            <code>
+                                M
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                a
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                x
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                M
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                u
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                s
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                t
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                e
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                r
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                m
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                a
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                n
+                            </code>
+                        </td>
+                        <td>
+                            <code>
+                                n
+                            </code>
+                        </td>
+                    </tr>
+                </table>
+
+                <p>
+                    Wie bei einem Array kann auch bei einem String die länge (in diesem Fall die Anzahl der Zeichen)
+                    über die <code>length</code>-Eigenschaft ermittelt werden.
+                </p>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let nameLength = "Max Mustermann".length // => 14
+                    ]]>
+                </code-block>
 
                 <chapter id="globale-objekte-string-verkettung" title="Verkettung von Strings">
+                    <p>
+                        In JavaScript ist das Zeichen <code>+</code> doppelt belegt. Für Zahlen (Datentyp:
+                        <code>number</code>) dient es als Additionsoperator und bei Strings als Verkettungsoperator.
+                    </p>
 
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let name = "Felix";
+                            console.log("Hi " + name + "!");
+                        ]]>
+                    </code-block>
                 </chapter>
 
                 <chapter id="globale-objekte-string-template" title="Template Strings">
+                    <p>
+                        Als Alternative zum Verkettungsoperator können Variablen direkt innerhalb von Strings angegeben
+                        werden. Die sogenannte Template String Substitution erspart das Hantieren mit Anführungszeichen
+                        und dem Verkettungsoperartor. Um eine Variable im Template String zu kennzeichnen, wird die
+                        Variable innerhalb von geschwungenen Klammern gesetzt wovor noch ein Dollarzeichen gesetzt wird:
+                        <code>${name}</code>. Damit JS erkennt, dass es sich um einen Template String handelt wird der
+                        String nicht mit normalen Anführungszeichen, sondern mit sogenannten Backticks gekennzeichnet.
+                    </p>
 
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let name = prompt("Bitte gib deinen Namen ein!");
+                            console.log('Hi ${name}!');
+                        ]]>
+                    </code-block>
                 </chapter>
 
                 <chapter id="globale-objekte-string-backslash-und-zeilenumbrueche" title="Backslash und Zeilenumbrüche">
-
+                    <p>
+                        Mit Backslash + n = <code>\n</code> erzeugt man einen Zeilenumbruch innerhalb eines Strings. Es
+                        besteht aber auch die Möglichkeit, dass \n innerhalb eines Textes vorkommt (z.B. Pfadangabe)
+                        wobei dann in dem Fall eine neue Zeile erzeugt wird. Um das zu verhindern setzt man vor dem
+                        Backslash einen weiteren Backslash.
+                    </p>
                 </chapter>
 
                 <chapter id="globale-objekte-string-methoden" title="Methoden für Strings">
+                    <table style="both">
+                        <tr>
+                            <td>
+                                Methode
+                            </td>
+                            <td>
+                                Zweck
+                            </td>
+                            <td>
+                                Beispiel <code>let s = "abcde"</code>
+                            </td>
+                            <td>
+                                Rückgabewert
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    charAt
+                                </code>
+                            </td>
+                            <td>
+                                Ermittelt das Zeichen an der angegebenen Stelle.
+                            </td>
+                            <td>
+                                <code>
+                                    s.charAt(1)
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    b
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    includes
+                                </code>
+                            </td>
+                            <td>
+                                Prüft, ob der String den angegebenen Teilstring enthält.
+                            </td>
+                            <td>
+                                <code>
+                                    s.includes("bc")
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    true
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    startsWith
+                                </code>
+                            </td>
+                            <td>
+                                Prüft, ob der String mit dem angegebenen Teilstring beginnt.
+                            </td>
+                            <td>
+                                <code>
+                                    s.startsWith("ab")
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    true
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    endsWith
+                                </code>
+                            </td>
+                            <td>
+                                Prüft, ob der String mit dem angegebenen Teilstring endet
+                            </td>
+                            <td>
+                                <code>
+                                    s.endsWith("de")
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    true
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    indexOf
+                                </code>
+                            </td>
+                            <td>
+                                Ermittelt die Position des angegebenen Teilstrings innerhalb des Strings (Suche beginnt
+                                von hinten)
+                            </td>
+                            <td>
+                                <code>
+                                    s.indexOf("cd")
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    2
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    lastIndexOf
+                                </code>
+                            </td>
+                            <td>
+                                Ermittelt die Position des angegebenen Teilstring innerhalb des Strings (Suche beginnt
+                                von hinten)
+                            </td>
+                            <td>
+                                <code>
+                                    s.lastIndexOf("de")
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    3
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    repeat
+                                </code>
+                            </td>
+                            <td>
+                                Widerholt den String so oft wie angegeben
+                            </td>
+                            <td>
+                                <code>
+                                    s.repeat(2)
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    abcdeabcde
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    substring
+                                </code>
+                            </td>
+                            <td>
+                                Extrahiert einen Teilstring an der angegebenen Position (von, bis)
+                            </td>
+                            <td>
+                                <code>
+                                    s.substr(1, 3)
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    bcd
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    substr
+                                </code>
+                            </td>
+                            <td>
+                                Extrahiert einen Teilstring an der angegebenen Position (von, länge)
+                            </td>
+                            <td>
+                                <code>
+                                    s.substr(1, 3)
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    bcd
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    toLowerCase
+                                </code>
+                            </td>
+                            <td>
+                                Gibt den String in Kleinschreibung zurück
+                            </td>
+                            <td>
+                                <code>
+                                    "AbCdE".toLowerCase()
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    abcde
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    toUpperCase
+                                </code>
+                            </td>
+                            <td>
+                                Gibt den String in Großschreibung zurück
+                            </td>
+                            <td>
+                                <code>
+                                    "AbCdE".toUpperCase()
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    ABCDE
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    trim
+                                </code>
+                            </td>
+                            <td>
+                                Entfernt Leerzeichen am Anfang und am Ende
+                            </td>
+                            <td>
+                                <code>
+                                    " abc ".trim()
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    abc
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    slice
+                                </code>
+                            </td>
+                            <td>
+                                Extrahiert den Teil einer Zeichenkette welcher mit dem übergebenen Start- und
+                                (optionalen) Endindex definiert wird.
+                            </td>
+                            <td>
+                                <p>
+                                    <code>
+                                        s.slice(2, 5)
+                                    </code>
+                                </p>
 
+                                <p>
+                                    <code>
+                                        s.slice(2)
+                                    </code>
+                                </p>
+                            </td>
+                            <td>
+                                <code>
+                                    cde
+                                </code>
+                            </td>
+                        </tr>
+                    </table>
                 </chapter>
             </chapter>
 
+            <tip>
+                Unterschied zwischen <code>slice()</code>, <code>substr()</code> und <code>substring()</code>:
+                <a href="https://stackoverflow.com/questions/2243824/what-is-the-difference-between-string-slice-and-string-substring"/>
+            </tip>
+
             <chapter id="globale-objekte-primitiver-datentypen-pad-start-und-end"
                      title="Die Methoden padStart() und padEnd()">
+                <p>
+                    Die Methoden <code>padStart()</code> und <code>padEnd()</code> wurden mit der Version ES2017
+                    eingeführt. Beide Methoden füllen eine gegebene Zeichenkette. Beide Methoden füllen eine gegebene
+                    Zeichenkette vorne (<code>padStart()</code>) oder hinten (<code>padEnd()</code>) mit einer weiteren
+                    Zeichenkette auf, bis eine bestimmte Länge erreicht wird. Der Ausdruck <code>'Hallo'.padStart(9,
+                    'H')</code> beispielsweise sorgt dafür, dass die Zeichenkette <code>Hallo</code> bis zu der Länge 9
+                    vorne mit der Zeichenkette »H« aufgefüllt wird, was in der Zeichenkette <code>HHHHHallo</code>
+                    resultiert. Umgekehrt sorgt <code>'Hallo'.padEnd(9, 'o')</code> dafür, dass die Zeichenkette (wieder
+                    bis zu der Länge 9) hinten mit der Zeichenkette »o« aufgefüllt wird, was die Zeichenkette
+                    <code>Hallooooo</code> ergibt.
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        for (let i=1; i<15; i++) {
+                          console.log(`${i}`.padStart(3,'0'));
+                        }
+
+                        // Ausgabe hintereinander:
+                        // "001", "002", "003", "004", "005"
+                        // "006", "007", "008", "009", "010"
+                        // "011", "012", "013", "014"
+
+                        for (let i=1; i<15; i++) {
+                          console.log(`${i}`.padEnd(3,'0'));
+                        }
+
+                        // Ausgabe hintereinander:
+                        // "100", "200", "300", "400", "500"
+                        // "600", "700", "800", "900", "100"
+                        // "110", "120", "130", "140"
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="globale-objekte-date" title="Date - mit Datum und Zeit arbeiten">
+                <p>
+                    Für das Arbeiten mit Datums- und Zeitangaben stellt JavaScript das Objekt <code>Date</code> zur
+                    Verfügung. Um auf Datums- und Zeitangaben zugreifen zu können, muss zunächst eine Instanz von Date
+                    erzeugt werden. Dabei können Argumente übergeben, aber auch weggelassen werden. In letzterem Fall
+                    wird eine Instanz erzeugt, die das aktuelle Datum und die aktuelle Zeit repräsentiert. Anschließend
+                    können über dieses Date-Objekt mehrere Methoden ausgeführt werden.
+                </p>
 
+                <table>
+                    <tr>
+                        <td>
+                            Methode
+                        </td>
+                        <td>
+                            Beschreibung
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                getDate
+                            </code>
+                        </td>
+                        <td>
+                            Gibt den Monatstag (1–31) für das jeweilige Datum zurück.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                getDay
+                            </code>
+                        </td>
+                        <td>
+                            Gibt den Wochentag (0–6) für das jeweilige Datum zurück.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                getFullYear
+                            </code>
+                        </td>
+                        <td>
+                            Gibt das Jahr für das jeweilige Datum zurück.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                getHours
+                            </code>
+                        </td>
+                        <td>
+                            Gibt die Stunde für das jeweilige Datum zurück.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                getMilliseconds
+                            </code>
+                        </td>
+                        <td>
+                            Gibt die Millisekunden (0–999) für das jeweilige Datum zurück.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                getMinutes
+                            </code>
+                        </td>
+                        <td>
+                            Gibt die Minuten (0–59) für das jeweilige Datum zurück.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                getMonth
+                            </code>
+                        </td>
+                        <td>
+                            Gibt den Monat (0–11) für das jeweilige Datum zurück.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                getSeconds
+                            </code>
+                        </td>
+                        <td>
+                            Gibt die Sekunden (0–59) für das jeweilige Datum zurück.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                getTime
+                            </code>
+                        </td>
+                        <td>
+                            Liefert die Anzahl an Millisekunden, die seit dem 01. Januar 1970, 00:00:00 UTC für das
+                            jeweilige Datum vergangen sind.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                getYear
+                            </code>
+                        </td>
+                        <td>
+                            Gibt das Jahr für das jeweilige Datum zurück. Diese Methode ist jedoch veraltet. Stattdessen
+                            sollten Sie die Methode <code>Date.prototype.getFullYear()</code> verwenden.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                setDate(dayValue)
+                            </code>
+                        </td>
+                        <td>
+                            Setzt den Tag im Monat für das jeweilige Datum.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                setFullYear( yearValue [, monthValue [, dayValue]])
+                            </code>
+                        </td>
+                        <td>
+                            Setzt das Jahr für das jeweilige Datum. Optional können Monat (0–11) und Tag (1–31)
+                            angegeben werden.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                setHours( hoursValue [, minutesValue [, secondsValue [, msValue]]])
+                            </code>
+                        </td>
+                        <td>
+                            Setzt die Stunden für das jeweilige Datum. Optional können Minuten (0–59), Sekunden (0–59)
+                            und Millisekunden (0–999) angegeben werden.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                setMilliseconds(millisecondsValue)
+                            </code>
+                        </td>
+                        <td>
+                            Setzt die Millisekunden (0–999) für das jeweilige Datum.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                setMinutes( minutesValue [, secondsValue [, msValue]])
+                            </code>
+                        </td>
+                        <td>
+                            Setzt die Minuten (0–59) für das jeweilige Datum. Optional können Sekunden (0–59) und
+                            Millisekunden (0–999) angegeben werden.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                setMonth( monthValue [, dayValue])
+                            </code>
+                        </td>
+                        <td>
+                            Setzt den Monat (0–11) für das jeweilige Datum. Optional kann der Tag (1–31) angegeben
+                            werden.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                setSeconds( secondsValue [, msValue])
+                            </code>
+                        </td>
+                        <td>
+                            Setzt die Sekunden (0–59) für das jeweilige Datum. Optional können Millisekunden (0–999)
+                            angegeben werden.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                setTime(timeValue)
+                            </code>
+                        </td>
+                        <td>
+                            Setzt das Datum und die Zeit auf Basis eines Zahlenwertes, der die Millisekunden angibt, die
+                            seit dem 01. Januar 1970, 00:00:00 UTC vergangen sind.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                setYear()
+                            </code>
+                        </td>
+                        <td>
+                            veraltet.
+                        </td>
+                    </tr>
+                </table>
             </chapter>
+
+            <p>
+                Wird eine Instanz von Date erstellt, dann gibt es bezüglich der Argumente verschiedene Möglichkeiten:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    <b>Ohne Argumente</b> wird ein Objekt erstellt, welches das aktuelle Datum und die aktuelle Zeit
+                    repräsentiert.
+                </li>
+                <li>
+                    Übergibt man als Argument <b>einen Zahlenwert</b>, wird dieser als die Anzahl an Millisekunden
+                    gewertet, die seit dem 01.01.1970 vergangen sind, sprich ein Objekt erzeugt, welches den
+                    entsprechenden Zeitpunkt repräsentiert.
+                </li>
+                <li>
+                    Alternativ kann man auch <b>eine Zeichenkette</b> übergeben, die nach dem IETF-Standard RFC 2822
+                    aufgebaut ist und eine entsprechende Datumsangabe enthält. (beispielsweise "02 14 2015" für den
+                    14.02.2015)
+                </li>
+            </list>
 
             <chapter id="globale-objekte-primitiver-datentypen-wrapperobjekte"
                      title="Wrapperobjekte für primitive Datentypen">
+                <p>
+                    Auch für die beiden primitiven Datentypen der Zahlen und der booleschen Werte gibt es jeweils eigene
+                    Objekte: <code>Number</code> repräsentiert Zahlenwerte, <code>Boolean</code> entsprechende boolesche
+                    Werte. Diese Objekte nennt man auch (wie übrigens auch <code>String</code>) Wrapperobjekte, weil sie
+                    wie eine Hülle um primitive Werte fungieren können und diese beispielsweise um Methoden erweitern.
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let number2 = new Number(2);
+                        let number4711 = new Number(4711);
+                        console.log(number2.toExponential());       // 2e+0
+                        console.log(number4711.toExponential());    // 4.711e+3
+                    ]]>
+                </code-block>
             </chapter>
         </chapter>
 
         <chapter id="globale-objekte-array" title="Arrays">
-
             <chapter id="globale-objekte-array-erzeugen" title="Arrays erzeugen und initialisieren">
+                <p>
+                    Arrays können in JavaScript auf zwei verschiedene Arten erzeugt werden: über eine sogenannte
+                    Konstruktorfunktion und die Kurzschreibweise, der Array-Literal-Schreibweise.
+                </p>
 
                 <chapter id="globale-objekte-array-erzeugen-konstruktorfunktion" title="Die Konstruktorfunktion">
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let names = new Array();                        // Erzeugen eines Arrays
+                            let names = new Array(20);                      // Erzeugen eines Arrays mit bestimmter Länge
+                            let names = new Array('Max', 'Moriz', 'Peter'); // Erzeugen eines Arrays mit vorgegebenen Werten
+                        ]]>
+                    </code-block>
 
+                    <p>
+                        Hierbei ist immer zu beachten, dass wenn die Konstruktorfunktion <code>Array()</code> mit einem
+                        einzigen Wert aufgerufen wird und dieser Wert eine Zahl ist, wird darüber die Länge des Arrays
+                        definiert. Wird die Konstruktorfunktion mit zwei Zahlen als Argumenten aufgerufen, ist die Länge
+                        des Arrays implizit zwei und das Array enthält die beiden Zahlenelemente.
+                    </p>
+
+                    <p>
+                        Im Falle von Arrays kann beim Aufruf der Konstruktorfunktion auch das
+                        <code>new</code>-Schlüsselwort weggelassen werden:
+                    </p>
+
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let names = Array('Max', 'Moriz', 'Peter');
+                        ]]>
+                    </code-block>
                 </chapter>
 
                 <chapter id="globale-objekte-array-erzeugen-literal-schreibweise"
                          title="Die Array-Literal-Schreibweise">
+                    <p>
+                        Da man es als Entwickler in der Praxis relativ häufig mit Arrays zu tun hat bzw. relativ häufig
+                        Arrays benötigt, gibt es in JavaScript eine praktische Kurzschreibweise, um Arrays zu erzeugen.
+                        Dabei werden die einzelnen Werte in eckigen Klammern geschrieben:
+                    </p>
 
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let names = ['Max', 'Moritz', 'Peter']; // Erzeugen eines Arrays mit bestimmten Werten
+                            let colors = [];                        // Erzeugen eines leeren Arrays
+                        ]]>
+                    </code-block>
                 </chapter>
 
                 <chapter id="globale-objekte-array-erzeugen-typen" title="Unterschiedliche Typen in Arrays">
+                    <p>
+                        Im Gegensatz zu anderen Sprachen ist es in JavaScript möglich, in einem einzelnen Array auch
+                        Werte unterschiedlichen Typs zu speichern. Das heißt, es können sowohl Zeichenketten als auch
+                        Zahlen in ein und demselben Array gespeichert werden.
+                    </p>
 
+                    <code-block lang="javascript">
+                        <![CDATA[
+                            let values = [ 'Max', 4711, true ]
+                        ]]>
+                    </code-block>
                 </chapter>
             </chapter>
 
             <chapter id="globale-objekte-array-elemente" title="Auf Elemente eines Arrays zugreifen">
+                <p>
+                    Arrays verfügen wie Objekte über verschiedene Schlüssel-Wert-Paare, wobei die Schlüssel Indexnummern
+                    sind. Wie in der Informatik üblich, beginnt die Zählung bei 0, d. h., an Index 0 steht das erste
+                    Element, an Index 1 das zweite Element usw. Über den <b>Indexoperator</b> kann man auf Elemente
+                    innerhalb des Arrays zugreifen. Dabei verwendet man eckige Klammern, um den Index anzugeben, auf den
+                    man zugreifen möchte. Mit der Eigenschaft <code>length</code> kann die Anzahl der sich im Array
+                    befindenden Elemente ermittelt werden.
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let todoList = [
+                          'Bad putzen',             // Element an Index 0
+                          'Einkaufen',              // Element an Index 1
+                          'Aufräumen',              // Element an Index 2
+                          'Rasen mähen'             // Element an Index 3
+                        ];
+
+                        console.log(todoList[0]);   // => "Bad putzen"
+                        console.log(todoList[1]);   // => "Einkaufen"
+                        console.log(todoList[2]);   // => "Aufräumen"
+                        console.log(todoList[3]);   // "Rasen mähen"
+                    ]]>
+                </code-block>
+
+                <p>
+                    Häufig werden <code>for</code>-Schleifen dazu verwendet, um über Arrays zu iterieren und die
+                    einzelnen Elemente zu verarbeiten.
+                </p>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        for (let i = 0; i < todoList.length; i++) {
+                          console.log(todoList[i]);
+                        }
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="globale-objekte-array-funktionen" title="Funktionen für Arrays">
+                <p>
+                    Hier ein Überblick, um zu schildern, was man mit Arrays alles anstellen kann:
+                </p>
+
+                <list type="bullet">
+                    <li>
+                        <b>Elemente hinzufügen und entfernen:</b> über die Methoden <code>push()</code>,
+                        <code>pop()</code>, <code>shift()</code> und <code>unshift()</code> lassen sich Elemente
+                        hinzufügen und entfernen.
+                    </li>
+                    <li>
+                        <b>Array als Stacks und Queues verwenden:</b> In anderen Programmiersprachen gibt es teilweise
+                        fest in die jeweilige Sprache eingebaute Datenstrukturen wie beispielsweise Stacks und Queues.
+                        In JavaScript gibt es (bis zu ES6) nur Arrays (seit ES6 gibt es Sets und Maps). Dafür kann man
+                        Arrays dank der Methoden <code>push()</code>, <code>pop()</code>, <code>shift()</code> und
+                        <code>unshift()</code> aber wie die Datenstrukturen Stack und Queue nutzen.
+                    </li>
+                    <li>
+                        <b>Arrays sortieren:</b> Die einzelnen Elemente eines Arrays lassen sich über die beiden
+                        Methoden <code>reverse()</code> und <code>sort()</code> nach bestimmten Kriterien sortieren.
+                    </li>
+                    <li>
+                        <b>Elemente im Array finden:</b> Für das Finden von Elementen in einem Array gibt es
+                        verschiedene Methoden, u.a. die Methoden <code>indexOf()</code> und <code>lastIndexOf()</code>.
+                    </li>
+                    <li>
+                        <b>Funktionale Aspekte:</b> Arrays verfügen über verschiedene Methoden, die die sogenannte
+                        funktionale Programmierung unterstützen: <code>every()</code>, <code>filter()</code>,
+                        <code>forEach()</code>, <code>map()</code>, <code>some()</code> und <code>reduce()</code>.
+                        Diese Funktionen werden auch Higher-Order-Funktionen genannt.
+                    </li>
+                </list>
 
                 <chapter id="globale-objekte-array-funktionen-liste" title="Liste der Funktionen">
-
+                    <table style="both">
+                        <tr>
+                            <td>
+                                Funktion
+                            </td>
+                            <td>
+                                Zweck
+                            </td>
+                            <td>
+                                Beispielaufruf
+                            </td>
+                            <td>
+                                <code>
+                                    a.join("")
+                                </code>
+                            </td>
+                            <td>
+                                Rückgabewert (Datentyp)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    push
+                                </code>
+                            </td>
+                            <td>
+                                fügt Elemente am Ende des Arrays an
+                            </td>
+                            <td>
+                                <code>
+                                    abcdxy
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    abcdxy
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    6 (number)
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    pop
+                                </code>
+                            </td>
+                            <td>
+                                entfernt das Element am Ende des Arrays
+                            </td>
+                            <td>
+                                <code>
+                                    abc
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    abc
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    d (string)
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    unshift
+                                </code>
+                            </td>
+                            <td>
+                                fügt am Anfang des Arrays an
+                            </td>
+                            <td>
+                                <code>
+                                    xyabcd
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    xyabcd
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    6 (number)
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    shift
+                                </code>
+                            </td>
+                            <td>
+                                entfernt das Element am Anfang des Arrays
+                            </td>
+                            <td>
+                                <code>
+                                    bcd
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    bcd
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    a (string)
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    slice
+                                </code>
+                            </td>
+                            <td>
+                                fertigt eine Kopie von einem Teil des Arrays an
+                            </td>
+                            <td>
+                                <code>
+                                    abcd
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    abcd
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    c,d (array)
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    splice
+                                </code>
+                            </td>
+                            <td>
+                                <p>
+                                    entfernt und/oder ergänzt Elemente im Array:
+                                </p>
+                                <p>
+                                    <code>
+                                        splice(start, deleteCount, item1, item2, /* …, */ itemN)
+                                    </code>
+                                </p>
+                            </td>
+                            <td>
+                                <code>
+                                    a.splice(2, 2, "x");
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    abx
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    c,d (array)
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    sort
+                                </code>
+                            </td>
+                            <td>
+                                sortiert das Array
+                            </td>
+                            <td>
+                                <code>
+                                    a.sort()
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    abcd
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    a,b,c,d (array)
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    reverse
+                                </code>
+                            </td>
+                            <td>
+                                kehrt die Reihenfolge der Elemente um
+                            </td>
+                            <td>
+                                <code>
+                                    a.reverse()
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    dcba
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    d,c,b,a (array)
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    concat
+                                </code>
+                            </td>
+                            <td>
+                                Verbindet ein Array mit einem oder mehreren Elementen oder Arrays
+                            </td>
+                            <td>
+                                <code>
+                                    a.concat(["x", "y"])
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    abcd
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    a,b,c,d,x,y (array)
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    fill
+                                </code>
+                            </td>
+                            <td>
+                                Befüllt alle Elemente mit einem Wert
+                            </td>
+                            <td>
+                                <code>
+                                    a.fill("x")
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    xxxx
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    x,x,x,x (array)
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    includes
+                                </code>
+                            </td>
+                            <td>
+                                Prüft, ob ein Element im Array vorkommt (seit ES2016)
+                            </td>
+                            <td>
+                                <code>
+                                    a.includes("x")
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    abcd
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    false (boolean)
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    indexOf
+                                </code>
+                            </td>
+                            <td>
+                                Ermittelt die Position (index) eines Elements im Array
+                            </td>
+                            <td>
+                                <code>
+                                    a.indexOf("c")
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    abcd
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    2 (number)
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    lastIndexOf
+                                </code>
+                            </td>
+                            <td>
+                                Ermittelt die Position (index) eines Elements im Array (vom Ende her)
+                            </td>
+                            <td>
+                                <code>
+                                    a.indexOf("c")
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    abcd
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    2 (number)
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    split
+                                </code>
+                            </td>
+                            <td>
+                                Zerlegt einen String anhand eines Separators in ein Array.
+                            </td>
+                            <td>
+                                <code>
+                                    ("a-b-c-d").split("-")
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    abcd
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    a,b,c,d (array)
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    join
+                                </code>
+                            </td>
+                            <td>
+                                Verbindet alle Elemente eines Arrays zu String
+                            </td>
+                            <td>
+                                <code>
+                                    a.join("==")
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    abcd
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    a==b==c==d (string)
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    toString
+                                </code>
+                            </td>
+                            <td>
+                                Wie join, verwendet aber das Komma als festen Separator
+                            </td>
+                            <td>
+                                <code>
+                                    a.toString()
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    abcd
+                                </code>
+                            </td>
+                            <td>
+                                <code>
+                                    a,b,c,d (string)
+                                </code>
+                            </td>
+                        </tr>
+                    </table>
                 </chapter>
             </chapter>
 
             <chapter id="globale-objekte-array-higher-order-funktionen" title="Higher-Order-Funktionen">
+                <list type="bullet">
+                    <li>
+                        <p>
+                            <b>
+                                <code>
+                                    map()
+                                </code>
+                            </b>
+                        </p>
 
+                        <p>
+                            die Funktion <code>map()</code> (= abbilden) ermöglicht es ein komplettes Array zu
+                            transformieren. Sie benötigt dafür ein Ausgangs-Array und eine Funktion als Argument. Sie
+                            erzeugt das Ergebnis-Array, indem sie jedes einzelne Element des Ausgangs-Arrays mithilfe
+                            der übergebenen Funktion transformiert.
+                        </p>
+
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                let names = [ "Adelgunde", "Heribert", "Felix" ];
+                                let reverseName = name => name.split("").reverse().join();
+                                let reversedNames = names.map(reverseName);   // => [ "ednugledA", "trebireH", "xileF" ]
+                            ]]>
+                        </code-block>
+                    </li>
+                    <li>
+                        <p>
+                            <b>
+                                <code>
+                                    filter()
+                                </code>
+                            </b>
+                        </p>
+
+                        <p>
+                            Filtert Elemente anhand eines angegebenen Kriteriums (Bedingung).
+                        </p>
+
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                let even = x => x%2 === 0;
+                                [1, 2, 3, 4, 5].filter(even) // => [ 2, 4 ]
+                            ]]>
+                        </code-block>
+                    </li>
+                    <li>
+                        <p>
+                            <b>
+                                <code>
+                                    reduce()
+                                </code>
+                            </b>
+                        </p>
+
+                        <p>
+                            Reduziert das Array auf einen einzigen Wert, indem es jeweils zwei Elemente durch den
+                            angegebenen Callback reduziert. Optional besteht die Möglichkeit, als zweiten Parameter
+                            einen Initialwert anzugeben.
+                        </p>
+
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                [1, 2, 3, 4, 5].reduce((x, y) => x + y);      // => 1 + 2 + 3 + 4 + 5 => 15
+                                [1, 2, 3, 4, 5].reduce((x, y) => x + y, 10);  // => 10 + 1 + 2 + 3 + 4 + 5 => 25
+                            ]]>
+                        </code-block>
+                    </li>
+                    <li>
+                        <p>
+                            <b>
+                                <code>
+                                    reduceRight()
+                                </code>
+                            </b>
+                        </p>
+
+                        <p>
+                            Wie <code>reduce()</code>, aber von rechts. Auch hier kann ein optionaler Initialwert
+                            angegeben werden.
+                        </p>
+
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                [1, 2, 3, 4, 5].reduceRight((x, y) => x – y);
+                                // => 5 – 4 – 3 – 2 – 1 => -5
+                            ]]>
+                        </code-block>
+                    </li>
+                    <li>
+                        <p>
+                            <b>
+                                <code>
+                                    every()
+                                </code>
+                            </b>
+                        </p>
+
+                        <p>
+                            Gibt <code>true</code> zurück, falls alle Elemente der angegebenen Bedingung entsprechen.
+                        </p>
+
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                let even = x => x%2 === 0;
+                                [1, 2, 3, 4, 5].every(even); // => false
+                            ]]>
+                        </code-block>
+                    </li>
+                    <li>
+                        <p>
+                            <b>
+                                <code>
+                                    some()
+                                </code>
+                            </b>
+                        </p>
+
+                        <p>
+                            Gibt <code>true</code> zurück, falls einige Elemente der angegebenen Bedingung entsprechen.
+                        </p>
+
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                let even = x => x%2 === 0;
+                                [1, 2, 3, 4, 5].some(even);  // => true
+                            ]]>
+                        </code-block>
+                    </li>
+                    <li>
+                        <p>
+                            <b>
+                                <code>
+                                    forEach()
+                                </code>
+                            </b>
+                        </p>
+
+                        <p>
+                            Führt den Callback für jedes Element aus.
+                        </p>
+
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                [1, 2, 3, 4, 5].forEach(x => console.log(x));
+                            ]]>
+                        </code-block>
+                    </li>
+                    <li>
+                        <p>
+                            <b>
+                                <code>
+                                    find()
+                                </code>
+                            </b>
+                        </p>
+
+                        <p>
+                            Wurde in ES2016 eingeführt. Findet das erste Element, das die angegebene Bedingung erfüllt.
+                        </p>
+
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                let even = x => x%2 ===> 0;
+                                [1, 2, 3, 4, 5].find(even); //=> 2
+                            ]]>
+                        </code-block>
+                    </li>
+                    <li>
+                        <p>
+                            <b>
+                                <code>
+                                    findIndex()
+                                </code>
+                            </b>
+                        </p>
+
+                        <p>
+                            Gibt den Index des ersten Elements zurück, das die angegebene Bedingung erfüllt.
+                        </p>
+
+                        <code-block lang="javascript">
+                            <![CDATA[
+                                let even = x => x%2 ===> 0;
+                                [1, 2, 3, 4, 5].findIndex(even); //=> 1
+                            ]]>
+                        </code-block>
+                    </li>
+                </list>
             </chapter>
 
             <chapter id="globale-objekte-array-mehrdimensional"
                      title="Mehrdimensionale Arrays: 2D-, 3D-, ... nD-Arrays">
+                <p>
+                    In JavaScript gibt es keine „echten“ 2D-Arrays. Stattdessen kann man Arrays ineinander
+                    verschachteln. Da es sich um die Variable innerhalb des Arrays nun wider um ein Array handelt, muss
+                    ein weiterer Index angeben, um Variable zu erreichen.
+                </p>
 
+                <code-block lang="javascript">
+                    <![CDATA[
+                        const array2D = [
+                          [ "1A", "2B", "3C" ],
+                          [ "1A", "2B", "3C" ],
+                          [ "1A", "2B", "3C" ],
+                        ];
+
+                        const array1D = array2D[0];    //=> [ "1A", "2B", "3C" ]
+                        console.log(array1D[1]);       //=> 1B
+                        console.log(array2D[1][1]);    //=> 2B
+                    ]]>
+                </code-block>
             </chapter>
 
             <chapter id="globale-objekte-array-als-stack" title="Arrays als Stack verwenden">
+                <p>
+                    In der Programmierung (und in der Informatik allgemein) bezeichnet ein Stack eine Datenstruktur, die
+                    nach dem sogenannten LIFO-Prinzip (Last in First out) arbeitet. Das bedeutet, dass dasjenige
+                    Element, welches dem Stack zuletzt hinzugefügt wurde, als Erstes wieder entfernt wird. In der Regel
+                    heißt dabei die Methode für das Hinzufügen von Elementen <code>push()</code>, die Methode für das
+                    Entfernen von Elementen <code>pop()</code>.
+                </p>
 
+                <img alt="Arrays als Stack verwenden" src="js-sprachkern-oop-arrays-als-stack.png"/>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let stack = [];              // Deklaration eines ganz normalen Arrays
+                        stack.push(1);               // Hinzufügen eines Elements ...
+                        stack.push(2);               // ... und noch eines ...
+                        stack.push(3);               // ... und noch eines ...
+                        stack.push(4, 5, 6, 7, 8);   // ... und direkt mehrere auf einen Schlag
+                        console.log(stack.pop());    // Zurückgegeben wird das zuletzt hinzugefügte
+                                                     // Element, die 8.
+                    ]]>
+                </code-block>
+
+                <p>
+                    Ein praxisnahes Beispiel für die Verwendung der Stack-Datenstruktur ist die Implementierung einer
+                    Undo-Funktion, sprich einer Möglichkeit innerhalb einer Anwendung, die letzte Nutzeraktion
+                    rückgängig machen zu können. Alternativ zur Verwendung von <code>push()</code> und
+                    <code>pop()</code> können für die Implementierung eines Stacks auch die Methoden
+                    <code>shift()</code> und <code>unshift()</code> verwendet werden. Der Stack funktioniert dann genau
+                    andersherum: Per <code>unshift()</code> werden Elemente vorne hinzugefügt, per <code>shift()</code>
+                    wird jeweils das erste Element entfernt.
+                </p>
             </chapter>
 
             <chapter id="globale-objekte-array-als-queue" title="Arrays als Queue verwenden">
+                <p>
+                    Eine Queue ist wie der Stack ebenfalls eine Datenstruktur, funktioniert aber genau umgekehrt: Eine
+                    Queue nämlich gibt immer das Element zurück, welches als Erstes der in der Queue enthaltenen
+                    Elemente hinzugefügt wurde (FIFO-Prinip: First in First out). In der Regel heißen die entsprechenden
+                    Methoden dabei <code>enqueue()</code> für das Hinzufügen von Elementen und <code>dequeue()</code>
+                    für das Entfernen von Elementen.
+                </p>
 
+                <img alt="Arrays als Queue verwenden" src="js-sprachkern-oop-arrays-als-queue.png"/>
+
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let queue = [];              // Deklaration eines ganz normalen Arrays
+                        queue.push(1);               // Hinzufügen eines Elements ...
+                        queue.push(2);               // ... und noch eines ...
+                        queue.push(3);               // ... und noch eines ...
+                        queue.push(4, 5, 6, 7, 8);   // ... und direkt mehrere auf einen Schlag
+                        console.log(queue.shift());  // Zurückgegeben wird das zuerst hinzugefügte
+                                                     // Element, die 1.
+                    ]]>
+                </code-block>
+
+                <p>
+                    Ein praxisnahes Beispiel für die Verwendung der Queue-Datenstruktur sind sogenannte Message Queues,
+                    also Warteschlangen für Nachrichten. Alternativ zu der Verwendung von <code>push()</code> und
+                    <code>shift()</code> kann für die Implementierung einer Queue auch <code>pop()</code> und
+                    <code>unshift()</code> verwendet werden. Die Queue funktioniert dann genau andersherum: Per
+                    <code>unshift()</code> werden Elemente vorne hinzugefügt, per <code>pop()</code> wird jeweils das
+                    letzte Element entfernt.
+                </p>
             </chapter>
 
             <chapter id="globale-objekte-array-in-zeichenketten-umwandeln" title="Arrays in Zeichenketten umwandeln">
-
+                <code-block lang="javascript">
+                    <![CDATA[
+                        let names = ['Max', 'Moritz', 'Peter'];
+                        console.log(names.toString());        // => Max,Moritz,Peter
+                        console.log(names.toLocaleString());  // => Max,Moritz,Peter
+                        console.log(names.valueOf());         // => [ "Max", "Moritz", "Peter" ]
+                        console.log(names.join('-'));         // => Max-Moritz-Peter
+                    ]]>
+                </code-block>
             </chapter>
         </chapter>
 
         <chapter id="globale-objekte-math" title="Math – komplexe Berechnungen durchführen">
+            <p>
+                Für komplexere Berechnungen stellt JavaScript das <code>Math</code> Objekt zur Verfügung. Dieses Objekt
+                stellt eine ganze Reihe verschiedener Methoden und Eigenschaften bereit, mit denen allerlei Berechnungen
+                durchgeführt werden können.
+            </p>
 
+            <table>
+                <tr>
+                    <td>
+                        Methode
+                    </td>
+                    <td>
+                        Zweck
+                    </td>
+                    <td>
+                        Beispiel
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            sqrt
+                        </code>
+                    </td>
+                    <td>
+                        Quadratwurzel
+                    </td>
+                    <td>
+                        <code>Math.sqrt(9)</code> ergibt <code>3</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            pow
+                        </code>
+                    </td>
+                    <td>
+                        Potenzieren
+                    </td>
+                    <td>
+                        <code>Math.pow(2, 5)</code> ergibt <code>32</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            cos
+                        </code>
+                    </td>
+                    <td>
+                        Kosinus
+                    </td>
+                    <td>
+                        <code>Math.cos(0)</code> ergibt <code>1</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            round
+                        </code>
+                    </td>
+                    <td>
+                        kaufmännisches Runden
+                    </td>
+                    <td>
+                        <p>
+                            <code>Math.round(3.1)</code> ergibt <code>3</code>
+                        </p>
+                        <p>
+                            <code>Math.round(3.5)</code> ergibt <code>4</code>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            floor
+                        </code>
+                    </td>
+                    <td>
+                        Abrunden
+                    </td>
+                    <td>
+                        <code>Math.floor(3.9)</code> ergibt <code>3</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            ceil
+                        </code>
+                    </td>
+                    <td>
+                        Aufrunden
+                    </td>
+                    <td>
+                        <code>Math.ceil(3.1)</code> ergibt <code>4</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            max
+                        </code>
+                    </td>
+                    <td>
+                        Maximalwert aus beliebig vielen Argumenten
+                    </td>
+                    <td>
+                        <code>Math.max(3, 7, 2)</code> ergibt <code>7</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            min
+                        </code>
+                    </td>
+                    <td>
+                        Minimalwert aus beliebig vielen Argumenten
+                    </td>
+                    <td>
+                        <code>Math.min(3, 7, 2)</code> ergibt <code>2</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            abs
+                        </code>
+                    </td>
+                    <td>
+                        Betrag einer Zahl (ohne Vorzeichen)
+                    </td>
+                    <td>
+                        <code>Math.abs(-3.678)</code> ergibt <code>3.678</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            random
+                        </code>
+                    </td>
+                    <td>
+                        Zufallszahl
+                    </td>
+                    <td>
+                        <code>Math.random()</code> gibt eine zufällige Zahl zwischen 0 und 1 zurück, wobei die 1 nie
+                        erreicht wird.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            toFixed
+                        </code>
+                    </td>
+                    <td>
+                        Runden auf beliebig vielen Nachkommastellen
+                    </td>
+                    <td>
+                        <p>
+                            <code>3.4567.toTixed(3); // => 3.457</code>
+                        </p>
+                        <p>
+                            <code>let price = 10;</code>
+                        </p>
+                        <p>
+                            <code>price.toFixed(2); // => 10.00</code>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td>
+                        Konstante
+                    </td>
+                    <td>
+                        Zweck
+                    </td>
+                    <td>
+                        Beispiel
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            PI
+                        </code>
+                    </td>
+                    <td>
+                        𝞹
+                    </td>
+                    <td>
+                        <code>Math.PI</code> ergibt <code>3.141592653589796</code>
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter id="globale-objekte-regexp" title="RegExp – reguläre Ausdrücke">
+            <tip>
+                Grundlagen zu regulären Ausdrücken sind hier: <a href="swe-pk-regex.topic"/>
+            </tip>
 
+            <p>
+                Fürs Arbeiten mit regulären Ausdrücken stellt JavaScript zum einen das Objekt <code>RegExp</code> zur
+                Verfügung, zum anderen bieten Zeichenketten verschiedene Methoden an, um reguläre Ausdrücke auszuwerten.
+            </p>
+
+            <table>
+                <tr>
+                    <td>
+                        Methode
+                    </td>
+                    <td>
+                        Anwendbar auf
+                    </td>
+                    <td>
+                        Beschreibung
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            test()
+                        </code>
+                    </td>
+                    <td>
+                        RegExp
+                    </td>
+                    <td>
+                        Diese Methode prüft, ob ein bestimmtes Zeichenmuster in einer Zeichenkette vorkommt und gibt
+                        einen entsprechenden booleschen Wert zurück.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            exec()
+                        </code>
+                    </td>
+                    <td>
+                        RegExp
+                    </td>
+                    <td>
+                        Diese Methode sucht nach Vorkommen für ein entsprechendes Zeichenmuster und gibt diese als Array
+                        zurück.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            match()
+                        </code>
+                    </td>
+                    <td>
+                        Zeichenkette
+                    </td>
+                    <td>
+                        Diese Methode sucht innerhalb einer Zeichenkette die Vorkommen, die auf ein Zeichenmuster
+                        zutreffen, und gibt diese als Array zurück.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            replace()
+                        </code>
+                    </td>
+                    <td>
+                        Zeichenkette
+                    </td>
+                    <td>
+                        Diese Methode ersetzt das Vorkommen innerhalb einer Zeichenkette, die auf ein entsprechendes
+                        Zeichenmuster zutreffen.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            search()
+                        </code>
+                    </td>
+                    <td>
+                        Zeichenkette
+                    </td>
+                    <td>
+                        Diese Methode sucht nach Vorkommen für ein entsprechendes Zeichenmuster und gibt den Index des
+                        ersten Vorkommens zurück.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            split()
+                        </code>
+                    </td>
+                    <td>
+                        Zeichenkette
+                    </td>
+                    <td>
+                        Diese Methode trennt eine Zeichenkette anhand eines entsprechenden Zeichenmusters und gibt die
+                        einzelnen Teile der Zeichenkette als Array zurück.
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                Wie für Objekte und Arrays gibt es auch für reguläre Ausdrücke die Möglichkeit, diese über eine
+                Konstruktorfunktion oder über die Literal-Schreibweise zu erzeugen. Bei der Literal-Schreibweise wir der
+                reguläre Ausdruck durch zwei Slash-Symbole <code>/</code> umgeben.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    let regExp = new RegExp('abcde');
+                    let regExp = /abcde/;
+                ]]>
+            </code-block>
+
+            <p>
+                Soll ein regulärer Ausdruck dynamisch zur Laufzeit eines Programms erzeugt werden, beispielsweise auf
+                Basis einer Nutzereingabe, wird die Konstruktorfunktion verwendet, da hier die Nutzereingabe als
+                Zeichenkette angegeben werden kann. Steht der reguläre Ausdruck dagegen fest und ändert sich zur
+                Laufzeit eines Programms nicht mehr, dann wird am besten die Literal-Schreibweise verwendet, weil diese
+                bezüglich der Ausführgeschwindigkeit schneller arbeitet als die Konstruktorfunktion.
+            </p>
         </chapter>
     </chapter>
 
