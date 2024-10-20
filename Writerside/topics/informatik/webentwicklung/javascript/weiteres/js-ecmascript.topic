@@ -1218,12 +1218,144 @@
         </chapter>
 
         <chapter id="es2016-async" title="ES2016 – Async Functions">
+            <p>
+                Mit ES2016 wurden Async Functions, als zusätzliche Möglichkeit um asynchrone Funktionen zu definieren,
+                eingeführt. Sie werden mit dem Schlüsselwort <code>async</code> vor der Funktionsdeklaration
+                gekennzeichnet. Intern wird bei einer mit <code>async</code> markierten Funktion implizit ein
+                <code>Promise</code>-Objekt erzeugt und zurückgegeben. Innerhalb einer mit <code>async</code> markierten
+                asynchronen Funktion (und nur da) lässt sich nun das Schlüsselwort <code>await</code> verwenden. Stellt
+                man dies einem Funktionsaufruf voran, wartet die aufrufende Funktion so lange, bis das Ergebnis des
+                asychronen Funktionsaufrufs feststeht. Bei der Verwendung von <code>await</code> können auch ganz
+                normale <code>try/catch</code>-Anweisungen verwendet werden. Genau so, wie man es von synchronen
+                Funktionsaufrufen gewohnt ist.
+            </p>
 
+            <p>
+                Im Gegensatz zur Verwendung von Callback-Funktionen lässt sich dieser Quelltext viel einfacher lesen und
+                verstehen. Besonders deutlich wird das, wenn mehrere asynchrone Funktionsaufrufe hintereinandergereiht
+                werden. Was bei Callback-Funktionen zu einem unübersichtlichen Wust aus geschachtelten und eingerückten
+                Funktionsaufrufen anwachsen würde, bleibt mit Async Functions deutlich übersichtlicher.
+            </p>
+
+            <code-block lang="javascript">
+                <![CDATA[
+                    class UserRepository {
+                      constructor() { this._users = new Map(); }
+                      async save(user) {
+                        this._users.set(user.id, user);
+                        return Promise.resolve(user);
+                      }
+                      async find(id) {
+                        const user = this._users.get(id);
+                        return Promise.resolve(user);
+                      }
+                    }
+                    const repository = new UserRepository();
+
+                    // Verwenden von await
+                    async function saveAndFindMoritz() {
+                      const moritz = { id: 4712, firstName: 'Moritz', lastName: 'Mustermann' };
+                      try {
+                        const result = await repository.save(moritz);
+                        const user = await repository.find(result.id);
+                        console.log(user);
+                      } catch (error) {
+                        console.error(error);
+                      }
+                    }
+                    saveAndFindMoritz();
+
+                    // Verwenden von Promises
+                    function saveAndFindMax() {
+                      const max = { id: 4711, firstName: 'Max', lastName: 'Mustermann' };
+                      repository.save(max)
+                        .then(result => repository.find(result.id))
+                        .then(user => console.log(user))
+                        .catch(error => console.error(error));
+                    }
+                    saveAndFindMax();
+                ]]>
+            </code-block>
         </chapter>
     </chapter>
 
     <chapter id="template-string" title="ES2015 – Vorlagen für Zeichenketten">
+        <p>
+            Mit EcmaScript 2015 wurden die sogenannten Template Strings eingeführt. Template-Strings kann man sich wie
+            eine erweiterte Form von normalen Zeichenketten vorstellen. Sie werden, statt wie normale Zeichenketten,
+            nicht über einfache oder doppelte Anführungszeichen definiert, sondern über <code>`</code>-Zeichen (auch
+            Back-Ticks genannt).
+        </p>
 
+        <p>
+            Über die Schreibweise <code>${}</code> können Platzhalter definiert werden.
+        </p>
+
+        <code-block lang="javascript">
+            <![CDATA[
+                let name = 'Max Mustermann';
+                let message = `Mein Name ist ${name}`;
+            ]]>
+        </code-block>
+
+        <p>
+            Neben Variablennamen können innerhalb der geschweiften Klammern auch beliebige andere Ausdrücke verwendet
+            werden.
+        </p>
+
+        <code-block lang="javascript">
+            <![CDATA[
+                function getRandom() { return Math.random(); }
+                let message = `Eine Zufallszahl ist: ${Math.floor(getRandom() * 100)}`;
+            ]]>
+        </code-block>
+
+        <p>
+            In Template-Strings sind Zeilenumbrüche erlaubt. Auch Leerzeilen und anderer Leerraum werden eins zu eins
+            übernommen.
+        </p>
+
+        <code-block lang="javascript">
+            <![CDATA[
+                let message = `Sehr geehrter Herr Mustermann,
+
+                gerne übersenden wir Ihnen die geforderten Unterlagen zur Prüfung zurück.
+
+                Mit freundlichen Grüßen,
+                Frau Musterfrau`;
+            ]]>
+        </code-block>
+
+        <p>
+            Eine besondere Möglichkeit, Einfluss auf das Ergebnis der String-Auswertung bei Template-Strings zu
+            nehmen, bieten sogenannte <b>Tagged Templates</b>. Dabei wird dem Template-String der Name einer Funktion
+            (im Folgenden Tag-Funktion genannt) vorangestellt. Intern sorgt der JavaScript-Interpreter dann dafür, dass
+            die entsprechende Funktion mit zwei Parametern aufgerufen wird: Der erste Parameter stellt die fest
+            definierten, der zweite Parameter die variablen Teile dar, sprich die Werte für die Platzhalter des
+            entsprechenden Template-Strings.
+        </p>
+
+        <code-block lang="javascript">
+            <![CDATA[
+                let name = 'Max Mustermann';
+                let age = 44;
+                let message = tagFunction`Mein Name ist ${name}, ich bin ${age} Jahre jung`;
+                console.log(message); // Mein Name ist Max Mustermann, ich bin 44 Jahre jung.
+
+                age = 88;
+                message = tagFunction`Mein Name ist ${name}, ich bin ${age} Jahre jung`;
+                console.log(message); // Mein Name ist Max Mustermann
+
+                function tagFunction(strings, ...replacements) {
+                  let name = replacements[0];
+                  let age = replacements[1];
+                  if(age > 80) {
+                    return `${strings[0]}${replacements[0]}`;
+                  }
+                  return `${strings[0]}${name}${strings[1]}${age}${strings[2]}`;
+                }
+            ]]>
+        </code-block>
     </chapter>
 
     <chapter id="symbol" title="ES2015 – Symbole">
