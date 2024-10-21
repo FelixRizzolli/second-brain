@@ -104,7 +104,24 @@
                 <toc-element topic="html-tabellen.topic"/>
                 <toc-element topic="html-form.topic"/>
             </toc-element>
-            <toc-element topic="css.topic"/>
+            <toc-element topic="css.topic">
+                <toc-element topic="css-selektoren.topic"/>
+                <toc-element topic="css-box.topic"/>
+                <toc-element topic="css-stylen.topic"/>
+                <toc-element topic="css-layout.topic">
+                    <toc-element topic="css-grid.topic"/>
+                    <toc-element topic="css-flexboxen.topic"/>
+                    <toc-element topic="css-position.topic"/>
+                </toc-element>
+                <toc-element topic="css-preprozessor.topic">
+                    <toc-element topic="css-less.topic"/>
+                    <toc-element topic="css-sass.topic"/>
+                </toc-element>
+                <toc-element topic="css-frameworks.topic">
+                    <toc-element topic="css-tailwindcss.topic"/>
+                    <toc-element topic="css-bootstrap.topic"/>
+                </toc-element>
+            </toc-element>
             <toc-element topic="javascript.topic">
                 <toc-element topic="js-sprachkern.topic">
                     <toc-element topic="js-oop.topic"/>
