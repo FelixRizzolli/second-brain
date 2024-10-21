@@ -9,12 +9,48 @@
     <link-summary rel="description"/>
 
     <!-- TODO -->
-    <chapter id="description" title="Beschreibung">
-        ...
-    </chapter>
+    <chapter id="introduction" title="Einführung">
+        <p id="description">
+            HTML, kurz für <b>Hypertext Markup Language</b>, ist die Kernsprache des World Wide Web. Es dient dazu,
+            Inhalte auf Webseiten zu strukturieren und anzuzeigen. Mithilfe von HTML-Tags können Texte, Bilder, Links
+            und andere Medien eingebettet werden.
+        </p>
 
-    <chapter id="introduction" title="Grundgerüst">
+        <chapter id="living-standard" title="HTML Living Standard">
+            <p>
+                HTML hat eine faszinierende Evolution hinter sich. Ursprünglich wurde es als Standard vom World Wide Web
+                Consortium (W3C) verwaltet, was gelegentlich zu Spannungen mit den Browserherstellern führte. Während
+                das Web wuchs und sich zu einer Plattform für Webanwendungen entwickelte, wollte das W3C XHTML, einen
+                neuen XML-basierten Standard, einführen. Allerdings bevorzugten die Browserhersteller, HTML
+                weiterzuentwickeln.
+            </p>
 
+            <p>
+                Im Zuge dessen gründeten Apple, Opera und Mozilla die WHATWG, der später auch Google und Microsoft
+                beitraten, um unabhängig vom W3C an HTML zu arbeiten. Schließlich entstand in Zusammenarbeit zwischen
+                W3C und WHATWG HTML5. Doch während das W3C an der Versionierung festhielt, bevorzugte die WHATWG die
+                Idee eines "Living Standards", also eines lebendigen Standards ohne feste Versionsnummer.
+            </p>
+
+            <p>
+                Seit dem 28. Mai 2019 ist HTML nun ein solcher Living Standard. Das bedeutet, dass es kontinuierlich
+                weiterentwickelt wird und es wohl nie ein HTML6 geben wird. Die kontinuierliche Weiterentwicklung
+                gewährleistet, dass HTML immer auf dem neuesten Stand bleibt und sich den aktuellen Anforderungen des
+                Webs anpasst.
+            </p>
+
+            <tip>
+                Der HTML Living Standard: <a href="https://html.spec.whatwg.org/"/>
+            </tip>
+
+            <tip>
+                Entwicklungsgeschichte von HTML: <a href="https://pmueller.de/eine-kurze-geschichte-von-html5/"/>
+            </tip>
+        </chapter>
+
+        <chapter id="basis" title="Grundgerüst">
+
+        </chapter>
     </chapter>
 
     <chapter id="overview" title="Übersicht der HTML-Elemente">

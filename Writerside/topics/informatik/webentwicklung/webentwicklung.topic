@@ -6,13 +6,203 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
+    <link-summary rel="description"/>
 
-    <link-summary>
-        Webentwicklung bezieht sich auf die Erstellung und Wartung von Webseiten und Webanwendungen. Es umfasst
-        Frontend-Entwicklung (Benutzeroberfläche und Nutzererfahrung) sowie Backend-Entwicklung (Server, Datenbanken und
-        Anwendungslogik). Mit Technologien wie HTML, CSS, JavaScript und Frameworks wie React, Angular und Vue.js können
-        Entwickler dynamische und interaktive Webprojekte realisieren. Ziel ist es, leistungsfähige und
-        benutzerfreundliche Weblösungen zu schaffen.
-    </link-summary>
-    <!-- TODO -->
+    <chapter id="basics" title="Grundlegendes">
+        <p id="description">
+            Webentwicklung bezieht sich auf die Erstellung und Wartung von Webseiten und Webanwendungen. Es umfasst
+            Frontend-Entwicklung (Benutzeroberfläche und Nutzererfahrung) sowie Backend-Entwicklung (Server, Datenbanken
+            und Anwendungslogik). Mit Technologien wie HTML, CSS, JavaScript und Frameworks wie React, Angular und
+            Vue.js können Entwickler dynamische und interaktive Webprojekte realisieren. Ziel ist es, leistungsfähige
+            und benutzerfreundliche Weblösungen zu schaffen.
+        </p>
+
+        <chapter id="website" title="Website oder Webseite?">
+            Eine Webseite ist eine einzelne Seite eines Internetauftritts. Die Website hingegen ist der komplette
+            Internetauftritt. In der Regel besteht daher eine Website gewöhnlich aus mehreren einzelnen Webseiten.
+            Dieser Unterschied ist wichtig zu wissen, weil es gerne mal für Verwirrung sorgt.
+        </chapter>
+    </chapter>
+
+    <chapter id="website-types" title="Typen von Websites">
+        <!-- TODO: Inhalt nochmal kontrollieren -->
+        <p>
+            Inhaltlich kann man Websites grob in sechs Kategorien einteilen:
+        </p>
+
+        <list type="bullet">
+            <li>
+                <p>
+                    <b>
+                        Webpräsenz (Homepage/Corporate Website)
+                    </b>
+                </p>
+
+                <p>
+                    Webpräsenz beschreibt sowohl private Homepages als auch die Online-Auftritte von Unternehmen,
+                    Vereinen, Behörden und anderen Organisationen. Corporate Websites, die insbesondere in der
+                    Geschäftswelt verbreitet sind, dienen als zentrale Anlaufstellen für Informationen, Angebote und
+                    Kontaktmöglichkeiten.
+                </p>
+
+                <p>
+                    Während soziale Netzwerke wie Facebook, Instagram und Twitter zunehmend populär werden, pflegen
+                    dennoch viele Privatleute eigene Homepages, die persönliche Informationen und Interessen
+                    präsentieren. Allerdings wird die klassische private Homepage immer seltener, besonders bei jüngeren
+                    Generationen, die eher auf sozialen Plattformen präsent sind.
+                </p>
+
+                <p>
+                    Größere Unternehmen und Organisationen nutzen häufig eine Kombination aus Webpräsenz und sozialen
+                    Medien, um ihre Informationen zugänglich zu machen und mit Besuchern zu kommunizieren. Die
+                    Hauptfunktion solcher Websites liegt meist in der Bereitstellung von Informationen.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>
+                        Blog/Magazin/Portfolio
+                    </b>
+                </p>
+
+                <p>
+                    Die Kategorien Blog, Onlinemagazin und Portfolio umfassen eine Vielzahl digitaler Plattformen, die
+                    regelmäßig aktualisierte Inhalte bieten.
+                </p>
+
+                <list type="bullet">
+                    <li>
+                        <b>Blog:</b> Entstanden aus den Begriffen Web und Log, sind Blogs Websites mit chronologisch
+                        sortierten Einträgen. Blogger veröffentlichen Beiträge zu diversen Themen, oft mit
+                        Kommentarmöglichkeiten. Blogs sind häufig die Startseiten von Webpräsenzen.
+                    </li>
+                    <li>
+                        <b>Onlinemagazin:</b> Diese Seiten ähneln Blogs, bieten jedoch eine Vielzahl an Artikeln, Fotos
+                        und Videos. Sie haben die Zeitschriftenbranche teilweise abgelöst und informieren und
+                        unterhalten auf vielfältige Weise.
+                    </li>
+                    <li>
+                        <b>Portfolio:</b> Webseiten für Designer, Fotografen, Künstler und Kreative, die ihre Werke
+                        präsentieren. Diese Seiten nutzen oft Blogsoftware wie WordPress und setzen auf minimalistisches
+                        Design. Die Textmenge ist hier meist reduziert, der Fokus liegt auf visuellen Inhalten.
+                    </li>
+                </list>
+
+                <p>
+                    Für das Erstellen solcher Seiten gibt es zwei Ansätze: die Installation einer flexiblen Blogsoftware
+                    auf einem eigenen Server oder die Nutzung einer gehosteten Lösung wie Blogger.com. Jede Methode hat
+                    ihre Vor- und Nachteile, abhängig von den spezifischen Anforderungen und dem technischen Know-how
+                    des Betreibers.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>
+                        E-Commerce-Website
+                    </b>
+                </p>
+
+                <p>
+                    E-Commerce-Websites, auch Webshops genannt, sind Online-Läden, die rund um die Uhr geöffnet sind und
+                    zahlreiche Vorteile bieten, wie niedrigere Personalkosten und keine Mietkosten für physische
+                    Geschäfte. Sie nutzen oft bewährte Webshop-Software für effiziente Verwaltung und sichere
+                    Bezahlvorgänge.
+                </p>
+
+                <p>
+                    Die Einrichtung eines Webshops kann relativ einfach sein, doch es gibt viele rechtliche
+                    Anforderungen, die erfüllt werden müssen, wie z. B. Impressumspflicht, AGB und Widerrufsbelehrung.
+                    Manchmal ist anwaltliche Beratung notwendig.
+                </p>
+
+                <p>
+                    Die Kosten und der Funktionsumfang der Webshop-Software variieren stark, von kostenlosen Lösungen
+                    bis zu teuren Profi-Tools wie Shopify, Magento und WooCommerce.
+                </p>
+
+                <p>
+                    Für kleine Händler oder Neulinge im E-Commerce kann es sinnvoll sein, ihre Produkte zunächst auf
+                    Plattformen wie eBay anzubieten. Ein Webshop erfordert nicht nur Investitionen, sondern auch
+                    Maßnahmen zur Generierung von Besucherzahlen, die letztendlich zu Käufern werden.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>
+                        Landingpage/Microsite
+                    </b>
+                </p>
+
+                <p>
+                    Landingpages sind Einzelseiten (Onepager), die ein klares Ziel verfolgen: Besucher zu einer
+                    bestimmten Handlung zu bewegen, sei es der Start einer Testphase, ein Kauf oder eine
+                    Kontaktaufnahme. Diese Seiten stellen alle Elemente eines Produkts übersichtlich dar, um aus
+                    Besuchern potenzielle Kunden zu machen und sind stark für Suchmaschinen optimiert.
+                </p>
+
+                <p>
+                    Microsites hingegen sind kleinere Informational Websites mit wenigen Seiten, die sich einem
+                    bestimmten Thema widmen. Unternehmen nutzen sie oft, um ein einzelnes Produkt auf einer separaten
+                    Domain zu bewerben, statt es auf ihrer umfangreichen Corporate Website unterzubringen.
+                </p>
+
+                <p>
+                    Der Hauptunterschied: Landingpages zielen auf direkte Aktionen ab, während Microsites Informationen
+                    zu spezifischen Themen bieten.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>
+                        Webplattform/Forum/Mitglieder-Website (Social-Media-Webseiten)
+                    </b>
+                </p>
+
+                <p>
+                    Webplattformen, Foren und Mitglieder-Websites (Social-Media-Websites) ermöglichen es registrierten
+                    Benutzern, Inhalte zu lesen und aktiv beizutragen. Typische Beispiele sind soziale Netzwerke wie
+                    Facebook und Wiki-Software wie Wikipedia. Diese Plattformen nutzen oft Content-Management-Systeme
+                    zur Verwaltung der Inhalte.
+                </p>
+
+                <p>
+                    Im kommerziellen Bereich verbessern solche Plattformen den kundenorientierten Support und fördern
+                    den Austausch von Wissen und Erfahrungen innerhalb von Unternehmen. Die Grundidee ist die
+                    gemeinschaftliche Erstellung von Inhalten durch die Benutzer. Ein Moderator ist jedoch unerlässlich,
+                    um den Inhalt zu verwalten und zu überprüfen.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>
+                        Web-App
+                    </b>
+                </p>
+
+                <p>
+                    Web-Apps sind im Grunde Webanwendungen, die sich ähnlich wie Desktopanwendungen verhalten und viele
+                    Interaktionsmöglichkeiten bieten. Sie müssen nicht zwangsläufig in einem Webbrowser laufen und
+                    bieten oft eine verbesserte Benutzerfreundlichkeit sowie eine schnellere Performance im Vergleich zu
+                    klassischen Webanwendungen.
+                </p>
+
+                <p>
+                    Mit der richtigen Technik können sie nahtlos und effizient arbeiten, wodurch sie eine hervorragende
+                    Alternative zu herkömmlichen Desktopanwendungen darstellen.
+                </p>
+            </li>
+        </list>
+    </chapter>
+
+    <chapter id="dynamisch-statisch" title="Dynamische und statische Websites">
+
+    </chapter>
+
+    <chapter id="frontend" title="Frontend">
+
+    </chapter>
+
+    <chapter id="backend" title="Backend">
+
+    </chapter>
 </topic>
