@@ -100,9 +100,13 @@
                 <toc-element topic="html-textstrukturierung.topic"/>
                 <toc-element topic="html-textauszeichnung.topic"/>
                 <toc-element topic="html-links.topic"/>
+                <toc-element topic="html-image-and-multimedia.topic"/>
                 <toc-element topic="html-embedded.topic"/>
+                <toc-element topic="html-svg-and-mathml.topic"/>
+                <toc-element topic="html-scripts.topic"/>
                 <toc-element topic="html-tabellen.topic"/>
                 <toc-element topic="html-form.topic"/>
+                <toc-element topic="html-interactive-elements.topic"/>
             </toc-element>
             <toc-element topic="css.topic">
                 <toc-element topic="css-selektoren.topic"/>
