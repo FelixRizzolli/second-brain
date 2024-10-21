@@ -94,7 +94,16 @@
             <toc-element topic="swe-uml.topic"/>
         </toc-element>
         <toc-element topic="webentwicklung.topic">
-            <toc-element topic="html.topic"/>
+            <toc-element topic="html.topic">
+                <toc-element topic="html-kopfdaten.topic"/>
+                <toc-element topic="html-strukturierung.topic"/>
+                <toc-element topic="html-textstrukturierung.topic"/>
+                <toc-element topic="html-textauszeichnung.topic"/>
+                <toc-element topic="html-links.topic"/>
+                <toc-element topic="html-embedded.topic"/>
+                <toc-element topic="html-tabellen.topic"/>
+                <toc-element topic="html-form.topic"/>
+            </toc-element>
             <toc-element topic="css.topic"/>
             <toc-element topic="javascript.topic">
                 <toc-element topic="js-sprachkern.topic">
