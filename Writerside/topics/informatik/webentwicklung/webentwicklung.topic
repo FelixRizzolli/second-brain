@@ -194,7 +194,135 @@
     </chapter>
 
     <chapter id="dynamisch-statisch" title="Dynamische und statische Websites">
+        <chapter id="statisch" title="Statische Websites">
+            <p>
+                Eine statische Website speichert Inhalte (Texte und Bilder) unveränderbar in HTML-Dateien auf dem
+                Webserver. Änderungen erfordern manuelle Anpassungen und das erneute Hochladen der Datei. Sie eignet
+                sich besonders für kleinere Websites mit seltenen Änderungen.
+            </p>
 
+            <p>
+                <b>Vorteile</b> statischer Websites sind:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    <b>Geringere Kosten</b>: Kein Bedarf an Datenbanken oder Skriptsprachen.
+                </li>
+                <li>
+                    <b>Schnellere Ladezeit</b>: Seite wird direkt vom Webserver geliefert.
+                </li>
+                <li>
+                    <b>Einfache Entwicklung</b>: Je nach Projektumfang und Kenntnissen kostengünstiger.
+                </li>
+            </list>
+
+            <p>
+                <b>Nachteile</b> statischer Websites sind:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    <b>Gute HTML-Kenntnisse erforderlich</b>: Änderungen selbst vornehmen.
+                </li>
+                <li>
+                    <b>Zeitintensive Ersterstellung</b>: Viele einzelne Dateien.
+                </li>
+                <li>
+                    <b>Aufwendige Designänderungen</b>: Jede Datei manuell anpassen, außer CSS-basiert.
+                </li>
+            </list>
+
+            <p>
+                Der Webbrowser schickt eine Anfrage (Request) für eine Webseite an den Webserver, der die Webseite
+                hostet. Der Webserver sucht die entsprechende Seite und sendet sie als Antwort (Response) an den
+                Webbrowser zurück. Wird die Seite auf dem Webserver nicht gefunden, liefert der Server eine
+                Fehlermeldung (meistens Fehlercode 404), die anzeigt, dass die Ressource nicht vorhanden ist.
+            </p>
+        </chapter>
+
+        <chapter id="dynamisch" title="Dynamische Websites">
+            <p>
+                Dynamische Websites werden meist von einem Content-Management-System (CMS) generiert. Inhalte wie Texte
+                und Bilder werden separat von Layouts und Skripten aufbewahrt. Bei einem Besuch der Website liest der
+                Webserver Inhalte und technische Elemente aus einer Datenbank und fügt sie dynamisch zu einer Webseite
+                zusammen. Ein CMS benötigt eine Webserver-Umgebung mit Skriptsprachen wie PHP oder Python und
+                Datenbanken wie MySQL oder PostgreSQL.
+            </p>
+
+            <p>
+                <b>Vorteile</b> dynamischer Websites sind:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    <b>Schnelle Aktualisierungen</b>: Durch eine webbasierte Nutzeroberfläche.
+                </li>
+                <li>
+                    <b>Automatische Datenspeicherung</b>: Keine manuelle Verwaltung notwendig.
+                </li>
+                <li>
+                    <b>Zentrale Designänderungen</b>: Templates ermöglichen einfache Designwechsel für alle Seiten
+                    gleichzeitig.
+                </li>
+                <li>
+                    <b>Benutzerfreundlich</b>: Kein HTML- oder Programmierwissen erforderlich, Verwaltung durch mehrere
+                    Personen möglich.
+                </li>
+                <li>
+                    <b>Erweiterbarkeit</b>: Viele Module/Plug-ins, z.B. für Suche, Sitemap, Onlineshop oder Forum.
+                </li>
+            </list>
+
+            <p>
+                <b>Nachteile</b> dynamischer Websites sind:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    <b>Höhere Hosting-Kosten</b>: Wegen spezieller Features wie Skriptsprachen und Datenbanken.
+                </li>
+                <li>
+                    <b>Programmierkenntnisse erforderlich</b>: Für eigene oder spezielle Module/Plug-ins.
+                </li>
+                <li>
+                    <b>Längere Entwicklungszeiten</b>: Durch den Bedarf an spezialisierter Programmierung.
+                </li>
+            </list>
+
+            <p>
+                Der Webbrowser stellt eine Anfrage (Request) für eine dynamische Webseite an den Webserver. Der
+                Webserver findet die Seite und leitet sie an den Applikationsserver weiter. Dieser durchsucht die Seite
+                nach Befehlen und fertigt sie an. Falls nötig, wird eine Datenbankabfrage gestartet, um zusätzliche
+                Daten abzurufen. Der Datenbanktreiber liefert die angeforderten Daten an den Applikationsserver, der die
+                Daten in die Webseite einfügt. Die fertige dynamische Webseite wird dann als Antwort (Response) an den
+                Webbrowser zurückgesendet.
+            </p>
+        </chapter>
+
+        <chapter id="webarchitektur" title="Webserver, Applikationsserver, Datenbank">
+            <p>
+                Bei einem <b>Webserver</b> handelt es sich um einen Computer, auf dem eine Webserver-Software (meistens
+                nur diese) installiert ist. Ein solcher Webserver wird in der Regel dazu verwendet, Dokumente lokal, im
+                Intranet oder über das Internet zur Verfügung zu stellen und an Clients, wie z.B. einen Webbrowser, zu
+                übertragen. Die wohl bedeutendsten Webserver dürften der Apache HTTP Server und Microsoft Internet
+                Information Services (kurz IIS) sein. Der Standort des Webservers kann übrigens überall in der Welt
+                sein.
+            </p>
+            <p>
+                Ein <b>Applikationsserver</b> (auch Anwendungsserver) stellt eine Umgebung für Client-Server-Anwendungen
+                und einen Webserver zur Verfügung. Bei einer Webanwendung ist z.B. der Webbrowser der Clientteil der
+                Anwendung. Dieser Applikationsserver stellt bestimmte Dienste (z.B. Zugriff auf Datenbanken,
+                Authentifizierung) zur Verfügung.
+            </p>
+            <p>
+                Eine <b>Datenbank</b> wird verwendet, um eine große Menge an Daten möglichst effizient zu speichern und
+                auf Anfrage bereitzustellen. Gewöhnlich besteht eine Datenbank aus einem Datenbankmanagementsystem und
+                den Daten selbst. Das Managementsystem einer Datenbank kümmert sich um die strukturierte Speicherung und
+                Zugriffe auf die Daten. Für die Verwaltung und Abfrage der Daten stellen die Datenbanksysteme eine
+                eigene Datenbanksprache bereit.
+            </p>
+        </chapter>
     </chapter>
 
     <chapter id="frontend" title="Frontend">
