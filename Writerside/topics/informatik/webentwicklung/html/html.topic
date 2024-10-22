@@ -185,6 +185,10 @@
                     Dokument selbst. Informationen im Kopfbereich werden vom Webbrowser und Suchmaschinen verwendet. Ein
                     valides HTML-Dokument erfordert zudem einen Titel im <code>title</code>-Element im Kopfbereich.
                 </p>
+
+                <tip>
+                    Mehr zu den Kopfdaten: <a href="html-kopfdaten.topic"/>
+                </tip>
             </chapter>
 
             <chapter id="tag-body" title="Der sichtbare Bereich &lt;body&gt;">
@@ -199,7 +203,86 @@
         </chapter>
 
         <chapter id="syntax" title="Syntax und Aufbau von HTML">
+            <chapter id="nodes" title="Knoten, Tags, Elemente und Attribute">
+                <list>
+                    <li>
+                        <b>Knoten:</b> Grundbestandteile eines HTML-Dokuments. Es gibt verschiedene Arten von Knoten,
+                        z.B. Elementknoten, Textknoten und Attributknoten. Ein Elementknoten könnte ein
+                        <code>&lt;div&gt;</code>-Element sein, ein Textknoten wäre der Text innerhalb eines Elements.
+                    </li>
+                    <li>
+                        <b>Tags:</b> Tags markieren den Anfang und das Ende von HTML-Elementen. Der Anfangstag
+                        (Start-Tag) und der Endtag (End-Tag) umschließen den Inhalt des Elements. Zum Beispiel:
+                        <code>&lt;p&gt;</code>Dies ist ein Absatz<code>&lt;/p&gt;</code>.
+                    </li>
+                    <li>
+                        <b>Elemente:</b> Elemente bestehen aus einem Start-Tag, dem Inhalt und einem End-Tag. Im
+                        Beispiel <code>&lt;p&gt;Dies ist ein Absatz&lt;/p&gt;</code> ist <code>&lt;p&gt;</code> der
+                        Start-Tag, <code>Dies ist ein Absatz</code> der Inhalt, und <code>&lt;/p&gt;</code> der End-Tag.
+                    </li>
+                    <li>
+                        <b>Attribute:</b> Attribute liefern zusätzliche Informationen über ein Element und werden im
+                        Start-Tag eingefügt. Zum Beispiel:
+                        <code>&lt;img src="bild.jpg" alt="Beschreibung des Bildes"&gt;</code>. Hier sind
+                        <code>src</code> und <code>alt</code> Attribute des <code>img</code>-Elements.
+                    </li>
+                </list>
+            </chapter>
 
+            <chapter id="verschachteln" title="Verschachteln">
+                <p>
+                    Verschachtelung bedeutet, dass HTML-Elemente innerhalb anderer HTML-Elemente platziert werden. Dies
+                    ermöglicht eine hierarchische Struktur des Dokuments. Zum Beispiel kann ein Absatz
+                    (<code>&lt;p&gt;</code>) in einer Div-Box (<code>&lt;div&gt;</code>) verschachtelt werden:
+                </p>
+
+                <!-- @formatter:off -->
+                <code-block lang="html">
+                    <![CDATA[
+                        <div>
+                            <p>Dies ist ein Absatz innerhalb einer Div-Box</p>
+                            <ul>
+                                <li>Listeneintrag 1</li>
+                                <li>Listeneintrag 2</li>
+                            </ul>
+                        </div>
+                    ]]>
+                </code-block>
+                <!-- @formatter:on -->
+
+                <p>
+                    In diesem Beispiel ist der Absatz <code>&lt;p&gt;</code> und die Liste <code>&lt;ul&gt;</code>
+                    innerhalb des <code>&lt;div&gt;</code>-Elements verschachtelt. Jede HTML-Struktur muss korrekt
+                    geöffnet und geschlossen werden, um eine gültige Dokumentstruktur zu gewährleisten.
+                </p>
+            </chapter>
+
+            <chapter id="alleinstehende-tags" title="Alleinestehende Tags">
+                <p>
+                    Alleinestehende Tags sind HTML-Tags, die keine End-Tags benötigen und keinen Inhalt haben. Beispiele
+                    sind <code>&lt;br&gt;</code> für einen Zeilenumbruch und <code>&lt;img&gt;</code> für ein Bild.
+                    Früher wurde oft ein Schrägstrich am Ende des Tags verwendet, z.B. <code>&lt;br /&gt;</code>, aber
+                    dieser ist heutzutage nicht mehr erforderlich.
+                </p>
+
+                <!-- @formatter:off -->
+                <code-block lang="html">
+                    <![CDATA[
+                        <p>Hier ist ein Zeilenumbruch<br>und hier ist ein Bild:</p>
+                        <img src="bild.jpg" alt="Beschreibung des Bildes">
+                    ]]>
+                </code-block>
+                <!-- @formatter:on -->
+            </chapter>
+
+            <chapter id="dom" title="DOM (Document Object Model)">
+                <p>
+                    Das DOM ist eine Programmierschnittstelle für HTML-Dokumente. Es stellt das Dokument als
+                    Baumstruktur dar, wobei jeder Knoten im Baum ein Teil des Dokuments ist, wie z.B. ein Element,
+                    Attribut oder Text. Das DOM ermöglicht es Entwicklern mittels Scriptsprachen wie JavaScript,
+                    HTML-Dokumente dynamisch zu ändern, zu manipulieren und darauf zuzugreifen.
+                </p>
+            </chapter>
         </chapter>
 
         <chapter id="kommentare" title="Kommentare">
