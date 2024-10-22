@@ -92,9 +92,66 @@
                 Entwicklungsgeschichte von HTML: <a href="https://pmueller.de/eine-kurze-geschichte-von-html5/"/>
             </tip>
         </chapter>
+    </chapter>
 
+    <chapter id="basics" title="Grundlegendes">
         <chapter id="basis" title="Grundgerüst">
 
+        </chapter>
+
+        <chapter id="dateiendung" title="Dateiendung .html oder .htm">
+            <p>
+                Ob <path>seite.htm</path> oder <path>seite.html</path> als Dateiendung verwendet wird, ist dem
+                Webbrowser egal. Dass es zwei Namen gibt, hat historische Gründe, die auf die DOS-Welt zurückgehen, in
+                der Dateinamen nur nach der 8+3-Regel benannt werden durften: 8 Zeichen für den Dateinamen und 3 Zeichen
+                für die Dateiendung. Es bleibt einem selbst überlassen, welche Version verwendet wird, aber es wird
+                empfohlen, sich für eine Version zu entscheiden und diese beizubehalten.
+            </p>
+        </chapter>
+
+        <chapter id="validation" title="HTML Validieren">
+            <p>
+                HTML-Validierung ist der Prozess, bei dem ein HTML-Dokument auf die Einhaltung der Syntaxregeln und
+                Standards überprüft wird. Ein valides HTML-Dokument ist ein Dokument, das den Regeln der
+                HTML-Spezifikation entspricht und korrekt strukturiert ist.
+            </p>
+
+            <p>
+                Eine Webseite oder einen HTML-Code zu validieren hat viele Vorteile:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    <b>Anzeige in jedem Browser:</b> Fehler im HTML-Code können Darstellungsprobleme verursachen,
+                    insbesondere auf mobilen Geräten.
+                </li>
+                <li>
+                    <b>Suchmaschinenoptimierung:</b> Suchmaschinen finden und indizieren die Website besser.
+                </li>
+                <li>
+                    <b>Barrierefreiheit:</b> Korrekte HTML-Auszeichnung hilft Menschen mit Einschränkungen, die Webseite
+                    zu nutzen.
+                </li>
+                <li>
+                    <b>Wichtig für Einsteiger:</b> HTML-Validierung bietet Feedback und hilft, sauberen Code zu
+                    schreiben.
+                </li>
+                <li>
+                    <b>Qualitätssicherung:</b> Sorgt dafür, dass die Webseite auch in zukünftigen Browserversionen
+                    funktioniert.
+                </li>
+                <li>
+                    <b>Professionelles Auftreten:</b> Zeigt, dass man Wert auf ordentliche Arbeit legt.
+                </li>
+            </list>
+
+            <p>
+                HTML kann auf verschiedene Arten validiert werden. Man kann Websites wie
+                <b><a href="https://validator.w3.org">validator.w3.org</a></b> nutzen, um den HTML-Code online zu
+                überprüfen. Außerdem gibt es <b>Browser-Erweiterungen</b>, die direkt im Browser validieren, und
+                sogenannte <b>Favelets</b>, die sich als Lesezeichen im Browser speichern lassen und den HTML-Code
+                überprüfen. <b>HTML-Editoren</b> bieten oft auch integrierte Validierungsfunktionen an.
+            </p>
         </chapter>
     </chapter>
 

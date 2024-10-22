@@ -207,13 +207,13 @@
 
             <list type="bullet">
                 <li>
-                    <b>Geringere Kosten</b>: Kein Bedarf an Datenbanken oder Skriptsprachen.
+                    <b>Geringere Kosten:</b> Kein Bedarf an Datenbanken oder Skriptsprachen.
                 </li>
                 <li>
-                    <b>Schnellere Ladezeit</b>: Seite wird direkt vom Webserver geliefert.
+                    <b>Schnellere Ladezeit:</b> Seite wird direkt vom Webserver geliefert.
                 </li>
                 <li>
-                    <b>Einfache Entwicklung</b>: Je nach Projektumfang und Kenntnissen kostengünstiger.
+                    <b>Einfache Entwicklung:</b> Je nach Projektumfang und Kenntnissen kostengünstiger.
                 </li>
             </list>
 
@@ -223,13 +223,13 @@
 
             <list type="bullet">
                 <li>
-                    <b>Gute HTML-Kenntnisse erforderlich</b>: Änderungen selbst vornehmen.
+                    <b>Gute HTML-Kenntnisse erforderlich:</b> Änderungen selbst vornehmen.
                 </li>
                 <li>
-                    <b>Zeitintensive Ersterstellung</b>: Viele einzelne Dateien.
+                    <b>Zeitintensive Ersterstellung:</b> Viele einzelne Dateien.
                 </li>
                 <li>
-                    <b>Aufwendige Designänderungen</b>: Jede Datei manuell anpassen, außer CSS-basiert.
+                    <b>Aufwendige Designänderungen:</b> Jede Datei manuell anpassen, außer CSS-basiert.
                 </li>
             </list>
 
@@ -256,21 +256,21 @@
 
             <list type="bullet">
                 <li>
-                    <b>Schnelle Aktualisierungen</b>: Durch eine webbasierte Nutzeroberfläche.
+                    <b>Schnelle Aktualisierungen:</b> Durch eine webbasierte Nutzeroberfläche.
                 </li>
                 <li>
-                    <b>Automatische Datenspeicherung</b>: Keine manuelle Verwaltung notwendig.
+                    <b>Automatische Datenspeicherung:</b> Keine manuelle Verwaltung notwendig.
                 </li>
                 <li>
-                    <b>Zentrale Designänderungen</b>: Templates ermöglichen einfache Designwechsel für alle Seiten
+                    <b>Zentrale Designänderungen:</b> Templates ermöglichen einfache Designwechsel für alle Seiten
                     gleichzeitig.
                 </li>
                 <li>
-                    <b>Benutzerfreundlich</b>: Kein HTML- oder Programmierwissen erforderlich, Verwaltung durch mehrere
+                    <b>Benutzerfreundlich:</b> Kein HTML- oder Programmierwissen erforderlich, Verwaltung durch mehrere
                     Personen möglich.
                 </li>
                 <li>
-                    <b>Erweiterbarkeit</b>: Viele Module/Plug-ins, z.B. für Suche, Sitemap, Onlineshop oder Forum.
+                    <b>Erweiterbarkeit:</b> Viele Module/Plug-ins, z.B. für Suche, Sitemap, Onlineshop oder Forum.
                 </li>
             </list>
 
@@ -280,13 +280,13 @@
 
             <list type="bullet">
                 <li>
-                    <b>Höhere Hosting-Kosten</b>: Wegen spezieller Features wie Skriptsprachen und Datenbanken.
+                    <b>Höhere Hosting-Kosten:</b> Wegen spezieller Features wie Skriptsprachen und Datenbanken.
                 </li>
                 <li>
-                    <b>Programmierkenntnisse erforderlich</b>: Für eigene oder spezielle Module/Plug-ins.
+                    <b>Programmierkenntnisse erforderlich:</b> Für eigene oder spezielle Module/Plug-ins.
                 </li>
                 <li>
-                    <b>Längere Entwicklungszeiten</b>: Durch den Bedarf an spezialisierter Programmierung.
+                    <b>Längere Entwicklungszeiten:</b> Durch den Bedarf an spezialisierter Programmierung.
                 </li>
             </list>
 
