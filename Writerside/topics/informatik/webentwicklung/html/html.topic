@@ -11,10 +11,55 @@
     <!-- TODO -->
     <chapter id="introduction" title="Einführung">
         <p id="description">
-            HTML, kurz für <b>Hypertext Markup Language</b>, ist die Kernsprache des World Wide Web. Es dient dazu,
-            Inhalte auf Webseiten zu strukturieren und anzuzeigen. Mithilfe von HTML-Tags können Texte, Bilder, Links
-            und andere Medien eingebettet werden.
+            HTML, kurz für Hypertext Markup Language, ist die zentrale Sprache des World Wide Web. Sie strukturiert
+            Inhalte auf Webseiten und ermöglicht die Einbettung von Texten, Bildern, Links und anderen Medien. HTML ist
+            eine textbasierte Auszeichnungssprache, die von jedem Webbrowser dargestellt werden kann und damit die
+            Grundlage des Internets bildet. HTML-Dokumente können mit beliebigen Texteditoren bearbeitet werden und
+            enthalten neben dargestellten Daten auch Metainformationen.
         </p>
+
+        <p>
+            Man hört oft, dass Websites mit "HTML-Befehlen" programmiert werden. Das ist jedoch falsch, da HTML keine
+            Programmiersprache ist. Programmiersprachen nutzen Befehle, um Aufgaben zu lösen, während HTML Marken oder
+            Tags verwendet, um Inhalte zu strukturieren. Daher sollte man korrekt sagen, dass HTML geschrieben und nicht
+            programmiert wird.
+        </p>
+
+        <chapter id="html_css_und_java_script" title="HTML, CSS und JavaScript">
+            <p>
+                HTML, CSS und JavaScript sind die Hauptbestandteile der Webentwicklung und haben jeweils spezifische
+                Funktionen:
+            </p>
+
+            <list>
+                <li>
+                    <a href="#description"><b>HTML</b> (Hypertext Markup Language)</a> dient zur Strukturierung und
+                    semantischen Auszeichnung von Inhalten auf Webseiten. Es definiert, was die Inhalte sind, wie z. B.
+                    Überschriften, Absätze und Tabellen, indem es Tags verwendet. HTML ist nur für die logische Struktur
+                    zuständig und sollte ausschließlich dafür genutzt werden.
+                </li>
+                <li>
+                    <a href="css.topic"><b>CSS</b> (Cascading Style Sheets)</a> wird verwendet, um das Layout und das
+                    Design von HTML-Dokumenten zu gestalten. Es trennt die visuelle Darstellung vom Inhalt, was eine
+                    saubere und konsistente Gestaltung ermöglicht. CSS ermöglicht es, das Aussehen von Texten, Farben,
+                    Abständen und Positionierungen zu definieren. Durch diese Trennung können Änderungen am Design
+                    einfach durch eine zentrale CSS-Datei vorgenommen werden, ohne den HTML-Code zu ändern.
+                </li>
+                <li>
+                    <a href="javascript.topic"><b>JavaScript</b></a> ist eine clientseitige Skriptsprache, die verwendet
+                    wird, um Interaktivität und Dynamik in Webseiten zu bringen. Es erweitert die statischen
+                    Möglichkeiten von HTML, indem es Benutzerinteraktionen, Datenauswertung und dynamische Veränderungen
+                    ermöglicht. JavaScript arbeitet eng mit dem Document Object Model (DOM) zusammen, einer
+                    plattformunabhängigen Schnittstelle zwischen JavaScript und HTML, um den Inhalt zu manipulieren.
+                </li>
+            </list>
+
+            <p>
+                Diese drei Technologien arbeiten zusammen, um moderne, interaktive und ansprechende Webanwendungen zu
+                erstellen. HTML strukturiert die Inhalte, CSS gestaltet sie und JavaScript bringt Leben und
+                Interaktivität hinein.
+            </p>
+        </chapter>
 
         <chapter id="living-standard" title="HTML Living Standard">
             <p>

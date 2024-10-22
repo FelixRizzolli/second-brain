@@ -9,8 +9,77 @@
     <link-summary rel="description"/>
 
     <!-- TODO -->
-    <chapter id="description" title="Beschreibung">
-        ...
+    <chapter id="was-ist-css" title="Was ist CSS?">
+        <p id="description">
+            <b>CSS (Cascading Style Sheets)</b> ist eine Gestaltungssprache, die verwendet wird, um das Layout und
+            Design von HTML-Dokumenten zu definieren. Während HTML die Struktur und den Inhalt einer Webseite festlegt,
+            sorgt CSS dafür, dass diese Inhalte visuell ansprechend präsentiert werden.
+        </p>
+
+        <p>
+            Hauptfunktionen und Vorteile von CSS sind:
+        </p>
+
+        <list type="bullet">
+            <li>
+                <b>Trennung von Inhalt und Layout:</b> HTML strukturiert die Inhalte, während CSS für das Styling und
+                die visuelle Darstellung verantwortlich ist. Dies sorgt für eine saubere Trennung, was die Wartung und
+                Verwaltung der Webseiten vereinfacht.
+            </li>
+            <li>
+                <b>Flexibilität und Konsistenz:</b> Durch die Nutzung einer zentralen CSS-Datei können Änderungen am
+                Design einer Webseite schnell und konsistent umgesetzt werden, ohne den HTML-Code anpassen zu müssen.
+            </li>
+            <li>
+                <b>Gestaltungsvielfalt:</b> CSS ermöglicht eine Vielzahl von Gestaltungsmöglichkeiten, wie z. B. Farben,
+                Schriftarten, Abstände, Positionierungen und mehr. Dadurch können Entwickler und Designer kreative und
+                individuelle Designs umsetzen.
+            </li>
+            <li>
+                <b>Responsives Design:</b> CSS unterstützt auch das responsive Design, was bedeutet, dass Webseiten auf
+                verschiedenen Geräten und Bildschirmgrößen optimal dargestellt werden können.
+            </li>
+        </list>
+
+        <p>
+            Im Wesentlichen ist CSS das Werkzeug, das Webseiten ihr Aussehen und Gefühl verleiht, indem es sicherstellt,
+            dass sie nicht nur funktional, sondern auch optisch ansprechend sind.
+        </p>
+    </chapter>
+
+    <chapter id="frameworks" title="CSS Frameworks">
+        <p>
+            Ein <a href="css-frameworks.topic">CSS-Framework</a> ist eine Sammlung vorgefertigter Stylesheets, die die
+            Arbeit von UI-Entwicklern erleichtern. Anstatt jedes Projekt von Grund auf neu mit CSS zu beginnen, bieten
+            CSS-Frameworks Werkzeuge, um schnell Benutzeroberflächen zu erstellen, die wiederholt und angepasst werden
+            können.
+        </p>
+
+        <list type="bullet">
+            <li>
+                <a href="css-bootstrap.topic"><b>Bootstrap:</b></a> Weit verbreitet und bietet umfangreiche
+                Komponenten und vordefinierte Stile. Es zielt darauf ab, schnell funktionale und responsive Designs zu
+                erstellen.
+            </li>
+            <li>
+                <a href="css-tailwindcss.topic"><b>Tailwind:</b></a> Bietet mehr Flexibilität und Individualität, indem
+                es utility-first Klassen bereitstellt. Entwickler haben mehr Kontrolle über das finale Design.
+            </li>
+        </list>
+
+        <p>
+            Beide Frameworks haben ihre Stärken: Bootstrap für schnelles und standardisiertes Design, Tailwind für
+            maßgeschneiderte und flexible Lösungen. Ideal, um den Entwicklungsprozess zu beschleunigen und konsistente
+            Ergebnisse zu erzielen.
+        </p>
+
+        <tip>
+            Mehr dazu hier: <a href="css-frameworks.topic"/>
+        </tip>
+    </chapter>
+
+    <chapter id="preprocessor" title="CSS Preprozessoren">
+
     </chapter>
 
     <chapter id="quellen" title="Quellen">
