@@ -95,8 +95,127 @@
     </chapter>
 
     <chapter id="basics" title="Grundlegendes">
-        <chapter id="basis" title="Grundgerüst">
+        <chapter id="basis" title="Das HTML Grundgerüst">
+            <p>
+                HTML strukturiert Inhalte ähnlich wie andere Medien. So wie in einem Buch oder einer Zeitung gibt es
+                Überschriften, Absätze, Bilder, Tabellen und Zwischenüberschriften in verschiedenen Hierarchieebenen.
+                Diese Elemente helfen, den Inhalt klar und logisch zu organisieren, wodurch er für die Benutzer leicht
+                verständlich und zugänglich wird.
+            </p>
 
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <!DOCTYPE html>
+                    <html lang="de">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Fenstertitel</title>
+                        </head>
+                        <body>
+                            <h1>Die Hauptüberschrift</h1>
+                            <p>Hier steht ein gewöhnlicher Absatztext.</p>
+                            <h2>Eine Zwischenüberschrift</h2>
+                            <p>Ein weiterer Absatz mit Text.</p>
+                        </body>
+                    </html>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                Das Grundgerüst eines HTML-Dokuments besteht grob aus drei Teilen:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    Der HTML-Dokumenttyp gibt die verwendete HTML-Version an.
+                </li>
+                <li>
+                    Der Kopfbereich enthält gewöhnlich die nicht darstellbaren Informationen zum Dokument.
+                </li>
+                <li>
+                    Der Dokumentkörper enthält den darstellbaren Inhalt für den Webbrowser.
+                </li>
+            </list>
+
+            <chapter id="doctype" title="Der HTML-Dokumenttyp <!doctype>">
+
+            </chapter>
+
+            <chapter id="tag-html" title="Das Wurzelelement &lt;html&gt;">
+                <p>
+                    Nach <code>&lt;!doctype html&gt;</code> folgt das Wurzelelement <code>html</code>, das den
+                    Webbrowser darüber informiert, dass hier eine HTML-codierte Seite vorliegt. Das Wurzelelement
+                    (manchmal auch Stammelement genannt) umschließt alle anderen Elemente zwischen dem Start-Tag
+                    <code>&lt;html&gt;</code> und dem Ende-Tag <code>&lt;/html&gt;</code>
+                </p>
+
+                <p>
+                    Es empfiehlt sich in der Praxis, auch gleich das Attribut der Sprache der Website zu deklarieren
+                    (z.B. <code>lang="de"</code> für Deutsch). Ein Validator wird hier bei fehlender Sprache eine
+                    Warnmeldung ausgeben. Diese Angabe ist auch hauptsächlich für Nutzer mit Screenreadern wichtig, da
+                    diese so die Sprache der Website erkennen und korrekt aussprechen können.
+                </p>
+
+                <note>
+                    <p>
+                        <b>
+                            Angabe der Sprache
+                        </b>
+                    </p>
+
+                    <p>
+                        Das <code>lang</code>-Attribut ist ein globales HTML-Attribut, das die Sprache des Inhalts eines
+                        Elements festlegt. Es kann in fast allen HTML-Elementen verwendet werden und hilft Screenreadern
+                        und Suchmaschinen, den Inhalt korrekt zu interpretieren. Der Webbrowser nutzt diese Angabe zur
+                        richtigen Darstellung von Sonderzeichen. Sprachcodes können primäre und optionale Subcodes
+                        enthalten, wie z.B. <code>lang="en-UK"</code> für britisches Englisch.
+                    </p>
+                </note>
+            </chapter>
+
+            <chapter id="tag-head" title="Der Kopfteil &lt;head&gt;">
+                <p>
+                    Im Kopfbereich eines HTML-Dokuments, zwischen <code>&lt;head&gt;</code> und
+                    <code>&lt;/head&gt;</code>, werden verschiedene Elemente definiert. Diese Elemente sind
+                    größtenteils nicht direkt sichtbar im Webbrowser, mit Ausnahme des <code>title</code>-Elements. Dazu
+                    gehören das Einfügen von Skripten, Angaben zu Stylesheets und verschiedene Metaangaben über das
+                    Dokument selbst. Informationen im Kopfbereich werden vom Webbrowser und Suchmaschinen verwendet. Ein
+                    valides HTML-Dokument erfordert zudem einen Titel im <code>title</code>-Element im Kopfbereich.
+                </p>
+            </chapter>
+
+            <chapter id="tag-body" title="Der sichtbare Bereich &lt;body&gt;">
+                <p>
+                    Der darstellbare Dokumentkörper wird in HTML zwischen <code>&lt;body&gt;</code> und
+                    <code>&lt;/body&gt;</code> angegeben. Alles, was darin enthalten ist – wie z.B. Text, Hyperlinks,
+                    Bilder und Tabellen –, wird im Webbrowser angezeigt. Das <code>body</code>-Element ist somit im
+                    Gegensatz zum <code>head</code>-Element der darstellbare Bereich (auch Viewport genannt) eines
+                    HTML-Dokuments.
+                </p>
+            </chapter>
+        </chapter>
+
+        <chapter id="syntax" title="Syntax und Aufbau von HTML">
+
+        </chapter>
+
+        <chapter id="kommentare" title="Kommentare">
+            <p>
+                Alles was zwischen <code>&lt;!--</code> und <code>--&gt;</code> steht, wird vom Webbrowser ignoriert und
+                nicht angezeigt. Kommentare sind nützlich, um den Code zu dokumentieren, Notizen zu hinterlassen oder
+                Codeabschnitte zu deaktivieren. Sie helfen auch dabei, den Code zu strukturieren und zu verstehen. Es
+                ist wichtig, Kommentare sparsam und sinnvoll zu verwenden, um den Code übersichtlich zu halten.
+            </p>
+
+            <warning>
+                Kommentare sind durchaus sinnvoll, um Anmerkungen an bestimmten Stellen im HTML-Code oder Angaben zum
+                Erstellungsdatum oder sonstigen Credits hinzuzufügen. Auch wenn die Kommentare nicht im Webbrowser
+                angezeigt werden, bleiben sie jedoch im Quelltext erhalten. Es sollte bedacht werden, dass jeder
+                Besucher den Quelltext einsehen und somit auch die Kommentare lesen kann.
+            </warning>
         </chapter>
 
         <chapter id="dateiendung" title="Dateiendung .html oder .htm">
@@ -164,7 +283,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="#introduction">
+                        <a href="#tag-html">
                             <code>&lt;html&gt;</code>
                         </a>
                     </td>
@@ -193,7 +312,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="#">
+                        <a href="#tag-head">
                             <code>&lt;head&gt;</code>
                         </a>
                     </td>
@@ -252,7 +371,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="#">
+                        <a href="#tag-body">
                             <code>&lt;body&gt;</code>
                         </a>
                     </td>
