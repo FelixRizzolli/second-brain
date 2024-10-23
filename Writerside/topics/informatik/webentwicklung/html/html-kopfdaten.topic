@@ -34,7 +34,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-kopfdaten.topic#">
+                    <a href="html-kopfdaten.topic#tag-title">
                         <code>&lt;title&gt;</code>
                     </a>
                 </td>
@@ -44,7 +44,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-kopfdaten.topic#">
+                    <a href="html-kopfdaten.topic#tag-link">
                         <code>&lt;link&gt;</code>
                     </a>
                 </td>
@@ -54,7 +54,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-kopfdaten.topic#">
+                    <a href="html-kopfdaten.topic#tag-meta">
                         <code>&lt;meta&gt;</code>
                     </a>
                 </td>
@@ -65,7 +65,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-kopfdaten.topic#">
+                    <a href="html-kopfdaten.topic#tag-style">
                         <code>&lt;style&gt;</code>
                     </a>
                 </td>
@@ -75,7 +75,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-kopfdaten.topic#">
+                    <a href="html-kopfdaten.topic#tag-base">
                         <code>&lt;base&gt;</code>
                     </a>
                 </td>
@@ -86,7 +86,29 @@
         </table>
     </chapter>
 
-    <chapter id="element-description" title="Genauere Beschreibung">
+    <chapter id="tag-description" title="Genauere Beschreibung">
+        <chapter id="tag-title" title="Das title-Element">
+
+        </chapter>
+
+        <chapter id="tag-link" title="Das link-Element">
+
+        </chapter>
+
+        <chapter id="tag-meta" title="Das meta-Element">
+
+        </chapter>
+
+        <chapter id="tag-style" title="Das style-Element">
+
+        </chapter>
+
+        <chapter id="tag-base" title="Das base-Element">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="more" title="Weiteres">
 
     </chapter>
 
