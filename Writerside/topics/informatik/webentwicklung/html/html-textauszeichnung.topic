@@ -5,12 +5,342 @@
        title="Textauszeichnung"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <var name="id_prefix"></var>
     <show-structure depth="2" for="chapter,procedure"/>
-    <link-summary rel="description"/>
+    <link-summary rel="%id_prefix%-description"/>
 
     <!-- TODO -->
-    <chapter id="description" title="Beschreibung">
-        ...
+    <chapter id="introduction" title="Einleitung">
+        <p id="%id_prefix%-description">
+            ...
+        </p>
+    </chapter>
+
+    <chapter id="overview" title="Übersicht der HTML-Elemente">
+        <table id="%id_prefix%-overview-table" style="header-row">
+            <tr>
+                <td>Element</td>
+                <td>Beschreibung</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;a&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;abbr&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;b&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;bdi&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;bdo&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;br&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;cite&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;code&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;data&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;del&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;dfn&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;em&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;i&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;ins&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;kbd&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;mark&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;q&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;rp&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;rt&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;ruby&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;s&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;samp&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;small&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;span&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;strong&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;sub&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;sup&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;time&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;u&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;var&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#">
+                        <code>&lt;wbr&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter id="element-description" title="Genauere Beschreibung">
+
+    </chapter>
+
+    <chapter id="more" title="Weiteres">
+
     </chapter>
 
     <chapter id="quellen" title="Quellen">

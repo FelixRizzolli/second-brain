@@ -1,9 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="SVG und MathML" id="html-svg-and-mathml">
+<topic id="html-svg-and-mathml"
+       title="SVG und MathML"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <var name="id_prefix"></var>
+    <show-structure depth="2" for="chapter,procedure"/>
+    <link-summary rel="%id_prefix%-description"/>
 
-    <p>Start typing here...</p>
+    <!-- TODO -->
+    <chapter id="introduction" title="Einleitung">
+        <p id="%id_prefix%-description">
+            ...
+        </p>
+    </chapter>
+
+    <chapter id="overview" title="Übersicht der HTML-Elemente">
+        <table id="%id_prefix%-overview-table" style="header-row">
+            <tr>
+                <td>Element</td>
+                <td>Beschreibung</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-svg-and-mathml.topic#">
+                        <code>&lt;svg&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-svg-and-mathml.topic#">
+                        <code>&lt;math&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter id="element-description" title="Genauere Beschreibung">
+
+    </chapter>
+
+    <chapter id="more" title="Weiteres">
+
+    </chapter>
+
+    <chapter id="quellen" title="Quellen">
+        <tip>
+            <b>(BUCH)</b>
+            978-3836297288, "HTML und CSS - Das umfassende Handbuch", Jürgen Wolf, 2023
+        </tip>
+    </chapter>
 </topic>

@@ -8,7 +8,6 @@
     <show-structure depth="2" for="chapter,procedure"/>
     <link-summary rel="description"/>
 
-    <!-- TODO -->
     <chapter id="introduction" title="Einführung">
         <p id="description">
             HTML, kurz für Hypertext Markup Language, ist die zentrale Sprache des World Wide Web. Sie strukturiert
@@ -227,6 +226,21 @@
                         <code>src</code> und <code>alt</code> Attribute des <code>img</code>-Elements.
                     </li>
                 </list>
+
+                <note>
+                    <p>
+                        <b>
+                            Groß- und Kleinschreibung von HTML-Tags
+                        </b>
+                    </p>
+
+                    <p>
+                        HTML-Tags sind nicht case-sensitive, d.h. sie können in Groß- oder Kleinschreibung geschrieben
+                        werden. Das bedeutet, dass <code>&lt;P&gt;</code> und <code>&lt;p&gt;</code> dasselbe Element
+                        darstellen. Es ist jedoch eine bewährte Praxis, HTML-Tags in Kleinbuchstaben zu schreiben, um
+                        den Code konsistent zu halten und die Lesbarkeit zu verbessern.
+                    </p>
+                </note>
             </chapter>
 
             <chapter id="verschachteln" title="Verschachteln">
@@ -359,7 +373,7 @@
 
     <chapter id="overview" title="Übersicht der HTML-Elemente">
         <chapter id="root" title="root">
-            <table style="header-row">
+            <table id="root-overview-table" style="header-row">
                 <tr>
                     <td>Element</td>
                     <td>Beschreibung</td>
@@ -371,83 +385,23 @@
                         </a>
                     </td>
                     <td>
-                        ...
+                        Das Wurzelelement, das den gesamten Inhalt einer HTML-Seite umschließt.
                     </td>
                 </tr>
             </table>
         </chapter>
 
         <chapter id="metadata" title="Kopfdaten">
-            <table style="header-row">
-                <tr>
-                    <td>Element</td>
-                    <td>Beschreibung</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;base&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#tag-head">
-                            <code>&lt;head&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;link&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;meta&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;style&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;title&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-            </table>
+            <include element-id="-description" from="html-kopfdaten.topic">
+                <var name="id_prefix" value="kopfdaten"></var>
+            </include>
+            <include element-id="-overview-table" from="html-kopfdaten.topic">
+                <var name="id_prefix" value="kopfdaten"></var>
+            </include>
         </chapter>
 
         <chapter id="view" title="Body">
-            <table style="header-row">
+            <table id="view-overview-table" style="header-row">
                 <tr>
                     <td>Element</td>
                     <td>Beschreibung</td>
@@ -459,1119 +413,99 @@
                         </a>
                     </td>
                     <td>
-                        ...
+                        Der sichtbare Bereich (auch Viewport genannt) des HTML-Dokuments, der den Inhalt für den
+                        Webbrowser enthält.
                     </td>
                 </tr>
             </table>
         </chapter>
 
         <chapter id="strukturierung" title="Strukturierung">
-            <table style="header-row">
-                <tr>
-                    <td>Element</td>
-                    <td>Beschreibung</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;address&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;article&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;aside&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;footer&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;header&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;h1&gt;</code>,
-                            <code>&lt;h2&gt;</code>,
-                            <code>&lt;h3&gt;</code>,
-                            <code>&lt;h4&gt;</code>,
-                            <code>&lt;h5&gt;</code>,
-                            <code>&lt;h6&gt;</code>,
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;hgroup&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;main&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;nav&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;section&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;search&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-            </table>
+            <include element-id="-description" from="html-strukturierung.topic">
+                <var name="id_prefix" value="strukturierung"></var>
+            </include>
+            <include element-id="-overview-table" from="html-strukturierung.topic">
+                <var name="id_prefix" value="strukturierung"></var>
+            </include>
         </chapter>
 
         <chapter id="textstrukturierung" title="Textstrukturierung">
-            <table style="header-row">
-                <tr>
-                    <td>Element</td>
-                    <td>Beschreibung</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;blockquote&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;dd&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;div&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;dl&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;dt&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;figcaption&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;figure&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;hr&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;li&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;menu&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;ol&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;p&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;pre&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;ul&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-            </table>
+            <include element-id="-description" from="html-textstrukturierung.topic">
+                <var name="id_prefix" value="textstrukturierung"></var>
+            </include>
+            <include element-id="-overview-table" from="html-textstrukturierung.topic">
+                <var name="id_prefix" value="textstrukturierung"></var>
+            </include>
         </chapter>
 
         <chapter id="textauszeichnung" title="Textauszeichnung">
-            <table style="header-row">
-                <tr>
-                    <td>Element</td>
-                    <td>Beschreibung</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;a&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;abbr&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;b&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;bdi&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;bdo&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;br&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;cite&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;code&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;data&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;del&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;dfn&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;em&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;i&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;ins&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;kbd&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;mark&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;q&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;rp&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;rt&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;ruby&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;s&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;samp&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;small&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;span&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;strong&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;sub&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;sup&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;time&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;u&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;var&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;wbr&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-            </table>
+            <include element-id="-description" from="html-textauszeichnung.topic">
+                <var name="id_prefix" value="textauszeichnung"></var>
+            </include>
+            <include element-id="-overview-table" from="html-textauszeichnung.topic">
+                <var name="id_prefix" value="textauszeichnung"></var>
+            </include>
         </chapter>
 
         <chapter id="image-and-multimedia" title="Grafiken und Multimedia">
-            <table style="header-row">
-                <tr>
-                    <td>Element</td>
-                    <td>Beschreibung</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;area&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;audio&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;img&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;map&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;track&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;video&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-            </table>
+            <include element-id="-description" from="html-image-and-multimedia.topic">
+                <var name="id_prefix" value="image-and-multimedia"></var>
+            </include>
+            <include element-id="-overview-table" from="html-image-and-multimedia.topic">
+                <var name="id_prefix" value="image-and-multimedia"></var>
+            </include>
         </chapter>
 
         <chapter id="embedded" title="Eingebettete Inhalte">
-            <table style="header-row">
-                <tr>
-                    <td>Element</td>
-                    <td>Beschreibung</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;embed&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;facedframe&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;iframe&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;object&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;picture&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;portal&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;source&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-            </table>
+            <include element-id="-description" from="html-embedded.topic">
+                <var name="id_prefix" value="embedded"></var>
+            </include>
+            <include element-id="-overview-table" from="html-embedded.topic">
+                <var name="id_prefix" value="embedded"></var>
+            </include>
         </chapter>
 
         <chapter id="svg-and-mathml" title="SVG und MathML">
-            <table style="header-row">
-                <tr>
-                    <td>Element</td>
-                    <td>Beschreibung</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;svg&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;math&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-            </table>
+            <include element-id="-description" from="html-svg-and-mathml.topic">
+                <var name="id_prefix" value="svg-and-mathml"></var>
+            </include>
+            <include element-id="-overview-table" from="html-svg-and-mathml.topic">
+                <var name="id_prefix" value="svg-and-mathml"></var>
+            </include>
         </chapter>
 
         <chapter id="scripts" title="Scripts">
-            <table style="header-row">
-                <tr>
-                    <td>Element</td>
-                    <td>Beschreibung</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;canvas&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;noscript&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;script&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-            </table>
+            <include element-id="-description" from="html-scripts.topic">
+                <var name="id_prefix" value="scripts"></var>
+            </include>
+            <include element-id="-overview-table" from="html-scripts.topic">
+                <var name="id_prefix" value="scripts"></var>
+            </include>
         </chapter>
 
         <chapter id="table" title="Tabellen">
-            <table style="header-row">
-                <tr>
-                    <td>Element</td>
-                    <td>Beschreibung</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;caption&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;col&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;colgroup&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;table&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;tbody&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;td&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;tfoot&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;th&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;thead&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;tr&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-            </table>
+            <include element-id="-description" from="html-tabellen.topic">
+                <var name="id_prefix" value="table"></var>
+            </include>
+            <include element-id="-overview-table" from="html-tabellen.topic">
+                <var name="id_prefix" value="table"></var>
+            </include>
         </chapter>
 
         <chapter id="form" title="Formulare">
-            <table style="header-row">
-                <tr>
-                    <td>Element</td>
-                    <td>Beschreibung</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;button&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;datalist&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;fieldset&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;form&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;input&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;label&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;legend&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;meter&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;optgroup&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;option&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;output&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;progress&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;select&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;textarea&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-            </table>
+            <include element-id="-description" from="html-form.topic">
+                <var name="id_prefix" value="form"></var>
+            </include>
+            <include element-id="-overview-table" from="html-form.topic">
+                <var name="id_prefix" value="form"></var>
+            </include>
         </chapter>
 
         <chapter id="interactive-elements" title="Interaktive Elemente">
-            <table style="header-row">
-                <tr>
-                    <td>Element</td>
-                    <td>Beschreibung</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;details&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;dialog&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;summary&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-            </table>
         </chapter>
 
         <chapter id="web-components" title="Web Components">
-            <table style="header-row">
+            <table id="web-components-overview-table" style="header-row">
                 <tr>
                     <td>Element</td>
                     <td>Beschreibung</td>

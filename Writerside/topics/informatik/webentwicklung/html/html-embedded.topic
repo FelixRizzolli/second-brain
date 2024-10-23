@@ -5,12 +5,102 @@
        title="Eingebettete Inhalte"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+    <var name="id_prefix"></var>
     <show-structure depth="2" for="chapter,procedure"/>
-    <link-summary rel="description"/>
+    <link-summary rel="%id_prefix%-description"/>
 
     <!-- TODO -->
-    <chapter id="description" title="Beschreibung">
-        ...
+    <chapter id="introduction" title="Einleitung">
+        <p id="%id_prefix%-description">
+            ...
+        </p>
+    </chapter>
+
+    <chapter id="overview" title="Übersicht der HTML-Elemente">
+        <table id="%id_prefix%-overview-table" style="header-row">
+            <tr>
+                <td>Element</td>
+                <td>Beschreibung</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-embedded.topic#">
+                        <code>&lt;embed&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-embedded.topic#">
+                        <code>&lt;facedframe&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-embedded.topic#">
+                        <code>&lt;iframe&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-embedded.topic#">
+                        <code>&lt;object&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-embedded.topic#">
+                        <code>&lt;picture&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-embedded.topic#">
+                        <code>&lt;portal&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-embedded.topic#">
+                        <code>&lt;source&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    ...
+                </td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter id="element-description" title="Genauere Beschreibung">
+
+    </chapter>
+
+    <chapter id="more" title="Weiteres">
+
     </chapter>
 
     <chapter id="quellen" title="Quellen">
