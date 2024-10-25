@@ -512,32 +512,54 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="#">
-                            <code>&lt;slot&gt;</code>
-                        </a>
+                        <code>&lt;slot&gt;</code>
                     </td>
                     <td>
-                        ...
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <code>&lt;template&gt;</code>
-                        </a>
-                    </td>
-                    <td>
-                        ...
+                        <p>
+                            Das <code>&lt;slot&gt;</code>-Element wird in HTML verwendet, um Platzhalter in einem Web
+                            Component Template zu definieren. Es ermöglicht die Verwendung von "Slots" innerhalb von
+                            benutzerdefinierten HTML-Elementen, sodass Inhalte von außen in diese Slots eingefügt werden
+                            können. Dies bietet eine flexible Möglichkeit, Inhalte dynamisch und modular zu gestalten.
+                        </p>
+
+                        <tip>
+                            Mehr dazu: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot"/>
+                        </tip>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <a href="#">
-                            <code>&lt;summary&gt;</code>
-                        </a>
+                        <code>&lt;template&gt;</code>
                     </td>
                     <td>
-                        ...
+                        <p>
+                            Das <code>&lt;template&gt;</code>-Element in HTML dient dazu, Inhalte zu definieren, die
+                            nicht sofort beim Laden der Seite gerendert werden. Es ermöglicht Entwicklern,
+                            wiederverwendbare Vorlagen für dynamische Inhalte zu erstellen. Diese Vorlagen können später
+                            über JavaScript geklont und in das Dokument eingefügt werden.
+                        </p>
+
+                        <tip>
+                            Mehr dazu: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template"/>
+                        </tip>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>&lt;summary&gt;</code>
+                    </td>
+                    <td>
+                        <p>
+                            Das <code>&lt;summary&gt;</code>-Element wird zusammen mit dem
+                            <code>&lt;details&gt;</code>-Element verwendet, um einen zusammenklappbaren Bereich in einem
+                            HTML-Dokument zu erstellen. Das <code>&lt;summary&gt;</code>-Element dient als Überschrift
+                            oder Beschriftung, die der Benutzer anklicken kann, um den verborgenen Inhalt im
+                            <code>&lt;details&gt;</code>-Element anzuzeigen oder zu verbergen.
+                        </p>
+
+                        <tip>
+                            Mehr dazu: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary"/>
+                        </tip>
                     </td>
                 </tr>
             </table>
