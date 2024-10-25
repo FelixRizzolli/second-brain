@@ -24,7 +24,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-scripts.topic#">
+                    <a href="html-scripts.topic#tag-canvas">
                         <code>&lt;canvas&gt;</code>
                     </a>
                 </td>
@@ -34,7 +34,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-scripts.topic#">
+                    <a href="html-scripts.topic#tag-noscript">
                         <code>&lt;noscript&gt;</code>
                     </a>
                 </td>
@@ -44,7 +44,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-scripts.topic#">
+                    <a href="html-scripts.topic#tag-script">
                         <code>&lt;script&gt;</code>
                     </a>
                 </td>
@@ -56,7 +56,17 @@
     </chapter>
 
     <chapter id="tag-description" title="Genauere Beschreibung">
+        <chapter id="tag-canvas" title="Das canvas-Element">
 
+        </chapter>
+
+        <chapter id="tag-noscript" title="Das noscript-Element">
+
+        </chapter>
+
+        <chapter id="tag-script" title="Das script-Element">
+
+        </chapter>
     </chapter>
 
     <chapter id="more" title="Weiteres">

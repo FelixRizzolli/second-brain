@@ -24,7 +24,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-strukturierung.topic#">
+                    <a href="html-strukturierung.topic#tag-address">
                         <code>&lt;address&gt;</code>
                     </a>
                 </td>
@@ -34,7 +34,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-strukturierung.topic#">
+                    <a href="html-strukturierung.topic#tag-article">
                         <code>&lt;article&gt;</code>
                     </a>
                 </td>
@@ -44,7 +44,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-strukturierung.topic#">
+                    <a href="html-strukturierung.topic#tag-aside">
                         <code>&lt;aside&gt;</code>
                     </a>
                 </td>
@@ -54,7 +54,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-strukturierung.topic#">
+                    <a href="html-strukturierung.topic#tag-footer">
                         <code>&lt;footer&gt;</code>
                     </a>
                 </td>
@@ -64,7 +64,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-strukturierung.topic#">
+                    <a href="html-strukturierung.topic#tag-header">
                         <code>&lt;header&gt;</code>
                     </a>
                 </td>
@@ -74,7 +74,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-strukturierung.topic#">
+                    <a href="html-strukturierung.topic#tag-h">
                         <code>&lt;h1&gt;</code>,
                         <code>&lt;h2&gt;</code>,
                         <code>&lt;h3&gt;</code>,
@@ -89,7 +89,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-strukturierung.topic#">
+                    <a href="html-strukturierung.topic#tag-hgroup">
                         <code>&lt;hgroup&gt;</code>
                     </a>
                 </td>
@@ -99,7 +99,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-strukturierung.topic#">
+                    <a href="html-strukturierung.topic#tag-main">
                         <code>&lt;main&gt;</code>
                     </a>
                 </td>
@@ -109,7 +109,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-strukturierung.topic#">
+                    <a href="html-strukturierung.topic#tag-nav">
                         <code>&lt;nav&gt;</code>
                     </a>
                 </td>
@@ -119,7 +119,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-strukturierung.topic#">
+                    <a href="html-strukturierung.topic#tag-section">
                         <code>&lt;section&gt;</code>
                     </a>
                 </td>
@@ -129,7 +129,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-strukturierung.topic#">
+                    <a href="html-strukturierung.topic#tag-search">
                         <code>&lt;search&gt;</code>
                     </a>
                 </td>
@@ -141,7 +141,49 @@
     </chapter>
 
     <chapter id="tag-description" title="Genauere Beschreibung">
+        <chapter id="tag-address" title="Das address-Element">
 
+        </chapter>
+
+        <chapter id="tag-article" title="Das article-Element">
+
+        </chapter>
+
+        <chapter id="tag-aside" title="Das aside-Element">
+
+        </chapter>
+
+        <chapter id="tag-footer" title="Das footer-Element">
+
+        </chapter>
+
+        <chapter id="tag-header" title="Das header-Element">
+
+        </chapter>
+
+        <chapter id="tag-h" title="Die Elemente h1 bis h6">
+
+        </chapter>
+
+        <chapter id="tag-hgroup" title="Das hgroup-Element">
+
+        </chapter>
+
+        <chapter id="tag-main" title="Das main-Element">
+
+        </chapter>
+
+        <chapter id="tag-nav" title="Das nav-Element">
+
+        </chapter>
+
+        <chapter id="tag-section" title="Das section-Element">
+
+        </chapter>
+
+        <chapter id="tag-search" title="Das search-Element">
+
+        </chapter>
     </chapter>
 
     <chapter id="more" title="Weiteres">

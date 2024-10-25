@@ -24,7 +24,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-interactive-elements.topic#">
+                    <a href="html-interactive-elements.topic#tag-details">
                         <code>&lt;details&gt;</code>
                     </a>
                 </td>
@@ -34,7 +34,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-interactive-elements.topic#">
+                    <a href="html-interactive-elements.topic#tag-dialog">
                         <code>&lt;dialog&gt;</code>
                     </a>
                 </td>
@@ -44,7 +44,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-interactive-elements.topic#">
+                    <a href="html-interactive-elements.topic#tag-summary">
                         <code>&lt;summary&gt;</code>
                     </a>
                 </td>
@@ -56,7 +56,17 @@
     </chapter>
 
     <chapter id="tag-description" title="Genauere Beschreibung">
+        <chapter id="tag-details" title="Das details-Element">
 
+        </chapter>
+
+        <chapter id="tag-dialog" title="Das dialog-Element">
+
+        </chapter>
+
+        <chapter id="tag-summary" title="Das summary-Element">
+
+        </chapter>
     </chapter>
 
     <chapter id="more" title="Weiteres">

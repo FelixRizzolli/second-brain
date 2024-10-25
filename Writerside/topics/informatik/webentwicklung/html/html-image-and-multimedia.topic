@@ -24,7 +24,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-image-and-multimedia.topic#">
+                    <a href="html-image-and-multimedia.topic#tag-area">
                         <code>&lt;area&gt;</code>
                     </a>
                 </td>
@@ -34,7 +34,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-image-and-multimedia.topic#">
+                    <a href="html-image-and-multimedia.topic#tag-audio">
                         <code>&lt;audio&gt;</code>
                     </a>
                 </td>
@@ -44,7 +44,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-image-and-multimedia.topic#">
+                    <a href="html-image-and-multimedia.topic#tag-img">
                         <code>&lt;img&gt;</code>
                     </a>
                 </td>
@@ -64,7 +64,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-image-and-multimedia.topic#">
+                    <a href="html-image-and-multimedia.topic#tag-track">
                         <code>&lt;track&gt;</code>
                     </a>
                 </td>
@@ -74,7 +74,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-image-and-multimedia.topic#">
+                    <a href="html-image-and-multimedia.topic#tag-video">
                         <code>&lt;video&gt;</code>
                     </a>
                 </td>
@@ -86,7 +86,29 @@
     </chapter>
 
     <chapter id="tag-description" title="Genauere Beschreibung">
+        <chapter id="tag-area" title="Das area-Element">
 
+        </chapter>
+
+        <chapter id="tag-audio" title="Das audio-Element">
+
+        </chapter>
+
+        <chapter id="tag-img" title="Das img-Element">
+
+        </chapter>
+
+        <chapter id="tag-map" title="Das map-Element">
+
+        </chapter>
+
+        <chapter id="tag-track" title="Das track-Element">
+
+        </chapter>
+
+        <chapter id="tag-video" title="Das -Element">
+
+        </chapter>
     </chapter>
 
     <chapter id="more" title="Weiteres">

@@ -24,7 +24,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textstrukturierung.topic#">
+                    <a href="html-textstrukturierung.topic#tag-blockquote">
                         <code>&lt;blockquote&gt;</code>
                     </a>
                 </td>
@@ -34,7 +34,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textstrukturierung.topic#">
+                    <a href="html-textstrukturierung.topic#tag-dd">
                         <code>&lt;dd&gt;</code>
                     </a>
                 </td>
@@ -44,7 +44,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textstrukturierung.topic#">
+                    <a href="html-textstrukturierung.topic#tag-div">
                         <code>&lt;div&gt;</code>
                     </a>
                 </td>
@@ -54,7 +54,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textstrukturierung.topic#">
+                    <a href="html-textstrukturierung.topic#tag-dl">
                         <code>&lt;dl&gt;</code>
                     </a>
                 </td>
@@ -64,7 +64,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textstrukturierung.topic#">
+                    <a href="html-textstrukturierung.topic#tag-dt">
                         <code>&lt;dt&gt;</code>
                     </a>
                 </td>
@@ -74,7 +74,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textstrukturierung.topic#">
+                    <a href="html-textstrukturierung.topic#tag-figcaption">
                         <code>&lt;figcaption&gt;</code>
                     </a>
                 </td>
@@ -84,7 +84,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textstrukturierung.topic#">
+                    <a href="html-textstrukturierung.topic#tag-figure">
                         <code>&lt;figure&gt;</code>
                     </a>
                 </td>
@@ -94,7 +94,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textstrukturierung.topic#">
+                    <a href="html-textstrukturierung.topic#tag-hr">
                         <code>&lt;hr&gt;</code>
                     </a>
                 </td>
@@ -104,7 +104,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textstrukturierung.topic#">
+                    <a href="html-textstrukturierung.topic#tag-li">
                         <code>&lt;li&gt;</code>
                     </a>
                 </td>
@@ -114,7 +114,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textstrukturierung.topic#">
+                    <a href="html-textstrukturierung.topic#tag-menu">
                         <code>&lt;menu&gt;</code>
                     </a>
                 </td>
@@ -124,7 +124,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textstrukturierung.topic#">
+                    <a href="html-textstrukturierung.topic#tag-ol">
                         <code>&lt;ol&gt;</code>
                     </a>
                 </td>
@@ -134,7 +134,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textstrukturierung.topic#">
+                    <a href="html-textstrukturierung.topic#tag-p">
                         <code>&lt;p&gt;</code>
                     </a>
                 </td>
@@ -144,7 +144,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textstrukturierung.topic#">
+                    <a href="html-textstrukturierung.topic#tag-pre">
                         <code>&lt;pre&gt;</code>
                     </a>
                 </td>
@@ -154,7 +154,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textstrukturierung.topic#">
+                    <a href="html-textstrukturierung.topic#tag-ul">
                         <code>&lt;ul&gt;</code>
                     </a>
                 </td>
@@ -166,7 +166,61 @@
     </chapter>
 
     <chapter id="tag-description" title="Genauere Beschreibung">
+        <chapter id="tag-blockquote" title="Das blockquote-Element">
 
+        </chapter>
+
+        <chapter id="tag-dd" title="Das dd-Element">
+
+        </chapter>
+
+        <chapter id="tag-div" title="Das div-Element">
+
+        </chapter>
+
+        <chapter id="tag-dl" title="Das dl-Element">
+
+        </chapter>
+
+        <chapter id="tag-dt" title="Das dt-Element">
+
+        </chapter>
+
+        <chapter id="tag-figcaption" title="Das figcaption-Element">
+
+        </chapter>
+
+        <chapter id="tag-figure" title="Das figure-Element">
+
+        </chapter>
+
+        <chapter id="tag-hr" title="Das hr-Element">
+
+        </chapter>
+
+        <chapter id="tag-li" title="Das li-Element">
+
+        </chapter>
+
+        <chapter id="tag-menu" title="Das menu-Element">
+
+        </chapter>
+
+        <chapter id="tag-ol" title="Das ol-Element">
+
+        </chapter>
+
+        <chapter id="tag-p" title="Das p-Element">
+
+        </chapter>
+
+        <chapter id="tag-pre" title="Das pre-Element">
+
+        </chapter>
+
+        <chapter id="tag-ul" title="Das ul-Element">
+
+        </chapter>
     </chapter>
 
     <chapter id="more" title="Weiteres">

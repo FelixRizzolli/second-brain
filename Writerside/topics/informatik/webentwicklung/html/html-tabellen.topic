@@ -24,7 +24,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-tabellen.topic#">
+                    <a href="html-tabellen.topic#tag-caption">
                         <code>&lt;caption&gt;</code>
                     </a>
                 </td>
@@ -34,7 +34,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-tabellen.topic#">
+                    <a href="html-tabellen.topic#tag-col">
                         <code>&lt;col&gt;</code>
                     </a>
                 </td>
@@ -44,7 +44,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-tabellen.topic#">
+                    <a href="html-tabellen.topic#tag-colgroup">
                         <code>&lt;colgroup&gt;</code>
                     </a>
                 </td>
@@ -54,7 +54,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-tabellen.topic#">
+                    <a href="html-tabellen.topic#tag-table">
                         <code>&lt;table&gt;</code>
                     </a>
                 </td>
@@ -64,7 +64,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-tabellen.topic#">
+                    <a href="html-tabellen.topic#tag-tbody">
                         <code>&lt;tbody&gt;</code>
                     </a>
                 </td>
@@ -74,7 +74,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-tabellen.topic#">
+                    <a href="html-tabellen.topic#tag-td">
                         <code>&lt;td&gt;</code>
                     </a>
                 </td>
@@ -84,7 +84,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-tabellen.topic#">
+                    <a href="html-tabellen.topic#tag-tfoot">
                         <code>&lt;tfoot&gt;</code>
                     </a>
                 </td>
@@ -94,7 +94,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-tabellen.topic#">
+                    <a href="html-tabellen.topic#tag-th">
                         <code>&lt;th&gt;</code>
                     </a>
                 </td>
@@ -104,7 +104,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-tabellen.topic#">
+                    <a href="html-tabellen.topic#tag-thead">
                         <code>&lt;thead&gt;</code>
                     </a>
                 </td>
@@ -114,7 +114,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-tabellen.topic#">
+                    <a href="html-tabellen.topic#tag-tr">
                         <code>&lt;tr&gt;</code>
                     </a>
                 </td>
@@ -126,7 +126,45 @@
     </chapter>
 
     <chapter id="tag-description" title="Genauere Beschreibung">
+        <chapter id="tag-caption" title="Das caption-Element">
 
+        </chapter>
+
+        <chapter id="tag-col" title="Das col-Element">
+
+        </chapter>
+
+        <chapter id="tag-colgroup" title="Das colgroup-Element">
+
+        </chapter>
+
+        <chapter id="tag-table" title="Das table-Element">
+
+        </chapter>
+
+        <chapter id="tag-tbody" title="Das tbody-Element">
+
+        </chapter>
+
+        <chapter id="tag-td" title="Das td-Element">
+
+        </chapter>
+
+        <chapter id="tag-tfoot" title="Das tfoot-Element">
+
+        </chapter>
+
+        <chapter id="tag-th" title="Das th-Element">
+
+        </chapter>
+
+        <chapter id="tag-thead" title="Das thead-Element">
+
+        </chapter>
+
+        <chapter id="tag-tr" title="Das tr-Element">
+
+        </chapter>
     </chapter>
 
     <chapter id="more" title="Weiteres">

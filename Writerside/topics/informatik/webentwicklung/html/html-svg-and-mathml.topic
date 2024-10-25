@@ -24,7 +24,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-svg-and-mathml.topic#">
+                    <a href="html-svg-and-mathml.topic#tag-svg">
                         <code>&lt;svg&gt;</code>
                     </a>
                 </td>
@@ -34,7 +34,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-svg-and-mathml.topic#">
+                    <a href="html-svg-and-mathml.topic#tag-math">
                         <code>&lt;math&gt;</code>
                     </a>
                 </td>
@@ -46,7 +46,13 @@
     </chapter>
 
     <chapter id="tag-description" title="Genauere Beschreibung">
+        <chapter id="tag-svg" title="Das svg-Element">
 
+        </chapter>
+
+        <chapter id="tag-math" title="Das math-Element">
+
+        </chapter>
     </chapter>
 
     <chapter id="more" title="Weiteres">

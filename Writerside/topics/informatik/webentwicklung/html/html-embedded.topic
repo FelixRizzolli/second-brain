@@ -24,7 +24,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-embedded.topic#">
+                    <a href="html-embedded.topic#tag-embed">
                         <code>&lt;embed&gt;</code>
                     </a>
                 </td>
@@ -34,7 +34,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-embedded.topic#">
+                    <a href="html-embedded.topic#tag-facedframe">
                         <code>&lt;facedframe&gt;</code>
                     </a>
                 </td>
@@ -44,7 +44,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-embedded.topic#">
+                    <a href="html-embedded.topic#tag-iframe">
                         <code>&lt;iframe&gt;</code>
                     </a>
                 </td>
@@ -54,7 +54,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-embedded.topic#">
+                    <a href="html-embedded.topic#tag-object">
                         <code>&lt;object&gt;</code>
                     </a>
                 </td>
@@ -64,7 +64,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-embedded.topic#">
+                    <a href="html-embedded.topic#tag-picture">
                         <code>&lt;picture&gt;</code>
                     </a>
                 </td>
@@ -74,7 +74,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-embedded.topic#">
+                    <a href="html-embedded.topic#tag-portal">
                         <code>&lt;portal&gt;</code>
                     </a>
                 </td>
@@ -84,7 +84,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-embedded.topic#">
+                    <a href="html-embedded.topic#tag-source">
                         <code>&lt;source&gt;</code>
                     </a>
                 </td>
@@ -96,7 +96,33 @@
     </chapter>
 
     <chapter id="tag-description" title="Genauere Beschreibung">
+        <chapter id="tag-embed" title="Das embed-Element">
 
+        </chapter>
+
+        <chapter id="tag-facedframe" title="Das facedframe-Element">
+
+        </chapter>
+
+        <chapter id="tag-iframe" title="Das iframe-Element">
+
+        </chapter>
+
+        <chapter id="tag-object" title="Das object-Element">
+
+        </chapter>
+
+        <chapter id="tag-picture" title="Das picture-Element">
+
+        </chapter>
+
+        <chapter id="tag-portal" title="Das portal-Element">
+
+        </chapter>
+
+        <chapter id="tag-source" title="Das source-Element">
+
+        </chapter>
     </chapter>
 
     <chapter id="more" title="Weiteres">
