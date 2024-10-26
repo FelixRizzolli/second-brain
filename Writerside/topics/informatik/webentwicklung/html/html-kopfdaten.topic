@@ -330,6 +330,48 @@
         </chapter>
 
         <chapter id="tag-style" title="Das style-Element">
+            <p>
+                Mit dem <code>style</code>-Element kann CSS direkt im HTML-Dokument definiert werden. Zwischen den
+                <code>&lt;style&gt;</code>- und <code>&lt;/style&gt;</code>-Tags wird der CSS-Code eingefügt. Jedes
+                HTML-Dokument kann mehrere <code>style</code>-Elemente enthalten.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                <![CDATA[
+                    <!doctype html>
+                    <html lang="de">
+                        <head>
+                            <style type="text/css">
+                                p {
+                                    width: 300px;
+                                    padding: 25px;
+                                    border: 1px solid #323232;
+                                    background-color: #ddd0c8;
+                                    text-align: center;
+                                    color: #323232;
+                                }
+                            </style>
+                            <title>Das style-Element im Einsatz</title>
+                            <meta charset="UTF-8">
+                        </head>
+                        <body>
+                            <p>Ein einfacher Absatztext!</p>
+                        </body>
+                    </html>
+                ]]>
+            </code-block>
+
+            <deflist>
+                <def title="media">
+                    Um Anzugeben, für welches Medium/Gerät der CSS-Code optimiert ist. Dies kann verwendet werden, um
+                    mehrere Styles für verschiedene Medientypen zu definieren.
+                </def>
+                <def title="type">
+                    Der MIME-Typ des Stylesheets. Der Standardwert ist <code>text/css</code> und kann somit
+                    mittlerweile auch weggelassen werden.
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>style</code>-Element hier:
