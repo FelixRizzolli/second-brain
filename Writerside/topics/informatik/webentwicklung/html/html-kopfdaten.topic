@@ -139,6 +139,171 @@
         </chapter>
 
         <chapter id="tag-link" title="Das link-Element">
+            <p>
+                Das <code>link</code>-Element ist ein selbstschließendes Tag und stellt eine Beziehung zwischen dem
+                aktuellen Dokument und einer externen Ressource her. In der Praxis wird das <code>link</code>-Element
+                häufig verwendet, um eine externe CSS-Datei in das aktuelle Dokument einzubinden. Das
+                <code>&lt;link&gt;</code>-Tag kann mehrfach im <code>&lt;head&gt;</code>-Element verwendet werden, um
+                mehrere Ressourcen einzubinden.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                <![CDATA[
+                    <!doctype html>
+                    <html lang="de">
+                        <head>
+                            <title>Logische Verlinkung mit link</title>
+                            <link rel="stylesheet" type="text/css" href="style.css">
+                            <meta charset="UTF-8">
+                        </head>
+                        <body>
+                            <p>Ein einfacher Absatztext!</p>
+                        </body>
+                    </html>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <deflist>
+                <def title="href">
+                    Die URL der verlinkten Ressource.
+                </def>
+                <def title="hreflang">
+                    Definiert die Sprache der zu verknüpfenden Ressource.
+                </def>
+                <def title="media">
+                    Um Anzugeben, für welches Medium/Gerät die Zielressource optimiert ist. Dieses Attribut wird z.B.
+                    gerne mit Stylesheets verwendet, um mehrere Styles für verschiedene Medientypen zu definieren.
+                </def>
+                <def title="rel">
+                    <p>
+                        Der Beziehungstyp zwischen dem aktuellen Dokument und der verlinkten Ressource. Der Wert des
+                        <code>rel</code>-Attributs hängt von der Art der verlinkten Ressource ab. Beispiele:
+                    </p>
+
+                    <table style="header-column">
+                        <tr>
+                            <td>
+                                <code>alternate</code>
+                            </td>
+                            <td>
+                                Verweist auf eine alternative Präsentationsform des Dokuments. Dies wird z.B. verwendet,
+                                um ein alternatives Stylesheet zu verlinken.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>author</code>
+                            </td>
+                            <td>
+                                Verlinkt zu einer anderen Seite mit Informationen über den Autor des aktuellen
+                                Dokuments. Es kann auch eine andere Ressource wie z.B. einen
+                                <code>mailto:</code>-Link zu einer E-Mail-Adresse des Autors verwendet werden.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>archives</code>
+                            </td>
+                            <td>
+                                Hiermit kann zu einer vorherigen Version bestimmter Dokumente, wie z.B. bei einem Archiv
+                                eines Blogs, verlinkt werden.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>help</code>
+                            </td>
+                            <td>
+                                Verlinkt zu einem Hilfsdokument.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>icon</code>
+                            </td>
+                            <td>
+                                Hiermit kann der Webseite ein Favicon zugwiesen werden. Dieses wird im Browser-Tab
+                                angezeigt und in der Lesezeichenleiste, wenn die Seite als Lesezeichen gespeichert wird.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>license</code>
+                            </td>
+                            <td>
+                                Verknüpft die aktuelle Seite mit einer Seite, auf der die Nutzungsrechte für die Inhalte
+                                der aktuellen Seite enthalten sind.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>next, prev</code>
+                            </td>
+                            <td>
+                                Diese Angaben werden verwendet, um eine Verknüpfung von der aktuellen Seite zur nächsten
+                                (<code>next</code>) bzw. vorhergehenden Seite (<code>prev</code>) herzustellen.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>prefetch</code>
+                            </td>
+                            <td>
+                                Damit wird eine externe Webseite mit der aktuellen Seite verknüpft, die vermutlich vom
+                                Benutzer als Nächstes aufgerufen werden könnte. Dadurch könnte der Browser diese Seite
+                                bereits in einen Zwischenspeicher laden, obwohl der Benutzer noch die aktuelle Seite
+                                betrachtet. Wenn der Benutzer diese Seite dann öffnet, kann sie aus dem Zwischenspeicher
+                                schneller geladen werden.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>pingback</code>
+                            </td>
+                            <td>
+                                Hier kann die Webseite eines Pingback-Servers angegeben werden, was gerade bei Blogs
+                                sehr nützlich ist, um Pingbacks für das aktuelle Dokument zu behandeln.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>search</code>
+                            </td>
+                            <td>
+                                Verlinkt das aktuelle Dokument mit einem anderen Dokument, in dem die Suche über die
+                                ganze Website möglich ist.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>stylesheet</code>
+                            </td>
+                            <td>
+                                Verweist auf ein Stylesheet.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>tag</code>
+                            </td>
+                            <td>
+                                Ein einfaches Tag als verlinkte Ressource, das für das aktuelle Dokument gilt.
+                            </td>
+                        </tr>
+                    </table>
+                </def>
+                <def title="size">
+                    Gibt die Größe(n) für die zu verlinkende Ressource an. Macht nur Sinn, wenn das Attribut
+                    <code>rel="icon"</code> ist. Beispiel: <code>size="16x16"</code> (1 Größe);
+                    <code>size="16x16 32x32"</code> (2 Größen) oder <code>size="any"</code> (beliebige Größe).
+                </def>
+                <def title="type">
+                    Damit wird der MIME-Typ für das zu verlinkende Dokument angegeben (z.B. <code>text/css</code> für
+                    eine CSS-Datei).
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>link</code>-Element hier:
