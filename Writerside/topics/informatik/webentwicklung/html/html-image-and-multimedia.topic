@@ -88,26 +88,50 @@
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-area" title="Das area-Element">
 
+            <tip>
+                Mehr zum <code>area</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/area">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-audio" title="Das audio-Element">
 
+            <tip>
+                Mehr zum <code>audio</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/audio">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-img" title="Das img-Element">
 
+            <tip>
+                Mehr zum <code>img</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/img">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-map" title="Das map-Element">
 
+            <tip>
+                Mehr zum <code>map</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/map">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-track" title="Das track-Element">
 
+            <tip>
+                Mehr zum <code>track</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/track">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-video" title="Das -Element">
 
+            <tip>
+                Mehr zum <code>video</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/video">MDN Web Docs</a>
+            </tip>
         </chapter>
     </chapter>
 

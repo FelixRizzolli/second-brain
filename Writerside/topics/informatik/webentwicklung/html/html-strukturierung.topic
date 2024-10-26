@@ -143,46 +143,90 @@
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-address" title="Das address-Element">
 
+            <tip>
+                Mehr zum <code>address</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/address">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-article" title="Das article-Element">
 
+            <tip>
+                Mehr zum <code>article</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/article">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-aside" title="Das aside-Element">
 
+            <tip>
+                Mehr zum <code>aside</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/aside">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-footer" title="Das footer-Element">
 
+            <tip>
+                Mehr zum <code>footer</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/footer">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-header" title="Das header-Element">
 
+            <tip>
+                Mehr zum <code>header</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/header">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-h" title="Die Elemente h1 bis h6">
 
+            <tip>
+                Mehr zu den <code>h1</code>-<code>h6</code>-Elementen hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/h1">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-hgroup" title="Das hgroup-Element">
 
+            <tip>
+                Mehr zum <code>hgroup</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/hgroup">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-main" title="Das main-Element">
 
+            <tip>
+                Mehr zum <code>main</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/main">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-nav" title="Das nav-Element">
 
+            <tip>
+                Mehr zum <code>nav</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/nav">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-section" title="Das section-Element">
 
+            <tip>
+                Mehr zum <code>section</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/section">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-search" title="Das search-Element">
 
+            <tip>
+                Mehr zum <code>search</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/search">MDN Web Docs</a>
+            </tip>
         </chapter>
     </chapter>
 

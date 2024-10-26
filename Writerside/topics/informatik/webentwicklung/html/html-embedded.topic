@@ -98,30 +98,58 @@
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-embed" title="Das embed-Element">
 
+            <tip>
+                Mehr zum <code>embed</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/embed">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-facedframe" title="Das facedframe-Element">
 
+            <tip>
+                Mehr zum <code>facedframe</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/facedframe">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-iframe" title="Das iframe-Element">
 
+            <tip>
+                Mehr zum <code>iframe</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/iframe">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-object" title="Das object-Element">
 
+            <tip>
+                Mehr zum <code>object</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/object">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-picture" title="Das picture-Element">
 
+            <tip>
+                Mehr zum <code>picture</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/picture">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-portal" title="Das portal-Element">
 
+            <tip>
+                Mehr zum <code>portal</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/portal">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-source" title="Das source-Element">
 
+            <tip>
+                Mehr zum <code>source</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/source">MDN Web Docs</a>
+            </tip>
         </chapter>
     </chapter>
 

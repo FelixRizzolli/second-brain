@@ -338,126 +338,250 @@
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-a" title="Das a-Element">
 
+            <tip>
+                Mehr zum <code>a</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/a">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-abbr" title="Das abbr-Element">
 
+            <tip>
+                Mehr zum <code>abbr</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/abbr">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-b" title="Das b-Element">
 
+            <tip>
+                Mehr zum <code>b</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/b">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-bdi" title="Das bdi-Element">
 
+            <tip>
+                Mehr zum <code>bdi</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/bdi">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-bdo" title="Das bdo-Element">
 
+            <tip>
+                Mehr zum <code>bdo</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/bdo">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-br" title="Das br-Element">
 
+            <tip>
+                Mehr zum <code>br</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/br">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-cite" title="Das cite-Element">
 
+            <tip>
+                Mehr zum <code>cite</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/cite">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-code" title="Das code-Element">
 
+            <tip>
+                Mehr zum <code>code</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/code">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-data" title="Das data-Element">
 
+            <tip>
+                Mehr zum <code>data</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/data">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-del" title="Das del-Element">
 
+            <tip>
+                Mehr zum <code>del</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/del">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-dfn" title="Das dfn-Element">
 
+            <tip>
+                Mehr zum <code>dfn</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/dfn">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-em" title="Das em-Element">
 
+            <tip>
+                Mehr zum <code>em</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/em">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-i" title="Das i-Element">
 
+            <tip>
+                Mehr zum <code>i</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/i">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-ins" title="Das ins-Element">
 
+            <tip>
+                Mehr zum <code>ins</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/ins">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-kbd" title="Das kbd-Element">
 
+            <tip>
+                Mehr zum <code>kbd</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/kbd">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-mark" title="Das mark-Element">
 
+            <tip>
+                Mehr zum <code>mark</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/mark">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-q" title="Das q-Element">
 
+            <tip>
+                Mehr zum <code>q</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/q">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-rp" title="Das rp-Element">
 
+            <tip>
+                Mehr zum <code>rp</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/rp">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-rt" title="Das rt-Element">
 
+            <tip>
+                Mehr zum <code>rt</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/rt">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-ruby" title="Das ruby-Element">
 
+            <tip>
+                Mehr zum <code>ruby</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/ruby">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-s" title="Das s-Element">
 
+            <tip>
+                Mehr zum <code>s</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/s">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-samp" title="Das samp-Element">
 
+            <tip>
+                Mehr zum <code>samp</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/samp">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-small" title="Das small-Element">
 
+            <tip>
+                Mehr zum <code>small</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/small">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-span" title="Das span-Element">
 
+            <tip>
+                Mehr zum <code>span</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/span">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-strong" title="Das strong-Element">
 
+            <tip>
+                Mehr zum <code>strong</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/strong">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-sub" title="Das sub-Element">
 
+            <tip>
+                Mehr zum <code>sub</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/sub">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-sup" title="Das sup-Element">
 
+            <tip>
+                Mehr zum <code>sup</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/sup">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-time" title="Das time-Element">
 
+            <tip>
+                Mehr zum <code>time</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/time">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-u" title="Das u-Element">
 
+            <tip>
+                Mehr zum <code>u</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/u">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-var" title="Das var-Element">
 
+            <tip>
+                Mehr zum <code>var</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/var">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-wbr" title="Das wbr-Element">
 
+            <tip>
+                Mehr zum <code>wbr</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/wbr">MDN Web Docs</a>
+            </tip>
         </chapter>
     </chapter>
 

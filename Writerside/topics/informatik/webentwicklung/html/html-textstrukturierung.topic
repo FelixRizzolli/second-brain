@@ -168,58 +168,114 @@
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-blockquote" title="Das blockquote-Element">
 
+            <tip>
+                Mehr zum <code>blockquote</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/blockquote">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-dd" title="Das dd-Element">
 
+            <tip>
+                Mehr zum <code>dd</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/dd">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-div" title="Das div-Element">
 
+            <tip>
+                Mehr zum <code>div</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/div">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-dl" title="Das dl-Element">
 
+            <tip>
+                Mehr zum <code>dl</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/dl">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-dt" title="Das dt-Element">
 
+            <tip>
+                Mehr zum <code>dt</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/dt">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-figcaption" title="Das figcaption-Element">
 
+            <tip>
+                Mehr zum <code>figcaption</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/figcaption">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-figure" title="Das figure-Element">
 
+            <tip>
+                Mehr zum <code>figure</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/figure">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-hr" title="Das hr-Element">
 
+            <tip>
+                Mehr zum <code>hr</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/hr">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-li" title="Das li-Element">
 
+            <tip>
+                Mehr zum <code>li</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/li">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-menu" title="Das menu-Element">
 
+            <tip>
+                Mehr zum <code>menu</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/menu">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-ol" title="Das ol-Element">
 
+            <tip>
+                Mehr zum <code>ol</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/ol">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-p" title="Das p-Element">
 
+            <tip>
+                Mehr zum <code>p</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/p">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-pre" title="Das pre-Element">
 
+            <tip>
+                Mehr zum <code>pre</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/pre">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-ul" title="Das ul-Element">
 
+            <tip>
+                Mehr zum <code>ul</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/ul">MDN Web Docs</a>
+            </tip>
         </chapter>
     </chapter>
 

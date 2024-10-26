@@ -48,10 +48,18 @@
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-svg" title="Das svg-Element">
 
+            <tip>
+                Mehr zum <code>svg</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/svg">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-math" title="Das math-Element">
 
+            <tip>
+                Mehr zum <code>math</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/math">MDN Web Docs</a>
+            </tip>
         </chapter>
     </chapter>
 

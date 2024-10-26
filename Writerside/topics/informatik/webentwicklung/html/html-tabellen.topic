@@ -128,42 +128,82 @@
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-caption" title="Das caption-Element">
 
+            <tip>
+                Mehr zum <code>caption</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/caption">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-col" title="Das col-Element">
 
+            <tip>
+                Mehr zum <code>col</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/col">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-colgroup" title="Das colgroup-Element">
 
+            <tip>
+                Mehr zum <code>colgroup</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/colgroup">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-table" title="Das table-Element">
 
+            <tip>
+                Mehr zum <code>table</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/table">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-tbody" title="Das tbody-Element">
 
+            <tip>
+                Mehr zum <code>tbody</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/tbody">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-td" title="Das td-Element">
 
+            <tip>
+                Mehr zum <code>td</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/td">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-tfoot" title="Das tfoot-Element">
 
+            <tip>
+                Mehr zum <code>tfoot</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/tfoot">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-th" title="Das th-Element">
 
+            <tip>
+                Mehr zum <code>th</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/th">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-thead" title="Das thead-Element">
 
+            <tip>
+                Mehr zum <code>thead</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/thead">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-tr" title="Das tr-Element">
 
+            <tip>
+                Mehr zum <code>tr</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/tr">MDN Web Docs</a>
+            </tip>
         </chapter>
     </chapter>
 

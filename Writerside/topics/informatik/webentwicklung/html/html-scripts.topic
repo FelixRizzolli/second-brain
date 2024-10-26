@@ -58,14 +58,26 @@
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-canvas" title="Das canvas-Element">
 
+            <tip>
+                Mehr zum <code>canvas</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/canvas">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-noscript" title="Das noscript-Element">
 
+            <tip>
+                Mehr zum <code>noscript</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/noscript">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-script" title="Das script-Element">
 
+            <tip>
+                Mehr zum <code>script</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/script">MDN Web Docs</a>
+            </tip>
         </chapter>
     </chapter>
 

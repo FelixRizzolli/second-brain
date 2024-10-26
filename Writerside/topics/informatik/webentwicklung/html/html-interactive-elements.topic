@@ -58,14 +58,26 @@
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-details" title="Das details-Element">
 
+            <tip>
+                Mehr zum <code>details</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/details">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-dialog" title="Das dialog-Element">
 
+            <tip>
+                Mehr zum <code>dialog</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/dialog">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-summary" title="Das summary-Element">
 
+            <tip>
+                Mehr zum <code>summary</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/summary">MDN Web Docs</a>
+            </tip>
         </chapter>
     </chapter>
 
