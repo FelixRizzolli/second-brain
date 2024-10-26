@@ -131,22 +131,113 @@
                     <a href="https://www.seobility.net/en/serp-snippet-generator/"/>) erstellen.
                 </p>
             </note>
+
+            <tip>
+                Mehr zum <code>title</code>-Element hier:
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-link" title="Das link-Element">
 
+            <tip>
+                Mehr zum <code>link</code>-Element hier:
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-meta" title="Das meta-Element">
 
+            <tip>
+                Mehr zum <code>meta</code>-Element hier:
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-style" title="Das style-Element">
 
+            <tip>
+                Mehr zum <code>style</code>-Element hier:
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style">MDN Web Docs</a>
+            </tip>
         </chapter>
 
         <chapter id="tag-base" title="Das base-Element">
+            <p>
+                Das <code>base</code>-Element definiert eine Basis-URL oder ein Basisziel für alle im HTML-Dokument
+                referenzierten Dateien, wie Bilder, Stylesheets, Skripte oder andere HTML-Dokumente. Dadurch können
+                relative oder absolute Adressen verwendet werden, als ob sich die Dateien auf demselben Host wie das
+                HTML-Dokument befinden.
+            </p>
 
+            <!-- @formatter:off -->
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                <![CDATA[
+                    <!doctype html>
+                    <html lang="de">
+                        <head>
+                            <title>Basis-URL definieren</title>
+                            <base href="https://static.rheinwerk-verlag.de/"
+                                  target="_blank">
+                            <meta charset="UTF-8">
+                        </head>
+                        <body>
+                            <img src="favicon-152.png" alt="Logo">
+                        </body>
+                    </html>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                Im obigen Beispiel wird die Basis-URL auf <path>https://static.rheinwerk-verlag.de/</path> gesetzt.
+                Dadurch wird das Bild <path>favicon-152.png</path> relativ zur Basis-URL geladen, also von
+                <path>https://static.rheinwerk-verlag.de/favicon-152.png</path>.
+            </p>
+
+            <warning>
+                In einem HTML-Dokument kann es nur ein base-Element geben, und es muss zwischen
+                <code>&lt;head&gt;</code> und <code>&lt;/head&gt;</code> geschrieben werden. Wenn Sie trotzdem mehrere
+                <code>base</code>-Elemente definieren sollten, wird der Webbrowser gewöhnlich nur das erste
+                <code>href</code>- und das erste <code>target</code>-Attribut verwenden. Alle anderen würden ignoriert.
+                Die Validitätsprüfung von HTML würde allerdings einen Fehler zurückgeben, wenn mehr als ein
+                <code>base</code>-Element verwendet wird.
+            </warning>
+
+            <deflist>
+                <def title="href">
+                    Die URL, die als Basis für alle relativen URLs im Dokument verwendet wird.
+                </def>
+                <def title="target">
+                    <p>
+                        Legt das Zielfenster fest, in dem das Verweisziel angezeigt werden soll.
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            <code>_self</code>: Das Verweisziel wird im gleichen Fenster oder Tab geöffnet.
+                        </li>
+                        <li>
+                            <code>_blank</code>: Das Verweisziel wird in einem neuen Fenster oder Tab geöffnet.
+                        </li>
+                        <li>
+                            <code>_parent</code>: Das Verweisziel wird im übergeordneten Frame geöffnet. Wenn kein Frame
+                            vorhanden ist, wird das Verweisziel im gleichen Fenster oder Tab geöffnet und verhält sich
+                            somit wie <code>_self</code>.
+                        </li>
+                        <li>
+                            <code>_top</code>: Lädt den Verweis der Datei in dem am höchsten in der Hierarchie stehenden
+                            Fenster. Gibt es gar kein höher stehendes Eltern-Fenster, verhält sich diese Option wie
+                            <code>_self</code>.
+                        </li>
+                    </list>
+                </def>
+            </deflist>
+
+            <tip>
+                Mehr zum <code>base</code>-Element hier:
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base">MDN Web Docs</a>
+            </tip>
         </chapter>
     </chapter>
 
