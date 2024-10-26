@@ -29,7 +29,8 @@
                     </a>
                 </td>
                 <td>
-                    Bindet die clientseitigen Skripte ein.
+                    Das <code>canvas</code>-Element wird verwendet, um Grafiken, Animationen, Spiele oder andere
+                    visuelle Darstellungen zu zeichnen.
                 </td>
             </tr>
             <tr>
@@ -39,7 +40,8 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Das <code>noscript</code>-Element definiert einen alternativen Inhalt, der angezeigt wird, wenn
+                    Skripte im Browser deaktiviert sind.
                 </td>
             </tr>
             <tr>
@@ -49,7 +51,7 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Mit dem <code>script</code>-Element können Skripte in die HTML-Seite eingebettet werden.
                 </td>
             </tr>
         </table>
@@ -73,6 +75,64 @@
         </chapter>
 
         <chapter id="tag-script" title="Das script-Element">
+            <p>
+                Das <code>script</code>-Element wird verwendet, um Skripte (wie JavaScript) in die HTML-Seite
+                einzubetten oder auf externe Skriptdateien mit dem <code>src</code>-Attribut zu verweisen. Wenn auf eine
+                externe Skriptdatei verwiesen wird, darf das <code>script</code>-Element kein Inhalt enthalten.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                <![CDATA[
+                    <!doctype html>
+                    <html lang="de">
+                        <head>
+                            <title>Das script-Element verwenden</title>
+                            <script type="text/javascript">
+                                window.onload=alert("Ein JavaScript!")
+                            </script>
+                            <meta charset="UTF-8">
+                        </head>
+                        <body>
+                            <p>Der erste Absatztext!</p>
+                        </body>
+                    </html>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                Das <code>script</code>-Element kann im <code>head</code>- oder <code>body</code>-Bereich platziert
+                werden. Wenn es im <code>head</code>-Bereich platziert wird, wird das Skript ausgeführt, sobald der
+                Browser das <code>script</code>-Element erreicht. Das Laden der restlichen Seite wird so lange
+                blockiert, bis das Skript ausgeführt wurde. Daher ist es in der Praxis meistens sinnvoller, den
+                Skriptcode am Ende der HTML-Datei, am günstigsten vor dem schließenden <code>&lt;body&gt;</code>-Tag,
+                zu verwenden.
+            </p>
+
+            <deflist>
+                <def title="async">
+                    Wird <code>async</code> verwendet, wird das Skript asynchron mit dem Parsen des HTML-Dokuments
+                    ausgeführt. Das <code>async</code>-Attribut wird ignoriert, wenn das <code>script</code>-Element
+                    kein <code>src</code>-Attribut hat.
+                </def>
+                <def title="charset">
+                    Legt die Zeichencodierung für das externe Skript fest.
+                </def>
+                <def title="defer">
+                    Wird <code>defer</code> verwendet, wird das Skript erst ausgeführt, nachdem das HTML-Dokument
+                    geparst wurde. Das <code>defer</code>-Attribut wird ignoriert, wenn das <code>script</code>-Element
+                    kein <code>src</code>-Attribut hat.
+                </def>
+                <def title="src">
+                    Gibt die URL der externen Skriptdatei an.
+                </def>
+                <def title="type">
+                    Gibt den MIME-Typ des Skripts an. Da der Standardwert <code>text/javascript</code> ist kann dieses
+                    Attribut in der Regel weggelassen werden. Das Attribut ist jedoch erforderlich, wenn das Skript in
+                    einer anderen Sprache als JavaScript geschrieben wurde. Beispiel: <code>text/python</code>.
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>script</code>-Element hier:
