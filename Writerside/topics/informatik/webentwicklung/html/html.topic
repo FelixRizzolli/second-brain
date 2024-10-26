@@ -325,6 +325,103 @@
             </p>
         </chapter>
 
+        <chapter id="naming-conventions" title="Namenskonventionen und Referenzierung">
+            <chapter id="naming-conventions-files" title="Dateinamen">
+                <p>
+                    Beim Vergeben von Dateinamen für HTML-Dokumente sollte man sich an folgende Richtlinien und
+                    Empfehlungen halten:
+                </p>
+
+                <list type="bullet">
+                    <li>
+                        <p>
+                            <b>Empfohlen:</b> Es sollten nur <i>Kleinbuchstaben</i> (a–z), <i>Ziffern</i> (0–9),
+                            <i>Bindestrich</i> und <i>Unterstrich</i> verwendet werden. Der Punkt sollte nur zur
+                            Abtrennung der Dateiendung verwendet werden. Maximal 256 Zeichen für den Dateinamen
+                            verwenden.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Weniger zu empfehlen:</b> <i>Umlaute</i> vermeiden, da sie nicht auf allen Systemen
+                            reibungslos funktionieren und auf vielen Tastaturen weltweit nicht vorhanden sind.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Gar nicht zu empfehlen:</b> <i>Großschreibung</i> vermeiden, da einige Systeme zwischen
+                            Groß- und Kleinschreibung unterscheiden. Keine <i>Leerzeichen</i> verwenden; stattdessen
+                            Unterstrich oder Bindestrich nutzen.
+                        </p>
+                    </li>
+                </list>
+
+                <note>
+                    <p>
+                        <b>
+                            Dateinamen und SEO
+                        </b>
+                    </p>
+
+                    <p>
+                        Dateinamen sollten aussagekräftig und suchmaschinenfreundlich sein. Sie sollten das Thema der
+                        Seite widerspiegeln und relevante Schlüsselwörter enthalten. Suchmaschinen nutzen Dateinamen als
+                        Indikator für den Inhalt der Seite, daher ist es wichtig, sie sorgfältig zu wählen.
+                    </p>
+                </note>
+            </chapter>
+
+            <chapter id="naming-conventions-paths" title="Verzeichnisstrukturen">
+                <p>
+                    Sinnvolle Verzeichnisnamen und -strukturen verwenden. Dies kann sich positiv auf das
+                    Suchmaschinenranking auswirken. Beispiel für eine positive Struktur:
+                </p>
+
+                <list type="bullet">
+                    <li>
+                        <path>/smartphones</path>
+                    </li>
+                    <li>
+                        <path>/smartphones/apple</path>
+                    </li>
+                    <li>
+                        <path>/smartphones/android</path>
+                    </li>
+                    <li>
+                        <path>/apps/apple</path>
+                    </li>
+                    <li>
+                        <path>/apps/android</path>
+                    </li>
+                </list>
+
+                <p>
+                    Eine thematische Verzeichnisstruktur kombiniert mit einem guten Dateinamen kann zu einer URL wie
+                    folgt führen: <path>domain.de/smartphones/android/samsung-xyz-kaufen.html</path>
+                </p>
+
+                <p>
+                    Verzeichnisnamen, die für Besucher oder Suchmaschinen nicht informativ sind, sollten
+                    vermieden werden. Zum Beispiel:
+                </p>
+
+                <list type="bullet">
+                    <li>
+                        <path>/html</path>
+                    </li>
+                    <li>
+                        <path>/html/seiten</path>
+                    </li>
+                    <li>
+                        <path>/inhalt</path>
+                    </li>
+                    <li>
+                        <path>/inhalt/seiten</path>
+                    </li>
+                </list>
+            </chapter>
+        </chapter>
+
         <chapter id="validation" title="HTML Validieren">
             <p>
                 HTML-Validierung ist der Prozess, bei dem ein HTML-Dokument auf die Einhaltung der Syntaxregeln und
