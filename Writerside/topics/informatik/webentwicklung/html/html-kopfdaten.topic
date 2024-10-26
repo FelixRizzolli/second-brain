@@ -378,24 +378,44 @@
                         Legt das Zielfenster fest, in dem das Verweisziel angezeigt werden soll.
                     </p>
 
-                    <list type="bullet">
-                        <li>
-                            <code>_self</code>: Das Verweisziel wird im gleichen Fenster oder Tab geöffnet.
-                        </li>
-                        <li>
-                            <code>_blank</code>: Das Verweisziel wird in einem neuen Fenster oder Tab geöffnet.
-                        </li>
-                        <li>
-                            <code>_parent</code>: Das Verweisziel wird im übergeordneten Frame geöffnet. Wenn kein Frame
-                            vorhanden ist, wird das Verweisziel im gleichen Fenster oder Tab geöffnet und verhält sich
-                            somit wie <code>_self</code>.
-                        </li>
-                        <li>
-                            <code>_top</code>: Lädt den Verweis der Datei in dem am höchsten in der Hierarchie stehenden
-                            Fenster. Gibt es gar kein höher stehendes Eltern-Fenster, verhält sich diese Option wie
-                            <code>_self</code>.
-                        </li>
-                    </list>
+                    <table style="header-column">
+                        <tr>
+                            <td>
+                                <code>_self</code>
+                            </td>
+                            <td>
+                                Das Verweisziel wird im gleichen Fenster oder Tab geöffnet.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>_blank</code>
+                            </td>
+                            <td>
+                                Das Verweisziel wird in einem neuen Fenster oder Tab geöffnet.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>_parent</code>
+                            </td>
+                            <td>
+                                Das Verweisziel wird im übergeordneten Frame geöffnet. Wenn kein Frame vorhanden ist,
+                                wird das Verweisziel im gleichen Fenster oder Tab geöffnet und verhält sich somit wie
+                                <code>_self</code>.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>_top</code>
+                            </td>
+                            <td>
+                                Lädt den Verweis der Datei in dem am höchsten in der Hierarchie stehenden Fenster. Gibt
+                                es gar kein höher stehendes Eltern-Fenster, verhält sich diese Option
+                                wie <code>_self</code>.
+                            </td>
+                        </tr>
+                    </table>
                 </def>
             </deflist>
 
