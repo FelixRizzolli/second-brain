@@ -12,7 +12,11 @@
     <!-- TODO -->
     <chapter id="introduction" title="Einleitung">
         <p id="%id_prefix%-description">
-            ...
+            Im Kopfbereich eines HTML-Dokuments (zwischen <code>&lt;head&gt;</code> und <code>&lt;/head&gt;</code>)
+            können verschiedene Elemente hinzugefügt werden, die den Inhalt und die Darstellung der Webseite steuern
+            sowie Beziehungen zum Browser und anderen Dokumenten herstellen. Außer dem <code>title</code>-Element werden
+            diese Inhalte nicht im Browser angezeigt. Nach einer Übersicht über diese Elemente folgt die Beschreibung
+            einzelner HTML-Elemente.
         </p>
     </chapter>
 
@@ -88,7 +92,45 @@
 
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-title" title="Das title-Element">
+            <p>
+                In jedem HTML-Dokument muss ein Titel angegeben werden, der im Browser-Tab angezeigt wird. Der Titel
+                wird zwischen den <code>&lt;title&gt;</code>- und <code>&lt;/title&gt;</code>-Tags eingefügt. Es kann
+                nur ein <code>&lt;title&gt;</code>-Element pro Dokument geben.
+            </p>
 
+            <warning>
+                <p>
+                    <b>
+                        Invalides HTML
+                    </b>
+                </p>
+
+                <p>
+                    Ein HTML-Dokument ohne <code>&lt;title&gt;</code>-Element ist nicht valide und generiert somit auch
+                    von einem Validator eine Fehlermeldung.
+                </p>
+            </warning>
+
+            <p>
+                Der Titel dient nicht nur zur Darstellung im Browser-Tab, sondern auch als Name beim Setzen von
+                Lesezeichen und ist bei Suchmaschinen von großer Bedeutung. Der Titel ist oft das Erste, was Besucher
+                bei Suchergebnissen sehen und wirkt sich auf das Ranking in der Trefferliste aus. Für die
+                <a href="seo.topic">Suchmaschinenoptimierung (SEO)</a> sollte der Titel ein bis zwei Schlüsselwörter
+                enthalten und eine Länge von 50 bis 60 Zeichen nicht überschreiten.
+            </p>
+
+            <note>
+                <p>
+                    <b>
+                        SERP Snippet Generator
+                    </b>
+                </p>
+
+                <p>
+                    Suchergebnisse können für Testzwecke mit einem sogenannten SERP Snippet Generator (beispielsweise
+                    <a href="https://www.seobility.net/en/serp-snippet-generator/"/>) erstellen.
+                </p>
+            </note>
         </chapter>
 
         <chapter id="tag-link" title="Das link-Element">
