@@ -165,6 +165,16 @@
             </code-block>
             <!-- @formatter:on -->
 
+            <note>
+                Einige Werte des <code>rel</code>-Attributs sind in der Praxis nur bedingt sinnvoll, da nicht festgelegt
+                ist, wie oder ob Webbrowser diese logischen Verknüpfungen anzeigen. Für Linktypen wie <code>next</code>,
+                <code>prev</code>, <code>first</code>, <code>last</code>, <code>author</code>, <code>help</code>,
+                <code>search</code>, <code>sidebar</code> oder <code>license</code> ist es daher ratsamer, selbst
+                Schaltflächen oder Texte für Hyperlinks zu erstellen. Mit dem globalen Attribut <code>title</code> kann
+                eine Beschriftung festgelegt werden, die angezeigt wird, wenn ein Webbrowser diese Verknüpfungen
+                unterstützt. Nicht unterstützte Verknüpfungen werden ignoriert.
+            </note>
+
             <deflist>
                 <def title="href">
                     Die URL der verlinkten Ressource.
