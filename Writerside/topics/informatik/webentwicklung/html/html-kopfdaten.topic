@@ -697,8 +697,7 @@
             <!-- @formatter:off -->
             <code-block lang="html">
                 <![CDATA[
-                    <meta name="keywords"
-                          content="html, meta, keywords">
+                    <meta name="keywords" content="html, meta, keywords">
                 ]]>
             </code-block>
             <!-- @formatter:on -->
@@ -718,14 +717,65 @@
             </code-block>
             <!-- @formatter:on -->
 
-            <p>
+            <warning>
                 Ohne Beschreibung generiert die Suchmaschine den Text aus dem Seiteninhalt, was unvorhersehbar ist.
                 Daher sollte die Beschreibung selbst festgelegt werden.
-            </p>
+            </warning>
         </chapter>
 
         <chapter id="meta-browser" title="Nützliche Metadaten für den Webbrowser">
+            <p>
+                Das <code>http-equiv</code>-Attribut im <code>&lt;meta&gt;</code>-Tag kann verwendet werden, um eine
+                Webseite nach einer bestimmten Zeit zu aktualisieren oder auf eine andere URL weiterzuleiten:
+            </p>
 
+            <list type="bullet">
+                <li>
+                    <p>
+                        <b>
+                            Aktualisierung der Webseite
+                        </b>
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="html">
+                        <![CDATA[
+                            <meta http-equiv="refresh" content="30">
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+
+                    <p>
+                        Aktualisiert die Seite alle 30 Sekunden.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>
+                            Weiterleitung auf eine andere URL
+                        </b>
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="html">
+                        <![CDATA[
+                            <meta http-equiv="refresh" content="5; URL=http://domain.de/">
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+
+                    <p>
+                        Leitet nach 5 Sekunden zu <code>http://domain.de/</code> weiter.
+                    </p>
+                </li>
+            </list>
+
+            <note>
+                Automatische Weiterleitungen sollten vermieden werden, da sie von einigen Browsern und Suchmaschinen
+                ignoriert werden. Stattdessen sollte ein Hyperlink im HTML-Dokumentkörper verwendet werden. Alternativ
+                kann eine Weiterleitung auf dem Server konfiguriert werden (z.B. in <code>.htaccess</code> oder
+                <code>web.config</code>).
+            </note>
         </chapter>
     </chapter>
 
