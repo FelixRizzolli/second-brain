@@ -688,7 +688,40 @@
         </chapter>
 
         <chapter id="meta-seo" title="Hilfreiche Metadaten für Suchmaschinen">
+            <p>
+                Für Suchmaschinen sind die <code>name</code>-Werte <code>keywords</code> und <code>description</code>
+                von Bedeutung. Der Wert <code>keywords</code> hat an Bedeutung verloren, da er oft missbraucht wurde.
+                Wenn Schlüsselwörter angegeben werden, müssen sie durch Kommata getrennt werden, z.B.:
+            </p>
 
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <meta name="keywords"
+                          content="html, meta, keywords">
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                Wichtiger ist der Beschreibungstext <code>description</code>, der neben dem Titel das Erste ist, was
+                Nutzer in Suchmaschinen sehen. Die Beschreibung sollte kurz und präzise sein (150-250 Zeichen).
+                Beispiel:
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <meta name="description"
+                          content="Eine Beschreibung sollte möglichst kurz und präzise sein. Hier sollte in 2-3 Sätzen zusammengefasst werden, worum es auf dieser Seite geht. Zu viele Zeichen werden gekürzt.">
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                Ohne Beschreibung generiert die Suchmaschine den Text aus dem Seiteninhalt, was unvorhersehbar ist.
+                Daher sollte die Beschreibung selbst festgelegt werden.
+            </p>
         </chapter>
 
         <chapter id="meta-browser" title="Nützliche Metadaten für den Webbrowser">
