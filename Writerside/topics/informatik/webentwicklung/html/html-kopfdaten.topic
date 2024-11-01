@@ -627,7 +627,40 @@
 
     <chapter id="more" title="Weiteres">
         <chapter id="meta-viewport" title="Den Viewport einstellen">
+            <p>
+                Der Viewport ist der Bereich des Browserfensters, in dem Webinhalte angezeigt werden. Um eine korrekte
+                Darstellung auf mobilen Geräten zu gewährleisten und eine automatische Verkleinerung zu verhindern, wird
+                das folgende <code>meta</code>-Element verwendet:
+            </p>
 
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <meta name="viewport"
+                          content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                Dieses Element stellt sicher, dass die Webseite die tatsächliche Breite des Geräts verwendet, mit einer
+                normalen Zoomstufe dargestellt wird und auf dem iPad im Split View nicht verkleinert wird.
+            </p>
+
+            <list type="bullet">
+                <li>
+                    <code>width=device-width</code>: Setzt die Breite des Viewports auf die Breite des Geräts, sodass
+                    die Webseite die volle Breite des Bildschirms nutzt.
+                </li>
+                <li>
+                    <code>initial-scale=1.0</code>: Setzt den anfänglichen Zoomlevel auf 1:1, sodass die Seite in der
+                    normalen Zoomstufe angezeigt wird.
+                </li>
+                <li>
+                    <code>shrink-to-fit=no</code>: Verhindert, dass der Safari-Browser auf dem iPad die Webseite im
+                    Split View verkleinert, sodass der Inhalt in der beabsichtigten Größe bleibt.
+                </li>
+            </list>
         </chapter>
 
         <chapter id="meta-crawler" title="Nützliche Metadaten für einen Webcrawler angeben">
