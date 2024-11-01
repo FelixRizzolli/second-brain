@@ -664,7 +664,27 @@
         </chapter>
 
         <chapter id="meta-crawler" title="Nützliche Metadaten für einen Webcrawler angeben">
+            <p>
+                Metadaten für Webcrawler sind Empfehlungen, die Suchmaschinen nicht zwingend befolgen müssen. Um
+                Anweisungen für Webcrawler zu geben, wird das <code>meta</code>-Element mit dem
+                <code>name</code>-Attribut <code>robots</code> und dem <code>content</code>-Attribut, das die
+                Anweisungen enthält, verwendet. Beispiele:
+            </p>
 
+            <list type="bullet">
+                <li>
+                    <code>&lt;meta name="robots" content="index,follow"&gt;</code>: Erlaubt dem Webcrawler, die Seite
+                    zu indizieren und den Links zu folgen.
+                </li>
+                <li>
+                    <code>&lt;meta name="robots" content="noindex"&gt;</code>: Verhindert, dass die Seite indiziert
+                    wird.
+                </li>
+                <li>
+                    <code>&lt;meta name="robots" content="nofollow"&gt;</code>: Erlaubt die Indizierung, verhindert aber
+                    das Folgen der Links.
+                </li>
+            </list>
         </chapter>
 
         <chapter id="meta-seo" title="Hilfreiche Metadaten für Suchmaschinen">
