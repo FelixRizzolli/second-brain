@@ -322,6 +322,153 @@
         </chapter>
 
         <chapter id="tag-meta" title="Das meta-Element">
+            <p>
+                Ein <code>&lt;meta&gt;</code>-Element enthält normalerweise mindestens zwei Attribute. Diese Attribute
+                können entweder eine Kombination aus <code>name</code> und <code>content</code> oder eine Kombination
+                aus <code>http-equiv</code> und <code>content</code> sein. Es gibt auch eine spezielle Variante für die
+                Angabe der Zeichencodierung.
+            </p>
+
+            <list type="bullet">
+                <li>
+                    <p>
+                        <b>
+                            <code>name</code>/<code>content</code>-Kombinationen - die frei definierbaren Metadaten
+                        </b>
+                    </p>
+
+                    <p>
+                        Das <code>meta</code>-Element mit dem <code>name</code>-Attribut kann beliebige Informationen im
+                        <code>content</code>-Attribut enthalten. Standardisierte
+                        <code>name</code>/<code>content</code>-Kombinationen in HTML sind für Dokumentinformationen
+                        gedacht, nicht für persönliche Daten.
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="html">
+                        <![CDATA[
+                            <meta name="author" content="Max Mustermann">
+                            <meta name="keywords" content="Metadaten, meta, html">
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <b>
+                            <code>http-equiv</code>/<code>content</code>-Kombinationen – HTTP-Äquivalente
+                        </b>
+                    </p>
+
+                    <p>
+                        <code>http-equiv</code>-Attribute im <code>meta</code>-Tag werden verwendet, um mit dem
+                        Webserver zu kommunizieren. Da Webserver jedoch keine HTML-Dokumente parsen, liegt es am
+                        Browser, diese Direktiven zu verarbeiten. Ein Beispiel für die Verwendung von
+                        <code>http-equiv</code>, um eine Seite alle 5 Sekunden zu aktualisieren, ist unten gezeigt:
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="html">
+                        <![CDATA[
+                            <meta http-equiv="refresh" content="5">
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <b>
+                            Zeichencodierung für das HTML-Dokument festlegen
+                        </b>
+                    </p>
+
+                    <p>
+                        Neben den Attributpaaren <code>name</code>/<code>content</code> und <code>http-equiv</code>/
+                        <code>content</code> gibt es eine dritte Möglichkeit, die Zeichencodierung festzulegen:
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="html">
+                        <![CDATA[
+                            <meta charset="UTF-8">
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+
+                    <p>
+                        Dies stellt sicher, dass Sonderzeichen korrekt dargestellt werden. UTF-8 ist weit verbreitet und
+                        sollte standardmäßig verwendet werden.
+                    </p>
+                </li>
+            </list>
+
+            <deflist>
+                <def title="content">
+                    <p>
+                        Übergibt den Wert, der mit dem Attribut von <code>http-equiv</code> oder <code>name</code>
+                        verbunden ist.
+                    </p>
+                </def>
+                <def title="charset">
+                    <p>
+                        Legt die Zeichencodierung für das HTML-Dokument fest.
+                    </p>
+                </def>
+                <def title="http-equiv">
+                    <p>
+                        Wird für den HTTP-Response-Header verwendet. Beispielsweise kann hiermit eine Webseite nach
+                        einer gewissen Zeit aktualisiert oder auf eine andere URL umgeleitet werden. Einige mögliche
+                        Werte sind:
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            <code>content-language</code>
+                        </li>
+                        <li>
+                            <code>content-type</code>
+                        </li>
+                        <li>
+                            <code>default-style</code>
+                        </li>
+                        <li>
+                            <code>refresh</code>
+                        </li>
+                    </list>
+                </def>
+                <def title="name">
+                    <p>
+                        Definiert einen Namen für die Metadaten. Einige Standardwerte sind:
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            <code>viewport</code>
+                        </li>
+                        <li>
+                            <code>theme-color</code>
+                        </li>
+                        <li>
+                            <code>robots</code>
+                        </li>
+                        <li>
+                            <code>application-name</code>
+                        </li>
+                        <li>
+                            <code>author</code>
+                        </li>
+                        <li>
+                            <code>description</code>
+                        </li>
+                        <li>
+                            <code>generator</code>
+                        </li>
+                        <li>
+                            <code>keywords</code>
+                        </li>
+                    </list>
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>meta</code>-Element hier:
@@ -479,7 +626,21 @@
     </chapter>
 
     <chapter id="more" title="Weiteres">
+        <chapter id="meta-viewport" title="Den Viewport einstellen">
 
+        </chapter>
+
+        <chapter id="meta-crawler" title="Nützliche Metadaten für einen Webcrawler angeben">
+
+        </chapter>
+
+        <chapter id="meta-seo" title="Hilfreiche Metadaten für Suchmaschinen">
+
+        </chapter>
+
+        <chapter id="meta-browser" title="Nützliche Metadaten für den Webbrowser">
+
+        </chapter>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
