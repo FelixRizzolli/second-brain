@@ -275,7 +275,13 @@
             </tr>
             <tr>
                 <td>
-                    SpiderMonkey, TraceMonkey, JägerMonkey, OdinMonkey
+                    SpiderMonkey,
+                    <br/>
+                    TraceMonkey,
+                    <br/>
+                    JägerMonkey,
+                    <br/>
+                    OdinMonkey
                 </td>
                 <td>
                     <p>
