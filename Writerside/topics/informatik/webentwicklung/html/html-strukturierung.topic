@@ -299,7 +299,15 @@
     </chapter>
 
     <chapter id="more" title="Weiteres">
-
+        <chapter id="article_or_section" title="&lt;article&gt; oder &lt;section&gt; verwenden?">
+            <p>
+                Die Entscheidung, ob ein <code>&lt;article&gt;</code>- oder ein <code>&lt;section&gt;</code>-Element
+                verwendet werden sollte, hängt davon ab, ob der Inhalt unabhängig vom restlichen Inhalt der Seite ist.
+                Ein <code>&lt;article&gt;</code>-Element sollte verwendet werden, wenn der Inhalt für sich alleine
+                steht und unabhängig von anderen Inhalten ist. Ein <code>&lt;section&gt;</code>-Element hingegen wird
+                verwendet, wenn der Inhalt in themenbezogene Abschnitte unterteilt werden soll.
+            </p>
+        </chapter>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
