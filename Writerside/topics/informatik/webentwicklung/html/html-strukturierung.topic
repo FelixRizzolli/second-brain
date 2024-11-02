@@ -153,6 +153,36 @@
         </chapter>
 
         <chapter id="tag-article" title="Das article-Element">
+            <p>
+                Das <code>&lt;article&gt;</code>-Element sollte nur verwendet werden, um einen in sich geschlossenen
+                themenspezifischen Bereich zusammenzufassen. An sich ist es dem <code>&lt;section&gt;</code>-Element
+                recht ähnlich, jedoch ist der Inhalt eines <code>&lt;article&gt;</code>-Elements unabhängig vom
+                restlichen Inhalt der Seite. Es eignet sich optimal für einzelne Newsmeldungen, Blog- oder Forenbeiträge
+                oder auch Kommentare zu einem Blogpost bzw. News anzubieten.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                <![CDATA[
+                    <!doctype html>
+                    <html lang="de">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title>Beispiel</title>
+                        </head>
+                        <body>
+                            <h1>Hauptüberschrift</h1>
+                            <p>Ein wenig Text vor dem Artikel.</p>
+
+                            <article>
+                                <h2>Artikelüberschrift</h2>
+                                <p>Ein Absatztext it viel Inhalt für den Artikel.</p>
+                            </article>
+                        </body>
+                    </html>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>article</code>-Element hier:
