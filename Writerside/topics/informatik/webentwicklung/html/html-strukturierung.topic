@@ -245,6 +245,29 @@
         </chapter>
 
         <chapter id="tag-header" title="Das header-Element">
+            <p>
+                Das <code>&lt;header&gt;</code>-Element sollte für einführende Elemente wie eine Seitenüberschrift, den
+                Namen der Webseite oder eine Navigationsleiste des HTML-Dokuments verwendet werden. Zwischen
+                <code>&lt;header&gt;</code> und <code>&lt;/header&gt;</code> können weitere HTML-Elemente enthalten
+                sein, jedoch dürfen keine weiteren <code>&lt;header&gt;</code>-Elemente darin verschachtelt werden.
+                Obwohl es naheliegend erscheint, muss das <code>&lt;header&gt;</code>-Element nicht zwingend im
+                Kopfbereich stehen und kann auch mehrfach im Dokument verwendet werden. In der Praxis wird das
+                <code>&lt;header&gt;</code>-Element häufig für den Kopf der Seite verwendet, der z.B. das Logo, einen
+                Slogan und Navigationselemente enthalten kann.
+            </p>
+
+            <warning>
+                <p>
+                    <b>
+                        Ungültige Positionen von <code>&lt;header&gt;</code>
+                    </b>
+                </p>
+
+                <p>
+                    Ein <code>&lt;header&gt;</code>-Tag darf nicht innerhalb eines <code>footer</code>-,
+                    <code>address</code>- oder anderen <code>header</code>-Elements verwendet werden.
+                </p>
+            </warning>
 
             <tip>
                 Mehr zum <code>header</code>-Element hier:
