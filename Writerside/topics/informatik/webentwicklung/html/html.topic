@@ -466,6 +466,103 @@
                 überprüfen. <b>HTML-Editoren</b> bieten oft auch integrierte Validierungsfunktionen an.
             </p>
         </chapter>
+
+        <chapter id="semantic" title="Semantik">
+            <p>
+                Semantik in HTML bezieht sich auf die Verwendung von HTML-Tags, die die Bedeutung und Struktur des
+                Inhalts vermitteln. Diese Tags helfen sowohl Browsern als auch Entwicklern, die Rolle und Wichtigkeit
+                verschiedener Teile einer Webseite zu verstehen.
+            </p>
+
+            <chapter id="semantic-meaning" title="Bedeutung von Semantik in HTML">
+                <list type="decimal">
+                    <li>
+                        <p>
+                            <b>
+                                Verbesserte Zugänglichkeit
+                            </b>
+                        </p>
+
+                        <p>
+                            Semantische Tags erleichtern es Screenreadern und anderen unterstützenden Technologien, den
+                            Inhalt zu interpretieren und zu navigieren, was die Benutzererfahrung für Menschen mit
+                            Behinderungen verbessert.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>
+                                Bessere SEO
+                            </b>
+                        </p>
+
+                        <p>
+                            Suchmaschinen verwenden semantische Tags, um den Inhalt und Kontext einer Webseite zu
+                            verstehen, was das Suchmaschinenranking der Seite verbessern kann.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>
+                                Erhöhte Lesbarkeit
+                            </b>
+                        </p>
+
+                        <p>
+                            Semantische Tags bieten eine klare Struktur, wodurch der HTML-Code für Entwickler lesbarer
+                            und wartbarer wird.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>
+                                Konsistente Gestaltung
+                            </b>
+                        </p>
+
+                        <p>
+                            Durch die Verwendung semantischer Tags kann CSS diese Tags effektiver ansprechen, was zu
+                            einer konsistenteren Gestaltung führt.
+                        </p>
+                    </li>
+                </list>
+            </chapter>
+
+            <chapter id="semantic-examples" title="Beispiele für semantische HTML-Tags">
+                <list>
+                    <li>
+                        <a href="html-strukturierung.topic#tag-article"><code>&lt;article&gt;</code></a>: Repräsentiert
+                        einen eigenständigen Inhalt, der unabhängig verteilt oder wiederverwendet werden kann.
+                    </li>
+                    <li>
+                        <a href="html-strukturierung.topic#tag-aside"><code>&lt;aside&gt;</code></a>: Enthält Inhalte,
+                        die in Bezug auf den umgebenden Inhalt nebensächlich sind, wie Seitenleisten oder Hinweisboxen.
+                    </li>
+                    <li>
+                        <a href="html-strukturierung.topic#tag-footer"><code>&lt;footer&gt;</code></a>: Definiert den
+                        Fußbereich eines Abschnitts oder einer Seite, typischerweise mit Informationen über den Autor,
+                        Copyright oder Links zu verwandten Dokumenten.
+                    </li>
+                    <li>
+                        <a href="html-strukturierung.topic#tag-header"><code>&lt;header&gt;</code></a>: Repräsentiert
+                        einführende Inhalte oder eine Gruppe von Navigationslinks.
+                    </li>
+                    <li>
+                        <a href="html-strukturierung.topic#tag-nav"><code>&lt;nav&gt;</code></a>: Enthält
+                        Navigationslinks.
+                    </li>
+                    <li>
+                        <a href="html-strukturierung.topic#tag-section"><code>&lt;section&gt;</code></a>: Definiert
+                        einen Abschnitt in einem Dokument, typischerweise mit einer Überschrift.
+                    </li>
+                </list>
+
+                <p>
+                    Die Verwendung dieser semantischen Elemente hilft, eine gut strukturierte, zugängliche und
+                    SEO-freundliche Webseite zu erstellen.
+                </p>
+            </chapter>
+        </chapter>
     </chapter>
 
     <chapter id="overview" title="Übersicht der HTML-Elemente">

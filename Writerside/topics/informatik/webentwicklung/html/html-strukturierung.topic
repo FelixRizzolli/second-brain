@@ -12,7 +12,9 @@
     <!-- TODO -->
     <chapter id="introduction" title="Einleitung">
         <p id="%id_prefix%-description">
-            ...
+            In der Vergangenheit wurden <code>div</code>-Elemente mit speziellen IDs oder Klassen zur Strukturierung von
+            Webseiten verwendet. Heutzutage bietet modernes HTML verschiedene semantische Elemente, die eine sinnvolle
+            Unterteilung der Webseite ermöglichen.
         </p>
     </chapter>
 
@@ -29,7 +31,7 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Kontaktinformationen zum Autor des Inhalts oder des Dokuments.
                 </td>
             </tr>
             <tr>
@@ -39,7 +41,7 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Unterteilung von Inhalten in einen in sich geschlossenen themenspezifischen Bereich.
                 </td>
             </tr>
             <tr>
@@ -49,7 +51,8 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Wird für marginale Informationen eines Inhalts wie einer Seitenleiste oder für zusätzliche
+                    Informationen zu einem Artikel verwendet.
                 </td>
             </tr>
             <tr>
@@ -59,7 +62,7 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Fußbereich eines Inhalts
                 </td>
             </tr>
             <tr>
@@ -69,7 +72,7 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Kopfbereich eines Inhalts
                 </td>
             </tr>
             <tr>
@@ -84,7 +87,7 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Überschriften der 1. bis 6. Ordnung
                 </td>
             </tr>
             <tr>
@@ -114,7 +117,7 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Element zur Auszeichnung von Navigation(en) wie einer Sitemap oder der Hauptnavigation der Webseite
                 </td>
             </tr>
             <tr>
@@ -124,7 +127,7 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Unterteilung des HTML-Dokuments in verschiedene Abschnitte/Sektionen
                 </td>
             </tr>
             <tr>
