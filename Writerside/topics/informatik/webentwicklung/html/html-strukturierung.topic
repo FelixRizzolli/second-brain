@@ -237,6 +237,17 @@
         </chapter>
 
         <chapter id="tag-footer" title="Das footer-Element">
+            <p>
+                Das <code>&lt;footer&gt;</code>-Element für die Auszeichnung des Fußbereichs einer Webseite ist das
+                Gegenstück zum <code>&lt;header&gt;</code>-Element. Sinnvolle Inhalte für den Fußbereich einer
+                Webseite sind z.B. rechtliche Informationen, Impressum, Kontakt, Copyright oder AGB, aber auch eine
+                Sitemap oder eine spezielle Navigationsleiste kann hier verwendet werden.
+            </p>
+
+            <warning>
+                Innerhalb eines <code>footer</code>-Elements dürfen keine weiteren <code>footer</code>-Elemente
+                verwendet werden.
+            </warning>
 
             <tip>
                 Mehr zum <code>footer</code>-Element hier:
