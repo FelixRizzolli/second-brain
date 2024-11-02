@@ -191,6 +191,44 @@
         </chapter>
 
         <chapter id="tag-aside" title="Das aside-Element">
+            <p>
+                Mit dem <code>&lt;aside&gt;</code>-Element werden für gewöhnlich Inhalte durch zusätzliche Informationen
+                ergänzt oder erweitert. Genau genommen kann das <code>aside</code>-Element für zwei verschiedene
+                semantische Dinge verwendet werden. Die erste Einsatzmöglichkeit wäre in Form einer Seitenleiste, die
+                zweite eine zusätzliche Information (etwa ein Zitat) zu einem Inhalt z.B. innerhalb eines
+                <code>article</code>-Elements.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                <![CDATA[
+                    <!doctype html>
+                    <html lang="de">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title>Beispiel</title>
+                        </head>
+                        <body>
+                            <h1>Hauptüberschrift</h1>
+                            <p>Ein wenig Text vor dem Artikel.</p>
+
+                            <article>
+                                ...
+                            </article>
+
+                            <aside>
+                                <h3>Partner-Websites</h3>
+                                <ul>
+                                    <li><a href="#">Website 1</a></li>
+                                    <li><a href="#">Website 2</a></li>
+                                    <li><a href="#">Website 3</a></li>
+                                </ul>
+                            </aside>
+                        </body>
+                    </html>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>aside</code>-Element hier:
