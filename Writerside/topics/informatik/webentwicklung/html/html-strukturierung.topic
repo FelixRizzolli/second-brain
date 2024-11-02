@@ -277,6 +277,45 @@
         </chapter>
 
         <chapter id="tag-nav" title="Das nav-Element">
+            <p>
+                Das <code>&lt;nav&gt;</code>-Element wird verwendet, um Navigationselemente wie eine Sitemap oder die
+                Hauptnavigation einer Webseite auszuzeichnen. Es ist wichtig zu beachten, dass das
+                <code>nav</code>-Element nur für Navigationselemente verwendet werden sollte, die sich auf die aktuelle
+                Seite oder den aktuellen Abschnitt beziehen.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                <![CDATA[
+                    <!doctype html>
+                    <html lang="de">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title>Beispiel</title>
+                        </head>
+                        <body>
+                            <nav>
+                                <a href="#">Home</a> |
+                                <a href="#">Über mich</a> |
+                                <a href="#">Portfolio</a> |
+                                <a href="#">Kontakt</a>
+                            </nav>
+
+                            <h1>Hauptüberschrift</h1>
+                            <p>Ein wenig Text vor dem Artikel.</p>
+
+                            <article>
+                                ...
+                            </article>
+
+                            <aside>
+                                ...
+                            </aside>
+                        </body>
+                    </html>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>nav</code>-Element hier:
@@ -344,6 +383,15 @@
                 Ein <code>&lt;article&gt;</code>-Element sollte verwendet werden, wenn der Inhalt für sich alleine
                 steht und unabhängig von anderen Inhalten ist. Ein <code>&lt;section&gt;</code>-Element hingegen wird
                 verwendet, wenn der Inhalt in themenbezogene Abschnitte unterteilt werden soll.
+            </p>
+        </chapter>
+
+        <chapter id="nav-usecase" title="&lt;nav&gt; nur für die Hauptnavigation">
+            <p>
+                Die HTML-Spezifikation schlägt vor, das <code>&lt;nav&gt;</code>-Element nur für die Hauptnavigation
+                zu verwenden. Dies beinhaltet keine externen Zusatzlinks oder Partnerlinks auf externe Websites.
+                Ebenso wird empfohlen, Rechtliches wie Kopierrechte, Kontaktinformationen und Impressum nicht in den
+                <code>nav</code>-Bereich zu legen und stattdessen den <code>footer</code>-Bereich dafür zu verwenden.
             </p>
         </chapter>
     </chapter>
