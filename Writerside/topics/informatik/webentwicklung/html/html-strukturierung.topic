@@ -253,6 +253,40 @@
         </chapter>
 
         <chapter id="tag-h" title="Die Elemente h1 bis h6">
+            <p>
+                Das HTML Element für Überschriften einer bestimmten Ordnung ist <code>&lt;h1&gt;</code> bis
+                <code>&lt;h6&gt;</code>. Die Nummer (1 bis 6) steht für die Überschriftebene.
+            </p>
+
+            <note>
+                Die verwendung von <code>h1</code>-Tags wird von Suchmaschinen als Signal für den wichtigsten Inhalt
+                auf der Seite betrachtet.
+            </note>
+
+            <p>
+                Folgende Punkte sollten beachtet werden, wenn Überschriften in einem HTML-Dokument verwendet werden:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    Nur eine <code>h1</code>-Überschrift pro Seite verwenden.
+                </li>
+                <li>
+                    Die Reihenfolge der Überschriften sollte eingehalten werden.
+                </li>
+                <li>
+                    Überschriften sollten verwendet werden, um Abschnitte einzuteilen.
+                </li>
+                <li>
+                    Überschriften sollten verwendet werden, um hierarchische Strukturen darzustellen.
+                </li>
+                <li>
+                    Überschriften sollten nicht zur gestalterischen Anpassung verwendet werden.
+                </li>
+                <li>
+                    Überschiften sollten kurz und prägnant sein.
+                </li>
+            </list>
 
             <tip>
                 Mehr zu den <code>h1</code>-<code>h6</code>-Elementen hier:
