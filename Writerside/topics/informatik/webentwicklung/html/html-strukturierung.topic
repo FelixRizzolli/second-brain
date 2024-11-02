@@ -217,6 +217,41 @@
         </chapter>
 
         <chapter id="tag-section" title="Das section-Element">
+            <p>
+                Mit dem <code>&lt;section&gt;</code>-Element wird der Inhalt gewöhnlich in themenbezogene Abschnitte
+                eingeteilt. Das ist z.B. hilfreich, wenn ein Dokument in einzelne Kapitel oder gar Unterkapitel
+                aufgeteilt werden soll.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                <![CDATA[
+                    <!doctype html>
+                    <html lang="de">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title>Beispiel</title>
+                        </head>
+                        <body>
+                            <section>
+                                <h1>Kapitel 1</h1>
+                                <p>Das erste Kapitel</p>
+                            </section>
+
+                            <section>
+                                <h1>Kapitel 2</h1>
+                                <p>Das zweite Kapitel</p>
+
+                                <section>
+                                    <h2>Unterkapitel 2.1</h2>
+                                    <p>Das erste Unterkapitel des zweiten Kapitels</p>
+                                </section>
+                            </section>
+                        </body>
+                    </html>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>section</code>-Element hier:
