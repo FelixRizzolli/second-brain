@@ -226,6 +226,21 @@
         </chapter>
 
         <chapter id="tag-hr" title="Das hr-Element">
+            <p>
+                Mit dem <code>&lt;hr&gt;</code>-Element (hr = horizontal rule, deutsch: horizontale Linie) wird eine
+                thematische Trennung in einem HTML-Dokument erzeugt, um z.B. einen Inhalt deutlicher voneinander zu
+                trennen. Das <code>hr</code>-Element ist ein alleinstehendes Tag.
+            </p>
+
+            <note>
+                Aber auch wenn <code>hr</code> in HTML von den Webbrowsern als Trennlinie visualisiert wird, ist das
+                Element ebenfalls als semantisches Element zu behandeln und kein Präsentationselement.
+            </note>
+
+            <warning>
+                Es ist kein valides HTML, das <code>hr</code>-Element zwischen <code>&lt;p&gt;</code> und
+                <code>&lt;/p&gt;</code> oder innerhalb einer Überschrift zu verwenden.
+            </warning>
 
             <tip>
                 Mehr zum <code>hr</code>-Element hier:
