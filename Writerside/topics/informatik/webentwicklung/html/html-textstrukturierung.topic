@@ -489,6 +489,54 @@
         </chapter>
 
         <chapter id="tag-dl-dt-dd" title="Das dl-, dt- und dd-Element">
+            <p>
+                Das <code>&lt;dl&gt;</code>-Element (dl = description list, deutsch: Beschreibungsliste) wird verwendet,
+                um eine Liste von Begriffen und deren Definitionen zu erstellen. Jeder Begriff wird mit dem
+                <code>&lt;dt&gt;</code>-Element (dt = definition term, deutsch: Definitionsbegriff) definiert, und die
+                Definition wird mit dem <code>&lt;dd&gt;</code>-Element (dd = definition description, deutsch:
+                Definitionserklärung) beschrieben. Die Liste wird durch das <code>dl</code>-Element umschlossen.
+            </p>
+
+            <p>
+                Bei dieser Liste handelt es sich um eine Name-Wert-Zuordnungsliste. Typische Anwendungsfälle für die
+                Beschreibungsliste sind Glossare, die Auflistung spezieller Metadaten und Werte – eben einfach eine
+                spezielle Liste mit bestimmten Daten, in der ein Wert oder eben eine Beschreibung zugeordnet wird.
+                Eine solche Name-Wert-Paarliste kann ebenfalls innerhalb von anderen HTML-Elementen wie beispielsweise
+                zwischen <code>&lt;aside&gt;</code> und<code>&lt;/aside&gt;</code> oder dem neuen
+                <code>details</code>-Element verwendet werden
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <h3>Buchvorstellung</h3>
+                    <img src="Computergeschichten.png" alt="Computergeschichten">
+
+                    <br>
+
+                    <details>
+                        <summary>Informationen zum Buch:</summary>
+
+                        <dl>
+                            <dt>Verlag</dt>
+                            <dd>Rheinwerk Verlag</dd>
+
+                            <dt>Autor</dt>
+                            <dd>Jürgen Wolf</dd>
+
+                            <dt>Umfang</dt>
+                            <dd>400 Seiten</dd>
+
+                            <dt>Preis</dt>
+                            <dd>24,90 Euro</dd>
+
+                            <dt>ISBN</dt>
+                            <dd> ISBN 978-3-8362-7777-8 </dd>
+                        </dl>
+                    </details>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>dl</code>-Element hier:
