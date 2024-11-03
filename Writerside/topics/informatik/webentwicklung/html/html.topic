@@ -696,6 +696,12 @@
         </chapter>
 
         <chapter id="interactive-elements" title="Interaktive Elemente">
+            <include element-id="-description" from="html-interactive-elements.topic">
+                <var name="id_prefix" value="interactive-elements"></var>
+            </include>
+            <include element-id="-overview-table" from="html-interactive-elements.topic">
+                <var name="id_prefix" value="interactive-elements"></var>
+            </include>
         </chapter>
 
         <chapter id="web-components" title="Web Components">
