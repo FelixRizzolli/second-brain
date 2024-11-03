@@ -756,7 +756,34 @@
         </chapter>
 
         <chapter id="tag-ins-del" title="Das ins- und del-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>ins</code>-Element wird von den Webbrowsern ähnlich wie das <code>u</code>-Element und das
+                <code>del</code>-Element ähnlich wie das <code>s</code>-Element dargestellt. Trotzdem ist die
+                semantische Bedeutung der beiden Elemente eine andere und daher nicht austauschbar.
+            </p>
+
+            <p>
+                Mit dem <code>del</code>-Element (del = deleted) wird Text als gelöscht im überarbeiteten Sinn markiert.
+                Das <code>ins</code>-Element (ins = inserted) wird verwendet, um Text als neu hinzugefügt im
+                überarbeiteten Sinn zu markieren. Beide kennzeichnen eine Weiterentwicklung der Vorgängerversion des
+                Textes.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <del>
+                        <p>Der Sänger tritt am Sonntag im Konzertsaal auf!</p>
+                    </del>
+                    <ins>
+                        <p>
+                            Das Konzert findet nicht statt,
+                            da der Sänger erkrankt ist!
+                        </p>
+                    </ins>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>ins</code>-Element hier:
