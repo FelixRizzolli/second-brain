@@ -509,14 +509,90 @@
 
     <chapter id="more" title="Weiteres">
         <chapter id="tag-ol-reversed" title="Nummerierung einer geordneten Liste umkehren">
+            <p>
+                Mit dem <code>reversed</code>-Attribut kann die Nummerierung einer geordneten Liste umgekehrt werden.
+            </p>
 
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <ol reversed="reversed">
+                        <!-- ... -->
+                    </ol>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
         </chapter>
 
         <chapter id="tag-ol-start" title="Nummerierung einer geordneten Liste ändern">
+            <p>
+                Mit dem <code>start</code>-Attribut kann die Nummerierung einer geordneten Liste geändert werden. Mit
+                dem <code>value</code>-Attribut kann die Nummerierung eines einzelnen Listenelements geändert werden.
+            </p>
 
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <ol start="20">
+                        <li>Punkt 20</li>
+                        <li>Punkt 21</li>
+                        <li>Punkt 22</li>
+                        <li value="101">Punkt 101</li>
+                        <li>Punkt 102</li>
+                    </ol>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
         </chapter>
 
         <chapter id="nested-list" title="Listen ineinander verschachteln">
+            <p>
+                Beide Listenarten können ineinander verschachtelt werden. Solche verschachtelten Listen werden
+                verwendet, wenn z.B. eine feinere Gliederung der Listen benötigt wird - etwa ein Inhaltsverzeichnis.
+            </p>
+
+            <p>
+                Beim Verschachteln werden nicht, wie vielleicht vermutet, die <code>li</code>-Elemente ineinander
+                verschachtelt, sondern es muss erneut ein <code>ul</code>- bzw. <code>ol</code>-Element mit den
+                verschachtelten <code>li</code>-Elementen innerhalb eines übergeordneten sich öffnenden
+                <code>&lt;li&gt;</code>-Tags notiert werden. Erst wenn das öffnende <code>&lt;li&gt;</code>-Tag mit dem
+                schließenden <code>&lt;/li&gt;</code>-Tag geschlossen wird, wird die Liste als untergeordnete Liste
+                gekennzeichnet und angezeigt.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit amet
+
+                            <ul><!-- Start: 1. Verschachtelung -->
+                                <li>Donec quam felis ultricies</li>
+                                <li>Nulla consequat massa quis</li>
+                            </ul><!-- Ende: 1. Verschachtelung -->
+                        </li>
+                        <li>Etiam ultricies nisi vel</li>
+                        <li>Donec vitae sapien ut libero</li>
+                    </ul>
+
+                    ...
+
+                    <ol>
+                        <li>
+                            Lorem ipsum dolor sit amet
+
+                            <ol><!-- Start: 1. Verschachtelung -->
+                                <li>Donec quam felis ultricies</li>
+                                <li>Nulla consequat massa quis</li>
+                            </ol><!-- Ende: 1. Verschachtelung -->
+                        </li>
+                        <li>Etiam ultricies nisi vel</li>
+                        <li>Donec vitae sapien ut libero</li>
+                    </ol>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
         </chapter>
 
