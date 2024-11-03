@@ -220,6 +220,35 @@
         </chapter>
 
         <chapter id="tag-div" title="Das div-Element">
+            <p>
+                Das <code>&lt;div&gt;</code>-Element (div = division, deutsch: Abteilung) ist ein Gruppierungselement,
+                das dazu dient, mehrere Elemente zu einem Block zusammenzufassen. Es wird häufig verwendet, um Bereiche
+                einer Webseite zu definieren, die zusammengehören, aber keine spezielle semantische Bedeutung haben. Das
+                <code>div</code>-Element ist ein Blockelement und kann Inline- oder Blockelemente enthalten. Es wird
+                häufig in Verbindung mit CSS verwendet, um Bereiche einer Webseite zu formatieren oder zu stylen.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                     <div class="promo">
+                         <p>Die Vorteile dieses Produkts sind:</p>
+                         <ul>
+                             <li>Zeitersparnis</li>
+                             <li>Kosteneffizient</li>
+                             <li>Zukunftssicher</li>
+                         </ul>
+                         <p>Jetzt bestellen und 40 % Rabatt erhalten!</p>
+                     </div>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <note>
+                In der Praxis sollte das <code>div</code>-Element immer dann verwendet werden, wenn es kein geeignetes
+                schematisches Element dafür gibt. Andrerseits sollten tief verschachtelte <code>div</code>-Elemente
+                vermieden werden, die nur dazu dienen, Inhalte zu zentrieren.
+            </note>
 
             <tip>
                 Mehr zum <code>div</code>-Element hier:
