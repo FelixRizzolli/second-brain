@@ -241,7 +241,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textauszeichnung.topic#tag-sub">
+                    <a href="html-textauszeichnung.topic#tag-sub-sup">
                         <code>&lt;sub&gt;</code>
                     </a>
                 </td>
@@ -251,7 +251,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textauszeichnung.topic#tag-sup">
+                    <a href="html-textauszeichnung.topic#tag-sub-sup">
                         <code>&lt;sup&gt;</code>
                     </a>
                 </td>
@@ -518,6 +518,46 @@
             <tip>
                 Mehr zum <code>br</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/br">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-wbr" title="Das wbr-Element">
+            <p>
+                Das <code>wbr</code>-Element (wbr = word break opportunity) wird verwendet, um einen optionalen
+                Zeilenumbruch innerhalb eines Wortes zu erzeugen. Es ist ein allein stehendes Tag. Es kann recht
+                hilfreich sein, wenn man verhindern will, dass der Webbrowser eine Zeile an der falschen Stelle
+                umbricht.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>Donaudampfschifffahrts<wbr>elektrizitätenhauptbetriebs<wbr>werkbauunterbeamtengesellschaft</p>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <note>
+                <p>
+                    Unschön ist diese Worttrennung trotzdem, weil hier die Zeile einfach ohne Trennungsstrich
+                    umbrochen wird. Als Alternative bietet sich die benannte Entität (bzw. Named Entity)
+                    <code>&amp;shy;</code> für einen bedingten Trennungsstrich an. Ähnlich wie mit
+                    <code>&lt;wbr&gt;</code> wird dem Webbrowser damit erlaubt, das Wort gegebenenfalls an dieser Stelle
+                    zu trennen. Im Gegensatz zu <code>&lt;wbr&gt;</code> wird vom Webbrowser am Ende des umbrochenen
+                    Wortes ein Trennstrich hinzugefügt. Das alternative Beispiel hierzu:
+                </p>
+                <!-- @formatter:off -->
+                <code-block lang="html">
+                    <![CDATA[
+                        <p>Donaudampfschifffahrts&shy;elektrizitätenhauptbetriebs&shy;werkbauunterbeamtengesellschaft</p>
+                    ]]>
+                </code-block>
+                <!-- @formatter:on -->
+            </note>
+
+            <tip>
+                Mehr zum <code>wbr</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/wbr">MDN Web Docs</a>
             </tip>
         </chapter>
 
