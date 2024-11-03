@@ -667,7 +667,35 @@
         </chapter>
 
         <chapter id="tag-q" title="Das q-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>q</code>-Element wird verwendet, um Wörter oder Passagen als zitierten oder gesprochenen Text
+                auszuzeichnen. Der Text wird in der Regel vom Webbrowser in Anführungszeichen gesetzt. Das
+                <code>q</code>-Element sollte nur verwendet werden, wenn der Text tatsächlich zitiert oder gesprochen
+                wird. Möchte man einen ganzen Absatz zitieren, sollte das
+                <a href="html-textstrukturierung.topic#tag-blockquote"><code>blockquote</code></a>-Element verwendet
+                werden.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>
+                        Wolf fragte: <q cite="http://dieter-baer.de/">
+                        <em>Bär</em>! Wer zum Teufel ist dieser <em>Bär</em>!</q>
+                    </p>
+                    <p>
+                        Fuchs antwortete: <q>Achtung! <q><em>Bär</em></q> könnte
+                        hinter dir stehen!</q>
+                    </p>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <note>
+                Das <code>q</code>-Element können Sie auch ineinander verschachteln. Solche verschachtelten
+                <code>q</code>-Elemente bekommen gewöhnlich ein anderes passendes Anführungszeichen. Hierzulande sind
+                dabei z.B. die äußeren Anführungszeichen doppelt und die inneren einfach.
+            </note>
 
             <tip>
                 Mehr zum <code>q</code>-Element hier:
