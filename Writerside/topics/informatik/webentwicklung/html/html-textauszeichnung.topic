@@ -995,7 +995,25 @@
         </chapter>
 
         <chapter id="tag-ruby" title="Das ruby-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>ruby</code>-Element wird verwendet, um Ruby-Annotationen auszuzeichnen. Ruby-Annotationen sind
+                kleine Texte, die über oder unter einem Text stehen und die Bedeutung des Textes erklären. Das
+                <code>rp</code>-Element (rp = ruby parenthesis) wird verwendet, um Klammern um die Ruby-Annotationen zu
+                kennzeichnen. Das <code>rt</code>-Element (rt = ruby text) wird verwendet, um den Text der
+                Ruby-Annotationen zu kennzeichnen.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>
+                        <ruby>
+                            LOL<rp> (</rp><rt>Laugh Out Loud</rt><rp>)</rp>
+                        </ruby>
+                    </p>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>ruby</code>-Element hier:
