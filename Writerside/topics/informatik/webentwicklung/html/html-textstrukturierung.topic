@@ -87,7 +87,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textstrukturierung.topic#tag-figcaption-figure">
+                    <a href="html-textstrukturierung.topic#tag-figure-figcaption">
                         <code>&lt;figure&gt;</code>
                     </a>
                 </td>
@@ -97,7 +97,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textstrukturierung.topic#tag-figcaption-figure">
+                    <a href="html-textstrukturierung.topic#tag-figure-figcaption">
                         <code>&lt;figcaption&gt;</code>
                     </a>
                 </td>
@@ -366,16 +366,55 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-figcaption-figure" title="Das figcaption- und figure-Element">
+        <chapter id="tag-figure-figcaption" title="Das figure- und figcaption-Element">
+            <p>
+                Das <code>figure</code>-Element wird verwendet, um bestimmte Inhalte wie Tabellen, Bilder, Listings,
+                Videos oder andere HTML/Elemente vom üblichen Fließtext abzusetzen bzw. zu gruppieren. Soll dieser
+                Bereich auch noch mit einer (optionalen) Beschriftung verknüpft werden, kann dazu das
+                <code>figcaption</code>-Element verwendet werden.
+            </p>
 
-            <tip>
-                Mehr zum <code>figcaption</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/figcaption">MDN Web Docs</a>
-            </tip>
+            <p>
+                Wie <code>figure</code> kann das <code>figcaption</code>-Element neben gewöhnlichen Fließtext andere
+                HTML-Elemente enthalten. Somit dient das <code>figure</code>-Element als semantisches Eltern-Element für
+                ein zum Seiteninhalt gehörendes Element wie eine Abbildung, eine Tabelle, ein Listing oder andere
+                Inhalte, und das <code>figcaption</code>-Element umschließt den Untertitel zu diesem Element.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <article>
+                        <h3>Was ist das Hamsterrad im Leben?</h3>
+                        <p>Das Hamsterrad im Leben ist ...</p>
+
+                        <figure>
+                            <img src="hamsterrad.svg" height="200" alt="Das Hamsterrad des Lebens">
+
+                            <figcaption>
+                                Abbildung: Eine symbolische Abbildung vom Hamsterrad
+                            </figcaption>
+                        </figure>
+
+                        <p>Das Hamsterrad im Leben kann ...</p>
+                    </article>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <note>
+                Ein <code>figcaption</code>-Element muss entweder das erste oder das letzte Kind eines
+                <code>figure</code>-Elements sein.
+            </note>
 
             <tip>
                 Mehr zum <code>figure</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/figure">MDN Web Docs</a>
+            </tip>
+
+            <tip>
+                Mehr zum <code>figcaption</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/figcaption">MDN Web Docs</a>
             </tip>
         </chapter>
 
