@@ -508,7 +508,21 @@
         </chapter>
 
         <chapter id="tag-var" title="Das var-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>var</code>-Element wird verwendet, um Variablen in einem Textabsatz auszuzeichnen. Eine solche
+                Variable kann z.B. Teil einer Anwendung, ein mathematischer Ausdruck oder Bezeichner einer Variablen
+                in einer Programmiersprache sein.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>
+                        Der Radius <var>r</var> entspricht dem halben Durchmesser <var>d</var>.
+                    </p>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>var</code>-Element hier:
