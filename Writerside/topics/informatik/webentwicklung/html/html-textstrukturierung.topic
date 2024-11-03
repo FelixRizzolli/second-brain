@@ -12,7 +12,9 @@
     <!-- TODO -->
     <chapter id="introduction" title="Einleitung">
         <p id="%id_prefix%-description">
-            ...
+            In HTML gibt es verschiedene Elemente, die zur Strukturierung von Texten verwendet werden können. Damit ist
+            aber nicht das Aufteilen eines HTML-Dokuments in einzelne Sektionen bzw. Bereiche gemeint wie in
+            <a href="html-strukturierung.topic"/>
         </p>
     </chapter>
 
@@ -24,22 +26,22 @@
             </tr>
             <tr>
                 <td>
+                    <a href="html-textstrukturierung.topic#tag-p">
+                        <code>&lt;p&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Textabsatz
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <a href="html-textstrukturierung.topic#tag-blockquote">
                         <code>&lt;blockquote&gt;</code>
                     </a>
                 </td>
                 <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textstrukturierung.topic#tag-dd">
-                        <code>&lt;dd&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
+                    Zitat in Form eines Textabsatzes
                 </td>
             </tr>
             <tr>
@@ -49,47 +51,7 @@
                     </a>
                 </td>
                 <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textstrukturierung.topic#tag-dl">
-                        <code>&lt;dl&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textstrukturierung.topic#tag-dt">
-                        <code>&lt;dt&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textstrukturierung.topic#tag-figcaption">
-                        <code>&lt;figcaption&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textstrukturierung.topic#tag-figure">
-                        <code>&lt;figure&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
+                    Einen allgemeinen Bereich definieren
                 </td>
             </tr>
             <tr>
@@ -99,47 +61,17 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    thematische Trennung auf der Absatzebene
                 </td>
             </tr>
             <tr>
                 <td>
-                    <a href="html-textstrukturierung.topic#tag-li">
-                        <code>&lt;li&gt;</code>
+                    <a href="html-textstrukturierung.topic#tag-main">
+                        <code>&lt;main&gt;</code>
                     </a>
                 </td>
                 <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textstrukturierung.topic#tag-menu">
-                        <code>&lt;menu&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textstrukturierung.topic#tag-ol">
-                        <code>&lt;ol&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textstrukturierung.topic#tag-p">
-                        <code>&lt;p&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
+                    Sollte für einen Hauptinhaltsbereich einer Webseite verwendet werden
                 </td>
             </tr>
             <tr>
@@ -149,7 +81,28 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Präformatierten Text auszeichnen. Alle Leerzeichen und Zeilenumbrüche werden so dargestellt, wie es
+                    im Text angegeben wurde.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textstrukturierung.topic#tag-figure">
+                        <code>&lt;figure&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Gruppieren oder Zusammenfassen von Inhalten zur gesonderten Beschreibung
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textstrukturierung.topic#tag-figcaption">
+                        <code>&lt;figcaption&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Beschriftung von mit dem <code>figure</code>-Element gruppierten Inhalten
                 </td>
             </tr>
             <tr>
@@ -159,7 +112,57 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Ungeordnete Aufzählungsliste
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textstrukturierung.topic#tag-ol">
+                        <code>&lt;ol&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Geordnete Liste (meistens nummeriert)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textstrukturierung.topic#tag-li">
+                        <code>&lt;li&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Ein Listenelement in einer <code>ul</code>- oder <code>ol</code>-Liste
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textstrukturierung.topic#tag-dl">
+                        <code>&lt;dl&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Eine Beschreibungsliste mit <code>dt</code>- und <code>dd</code>-Elementen
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textstrukturierung.topic#tag-dt">
+                        <code>&lt;dt&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Der zu beschreibende Ausdruck vor dem <code>dd</code>-Element
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textstrukturierung.topic#tag-dd">
+                        <code>&lt;dd&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Die Beschreibung, die hinter dem <code>dt</code>-Element folgt.
                 </td>
             </tr>
         </table>
@@ -238,11 +241,11 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-menu" title="Das menu-Element">
+        <chapter id="tag-main" title="Das main-Element">
 
             <tip>
-                Mehr zum <code>menu</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/menu">MDN Web Docs</a>
+                Mehr zum <code>main</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/main">MDN Web Docs</a>
             </tip>
         </chapter>
 
