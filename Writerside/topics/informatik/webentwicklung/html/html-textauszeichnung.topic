@@ -437,6 +437,7 @@
                     </pre>
                 ]]>
             </code-block>
+            <!-- @formatter:on -->
 
             <note>
                 Um &lt;- oder &gt;-Zeichen in HTML darstellen zu können, die kein HTML sein sollen, können die Zeichen
@@ -451,7 +452,24 @@
         </chapter>
 
         <chapter id="tag-kbd-samp" title="Das kbd- und samp-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>kbd</code>-Element (kurz für keyboard) wird verwendet, um Tastatureingaben auszuzeichnen. Das
+                <code>samp</code>-Element (kurz für sample) wird verwendet, um die Bildschirmausgabe eines Programms
+                auszuzeichnen. Beide Elemente werden in einer Monospace-Schriftart dargestellt.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>
+                        Um das Spiel zu starten, drücken Sie bitte die <kbd>Leertaste</kbd>.
+                    </p>
+                    <p>
+                        Die Ausgabe des Programms lautet: <samp>Hello, World!</samp>
+                    </p>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>kbd</code>-Element hier:
