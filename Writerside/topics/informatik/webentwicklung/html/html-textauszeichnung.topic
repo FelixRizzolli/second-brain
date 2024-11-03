@@ -348,6 +348,30 @@
         </chapter>
 
         <chapter id="tag-abbr" title="Das abbr-Element">
+            <p>
+                Das <code>abbr</code>-Element (abbr = abbreviation) wird verwendet, um Abkürzungen oder Akronyme zu
+                kennzeichnen. Der vollständige Text wird im <code>title</code>-Attribut angegeben, sodass der Webbrowser
+                bei einem Mouseover den vollen Text anzeigt.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>
+                        Das <abbr title="World Wide Web Consortium">W3C</abbr> ist ein internationales Konsortium, das
+                        Webstandards entwickelt.
+                    </p>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <note>
+                Wer Abkürzungen zwischen <code>&lt;abbr&gt;</code> und <code>&lt;/abbr&gt;</code> notiert, übergibt
+                nützliche Informationen an den Webbrowser, an Sprachprüfungssoftware, Übersetzungssysteme, Screenreader
+                oder gar die Suchmaschinen zur Indexerstellung. Wie weit diese Informationen nützlich sind und
+                tatsächlich verwendet werden, kann nicht immer vorausgesagt werden. Trotzdem ist das
+                <code>abbr</code>-Element für eine logische Textauszeichnung sehr sinnvoll.
+            </note>
 
             <tip>
                 Mehr zum <code>abbr</code>-Element hier:
