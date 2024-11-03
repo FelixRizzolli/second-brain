@@ -293,7 +293,18 @@
         </chapter>
 
         <chapter id="tag-pre" title="Das pre-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>&lt;pre&gt;</code>-Element (pre = preformatted text, deutsch: vorformatierter Text) wird
+                verwendet, um Textabschnitte vorzustellen, die bereits eine feste Formatierung haben. Das bedeutet, dass
+                alle Leerzeichen, Zeilenumbrüche und Tabulatoren innerhalb des <code>pre</code>-Elements so dargestellt
+                werden, wie sie im HTML-Code angegeben wurden. Das <code>pre</code>-Element wird häufig für
+                Quellcode, ASCII-Art, Textdateien oder andere Texte verwendet, die eine feste Formatierung benötigen.
+            </p>
+
+            <tip>
+                Beispiel für die Verwendung des <code>pre</code>-Elements mit Quellcode:
+                <a href="html-textauszeichnung.topic#tag-code">das <code>code</code>-Elemen</a>
+            </tip>
 
             <tip>
                 Mehr zum <code>pre</code>-Element hier:
