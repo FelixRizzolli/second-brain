@@ -636,7 +636,29 @@
         </chapter>
 
         <chapter id="tag-mark" title="Das mark-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>mark</code>-Element wird verwendet, um Text durch eine Markierung hervorzuheben. Der Text wird
+                in der Regel mit einer gelben Hintergrundfarbe hervorgehoben - wie bei einem Textmarker. In der Praxis
+                wird das <code>mark</code>-Element oft verwendet, um Suchergebnisse hervorzuheben. Das funktioniert nur,
+                wenn der Inhalt dynamisch erzeugt wird.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>
+                        Im Jahr 2021 haben sich die Gewinne um <mark>100 Prozent</mark> erhöht.
+                    </p>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <note>
+                Auch wenn das <code>mark</code>-Element optisch hervorsticht, sollte es nicht dazu verwendet werden, um
+                den Text mit einer Hintergrundfarbe zu versehen. Das ist Aufgabe von CSS. Das <code>mark</code>-Element
+                soll nur dann verwendet werden, wenn es inhaltlich einen Sinn ergibt und kein anderes semantisches
+                HTML-Element dafür passend ist.
+            </note>
 
             <tip>
                 Mehr zum <code>mark</code>-Element hier:
