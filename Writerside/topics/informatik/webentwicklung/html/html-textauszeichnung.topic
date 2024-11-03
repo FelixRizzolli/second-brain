@@ -483,7 +483,23 @@
         </chapter>
 
         <chapter id="tag-dfn" title="Das dfn-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>dfn</code>-Element (dfn = definition) wird verwendet, um eine Definition zu kennzeichnen. Es
+                kann für Fachbegriffe, Namen, Abkürzungen oder Akronyme verwendet werden. Innerhalb des
+                <code>dfn</code>-Elements kann auch ein <code>abbr</code>-Element verwendet werden.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>
+                        Ein <dfn><abbr>Smartphone<abbr></dfn> hat im Gegensatz zu
+                        einem Mobiltelefon (ugs. auch Handy) mehr
+                        Computerfunktionalität und -konnektivität.
+                    </p>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>dfn</code>-Element hier:
