@@ -704,7 +704,45 @@
         </chapter>
 
         <chapter id="tag-u-s" title="Das u- und s-Element">
-            <!-- TODO -->
+            <p>
+                Sowohl das <code>u</code>-Element (u = underline) als auch das <code>s</code>-Element (s =
+                strike-through) waren mit HTML 4.01 als missbilligt (deprecated) markiert und sollten aus dem Standard
+                entfernt werden. Mit dem neuen HTML-Standard haben sie eine »neue« semantische Bedeutung erhalten und
+                sind somit wieder offizieller Teil von HTML.
+            </p>
+
+            <p>
+                Das <code>s</code>-Element sollte verwendet werden, um einen Inhalt als veraltet oder nicht mehr
+                korrekt zu kennzeichnen. Soll eine Dokumentbearbeitung angezeigt werden, bei der ein Wort oder eine
+                Passage aus dem (noch nicht fertigen) Dokument als gelöscht markiert werden soll, soll stattdessen das
+                <a href="html-textauszeichnung.topic#tag-ins-del"><code>del</code></a>-Element verwendet werden.
+            </p>
+
+            <p>
+                Gemäß seiner neuen Bedeutung ist das <code>u</code>-Element für eine Eigennamenunterstreichung zu
+                verwenden, wie es z.B. in der chinesischen Schrift üblich ist (siehe
+                <a href="http://en.wikipedia.org/wiki/Proper_name_mark"/>). Ein weiteres Beispiel wäre, um wissentlich
+                fehlerhafte Wörter oder Passagen zu kennzeichnen. Neben dem <code>u</code>-Element gibt es das
+                <a href="html-textauszeichnung.topic#tag-ins-del"><code>ins</code></a>-Element, das ebenfalls
+                unterstrichen wiedergegeben wird, aber neu eingefügte Inhalte kennzeichnen soll.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>
+                        Einen Text in die Mitte setzen können Sie mit
+                        <s><code>&lt;center&gt;</code> oder</s> der
+                        CSS-Eigenschaft <code>text-align</code> und dem Wert
+                        <var>center</var>.
+                    </p>
+                    <p>
+                        Auch <u class="spell-checker">Rechtschreibfeler</u>
+                        können damit markiert werden.
+                    </p>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>u</code>-Element hier:
