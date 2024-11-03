@@ -79,7 +79,7 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Zeilenumbruch erzwingen
                 </td>
             </tr>
             <tr>
@@ -329,7 +329,7 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Optionaler Zeilenumbruch innerhalb eines Wortes
                 </td>
             </tr>
         </table>
@@ -377,6 +377,27 @@
         </chapter>
 
         <chapter id="tag-br" title="Das br-Element">
+            <p>
+                Das <code>br</code>-Element (br = break) wird verwendet, um einen Zeilenumbruch zu erzwingen. Es ist
+                ein allein stehendes Tag.
+            </p>
+
+            <note>
+                Auch wenn mehrere <code>br</code>-Elemente hintereinander verwendet werden können, sollte es nicht dazu
+                missbraucht werden, Absätze voneinander zu trennen. In diesem Fall soll CSS verwendet werden.
+            </note>
+
+            <!-- @formatter:off -->
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                <![CDATA[
+                    <address>
+                        Autor: <a href="#">M. Mastermind</a><br>
+                        Halle der Gedanken<br>
+                        Experte für Gedankenkarusselle
+                    </address>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>br</code>-Element hier:
