@@ -961,7 +961,32 @@
         </chapter>
 
         <chapter id="tag-small" title="Das small-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>small</code>-Element wird verwendet, um Text als Kleingedrucktes auszuzeichnen. Das kann
+                beispielsweise für Copyright-Informationen, Lizenzinformationen oder juristische Hinweise verwendet
+                werden. Der Text wird in der Regel kleiner dargestellt als der umgebende Text.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <article>
+                        <header>
+                            <h2>Kleingedrucktes mit small</h2>
+                            <small>
+                                &copy; Max Mustermann;
+                                <time datetime="2024-01-01">1. Januar 2024</time>
+                            </small>
+                        </header>
+                        <p>
+                            Die Sendung kann in <time datetime="P2D">2 Tagen</time>
+                            zugestellt werden. <small>(Aufgrund starker Nachfrage
+                            kann es auch länger (+1 Tag) dauern.)</small>
+                        </p>
+                    </article>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>small</code>-Element hier:
