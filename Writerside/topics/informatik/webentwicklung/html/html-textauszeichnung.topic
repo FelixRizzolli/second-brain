@@ -12,8 +12,25 @@
     <!-- TODO -->
     <chapter id="introduction" title="Einleitung">
         <p id="%id_prefix%-description">
-            ...
+            Bei HTML-Elemente zur Textauszeichnung handelt es sich um HTML-Elemente, die innerhalb eines reinen Textes
+            für einzelne Buchstaben, Wörter oder Satzteile angewendet werden können. Die beschriebenen Elemente erzeugen
+            somit keinen neuen Absatz oder Zeilenumbruch, sondern zeichnen bestimmte Passagen in einem Fließtext gemäß
+            der für das Element definierten Semantik aus.
         </p>
+
+        <note>
+            <p>
+                <b>
+                    Textformatierung mit CSS!
+                </b>
+            </p>
+
+            <p>
+                Auch wenn einige dieser Elemente leicht optische Veränderungen des Textes im Webbrowser bewirken,
+                sollten die HTML-Elemente nicht zur Textformatierung verwendet werden. Für die Textformatierung ist CSS
+                zuständig. Diese HTML-Elemente dienen vielmehr einer sauberen semantischen Textauszeichnung.
+            </p>
+        </note>
     </chapter>
 
     <chapter id="overview" title="Übersicht der HTML-Elemente">
@@ -64,7 +81,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textauszeichnung.topic#tag-kbd">
+                    <a href="html-textauszeichnung.topic#tag-kbd-samp">
                         <code>&lt;kbd&gt;</code>
                     </a>
                 </td>
@@ -74,7 +91,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textauszeichnung.topic#tag-samp">
+                    <a href="html-textauszeichnung.topic#tag-kbd-samp">
                         <code>&lt;samp&gt;</code>
                     </a>
                 </td>
@@ -104,7 +121,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textauszeichnung.topic#tag-bdo">
+                    <a href="html-textauszeichnung.topic#tag-bdo-bdi">
                         <code>&lt;bdo&gt;</code>
                     </a>
                 </td>
@@ -114,7 +131,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textauszeichnung.topic#tag-bdi">
+                    <a href="html-textauszeichnung.topic#tag-bdo-bdi">
                         <code>&lt;bdi&gt;</code>
                     </a>
                 </td>
@@ -124,7 +141,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textauszeichnung.topic#tag-em">
+                    <a href="html-textauszeichnung.topic#tag-em-strong-i-b">
                         <code>&lt;em&gt;</code>
                     </a>
                 </td>
@@ -134,7 +151,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textauszeichnung.topic#tag-strong">
+                    <a href="html-textauszeichnung.topic#tag-em-strong-i-b">
                         <code>&lt;strong&gt;</code>
                     </a>
                 </td>
@@ -144,7 +161,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textauszeichnung.topic#tag-i">
+                    <a href="html-textauszeichnung.topic#tag-em-strong-i-b">
                         <code>&lt;i&gt;</code>
                     </a>
                 </td>
@@ -154,7 +171,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textauszeichnung.topic#tag-b">
+                    <a href="html-textauszeichnung.topic#tag-em-strong-i-b">
                         <code>&lt;b&gt;</code>
                     </a>
                 </td>
@@ -184,7 +201,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textauszeichnung.topic#tag-u">
+                    <a href="html-textauszeichnung.topic#tag-u-s">
                         <code>&lt;u&gt;</code>
                     </a>
                 </td>
@@ -194,7 +211,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textauszeichnung.topic#tag-s">
+                    <a href="html-textauszeichnung.topic#tag-u-s">
                         <code>&lt;s&gt;</code>
                     </a>
                 </td>
@@ -204,7 +221,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textauszeichnung.topic#tag-ins">
+                    <a href="html-textauszeichnung.topic#tag-ins-del">
                         <code>&lt;ins&gt;</code>
                     </a>
                 </td>
@@ -214,7 +231,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textauszeichnung.topic#tag-del">
+                    <a href="html-textauszeichnung.topic#tag-ins-del">
                         <code>&lt;del&gt;</code>
                     </a>
                 </td>
@@ -355,15 +372,12 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-kbd" title="Das kbd-Element">
+        <chapter id="tag-kbd-samp" title="Das kbd- und samp-Element">
 
             <tip>
                 Mehr zum <code>kbd</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/kbd">MDN Web Docs</a>
             </tip>
-        </chapter>
-
-        <chapter id="tag-samp" title="Das samp-Element">
 
             <tip>
                 Mehr zum <code>samp</code>-Element hier:
@@ -387,15 +401,12 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-bdo" title="Das bdo-Element">
+        <chapter id="tag-bdo-bdi" title="Das bdo und bdi-Element">
 
             <tip>
                 Mehr zum <code>bdo</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/bdo">MDN Web Docs</a>
             </tip>
-        </chapter>
-
-        <chapter id="tag-bdi" title="Das bdi-Element">
 
             <tip>
                 Mehr zum <code>bdi</code>-Element hier:
@@ -403,31 +414,22 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-em" title="Das em-Element">
+        <chapter id="tag-em-strong-i-b" title="Das em-Element">
 
             <tip>
                 Mehr zum <code>em</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/em">MDN Web Docs</a>
             </tip>
-        </chapter>
-
-        <chapter id="tag-strong" title="Das strong-Element">
 
             <tip>
                 Mehr zum <code>strong</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/strong">MDN Web Docs</a>
             </tip>
-        </chapter>
-
-        <chapter id="tag-i" title="Das i-Element">
 
             <tip>
                 Mehr zum <code>i</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/i">MDN Web Docs</a>
             </tip>
-        </chapter>
-
-        <chapter id="tag-b" title="Das b-Element">
 
             <tip>
                 Mehr zum <code>b</code>-Element hier:
@@ -451,15 +453,12 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-u" title="Das u-Element">
+        <chapter id="tag-u-s" title="Das u- und s-Element">
 
             <tip>
                 Mehr zum <code>u</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/u">MDN Web Docs</a>
             </tip>
-        </chapter>
-
-        <chapter id="tag-s" title="Das s-Element">
 
             <tip>
                 Mehr zum <code>s</code>-Element hier:
@@ -467,15 +466,12 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-ins" title="Das ins-Element">
+        <chapter id="tag-ins-del" title="Das ins- und del-Element">
 
             <tip>
                 Mehr zum <code>ins</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/ins">MDN Web Docs</a>
             </tip>
-        </chapter>
-
-        <chapter id="tag-del" title="Das del-Element">
 
             <tip>
                 Mehr zum <code>del</code>-Element hier:
@@ -483,15 +479,12 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-sub" title="Das sub-Element">
+        <chapter id="tag-sub-sup" title="Das sub- und sup-Element">
 
             <tip>
                 Mehr zum <code>sub</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/sub">MDN Web Docs</a>
             </tip>
-        </chapter>
-
-        <chapter id="tag-sup" title="Das sup-Element">
 
             <tip>
                 Mehr zum <code>sup</code>-Element hier:
