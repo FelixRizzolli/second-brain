@@ -381,7 +381,22 @@
         </chapter>
 
         <chapter id="tag-cite" title="Das cite-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>cite</code>-Element wird verwendet, um den Titel eines Werkes wie Buch, Film, Gemälde oder
+                Musickstück zu kennzeichnen. Dabei sollten allerdings nur der Arbeitstitel ausgezeichnet werden, nicht
+                der Autor oder die Quelle. Mit dem <code>title</code>-Attribut können noch weitere Informationen zum
+                Werk angegeben werden. Diese Informationen werden vom Webbrowser bei einem Mouseover angezeigt.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>
+                        Das Buch <cite title="Der Herr der Ringe">HDR</cite> von J.R.R. Tolkien ist ein Klassiker der
+                        Fantasy-Literatur.
+                    </p>
+                ]]>
+            </code-block>
 
             <tip>
                 Mehr zum <code>cite</code>-Element hier:
