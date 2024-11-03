@@ -563,6 +563,19 @@
                 </p>
             </chapter>
         </chapter>
+
+        <chapter id="wai-aria"
+                 title="WAI-ARIA (Web Accessibility Initiative - Accessible Rich Internet Applications Suite)">
+            <!-- TODO: Buch HTML & CSS Kapitel 4 -->
+        </chapter>
+
+        <chapter id="charset" title="Zeichencodierung">
+            <!-- TODO: Buch HTML & CSS Kapitel 4 -->
+        </chapter>
+
+        <chapter id="entities" title="Zeichenentitäten">
+            <!-- TODO: Buch HTML & CSS Kapitel 4 -->
+        </chapter>
     </chapter>
 
     <chapter id="overview" title="Übersicht der HTML-Elemente">

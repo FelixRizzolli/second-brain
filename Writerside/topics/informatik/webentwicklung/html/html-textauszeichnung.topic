@@ -39,27 +39,67 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Abkürzungen (auch Abbreviaturen) oder Akronyme (auch Initialwörter) kennzeichnen
                 </td>
             </tr>
             <tr>
                 <td>
-                    <a href="html-textauszeichnung.topic#tag-b">
-                        <code>&lt;b&gt;</code>
+                    <a href="html-textauszeichnung.topic#tag-cite">
+                        <code>&lt;cite&gt;</code>
                     </a>
                 </td>
                 <td>
-                    ...
+                    Text als Quelltext eines Arbeitstitels markieren
                 </td>
             </tr>
             <tr>
                 <td>
-                    <a href="html-textauszeichnung.topic#tag-bdi">
-                        <code>&lt;bdi&gt;</code>
+                    <a href="html-textauszeichnung.topic#tag-code">
+                        <code>&lt;code&gt;</code>
                     </a>
                 </td>
                 <td>
-                    ...
+                    Computercode innerhalb eines Textabsatzes auszeichnen
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#tag-kbd">
+                        <code>&lt;kbd&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Text als Tastatureingabe auszeichnen
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#tag-samp">
+                        <code>&lt;samp&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Text als Bildschirmausgabe eines Programms auszeichnen
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#tag-dfn">
+                        <code>&lt;dfn&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    einen Begriff definieren
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#tag-var">
+                        <code>&lt;var&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Text als Variable auszeichnen
                 </td>
             </tr>
             <tr>
@@ -69,7 +109,137 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Textrichtung bei bidirektionalem Text ändern
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#tag-bdi">
+                        <code>&lt;bdi&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Bereich für bidirektionalen Text definieren
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#tag-em">
+                        <code>&lt;em&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Text hervorheben, den Sie beim Sprechen besonders betonen würden
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#tag-strong">
+                        <code>&lt;strong&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    inhaltlich besonders wichtige Wörter oder Passagen hervorheben
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#tag-i">
+                        <code>&lt;i&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    zum Auszeichnen von Wörtern oder Passagen mit Fachausdrücken, Gedanken, fremdsprachigen Wörtern
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#tag-b">
+                        <code>&lt;b&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    zum Auszeichnen von bedeutungsvollen Namen oder Schlüsselwörtern
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#tag-mark">
+                        <code>&lt;mark&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Text durch eine Markierung hervorheben
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#tag-q">
+                        <code>&lt;q&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Wörter oder Passagen als zitierten oder gesprochenen Text auszeichnen
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#tag-u">
+                        <code>&lt;u&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Text als Eigennamenunterstreichung oder fehlerhafte Wörter bzw. Passagen auszeichnen
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#tag-s">
+                        <code>&lt;s&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Text als nicht mehr gültig oder veraltet auszeichnen
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#tag-ins">
+                        <code>&lt;ins&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Text als neu hinzugefügt im überarbeiteten Sinn markieren
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#tag-del">
+                        <code>&lt;del&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Text als gelöscht im überarbeiteten Sinn markieren
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#tag-sub">
+                        <code>&lt;sub&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    tiefgestellter Text
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#tag-sup">
+                        <code>&lt;sup&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    hochgestellter Text
                 </td>
             </tr>
             <tr>
@@ -84,22 +254,12 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textauszeichnung.topic#tag-cite">
-                        <code>&lt;cite&gt;</code>
+                    <a href="html-textauszeichnung.topic#tag-wbr">
+                        <code>&lt;wbr&gt;</code>
                     </a>
                 </td>
                 <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-code">
-                        <code>&lt;code&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
+                    Optionaler Zeilenumbruch innerhalb eines Wortes
                 </td>
             </tr>
             <tr>
@@ -114,132 +274,12 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-textauszeichnung.topic#tag-del">
-                        <code>&lt;del&gt;</code>
+                    <a href="html-textauszeichnung.topic#tag-time">
+                        <code>&lt;time&gt;</code>
                     </a>
                 </td>
                 <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-dfn">
-                        <code>&lt;dfn&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-em">
-                        <code>&lt;em&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-i">
-                        <code>&lt;i&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-ins">
-                        <code>&lt;ins&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-kbd">
-                        <code>&lt;kbd&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-mark">
-                        <code>&lt;mark&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-q">
-                        <code>&lt;q&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-rp">
-                        <code>&lt;rp&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-rt">
-                        <code>&lt;rt&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-ruby">
-                        <code>&lt;ruby&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-s">
-                        <code>&lt;s&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-samp">
-                        <code>&lt;samp&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
+                    Auszeichnung von Datums- und Zeitangaben
                 </td>
             </tr>
             <tr>
@@ -249,7 +289,24 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Text als Kleingedrucktes wie z.B. für Copyright-Informationen, Lizenzinformationen oder juristische
+                    Hinweise auszeichnen
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-textauszeichnung.topic#tag-ruby">
+                        <code>&lt;ruby&gt;</code>
+                    </a>,
+                    <a href="html-textauszeichnung.topic#tag-ruby">
+                        <code>&lt;rp&gt;</code>
+                    </a>,
+                    <a href="html-textauszeichnung.topic#tag-ruby">
+                        <code>&lt;rt&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Ruby-Annotationen
                 </td>
             </tr>
             <tr>
@@ -259,77 +316,7 @@
                     </a>
                 </td>
                 <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-strong">
-                        <code>&lt;strong&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-sub">
-                        <code>&lt;sub&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-sup">
-                        <code>&lt;sup&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-time">
-                        <code>&lt;time&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-u">
-                        <code>&lt;u&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-var">
-                        <code>&lt;var&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-textauszeichnung.topic#tag-wbr">
-                        <code>&lt;wbr&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    Optionaler Zeilenumbruch innerhalb eines Wortes
+                    einen allgemeinen Bereich innerhalb eines Textabsatzes auszeichnen
                 </td>
             </tr>
         </table>
@@ -352,11 +339,59 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-b" title="Das b-Element">
+        <chapter id="tag-cite" title="Das cite-Element">
 
             <tip>
-                Mehr zum <code>b</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/b">MDN Web Docs</a>
+                Mehr zum <code>cite</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/cite">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-code" title="Das code-Element">
+
+            <tip>
+                Mehr zum <code>code</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/code">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-kbd" title="Das kbd-Element">
+
+            <tip>
+                Mehr zum <code>kbd</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/kbd">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-samp" title="Das samp-Element">
+
+            <tip>
+                Mehr zum <code>samp</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/samp">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-dfn" title="Das dfn-Element">
+
+            <tip>
+                Mehr zum <code>dfn</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/dfn">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-var" title="Das var-Element">
+
+            <tip>
+                Mehr zum <code>var</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/var">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-bdo" title="Das bdo-Element">
+
+            <tip>
+                Mehr zum <code>bdo</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/bdo">MDN Web Docs</a>
             </tip>
         </chapter>
 
@@ -368,11 +403,99 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-bdo" title="Das bdo-Element">
+        <chapter id="tag-em" title="Das em-Element">
 
             <tip>
-                Mehr zum <code>bdo</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/bdo">MDN Web Docs</a>
+                Mehr zum <code>em</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/em">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-strong" title="Das strong-Element">
+
+            <tip>
+                Mehr zum <code>strong</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/strong">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-i" title="Das i-Element">
+
+            <tip>
+                Mehr zum <code>i</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/i">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-b" title="Das b-Element">
+
+            <tip>
+                Mehr zum <code>b</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/b">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-mark" title="Das mark-Element">
+
+            <tip>
+                Mehr zum <code>mark</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/mark">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-q" title="Das q-Element">
+
+            <tip>
+                Mehr zum <code>q</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/q">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-u" title="Das u-Element">
+
+            <tip>
+                Mehr zum <code>u</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/u">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-s" title="Das s-Element">
+
+            <tip>
+                Mehr zum <code>s</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/s">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-ins" title="Das ins-Element">
+
+            <tip>
+                Mehr zum <code>ins</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/ins">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-del" title="Das del-Element">
+
+            <tip>
+                Mehr zum <code>del</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/del">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-sub" title="Das sub-Element">
+
+            <tip>
+                Mehr zum <code>sub</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/sub">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-sup" title="Das sup-Element">
+
+            <tip>
+                Mehr zum <code>sup</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/sup">MDN Web Docs</a>
             </tip>
         </chapter>
 
@@ -405,171 +528,11 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-cite" title="Das cite-Element">
-
-            <tip>
-                Mehr zum <code>cite</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/cite">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-code" title="Das code-Element">
-
-            <tip>
-                Mehr zum <code>code</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/code">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
         <chapter id="tag-data" title="Das data-Element">
 
             <tip>
                 Mehr zum <code>data</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/data">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-del" title="Das del-Element">
-
-            <tip>
-                Mehr zum <code>del</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/del">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-dfn" title="Das dfn-Element">
-
-            <tip>
-                Mehr zum <code>dfn</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/dfn">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-em" title="Das em-Element">
-
-            <tip>
-                Mehr zum <code>em</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/em">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-i" title="Das i-Element">
-
-            <tip>
-                Mehr zum <code>i</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/i">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-ins" title="Das ins-Element">
-
-            <tip>
-                Mehr zum <code>ins</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/ins">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-kbd" title="Das kbd-Element">
-
-            <tip>
-                Mehr zum <code>kbd</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/kbd">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-mark" title="Das mark-Element">
-
-            <tip>
-                Mehr zum <code>mark</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/mark">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-q" title="Das q-Element">
-
-            <tip>
-                Mehr zum <code>q</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/q">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-rp" title="Das rp-Element">
-
-            <tip>
-                Mehr zum <code>rp</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/rp">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-rt" title="Das rt-Element">
-
-            <tip>
-                Mehr zum <code>rt</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/rt">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-ruby" title="Das ruby-Element">
-
-            <tip>
-                Mehr zum <code>ruby</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/ruby">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-s" title="Das s-Element">
-
-            <tip>
-                Mehr zum <code>s</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/s">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-samp" title="Das samp-Element">
-
-            <tip>
-                Mehr zum <code>samp</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/samp">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-small" title="Das small-Element">
-
-            <tip>
-                Mehr zum <code>small</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/small">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-span" title="Das span-Element">
-
-            <tip>
-                Mehr zum <code>span</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/span">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-strong" title="Das strong-Element">
-
-            <tip>
-                Mehr zum <code>strong</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/strong">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-sub" title="Das sub-Element">
-
-            <tip>
-                Mehr zum <code>sub</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/sub">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-sup" title="Das sup-Element">
-
-            <tip>
-                Mehr zum <code>sup</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/sup">MDN Web Docs</a>
             </tip>
         </chapter>
 
@@ -581,60 +544,37 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-u" title="Das u-Element">
+        <chapter id="tag-small" title="Das small-Element">
 
             <tip>
-                Mehr zum <code>u</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/u">MDN Web Docs</a>
+                Mehr zum <code>small</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/small">MDN Web Docs</a>
             </tip>
         </chapter>
 
-        <chapter id="tag-var" title="Das var-Element">
+        <chapter id="tag-ruby" title="Das ruby-Element">
 
             <tip>
-                Mehr zum <code>var</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/var">MDN Web Docs</a>
+                Mehr zum <code>ruby</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/ruby">MDN Web Docs</a>
+            </tip>
+
+            <tip>
+                Mehr zum <code>rp</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/rp">MDN Web Docs</a>
+            </tip>
+
+            <tip>
+                Mehr zum <code>rt</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/rt">MDN Web Docs</a>
             </tip>
         </chapter>
 
-        <chapter id="tag-wbr" title="Das wbr-Element">
-            <p>
-                Das <code>wbr</code>-Element (wbr = word break opportunity) wird verwendet, um einen optionalen
-                Zeilenumbruch innerhalb eines Wortes zu erzeugen. Es ist ein allein stehendes Tag. Es kann recht
-                hilfreich sein, wenn man verhindern will, dass der Webbrowser eine Zeile an der falschen Stelle
-                umbricht.
-            </p>
-
-            <!-- @formatter:off -->
-            <code-block lang="html">
-                <![CDATA[
-                    <p>Donaudampfschifffahrts<wbr>elektrizitätenhauptbetriebs<wbr>werkbauunterbeamtengesellschaft</p>
-                ]]>
-            </code-block>
-            <!-- @formatter:on -->
-
-            <note>
-                <p>
-                    Unschön ist diese Worttrennung trotzdem, weil hier die Zeile einfach ohne Trennungsstrich
-                    umbrochen wird. Als Alternative bietet sich die benannte Entität (bzw. Named Entity)
-                    <code>&amp;shy;</code> für einen bedingten Trennungsstrich an. Ähnlich wie mit
-                    <code>&lt;wbr&gt;</code> wird dem Webbrowser damit erlaubt, das Wort gegebenenfalls an dieser Stelle
-                    zu trennen. Im Gegensatz zu <code>&lt;wbr&gt;</code> wird vom Webbrowser am Ende des umbrochenen
-                    Wortes ein Trennstrich hinzugefügt. Das alternative Beispiel hierzu:
-                </p>
-
-                <!-- @formatter:off -->
-                <code-block lang="html">
-                    <![CDATA[
-                        <p>Donaudampfschifffahrts&shy;elektrizitätenhauptbetriebs&shy;werkbauunterbeamtengesellschaft</p>
-                    ]]>
-                </code-block>
-                <!-- @formatter:on -->
-            </note>
+        <chapter id="tag-span" title="Das span-Element">
 
             <tip>
-                Mehr zum <code>wbr</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/wbr">MDN Web Docs</a>
+                Mehr zum <code>span</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/span">MDN Web Docs</a>
             </tip>
         </chapter>
     </chapter>
