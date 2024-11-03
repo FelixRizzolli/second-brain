@@ -170,6 +170,40 @@
 
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-blockquote" title="Das blockquote-Element">
+            <p>
+                Das <code>&lt;blockquote&gt;</code>-Element (blockquote = Blockzitat) wird verwendet, um längere Zitate
+                oder Textpassagen zu kennzeichnen, die aus anderen Quellen stammen. Der Inhalt des
+                <code>blockquote</code>-Elements wird in der Regel durch Einrückungen oder andere visuelle
+                Unterscheidungen hervorgehoben. Der Inhalt des <code>blockquote</code>-Elements kann auch andere
+                HTML-Elemente enthalten, wie z.B. Überschriften, Absätze, Listen oder Tabellen.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <blockquote cite="https://www.eineadresse.de/">
+                        »Als Overthinker denke ich oft zu viel nach und handle zu wenig. Die
+                        Angst vor dem Scheitern hält mich zurück, aber ich lerne, dass das
+                        Leben aus Fehlern besteht und dass ich durch meine Überlegungen auch
+                        Chancen verpasse.« <small> - Unbekannt</small>
+                    </blockquote>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <deflist>
+                <def title="cite">
+                    <p>
+                        Das <code>cite</code>-Attribut wird verwendet, um die Quelle des Zitats anzugeben. Es sollte
+                        eine URL oder ein URI sein, der auf die Quelle des Zitats verweist.
+                    </p>
+
+                    <note>
+                        Leider wird das <code>cite</code>-Attribut von den meisten Browsern nicht angezeigt, deshalb ist
+                        es ratsam, den Quellenverweis noch extra anzugeben.
+                    </note>
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>blockquote</code>-Element hier:
@@ -286,7 +320,7 @@
             </p>
 
             <!-- @formatter:off -->
-            <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+            <code-block lang="html">
                 <![CDATA[
                     <article>
                         <h2>Was ist Overthinking?</h2>

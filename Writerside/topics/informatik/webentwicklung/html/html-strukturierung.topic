@@ -160,7 +160,7 @@
             </note>
 
             <!-- @formatter:off -->
-            <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+            <code-block lang="html">
                 <![CDATA[
                     <!doctype html>
                     <html lang="de">
@@ -202,7 +202,7 @@
             </p>
 
             <!-- @formatter:off -->
-            <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+            <code-block lang="html">
                 <![CDATA[
                     <!doctype html>
                     <html lang="de">
@@ -240,7 +240,7 @@
             </p>
 
             <!-- @formatter:off -->
-            <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+            <code-block lang="html">
                 <![CDATA[
                     <!doctype html>
                     <html lang="de">
@@ -393,7 +393,7 @@
             </p>
 
             <!-- @formatter:off -->
-            <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+            <code-block lang="html">
                 <![CDATA[
                     <!doctype html>
                     <html lang="de">
@@ -439,7 +439,7 @@
             </p>
 
             <!-- @formatter:off -->
-            <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+            <code-block lang="html">
                 <![CDATA[
                     <!doctype html>
                     <html lang="de">
