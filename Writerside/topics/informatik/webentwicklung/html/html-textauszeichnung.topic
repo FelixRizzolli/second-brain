@@ -908,7 +908,51 @@
         </chapter>
 
         <chapter id="tag-time" title="Das time-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>time</code>-Element wurde zur Auszeichnung von Datums- und Zeitangaben eingeführt. Bei der
+                Darstellung im Webbrowser fällt ein zwischen <code>&lt;time&gt;</code> und <code>&lt;/time&gt;</code>
+                gestellter Text optisch gewöhnlich überhaupt nicht auf. Ziel und Zweck des <code>time</code>-Elements
+                ist eher, dass Datum und Uhrzeit für Maschinen eindeutig codiert sind und für Menschen ebenfalls in
+                lesbarer Form dargestellt werden können. Die für die Maschine lesbare Form geben Sie dabei im
+                HTML-Attribut <code>datetime</code> an, und die für Menschen lesbare Form wird gewöhnlich zwischen
+                <code>&lt;time&gt;</code> und <code>&lt;/time&gt;</code> geschrieben.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>
+                        Wir trafen uns an meinem <time datetime="2024-11-12">
+                        44. Geburtstag</time> bei <em>Bär</em>
+                        <time datetime="20:00">um 8 Uhr am Abend.</time>
+                    </p>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                Wird das <code>time</code>-Element verwendet, wird es einfacher für andere Programme, diese Daten zu
+                indizieren. So ist es z.B. einfacher für ein Skript in Blogartikeln, das Datum anhand des
+                <code>time</code>-Elements zu extrahieren, anstatt irgendwelche anderen Techniken zu verwenden, um nach
+                diesen Daten zu suchen und sie auszulesen. Dadurch, dass die Datums- und/oder Zeitangaben in einer
+                maschinenlesbaren Form vorliegen, ergibt sich der Vorteil für Suchmaschinen, davon Gebrauch machen zu
+                können, wenn nach Artikeln eines bestimmten Zeitraums oder Datums gesucht wird.
+            </p>
+
+            <p>
+                Um das <code>time</code>-Element semantisch korrekt zu verwenden, muss die Angabe einer genauen
+                Zeitangabe verwendet und eingehalten werden. Folgende falsche Verwendung sollte z.B. vermieden werden:
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>
+                        Das sind die Ergebnisse von <time>letzter Woche</time>.
+                    </p>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>time</code>-Element hier:
