@@ -1032,7 +1032,26 @@
         </chapter>
 
         <chapter id="tag-span" title="Das span-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>span</code>-Element wird verwendet, um einen allgemeinen Bereich innerhalb eines Textabsatzes
+                auszuzeichnen. Ähnlich wie das <code>div</code>-Element als Blockelement. Mit dem
+                <code>span</code>-Element können einzelne Textpassagen mitten im Fließtext mit CSS formatiert werden.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>
+                        <span style="color: red;">Rotes Wort</span> im Text.
+                    </p>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <note>
+                Auch hier gilt wie beim <code>div</code>-Element, dass das <code>span</code>-Element nur dann verwendet
+                werden sollte, wenn es kein semantisch besser geeignetes HTML-Element dafür gibt.
+            </note>
 
             <tip>
                 Mehr zum <code>span</code>-Element hier:
