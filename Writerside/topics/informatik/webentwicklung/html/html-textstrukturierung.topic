@@ -258,6 +258,37 @@
         </chapter>
 
         <chapter id="tag-p" title="Das p-Element">
+            <p>
+                Das <code>&lt;p&gt;</code>-Element (p = paragraph, deutsch: Absatz) ist das Standard-Element für
+                Textabsätze in längeren Fließtexten. Alles, was zwischen dem öffnenden <code>&lt;p&gt;</code> und dem
+                schließenden <code>&lt;/p&gt;</code> steht, wird als ein Textabsatz behandelt. Innerhalb eines solchen
+                Absatzes können neben mehrzeiligem Fließtext auch Bilder, Videos, Audio oder andere Textauszeichnungen
+                verwendet werden. Allerdings dürfen Sie innerhalb von <code>&lt;p&gt;</code> und <code>&lt;/p&gt;</code>
+                keine anderen Gruppenelemente, Überschriften (<code>&lt;h1&gt;</code> bis <code>&lt;h6&gt;</code>)
+                oder Sektionselemente einfügen. Beachten Sie außerdem, dass Zeilenumbrüche, mehrere Leerzeichen oder
+                Tabulatoren innerhalb des <code>&lt;p&gt;</code>-Elements vom Browser ignoriert werden, wenn Sie
+                HTML-Dokumente im Editor erstellen.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                <![CDATA[
+                    <article>
+                        <h2>Was ist Overthinking?</h2>
+                        <p>
+                            Overthinking bedeutet, dass man sich zu sehr auf einen Gedanken oder
+                            eine Situation konzentriert und dabei das Problem oder die Frage immer
+                            wieder im Kopf durchgeht, oft bis zur Erschöpfung. Es kann auch ...
+                        </p>
+                        <p>
+                            Overthinking kann dazu führen, dass man sich in einem Gedankenkarussell
+                            verfängt und nicht mehr in der Lage ist, eine Entscheidung zu treffen
+                            oder sich auf eine Aufgabe zu konzentrieren. Es kann auch zu ...
+                        </p>
+                    </article>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>p</code>-Element hier:
