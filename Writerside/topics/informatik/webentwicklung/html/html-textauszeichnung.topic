@@ -340,6 +340,7 @@
 
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-a" title="Das a-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>a</code>-Element hier:
@@ -380,6 +381,7 @@
         </chapter>
 
         <chapter id="tag-cite" title="Das cite-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>cite</code>-Element hier:
@@ -388,6 +390,7 @@
         </chapter>
 
         <chapter id="tag-code" title="Das code-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>code</code>-Element hier:
@@ -396,6 +399,7 @@
         </chapter>
 
         <chapter id="tag-kbd-samp" title="Das kbd- und samp-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>kbd</code>-Element hier:
@@ -409,6 +413,7 @@
         </chapter>
 
         <chapter id="tag-dfn" title="Das dfn-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>dfn</code>-Element hier:
@@ -417,6 +422,7 @@
         </chapter>
 
         <chapter id="tag-var" title="Das var-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>var</code>-Element hier:
@@ -425,6 +431,7 @@
         </chapter>
 
         <chapter id="tag-bdo-bdi" title="Das bdo und bdi-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>bdo</code>-Element hier:
@@ -438,6 +445,7 @@
         </chapter>
 
         <chapter id="tag-em-strong-i-b" title="Das em-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>em</code>-Element hier:
@@ -461,6 +469,7 @@
         </chapter>
 
         <chapter id="tag-mark" title="Das mark-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>mark</code>-Element hier:
@@ -469,6 +478,7 @@
         </chapter>
 
         <chapter id="tag-q" title="Das q-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>q</code>-Element hier:
@@ -477,6 +487,7 @@
         </chapter>
 
         <chapter id="tag-u-s" title="Das u- und s-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>u</code>-Element hier:
@@ -490,6 +501,7 @@
         </chapter>
 
         <chapter id="tag-ins-del" title="Das ins- und del-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>ins</code>-Element hier:
@@ -503,6 +515,7 @@
         </chapter>
 
         <chapter id="tag-sub-sup" title="Das sub- und sup-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>sub</code>-Element hier:
@@ -585,6 +598,7 @@
         </chapter>
 
         <chapter id="tag-data" title="Das data-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>data</code>-Element hier:
@@ -593,6 +607,7 @@
         </chapter>
 
         <chapter id="tag-time" title="Das time-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>time</code>-Element hier:
@@ -601,6 +616,7 @@
         </chapter>
 
         <chapter id="tag-small" title="Das small-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>small</code>-Element hier:
@@ -609,6 +625,7 @@
         </chapter>
 
         <chapter id="tag-ruby" title="Das ruby-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>ruby</code>-Element hier:
@@ -627,6 +644,7 @@
         </chapter>
 
         <chapter id="tag-span" title="Das span-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>span</code>-Element hier:
