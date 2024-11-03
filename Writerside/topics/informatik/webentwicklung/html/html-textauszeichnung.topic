@@ -397,6 +397,7 @@
                     </p>
                 ]]>
             </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>cite</code>-Element hier:
@@ -405,7 +406,43 @@
         </chapter>
 
         <chapter id="tag-code" title="Das code-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>code</code>-Element wird verwendet, um Computercode innerhalb eines Textabsatzes
+                auszuzeichnen. Der Text wird in einer Monospace-Schriftart dargestellt. Es kann Beispielsweise auch für
+                Variablennamen, Dateinamen, Pfadnamen oder andere Texte verwendet werden.
+            </p>
+
+            <p>
+                Sollen mehrere Zeilen Code formatiert werde, sollte das oder die <code>code</code>-Elemente innerhalb
+                eines <a href="html-textstrukturierung.topic#tag-pre"><code>pre</code></a>-Elements verwendet werden.
+                Für Tastatureingaben sollte anstelle von <code>code</code> das
+                <a href="html-textauszeichnung.topic#tag-kbd-samp"><code>kbd</code></a>-Element und für Programmausgaben
+                das <a href="html-textauszeichnung.topic#tag-kbd-samp"><code>samp</code></a>-Element verwendet werden.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>Hier ein Quellcodeausschnitt eines C-Programms:</p>
+
+                    <pre>
+                        <code>
+                            #include &lt;stdio.h&gt;
+
+                            int main(void) {
+                                puts("Hello, World!");
+                                return 0;
+                            }
+                        </code>
+                    </pre>
+                ]]>
+            </code-block>
+
+            <note>
+                Um &lt;- oder &gt;-Zeichen in HTML darstellen zu können, die kein HTML sein sollen, können die Zeichen
+                als HTML-Entitäten geschrieben werden. Das <code>&lt;</code>-Zeichen wird als <code>&amp;lt;</code> und
+                das <code>&gt;</code>-Zeichen als <code>&amp;gt;</code> geschrieben.
+            </note>
 
             <tip>
                 Mehr zum <code>code</code>-Element hier:
