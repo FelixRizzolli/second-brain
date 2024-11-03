@@ -145,6 +145,46 @@
 
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-address" title="Das address-Element">
+            <p>
+                Das <code>&lt;address&gt;</code>-Element sollte ausschließlich für Kontaktinformationen zum Autor des
+                Inhalts oder des Dokuments verwendet werden. Dies kann eine E-Mail-Adresse, eine Postanschrift oder auch
+                ein Link zu einer Seite mit Kontaktinformationen sein. Wird das <code>address</code>-Element innerhalb
+                des <code>body</code>-Elements verwendet, sollten hier nur Kontaktinformationen zum Eigentümer oder
+                Autor des ganzen Dokuments oder eines Artikels stehen. Steht das <code>address</code>-Element innerhalb
+                eines <code>article</code>-Elements, sollte es nur Kontaktinformationen zum Autor des Artikels
+                enthalten.
+            </p>
+
+            <note>
+                Das <code>address</code>-Element steht für gewöhnlich im <code>footer</code>-Element.
+            </note>
+
+            <!-- @formatter:off -->
+            <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                <![CDATA[
+                    <!doctype html>
+                    <html lang="de">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title>Beispiel</title>
+                        </head>
+                        <body>
+                            <h1>Hauptüberschrift</h1>
+                            <p>Ein wenig Text vor dem Artikel.</p>
+
+                            <article>
+                                <h1>Overthinking Blog</h1>
+                                <p>Ein Blog mit meinen Gedanken ...</p>
+
+                                <address>
+                                    Autor: <a href="#">M. Muster</a>
+                                </address>
+                            </article>
+                        </body>
+                    </html>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>address</code>-Element hier:
