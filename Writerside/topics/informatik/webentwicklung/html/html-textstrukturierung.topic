@@ -9,7 +9,6 @@
     <show-structure depth="2" for="chapter,procedure"/>
     <link-summary rel="%id_prefix%-description"/>
 
-    <!-- TODO -->
     <chapter id="introduction" title="Einleitung">
         <p id="%id_prefix%-description">
             In HTML gibt es verschiedene Elemente, die zur Strukturierung von Texten verwendet werden können. Damit ist
@@ -294,6 +293,7 @@
         </chapter>
 
         <chapter id="tag-pre" title="Das pre-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>pre</code>-Element hier:
@@ -643,7 +643,6 @@
             <!-- @formatter:on -->
 
         </chapter>
-
     </chapter>
 
     <chapter id="quellen" title="Quellen">

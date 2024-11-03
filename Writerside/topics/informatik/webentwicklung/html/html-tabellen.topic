@@ -9,9 +9,9 @@
     <show-structure depth="2" for="chapter,procedure"/>
     <link-summary rel="%id_prefix%-description"/>
 
-    <!-- TODO -->
     <chapter id="introduction" title="Einleitung">
         <p id="%id_prefix%-description">
+            <!-- TODO -->
             ...
         </p>
     </chapter>
@@ -127,6 +127,7 @@
 
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-caption" title="Das caption-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>caption</code>-Element hier:
@@ -135,6 +136,7 @@
         </chapter>
 
         <chapter id="tag-col" title="Das col-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>col</code>-Element hier:
@@ -143,6 +145,7 @@
         </chapter>
 
         <chapter id="tag-colgroup" title="Das colgroup-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>colgroup</code>-Element hier:
@@ -151,6 +154,7 @@
         </chapter>
 
         <chapter id="tag-table" title="Das table-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>table</code>-Element hier:
@@ -159,6 +163,7 @@
         </chapter>
 
         <chapter id="tag-tbody" title="Das tbody-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>tbody</code>-Element hier:
@@ -167,6 +172,7 @@
         </chapter>
 
         <chapter id="tag-td" title="Das td-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>td</code>-Element hier:
@@ -175,6 +181,7 @@
         </chapter>
 
         <chapter id="tag-tfoot" title="Das tfoot-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>tfoot</code>-Element hier:
@@ -183,6 +190,7 @@
         </chapter>
 
         <chapter id="tag-th" title="Das th-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>th</code>-Element hier:
@@ -191,6 +199,7 @@
         </chapter>
 
         <chapter id="tag-thead" title="Das thead-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>thead</code>-Element hier:
@@ -199,6 +208,7 @@
         </chapter>
 
         <chapter id="tag-tr" title="Das tr-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>tr</code>-Element hier:

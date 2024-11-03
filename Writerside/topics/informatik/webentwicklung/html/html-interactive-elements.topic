@@ -9,9 +9,9 @@
     <show-structure depth="2" for="chapter,procedure"/>
     <link-summary rel="%id_prefix%-description"/>
 
-    <!-- TODO -->
     <chapter id="introduction" title="Einleitung">
         <p id="%id_prefix%-description">
+            <!-- TODO -->
             ...
         </p>
     </chapter>
@@ -57,6 +57,7 @@
 
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-details" title="Das details-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>details</code>-Element hier:
@@ -65,6 +66,7 @@
         </chapter>
 
         <chapter id="tag-dialog" title="Das dialog-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>dialog</code>-Element hier:
@@ -73,6 +75,7 @@
         </chapter>
 
         <chapter id="tag-summary" title="Das summary-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>summary</code>-Element hier:

@@ -9,7 +9,6 @@
     <show-structure depth="2" for="chapter,procedure"/>
     <link-summary rel="%id_prefix%-description"/>
 
-    <!-- TODO -->
     <chapter id="introduction" title="Einleitung">
         <p id="%id_prefix%-description">
             In der Vergangenheit wurden <code>div</code>-Elemente mit speziellen IDs oder Klassen zur Strukturierung von
@@ -369,6 +368,7 @@
         </chapter>
 
         <chapter id="tag-hgroup" title="Das hgroup-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>hgroup</code>-Element hier:
@@ -377,6 +377,7 @@
         </chapter>
 
         <chapter id="tag-main" title="Das main-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>main</code>-Element hier:
@@ -475,6 +476,7 @@
         </chapter>
 
         <chapter id="tag-search" title="Das search-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>search</code>-Element hier:

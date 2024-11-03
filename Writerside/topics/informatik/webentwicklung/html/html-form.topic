@@ -9,9 +9,9 @@
     <show-structure depth="2" for="chapter,procedure"/>
     <link-summary rel="%id_prefix%-description"/>
 
-    <!-- TODO -->
     <chapter id="introduction" title="Einleitung">
         <p id="%id_prefix%-description">
+            <!-- TODO -->
             ...
         </p>
     </chapter>
@@ -167,6 +167,7 @@
 
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-button" title="Das button-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>button</code>-Element hier:
@@ -175,6 +176,7 @@
         </chapter>
 
         <chapter id="tag-datalist" title="Das datalist-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>datalist</code>-Element hier:
@@ -183,6 +185,7 @@
         </chapter>
 
         <chapter id="tag-fieldset" title="Das fieldset-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>fieldset</code>-Element hier:
@@ -191,6 +194,7 @@
         </chapter>
 
         <chapter id="tag-form" title="Das form-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>form</code>-Element hier:
@@ -199,6 +203,7 @@
         </chapter>
 
         <chapter id="tag-input" title="Das input-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>input</code>-Element hier:
@@ -207,6 +212,7 @@
         </chapter>
 
         <chapter id="tag-label" title="Das label-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>label</code>-Element hier:
@@ -215,6 +221,7 @@
         </chapter>
 
         <chapter id="tag-legend" title="Das legend-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>legend</code>-Element hier:
@@ -223,6 +230,7 @@
         </chapter>
 
         <chapter id="tag-meter" title="Das meter-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>meter</code>-Element hier:
@@ -231,6 +239,7 @@
         </chapter>
 
         <chapter id="tag-optgroup" title="Das optgroup-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>optgroup</code>-Element hier:
@@ -239,6 +248,7 @@
         </chapter>
 
         <chapter id="tag-option" title="Das option-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>option</code>-Element hier:
@@ -247,6 +257,7 @@
         </chapter>
 
         <chapter id="tag-output" title="Das output-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>output</code>-Element hier:
@@ -255,6 +266,7 @@
         </chapter>
 
         <chapter id="tag-progress" title="Das progress-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>progress</code>-Element hier:
@@ -263,6 +275,7 @@
         </chapter>
 
         <chapter id="tag-select" title="Das select-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>select</code>-Element hier:
@@ -271,6 +284,7 @@
         </chapter>
 
         <chapter id="tag-textarea" title="Das textarea-Element">
+            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>textarea</code>-Element hier:

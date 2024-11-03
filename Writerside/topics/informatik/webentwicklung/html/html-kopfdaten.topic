@@ -9,7 +9,6 @@
     <show-structure depth="2" for="chapter,procedure"/>
     <link-summary rel="%id_prefix%-description"/>
 
-    <!-- TODO -->
     <chapter id="introduction" title="Einleitung">
         <p id="%id_prefix%-description">
             Im Kopfbereich eines HTML-Dokuments (zwischen <code>&lt;head&gt;</code> und <code>&lt;/head&gt;</code>)
