@@ -582,7 +582,37 @@
         </chapter>
 
         <chapter id="tag-em-strong-i-b" title="Das em-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>em</code>-Element (em = emphasis) wird verwendet, um Text hervorzuheben, den Sie beim Sprechen
+                besonders betonen würden. Der Text wird in der Regel kursiv dargestellt. Das <code>strong</code>-Element
+                wird verwendet, um inhaltlich besonders wichtige Wörter oder Passagen hervorzuheben. Der Text wird in
+                der Regel fett dargestellt. Das <code>i</code>-Element wird verwendet, um Wörter oder Passagen mit
+                Fachausdrücken, Gedanken, fremdsprachigen Wörtern oder ähnlichem auszuzeichnen. Der Text wird in der
+                Regel kursiv dargestellt. Das <code>b</code>-Element wird verwendet, um bedeutungsvolle Namen oder
+                Schlüsselwörter hervorzuheben. Der Text wird in der Regel fett dargestellt.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>
+                        Warten Sie nicht zu lange, sondern handeln Sie <em>jetzt</em>!
+                    </p>
+                    <p>
+                        Die Blumen im Garten sollten Sie <strong>auf keinen Fall</strong> gießen!
+                    </p>
+                    <p>
+                        <strong>Erwartete Fertigstellung im <em>Sommer 2024</em></strong>
+                    </p>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <note>
+                Der HTML-Standard empfiehlt, das <code>b</code>- bzw. <code>i</code>-Element nur zu verwenden, wenn kein
+                anderes HTML-Tag zur Auszeichnung des Textes oder einer Passage mehr passt. Die Zeiten, in denen diese
+                Elemente rein zur Formatierung verwendet wurden, sind vorbei. Hierfür wird CSS eingesetzt.
+            </note>
 
             <tip>
                 Mehr zum <code>em</code>-Element hier:
