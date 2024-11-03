@@ -797,7 +797,26 @@
         </chapter>
 
         <chapter id="tag-sub-sup" title="Das sub- und sup-Element">
-            <!-- TODO -->
+            <p>
+                Diese beiden Auszeichnungen werden vorwiegend bei einfachen mathematischen und chemischen Formeln
+                eingesetzt, um mit dem <code>sub</code>-Element (sub = subscript) einen Text tiefer- und mit dem
+                <code>sup</code>-Element (sup = superscript) höherzustellen.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>
+                        <sup>[1]</sup> Reaktionsschema: 2 H<sub>2</sub>O
+                        &RightArrow; 2 H<sub>2</sub> + O<sub>2</sub>
+                    </p>
+                    <p>
+                        <sup>[2]</sup> Kreisfläche berechnen: A = &pi; * r
+                        <sup>2</sup>
+                    </p>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>sub</code>-Element hier:
