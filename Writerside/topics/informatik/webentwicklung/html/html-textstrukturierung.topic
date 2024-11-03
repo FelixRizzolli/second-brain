@@ -320,6 +320,46 @@
         </chapter>
 
         <chapter id="tag-main" title="Das main-Element">
+            <p>
+                Das <code>&lt;main&gt;</code>-Element wird verwendet, um den Hauptinhalt einer Webseite zu kennzeichnen.
+                Es sollte nur einmal pro Dokument verwendet werden. Im Gegensatz zum <code>section</code>-Element ist
+                das <code>main</code>-Element kein Sektionselement, sondern ein reines Gruppierungselement.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <body>
+                        <header>
+                            <img src="overthinking.svg" alt="Overhinker Logo" width="125">
+                            <p>Professional Overthinker</p>
+                            <nav>
+                                ...
+                            </nav>
+                        </header>
+
+                        <main>
+                            <h1>Overthinking Blog</h1>
+                            <p>Ein Blog mit meinen Gedanken ...</p>
+                            <article>
+                                ...
+                            </article>
+                        </main>
+
+                        <footer>
+                            <p>© DeinName, 20XX</p>
+                            <a href="#">Impressum</a>
+                        </footer>
+                    </body>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <note>
+                In der Vergangenheit wurde anstelle des <code>main</code>-Elements oft das <code>div</code>-Element mit
+                einem <code>id</code>-Attribut verwendet, um den Hauptinhalt einer Webseite zu kennzeichnen:
+                <code>&lt;div id="main"&gt;</code>.
+            </note>
 
             <tip>
                 Mehr zum <code>main</code>-Element hier:
