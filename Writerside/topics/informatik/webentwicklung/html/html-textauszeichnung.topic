@@ -531,7 +531,44 @@
         </chapter>
 
         <chapter id="tag-bdo-bdi" title="Das bdo und bdi-Element">
-            <!-- TODO -->
+            <p>
+                Mit dem <code>bdo</code>-Element (bdo = bidirectional override) kann die Textrichtung geändert werden.
+                Das ist beispielsweise hilfreich, wenn ein Text angezeigt werden soll, der von rechts nach links
+                geschrieben wird (z.B. Arabisch oder Hebräisch). Um die Textausrichtung zu definieren, wird das
+                <code>dir</code>-Attribut verwendet. Mit dem Wert <code>rtl</code> (right-to-left) verläuft der Text von
+                rechts nach links, mit dem Wert <code>ltr</code> (left-to-right) von links nach rechts.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[]
+                    <p>
+                        <bdo dir="rtl">Ein Esel lese nie</bdo>
+                    </p>
+                    <p>
+                        <bdo dir="rtl">مرحبا بالعالم</bdo>
+                    </p>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                Das <code>bdi</code>-Element (bdi = bidirectional isolation) wird verwendet, um einen Bereich für
+                bidirektionalen Text zu definieren. Der Text innerhalb des <code>bdi</code>-Elements wird von der
+                umgebenden Textausrichtung isoliert. In folgendem Beispiel wird der arabische Text von dem deutschen
+                Text isoliert. Würde dies nicht geschehen, würde der Doppelpunkt vor dem arabischen Text anstatt nach
+                dem arabischen Text stehen.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[]
+                    <p>
+                        <bdi>مرحبا بالعالم</bdi>: Hallo Welt
+                    </p>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>bdo</code>-Element hier:
