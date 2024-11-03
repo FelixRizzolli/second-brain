@@ -418,11 +418,33 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-ol-li" title="Das ol- und li-Element">
+        <chapter id="tag-ul-li" title="Das ul- und li-Element">
+            <p>
+                Das <code>&lt;ul&gt;</code>-Element (ul = unordered list, deutsch: ungeordnete Liste) wird verwendet, um
+                eine Aufzählungsliste zu erstellen, bei der die Reihenfolge der Elemente keine Rolle spielt. Jedes
+                Listenelement wird mit dem <code>&lt;li&gt;</code>-Element (li = list item, deutsch: Listenelement)
+                definiert. Die Liste wird durch das <code>ul</code>-Element umschlossen.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <article>
+                        <h2>Ungeordnete Aufzählungsliste mit ul</h2>
+
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Donec quam felis ultricies</li>
+                            <li>Nulla consequat massa quis</li>
+                        </ul>
+                    </article>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
-                Mehr zum <code>ol</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/ol">MDN Web Docs</a>
+                Mehr zum <code>ul</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/ul">MDN Web Docs</a>
             </tip>
 
             <tip>
@@ -431,11 +453,33 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-ul-li" title="Das ul- und li-Element">
+        <chapter id="tag-ol-li" title="Das ol- und li-Element">
+            <p>
+                Das <code>&lt;ol&gt;</code>-Element (ol = ordered list, deutsch: geordnete Liste) wird verwendet, um
+                eine Aufzählungsliste zu erstellen, bei der die Reihenfolge der Elemente eine Rolle spielt. Jedes
+                Listenelement wird mit dem <code>&lt;li&gt;</code>-Element (li = list item, deutsch: Listenelement)
+                definiert. Die Liste wird durch das <code>ol</code>-Element umschlossen.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <article>
+                        <h2>Nummerierte Aufzählungsliste mit ol</h2>
+
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Donec quam felis ultricies</li>
+                            <li>Nulla consequat massa quis</li>
+                        </ol>
+                    </article>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
-                Mehr zum <code>ul</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/ul">MDN Web Docs</a>
+                Mehr zum <code>ol</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/ol">MDN Web Docs</a>
             </tip>
 
             <tip>
