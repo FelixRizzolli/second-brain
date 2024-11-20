@@ -733,7 +733,69 @@
             </chapter>
 
             <chapter id="wai-aria-description" title="Beschreibung">
+                <p>
+                    Zusätzlich zur Verwendung semantischer HTML-Elemente mit ihren eingebauten Rollen kann die
+                    Zugänglichkeit einer Website erheblich vereinfachen, wenn bei der Beschriftung auch zugängliche
+                    Namen verwendet werden. Dies ist besonders wichtig, wenn ein Element nicht durch den Textinhalt oder
+                    den sichtbaren Text beschrieben wird. Zum Beispiel:
+                </p>
 
+                <!-- @formatter:off -->
+                <code-block lang="html">
+                    <![CDATA[
+                        <a href="https://www.rheinwerk-verlag.de/">Zum Rheinwerk Verlag</a>
+                    ]]>
+                </code-block>
+                <!-- @formatter:on -->
+
+                <p>
+                    Mit diesem einfachen Textinhalt »Zum Rheinwerk Verlag« kann der Benutzer eines Screenreaders viel
+                    mehr anfangen als mit »Hier klicken«.
+                </p>
+
+                <p>
+                    Dasselbe gilt beispielsweise für Bilder, bei denen immer das <code>alt</code>-Attribut mit dem
+                    alternativen Text verwendet sollte:
+                </p>
+
+                <!-- @formatter:off -->
+                <code-block lang="html">
+                    <![CDATA[
+                        <img src="cover.png" alt="Cover vom Buch HTML und CSS">
+                    ]]>
+                </code-block>
+                <!-- @formatter:on -->
+
+                <p>
+                    Bei allein stehenden Formularelementen wie z.B. Checkboxen oder Radiobuttons wird empfohlen,
+                    diese mit dem <code>label</code>-Element zu verknüpfen. Die Verknüpfung findet über das
+                    <code>for</code>-Attribut in <code>&lt;label&gt;</code> und dem <code>id</code>-Attribut in
+                    <code>&lt;input&gt;</code> statt. Zusätzlich wird innerhalb vom <code>label</code>-Element ein
+                    zugänglicher Name verwendet. Zum Beispiel:
+                </p>
+
+                <!-- @formatter:off -->
+                <code-block lang="html">
+                    <![CDATA[
+                        <label for="red">Rote Farbe</label>
+                        <input type="checkbox" id="red">
+                    ]]>
+                </code-block>
+                <!-- @formatter:on -->
+
+                <p>
+                    Wurden alle Möglichkeiten eines HTML-Elements und seiner Attribute ausgeschöpft, gibt es natürlich
+                    auch die Möglichkeit, mit dem <code>aria-label</code> einen zugänglichen Namen zu verwenden, z.B.
+                    bei einem Button:
+                </p>
+
+                <!-- @formatter:off -->
+                <code-block lang="html">
+                    <![CDATA[
+                        <button aria-label="Lauter">+</button>
+                    ]]>
+                </code-block>
+                <!-- @formatter:on -->
             </chapter>
         </chapter>
 
