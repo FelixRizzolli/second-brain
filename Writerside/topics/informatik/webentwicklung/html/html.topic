@@ -566,7 +566,126 @@
 
         <chapter id="wai-aria"
                  title="WAI-ARIA (Web Accessibility Initiative - Accessible Rich Internet Applications Suite)">
-            <!-- TODO: Buch HTML & CSS Kapitel 4 -->
+            <p>
+                WAI-ARIA ist eine Spezifikation des W3C, die die Zugänglichkeit von Webanwendungen für Menschen mit
+                Behinderungen verbessert. Es bietet eine Möglichkeit, die <b>Semantik von HTML-Elementen zu
+                erweitern</b> und zusätzliche Informationen über die Interaktion und Struktur einer Webseite
+                bereitzustellen.
+            </p>
+
+            <chapter id="wai-aria-role" title="Rollen">
+                <p>
+                    WAI-ARIA definierte eine Reihe von Rollen, Zuständen und Eigenschaften, um Informationen
+                    darüber bereitzustellen, wie Websites für Benutzer mit Behinderungen zu bedienen sind. Die
+                    Spezifikation ermöglicht es, Elementen auf der Website bestimmte Rollen zuzuweisen, um zu
+                    beschreiben, welche Art von Interaktion für ein Element möglich ist, wie es verwendet werden kann
+                    und welche Informationen es darstellt.
+                </p>
+
+                <p>
+                    Die <code>role</code>-Eigenschaft wird verwendet, um die Rolle eines Elements zu definieren. Sie
+                    kann auf jedes HTML-Element angewendet werden, um seine Funktion und Bedeutung zu beschreiben.
+                    Beispielsweise kann ein <code>&lt;div&gt;</code>-Element die Rolle eines
+                    <code>article</code>-Elements annehmen, indem ihm die <code>role="article"</code>-Eigenschaft
+                    zugewiesen wird.
+                </p>
+
+                <note>
+                    Es ist jedoch zu beachten, dass jedes HTML-Element nur eine Rolle haben kann und es in der Praxis
+                    selten wirklich sinnvoll ist, die eingebaute Rolle eines HTML-Elements mit dem Attribut <code>
+                    role</code> zu überschreiben. Das <code>ul</code>-Element hat z.B. die Rolle list, bei der ein
+                    Screenreader zur Orientierung vorliest, wie viele Elemente enthalten sind. Da das
+                    <code>ul</code>-Element jedoch auch häufig innerhalb einer Navigation verwendet wird, kann es
+                    sinnvoll sein, die Standardrolle mit <code>&lt;ul role="navigation"&gt;</code> zu überschreiben,
+                    damit der Screenreader nicht ausliest, wie viele Elemente enthalten sind.
+                </note>
+
+                <p>
+                    Hier sind einige Beispiele für Rollen, die in WAI-ARIA definiert sind:
+                </p>
+
+                <table style="header-row">
+                    <tr>
+                        <td>Landmarks-Rolle</td>
+                        <td>HTML-Element</td>
+                    </tr>
+                    <tr>
+                        <td><code>banner</code></td>
+                        <td><code>&lt;header&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>complementary</code></td>
+                        <td><code>&lt;aside&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>contentinfo</code></td>
+                        <td><code>&lt;footer&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>form</code></td>
+                        <td><code>&lt;form&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>main</code></td>
+                        <td><code>&lt;main&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>navigation</code></td>
+                        <td><code>&lt;nav&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>region</code></td>
+                        <td><code>&lt;section&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>search</code></td>
+                        <td><code>&lt;search&gt;</code></td>
+                    </tr>
+                </table>
+
+                <tip>
+                    <p>
+                        Weitere Informationen zu WAI-ARIA: <a href="https://www.w3.org/WAI/standards-guidelines/aria/"/>
+                    </p>
+                    <p>
+                        WAI-ARIA Standard 1.2 (2023-06-06): <a href="https://www.w3.org/TR/wai-aria-1.2/"/>
+                    </p>
+                </tip>
+
+                <p>
+                    Neben den Landmarks-Rollen gibt es noch andere Kategorien von Rollen wie abstrakte Rollen,
+                    Widget-Rollen, Dokumentstruktur-Rollen, Live-Region-Rollen und Fenster-Rollen.
+                </p>
+
+                <p>
+                    Es gelten folgende Empfehlungen in Bezug auf die Verwendung von WAI-ARIA Rollen:
+                </p>
+
+                <list type="bullet">
+                    <li>
+                        <b>Das semantische HTML bevorzugen:</b> native HTML-Elemente haben eine eingebaute
+                        Standardrolle, somit empfiehlt es sich immer zuerst das native HTML-Element mit dessen
+                        semantischer Bedeutung zu verwenden.
+                    </li>
+                    <li>
+                        <b>Das <code>role</code>-Attribut soll für nicht semantische HTML-Elemente verwendet werden:</b>
+                        wird z.B. das bedeutungslose <code>&lt;div&gt;</code>-Element eingesetzt, um damit mit
+                        <code>role="button"</code> einen button nachzubauen, obwohl es mit <code>&lt;button>&gt;</code>
+                        ein semantisches HTML-Element dafür gibt, dann ist dies nicht empfehlenswert. Ein
+                        <code>button</code>-Element kann auch mit der Tastatur angesprungen werden. Bei einem
+                        <code>&lt;div role="button"&gt;</code> müsste man sich darum selbst kümmern. Das kann ziemlich
+                        aufwendig und fehleranfällig werden.
+                    </li>
+                </list>
+            </chapter>
+
+            <chapter id="wai-aria-state-attributes" title="Zustand und Attribute">
+
+            </chapter>
+
+            <chapter id="wai-aria-description" title="Beschreibung">
+
+            </chapter>
         </chapter>
 
         <chapter id="charset" title="Zeichencodierung">
