@@ -680,7 +680,56 @@
             </chapter>
 
             <chapter id="wai-aria-state-attributes" title="Zustand und Attribute">
+                <p>
+                    WAI-ARIA definiert auch eine Reihe von Zuständen und Attributen, die verwendet werden können, um
+                    zusätzliche Informationen über die Interaktion und den Zustand eines Elements bereitzustellen. Diese
+                    Attribute können dynamisch aktualisiert werden, um den Benutzern Feedback über den Status eines
+                    Elements zu geben.
+                </p>
 
+                <p>
+                    Hier sind einige Beispiele für Zustände und Attribute, die in WAI-ARIA definiert sind:
+                </p>
+
+                <table style="header-row">
+                    <tr>
+                        <td>Zustand/Attribut</td>
+                        <td>Beschreibung</td>
+                    </tr>
+                    <tr>
+                        <td><code>aria-checked</code></td>
+                        <td>Definiert, ob ein Element ausgewählt ist oder nicht.</td>
+                    </tr>
+                    <tr>
+                        <td><code>aria-disabled</code></td>
+                        <td>Definiert, ob ein Element deaktiviert ist oder nicht.</td>
+                    </tr>
+                    <tr>
+                        <td><code>aria-expanded</code></td>
+                        <td>Definiert, ob ein Element erweitert ist oder nicht.</td>
+                    </tr>
+                    <tr>
+                        <td><code>aria-hidden</code></td>
+                        <td>Definiert, ob ein Element sichtbar ist oder nicht.</td>
+                    </tr>
+                    <tr>
+                        <td><code>aria-label</code></td>
+                        <td>Definiert einen Text, der einem Element zugeordnet ist.</td>
+                    </tr>
+                    <tr>
+                        <td><code>aria-pressed</code></td>
+                        <td>Definiert, ob ein Element gedrückt ist oder nicht.</td>
+                    </tr>
+                    <tr>
+                        <td><code>aria-selected</code></td>
+                        <td>Definiert, ob ein Element ausgewählt ist oder nicht.</td>
+                    </tr>
+                </table>
+
+                <tip>
+                    Es gibt noch viele weitere Zustände und Attribute für HTML-Elemente. Einen guten Überblick über
+                    sie bietet die Webseite <a href="https://wiki.selfhtml.org/wiki/HTML/Attribute/aria-*"/>.
+                </tip>
             </chapter>
 
             <chapter id="wai-aria-description" title="Beschreibung">
