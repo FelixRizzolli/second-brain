@@ -45,7 +45,7 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    »Elektronische« Verweise aka Hyperlinks
                 </td>
             </tr>
             <tr>
@@ -340,7 +340,97 @@
 
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-a" title="Das a-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>a</code>-Element (a = anchor) wird verwendet, um Verweise auf andere Webseiten oder
+                Dokumente zu erstellen. Der Verweis wird durch die Angabe der URL im <code>href</code>-Attribut
+                definiert. Der Text, der zwischen dem <code>a</code>- und dem <code>/a</code>-Tag steht, heißt
+                Linktext oder Verweistext. Es ist wichtig einen sinnvollen Linktext zu wählen, damit der Besucher
+                schneller dort hin navigieren kann, wo er hin möchte. Auch Suchmaschinen bewerten den Linktext und er
+                ist sehr wichtig für Besucher mit Screenreadern.
+            </p>
+
+            <warning>
+                <p>
+                    <b>
+                        Erlaubtes zwischen <a> und </a>
+                    </b>
+                </p>
+
+                <p>
+                    Abgesehen von interaktiven Elementen wie Links, Formularelementen, <code>audio</code> und
+                    <code>video</code> ist alles andere in einem <code>a</code>-Element erlaubt. Trotzdem sollte man
+                    nicht zu viel Inhalt in einem <code>a</code>-Element platzieren, denn dies kann bei Screenreadern
+                    zu Verwirrung führen.
+                </p>
+            </warning>
+
+            <p>
+                Ein Linktext wird gewöhnlich vom Webbrowser (meistens in Blau) unterstrichen. Wurde der Link bereits
+                besucht, hat er eine andere Farbe (gewöhnlich Lila). Die Farbe von Links und besuchten Links kann
+                abhängig vom verwendeten Webbrowser variieren. Es gibt hier also keine Standardlinkfarbe. Jeder
+                Webbrowser hat diesbezüglich sein eigenes Standardstylesheet. Beides kann mit CSS jederzeit geändert
+                werden. Steht man mit dem Mauszeiger über dem Link, verändert sich gewöhnlich der Cursor und wird zu
+                einer Hand, wobei der Zeigefinger auf den Link zeigt. Die meisten Webbrowser zeigen zusätzlich links
+                unten die Adresse an, bei der der Browser nach einem Mausklick auf den Link landen würde.
+            </p>
+            
+            <deflist>
+                <def title="download">
+                    <p>
+                        Das <code>download</code>-Attribut wird verwendet, um zu kennzeichnen, dass das Verweisziel
+                        zum Download angeboten wird. Auch wenn der Webbrowser den Inhaltstyp des Ziels selbst
+                        darstellen könnte.
+                    </p>
+                </def>
+                <def title="href">
+                    <p>
+                        Damit wird die URL des Ziels angegeben. Es kann sich um eine interne oder externe URL handeln.
+                    </p>
+                </def>
+                <def title="hreflang">
+                    <p>
+                        Das <code>hreflang</code>-Attribut wird verwendet, um die Sprache des Ziels zu kennzeichnen. Als
+                        Angaben sind die üblichen Sprachenkürzel erlaubt (z.B. <code>de</code> für Deutsch)
+                    </p>
+                </def>
+                <def title="rel">
+                    <p>
+                        Mit dem <code>rel</code>-Attribut wird wie beim
+                        <a href="html-kopfdaten.topic#tag-link"><code>link</code></a>-Element der Typ der Verlinkung
+                        gekennzeichnet. Speziell für das <code>a</code>-Element sind die Werte <code>bookmark</code>,
+                        <code>external</code>, <code>nofollow</code>, <code>noreferrer</code> von besonderer Bedeutung.
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            <code>rel="bookmark"</code>: Damit wird festgelegt, dass das Verweisziel ein übergeordneter
+                            Abschnitt (bzw. Dokument) des aktuellen Dokuments ist. Dies stellt praktisch eine
+                            Verlinkung zurück zu einem umfangreichen HTML-Dokument dar, wie es bei wissenschaftlichen
+                            oder technischen Dokumenten der Fall ist. In der Praxis wird dieser Linktyp auch für
+                            Permalinks verwendet, damit Besucher eine ältere Version des aktuellen Dokuments ansehen
+                            können.
+                        </li>
+                        <li>
+                            <code>rel="external"</code>: Damit wird festgelegt, dass das Verweisziel einem externen
+                            Webangebot gehört. Häufig wird dieser mit CSS noch gesondert formatiert.
+                        </li>
+                        <li>
+                            <code>rel="nofollow"</code>: Damit wird dem Webcrawler signalisiert, dass der Link nicht
+                            weiter verfolgt werden soll.
+                        </li>
+                        <li>
+                            <code>rel="noreferrer"</code>: Damit wird dem Webbrowser des Besuchers signalisiert, dass
+                            beim Anklicken des Links keine Referrer-Adresse verwendet werden soll, wodurch vermieden
+                            werden sollte, dass der Webserver der Zieladresse Informationen erhält, woher der Besucher
+                            gekommen ist.
+                        </li>
+                    </list>
+                </def>
+                <def title="target">
+                </def>
+                <def title="ping">
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>a</code>-Element hier:
