@@ -310,6 +310,64 @@
                  title="Tabellen mit &lt;thead&gt;, &lt;tbody&gt; und &lt;tfoot&gt; strukturieren">
             <img alt="Visualisierung Tabellenstruktur - Ausführlich" src="html-table-structure-advanced.png"/>
 
+            <p>
+                Mit dieser Visualisierung lässt sich die erweiterte Tabellenstruktur erklären: Eine Tabelle kann in
+                drei Bereiche unterteilt werden: <code>thead</code> (Tabellenkopfbereich), <code>tbody</code>
+                (Tabellenkörper) und <code>tfoot</code> (Tabellenfußbereich). Der Tabellenkopfbereich enthält die
+                Überschriften der Tabelle, der Tabellenkörper enthält die eigentlichen Daten und der Tabellenfußbereich
+                enthält die Zusammenfassung der Daten.
+            </p>
+
+            <note>
+                Die Aufteilung einer Tabelle in drei verschiedene Bereiche ist <b>optional</b> und beeinflusst in
+                der Regel nicht die Darstellung im Webbrowser. Es handelt sich um eine rein semantische Darstellung.
+                Allerdings werden diese Elemente häufig verwendet, um das Erscheinungsbild dieser Bereiche mit CSS zu
+                formatieren.
+            </note>
+
+            <p>
+                Webbrowser könnten bei langen Tabellen den Kopf- und Fußbereich auf jeder Seite ausdrucken, um die Daten
+                besser lesbar zu machen. Eine weitere Möglichkeit wäre, nur den Tabellenkörper zu scrollen, während
+                Kopf- und Fußzeile fixiert bleiben. Diese Funktionen werden jedoch von keinem Browser unterstützt und
+                müssen gegebenenfalls mit CSS und JavaScript umgesetzt werden.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block collapsed-title="Beispiel Tabelle" collapsible="true" lang="html">
+                <![CDATA[
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Monat</th>
+                                <th>Besucher</th>
+                                <th>Bytes</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>Gesamt</th>
+                                <th>23423</th>
+                                <th>3234 MB</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>Januar</td>
+                                <td>3234</td>
+                                <td>132 MB</td>
+                            </tr>
+                            <!-- ... -->
+                            <tr>
+                                <td>Dezember</td>
+                                <td>7193</td>
+                                <td>894 MB</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
             <tip>
                 Mehr zum <code>thead</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/thead">MDN Web Docs</a>
