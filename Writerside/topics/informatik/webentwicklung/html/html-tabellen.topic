@@ -11,8 +11,9 @@
 
     <chapter id="introduction" title="Einleitung">
         <p id="%id_prefix%-description">
-            <!-- TODO -->
-            ...
+            Tabellen sind hilfreich, wenn zusammenhängende Daten wie z.B. Börsenkurse, Finanzdaten, Reisepläne,
+            Zugfahrpläne, Busfahrpläne, Reiseberichte oder Sportergebnisse in einem Raster aus Zeilen und Spalten
+            dargestellt werden sollen. HTML bietet gute Möglichkeiten an, eine solche Tabelle zu strukturieren.
         </p>
     </chapter>
 
@@ -24,173 +25,126 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-tabellen.topic#tag-caption">
-                        <code>&lt;caption&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-tabellen.topic#tag-col">
-                        <code>&lt;col&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-tabellen.topic#tag-colgroup">
-                        <code>&lt;colgroup&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-tabellen.topic#tag-table">
+                    <a href="html-tabellen.topic#tag-table-tr-td-th">
                         <code>&lt;table&gt;</code>
                     </a>
                 </td>
                 <td>
-                    ...
+                    Tabelle
                 </td>
             </tr>
             <tr>
                 <td>
-                    <a href="html-tabellen.topic#tag-tbody">
-                        <code>&lt;tbody&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-tabellen.topic#tag-td">
-                        <code>&lt;td&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-tabellen.topic#tag-tfoot">
-                        <code>&lt;tfoot&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-tabellen.topic#tag-th">
-                        <code>&lt;th&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-tabellen.topic#tag-thead">
-                        <code>&lt;thead&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-tabellen.topic#tag-tr">
+                    <a href="html-tabellen.topic#tag-table-tr-td-th">
                         <code>&lt;tr&gt;</code>
                     </a>
                 </td>
                 <td>
-                    ...
+                    Tabellenzeile
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-tabellen.topic#tag-table-tr-td-th">
+                        <code>&lt;td&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Tabellenzelle
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-tabellen.topic#tag-table-tr-td-th">
+                        <code>&lt;th&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Tabellenkopfzelle für Überschrift
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-tabellen.topic#tag-thead-tbody-tfoot">
+                        <code>&lt;thead&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Tabellenkopfbereich
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-tabellen.topic#tag-thead-tbody-tfoot">
+                        <code>&lt;tbody&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Tabellenkörper
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-tabellen.topic#tag-thead-tbody-tfoot">
+                        <code>&lt;tfoot&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Tabellenfußbereich
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-tabellen.topic#tag-colgroup-col">
+                        <code>&lt;colgroup&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Gruppe von Tabellenspalten
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-tabellen.topic#tag-colgroup-col">
+                        <code>&lt;col&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Tabellenspalte
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-tabellen.topic#tag-caption-figcaption">
+                        <code>&lt;caption&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Tabellenüberschrift/-legende
                 </td>
             </tr>
         </table>
     </chapter>
 
     <chapter id="tag-description" title="Genauere Beschreibung">
-        <chapter id="tag-caption" title="Das caption-Element">
-            <!-- TODO -->
-
-            <tip>
-                Mehr zum <code>caption</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/caption">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-col" title="Das col-Element">
-            <!-- TODO -->
-
-            <tip>
-                Mehr zum <code>col</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/col">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-colgroup" title="Das colgroup-Element">
-            <!-- TODO -->
-
-            <tip>
-                Mehr zum <code>colgroup</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/colgroup">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-table" title="Das table-Element">
+        <chapter id="tag-table-tr-td-th"
+                 title="Eine einfache Tabellenstruktur mit &lt;table&gt;, &lt;tr&gt;, &lt;td&gt; und &lt;th&gt;">
             <!-- TODO -->
 
             <tip>
                 Mehr zum <code>table</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/table">MDN Web Docs</a>
             </tip>
-        </chapter>
-
-        <chapter id="tag-tbody" title="Das tbody-Element">
-            <!-- TODO -->
 
             <tip>
-                Mehr zum <code>tbody</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/tbody">MDN Web Docs</a>
+                Mehr zum <code>tr</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/tr">MDN Web Docs</a>
             </tip>
-        </chapter>
-
-        <chapter id="tag-td" title="Das td-Element">
-            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>td</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/td">MDN Web Docs</a>
             </tip>
-        </chapter>
-
-        <chapter id="tag-tfoot" title="Das tfoot-Element">
-            <!-- TODO -->
-
-            <tip>
-                Mehr zum <code>tfoot</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/tfoot">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-th" title="Das th-Element">
-            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>th</code>-Element hier:
@@ -198,27 +152,55 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-thead" title="Das thead-Element">
+        <chapter id="tag-thead-tbody-tfoot"
+                 title="Tabellen mit &lt;thead&gt;, &lt;tbody&gt; und &lt;tfoot&gt; strukturieren">
             <!-- TODO -->
 
             <tip>
                 Mehr zum <code>thead</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/thead">MDN Web Docs</a>
             </tip>
+
+            <tip>
+                Mehr zum <code>tbody</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/tbody">MDN Web Docs</a>
+            </tip>
+
+            <tip>
+                Mehr zum <code>tfoot</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/tfoot">MDN Web Docs</a>
+            </tip>
         </chapter>
 
-        <chapter id="tag-tr" title="Das tr-Element">
+        <chapter id="tag-colgroup-col" title="Spalten einer Tabelle gruppieren mit &lt;colgroup&gt; und &lt;col&gt;">
             <!-- TODO -->
 
             <tip>
-                Mehr zum <code>tr</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/tr">MDN Web Docs</a>
+                Mehr zum <code>colgroup</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/colgroup">MDN Web Docs</a>
+            </tip>
+
+            <tip>
+                Mehr zum <code>col</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/col">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-caption-figcaption" title="Tabellen beschriften mit &lt;caption&gt; bzw. &lt;figcaption&gt;">
+            <!-- TODO -->
+
+            <tip>
+                Mehr zum <code>caption</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/caption">MDN Web Docs</a>
             </tip>
         </chapter>
     </chapter>
 
     <chapter id="more" title="Weiteres">
+        <chapter id="att-colspan-rowspan" title="Spalten bzw. Zeilen mit colspan bzw. rowspan zusammenfassen">
+            <!-- TODO -->
 
+        </chapter>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
