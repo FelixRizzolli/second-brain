@@ -385,7 +385,46 @@
         </chapter>
 
         <chapter id="tag-colgroup-col" title="Spalten einer Tabelle gruppieren mit &lt;colgroup&gt; und &lt;col&gt;">
-            <!-- TODO -->
+            <p>
+                Mit dem <code>colgroup</code>-Element können auch die Tabellenspalten in semantische und logische
+                Bereiche eingeteilt werden. Das <code>colgroup</code>-Element (colgroup = <i>column group</i>) wird
+                innerhalb des <code>table</code>-Elements definiert und enthält ein oder mehrere
+                <code>col</code>-Elemente. Jedes <code>col</code>-Element definiert eine Spalte und kann die
+                Eigenschaften der Spalte wie Breite, Hintergrundfarbe, Textausrichtung, Rahmen usw. definieren.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block collapsed-title="Beispiel Tabelle" collapsible="true" lang="html">
+                <![CDATA[
+                    <table>
+                        <colgroup>
+                            <col class="cgroup1">
+                            <col span="2" class="cgroup2">
+                        </colgroup>
+                        <tr>
+                            <th>Browser</th>
+                            <th>Welt</th>
+                            <th>Deutschland</th>
+                        </tr>
+                        <tr>
+                            <td>Chrome</td>
+                            <td>66 %</td>
+                            <td>45 %</td>
+                        </tr>
+                        <tr>
+                            <td>Firefox</td>
+                            <td>7 %</td>
+                            <td>19 %</td>
+                        </tr>
+                        <tr>
+                            <td>Edge</td>
+                            <td>11 %</td>
+                            <td>14 %</td>
+                        </tr>
+                    </table>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>colgroup</code>-Element hier:
