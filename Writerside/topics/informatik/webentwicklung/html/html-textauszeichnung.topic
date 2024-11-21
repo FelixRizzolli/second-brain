@@ -1216,7 +1216,24 @@
 
     <chapter id="more" title="Weiteres">
         <chapter id="tag-a-links" title="Verlinkung einer Webseite">
+            <p>
+                Mit einem <code>a</code>-Tag können relative URLs und absolute URLs verlinkt werden. Eine relative URL
+                ist ein Pfad, der relativ zum aktuellen Dokument ist. Eine absolute URL ist ein vollständiger Pfad, der
+                die gesamte Adresse enthält. Mit dem Doppelkreuz-Zeichen <code>#</code> können auch Anker
+                (= Sprungmarke) innerhalb eines Dokuments verlinkt werden. Beim Klick auf den Link wird der Webbrowser
+                automatisch an die Stelle im Dokument springen, die durch den Anker definiert ist. Der Anker wird durch
+                das <code>id</code>-Attribut eines HTML-Elements definiert.
+            </p>
 
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <a href="https://www.google.com">Google</a>
+                    <a href="index.html">Startseite</a>
+                    <a href="kapitel.html#tag-a-links">Kapitel: Links</a>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
         </chapter>
 
         <chapter id="tag-a-mailto" title="E-Mail-Links mit href=mailto:...">
