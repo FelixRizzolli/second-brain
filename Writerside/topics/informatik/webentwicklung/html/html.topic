@@ -800,7 +800,73 @@
         </chapter>
 
         <chapter id="charset" title="Zeichencodierung">
-            <!-- TODO: Buch HTML & CSS Kapitel 4 -->
+            <p>
+                Hier ein paar wichtige Punkte zur Zeichencodierung in HTML, um sicherzustellen, dass der Text korrekt
+                dargestellt wird:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    Im Kopfbereich des HTML-Dokuments sollte das <code>&lt;meta charset="UTF-8"&gt;</code>-Element
+                    angegeben werden. Gibt es keinen speziellen Grund, sollte immer der Wert <code>UTF-8</code> für das
+                    Attribut <code>charset</code> verwendet werden.
+                </li>
+                <li>
+                    Auch im Code-Editor sollte die Zeichenkodierung auf <code>UTF-8</code> eingestellt sein, damit das
+                    Dokument korrekt mit dem UTF-8-Encoding gespeichert wird.
+                </li>
+            </list>
+
+            <note>
+                <p>
+                    <b>
+                        UTF-8
+                    </b>
+                </p>
+
+                <p>
+                    Mit dem Unicode-Zeichenvorrat lassen sich alle von Menschen erstellten Schriftzeichen abbilden.
+                    UTF-8 ist die 8-Bit-Codierung von Unicode, die auch mit der ASCII-Codierung abwärtskompatibel ist.
+                    Dabei kann ein Zeichen zwischen ein und vier 8-Bit-Wörter enthalten. UTF-8 ist mittlerweile ein
+                    einheitlicher Standard. So verwenden viele Betriebssysteme standardmäßig UTF-8, und auch in der
+                    Webentwicklung mit HTML wird UTF-8 zur Darstellung sprachspezifischer Zeichen eingesetzt und ersetzt
+                    dort auch die Verwendung von HTML-Entitäten
+                </p>
+            </note>
+
+            <note>
+                <p>
+                    <b>
+                        Emojis
+                    </b>
+                </p>
+
+                <p>
+                    Dank Unicode können auch Sonderzeichen oder Emojis verwendet werden. Diese können vom Emoji-Picker
+                    des Betriebssystems oder von Webseiten wie <a href="https://emojipedia.org/">emojipedia.org</a>
+                    kopiert/verwendet werden. Funktioniert das direkte Einfügen nicht, kann auch die numerische
+                    Interpretation des Zeichens verwendet werden, z.B. <code>&amp;#128512;</code> für das Emoji 😀. Die
+                    darstellung der Emojis ist jedoch abhängig vom Betriebssystem und Browser und das Ergebnis kann
+                    hier erheblich abweichen.
+                </p>
+
+                <p>
+                    Emojis sind für sehbehinderte Menschen nicht zugänglich, weshalb sich hier die WAI-ARIA-Attribute
+                    <code>role</code> und <code>aria-label</code> eignen. Als <code>role</code> wird <code>img</code>
+                    für eine Grafik verwendet und als <code>aria-label</code> nur das, was auf dem Emoji zu sehen ist.
+                </p>
+
+                <!-- @formatter:off -->
+                <code-block lang="html">
+                    <![CDATA[
+                        <p>Dank Unicode ist auch die verwendung von
+                            <span role="img" aria-label="Lachendes Gesicht">🙂</span> und
+                            <span role="img" aria-label="Augezwinkerndes Gesicht">😉</span> möglich.
+                        </p>
+                    ]]>
+                </code-block>
+                <!-- @formatter:on -->
+            </note>
         </chapter>
 
         <chapter id="entities" title="Zeichenentitäten">
