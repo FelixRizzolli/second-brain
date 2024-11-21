@@ -870,7 +870,206 @@
         </chapter>
 
         <chapter id="entities" title="Zeichenentitäten">
-            <!-- TODO: Buch HTML & CSS Kapitel 4 -->
+            <p>
+                Eine HTML-Entität ist eine spezielle Zeichenfolge, die verwendet wird, um Zeichen darzustellen, die
+                entweder nicht direkt im HTML-Code verwendet werden können oder eine spezielle Bedeutung haben. Es gibt
+                zwei Möglichkeiten, Zeichenentitäten zu verwenden:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    <b>Numerische Entitäten:</b> Die Form wird mit <code>&amp;#nnn;</code> angegeben. Hierbei steht
+                    <code>nnn</code> für die Codierung des Zeichens. Diese Form wird verwendet, wenn keine Eingabe
+                    des Zeichens von der Tastatur möglich ist. Die Notation kann auch in der Form von
+                    <code>&amp;#xhhh;</code> erfolgen, wobei <code>xhhh</code> der hexadezimale Wert für das Zeichen
+                    wäre. Die Notation ohne <code>x</code> ist die dezimale Schreibweise. Ein lachender Smiley kann
+                    auf diese Weise wie folgt notiert werden: <code>&amp;#x1F642</code>
+                </li>
+                <li>
+                    <b>Benannte Entitäten:</b> Hierbei handelt es sich um einen (leichter zu merkenden) Namen, der
+                    für das Zeichen vereinbart wurde. Sie haben vielleicht bereits Beispiele wie <code>&amp;lt;</code>
+                    (lt = less than) oder <code>&amp;gt;</code> (gt = greater than) gesehen, in denen man bevorzugt auf
+                    diese benannten Entitäten zurückgreift. Alternativ können Sie statt der benannten Entitäten die
+                    numerische Entität verwenden. Beispielsweise würden Sie mit <code>&amp;lt;</code>,
+                    <code>&amp;#60;</code> und <code>&#x003C;</code> dreimal das <code>&lt;</code>-Zeichen
+                    (Kleiner-als-Zeichen) verwenden.
+                </li>
+            </list>
+
+            <p>
+                Werden in einem Fließtext spezielle Zeichen verwendet, die zur HTML-Syntax gehören, sollten diese
+                Zeichen immer mit der entsprechenden Entität maskiert werden. Folgende Entitäten werden am meisten
+                verwendet:
+            </p>
+
+            <table style="header-row">
+                <tr>
+                    <td>Zeichen</td>
+                    <td>HTML-NAme</td>
+                    <td>Nummer (dez.)</td>
+                    <td>Nummer (hex.)</td>
+                </tr>
+                <tr>
+                    <td>
+                        Leerzeichen
+                    </td>
+                    <td>
+                        <code>
+                            &amp;nbsp;
+                        </code>
+                    </td>
+                    <td>
+                        <code>
+                            &amp;#160;
+                        </code>
+                    </td>
+                    <td>
+                        <code>
+                            &amp;#xA0;
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &lt;
+                    </td>
+                    <td>
+                        <code>
+                            &amp;lt;
+                        </code>
+                    </td>
+                    <td>
+                        <code>
+                            &amp;#60;
+                        </code>
+                    </td>
+                    <td>
+                        <code>
+                            &amp;#x3C;
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &gt;
+                    </td>
+                    <td>
+                        <code>
+                            &amp;gt;
+                        </code>
+                    </td>
+                    <td>
+                        <code>
+                            &amp;#62;
+                        </code>
+                    </td>
+                    <td>
+                        <code>
+                            &amp;#x3E;
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &amp;
+                    </td>
+                    <td>
+                        <code>
+                            &amp;amp;
+                        </code>
+                    </td>
+                    <td>
+                        <code>
+                            &amp;#38;
+                        </code>
+                    </td>
+                    <td>
+                        <code>
+                            &amp;#x26;
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &quot;
+                    </td>
+                    <td>
+                        <code>
+                            &amp;quot;
+                        </code>
+                    </td>
+                    <td>
+                        <code>
+                            &amp;#34;
+                        </code>
+                    </td>
+                    <td>
+                        <code>
+                            &amp;#x22;
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &apos;
+                    </td>
+                    <td>
+                        <code>
+                            &amp;apos;
+                        </code>
+                    </td>
+                    <td>
+                        <code>
+                            &amp;#39;
+                        </code>
+                    </td>
+                    <td>
+                        <code>
+                            &amp;#x27;
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Tabulator
+                    </td>
+                    <td>
+                        <code>
+                            &amp;tab;
+                        </code>
+                    </td>
+                    <td>
+                        <code>
+                            &amp;#09;
+                        </code>
+                    </td>
+                    <td>
+                        <code>
+                            &amp;#x09;
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &copy;
+                    </td>
+                    <td>
+                        <code>
+                            &amp;copy;
+                        </code>
+                    </td>
+                    <td>
+                        <code>
+                            &amp;#169;
+                        </code>
+                    </td>
+                    <td>
+                        <code>
+                            &amp;#xA9;
+                        </code>
+                    </td>
+                </tr>
+            </table>
         </chapter>
     </chapter>
 
