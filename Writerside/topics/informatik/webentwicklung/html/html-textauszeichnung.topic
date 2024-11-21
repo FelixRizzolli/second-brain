@@ -374,6 +374,29 @@
                 unten die Adresse an, bei der der Browser nach einem Mausklick auf den Link landen würde.
             </p>
 
+            <tip>
+                <p>
+                    <b>
+                        Weitere Informationen
+                    </b>
+                </p>
+
+                <list type="bullet">
+                    <li>
+                        <a href="html-textauszeichnung.topic#tag-a-links"/>
+                    </li>
+                    <li>
+                        <a href="html-textauszeichnung.topic#tag-a-mailto"/>
+                    </li>
+                    <li>
+                        <a href="html-textauszeichnung.topic#tag-a-tel"/>
+                    </li>
+                    <li>
+                        <a href="html-textauszeichnung.topic#tag-a-type"/>
+                    </li>
+                </list>
+            </tip>
+
             <deflist>
                 <def title="download">
                     <p>
@@ -1192,7 +1215,37 @@
     </chapter>
 
     <chapter id="more" title="Weiteres">
+        <chapter id="tag-a-links" title="Verlinkung einer Webseite">
 
+        </chapter>
+
+        <chapter id="tag-a-mailto" title="E-Mail-Links mit href=mailto:...">
+            <p>
+                Mit dem <code>a</code>-Element können Sie auch E-Mail-Links erstellen. Dazu wird das
+                <code>href="mailto:..."</code>-Attribut verwendet. Der Wert des Attributs ist die E-Mail-Adresse des
+                Empfängers. Optional kann auch ein Betreff und ein Text vorgegeben werden. Meistens wird hier beim Klick
+                auf den Link ein lokales E-Mail-Programm geöffnet.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>
+                        <a href="mailto:felix.rizzolli@outlook.de?subject=Hallo">
+                            E-Mail an Felix Rizzolli
+                        </a>
+                    </p>
+                ]]>
+            </code-block>
+        </chapter>
+
+        <chapter id="tag-a-tel" title="Links auf Telefonnummern erstellen">
+
+        </chapter>
+
+        <chapter id="tag-a-type" title="Links zu anderen Inhaltstypen">
+
+        </chapter>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
