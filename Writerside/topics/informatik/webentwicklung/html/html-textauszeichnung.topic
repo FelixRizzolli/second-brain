@@ -1221,7 +1221,7 @@
 
         <chapter id="tag-a-mailto" title="E-Mail-Links mit href=mailto:...">
             <p>
-                Mit dem <code>a</code>-Element können Sie auch E-Mail-Links erstellen. Dazu wird das
+                Mit dem <code>a</code>-Element können auch E-Mail-Links erstellt werden. Dazu wird das
                 <code>href="mailto:..."</code>-Attribut verwendet. Der Wert des Attributs ist die E-Mail-Adresse des
                 Empfängers. Optional kann auch ein Betreff und ein Text vorgegeben werden. Meistens wird hier beim Klick
                 auf den Link ein lokales E-Mail-Programm geöffnet.
@@ -1230,17 +1230,51 @@
             <!-- @formatter:off -->
             <code-block lang="html">
                 <![CDATA[
-                    <p>
-                        <a href="mailto:felix.rizzolli@outlook.de?subject=Hallo">
-                            E-Mail an Felix Rizzolli
-                        </a>
-                    </p>
+                    <a href="mailto:felix.rizzolli@outlook.de?subject=Hallo">E-Mail an Felix Rizzolli</a>
                 ]]>
             </code-block>
+            <!-- @formatter:on -->
         </chapter>
 
         <chapter id="tag-a-tel" title="Links auf Telefonnummern erstellen">
+            <p>
+                Mit dem <code>a</code>-Element können auch Telefonnummern verlinkt werden. Dazu wird das
+                <code>href="tel:..."</code>-Attribut verwendet. Der Wert des Attributs ist die Telefonnummer des
+                Empfängers. Beim Klick auf den Link wird die Telefon-App des Geräts geöffnet und die Nummer wird
+                automatisch eingetragen.
+            </p>
 
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <a href="tel:+393661428362">+39 366 1428362</a>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <note>
+                <p>
+                    <b>
+                        Automatisches <code>tel:</code>
+                    </b>
+                </p>
+
+                <p>
+                    Es gibt mobile Webbrowser, z.B. Safari, die automatisch eine Telefonnummer erkennen und daraus einen
+                    <code>tel:</code>-Link erzeugen. Das ist praktisch, aber vielleicht nicht immer erwünscht. Besonders
+                    dann nicht, wenn es sich vielleicht gar nicht um eine Telefonnummer handelt. Hierfür gibt es
+                    meta-Tags, mit denen Sie dem Webbrowser mitteilen, dass er diese Funktion auf der Webseite nicht
+                    anwenden soll.
+                </p>
+
+                <!-- @formatter:off -->
+                <code-block lang="html">
+                    <![CDATA[
+                        <meta name="format-detection" content="telephone=no">
+                    ]]>
+                </code-block>
+                <!-- @formatter:on -->
+            </note>
         </chapter>
 
         <chapter id="tag-a-type" title="Links zu anderen Inhaltstypen">
