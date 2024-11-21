@@ -1295,7 +1295,40 @@
         </chapter>
 
         <chapter id="tag-a-type" title="Links zu anderen Inhaltstypen">
+            <p>
+                Werden Links zu anderen, nicht im Web gebräuchlichen Dokumenttypen wie z.B. Word-, Excel- oder
+                PDF-Dokumenten gesetzt, hängt es vom Webbrowser ab, wie er diesen Dokumenttypen weiterbehandelt. Mit dem
+                <code>type</code>-Attribut können Sie dem Webbrowser mitteilen, um welchen Dateityp es sich handelt. Der
+                Wert des Attributs ist der MIME-Typ des Dokumentes.
+            </p>
 
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <a href="dokument.pdf" type="application/pdf">PDF-Dokument</a>
+                    <a href="dokument.doc" type="application/msword">Word-Dokument</a>
+                    <a href="dokument.xls" type="application/vnd.ms-excel">Excel-Dokument</a>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                Werden bei einem Link nicht HTML/Dokumente angeboten, dann sollte der Besucher auf jeden Fall darüber
+                informiert werden, was sich hinter dem Link versteckt und eventuell auch wie groß diese Datei ist.
+                Hierzu kann das globale <code>title</code>-Attribut im <code>a</code>-Element verwendet werden, aber es
+                ist empfehlenswert, genauere Angaben direkt beim Linktext zu erwähnen. Beispiel:
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <a title="Öffnet die PDF-Datei mit dem Werdegang"
+                       href="werdegang.pdf">
+                        Werdegang (PDF, 3,9 MB)
+                    </a>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
         </chapter>
     </chapter>
 
