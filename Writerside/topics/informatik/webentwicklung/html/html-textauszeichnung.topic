@@ -373,7 +373,7 @@
                 einer Hand, wobei der Zeigefinger auf den Link zeigt. Die meisten Webbrowser zeigen zusätzlich links
                 unten die Adresse an, bei der der Browser nach einem Mausklick auf den Link landen würde.
             </p>
-            
+
             <deflist>
                 <def title="download">
                     <p>
@@ -427,8 +427,48 @@
                     </list>
                 </def>
                 <def title="target">
+                    <p>
+                        Mit dem <code>target</code>-Attribut wird festgelegt, in welchem Fenster oder Frame das
+                        Verweisziel geöffnet wird.
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            <code>target="_blank"</code>: neues Fenster/Tab
+                        </li>
+                        <li>
+                            <code>target="_self"</code>: aktuelles Fenster
+                        </li>
+                        <li>
+                            <code>target="_parent"</code>: Elternfenster
+                        </li>
+                        <li>
+                            <code>target="_top"</code>: oberste Fenster-Ebene
+                        </li>
+                        <li>
+                            <code>target="framename"</code>: Name des Fensters, das mit JavaScript geöffnet und auch
+                            darin vergeben wurde.
+                        </li>
+                    </list>
                 </def>
                 <def title="ping">
+                    <p>
+                        Das Attribut sendet eine kurze Benachrichtigung an die angegebene URL, wenn der Link angeklickt
+                        wird. Dies ist hilfreich für die Verfolgung (Tracking, Monitoring) von Webseiten-Links.
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="html">
+                        <![CDATA[
+                            <a href="http://www.123.com/" ping="https://www.123.com/tracking">
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+
+                    <p>
+                        Das <code>href</code>-Attribut muss hierbei mitangegeben werden, damit <code>ping</code>
+                        funktioniert. Der Firefox-Browser hat zudem (aktuell) diese Funktion standardmäßig deaktiviert.
+                    </p>
                 </def>
             </deflist>
 
