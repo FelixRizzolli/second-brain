@@ -883,6 +883,7 @@
                     zu trennen. Im Gegensatz zu <code>&lt;wbr&gt;</code> wird vom Webbrowser am Ende des umbrochenen
                     Wortes ein Trennstrich hinzugefügt. Das alternative Beispiel hierzu:
                 </p>
+
                 <!-- @formatter:off -->
                 <code-block lang="html">
                     <![CDATA[

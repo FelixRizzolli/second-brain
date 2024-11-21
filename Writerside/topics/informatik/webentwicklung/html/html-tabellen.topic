@@ -129,7 +129,161 @@
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-table-tr-td-th"
                  title="Eine einfache Tabellenstruktur mit &lt;table&gt;, &lt;tr&gt;, &lt;td&gt; und &lt;th&gt;">
-            <!-- TODO -->
+            <img alt="Visualisierung Tabellenstruktur - Einfach" src="html-table-structure-basic.png"/>
+
+            <p>
+                Mit dieser Visualisierung lässt sich die grundlegende Tabellenstruktur einfach erklären: Jede Tabelle
+                wird zuerst mit dem <code>table</code>-Element definiert. In diesem Element werden die Tabellenzeilen
+                mit dem <code>tr</code>-Element (tr = <i>table row</i>) definiert. In jeder Tabellenzeile werden die
+                Tabellenzellen mit dem <code>td</code>-Element (td = <i>table data</i>) definiert. Die
+                Tabellenkopfzellen werden mit dem <code>th</code>-Element (th = <i>table heading</i>) definiert.
+            </p>
+
+            <note>
+                Tabellenüberschriften <code>&lt;th&gt;</code> sind optional und müssen nicht verwendet werden. Ist es
+                aber sinnvoll diese zu verwenden, dann sollte man sie auch verwenden, da dies zum einen für die Besucher
+                mit Screenreadern hilfreich ist und zum anderen gegebenenfalls für Suchmaschinen, die die Website
+                damit besser indizieren können.
+            </note>
+
+            <p>
+                Zwischen den Tabellenzellen kann neben Text auch Bilder, Links, Formularelemente oder sogar eine weitere
+                HTML-Tabelle eingefügt werden. Ist eine Zelle ohne Inhalt, muss trotzdem ein leeres
+                <code>td</code>- bzw. <code>th</code>-Element definiert werden.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block collapsed-title="Beispiel Tabelle" collapsible="true" lang="html">
+                <![CDATA[
+                    <table>
+                        <tr>
+                            <th>Browser</th>
+                            <th>Welt</th>
+                            <th>Deutschland</th>
+                        </tr>
+                        <tr>
+                            <td>Chrome</td>
+                            <td>66 %</td>
+                            <td>45 %</td>
+                        </tr>
+                        <tr>
+                            <td>Firefox</td>
+                            <td>7 %</td>
+                            <td>19 %</td>
+                        </tr>
+                        <tr>
+                            <td>Edge</td>
+                            <td>11 %</td>
+                            <td>14 %</td>
+                        </tr>
+                    </table>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <deflist>
+                <def title="abbr">
+                    <p>
+                        Das <code>abbr</code>-Attribut kann in den <code>th</code>-Elementen verwendet werden, um eine
+                        Abkürzung für den Inhalt der Zelle anzugeben. Es kann aber auch verwendet werden, um
+                        Sehbehinderten eine kurze Beschreibung der Spalte zu geben.
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="html">
+                        <![CDATA[
+                            <tr>
+                                <th abbr="Liste mit Webbrowser">Browser</th>
+                                <th abbr="Nutzung in der Welt">Welt</th>
+                                <th abbr="Nutzung in Deutschland">Deutschland</th>
+                            </tr>
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </def>
+                <def title="colspan">
+                    <p>
+                        Mit dem <code>colspan</code>-Attribut kann eine Zelle über mehrere Spalten reichen. Das Attribut
+                        wird in der Zelle definiert, die über mehrere Spalten reichen soll.
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="html">
+                        <![CDATA[
+                            <tr>
+                                <th colspan="2">Browser</th>
+                                <th>Welt</th>
+                                <th>Deutschland</th>
+                            </tr>
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </def>
+                <def title="rowspan">
+                    <p>
+                        Mit dem <code>rowspan</code>-Attribut kann eine Zelle über mehrere Zeilen reichen. Das Attribut
+                        wird in der Zelle definiert, die über mehrere Zeilen reichen soll.
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="html">
+                        <![CDATA[
+                            <tr>
+                                <th rowspan="2">Browser</th>
+                                <th>Welt</th>
+                                <th>Deutschland</th>
+                            </tr>
+                            <tr>
+                                <td>66 %</td>
+                                <td>45 %</td>
+                            </tr>
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </def>
+                <def title="scope">
+                    <p>
+                        Das <code>scope</code>-Attribut kann in den <code>th</code>-Elementen verwendet werden, um den
+                        Bereich der Zelle zu definieren. Es kann die Werte <code>col</code>, <code>row</code>,
+                        <code>colgroup</code> oder <code>rowgroup</code> annehmen.
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="html">
+                        <![CDATA[
+                            <tr>
+                                <th scope="col">Browser</th>
+                                <th scope="col">Welt</th>
+                                <th scope="col">Deutschland</th>
+                            </tr>
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </def>
+                <def title="border">
+                    <p>
+                        Das <code>border</code>-Attribut kann im <code>table</code>-Element verwendet werden, um die
+                        Tabelle mit einem Rahmen zu versehen. Der Wert des Attributs ist die Dicke des Rahmens in
+                        Pixeln. Hierfür sollte aber besser CSS verwendet werden, da mit HTML nur die semantik des
+                        Inhalts definiert werden soll und nicht das Aussehen.
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="html">
+                        <![CDATA[
+                            <table border="1">
+                                <tr>
+                                    <th>Browser</th>
+                                    <th>Welt</th>
+                                    <th>Deutschland</th>
+                                </tr>
+                                <!-- ... -->
+                            </table>
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>table</code>-Element hier:
@@ -154,7 +308,7 @@
 
         <chapter id="tag-thead-tbody-tfoot"
                  title="Tabellen mit &lt;thead&gt;, &lt;tbody&gt; und &lt;tfoot&gt; strukturieren">
-            <!-- TODO -->
+            <img alt="Visualisierung Tabellenstruktur - Ausführlich" src="html-table-structure-advanced.png"/>
 
             <tip>
                 Mehr zum <code>thead</code>-Element hier:
@@ -197,10 +351,6 @@
     </chapter>
 
     <chapter id="more" title="Weiteres">
-        <chapter id="att-colspan-rowspan" title="Spalten bzw. Zeilen mit colspan bzw. rowspan zusammenfassen">
-            <!-- TODO -->
-
-        </chapter>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
