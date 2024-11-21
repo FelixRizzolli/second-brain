@@ -115,7 +115,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-tabellen.topic#tag-caption-figcaption">
+                    <a href="html-tabellen.topic#tag-caption">
                         <code>&lt;caption&gt;</code>
                     </a>
                 </td>
@@ -437,8 +437,50 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-caption-figcaption" title="Tabellen beschriften mit &lt;caption&gt; bzw. &lt;figcaption&gt;">
-            <!-- TODO -->
+        <chapter id="tag-caption" title="Tabellen beschriften mit &lt;caption&gt;">
+            <p>
+                Zur beschriftung einer Tabelle kann entweder das <code>caption</code>-Element verwendet werden, das
+                unmittelbar nach dem öffnenden <code>&lt;table&gt;</code>-Tag platziert werden muss, oder es werden die
+                neuen
+                <a href="html-textstrukturierung.topic#tag-figure-figcaption">
+                    <code>figure</code>- und <code>figcaption</code>-Elemente
+                </a> verwendet.
+            </p>
+
+            <p>
+                Die Webbrowser stellen die Beschriftung gewöhnlich oberhalb der Tabelle zentriert dar. Mit CSS ist es
+                kein Aufwand, mithilfe der CSS-Eigenschaften <code>text-align</code> und <code>caption-side</code> die
+                Tabellenbeschriftung anders auszurichten und woanders zu platzieren.
+            </p>
+            
+            <note>
+                Möchte man der Tabellenbeschriftung noch weitere Hinweise hinzufügen, so können dazu die HTML-Elemente
+                <code>details</code> und <code>summary</code> zwischen <code>&lt;caption&gt;</code> und
+                <code>&lt;/caption&gt;</code> verwendet werden.
+            </note>
+
+            <!-- @formatter:off -->
+            <code-block collapsed-title="Beispiel Tabelle" collapsible="true" lang="html">
+                <![CDATA[
+                    <table>
+                        <caption>
+                            Top 3 der Marktanteile von Webbrowsern
+                        </caption>
+                        <tr>
+                            <th>Browser</th>
+                            <th>Welt</th>
+                            <th>Deutschland</th>
+                        </tr>
+                        <tr>
+                            <td>Chrome</td>
+                            <td>66 %</td>
+                            <td>45%</td>
+                        </tr>
+                        <!-- ... -->
+                    </table>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>caption</code>-Element hier:
@@ -448,6 +490,7 @@
     </chapter>
 
     <chapter id="more" title="Weiteres">
+        <!-- TODO: eventuell warum Tabellen nicht für das Webseiten-Layout verwendet werden sollten -->
     </chapter>
 
     <chapter id="quellen" title="Quellen">
