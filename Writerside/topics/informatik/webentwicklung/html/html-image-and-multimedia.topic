@@ -96,6 +96,37 @@
                 Shift).
             </p>
 
+            <p>
+                Auch für das <code>img</code>-Element wird oft das
+                <a href="html-textstrukturierung.topic#tag-figure-figcaption">
+                    <code>figure</code>- und <code>figcaption</code>-Element
+                </a> verwendet um ein oder mehrere Bilder mit einer Bildunterschrift zu versehen.
+            </p>
+
+            <tip>
+                <p>
+                    Mehr zum Thema Bilder:
+                </p>
+
+                <list type="bullet">
+                    <li>
+                        <a href="html-embedded.topic#tag-picture"/>
+                    </li>
+                    <li>
+                        <a href="html-image-and-multimedia.topic#image-scale"/>
+                    </li>
+                    <li>
+                        <a href="html-image-and-multimedia.topic#image-formats"/>
+                    </li>
+                    <li>
+                        <a href="html-image-and-multimedia.topic#image-optimization"/>
+                    </li>
+                    <li>
+                        <a href="html-image-and-multimedia.topic#image-farbraum"/>
+                    </li>
+                </list>
+            </tip>
+
             <deflist>
                 <def title="alt (Pflichtfeld)">
                     <p>
@@ -491,6 +522,17 @@
                 Gibt es keinen Grund, einen anderen Farbraum zu verwenden, sollte man es mit den Bildern bei sRGB
                 belassen. Es wird an anderen Farbräumen für das Web gearbeitet, z.B. am P3-Farbraum, der vom
                 Safari-Webbrowser unterstützt wird, aber dieser wird noch nicht häufig verwendet.
+            </p>
+        </chapter>
+
+        <chapter id="image-scale" title="Bilder skalieren">
+            <p>
+                Das Skalieren von Bildern mit <code>width</code> und <code>height</code> ist zwar erlaubt, aber wenn
+                möglich sollten in der Praxis die Bilder mit einem Bildbearbeitungsprogramm auf die tatsächliche Größe
+                angepasst werden. Zum einen wird damit der Datenumfang (Traffic) reduziert, und zum anderen wird
+                nicht das Risiko eingegangen, dass die Grafik hässlich und grob zusammengeschrumpft wird. Schließlich
+                verlässt man isch bei der Darstellung der Website auf die Webbrowser der Besucher und gibt damit ein
+                wenig die Kontrolle der Darstellung der Bilder aus der Hand.
             </p>
         </chapter>
 
