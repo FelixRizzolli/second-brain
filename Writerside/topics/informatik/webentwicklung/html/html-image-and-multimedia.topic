@@ -136,7 +136,165 @@
 
     <chapter id="more" title="Weiteres">
         <chapter id="image-formats" title="Bildformate">
+            <p>
 
+                Die heutigen Webbrowser sind in der Lage, viele verschiedene Bildformate darzustellen. Dennoch sind
+                nicht alle Formate gleich gut geeignet.
+            </p>
+
+            <list type="bullet">
+                <li>
+                    <p>
+                        <b>
+                            Das JPEG-Format
+                        </b>
+                    </p>
+
+                    <p>
+                        Das JPEG-Format gab es schon lange vor dem Internet und ist immer noch sehr beliebt,
+                        insbesondere für Fotos oder komplexere Bilder mit vielen Farben und Details.
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            (+) viele Komprimierungsmöglichkeiten
+                        </li>
+                        <li>
+                            (-) zu starke Komprimierung führt zu unschönen Artefakten
+                        </li>
+                        <li>
+                            (-) unterstützt keine Transparenz
+                        </li>
+                    </list>
+                </li>
+                <li>
+                    <p>
+                        <b>
+                            Das GIF-Format
+                        </b>
+                    </p>
+
+                    <p>
+                        Das GIF-Format ist ein altes Format. Es wurde bzw. wird immer noch gerne für Bilder mit wenigen
+                        Farben wie Logos, Symbole oder einfache Illustrationen verwendet. Im Webdesign findet man das
+                        GIF-Format bzw. GIF-Animationen immer seltener vor.
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            (+) mehrere Grafiken lassen sich zusammenfassen und nacheinander als GIF-Animation
+                            abspielen
+                        </li>
+                        <li>
+                            (+) unterstützt Transparenz
+                        </li>
+                        <li>
+                            (-) unterstützt nur 256 Farben
+                        </li>
+                    </list>
+                </li>
+                <li>
+                    <p>
+                        <b>
+                            Das PNG-Format
+                        </b>
+                    </p>
+
+                    <p>
+                        Das PNG-Format wurde entwickelt, um das GIF-Format zu ersetzen. Es eignet sich sehr gut für
+                        Bilder mit scharfen Kanten, kleinere Bilder, Grafiken oder Formen und wenn ein transparenter
+                        Hintergrund erforderlich ist.
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            (+) 8- oder 24-Bit-Farbtiefe (= 256 oder 16 Millionen Farben)
+                        </li>
+                        <li>
+                            (+) unterstützt Transparenz mit 64.000 Stufen
+                        </li>
+                        <li>
+                            (-) keine benutzerdefinierten Komprimierungsstufen, deshalb nicht die gleiche geringe
+                            Speicherkapazität wie das JPEG-Format
+                        </li>
+                    </list>
+                </li>
+                <li>
+                    <p>
+                        <b>
+                            SVG für Vektorgrafiken
+                        </b>
+                    </p>
+
+                    <p>
+                        SVG (Scalable Vector Graphics) ist ein XML-basiertes Format für Vektorgrafiken. Anstelle eines
+                        Rasters aus Pixeln verwendet dieses Format eine Reihe von Anweisungen, um eine From zu zeichnen.
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            (+) ohne Qualitätsverlust skalieren
+                        </li>
+                        <li>
+                            (+) speicher in der Regel sehr gering
+                        </li>
+                        <li>
+                            (+) mit JavaScript animierbar und mit CSS gestaltbar
+                        </li>
+                        <li>
+                            (-) nicht für komplexe Bilder geeignet
+                        </li>
+                    </list>
+                </li>
+                <li>
+                    <p>
+                        <b>
+                            Das WebP-Format
+                        </b>
+                    </p>
+
+                    <p>
+                        WebP ist ein sehr neues Format und wurde von Google speziell für das Web konzipiert. Der
+                        Browser-Support für das Format ist heute ziemlich gut.
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            (+) trotz starker Komprimierung bessere Qualität als JPEG
+                        </li>
+                        <li>
+                            (+) 25–35 % kleiner als JPEG
+                        </li>
+                        <li>
+                            (-) Apple hat den Support für WebP nur sehr zögerlich hinzugefügt
+                        </li>
+                    </list>
+                </li>
+                <li>
+                    <p>
+                        <b>
+                            Das AVIF-Format
+                        </b>
+                    </p>
+
+                    <p>
+                        Mit AVIF steht der Nachfolger von WebP jedoch bereits in den Startlöchern. Das Bildformat
+                        ist ähnlich wie HEIC, aber etwas offener.
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            (+) höhere Kompressionsrate bei gleicher Qualität als WebP
+                        </li>
+                        <li>
+                            (-) Browserunterstützung: <a href="https://caniuse.com/?search=avif">caniuse.com</a>
+                        </li>
+                        <li>
+                            (-) die Kodierung ist noch nicht wirklich performant
+                        </li>
+                    </list>
+                </li>
+            </list>
         </chapter>
 
         <chapter id="image-optimization" title="Bilder fürs Web optimieren">
