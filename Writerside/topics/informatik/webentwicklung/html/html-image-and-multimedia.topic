@@ -537,7 +537,62 @@
         </chapter>
 
         <chapter id="image-lazy-loading" title="Lazy Loading">
+            <p>
+                Beim Lazy Loading werden nur die Bilder einer Webseite vom Server geladen, die sich im sichtbaren
+                Bereich oder in einem bestimmten Abstand zum sichtbaren Bereich des Browserfensters befinden. Bilder,
+                die sich weiter unten auf der Seite befinden, werden erst dann geladen, wenn der Benutzer zu ihnen
+                scrollt. So werden die Bilder nur dann geladen, wenn sie benötigt werden. Der Vorteil dieser Technik
+                ist:
+            </p>
 
+            <list type="bullet">
+                <li>
+                    Die Anzeige der Webseite erfolgt schneller, weil weniger Daten geladen werden müssen.
+                </li>
+                <li>
+                    Unter Umständen findet weniger Datentransfer statt. Dies hängt allerdings vom Nutzer ab. Nutzer, die
+                    ganz nach unten scrollen, werden denselben Datentransfer verursachen. Aber Nutzer, die von der Seite
+                    abspringen oder einen anderen Verweis derselben Website in der Navigation ansteuern, verursachen
+                    weniger Verkehr. Davon profitiert z.B. auch das limitierte Datenbudget eines mobilen Zugangs, und
+                    auch der CO2-Ausstoß wird gegebenenfalls reduziert. Natürlich auch hier nur, wenn der Anwender nicht
+                    ganz nach unten scrollt.
+                </li>
+            </list>
+
+            <note>
+                In der Vergangenheit konnte Lazy Loading nur mit JavaScript implementiert werden. Inzwischen kann man
+                aber auch das native Lazy Loading mittels <code>loading="lazy"</code> von Webbrowsern nutzen.
+            </note>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <img src="./images/reader03.png"
+                         loading="lazy"
+                         alt="Reader"
+                         width="1024"
+                         height="1024"
+                    />
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <note>
+                <p>
+                    <b>Lazy Loading im Webbrowser prüfen</b>
+                </p>
+
+                <p>
+                    Das native Lazy Loading kann im Webbrowser getestet werden. Dazu werden die
+                    <path>Entwicklertools</path> geöffnet, folglich auf die Registerkarte <path>Network</path> und
+                    dann auf <path>Img</path> geklickt.
+                </p>
+
+                <p>
+                    Funktioniert das Lazy Loading nicht wie erwartet, kann es sein, dass sich die Bilder bereits im
+                    Cache des Browsers befinden und nicht mehr nachgeladen werden.
+                </p>
+            </note>
         </chapter>
     </chapter>
 
