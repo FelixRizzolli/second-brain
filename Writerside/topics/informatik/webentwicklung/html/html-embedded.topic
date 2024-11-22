@@ -26,10 +26,17 @@
                 <td>
                     <a href="html-embedded.topic#tag-embed">
                         <code>&lt;embed&gt;</code>
+                    </a>,
+                    <a href="html-embedded.topic#tag-object">
+                        <code>&lt;object&gt;</code>
+                    </a>,
+                    <a href="html-embedded.topic#tag-iframe">
+                        <code>&lt;iframe&gt;</code>
                     </a>
                 </td>
                 <td>
-                    ...
+                    Einbinden von aktiven Elementen wie PDF-Dokumenten, Flash-Animationen, Java-Applets, Word-Dokumenten
+                    und vielem anderen mehr.
                 </td>
             </tr>
             <tr>
@@ -44,48 +51,29 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-embedded.topic#tag-iframe">
-                        <code>&lt;iframe&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-embedded.topic#tag-object">
-                        <code>&lt;object&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
                     <a href="html-embedded.topic#tag-picture">
                         <code>&lt;picture&gt;</code>
                     </a>
                 </td>
                 <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-embedded.topic#tag-portal">
-                        <code>&lt;portal&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
+                    Aus mehreren Bildquellen das passende Bild laden
                 </td>
             </tr>
             <tr>
                 <td>
                     <a href="html-embedded.topic#tag-source">
                         <code>&lt;source&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Angabe von alternativen Medienquellen für das <code>picture</code>-, <code>video</code>- und
+                    <code>audio</code>-Element.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-embedded.topic#tag-portal">
+                        <code>&lt;portal&gt;</code>
                     </a>
                 </td>
                 <td>
@@ -105,12 +93,12 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-facedframe" title="Das facedframe-Element">
+        <chapter id="tag-object" title="Das object-Element">
             <!-- TODO -->
 
             <tip>
-                Mehr zum <code>facedframe</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/facedframe">MDN Web Docs</a>
+                Mehr zum <code>object</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/object">MDN Web Docs</a>
             </tip>
         </chapter>
 
@@ -123,12 +111,12 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-object" title="Das object-Element">
+        <chapter id="tag-facedframe" title="Das facedframe-Element">
             <!-- TODO -->
 
             <tip>
-                Mehr zum <code>object</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/object">MDN Web Docs</a>
+                Mehr zum <code>facedframe</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/facedframe">MDN Web Docs</a>
             </tip>
         </chapter>
 
@@ -141,21 +129,21 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-portal" title="Das portal-Element">
-            <!-- TODO -->
-
-            <tip>
-                Mehr zum <code>portal</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/portal">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
         <chapter id="tag-source" title="Das source-Element">
             <!-- TODO -->
 
             <tip>
                 Mehr zum <code>source</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/source">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-portal" title="Das portal-Element">
+            <!-- TODO -->
+
+            <tip>
+                Mehr zum <code>portal</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/portal">MDN Web Docs</a>
             </tip>
         </chapter>
     </chapter>

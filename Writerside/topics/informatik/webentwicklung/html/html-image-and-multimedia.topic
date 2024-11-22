@@ -11,8 +11,8 @@
 
     <chapter id="introduction" title="Einleitung">
         <p id="%id_prefix%-description">
-            <!-- TODO -->
-            ...
+            Die Möglichkeiten, multimediale Inhalte wie Grafiken, Animationen, Videos oder Audios einer Website
+            hinzuzufügen, sind in HTML vielseitiger und einfacher geworden.
         </p>
     </chapter>
 
@@ -24,52 +24,25 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-image-and-multimedia.topic#tag-area">
-                        <code>&lt;area&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-image-and-multimedia.topic#tag-audio">
-                        <code>&lt;audio&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
                     <a href="html-image-and-multimedia.topic#tag-img">
                         <code>&lt;img&gt;</code>
                     </a>
                 </td>
                 <td>
-                    ...
+                    Eine Grafikdatei in ein HTML-Dokument einbinden.
                 </td>
             </tr>
             <tr>
                 <td>
                     <a href="html-image-and-multimedia.topic#">
                         <code>&lt;map&gt;</code>
+                    </a>,
+                    <a href="html-image-and-multimedia.topic#tag-area">
+                        <code>&lt;area&gt;</code>
                     </a>
                 </td>
                 <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-image-and-multimedia.topic#tag-track">
-                        <code>&lt;track&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
+                    Eine verweissensitive Grafik erstellen.
                 </td>
             </tr>
             <tr>
@@ -79,31 +52,33 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Videodateien ohne Plug-ins wiedergeben.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-image-and-multimedia.topic#tag-track">
+                        <code>&lt;track&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Untertitel oder Übersetzungen für Videos bereitstellen.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-image-and-multimedia.topic#tag-audio">
+                        <code>&lt;audio&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Audiodateien ohne Plug-ins wiedergeben.
                 </td>
             </tr>
         </table>
     </chapter>
 
     <chapter id="tag-description" title="Genauere Beschreibung">
-        <chapter id="tag-area" title="Das area-Element">
-            <!-- TODO -->
-
-            <tip>
-                Mehr zum <code>area</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/area">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-audio" title="Das audio-Element">
-            <!-- TODO -->
-
-            <tip>
-                Mehr zum <code>audio</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/audio">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
         <chapter id="tag-img" title="Das img-Element">
             <!-- TODO -->
 
@@ -122,12 +97,12 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-track" title="Das track-Element">
+        <chapter id="tag-area" title="Das area-Element">
             <!-- TODO -->
 
             <tip>
-                Mehr zum <code>track</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/track">MDN Web Docs</a>
+                Mehr zum <code>area</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/area">MDN Web Docs</a>
             </tip>
         </chapter>
 
@@ -139,10 +114,38 @@
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/video">MDN Web Docs</a>
             </tip>
         </chapter>
+
+        <chapter id="tag-track" title="Das track-Element">
+            <!-- TODO -->
+
+            <tip>
+                Mehr zum <code>track</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/track">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-audio" title="Das audio-Element">
+            <!-- TODO -->
+
+            <tip>
+                Mehr zum <code>audio</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/audio">MDN Web Docs</a>
+            </tip>
+        </chapter>
     </chapter>
 
     <chapter id="more" title="Weiteres">
+        <chapter id="image-formats" title="Bildformate">
 
+        </chapter>
+
+        <chapter id="image-optimization" title="Bilder fürs Web optimieren">
+
+        </chapter>
+
+        <chapter id="image-lazy-loading" title="Lazy Loading">
+
+        </chapter>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
