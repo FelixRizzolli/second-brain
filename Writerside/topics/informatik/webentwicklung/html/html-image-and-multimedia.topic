@@ -80,7 +80,155 @@
 
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-img" title="Das img-Element">
-            <!-- TODO -->
+            <p>
+                Mit dem alleinstehenden <code>img</code>-Element (<code>img</code> = <i>image</i>) können Bilder
+                einer Webseite hinzugefügt werden. Die Grafik wird an der Stelle eingesetzt, an der das
+                <code>img</code>-Element im HTML-Dokument notiert wurde. Die Attribute <code>alt</code> und
+                <code>src</code> sind Pflicht.
+            </p>
+
+            <p>
+                Es macht auch Sinn, die Breite <code>width</code> und Höhe <code>height</code> des Bildes anzugeben,
+                damit der Browser den Platz für das Bild reservieren kann, bevor es geladen wird. Das verhindert, dass
+                sich die Seite verschiebt, wenn das Bild geladen wird. Muss die Seite den Platz unschön nachträglich
+                Korrigieren, kann das zu einem schlechten Nutzererlebnis führen und dies wird auch von Suchmaschinen
+                negativ bewertet und ist eine kennzahl bei den Core Web Vitals und bekannt als CLS (Cumulative Layout
+                Shift).
+            </p>
+
+            <deflist>
+                <def title="alt (Pflichtfeld)">
+                    <p>
+                        Das <code>alt</code>-Attribut wird für eine alternative Beschreibung des Bildes verwendet für
+                        den Fall, dass das Bild nicht geladen oder angezeigt werden kann, und hilft außerdem Menschen
+                        mit einer Sehbehinderung, weil der darin enthaltene Text von Screenreadern vorgelesen wird.
+                    </p>
+
+                    <p>
+                        Der Text sollte beschreiben, was auf dem Bild zu sehen ist. Zwar darf dieser alternative Text
+                        beinahe beliebig lang sein, aber er sollte aufs Wesentliche beschränkt werden. Eine
+                        empfehlenswerte Grenze liegt bei etwa 12-16 Wörtern oder 75 bis 125 Zeichen.
+                    </p>
+
+                    <p>
+                        Das <code>alt</code>-Attribut ist auch für Suchmaschinen von Bedeutung, da ein Webcrawler nicht
+                        »sehen« kann, was sich in einem Bild befindet. Somit sind die Webcrawler auf eine
+                        aussagekräftige Beschreibung mit sinnvollen Schlüsselwörtern im <code>alt</code>-Attribut
+                        angewiesen. Je mehr Daten der Webcrawler zur Verfügung hat, umso positiver wird sich das beim
+                        Ranking der Website auswirken. Daher ist es durchaus empfehlenswert, neben einem sinnvollen
+                        <code>alt</code>-Attribut das Bild auch im umgebenden Text ein wenig zu beschreiben.
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="html">
+                        <![CDATA[
+                            <p>
+                                <img src="bilder/reader-01.png" alt="Eine lesende Person ">
+                                <img src="bilder/reader-02.png" alt="Noch eine lesende Person">
+                            </p>
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+
+                    <note>
+                        Wenn in einer Grafik keine relevanten Informationen enthalten sind, und eine Beschreibung mit
+                        dem <code>alt</code>-Attribut nicht sinnvoll ist, wird empfohlen, ein leeres <code>alt=""</code>
+                        zu verwenden.
+                    </note>
+                </def>
+                <def title="title">
+                    <p>
+                        Bei Bildern kann auch das globale <code>title</code>-Attribut zur Bildbeschreibung verwendet
+                        werden. Der Inhalt des <code>title</code>-Attributs wird als Tooltip angezeigt, wenn der
+                        Mauszeiger über das Bild schwebt. Sollte das Bild als Link zu einer anderen Seite verwendet
+                        werden, wäre es sinnvoller, mit dem <code>title</code>-Attribut darauf hinzuweisen, was
+                        passiert, wenn der Benutzer auf das Bild klickt.
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="html">
+                        <![CDATA[
+                            <a href="bilder/reader-02-big.png" target="_blank">
+                                <img src="bilder/reader-02.png"
+                                     alt="Noch eine lesende Person"
+                                     title="Öffnet dieses Bild in einer größeren Version in einem neuen Fenster oder Tab."
+                                >
+                            </a>
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </def>
+                <def title="longdesc">
+                    <p>
+                        Reicht die Beschreibung im <code>alt</code>-Attribut nicht aus, kann das
+                        <code>longdesc</code>-Attribut verwendet werden, um eine längere Beschreibung des Bildes zu
+                        liefern. Es gibt folgende möglichkeiten:
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            Ein Anker auf ein anderes Element auf der aktuellen Webseite:
+                            <code>longdesc="#beschreibung"</code>
+                        </li>
+                        <li>
+                            Eine relative URL auf eine interne Datei auf der Website:
+                            <code>longdesc="beschreibung.txt"</code>
+                        </li>
+                        <li>
+                            Eine absolute URL auf eine externe Website:
+                            <code>longdesc="https://www.example.com/beschreibung"</code>
+                        </li>
+                    </list>
+                </def>
+                <def title="width">
+                    <p>
+                        Hiermit wird die horizontale Ausdehnung (Breite) des Bildes in Pixel angegeben.
+                    </p>
+                </def>
+                <def title="height">
+                    <p>
+                        Hiermit wird die vertikale Ausdehnung (Höhe) des Bildes in Pixel angegeben.
+                    </p>
+                </def>
+                <def title="src (Pflichtfeld)">
+                    <p>
+                        Mit diesem Attribut wird das Verweisziel zur Bilddatei angegeben. Neben dem Dateinamen kann
+                        sowohl ein relativer oder absoluter Pfad als auch eine komplette Internetadresse angegeben
+                        werden. Die Angabe dieses Attributs ist Pflicht.
+                    </p>
+                </def>
+                <def title="srcset">
+                    <p>
+                        Gibt eine Liste von Bilddateien an, die in verschiedenen Situationen verwendet werden sollen.
+                    </p>
+                </def>
+                <def title="sizes">
+                    <p>
+                        Legt Bildgrößen für verschiedene Seitenlayouts fest.
+                    </p>
+                </def>
+                <def title="loading">
+                    <p>
+                        Damit kann das native
+                        <a href="html-image-and-multimedia.topic#image-lazy-loading">Lazy Loading</a> des Webbrowsers
+                        verwendet werden. Mögliche werte sind:
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            <code>lazy</code>: Bilder werden so lange zurückgehalten, bis das Bild einen bestimmten
+                            Abstand zum sichtbaren Bereich hat.
+                        </li>
+                        <li>
+                            <code>eager</code>: Bilder werden sofort geladen, unabhängig von der Position des Viewports.
+                        </li>
+                        <li>
+                            <code>auto</code>: Der Webbrowser entscheidet, ob er die Bilder sofort lädt oder abhängig
+                            vom Viewport.
+                        </li>
+                    </list>
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>img</code>-Element hier:
