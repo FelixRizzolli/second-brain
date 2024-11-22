@@ -298,7 +298,52 @@
         </chapter>
 
         <chapter id="image-optimization" title="Bilder fürs Web optimieren">
+            <p>
 
+                Um Bilder in einem bestimmten Format zu speichern, benötigen Sie oft ein Bildbearbeitungsprogramm wie
+                Adobe Photoshop, Affinity Photo oder das kostenlose GIMP, um nur einige zu nennen. Jedes dieser
+                Programme bietet eine Exportfunktion, um Bilder in ein bestimmtes Format zu exportieren/speichern.
+            </p>
+
+            <p>
+                Es gibt noch folgende weitere Tools:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    <b>ImageOptim</b> (<a href="https://imageoptim.com"/>): kleines Tool für den Mac (oder als
+                    Webservice), das verschiedene Kompressionsalgorithmen auf Bilder anwenden kann
+                </li>
+                <li>
+                    <b>Trimage</b> (<a href="https://trimage.org"/>): verlustfreie Komprimierungssoftware für Windows,
+                    Linux und Mac
+                </li>
+                <li>
+                    <b>PNGQuant:</b> (<a href="https://pngquant.org"/>): Komprimierung für Bilder im Format .png –
+                    verlustbehaftet, allerdings oft kaum wahrzunehmen
+                </li>
+                <li>
+                    <b>JPEGmini</b> (<a href="https://www.jpegmini.com"/>): verlustfreie Komprimierung für Bilder im
+                    Format .jpg
+                </li>
+                <li>
+                    <b>Compressor.io</b> (<a href="https://compressor.io"/>): Webservice zur Optimierung von Bildern
+                </li>
+                <li>
+                    <b>SVG Minify</b> (<a href="https://www.svgminify.com/"/>): SVG-Quelltext aus Programmen wie dem
+                    Adobe Illustrator sind nicht immer optimal. Hiermit können Sie das SVG-Format optimieren lassen.
+                </li>
+            </list>
+        </chapter>
+
+        <chapter id="image-farbraum" title="Farbraum">
+            <p>
+                Der Farbraum bestimmt den gesamten Bereich aller darstellbaren Farben. Bei der Bildbearbeitung hat man
+                oft die Wahl zwischen sRGB und AdobeRGB. Für das Web ist sRGB der am häufigsten verwendete Farbraum.
+                Gibt es keinen Grund, einen anderen Farbraum zu verwenden, sollte man es mit den Bildern bei sRGB
+                belassen. Es wird an anderen Farbräumen für das Web gearbeitet, z.B. am P3-Farbraum, der vom
+                Safari-Webbrowser unterstützt wird, aber dieser wird noch nicht häufig verwendet.
+            </p>
         </chapter>
 
         <chapter id="image-lazy-loading" title="Lazy Loading">
