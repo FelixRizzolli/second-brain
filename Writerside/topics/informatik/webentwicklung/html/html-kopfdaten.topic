@@ -778,7 +778,40 @@
         </chapter>
 
         <chapter id="link-favicon" title="Favicon">
+            <p>
+                Ein Favicon ist ein kleines Bild, das im Browser-Tab und in der Lesezeichenleiste angezeigt wird. Es
+                sollte im Wurzelverzeichnis der Webseite abgelegt werden und als <code>link</code>-Element im
+                <code>&lt;head&gt;</code>-Bereich eingebunden werden:
+            </p>
 
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <head>
+                        <!-- ... -->
+                        <link rel="apple-touch-icon" sizes="180x180"
+                              href="./apple-touch-icon.png" />
+                        <link rel="icon" sizes="16x16"
+                              href="./favicon-16x16.ico" />
+                    </head>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                Die Größe des Favicons beträgt meistens 16x16 und manchmal auch 32x32 Pixel. Favicons sollten
+                außerdem im .ico-Format gespeichert sein. Wird ein anderes Datenformat verwendet, sollte der
+                entsprechende MIME-Typ mit dem Attribut <code>type</code> angegeben werden (z.B.
+                <code> type="image/png"</code> für PNG).
+            </p>
+
+            <p>
+                Zusätzlich kann auch ein Icon für mobile Geräte wie iPhone, iPad usw. hinzugefügt werden. Hierfür
+                wird beim <code>rel</code>-Attribut der Wert <code>apple-touch-icon</code> verwendet. Die Größe sollte
+                76x76 für iPhones, 120x120 für iPhone mit Retina und 180x180 für iPad mit Retina-Displays betragen. Das
+                Icon wird bei mobilen Apple-Geräten z.B. angezeigt, wenn eine Webseite auf dem Homescreen hinzugefügt
+                wird.
+            </p>
         </chapter>
     </chapter>
 
