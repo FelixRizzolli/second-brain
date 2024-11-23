@@ -299,7 +299,15 @@
     </chapter>
 
     <chapter id="more" title="Weiteres">
-
+        <chapter id="_lt_iframe_gt_lt_object_gt_oder_lt_embed_gt_"
+                 title="&lt;iframe&gt;, &lt;object&gt; oder &lt;embed&gt;">
+            Mit <code>iframe</code>, <code>object</code> und <code>embed</code> kann dasselbe realisiert werden. In
+            der Praxis sollte eher <code>object</code> als <code>embed</code> verwendet werden, weil <code>object</code>
+            ein schließendes Tag hat und somit ein Fallback angegeben werden kann. <code>iframe</code> wird
+            hauptsächlich fürs Einbetten von HTML-Dokumenten verwendet. <code>iframe</code> hat noch ein paar nützliche
+            Attribute (besonders <code>sandbox</code>), die es mit <code>object</code> und <code>embed</code> nicht
+            gibt.
+        </chapter>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
