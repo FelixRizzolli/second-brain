@@ -629,13 +629,18 @@
                     </p>
 
                     <p>
-
+                        Mit diesem Element ist es Anwendern möglich, ein Datum und eine Uhrzeit auszuwählen. Der Browser
+                        zeigt hierfür einen Kalender und eine Uhrzeit an. Mit dem <code>min</code>- und
+                        <code>max</code>-Attribut kann ein Zeitraum festgelegt werden, in dem das Datum und die Uhrzeit
+                        liegen muss. Mit dem <code>value</code>-Attribut kann ein Standardwert festgelegt werden. Die
+                        Eingabe wird im Format <code>YYYY-MM-DDTHH:MM+HHMM</code> gespeichert. Im gegensatz zum
+                        <code>datetime-local</code>-Typ wird hier noch die Zeitzone mitgespeichert.
                     </p>
 
                     <!-- @formatter:off -->
                     <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
                         <![CDATA[
-
+                            <input type="datetime-local" value="2023-11-12T15:15+0100">
                         ]]>
                     </code-block>
                     <!-- @formatter:on -->
@@ -646,13 +651,17 @@
                     </p>
 
                     <p>
-
+                        Mit diesem Element ist es Anwendern möglich, ein Datum und eine Uhrzeit auszuwählen. Der Browser
+                        zeigt hierfür einen Kalender und eine Uhrzeit an. Mit dem <code>min</code>- und
+                        <code>max</code>-Attribut kann ein Zeitraum festgelegt werden, in dem das Datum und die Uhrzeit
+                        liegen muss. Mit dem <code>value</code>-Attribut kann ein Standardwert festgelegt werden. Die
+                        Eingabe wird im Format <code>YYYY-MM-DDTHH:MM</code> gespeichert.
                     </p>
 
                     <!-- @formatter:off -->
                     <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
                         <![CDATA[
-
+                            <input type="datetime-local" value="2023-11-12T15:15">
                         ]]>
                     </code-block>
                     <!-- @formatter:on -->
