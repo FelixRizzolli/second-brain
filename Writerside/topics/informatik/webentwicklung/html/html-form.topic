@@ -702,13 +702,15 @@
                     </p>
 
                     <p>
-
+                        Mit diesem Element kann der Anwender über einen Farbauswahl-Dialog einen Farbwert eingeben bzw.
+                        auswählen. Möchte man die Farbe mit einem Wert vorbelegen, kann dies mit dem
+                        <code>value</code>-Attribut gemacht werden. Die Farbe wird als Hexadezimalwert gespeichert.
                     </p>
 
                     <!-- @formatter:off -->
                     <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
                         <![CDATA[
-
+                            <input type="color" value="#FF0000">
                         ]]>
                     </code-block>
                     <!-- @formatter:on -->
