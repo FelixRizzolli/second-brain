@@ -57,22 +57,22 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-image-and-multimedia.topic#tag-track">
-                        <code>&lt;track&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    Untertitel oder Übersetzungen für Videos bereitstellen.
-                </td>
-            </tr>
-            <tr>
-                <td>
                     <a href="html-image-and-multimedia.topic#tag-audio">
                         <code>&lt;audio&gt;</code>
                     </a>
                 </td>
                 <td>
                     Audiodateien ohne Plug-ins wiedergeben.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-image-and-multimedia.topic#tag-track">
+                        <code>&lt;track&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Untertitel oder Übersetzungen für Videos bereitstellen.
                 </td>
             </tr>
         </table>
@@ -546,21 +546,95 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-track" title="Das track-Element">
-            <!-- TODO -->
-
-            <tip>
-                Mehr zum <code>track</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/track">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
         <chapter id="tag-audio" title="Das audio-Element">
             <!-- TODO -->
 
             <tip>
                 Mehr zum <code>audio</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/audio">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
+        <chapter id="tag-track" title="Das track-Element">
+            <p>
+                Mit dem <code>track</code>-Element bietet HTML die Möglichkeit an, zusätzliche Spuren (Tracks) zu
+                definieren. Diese Tracks gehören nicht zum Teil des Video- oder Audio-Tracks, sondern sin lediglich
+                separate Textinformationen, die zeitgenau als Videountertitel zu den dort enthaltenen Informationen für
+                unterschiedliche Sprachen oder für Hörgeschädigte hinterlegt werden können. Untertitel sind aber auch
+                sehr nützlich, wenn Videos geschaut werden, und es nicht möglich ist, den Ton anzuschalten (z.B. in
+                öffentlichen Räumen oder Verkehrsmitteln) und man keine Kopfhörer dabei hat.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <video width="480" controls>
+                        <source src="video/Schrodinger.webm" type="video/webm"/>
+                        <track default src="untertitel.vtt" kind="subtitles"
+                               srclang="de" label="Deutsch">
+                        <track src="untertitel_en.vtt" kind="subtitles"
+                               srclang="uk" label="Englisch">
+                        Ihr Webbrowser unterstützt das video-Tag nicht.
+                    </video>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <tip>
+                Mehr zum WebVTT-Format hier: <a href="html-image-and-multimedia.topic#track-vtt"/>
+            </tip>
+
+            <deflist>
+                <def title="src">
+                    <p>
+                        Damit referenzieren Sie die Daten mit den Untertiteln für die zusätzliche Spur. Die Daten
+                        sollten im WebVTT-Format vorliegen.
+                    </p>
+                </def>
+                <def title="srclang">
+                    <p>
+                        Legt die Sprache des Textes fest, was bei <code>kind="subtitles"</code> verwendet werden sollte.
+                    </p>
+                </def>
+                <def title="kind">
+                    <p>
+                        Hiermit wird die Art der Spur angegeben. Mögliche Werte sind:
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            <code>subtitles</code>: Untertitel für gesprochenen oder gesungenen Inhalt.
+                        </li>
+                        <li>
+                            <code>captions</code>: Untertitel von Dialogen oder Soundeffekten (für Hörgeschädigte).
+                        </li>
+                        <li>
+                            <code>chapters</code>: Zwischenüberschriften oder anspringbare Unterabschnitte
+                        </li>
+                        <li>
+                            <code>metadata</code>: Beschreibungen der Daten der Audio- oder Videodatei für z.B.
+                            Skripte oder Suchmaschinen.
+                        </li>
+                        <li>
+                            <code>description</code>: Beschreibung des Videoinhalts (für blinde Anwender)
+                        </li>
+                    </list>
+                </def>
+                <def title="label">
+                    <p>
+                        Ein Titel für die Textinformation
+                    </p>
+                </def>
+                <def title="default">
+                    <p>
+                        Damit kann ein Untertitel zum Standardwert gemacht werden.
+                    </p>
+                </def>
+            </deflist>
+
+            <tip>
+                Mehr zum <code>track</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/track">MDN Web Docs</a>
             </tip>
         </chapter>
     </chapter>
@@ -845,6 +919,47 @@
                     Cache des Browsers befinden und nicht mehr nachgeladen werden.
                 </p>
             </note>
+        </chapter>
+
+        <chapter id="track-vtt" title="Das WebVTT-Format">
+            <p>
+                WebVTT (Web Video Text Tracks) ist ein Dateiformat für Untertitel und Textspuren in Videos oder
+                Audios und wird mit der Dateiendung <path>.vtt</path> gespeichert. Die Datei kann mit einem einfachen
+                Texteditor bearbeitet und mit der UTF-8-Kodierung gespeichert werden.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    WEBVTT
+
+                    1
+                    00:00:01.000 --> 00:00:05.000
+                    Die <i>erste Zeile</i> von Text wird die ersten 5 Sekunden angezeigt.
+
+                    2
+                    00:00:06.000 --> 00:00:16.000
+                    Eine zweite Zeile wird jetztfür <b>10 Sekunden</b> angezeigt.
+
+                    3
+                    00:00:17.000 --> 00:00:20.000
+                    Das ist der letzte Untertitel ...
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                Die Datei beginnt mit der Zeile <code>WEBVTT</code>, gefolgt von einer Leerzeile. Jeder Untertitel
+                beginnt mit einer Nummer (der sogenannten Cue-ID), gefolgt von der Zeitangabe, wann der Untertitel
+                erscheinen soll, gefolgt von einem Doppelpunkt und dem Text des Untertitels. Die Zeitangabe erfolgt in
+                Stunden, Minuten, Sekunden und Millisekunden und hat folgendes Format:
+                <code>hh:mm:ss.mmm --> hh:mm:ss.mmm</code>
+            </p>
+
+            <p>
+                Der Text kann auch mit HTML-Formatierungen wie <code>&lt;b&gt;</code>, <code>&lt;i&gt;</code> oder
+                <code>&lt;u&gt;</code> formatiert werden.
+            </p>
         </chapter>
     </chapter>
 
