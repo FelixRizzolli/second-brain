@@ -445,13 +445,16 @@
                     </p>
 
                     <p>
-
+                        Ein verstecktes Eingabefeld, das nicht sichtbar ist, aber dennoch Daten an den Server sendet.
+                        Dies ist nützlich, um Werte bzw. Daten, die mit einem JavaScript-Skript berechnet oder
+                        hinzugefügt wurden, beim Absenden mitzuschicken. Im <code>value</code>-Attribut wird der Wert
+                        des Feldes festgelegt.
                     </p>
 
                     <!-- @formatter:off -->
                     <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
                         <![CDATA[
-
+                            <input type="hidden" name="mwst" value="7">
                         ]]>
                     </code-block>
                     <!-- @formatter:on -->
