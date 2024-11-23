@@ -113,7 +113,25 @@
         </chapter>
 
         <chapter id="tag-object" title="Das object-Element">
-            <!-- TODO -->
+            <p>
+                Auch mit dem <code>object</code>-Element können aktive Inhalte in das HTML-Dokument eingebunden
+                werden, die nicht vom Webbrowser direkt, sondern über Erweiterungen unterstützt werden. Da
+                <code>&lt;objet&gt;</code> ein schließendes Tag hat, ist es mit diesem HTML-Element möglich, einen
+                alternativen Inhalt als Fallback anzugeben, der angezeigt wird, wenn der Webbrowser mit dem Inhalt
+                nichts anfangen kann. Bis auf diese Unterschiede ist <code>object</code> dem <code>embed</code>-Element
+                sehr ähnlich.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <object width="100%" height="480" type="application/pdf" data="leseprobe.pdf">
+                        Das PDF kann nicht wiedergegeben werden. Plug-in fehlt.
+                        <br />
+                        <a href="leseprobe.pdf" download>Leseprobe herunterladen</a>
+                    </object>
+                ]]>
+            </code-block>
 
             <tip>
                 Mehr zum <code>object</code>-Element hier:
