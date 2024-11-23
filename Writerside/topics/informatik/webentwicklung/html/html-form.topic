@@ -465,13 +465,23 @@
                     </p>
 
                     <p>
-
+                        Ein Eingabefeld für E-Mail-Adressen. Der Browser überprüft, ob die Eingabe ein gültiges Format
+                        für eine E-Mail-Adresse hat. Mit den CSS-Pseudoklassen <code>:valid</code> und
+                        <code>:invalid</code> kann das Eingabefeld entsprechend gestylt werden. Mit dem HTML-Attribut
+                        <code>required</code> kann festgelegt werden, dass das Feld ausgefüllt werden muss. Mit dem
+                        HTML-Attribut <code>multiple</code> kann festgelegt werden, dass mehrere E-Mail-Adressen in das
+                        Feld eingegeben werden können. Einzelne E-Mail-Adressen müssen durch ein Komma getrennt werden.
                     </p>
 
                     <!-- @formatter:off -->
                     <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
                         <![CDATA[
-
+                            <style>
+                                input:invalid { background: red; }
+                                input:valid { background: ivory; }
+                            </style>
+                            <!-- ... -->
+                            <input type="email" name="email" required>
                         ]]>
                     </code-block>
                     <!-- @formatter:on -->
