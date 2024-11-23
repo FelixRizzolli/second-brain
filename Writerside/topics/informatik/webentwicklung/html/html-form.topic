@@ -748,7 +748,33 @@
         </chapter>
 
         <chapter id="tag-label" title="Das label-Element">
-            <!-- TODO -->
+            <p>
+                Mit dem <code>label</code>-Element kann ein Textlabel zu Formularelementen wie Eingabefeldern,
+                Radioschaltflächen und Checkboxen hinzugefügt und verknüpft werden. Das <code>for</code>-Attribut des
+                <code>label</code>-Elements verweist auf das <code>id</code>-Attribut des Formularelements, das
+                verknüpft werden soll.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>
+                        <input type="radio" name="zimmer" id="budget" value="budget">
+                        <label for="budget">Einfaches Zimmer</label><br>
+                        <input type="radio" name="zimmer" id="standard" value="standard">
+                        <label for="standard">Standardzimmer</label><br>
+                        <input type="radio" name="room" id="luxus" value="luxus">
+                        <label for="luxus">Luxuszimmer</label>
+                    </p>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <note>
+                Es ist wichtig, dass Labels für Formularelemente verwendet werden, da sie die Benutzerfreundlichkeit
+                erhöhen. Wenn ein Benutzer auf das Label klickt, wird das zugehörige Formularelement ausgewählt.
+                Zudem ist es für Screenreader wichtig, dass die Labels korrekt verknüpft sind.
+            </note>
 
             <tip>
                 Mehr zum <code>label</code>-Element hier:
