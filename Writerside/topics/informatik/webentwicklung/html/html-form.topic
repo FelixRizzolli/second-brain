@@ -184,6 +184,7 @@
                     </form>
                 ]]>
             </code-block>
+            <!-- @formatter:on -->
 
             <deflist>
                 <def title="action">
@@ -280,7 +281,367 @@
         </chapter>
 
         <chapter id="tag-input" title="Das input-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>input</code>-Element wird verwendet, um Daten vom Benutzer abzufragen. Es gibt viele
+                verschiedene Typen, die mit dem <code>type</code>-Attribut definiert werden. Hier sind einige Beispiele:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    <p>
+                        <code>type="text"</code>
+                    </p>
+
+                    <p>
+
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+
+                        ]]>
+                    </code-block>
+                            <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <code>type="password"</code>
+                    </p>
+
+                    <p>
+
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <code>type="radio"</code>
+                    </p>
+
+                    <p>
+
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <code>type="checkbox"</code>
+                    </p>
+
+                    <p>
+
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <code>type="hidden"</code>
+                    </p>
+
+                    <p>
+
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <code>type="email"</code>
+                    </p>
+
+                    <p>
+
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <code>type="tel"</code>
+                    </p>
+
+                    <p>
+
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <code>type="number"</code>
+                    </p>
+
+                    <p>
+
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <code>type="url"</code>
+                    </p>
+
+                    <p>
+
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <code>type="file"</code>
+                    </p>
+
+                    <p>
+
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <code>type="date"</code>
+                    </p>
+
+                    <p>
+
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <code>type="time"</code>
+                    </p>
+
+                    <p>
+
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <code>type="datetime"</code>
+                    </p>
+
+                    <p>
+
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <code>type="datetime-local"</code>
+                    </p>
+
+                    <p>
+
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <code>type="month"</code>
+                    </p>
+
+                    <p>
+
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <code>type="range"</code>
+                    </p>
+
+                    <p>
+
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <code>type="search"</code>
+                    </p>
+
+                    <p>
+
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <code>type="color"</code>
+                    </p>
+
+                    <p>
+
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+            </list>
+
+            <deflist>
+                <def title="autofocus">
+                    <p>
+
+                    </p>
+                </def>
+                <def title="autocomplete">
+                    <p>
+
+                    </p>
+                </def>
+                <def title="list">
+                    <p>
+
+                    </p>
+                </def>
+                <def title="min &amp; max">
+                    <p>
+
+                    </p>
+                </def>
+                <def title="multiple">
+                    <p>
+
+                    </p>
+                </def>
+                <def title="pattern">
+                    <p>
+
+                    </p>
+                </def>
+                <def title="placeholder">
+                    <p>
+
+                    </p>
+                </def>
+                <def title="required">
+                    <p>
+
+                    </p>
+                </def>
+                <def title="step">
+                    <p>
+
+                    </p>
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>input</code>-Element hier:
