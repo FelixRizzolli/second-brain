@@ -1059,7 +1059,30 @@
         </chapter>
 
         <chapter id="tag-output" title="Das output-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>output</code>-Element wird verwendet, um das Ergebnis einer Berechnung oder eines Skripts
+                anzuzeigen. Das <code>for</code>-Attribut des <code>output</code>-Elements verweist auf das
+                <code>id</code>-Attribut des Formularelements, dessen Wert angezeigt werden soll. Im folgenden Beispiel
+                wird ein Schieberegler mit dem <code>output</code>-Element verknüpft, um den Wert des Schiebereglers
+                anzuzeigen.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <input type="range" id="ival" value="50">
+                    <output id="oval" for="ival">50</output>
+
+                    <script>
+                        function synchOutput(ev) {
+                            document.getElementById('oval').value = ev.target.value;
+                        }
+
+                        document.getElementById('ival').addEventListener('input', synchOutput);
+                    </script>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>output</code>-Element hier:
