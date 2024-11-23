@@ -961,6 +961,48 @@
                 <code>&lt;u&gt;</code> formatiert werden.
             </p>
         </chapter>
+
+        <chapter id="video-youtube" title="Videos über YouTube abspielen lassen">
+            <p>
+                Ein Video brauch einiges an Speicher und erzeugt sehr viel Traffic. Nicht jeder hat einen schnellen
+                Webhoster mit unendlichem Datenvolumen. Deshalb kann es durchaus sinnvoll sein, Videos auf YouTube
+                hochzuladen und diese dann in die eigene Webseite einzubinden. Dies wird mit dem
+                <a href="html-embedded.topic#tag-iframe"><code>iframe</code>-</a>, dem
+                <a href="html-embedded.topic#tag-embed"><code>embed</code></a>- oder dem
+                <a href="html-embedded.topic#tag-object"><code>object</code></a>-Element realisiert.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <iframe width="400" height="225"
+                            src="https://www.youtube-nocookie.com/embed/H8OYVuyBSNA"
+                            allowfullscreen">
+                    </iframe>
+
+                    <object width="400" height="225"
+                            data="https://www.youtube-nocookie.com/embed/H8OYVuyBSNA">
+                    </object>
+
+                    <embed width="400" height="225"
+                           src="https://www.youtube-nocookie.com/embed/H8OYVuyBSNA">
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <warning>
+                <p>
+                    <b>DSVGO beim Einbetten von YouTube-Video beachten!</b>
+                </p>
+
+                <p>
+                    Werden YouTube-Videos auf der Website eingebettet, sollte dabei unbedingt der Datenschutz
+                    beachtet werden. Wird das Video vom Benutzer abgespielt, werden auch Daten an YouTube weitergegeben.
+                    Es gibt ein paar Lösungen, wie man das Problem umgehen kann. Eine Übersicht dazu finden ist auf der
+                    Webseite <a href="https://webmasterin.net/youtube-videos-dsgvo/"/> zu finden.
+                </p>
+            </warning>
+        </chapter>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
