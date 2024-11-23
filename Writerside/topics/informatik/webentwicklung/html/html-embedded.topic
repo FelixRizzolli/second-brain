@@ -121,7 +121,51 @@
         </chapter>
 
         <chapter id="tag-picture" title="Das picture-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>picture</code>-Element wird verwendet, um eine oder mehrere Bildquellen für ein Bild
+                anzugeben. Es ermöglicht dem Browser, basierend auf den angegebenen Bedingungen, das am besten geeignete
+                Bild auszuwählen. Mit dem <code>picture</code>-Element können verschiedene Versionen desselben Bildes
+                und verschiedene Bildformate für unterschiedliche Bildschirmgrößen und -auflösungen bereitgestellt
+                werden.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="bilder/birnen-quadrat.webp">
+                        <source media="(max-width: 1023px)" srcset="bilder/birnen-rechteck.webp">
+                        <source media="(min-width: 1024px)" srcset="bilder/birnen-pano.webp">
+                        <!-- Fallback -->
+                        <img src="bilder/birnen-pano.webp" alt="Birnen mit Glas">
+                    </picture>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <note>
+                Bietet man verschiedene Dateiformate an und möchte ein spezielles Format wie z.B. AVIF bevorzugen, dann
+                muss jenes Format als erstes angegeben werden. Der Browser wird dann das erste Format verwenden, das er
+                unterstützt.
+            </note>
+
+            <note>
+                <p>
+                    <b>
+                        Art Direction
+                    </b>
+                </p>
+
+                <p>
+                    Das Austauschen passender Bilder für verschiedene Bildschirmgrößen und -auflösungen wird auch als
+                    <i>Art Direction</i> bezeichnet. Es ist sehr hilfreich, weil es die visuelle Darstellung von Bildern
+                    und Grafiken verbessern kann. Mit dem <code>picture</code>-Element kann jeh nach Bildschirmgröße
+                    auch ein anderer Ausschnitt des Bildes angezeigt werden. Theoretisch könnte man auch ganz andere
+                    Bilder verwenden, statt nur die verschiedenen Ausschnitte anzubieten. Dafür ist das
+                    <code>picture</code>-Element aber nicht gedacht, denn korrekterweise muss man alle verwendeten
+                    Bilddetails mit einem <code>alt</code>-Attribut am Ende des <code>img</code>-Elements beschreiben.
+                </p>
+            </note>
 
             <tip>
                 Mehr zum <code>picture</code>-Element hier:
@@ -140,10 +184,16 @@
             <code-block lang="html">
                 <![CDATA[
                     <picture>
-                        <source media="(max-width: 600px)" srcset="bilder/birnen-quadrat.webp">
-                        <source media="(max-width: 1023px)" srcset="bilder/birnen-rechteck.webp">
-                        <source media="(min-width: 1024px)" srcset="bilder/birnen-pano.webp">
-                        <!-- Fallback -->
+                        <source media="(max-width: 600px)"
+                                srcset="bilder/birnen-quadrat.webp 1x,
+                                    bilder/birnen-quadrat@2x.webp 2x">
+                        <source media="(max-width: 1023px)"
+                                srcset="bilder/birnen-rechteck.webp 1x,
+                                    bilder/birnen-rechteck@2x.webp 2x">
+                        <source media="(min-width: 1024px)"
+                                srcset="bilder/birnen-pano.webp 1x,
+                                    bilder/birnen-pano@2x.webp 2x">
+                        <!-- Fallback für alte Browser -->
                         <img src="bilder/birnen-pano.webp" alt="Birnen mit Glas">
                     </picture>
                 ]]>
