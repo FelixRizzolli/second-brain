@@ -332,13 +332,24 @@
                     </p>
 
                     <p>
-
+                        Hiermit wird eine Radioschaltfläche erstellt, bei der nur eine Option ausgewählt werden kann.
+                        Alle Radioschaltflächen, die zu einer Gruppe gehören, müssen denselben wert im
+                        <code>name</code>-Feld haben. Der Wert des <code>value</code>-Attributs bestimmt den Wert, der
+                        an den Server gesendet wird, wenn die Schaltfläche ausgewählt ist. Mit dem
+                        <code>checked</code>-Attribut kann eine Schaltfläche standardmäßig ausgewählt werden.
                     </p>
 
                     <!-- @formatter:off -->
                     <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
                         <![CDATA[
-
+                            <p>
+                                Bitte Zimmer auswählen:
+                            </p>
+                            <p>
+                                <input type="radio" name="zimmer" value="budget">Günstig<br>
+                                <input type="radio" name="zimmer" value="standard" checked>Standardzimmer<br>
+                                <input type="radio" name="zimmer" value="luxus">Luxuszimmer
+                            </p>
                         ]]>
                     </code-block>
                     <!-- @formatter:on -->
