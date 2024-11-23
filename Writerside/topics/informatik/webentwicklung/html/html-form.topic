@@ -492,13 +492,16 @@
                     </p>
 
                     <p>
-
+                        Ein Eingabefeld für Telefonnummern. Allerdings wird hier weder ein besonderes Format empfohlen,
+                        noch findet eine Validierung statt. Es wird lediglich das Tastaturlayout auf Zahlen umgestellt.
+                        Wird eine Validierung benötigt, sollte dies mit einem regulären Ausdruck im <code>pattern</code>
+                        Attribut gemacht werden.
                     </p>
 
                     <!-- @formatter:off -->
                     <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
                         <![CDATA[
-
+                            <input type="tel" name="telefon" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                         ]]>
                     </code-block>
                     <!-- @formatter:on -->
