@@ -992,7 +992,23 @@
         </chapter>
 
         <chapter id="tag-button" title="Das button-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>button</code>-Element wird verwendet, um eine anklickbare Schaltfläche zum Auslösen von
+                Aktionen zu erstellen. Es kann auch alternativ zu den <code>input</code>-Elementen mit den Typen
+                <code>submit</code>, <code>reset</code> und <code>button</code> verwendet werden. Der Vorteil des
+                <code>button</code>-Elements ist die Möglichkeit, Text und HTML-Inhalte innerhalb des Elements zu
+                platzieren und das <code>button</code>-Element ist auch ein semantisches Element.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <button type="button" onclick="alert('Hallo')">Klick mich!</button>
+                    <button type="submit">Absenden</button>
+                    <button type="reset">Zurücksetzen</button>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>button</code>-Element hier:
