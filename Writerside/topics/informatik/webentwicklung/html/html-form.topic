@@ -310,13 +310,18 @@
                     </p>
 
                     <p>
-
+                        Ein Passwortfeld, bei dem die Eingabe durch Sternchen oder Punkte verdeckt wird. Hierbei muss
+                        einem klar sein, dass der Wert nicht verschlüsselt wird, sondern dies lediglich zum Schutz vor
+                        Mitlesern des Bildschirms dienen soll. Das eingegebene Passwort selbst wird via
+                        HTTP-Protokoll ohne Verschlüsselung im Klartext über das Internet übertragen. Für eine
+                        verschlüsselte Kommunikation zwischen Webbrowser und Webserver muss das HTTPS-Protokoll
+                        verwendet werden.
                     </p>
 
                     <!-- @formatter:off -->
                     <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
                         <![CDATA[
-
+                              <input name="pw" type="password" size="10" maxlength="10">
                         ]]>
                     </code-block>
                     <!-- @formatter:on -->
