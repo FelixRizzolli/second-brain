@@ -230,13 +230,123 @@
                 </def>
                 <def title="srcset">
                     <p>
-                        Gibt eine Liste von Bilddateien an, die in verschiedenen Situationen verwendet werden sollen.
+                        Das <code>srcset</code>-Attribut ermöglicht es, mehrere Bildquellen für verschiedene
+                        Bildschirmauflösungen und -größen anzugeben. Der Browser wählt dann automatisch das am besten
+                        geeignete Bild aus, basierend auf der aktuellen Bildschirmauflösung und den angegebenen
+                        Bedingungen. Dies verbessert die Ladezeiten und die Bildqualität auf verschiedenen Geräten.
                     </p>
+
+                    <p>
+                        Der Inhalt besteht aus eine oder mehrere durch Kommas getrennte Zeichenfolgen, die mögliche
+                        Bildquellen für den User Agend angeben. Jede Zeichenfolge besteht aus:
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            <p>
+                                Eine URS zu einem Bild
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                (Optional) Leerzeichen gefolgt von einem der folgenden:
+                            </p>
+
+                            <list type="bullet">
+                                <li>
+                                    <p>
+                                        Einem Breitendeskriptor (eine positive ganze Zahl, die direkt von <code>w</code>
+                                        gefolgt wird). Der Breitendeskriptor wird durch die im
+                                        <code>sizes</code>-Attribut angegebene Quellgröße geteilt, um die effektive
+                                        Pixeldichte zu berechnen.
+                                    </p>
+
+                                    <!-- @formatter:off -->
+                                    <code-block lang="html">
+                                        <![CDATA[
+                                              <img srcset="./bilder/bild-standard.webp 640w,
+                                                        ./bilder/bild-HD.webp 1280w,
+                                                        ./bilder/bild-UHD.webp 1920w"
+                                                   src="./bilder/bild-480.webp"
+                                                   sizes="50vw"
+                                                   alt="Pena de Bernal">
+                                        ]]>
+                                    </code-block>
+                                    <!-- @formatter:on -->
+
+                                    <!-- @formatter:off -->
+                                    <code-block lang="html">
+                                        <![CDATA[
+                                              <img srcset="./bilder/bild-standard.webp 640w,
+                                                        ./bilder/bild-HD.webp 1280w,
+                                                        ./bilder/bild-UHD.webp 1920w"
+                                                   src="./bilder/bild-480.webp"
+                                                   sizes="(max-width: 800px) 75vw,
+                                                        (max-width: 1080px) 65vw,
+                                                        50vw"
+                                                   alt="Pena de Bernal">
+                                        ]]>
+                                    </code-block>
+                                    <!-- @formatter:on -->
+                                </li>
+                                <li>
+                                    <p>
+                                        Einem Pixel-Dichte-Deskriptor (eine positive Gleitkommazahl, die direkt von
+                                        <code>x</code> gefolgt wird). Der Wert <code>1x</code> entspricht einer normalen
+                                        Anzeige eines Standarddisplays, <code>2x</code> steht für ein hochauflösendes
+                                        Display und <code>3x</code> für eine noch höhere Pixeldichte des Displays.
+                                    </p>
+
+                                    <!-- @formatter:off -->
+                                    <code-block lang="html">
+                                        <![CDATA[
+                                            <img src="./bilder/bild-480.webp" alt="Pena de Bernal" width="480"
+                                                 srcset="./bilder/bild-480.webp 1x,
+                                                    ./bilder/bild-960.webp 2x,
+                                                    ./bilder/bild-1440.webp 3x">
+                                        ]]>
+                                    </code-block>
+                                    <!-- @formatter:on -->
+                                </li>
+                            </list>
+                        </li>
+                    </list>
                 </def>
                 <def title="sizes">
                     <p>
-                        Legt Bildgrößen für verschiedene Seitenlayouts fest.
+                        Das <code>sizes</code>-Attribut gibt an, welche Bildbreite der Browser für verschiedene Layouts
+                        verwenden soll. Es wird in Kombination mit dem <code>srcset</code>-Attribut verwendet, um dem
+                        Browser zu helfen, die am besten geeignete Bildquelle basierend auf der aktuellen
+                        Bildschirmgröße und den angegebenen Bedingungen auszuwählen. Dies verbessert die Ladezeiten und
+                        die Bildqualität auf verschiedenen Geräten.
                     </p>
+
+                    <p>
+                        Der Inhalt besteht aus eine oder mehrere durch Kommas getrennte Zeichenfolgen, die eine Reihe
+                        von Quellgrößen angeben. Jede Quellgröße besteht aus:
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            <p>
+                                Eine Medienabfrage, die die Bedingungen angibt, unter denen die Quellgröße verwendet
+                                werden soll.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Einem Quellgrößenwert.
+                            </p>
+                        </li>
+                    </list>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="html">
+                        <![CDATA[
+                            (max-width: 800px) 75vw
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
                 </def>
                 <def title="loading">
                     <p>
