@@ -714,13 +714,17 @@
                     </p>
 
                     <p>
-
+                        Mit diesem Element ist es Anwendern möglich, einen Wert innerhalb eines festgelegten Bereichs
+                        auszuwählen. Der Browser zeigt hierfür einen Schieberegler an. Mit dem <code>min</code>- und
+                        <code>max</code>-Attribut kann ein Wertebereich festgelegt werden. Mit dem <code>value</code>-
+                        Attribut kann ein Standardwert festgelegt werden. Mit dem <code>step</code>-Attribut kann
+                        festgelegt werden, in welchen Schritten der Wert erhöht oder verringert werden kann.
                     </p>
 
                     <!-- @formatter:off -->
                     <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
                         <![CDATA[
-
+                            <input type="range" name="volume" min="0" max="100" step="1">
                         ]]>
                     </code-block>
                     <!-- @formatter:on -->
