@@ -551,8 +551,18 @@
                     </p>
 
                     <p>
-
+                        Ein Eingabefeld für Dateien. Der Browser erzeugt in der Regel eine Schaltfläche, die beim
+                        Anklicken den lokalen Dateiauswahl-Dialog öffnet. Mit dem <code>accept</code>-Attribut kann
+                        festgelegt werden, welche Dateitypen akzeptiert werden sollen. Mit dem
+                        <code>multiple</code>-Attribut kann festgelegt werden, dass mehrere Dateien hochgeladen werden
+                        können.
                     </p>
+                    
+                    <warning>
+                        Möchte man nicht nur den Dateinamen der hochgeladenen Datei, sondern auch den Inhalt der Datei
+                        übertragen, muss das Formular mit dem <code>enctype="multipart/form-data"</code>-Attribut
+                        versehen werden.
+                    </warning>
 
                     <!-- @formatter:off -->
                     <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
