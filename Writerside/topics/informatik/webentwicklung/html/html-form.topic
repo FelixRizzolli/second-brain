@@ -172,7 +172,88 @@
 
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-form" title="Das form-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>form</code>-Element wird verwendet, um einen Bereich für Formulare zu definieren.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <form  action="/php/feedback.php" method="post">
+                        <!--Formularelemente für das Feedback-->
+                    </form>
+                ]]>
+            </code-block>
+
+            <deflist>
+                <def title="action">
+                    <p>
+                        Hiermit wird die URL angegeben, die beim Absenden des Formulars aufgerufen wird und an die, die
+                        eingegebenen Daten übertragen werden sollen.
+                    </p>
+
+                    <note>
+                        Dieses Attribut muss nicht unbedingt im <code>form</code>-Element enthalten sein. Es kann auch
+                        in einem <code>button</code>- oder <code>input</code>-Element enthalten sein. Wenn es fehlt,
+                        wird die aktuelle Seite aufgerufen.
+                    </note>
+                </def>
+                <def title="method">
+                    <p>
+                        Hiermit wird die HTTP-Request-Methode angegeben, die definiert, wie die Daten übertragen werden.
+                        Die Standardeinstellung lautet <code>method="get"</code>, womit der Webbrowser die Daten als
+                        Parameter an das Ende der URL hängt.
+                    </p>
+
+                    <list>
+                        <li>
+                            <code>GET</code> (Standard) - die Daten werden als Parameter an das Ende der URL gehängt.
+                            Nicht geeignet für sensible und/oder umfangreiche Daten.
+                        </li>
+                        <li>
+                            <code>POST</code> - die Daten werden im Body der Anfrage übertragen.
+                        </li>
+                        <li>
+                            <code>DIALOG</code> - das Dialogfenster schließt sich nach dem Absenden des Formulars und
+                            die Daten werden als <code>returnValue</code> des Dialogs zurückgegeben.
+                        </li>
+                    </list>
+
+                    <note>
+                        Die Methode muss nicht unbedingt im <code>form</code>-Element enthalten sein. Sie kann auch in
+                        einem <code>button</code>- oder <code>input</code>-Element enthalten sein.
+                    </note>
+                </def>
+                <def title="enctype">
+                    <list type="bullet">
+                        <li>
+                            <code>application/x-www-form-urlencoded</code>: (Standardwert) Hiermit werden die Zeichen,
+                            die eine besondere Bedeutung haben, in Prozentzeichen und zwei Hexadezimalzahlen maskiert
+                            (Prozentcodierung oder auch URL-Codierung).
+                        </li>
+                        <li>
+                            <code>multipart/form-data</code>: sollte verwendet werden, wenn Dateien hochgeladen werden.
+                        </li>
+                        <li>
+                            <code>text/plain</code>: ist nützlich, wenn die Daten in einem einfachen Textformat
+                            übertragen werden sollen. Sollte somit nur fürs Debugging verwendet werden.
+                        </li>
+                    </list>
+                </def>
+                <def title="accept-charset">
+                    <p>
+                        Hiermit wird die Zeichencodierung angegeben, die für das Absenden des Formulars verwendet werden
+                        soll. Mit dem Wert <code>UTF-8</code> wird die Zeichencodierung auf UTF-8 erzwungen.
+                    </p>
+                </def>
+                <def title="target">
+                    <p>
+                        Hiermit kann das Zielfenster angegeben werden. Es können die bekannten Werte
+                        <code>_blank</code>, <code>_self</code>, <code>_parent</code> und <code>_top</code> verwendet
+                        werden oder der name eines Fensters, welches mit JavaScript erzeugt wurde.
+                    </p>
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>form</code>-Element hier:
