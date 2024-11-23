@@ -321,7 +321,7 @@
                     <!-- @formatter:off -->
                     <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
                         <![CDATA[
-                              <input name="pw" type="password" size="10" maxlength="10">
+                            <input name="pw" type="password" size="10" maxlength="10">
                         ]]>
                     </code-block>
                     <!-- @formatter:on -->
@@ -678,7 +678,57 @@
         </chapter>
 
         <chapter id="tag-textarea" title="Das textarea-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>textarea</code>-Element wird verwendet, um einen Bereich für die Eingabe von mehrzeiligem Text
+                zu definieren.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <textarea name="einText" rows="4" cols="50" maxlength="2500">
+                        Hier steht der Text.
+                    </textarea>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <deflist>
+                <def title="name">
+                    Der Bezeichner des Feldes. Dieser Bezeichner wird zusammen mit dem eingegebenen Wert an den Server
+                    gesendet und mit diesem Bezeichner kann der Server den Wert identifizieren.
+                </def>
+                <def title="rows">
+                    Die Anzahl der sichtbaren Zeilen des Textbereichs.
+                </def>
+                <def title="cols">
+                    Die Anzahl der sichtbaren Spalten des Textbereichs.
+                </def>
+                <def title="minlength &amp; maxlength">
+                    <p>
+                        Hiermit wird kann die minimale und maximale Anzahl von Zeichen festgelegt werden, die in das
+                        Eingabefeld eingegeben werden dürfen.
+                    </p>
+                </def>
+                <def title="wrap">
+                    <p>
+                        Hiermit wird festgelegt, wie der Text umgebrochen wird. Mögliche Werte sind:
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            <code>hard</code>: Der Text wird umgebrochen, wenn der Benutzer die Enter-Taste drückt.
+                        </li>
+                        <li>
+                            <code>soft</code>: Der Text wird umgebrochen, wenn er die Breite des Textbereichs
+                            überschreitet.
+                        </li>
+                        <li>
+                            <code>off</code>: Der Text wird nicht umgebrochen.
+                        </li>
+                    </list>
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>textarea</code>-Element hier:
