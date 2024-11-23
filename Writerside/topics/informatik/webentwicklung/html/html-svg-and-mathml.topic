@@ -47,7 +47,34 @@
 
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-svg" title="Das svg-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>svg</code>-Element wird verwendet, um SVG-Grafiken (Scalable Vector Graphics) in eine
+                Webseite einzubinden. Der Vorteil von SVG ist, dass eine Grafik damit niemals an Qualität verliert, wenn
+                Sie hinein- oder herauszoomen. Da SVG im Klartext in einer XML-Syntax vorliegt und somit
+                plattformunabhängig ist, können Sie eine solche Grafik auch in PHP erzeugen, mit JavaScript dynamisch
+                ändern oder mit CSS formatieren. In der Praxis eignet sich dieses Format u.a. sehr gut für die
+                Kartografie, Illustrationen aller Art wie Logos, Icons, wissenschaftliche Schaubilder,
+                Programmablaufpläne, technische Zeichnungen oder die Visualisierung von Graphen.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <svg width="300" height="100">
+                        <ellipse ry="45" rx="140" cy="50" cx="150"
+                                 fill="red" stroke-width="10" stroke="black"/>
+                        <text text-anchor="middle" font-size="60"
+                              y="67" x="150" fill="black">
+                            SVG
+                        </text>
+                    </svg>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <tip>
+                Mehr zu SVG hier: <a href="svg.topic"/>
+            </tip>
 
             <tip>
                 Mehr zum <code>svg</code>-Element hier:
