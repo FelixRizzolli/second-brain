@@ -547,7 +547,119 @@
         </chapter>
 
         <chapter id="tag-audio" title="Das audio-Element">
-            <!-- TODO -->
+            <p>
+                Im Prinzip funktioniert das <code>audio</code>-Element genauso wie das <code>video</code>-Element, nur
+                dass damit Audiodateien abgespielt werden können.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <audio controls>
+                        <source src="sound/Hallo.ogg" type="audio/ogg">
+                        <source src="sound/Hallo.mp3" type="audio/mpeg">
+                        Dieser Webbrowser unterstützt das audio-Tag nicht.
+                    </audio>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <deflist>
+                <def title="src">
+                    <p>
+                        Hiermit wird die URL der Audiodatei angegeben. Alternativ kann auch ein oder mehrere
+                        <code>source</code>-Elemente verwendet werden, um mehrere Audioquellen anzugeben.
+                    </p>
+                </def>
+                <def title="type">
+                    <p>
+                        Damit wird der MIME-Typ der Audio-Datei angegeben. Mögliche werte sind:
+                    </p>
+
+                    <table style="header-row">
+                        <tr>
+                            <td>Typ</td>
+                            <td>Beschreibung</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    video/mpeg
+                                </code>
+                            </td>
+                            <td>
+                                <p>
+                                    Mit <b>MP3 MPEG-1/MPEG-2 Audio Layer III</b> können alle aktuellen Webbrowser
+                                    umgehen. Es ist das am weitesten verbreitete Audioformat im Web.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    video/ogg
+                                </code>
+                            </td>
+                            <td>
+                                <p>
+                                    <b>Ogg Vorbis</b> ist neben dem MP3-Format eine sehr gute wahl.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    video/wav
+                                </code>
+                            </td>
+                            <td>
+                                <p>
+                                    <b>WAV (Waveform Audio File)</b> ist aufgrund der Größe der Datei meistens die
+                                    schlechteste Wahl für das Web.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </def>
+                <def title="autoplay">
+                    <p>
+                        Startet die Audiodatei automatisch, sobald sie geladen ist.
+                    </p>
+                </def>
+                <def title="controls">
+                    <p>
+                        Blendet die Steuerelemente für die Steuerung (Play, Pause, Lautstärke, Fortschritt usw.) ein.
+                    </p>
+                </def>
+                <def title="preload">
+                    <p>
+                        Gibt an, ob die Audiodatei beim Laden der Seite geladen werden soll. Mögliche Werte sind:
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            <code>none</code>: Die Audiodatei wird nicht geladen, bis der Benutzer auf Play klickt.
+                        </li>
+                        <li>
+                            <code>metadata</code>: Nur die Metadaten der Audiodatei werden geladen, z.B. Dauer und
+                            Dimensionen.
+                        </li>
+                        <li>
+                            <code>auto</code>: Das Audio wird sofort geladen, wenn die Seite geladen wird.
+                        </li>
+                    </list>
+                </def>
+                <def title="muted">
+                    <p>
+                        Spielt die Audiodatei ohne Ton ab.
+                    </p>
+                </def>
+                <def title="loop">
+                    <p>
+                        Die Audiodatei wird in einer Endlosschleife abgespielt.
+                    </p>
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>audio</code>-Element hier:
