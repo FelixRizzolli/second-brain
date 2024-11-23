@@ -755,7 +755,85 @@
         </chapter>
 
         <chapter id="tag-select" title="Das select-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>select</code>-Element wird verwendet, um eine Auswahlliste zu erstellen. Ein Eintrag der
+                Auswahlliste wird mit dem <code>option</code>-Element definiert.
+            </p>
+
+            <p>
+                Beispiel mit einer klassischen Dropdown-Liste:
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <select name="thema1">
+                        <option value="val1">HTML</option>
+                        <option value="val2" selected>CSS</option>
+                        <option value="val3">JavaScript</option>
+                        <option value="val4">React</option>
+                    </select>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                Beispiel mit einer Auswahlliste, die mehrere Einträge anzeigt und zur Auswahl mehrere Einträge zulässt:
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <select name="thema1" multiple size="4">
+                        <option value="val1">HTML</option>
+                        <option value="val2" selected>CSS</option>
+                        <option value="val3">JavaScript</option>
+                        <option value="val4">React</option>
+                    </select>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                Beispiel mit einer Auswahlliste, die mehrere Einträge anzeigt und zur Auswahl mehrere Einträge
+                zulässt und die Einträge in Gruppen unterteilt:
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <select multiple name="thema3" size="6">
+                        <optgroup label="Gruppe 1">
+                            <option value="val9">HTML</option>
+                            <option value="val10">CSS</option>
+                        </optgroup>
+                        <optgroup label="Gruppe 2">
+                            <option value="val11">JavaScript</option>
+                            <option value="val12">React</option>
+                        </optgroup>
+                    </select>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <deflist>
+                <def title="name">
+                    <p>
+                        Der Bezeichner des Feldes. Dieser Bezeichner wird zusammen mit dem eingegebenen Wert an den
+                        Server gesendet und mit diesem Bezeichner kann der Server den Wert identifizieren.
+                    </p>
+                </def>
+                <def title="multiple">
+                    <p>
+                        Hiermit wird festgelegt, ob mehrere Einträge ausgewählt werden können.
+                    </p>
+                </def>
+                <def title="size">
+                    <p>
+                        Hiermit wird die Anzahl der sichtbaren Einträge festgelegt.
+                    </p>
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>select</code>-Element hier:
