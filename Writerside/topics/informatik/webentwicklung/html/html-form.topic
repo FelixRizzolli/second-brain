@@ -391,7 +391,8 @@
 
                     <p>
                         Erzeugt eine Schaltfläche bzw. einen Button, welcher alle Formularelemente auf ihre
-                        Standardwerte zurücksetzt.
+                        Standardwerte zurücksetzt. Alternativ kann auch ein
+                        <a href="html-form.topic#tag-button"><code>button</code>-Element</a> verwendet werden.
                     </p>
 
                     <!-- @formatter:off -->
@@ -408,13 +409,32 @@
                     </p>
 
                     <p>
-                        Erzeugt eine Schaltfläche bzw. einen Button, welcher das Formular absendet.
+                        Erzeugt eine Schaltfläche bzw. einen Button, welcher das Formular absendet. Alternativ kann
+                        auch ein <a href="html-form.topic#tag-button"><code>button</code>-Element</a> verwendet werden.
                     </p>
 
                     <!-- @formatter:off -->
                     <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
                         <![CDATA[
                             <input type="submit" value="Absenden">
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <code>type="button"</code>
+                    </p>
+
+                    <p>
+                        Erzeugt eine Schaltfläche bzw. einen Button. Alternativ kann auch ein
+                        <a href="html-form.topic#tag-button"><code>button</code>-Element</a> verwendet werden.
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+                            <input type="button" value="Anklickbarer Button">
                         ]]>
                     </code-block>
                     <!-- @formatter:on -->
