@@ -293,16 +293,16 @@
                     </p>
 
                     <p>
-
+                        Ein einfaches Texteingabefeld.
                     </p>
 
                     <!-- @formatter:off -->
                     <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
                         <![CDATA[
-
+                            <input type="text" name="einName" size="30" maxlength="40">
                         ]]>
                     </code-block>
-                            <!-- @formatter:on -->
+                    <!-- @formatter:on -->
                 </li>
                 <li>
                     <p>
@@ -596,6 +596,29 @@
             </list>
 
             <deflist>
+                <def title="name">
+                    <p>
+                        Für jedes Eingabefeld sollte das HTML-Attribut <code>name</code> für den Bezeichner des Feldes
+                        verwendet werden. Dieser Bezeichner wird zusammen mit dem eingegebenen Wert an den Server
+                        gesendet und mit diesem Bezeichner kann der Server den Wert identifizieren.
+                    </p>
+                </def>
+                <def title="value">
+                    <p>
+                        Hierbei handelt es sich um den Wert, der standardmäßig im Eingabefeld angezeigt werden soll.
+                    </p>
+                </def>
+                <def title="size">
+                    <p>
+                        Hiermit wird die Breite des Eingabefeldes in Zeichen festgelegt.
+                    </p>
+                </def>
+                <def title="minlength &amp; maxlength">
+                    <p>
+                        Hiermit wird kann die minimale und maximale Anzahl von Zeichen festgelegt werden, die in das
+                        Eingabefeld eingegeben werden dürfen.
+                    </p>
+                </def>
                 <def title="autofocus">
                     <p>
 
