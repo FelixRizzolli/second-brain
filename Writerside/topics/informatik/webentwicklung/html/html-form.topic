@@ -404,6 +404,23 @@
                 </li>
                 <li>
                     <p>
+                        <code>type="submit"</code>
+                    </p>
+
+                    <p>
+                        Erzeugt eine Schaltfläche bzw. einen Button, welcher das Formular absendet.
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+                            <input type="submit" value="Absenden">
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
                         <code>type="hidden"</code>
                     </p>
 
