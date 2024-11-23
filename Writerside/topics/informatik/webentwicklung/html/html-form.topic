@@ -512,13 +512,17 @@
                     </p>
 
                     <p>
-
+                        Ein Eingabefeld für Zahlen. Der Browser überprüft, ob die Eingabe eine Zahl ist oder nicht.
+                        Viele Webbrowser zeigen dieses Feld mit einem Drehfeld (Spinbox) an. Mit den Attributen
+                        <code>min</code> und <code>max</code> kann ein Wertebereich festgelegt werden. Mit dem Attribut
+                        <code>step</code> kann festgelegt werden, in welchen Schritten die Zahl erhöht oder verringert
+                        werden kann.
                     </p>
 
                     <!-- @formatter:off -->
                     <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
                         <![CDATA[
-
+                            <input type="number" name="anzahl" min="1" max="10" step="1">
                         ]]>
                     </code-block>
                     <!-- @formatter:on -->
@@ -736,7 +740,13 @@
                 </def>
                 <def title="min &amp; max">
                     <p>
-
+                        Hiermit wird der minimale und maximale Wert festgelegt, den das Eingabefeld annehmen kann.
+                    </p>
+                </def>
+                <def title="step">
+                    <p>
+                        Hiermit wird festgelegt, in welchen Schritten der Wert des Eingabefeldes erhöht oder verringert
+                        werden kann.
                     </p>
                 </def>
                 <def title="multiple">
@@ -751,17 +761,14 @@
                 </def>
                 <def title="placeholder">
                     <p>
-
+                        Hiermit wird ein Platzhaltertext festgelegt, der im Eingabefeld angezeigt wird, wenn es leer
+                        ist. Der Platzhaltertext verschwindet, sobald der Benutzer in das Eingabefeld klickt.
                     </p>
                 </def>
                 <def title="required">
                     <p>
-
-                    </p>
-                </def>
-                <def title="step">
-                    <p>
-
+                        Hiermit wird festgelegt, dass das Eingabefeld ausgefüllt werden muss, bevor das Formular
+                        abgesendet werden kann.
                     </p>
                 </def>
             </deflist>
