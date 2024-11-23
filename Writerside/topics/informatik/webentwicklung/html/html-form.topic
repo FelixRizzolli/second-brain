@@ -796,17 +796,22 @@
                 </def>
                 <def title="autofocus">
                     <p>
-
+                        Hiermit wird festgelegt, dass das Eingabefeld automatisch den Fokus erhält, wenn die Seite
+                        geladen wird.
                     </p>
                 </def>
                 <def title="autocomplete">
                     <p>
-
+                        Fast alle aktuellen Webbrowser verwenden eine Form der Autovervollständigung, um Benutzern zu
+                        helfen, Formulare schneller auszufüllen. Mit dem <code>autocomplete</code>-Attribut kann diese
+                        Funktion für ein bestimmtes Eingabefeld aktiviert oder deaktiviert werden. Mögliche Werte sind:
+                        <code>autocomplete="on"</code> oder <code>autocomplete="off"</code>.
                     </p>
                 </def>
                 <def title="list">
                     <p>
-
+                        Mit dem <code>list</code>-Attribut kann eine <code>datalist</code>-Element-ID angegeben werden,
+                        die eine Liste von Vorschlägen für das Eingabefeld enthält.
                     </p>
                 </def>
                 <def title="min &amp; max">
@@ -945,7 +950,29 @@
         </chapter>
 
         <chapter id="tag-datalist" title="Das datalist-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>datalist</code>-Element wird verwendet, um eine Liste von Vorschlägen für ein Eingabefeld
+                bereitzustellen. Die Vorschläge werden mit dem <code>option</code>-Element definiert.
+                Abhängig vom Webbrowser finden Sie entweder ein kleines Dropdown-Menü auf der rechten Seite des
+                Eingabefeldes, wenn das Feld, in dem die Vorschläge aufgelistet werden, den Fokus erhält. Oder es könnte
+                während der Eingabe ein zur Liste passendes Muster darunter vorgeschlagen werden, wenn
+                <code>autocomplete</code> nicht deaktiviert wurde.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <label for="anrede">Anrede:</label>
+                    <input list="anrede" name="anrede"><br>
+
+                    <datalist id="anrede">
+                        <option>Herr</option>
+                        <option>Frau</option>
+                        <option>Divers</option>
+                    </datalist>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>datalist</code>-Element hier:
