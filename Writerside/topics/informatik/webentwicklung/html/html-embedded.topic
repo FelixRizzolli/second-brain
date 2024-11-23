@@ -130,7 +130,70 @@
         </chapter>
 
         <chapter id="tag-source" title="Das source-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>source</code>-Element wird verwendet, um alternative Medienressourcen für die Elemente
+                <code>picture</code>, <code>video</code> und <code>audio</code> anzugeben. Es ermöglicht dem Browser,
+                basierend auf den angegebenen Bedingungen, die am besten geeignete Ressource auszuwählen.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="bilder/birnen-quadrat.webp">
+                        <source media="(max-width: 1023px)" srcset="bilder/birnen-rechteck.webp">
+                        <source media="(min-width: 1024px)" srcset="bilder/birnen-pano.webp">
+                        <!-- Fallback -->
+                        <img src="bilder/birnen-pano.webp" alt="Birnen mit Glas">
+                    </picture>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <deflist>
+                <def title="srcset">
+                    <p>
+                        Das <code>srcset</code>-Attribut ermöglicht es, mehrere Medienquellen für verschiedene
+                        Bildschirmauflösungen und -größen anzugeben. Der Browser wählt dann automatisch das am besten
+                        geeignete Medienelement aus, basierend auf der aktuellen Bildschirmauflösung und den angegebenen
+                        Bedingungen. Dies verbessert die Ladezeiten und die Bildqualität/Videoqualität auf verschiedenen
+                        Geräten.
+                    </p>
+
+                    <tip>
+                        Verwendet wird das <code>srcset</code>-Attribut wie beim <code>img</code>-Element:
+                        <a href="html-image-and-multimedia.topic#tag-img"/>
+                    </tip>
+                </def>
+                <def title="sizes">
+                    <p>
+                        Das <code>sizes</code>-Attribut gibt an, welche Breite der Browser für verschiedene Layouts
+                        verwenden soll. Es wird in Kombination mit dem <code>srcset</code>-Attribut verwendet, um dem
+                        Browser zu helfen, die am besten geeignete Quelldatei basierend auf der aktuellen
+                        Bildschirmgröße und den angegebenen Bedingungen auszuwählen. Dies verbessert die Ladezeiten und
+                        die Bildqualität/Videoqualität auf verschiedenen Geräten.
+                    </p>
+
+                    <tip>
+                        Verwendet wird das <code>sizes</code>-Attribut wie beim <code>img</code>-Element:
+                        <a href="html-image-and-multimedia.topic#tag-img"/>
+                    </tip>
+                </def>
+                <def title="media">
+                    <p>
+                        Hiermit werden Medienabfragen definiert, die bestimmen, ob das <code>source</code>-Element für
+                        das <code>picture</code>-Element verwendet wird. Wenn die Medienabfrage zutrifft, wird das
+                        Medienelement geladen, andernfalls wird das nächste <code>source</code>-Element überprüft.
+                    </p>
+                </def>
+                <def title="type">
+                    <p>
+                        Das <code>type</code>-Attribut gibt den MIME-Typ des Medieninhalts an, der von der URL im
+                        <code>src</code>-Attribut referenziert wird. Es wird verwendet, um dem Browser mitzuteilen,
+                        welche Art von Medieninhalten er erwarten kann, bevor er die URL abruft.
+                    </p>
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>source</code>-Element hier:
