@@ -832,7 +832,9 @@
                 </def>
                 <def title="pattern">
                     <p>
-
+                        Hiermit wird ein regulärer Ausdruck festgelegt, der bestimmt, welche Eingaben gültig sind.
+                        Eingabetypen wie <code>email</code>, <code>url</code> oder <code>number</code> haben bereits
+                        so etwas wie einen regulären Ausdruck eingebaut, der die Eingabe überprüft.
                     </p>
                 </def>
                 <def title="placeholder">
