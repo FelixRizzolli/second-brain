@@ -606,13 +606,19 @@
                     </p>
 
                     <p>
-
+                        Mit diesem Element ist es Anwendern möglich, eine Uhrzeit auszuwählen. Der Browser zeigt hierfür
+                        eine Uhrzeit an. Mit dem <code>min</code>- und <code>max</code>-Attribut kann ein Zeitraum
+                        festgelegt werden, in dem die Uhrzeit liegen muss. Mit dem <code>value</code>-Attribut kann ein
+                        Standardwert festgelegt werden. Die Eingabe wird im Format <code>HH:MM</code> gespeichert.
                     </p>
 
                     <!-- @formatter:off -->
                     <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
                         <![CDATA[
-
+                            <input type="time"
+                                   value="12:00"
+                                   min="09:00"
+                                   max="18:00">
                         ]]>
                     </code-block>
                     <!-- @formatter:on -->
