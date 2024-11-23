@@ -386,6 +386,24 @@
                 </li>
                 <li>
                     <p>
+                        <code>type="reset"</code>
+                    </p>
+
+                    <p>
+                        Erzeugt eine Schaltfläche bzw. einen Button, welcher alle Formularelemente auf ihre
+                        Standardwerte zurücksetzt.
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+                            <input type="reset" value="Abbrechen">
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
                         <code>type="hidden"</code>
                     </p>
 
