@@ -99,6 +99,7 @@
                            title="Eine PDF-Leseprobe für das Buch Grundkurs Webdesign">
                 ]]>
             </code-block>
+            <!-- @formatter:on -->
 
             <note>
                 Da das <code>embed</code>-Element ein alleinstehendes Element ohne schließendes Tag ist, kann hier
@@ -132,6 +133,7 @@
                     </object>
                 ]]>
             </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>object</code>-Element hier:
@@ -140,7 +142,45 @@
         </chapter>
 
         <chapter id="tag-iframe" title="Das iframe-Element">
-            <!-- TODO -->
+            <p>
+                Mit dem <code>iframe</code>-Element hat man neben dem <code>embed</code>- und dem
+                <code>object</code>-Element eine weitere Möglichkeit, externe Inhalte in das HTML-Dokument einzubinden.
+                In der Praxis kommt dieses Element vorwiegend zum Einsatz, um externe Dokumente in das aktuelle
+                HTML-Dokument einzubetten.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <iframe width="100%" height="480" src="https://galileo-press.de/leseprobe.pdf">
+                        Ihr Webbrowser kann kein iframe!<br>
+                        Hier geht es zum Inhalt:
+                        <a href="https://galileo-press.de/leseprobe.pdf">Leseprobe</a>
+                    </iframe>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <deflist>
+                <def title="sandbox">
+                    <p>
+                        Das Attribut <code>sandbox=""</code> verhindert die Ausführung von Skripten, Links, die aus
+                        dem Frame hinausgehen, Plug-ins, den Zugriff auf Cookies und das Absenden von Formularen.
+                        Einzelne Einschränkungen können mit den Werten <code>allow-form</code>,
+                        <code>allow-origin</code>, <code>allow-scripts</code> und <code>allow-top-navigation</code>
+                        aufgehoben werden.
+                    </p>
+                </def>
+                <def title="seamless">
+                    <p>
+                        Das Attribut <code>seamless</code> sorgt dafür, dass der eingebettete Inhalt nicht nur
+                        eingebettet, sondern inkludiert wird. Die mit dem <code>seamless</code> inkludierte Ressource
+                        verhält sich, als wäre sie ein blockerzeugendes HTML-Element im HTML-Dokument, was z.B.
+                        bedeutet, dass auch die Stylesheetdefinitionen auf den Inhalt der <code>iframe</code>-Ressource
+                        wirken, was ohne <code>seamless</code> nicht der Fall ist.
+                    </p>
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>iframe</code>-Element hier:
