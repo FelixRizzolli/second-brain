@@ -396,7 +396,149 @@
         </chapter>
 
         <chapter id="tag-video" title="Das video-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>video</code>-Element wird verwendet, um Videos in eine Webseite einzubinden. Webbrowser,
+                die das <code>video</code>-Element nicht unterstützen, zeigen den Text zwischen den
+                <code>&lt;video&gt;</code>- und <code>&lt;/video&gt;</code>-Tags an. Alternativ kann dort auch ein Link
+                zum Download angeboten werden.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <video width="720" controls autoplay>
+                        <source src="video/schrodinger.webm" type="video/webm">
+                        <source src="video/schrodinger.mp4" type="video/mp4">
+                        <source src="video/schrodinger.ogg" type="video/ogg">
+                        Ihr Webbrowser unterstützt das video-Tag nicht.
+                    </video>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                Gibt es nur eine Videoquelle, kann das <code>src</code>-Attribut verwendet werden, um die URL des Videos
+                anzugeben. Ansonsten wird das <code>source</code>-Element verwendet, um mehrere Videoquellen angebe zu
+                können. Mehr zum <code>source</code>-Element hier: <a href="html-embedded.topic#tag-source"/>
+            </p>
+
+            <deflist>
+                <def title="src">
+                    <p>
+                        Hiermit wird die URL des Videos angegeben. Alternativ kann auch ein oder mehrere
+                        <code>source</code>-Elemente verwendet werden, um mehrere Videoquellen anzugeben.
+                    </p>
+                </def>
+                <def title="type">
+                    <p>
+                        Damit wird der MIME-Typ des Videos angegeben. Mögliche werte sind:
+                    </p>
+
+                    <table style="header-row">
+                        <tr>
+                            <td>Medientyp</td>
+                            <td>Beschreibung</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    video/mp4
+                                </code>
+                            </td>
+                            <td>
+                                <p>
+                                    <b>MPEG-4 mit H264-Video-Codec und AAC-Audio-Codec</b> ist ein weit verbreitetes
+                                    Videoformat im Web. Es ist auch das bevorzugte Format für Mobilgeräte und kann
+                                    eine hohe Qualität bei relativ geringen Dateigrößen bieten.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    video/ogg
+                                </code>
+                            </td>
+                            <td>
+                                <p>
+                                    <b>OGG mit Theora-Video-Codec und Vorbis-Audio-Codec</b> ist ein offenes,
+                                    lizenzfreies Videoformat, das von der Xiph.Org Foundation entwickelt wurde. Es
+                                    ist nicht so weit verbreitet wie MP4 oder WebM, kann aber eine gute Qualität bei
+                                    relativ geringen Dateigrößen bieten.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>
+                                    video/webm
+                                </code>
+                            </td>
+                            <td>
+                                <p>
+                                    <b>WebM mit VP8- oder VP9-Video-Codec und Vorbis-Audio-Codec</b> ist ein offenes,
+                                    lizenzfreies Videoformat, das von Google entwickelt wurde. Es bietet eine gute
+                                    Kompression bei hoher Qualität und ist gut geeignet für Videos mit viel Bewegung.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </def>
+                <def title="height">
+                    <p>
+                        Gibt die Höhe des Videos in Pixel an.
+                    </p>
+                </def>
+                <def title="width">
+                    <p>
+                        Gibt die Breite des Videos in Pixel an.
+                    </p>
+                </def>
+                <def title="autoplay">
+                    <p>
+                        Das Video wird automatisch abgespielt, sobald es geladen ist.
+                    </p>
+                </def>
+                <def title="controls">
+                    <p>
+                        Zeigt die Steuerelemente für das Video an, z. B. Play, Pause, Lautstärke, Fortschritt usw.
+                    </p>
+                </def>
+                <def title="loop">
+                    <p>
+                        Das Video wird in einer Endlosschleife abgespielt.
+                    </p>
+                </def>
+                <def title="muted">
+                    <p>
+                        Das Video wird ohne Ton abgespielt.
+                    </p>
+                </def>
+                <def title="poster">
+                    <p>
+                        Ein Standbild, das angezeigt wird, bevor das Video abgespielt wird oder während das Video
+                        geladen wird.
+                    </p>
+                </def>
+                <def title="preload">
+                    <p>
+                        Gibt an, ob das Video beim Laden der Seite geladen werden soll. Mögliche Werte sind:
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            <code>none</code>: Das Video wird nicht geladen, bis der Benutzer auf Play klickt.
+                        </li>
+                        <li>
+                            <code>metadata</code>: Nur die Metadaten des Videos werden geladen, z. B. Dauer und
+                            Dimensionen.
+                        </li>
+                        <li>
+                            <code>auto</code>: Das Video wird sofort geladen, wenn die Seite geladen wird.
+                        </li>
+                    </list>
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>video</code>-Element hier:
