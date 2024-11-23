@@ -672,13 +672,38 @@
                     </p>
 
                     <p>
-
+                        Mit diesem Element ist es Anwendern möglich, ein Monat und ein Jahr auszuwählen. Der Browser
+                        zeigt hierfür einen Kalender an. Mit dem <code>min</code>- und <code>max</code>-Attribut kann
+                        ein Zeitraum festgelegt werden, in dem das Datum liegen muss. Mit dem
+                        <code>value</code>-Attribut kann ein Standardwert festgelegt werden. Die Eingabe wird im Format
+                        <code>YYYY-MM</code> gespeichert.
                     </p>
 
                     <!-- @formatter:off -->
                     <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
                         <![CDATA[
+                            <input type="month" value="2023-01">
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <code>type="week"</code>
+                    </p>
 
+                    <p>
+                        Mit diesem Element ist es Anwendern möglich, eine Woche und ein Jahr auszuwählen. Der Browser
+                        zeigt hierfür einen Kalender an. Mit dem <code>min</code>- und <code>max</code>-Attribut kann
+                        ein Zeitraum festgelegt werden, in dem das Datum liegen muss. Mit dem <code>value</code>-Attribut
+                        kann ein Standardwert festgelegt werden. Die Eingabe wird im Format <code>YYYY-WW</code>
+                        gespeichert. Ein Jahr hat maximal 52 oder 53 Kalenderwochen, und eine Woche beginnt am Montag.
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+                            <input type="week" value="2023-52">
                         ]]>
                     </code-block>
                     <!-- @formatter:on -->
