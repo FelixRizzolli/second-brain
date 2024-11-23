@@ -59,7 +59,33 @@
 
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-canvas" title="Das canvas-Element">
-            <!-- TODO -->
+            <p>
+                Übersetzt bedeutet Canvas zunächst so viel wie Leinwand oder Arbeitsfläche. In der Tat ist ein solches
+                Element zunächst nichts anderes als eine weiße Fläche, auf die erst mithilfe von JavaScript etwas
+                gezeichnet werden kann. Einige Webentwickler bezeichnen dieses Element als ein programmierbares
+                <code>img</code>-Element, das Pixel für Pixel selbst gefüllt werden kann.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <canvas id="myCanvas" width="400" height="200">
+                        Ihr Browser unterstützt das canvas-Element nicht.
+                    </canvas>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                Zwischen dem <code>canvas</code>-Start- und Endtag können Sie alternativen Inhalt einfügen, der
+                angezeigt wird, wenn der Browser das <code>canvas</code>-Element nicht unterstützt oder der Anwender
+                JavaScript deaktiviert hat. Eine Alternative wäre es, anstelle eines Textes eine Pixelgrafik zu
+                verwenden, sofern dies sinnvoll ist.
+            </p>
+
+            <tip>
+                Mehr zur Canvas-API hier: <a href="js-apis-canvas.topic"/>
+            </tip>
 
             <tip>
                 Mehr zum <code>canvas</code>-Element hier:
