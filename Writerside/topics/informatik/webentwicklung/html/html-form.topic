@@ -731,13 +731,16 @@
                     </p>
 
                     <p>
-
+                        Ein Eingabefeld für einen Suchbegriff. Optisch werden solche Felder für gewöhnlich wie
+                        <code>type="text"</code> gerendert. Erst, wenn der Benutzer anfängt, etwas in das Textfeld
+                        einzugeben, erscheint ein kleines X-Symbol, mit dem der Inhalt des Feldes gelöscht werden kann.
+                        Allerdings hängt die genaue Darstellung von der Implementierung des Browsers ab.
                     </p>
 
                     <!-- @formatter:off -->
                     <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
                         <![CDATA[
-
+                             <input type="search">
                         ]]>
                     </code-block>
                     <!-- @formatter:on -->
