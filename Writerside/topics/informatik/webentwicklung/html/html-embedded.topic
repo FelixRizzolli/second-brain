@@ -85,7 +85,26 @@
 
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-embed" title="Das embed-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>embed</code>-Element wird zwar schon lange von allen gängigen Browsern unterstützt, aber
+                trotzdem gehörte es erst relativ spät zum Standard. Es kann für alle möglichen aktiven Elemente
+                verwendet werden, wofür in der Regel eine Erweiterung (Browser-Plug-in) notwendig ist. Mit
+                <code>embed</code> werden Objekte in das HTML-Dokument eingebettet.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <embed type="application/pdf" src="leseprobe.pdf" width="640" height="480"
+                           title="Eine PDF-Leseprobe für das Buch Grundkurs Webdesign">
+                ]]>
+            </code-block>
+
+            <note>
+                Da das <code>embed</code>-Element ein alleinstehendes Element ohne schließendes Tag ist, kann hier
+                kein alternativer Text verwendet werden, der angezeigt wird, wenn der Webbrowser mit dem Inhalt
+                nichts anfangen kann, weil z.B. keine Erweiterung dafür vorhanden oder installiert ist.
+            </note>
 
             <tip>
                 Mehr zum <code>embed</code>-Element hier:
