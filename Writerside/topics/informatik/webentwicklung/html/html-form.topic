@@ -533,13 +533,14 @@
                     </p>
 
                     <p>
-
+                        Ein Eingabefeld für URLs. Der Browser überprüft, ob die Eingabe ein gültiges Format für eine URL
+                        hat. Manche Browser listen hie die zuletzt besuchten URLs auf.
                     </p>
 
                     <!-- @formatter:off -->
                     <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
                         <![CDATA[
-
+                            <input type="url" name="website">
                         ]]>
                     </code-block>
                     <!-- @formatter:on -->
