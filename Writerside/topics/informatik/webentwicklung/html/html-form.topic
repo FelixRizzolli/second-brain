@@ -11,8 +11,10 @@
 
     <chapter id="introduction" title="Einleitung">
         <p id="%id_prefix%-description">
-            <!-- TODO -->
-            ...
+            Gängige Anwendungen von HTML-Formulare sind z.B. Kontaktformulare, Umfragen, die Anmeldung auf einer
+            Website oder für einen Newsletter, Bestellformulare, Suchfunktionen, Hinzufügen und Hochladen von Daten und
+            vieles mehr. Für solche Interaktionen bietet HTML verschiedene Eingabefelder wie Texteingabefelder,
+            Dropdown-Listen, Radioschaltflächen und einfache Schaltflächen an.
         </p>
     </chapter>
 
@@ -24,22 +26,12 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-form.topic#tag-button">
-                        <code>&lt;button&gt;</code>
+                    <a href="html-form.topic#tag-form">
+                        <code>&lt;form&gt;</code>
                     </a>
                 </td>
                 <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-form.topic#tag-datalist">
-                        <code>&lt;datalist&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
+                    Einen Bereich für Formulare definieren.
                 </td>
             </tr>
             <tr>
@@ -49,37 +41,7 @@
                     </a>
                 </td>
                 <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-form.topic#tag-form">
-                        <code>&lt;form&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-form.topic#tag-input">
-                        <code>&lt;input&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-form.topic#tag-label">
-                        <code>&lt;label&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
+                    Formularelemente gruppieren
                 </td>
             </tr>
             <tr>
@@ -89,67 +51,18 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Eine überschrift für ein <code>fieldset</code>-Element definieren.
                 </td>
             </tr>
             <tr>
                 <td>
-                    <a href="html-form.topic#tag-meter">
-                        <code>&lt;meter&gt;</code>
+                    <a href="html-form.topic#tag-input">
+                        <code>&lt;input&gt;</code>
                     </a>
                 </td>
                 <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-form.topic#tag-optgroup">
-                        <code>&lt;optgroup&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-form.topic#tag-option">
-                        <code>&lt;option&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-form.topic#tag-output">
-                        <code>&lt;output&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-form.topic#tag-progress">
-                        <code>&lt;progress&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html-form.topic#tag-select">
-                        <code>&lt;select&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
+                    Dieses Element wird zur Abfrage von Daten vom Benutzer verwendet. Hierfür stehen viele
+                    verschiedene Typen zur Verfügung.
                 </td>
             </tr>
             <tr>
@@ -159,28 +72,111 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Das Element definiert einen Bereich für die Eingabe von mehrzeiligem Text.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-form.topic#tag-label">
+                        <code>&lt;label&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Ein Textlabel zu Formularelementen wie Eingabefeldern, Radioschaltflächen und Checkboxen hinzufügen
+                    und verknüpfen.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-form.topic#tag-datalist">
+                        <code>&lt;datalist&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Eine Liste mit <code>option</code>-Werten, die als Vorschlagliste verwendet werden kann.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-form.topic#tag-select">
+                        <code>&lt;select&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Eine Auswahlliste. Ein Eintrag der Auswahlliste wird mit dem <code>option</code>-Element definiert.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-form.topic#tag-optgroup">
+                        <code>&lt;optgroup&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Damit können <code>option</code>-Elemente einer Auswahlliste gruppiert werden.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-form.topic#tag-option">
+                        <code>&lt;option&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Das Element definiert einen Eintrag einer Auswahl- bzw. Dropdown-Liste.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-form.topic#tag-output">
+                        <code>&lt;output&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Damit wird ein Bereich zur Ausgabe von Werten definiert. Prakisch das Gegenstück zum
+                    <code>input</code>-Element.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-form.topic#tag-progress">
+                        <code>&lt;progress&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Damit wird ein Bereich zur visuellen Darstellung eines Fortschritts definiert.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-form.topic#tag-meter">
+                        <code>&lt;meter&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Damit visualisiert man die Größe eines Wertes innerhalb eines bekannten Bereichs.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-form.topic#tag-button">
+                        <code>&lt;button&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Eine anklickbare Schaltfläche zum Auslösen von Aktionen.
                 </td>
             </tr>
         </table>
     </chapter>
 
     <chapter id="tag-description" title="Genauere Beschreibung">
-        <chapter id="tag-button" title="Das button-Element">
+        <chapter id="tag-form" title="Das form-Element">
             <!-- TODO -->
 
             <tip>
-                Mehr zum <code>button</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/button">MDN Web Docs</a>
-            </tip>
-        </chapter>
-
-        <chapter id="tag-datalist" title="Das datalist-Element">
-            <!-- TODO -->
-
-            <tip>
-                Mehr zum <code>datalist</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/datalist">MDN Web Docs</a>
+                Mehr zum <code>form</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/form">MDN Web Docs</a>
             </tip>
         </chapter>
 
@@ -193,12 +189,12 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-form" title="Das form-Element">
+        <chapter id="tag-legend" title="Das legend-Element">
             <!-- TODO -->
 
             <tip>
-                Mehr zum <code>form</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/form">MDN Web Docs</a>
+                Mehr zum <code>legend</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/legend">MDN Web Docs</a>
             </tip>
         </chapter>
 
@@ -211,6 +207,15 @@
             </tip>
         </chapter>
 
+        <chapter id="tag-textarea" title="Das textarea-Element">
+            <!-- TODO -->
+
+            <tip>
+                Mehr zum <code>textarea</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/textarea">MDN Web Docs</a>
+            </tip>
+        </chapter>
+
         <chapter id="tag-label" title="Das label-Element">
             <!-- TODO -->
 
@@ -220,21 +225,21 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-legend" title="Das legend-Element">
+        <chapter id="tag-datalist" title="Das datalist-Element">
             <!-- TODO -->
 
             <tip>
-                Mehr zum <code>legend</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/legend">MDN Web Docs</a>
+                Mehr zum <code>datalist</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/datalist">MDN Web Docs</a>
             </tip>
         </chapter>
 
-        <chapter id="tag-meter" title="Das meter-Element">
+        <chapter id="tag-select" title="Das select-Element">
             <!-- TODO -->
 
             <tip>
-                Mehr zum <code>meter</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/meter">MDN Web Docs</a>
+                Mehr zum <code>select</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/select">MDN Web Docs</a>
             </tip>
         </chapter>
 
@@ -274,21 +279,21 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-select" title="Das select-Element">
+        <chapter id="tag-meter" title="Das meter-Element">
             <!-- TODO -->
 
             <tip>
-                Mehr zum <code>select</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/select">MDN Web Docs</a>
+                Mehr zum <code>meter</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/meter">MDN Web Docs</a>
             </tip>
         </chapter>
 
-        <chapter id="tag-textarea" title="Das textarea-Element">
+        <chapter id="tag-button" title="Das button-Element">
             <!-- TODO -->
 
             <tip>
-                Mehr zum <code>textarea</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/textarea">MDN Web Docs</a>
+                Mehr zum <code>button</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/button">MDN Web Docs</a>
             </tip>
         </chapter>
     </chapter>
