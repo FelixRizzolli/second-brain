@@ -9,10 +9,13 @@
     <show-structure depth="2" for="chapter,procedure"/>
     <link-summary rel="%id_prefix%-description"/>
 
-    <!-- TODO -->
     <chapter id="introduction" title="Einleitung">
         <p id="%id_prefix%-description">
-            ...
+            Eingebettete Inhalte sind HTML-Elemente, die es ermöglichen, externe Inhalte wie PDF-Dokumente,
+            Flash-Animationen, Java-Applets, Word-Dokumente und vieles mehr in das HTML-Dokument einzubinden.
+            In der Regel wird dafür eine Erweiterung (Browser-Plug-in) benötigt. Mit den HTML-Elementen
+            <code>embed</code>, <code>object</code> und <code>iframe</code> können solche aktiven Inhalte
+            eingebunden werden.
         </p>
     </chapter>
 
@@ -339,8 +342,7 @@
     </chapter>
 
     <chapter id="more" title="Weiteres">
-        <chapter id="_lt_iframe_gt_lt_object_gt_oder_lt_embed_gt_"
-                 title="&lt;iframe&gt;, &lt;object&gt; oder &lt;embed&gt;">
+        <chapter id="embedded-comparison" title="&lt;iframe&gt;, &lt;object&gt; oder &lt;embed&gt;">
             Mit <code>iframe</code>, <code>object</code> und <code>embed</code> kann dasselbe realisiert werden. In
             der Praxis sollte eher <code>object</code> als <code>embed</code> verwendet werden, weil <code>object</code>
             ein schließendes Tag hat und somit ein Fallback angegeben werden kann. <code>iframe</code> wird
