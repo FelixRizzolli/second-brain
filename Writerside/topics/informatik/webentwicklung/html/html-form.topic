@@ -1165,6 +1165,21 @@
             </code-block>
             <!-- @formatter:on -->
 
+            <deflist>
+                <def title="value">
+                    <p>
+                        Mit dem <code>value</code>-Attribut wird der aktuelle Wert des <code>meter</code>-Elements
+                        festgelegt.
+                    </p>
+                </def>
+                <def title="min &amp; max">
+                    <p>
+                        Mit den Werten <code>min</code> und <code>max</code> wird der Wertebereich festgelegt, in dem
+                        der Wert des <code>meter</code>-Elements liegen kann.
+                    </p>
+                </def>
+            </deflist>
+
             <tip>
                 Mehr zum <code>progress</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/progress">MDN Web Docs</a>
@@ -1172,7 +1187,10 @@
         </chapter>
 
         <chapter id="tag-meter" title="Das meter-Element">
-            <!-- TODO -->
+            <p>
+                Wie mit dem <code>progress</code>-Element können auch mit dem <code>meter</code>-Element Werte visuell
+                dargestellt werden. Es wird zur darstellunv verschiedener Messwerte verwendet. Der Wert kann mit
+                JavaScript dynamisch verändert werden. Für eine barrierearme Website sollte auch immer der aktuelle Wert
 
             <tip>
                 Mehr zum <code>meter</code>-Element hier:
