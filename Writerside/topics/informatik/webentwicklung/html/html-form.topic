@@ -1135,7 +1135,31 @@
         </chapter>
 
         <chapter id="tag-option" title="Das option-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>option</code>-Element wird verwendet, um eine Option in einer Auswahlliste zu erstellen. Mit
+                einem <code>optgroup</code>-Element können die Optionen in Gruppen unterteilt werden.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <select name="thema1">
+                        <option value="val1">HTML</option>
+                        <option value="val2">CSS</option>
+                        <option value="val3">JavaScript</option>
+                        <option value="val4">React</option>
+                    </select>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <deflist>
+                <def title="value">
+                    <p>
+                        Der Wert der Option, der an den Server gesendet wird, wenn die Option ausgewählt wird.
+                    </p>
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>option</code>-Element hier:
