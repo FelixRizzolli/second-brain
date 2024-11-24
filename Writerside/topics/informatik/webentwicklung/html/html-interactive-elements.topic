@@ -58,7 +58,45 @@
 
     <chapter id="tag-description" title="Genauere Beschreibung">
         <chapter id="tag-dialog" title="Das dialog-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>dialog</code>-Element wird verwendet, um Dialogboxen oder On-the-fly-Popups zu erstellen,
+                welche bisher meistens mithilfe von <code>div</code>-Elementen realisiert wurden.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <dialog open>
+                        <form method="dialog">
+                            <header>
+                                <h2>Eingabe machen</h2>
+                            </header>
+
+                            <p>
+                                <label>
+                                    Ihren Namen bitte:
+                                    <input name="name" id="name" placeholder="Ihr Name">
+                                </label>
+                            </p>
+
+                            <footer>
+                                <button onclick="closeDialog()">Abbrechen</button>
+                                <button id="confirmBtn" value="default">Bestätigen</button>
+                            </footer>
+                        </form>
+                    </dialog>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <deflist>
+                <def title="open">
+                    <p>
+                        Das <code>open</code>-Attribut öffnet das Dialogfenster standardmäßig. Es ist optional und wird
+                        verwendet, wenn man möchte, dass das Dialogfenster beim Laden der Seite geöffnet ist.
+                    </p>
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>dialog</code>-Element hier:
