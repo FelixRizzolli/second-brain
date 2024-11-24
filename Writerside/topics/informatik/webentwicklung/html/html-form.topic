@@ -36,7 +36,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-form.topic#tag-fieldset">
+                    <a href="html-form.topic#tag-fieldset-legend">
                         <code>&lt;fieldset&gt;</code>
                     </a>
                 </td>
@@ -46,7 +46,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-form.topic#tag-legend">
+                    <a href="html-form.topic#tag-fieldset-legend">
                         <code>&lt;legend&gt;</code>
                     </a>
                 </td>
@@ -262,17 +262,40 @@
             </tip>
         </chapter>
 
-        <chapter id="tag-fieldset" title="Das fieldset-Element">
-            <!-- TODO -->
+        <chapter id="tag-fieldset-legend" title="Das fieldset- und legend-Element">
+            <p>
+                Mit dem <code>fieldset</code>-Element können Formularelemente gruppiert werden. Das
+                <code>legend</code>-Element wird verwendet, um eine Überschrift für das <code>fieldset</code>-Element
+                zu definieren. Viele Webbrowser rahmen diesen Bereich z.B. mit einer Linie ein, um diese Gruppe optisch
+                zu verdeutlichen.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <form>
+                        <fieldset>
+                            <legend>
+                                <h2> Geben Sie die nötigen Daten hier ein </h2>
+                            </legend>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Name"><br>
+                            <label for="mail">E-Mail</label>
+                            <input type="email" id="mail" placeholder="E-Mail"><br>
+                            <label for="datum">Geburtsdatum</label>
+                            <input type="date" id="datum"><br><br>
+                            <button type="submit">Absenden</button>
+                            <button type="reset">Zurücksetzen</button>
+                        </fieldset>
+                    </form>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>fieldset</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/fieldset">MDN Web Docs</a>
             </tip>
-        </chapter>
-
-        <chapter id="tag-legend" title="Das legend-Element">
-            <!-- TODO -->
 
             <tip>
                 Mehr zum <code>legend</code>-Element hier:
