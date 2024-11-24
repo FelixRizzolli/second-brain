@@ -11,8 +11,10 @@
 
     <chapter id="introduction" title="Einleitung">
         <p id="%id_prefix%-description">
-            <!-- TODO -->
-            ...
+            Skripte sind kleine Programme, die in HTML-Seiten eingebettet werden können, um die Funktionalität der
+            Webseite zu erweitern. Die Skripte können entweder direkt in die HTML-Datei eingebettet oder auf externe
+            Skriptdateien verweisen werden. Die Skripte werden in der Regel in JavaScript geschrieben, können aber auch
+            in anderen Sprachen wie Python oder Ruby verfasst werden.
         </p>
     </chapter>
 
@@ -94,7 +96,21 @@
         </chapter>
 
         <chapter id="tag-noscript" title="Das noscript-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>noscript</code>-Element definiert einen alternativen Inhalt, der angezeigt wird, wenn Skripte
+                im Browser deaktiviert sind. Das <code>noscript</code>-Element kann in den <code>head</code>- oder
+                <code>body</code>-Bereich eingefügt werden.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <noscript>
+                        <p>JavaScript ist deaktiviert.</p>
+                    </noscript>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>noscript</code>-Element hier:
