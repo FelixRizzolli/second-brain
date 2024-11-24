@@ -34,7 +34,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-interactive-elements.topic#tag-details">
+                    <a href="html-interactive-elements.topic#tag-details-summary">
                         <code>&lt;details&gt;</code>
                     </a>
                 </td>
@@ -45,7 +45,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-interactive-elements.topic#tag-summary">
+                    <a href="html-interactive-elements.topic#tag-details-summary">
                         <code>&lt;summary&gt;</code>
                     </a>
                 </td>
@@ -57,7 +57,6 @@
     </chapter>
 
     <chapter id="tag-description" title="Genauere Beschreibung">
-
         <chapter id="tag-dialog" title="Das dialog-Element">
             <!-- TODO -->
 
@@ -66,18 +65,53 @@
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/dialog">MDN Web Docs</a>
             </tip>
         </chapter>
-        <chapter id="tag-details" title="Das details-Element">
-            <!-- TODO -->
+
+        <chapter id="tag-details-summary" title="Das details- und summary-Element">
+            <p>
+                Mit dem <code>details</code>-Element können Akkordeons erstellt werden. Ein Akkordeon ist ein Element,
+                das sich beim Klicken auf den Titel öffnet und schließt. Der Titel des Akkordeons wird mit einem
+                <code>summary</code>-Element definiert. Ein Akkordeon kann hilfreich sein, wenn zu viele Details und
+                Informationen auf einmal vorhanden sind und man den Besucher nicht damit überfordern möchte. Bisher
+                musste diese Aufgabe mit JavaScript realisiert werden.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <h1>Häufig gestellte Fragen zu HTML</h1>
+                    <p>
+                        Hier sind einige häufig gestellte Fragen und Antworten zum Thema HTML:
+                    </p>
+
+                    <details>
+                        <summary>Was ist HTML und wofür wird es verwendet?</summary>
+                        <p>HTML steht für "Hypertext Markup Language" und ist ... </p>
+                    </details>
+                    <details open>
+                        <summary>Was sind HTML-Tags?</summary>
+                        <p>HTML-Tags sind Code-Elemente, die in einer HTML-Datei ... </p>
+                    </details>
+                    <details>
+                        <summary>Was sind die grundlegenden Elemente einer HTML-Datei?</summary>
+                        <p>Die grundlegenden Elemente einer HTML-Datei sind das ... </p>
+                    </details>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <deflist>
+                <def title="open">
+                    <p>
+                        Das <code>open</code>-Attribut öffnet das Akkordeon standardmäßig. Es ist optional und wird
+                        verwendet, wenn Sie möchten, dass das Akkordeon beim Laden der Seite geöffnet ist.
+                    </p>
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>details</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/details">MDN Web Docs</a>
             </tip>
-        </chapter>
-
-        <chapter id="tag-summary" title="Das summary-Element">
-            <!-- TODO -->
-
             <tip>
                 Mehr zum <code>summary</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/summary">MDN Web Docs</a>
