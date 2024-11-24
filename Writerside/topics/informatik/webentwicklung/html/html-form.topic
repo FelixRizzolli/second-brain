@@ -1146,7 +1146,24 @@
         </chapter>
 
         <chapter id="tag-progress" title="Das progress-Element">
-            <!-- TODO -->
+            <p>
+                Mit dem <code>progress</code>-Element kann eine Fortschrittsanzeige definiert werden, um den
+                Fortschritt einer Aktion wie beispielsweise den Download einer Datei oder den Fortschritt beim
+                Ausfüllen eines HTML-Formulars anzuzeigen. Der Wert und damit der Fortschrittsbalken kann mit JavaScript
+                dynamisch verändert werden. Für eine barrierearme Website sollte auch immer der aktuelle Wert des
+                Fortschritts zwischen dem <code>progress</code>-Element notiert werden.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>
+                        <label for="fortschritt">Arbeit abgeschlossen: </label>
+                        <progress value="33" max="100" id="fortschritt">33%</progress>
+                    </p>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
 
             <tip>
                 Mehr zum <code>progress</code>-Element hier:
