@@ -1096,7 +1096,37 @@
         </chapter>
 
         <chapter id="tag-optgroup" title="Das optgroup-Element">
-            <!-- TODO -->
+            <p>
+                Das <code>optgroup</code>-Element wird verwendet, um eine Gruppe von Optionen in einer Auswahlliste zu
+                erstellen. Ein <code>optgroup</code>-Element kann mehrere <code>option</code>-Elemente enthalten.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <select name="thema2">
+                        <optgroup label="Frontend">
+                            <option value="val1">HTML</option>
+                            <option value="val2">CSS</option>
+                            <option value="val3">JavaScript</option>
+                        </optgroup>
+                        <optgroup label="Backend">
+                            <option value="val4">PHP</option>
+                            <option value="val5">Java</option>
+                            <option value="val6">Python</option>
+                        </optgroup>
+                    </select>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <deflist>
+                <def title="label">
+                    <p>
+                        Der Bezeichner der Gruppe.
+                    </p>
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>optgroup</code>-Element hier:
