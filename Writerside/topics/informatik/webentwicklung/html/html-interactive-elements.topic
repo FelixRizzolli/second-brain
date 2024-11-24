@@ -11,8 +11,8 @@
 
     <chapter id="introduction" title="Einleitung">
         <p id="%id_prefix%-description">
-            <!-- TODO -->
-            ...
+            Interaktive Elemente sind HTML-Elemente, die es ermöglichen, Dialogboxen oder On-the-fly-Popups zu erstellen
+            oder Akkordeons zu realisieren. Bisher mussten diese Aufgaben meistens mit JavaScript realisiert werden.
         </p>
     </chapter>
 
