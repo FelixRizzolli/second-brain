@@ -827,7 +827,10 @@
                 </def>
                 <def title="multiple">
                     <p>
-
+                        Mit diesem Attribut kann festgelegt werden, dass bei einem <code>file</code>-Eingabefeld mehrere
+                        Dateien hochgeladen werden können, bei einem <code>email</code>-Eingabefeld mehrere
+                        E-Mail-Adressen eingegeben werden können oder bei einem <code>select</code>-Element mehrere
+                        Optionen ausgewählt werden können.
                     </p>
                 </def>
                 <def title="pattern">
@@ -1164,7 +1167,59 @@
     </chapter>
 
     <chapter id="more" title="Weiteres">
+        <chapter id="form-attributes" title="Allgemeine Attribute von Eingabefeldern">
+            <p>
+                Es gibt ein paar nützliche Attribute, die in allen Formularelementen wie Eingabefeldern, Auswahllisten,
+                Schaltflächen und Radioschaltflächen erlaubt sind.
+            </p>
 
+            <deflist>
+                <def title="disabled">
+                    <p>
+                        Mit dem <code>disabled</code>-Attribut kann ein Eingabefeld deaktiviert werden. Ein
+                        deaktiviertes Eingabefeld kann nicht angeklickt oder editiert werden.
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block collapsed-title="Beispiel" collapsible="true" lang="html">
+                        <![CDATA[
+                            <p>
+                                Bitte Verpflegung auswählen:
+                            </p>
+                            <p>
+                                <input type="checkbox" name="essen" id="brunch" value="brunch" checked disabled>
+                                <label for="brunch">Umfassendes Frühstück</label><br>
+                                <input type="checkbox" name="essen" id="mittagessen" value="mittagessen">
+                                <label for="mittagessen">Reichhaltiges Mittagessen</label><br>
+                                <input type="checkbox" name="essen" id="abendessen" value="abendessen">
+                                <label for="abendessen">Üppiges Abendessen</label>
+                            </p>
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </def>
+                <def title="readonly">
+                    <p>
+                        Mit dem <code>readonly</code>-Attribut kann ein Eingabefeld schreibgeschützt gemacht werden.
+                        Ein schreibgeschütztes Eingabefeld kann nicht bearbeitet werden, aber der Wert kann kopiert
+                        werden.
+                    </p>
+                </def>
+                <def title="tabindex">
+                    <p>
+                        Mit dem <code>tabindex</code>-Attribut kann die Reihenfolge festgelegt werden, in der die
+                        Eingabefelder mit der Tabulatortaste durchlaufen werden.
+                    </p>
+                </def>
+                <def title="accesskey">
+                    <p>
+                        Mit dem <code>accesskey</code>-Attribut kann ein Tastaturkürzel festgelegt werden, um das
+                        Eingabefeld direkt anzuspringen. Dieses Attribut ist in allen Formularelementen wie
+                        Eingabefeldern, Auswahllisten, Schaltflächen und Radioschaltflächen erlaubt.
+                    </p>
+                </def>
+            </deflist>
+        </chapter>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
