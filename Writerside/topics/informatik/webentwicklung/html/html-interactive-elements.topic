@@ -24,22 +24,23 @@
             </tr>
             <tr>
                 <td>
-                    <a href="html-interactive-elements.topic#tag-details">
-                        <code>&lt;details&gt;</code>
-                    </a>
-                </td>
-                <td>
-                    ...
-                </td>
-            </tr>
-            <tr>
-                <td>
                     <a href="html-interactive-elements.topic#tag-dialog">
                         <code>&lt;dialog&gt;</code>
                     </a>
                 </td>
                 <td>
-                    ...
+                    Zum Erstellen von Dialogboxen oder On-the-fly-Popups.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html-interactive-elements.topic#tag-details">
+                        <code>&lt;details&gt;</code>
+                    </a>
+                </td>
+                <td>
+                    Zum Erstellen von Akkordeons. Der Titel des Akkordeons wird mit einem <code>summary</code>-Element
+                    definiert.
                 </td>
             </tr>
             <tr>
@@ -49,21 +50,13 @@
                     </a>
                 </td>
                 <td>
-                    ...
+                    Definiert den Titel eines <code>details</code>-Elements.
                 </td>
             </tr>
         </table>
     </chapter>
 
     <chapter id="tag-description" title="Genauere Beschreibung">
-        <chapter id="tag-details" title="Das details-Element">
-            <!-- TODO -->
-
-            <tip>
-                Mehr zum <code>details</code>-Element hier:
-                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/details">MDN Web Docs</a>
-            </tip>
-        </chapter>
 
         <chapter id="tag-dialog" title="Das dialog-Element">
             <!-- TODO -->
@@ -71,6 +64,14 @@
             <tip>
                 Mehr zum <code>dialog</code>-Element hier:
                 <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/dialog">MDN Web Docs</a>
+            </tip>
+        </chapter>
+        <chapter id="tag-details" title="Das details-Element">
+            <!-- TODO -->
+
+            <tip>
+                Mehr zum <code>details</code>-Element hier:
+                <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/details">MDN Web Docs</a>
             </tip>
         </chapter>
 
