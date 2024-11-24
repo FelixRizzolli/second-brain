@@ -1191,6 +1191,57 @@
                 Wie mit dem <code>progress</code>-Element können auch mit dem <code>meter</code>-Element Werte visuell
                 dargestellt werden. Es wird zur darstellunv verschiedener Messwerte verwendet. Der Wert kann mit
                 JavaScript dynamisch verändert werden. Für eine barrierearme Website sollte auch immer der aktuelle Wert
+                des Fortschritts zwischen dem <code>meter</code>-Element notiert werden.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <p>
+                        <meter value="12" max="100">12 von 100</meter> 12 von 100<br>
+                        <meter value="0.33">33 % von 100 %</meter> 33 % von 100 %<br>
+                        <meter value="10" min="0" low="25" high="75" max="100">
+                            20 % von 100 %
+                        </meter> 20 % von 100 %<br>
+                        <meter value="80" min="0" low="50" optimum="25" high="75" max="100">
+                            80 % von 100 %
+                        </meter> 80 % von 100 %<br>
+                    </p>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <deflist>
+                <def title="value">
+                    <p>
+                        Mit dem <code>value</code>-Attribut wird der aktuelle Wert des <code>meter</code>-Elements
+                        festgelegt.
+                    </p>
+                </def>
+                <def title="min &amp; max">
+                    <p>
+                        Mit den Werten <code>min</code> und <code>max</code> wird der Wertebereich festgelegt, in dem
+                        der Wert des <code>meter</code>-Elements liegen kann.
+                    </p>
+                </def>
+                <def title="low">
+                    <p>
+                        Mit dem <code>low</code>-Attribut wird der Wert festgelegt, ab dem der Wert des
+                        <code>meter</code>-Elements als zu niedrig angesehen wird.
+                    </p>
+                </def>
+                <def title="optium">
+                    <p>
+                        Mit dem <code>optimum</code>-Attribut wird der Wert festgelegt, der als optimal angesehen wird.
+                    </p>
+                </def>
+                <def title="high">
+                    <p>
+                        Mit dem <code>high</code>-Attribut wird der Wert festgelegt, ab dem der Wert des
+                        <code>meter</code>-Elements als zu hoch angesehen wird.
+                    </p>
+                </def>
+            </deflist>
 
             <tip>
                 Mehr zum <code>meter</code>-Element hier:
