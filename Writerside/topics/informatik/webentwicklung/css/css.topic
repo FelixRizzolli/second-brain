@@ -688,7 +688,33 @@
         </chapter>
 
         <chapter id="values-strings-keywords" title="Zeichenketten und Schlüsselwörter">
+            <p>
+                In CSS wird strikt zwischen Schlüsselwörtern und Zeichenketten unterschieden. Zeichenketten werden in
+                CSS zwischen einfache oder doppelte Anführungszeichen gesetzt:
+            </p>
 
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    content: " Meter";  /* Zeichenkette */
+                    content: '$ ';      /* Zeichenkette */
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                Die Schlüsselwörter in CSS hingegen werden nicht gesondert gekennzeichnet:
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    color: black;
+                    width: auto;
+                    display: inline-block;
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
         </chapter>
 
         <chapter id="values-colors" title="Farben">
