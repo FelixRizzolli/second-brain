@@ -1079,7 +1079,34 @@
             </chapter>
 
             <chapter id="values-colors-hex" title="Hexadezimal">
+                <p>
+                    Die hexadezimale Schreibweise ist die am häufigsten verwendete Methode, um Farben in CSS zu
+                    definieren. Die Farbe wird durch eine Kombination von sechs Hexadezimalzahlen dargestellt, die in
+                    drei Gruppen von je zwei Zahlen unterteilt sind. Jede Gruppe repräsentiert einen Farbkanal: Rot,
+                    Grün und Blau (RGB: <code>#RRGGBB</code>). Jede Zahl kann einen Wert zwischen <code>0</code> und
+                    <code>255</code> annehmen, wobei <code>0</code> für die niedrigste und <code>255</code> für die
+                    höchste Intensität steht. Mit einer solchen RGB-Mischung lassen sich rein theoretisch
+                    <code>255 * 255 * 255</code> (über 16,7 Mio.) Farben darstellen.
+                </p>
 
+                <!-- @formatter:off -->
+                <code-block lang="css">
+                    <![CDATA[
+                        h1 {
+                            color: #FF0000;            /* Rot */
+                            background-color: #00FF00; /* Grün */
+                            border-color: #0000FF;     /* Blau */
+                        }
+                    ]]>
+                </code-block>
+                <!-- @formatter:on -->
+
+                <p>
+                    In CSS kann die hexadezimale Schreibweise auch in Kurzform verwendet werden. Dabei wird jede
+                    Farbkomponente auf eine Ziffer reduziert, indem die Ziffern verdoppelt werden. Zum Beispiel wird
+                    <code>#FF0000</code> zu <code>#F00</code> und <code>#00FF00</code> zu <code>#0F0</code>. Dies ist
+                    natürlich nur möglich, wenn die Farbkomponenten identisch sind.
+                </p>
             </chapter>
 
             <chapter id="values-colors-rgb" title="RGB-Mischung">
