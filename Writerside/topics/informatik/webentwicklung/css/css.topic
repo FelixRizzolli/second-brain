@@ -1110,7 +1110,24 @@
             </chapter>
 
             <chapter id="values-colors-rgb" title="RGB-Mischung">
+                <p>
+                    Die RGB-Mischung ist eine weitere Möglichkeit, Farben in CSS zu definieren. Die Farbe wird durch
+                    drei Werte dargestellt, die die Intensität der Farbkanäle Rot, Grün und Blau angeben. Jeder Wert
+                    kann zwischen <code>0</code> und <code>255</code> liegen. Für die RGB-Mischung wird die Funktion
+                    <code>rgb()</code> verwendet, die die drei Werte in Klammern enthält.
+                </p>
 
+                <!-- @formatter:off -->
+                <code-block lang="css">
+                    <![CDATA[
+                        h1 {
+                            color: rgb(255,0,0);            /* Rot */
+                            background-color: rgb(0,255,0); /* Grün */
+                            border-color: rgb(0,0,255);     /* Blau */
+                        }
+                    ]]>
+                </code-block>
+                <!-- @formatter:on -->
             </chapter>
 
             <chapter id="values-colors-rgba" title="RGB-Mischung mit Transparenz">
