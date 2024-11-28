@@ -1184,7 +1184,24 @@
             </chapter>
 
             <chapter id="values-colors-hsla" title="HSL-Mischung mit Transparenz">
+                <p>
+                    Mit der Funktion <code>hsla()</code> können Farben in CSS definiert werden, die zusätzlich eine
+                    Transparenzkomponente enthalten. Die Transparenz wird durch einen Wert zwischen <code>0</code> und
+                    <code>1</code> definiert, wobei <code>0</code> für vollständig transparent und <code>1</code> für
+                    vollständig undurchsichtig steht.
+                </p>
 
+                <!-- @formatter:off -->
+                <code-block lang="css">
+                    <![CDATA[
+                        h1 {
+                            color: hsla(0,100%,50%,0.5);
+                            background-color: hsla(120,100%,50%,0.5);
+                            border-color: hsla(240,100%,50%,0.5);
+                        }
+                    ]]>
+                </code-block>
+                <!-- @formatter:on -->
             </chapter>
         </chapter>
 
