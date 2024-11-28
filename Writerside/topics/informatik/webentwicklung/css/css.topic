@@ -262,6 +262,28 @@
                 Grundlegend gilt: Die CSS-Anweisung, die dem HTML-Element am nächsten kommt, hat die höchste Priorität.
                 Mehr dazu hier: <a href="css-inheritance-cascading.topic"/>
             </p>
+
+            <p>
+                Warum gelten Externe Stylesheets als Best Practice? Einige der Vorteile sind:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    Man hat ein einheitliches Layout auch bei größeren Projekten. Alle Formateigenschaften, die in
+                    der zentralen CSS-Datei definiert wurden, gelten für alle HTML-Dokumente, in denen die CSS-Datei
+                    eingebunden ist.
+                </li>
+                <li>
+                    Der Aufwand bei der Wartung oder bei Änderungen am Design wird beachtlich reduziert, weil sich diese
+                    Arbeit auf die einzelne CSS-Datei beschränkt und die Änderungen der zentralen Datei sofort für alle
+                    HTML-Dokumente zur Verfügung stehen.
+                </li>
+                <li>
+                    Die HTML-Dokumente werden kleiner in der Speichergröße, weil sie nur noch aus HTML bestehen. Auch
+                    die Ladezeit wird hiermit reduziert, weil die zentrale Stylesheetdatei nur einmal heruntergeladen
+                    werden muss und dann im Webbrowser zwischengespeichert wird.
+                </li>
+            </list>
         </chapter>
 
         <chapter id="basics-inheritance-cascading" title="Vererbung und Kaskade">
