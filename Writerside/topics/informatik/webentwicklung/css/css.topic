@@ -145,7 +145,7 @@
                 <p>
                     Es ist Empfehlenswert, für jede CSS-Deklaration eine Extrazeile zu verwenden und diese einzurücken.
                     Die schließende Klammer sollte auch in eine eigene Zeile geschrieben werden. Folgendes ist zwar
-                    möglich, aber Unüberischtlich:
+                    möglich, aber unübersichtlich:
                 </p>
 
                 <!-- @formatter:off -->
