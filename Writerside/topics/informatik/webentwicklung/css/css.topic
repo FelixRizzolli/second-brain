@@ -1152,7 +1152,35 @@
             </chapter>
 
             <chapter id="values-colors-hsl" title="HSL-Mischung">
+                <p>
+                    Ab CSS Level 3 gibt es eine weitere Möglichkeit, Farben in CSS zu definieren: die HSL-Mischung. HSL
+                    steht für <i>Hue</i> (Farbton), <i>Saturation</i> (Sättigung) und <i>Lightness</i> (Helligkeit).
+                </p>
 
+                <p>
+                    Viele Webdesigner finden es intuitiver oder einfacher zu merken, den Farbton mit einem ganzzahligen
+                    Wert von 0 bis 360 anzugeben. Hierfür müssen Sie sich einen Farbkreis von 0 bis 359 Grad vorstellen,
+                    wobei der Wert 0 bzw. 360 für Rot, 120 für Grün und 240 für Blau steht.
+                </p>
+
+                <p>
+                    Die Werte von Sättigung und Helligkeit werden in Prozent angegeben. Je stärker der Wert der
+                    Sättigung von 100 % auf 0 % reduziert wird, desto mehr wird der Farbton zu einem Grau. Die
+                    normale Helligkeit hingegen wird mit dem Wert 50 % angezeigt. Eine Helligkeit von 100 % ist Weiß und
+                    eine Helligkeit von 0 % Schwarz.
+                </p>
+
+                <!-- @formatter:off -->
+                <code-block lang="css">
+                    <![CDATA[
+                        h1 {
+                            color: hsl(0,100%,50%);              /* Rot  */
+                            background-color: hsl(120,100%,50%); /* Grün */
+                            border-color: hsl(240,100%,50%);     /* Blau */
+                        }
+                    ]]>
+                </code-block>
+                <!-- @formatter:on -->
             </chapter>
 
             <chapter id="values-colors-hsla" title="HSL-Mischung mit Transparenz">
