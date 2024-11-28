@@ -1205,8 +1205,154 @@
             </chapter>
         </chapter>
 
-        <chapter id="values-angle" title="Winkelmaße">
+        <chapter id="values-angle-time" title="Winkelmaße und Zeit">
+            <p>
+                Neben den bereits genannten Maßeinheiten gibt es in CSS noch weitere, die für spezielle Anforderungen
+                gedacht sind. Dazu gehören die Winkelmaße und die Zeitangaben.
+            </p>
 
+            <table style="header-row">
+                <tr>
+                    <td>Maßeinheit</td>
+                    <td>CSS-Name</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td>
+                        Grad
+                    </td>
+                    <td>
+                        <code>
+                            deg
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Winkel in Grad (englisch: <i>degree</i>); ein kompletter Kreis entspricht 360 Grad, z.B.:
+                        </p>
+
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                transform: rotate(90deg);
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gon
+                    </td>
+                    <td>
+                        <code>
+                            grad
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Winkel in Gon (englisch: <i>grad</i>), ein kompletter Kreis entspricht 400 Gon. 100 Gon
+                            entsprechen einer <code>90°</code>-Drehung, z.B.:
+                        </p>
+
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                transform: rotate(100grad);
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Radiant
+                    </td>
+                    <td>
+                        <code>
+                            rad
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Winkel in Bogenmaß (englisch: <i>radian</i>); ein kompletter Kreis entspricht hier
+                            <code>2 Pi = 6,2831853</code>, z.B.:
+                        </p>
+
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                transform: rotate(5.5rad);
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Vollwinkel
+                    </td>
+                    <td>
+                        <code>
+                            turn
+                        </code>
+                    </td>
+                    <td>
+                        <p>
+                            Ein Vollwinkel ist eine Kreisumrundung (<code>0.25turn</code> entspricht einer
+                            <code>90°</code>-Drehung; <code>1turn</code> = <code>360°</code>). Zum Zeitpunkt der
+                            Drucklegung dieses Buches war nur Firefox in der Lage, mit dieser Einheit zu arbeiten. Zum
+                            Beispiel:
+                        </p>
+
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                transform: rotate(0.25turn);
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Sekunde
+                    </td>
+                    <td>
+                        <code>
+                            s
+                        </code>
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                transition-delay: 2s;
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Millisekunde
+                    </td>
+                    <td>
+                        <code>
+                            ms
+                        </code>
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                transition-delay: 2ms;
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter id="values-abbreviation" title="Kurzschreibweise">
