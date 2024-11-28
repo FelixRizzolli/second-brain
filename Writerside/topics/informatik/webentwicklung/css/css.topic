@@ -336,7 +336,7 @@
         </chapter>
 
         <chapter id="basics-inheritance-cascading" title="Vererbung und Kaskade">
-
+            <!-- TODO -->
         </chapter>
     </chapter>
 
@@ -1356,12 +1356,51 @@
         </chapter>
 
         <chapter id="values-abbreviation" title="Kurzschreibweise">
+            <p>
+                Mit Kurzschreibweisen in CSS können Sie einige CSS-Eigenschaften zusammenfassen und in einem »Rutsch«
+                notieren. Folgendes bedeutet dasselbe:
+            </p>
 
+            <!-- @formatter:off -->
+            <compare>
+                <code-block lang="css">
+                    .my_article {
+                        margin-top: 25px;     /* Oberer Abstand  */
+                        margin-right: 25px;   /* Rechter Abstand */
+                        margin-bottom: 25px;  /* Unterer Abstand */
+                        margin-left: 25px;    /* Linker Abstand  */
+                    }
+                </code-block>
+                <code-block lang="css">
+                    .my_article {
+                        margin: 25px;
+                    }
+                </code-block>
+            </compare>
+            <!-- @formatter:on -->
+
+            <p>
+                Ohne näher auf die einzelnen Funktionen einzugehen, enthalten folgende Zeilen alle Kurzschreibweisen
+                von mehreren CSS-Eigenschaften:
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    padding: 20px 30px 10px 20px;
+                    border: 1px solid yellow;
+                    background: orange url('background.jpg') no-repeat left top;
+                    font: bold 16px Arial, Helvetica;
+                    list-style: square inside url(bullet.png);
+                    outline: blue dotted thick;
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
         </chapter>
     </chapter>
 
     <chapter id="browser" title="CSS im Webbrowser analysieren">
-
+        <!-- TODO -->
     </chapter>
 
     <chapter id="frameworks" title="CSS Frameworks">
