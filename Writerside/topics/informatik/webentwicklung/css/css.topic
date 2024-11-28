@@ -284,6 +284,55 @@
                     werden muss und dann im Webbrowser zwischengespeichert wird.
                 </li>
             </list>
+
+            <note>
+                Neben der HTML-Syntax zum Einbinden einer externen CSS-Datei in ein HTML-Dokument mit dem
+                <code>link</code>-Element gibt es in CSS mit der <code>@import</code>-Regel eine weitere Möglichkeit.
+                Diese wird in der Praxis aber nur selten verwendet. Mehr dazu hier:
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@import"/>
+            </note>
+            
+            <chapter id="basics-include-media" title="Medienspezifische Stylesheets">
+                <p>
+                    Im <code>link</code>-Element kann das Attribut <code>media</code> verwendet werden. Damit kann
+                    festgelegt werden, für welche Medien das Stylesheet gültig ist. Die möglichen Werte sind:
+                </p>
+
+                <list type="bullet">
+                    <li>
+                        <code>all</code> Standardwert. Das Stylesheet gilt für alle Medien.
+                    </li>
+                    <li>
+                        <code>print:</code> Das Stylesheet gilt nur für Druckausgaben.
+                    </li>
+                    <li>
+                        <code>screen</code> Das Stylesheet gilt für Bildschirme.
+                    </li>
+                    <li>
+                        <code>speech</code> Das Stylesheet gilt für Sprachausgaben.
+                    </li>
+                </list>
+
+                <p>
+                    Neben den genannten Werten können auch Medienattribute wie <code>min-width</code>,
+                    <code>max-width</code>, <code>orientation</code> oder <code>resolution</code> verwendet werden.
+                    Hierbei handelt es sich um sogenannte Media Queries, die es ermöglichen, Stylesheets an bestimmte
+                    Bedingungen anzupassen. Beispiele:
+                </p>
+
+                <!-- @formatter:off -->
+                <code-block lang="html">
+                    <![CDATA[
+                        <link rel="stylesheet"
+                              media="print"
+                              href="print.css">
+                        <link rel="stylesheet"
+                              media="screen and (min-width: 1080px)"
+                              href="style1080.css">
+                    ]]>
+                </code-block>
+                <!-- @formatter:on -->
+            </chapter>
         </chapter>
 
         <chapter id="basics-inheritance-cascading" title="Vererbung und Kaskade">
