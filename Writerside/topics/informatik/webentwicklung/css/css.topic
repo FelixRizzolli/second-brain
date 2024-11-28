@@ -1093,7 +1093,7 @@
                 <code-block lang="css">
                     <![CDATA[
                         h1 {
-                            color: #FF0000;            /* Rot */
+                            color: #FF0000;            /* Rot  */
                             background-color: #00FF00; /* Grün */
                             border-color: #0000FF;     /* Blau */
                         }
@@ -1121,7 +1121,7 @@
                 <code-block lang="css">
                     <![CDATA[
                         h1 {
-                            color: rgb(255,0,0);            /* Rot */
+                            color: rgb(255,0,0);            /* Rot  */
                             background-color: rgb(0,255,0); /* Grün */
                             border-color: rgb(0,0,255);     /* Blau */
                         }
@@ -1131,7 +1131,24 @@
             </chapter>
 
             <chapter id="values-colors-rgba" title="RGB-Mischung mit Transparenz">
+                <p>
+                    Mit der Funktion <code>rgba()</code> können Farben in CSS definiert werden, die zusätzlich eine
+                    Transparenzkomponente enthalten. Die Transparenz wird durch einen Wert zwischen <code>0</code> und
+                    <code>1</code> definiert, wobei <code>0</code> für vollständig transparent und <code>1</code> für
+                    vollständig undurchsichtig steht.
+                </p>
 
+                <!-- @formatter:off -->
+                <code-block lang="css">
+                    <![CDATA[
+                        h1 {
+                            color: rgba(255,0,0,0.5);            /* Rot mit 50% Transparenz  */
+                            background-color: rgba(0,255,0,0.5); /* Grün mit 50% Transparenz */
+                            border-color: rgba(0,0,255,0.5);     /* Blau mit 50% Transparenz */
+                        }
+                    ]]>
+                </code-block>
+                <!-- @formatter:on -->
             </chapter>
 
             <chapter id="values-colors-hsl" title="HSL-Mischung">
