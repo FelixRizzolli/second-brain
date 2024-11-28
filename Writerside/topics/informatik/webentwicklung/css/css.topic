@@ -159,7 +159,109 @@
         </chapter>
 
         <chapter id="basics-include" title="In HTML einbinden">
+            <p>
+                Es gibt drei Möglichkeiten, CSS in HTML-Dokumente einzubinden:
+            </p>
 
+            <list type="bullet">
+                <li>
+                    <p>
+                        <b>Inline-Styles</b>
+                    </p>
+
+                    <p>
+                        CSS-Regeln werden direkt mit dem globalen <code>style</code>-Attribut eines HTML-Elements
+                        definiert. Dies ist die schlechteste Möglichkeit eine CSS-Angabe zu machen. Ein Selektor wird
+                        logischerweise nicht benötigt, da das HTML-Element, auf das diese CSS-Regel angewendet wird,
+                        schon im öffnenden Tag angegeben wird.
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="html">
+                        <![CDATA[
+                            <p style="background-color:#272121; color: #f9ba6a;">
+                                Ein Blog mit meinen Gedanken ...
+                            </p>
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <b>Interne Stylesheets</b>
+                    </p>
+
+                    <p>
+                        CSS-Regeln werden innerhalb des <code>style</code>-Elements im <code>head</code>-Bereich des
+                        HTML-Dokuments definiert. Diese CSS-Regeln gelten nur für das aktuelle Dokument. Es ist auch
+                        erlaubt mehrere solcher <code>style</code>-Elemente im HTML-Dokumentkopf zu verwenden.
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="html">
+                        <![CDATA[
+                            <!doctype html>
+                            <html lang="de">
+                                <head>
+                                    <title>Meine Testseite</title>
+                                    <meta charset="UTF-8">
+                                    <style>
+                                        h1 {
+                                            color: #272121;
+                                        }
+                                        p {
+                                            background-color: #272121;
+                                            color: #f9ba6a;
+                                        }
+                                        /* ... */
+                                    </style>
+                                </head>
+                                <body>
+                                    <!-- ... -->
+                                </body>
+                            </html>
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <b>Externe Stylesheets</b>
+                    </p>
+
+                    <p>
+                        CSS-Regeln werden in einer separaten CSS-Datei gespeichert und mit dem <code>link</code>-Element
+                        im <code>head</code>-Bereich des HTML-Dokuments verknüpft. Diese Methode gilt als
+                        <i>Best Practice</i>. Eine CSS-Datei hat die Dateiendung <path>.css</path>.
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="html">
+                        <![CDATA[
+                            <!doctype html>
+                            <html lang="de">
+                                <head>
+                                    <title>Meine Testseite</title>
+                                    <meta charset="UTF-8">
+                                    <link rel="stylesheet" href="styles.css">
+                                </head>
+                                <body>
+                                    <!-- ... -->
+                                </body>
+                            </html>
+                        ]]>
+                    </code-block>
+                </li>
+            </list>
+
+            <p>
+                Da Stilanweisungen auf unterschiedliche Art und Weise eingebunden und kombiniert werden können, muss
+                es hierzu eine Regel geben, die entscheidet, welche Eigenschaft bei konkurrierenden CSS-Regeln den
+                Vorzug erhält. Das Problem wird in CSS gelöst, indem die Kaskade für die Regeln und Eigenschaften eine
+                Gewichtung (ein Punktesystem) berechnet, die das auf ein Element angewendete Format bestimmt.
+                Grundlegend gilt: Die CSS-Anweisung, die dem HTML-Element am nächsten kommt, hat die höchste Priorität.
+                Mehr dazu hier: <a href="css-inheritance-cascading.topic"/>
+            </p>
         </chapter>
 
         <chapter id="basics-inheritance-cascading" title="Vererbung und Kaskade">

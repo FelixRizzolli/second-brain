@@ -109,6 +109,7 @@
             </toc-element>
             <toc-element topic="css.topic">
                 <toc-element topic="css-selektoren.topic"/>
+                <toc-element topic="css-inheritance-cascading.topic"/>
                 <toc-element topic="css-box.topic"/>
                 <toc-element topic="css-stylen.topic"/>
                 <toc-element topic="css-layout.topic">
