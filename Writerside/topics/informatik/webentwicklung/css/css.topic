@@ -341,7 +341,353 @@
     </chapter>
 
     <chapter id="values" title="Werte">
+        <p>
+            In CSS können verschiedene Arten von Werten verwendet werden, um die Eigenschaften von Elementen zu
+            definieren. Diese Werte können numerisch, textuell oder farblich sein.
+        </p>
+
         <chapter id="values-measure-units" title="Maßeinheiten">
+            <p>
+                Maßeinheiten in CSS können entweder absolut oder relativ sein. Absolute Maßeinheiten sind fest und
+                unabhängig von anderen Faktoren, während relative Maßeinheiten sich auf andere Eigenschaften des
+                Elements oder des Dokuments beziehen.
+            </p>
+
+            <p>
+                Numerische Werte in CSS können Ganzzahlen oder Fließkommazahlen sein. Das Komma bei der Fließkommazahl
+                wird in CSS durch einen Punkt dargestellt. Es gibt zudem Zahlen in CSS, die ohne eine Maßeinheit
+                verwendet werden. Auch negative Werte mit einem Minuszeichen können benutzt werden, sofern dies
+                sinnvoll erscheint <code>z-index: -2;</code>. Bei Längenangaben wie Höhe und Breite oder Abständen
+                können keine negativen Werte verwendet werden. Bei der Zahl <code>0</code> muss die Maßeinheit nicht
+                angegeben werden.
+            </p>
+
+            <p>
+                Hier sind einige der häufig verwendeten Maßeinheiten in CSS:
+            </p>
+
+            <table style="header-row">
+                <tr>
+                    <td>Maßeinheit</td>
+                    <td>CSS-Name</td>
+                    <td>Angabe</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td>
+                        Pixel
+                    </td>
+                    <td>
+                        <code>px</code>
+                    </td>
+                    <td>
+                        absolut/relativ
+                    </td>
+                    <td>
+                        <p>
+                            Die Anzeige von Pixeln ist abhängig von der Pixeldichte des Ausgabegeräts. Bei einer hohen
+                            Bildschirmauflösung werden die Pixel kleiner, weshalb die Anzeige kleiner erscheint. Ebenso
+                            ist es mit einer niedrigen Bildschirmauflösung, bei der die Pixel und damit die Anzeige
+                            größer erscheinen. Ein Pixel ist somit auf Anzeigegeräten eine relative und bezogen auf die
+                            Anzeige bzw. den Inhalt eine absolute Maßeinheit.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Punkt
+                    </td>
+                    <td>
+                        <code>pt</code>
+                    </td>
+                    <td>
+                        absolut
+                    </td>
+                    <td>
+                        <p>
+                            Dies ist eine typografische Maßeinheit, und 1 Punkt entspricht 1/72 Zoll (1 Zoll =
+                            2,54 cm), z.B.:
+                        </p>
+
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                font-size: 14pt;
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Pica
+                    </td>
+                    <td>
+                        <code>pc</code>
+                    </td>
+                    <td>
+                        absolut
+                    </td>
+                    <td>
+                        <p>
+                            Pica ist ebenfalls eine in der Typografie verbreitete Maßeinheit. Ein Pica ist 1/6 Zoll und
+                            entspricht daher 12 Punkt, z.B.:
+                        </p>
+
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                font-size: 1pc; /*= 12pt */
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Zentimeter
+                    </td>
+                    <td>
+                        <code>cm</code>
+                    </td>
+                    <td>
+                        absolut
+                    </td>
+                    <td>
+                        <p>
+                            Ein Zentimeter ist der hundertste Teil eines Meters und entspricht 10 mm, z.B.:
+                        </p>
+
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                margin-left: 1.3cm;
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Millimeter
+                    </td>
+                    <td>
+                        <code>mm</code>
+                    </td>
+                    <td>
+                        absolut
+                    </td>
+                    <td>
+                        <p>
+                            Ein Millimeter ist ein Tausendstel eines Meters oder der zehnte Teil eines Zentimeters,
+                            z.B.:
+                        </p>
+
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                padding: 2mm;
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Zoll
+                    </td>
+                    <td>
+                        <code>in</code>
+                    </td>
+                    <td>
+                        absolut
+                    </td>
+                    <td>
+                        <p>
+                            Das Längenmaß steht für Inch (Zoll), und 1 Inch entspricht 2,54 cm, z.B.:
+                        </p>
+
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                margin-top: 1in;
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Geviertbreite
+                    </td>
+                    <td>
+                        <code>em</code>
+                    </td>
+                    <td>
+                        relativ
+                    </td>
+                    <td>
+                        <p>
+                            Ein <code>em</code> steht für die Schriftgröße des Elements. Wird em für die Schriftgröße
+                            selbst (<code>font-size</code>) verwendet, dann bezieht sich dieser Wert auf die
+                            Schriftgröße des Eltern-Elements, z.B.:
+                        </p>
+
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                font-size: 1.3em;
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Zeichenbreite
+                    </td>
+                    <td>
+                        <code>ch</code>
+                    </td>
+                    <td>
+                        relativ
+                    </td>
+                    <td>
+                        <p>
+                            <code>ch</code> ist eine relative Einheit, die auf der Breite des Zeichens "0" (null) im
+                            aktuellen Schriftstil basiert. Wenn Sie bspw. die Breite eines Containers auf 40ch
+                            festlegen, wird der Container 40 Zeichenbreiten im aktuellen Schriftstil breit sein. Dies
+                            kann besonders nützlich sein, wenn Sie sicherstellen wollen, dass der Inhalt eines
+                            Containers auf verschiedenen Geräten und Bildschirmgrößen konsistent bleibt.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Zeilenhöhe
+                    </td>
+                    <td>
+                        <code>lh</code>
+                    </td>
+                    <td>
+                        relativ
+                    </td>
+                    <td>
+                        <p>
+                            <code>lh</code> steht für <code>line-height</code> und ist eine relative Einheit, die auf
+                            der aktuellen Schriftgröße basiert. Sie wird verwendet, um den vertikalen Abstand zwischen
+                            den Zeilen eines Textblocks zu definieren. Grundsätzlich wird diese relative Einheit die
+                            Zeilenhöhe des aktuellen Elements berechnen, auf das sie angewendet wird. Dazu wird die
+                            normale Länge der ersten verfügbaren Schriftart in eine absolute Länge umgewandelt.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        x-Höhe
+                    </td>
+                    <td>
+                        <code>ex</code>
+                    </td>
+                    <td>
+                        relativ
+                    </td>
+                    <td>
+                        <p>
+                            Ein <code>ex</code> steht für die Höhe des Kleinbuchstabens <code>x</code> der verwendeten
+                            Schrift in diesem Element. Auch hier gilt, wenn <code>ex</code> für die Schriftgröße
+                            <code>font-size</code> verwendet wird, dann bezieht sich diese Höhe auf den Wert des
+                            Kleinbuchstabens <code>x</code> im Eltern-Element.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Prozent
+                    </td>
+                    <td>
+                        <code>%</code>
+                    </td>
+                    <td>
+                        relativ
+                    </td>
+                    <td>
+                        <p>
+                            Die Prozentangaben lassen sich recht vielseitig einsetzen. Dabei hängt es von der
+                            CSS-Eigenschaft ab, ob sich dieser Wert auf die elementeigene Größe, auf die des
+                            Eltern-Elements oder auf einen allgemeinen Kontext bezieht.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Wurzel-Em
+                    </td>
+                    <td>
+                        <code>rem</code>
+                    </td>
+                    <td>
+                        relativ
+                    </td>
+                    <td>
+                        <p>
+                            Das <code>rem</code> (= <i>root em</i>) verhält sich zunächst genauso wie em, nur dass sich
+                            der <code>rem</code>-Wert am Wurzel-Element orientiert und nicht an der Schriftgröße des
+                            jeweiligen Eltern-Elements. In HTML ist das Wurzel-Element das <code>body</code>- bzw.
+                            <code>html</code>-Element, z.B.:
+                        </p>
+
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                font-size: 1.2rem;
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Viewport-Breite
+                    </td>
+                    <td>
+                        <code>vw</code>
+                    </td>
+                    <td>
+                        relativ
+                    </td>
+                    <td>
+                        <p>
+                            <code>1vw</code> entspricht <code>1 %</code> oder dem hundertsten Teil der Breite des
+                            Anzeigebereichs (= Viewport). Somit entspricht <code>100vw</code> der kompletten Breite des
+                            Anzeigebereichs. Mit dieser Maßeinheit können Sie die Schriftgröße an den Anzeigebereich des
+                            Geräts oder die Größe des Browserfensters anpassen.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Viewport-Höhe
+                    </td>
+                    <td>
+                        <code>vh</code>
+                    </td>
+                    <td>
+                        relativ
+                    </td>
+                    <td>
+                        <p>
+                            <code>1vh</code> entspricht <code>1 %</code> oder dem hundertsten Teil der Höhe des
+                            Anzeigebereichs (= Viewport). Daher entspricht <code>100vh</code> der gesamten Höhe des
+                            Anzeigebereichs. Mit dieser Maßeinheit können Sie die Schriftgröße an den Anzeigebereich des
+                            Geräts oder die Größe des Browserfensters anpassen.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </chapter>
+
+        <chapter id="values-strings-keywords" title="Zeichenketten und Schlüsselwörter">
 
         </chapter>
 
