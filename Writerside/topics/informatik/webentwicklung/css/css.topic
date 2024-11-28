@@ -47,6 +47,148 @@
         </p>
     </chapter>
 
+    <chapter id="basics" title="Grundlagen">
+        <chapter id="basics-usage" title="Anwendung">
+            <p>
+                CSS-Regeln bestehen aus einem Selektor und einer Deklaration:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    <p>
+                        <b>Selektor(en)</b>
+                    </p>
+
+                    <p>
+                        Mit einem Selektor wird festgelegt, auf welche Elemente die folgenden Deklarationen
+                        angewendet. Es ist auch möglich, mehrere Selektoren zu kombinieren, um die Deklarationen auf
+                        verschiedene Elemente anzuwenden. Dabei werden die einzelnen Selektoren durch ein Komma
+                        getrennt.
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="css">
+                        <![CDATA[
+                            h1 {
+                                font-family: "Arial";
+                                color: red;
+                                text-align: center;
+                            }
+
+                            h2,
+                            h3 {
+                                font-family: "Courier";
+                                color: blue;
+                            }
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <b>Deklatation(en)</b>
+                    </p>
+
+                    <p>
+                        Mit Deklarationen wird festgelegt, wie die ausgewählten Elemente formatiert werden sollen. Eine
+                        Deklaration besteht aus einem Eigenschafts-Wert-Paar, wobei die Eigenschaft den Aspekt des
+                        Elements definiert und der Wert den Wert dieser Eigenschaft angibt. In folgendem Beispiel wird
+                        die Schriftfarbe (<code>color</code> → Eigenschaft) eines <code>h1</code>-Elements auf rot
+                        (<code>red</code> → Wert) gesetzt:
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="css">
+                        <![CDATA[
+                            h1 {
+                                color: red;
+                            }
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+                <li>
+                    <p>
+                        <b>Kommentare</b>
+                    </p>
+
+                    <p>
+                        Kommentare in CSS beginnen mit <code>/*</code> und enden mit <code>*/</code>. Sie können
+                        verwendet werden, um den Code zu dokumentieren oder temporäre Änderungen zu kennzeichnen.
+                        Sinnvoll sind Kommentare auch, wenn man die Stylesheets in Abschnitte unterteilen möchte, um
+                        die Übersichtlichkeit zu erhöhen.
+                    </p>
+
+                    <!-- @formatter:off -->
+                    <code-block lang="css">
+                        <![CDATA[
+                            /* Erzeugt einen Kreis */
+                            /* Achtung! Funktioniert nicht mit IE8 oder älter */
+                            .circle {
+                                height: 50px;
+                                width: 50px;
+                                border-radius: 50px;
+                            }}
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </li>
+            </list>
+
+            <note>
+                <p>
+                    <b>
+                        Empfehlungen
+                    </b>
+                </p>
+
+                <p>
+                    Es ist Empfehlenswert, für jede CSS-Deklaration eine Extrazeile zu verwenden und diese einzurücken.
+                    Die schließende Klammer sollte auch in eine eigene Zeile geschrieben werden. Folgendes ist zwar
+                    möglich, aber Unüberischtlich:
+                </p>
+
+                <!-- @formatter:off -->
+                <code-block lang="css">
+                    <![CDATA[
+                        h2,h3{font-family:"Courier";color:blue;text-align:center;}
+                    ]]>
+                </code-block>
+                <!-- @formatter:on -->
+            </note>
+        </chapter>
+
+        <chapter id="basics-include" title="In HTML einbinden">
+
+        </chapter>
+
+        <chapter id="basics-inheritance-cascading" title="Vererbung und Kaskade">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="values" title="Werte">
+        <chapter id="values-measure-units" title="Maßeinheiten">
+
+        </chapter>
+
+        <chapter id="values-colors" title="Farben">
+
+        </chapter>
+
+        <chapter id="values-angle" title="Winkelmaße">
+
+        </chapter>
+
+        <chapter id="values-abbreviation" title="Kurzschreibweise">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="browser" title="CSS im Webbrowser analysieren">
+
+    </chapter>
+
     <chapter id="frameworks" title="CSS Frameworks">
         <p>
             Ein <a href="css-frameworks.topic">CSS-Framework</a> ist eine Sammlung vorgefertigter Stylesheets, die die
@@ -79,7 +221,7 @@
     </chapter>
 
     <chapter id="preprocessor" title="CSS Preprozessoren">
-
+        <!-- TODO -->
     </chapter>
 
     <chapter id="quellen" title="Quellen">
