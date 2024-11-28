@@ -352,7 +352,7 @@
             <warning>
                 <p>
                     <b>
-                        Erlaubtes zwischen <a> und </a>
+                        Erlaubtes zwischen <code>&lt;a&gt;</code> und <code>&lt;/a&gt;</code>
                     </b>
                 </p>
 
