@@ -280,6 +280,35 @@
                 ]]>
             </code-block>
             <!-- @formatter:on -->
+
+            <p>
+                Mit dem Selektor <code>article.card-text</code> werden die darauffolgenden CSS-Regeln nur auf das
+                jeweilige HTML-Element mit der angegebenen Klasse angewendet.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    article.card-text {
+                        color: #393939;
+                    }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                Klassenselektoren können auch mit anderen Selektoren verbunden werden:
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    .card-text.bold {
+                        font-weight: bold;
+                    }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
         </chapter>
 
         <chapter id="types-idselector" title="ID-Selektor">
@@ -318,12 +347,58 @@
                 dass Styling-Details aus dem Namen herausgehalten werden sollen.
             </p>
         </chapter>
+
+        <chapter id="bem" title="BEM">
+            <p>
+                Die <b>Block, Element Modifier (BEM) Methode</b> ist eine Namenskonvention für CSS-Klassen in der
+                Webentwicklung. Sie hilft dabei, CSS-Selektoren zu strukturieren und zu benennen. Die BEM-Methode ist
+                besonders nützlich, wenn mehrere Entwickler an einem Projekt arbeiten, da sie die Lesbarkeit und
+                Wartbarkeit des Codes verbessert.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    block-name__elem-name_mod-name_mod-val
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <list type="bullet">
+                <li>
+                    Namen werden klein und mit Latin Buchstaben geschrieben.
+                </li>
+                <li>
+                    Wörter werden mit einem Bindestrich <code>-</code> getrennt.
+                </li>
+                <li>
+                    Der Blockname definiert den Namensbereich für die Elemente und Modifikatoren.
+                </li>
+                <li>
+                    Der Elementname wird durch zwei Unterstriche <code>__</code> vom Blocknamen getrennt.
+                </li>
+                <li>
+                    Der Modifikatorname wird durch einem Unterstrich <code>_</code> vom Block- oder Elementnamen
+                    getrennt.
+                </li>
+                <li>
+                    Der Modifikatorwert wird durch einem Unterstrich <code>_</code> vom Modifikatornamen getrennt.
+                </li>
+                <li>
+                    Für boolesche Modifikatoren wird der Modifikatorwert weggelassen.
+                </li>
+            </list>
+        </chapter>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836297288, "HTML und CSS - Das umfassende Handbuch", Jürgen Wolf, 2023
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://en.bem.info/methodology/naming-convention/#naming-rules"/>, 2025-01-04 15:16
         </tip>
     </chapter>
 </topic>
