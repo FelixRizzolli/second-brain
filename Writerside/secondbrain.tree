@@ -171,6 +171,13 @@
             <toc-element topic="php.topic"/>
             <toc-element topic="pwa.topic"/>
             <toc-element topic="seo.topic"/>
+            <toc-element topic="web-other.topic">
+                <toc-element topic="web-performance.topic"/>
+                <toc-element topic="web-accessibility.topic"/>
+                <toc-element topic="web-formats.topic"/>
+                <toc-element topic="web-protocols.topic"/>
+                <toc-element topic="web-dev-tools.topic"/>
+            </toc-element>
         </toc-element>
         <toc-element topic="anwendungsentwicklung.topic">
             <toc-element topic="swift.topic"/>
