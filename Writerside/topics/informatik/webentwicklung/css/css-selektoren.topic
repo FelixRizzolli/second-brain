@@ -241,6 +241,45 @@
         </chapter>
 
         <chapter id="types-classselector" title="Klassenselektor">
+            <p>
+                Mit dem Klassenselektor werden HTML-Elemente ausgewählt, die eine bestimmte Klasse besitzen. Ein solcher
+                Klassenname kann in HTML mit dem globalen HTML-Attribut <code>class</code> für fast alle Elemente
+                vergeben werden:
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <section class="cards">...</section>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                Das HTML-Element mit dem Klassennamen <code>cards</code> kann in CSS über den Klassenselektor
+                angesprochen werden, indem vor dem Klassennamen ein Punkt gesetzt wird:
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    .cards { /* CSS-Regeln */ }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                Es können auch mehrere Klassen auf einmal verwendet werden, indem die einzelnen Klassen durch ein
+                Leerzeichen voneinander getrennt angegeben werden:
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="html">
+                <![CDATA[
+                    <article class="card card-text">...</article>
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
         </chapter>
 
         <chapter id="types-idselector" title="ID-Selektor">
@@ -259,6 +298,25 @@
         </chapter>
 
         <chapter id="types-combinatorselector" title="Kombinatoren">
+        </chapter>
+    </chapter>
+
+    <chapter id="naming-conventions" title="Namenskonventionen">
+        <chapter id="naming-conventions-characters" title="Erlaupte Zeichen für Selektoren">
+            <p>
+                Für den Namen des Selektors dürfen nur Groß- und Kleinbuchstaben(<code>a-z; A-Z</code>), Ziffern
+                (<code>0-9</code>) und der Bindestrich (<code>-</code>) sowie das Unterstrichzeichen (<code>_</code>)
+                verwendet werden.
+            </p>
+        </chapter>
+
+        <chapter id="Namensgebung" title="naming-conventions-naming">
+            <p>
+                Für die CSS-Klassen und IDs sollten sinnvolle und aussagekräftige Namen gewählt werden. Die Namen
+                sollten so gewählt werden, dass sie die Funktion des Elements beschreiben, damit sie bei einer
+                späteren Überarbeitung helfen, den Sinn anhand des Namens schneller nachzuvollziehen. Generell gilt,
+                dass Styling-Details aus dem Namen herausgehalten werden sollen.
+            </p>
         </chapter>
     </chapter>
 
