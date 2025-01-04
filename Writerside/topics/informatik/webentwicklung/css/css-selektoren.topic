@@ -331,6 +331,22 @@
         </chapter>
 
         <chapter id="types-universalselector" title="Universal-Selektor">
+            <p>
+                Der Universalselektor in CSS wird mit dem Sternchen (oder auch Asterisk – <code>*</code>) notiert. Er
+                wird verwendet, um alle Elemente auf einer Webseite auszuwählen und zu formatieren. Damit lässt sich
+                schnell und einfach eine bestimmte Regel auf alle Elemente einer Webseite anwenden, ohne dass jedes
+                Element manuell ausgewählt werden muss.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    * {
+                        font-family: Arial, sans-serif;
+                    }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
         </chapter>
 
         <chapter id="types-attributeselector" title="Attributselektor">
