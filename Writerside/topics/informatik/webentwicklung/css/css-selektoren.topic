@@ -3,13 +3,256 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="css-selektoren"
        title="Selektoren"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
     <link-summary rel="description"/>
 
     <!-- TODO -->
     <chapter id="description" title="Beschreibung">
-        ...
+        <p>
+            CSS Selektoren sind ein wichtiger Bestandteil von CSS. Sie ermöglichen es, HTML-Elemente gezielt
+            anzusprechen und zu formatieren. Es gibt verschiedene Arten von Selektoren.
+        </p>
+    </chapter>
+
+    <chapter id="overview" title="Übersicht">
+        <table style="header-row">
+            <tr>
+                <td>Selektor</td>
+                <td>Bezeichnung</td>
+                <td>Beschreibung</td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- @formatter:off -->
+                    <code-block lang="css">
+                        <![CDATA[
+                            element { ... }
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </td>
+                <td>
+                    <a href="css-selektoren.topic#types-typeselector">Typselektor</a>
+                </td>
+                <td>
+                    <p>
+                        Der Typselektor – manchmal auch (HTML-)Elementselektor – spricht die HTML-Elemente direkt mit
+                        dem Elementnamen an.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- @formatter:off -->
+                    <code-block lang="css">
+                        <![CDATA[
+                            .klname { ... }
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </td>
+                <td>
+                    <a href="css-selektoren.topic#types-classselector">Klassenselektor</a>
+                </td>
+                <td>
+                    <p>
+                        Element mit der Klasse <code>klname</code>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- @formatter:off -->
+                    <code-block lang="css">
+                        <![CDATA[
+                            #elemid { ... }
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </td>
+                <td>
+                    <a href="css-selektoren.topic#types-idselector">ID-Selektor</a>
+                </td>
+                <td>
+                    <p>
+                        Element mit der ID <code>elemid</code>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- @formatter:off -->
+                    <code-block lang="css">
+                        <![CDATA[
+                            * { ... }
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </td>
+                <td>
+                    <a href="css-selektoren.topic#types-universalselector">Universalselektor</a>
+                </td>
+                <td>
+                    <p>
+                        jedes Element
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- @formatter:off -->
+                    <code-block lang="css">
+                        <![CDATA[
+                            [attr] { ... }
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </td>
+                <td>
+                    <a href="css-selektoren.topic#types-attributeselector">Attributselektor</a>
+                </td>
+                <td>
+                    <p>
+                        Der Selektor in diesem Beispiel selektiert jedes Element, bei dem das Attribut
+                        <code>attr</code> vorhanden ist. Es gibt unterschiedlich Attributselektoren, die
+                        auf bestimmte Attributwerte abzielen.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- @formatter:off -->
+                    <code-block lang="css">
+                        <![CDATA[
+                            :visited { ... }
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </td>
+                <td>
+                    <a href="css-selektoren.topic#types-pseudoclassselector">Pseudoklassen-Selektoren</a>
+                </td>
+                <td>
+                    <p>
+                        CSS-Pseudoklassen ermöglichen es, Elemente zu formatieren, die sich in einem bestimmten Zustand
+                        befinden.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- @formatter:off -->
+                    <code-block lang="css">
+                        <![CDATA[
+                            ::before { ... }
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </td>
+                <td>
+                    <a href="css-selektoren.topic#types-pseudoelementselector">Pseudoelement-Selektoren</a>
+                </td>
+                <td>
+                    <p>
+                        CSS-Pseudoelemente ermöglichen es, bestimmte Teile eines Elements zu formatieren. Pseudoelemente
+                        werden in der Regel verwendet, um das Aussehen von Elementen zu verändern, ohne das
+                        HTML-Dokument zu verändern.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- @formatter:off -->
+                    <code-block lang="css">
+                        <![CDATA[
+                            p > span { ... }
+                        ]]>
+                    </code-block>
+                    <!-- @formatter:on -->
+                </td>
+                <td>
+                    <a href="css-selektoren.topic#types-combinatorselector">Kombinatoren</a>
+                </td>
+                <td>
+                    <p>
+                        Als Kombinatoren werden Zeichen zwischen zwei Selektoren bezeichnet, die die Beziehung zwischen
+                        den beiden Selektoren beschreiben.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter id="types" title="Selektortypen">
+        <chapter id="types-typeselector" title="Typselektor">
+            <p>
+                Der Typselektor – manchmal auch (HTML-)Elementselektor – spricht die HTML-Elemente direkt mit dem
+                Elementnamen an. Angewendet wird diese Regel auf alle Elemente desselben Typs im HTML-Dokument. Dabei
+                ist es irrelevant, an welcher Stelle im HTML-Dokument diese Elemente geschrieben sind, welcher Klasse
+                sie zugehören oder welchen Bezeichner sie haben.
+            </p>
+
+            <!-- @formatter:off -->
+            <compare>
+                <code-block lang="css">
+                    <![CDATA[
+                        h1 {
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 160%;
+                            color: blue;
+                        }
+
+                        h2 {
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 140%;
+                            color: blue;
+                        }
+
+                        h3 {
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 120%;
+                            color: blue;
+                        }
+                    ]]>
+                </code-block>
+                <code-block lang="css">
+                    <![CDATA[
+                        h1,h2,h3 {
+                            font-family: Arial, Helvetica, sans-serif;
+                            color: blue;
+                        }
+
+                        h1 { font-size: 160%; }
+                        h2 { font-size: 140%; }
+                        h3 { font-size: 120%; }
+                    ]]>
+                </code-block>
+            </compare>
+            <!-- @formatter:on -->
+        </chapter>
+
+        <chapter id="types-classselector" title="Klassenselektor">
+        </chapter>
+
+        <chapter id="types-idselector" title="ID-Selektor">
+        </chapter>
+
+        <chapter id="types-universalselector" title="Universal-Selektor">
+        </chapter>
+
+        <chapter id="types-attributeselector" title="Attributselektor">
+        </chapter>
+
+        <chapter id="types-pseudoclassselector" title="Pseudoklassen-Selektor">
+        </chapter>
+
+        <chapter id="types-pseudoelementselector" title="Pseudoelement-Selektor">
+        </chapter>
+
+        <chapter id="types-combinatorselector" title="Kombinatoren">
+        </chapter>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
