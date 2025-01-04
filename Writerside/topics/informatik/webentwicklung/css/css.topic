@@ -1400,7 +1400,25 @@
     </chapter>
 
     <chapter id="browser" title="CSS im Webbrowser analysieren">
-        <!-- TODO -->
+        <p>
+            Die Entwicklerwerkzeuge eines Browsers sind ein mächtiges Werkzeug, zum Analysieren und Debuggen von
+            Webseiten, welches jeder Browser mitbringt. Neben dem HTML kann hier auch dad CSS analysiert werden. Das ist
+            besonders hilfreich, wenn man die Auswirkungen von CSS-Regeln auf ein Element überprüfen möchte, oder
+            wenn man erfahren will, wie andere Webseiten ein bestimmtes Element gestaltet haben. Zu Testzwecken kann in
+            den Entwicklerwerkzeugen auch direkt CSS-Code eingegeben werden, um die Auswirkungen auf die Webseite zu
+            sehen. Auch können hier CSS-Regeln direkt bearbeitet, aktiviert oder deaktiviert werden. Die Änderungen sind
+            nur visueller Natur. Die Dateien bleiben unberührt.
+        </p>
+
+        <p>
+            Bei fast allen Webbrowsern werden die Entwicklerwerkzeuge über die Tastenkombination
+            <code>CTRL + SHIFT + I</code> oder <code>F12</code> oder auf dem Mac <code>CMD + OPTION + I</code> oder
+            <code>CMD + OPTION + C</code> oder <code>F12</code> geöffnet.
+        </p>
+
+        <tip>
+            Mehr zu den Entwicklerwerkzeugen im Browser hier: <a href="web-dev-tools.topic"/>
+        </tip>
     </chapter>
 
     <chapter id="frameworks" title="CSS Frameworks">

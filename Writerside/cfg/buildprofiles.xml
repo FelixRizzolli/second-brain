@@ -3,15 +3,5 @@
                xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd">
 
     <variables></variables>
-    <build-profile instance="hi">
-        <variables>
-            <noindex-content>true</noindex-content>
-        </variables>
-    </build-profile>
-    <build-profile instance="informatik">
-        <variables>
-            <noindex-content>true</noindex-content>
-        </variables>
-    </build-profile>
 
 </buildprofiles>
