@@ -58,7 +58,7 @@
                 </td>
                 <td>
                     <p>
-                        Element mit der Klasse <code>klname</code>
+                        Mit dem Klassenselektor werden HTML-Elemente ausgewählt, die eine bestimmte Klasse besitzen.
                     </p>
                 </td>
             </tr>
@@ -77,7 +77,7 @@
                 </td>
                 <td>
                     <p>
-                        Element mit der ID <code>elemid</code>
+                        Mit dem ID-Selektor werden HTML-Elemente ausgewählt, die eine bestimmte ID besitzen.
                     </p>
                 </td>
             </tr>
@@ -96,7 +96,7 @@
                 </td>
                 <td>
                     <p>
-                        jedes Element
+                        Mit dem Universalselektor können alle Elemente auf einer Webseite angesprochen werden.
                     </p>
                 </td>
             </tr>
@@ -115,9 +115,9 @@
                 </td>
                 <td>
                     <p>
-                        Der Selektor in diesem Beispiel selektiert jedes Element, bei dem das Attribut
-                        <code>attr</code> vorhanden ist. Es gibt unterschiedlich Attributselektoren, die
-                        auf bestimmte Attributwerte abzielen.
+                        Es gibt unterschiedlich Attributselektoren, die auf bestimmte Attributwerte abzielen. Der
+                        Selektor in diesem Beispiel selektiert jedes Element, bei dem das Attribut <code>attr</code>
+                        vorhanden ist.
                     </p>
                 </td>
             </tr>
@@ -312,6 +312,22 @@
         </chapter>
 
         <chapter id="types-idselector" title="ID-Selektor">
+            <p>
+                Auch IDs können in CSS als Selektor verwendet werden. Mit dem ID-Selektor werden, ähnlich wie mit dem
+                Klassenselektor, die HTML-Elemente ausgewählt, die eine bestimmte ID besitzen. Die ID wird im HTML-Code
+                im globalen HTML-Attribut <code>id</code> vergeben. Im Gegensatz zu Klassen (mit dem
+                <code>class</code>-Attribut) sind IDs immer einzigartige Elemente in einem HTML-Dokument, und daher darf
+                nur einem Element im gesamten Dokument eine bestimmte ID zugewiesen werden. Ein ID-Selektor wird in CSS
+                mit einem Hash-Zeichen <code>#</code> vor dem ID-Namen angegeben:
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    #cards { /* CSS-Regeln */ }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
         </chapter>
 
         <chapter id="types-universalselector" title="Universal-Selektor">
