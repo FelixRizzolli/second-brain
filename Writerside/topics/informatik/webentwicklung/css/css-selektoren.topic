@@ -194,6 +194,11 @@
                 sie zugehören oder welchen Bezeichner sie haben.
             </p>
 
+            <p>
+                In folgendem Beispiel werden Typselektoren für Überschriften verwendet. In der zweiten Variante werden
+                die Selektoren zusammengefasst.
+            </p>
+
             <!-- @formatter:off -->
             <compare>
                 <code-block lang="css">
@@ -219,7 +224,9 @@
                 </code-block>
                 <code-block lang="css">
                     <![CDATA[
-                        h1,h2,h3 {
+                        h1,
+                        h2,
+                        h3 {
                             font-family: Arial, Helvetica, sans-serif;
                             color: blue;
                         }
