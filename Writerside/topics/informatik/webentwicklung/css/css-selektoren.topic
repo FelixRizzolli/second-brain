@@ -115,9 +115,9 @@
                 </td>
                 <td>
                     <p>
-                        Es gibt unterschiedlich Attributselektoren, die auf bestimmte Attributwerte abzielen. Der
-                        Selektor in diesem Beispiel selektiert jedes Element, bei dem das Attribut <code>attr</code>
-                        vorhanden ist.
+                        Der Attributselektor wird verwendet, um HTML-Elemente nach ihren HTML-Attributen auszuwählen.
+                        Hierbei gibt es die Möglichkeit, die Präsenz eines Attributs oder den darin enthaltenen Wert zu
+                        überprüfen. Zusätzlich gibt es noch die Möglichkeit der Teilübereinstimmung von Attributwerten.
                     </p>
                 </td>
             </tr>
@@ -350,6 +350,284 @@
         </chapter>
 
         <chapter id="types-attributeselector" title="Attributselektor">
+            <p>
+                Der Attributselektor wird verwendet, um HTML-Elemente nach ihren HTML-Attributen auszuwählen. Hierbei
+                gibt es die Möglichkeit, die Präsenz eines Attributs oder den darin enthaltenen Wert zu überprüfen.
+                Zusätzlich gibt es noch die Möglichkeit der Teilübereinstimmung von Attributwerten.
+            </p>
+
+            <note>
+                <p>
+                    <b>
+                        Attributwerte mit einer Ziffer und Attributwerte ohne Wert
+                    </b>
+                </p>
+
+                <p>
+                    Wenn der Attributwert mit einer Ziffer beginnt (z.B. <code>[title=8tung]</code>), dann müssen Sie
+                    solche Sonderzeichen zwischen doppelten Anführungszeichen notieren (z.B.
+                    <code>[title="8tung"]</code>).
+                </p>
+
+                <p>
+                    Des Weiteren gibt es Attribute, denen in HTML kein Wert zugewiesen werden muss, wie z.B. beim
+                    HTML-Formularelement zum Abhaken bzw. Auswählen einer Option:
+                </p>
+
+                <!-- @formatter:off -->
+                <code-block lang="css">
+                    <![CDATA[
+                        <input type="checkbox" checked>
+                    ]]>
+                </code-block>
+                <!-- @formatter:on -->
+
+                <p>
+                    Wird das <code>checked</code>-Attribut in dieser Form verwendet, erhält es trotzdem eine leere
+                    Zeichenkette, weshalb die Attributselektoren in Form von <code>[checked=""]</code>,
+                    <code>[checked~=""]</code> oder <code>[checked|=""]</code> notiert werden sollten.
+                </p>
+            </note>
+
+            <table>
+                <tr>
+                    <td>Bezeichnung</td>
+                    <td>Beschreibung</td>
+                    <td>CSS Beispiel</td>
+                    <td>HTML Beispiel</td>
+                    <td>Beispiel Beschreibung</td>
+                </tr>
+                <tr>
+                    <td>
+                        Attributselektor Präsenz
+                    </td>
+                    <td>
+                        HTML-Elemente, die ein bestimmtes HTML-Attribut besitzen
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                [title] {
+                                    text-decoration: none;
+                                    font-weight: 800;
+                                    color: blue;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="html">
+                            <![CDATA[
+                                <p>Hier geht es zu einer Verlagswebsite guter Bücher:
+                                    <a href="http://www.rheinwerk-verlag.de/"
+                                       title="Zur Verlagswebsite">Rheinwerk Verlag</a>
+                                </p>
+                                <p title="Ein Absatz mit title">
+                                    Dieser Absatz hat auch ein title-Attribut.
+                                </p>
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Jedes Element, bei dem das Attribut <code>title</code> vorhanden ist.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Attributselektor (Attributwert)
+                    </td>
+                    <td>
+                        HTML-Elemente, deren Attribute einen bestimmten Wert Enthalten.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                button[type=submit] {
+                                    margin-top: 1em;
+                                    width: 150px;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="html">
+                            <![CDATA[
+                                <button type="submit">Absenden</button>
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Jedes <code>button</code>Element, bei dem das Attribut <code>type</code> den Wert
+                        <code>submit</code> hat.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Attributselektor (Attributwert)
+                    </td>
+                    <td>
+                        HTML-Elemente, deren Attribute ein alleinstehendes Wort, getrennt durch mindestens ein
+                        Leerzeichen, enthalten.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                [title~=Pflicht] {
+                                    text-decoration: underline;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="html">
+                            <![CDATA[
+                                <label title="Diese Angabe ist Pflicht" for="name">Name:</label>
+                                <label title="Es ist Pflicht, diese Angabe zu machen" for="telefon">
+                                    Telefon:
+                                </label>
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Jedes Element, bei dem das Attribut <code>title</code> das Wort <code>Pflicht</code> enthält.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Attributselektor (Attributwert)
+                    </td>
+                    <td>
+                        HTML-Elemente, deren Attributwert am Anfang ein durch einen Bindestrich getrennten
+                        Zeichenfolge steht (wie es z.B. bei einer Sprachdefinition des <code>hreflang</code>- oder
+                        <code>lang</code>-Attributs der Fall ist).
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                [class|=test] {
+                                    padding: 5px;
+                                    background-color: black;
+                                    color: white;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="html">
+                            <![CDATA[
+                                <button class="test-01" type="submit">Absenden</button>
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Jedes Element, bei dem der Wert des Attributs <code>class</code> mit <code>test</code> beginnt.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Attributselektor (Teilwert)
+                    </td>
+                    <td>
+                        HTML-Elemente, deren Attributwert einen bestimmten Teilwert beginnt.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                [attr^=wert]
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="html">
+                            <![CDATA[
+                                <elem attr="werter">
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Jedes Element, bei dem der Wert des Attributs <code>attr</code> mit <code>wert</code> beginnt.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Attributselektor (Teilwert)
+                    </td>
+                    <td>
+                        HTML-Elemente, deren Attributwert einen bestimmten Teilwert endet.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                [attr$=wert]
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="html">
+                            <![CDATA[
+                                <elem attr="endwert">
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Jedes Element, bei dem der Wert des Attributs <code>attr</code> mit <code>wert</code> endet.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Attributselektor (Teilwert)
+                    </td>
+                    <td>
+                        HTML-Elemente, deren Attributwert einen bestimmten Teilwert enthält.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                [attr*=wert]
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="html">
+                            <![CDATA[
+                                <elem attr="bewertung">
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Jedes Element, bei dem der Wert des Attributs <code>attr</code> den Teilwert <code>wert</code>
+                        enthält.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter id="types-pseudoclassselector" title="Pseudoklassen-Selektor">
