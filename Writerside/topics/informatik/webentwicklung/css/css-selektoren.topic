@@ -389,7 +389,7 @@
                 </p>
             </note>
 
-            <table>
+            <table style="header-row">
                 <tr>
                     <td>Bezeichnung</td>
                     <td>Beschreibung</td>
@@ -631,6 +631,917 @@
         </chapter>
 
         <chapter id="types-pseudoclassselector" title="Pseudoklassen-Selektor">
+            <p>
+                CSS-Pseudoklassen ermöglichen es, Elemente zu formatieren, die sich in einem bestimmten Zustand
+                befinden, wie z.B. <code>:hover</code> oder <code>:active</code>. Pseudoklassen werden in CSS mit einem
+                Doppelpunkt <code>:</code> vor dem Namen der Pseudoklasse notiert.
+            </p>
+
+            <table style="header-row">
+                <tr>
+                    <td>Selektor</td>
+                    <td>Bezeichnung</td>
+                    <td>Auswahl</td>
+                    <td>Beispiel</td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :link
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Link-Pseudoklasse
+                    </td>
+                    <td>
+                        Wählt einen unbesuchten Link aus.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                a:link{
+                                    color: blue;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :visited
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Link-Pseudoklasse
+                    </td>
+                    <td>
+                        Wählt einen besuchten Link aus.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                a:visited{
+                                    color: gray;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :any-link
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Link-Pseudoklasse
+                    </td>
+                    <td>
+                        Ist eine etwas neuere Pseudoklasse. Sie wählt alle Links aus, unabhängig davon, ob sie besucht
+                        oder unbesucht sind. Es werden alle Elemente ausgewählt, die ein <code>href</code>-Attribut
+                        enthalten.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                .articlestyle a:any-link {
+                                    color: grey;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :hover
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        dynamische Pseudoklasse
+                    </td>
+                    <td>
+                        Das Element, das den Fokus hat (z.B. Eingabefeld mit aktivem Cursor). Für Smartphones oder
+                        Tablets gibt es kein <code>:hover</code>, also dass eine Maus über einem Element steht.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                a:hover {
+                                    color: red;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :focus
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        dynamische Pseudoklasse
+                    </td>
+                    <td>
+                        Das Element, das den Fokus hat (z.B. Eingabefeld mit aktivem Cursor)
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                input:focus{
+                                    background-color: yellow;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :active
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        dynamische Pseudoklasse
+                    </td>
+                    <td>
+                        Das Element, das gerade aktiv ist (z.B. ein Link, der gerade angeklickt wird)
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                a:active {
+                                    color: green;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :enabled
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Für Formularelemente
+                    </td>
+                    <td>
+                        Ein Formularelement, das als anwählbar bzw. freigegeben markiert ist.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                input:enabled {
+                                    background-color: white;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :disabled
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Für Formularelemente
+                    </td>
+                    <td>
+                        Ein Formularelement, das als nicht anwählbar bzw. gesperrt markiert ist.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                input:disabled {
+                                    background-color: lightgrey;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :checked
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Für Formularelemente
+                    </td>
+                    <td>
+                        Ein Formularelement, das als ausgewählt markiert ist.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                input:checked {
+                                    background-color: lightblue;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :required
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Für Formularelemente
+                    </td>
+                    <td>
+                        Ein Formularelement, das als Pflichtfeld markiert ist.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                input:required {
+                                    border: 1px solid red;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :valid
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Für Formularelemente
+                    </td>
+                    <td>
+                        Ein Formularelement, das als gültig markiert ist z.B. für die Eingabe einer korrekten
+                        E-Mail-Adresse.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                input:valid {
+                                    border: 1px solid green;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :invalid
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Für Formularelemente
+                    </td>
+                    <td>
+                        Ein Formularelement, das als ungültig markiert ist z.B. für die Eingabe einer falschen
+                        E-Mail-Adresse.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                input:invalid {
+                                    border: 1px solid red;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :in-range
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Für Formularelemente
+                    </td>
+                    <td>
+                        Für Formularelemente mit einem Wert innerhalb eines bestimmten Bereichs. Mit den HTML-Attributen
+                        <code>min</code> und <code>max</code> kann ein Bereich definiert werden.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                input:in-range {
+                                    background-color: lightgreen;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :out-range
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Für Formularelemente
+                    </td>
+                    <td>
+                        Für Formularelemente mit einem Wert außerhalb eines bestimmten Bereichs. Mit den HTML-Attributen
+                        <code>min</code> und <code>max</code> kann ein Bereich definiert werden.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                input:out-range {
+                                    background-color: lightcoral;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :target
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Für Verweisziele
+                    </td>
+                    <td>
+                        Elemente, die das Ziel eines Verweises sind. Die CSS-Regel, die damit notiert wird, wird erst
+                        aktiv, wenn das Verweisziel angesprungen wurde. Zum Aktivieren des Verweisziels kann neben einem
+                        gewöhnlichen Anker auch eine ID verwendet werden.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                #section1:target {
+                                    background-color: lightblue;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :root
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Struktur-Pseudoklassen
+                    </td>
+                    <td>
+                        Das Wurzelelement.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :root {
+                                    font-size: 16px;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :empty
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Struktur-Pseudoklassen
+                    </td>
+                    <td>
+                        Leere Elemente
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                p:empty {
+                                    display: none;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :first-child
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Struktur-Pseudoklassen
+                    </td>
+                    <td>
+                        Ein Element, das das erste Kind eines übergeordneten Elements ist.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                p:first-child {
+                                    font-weight: bold;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :last-child
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Struktur-Pseudoklassen
+                    </td>
+                    <td>
+                        Ein Element, das das letzte Kind eines übergeordneten Elements ist.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                p:last-child {
+                                    font-style: italic;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :nth-child(n)
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Struktur-Pseudoklassen
+                    </td>
+                    <td>
+                        Ein Element, das das <code>n</code>-te Kind eines übergeordneten Elements ist. Für
+                        <code>n</code> sind auch die Werte <code>odd</code> (ungerade Zahlen) und <code>even</code>
+                        (gerade Zahlen) möglich.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                p:nth-child(2n) {
+                                    color: red;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :nth-last-child(n)
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Struktur-Pseudoklassen
+                    </td>
+                    <td>
+                        Wie <code>:nth-child(n)</code>, nur dass die Zählung von hinten beginnt.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                p:nth-last-child(2n) {
+                                    color: blue;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :only-child
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Struktur-Pseudoklassen
+                    </td>
+                    <td>
+                        Ein Element, das das einzige Kind eines übergeordneten Elements ist.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                p:only-child {
+                                    font-size: 1.5em;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :first-of-type
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Struktur-Pseudoklassen
+                    </td>
+                    <td>
+                        Ein Element, das das erste Element eines bestimmten Typs ist.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                p:first-of-type {
+                                    font-weight: bold;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :last-of-type
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Struktur-Pseudoklassen
+                    </td>
+                    <td>
+                        Ein Element, das das letzte Element eines bestimmten Typs ist.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                p:last-of-type {
+                                    font-style: italic;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :nth-of-type(n)
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Struktur-Pseudoklassen
+                    </td>
+                    <td>
+                        Ein Element, das das <code>n</code>-te gleichartige Kind-Element eines Eltern-Elements ist.
+                        Für <code>n</code> sind auch die Werte <code>odd</code> (ungerade Zahlen) und <code>even</code>
+                        (gerade Zahlen) möglich.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                p:nth-of-type(2n) {
+                                    color: red;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :nth-last-of-type(n)
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Struktur-Pseudoklassen
+                    </td>
+                    <td>
+                        Wie <code>:nth-of-type(n)</code>, nur dass die Zählung von hinten beginnt.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                p:nth-last-of-type(2n) {
+                                    color: blue;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :only-of-type
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Struktur-Pseudoklassen
+                    </td>
+                    <td>
+                        Ein Element, das das einzige gleichartige Kind-Element eines Eltern-Elements ist.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                p:only-of-type {
+                                    font-size: 1.5em;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :lang(xx)
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Sprach-Pseudoklasse
+                    </td>
+                    <td>
+                        Selektiert Elemente, bei denen die Sprache mit dem Attribut <code>lang="xx"</code> versehen
+                        wurde.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                p:lang(de) {
+                                    font-family: Arial, sans-serif;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :not(s)
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Negations-Pseudoklasse
+                    </td>
+                    <td>
+                        Selektiert Elemente, auf die Selektor <code>s</code> nicht zutrifft.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                a:not(.external) {
+                                    color: red;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :is(s1,s2, ...)
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Matches-Pseudoklasse
+                    </td>
+                    <td>
+                        Selektiert alle Elemente, auf die Selektor <code>s1</code> und <code>s2 ...</code> zutreffen.
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                h1:is(.class1,.class2) {
+                                    color: red;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                :where(s1,s2, ...)
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Matches-Pseudoklasse
+                    </td>
+                    <td>
+                        wie <code>:is()</code>, nur mit weniger Spezifität
+                    </td>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                h1:where(.class1,.class2) {
+                                    color: red;
+                                }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                </tr>
+            </table>
+
+            <note>
+                Dies sind nur einige Beispiele, es gibt noch viele weitere Pseudoklassen, die in CSS verwendet werden
+                können. Die Pseudoklassen können auch miteinander kombiniert werden, um noch spezifischere Selektoren
+                zu erstellen.
+            </note>
+
+            <note>
+                Wichtig ist, die Reihenfolge der Pseudoklassen-Selektoren einzuhalten, also z.B. <code>:link</code>,
+                <code>:visited:</code>, <code>:hover</code>, <code>:focus</code> und <code>:active</code>, da ansonsten
+                <code>:visited</code> die Pseudoklasse <code>:hover</code> überschreibt. Gibt es mal Probleme damit,
+                dass eine dynamische Pseudoklasse nicht so funktioniert wie gedacht, liegt das vermutlich daran, dass
+                eine Pseudoklasse eine andere überschrieben hat. In dem Fall sollte die Reihenfolge der Pseudoklassen
+                überprüft werden.
+            </note>
         </chapter>
 
         <chapter id="types-pseudoelementselector" title="Pseudoelement-Selektor">
