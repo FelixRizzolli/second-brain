@@ -1545,6 +1545,118 @@
         </chapter>
 
         <chapter id="types-pseudoelementselector" title="Pseudoelement-Selektor">
+            <p>
+                Pseudoelemente sind spezielle CSS-Selektoren, die Elemente ansprechen, die nicht direkt als Elemente
+                in der Struktur des HTML-Dokuments vorhanden sind, sondern sich erst noch durch den Aufbau mit HTML
+                ergeben oder mit der CSS-Eigenschaft <code>content</code> generiert werden.
+            </p>
+
+            <table>
+                <tr>
+                    <td>Selektor</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                ::first-letter
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Selektiert das erste Zeichen in einer Zeile.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                ::first-line
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Selektiert die erste Zeile in einem Absatz.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                ::selection
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Selektiert einen vom Anwender markierten Text.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                ::placeholder
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Selektiert den <code>placeholder</code>-Text von <code>input</code>- und
+                        <code>textarea</code>-Elementen
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                ::before
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Fügt vor einem Element einen Inhalt ein und formatiert diesen auch.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                ::after
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Fügt nach einem Element einen Inhalt ein und formatiert diesen.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                ::marker
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Fügt vor einem Element einen Inhalt ein und formatiert diesen auch. Das Element gilt nur in
+                        Verbindung mit <code>&lt;li&gt;</code> und <code>&lt;summary&gt;</code>.
+                    </td>
+                </tr>
+            </table>
         </chapter>
 
         <chapter id="types-combinatorselector" title="Kombinatoren">
