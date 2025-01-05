@@ -1660,6 +1660,135 @@
         </chapter>
 
         <chapter id="types-combinatorselector" title="Kombinatoren">
+            <p>
+                Als Kombinator bezeichnet man ein Zeichen zwischen zwei Selektoren, das diese Selektoren miteinander
+                verkettet. Hierbei bildet der erste Selektor die Bedingung und der zweite Selektor das Ziel, das
+                ausgewählt werden soll, wenn die Bedingung zutrifft. In CSS gibt es vier solcher Kombinatoren.
+            </p>
+
+            <table style="header-row">
+                <tr>
+                    <td>Kombinator</td>
+                    <td>Bezeichnung</td>
+                    <td>Bedeutung &amp; Beispiel</td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                E F
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Nachfahrenselektor (<i>descendant combinator</i>)
+                    </td>
+                    <td>
+                        <p>
+                            F wird selektiert, wenn es ein Nachfahre eines E-Elements ist.
+                        </p>
+
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                article p { background: lightblue; }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+
+                        <img alt="Nachfahrenselektor Beispiel" src="css-selector-combinator-descendant.png"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                E > F
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Kindselektor (<i>child combinator</i>)
+                    </td>
+                    <td>
+                        <p>
+                            F wird nur selektiert, wenn es ein direkter Nachfahre eines E-Elements ist.
+                        </p>
+
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                article > p { background: lightblue; }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+
+                        <img alt="Kindselektor Beispiel" src="css-selector-combinator-child.png"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                E + F
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Nachbarselektor (<i>adjacent sibling combinator</i>)
+                    </td>
+                    <td>
+                        <p>
+                            F wird nur selektiert, wenn es direkt nach E vorkommt (im selben Eltern-Element).
+                        </p>
+
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                article + p { background: lightblue; }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+
+                        <img alt="Nachbarselektor Beispiel" src="css-selector-combinator-adjacent-sibling.png"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                E ~ F
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+                    </td>
+                    <td>
+                        Geschwisterselektor (<i>general sibling combinator</i>)
+                    </td>
+                    <td>
+                        <p>
+                            F wird nur selektiert, wenn es nach E vorkommt (im selben Eltern-Element).
+                        </p>
+
+                        <!-- @formatter:off -->
+                        <code-block lang="css">
+                            <![CDATA[
+                                article ~ p { background: lightblue; }
+                            ]]>
+                        </code-block>
+                        <!-- @formatter:on -->
+
+                        <img alt="Geschwisterselektor Beispiel" src="css-selector-combinator-general-sibling.png"/>
+                    </td>
+                </tr>
+            </table>
         </chapter>
     </chapter>
 
