@@ -153,6 +153,29 @@
                 Schlüsselwort wie <code>initial</code> und setzt den Standardwert der CSS-Eigenschaft.
             </p>
         </chapter>
+
+        <chapter id="die_css_eigenschaft_raquo_all_laquo_" title="Die CSS-Eigenschaft &raquo;all&laquo;">
+            <p>
+                Die CSS-Eigenschaft <code>all</code> ist eine Kurzschreibweise, mit der alle CSS-Eigenschaften des
+                Eltern-Elements mit <code>inherit</code> vererbt oder mit <code>initial</code> auf den Standardwert
+                zurückgesetzt werden können. Auch <code>unset</code> kann mit <code>all</code> verwendet werden.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    .p_outside {
+                        all: initial;
+                        display: block;
+                        padding: 3px;
+                        margin: 5px;
+                        color: silver;
+                        background-color: #e03943;
+                    }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+        </chapter>
     </chapter>
 
     <chapter id="cascading" title="Kaskade">
