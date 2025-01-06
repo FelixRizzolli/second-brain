@@ -3,13 +3,85 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="css-inheritance-cascading"
        title="Vererbung und Kaskade"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
     <link-summary rel="description"/>
 
     <!-- TODO -->
     <chapter id="description" title="Beschreibung">
-        ...
+        Das Thema Vererbung beschreibt in CSS wie, wann und ob eine CSS-Eigenschaft an einer Stelle definiert und
+        weitergegeben wird. Neben der Vererbung gibt es auch die Kaskade, die beschreibt, wie CSS-Eigenschaften
+        überschrieben werden können.
+    </chapter>
+
+    <chapter id="Vererbung in CSS" title="inheritance">
+        <p>
+            Durch die Vererbung in CSS ist es möglich, dass CSS-Eigenschaften wie Farben, Schriftart und Schriftgröße
+            einmalig an einer zentralen Stelle definiert werden, anstatt wieder und wieder jedem einzelnen Element
+            dieselben Eigenschaften zuzuweisen.
+        </p>
+
+        <p>
+            Es werden nicht alle Eigenschaften vererbt, da es bei einigen Eigenschaften keinen Sinn macht. Folgende
+            CSS-Eigenschaften werden beispielsweise nicht vererbt:
+        </p>
+
+        <list>
+            <li>
+                <code>background</code>,
+                <code>border</code>
+            </li>
+            <li>
+                <code>width</code>,
+                <code>height</code>,
+                <code>padding</code>,
+                <code>border</code>,
+                <code>margin</code>
+            </li>
+            <li>
+                <code>position</code>,
+                <code>top</code>,
+                <code>left</code>,
+                <code>right</code>,
+                <code>bottom</code>
+            </li>
+            <li>
+                <code>float</code>,
+                <code>clear</code>
+            </li>
+        </list>
+
+        <note>
+            <p>
+                <b>
+                    Hintergrund(farbe) wird nicht weitervererbt!
+                </b>
+            </p>
+
+            <p>
+                Auch wenn es den Anschein hat, wird die Hintergrundfarbe (z.B. <code>background: gray;</code>) nicht
+                (!) weitervererbt. Dass folglich trotzdem alles mit grauer Hintergrundfarbe belegt ist, liegt daran,
+                dass der Standardwert transparent (durchsichtig) ist. Daher wird hinter allen Elementen die graue Farbe
+                des <code>body</code>-Elements angezeigt.
+            </p>
+        </note>
+
+        <chapter id="inhericance-inherit" title="Vererbung erzwingen mit &raquo;inherit&laquo;">
+
+        </chapter>
+
+        <chapter id="inhericance-initial" title="Vererbung erzwingen mit &raquo;initial&laquo;">
+
+        </chapter>
+
+        <chapter id="inhericance-unset" title="Vererbung erzwingen mit &raquo;unset&laquo;">
+
+        </chapter>
+    </chapter>
+
+    <chapter id="cascading" title="Kaskade">
+
     </chapter>
 
     <chapter id="quellen" title="Quellen">
