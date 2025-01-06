@@ -145,7 +145,13 @@
         </chapter>
 
         <chapter id="inhericance-unset" title="Mit &raquo;unset&laquo; Vererben erzwingen oder Wert wiederherstellen">
-            
+            <p>
+                Das Schlüsselwort <code>unset</code> bietet einen Mittelweg zwischen <code>inherit</code> und
+                <code>initial</code>. Wird es für eine CSS-Eigenschaft verwendet, verhält es sich wie
+                <code>inherit</code> und erbt den Wert für die entsprechende CSS-Eigenschaft des Eltern-Elements. Gibt
+                es hier kein Eltern-Element mit einem gesetzten Wert für diese CSS-Eigenschaft, verhält sich dieses
+                Schlüsselwort wie <code>initial</code> und setzt den Standardwert der CSS-Eigenschaft.
+            </p>
         </chapter>
     </chapter>
 
