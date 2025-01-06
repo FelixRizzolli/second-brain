@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic id="css-selektoren"
+<topic help-id="css-selektoren"
+       id="css-selectors"
        title="Selektoren"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
@@ -34,7 +35,7 @@
                     <!-- @formatter:on -->
                 </td>
                 <td>
-                    <a href="css-selektoren.topic#types-typeselector">Typselektor</a>
+                    <a href="css-selectors.topic#types-typeselector">Typselektor</a>
                 </td>
                 <td>
                     <p>
@@ -54,7 +55,7 @@
                     <!-- @formatter:on -->
                 </td>
                 <td>
-                    <a href="css-selektoren.topic#types-classselector">Klassenselektor</a>
+                    <a href="css-selectors.topic#types-classselector">Klassenselektor</a>
                 </td>
                 <td>
                     <p>
@@ -73,7 +74,7 @@
                     <!-- @formatter:on -->
                 </td>
                 <td>
-                    <a href="css-selektoren.topic#types-idselector">ID-Selektor</a>
+                    <a href="css-selectors.topic#types-idselector">ID-Selektor</a>
                 </td>
                 <td>
                     <p>
@@ -92,7 +93,7 @@
                     <!-- @formatter:on -->
                 </td>
                 <td>
-                    <a href="css-selektoren.topic#types-universalselector">Universalselektor</a>
+                    <a href="css-selectors.topic#types-universalselector">Universalselektor</a>
                 </td>
                 <td>
                     <p>
@@ -111,7 +112,7 @@
                     <!-- @formatter:on -->
                 </td>
                 <td>
-                    <a href="css-selektoren.topic#types-attributeselector">Attributselektor</a>
+                    <a href="css-selectors.topic#types-attributeselector">Attributselektor</a>
                 </td>
                 <td>
                     <p>
@@ -132,7 +133,7 @@
                     <!-- @formatter:on -->
                 </td>
                 <td>
-                    <a href="css-selektoren.topic#types-pseudoclassselector">Pseudoklassen-Selektoren</a>
+                    <a href="css-selectors.topic#types-pseudoclassselector">Pseudoklassen-Selektoren</a>
                 </td>
                 <td>
                     <p>
@@ -152,7 +153,7 @@
                     <!-- @formatter:on -->
                 </td>
                 <td>
-                    <a href="css-selektoren.topic#types-pseudoelementselector">Pseudoelement-Selektoren</a>
+                    <a href="css-selectors.topic#types-pseudoelementselector">Pseudoelement-Selektoren</a>
                 </td>
                 <td>
                     <p>
@@ -173,7 +174,7 @@
                     <!-- @formatter:on -->
                 </td>
                 <td>
-                    <a href="css-selektoren.topic#types-combinatorselector">Kombinatoren</a>
+                    <a href="css-selectors.topic#types-combinatorselector">Kombinatoren</a>
                 </td>
                 <td>
                     <p>
