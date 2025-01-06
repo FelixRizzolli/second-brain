@@ -99,7 +99,29 @@
         </warning>
 
         <chapter id="inhericance-inherit" title="Vererbung erzwingen mit &raquo;inherit&laquo;">
+            <p>
+                Ist es erforderlich, dass eine CSS-Eigenschaft, die normalerweise nicht vererbt wird, dennoch vererbt
+                werden soll, kann dies mit dem Schlüsselwort <code>inherit</code> erzwungen werden. Mit
+                <code>inherit</code> lässt sich nur einem Kind-Element eine Eigenschaft des Eltern-Elements vererben.
+            </p>
 
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    article {
+                        border: 4px inset darkgray;
+                        padding: 5px;
+                        background: lightblue;
+                        color: black;
+                    }
+
+                    p {
+                        border: inherit;
+                        background: lightblue;
+                    }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
         </chapter>
 
         <chapter id="inhericance-initial" title="Vererbung erzwingen mit &raquo;initial&laquo;">
