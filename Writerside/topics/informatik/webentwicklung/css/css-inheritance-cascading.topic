@@ -67,6 +67,37 @@
             </p>
         </note>
 
+        <warning>
+            <p>
+                <b>
+                    Achtung bei relativen Einheiten!
+                </b>
+            </p>
+
+            <p>
+                Bei der Vererbung von relativen Einheiten wie z.B. der Schriftgröße mit Prozentwerten
+                (<code>font-size: 90%;</code>) oder <code>em</code> (<code>font-size: 0.9em;</code>) kann es zu
+                überraschenden Änderungen kommen, weil einige Webbrowser diesen Wert für jedes Element erneut
+                anwenden, wenn bei weiteren Elementen ebenfalls ein <code>font-size</code> mit Prozentwerten oder
+                <code>em</code> definiert wird.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    body { font-size: 70%; }
+                    p { font-size: 70%; }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                In diesem Beispiel würde der Text in einem <code>p</code>-Element nur noch 49 % der ursprünglichen Größe
+                haben, da solche relativen Werte auf jedes Element kumulativ angewendet werden. Es wird nicht der im
+                Stylesheet definierte Wert, sondern der vom Webbrowser berechnete Wert weitervererbt.
+            </p>
+        </warning>
+
         <chapter id="inhericance-inherit" title="Vererbung erzwingen mit &raquo;inherit&laquo;">
 
         </chapter>
