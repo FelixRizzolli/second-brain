@@ -1854,6 +1854,82 @@
         </chapter>
     </chapter>
 
+    <chapter id="efficiency-performance" title="Effizienz &amp; Performance">
+        <p>
+            Im Prinzip können natürlich alle Selektoren verwendet werden, solange sie zum Ziel führen. Es gibt jedoch
+            einige Punkte, die bei Selektoren beachtet werden können, um Effizienz und Performance des CSS-Codes zu
+            verbessern.
+        </p>
+
+        <chapter id="performance" title="Performance">
+            <p>
+                Nicht jeder Selektor kann gleich schnell auf sein Element in der Dokumentstruktur zugreifen. Es gibt
+                hier einige Tipps und Tricks, um die Performance zu verbessern:
+            </p>
+
+            <list>
+                <li>
+                    <p>
+                        <b>Wenn möglich sollte auf Kombinatoren verzichtet werden</b>
+                    </p>
+
+                    <p>
+                        Einfache Selektoren sind in der Regel effizienter als eine Mischung aus mehreren Selektoren
+                        mit Kombinatoren. Beim Beispiel <code>.myarticle a { color: gray; }</code> wurde ein
+                        Nachfahren-Selektor verwendet. Der Webbrowser liest hierbei von <i>rechts nach links</i> und
+                        sucht erst alle <code>a</code>-Elemente und prüft dann, ob sie ein Nachfahre eines Elements mit
+                        der Klasse <code>.myarticle</code> sind. Bei sehr vielen Hyperlinks ist es viel effizienter den
+                        gewünschten <code>a</code>-Elementen direkt eine Klasse zu geben, worauf dann direkt mit einem
+                        Klassenselektor zugegriffen werden kann.
+                    </p>
+
+                    <p>
+                        Kombinatoren werden in der Praxis unnötig häufig verwendet und sollten mit etwas mehr Bedacht
+                        eingesetzt werden, da der Webbrowser lange und komplexe Kombinatoren erst auflösen muss, und
+                        das kostet den Webbrowser Reaktionszeit beim Rendern der Website.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>Sinnlose Selektoren</b>
+                    </p>
+
+                    <p>
+                        Bei einem Beispiel wie <code>.myarticle #special a { color: gray; }</code> kann auf dem
+                        Klassenselektor verzichtet werden, weil eine ID sowieso nur einmal in einem HTML-Dokument
+                        vorkommen darf.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>Universalselektor</b>
+                    </p>
+
+                    <p>
+                        Der Universalselektor <code>*</code> sollte nur im Notfall verwendet werden, da er alle
+                        Elemente eines HTML-Dokuments auswählt. Beim Beispiel <code>#special * { color: black; }</code>
+                        werden zunächst alle (!) Elemente des gesamten HTML-Dokuments durchsucht und erst anschließend
+                        alle Elemente, die sich in <code>#special</code> befinden.
+                    </p>
+                </li>
+            </list>
+        </chapter>
+
+        <chapter id="efficiency" title="Effizienz">
+            <p>
+                Mehrere Selektoren sind nicht nur Bremsen für den Webbrowser, sondern führen häufig auch zu komplexerem
+                CSS, was sich negativ bemerkbar macht, wenn man die ein oder andere Angabe überschreiben möchte.
+            </p>
+
+            <p>
+                Man sollte beforzugt mit CSS-Klassen arbeiten. Damit hat man zum einen ordentlich und einfach zu
+                bearbeitendes CSS und man muss sich zum anderen in der Regel keine Gedanken um das Thema Performance
+                machen. Es gibt aber immer noch Fälle, in denen es sinnvoll ist, auf spezielle Selektoren oder
+                Kombinatoren zurückzugreifen.
+            </p>
+        </chapter>
+    </chapter>
+
     <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
