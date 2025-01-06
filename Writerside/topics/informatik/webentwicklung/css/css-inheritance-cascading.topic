@@ -124,12 +124,28 @@
             <!-- @formatter:on -->
         </chapter>
 
-        <chapter id="inhericance-initial" title="Vererbung erzwingen mit &raquo;initial&laquo;">
+        <chapter id="inhericance-initial" title="Mit &raquo;initial&laquo; den Standardwert wiederherstellen">
+            <p>
+                Wird der Wert <code>initial</code> einer CSS-Eigenschaft zuweisen, wird der in der CSS-Spezifikation
+                vorgegebene Standardwert (oder auch Ausgangspunkt) der Eigenschaft verwendet. Der Wert
+                <code>initial</code> kann jeder CSS-Eigenschaft zugewiesen werden.
+            </p>
 
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    p {
+                        border: inherit;
+                        background: unset;
+                        color: initial;
+                    }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
         </chapter>
 
-        <chapter id="inhericance-unset" title="Vererbung erzwingen mit &raquo;unset&laquo;">
-
+        <chapter id="inhericance-unset" title="Mit &raquo;unset&laquo; Vererben erzwingen oder Wert wiederherstellen">
+            
         </chapter>
     </chapter>
 
