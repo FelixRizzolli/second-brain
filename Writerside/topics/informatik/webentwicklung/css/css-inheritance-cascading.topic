@@ -7,7 +7,7 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
     <link-summary rel="description"/>
-    
+
     <chapter id="description" title="Beschreibung">
         Das Thema Vererbung beschreibt in CSS wie, wann und ob eine CSS-Eigenschaft an einer Stelle definiert und
         weitergegeben wird. Neben der Vererbung gibt es auch die Kaskade, die beschreibt, wie CSS-Eigenschaften
@@ -178,7 +178,89 @@
     </chapter>
 
     <chapter id="cascading" title="Kaskade">
+        <p>
+            Die CSS-Kaskade beschreibt, wie CSS-Eigenschaften überschrieben werden können und wie Konflikte zwischen
+            verschiedenen Stylesheets gelöst werden. Ein Dokument kann von mehreren Stylesheets formatiert werden, die
+            aus verschiedenen Quellen stammen. Dies ermöglicht es, dass ein Stylesheet auf einem anderen aufbaut und so
+            die Arbeit erleichtert.
+        </p>
 
+        <p>
+            Durch die Vielzahl an Möglichkeiten, Stylesheet-Anweisungen einzubinden und zu kombinieren, können Konflikte
+            entstehen, wenn dieselbe CSS-Eigenschaft mit unterschiedlichen Werten belegt wird. In solchen Fällen
+            entscheidet ein Regelsystem, welche der konkurrierenden Stilanweisungen letztendlich auf ein Element
+            angewendet wird.
+        </p>
+
+        <chapter id="cascading-system" title="Regelsystem der Kaskade">
+            <list type="decimal">
+                <li>
+                    <p>
+                        Sortierung nach Herkunft und Wichtigkeit
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            Benutzerstylesheet mit <code>!important</code>
+                        </li>
+                        <li>
+                            Autorenstylesheet mit <code>!important</code>
+                        </li>
+                        <li>
+                            Autorenstylesheet ohne <code>!important</code>
+                        </li>
+                        <li>
+                            Benutzerstylesheet ohne <code>!important</code>
+                        </li>
+                    </list>
+                </li>
+                <li>
+                    <p>
+                        Bei gleichwertigen Angaben innerhalb von Stylesheets wird die Spezifität berechnet und
+                        entsprechend der Gewichtung der Selektor mit einem höher berechneten Wert verwendet.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Bei Angaben, die dieselbe Spezifität enthalten, erhält die zuletzt aufgetretene Anweisung den
+                        Vorrang.
+                    </p>
+                </li>
+            </list>
+        </chapter>
+
+        <chapter id="cascading-important" title="Das &raquo;!important&laquo; Schlüsselwort">
+            <p>
+                Mit dem Schlüsselwort <code>!important</code> kann die Priorität einer CSS-Deklaration erhöht werden,
+                sodass diese Eigenschaft immer Vorrang vor anderen Deklarationen hat und nicht von einer folgenden
+                Deklaration überschrieben werden kann. Das Schlüsselwort <code>!important</code> wird direkt nach dem
+                Wert einer CSS-Eigenschaft angegeben.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    p {
+                        color: red !important;
+                    }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <warning>
+                <p>
+                    <b>
+                        Wenn Möglich sollte auf &raquo;!important&laquo; verzichtet werden
+                    </b>
+                </p>
+
+                <p>
+                    Bei der Verwendung von <code>!important</code> wird die Reihenfolge der Deklarationen von CSS-Regeln
+                    außer Kraft gesetzt. Dies macht das Stylesheet recht komplex und erschwert auch die Fehlersuche ein
+                    wenig.
+                </p>
+            </warning>
+        </chapter>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
