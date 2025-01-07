@@ -8,7 +8,6 @@
     <show-structure depth="2" for="chapter,procedure"/>
     <link-summary rel="description"/>
 
-    <!-- TODO -->
     <chapter id="was-ist-css" title="Was ist CSS?">
         <p id="description">
             <b>CSS (Cascading Style Sheets)</b> ist eine Gestaltungssprache, die verwendet wird, um das Layout und

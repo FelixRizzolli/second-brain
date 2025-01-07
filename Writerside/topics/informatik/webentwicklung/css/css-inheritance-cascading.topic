@@ -7,15 +7,14 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
     <link-summary rel="description"/>
-
-    <!-- TODO -->
+    
     <chapter id="description" title="Beschreibung">
         Das Thema Vererbung beschreibt in CSS wie, wann und ob eine CSS-Eigenschaft an einer Stelle definiert und
         weitergegeben wird. Neben der Vererbung gibt es auch die Kaskade, die beschreibt, wie CSS-Eigenschaften
         überschrieben werden können.
     </chapter>
 
-    <chapter id="Vererbung in CSS" title="inheritance">
+    <chapter id="inheritance" title="Vererbung in CSS">
         <p>
             Durch die Vererbung in CSS ist es möglich, dass CSS-Eigenschaften wie Farben, Schriftart und Schriftgröße
             einmalig an einer zentralen Stelle definiert werden, anstatt wieder und wieder jedem einzelnen Element
