@@ -1398,6 +1398,29 @@
         </chapter>
     </chapter>
 
+    <chapter id="vendor-prefixes" title="Webbrowser-Präfixe (CSS Vendor Prefixes)">
+        <p>
+            Webbrowser-Präfixe sind spezielle Präfixe, die von Webbrowsern verwendet werden, um experimentelle
+            Funktionen zu kennzeichnen, die noch nicht in den offiziellen CSS-Spezifikationen enthalten oder die sich
+            erst im Draft- oder Beta-Zustand befinden. Diese Präfixe werden verwendet, um sicherzustellen, dass die
+            experimentellen Funktionen nur in den Browsern funktionieren, die sie unterstützen. Auch wenn das Feature in
+            den aktuellen Browsern implementiert wurde, kann es dennoch sinnvoll sein zusätzlich die Eigenschaft mit
+            dem Präfix anzugeben, um die Kompatibilität zu älteren Browsern zu gewährleisten.
+        </p>
+
+        <!-- @formatter:off -->
+        <code-block lang="css">
+            <![CDATA[
+                h1 {
+                    -moz-text-emphasis: filled double-circle blue;
+                    -webkit-text-emphasis: filled double-circle blue;
+                    text-emphasis: filled double-circle blue;
+                }
+            ]]>
+        </code-block>
+        <!-- @formatter:on -->
+    </chapter>
+
     <chapter id="browser" title="CSS im Webbrowser analysieren">
         <p>
             Die Entwicklerwerkzeuge eines Browsers sind ein mächtiges Werkzeug, zum Analysieren und Debuggen von
