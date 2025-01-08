@@ -261,6 +261,38 @@
                 </p>
             </warning>
         </chapter>
+
+        <chapter id="cascading-specificity" title="Sortierung nach Gewichtung der Selektoren.">
+            <p>
+                Wenn es gleichwertige Angaben innerhalb von Stylesheets gibt, wird die Gewichtung der Selektoren
+                berechnet. Der resultierende Wert wird als Spezifität bezeichnet. Diese Spezifität wird als Zahlenwert
+                ausgedrückt, und je höher dieser Zahlenwert ist, desto wichtiger ist der Selektor, und er überschreibt
+                einen konkurrierenden Selektor mit einem niedrigeren Wert. Aufgeteilt werden diese Spezifitäten eines
+                Selektors in folgende fünf Gruppen:
+            </p>
+
+            <list type="decimal">
+                <li>
+                    A (erste Ziffer: <b>1</b>,0,0): Diese Gruppe zählt die Anzahl der ID-Attribute in einem Selektor.
+                </li>
+                <li>
+                    B (zweite Ziffer: 0,<b>1</b>,0): Hier hinterlegt ist die Anzahl der von einem Selektor ausgewählten
+                    Attribute, Klassen und Pseudoklassen.
+                </li>
+                <li>
+                    C (dritte Ziffer: 0,0,<b>1</b>): Die Gruppe mit der niedrigsten Gewichtung enthält die Anzahl der
+                    Elementnamen (Typselektoren) und Pseudoelemente.
+                </li>
+            </list>
+
+            <note>
+                Wenn zwei CSS-Regeln dieselbe Gewichtung haben und von derselben Herkunft sind, dann bekommt die
+                zuletzt aufgetretene Regel den Vorrang. Allerdings gilt hier, dass Inline-Style immer höher gewichtet
+                wird und, dass mit <code>!important</code> CSS-Eigenschaften noch höher gewichtet werden. Bezogen auf
+                die Spezifität kann man sich <code>!important</code> als <b>1</b>,0,0,0,0 und Inline-Style als
+                0,<b>1</b>,0,0,0 vorstellen.
+            </note>
+        </chapter>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
