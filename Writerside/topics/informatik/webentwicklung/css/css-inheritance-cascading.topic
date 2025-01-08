@@ -192,6 +192,11 @@
             angewendet wird.
         </p>
 
+        <tip>
+            Die Kaskade kann sehr gut in den Browser Developer Tools analysiert und nachvollzogen werden. Mehr dazu
+            hier: <a href="web-dev-tools.topic#element-inspector-styles"/>
+        </tip>
+
         <chapter id="cascading-system" title="Regelsystem der Kaskade">
             <list type="decimal">
                 <li>
