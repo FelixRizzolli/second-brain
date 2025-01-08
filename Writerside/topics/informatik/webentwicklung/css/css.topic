@@ -1419,6 +1419,29 @@
             ]]>
         </code-block>
         <!-- @formatter:on -->
+
+        <note>
+            Kann der Webbrowser nichts mit den Webbrowser-Präfixen anfangen, wird die CSS-Eigenschaft einfach ignoriert.
+        </note>
+
+        <table style="header-row">
+            <tr>
+                <td>Kürzel</td>
+                <td>Hersteller</td>
+            </tr>
+            <tr>
+                <td><code>-webkit-</code></td>
+                <td>Chrome, Safari, Edge</td>
+            </tr>
+            <tr>
+                <td><code>-moz-</code></td>
+                <td>Mozilla Firefox</td>
+            </tr>
+            <tr>
+                <td><code>-o-</code></td>
+                <td>Opera</td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter id="browser" title="CSS im Webbrowser analysieren">
