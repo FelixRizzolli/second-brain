@@ -74,6 +74,27 @@
                 </p>
             </li>
         </list>
+
+        <chapter id="css-overflow" title="CSS-Eigenschaft &raquo;overflow&laquo;">
+            <p>
+                Die CSS-Eigenschaft <code>overflow</code> wird verwendet, um festzulegen, wie mit Inhalten umgegangen
+                werden soll, die über die Größe des Inhaltsbereichs hinausgehen. Soll diese Eigenschaft nur für die
+                horizontale oder vertikale Achse gelten, können die Eigenschaften <code>overflow-x</code> und
+                <code>overflow-y</code>. Die möglichen Werte sind:
+            </p>
+
+            <list type="bullet">
+                <li>
+                    <code>hidden</code>: Die Inhalte werden nicht angezeigt und abgeschnitten.
+                </li>
+                <li>
+                    <code>scroll</code>: Es wird ein Scrollbalken hinzugefügt.
+                </li>
+                <li>
+                    <code>visible</code>: Die Inhalte sind immer sichtbar (Standardwert).
+                </li>
+            </list>
+        </chapter>
     </chapter>
 
     <chapter id="alternate" title="Das alternative Box-Modell von CSS">
