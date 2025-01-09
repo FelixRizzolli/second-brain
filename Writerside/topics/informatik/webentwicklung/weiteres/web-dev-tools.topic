@@ -9,9 +9,50 @@
     <show-structure depth="2" for="chapter,procedure"/>
     <link-summary rel="description"/>
 
-    <!-- TODO -->
     <chapter id="description" title="Beschreibung">
-        ...
+        <p>
+            Die Browser Developer Tools sind integrierte Werkzeuge in modernen Webbrowsern, die es Entwicklern
+            ermöglichen, Webseiten und Webanwendungen zu untersuchen, zu bearbeiten und zu debuggen. Sie sind ein
+            unverzichtbares Werkzeug für Webentwickler, um die Leistung und das Verhalten von Webseiten zu analysieren
+            und zu optimieren.
+        </p>
+    </chapter>
+
+    <chapter id="element-inspector" title="Element-Inspektor">
+        <p>
+            Der Element-Inspektor ist ein Werkzeug, das es Entwicklern ermöglicht, die Struktur einer Webseite zu
+            untersuchen und zu bearbeiten.
+        </p>
+
+        <chapter id="element-inspector-styles" title="Styles">
+            <p>
+                Hier sieht man die CSS-Regeln, die auf das ausgewählte Element angewendet werden. Dabei kann man diese
+                Regeln bearbeiten und live sehen, wie sich das Element verändert. Zudem kann man hier auch sehr schön
+                erkennen, welche CSS-Regeln vom Webbrowser (<code>USER AGENT STYLESHEET</code>) und welche von
+                anderen Elementen geerbt wurden (<code>INHERITED FROM</code>). Durchgestrichene Eigenschaften
+                beispielsweise wurden von einer anderen Eigenschaft überschrieben.
+            </p>
+        </chapter>
+    </chapter>
+
+    <!-- TODO -->
+    <chapter id="console" title="Console">
+
+    </chapter>
+
+    <!-- TODO -->
+    <chapter id="sources" title="Sources">
+
+    </chapter>
+
+    <!-- TODO -->
+    <chapter id="network" title="Network">
+
+    </chapter>
+
+    <!-- TODO -->
+    <chapter id="performance" title="Performance">
+
     </chapter>
 
     <chapter id="quellen" title="Quellen">

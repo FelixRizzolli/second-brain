@@ -8,7 +8,6 @@
     <show-structure depth="2" for="chapter,procedure"/>
     <link-summary rel="description"/>
 
-    <!-- TODO -->
     <chapter id="was-ist-css" title="Was ist CSS?">
         <p id="description">
             <b>CSS (Cascading Style Sheets)</b> ist eine Gestaltungssprache, die verwendet wird, um das Layout und
@@ -1397,6 +1396,52 @@
             </code-block>
             <!-- @formatter:on -->
         </chapter>
+    </chapter>
+
+    <chapter id="vendor-prefixes" title="Webbrowser-Präfixe (CSS Vendor Prefixes)">
+        <p>
+            Webbrowser-Präfixe sind spezielle Präfixe, die von Webbrowsern verwendet werden, um experimentelle
+            Funktionen zu kennzeichnen, die noch nicht in den offiziellen CSS-Spezifikationen enthalten oder die sich
+            erst im Draft- oder Beta-Zustand befinden. Diese Präfixe werden verwendet, um sicherzustellen, dass die
+            experimentellen Funktionen nur in den Browsern funktionieren, die sie unterstützen. Auch wenn das Feature in
+            den aktuellen Browsern implementiert wurde, kann es dennoch sinnvoll sein zusätzlich die Eigenschaft mit
+            dem Präfix anzugeben, um die Kompatibilität zu älteren Browsern zu gewährleisten.
+        </p>
+
+        <!-- @formatter:off -->
+        <code-block lang="css">
+            <![CDATA[
+                h1 {
+                    -moz-text-emphasis: filled double-circle blue;
+                    -webkit-text-emphasis: filled double-circle blue;
+                    text-emphasis: filled double-circle blue;
+                }
+            ]]>
+        </code-block>
+        <!-- @formatter:on -->
+
+        <note>
+            Kann der Webbrowser nichts mit den Webbrowser-Präfixen anfangen, wird die CSS-Eigenschaft einfach ignoriert.
+        </note>
+
+        <table style="header-row">
+            <tr>
+                <td>Kürzel</td>
+                <td>Hersteller</td>
+            </tr>
+            <tr>
+                <td><code>-webkit-</code></td>
+                <td>Chrome, Safari, Edge</td>
+            </tr>
+            <tr>
+                <td><code>-moz-</code></td>
+                <td>Mozilla Firefox</td>
+            </tr>
+            <tr>
+                <td><code>-o-</code></td>
+                <td>Opera</td>
+            </tr>
+        </table>
     </chapter>
 
     <chapter id="browser" title="CSS im Webbrowser analysieren">

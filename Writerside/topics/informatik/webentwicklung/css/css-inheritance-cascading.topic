@@ -3,13 +3,301 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="css-inheritance-cascading"
        title="Vererbung und Kaskade"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
     <link-summary rel="description"/>
 
-    <!-- TODO -->
     <chapter id="description" title="Beschreibung">
-        ...
+        Das Thema Vererbung beschreibt in CSS wie, wann und ob eine CSS-Eigenschaft an einer Stelle definiert und
+        weitergegeben wird. Neben der Vererbung gibt es auch die Kaskade, die beschreibt, wie CSS-Eigenschaften
+        überschrieben werden können.
+    </chapter>
+
+    <chapter id="inheritance" title="Vererbung in CSS">
+        <p>
+            Durch die Vererbung in CSS ist es möglich, dass CSS-Eigenschaften wie Farben, Schriftart und Schriftgröße
+            einmalig an einer zentralen Stelle definiert werden, anstatt wieder und wieder jedem einzelnen Element
+            dieselben Eigenschaften zuzuweisen.
+        </p>
+
+        <p>
+            Es werden nicht alle Eigenschaften vererbt, da es bei einigen Eigenschaften keinen Sinn macht. Folgende
+            CSS-Eigenschaften werden beispielsweise nicht vererbt:
+        </p>
+
+        <list>
+            <li>
+                <code>background</code>,
+                <code>border</code>
+            </li>
+            <li>
+                <code>width</code>,
+                <code>height</code>,
+                <code>padding</code>,
+                <code>border</code>,
+                <code>margin</code>
+            </li>
+            <li>
+                <code>position</code>,
+                <code>top</code>,
+                <code>left</code>,
+                <code>right</code>,
+                <code>bottom</code>
+            </li>
+            <li>
+                <code>float</code>,
+                <code>clear</code>
+            </li>
+        </list>
+
+        <note>
+            <p>
+                <b>
+                    Hintergrund(farbe) wird nicht weitervererbt!
+                </b>
+            </p>
+
+            <p>
+                Auch wenn es den Anschein hat, wird die Hintergrundfarbe (z.B. <code>background: gray;</code>) nicht
+                (!) weitervererbt. Dass folglich trotzdem alles mit grauer Hintergrundfarbe belegt ist, liegt daran,
+                dass der Standardwert transparent (durchsichtig) ist. Daher wird hinter allen Elementen die graue Farbe
+                des <code>body</code>-Elements angezeigt.
+            </p>
+        </note>
+
+        <warning>
+            <p>
+                <b>
+                    Achtung bei relativen Einheiten!
+                </b>
+            </p>
+
+            <p>
+                Bei der Vererbung von relativen Einheiten wie z.B. der Schriftgröße mit Prozentwerten
+                (<code>font-size: 90%;</code>) oder <code>em</code> (<code>font-size: 0.9em;</code>) kann es zu
+                überraschenden Änderungen kommen, weil einige Webbrowser diesen Wert für jedes Element erneut
+                anwenden, wenn bei weiteren Elementen ebenfalls ein <code>font-size</code> mit Prozentwerten oder
+                <code>em</code> definiert wird.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    body { font-size: 70%; }
+                    p { font-size: 70%; }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <p>
+                In diesem Beispiel würde der Text in einem <code>p</code>-Element nur noch 49 % der ursprünglichen Größe
+                haben, da solche relativen Werte auf jedes Element kumulativ angewendet werden. Es wird nicht der im
+                Stylesheet definierte Wert, sondern der vom Webbrowser berechnete Wert weitervererbt.
+            </p>
+        </warning>
+
+        <chapter id="inhericance-inherit" title="Vererbung erzwingen mit &raquo;inherit&laquo;">
+            <p>
+                Ist es erforderlich, dass eine CSS-Eigenschaft, die normalerweise nicht vererbt wird, dennoch vererbt
+                werden soll, kann dies mit dem Schlüsselwort <code>inherit</code> erzwungen werden. Mit
+                <code>inherit</code> lässt sich nur einem Kind-Element eine Eigenschaft des Eltern-Elements vererben.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    article {
+                        border: 4px inset darkgray;
+                        padding: 5px;
+                        background: lightblue;
+                        color: black;
+                    }
+
+                    p {
+                        border: inherit;
+                        background: lightblue;
+                    }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+        </chapter>
+
+        <chapter id="inhericance-initial" title="Mit &raquo;initial&laquo; den Standardwert wiederherstellen">
+            <p>
+                Wird der Wert <code>initial</code> einer CSS-Eigenschaft zuweisen, wird der in der CSS-Spezifikation
+                vorgegebene Standardwert (oder auch Ausgangspunkt) der Eigenschaft verwendet. Der Wert
+                <code>initial</code> kann jeder CSS-Eigenschaft zugewiesen werden.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    p {
+                        border: inherit;
+                        background: unset;
+                        color: initial;
+                    }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+        </chapter>
+
+        <chapter id="inhericance-unset" title="Mit &raquo;unset&laquo; Vererben erzwingen oder Wert wiederherstellen">
+            <p>
+                Das Schlüsselwort <code>unset</code> bietet einen Mittelweg zwischen <code>inherit</code> und
+                <code>initial</code>. Wird es für eine CSS-Eigenschaft verwendet, verhält es sich wie
+                <code>inherit</code> und erbt den Wert für die entsprechende CSS-Eigenschaft des Eltern-Elements. Gibt
+                es hier kein Eltern-Element mit einem gesetzten Wert für diese CSS-Eigenschaft, verhält sich dieses
+                Schlüsselwort wie <code>initial</code> und setzt den Standardwert der CSS-Eigenschaft.
+            </p>
+        </chapter>
+
+        <chapter id="die_css_eigenschaft_raquo_all_laquo_" title="Die CSS-Eigenschaft &raquo;all&laquo;">
+            <p>
+                Die CSS-Eigenschaft <code>all</code> ist eine Kurzschreibweise, mit der alle CSS-Eigenschaften des
+                Eltern-Elements mit <code>inherit</code> vererbt oder mit <code>initial</code> auf den Standardwert
+                zurückgesetzt werden können. Auch <code>unset</code> kann mit <code>all</code> verwendet werden.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    .p_outside {
+                        all: initial;
+                        display: block;
+                        padding: 3px;
+                        margin: 5px;
+                        color: silver;
+                        background-color: #e03943;
+                    }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+        </chapter>
+    </chapter>
+
+    <chapter id="cascading" title="Kaskade">
+        <p>
+            Die CSS-Kaskade beschreibt, wie CSS-Eigenschaften überschrieben werden können und wie Konflikte zwischen
+            verschiedenen Stylesheets gelöst werden. Ein Dokument kann von mehreren Stylesheets formatiert werden, die
+            aus verschiedenen Quellen stammen. Dies ermöglicht es, dass ein Stylesheet auf einem anderen aufbaut und so
+            die Arbeit erleichtert.
+        </p>
+
+        <p>
+            Durch die Vielzahl an Möglichkeiten, Stylesheet-Anweisungen einzubinden und zu kombinieren, können Konflikte
+            entstehen, wenn dieselbe CSS-Eigenschaft mit unterschiedlichen Werten belegt wird. In solchen Fällen
+            entscheidet ein Regelsystem, welche der konkurrierenden Stilanweisungen letztendlich auf ein Element
+            angewendet wird.
+        </p>
+
+        <tip>
+            Die Kaskade kann sehr gut in den Browser Developer Tools analysiert und nachvollzogen werden. Mehr dazu
+            hier: <a href="web-dev-tools.topic#element-inspector-styles"/>
+        </tip>
+
+        <chapter id="cascading-system" title="Regelsystem der Kaskade">
+            <list type="decimal">
+                <li>
+                    <p>
+                        Sortierung nach Herkunft und Wichtigkeit
+                    </p>
+
+                    <list type="bullet">
+                        <li>
+                            Benutzerstylesheet mit <code>!important</code>
+                        </li>
+                        <li>
+                            Autorenstylesheet mit <code>!important</code>
+                        </li>
+                        <li>
+                            Autorenstylesheet ohne <code>!important</code>
+                        </li>
+                        <li>
+                            Benutzerstylesheet ohne <code>!important</code>
+                        </li>
+                    </list>
+                </li>
+                <li>
+                    <p>
+                        Bei gleichwertigen Angaben innerhalb von Stylesheets wird die Spezifität berechnet und
+                        entsprechend der Gewichtung der Selektor mit einem höher berechneten Wert verwendet.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Bei Angaben, die dieselbe Spezifität enthalten, erhält die zuletzt aufgetretene Anweisung den
+                        Vorrang.
+                    </p>
+                </li>
+            </list>
+        </chapter>
+
+        <chapter id="cascading-important" title="Das &raquo;!important&laquo; Schlüsselwort">
+            <p>
+                Mit dem Schlüsselwort <code>!important</code> kann die Priorität einer CSS-Deklaration erhöht werden,
+                sodass diese Eigenschaft immer Vorrang vor anderen Deklarationen hat und nicht von einer folgenden
+                Deklaration überschrieben werden kann. Das Schlüsselwort <code>!important</code> wird direkt nach dem
+                Wert einer CSS-Eigenschaft angegeben.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    p {
+                        color: red !important;
+                    }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <warning>
+                <p>
+                    <b>
+                        Wenn Möglich sollte auf &raquo;!important&laquo; verzichtet werden
+                    </b>
+                </p>
+
+                <p>
+                    Bei der Verwendung von <code>!important</code> wird die Reihenfolge der Deklarationen von CSS-Regeln
+                    außer Kraft gesetzt. Dies macht das Stylesheet recht komplex und erschwert auch die Fehlersuche ein
+                    wenig.
+                </p>
+            </warning>
+        </chapter>
+
+        <chapter id="cascading-specificity" title="Sortierung nach Gewichtung der Selektoren.">
+            <p>
+                Wenn es gleichwertige Angaben innerhalb von Stylesheets gibt, wird die Gewichtung der Selektoren
+                berechnet. Der resultierende Wert wird als Spezifität bezeichnet. Diese Spezifität wird als Zahlenwert
+                ausgedrückt, und je höher dieser Zahlenwert ist, desto wichtiger ist der Selektor, und er überschreibt
+                einen konkurrierenden Selektor mit einem niedrigeren Wert. Aufgeteilt werden diese Spezifitäten eines
+                Selektors in folgende fünf Gruppen:
+            </p>
+
+            <list type="decimal">
+                <li>
+                    A (erste Ziffer: <b>1</b>,0,0): Diese Gruppe zählt die Anzahl der ID-Attribute in einem Selektor.
+                </li>
+                <li>
+                    B (zweite Ziffer: 0,<b>1</b>,0): Hier hinterlegt ist die Anzahl der von einem Selektor ausgewählten
+                    Attribute, Klassen und Pseudoklassen.
+                </li>
+                <li>
+                    C (dritte Ziffer: 0,0,<b>1</b>): Die Gruppe mit der niedrigsten Gewichtung enthält die Anzahl der
+                    Elementnamen (Typselektoren) und Pseudoelemente.
+                </li>
+            </list>
+
+            <note>
+                Wenn zwei CSS-Regeln dieselbe Gewichtung haben und von derselben Herkunft sind, dann bekommt die
+                zuletzt aufgetretene Regel den Vorrang. Allerdings gilt hier, dass Inline-Style immer höher gewichtet
+                wird und, dass mit <code>!important</code> CSS-Eigenschaften noch höher gewichtet werden. Bezogen auf
+                die Spezifität kann man sich <code>!important</code> als <b>1</b>,0,0,0,0 und Inline-Style als
+                0,<b>1</b>,0,0,0 vorstellen.
+            </note>
+        </chapter>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
