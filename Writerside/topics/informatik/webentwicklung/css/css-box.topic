@@ -78,6 +78,11 @@
             </li>
         </list>
 
+        <note>
+            Das Box-Modell eines Elements lässt sich im Browser in den Entwicklereinstellungen (Developer Tools) super
+            analysieren. Mehr dazu hier: <a href="web-dev-tools.topic#element-inspector-styles"/>.
+        </note>
+
         <p>
             Die Eigenschaften <code>padding</code>, <code>border</code> und <code>margin</code> sind kurzschreibweisen
             für die Eigenschaften <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>,

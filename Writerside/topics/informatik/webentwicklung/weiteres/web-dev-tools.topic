@@ -32,6 +32,11 @@
                 anderen Elementen geerbt wurden (<code>INHERITED FROM</code>). Durchgestrichene Eigenschaften
                 beispielsweise wurden von einer anderen Eigenschaft überschrieben.
             </p>
+
+            <p>
+                Ein weiteres interessantes Feature ist hier, dass man auch das Box-Modell eines Elements sehen kann.
+                Mehr zum Box-Modell hier: <a href="css-box.topic">Das Box-Modell</a>.
+            </p>
         </chapter>
     </chapter>
 
