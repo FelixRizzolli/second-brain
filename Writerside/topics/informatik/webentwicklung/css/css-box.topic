@@ -3,13 +3,89 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic id="css-box"
        title="Das Box-Modell"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
     <show-structure depth="2" for="chapter,procedure"/>
     <link-summary rel="description"/>
 
     <!-- TODO -->
     <chapter id="description" title="Beschreibung">
         ...
+    </chapter>
+
+    <chapter id="classic" title="Das klassische Box-Modell von CSS">
+        <p>
+            Das Box-Modell ist ein Konzept in CSS, das die Darstellung von Elementen auf einer Webseite beschreibt.
+            Jedes Element wird als Rechteck betrachtet, das aus vier Bereichen oder auch Boxen besteht:
+        </p>
+
+        <img alt="CSS Box-Modell" src="css-box-classic.png"/>
+
+        <list>
+            <li>
+                <p>
+                    <b>
+                        Inhaltsbereich - die <i>Contentbox</i>
+                    </b>
+                </p>
+
+                <p>
+                    Der Inhaltsbereich ist der Bereich, in dem der eigentliche Inhalt des Elements platziert wird. Er
+                    wird mit der Eigenschaft <code>width</code> (für die Breite) und <code>height</code> (für die
+                    Höhe) definiert. Mit Eigenschaften wie <code>min-width</code>, <code>max-width</code>,
+                    <code>min-height</code> und <code>max-height</code> kann die Größe des Inhaltsbereichs begrenzt
+                    werden.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>
+                        Innenabstand - die <i>Paddingbox</i>
+                    </b>
+                </p>
+
+                <p>
+                    Der Innenabstand (bzw. Polsterung, Auffüllung) ist der Abstand zwischen dem Inhalt und dem Rand des
+                    Elements und wird mit der Eigenschaft <code>padding</code> definiert.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>
+                        Rahmen - die <i>Borderbox</i>
+                    </b>
+                </p>
+
+                <p>
+                    Der Rahmen ist die Linie, die den Inhalt des Elements umgibt und wird mit der Eigenschaft
+                    <code>border</code> definiert.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>
+                        Außenabstand - die <i>Marginbox</i>
+                    </b>
+                </p>
+
+                <p>
+                    Der Außenabstand ist der Abstand zwischen dem Rahmen des Elements und anderen Elementen und wird mit
+                    der Eigenschaft <code>margin</code> definiert.
+                </p>
+            </li>
+        </list>
+    </chapter>
+
+    <chapter id="alternate" title="Das alternative Box-Modell von CSS">
+
+    </chapter>
+
+    <chapter id="logical-properties" title="Logische Eigenschaften">
+
+    </chapter>
+
+    <chapter id="inline-elements" title="Inline-Elemente">
+
     </chapter>
 
     <chapter id="quellen" title="Quellen">
