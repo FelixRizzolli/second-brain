@@ -75,6 +75,30 @@
             </li>
         </list>
 
+        <p>
+            Die Eigenschaften <code>padding</code>, <code>border</code> und <code>margin</code> sind kurzschreibweisen
+            für die Eigenschaften <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>,
+            <code>padding-left</code>, ...
+        </p>
+
+        <!-- @formatter:off -->
+        <code-block lang="css">
+            <![CDATA[
+                p {
+                    /* top: 10px, right: 20px, bottom: 30px, left: 40px */
+                    padding: 10px 20px 30px 40px;
+
+                    /* top: 1px, right: 1px, bottom: 1px, left: 1px */
+                    border: 1px;
+
+                    /* top: 5px, right: 10px, bottom: 5px, left: 10px */
+                    margin: 5px 10px;
+                }
+            ]]>
+        </code-block>
+        <!-- @formatter:on -->
+
+
         <chapter id="css-overflow" title="CSS-Eigenschaft &raquo;overflow&laquo;">
             <p>
                 Die CSS-Eigenschaft <code>overflow</code> wird verwendet, um festzulegen, wie mit Inhalten umgegangen
