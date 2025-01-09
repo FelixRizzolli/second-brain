@@ -146,6 +146,36 @@
             </code-block>
             <!-- @formatter:on -->
         </chapter>
+
+        <chapter id="css-collapsing-margins" title="Collapsing Margins (zusammenfallende vertikale Außenabstände)">
+            <p>
+                Bei vertikalen Außenabständen (<code>margin</code>) von Block-Elementen kann es zu einem Phänomen
+                kommen, das als <i>Collapsing Margins</i> bezeichnet wird. Dabei fallen die Außenabstände von
+                benachbarten Elementen zusammen, sodass der größere Außenabstand den kleineren Außenabstand
+                überschreibt. Horizontale Außenabstände werden nicht zusammengeführt. Das Zusammenfallen ist
+                beabsichtigt und dient dazu, dass der Abstand bei Texten, die aus mehreren Absätzen bestehen,
+                gleichmäßig bleibt.
+            </p>
+
+            <p>
+                Ein häufiges Problem bei zusammenfallenden vertikalen Außenabständen (Collapsing Margins) ist, dass sie
+                oft unbemerkt bleiben, wenn das Layout nicht wie gewünscht funktioniert. Besonders bei Überschriften,
+                Absätzen, Listen oder Zitaten kann man dieses Problem mindern, indem man <code>margin-top</code> dieser
+                Elemente auf <code>0</code> setzt. Den Abstand zum nächsten Element kann man dann einfach mit
+                <code>margin-bottom</code> steuern. Dadurch wird das Zusammenfallen der Außenabstände weitgehend
+                vermieden. Die entsprechende CSS-Regel sieht folgendermaßen aus:
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+                        margin-top: 0;
+                    }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+        </chapter>
     </chapter>
 
     <chapter id="alternate" title="Das alternative Box-Modell von CSS">
