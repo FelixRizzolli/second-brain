@@ -70,7 +70,10 @@
 
                 <p>
                     Der Außenabstand ist der Abstand zwischen dem Rahmen des Elements und anderen Elementen und wird mit
-                    der Eigenschaft <code>margin</code> definiert.
+                    der Eigenschaft <code>margin</code> definiert. Der Außenabstand hat keine Farbe, ist komplett
+                    transparent und übernimmt daher die Hintergrundfarbe des umgebenden Elements. Zudem können für
+                    <code>margin</code> negative Werte angegeben werden. Wie sich negative Werte auswirken, hängt
+                    davon ab, ob es sich um statische, positionierte oder gefloatete Elemente handelt.
                 </p>
             </li>
         </list>
@@ -98,7 +101,6 @@
         </code-block>
         <!-- @formatter:on -->
 
-
         <chapter id="css-overflow" title="CSS-Eigenschaft &raquo;overflow&laquo;">
             <p>
                 Die CSS-Eigenschaft <code>overflow</code> wird verwendet, um festzulegen, wie mit Inhalten umgegangen
@@ -118,6 +120,26 @@
                     <code>visible</code>: Die Inhalte sind immer sichtbar (Standardwert).
                 </li>
             </list>
+        </chapter>
+
+        <chapter id="css-margin-center" title="Elemente mit &raquo;margin&laquo; zentrieren">
+            <p>
+                Bei der CSS-Eigenschaft <code>margin</code> kann auch der Wert <code>auto</code> angegeben werden, um
+                Elemente horizontal zu zentrieren. Dies funktioniert jedoch nur bei Block-Elementen, die eine feste
+                Breite haben.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    article {
+                        width: 75%;
+                        padding: 0.5em;
+                        margin: 1em auto;
+                    }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
         </chapter>
     </chapter>
 
