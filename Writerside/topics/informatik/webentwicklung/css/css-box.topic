@@ -254,10 +254,24 @@
         </chapter>
     </chapter>
 
-    <chapter id="alternate" title="Das alternative Box-Modell von CSS">
+    <chapter id="alternative" title="Das alternative Box-Modell von CSS">
         <p>
-            Das alternative Box-Modell unterscheidet sich vom klassischen in der Berechnung der Breite und Höhe eines
-            Elements. Es wird mit der Eigenschaft <code>box-sizing</code> definiert. Die möglichen Werte sind:
+            Das Problem beim klassischen Box-Modell ist, dass man die Breite und Höhe eines Elements berechnen muss, um
+            die Gesamtbreite bzw. -höhe zu ermitteln. Noch umständlicher wird es, wenn man z.B. bei einem zweispaltigen
+            Layout eine Spalte mit 30 % Breite (<code>width</code>) angibt und beim <code>padding</code> und
+            <code>border</code> noch jeweils 5 Pixel notiert hat. Hier wird es schwierig, genau zu sagen, wie viel Platz
+            die Spalte tatsächlich einnimmt. Das alternative Box-Modell schafft hier Abhilfe. Es unterscheidet sich vom
+            klassischen in der Berechnung der Breite und Höhe eines Elements. Hier hat man nicht mehr dieses Problem
+            mit der Rechnerei oder dem Tricksen, innerhalb einer Spalte z.B. ein weiteres <code>&lt;div&gt;</code> für
+            <code>padding</code>, <code>border</code> und <code>margin</code> zu ergänzen. Mit dem neuen Box-Modell
+            <code>border-box</code> wird die Breite mit <code>width</code> und die Höhe mit <code>height</code> nicht
+            mehr »nur« für den Inhaltsbereich festgelegt, sondern diese Angaben berücksichtigen auch sinnvollerweise den
+            Innenabstand (<code>padding</code>) und den Rahmen (<code>border</code>).
+        </p>
+
+        <p>
+            Das alternative Box-Modell wird mit der Eigenschaft <code>box-sizing</code> definiert. Die möglichen Werte
+            sind:
         </p>
 
         <list type="bullet">
@@ -275,12 +289,6 @@
                 <code>inherit</code>: Mit dieser Option wird der Wert vom Eltern-Element übernommen.
             </li>
         </list>
-
-        <note>
-            Beim alternativen Box-Modell hat man nicht mehr das Problem mit der Rechnerei oder dem Tricksen, innerhalb
-            einer Spalte z.B. ein Weiteres <code>&lt;div&gt;</code> für <code>padding</code>, <code>border</code> oder
-            <code>margin</code> zu ergänzen.
-        </note>
     </chapter>
 
     <chapter id="logical-properties" title="Logische Eigenschaften">
