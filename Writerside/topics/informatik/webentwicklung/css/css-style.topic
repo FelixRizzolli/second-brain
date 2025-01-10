@@ -208,7 +208,22 @@
             </chapter>
 
             <chapter id="box-background-image" title="Hintergrundbild">
+                <p>
+                    Grafiken zur Gestaltung oder Verzierung können in CSS mit der Eigenschaft
+                    <code>background-image</code> als Hintergrundgrafik einer Box hinzugefügt werden. Bilder oder Logos
+                    sollten aber in der Praxis nach vie vor mit dem HTML-Element <code>&lt;img&gt;</code> eingefügt
+                    werden.
+                </p>
 
+                <!-- @formatter:off -->
+                <code-block lang="css">
+                    <![CDATA[
+                        article {
+                            background-image:  url('../bilder/pattern.png');
+                        }
+                    ]]>
+                </code-block>
+                <!-- @formatter:on -->
             </chapter>
         </chapter>
 
