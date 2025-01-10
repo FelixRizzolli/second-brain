@@ -151,7 +151,47 @@
         </chapter>
 
         <chapter id="box-background" title="Hintergrund einer Box gestalten">
+            <p>
+                Die CSS-Eigenschaft <code>background</code> ist eine zusammenfassende Eigenschaft für die Eigenschaften
+                <code>background-color</code>, <code>background-image</code>, <code>background-position</code>,
+                <code>background-repeat</code> und <code>background-attachment</code>.
+            </p>
 
+            <chapter id="box-background-color" title="Hintergrundfarbe">
+                <p>
+                    Mit der Eigenschaft <code>background-color</code> lässt sich die Hintergrundfarbe einer Box
+                    festlegen. Hierfür können neben Farbnamen auch Hexadezimalwerte oder RGB-Werte verwendet werden.
+                    Der Standardwert ist <code>transparent</code>. Es ist auch möglich nur die Kurzschreibweise zu
+                    verwenden.
+                </p>
+
+                <!-- @formatter:off -->
+                <compare>
+                    <code-block lang="css">
+                        <![CDATA[
+                            article {
+                                background-color: #ff0000;
+                            }
+                        ]]>
+                    </code-block>
+                    <code-block lang="css">
+                        <![CDATA[
+                            article {
+                                background: #ff0000;
+                            }
+                        ]]>
+                    </code-block>
+                </compare>
+                <!-- @formatter:on -->
+            </chapter>
+
+            <chapter id="box-background-gradient" title="Farbverlauf für den Hintergrund">
+
+            </chapter>
+
+            <chapter id="box-background-image" title="Hintergrundbild">
+
+            </chapter>
         </chapter>
 
         <chapter id="box-shadow" title="Einen Schlagschatten hinzufügen">
@@ -201,7 +241,7 @@
         </tip>
         <tip>
             <b>(WEBSEITE)</b>
-            <a href="https://hicks.design/journal/3d-css-box-model"/>, 2025-01-10 10:00
+            <a href="https://hicks.design/journal/3d-css-box-model"/>, 2025-01-10 10:30
         </tip>
     </chapter>
 </topic>
