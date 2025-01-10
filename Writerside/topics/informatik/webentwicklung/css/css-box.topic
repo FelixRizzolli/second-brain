@@ -8,9 +8,11 @@
     <show-structure depth="2" for="chapter,procedure"/>
     <link-summary rel="description"/>
 
-    <!-- TODO -->
     <chapter id="description" title="Beschreibung">
-        ...
+        Das Box-Modell ist ein Konzept in CSS, das die Darstellung von Elementen auf einer Webseite beschreibt.
+        Jedes Element wird als Rechteck betrachtet, das aus vier Bereichen oder auch Boxen besteht: Inhaltsbereich,
+        Innenabstand, Rahmen und Außenabstand. Das Box-Modell eines Elements lässt sich im Browser in den
+        Entwicklereinstellungen (Developer Tools) super analysieren.
     </chapter>
 
     <chapter id="classic" title="Das klassische Box-Modell von CSS">
@@ -353,7 +355,7 @@
             Schreibrichtung von links nach rechts verwendet wird. Wird eine Website benötigt, die von rechts nach links
             und umgekehrt funktionieren soll, dann ist dies sicherlich die Lösung.
         </note>
-        
+
         <tip>
             Mehr zu diesem Thema hier:
             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values"/>.
@@ -361,7 +363,23 @@
     </chapter>
 
     <chapter id="inline-elements" title="Inline-Elemente">
+        <p>
+            Inline-Elemente wie <code>em</code>, <code>strong</code> oder <code>a</code> haben auch ein Box-Modell. Dies
+            funktioniert jedoch anders als bei Block-Elementen. So kann bei Inline-Elementen keine Höhe oder Breite
+            angegeben werden, und entsprechend sind natürlich auch die erweiterten CSS-Eigenschaften wie
+            <code>min-width</code>, <code>max-width</code>, <code>min-height</code> oder <code>max-height</code> bei
+            Inline-Elementen ohne Wirkung. Hier bestimmt der Inhalt die Höhe und Breite. Beeinflussen können Sie die
+            Höhe mit <code>font-size</code>.
+        </p>
 
+        <p>
+            Es gibt auch Unterschiede in der Verwendung von <code>margin</code>, <code>border</code> und
+            <code>padding</code> für die <code>-top</code> und <code>-bottom</code> Versionen. Während die Eigenschaften
+            für die linke und rechte Seite wie gewohnt verwendet werden können, haben <code>margin-top</code> und
+            <code>margin-bottom</code> bei Inline-Elementen keine Wirkung. Obwohl <code>padding-top</code>,
+            <code>padding-bottom</code>, <code>border-top</code> und <code>border-bottom</code> verwendet werden
+            können, ändern sie nicht die Zeilenhöhe, was sich negativ auf die Lesbarkeit des Textes auswirken kann.
+        </p>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
