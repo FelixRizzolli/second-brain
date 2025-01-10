@@ -14,13 +14,139 @@
     </chapter>
 
     <chapter id="box" title="Boxen gestalten">
+        <p>
+            Die Boxen von Elementen lassen sich sehr umfangreich gestalten. Dazu gehört: den Ramen gestalten, die
+            Hintergrundfarbe einstellen, Hintergrundgrafiken verwenden, Transparenz einsetzen, einen Farbverlauf
+            hinzufügen, einen Schlagschatten erzeugen oder die Box abrunden.
+        </p>
 
+        <chapter id="box-border" title="Rahmen einer Box gestalten">
+            <p>
+                Mit der Eigenschaft <code>border</code> lässt sich der Rahmen einer Box gestalten. Die Eigenschaft
+                setzt sich aus mehreren Eigenschaften zusammen, die auch einzeln verwendet werden können:
+            </p>
+
+            <table>
+                <tr>
+                    <td>CSS-Eigenschaft</td>
+                    <td>Beschreibung</td>
+                </tr>
+                <tr>
+                    <td><code>border-width</code></td>
+                    <td>
+                        Die Eigenschaft <code>border-width</code> legt die Breite des Rahmens fest. Hierfür können
+                        neben <code>px</code>, <code>em</code> usw. auch die Schlüsselwörter <code>thin</code>,
+                        <code>medium</code> und <code>thick</code> verwendet werden. Da die CSS-Spezifikation die
+                        genaue dicke dieser Werte nicht definiert hat, kann es sein, dass die Werte von Browser zu
+                        Browser unterschiedlich sind.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>border-style</code></td>
+                    <td>
+                        <p>
+                            Es gibt unterschiedliche Stile von Rahmen. Hier die verschiedenen Werte für die Eigenschaft
+                            <code>border-style</code> im Überblick:
+                        </p>
+
+                        <table style="header-row">
+                            <tr>
+                                <td>Wert</td>
+                                <td>Beschreibung</td>
+                            </tr>
+                            <tr>
+                                <td><code>none</code></td>
+                                <td>
+                                    Standardwert - kein Rahmen wird angezeigt.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>hidden</code></td>
+                                <td>
+                                    Der Rahmen ist nicht sichtbar, aber dennoch vorhanden.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>dotted</code></td>
+                                <td>
+                                    Zeigt einen gepunkteten Rahmen an.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>dashed</code></td>
+                                <td>
+                                    Zeigt einen gestrichelten Rahmen an.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>solid</code></td>
+                                <td>
+                                    Zeigt einen durchgezogenen Rahmen an.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>double</code></td>
+                                <td>
+                                    Zeigt einen doppelt durchgezogenen Rahmen an.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <code>groove</code>, <code>ridge</code>, <code>inset</code>, <code>outset</code>
+                                </td>
+                                <td>
+                                    Zeigt einen 3D-Rahmen an, der Effekt hängt auch von der Rahmenfarbe ab.
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>border-color</code></td>
+                    <td>
+                        Die Eigenschaft <code>border-color</code> legt die Farbe des Rahmens fest. Hierfür können
+                        neben Farbnamen auch Hexadezimalwerte oder RGB-Werte verwendet werden.
+                    </td>
+                </tr>
+            </table>
+
+            <note>
+                Die Eigenschaften <code>border-width</code>, <code>border-style</code> und <code>border-color</code>
+                sind wiederum kurzschreibweisen für jeweiligen Eigenschaften die mit <code>border-top-*</code>,
+                <code>border-right-*</code>, <code>border-bottom-*</code> und <code>border-left-*</code> beginnen,
+                womit man die Eigenschaften für die jeweiligen Seiten der Box festlegen kann.
+            </note>
+        </chapter>
+
+        <chapter id="box-background" title="Hintergrund einer Box gestalten">
+
+        </chapter>
+
+        <chapter id="box-shadow" title="Einen Schlagschatten hinzufügen">
+
+        </chapter>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
         <tip>
             <b>(BUCH)</b>
             978-3836297288, "HTML und CSS - Das umfassende Handbuch", Jürgen Wolf, 2023
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border"/>, 2025-01-10 10:00
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-width"/>, 2025-01-10 10:00
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style"/>, 2025-01-10 10:00
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-color"/>, 2025-01-10 10:00
         </tip>
     </chapter>
 </topic>
