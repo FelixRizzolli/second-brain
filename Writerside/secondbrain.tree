@@ -111,7 +111,7 @@
                 <toc-element topic="css-selectors.topic"/>
                 <toc-element topic="css-inheritance-cascading.topic"/>
                 <toc-element topic="css-box.topic"/>
-                <toc-element topic="css-stylen.topic"/>
+                <toc-element topic="css-style.topic"/>
                 <toc-element topic="css-layout.topic">
                     <toc-element topic="css-grid.topic"/>
                     <toc-element topic="css-flexboxen.topic"/>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic id="css-stylen"
+<topic help-id="css-stylen"
+       id="css-style"
        title="Stylen"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
@@ -17,8 +18,10 @@
         <p>
             Die Boxen von Elementen lassen sich sehr umfangreich gestalten. Dazu gehört: den Ramen gestalten, die
             Hintergrundfarbe einstellen, Hintergrundgrafiken verwenden, Transparenz einsetzen, einen Farbverlauf
-            hinzufügen, einen Schlagschatten erzeugen oder die Box abrunden.
+            hinzufügen, einen Schlagschatten erzeugen oder die Box abrunden. Hier das 3D-Box-Modell von John Hicks:
         </p>
+
+        <img alt="3D-Box-Modell von John Hicks" src="css-style-box.png"/>
 
         <chapter id="box-border" title="Rahmen einer Box gestalten">
             <p>
@@ -176,6 +179,10 @@
         <tip>
             <b>(WEBSEITE)</b>
             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-color"/>, 2025-01-10 10:00
+        </tip>
+        <tip>
+            <b>(WEBSEITE)</b>
+            <a href="https://hicks.design/journal/3d-css-box-model"/>, 2025-01-10 10:00
         </tip>
     </chapter>
 </topic>
