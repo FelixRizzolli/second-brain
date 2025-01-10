@@ -176,6 +176,82 @@
             </code-block>
             <!-- @formatter:on -->
         </chapter>
+
+        <chapter id="css-box-size" title="Gesamtbreite einer Box berechnen">
+            <p>
+                Die Gesamtbreite einer Box errechnet sich, indem man <code>width</code>, <code>padding-right</code>,
+                <code>padding-left</code>, <code>border-right-width</code> und <code>border-left-width</code>, sowie
+                <code>margin-right</code> und <code>margin-left</code> addiert. Hier ein Beispiel:
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    .article_01 {
+                        width: 600px;
+                        padding: 5px;
+                        border: 1px solid black;
+                        background-color: sandybrown;
+                        margin: 5px 0px;
+                    }
+                    .article_02 {
+                        width: 600px;
+                        padding: 15px;
+                        border: 2px solid sienna;
+                        background-color: antiquewhite;
+                    }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
+            <table>
+                <tr>
+                    <td>CSS-Eigenschaft</td>
+                    <td>.article_01</td>
+                    <td>.article_02</td>
+                </tr>
+                <tr>
+                    <td><code>width</code></td>
+                    <td>600 Pixel</td>
+                    <td>600 Pixel</td>
+                </tr>
+                <tr>
+                    <td><code>padding-right</code></td>
+                    <td>5 Pixel</td>
+                    <td>15 Pixel</td>
+                </tr>
+                <tr>
+                    <td><code>padding-left</code></td>
+                    <td>5 Pixel</td>
+                    <td>15 Pixel</td>
+                </tr>
+                <tr>
+                    <td><code>border-right-width</code></td>
+                    <td>1 Pixel</td>
+                    <td>2 Pixel</td>
+                </tr>
+                <tr>
+                    <td><code>border-left-width</code></td>
+                    <td>1 Pixel</td>
+                    <td>2 Pixel</td>
+                </tr>
+                <tr>
+                    <td><code>margin-right</code></td>
+                    <td>0 Pixel</td>
+                    <td>0 Pixel</td>
+                </tr>
+                <tr>
+                    <td><code>margin-left</code></td>
+                    <td>0 Pixel</td>
+                    <td>0 Pixel</td>
+                </tr>
+                <tr>
+                    <td><b>Gesamtbreite</b></td>
+                    <td><b>612 Pixel</b></td>
+                    <td><b>634 Pixel</b></td>
+                </tr>
+            </table>
+        </chapter>
     </chapter>
 
     <chapter id="alternate" title="Das alternative Box-Modell von CSS">
