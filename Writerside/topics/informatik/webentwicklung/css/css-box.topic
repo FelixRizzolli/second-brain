@@ -312,7 +312,52 @@
     </chapter>
 
     <chapter id="logical-properties" title="Logische Eigenschaften">
+        <p>
+            Logische Eigenschaften wie <code>margin-block-start</code>, <code>margin-block-end</code>, ... wurden
+            eingeführt, um die Abhängigkeit von der Schreibrichtung zu lösen. Damit kann das Layout anhand des Flusses
+            der Leserichtung statt anhand räumlicher Angaben definiert werden. Neben dem Vorteil, dass es keine Probleme
+            mehr mit mehrsprachigen Layouts gibt, wo die Leserichtung geändert wird, kann hiermit auch der Code
+            einfacher verständlich werden.
+        </p>
 
+        <img alt="Box-Modell mit logischen Eigenschaften" src="css-box-logical-properties.png"/>
+
+        <p>
+            Die Kurzschreibweisen <code>*-inline</code> und <code>*-block</code> fassen die jeweiligen Eigenschaften mit
+            <code>*-start</code> und <code>*-end</code> zusammen.
+        </p>
+
+        <!-- @formatter:off -->
+        <compare>
+            <code-block lang="css">
+                .article_01 {
+                    margin-inline-start: 10px;
+                    margin-inline-end: 20px;
+
+                    margin-block-start: 10px;
+                    margin-block-end: 10px;
+                }
+            </code-block>
+            <code-block lang="css">
+                .article_02 {
+                    margin-inline: 10px 20px;
+                    margin-block: 10px;
+                }
+            </code-block>
+        </compare>
+        <!-- @formatter:on -->
+
+        <note>
+            Logische Eigenschaften gibt es nun schon seit einigen Jahren und werden von allen wichtigen Webbrowsern
+            unterstützt. Allerdings haben sie sich bisher nie wirklich durchgesetzt - zumindest nicht dort, wo die
+            Schreibrichtung von links nach rechts verwendet wird. Wird eine Website benötigt, die von rechts nach links
+            und umgekehrt funktionieren soll, dann ist dies sicherlich die Lösung.
+        </note>
+        
+        <tip>
+            Mehr zu diesem Thema hier:
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values"/>.
+        </tip>
     </chapter>
 
     <chapter id="inline-elements" title="Inline-Elemente">
