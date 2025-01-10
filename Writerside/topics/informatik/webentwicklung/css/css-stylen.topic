@@ -110,12 +110,41 @@
                 </tr>
             </table>
 
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    p {
+                        border: 2px solid red;
+                    }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+
             <note>
                 Die Eigenschaften <code>border-width</code>, <code>border-style</code> und <code>border-color</code>
                 sind wiederum kurzschreibweisen für jeweiligen Eigenschaften die mit <code>border-top-*</code>,
                 <code>border-right-*</code>, <code>border-bottom-*</code> und <code>border-left-*</code> beginnen,
                 womit man die Eigenschaften für die jeweiligen Seiten der Box festlegen kann.
             </note>
+
+            <p>
+                Mit der Eigenschaft <code>border-image</code> kann eine Pixelgrafik oder SVG-Grafik für den Rahmen
+                eingesetzt werden. Genau genommen ist <code>border-image</code> wiederum eine zusammenfassende
+                Eigenschaft von <code>border-image-source</code> (Bildquelle), <code>border-image-slice</code> (teilt
+                das Rahmenbild in neun Teile), <code>border-image-width</code> (Breite des Rahmens) und
+                <code>border-image-repeat</code> (legt fest, wie die Bildteile in den Seitenrändern wiederholt werden).
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    p {
+                        border: 12px solid transparent;
+                        border-image: url('../bilder/myborder.svg') 50 50 50 50 round;
+                    }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
         </chapter>
 
         <chapter id="box-background" title="Hintergrund einer Box gestalten">
