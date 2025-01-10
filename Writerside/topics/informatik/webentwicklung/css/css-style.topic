@@ -186,7 +186,25 @@
             </chapter>
 
             <chapter id="box-background-gradient" title="Farbverlauf für den Hintergrund">
+                <p>
+                    Ein Farbverlauf wird mit der Eigenschaft <code>background-image</code> bzw. <code>background</code>
+                    hinzugefügt. Mit den Funktionen <code>linear-gradient()</code> und <code>radial-gradient()</code>
+                    sowie <code>repeating-linear-gradient()</code> und <code>repeating-radial-gradient()</code> kann
+                    ein Farbverlauf erstellt werden. Hier ein paar beispiele:
+                </p>
 
+                <img alt="Beispiele Farbverlauf für den Hintergrund" src="css-style-background-gradient.png"/>
+
+                <p>
+                    Radiale Farbverläufe erstellen den Farbverlauf von einem Punkt aus, während lineare Farbverläufe
+                    den Farbverlauf von einer Linie aus erstellen. Die Funktionen beginnend mit <code>repeating-*</code>
+                    wiederholen den Farbverlauf.
+                </p>
+
+                <note>
+                    Mit dem kostenlosen Online-Tool <a href="https://colorgradient.dev/gradient-generator/"/> lassen
+                    sich ganz einfach Farbverläufe erstellen.
+                </note>
             </chapter>
 
             <chapter id="box-background-image" title="Hintergrundbild">
