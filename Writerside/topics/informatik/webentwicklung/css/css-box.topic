@@ -255,7 +255,32 @@
     </chapter>
 
     <chapter id="alternate" title="Das alternative Box-Modell von CSS">
+        <p>
+            Das alternative Box-Modell unterscheidet sich vom klassischen in der Berechnung der Breite und Höhe eines
+            Elements. Es wird mit der Eigenschaft <code>box-sizing</code> definiert. Die möglichen Werte sind:
+        </p>
 
+        <list type="bullet">
+            <li>
+                <code>content-box</code>: Der Standardwert - klassisches Box-Modell. Hier entspricht die Breite
+                (<code>width</code>) und Höhe (<code>height</code>) dem Inhalt des Elements in der Box.
+            </li>
+            <li>
+                <code>border-box</code>: Bei dieser Angabe entspricht der Wert für <code>width</code> und
+                <code>height</code> dem Wert von <code>border-left</code> bis <code>border-right</code> bzw. von
+                <code>border-top</code> bis <code>border-bottom</code>. Ein Verändern von <code>padding</code> und
+                <code>border</code> ändert die Breite bzw. Höhe des Elements nicht mehr.
+            </li>
+            <li>
+                <code>inherit</code>: Mit dieser Option wird der Wert vom Eltern-Element übernommen.
+            </li>
+        </list>
+
+        <note>
+            Beim alternativen Box-Modell hat man nicht mehr das Problem mit der Rechnerei oder dem Tricksen, innerhalb
+            einer Spalte z.B. ein Weiteres <code>&lt;div&gt;</code> für <code>padding</code>, <code>border</code> oder
+            <code>margin</code> zu ergänzen.
+        </note>
     </chapter>
 
     <chapter id="logical-properties" title="Logische Eigenschaften">
