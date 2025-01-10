@@ -157,6 +157,25 @@
         <chapter id="box-shadow" title="Einen Schlagschatten hinzufügen">
 
         </chapter>
+
+        <chapter id="box-opacity" title="Transparenz">
+            <p>
+                Mit der Eigenschaft <code>opacity</code> lässt sich die Transparenz eines Elements einstellen. Diese
+                Transparenz gilt für das gesamte Element, inklusive aller Kinder-Elemente. Der Wertebereich liegt
+                zwischen <code>0</code> (vollständig transparent) und <code>1</code> (vollständig sichtbar). Die Angabe
+                <code>opacity: 0.5;</code> bedeutet, dass eine 50%ige Deckkraft verwendet wird.
+            </p>
+
+            <!-- @formatter:off -->
+            <code-block lang="css">
+                <![CDATA[
+                    .article_02 {
+                        opacity: 0.5;
+                    }
+                ]]>
+            </code-block>
+            <!-- @formatter:on -->
+        </chapter>
     </chapter>
 
     <chapter id="quellen" title="Quellen">
