@@ -289,6 +289,26 @@
                 <code>inherit</code>: Mit dieser Option wird der Wert vom Eltern-Element übernommen.
             </li>
         </list>
+
+        <p>
+            Die sauberste Lösung das alternative Box-Modell für alle Elemente zu verwenden ist, wenn man es für das
+            <code>html</code>-Element definiert und dann auf alle Elemente vererbt. Zudem sollten auch die
+            Pseudoelemente berücksichtigt werden, damit es nicht zu unerwarteten Nebeneffekten führt.
+        </p>
+
+        <!-- @formatter:off -->
+        <code-block lang="css">
+            <![CDATA[
+                html {
+                    box-sizing: border-box;
+                }
+
+                *, *:before, *:after {
+                    box-sizing: inherit;
+                }
+            ]]>
+        </code-block>
+        <!-- @formatter:on -->
     </chapter>
 
     <chapter id="logical-properties" title="Logische Eigenschaften">
