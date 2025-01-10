@@ -224,6 +224,35 @@
                     ]]>
                 </code-block>
                 <!-- @formatter:on -->
+
+                <p>
+                    Wird keine spezielle Angabe gemacht, wird die Hintergrundgrafik vertikal und horizontal so oft
+                    wiederholt (der auch gekachelt), wie eben Platz zur Verfügung steht. Dieses Verhalten kann mit
+                    der Eigenschaft <code>background-repeat</code> angepasst werden. Dazu stehen folgende Werte zur
+                    Verfügung:
+                </p>
+
+                <list type="bullet">
+                    <li>
+                        <code>repeat-y</code> - Das Bild wird auf der vertikalen Achse wiederholt.
+                    </li>
+                    <li>
+                        <code>repeat-x</code> - Das Bild wird auf der horizontalen Achse wiederholt.
+                    </li>
+                    <li>
+                        <code>no-repeat</code> - Das Bild wird nicht wiederholt und nur einmal angezeigt.
+                    </li>
+                    <li>
+                        <code>round</code> - Das Element wird mit Bild gefüllt, und die einzelnen Bilder werden
+                        verteilt, ohne dass sie beschnitten werden. Hierfür werden die Bilder bei Bedarf automatisch
+                        in der Größe skaliert, damit es passt.
+                    </li>
+                    <li>
+                        <code>space</code> - Ähnlich wie mit <code>round</code> wird das Element mit dem Bild gefüllt,
+                        und die einzelnen Bilder werden verteilt, nur werden sie nicht in der Größe skaliert. Eventuell
+                        übriger Platz wird mit Leerraum gefüllt.
+                    </li>
+                </list>
             </chapter>
         </chapter>
 
